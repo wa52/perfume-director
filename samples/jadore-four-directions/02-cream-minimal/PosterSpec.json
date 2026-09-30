@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1024,
+    "height": 1360
+  },
+  "seed": 20260930,
+  "background": {
+    "color": "#EEE9DF",
+    "prompt": "A photograph of a completely empty seamless ivory studio cyclorama. Only a continuous pale warm off-white paper floor gently curving into an off-white background wall. Clear uninterrupted space across the whole frame, a blank studio set waiting for a photoshoot, soft diffuse daylight from upper left, extremely quiet tonal shading, zero props, zero objects. Vertical portrait view, immaculate warm white, museum-like simplicity. The frame shows only a blank empty studio background.",
+    "revision": 0
+  },
+  "product": {
+    "x": 512,
+    "y": 690,
+    "width": 390,
+    "height": 770
+  },
+  "lighting": "warm_directional_side_light",
+  "palette": [
+    "#EEE9DF",
+    "#5B5141",
+    "#9C8E73"
+  ],
+  "title": {
+    "text": "J’adore",
+    "x": 385,
+    "y": 1132,
+    "size": 76,
+    "color": "#514839",
+    "font": "C:/Windows/Fonts/georgiai.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 439,
+    "y": 1232,
+    "size": 18,
+    "color": "#8B7F6A",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 80,
+    "y": 1220,
+    "size": 20,
+    "color": "#C6B794",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 463,
+    "y": 90,
+    "size": 38,
+    "color": "#514839",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.22,
+    "blur": 12,
+    "offset_x": 0,
+    "offset_y": 2,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 84,
+    "y": 398,
+    "width": 74,
+    "color": "#998463"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "design_direction": "02-cream-minimal",
+  "design_direction_label": "奶油极简"
+}

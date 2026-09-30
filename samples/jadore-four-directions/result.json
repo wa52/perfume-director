@@ -1,0 +1,32 @@
+{
+  "status": "READY_FOR_STYLE_SELECTION",
+  "variants": [
+    {
+      "id": "01-black-gold",
+      "label": "黑金奢华",
+      "poster": "01-black-gold/poster.png",
+      "sha256": "b6a9cb9360bf4b9fab7cbfb7e628c839bf5a18bd395626d39dc7ded75f9b8928"
+    },
+    {
+      "id": "02-cream-minimal",
+      "label": "奶油极简",
+      "poster": "02-cream-minimal/poster.png",
+      "sha256": "4684d09a35b0896c3ed2fad1a6a5fa30522f27213873337e4ee602350dba4277"
+    },
+    {
+      "id": "03-burgundy-editorial",
+      "label": "酒红编辑风",
+      "poster": "03-burgundy-editorial/poster.png",
+      "sha256": "36b992da926136379d316e093970859820b688fb5da8ba28fef86d4564e2bb53"
+    },
+    {
+      "id": "04-botanical",
+      "label": "清新植物风",
+      "poster": "04-botanical/poster.png",
+      "sha256": "d8e076dcac4e3fe2e92a884acd41b9dbf3417d8892a885af2145dda646830c4f"
+    }
+  ],
+  "renderer": "real_local_comfyui",
+  "background_model": "z_image_turbo",
+  "product_regenerated": false
+}

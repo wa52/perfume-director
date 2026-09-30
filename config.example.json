@@ -1,0 +1,11 @@
+{
+  "vision_base_url": "https://api.openai.com/v1",
+  "vision_model": "YOUR_VISION_MODEL",
+  "api_key_env": "VISION_API_KEY",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_timeout_seconds": 600,
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "background_workflow": null,
+  "background_bindings": {},
+  "background_output_node": null
+}

@@ -1,0 +1,14 @@
+{
+  "mode": "codex_guided_style_exploration",
+  "product": "assets/products/dior-jadore-retailer.png",
+  "directions": {
+    "01-black-gold": "黑金奢华",
+    "02-cream-minimal": "奶油极简",
+    "03-burgundy-editorial": "酒红编辑风",
+    "04-botanical": "清新植物风"
+  },
+  "seed": 20260930,
+  "purpose": "Compare actual different backgrounds, palette, placement and type; same unchanged product photograph.",
+  "existing_black_gold_reused": true,
+  "status": "READY_FOR_STYLE_SELECTION"
+}

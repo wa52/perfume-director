@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1024,
+    "height": 1360
+  },
+  "seed": 20260930,
+  "background": {
+    "color": "#5D1023",
+    "prompt": "Empty background plate for a bold contemporary fashion fragrance magazine campaign. Vertical photograph, saturated dark wine red burgundy studio backdrop. Matte deep red tabletop covers the bottom 22 percent and blends into the backdrop with a subtle soft horizon, no visible slab edge. A restrained diagonally falling pink-red light gradient across the right side, rich velvet-like chromatic depth, high fashion studio lighting, refined editorial mood. Upper 30 percent is empty even burgundy, center right empty for a tall product added later. No objects, no fabric folds, no bottles, no perfume, no product, no people, no flowers, no text, no letters, no logo, no signage.",
+    "revision": 0
+  },
+  "product": {
+    "x": 685,
+    "y": 818,
+    "width": 390,
+    "height": 770
+  },
+  "lighting": "warm_directional_side_light",
+  "palette": [
+    "#5D1023",
+    "#F4DBD3",
+    "#DA947E"
+  ],
+  "title": {
+    "text": "J’ADORE",
+    "x": 68,
+    "y": 148,
+    "size": 126,
+    "color": "#F4DBD3",
+    "font": "C:/Windows/Fonts/arialbd.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 76,
+    "y": 306,
+    "size": 19,
+    "color": "#F4DBD3",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 80,
+    "y": 1220,
+    "size": 20,
+    "color": "#C6B794",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 76,
+    "y": 74,
+    "size": 24,
+    "color": "#F4DBD3",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.42,
+    "blur": 8,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 360,
+    "width": 112,
+    "color": "#DA947E"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "design_direction": "03-burgundy-editorial",
+  "design_direction_label": "酒红编辑风"
+}

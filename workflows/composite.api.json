@@ -1,0 +1,6 @@
+{
+  "1": {"class_type": "LoadImage", "inputs": {"image": "product.png"}},
+  "2": {"class_type": "LoadImage", "inputs": {"image": "background.png"}},
+  "3": {"class_type": "PerfumePosterSpecRender", "inputs": {"product": ["1", 0], "product_mask": ["1", 1], "background": ["2", 0], "spec_json": "{}", "font_path": "C:/Windows/Fonts/msyh.ttc"}},
+  "4": {"class_type": "SaveImage", "inputs": {"images": ["3", 0], "filename_prefix": "perfume-director"}}
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+runtime/
+runs/
+.env
+.env.*
+!.env.example
+config.local.json
+config.json
+extra_model_paths.local.yaml
+references/candidates/
+*.log

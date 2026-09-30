@@ -1,0 +1,625 @@
+[
+  {
+    "id": "armani-cuir-nu",
+    "brand": "Armani",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.armani-beauty.ca/en_CA/armani-prive/les-mille-et-une-nuits/armani-prive-cuir-nu/ww-01017-arm.html",
+    "image": "references/luxury/armani-cuir-nu.jpg",
+    "selection_reason": "商品静物与人物分屏，在暖米色体系内用几何皮革强调材质。",
+    "analysis": {
+      "composition": "split_layout",
+      "subject_ratio": 0.09,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "directional_studio_light",
+      "color": [
+        "beige",
+        "brown",
+        "black",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "分屏结构",
+        "几何材质",
+        "暖中性色"
+      ],
+      "perfume_suitability": 80,
+      "caveat": "第一版不执行人物分屏，可提取左侧静物构图和材质方向。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "armani-santal-dansha",
+    "brand": "Armani",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.koichirodoistudio.com/1300",
+    "image": "references/luxury/armani-santal-dansha.jpg",
+    "selection_reason": "黑底、木材垂直纹理和金色标签统一，集中侧光让透明瓶身成为中心。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.23,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "high",
+      "lighting": "hard_side_light",
+      "color": [
+        "black",
+        "wood_brown",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "木材底座",
+        "侧光玻璃",
+        "上方品牌留白"
+      ],
+      "perfume_suitability": 97,
+      "caveat": "优先参考，木材不能覆盖瓶身标签。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "byredo-desert-dawn",
+    "brand": "Byredo",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.ellechina.com/beauty/beauty-news/a62271428/byredo-desertdawnpoxiaozhijixiangshui/",
+    "image": "references/luxury/byredo-desert-dawn.jpg",
+    "selection_reason": "岩石支撑小商品，黄昏暖色与顶部大字形成雕塑感和明确品牌层级。",
+    "analysis": {
+      "composition": "vertical_centered",
+      "subject_ratio": 0.045,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_side_light",
+      "color": [
+        "brown",
+        "amber",
+        "black"
+      ],
+      "typography": "display_sans",
+      "information_density": "low",
+      "characteristics": [
+        "自然石材底座",
+        "暖色渐变",
+        "大品牌小商品"
+      ],
+      "perfume_suitability": 91,
+      "caveat": "参考底座和光线，第一版可提高商品占比。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "byredo-rose-absolu",
+    "brand": "Byredo",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.mecca.com/en-au/byredo/rose-of-no-mans-land-absolu-de-parfum-V-078221/",
+    "image": "references/luxury/byredo-rose-absolu.jpg",
+    "selection_reason": "黑底红色抽象玫瑰与底部瓶身形成强烈且克制的视觉对比。",
+    "analysis": {
+      "composition": "vertical_centered",
+      "subject_ratio": 0.1,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "controlled_studio_light",
+      "color": [
+        "black",
+        "red",
+        "white"
+      ],
+      "typography": "display_sans",
+      "information_density": "low",
+      "characteristics": [
+        "三段式层级",
+        "抽象香调道具",
+        "极简强对比"
+      ],
+      "perfume_suitability": 88,
+      "caveat": "装饰不要侵入商品区域，红色道具不能喧宾夺主。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "chanel-coco-mademoiselle",
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://cahiersdemode.com/coco-mademoiselle/",
+    "image": "references/luxury/chanel-coco-mademoiselle.jpg",
+    "selection_reason": "柔和米色人物背景、中央偏下商品与手写标题体现轻盈优雅的品牌气质。",
+    "analysis": {
+      "composition": "portrait_centered",
+      "subject_ratio": 0.13,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_portrait_light",
+      "color": [
+        "beige",
+        "peach",
+        "black",
+        "white"
+      ],
+      "typography": "handwritten",
+      "information_density": "low",
+      "characteristics": [
+        "亲近的人物",
+        "手写标题",
+        "暖色瓶身"
+      ],
+      "perfume_suitability": 69,
+      "caveat": "人物和手写字体不在第一版实现范围，只作情绪参考。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "chanel-no5-monochrome",
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "历史商业广告",
+    "source_url": "https://www.scentissime.com/fr/blog/post/parfums-de-niche-quand-l-art-olfactif-rencontre-l-exclusivite.html",
+    "image": "references/luxury/chanel-no5-monochrome.jpg",
+    "selection_reason": "黑白渐变、单一瓶身与底部品牌构成稳定秩序，展示减少元素也能形成高级感。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.2,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "high",
+      "lighting": "backlight_gradient",
+      "color": [
+        "black",
+        "white",
+        "gray"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "单瓶主视觉",
+        "大留白",
+        "底部品牌"
+      ],
+      "perfume_suitability": 90,
+      "caveat": "扫描纸张有自然泛黄，参考布局，不复制纸张瑕疵。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "dior-jadore-gold-bottle",
+    "brand": "Dior",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+    "image": "references/luxury/dior-jadore-gold-bottle.jpg",
+    "selection_reason": "全金色背景、偏右大瓶身与左侧文字实现统一色系下的主次分配。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.28,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_backlight",
+      "color": [
+        "gold",
+        "warm_white",
+        "amber"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "右侧商品",
+        "左侧文字",
+        "单色高级感"
+      ],
+      "perfume_suitability": 95,
+      "caveat": "旧广告画质一般，适合构图参考，不作材质细节真值。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-do-son",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.womenshealthmag.com/tw/beauty/spa/g39508466/diptyque-x-tim-walker2022/",
+    "image": "references/luxury/diptyque-do-son.jpg",
+    "selection_reason": "建筑、蝴蝶与香水的尺度变化形成超现实舞台，背景仍保留单纯蓝色。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.035,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "blue",
+        "black",
+        "orange"
+      ],
+      "typography": "experimental_serif",
+      "information_density": "low",
+      "characteristics": [
+        "超现实尺度",
+        "建筑框景",
+        "拆分标题"
+      ],
+      "perfume_suitability": 73,
+      "caveat": "复杂建筑与拆分字体超出第一版 renderer，只参考框景和色彩。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-eau-rose",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商品静物",
+    "source_url": "https://www.wallpaper.com/beauty-grooming/diptyque-eau-rose-perfume-revamp",
+    "image": "references/luxury/diptyque-eau-rose.jpg",
+    "selection_reason": "粉色帷幔和花束统一背景，香水在花束中心形成精致的小焦点。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.018,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_side_light",
+      "color": [
+        "pink",
+        "green",
+        "warm_white"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "同色帷幔",
+        "花束围合",
+        "商品小焦点"
+      ],
+      "perfume_suitability": 72,
+      "caveat": "适合参考花香场景，当前商品应更大，不能照搬其低商品占比。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-orpheon",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://ssilife.com.ph/blog/the-vibrant-return-of-orpheon",
+    "image": "references/luxury/diptyque-orpheon.jpg",
+    "selection_reason": "深蓝到暖金的背景梯度衬托透明瓶身，底部小品牌与上方道具形成平衡。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.3,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_side_light",
+      "color": [
+        "navy",
+        "amber",
+        "black",
+        "white"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "透明玻璃边光",
+        "底部小品牌",
+        "暗色负空间"
+      ],
+      "perfume_suitability": 94,
+      "caveat": "标签须保持可读，道具只参考前后景关系。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "guerlain-shalimar-blue",
+    "brand": "Guerlain",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.dpvintageposters.com/posters/shalimar-guerlain-paris-blue-br-french-advertising-poster_15277",
+    "image": "references/luxury/guerlain-shalimar-blue.jpg",
+    "selection_reason": "深蓝背景与金色瓶身形成冷暖对比，右上标题和右下品牌形成纵向信息轴。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.065,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_portrait_light",
+      "color": [
+        "navy",
+        "blue",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "冷暖对比",
+        "右侧信息轴",
+        "背景建筑暗示"
+      ],
+      "perfume_suitability": 75,
+      "caveat": "人物与建筑叙事仅作气氛参考。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "hermes-merveilles-bleue",
+    "brand": "Hermes",
+    "style": "luxury",
+    "reference_kind": "场景商业广告",
+    "source_url": "https://models.com/work/herms-herms-eau-des-merveilles-bleue-fragrance-2017",
+    "image": "references/luxury/hermes-merveilles-bleue.jpg",
+    "selection_reason": "蓝色大留白与金色光轨构成对角线，把场景、气味联想与底部瓶身关联。",
+    "analysis": {
+      "composition": "diagonal",
+      "subject_ratio": 0.035,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "high",
+      "lighting": "dusk_and_light_trail",
+      "color": [
+        "blue",
+        "white",
+        "gold"
+      ],
+      "typography": "small_sans",
+      "information_density": "low",
+      "characteristics": [
+        "天空留白",
+        "对角线光轨",
+        "小品牌标"
+      ],
+      "perfume_suitability": 74,
+      "caveat": "原图含白色边框且有复杂人物场景，只参考光轨与留白。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "hermes-terre",
+    "brand": "Hermes",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+    "image": "references/luxury/hermes-terre.jpg",
+    "selection_reason": "大地橙与天蓝互补，人物暗部和商品亮部形成分离，右侧信息克制。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.025,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_daylight",
+      "color": [
+        "orange",
+        "sky_blue",
+        "black"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "橙蓝对比",
+        "烟尘景深",
+        "右侧商品"
+      ],
+      "perfume_suitability": 75,
+      "caveat": "人物和动态烟尘暂不执行，参考色彩与主次。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-peony",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+    "image": "references/luxury/jo-malone-peony.jpg",
+    "selection_reason": "浅色留白、大瓶身与单侧牡丹构成轻盈的高级花香视觉。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.38,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_diffused_light",
+      "color": [
+        "warm_white",
+        "pink",
+        "silver"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "左侧商品",
+        "右侧花卉",
+        "顶部小品牌"
+      ],
+      "perfume_suitability": 92,
+      "caveat": "花朵不能遮挡商品标签。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-wild-bluebell",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "场景商业广告",
+    "source_url": "https://cahiersdemode.com/wild_bluebell_cologne/",
+    "image": "references/luxury/jo-malone-wild-bluebell.jpg",
+    "selection_reason": "蓝紫色单一色系与夸张商品尺度构成梦境，适合学习香调情绪的统一。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.16,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_window_light",
+      "color": [
+        "blue",
+        "violet",
+        "white"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "放大商品",
+        "同色花海",
+        "叙事布景"
+      ],
+      "perfume_suitability": 63,
+      "caveat": "场景复杂且含人物，只作色彩情绪参考，暂不复制其场景。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "prada-paradoxe",
+    "brand": "Prada",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.sephora.com/product/paradoxe-eau-de-parfum-P501198",
+    "image": "references/luxury/prada-paradoxe.jpg",
+    "selection_reason": "薄荷绿、黑色服装与粉色瓶身形成清晰色块，左上文字和右下商品层级明确。",
+    "analysis": {
+      "composition": "diagonal",
+      "subject_ratio": 0.13,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "mint_green",
+        "black",
+        "coral_pink"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "对角线视线",
+        "左上品牌",
+        "右下商品"
+      ],
+      "perfume_suitability": 76,
+      "caveat": "人物构图仅作层级参考，第一版不生成人物。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "tom-ford-black-orchid-satin",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://models.com/work/tom-ford-lunar-new-year-campaign",
+    "image": "references/luxury/tom-ford-black-orchid-satin.jpg",
+    "selection_reason": "黑色丝绸与瓶身形成材质对比，金色标签提供唯一暖色焦点，适合第一版暗色高级风格。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.24,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "controlled_rim_light",
+      "color": [
+        "black",
+        "silver",
+        "gold"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "单瓶主视觉",
+        "丝绸高光引导视线",
+        "上下品牌信息"
+      ],
+      "perfume_suitability": 96,
+      "caveat": "商品主体与背景反光须控制对比，避免背景高光抢焦点。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "tom-ford-figue",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.hanglungmalls.com/whats-happening/6979c26aac741e0002ea91b4?mall=fashion-walk",
+    "image": "references/luxury/tom-ford-figue.jpg",
+    "selection_reason": "瓶身与无花果切面共用紫色体系，用食材建立香调联想，信息克制。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.29,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "backlight_and_rim_light",
+      "color": [
+        "purple",
+        "burgundy",
+        "green"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "同色背景",
+        "香调道具",
+        "底部品牌"
+      ],
+      "perfume_suitability": 89,
+      "caveat": "无花果是香调道具，仅参考道具与颜色关系。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "tom-ford-lost-cherry",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://bluebloom20.com/products/tom-ford-lost-cherry-edp",
+    "image": "references/luxury/tom-ford-lost-cherry.jpg",
+    "selection_reason": "红底、红唇与红色瓶身形成一致色彩，黑色衣服为商品提供对比区域。",
+    "analysis": {
+      "composition": "portrait_asymmetric",
+      "subject_ratio": 0.045,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_portrait_light",
+      "color": [
+        "red",
+        "black",
+        "skin_tone"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "同色呼应",
+        "简洁红底",
+        "黑色对比区"
+      ],
+      "perfume_suitability": 71,
+      "caveat": "没有独立海报标题，只参考色彩控制和商品辨识。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "ysl-libre",
+    "brand": "YSL",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://lareclame.fr/betcparis/realisations/libre",
+    "image": "references/luxury/ysl-libre.jpg",
+    "selection_reason": "左侧人物与品牌、右侧大商品清楚分工，金色火光和黑色服装形成高对比。",
+    "analysis": {
+      "composition": "split_layout",
+      "subject_ratio": 0.2,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "warm_firelight_and_studio",
+      "color": [
+        "black",
+        "gold",
+        "warm_white"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "人物商品分区",
+        "品牌字重突出",
+        "暖金背景"
+      ],
+      "perfume_suitability": 78,
+      "caveat": "背景火光较繁，可参考左右分区，不照搬复杂人物。"
+    },
+    "analysis_origin": "codex_visual_review"
+  }
+]

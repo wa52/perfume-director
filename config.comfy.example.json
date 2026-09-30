@@ -1,0 +1,14 @@
+{
+  "vision_base_url": "https://api.openai.com/v1",
+  "vision_model": "YOUR_VISION_MODEL",
+  "api_key_env": "VISION_API_KEY",
+  "comfy_url": "http://127.0.0.1:8190",
+  "render_timeout_seconds": 900,
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "background_workflow": "workflows/z-image-background.api.json",
+  "background_bindings": {
+    "prompt": {"node": "5", "input": "text"},
+    "seed": {"node": "8", "input": "seed"}
+  },
+  "background_output_node": "10"
+}

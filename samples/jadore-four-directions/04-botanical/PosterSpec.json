@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1024,
+    "height": 1360
+  },
+  "seed": 20260930,
+  "background": {
+    "color": "#E4E7D8",
+    "prompt": "A completely empty botanical studio set. Pale desaturated sage green plaster wall with delicate blurred leaf shadows at far left. An unoccupied smooth pale limestone table spanning the lower twenty percent, continuous flat top surface. Only a tiny jasmine branch with white petals and green leaves in the extreme lower left corner. The entire center and right tabletop are bare and empty. Clean blank wall in the upper left. Soft diffuse daylight, tranquil spring palette, sage green and ivory, vertical architectural photograph. Empty room, no other props.",
+    "revision": 0
+  },
+  "product": {
+    "x": 686,
+    "y": 643,
+    "width": 390,
+    "height": 770
+  },
+  "lighting": "warm_directional_side_light",
+  "palette": [
+    "#E4E7D8",
+    "#334C38",
+    "#7A8B66"
+  ],
+  "title": {
+    "text": "J’adore",
+    "x": 82,
+    "y": 252,
+    "size": 88,
+    "color": "#334C38",
+    "font": "C:/Windows/Fonts/georgiai.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 86,
+    "y": 369,
+    "size": 20,
+    "color": "#657659",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 80,
+    "y": 1220,
+    "size": 20,
+    "color": "#C6B794",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 84,
+    "y": 84,
+    "size": 32,
+    "color": "#334C38",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.25,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 418,
+    "width": 82,
+    "color": "#7A8B66"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "design_direction": "04-botanical",
+  "design_direction_label": "清新植物风"
+}

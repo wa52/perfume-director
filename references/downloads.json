@@ -1,0 +1,322 @@
+[
+  {
+    "id": "tom-ford-black-orchid-satin",
+    "brand": "Tom Ford",
+    "source_url": "https://models.com/work/tom-ford-lunar-new-year-campaign",
+    "image_url": "https://i.mdel.net/i/db/2023/2/1871148/1871148-800w.jpg",
+    "path": "references/candidates/tom-ford-black-orchid-satin.jpg",
+    "width": 800,
+    "height": 800,
+    "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a",
+    "bytes": 74947,
+    "status": "downloaded"
+  },
+  {
+    "id": "tom-ford-black-orchid-gold",
+    "brand": "Tom Ford",
+    "source_url": "https://www.kaganparfumeri.com/tom-ford-black-orchid-unisex-parfum-50-ml",
+    "image_url": "https://witcdn.kaganparfumeri.com/tom-ford-black-orchid-unisex-parfum-50-ml-edp-parfum-tom-ford-27840-72-B.jpg",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "tom-ford-figue",
+    "brand": "Tom Ford",
+    "source_url": "https://www.hanglungmalls.com/whats-happening/6979c26aac741e0002ea91b4?mall=fashion-walk",
+    "image_url": "https://media.hanglungmalls.com/custom-import/cmsUpload/9674d430-fc1f-11f0-8468-2f54628308b8.jpg",
+    "path": "references/candidates/tom-ford-figue.jpg",
+    "width": 2000,
+    "height": 2000,
+    "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de",
+    "bytes": 2376163,
+    "status": "downloaded"
+  },
+  {
+    "id": "tom-ford-noir",
+    "brand": "Tom Ford",
+    "source_url": "https://www.vencosmetic.com/tom-ford-noir-pour-femme",
+    "image_url": "https://www.cdnaws.com/i/vencosmeticcom/ZW3D2Lqi2qQQvGYHnFzROLPsSdwHVUkzYQ1Dr/images/urunler/6311ed7b78ac6-421.jpg",
+    "status": "failed",
+    "error": "The read operation timed out"
+  },
+  {
+    "id": "prada-paradoxe",
+    "brand": "Prada",
+    "source_url": "https://www.sephora.com/product/paradoxe-eau-de-parfum-P501198",
+    "image_url": "https://www.sephora.com/productimages/product/p501198-av-4-zoom.jpg",
+    "path": "references/candidates/prada-paradoxe.jpg",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "28b7ab06597a5146399cddb8909f9b1245d5c93f11da4dba073f13f220cddf47",
+    "bytes": 274317,
+    "status": "downloaded"
+  },
+  {
+    "id": "jo-malone-peony",
+    "brand": "Jo Malone",
+    "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/1087/7867/files/Mobile-Banners-800x1000px-JO-MALONE.jpg?v=1741082614",
+    "path": "references/candidates/jo-malone-peony.jpg",
+    "width": 800,
+    "height": 1000,
+    "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a",
+    "bytes": 111984,
+    "status": "downloaded"
+  },
+  {
+    "id": "jo-malone-wild-bluebell",
+    "brand": "Jo Malone",
+    "source_url": "https://cahiersdemode.com/wild_bluebell_cologne/",
+    "image_url": "https://cahiersdemode.com/wp-content/uploads/2017/08/NOT-NBYo11-Wild-Bluebell-e1675756626835.jpg",
+    "path": "references/candidates/jo-malone-wild-bluebell.jpg",
+    "width": 1000,
+    "height": 760,
+    "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632",
+    "bytes": 211569,
+    "status": "downloaded"
+  },
+  {
+    "id": "jo-malone-sakura",
+    "brand": "Jo Malone",
+    "source_url": "https://www.central.co.th/en/jomalonelondon-unisex-fragrance-sakura-cherry-blossom-cologne-100-ml-cds27530788",
+    "image_url": "https://www.central.co.th/_next/image?q=75&url=https%3A%2F%2Fassets.central.co.th%2Ffile-assets%2FCDSPIM%2Fweb%2FImage%2FCDS2753%2FJOMALONE-COLOGNESAKURABLSSM100ML-CDS27530788-2.webp&w=1080",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "diptyque-do-son",
+    "brand": "Diptyque",
+    "source_url": "https://www.womenshealthmag.com/tw/beauty/spa/g39508466/diptyque-x-tim-walker2022/",
+    "image_url": "https://hips.hearstapps.com/hmg-prod/images/tim-walker%E4%BD%9C%E5%93%81-diptyque-2022%E9%99%90%E9%87%8F%E7%89%88%E6%9D%9C%E6%A1%91%E6%B7%A1%E9%A6%99%E6%B0%B4-1040x1040-logo-1648003713.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop&resize=980%3A%2A",
+    "path": "references/candidates/diptyque-do-son.jpg",
+    "width": 980,
+    "height": 980,
+    "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600",
+    "bytes": 149827,
+    "status": "downloaded"
+  },
+  {
+    "id": "diptyque-eau-rose",
+    "brand": "Diptyque",
+    "source_url": "https://www.wallpaper.com/beauty-grooming/diptyque-eau-rose-perfume-revamp",
+    "image_url": "https://cdn.mos.cms.futurecdn.net/v2/t%3A39%2Cl%3A0%2Ccw%3A1540%2Cch%3A866%2Cq%3A80%2Cw%3A1540/aS89vbRYZGjmP9PMkcQBRJ.jpg",
+    "path": "references/candidates/diptyque-eau-rose.jpg",
+    "width": 1540,
+    "height": 866,
+    "sha256": "aacd4f3f6ab524b7900e460c2c2acd2bbb1830a2f134d159e11beab271a29351",
+    "bytes": 244264,
+    "status": "downloaded"
+  },
+  {
+    "id": "diptyque-orpheon",
+    "brand": "Diptyque",
+    "source_url": "https://ssilife.com.ph/blog/the-vibrant-return-of-orpheon",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c34764c297114ca20d6777b/a7fe4e64-ca1f-4451-987e-d1384326b3d8/1.jpg",
+    "path": "references/candidates/diptyque-orpheon.jpg",
+    "width": 874,
+    "height": 1240,
+    "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46",
+    "bytes": 134863,
+    "status": "downloaded"
+  },
+  {
+    "id": "byredo-desert-dawn",
+    "brand": "Byredo",
+    "source_url": "https://www.ellechina.com/beauty/beauty-news/a62271428/byredo-desertdawnpoxiaozhijixiangshui/",
+    "image_url": "https://hips.hearstchina.com/hmg-prod/images/byredo-desert-dawn%E7%A0%B4%E6%99%93%E4%B9%8B%E9%99%85%E9%A6%99%E6%B0%B4%E5%88%9B%E6%84%8F%E8%A7%86%E8%A7%89-%E6%91%84%E5%BD%B1%E5%B8%88c-rafael-pavarott-1-66ebb9b568173.jpg",
+    "path": "references/candidates/byredo-desert-dawn.jpg",
+    "width": 800,
+    "height": 1200,
+    "sha256": "22131b0b49cac3fc444481356aefbf3324e7f34c850cfbfb86f2f1973453ef8d",
+    "bytes": 150567,
+    "status": "downloaded"
+  },
+  {
+    "id": "byredo-rose-absolu",
+    "brand": "Byredo",
+    "source_url": "https://www.mecca.com/en-au/byredo/rose-of-no-mans-land-absolu-de-parfum-V-078221/",
+    "image_url": "https://contenthub-delivery.mecca.com/api/public/content/I-078222-4-I-078222-A4-BYREDO-RoseOfNoMansLandAbsolu100ml-1xhKdqbjTC2pjFft76HmtQ.jpg",
+    "path": "references/candidates/byredo-rose-absolu.jpg",
+    "width": 1500,
+    "height": 2000,
+    "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9",
+    "bytes": 594370,
+    "status": "downloaded"
+  },
+  {
+    "id": "byredo-velvet-haze",
+    "brand": "Byredo",
+    "source_url": "https://www.wmagazine.com/story/fragrance-beauty-byredo-ben-gorham",
+    "image_url": "https://imgix.bustle.com/wmag/2017/09/06/59b04a7f8edbb03ab110d5a2_PRESS_BYR-VelvetHaze.jpg",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "id": "guerlain-shalimar-blue",
+    "brand": "Guerlain",
+    "source_url": "https://www.dpvintageposters.com/posters/shalimar-guerlain-paris-blue-br-french-advertising-poster_15277",
+    "image_url": "https://www.dpvintageposters.com/cgi-local/db_images/posters/cache/15277-image-1200-1200-fit.jpg",
+    "path": "references/candidates/guerlain-shalimar-blue.jpg",
+    "width": 801,
+    "height": 1200,
+    "sha256": "2574fd0c451cc57f1c29721518c0a489461f29b539319ee46c2502490198f2ab",
+    "bytes": 796521,
+    "status": "downloaded"
+  },
+  {
+    "id": "guerlain-shalimar-artdeco",
+    "brand": "Guerlain",
+    "source_url": "https://www.thezoereport.com/beauty/guerlain-shalimar-fragrance",
+    "image_url": "https://imgix.bustle.com/uploads/image/2025/11/7/6bada421/shalimar-1935-poster-ad.jpg",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "id": "chanel-no5-monochrome",
+    "brand": "Chanel",
+    "source_url": "https://www.scentissime.com/fr/blog/post/parfums-de-niche-quand-l-art-olfactif-rencontre-l-exclusivite.html",
+    "image_url": "https://www.scentissime.com/img/cms/vintage-chanel-n5-scentissime.jpeg",
+    "path": "references/candidates/chanel-no5-monochrome.jpg",
+    "width": 500,
+    "height": 678,
+    "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace",
+    "bytes": 224696,
+    "status": "downloaded"
+  },
+  {
+    "id": "dior-jadore-gold-bottle",
+    "brand": "Dior",
+    "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+    "image_url": "https://i.pinimg.com/736x/9a/04/76/9a04762572c719e47202e07f620fc9e7.jpg",
+    "path": "references/candidates/dior-jadore-gold-bottle.jpg",
+    "width": 730,
+    "height": 1031,
+    "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3",
+    "bytes": 90438,
+    "status": "downloaded"
+  },
+  {
+    "id": "dior-jadore-2018",
+    "brand": "Dior",
+    "source_url": "https://www.theperfumegirl.com/perfumes/fragrances/dior/jadore/",
+    "image_url": "https://www.theperfumegirl.com/perfumes/fragrances/dior/jadore/images/dior-jadore-ad-2018-lg.jpg",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)>"
+  },
+  {
+    "id": "hermes-merveilles-bleue",
+    "brand": "Hermes",
+    "source_url": "https://models.com/work/herms-herms-eau-des-merveilles-bleue-fragrance-2017",
+    "image_url": "https://i.mdel.net/i/db/2017/4/683015/683015-800w.jpg",
+    "path": "references/candidates/hermes-merveilles-bleue.jpg",
+    "width": 800,
+    "height": 1000,
+    "sha256": "1cf711457d602ec6b0a0a929fead67537d75588d9198f40c16f7d629e7afcb51",
+    "bytes": 145944,
+    "status": "downloaded"
+  },
+  {
+    "id": "hermes-elixir-merveilles",
+    "brand": "Hermes",
+    "source_url": "https://www.artinsight.co.kr/news/view.php?no=42720",
+    "image_url": "https://www.artinsight.co.kr/data/tmp/1907/e6a68cd9b35104f31d3e053366cc56a6_ErNjwNeNmgZl4Az.jpg",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "id": "hermes-terre",
+    "brand": "Hermes",
+    "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+    "image_url": "https://cdn.spellsmell.ru/public-image/409c7d80-c7b9-11ed-871f-0242ac030003.jpg",
+    "path": "references/candidates/hermes-terre.jpg",
+    "width": 1000,
+    "height": 666,
+    "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b",
+    "bytes": 132121,
+    "status": "downloaded"
+  },
+  {
+    "id": "armani-santal-dansha",
+    "brand": "Armani",
+    "source_url": "https://www.koichirodoistudio.com/1300",
+    "image_url": "https://www.koichirodoistudio.com/1300/armaniprive_santaldansha_17b_v_crop-2",
+    "path": "references/candidates/armani-santal-dansha.jpg",
+    "width": 1436,
+    "height": 1920,
+    "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03",
+    "bytes": 267517,
+    "status": "downloaded"
+  },
+  {
+    "id": "armani-cuir-nu",
+    "brand": "Armani",
+    "source_url": "https://www.armani-beauty.ca/en_CA/armani-prive/les-mille-et-une-nuits/armani-prive-cuir-nu/ww-01017-arm.html",
+    "image_url": "https://www.armani-beauty.ca/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-armani-ca-Library/default/dwf201d40a/images/pdp/ww-01017-arm/ww-01017-arm-description-image-cover-v2.jpg?q=85&sh=687&sm=cut&sw=1000",
+    "path": "references/candidates/armani-cuir-nu.jpg",
+    "width": 1000,
+    "height": 687,
+    "sha256": "50ea3d3fdd69810c2a133e3728d2f3ece35d5f26de991bef3549d509f563a1e3",
+    "bytes": 82218,
+    "status": "downloaded"
+  },
+  {
+    "id": "armani-ambre",
+    "brand": "Armani",
+    "source_url": "https://1001envies.over-blog.com/article-ambre-orient-d-armani-prive-100157733.html",
+    "image_url": "https://img.over-blog-kiwi.com/0/55/94/95/20190908/ob_6c50b0_armani-prive-ambre-eccentric-pub.jpg",
+    "status": "failed",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+  },
+  {
+    "id": "guerlain-aqua-allegoria",
+    "brand": "Guerlain",
+    "source_url": "https://www.guerlain.com/uk/en-uk/p/aqua-allegoria-pamplelune---eau-de-toilette-010954.html",
+    "image_url": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dwe79e56a2/Secondary_visuals/2021/AQUA-ALLEGORIA_VISUAL_MODEL-VISUAL_PRODUCT-PAGE.jpg?sh=3000&sw=3000",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "guerlain-nerolia-vetiver",
+    "brand": "Guerlain",
+    "source_url": "https://www.marionnaud.at/guerlain/aqua-allegoria/grl-nerolia-vetiver-perle-aqua/p/BP_13567238",
+    "image_url": "https://media.marionnaud.at/medias/sys_master/prd-images/hf5/h13/12580485857310/prd-extra2-13567238_2000x2000/prd-extra2-13567238-2000x2000.jpg",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "chanel-coco-mademoiselle",
+    "brand": "Chanel",
+    "source_url": "https://cahiersdemode.com/coco-mademoiselle/",
+    "image_url": "https://cahiersdemode.com/wp-content/uploads/2018/10/pubKeiraKnightley3Ete11-e1753071436662.jpg",
+    "path": "references/candidates/chanel-coco-mademoiselle.jpg",
+    "width": 800,
+    "height": 1029,
+    "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805",
+    "bytes": 114497,
+    "status": "downloaded"
+  },
+  {
+    "id": "tom-ford-lost-cherry",
+    "brand": "Tom Ford",
+    "source_url": "https://bluebloom20.com/products/tom-ford-lost-cherry-edp",
+    "image_url": "https://cdn.shopify.com/s/files/1/0899/2119/2301/files/TFB_2023_Attache_ShuQi_Product_SocialCrops_LostCherry_2000x3000-TMALL.jpg?v=1737843215",
+    "path": "references/candidates/tom-ford-lost-cherry.jpg",
+    "width": 1000,
+    "height": 1500,
+    "sha256": "27049f3f55038b1dbecc838f6f4d3fa59a48fccc63339997c4ffe2d5481c0cae",
+    "bytes": 190515,
+    "status": "downloaded"
+  },
+  {
+    "id": "ysl-libre",
+    "brand": "YSL",
+    "source_url": "https://lareclame.fr/betcparis/realisations/libre",
+    "image_url": "https://d9m1iyeq935g9.cloudfront.net/betcetoilerougeysllibreprint1569502511-realisation-fancybox.jpg?width=auto",
+    "path": "references/candidates/ysl-libre.jpg",
+    "width": 776,
+    "height": 550,
+    "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1",
+    "bytes": 379982,
+    "status": "downloaded"
+  }
+]
