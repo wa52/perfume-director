@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 142344335302684,
+  "background": {
+    "color": "#bfd6de",
+    "prompt": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a faint tonal gradient two percent darker than the paper with fully feathered invisible edges and no line no crease no ridge, uniform soft cool illumination with no highlights and no cast edges, fine matte fiber grain, completely empty scene",
+    "revision": 3
+  },
+  "product": {
+    "x": 400,
+    "y": 864,
+    "width": 378,
+    "height": 835
+  },
+  "lighting": "broad soft frontal light, paper-diffused cool tone",
+  "palette": [
+    "#bfd6de",
+    "#12303f",
+    "#8a5a2b"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 605,
+    "y": 158,
+    "size": 44,
+    "color": "#12303f",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 605,
+    "y": 298,
+    "size": 22,
+    "color": "#12303f",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#12303f",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 605,
+    "y": 79,
+    "size": 28,
+    "color": "#12303f",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.68,
+    "blur": 24,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 605,
+    "y": 324,
+    "width": 324,
+    "color": "#12303f"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

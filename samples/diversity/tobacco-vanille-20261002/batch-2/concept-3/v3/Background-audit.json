@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-hammered copper sheet wall, dense dimple texture, upper half smoothed into a calm deep amber-brown patina veil of low contrast so engraved plaque type rests on a quiet field, dimple highlights gradually reappearing and brightening only across the lower half, soft warm metallic bounce pooling low center beneath the middle of the frame, gentle darker vignette at side edges, no objects, no equipment, empty material and light only, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834694734,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

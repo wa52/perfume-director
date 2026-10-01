@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 80.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 82,
+    "physical_integration": 84,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The promised cream type never landed: logo, title and subtitle still render in dark brown #261E16 (visible in the current poster exactly as in the previous version), while the declared palette voice #efe6d2 appears only in the 346px rule. The dark serif sits inside the brightest zone of the top light pool, inverting the concept's cream-on-lacquer reading, and the 26px logo/subtitle strokes stay thin against the mid-teal edges of the glow."
+    },
+    {
+      "type": "composition",
+      "problem": "The vertical rhythm still carries a dead zone: the subtitle band ends at y=241 and the rule sits at y≈288, leaving roughly 225px of empty lacquer before the cap at y=513, while only ~207px remain under the base y=1233. The top-dense/bottom-empty theater grid reads as top-band-plus-void rather than the interlocked type-object spacing of references 3-5."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 each stage a material light event (saturated gloss field, mirrored brass table with props, smoldering wood with water); this draft now has the upper light pool and a faint mirrored glow low in frame, but the bottle's own dark glass returns almost no echo of that glow - no reflected sheen pool or mirrored bottle hint beneath the base - so the retouching drama still trails the references."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 843
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    }
+  ],
+  "reported_score": 79.4
+}

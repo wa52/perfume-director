@@ -1,0 +1,267 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "tom-ford-lost-cherry.jpg",
+      "sha256": "27049f3f55038b1dbecc838f6f4d3fa59a48fccc63339997c4ffe2d5481c0cae"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c3e964b5-79a2-9be2-9041-7a26b6cd6a07",
+      "usage": {
+        "prompt_tokens": 12835,
+        "total_tokens": 15124,
+        "completion_tokens": 2289,
+        "prompt_tokens_details": {
+          "cached_tokens": 5120,
+          "image_tokens": 5403,
+          "text_tokens": 7432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1264
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c3e964b5-79a2-9be2-9041-7a26b6cd6a07",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 12835,
+    "total_tokens": 15124,
+    "completion_tokens": 2289,
+    "prompt_tokens_details": {
+      "cached_tokens": 5120,
+      "image_tokens": 5403,
+      "text_tokens": 7432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1264
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "银盐暗房底铭反网格",
+        "brief": "借鉴历史黑白广告的秩序：银盐相纸自顶部炭灰向下渐晕至矿物浅灰，商品居于上 mid 幅如暗房唯一主体，全部文字沉入底部宽铭牌带，品牌字最小置上、题名最大居中、香型字垫底，构成上像下铭的反网格；一条细银线横于品牌字上方作分隔。哑光银盐纸面与深色玻璃镜面高光形成材质对话，宽柔正面光保留玻璃体积与标签可读性。",
+        "material": "matte silver-gelatin photographic paper",
+        "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+        "reference_ids": [
+          "chanel-no5-monochrome",
+          "diptyque-do-son",
+          "hermes-terre"
+        ],
+        "palette": [
+          "#b7bcc0",
+          "#141517",
+          "#8f9399"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/arial.ttf",
+          "title": [
+            0.14,
+            0.8,
+            86
+          ],
+          "logo": [
+            0.42,
+            0.745,
+            28
+          ],
+          "subtitle": [
+            0.3,
+            0.9,
+            30
+          ]
+        },
+        "background_prompt": "Seamless matte silver-gelatin paper wash, smooth vertical gradient from charcoal grey at top to pale mineral grey at bottom, fine photographic grain, even diffuse illumination, no objects",
+        "line": [
+          0.34,
+          0.722,
+          0.32
+        ]
+      },
+      {
+        "name": "釉面瓷壁竖向双栏",
+        "brief": "冷白釉面瓷板墙带发丝釉缝与一道垂直凹槽；商品靠左成主栏，右侧整条文字柱与商品肩部垂直重叠却水平让位，形成双栏编辑网格；细瓷青竖线如书脊立于两栏之间。釉面冷 satin 反光呼应玻璃硬高光，宽柔正面光避免瓷面眩光，深色玻璃在冷白壁上轮廓清晰。",
+        "material": "glazed ceramic tile wall",
+        "lighting": "broad soft frontal light with cool ceramic bounce",
+        "reference_ids": [
+          "jo-malone-wild-bluebell",
+          "ysl-libre",
+          "chanel-no5-monochrome"
+        ],
+        "palette": [
+          "#dfe4e2",
+          "#1c2a2e",
+          "#2e6b66"
+        ],
+        "product": [
+          0.28,
+          0.5,
+          0.64
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.58,
+            0.36,
+            50
+          ],
+          "logo": [
+            0.58,
+            0.29,
+            26
+          ],
+          "subtitle": [
+            0.58,
+            0.45,
+            26
+          ]
+        },
+        "background_prompt": "Large-format glazed ceramic tile wall in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen, uniform diffuse light, no objects",
+        "line": [
+          0.535,
+          0.27,
+          0.002
+        ]
+      },
+      {
+        "name": "锤铜壁龛上铭牌匾",
+        "brief": "暖调锤纹铜板以手工凹痕漫反射碎光；商品沉于下半幅如壁龛供奉物，上半幅留出完整铭牌带：品牌字、题名、香型字依次居中排印，题名最大统领画面，构成上铭下像的牌匾网格；细铜线横垫于铭牌带之下如同刻线。锤铜碎光与玻璃整面高光互为粗细对比，宽柔正面光压制金属火气。",
+        "material": "hand-hammered copper sheet",
+        "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+        "reference_ids": [
+          "tom-ford-lost-cherry",
+          "hermes-terre",
+          "ysl-libre"
+        ],
+        "palette": [
+          "#a4653a",
+          "#22140c",
+          "#e8d3ae"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.2,
+            0.16,
+            64
+          ],
+          "logo": [
+            0.41,
+            0.09,
+            26
+          ],
+          "subtitle": [
+            0.31,
+            0.25,
+            26
+          ]
+        },
+        "background_prompt": "Hand-hammered copper sheet wall, dense dimple texture scattering warm light, subtle vertical tonal falloff toward edges, soft amber glow from front, no objects",
+        "line": [
+          0.34,
+          0.295,
+          0.32
+        ]
+      },
+      {
+        "name": "板岩斜光左铭右像",
+        "brief": "深蓝灰板岩壁带天然劈理纹，一道斜向柔光自左上扫过石面；商品居右成大体量主角，左上半幅文字组与商品肩线垂直重叠、水平让位，形成左铭右像的非对称石刻网格；细板岩白线横垫文字组底部如同凿刻基线。岩石哑光颗粒与玻璃亮面构成触觉反差，宽柔正面光维持暗部细节与标签金色可读。",
+        "material": "cleft slate stone wall",
+        "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+        "reference_ids": [
+          "diptyque-do-son",
+          "chanel-no5-monochrome",
+          "jo-malone-wild-bluebell"
+        ],
+        "palette": [
+          "#3c4550",
+          "#eef1f4",
+          "#b98a4e"
+        ],
+        "product": [
+          0.68,
+          0.52,
+          0.68
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/msyh.ttc",
+          "title": [
+            0.06,
+            0.28,
+            48
+          ],
+          "logo": [
+            0.06,
+            0.21,
+            24
+          ],
+          "subtitle": [
+            0.06,
+            0.365,
+            24
+          ]
+        },
+        "background_prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects",
+        "line": [
+          0.06,
+          0.425,
+          0.3
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 50.677
+}

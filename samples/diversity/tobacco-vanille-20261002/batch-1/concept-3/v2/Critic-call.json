@@ -1,0 +1,150 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "938c17b89354b461b3e84a086d6a5e670d74a331c31d37ce3a0c8ab2ed13d098"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-lost-cherry.jpg",
+      "sha256": "27049f3f55038b1dbecc838f6f4d3fa59a48fccc63339997c4ffe2d5481c0cae"
+    },
+    {
+      "name": "diptyque-orpheon.jpg",
+      "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "bf93e3b9aa1ee428256a77ed6736d0afa8a14284a57dabf4f52773117444a2a1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "c5b44a76c78252c07f625eab9e891f92f1900f058d36b249f65ae37aa1d4f5a9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-cdd00ed7-befa-90a7-b205-06b50c6c868f",
+      "usage": {
+        "prompt_tokens": 10158,
+        "total_tokens": 12130,
+        "completion_tokens": 1972,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 7436,
+          "text_tokens": 2722
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 947
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-cdd00ed7-befa-90a7-b205-06b50c6c868f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10158,
+    "total_tokens": 12130,
+    "completion_tokens": 1972,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 7436,
+      "text_tokens": 2722
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 947
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 77.4,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 76,
+      "typography": 78,
+      "background": 68,
+      "physical_integration": 82,
+      "reference_alignment": 70,
+      "creative_coherence": 75
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The regenerated field is no longer planks, but two hard vertical groove seams still run the full canvas height at x≈363 and x≈720, passing directly behind the bottle silhouette and through the contact zone visible in the detail crop; the declared concept is a seamless mirror-polished lacquer panel, so these panel joints contradict the material story and slice the hero."
+      },
+      {
+        "type": "typography",
+        "problem": "The serif upgrade landed (Georgia title now spans x235-850, a confident band), but the whole stacked band is dark brown #261E16 sitting on the darkest value zone of the teal lacquer: at the top the background reads near #1d4a4b, so logo (26px) and subtitle (22px) fall below luxury legibility contrast, and the declared cream #efe6d2 voice of the concept is unused in type; the 346px gold rule under a 615px title also leaves the band optically narrow."
+      },
+      {
+        "type": "composition",
+        "problem": "The theater grid still carries a dead zone: subtitle baseline y=239 and rule y≈288 leave ~245px of empty lacquer before the cap at y=533, while only ~187px sits below the base y=1253; references 3-5 interlock type, object and negative space, here the middle void plus the short floating rule weaken the vertical rhythm of the top-dense/bottom-empty concept."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "The contact crop confirms a genuine soft contact shadow hugging the base at offset_y 0 (correct, not floating), yet the backdrop shows no horizontal reflective plane or tonal floor transition beneath the bottle, so the shadowed base reads as resting on an invisible ledge in front of a vertical panel; the bright frontal key on the glass is not echoed by any sheen pool or reflection low in frame."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "References 3-5 each stage a material light event (saturated gloss field, mirrored brass table, smoldering wood with water); this draft keeps an evenly lit teal panel with a single isolated bottle and no supporting light event or reflection, so the retouching and material-drama gap remains despite the cleaner type and smoother field."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless deep teal lacquer panel, mirror-polished glossy surface with one soft broad vertical light gradient brightest at upper center, faint wide sheen streaks, a subtle horizontal reflective plane with soft mirrored glow low in frame, perfectly continuous coat, absolutely no lines, no grooves, no joints, no panels, no planks, no seams, no objects, even broad frontal illumination"
+      },
+      {
+        "path": "title.color",
+        "op": "set",
+        "value": "#efe6d2"
+      },
+      {
+        "path": "subtitle.color",
+        "op": "set",
+        "value": "#efe6d2"
+      },
+      {
+        "path": "logo.color",
+        "op": "set",
+        "value": "#efe6d2"
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 873
+      }
+    ]
+  },
+  "duration_seconds": 44.739
+}

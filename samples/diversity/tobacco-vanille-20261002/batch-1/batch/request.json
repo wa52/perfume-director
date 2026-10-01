@@ -1,0 +1,421 @@
+{
+  "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。",
+  "direction_mode": "dynamic",
+  "directions": [
+    {
+      "name": "粗野混凝土纪念碑",
+      "brief": "冷灰清水混凝土墙面构成建筑式留白，商品居中偏下如纪念碑伫立，文字集中于左上小体量排印，一条细铜线横贯标题下方，形成上轻下重的纪念性网格；宽柔正面光让深色玻璃与冷灰墙面保持雕塑感。",
+      "material": "raw cast concrete",
+      "lighting": "broad soft frontal light with cool diffuse ambient",
+      "id": "concept-1",
+      "signature": "fbfdfb55dc6e1c75b110fcd66f747957fa7c08b592de04293b70aba0824fe68e",
+      "palette": [
+        "#9aa0a4",
+        "#16181a",
+        "#b0762a"
+      ],
+      "reference_ids": [
+        "diptyque-orpheon",
+        "hermes-terre",
+        "prada-paradoxe"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#9aa0a4",
+          "prompt": "Seamless raw cast concrete wall in cool grey, fine formwork seams, one soft horizontal shadow band across upper third, even diffuse illumination, matte mineral texture",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 864,
+          "width": 404,
+          "height": 893
+        },
+        "lighting": "broad soft frontal light with cool diffuse ambient",
+        "palette": [
+          "#9aa0a4",
+          "#16181a",
+          "#b0762a"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 76,
+          "y": 130,
+          "size": 64,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 76,
+          "y": 238,
+          "size": 24,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 76,
+          "y": 65,
+          "size": 30,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 295,
+          "width": 367,
+          "color": "#16181a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "赤陶拱壁叙事",
+      "brief": "日晒赤陶灰泥墙带浅拱形凹壁，商品偏右立于拱心，左侧竖排文字柱形成非对称双栏网格；细线作为左栏底部分隔，暖土色家族与深色玻璃形成温度对比，宽柔正面光保留玻璃高光。",
+      "material": "sun-baked terracotta plaster",
+      "lighting": "broad soft frontal light, warm ambient bounce",
+      "id": "concept-2",
+      "signature": "ff8e75e2b73cc62628d15962d221c4f8e426d7d1019068ab0a5c671de4701a18",
+      "palette": [
+        "#b0562f",
+        "#f6ead9",
+        "#3a2417"
+      ],
+      "reference_ids": [
+        "armani-santal-dansha",
+        "hermes-terre",
+        "jo-malone-wild-bluebell"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#b0562f",
+          "prompt": "Hand-troweled terracotta clay plaster wall with a shallow arched recess centered right, subtle trowel ridges, warm diffuse glow from front, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 680,
+          "y": 835,
+          "width": 430,
+          "height": 950
+        },
+        "lighting": "broad soft frontal light, warm ambient bounce",
+        "palette": [
+          "#b0562f",
+          "#f6ead9",
+          "#3a2417"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 76,
+          "y": 158,
+          "size": 72,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 76,
+          "y": 288,
+          "size": 22,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 76,
+          "y": 86,
+          "size": 28,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 353,
+          "width": 281,
+          "color": "#f6ead9"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "夜漆翠羽",
+      "brief": "深翠玉色漆面背景带垂直柔光渐变与漆层反光，商品居中且体量克制，文字全部收于顶部窄带，构成上密下空的剧院式网格；细金线悬于文字带之下，漆面材质呼应玻璃的深邃光泽。",
+      "material": "polished lacquer panel",
+      "lighting": "broad soft frontal light over deep lacquer sheen",
+      "id": "concept-3",
+      "signature": "0d13f2227c23d556f252c977e79992a38ec76a4def043297d6b6a1533094044c",
+      "palette": [
+        "#0d3b3c",
+        "#efe6d2",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "tom-ford-lost-cherry",
+        "diptyque-orpheon",
+        "armani-santal-dansha"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#0d3b3c",
+          "prompt": "Deep teal lacquered panel with vertical soft gradient, faint polished sheen streaks, smooth glossy depth, even frontal illumination",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 326,
+          "height": 720
+        },
+        "lighting": "broad soft frontal light over deep lacquer sheen",
+        "palette": [
+          "#0d3b3c",
+          "#efe6d2",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 367,
+          "y": 122,
+          "size": 58,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 394,
+          "y": 223,
+          "size": 22,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 432,
+          "y": 65,
+          "size": 26,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 367,
+          "y": 288,
+          "width": 346,
+          "color": "#efe6d2"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "雾蓝纸幕对角",
+      "brief": "粉雾蓝无缝纸幕带一道斜向折痕阴影，商品偏左下，文字占据右上对角，形成对角牵引网格；细线短促置于右上文字组之下，纸质哑光与玻璃亮面构成触觉反差，光线宽柔均匀。",
+      "material": "matte seamless paper sweep",
+      "lighting": "broad soft frontal light, paper-diffused cool tone",
+      "id": "concept-4",
+      "signature": "b2809335a39b7183761f4904fbf9d8c9475eff4b23d2191dc60cb3d0468da1bd",
+      "palette": [
+        "#bfd6de",
+        "#12303f",
+        "#8a5a2b"
+      ],
+      "reference_ids": [
+        "prada-paradoxe",
+        "jo-malone-wild-bluebell",
+        "diptyque-orpheon"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#bfd6de",
+          "prompt": "Powder blue seamless paper sweep with one gentle diagonal crease shadow from upper right, soft matte fiber texture, uniform diffuse light",
+          "revision": 0
+        },
+        "product": {
+          "x": 400,
+          "y": 864,
+          "width": 378,
+          "height": 835
+        },
+        "lighting": "broad soft frontal light, paper-diffused cool tone",
+        "palette": [
+          "#bfd6de",
+          "#12303f",
+          "#8a5a2b"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 605,
+          "y": 144,
+          "size": 46,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 605,
+          "y": 259,
+          "size": 22,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 605,
+          "y": 79,
+          "size": 28,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 605,
+          "y": 324,
+          "width": 324,
+          "color": "#12303f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    }
+  ],
+  "max_rounds_per_direction": 5,
+  "execution_config": {
+    "vision_model": "qwen3.8-max",
+    "vision_options": {
+      "temperature": 0.2,
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "max_completion_tokens": 8192
+    },
+    "vision_timeout_seconds": 240,
+    "vision_attempts": 3,
+    "vision_image_max_edge": 1280,
+    "background_attempts": 2
+  },
+  "engine_sha256": "e4f877bbe0f8d07bfdc14c812717bbc07e883b4126dbad3694aa963a7042e8c8"
+}

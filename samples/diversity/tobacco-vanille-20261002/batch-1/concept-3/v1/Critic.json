@@ -1,0 +1,88 @@
+{
+  "pass": false,
+  "score": 74.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 66,
+    "background": 70,
+    "physical_integration": 80,
+    "reference_alignment": 68,
+    "creative_coherence": 72
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The top text band is set in plain Arial with modest sizes (title 58px, subtitle 22px), while references 3-5 all use elegant high-contrast serif or refined letter-spaced faces; against the luxury lacquer concept the type reads generic and under-scaled, and the subtitle's optical center sits left of the title/logo axis, loosening the stacked band."
+    },
+    {
+      "type": "background",
+      "problem": "The generated backdrop reads as matte painted wood planks with hard vertical groove seams running the full canvas height, including directly behind the bottle and through the contact zone; the declared concept is a polished lacquer panel with soft vertical gradient and sheen, so the seam grid interferes with the hero and contradicts the glossy material story."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop confirms a real soft contact shadow hugging the base at offset_y 0 (correct, not floating), but because the backdrop shows no horizontal support plane or tonal floor transition, the shadowed base reads as resting on an invisible ledge in front of a vertical plank wall; the lighting on the bottle (bright frontal studio key) is not echoed by any gradient or sheen pool in the background."
+    },
+    {
+      "type": "composition",
+      "problem": "The剧院-style top band ends at the gold rule (y≈288) leaving a ~245px empty gap before the cap at y=533, while the bottle base stops at y=1253 with ~187px below; the middle void weakens the vertical rhythm versus references where type, object and negative space interlock, and the decoration rule floats disconnected between subtitle and bottle."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References achieve material drama (glossy red field, mirrored brass table, smoldering wood and water) and rich retouching; this draft keeps a flat evenly-lit plank field and a small isolated bottle with no supporting light event, so the design-quality gap remains despite clean layout."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 66
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless deep teal lacquer surface, mirror-polished vertical panel with soft top-to-bottom light gradient, faint glossy sheen streaks and a subtle horizontal reflective plane low in frame, even broad frontal illumination, no seams, no planks, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ],
+  "reported_score": 74
+}

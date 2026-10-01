@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a faint tonal gradient two percent darker than the paper with fully feathered invisible edges and no line no crease no ridge, uniform soft cool illumination with no highlights and no cast edges, fine matte fiber grain, completely empty scene, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335302687,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

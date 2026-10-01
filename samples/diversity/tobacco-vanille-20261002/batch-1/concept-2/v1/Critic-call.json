@@ -1,0 +1,142 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "aef21e73fb5d115e378a8e488433921b9fa019f1096d71def39a6c3f81e455fc"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "f3de82ed70ae29e51326fd940bb2d92aa73f6c16bbf430ba13d77e6cc26d0f2f"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-2da44e9c-4c26-9b1c-ae38-40f525cbbd1c",
+      "usage": {
+        "prompt_tokens": 7266,
+        "total_tokens": 9239,
+        "completion_tokens": 1973,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5406,
+          "text_tokens": 1860
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 948
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-2da44e9c-4c26-9b1c-ae38-40f525cbbd1c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7266,
+    "total_tokens": 9239,
+    "completion_tokens": 1973,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5406,
+      "text_tokens": 1860
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 948
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 82,
+      "background": 70,
+      "physical_integration": 66,
+      "reference_alignment": 72,
+      "creative_coherence": 74
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [386,1170,974,1420] confirms a real contact shadow: a faint soft dark smear sits exactly at the base line (offset_y 0 is correct, do not move it down). However the shadow is a thin centered sliver narrower than the 428px bottle footprint and at opacity 0.35 it barely reads at poster scale, so the bottle still feels pasted onto the wall. The background renders only continuous vertical plaster texture below y=1310 with no horizontal support plane, no tonal shift and no cast shadow direction, so the eye reads a vertical wall, not a ledge the bottle can rest on."
+      },
+      {
+        "type": "background",
+        "problem": "The declared arched recess is misaligned with the hero: the niche is visible only as a partial arc behind the bottle's right shoulder (roughly x 830-960, y 450-1030) and terminates ~280px above the bottle base at y=1310, so the bottle does not stand in the arch heart as the concept requires; the cropped niche edge also creates a hard tangent line against the bottle's right silhouette. Additionally the plaster value sits near a pale pink-beige instead of the declared sun-baked terracotta #b0562f, weakening the warm-earth-vs-dark-glass temperature contrast and leaving the cream hairline rule at (76,353) at very low contrast."
+      },
+      {
+        "type": "composition",
+        "problem": "The left text column occupies only y=86-353 while the bottle occupies y=360-1310, so the lower ~65% of the left column is empty plaster; the asymmetric two-column grid loses its vertical counterweight and the eye drops from the title into dead space. References (Terre d'Hermès, Armani Privé) keep type and product in continuous dialogue across the frame."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy inside the type column is flat: logo 28px, title 72px, subtitle 22px are all the same dark brown #261E16 in the same roman Times cut with generous gaps, so the column reads as three disconnected lines rather than one locked masthead block; against the pale plaster the dark ink also fights the declared cream #f6ead9 type voice of the concept."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Hand-troweled sun-baked terracotta clay plaster wall in saturated burnt-orange ochre, one shallow vertical arched recess whose interior floor ledge meets a horizontal plaster support plane low in the frame, broad soft frontal daylight with warm ambient bounce, gentle value fall-off toward the base, fine trowel ridges, empty scene, no objects"
+      },
+      {
+        "path": "background.color",
+        "op": "set",
+        "value": "#b0562f"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 16
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 470
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 600
+      }
+    ]
+  },
+  "duration_seconds": 49.23
+}

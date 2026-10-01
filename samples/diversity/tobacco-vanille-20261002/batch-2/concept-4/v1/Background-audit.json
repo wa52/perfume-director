@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834695741,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

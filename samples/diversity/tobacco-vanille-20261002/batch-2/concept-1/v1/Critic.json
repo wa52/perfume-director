@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 74,
+    "background": 78,
+    "physical_integration": 84,
+    "reference_alignment": 72,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The bottom铭牌 band is set in plain Arial with loose, untracked lines, while the Chanel N°5 reference achieves its plaque authority from tight, wide-tracked grotesque capitals. Measured bboxes confirm no overlap (title [151,1152,946,1216], logo [454,1073,603,1093], subtitle [324,1296,569,1318] vs product base 1037), but the hierarchy reads generic: logo 28px, title 86px, subtitle 30px with default spacing leaves the band airy and disconnected from the dense silver-gelatin plate concept."
+    },
+    {
+      "type": "composition",
+      "problem": "The decoration rule at y=1040 sits only 3px below the product base (1037). In the contact detail crop (266,897,815,1147) the crisp dark rule visually merges with the soft contact shadow smudge under the glass, so the bottle appears to rest on a drawn line instead of on the paper; the brief intends this line as a separator above the brand word, needing clear daylight between base, shadow and rule."
+    },
+    {
+      "type": "background",
+      "problem": "The vertical charcoal-to-mineral wash is conceptually correct but executes as a flat neutral grey with a faint cool cast and no visible photographic grain or vignette; against the Chanel reference's rich silver-gelatin gradient the field reads as a generic digital backdrop, and the pale lower half lowers perceived contrast under the dark ink band less than a true paper wash would."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow is present and correctly seated (offset_y 0, blur 10, opacity 0.35; visible as a soft smudge directly under the base in the detail crop), but at 0.35 opacity under a near-black glass base on mid-grey paper it is too timid: the bottle's weight reads lighter than the reference plates, where the contact tone anchors the object."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1090
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1160
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1300
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless matte silver-gelatin photographic paper wash, smooth vertical gradient from deep charcoal grey at top through mid silver to pale mineral grey at bottom, subtle chemical tonal drift, fine visible photographic grain, faint edge vignette, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line"
+    }
+  ],
+  "reported_score": 77
+}

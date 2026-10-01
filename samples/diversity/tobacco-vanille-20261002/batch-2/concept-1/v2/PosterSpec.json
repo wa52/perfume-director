@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 212889834692714,
+  "background": {
+    "color": "#b7bcc0",
+    "prompt": "Seamless matte silver-gelatin photographic paper wash, smooth vertical gradient from deep charcoal grey at top through mid silver to pale mineral grey at bottom, subtle chemical tonal drift, fine visible photographic grain, faint edge vignette, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 605,
+    "width": 391,
+    "height": 864
+  },
+  "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+  "palette": [
+    "#b7bcc0",
+    "#141517",
+    "#8f9399"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 151,
+    "y": 1152,
+    "size": 86,
+    "color": "#141517",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 324,
+    "y": 1296,
+    "size": 30,
+    "color": "#141517",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#141517",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 454,
+    "y": 1073,
+    "size": 28,
+    "color": "#141517",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 12,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 367,
+    "y": 1040,
+    "width": 346,
+    "color": "#141517"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

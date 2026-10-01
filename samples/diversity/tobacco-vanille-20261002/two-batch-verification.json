@@ -1,0 +1,326 @@
+{
+  "jobs": [
+    "77221394a8e74b748df6d10d532bd058",
+    "f2ea908203f44ea788d94b180f327538"
+  ],
+  "same_workflow_inputs": true,
+  "completed_posters": 7,
+  "rendered_versions": 33,
+  "unique_planned_signatures": 7,
+  "unique_selected_image_hashes": 7,
+  "selected_title_fonts": 3,
+  "layouts_per_batch": {
+    "batch-1": [
+      "above"
+    ],
+    "batch-2": [
+      "above",
+      "below",
+      "beside"
+    ]
+  },
+  "type_families_per_batch": {
+    "batch-1": [
+      "serif"
+    ],
+    "batch-2": [
+      "sans",
+      "serif"
+    ]
+  },
+  "statuses": {
+    "NEEDS_REVIEW": 7
+  },
+  "all_previews_match": true,
+  "model_call_count": 63,
+  "non_ok_model_calls": [
+    {
+      "file": "concept-4/v1/Critic-patch-repair-call.json",
+      "status": "ERROR",
+      "returned_model": null,
+      "finish_reason": null,
+      "duration_seconds": 33.434,
+      "usage": null,
+      "attempts": 3
+    }
+  ],
+  "returned_models": [
+    "qwen3.8-max"
+  ],
+  "max_model_call_seconds": 74.151,
+  "rows": [
+    {
+      "batch": "batch-1",
+      "name": "粗野混凝土纪念碑",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 3,
+      "score": 82.6,
+      "versions": 5,
+      "signature": "fbfdfb55dc6e1c75b110fcd66f747957fa7c08b592de04293b70aba0824fe68e",
+      "reference_ids": [
+        "diptyque-orpheon",
+        "hermes-terre",
+        "prada-paradoxe"
+      ],
+      "material": "raw cast concrete",
+      "sha256": "a76b3d7e56b4b380de62eb4ffd1b54c9155738aae06ed7b6831acf0d73109a23",
+      "product": {
+        "x": 540,
+        "y": 864,
+        "width": 404,
+        "height": 893
+      },
+      "actual_height_ratio": 0.6201,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 76,
+        "y": 130,
+        "size": 72,
+        "color": "#16181a",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "background": {
+        "color": "#9aa0a4",
+        "prompt": "Monolithic flat raw cast concrete wall in cool grey, perfectly continuous matte mineral surface with no seams, no joints, no corner and no floor sweep, very subtle broad radial luminance falloff softly brighter behind the center of the plane, even diffuse frontal illumination with cool ambient wrap, empty architectural void",
+        "revision": 2
+      },
+      "selected_layout_relation": "above",
+      "selected_title_family": "serif",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-1",
+      "name": "赤陶拱壁叙事",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 4,
+      "score": 81.7,
+      "versions": 5,
+      "signature": "ff8e75e2b73cc62628d15962d221c4f8e426d7d1019068ab0a5c671de4701a18",
+      "reference_ids": [
+        "armani-santal-dansha",
+        "hermes-terre",
+        "jo-malone-wild-bluebell"
+      ],
+      "material": "sun-baked terracotta plaster",
+      "sha256": "eac8b30ea435646d988a91fe7df7e9143fb09e66dedbce94e99aada2cb1eec28",
+      "product": {
+        "x": 680,
+        "y": 835,
+        "width": 430,
+        "height": 950
+      },
+      "actual_height_ratio": 0.6597,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 76,
+        "y": 158,
+        "size": 72,
+        "color": "#261E16",
+        "font": "C:/Windows/Fonts/times.ttf"
+      },
+      "background": {
+        "color": "#b0562f",
+        "prompt": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre, one wide shallow vertical arched recess centered in the right two thirds of the frame with its opening clearly wider than any object placed before it, recess descending to a horizontal plaster ledge plane whose front edge sits low in the lower sixth of the frame, ledge surface catching soft frontal daylight with gentle value fall-off and faint cast shading beneath anything placed upon it, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects",
+        "revision": 3
+      },
+      "selected_layout_relation": "above",
+      "selected_title_family": "serif",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-1",
+      "name": "夜漆翠羽",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 3,
+      "score": 80.6,
+      "versions": 5,
+      "signature": "0d13f2227c23d556f252c977e79992a38ec76a4def043297d6b6a1533094044c",
+      "reference_ids": [
+        "tom-ford-lost-cherry",
+        "diptyque-orpheon",
+        "armani-santal-dansha"
+      ],
+      "material": "polished lacquer panel",
+      "sha256": "cbe4abca0662196d6841a120335b9b29c2f6d59af1c7604f42576ed390cafe85",
+      "product": {
+        "x": 540,
+        "y": 873,
+        "width": 326,
+        "height": 720
+      },
+      "actual_height_ratio": 0.5,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 235,
+        "y": 122,
+        "size": 66,
+        "color": "#261E16",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "background": {
+        "color": "#0d3b3c",
+        "prompt": "Seamless deep teal lacquer panel, mirror-polished glossy surface with one soft broad vertical light gradient brightest at upper center, faint wide sheen streaks, a subtle horizontal reflective plane with soft mirrored glow low in frame, perfectly continuous coat, absolutely no lines, no grooves, no joints, no panels, no planks, no seams, no objects, even broad frontal illumination",
+        "revision": 2
+      },
+      "selected_layout_relation": "above",
+      "selected_title_family": "serif",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-1",
+      "name": "雾蓝纸幕对角",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 3,
+      "score": 79.6,
+      "versions": 5,
+      "signature": "b2809335a39b7183761f4904fbf9d8c9475eff4b23d2191dc60cb3d0468da1bd",
+      "reference_ids": [
+        "prada-paradoxe",
+        "jo-malone-wild-bluebell",
+        "diptyque-orpheon"
+      ],
+      "material": "matte seamless paper sweep",
+      "sha256": "03d9d3310b4ebd80faee4218920a1a7c1fc9c27ae14bde07d45fa21350587983",
+      "product": {
+        "x": 400,
+        "y": 864,
+        "width": 378,
+        "height": 835
+      },
+      "actual_height_ratio": 0.5799,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 605,
+        "y": 168,
+        "size": 46,
+        "color": "#12303f",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "background": {
+        "color": "#bfd6de",
+        "prompt": "Powder blue matte seamless paper sweep, one very soft broad diagonal fold shadow running corner to corner from upper left to lower right, the fold only a whisper darker than the paper with fully diffused feathered edges and no visible line, plus a faint secondary paper undulation in the lower right, uniform diffuse frontal light, fine matte fiber texture, empty scene",
+        "revision": 2
+      },
+      "selected_layout_relation": "above",
+      "selected_title_family": "serif",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-2",
+      "name": "银盐暗房底铭反网格",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 4,
+      "score": 84.0,
+      "versions": 5,
+      "signature": "6c004cf3db34b2b1aa33072787af8a8b01e2284988c21f719fa1a52881b48192",
+      "reference_ids": [
+        "chanel-no5-monochrome",
+        "diptyque-do-son",
+        "hermes-terre"
+      ],
+      "material": "matte silver-gelatin photographic paper",
+      "sha256": "2406e1e9abb87856e950c487f8e0938d241e1d0eb264d4bdd640f3ee7592d662",
+      "product": {
+        "x": 540,
+        "y": 585,
+        "width": 391,
+        "height": 864
+      },
+      "actual_height_ratio": 0.6,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 151,
+        "y": 1152,
+        "size": 74,
+        "color": "#141517",
+        "font": "C:/Windows/Fonts/msyh.ttc"
+      },
+      "background": {
+        "color": "#b7bcc0",
+        "prompt": "Seamless matte silver-gelatin photographic paper wash, strong vertical gradient from deep warm charcoal grey at top through mid silver to pale warm mineral grey at bottom, heavy chemical tonal drift, clearly visible coarse photographic grain and fiber texture across the whole sheet, pronounced soft edge vignette darkening all four borders, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line",
+        "revision": 3
+      },
+      "selected_layout_relation": "below",
+      "selected_title_family": "sans",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-2",
+      "name": "釉面瓷壁竖向双栏",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 4,
+      "score": 79.4,
+      "versions": 5,
+      "signature": "754bc2d15fe01099ac7b1d32cc7705b8761f06839903bcd34d7d58a13f311468",
+      "reference_ids": [
+        "jo-malone-wild-bluebell",
+        "ysl-libre",
+        "chanel-no5-monochrome"
+      ],
+      "material": "glazed ceramic tile wall",
+      "sha256": "014b0f838062c9d2c52c827ac5598c944f268c77b1d6ffc1d95a7f2b62f830af",
+      "product": {
+        "x": 302,
+        "y": 720,
+        "width": 417,
+        "height": 922
+      },
+      "actual_height_ratio": 0.6403,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 626,
+        "y": 540,
+        "size": 44,
+        "color": "#1c2a2e",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "background": {
+        "color": "#dfe4e2",
+        "prompt": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a very narrow low band hugging the bottom edge, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame, absolutely clean uniform surface with no marks, no specks, no dots, no objects",
+        "revision": 3
+      },
+      "selected_layout_relation": "beside",
+      "selected_title_family": "serif",
+      "review_failures": []
+    },
+    {
+      "batch": "batch-2",
+      "name": "锤铜壁龛上铭牌匾",
+      "status": "NEEDS_REVIEW",
+      "selected_version": 1,
+      "score": 76.9,
+      "versions": 3,
+      "signature": "58fde68e8d2841eb3e887406cb2dbd40716d322338881eab26120752ca325812",
+      "reference_ids": [
+        "tom-ford-lost-cherry",
+        "hermes-terre",
+        "ysl-libre"
+      ],
+      "material": "hand-hammered copper sheet",
+      "sha256": "a038fb5d634a6b42a0468777ad6c8505d6a388fb6ee7b8f4dd249617d8ecc807",
+      "product": {
+        "x": 540,
+        "y": 893,
+        "width": 391,
+        "height": 864
+      },
+      "actual_height_ratio": 0.6,
+      "title": {
+        "text": "TOBACCO VANILLE",
+        "x": 216,
+        "y": 230,
+        "size": 64,
+        "color": "#22140c",
+        "font": "C:/Windows/Fonts/times.ttf"
+      },
+      "background": {
+        "color": "#a4653a",
+        "prompt": "Hand-hammered copper sheet wall, dense dimple texture scattering warm light, subtle vertical tonal falloff toward edges, soft amber glow from front, no objects",
+        "revision": 0
+      },
+      "selected_layout_relation": "above",
+      "selected_title_family": "serif",
+      "review_failures": []
+    }
+  ]
+}

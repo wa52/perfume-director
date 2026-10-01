@@ -1,0 +1,161 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "1dbe977572841afa2d8d4d4fc30e70128906950740b42d976219136bb49d5448"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "6fd0d88c57da71e0556e4f7fa52cce40c35ed111226a8cfb38cf97922606c7e0"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "014b0f838062c9d2c52c827ac5598c944f268c77b1d6ffc1d95a7f2b62f830af"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-d75646ba-cdda-9999-8cf5-124d89fa8673",
+      "usage": {
+        "prompt_tokens": 9020,
+        "total_tokens": 11177,
+        "completion_tokens": 2157,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5501,
+          "text_tokens": 3519
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1132
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d75646ba-cdda-9999-8cf5-124d89fa8673",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9020,
+    "total_tokens": 11177,
+    "completion_tokens": 2157,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5501,
+      "text_tokens": 3519
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1132
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 79.6,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 78,
+      "background": 74,
+      "physical_integration": 80,
+      "reference_alignment": 77,
+      "creative_coherence": 83
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The stray render speck survives a second regeneration: in the current poster a ~2-3px dark dot sits at approximately (540,390), in the empty tile between the bottle neck and the logo line (logo band y452-470), reading as a print defect on an otherwise pristine釉面; the executed prompt's 'zero blemishes, zero particles, zero dots' clause has now failed twice, so the tile must be regenerated with even stronger pristine-surface language."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [14,1041,589,1291] confirms the shadow is seated (offset_y 0, correctly kept) and the softened opacity 0.62 / blur 6 reads more natural than last round's tight band, but the occlusion still spans only crop-x ~170-500 (poster x ~184-514) of the 415px base footprint (product_bbox x94-509): the left ~90px of the base corner rests on clean bright tile with no occlusion, so that corner still hints at hover. Widen footprint coverage; do not change offset_y."
+      },
+      {
+        "type": "composition",
+        "problem": "The lower band is lighter than last version (luminous glow line at y~1195-1215 plus pale front face instead of a dark strip), but mass still stacks in the upper two thirds: the text column ends at subtitle base y640 leaving the right column (x578-1080) empty for 800px, and the front-face plane y~1215-1370 plus the grey band y~1370-1440 remain dead weight under the bottle; references 4-5 anchor the base with a full-width wordmark or lower-frame element, which this dual-column grid still lacks."
+      },
+      {
+        "type": "typography",
+        "problem": "The last typography patch group was REJECTED by the renderer, so the column is unchanged: logo 26px (y452-470), title 44px (y540-570), subtitle 26px (y622-640). Against a 922px hero the title ratio is ~0.048, optically timid next to references 4-5's bold wordmarks, and the column never extends into the lower-right quadrant, so the right栏 lacks the editorial weight the concept promises."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a very narrow low band hugging the bottom edge with a soft luminous cool-white glow instead of a dark strip, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame; surface absolutely immaculate and mirror-clean: no specks, no flecks, no grains, no pinholes, no stray marks anywhere, perfectly uniform glaze, no objects"
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 10
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.55
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 48
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 544
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 28
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 450
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 27
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 630
+      }
+    ]
+  },
+  "duration_seconds": 47.462
+}

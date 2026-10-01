@@ -1,0 +1,25 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 585
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 78
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 9
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless matte silver-gelatin photographic paper wash, smooth vertical gradient from deep charcoal grey at top through mid silver to pale warm mineral grey at bottom, pronounced chemical tonal drift, clearly visible fine photographic grain, soft edge vignette, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-52bf7435-8cbb-9afd-a716-4f8ec38735c5",
+      "usage": {
+        "prompt_tokens": 1465,
+        "total_tokens": 1680,
+        "completion_tokens": 215,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "image_tokens": 1211,
+          "text_tokens": 254
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 114,
+          "text_tokens": 100
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-52bf7435-8cbb-9afd-a716-4f8ec38735c5",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1465,
+    "total_tokens": 1680,
+    "completion_tokens": 215,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "image_tokens": 1211,
+      "text_tokens": 254
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "text_tokens": 100
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "TOBACCO VANILLE",
+    "logo": "TOM FORD",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "Label visibly reads brand line 'TOM FORD', product-name line 'TOBACCO VANILLE', and concentration 'EAU DE PARFUM' plus '50 ML'; title copies only the product-name line, subtitle uses the legible concentration, price left empty per user prohibition on price/promo/volume claims."
+  },
+  "duration_seconds": 7.855
+}

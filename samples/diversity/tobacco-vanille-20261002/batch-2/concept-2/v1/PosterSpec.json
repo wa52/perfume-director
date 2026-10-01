@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 212889834693723,
+  "background": {
+    "color": "#dfe4e2",
+    "prompt": "Large-format glazed ceramic tile wall in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen, uniform diffuse light, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 302,
+    "y": 720,
+    "width": 417,
+    "height": 922
+  },
+  "lighting": "broad soft frontal light with cool ceramic bounce",
+  "palette": [
+    "#dfe4e2",
+    "#1c2a2e",
+    "#2e6b66"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 626,
+    "y": 518,
+    "size": 43,
+    "color": "#1c2a2e",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 626,
+    "y": 648,
+    "size": 26,
+    "color": "#1c2a2e",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1c2a2e",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 626,
+    "y": 418,
+    "size": 26,
+    "color": "#1c2a2e",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 578,
+    "y": 389,
+    "width": 2,
+    "color": "#1c2a2e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

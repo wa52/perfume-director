@@ -7,6 +7,14 @@ param(
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $runtimeRoot = Join-Path $projectRoot 'runtime'
+$taskConfigPath = Join-Path $projectRoot 'config.local.json'
+if (Test-Path -LiteralPath $taskConfigPath) {
+    $taskKeyName = (Get-Content -LiteralPath $taskConfigPath -Raw | ConvertFrom-Json).api_key_env
+    if ($taskKeyName -and ![Environment]::GetEnvironmentVariable($taskKeyName, 'Process')) {
+        $taskSavedKey = [Environment]::GetEnvironmentVariable($taskKeyName, 'User')
+        if ($taskSavedKey) { [Environment]::SetEnvironmentVariable($taskKeyName, $taskSavedKey, 'Process') }
+    }
+}
 if ($Restart -and (Test-Path -LiteralPath (Join-Path $runtimeRoot 'comfy.pid'))) {
     $taskPid = [int](Get-Content -LiteralPath (Join-Path $runtimeRoot 'comfy.pid'))
     $taskProcess = Get-CimInstance Win32_Process -Filter "ProcessId = $taskPid"
@@ -50,6 +58,7 @@ Copy-Item -LiteralPath (Join-Path $projectRoot 'poster.py') -Destination (Join-P
 Copy-Item -LiteralPath (Join-Path $projectRoot 'reference_store.py') -Destination (Join-Path $nodeRoot 'reference_store.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'check_background.py') -Destination (Join-Path $nodeRoot 'check_background.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'quality.py') -Destination (Join-Path $nodeRoot 'quality.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'concepts.py') -Destination (Join-Path $nodeRoot 'concepts.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\jobs.py') -Destination (Join-Path $nodeRoot 'jobs.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\web') -Destination $nodeRoot -Recurse -Force
 @{project_root = $projectRoot} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $nodeRoot 'project.json') -Encoding utf8

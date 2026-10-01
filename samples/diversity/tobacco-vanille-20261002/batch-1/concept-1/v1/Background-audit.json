@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless raw cast concrete wall in cool grey, fine formwork seams, one soft horizontal shadow band across upper third, even diffuse illumination, matte mineral texture, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335299657,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

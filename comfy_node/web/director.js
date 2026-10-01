@@ -1,7 +1,7 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 
-const stages = { QUEUED: "准备中", DIRECTOR: "Director 正在看商品与参考", RENDER: "ComfyUI 正在渲染", CRITIC: "Critic 正在审阅", DIRECTION_FINISHED: "一个方向已完成", FINISHED: "完成", FAILED: "已停止" };
+const stages = { QUEUED: "准备中", CONCEPTS: "艺术总监正在探索四个新概念", DIRECTOR: "Director 正在准备独立方案", RENDER: "ComfyUI 正在渲染", CRITIC: "Critic 正在审阅", DIRECTION_FINISHED: "一个方向已完成", FINISHED: "完成", FAILED: "已停止" };
 const statusLabels = {RUNNING:"生成中", COMPLETED:"四方向已完成，待选稿", PARTIAL:"部分方向未完成", PASS:"模型通过", NEEDS_REVIEW:"待人工确认", ERROR:"失败"};
 const terminal = new Set(["PASS", "NEEDS_REVIEW", "ERROR", "COMPLETED", "PARTIAL"]);
 
@@ -15,7 +15,7 @@ app.registerExtension({
             const panel = document.createElement("div");
             panel.style.cssText = "padding:12px;box-sizing:border-box;color:var(--input-text,#eee);background:var(--comfy-input-bg,#252525);font:13px sans-serif;overflow:auto;height:100%;";
             const notice = document.createElement("div");
-            notice.textContent = "每次生成 4 种独立风格 · 自动评审与修正 · 未达标保留最佳版本供确认";
+            notice.textContent = "每次探索 4 个新概念 · 自由构图与材质 · 自动评审，未达标保留最佳版本";
             notice.style.cssText = "opacity:.7;line-height:1.6;margin-bottom:10px";
             const status = document.createElement("div");
             status.textContent = "上传透明 PNG，连接 IMAGE 与 MASK，填写 brief 后点击运行。";

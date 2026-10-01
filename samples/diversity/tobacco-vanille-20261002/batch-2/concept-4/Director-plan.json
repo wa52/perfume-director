@@ -1,0 +1,99 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\c19f46f91c4f\\Concepts-call.json",
+  "creative_direction": {
+    "name": "板岩斜光左铭右像",
+    "brief": "深蓝灰板岩壁带天然劈理纹，一道斜向柔光自左上扫过石面；商品居右成大体量主角，左上半幅文字组与商品肩线垂直重叠、水平让位，形成左铭右像的非对称石刻网格；细板岩白线横垫文字组底部如同凿刻基线。岩石哑光颗粒与玻璃亮面构成触觉反差，宽柔正面光维持暗部细节与标签金色可读。",
+    "material": "cleft slate stone wall",
+    "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+    "palette": [
+      "#3c4550",
+      "#eef1f4",
+      "#b98a4e"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 212889834695741,
+    "background": {
+      "color": "#3c4550",
+      "prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 749,
+      "width": 443,
+      "height": 979
+    },
+    "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+    "palette": [
+      "#3c4550",
+      "#eef1f4",
+      "#b98a4e"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 65,
+      "y": 403,
+      "size": 46,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 65,
+      "y": 526,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 65,
+      "y": 302,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 65,
+      "y": 612,
+      "width": 324,
+      "color": "#eef1f4"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  }
+}

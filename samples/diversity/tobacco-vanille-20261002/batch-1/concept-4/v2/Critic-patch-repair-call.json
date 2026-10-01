@@ -1,0 +1,134 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "cb4dd4d4063a03c4e8e39c3c11300bb73d23ebbcca21d1e86cc739cc35ea85e1"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "diptyque-orpheon.jpg",
+      "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46"
+    },
+    {
+      "name": "prada-paradoxe.jpg",
+      "sha256": "28b7ab06597a5146399cddb8909f9b1245d5c93f11da4dba073f13f220cddf47"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-7f8721da-3f8e-9767-9b93-6dcbb6591fd5",
+      "usage": {
+        "prompt_tokens": 7486,
+        "total_tokens": 8915,
+        "completion_tokens": 1429,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5816,
+          "text_tokens": 1670
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 404
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7f8721da-3f8e-9767-9b93-6dcbb6591fd5",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7486,
+    "total_tokens": 8915,
+    "completion_tokens": 1429,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5816,
+      "text_tokens": 1670
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 404
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Powder blue matte seamless paper sweep, one very soft broad diagonal fold shadow running corner to corner from upper left to lower right, the fold only a whisper darker than the paper with fully diffused feathered edges and no visible line, plus a faint secondary paper undulation in the lower right, uniform diffuse frontal light, fine matte fiber texture, empty scene"
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 48
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "decoration.x",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 158
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 296
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.55
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 18
+      }
+    ]
+  },
+  "duration_seconds": 45.789
+}

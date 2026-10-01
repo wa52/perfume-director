@@ -1,0 +1,137 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "2406e1e9abb87856e950c487f8e0938d241e1d0eb264d4bdd640f3ee7592d662"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "9067f5265b3173191d5a14c2095f235cf56af58521873c700ee3ac9db109e311"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "87c5da9341d8e9d551b30c819b658870d7bdd9c8a87e7a4293c11be7e117dbd8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-61fc8ebf-f0f8-9627-9123-cd0b0ac56c16",
+      "usage": {
+        "prompt_tokens": 8989,
+        "total_tokens": 10839,
+        "completion_tokens": 1850,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5991,
+          "text_tokens": 2998
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 825
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-61fc8ebf-f0f8-9627-9123-cd0b0ac56c16",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8989,
+    "total_tokens": 10839,
+    "completion_tokens": 1850,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5991,
+      "text_tokens": 2998
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 825
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 83.4,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 85,
+      "typography": 78,
+      "background": 82,
+      "physical_integration": 88,
+      "reference_alignment": 78,
+      "creative_coherence": 85
+    },
+    "problems": [
+      {
+        "type": "typography",
+        "problem": "The msyh swap did execute (title bbox tightened from the previous 721px-wide line to [151,1152,822,1210] at 74px, and the glyphs in image 1 show YaHei's flatter9 terminals rather than Arial's), but the plaque still lacks the tracked-capital discipline of the Chanel plate: 'TOBACCO VANILLE' sits at default letter spacing, and the logo 'TOM FORD' [454,1073,604,1094] and subtitle [324,1296,565,1319] keep loose default bearings. Since no patch field exposes tracking, the available lever is size/position contrast: the logo cap height (~21px) versus subtitle (~23px) is nearly monotone, so the铭牌 band's three steps still read small-small-large instead of the reference's crisp micro/macro ladder."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Against the Chanel plate's full-width authority, the silver rule (decoration x=367, width=346, visible in image 6 as a short line under the bottle) spans less than half the 671px title line, so the plaque band reads as a floating fragment rather than a ruled band; the rule cannot be patched (unsupported field), so the band's width authority must come from widening the title/subtitle footprint instead."
+      },
+      {
+        "type": "background",
+        "problem": "The revision-3 wash now shows real fiber mottling in the lower third and a faint corner vignette (image 1 bottom corners measure visibly darker than mid-bottom), an improvement over image 7's flatter sheet; however the promised 'deep warm charcoal' top still renders as a cool grey-green and the bottom stays cream-neutral rather than warm mineral grey, so the chemical drift reads cooler than the concept palette's warm silver and slightly fights the warm gold label."
+      }
+    ],
+    "changes": [
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 80
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 121
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 24
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless matte silver-gelatin photographic paper wash, strong vertical gradient from deep warm charcoal brown-grey at top through neutral mid silver to pale warm mineral grey at bottom, heavy chemical tonal drift with warm undertone, clearly visible coarse photographic grain and fiber texture across the whole sheet, pronounced soft edge vignette darkening all four borders, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line"
+      }
+    ]
+  },
+  "duration_seconds": 51.533
+}

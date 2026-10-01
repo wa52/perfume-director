@@ -1,0 +1,61 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "max_tokens": 16384,
+    "temperature": 0.8
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "byredo-desert-dawn.jpg",
+      "sha256": "22131b0b49cac3fc444481356aefbf3324e7f34c850cfbfb86f2f1973453ef8d"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "armani-cuir-nu.jpg",
+      "sha256": "50ea3d3fdd69810c2a133e3728d2f3ece35d5f26de991bef3549d509f563a1e3"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 3,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    }
+  ],
+  "status": "ERROR",
+  "error_type": "RemoteDisconnected",
+  "duration_seconds": 535.061
+}

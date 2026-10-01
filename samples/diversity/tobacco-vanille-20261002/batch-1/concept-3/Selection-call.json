@@ -1,0 +1,100 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-lost-cherry.jpg",
+      "sha256": "27049f3f55038b1dbecc838f6f4d3fa59a48fccc63339997c4ffe2d5481c0cae"
+    },
+    {
+      "name": "diptyque-orpheon.jpg",
+      "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "c5b44a76c78252c07f625eab9e891f92f1900f058d36b249f65ae37aa1d4f5a9"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "938c17b89354b461b3e84a086d6a5e670d74a331c31d37ce3a0c8ab2ed13d098"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "cbe4abca0662196d6841a120335b9b29c2f6d59af1c7604f42576ed390cafe85"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "24d381a458d1f48dd9ed7d9dc93bad20355622d83cee581c7a80ad3fbc15fc61"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "943229a6bda24e2091f8cb768abc5684c13ff172f17c701934e6384b84368e2b"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-2bf7f31f-b5d9-9f16-a321-fccc68fa6b89",
+      "usage": {
+        "prompt_tokens": 11118,
+        "total_tokens": 12485,
+        "completion_tokens": 1367,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 10560,
+          "text_tokens": 558
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 342
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-2bf7f31f-b5d9-9f16-a321-fccc68fa6b89",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 11118,
+    "total_tokens": 12485,
+    "completion_tokens": 1367,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 10560,
+      "text_tokens": 558
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 342
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 3,
+    "evidence": "Version 3 (image 7) best fulfills the '夜漆翠羽' concept: a single seamless polished lacquer panel in deep jade with a broad soft frontal glow descending from the top band and genuine lacquer-layer sheen at the panel edges; the bottle is centered, restrained in scale (roughly mid-frame mass with base well inside the安全 bounds), and sits with a soft convincing contact shadow rather than floating; all typography is confined to the top narrow band in a coherent serif hierarchy with the fine gold rule suspended beneath it, echoing the gold plaque. Compared with version 1's flat painted-plank seams and sans-serif type, version 2's stray vertical seams cutting through the headline band and weak grounding, version 4's near-identical but slightly looser bottle-to-band balance with a faintly muddier sheen, and version 5's hard horizontal panel junction behind the bottle that reads as a raised support edge with the packshot floating in front of it, version 3 is the cleanest finished set with the most controlled material and lighting.",
+    "remaining_problems": [
+      "Contact shadow under the bottle is very subtle; the packshot still reads slightly adhered to the lacquer rather than weighted onto it.",
+      "The top light bloom slightly washes the lacquer depth near the headline band, softening the intended deep-jade saturation.",
+      "Gold rule and serif type are cream-dark rather than the richer gold accent of the palette; the gold note survives only on the bottle plaque."
+    ]
+  },
+  "duration_seconds": 39.082
+}

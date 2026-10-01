@@ -1,0 +1,99 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "6ad7b3002eeaa99cc9c53bc3d69a21af2e401ad6937899ff9910260cd60ef840"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-a587581a-7f50-9ead-8a15-e7b6e026e5bc",
+      "usage": {
+        "prompt_tokens": 6201,
+        "total_tokens": 7388,
+        "completion_tokens": 1187,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 4367,
+          "text_tokens": 1834
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 162
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-a587581a-7f50-9ead-8a15-e7b6e026e5bc",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6201,
+    "total_tokens": 7388,
+    "completion_tokens": 1187,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 4367,
+      "text_tokens": 1834
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 162
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 585
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 78
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 9
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless matte silver-gelatin photographic paper wash, smooth vertical gradient from deep charcoal grey at top through mid silver to pale warm mineral grey at bottom, pronounced chemical tonal drift, clearly visible fine photographic grain, soft edge vignette, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line"
+      }
+    ]
+  },
+  "duration_seconds": 29.085
+}

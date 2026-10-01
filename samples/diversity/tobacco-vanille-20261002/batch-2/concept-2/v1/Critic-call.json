@@ -1,0 +1,156 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "00ef46b1e8ce60963f761bea45864a9c6aa9aa77e6c3918dae6b7faa6acb5a64"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "0ea0565d50493431a71b59aad5cc16a5f90917a7bd0c6f5078eba44eff11cc6c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-3a6894f9-3701-995d-871e-92c115ab362a",
+      "usage": {
+        "prompt_tokens": 6313,
+        "total_tokens": 8295,
+        "completion_tokens": 1982,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 4299,
+          "text_tokens": 2014
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 957
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-3a6894f9-3701-995d-871e-92c115ab362a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6313,
+    "total_tokens": 8295,
+    "completion_tokens": 1982,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 4299,
+      "text_tokens": 2014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 957
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 74,
+      "background": 72,
+      "physical_integration": 68,
+      "reference_alignment": 72,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [14,1041,589,1291] confirms a shadow IS present at the base (offset_y 0 is correct, do not move it), but it reads as a narrow grey smudge spanning only the middle ~60% of the 415px base width and sitting a few pixels below the base edge line, so the bottle's corners appear to hover; the shadow must span the full base footprint and tighten to the base line."
+      },
+      {
+        "type": "background",
+        "problem": "The declared backdrop is a vertical glazed tile WALL (frontal grout cross at x~540/y~710 with no perspective convergence), yet the bottle carries a floor-style contact shadow; with no horizontal support plane or tonal floor band, the grounded shadow contradicts the wall reading and the bottle looks pasted onto a wall plane."
+      },
+      {
+        "type": "background",
+        "problem": "A stray dark speck artifact sits at approximately (580,390) on the tile, immediately left of the TOM FORD logo and colliding with the intended 2px ceramic spine line at x=578; it reads as a render defect, not as the designed bookspine rule."
+      },
+      {
+        "type": "typography",
+        "problem": "The right text column is optically loose versus the references' locked grids: logo (418-436), title (518-548) and subtitle (648-666) leave ~82px and ~100px uneven gaps, the 43px title is small against a 922px hero (ratio ~0.047), and the column floats in empty tile with no anchor, so hierarchy reads timid rather than editorial."
+      },
+      {
+        "type": "composition",
+        "problem": "The bottom ~18% of canvas (y 1181-1440) is dead empty tile under the bottle while the text column stops at y=666, leaving the lower-right quadrant vacant; the two-column grid is not vertically balanced the way the reference layouts distribute weight across the frame."
+      }
+    ],
+    "changes": [
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 7
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface at the bottom third into a seamless vertical wall above, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame, pristine clean surface, no objects"
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 52
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 668
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 452
+      }
+    ]
+  },
+  "duration_seconds": 47.825
+}

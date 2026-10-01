@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 142344335301675,
+  "background": {
+    "color": "#0d3b3c",
+    "prompt": "Seamless deep teal lacquer panel, mirror-polished glossy surface with one soft broad vertical light gradient brightest at upper center, faint wide sheen streaks, a subtle horizontal reflective plane with soft mirrored glow low in frame, perfectly continuous coat, absolutely no lines, no grooves, no joints, no panels, no planks, no seams, no objects, even broad frontal illumination",
+    "revision": 2
+  },
+  "product": {
+    "x": 540,
+    "y": 843,
+    "width": 326,
+    "height": 720
+  },
+  "lighting": "broad soft frontal light over deep lacquer sheen",
+  "palette": [
+    "#0d3b3c",
+    "#efe6d2",
+    "#c9a24b"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 235,
+    "y": 122,
+    "size": 66,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 235,
+    "y": 223,
+    "size": 26,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#efe6d2",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 235,
+    "y": 65,
+    "size": 26,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 367,
+    "y": 288,
+    "width": 346,
+    "color": "#efe6d2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

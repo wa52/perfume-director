@@ -1,0 +1,429 @@
+{
+  "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。",
+  "direction_mode": "dynamic",
+  "directions": [
+    {
+      "name": "银盐暗房底铭反网格",
+      "brief": "借鉴历史黑白广告的秩序：银盐相纸自顶部炭灰向下渐晕至矿物浅灰，商品居于上 mid 幅如暗房唯一主体，全部文字沉入底部宽铭牌带，品牌字最小置上、题名最大居中、香型字垫底，构成上像下铭的反网格；一条细银线横于品牌字上方作分隔。哑光银盐纸面与深色玻璃镜面高光形成材质对话，宽柔正面光保留玻璃体积与标签可读性。",
+      "material": "matte silver-gelatin photographic paper",
+      "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+      "id": "concept-1",
+      "signature": "6c004cf3db34b2b1aa33072787af8a8b01e2284988c21f719fa1a52881b48192",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#b7bcc0",
+        "#141517",
+        "#8f9399"
+      ],
+      "reference_ids": [
+        "chanel-no5-monochrome",
+        "diptyque-do-son",
+        "hermes-terre"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#b7bcc0",
+          "prompt": "Seamless matte silver-gelatin paper wash, smooth vertical gradient from charcoal grey at top to pale mineral grey at bottom, fine photographic grain, even diffuse illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 605,
+          "width": 391,
+          "height": 864
+        },
+        "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+        "palette": [
+          "#b7bcc0",
+          "#141517",
+          "#8f9399"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 151,
+          "y": 1152,
+          "size": 86,
+          "color": "#141517",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 324,
+          "y": 1296,
+          "size": 30,
+          "color": "#141517",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#141517",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 454,
+          "y": 1073,
+          "size": 28,
+          "color": "#141517",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 367,
+          "y": 1040,
+          "width": 346,
+          "color": "#141517"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "釉面瓷壁竖向双栏",
+      "brief": "冷白釉面瓷板墙带发丝釉缝与一道垂直凹槽；商品靠左成主栏，右侧整条文字柱与商品肩部垂直重叠却水平让位，形成双栏编辑网格；细瓷青竖线如书脊立于两栏之间。釉面冷 satin 反光呼应玻璃硬高光，宽柔正面光避免瓷面眩光，深色玻璃在冷白壁上轮廓清晰。",
+      "material": "glazed ceramic tile wall",
+      "lighting": "broad soft frontal light with cool ceramic bounce",
+      "id": "concept-2",
+      "signature": "754bc2d15fe01099ac7b1d32cc7705b8761f06839903bcd34d7d58a13f311468",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#dfe4e2",
+        "#1c2a2e",
+        "#2e6b66"
+      ],
+      "reference_ids": [
+        "jo-malone-wild-bluebell",
+        "ysl-libre",
+        "chanel-no5-monochrome"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#dfe4e2",
+          "prompt": "Large-format glazed ceramic tile wall in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen, uniform diffuse light, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 302,
+          "y": 720,
+          "width": 417,
+          "height": 922
+        },
+        "lighting": "broad soft frontal light with cool ceramic bounce",
+        "palette": [
+          "#dfe4e2",
+          "#1c2a2e",
+          "#2e6b66"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 626,
+          "y": 518,
+          "size": 43,
+          "color": "#1c2a2e",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 626,
+          "y": 648,
+          "size": 26,
+          "color": "#1c2a2e",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#1c2a2e",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 626,
+          "y": 418,
+          "size": 26,
+          "color": "#1c2a2e",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 578,
+          "y": 389,
+          "width": 2,
+          "color": "#1c2a2e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "锤铜壁龛上铭牌匾",
+      "brief": "暖调锤纹铜板以手工凹痕漫反射碎光；商品沉于下半幅如壁龛供奉物，上半幅留出完整铭牌带：品牌字、题名、香型字依次居中排印，题名最大统领画面，构成上铭下像的牌匾网格；细铜线横垫于铭牌带之下如同刻线。锤铜碎光与玻璃整面高光互为粗细对比，宽柔正面光压制金属火气。",
+      "material": "hand-hammered copper sheet",
+      "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+      "id": "concept-3",
+      "signature": "58fde68e8d2841eb3e887406cb2dbd40716d322338881eab26120752ca325812",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#a4653a",
+        "#22140c",
+        "#e8d3ae"
+      ],
+      "reference_ids": [
+        "tom-ford-lost-cherry",
+        "hermes-terre",
+        "ysl-libre"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#a4653a",
+          "prompt": "Hand-hammered copper sheet wall, dense dimple texture scattering warm light, subtle vertical tonal falloff toward edges, soft amber glow from front, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 391,
+          "height": 864
+        },
+        "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+        "palette": [
+          "#a4653a",
+          "#22140c",
+          "#e8d3ae"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 216,
+          "y": 230,
+          "size": 64,
+          "color": "#22140c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 335,
+          "y": 360,
+          "size": 26,
+          "color": "#22140c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#22140c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 443,
+          "y": 130,
+          "size": 26,
+          "color": "#22140c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 367,
+          "y": 425,
+          "width": 346,
+          "color": "#22140c"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    },
+    {
+      "name": "板岩斜光左铭右像",
+      "brief": "深蓝灰板岩壁带天然劈理纹，一道斜向柔光自左上扫过石面；商品居右成大体量主角，左上半幅文字组与商品肩线垂直重叠、水平让位，形成左铭右像的非对称石刻网格；细板岩白线横垫文字组底部如同凿刻基线。岩石哑光颗粒与玻璃亮面构成触觉反差，宽柔正面光维持暗部细节与标签金色可读。",
+      "material": "cleft slate stone wall",
+      "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+      "id": "concept-4",
+      "signature": "13b99d56b0bd099ddbf766a0025a342a910a184970dd84e7573f463459a8ef69",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#3c4550",
+        "#eef1f4",
+        "#b98a4e"
+      ],
+      "reference_ids": [
+        "diptyque-do-son",
+        "chanel-no5-monochrome",
+        "jo-malone-wild-bluebell"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#3c4550",
+          "prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 734,
+          "y": 749,
+          "width": 443,
+          "height": 979
+        },
+        "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+        "palette": [
+          "#3c4550",
+          "#eef1f4",
+          "#b98a4e"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 65,
+          "y": 403,
+          "size": 46,
+          "color": "#eef1f4",
+          "font": "C:/Windows/Fonts/msyh.ttc"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 65,
+          "y": 526,
+          "size": 24,
+          "color": "#eef1f4",
+          "font": "C:/Windows/Fonts/msyh.ttc"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#eef1f4",
+          "font": "C:/Windows/Fonts/msyh.ttc"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 65,
+          "y": 302,
+          "size": 24,
+          "color": "#eef1f4",
+          "font": "C:/Windows/Fonts/msyh.ttc"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 65,
+          "y": 612,
+          "width": 324,
+          "color": "#eef1f4"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      }
+    }
+  ],
+  "max_rounds_per_direction": 5,
+  "execution_config": {
+    "vision_model": "qwen3.8-max",
+    "vision_options": {
+      "temperature": 0.2,
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "max_completion_tokens": 8192
+    },
+    "vision_timeout_seconds": 240,
+    "vision_attempts": 3,
+    "vision_image_max_edge": 1280,
+    "background_attempts": 2
+  },
+  "engine_sha256": "1eb8e448c4e9b338f49b145a3f94b334c5184c441e04f20c60dcfa32ed4f522c"
+}

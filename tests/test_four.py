@@ -20,7 +20,7 @@ class FourDirectionsTests(unittest.TestCase):
                 poster.write(folder/'result.json', {'status': 'NEEDS_REVIEW', 'selected': {'version': 1, 'score': 75, 'poster': 'v1/poster.png'}, 'versions': []})
                 return folder
             with patch.object(poster, 'ROOT', root), patch.object(poster, 'run', side_effect=child), patch.object(poster,'resolve_copy',return_value={'title':'actual name','logo':'actual brand','subtitle':'','price':''}):
-                result = poster.read(poster.run_four({'vision_model': 'test'}, 'product', 'approved copy', progress=events.append)/'result.json')
+                result = poster.read(poster.run_four({'vision_model': 'test','direction_mode':'curated'}, 'product', 'approved copy', progress=events.append)/'result.json')
             return result, calls, events
 
     def test_four_independent_briefs_seeds_and_results(self):

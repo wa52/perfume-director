@@ -1,0 +1,189 @@
+[
+  {
+    "id": "tom-ford-figue",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.hanglungmalls.com/whats-happening/6979c26aac741e0002ea91b4?mall=fashion-walk",
+    "image": "references/luxury/tom-ford-figue.jpg",
+    "selection_reason": "瓶身与无花果切面共用紫色体系，用食材建立香调联想，信息克制。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.29,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "backlight_and_rim_light",
+      "color": [
+        "purple",
+        "burgundy",
+        "green"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "同色背景",
+        "香调道具",
+        "底部品牌"
+      ],
+      "perfume_suitability": 89,
+      "caveat": "无花果是香调道具，仅参考道具与颜色关系。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-peony",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+    "image": "references/luxury/jo-malone-peony.jpg",
+    "selection_reason": "浅色留白、大瓶身与单侧牡丹构成轻盈的高级花香视觉。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.38,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_diffused_light",
+      "color": [
+        "warm_white",
+        "pink",
+        "silver"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "左侧商品",
+        "右侧花卉",
+        "顶部小品牌"
+      ],
+      "perfume_suitability": 92,
+      "caveat": "花朵不能遮挡商品标签。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "byredo-desert-dawn",
+    "brand": "Byredo",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.ellechina.com/beauty/beauty-news/a62271428/byredo-desertdawnpoxiaozhijixiangshui/",
+    "image": "references/luxury/byredo-desert-dawn.jpg",
+    "selection_reason": "岩石支撑小商品，黄昏暖色与顶部大字形成雕塑感和明确品牌层级。",
+    "analysis": {
+      "composition": "vertical_centered",
+      "subject_ratio": 0.045,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_side_light",
+      "color": [
+        "brown",
+        "amber",
+        "black"
+      ],
+      "typography": "display_sans",
+      "information_density": "low",
+      "characteristics": [
+        "自然石材底座",
+        "暖色渐变",
+        "大品牌小商品"
+      ],
+      "perfume_suitability": 91,
+      "caveat": "参考底座和光线，第一版可提高商品占比。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "hermes-terre",
+    "brand": "Hermes",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+    "image": "references/luxury/hermes-terre.jpg",
+    "selection_reason": "大地橙与天蓝互补，人物暗部和商品亮部形成分离，右侧信息克制。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.025,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_daylight",
+      "color": [
+        "orange",
+        "sky_blue",
+        "black"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "橙蓝对比",
+        "烟尘景深",
+        "右侧商品"
+      ],
+      "perfume_suitability": 75,
+      "caveat": "人物和动态烟尘暂不执行，参考色彩与主次。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "armani-cuir-nu",
+    "brand": "Armani",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.armani-beauty.ca/en_CA/armani-prive/les-mille-et-une-nuits/armani-prive-cuir-nu/ww-01017-arm.html",
+    "image": "references/luxury/armani-cuir-nu.jpg",
+    "selection_reason": "商品静物与人物分屏，在暖米色体系内用几何皮革强调材质。",
+    "analysis": {
+      "composition": "split_layout",
+      "subject_ratio": 0.09,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "directional_studio_light",
+      "color": [
+        "beige",
+        "brown",
+        "black",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "分屏结构",
+        "几何材质",
+        "暖中性色"
+      ],
+      "perfume_suitability": 80,
+      "caveat": "第一版不执行人物分屏，可提取左侧静物构图和材质方向。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-do-son",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.womenshealthmag.com/tw/beauty/spa/g39508466/diptyque-x-tim-walker2022/",
+    "image": "references/luxury/diptyque-do-son.jpg",
+    "selection_reason": "建筑、蝴蝶与香水的尺度变化形成超现实舞台，背景仍保留单纯蓝色。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.035,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "blue",
+        "black",
+        "orange"
+      ],
+      "typography": "experimental_serif",
+      "information_density": "low",
+      "characteristics": [
+        "超现实尺度",
+        "建筑框景",
+        "拆分标题"
+      ],
+      "perfume_suitability": 73,
+      "caveat": "复杂建筑与拆分字体超出第一版 renderer，只参考框景和色彩。"
+    },
+    "analysis_origin": "codex_visual_review"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "reason": "Four full PosterSpecs in one visual request did not return in time; stopped own idle-renderer test and switched to compact model-selected design protocol.",
+  "no_poster_rendered": true,
+  "not_a_completed_batch": true
+}

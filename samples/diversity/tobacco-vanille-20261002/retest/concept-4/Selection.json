@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) delivers the declared slate concept most faithfully: the cleft slate wall shows genuine natural cleavage grain and fracture planes, with a soft diagonal sweep reading from the upper left across the stone. The left text block (sans hierarchy TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) sits in the upper-left half, its thin white rule landing exactly at the bottle's shoulder line as a chiseled baseline, preserving the beside layout and asymmetric stone-carved grid. The bottle is a recognizable, cleanly lit hero with legible gold label, matte stone versus glossy glass tactile contrast, and no studio gear. Version 2 (image 6) instead introduces a raised slate ledge behind the bottle while the packshot floats in front of it with its base hanging below the shelf edge and no contact shadow, the named defect; its stone also reads flatter and more uniform, weakening the cleft-cleavage character.",
+  "remaining_problems": [
+    "Version 1's bottle still reads as a wall-mounted cutout: no contact shadow or grounding plane ties it physically to the slate, so contact conviction is implied rather than proven",
+    "The diagonal light sweep is subtle and slightly competes with the natural cleavage diagonals, making the sweep direction less legible than intended",
+    "Text block vertical overlap with the shoulder line is achieved only via the baseline rule; the type group itself stops above the shoulder, leaving the left column slightly top-weighted"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

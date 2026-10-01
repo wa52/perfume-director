@@ -1,0 +1,99 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\c19f46f91c4f\\Concepts-call.json",
+  "creative_direction": {
+    "name": "银盐暗房底铭反网格",
+    "brief": "借鉴历史黑白广告的秩序：银盐相纸自顶部炭灰向下渐晕至矿物浅灰，商品居于上 mid 幅如暗房唯一主体，全部文字沉入底部宽铭牌带，品牌字最小置上、题名最大居中、香型字垫底，构成上像下铭的反网格；一条细银线横于品牌字上方作分隔。哑光银盐纸面与深色玻璃镜面高光形成材质对话，宽柔正面光保留玻璃体积与标签可读性。",
+    "material": "matte silver-gelatin photographic paper",
+    "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+    "palette": [
+      "#b7bcc0",
+      "#141517",
+      "#8f9399"
+    ],
+    "layout_relation": "below",
+    "title_family": "sans"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 212889834692714,
+    "background": {
+      "color": "#b7bcc0",
+      "prompt": "Seamless matte silver-gelatin paper wash, smooth vertical gradient from charcoal grey at top to pale mineral grey at bottom, fine photographic grain, even diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 391,
+      "height": 864
+    },
+    "lighting": "broad soft frontal light with gentle top-down gradient ambient",
+    "palette": [
+      "#b7bcc0",
+      "#141517",
+      "#8f9399"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 151,
+      "y": 1152,
+      "size": 86,
+      "color": "#141517",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 324,
+      "y": 1296,
+      "size": 30,
+      "color": "#141517",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#141517",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 454,
+      "y": 1073,
+      "size": 28,
+      "color": "#141517",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 367,
+      "y": 1040,
+      "width": 346,
+      "color": "#141517"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  }
+}

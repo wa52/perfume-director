@@ -1,0 +1,5 @@
+{
+  "status": "REJECTED",
+  "error_type": "TypeError",
+  "reason": "Critic patch failed schema or geometry validation; last valid poster preserved"
+}

@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep teal lacquered panel with vertical soft gradient, faint polished sheen streaks, smooth glossy depth, even frontal illumination, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335301675,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

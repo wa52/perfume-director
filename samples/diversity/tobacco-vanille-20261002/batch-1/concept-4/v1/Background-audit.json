@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Powder blue seamless paper sweep with one gentle diagonal crease shadow from upper right, soft matte fiber texture, uniform diffuse light, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335302684,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

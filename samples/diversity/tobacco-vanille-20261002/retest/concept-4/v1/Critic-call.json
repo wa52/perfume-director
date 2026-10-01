@@ -1,0 +1,147 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "d3e02065f67afd5a5da6ec1b6619631b20473a64cd9a46ca65be36a1182c69ec"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "2104d8d5409656b45b344c835fc092d583d7d438cefa265e45a240bf70d970b8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c6888cf0-c6ea-90f9-a177-d9b5174528a5",
+      "usage": {
+        "prompt_tokens": 6847,
+        "total_tokens": 8693,
+        "completion_tokens": 1846,
+        "prompt_tokens_details": {
+          "cached_tokens": 6144,
+          "image_tokens": 4822,
+          "text_tokens": 2025
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 821
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c6888cf0-c6ea-90f9-a177-d9b5174528a5",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6847,
+    "total_tokens": 8693,
+    "completion_tokens": 1846,
+    "prompt_tokens_details": {
+      "cached_tokens": 6144,
+      "image_tokens": 4822,
+      "text_tokens": 2025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 821
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 74,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 74,
+      "background": 66,
+      "physical_integration": 52,
+      "reference_alignment": 70,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail (crop 434,1099-1035,1349) shows the bottle base edge with only a hairline暗 rim from the spec shadow (opacity 0.35, blur 10, offset_y 0): the slate directly beneath stays as bright and textured as the surrounding wall, with split-plane seams running uninterrupted under the base, so the bottle reads as a cut-out pasted on a vertical wall. No support plane, no occlusion gradient, no reflected light at the base."
+      },
+      {
+        "type": "background",
+        "problem": "The rendered slate reads as a flat vertical wall filling the frame; there is no horizontal support surface for the bottle to stand on, and the diagonal light band crosses the wall behind the bottle without touching or modelling it, so background light and product light are disconnected."
+      },
+      {
+        "type": "typography",
+        "problem": "The left inscription column is set in a plain default sans (msyh.ttc) at modest sizes (title 46px, bbox height only ~35px) with loose untracked lines; against the references' confident logotype handling (Chanel's heavy tracked band, Diptyque's integrated display serif) the type block reads generic and under-scaled for the luxury concept."
+      },
+      {
+        "type": "composition",
+        "problem": "The declared carved-baseline rule under the text group sits at y=612 while the subtitle baseline ends near y=544, leaving a ~70px dead gap that disconnects the rule from the type block; the lower-left two-thirds of the canvas is empty uniform slate, unbalancing the left-inscription/right-image grid."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Horizontal cleft slate stone ledge in deep blue-grey occupying the lower sixth of the frame, its split-plane top face catching soft light, rising into a vertical cleft slate wall of the same mineral behind; one broad diagonal band of soft light from upper left raking across both planes, matte mineral grain, even frontal illumination, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.55
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 18
+      },
+      {
+        "path": "title.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/georgia.ttf"
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 54
+      },
+      {
+        "path": "subtitle.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/georgia.ttf"
+      },
+      {
+        "path": "logo.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/georgia.ttf"
+      }
+    ]
+  },
+  "duration_seconds": 48.151
+}

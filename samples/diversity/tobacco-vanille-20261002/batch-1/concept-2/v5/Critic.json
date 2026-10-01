@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 82.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 82,
+    "typography": 80,
+    "background": 78,
+    "physical_integration": 80,
+    "reference_alignment": 78,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The requested wide recess was not regenerated: the arch opening still spans only ~x 400-905 against the bottle footprint x 466-894, so the right jamb runs as a hard vertical tangent ~30-40 px from the bottle's right silhouette from y~450 to y~1130 and the左 cap edge kisses the arch crown at y~360-400, clipping the hero outline. The rendered plaster is also a mid clay-orange (~#c97e58 in the flat wall areas) rather than the declared saturated #b0562f, muting the warm-earth vs dark-glass temperature contrast the concept relies on."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [386,1170,974,1420] confirms a real contact shadow at base y=1310 (offset_y 0 is correct, keep it), but the dark sliver spans only ~x 560-800 against the 428 px footprint, so grounding reads faint at poster scale. The recess floor plane meets the wall at y~1100-1140, i.e. ~170-210 px ABOVE the base line, and no cast shading spreads on that plane around the base, so the bottle reads as standing in front of the ledge face rather than on the declared ledge."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-4 the dark glass still carries only two small cap highlights and a faint neck sheen: shoulders and body edges merge into the mid-tone recess shadow with no broad frontal glow or rim separation, so the hero lacks the luminous product storytelling of the Terre d'Hermès and Armani Privé campaigns even though the type column now answers it vertically."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.88
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre exactly matching hex b0562f, one single very wide shallow vertical arched recess whose opening spans at least eighty percent of the frame width centered on the frame, recess interior descending smoothly to a horizontal plaster plane whose surface begins at seventy eight percent of frame height and continues uninterrupted to the bottom edge, plane catching soft frontal daylight with gentle value fall-off and faint diffuse cast shading spreading outward low around the center of the plane, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#b0562f"
+    }
+  ],
+  "reported_score": 82.4
+}

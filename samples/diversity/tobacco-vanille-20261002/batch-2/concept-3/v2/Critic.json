@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 78.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 74,
+    "physical_integration": 80,
+    "reference_alignment": 72,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The renderer's ink log proves the plaque band still sits on a too-light field: the previous cream title/subtitle (#e8d3ae) measured below contrast 3 against the copper and were force-corrected to #261E16. In the current poster the dark ink now rides bare hammered dimples - bright dents crowd the strokes of 'TOBACCO VANILLE' (y 230-273) and 'EAU DE PARFUM' (y 360-377) - so legibility depends on local texture luck instead of a prepared plaque value, and the cream logo at y 130-147 sits in the same mid-value zone at barely-threshold contrast. The references all give type a calmer or decisively contrasted zone; here the promised upper-third calming never reached the type lines."
+    },
+    {
+      "type": "background",
+      "problem": "The new illumination gradient is real but mis-aimed: the brightest zone of the copper is a hot halo centred around the bottle neck and cap (roughly y 450-750), while the upper plaque third stays busy with mid-value dimples. The brief's light logic (broad soft frontal light, plaque zone calmed, bounce pooling low) is inverted in the render, so the backdrop competes with the type band and the halo reads as a glow behind the cap rather than metallic bounce under the object."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop [266,1185,815,1435] confirms a genuine zero-offset contact seam under the base, so the bottle is not floating; however in the same crop the copper immediately beside and below the base keeps the same dimple brightness and contrast as the rest of the wall. A broad frontal light plus warm metallic bounce would pool a soft luminance response under and behind the object; grounding is still only a thin line, and the bright specular caps on the bottle provoke no backdrop response."
+    },
+    {
+      "type": "composition",
+      "problem": "Geometry remains sound (height ratio 0.60, base y 1325 = 92% of canvas, no text/product overlap, rule line correctly closing the plaque band), but logo (y 130-147), title (230-273) and subtitle (360-377) still stack with near-equal air gaps, so the three lines compete instead of stepping; the title leads by size alone while the subtitle hovers close to the rule at y 425, leaving the band without a clear internal hierarchy."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-hammered copper sheet wall, dense dimple texture, upper half smoothed into a calm deep amber-brown patina veil of low contrast so engraved plaque type rests on a quiet field, dimple highlights gradually reappearing and brightening only across the lower half, soft warm metallic bounce pooling low center beneath the middle of the frame, gentle darker vignette at side edges, no objects, no equipment, empty material and light only"
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#e8d3ae"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#e8d3ae"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#e8d3ae"
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 344
+    }
+  ],
+  "reported_score": 78.6
+}

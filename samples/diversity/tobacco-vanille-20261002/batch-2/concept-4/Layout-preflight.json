@@ -1,0 +1,168 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 212889834695741,
+    "background": {
+      "color": "#3c4550",
+      "prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 749,
+      "width": 443,
+      "height": 979
+    },
+    "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+    "palette": [
+      "#3c4550",
+      "#eef1f4",
+      "#b98a4e"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 65,
+      "y": 403,
+      "size": 46,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 65,
+      "y": 526,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 65,
+      "y": 302,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 65,
+      "y": 612,
+      "width": 324,
+      "color": "#eef1f4"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 212889834695741,
+    "background": {
+      "color": "#3c4550",
+      "prompt": "Cleft slate stone wall in deep blue-grey, natural split-plane striations, one broad diagonal band of soft light from upper left, matte mineral grain, even frontal illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 749,
+      "width": 443,
+      "height": 979
+    },
+    "lighting": "broad soft frontal light with one diagonal soft sweep across stone",
+    "palette": [
+      "#3c4550",
+      "#eef1f4",
+      "#b98a4e"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 65,
+      "y": 403,
+      "size": 46,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 65,
+      "y": 526,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 65,
+      "y": 302,
+      "size": 24,
+      "color": "#eef1f4",
+      "font": "C:/Windows/Fonts/msyh.ttc"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 65,
+      "y": 612,
+      "width": 324,
+      "color": "#eef1f4"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

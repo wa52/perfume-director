@@ -1,0 +1,109 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "ea4c5202ba48ded160e853fbc07c447b6b9a1ec58ef3d1e13ca08ff73a606fb0"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c06a8462-4be2-9c56-8cc5-b8e2d09fe14a",
+      "usage": {
+        "prompt_tokens": 6959,
+        "total_tokens": 8319,
+        "completion_tokens": 1360,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5014,
+          "text_tokens": 1945
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 335
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c06a8462-4be2-9c56-8cc5-b8e2d09fe14a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6959,
+    "total_tokens": 8319,
+    "completion_tokens": 1360,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5014,
+      "text_tokens": 1945
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 335
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre, one wide shallow vertical arched recess centered in the right two thirds of the frame with its opening clearly wider than any object placed before it, recess descending to a horizontal plaster ledge plane whose front edge sits low in the lower sixth of the frame, ledge surface catching soft frontal daylight with gentle value fall-off and faint cast shading beneath anything placed upon it, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+      },
+      {
+        "path": "title.color",
+        "op": "set",
+        "value": "#f6ead9"
+      },
+      {
+        "path": "subtitle.color",
+        "op": "set",
+        "value": "#f6ead9"
+      },
+      {
+        "path": "logo.color",
+        "op": "set",
+        "value": "#f6ead9"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.66
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 26
+      }
+    ]
+  },
+  "duration_seconds": 30.961
+}

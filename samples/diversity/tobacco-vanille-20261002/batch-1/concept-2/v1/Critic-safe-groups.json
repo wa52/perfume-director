@@ -1,0 +1,38 @@
+{
+  "accepted": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in saturated burnt-orange ochre, one shallow vertical arched recess whose interior floor ledge meets a horizontal plaster support plane low in the frame, broad soft frontal daylight with warm ambient bounce, gentle value fall-off toward the base, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.y",
+          "op": "set",
+          "value": 470
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 600
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

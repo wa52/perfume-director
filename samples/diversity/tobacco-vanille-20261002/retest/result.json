@@ -1,0 +1,92 @@
+[
+  {
+    "id": "concept-3",
+    "name": "锤铜壁龛上铭牌匾",
+    "original_run": "cd0e07e776b9",
+    "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\0da577f5bc8c",
+    "budget": 2,
+    "starting_spec_sha256": "cc29378f767d44fafd15949fa806d6b31f9a430e0d9d52cc9fe3c8825495c129",
+    "status": "NEEDS_REVIEW",
+    "mode": "live",
+    "standalone_vision_api_used": true,
+    "vision_model": "qwen3.8-max",
+    "selected": {
+      "version": 2,
+      "score": 81.4,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "fe9779b3a2645b9753d0678d646040fd8171bef77bdeb53797b88871b6be7788"
+    },
+    "versions": [
+      {
+        "version": 1,
+        "score": 75.4,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "9adf14d4be87f624a00b95c88f363a321209feb2633cef04cbc9a056e67797f1"
+      },
+      {
+        "version": 2,
+        "score": 81.4,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "fe9779b3a2645b9753d0678d646040fd8171bef77bdeb53797b88871b6be7788"
+      }
+    ],
+    "review_failures": []
+  },
+  {
+    "id": "concept-4",
+    "name": "板岩斜光左铭右像",
+    "original_run": "a497b08db1d4",
+    "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\83054f26a132",
+    "budget": 2,
+    "starting_spec_sha256": "653dbfe37dda9268360edfce65a0c632db9761ec27af7de5c05c7f2900689d2d",
+    "status": "NEEDS_REVIEW",
+    "mode": "live",
+    "standalone_vision_api_used": true,
+    "vision_model": "qwen3.8-max",
+    "selected": {
+      "version": 1,
+      "score": 73.1,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "d3e02065f67afd5a5da6ec1b6619631b20473a64cd9a46ca65be36a1182c69ec"
+    },
+    "versions": [
+      {
+        "version": 1,
+        "score": 73.1,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "d3e02065f67afd5a5da6ec1b6619631b20473a64cd9a46ca65be36a1182c69ec"
+      },
+      {
+        "version": 2,
+        "score": 75.1,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "8fc5b6736063a76b2ece1a26c1f51e179bebadf4dd83ce5011b65bc4beedfadc"
+      }
+    ],
+    "review_failures": []
+  }
+]

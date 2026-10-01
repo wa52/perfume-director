@@ -1,0 +1,43 @@
+{
+  "accepted": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a narrow soft shadow band about sixty pixels wide lying along the diagonal, four percent darker than the paper, gradient feathered to invisible on both sides so the paper reads as one continuous plane with no line no crease no ridge and no split into two planes, uniform soft cool illumination elsewhere with no highlights and no cast edges, fine matte fiber grain, completely empty scene"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.78
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 30
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 58
+        },
+        {
+          "path": "title.y",
+          "op": "set",
+          "value": 150
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 300
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

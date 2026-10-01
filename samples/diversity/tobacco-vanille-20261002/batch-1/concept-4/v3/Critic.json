@@ -1,0 +1,60 @@
+{
+  "pass": false,
+  "score": 79.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 73,
+    "physical_integration": 81,
+    "reference_alignment": 72,
+    "creative_coherence": 83
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The prompt revision did not land: the diagonal fold still renders as a saturated teal wedge, not a whisper-darker paper crease. In the current poster a hard-edged band of roughly #2e7ea6, ~18-30px wide, runs from behind the bottle's right flank (x≈590, y≈1130) down to the bottom-right corner, plus a hairline crease entering the left edge at y≈810; the abrupt upper edge and the saturation jump against the #bfd6de field read as a printed graphic stripe. It also contradicts the declared broad soft frontal light: a matte paper sweep under diffuse frontal light cannot cast a crisp saturated edge. No softboxes, lamps, stands or cameras are present, so the fault is purely fold hardness/saturation."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [132,1141,668,1391] confirms the bottle IS seated: a soft grey smudge hugs the base at canvas y≈1276-1292, so offset_y 0 is correct and must not be moved, and base y=1281 (89% of canvas) respects the margins. However the smudge spans only x≈290-500 against the 376px base footprint (bbox 212-588) and stays very low in contrast, so at poster scale the dark glass still reads slightly pasted onto the sweep. The cue needs width and presence, not repositioning."
+    },
+    {
+      "type": "typography",
+      "problem": "The right-anchored stack (logo y79, title y168, subtitle y300, rule y324) still ends ~957px above the bottle base, leaving the mid-right field between the rule and the fold empty; type and product read as two islands joined only by the diagonal. text_product_overlap is false for all three blocks, so this is mass/scale, not collision: against references that deploy type as a confident graphic block (Prada's oversized serif mass), Georgia at 46px on a 1080px canvas remains modest and the diagonal grid loses its counterweight."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a faint tonal gradient two percent darker than the paper with fully feathered invisible edges and no line no crease no ridge, uniform soft cool illumination with no highlights and no cast edges, fine matte fiber grain, completely empty scene"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 56
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 158
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 298
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.68
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 24
+    }
+  ],
+  "reported_score": 79.6
+}

@@ -1,0 +1,35 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre, one wide shallow vertical arched recess centered in the right two thirds of the frame with its opening clearly wider than any object placed before it, recess descending to a horizontal plaster ledge plane whose front edge sits low in the lower sixth of the frame, ledge surface catching soft frontal daylight with gentle value fall-off and faint cast shading beneath anything placed upon it, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.66
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 26
+    }
+  ]
+}

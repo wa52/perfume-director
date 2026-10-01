@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 78,
+    "background": 74,
+    "physical_integration": 80,
+    "reference_alignment": 77,
+    "creative_coherence": 83
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The stray render speck survives a second regeneration: in the current poster a ~2-3px dark dot sits at approximately (540,390), in the empty tile between the bottle neck and the logo line (logo band y452-470), reading as a print defect on an otherwise pristine釉面; the executed prompt's 'zero blemishes, zero particles, zero dots' clause has now failed twice, so the tile must be regenerated with even stronger pristine-surface language."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [14,1041,589,1291] confirms the shadow is seated (offset_y 0, correctly kept) and the softened opacity 0.62 / blur 6 reads more natural than last round's tight band, but the occlusion still spans only crop-x ~170-500 (poster x ~184-514) of the 415px base footprint (product_bbox x94-509): the left ~90px of the base corner rests on clean bright tile with no occlusion, so that corner still hints at hover. Widen footprint coverage; do not change offset_y."
+    },
+    {
+      "type": "composition",
+      "problem": "The lower band is lighter than last version (luminous glow line at y~1195-1215 plus pale front face instead of a dark strip), but mass still stacks in the upper two thirds: the text column ends at subtitle base y640 leaving the right column (x578-1080) empty for 800px, and the front-face plane y~1215-1370 plus the grey band y~1370-1440 remain dead weight under the bottle; references 4-5 anchor the base with a full-width wordmark or lower-frame element, which this dual-column grid still lacks."
+    },
+    {
+      "type": "typography",
+      "problem": "The last typography patch group was REJECTED by the renderer, so the column is unchanged: logo 26px (y452-470), title 44px (y540-570), subtitle 26px (y622-640). Against a 922px hero the title ratio is ~0.048, optically timid next to references 4-5's bold wordmarks, and the column never extends into the lower-right quadrant, so the right栏 lacks the editorial weight the concept promises."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a very narrow low band hugging the bottom edge with a soft luminous cool-white glow instead of a dark strip, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame; surface absolutely immaculate and mirror-clean: no specks, no flecks, no grains, no pinholes, no stray marks anywhere, perfectly uniform glaze, no objects"
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.55
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 48
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 544
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 450
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 27
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 630
+    }
+  ],
+  "reported_score": 79.6
+}

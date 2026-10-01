@@ -1,0 +1,124 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "014b0f838062c9d2c52c827ac5598c944f268c77b1d6ffc1d95a7f2b62f830af"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-4f18f908-aa9c-96d6-b771-fb7b8cfcaf8d",
+      "usage": {
+        "prompt_tokens": 5842,
+        "total_tokens": 7203,
+        "completion_tokens": 1361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 3907,
+          "text_tokens": 1935
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 336
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-4f18f908-aa9c-96d6-b771-fb7b8cfcaf8d",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 5842,
+    "total_tokens": 7203,
+    "completion_tokens": 1361,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3907,
+      "text_tokens": 1935
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 336
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a very narrow low band hugging the bottom edge with a soft luminous cool-white glow instead of a dark strip, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame, perfectly pristine uniform surface with zero blemishes, zero particles, zero dots, no objects"
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 6
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.62
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 46
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 546
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 30
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 448
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 28
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 634
+      }
+    ]
+  },
+  "duration_seconds": 29.436
+}

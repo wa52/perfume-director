@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 fulfills the hammered-copper plaque concept with better control: the cream serif plaque band (brand, largest title, fragrance line) reads cleanly against the dimmed copper, the thin copper rule sits under the type band as an engraved line, and the broad soft frontal light suppresses metallic glare so the bottle's glass highlight carries the coarse-fine contrast. Version 1's brighter,Busier hammer sparkle competes with the dark type and reads hotter than the brief's suppressed metal fire, while its dark title on mid-copper has weaker figure-ground separation. Both keep the product sunk in the lower half with recognizable label and correct plaque-grid hierarchy, but version 2's calmer diffuse bounce and coherent typography make it the stronger finished poster.",
+  "remaining_problems": [
+    "In version 2 the hammered dents soften into a blurred bokeh-like texture at the edges, losing some of the hand-hammered dent crispness the concept asks for.",
+    "The bottle still reads slightly pasted onto the copper wall: contact shadow and reflected copper bounce on the glass base are minimal, so physical placement in the niche is implied rather than convinced.",
+    "The thin copper rule under the plaque band is dark and low-contrast against the dimmed copper, weakening the engraved-line detail."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

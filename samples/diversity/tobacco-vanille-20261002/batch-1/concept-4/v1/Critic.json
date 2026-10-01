@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 77.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 82,
+    "reference_alignment": 70,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The diagonal crease shadow terminates at the right edge near y≈760-800, leaving the entire lower-right quadrant (roughly x>620, y>820) as flat, empty powder blue. The declared diagonal-pull grid ('product lower-left, type upper-right') loses its counterweight below the crease end, so the eye exits the frame at mid-right and the bottle carries the lower half alone. References (DiptyqueOrpheon's reflective ceiling plane, Prada Paradoxe's figure-to-product diagonal) keep a visual element traveling across the full diagonal; here the tension collapses halfway."
+    },
+    {
+      "type": "typography",
+      "problem": "The right-aligned text stack (logo y79, title y144, subtitle y259, rule y324) ends 436px above the bottle base (1281), so type and product read as two disconnected islands rather than one diagonal field. Georgia at title size 46 is modest against the 1080px canvas; the references deploy type as a confident graphic mass (Prada's oversized serif block). Hierarchy within the stack is correct and text_product_overlap is false for all three blocks, so this is a scale/anchoring weakness, not a collision."
+    },
+    {
+      "type": "background",
+      "problem": "The single crease is the only background event and it reads as a hard-edged graphic band (near-solid teal core with abrupt falloff) rather than the 'gentle crease shadow' of matte paper in the declared concept. Its upper-left entry point also sits almost directly above the bottle's left shoulder (bottle x-range 212-588 vs crease entry x≈210), visually stacking the diagonal's origin on the product instead of clearing it. No studio equipment artifacts are present; the issue is crease hardness and placement."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop [132,1141,668,1391] confirms a real, correctly seated contact shadow: a soft grey smudge hugging the base edge at canvas y≈1276-1290, offset_y 0 is correct and must not be moved. However the shadow's width is visibly narrower than the 376px base footprint and its opacity is faint against the pale sweep, so at full-poster scale the dark glass bottle still reads slightly pasted; the grounding cue needs more presence, not repositioning."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Powder blue matte seamless paper sweep, one soft broad diagonal fold shadow running corner to corner from upper left to lower right with gently diffused edges and a faint secondary paper undulation in the lower right, uniform diffuse frontal light, fine matte fiber texture, empty scene"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 58
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 168
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ],
+  "reported_score": 76
+}

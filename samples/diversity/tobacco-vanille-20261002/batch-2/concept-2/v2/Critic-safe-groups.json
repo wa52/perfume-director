@@ -1,0 +1,48 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.62
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a narrow low band close to the bottom edge, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame, flawless pristine surface with no marks or specks, no objects"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 50
+        },
+        {
+          "path": "title.y",
+          "op": "set",
+          "value": 545
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 640
+        },
+        {
+          "path": "logo.y",
+          "op": "set",
+          "value": 448
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 142344335300666,
+  "background": {
+    "color": "#b0562f",
+    "prompt": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre close to hex b0562f, one very wide shallow vertical arched recess whose opening spans at least three quarters of the frame width and is centered in the right two thirds, recess interior descending smoothly to a horizontal plaster plane whose surface begins in the lower quarter of the frame and continues uninterrupted to the bottom edge, plane catching soft frontal daylight with gentle value fall-off and faint diffuse cast shading spreading outward low around the center of the plane, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects",
+    "revision": 4
+  },
+  "product": {
+    "x": 680,
+    "y": 835,
+    "width": 430,
+    "height": 950
+  },
+  "lighting": "broad soft frontal light, warm ambient bounce",
+  "palette": [
+    "#b0562f",
+    "#f6ead9",
+    "#3a2417"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 76,
+    "y": 158,
+    "size": 72,
+    "color": "#f6ead9",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 76,
+    "y": 566,
+    "size": 22,
+    "color": "#f6ead9",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f6ead9",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 76,
+    "y": 86,
+    "size": 28,
+    "color": "#f6ead9",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.78,
+    "blur": 34,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 353,
+    "width": 281,
+    "color": "#f6ead9"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

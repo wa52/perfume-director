@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "4fa7ee7096c0beb978ede6ad7b6e1eab1be58a1a265cba3fd9fb7a3e8c18d6b8"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "2104d8d5409656b45b344c835fc092d583d7d438cefa265e45a240bf70d970b8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-989c19ac-0ec0-9cdc-9b12-4668757d404b",
+      "usage": {
+        "prompt_tokens": 6847,
+        "total_tokens": 8255,
+        "completion_tokens": 1408,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 4822,
+          "text_tokens": 2025
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 383
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-989c19ac-0ec0-9cdc-9b12-4668757d404b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6847,
+    "total_tokens": 8255,
+    "completion_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 4822,
+      "text_tokens": 2025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 383
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "issues": [
+      "The product silhouette is not a single clean closed shape: the neck/cap area shows a stepped profile with a horizontal break, and the base edge is jagged rather than a smooth continuous curve.",
+      "The bottle body shows a faint horizontal seam line across the middle, and the glass highlight is broken into two disconnected patches instead of one continuous highlight.",
+      "The label text is not legible at the rendered size: the brand wordmark is blurred and the letterforms merge.",
+      "The product is not placed on a visible support surface: the background is a flat slate wall with no floor, table or shelf plane, so the bottle appears to float against the wall rather than stand on anything.",
+      "The contact shadow at the bottle base is missing or far too weak: the crop shows the base edge meeting the slate with no soft darkening beneath it, so there is no grounding cue.",
+      "The shadow offset_y is -2..0 as specified. Zero is correct for a contact shadow; do not move a correctly aligned shadow downward.",
+      "The lighting direction is inconsistent: the key light on the bottle comes from the upper left while the slate wall shows a diagonal sweep from the upper right, giving two conflicting light sources.",
+      "The product occupies 68% of canvas height, which is within the 35-74% safe band; do not rescale a correctly sized product.",
+      "The top edge of the product is at 18% of canvas height, above the 10% minimum; do not shift a correctly positioned product.",
+      "The right edge of the product is at 88% of canvas width, inside the 5-95% margin; do not reposition a correctly placed product."
+    ]
+  },
+  "duration_seconds": 38.571
+}

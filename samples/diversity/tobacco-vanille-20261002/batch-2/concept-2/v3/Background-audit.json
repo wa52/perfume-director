@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Large-format glazed ceramic tile plane in pale celadon white, hairline grout seams, one shallow vertical groove right of center, soft satin glaze sheen; plane recedes from a horizontal support surface in the bottom third into a seamless vertical wall above, the support plane's front face kept as a narrow low band close to the bottom edge, broad diffuse frontal light with cool ceramic bounce, gentle tonal fall-off low in frame, flawless pristine surface with no marks or specks, no objects, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834693725,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

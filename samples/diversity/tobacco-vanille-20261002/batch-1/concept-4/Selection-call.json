@@ -1,0 +1,100 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "diptyque-orpheon.jpg",
+      "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46"
+    },
+    {
+      "name": "prada-paradoxe.jpg",
+      "sha256": "28b7ab06597a5146399cddb8909f9b1245d5c93f11da4dba073f13f220cddf47"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "02751cc4d6311bc41fbb294f0246f1a10c7e4c47d09b56a80b227c465831ffe7"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "cb4dd4d4063a03c4e8e39c3c11300bb73d23ebbcca21d1e86cc739cc35ea85e1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "03d9d3310b4ebd80faee4218920a1a7c1fc9c27ae14bde07d45fa21350587983"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "5bfaac3efe7a37c649c2656091615a91090eed6db630492676d3045c3d8477ee"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b010a173badca4e9b62492ea6f5e0af8a06b54edfb8bbad90660aed1a260f020"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-0a27d682-9ef9-9a9e-bdf7-e8cc819584b0",
+      "usage": {
+        "prompt_tokens": 11181,
+        "total_tokens": 12564,
+        "completion_tokens": 1383,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 10624,
+          "text_tokens": 557
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 358
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-0a27d682-9ef9-9a9e-bdf7-e8cc819584b0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 11181,
+    "total_tokens": 12564,
+    "completion_tokens": 1383,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 10624,
+      "text_tokens": 557
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 358
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 3,
+    "evidence": "Version 3 (image 7) holds the declared concept most coherently: the misty-blue matte paper sweep keeps the #bfd6de cool tone, the diagonal crease shadow runs low behind the flask and exits bottom-right so the bottle reads seated on the paper plane with a soft contact shadow, and the product sits左-lower against the upper-right type block (TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) with the thin rule tucked under the text group, completing the diagonal tension grid. Typography is clean and hierarchy-consistent, the gold label and dark glass stay recognizable against the matte paper, and lighting is broad, soft and frontal with no studio gear, no raised support behind a floating pack, and no palette drift. Version 1's crease cuts the sheet high and competes with the headline zone; version 2's crease is a harder, darker edge clipping the bottle's silhouette; version 4 abandons the misty blue for a flat periwinkle two-tone split with no paper折痕; version 5's wide shadow band sits behind the shoulder, weakening contact and muddying the diagonal.",
+    "remaining_problems": [
+      "The diagonal crease in version 3 is faint on the left of the bottle, so the diagonal pull relies mostly on the lower-right segment.",
+      "Bottle contact shadow is very subtle; physical grounding could be a touch firmer without becoming a硬 shadow.",
+      "Thin rule under 'EAU DE PARFUM' nearly touches the text baseline spacing, slightly crowding the upper-right type group."
+    ]
+  },
+  "duration_seconds": 36.527
+}

@@ -1,0 +1,60 @@
+{
+  "pass": false,
+  "score": 81.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 82,
+    "typography": 78,
+    "background": 76,
+    "physical_integration": 84,
+    "reference_alignment": 76,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The previous hard teal wedge and hairline crease (visible in the last version) are gone, but the diagonal now renders as a full planar split: the entire lower-right triangle sits roughly 10-14% darker and more saturated than the upper field with a straight, only ~4-6px feathered boundary running from the left edge (y≈410) to the bottom-right corner. The declared concept asks for one diagonal fold SHADOW on a continuous matte sweep, i.e. a narrow graded tonal band along the diagonal, not two differently lit paper planes; the crisp straight seam also fights the declared broad diffused frontal light, which cannot produce a knife-edge tonal break across matte paper. No softboxes, lamps, stands or cameras are present, so the fault is purely the fold's width and edge hardness."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [132,1141,668,1391] confirms the bottle IS seated: a soft grey smudge hugs the base at canvas y≈1276-1292, so offset_y 0 is correct and must not be moved, and base y=1281 (89% of canvas) keeps comfortable margins. However the smudge still spans only x≈290-500 against the 376px base footprint (bbox 212-588) and stays very low in contrast, so at poster scale the dark glass corners read slightly pasted onto the sweep. The cue needs width and a touch more presence, not repositioning."
+    },
+    {
+      "type": "typography",
+      "problem": "text_product_overlap is false for logo, title and subtitle, so there is no collision; the weakness is scale and vertical reach. The right-anchored stack (logo y79, title y158-188, subtitle y298-314, rule y324) ends ~957px above the bottle base, leaving the mid-right field between the rule and the diagonal empty; against references that deploy type as a confident graphic mass (Prada's oversized serif block), Georgia at 44px on a 1080px canvas remains modest and the diagonal grid loses its counterweight."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a narrow soft shadow band about sixty pixels wide lying along the diagonal, four percent darker than the paper, gradient feathered to invisible on both sides so the paper reads as one continuous plane with no line no crease no ridge and no split into two planes, uniform soft cool illumination elsewhere with no highlights and no cast edges, fine matte fiber grain, completely empty scene"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 58
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 150
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.78
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 30
+    }
+  ],
+  "reported_score": 81.8
+}

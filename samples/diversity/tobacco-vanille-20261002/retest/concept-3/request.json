@@ -1,0 +1,102 @@
+{
+  "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：暖调锤纹铜板以手工凹痕漫反射碎光；商品沉于下半幅如壁龛供奉物，上半幅留出完整铭牌带：品牌字、题名、香型字依次居中排印，题名最大统领画面，构成上铭下像的牌匾网格；细铜线横垫于铭牌带之下如同刻线。锤铜碎光与玻璃整面高光互为粗细对比，宽柔正面光压制金属火气。",
+  "product": "runtime\\director-jobs\\f2ea908203f44ea788d94b180f327538\\product.png",
+  "references": [
+    {
+      "id": "hermes-terre",
+      "brand": "Hermes",
+      "style": "luxury",
+      "reference_kind": "人物商业广告",
+      "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+      "image": "references/luxury/hermes-terre.jpg",
+      "selection_reason": "大地橙与天蓝互补，人物暗部和商品亮部形成分离，右侧信息克制。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.025,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "hard_daylight",
+        "color": [
+          "orange",
+          "sky_blue",
+          "black"
+        ],
+        "typography": "sans_serif",
+        "information_density": "low",
+        "characteristics": [
+          "橙蓝对比",
+          "烟尘景深",
+          "右侧商品"
+        ],
+        "perfume_suitability": 75,
+        "caveat": "人物和动态烟尘暂不执行，参考色彩与主次。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "ysl-libre",
+      "brand": "YSL",
+      "style": "luxury",
+      "reference_kind": "人物商业广告",
+      "source_url": "https://lareclame.fr/betcparis/realisations/libre",
+      "image": "references/luxury/ysl-libre.jpg",
+      "selection_reason": "左侧人物与品牌、右侧大商品清楚分工，金色火光和黑色服装形成高对比。",
+      "analysis": {
+        "composition": "split_layout",
+        "subject_ratio": 0.2,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "low",
+        "lighting": "warm_firelight_and_studio",
+        "color": [
+          "black",
+          "gold",
+          "warm_white"
+        ],
+        "typography": "sans_serif",
+        "information_density": "low",
+        "characteristics": [
+          "人物商品分区",
+          "品牌字重突出",
+          "暖金背景"
+        ],
+        "perfume_suitability": 78,
+        "caveat": "背景火光较繁，可参考左右分区，不照搬复杂人物。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "tom-ford-lost-cherry",
+      "brand": "Tom Ford",
+      "style": "luxury",
+      "reference_kind": "人物商业广告",
+      "source_url": "https://bluebloom20.com/products/tom-ford-lost-cherry-edp",
+      "image": "references/luxury/tom-ford-lost-cherry.jpg",
+      "selection_reason": "红底、红唇与红色瓶身形成一致色彩，黑色衣服为商品提供对比区域。",
+      "analysis": {
+        "composition": "portrait_asymmetric",
+        "subject_ratio": 0.045,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "low",
+        "lighting": "soft_portrait_light",
+        "color": [
+          "red",
+          "black",
+          "skin_tone"
+        ],
+        "typography": "label_only",
+        "information_density": "low",
+        "characteristics": [
+          "同色呼应",
+          "简洁红底",
+          "黑色对比区"
+        ],
+        "perfume_suitability": 71,
+        "caveat": "没有独立海报标题，只参考色彩控制和商品辨识。"
+      },
+      "analysis_origin": "codex_visual_review"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

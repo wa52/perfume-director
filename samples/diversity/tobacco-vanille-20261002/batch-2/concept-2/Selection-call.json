@@ -1,0 +1,101 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "00ef46b1e8ce60963f761bea45864a9c6aa9aa77e6c3918dae6b7faa6acb5a64"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ba575d0ef32843571077340fa12574e7ffc7cfa5b1eb6b5ab394437e47eef2ae"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "4b70fe9fda7c1ffbba3aa9e1d70d1faa599bfb642b81da78d86643632cda56da"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "014b0f838062c9d2c52c827ac5598c944f268c77b1d6ffc1d95a7f2b62f830af"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "1dbe977572841afa2d8d4d4fc30e70128906950740b42d976219136bb49d5448"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-cbfa68da-9c4d-9f8b-acf9-38002275ce53",
+      "usage": {
+        "prompt_tokens": 9350,
+        "total_tokens": 10716,
+        "completion_tokens": 1366,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 8715,
+          "text_tokens": 635
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 341
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-cbfa68da-9c4d-9f8b-acf9-38002275ce53",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9350,
+    "total_tokens": 10716,
+    "completion_tokens": 1366,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 8715,
+      "text_tokens": 635
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 341
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 4,
+    "evidence": "Version 4 (image 8) delivers the most resolved execution of the glazed-ceramic two-column concept: the bottle stands with a believable contact shadow on the tiled ledge, the dark glass reads crisply against the cool白 satin glaze under broad soft frontal light, and the serif type column (TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) sits clear of the瓶 shoulder in a clean editorial right column. Compared with version 1, whose瓶 base floats against a full-height tile grid with no ground plane, and versions 2-3, where the vertical glaze groove runs straight through the文字 column and breaks the book-spine separation, version 4 keeps the groove beside the type and maintains coherent spacing and hierarchy. Version 5's暖色 glow strip along the ledge contradicts the declared cool ceramic bounce and its中心 groove crowds the产品 column, so version 4 remains the strongest finished poster within this concept.",
+    "remaining_problems": [
+      "A tiny stray speck artifact floats in the空 area left of the 'TOM FORD' line in all candidates, including version 4.",
+      "The vertical glaze groove in version 4 stops at the ledge rather than reading as a continuous book-spine line between the two columns.",
+      "The bottle's contact shadow is soft but slightly ambiguous at the ledge junction, leaving minimal sense of weight.",
+      "The ceramic wall shows faint uneven sheen near the upper right, mildly inconsistent with the specified glare-free broad frontal light."
+    ]
+  },
+  "duration_seconds": 39.761
+}

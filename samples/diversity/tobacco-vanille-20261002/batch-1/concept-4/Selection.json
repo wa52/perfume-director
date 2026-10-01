@@ -1,0 +1,11 @@
+{
+  "selected_version": 3,
+  "evidence": "Version 3 (image 7) holds the declared concept most coherently: the misty-blue matte paper sweep keeps the #bfd6de cool tone, the diagonal crease shadow runs low behind the flask and exits bottom-right so the bottle reads seated on the paper plane with a soft contact shadow, and the product sits左-lower against the upper-right type block (TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) with the thin rule tucked under the text group, completing the diagonal tension grid. Typography is clean and hierarchy-consistent, the gold label and dark glass stay recognizable against the matte paper, and lighting is broad, soft and frontal with no studio gear, no raised support behind a floating pack, and no palette drift. Version 1's crease cuts the sheet high and competes with the headline zone; version 2's crease is a harder, darker edge clipping the bottle's silhouette; version 4 abandons the misty blue for a flat periwinkle two-tone split with no paper折痕; version 5's wide shadow band sits behind the shoulder, weakening contact and muddying the diagonal.",
+  "remaining_problems": [
+    "The diagonal crease in version 3 is faint on the left of the bottle, so the diagonal pull relies mostly on the lower-right segment.",
+    "Bottle contact shadow is very subtle; physical grounding could be a touch firmer without becoming a硬 shadow.",
+    "Thin rule under 'EAU DE PARFUM' nearly touches the text baseline spacing, slightly crowding the upper-right type group."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

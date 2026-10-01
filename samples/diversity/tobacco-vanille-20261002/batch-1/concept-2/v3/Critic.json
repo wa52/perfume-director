@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 76,
+    "background": 80,
+    "physical_integration": 78,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The previous critique's type patches were never applied: geometry still shows title bbox [76,158,738,208], subtitle [76,288,250,303], logo [76,86,219,105], all in dark #261E16. The masthead therefore remains three disconnected dark lines clustered in the top 25% of the frame, in dark ink that contradicts the concept's declared cream #f6ead9 type voice, while the left column from y=353 (hairline rule) to y=1440 is empty plaster with no vertical counterweight against the bottle spanning y=360-1310."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [386,1170,974,1420] confirms a genuine contact shadow at the base line (offset_y 0 is correct, do not move it), but it is a thin dark sliver roughly x 490-760 against the 428px bottle footprint, so at poster scale the grounding reads faint. The horizontal ledge edge now runs at y~1120-1160 behind the bottle, i.e. about 170px ABOVE the base at y=1310, so the bottle visually stands in front of / below the ledge face rather than on the declared ledge plane; there is no cast-shadow spread on the ledge surface around the base."
+    },
+    {
+      "type": "background",
+      "problem": "The arched recess is now centered behind the hero (opening approx x 470-880), satisfying 'at the arch heart', but its right jamb exits the arch at x~860-900 and runs as a hard vertical tangent along the bottle's right silhouette (bottle right edge x=894) from y~400 down to the ledge, and the rendered plaster value is a mid clay-orange lighter than the declared saturated #b0562f, softening the warm-earth vs dark-glass temperature contrast the concept relies on."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-4, the hero lacks a light story: the dark glass shows only two small cap highlights and no broad frontal glow or rim separation, so the bottle merges into the mid-tone plaster at its shoulders, and the type block never re-enters the lower two thirds of the frame, leaving the product-to-type dialogue weaker than the continuous compositions in the Terre d'Hermès and Armani Privé campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre, one wide shallow vertical arched recess centered in the right two thirds of the frame with its opening clearly wider than any object placed before it, recess descending to a horizontal plaster ledge plane whose front edge sits low in the lower sixth of the frame, ledge surface catching soft frontal daylight with gentle value fall-off and faint cast shading beneath anything placed upon it, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#b0562f"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 470
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.66
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 26
+    }
+  ],
+  "reported_score": 80.2
+}

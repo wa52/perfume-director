@@ -1,0 +1,74 @@
+[
+  {
+    "direction": "concept-1",
+    "status": "NEEDS_REVIEW",
+    "versions": 5,
+    "selected_version": 3,
+    "score": 82.6,
+    "layout_issues": [],
+    "background_issues": [],
+    "background_source": "comfyui_generated",
+    "copy": {
+      "title": "TOBACCO VANILLE",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "TOM FORD"
+    },
+    "sha256_matches": true,
+    "review_failures": []
+  },
+  {
+    "direction": "concept-2",
+    "status": "NEEDS_REVIEW",
+    "versions": 5,
+    "selected_version": 4,
+    "score": 81.7,
+    "layout_issues": [],
+    "background_issues": [],
+    "background_source": "comfyui_generated",
+    "copy": {
+      "title": "TOBACCO VANILLE",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "TOM FORD"
+    },
+    "sha256_matches": true,
+    "review_failures": []
+  },
+  {
+    "direction": "concept-3",
+    "status": "NEEDS_REVIEW",
+    "versions": 5,
+    "selected_version": 3,
+    "score": 80.6,
+    "layout_issues": [],
+    "background_issues": [],
+    "background_source": "comfyui_generated",
+    "copy": {
+      "title": "TOBACCO VANILLE",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "TOM FORD"
+    },
+    "sha256_matches": true,
+    "review_failures": []
+  },
+  {
+    "direction": "concept-4",
+    "status": "NEEDS_REVIEW",
+    "versions": 5,
+    "selected_version": 3,
+    "score": 79.6,
+    "layout_issues": [],
+    "background_issues": [],
+    "background_source": "comfyui_generated",
+    "copy": {
+      "title": "TOBACCO VANILLE",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "TOM FORD"
+    },
+    "sha256_matches": true,
+    "review_failures": []
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-hammered copper sheet wall, dense dimple texture scattering warm light, subtle vertical tonal falloff toward edges, soft amber glow from front, no objects, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834694732,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

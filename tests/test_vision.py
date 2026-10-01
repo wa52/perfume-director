@@ -72,6 +72,20 @@ class VisionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unsupported reasoning_effort'):
             self.call(self.response({}), {'reasoning_effort': 'unknown'})
 
+    def test_qwen_reasoning_budget_and_total_tokens_are_sent_and_audited(self):
+        options={'enable_thinking':True,'thinking_budget':1024,'max_completion_tokens':8192}
+        _,trace,call=self.call(self.response({}),options)
+        payload=json.loads(call.args[1])
+        self.assertEqual(payload['thinking_budget'],1024)
+        self.assertEqual(payload['max_completion_tokens'],8192)
+        self.assertNotIn('max_tokens',payload)
+        self.assertEqual(trace['options'],options)
+
+    def test_invalid_qwen_budget_or_conflicting_limits_are_rejected(self):
+        for options in ({'enable_thinking':'true'},{'thinking_budget':True},{'thinking_budget':-1},
+                        {'max_completion_tokens':float('nan')},{'max_tokens':8192,'max_completion_tokens':8192}):
+            with self.subTest(options=options),self.assertRaises(ValueError):self.call(self.response({}),options)
+
     def test_truncated_response_is_rejected_and_recorded(self):
         with self.assertRaisesRegex(ValueError, 'incomplete'):
             self.call(self.response({'pass': True}, finish='length'))

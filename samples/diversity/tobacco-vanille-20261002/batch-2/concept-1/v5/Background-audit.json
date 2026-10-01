@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless matte silver-gelatin photographic paper wash, strong vertical gradient from deep warm charcoal brown-grey at top through neutral mid silver to pale warm mineral grey at bottom, heavy chemical tonal drift with warm undertone, clearly visible coarse photographic grain and fiber texture across the whole sheet, pronounced soft edge vignette darkening all four borders, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834692718,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

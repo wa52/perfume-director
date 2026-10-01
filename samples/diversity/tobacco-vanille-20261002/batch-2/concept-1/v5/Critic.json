@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 85.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 86,
+    "typography": 79,
+    "background": 86,
+    "physical_integration": 90,
+    "reference_alignment": 80,
+    "creative_coherence": 87
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The executed size ladder now reads logo 18px cap [454,1073,583,1091] / subtitle 20px cap [324,1296,533,1316] / title 62px cap [121,1152,846,1214], but the two micro steps are only 2px apart in cap height, so in image 1 the 'TOM FORD' and 'EAU DE PARFUM' lines read as one monotone pair under the巨 title instead of the reference plate's crisp micro/meso/macro ladder; the plaque band therefore still lacks the disciplined three-step rhythm of the Chanel plate."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The silver rule (decoration x=367 width=346, visible in the contact crop as a short line between bottle base and logo) spans only 346px against the title's 725px line, so the铭牌 band reads as a floating fragment rather than a ruled full-width band; the rule is not a patchable field, so the band's width authority must come from widening the subtitle footprint toward the title's measure."
+    },
+    {
+      "type": "background",
+      "problem": "Revision 4 finally delivers the warm drift: image 1's top third measures a warm charcoal brown-grey and the bottom a pale warm mineral cream, matching the concept palette far better than image 7's cool green-grey; however the promised 'pronounced soft edge vignette' is only faintly present at the top corners and absent along the bottom edge, so the sheet's border closure is weaker than the concept declares and the plaque band floats on an unframed field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 435
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless matte silver-gelatin photographic paper wash, strong vertical gradient from deep warm charcoal brown-grey at top through neutral mid silver to pale warm mineral grey at bottom, heavy chemical tonal drift with warm undertone, clearly visible coarse photographic grain and fiber texture across the whole sheet, strong soft edge vignette darkening all four borders including the bottom edge, broad diffuse frontal illumination with gentle top-down falloff, completely empty, no objects, no horizon line"
+    }
+  ],
+  "reported_score": 84.0
+}

@@ -1,0 +1,168 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 142344335300666,
+    "background": {
+      "color": "#b0562f",
+      "prompt": "Hand-troweled terracotta clay plaster wall with a shallow arched recess centered right, subtle trowel ridges, warm diffuse glow from front, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 680,
+      "y": 835,
+      "width": 430,
+      "height": 950
+    },
+    "lighting": "broad soft frontal light, warm ambient bounce",
+    "palette": [
+      "#b0562f",
+      "#f6ead9",
+      "#3a2417"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 76,
+      "y": 158,
+      "size": 72,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 76,
+      "y": 288,
+      "size": 22,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 76,
+      "y": 86,
+      "size": 28,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 353,
+      "width": 281,
+      "color": "#f6ead9"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 142344335300666,
+    "background": {
+      "color": "#b0562f",
+      "prompt": "Hand-troweled terracotta clay plaster wall with a shallow arched recess centered right, subtle trowel ridges, warm diffuse glow from front, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 680,
+      "y": 835,
+      "width": 430,
+      "height": 950
+    },
+    "lighting": "broad soft frontal light, warm ambient bounce",
+    "palette": [
+      "#b0562f",
+      "#f6ead9",
+      "#3a2417"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 76,
+      "y": 158,
+      "size": 72,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 76,
+      "y": 288,
+      "size": 22,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 76,
+      "y": 86,
+      "size": 28,
+      "color": "#f6ead9",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 353,
+      "width": 281,
+      "color": "#f6ead9"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

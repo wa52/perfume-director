@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Monolithic flat raw cast concrete wall in cool grey, perfectly continuous matte mineral surface with no seams, no joints, no corner and no floor sweep, very subtle broad radial luminance falloff softly brighter behind the center of the plane, even diffuse frontal illumination with cool ambient wrap, empty architectural void, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335299659,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

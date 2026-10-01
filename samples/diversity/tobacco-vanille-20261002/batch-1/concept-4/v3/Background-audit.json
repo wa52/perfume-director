@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Powder blue matte seamless paper sweep, one very soft broad diagonal fold shadow running corner to corner from upper left to lower right, the fold only a whisper darker than the paper with fully diffused feathered edges and no visible line, plus a faint secondary paper undulation in the lower right, uniform diffuse frontal light, fine matte fiber texture, empty scene, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 142344335302686,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

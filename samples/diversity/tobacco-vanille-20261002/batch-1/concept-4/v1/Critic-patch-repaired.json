@@ -1,0 +1,35 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Powder blue matte seamless paper sweep, one soft broad diagonal fold shadow running corner to corner from upper left to lower right with gently diffused edges and a faint secondary paper undulation in the lower right, uniform diffuse frontal light, fine matte fiber texture, empty scene"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 46
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 168
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ]
+}

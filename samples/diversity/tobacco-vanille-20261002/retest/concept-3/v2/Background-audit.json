@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-hammered copper sheet wall, dense dimple texture, strong smooth vertical tonal falloff: deep shadowed bronze in the upper third calming into a quiet dark inscription zone, warming to a soft amber diffuse glow around the lower center, dimple highlights gently blurred and suppressed behind the upper band, no objects, no figures, no horizon, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834694733,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

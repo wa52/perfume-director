@@ -1,0 +1,45 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 566
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.78
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre close to hex b0562f, one very wide shallow vertical arched recess whose opening spans at least three quarters of the frame width and is centered in the right two thirds, recess interior descending smoothly to a horizontal plaster plane whose surface begins in the lower quarter of the frame and continues uninterrupted to the bottom edge, plane catching soft frontal daylight with gentle value fall-off and faint diffuse cast shading spreading outward low around the center of the plane, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#b0562f"
+    }
+  ]
+}

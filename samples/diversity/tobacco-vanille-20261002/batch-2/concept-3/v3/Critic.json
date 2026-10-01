@@ -1,0 +1,44 @@
+{
+  "pass": false,
+  "score": 80.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 80,
+    "background": 76,
+    "physical_integration": 80,
+    "reference_alignment": 74,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The requested plaque veil only partially executed: in the current poster the band behind logo (y130-147), title (y230-273) and subtitle (y344-361) still carries individually亮 dimple highlights (bright dents at the left of 'TOBACCO', between the two words, and right of 'VANILLE'), so cream serif strokes compete dent-by-dent with specular spots; the promised calm deep patina field reads only ~60% achieved versus the references' decisively quiet type zones."
+    },
+    {
+      "type": "background",
+      "problem": "The warm metallic bounce is still mis-aimed: the strongest dimple brightness sits along the right flank and lower-right corner (x~700-1000, y~900-1400) instead of pooling low-center beneath the bottle, so the light logic of the brief (bounce under the niche object) reads as side spill and pulls the eye off the centered plaque grid."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [266,1185,815,1435] confirms a genuine zero-offset dark contact seam under the base (no floating), but the copper immediately beside and below the base keeps the same dimple value as the rest of the wall; there is no soft luminance pool or dimple-calming around the base, so grounding remains a thin line rather than an object sitting in light."
+    },
+    {
+      "type": "composition",
+      "problem": "Plaque band steps are still near-equal (logo bottom 147 to title top 230 = 83px; title bottom 273 to subtitle top 344 = 71px; subtitle bottom 361 to rule 425 = 64px), so the three lines stack rhythmically instead of grouping logo+title against a stepped-down subtitle; the rule line at y425 also sits only ~48px above the cap top (461), crowning the cap rather than closing the band with air."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-hammered copper sheet wall, dense dimple texture; the upper forty percent fully smoothed into a calm deep amber-brown patina veil of very low contrast with no specular dents at all so engraved plaque type rests on a quiet even field; dimple highlights reappear only below mid-height and gradually brighten toward the bottom; one soft warm metallic bounce pool centered low directly beneath the middle of the frame, dimples calming and darkening within one bottle-width of that center pool; gentle darker vignette at side edges; no objects, no equipment, empty material and light only"
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 322
+    }
+  ],
+  "reported_score": 81.6
+}

@@ -8,6 +8,22 @@ from PIL import Image, ImageDraw
 
 
 class QualitySelectionTests(unittest.TestCase):
+    def test_critic_sees_actual_ink_correction_and_rejected_previous_changes(self):
+        spec=poster.direction_template(poster.read(poster.ROOT/'examples/PosterSpec.json'),'black-gold')
+        spec['title']['text']="J'adore"
+        product=poster.ROOT/'assets/products/dior-jadore-retailer.png'
+        with tempfile.TemporaryDirectory() as directory,patch.object(poster,'vision',return_value={}) as model:
+            folder=Path(directory);current=folder/'v2';older=folder/'v1'
+            current.mkdir();older.mkdir()
+            poster.render(spec,Image.open(product),'C:/Windows/Fonts/msyh.ttc').save(current/'poster.png')
+            poster.write(current/'Background-audit.json',{'ink_changes':[{'path':'title.color','old':'#FFFFFF','value':'#111111','reason':'text_background_contrast_below_3'}]})
+            poster.write(older/'Critic-safe-groups.json',{'accepted':[],'rejected_groups':[{'group':'typography','changes':[{'path':'title.y','value':600}]}]})
+            poster.review_poster({'font':'C:/Windows/Fonts/msyh.ttc'},spec,product,current/'poster.png',['r1','r2','r3'],current/'Critic-call.json',previous={'poster':older/'poster.png','critique':{}})
+            prompt=model.call_args.args[1]
+            self.assertIn('text_background_contrast_below_3',prompt)
+            self.assertIn('Critic-safe-groups',prompt)
+            self.assertIn('fit text size and product position together',prompt)
+
     def test_review_gets_contact_detail_without_changing_reference_order(self):
         spec=poster.direction_template(poster.read(poster.ROOT/'examples/PosterSpec.json'),'black-gold')
         spec['title']['text']="J'adore"

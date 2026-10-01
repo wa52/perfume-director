@@ -1,0 +1,189 @@
+[
+  {
+    "id": "tom-ford-lost-cherry",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://bluebloom20.com/products/tom-ford-lost-cherry-edp",
+    "image": "references/luxury/tom-ford-lost-cherry.jpg",
+    "selection_reason": "红底、红唇与红色瓶身形成一致色彩，黑色衣服为商品提供对比区域。",
+    "analysis": {
+      "composition": "portrait_asymmetric",
+      "subject_ratio": 0.045,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_portrait_light",
+      "color": [
+        "red",
+        "black",
+        "skin_tone"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "同色呼应",
+        "简洁红底",
+        "黑色对比区"
+      ],
+      "perfume_suitability": 71,
+      "caveat": "没有独立海报标题，只参考色彩控制和商品辨识。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-orpheon",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://ssilife.com.ph/blog/the-vibrant-return-of-orpheon",
+    "image": "references/luxury/diptyque-orpheon.jpg",
+    "selection_reason": "深蓝到暖金的背景梯度衬托透明瓶身，底部小品牌与上方道具形成平衡。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.3,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_side_light",
+      "color": [
+        "navy",
+        "amber",
+        "black",
+        "white"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "透明玻璃边光",
+        "底部小品牌",
+        "暗色负空间"
+      ],
+      "perfume_suitability": 94,
+      "caveat": "标签须保持可读，道具只参考前后景关系。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "hermes-terre",
+    "brand": "Hermes",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+    "image": "references/luxury/hermes-terre.jpg",
+    "selection_reason": "大地橙与天蓝互补，人物暗部和商品亮部形成分离，右侧信息克制。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.025,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_daylight",
+      "color": [
+        "orange",
+        "sky_blue",
+        "black"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "橙蓝对比",
+        "烟尘景深",
+        "右侧商品"
+      ],
+      "perfume_suitability": 75,
+      "caveat": "人物和动态烟尘暂不执行，参考色彩与主次。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "armani-santal-dansha",
+    "brand": "Armani",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.koichirodoistudio.com/1300",
+    "image": "references/luxury/armani-santal-dansha.jpg",
+    "selection_reason": "黑底、木材垂直纹理和金色标签统一，集中侧光让透明瓶身成为中心。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.23,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "high",
+      "lighting": "hard_side_light",
+      "color": [
+        "black",
+        "wood_brown",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "木材底座",
+        "侧光玻璃",
+        "上方品牌留白"
+      ],
+      "perfume_suitability": 97,
+      "caveat": "优先参考，木材不能覆盖瓶身标签。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "prada-paradoxe",
+    "brand": "Prada",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.sephora.com/product/paradoxe-eau-de-parfum-P501198",
+    "image": "references/luxury/prada-paradoxe.jpg",
+    "selection_reason": "薄荷绿、黑色服装与粉色瓶身形成清晰色块，左上文字和右下商品层级明确。",
+    "analysis": {
+      "composition": "diagonal",
+      "subject_ratio": 0.13,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "mint_green",
+        "black",
+        "coral_pink"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "对角线视线",
+        "左上品牌",
+        "右下商品"
+      ],
+      "perfume_suitability": 76,
+      "caveat": "人物构图仅作层级参考，第一版不生成人物。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-wild-bluebell",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "场景商业广告",
+    "source_url": "https://cahiersdemode.com/wild_bluebell_cologne/",
+    "image": "references/luxury/jo-malone-wild-bluebell.jpg",
+    "selection_reason": "蓝紫色单一色系与夸张商品尺度构成梦境，适合学习香调情绪的统一。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.16,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_window_light",
+      "color": [
+        "blue",
+        "violet",
+        "white"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "放大商品",
+        "同色花海",
+        "叙事布景"
+      ],
+      "perfume_suitability": 63,
+      "caveat": "场景复杂且含人物，只作色彩情绪参考，暂不复制其场景。"
+    },
+    "analysis_origin": "codex_visual_review"
+  }
+]

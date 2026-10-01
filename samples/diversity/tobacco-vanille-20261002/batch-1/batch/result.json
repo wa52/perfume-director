@@ -1,0 +1,665 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "粗野混凝土纪念碑",
+      "brief": "冷灰清水混凝土墙面构成建筑式留白，商品居中偏下如纪念碑伫立，文字集中于左上小体量排印，一条细铜线横贯标题下方，形成上轻下重的纪念性网格；宽柔正面光让深色玻璃与冷灰墙面保持雕塑感。",
+      "material": "raw cast concrete",
+      "lighting": "broad soft frontal light with cool diffuse ambient",
+      "id": "concept-1",
+      "signature": "fbfdfb55dc6e1c75b110fcd66f747957fa7c08b592de04293b70aba0824fe68e",
+      "palette": [
+        "#9aa0a4",
+        "#16181a",
+        "#b0762a"
+      ],
+      "reference_ids": [
+        "diptyque-orpheon",
+        "hermes-terre",
+        "prada-paradoxe"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#9aa0a4",
+          "prompt": "Seamless raw cast concrete wall in cool grey, fine formwork seams, one soft horizontal shadow band across upper third, even diffuse illumination, matte mineral texture",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 864,
+          "width": 404,
+          "height": 893
+        },
+        "lighting": "broad soft frontal light with cool diffuse ambient",
+        "palette": [
+          "#9aa0a4",
+          "#16181a",
+          "#b0762a"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 76,
+          "y": 130,
+          "size": 64,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 76,
+          "y": 238,
+          "size": 24,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 76,
+          "y": 65,
+          "size": 30,
+          "color": "#16181a",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 295,
+          "width": 367,
+          "color": "#16181a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\cb311ff592b7",
+      "selected": {
+        "version": 3,
+        "score": 82.6,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "a76b3d7e56b4b380de62eb4ffd1b54c9155738aae06ed7b6831acf0d73109a23"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 79.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "12f268e0c08b4ad997e4882f7cdd9abae7f6820417c1c75e7da929cc2165659b"
+        },
+        {
+          "version": 2,
+          "score": 81.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "c327be43df02fd71d2b8ee97d7977e24e14123dc8dbd9cd33137774e93017a2f"
+        },
+        {
+          "version": 3,
+          "score": 82.6,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "a76b3d7e56b4b380de62eb4ffd1b54c9155738aae06ed7b6831acf0d73109a23"
+        },
+        {
+          "version": 4,
+          "score": 83.6,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "296cabd6090125688796c0310749b612653f10ed3989a5be13182e8d5e1d103a"
+        },
+        {
+          "version": 5,
+          "score": 84.3,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "9005f6c2bee7e857dd2389915aaee990ed376ccf6e2d77ebdad1c9bd4f5c4287"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "赤陶拱壁叙事",
+      "brief": "日晒赤陶灰泥墙带浅拱形凹壁，商品偏右立于拱心，左侧竖排文字柱形成非对称双栏网格；细线作为左栏底部分隔，暖土色家族与深色玻璃形成温度对比，宽柔正面光保留玻璃高光。",
+      "material": "sun-baked terracotta plaster",
+      "lighting": "broad soft frontal light, warm ambient bounce",
+      "id": "concept-2",
+      "signature": "ff8e75e2b73cc62628d15962d221c4f8e426d7d1019068ab0a5c671de4701a18",
+      "palette": [
+        "#b0562f",
+        "#f6ead9",
+        "#3a2417"
+      ],
+      "reference_ids": [
+        "armani-santal-dansha",
+        "hermes-terre",
+        "jo-malone-wild-bluebell"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#b0562f",
+          "prompt": "Hand-troweled terracotta clay plaster wall with a shallow arched recess centered right, subtle trowel ridges, warm diffuse glow from front, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 680,
+          "y": 835,
+          "width": 430,
+          "height": 950
+        },
+        "lighting": "broad soft frontal light, warm ambient bounce",
+        "palette": [
+          "#b0562f",
+          "#f6ead9",
+          "#3a2417"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 76,
+          "y": 158,
+          "size": 72,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 76,
+          "y": 288,
+          "size": 22,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 76,
+          "y": 86,
+          "size": 28,
+          "color": "#f6ead9",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 353,
+          "width": 281,
+          "color": "#f6ead9"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\4ef24d3b4c17",
+      "selected": {
+        "version": 4,
+        "score": 81.7,
+        "pass": false,
+        "poster": "v4/poster.png",
+        "spec": "v4/PosterSpec.json",
+        "critic": "v4/Critic.json",
+        "review_error": null,
+        "sha256": "eac8b30ea435646d988a91fe7df7e9143fb09e66dedbce94e99aada2cb1eec28"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "aef21e73fb5d115e378a8e488433921b9fa019f1096d71def39a6c3f81e455fc"
+        },
+        {
+          "version": 2,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "3324923efcefbcb5c41727c79320db0a3839df48e824a73ad338e5cf692fce7d"
+        },
+        {
+          "version": 3,
+          "score": 80.3,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "ea4c5202ba48ded160e853fbc07c447b6b9a1ec58ef3d1e13ca08ff73a606fb0"
+        },
+        {
+          "version": 4,
+          "score": 81.7,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "eac8b30ea435646d988a91fe7df7e9143fb09e66dedbce94e99aada2cb1eec28"
+        },
+        {
+          "version": 5,
+          "score": 82.1,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "041130de327df7ddc53fa681d5f29b1bdd7769b22322a0d24cd734fd1ee038ac"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "夜漆翠羽",
+      "brief": "深翠玉色漆面背景带垂直柔光渐变与漆层反光，商品居中且体量克制，文字全部收于顶部窄带，构成上密下空的剧院式网格；细金线悬于文字带之下，漆面材质呼应玻璃的深邃光泽。",
+      "material": "polished lacquer panel",
+      "lighting": "broad soft frontal light over deep lacquer sheen",
+      "id": "concept-3",
+      "signature": "0d13f2227c23d556f252c977e79992a38ec76a4def043297d6b6a1533094044c",
+      "palette": [
+        "#0d3b3c",
+        "#efe6d2",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "tom-ford-lost-cherry",
+        "diptyque-orpheon",
+        "armani-santal-dansha"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#0d3b3c",
+          "prompt": "Deep teal lacquered panel with vertical soft gradient, faint polished sheen streaks, smooth glossy depth, even frontal illumination",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 326,
+          "height": 720
+        },
+        "lighting": "broad soft frontal light over deep lacquer sheen",
+        "palette": [
+          "#0d3b3c",
+          "#efe6d2",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 367,
+          "y": 122,
+          "size": 58,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 394,
+          "y": 223,
+          "size": 22,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 432,
+          "y": 65,
+          "size": 26,
+          "color": "#efe6d2",
+          "font": "C:/Windows/Fonts/arial.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 367,
+          "y": 288,
+          "width": 346,
+          "color": "#efe6d2"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\72976679a760",
+      "selected": {
+        "version": 3,
+        "score": 80.6,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "cbe4abca0662196d6841a120335b9b29c2f6d59af1c7604f42576ed390cafe85"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 74.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "c5b44a76c78252c07f625eab9e891f92f1900f058d36b249f65ae37aa1d4f5a9"
+        },
+        {
+          "version": 2,
+          "score": 77.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "938c17b89354b461b3e84a086d6a5e670d74a331c31d37ce3a0c8ab2ed13d098"
+        },
+        {
+          "version": 3,
+          "score": 80.6,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "cbe4abca0662196d6841a120335b9b29c2f6d59af1c7604f42576ed390cafe85"
+        },
+        {
+          "version": 4,
+          "score": 81.4,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "24d381a458d1f48dd9ed7d9dc93bad20355622d83cee581c7a80ad3fbc15fc61"
+        },
+        {
+          "version": 5,
+          "score": 82.3,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "943229a6bda24e2091f8cb768abc5684c13ff172f17c701934e6384b84368e2b"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "雾蓝纸幕对角",
+      "brief": "粉雾蓝无缝纸幕带一道斜向折痕阴影，商品偏左下，文字占据右上对角，形成对角牵引网格；细线短促置于右上文字组之下，纸质哑光与玻璃亮面构成触觉反差，光线宽柔均匀。",
+      "material": "matte seamless paper sweep",
+      "lighting": "broad soft frontal light, paper-diffused cool tone",
+      "id": "concept-4",
+      "signature": "b2809335a39b7183761f4904fbf9d8c9475eff4b23d2191dc60cb3d0468da1bd",
+      "palette": [
+        "#bfd6de",
+        "#12303f",
+        "#8a5a2b"
+      ],
+      "reference_ids": [
+        "prada-paradoxe",
+        "jo-malone-wild-bluebell",
+        "diptyque-orpheon"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#bfd6de",
+          "prompt": "Powder blue seamless paper sweep with one gentle diagonal crease shadow from upper right, soft matte fiber texture, uniform diffuse light",
+          "revision": 0
+        },
+        "product": {
+          "x": 400,
+          "y": 864,
+          "width": 378,
+          "height": 835
+        },
+        "lighting": "broad soft frontal light, paper-diffused cool tone",
+        "palette": [
+          "#bfd6de",
+          "#12303f",
+          "#8a5a2b"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 605,
+          "y": 144,
+          "size": 46,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 605,
+          "y": 259,
+          "size": 22,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 605,
+          "y": 79,
+          "size": 28,
+          "color": "#12303f",
+          "font": "C:/Windows/Fonts/georgia.ttf"
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 605,
+          "y": 324,
+          "width": 324,
+          "color": "#12303f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ]
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\27446961cc16",
+      "selected": {
+        "version": 3,
+        "score": 79.6,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "03d9d3310b4ebd80faee4218920a1a7c1fc9c27ae14bde07d45fa21350587983"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 77.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "02751cc4d6311bc41fbb294f0246f1a10c7e4c47d09b56a80b227c465831ffe7"
+        },
+        {
+          "version": 2,
+          "score": 79.4,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "cb4dd4d4063a03c4e8e39c3c11300bb73d23ebbcca21d1e86cc739cc35ea85e1"
+        },
+        {
+          "version": 3,
+          "score": 79.6,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "03d9d3310b4ebd80faee4218920a1a7c1fc9c27ae14bde07d45fa21350587983"
+        },
+        {
+          "version": 4,
+          "score": 81.9,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "5bfaac3efe7a37c649c2656091615a91090eed6db630492676d3045c3d8477ee"
+        },
+        {
+          "version": 5,
+          "score": 82.6,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "b010a173badca4e9b62492ea6f5e0af8a06b54edfb8bbad90660aed1a260f020"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

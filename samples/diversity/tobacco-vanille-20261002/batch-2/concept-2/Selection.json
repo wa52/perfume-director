@@ -1,0 +1,12 @@
+{
+  "selected_version": 4,
+  "evidence": "Version 4 (image 8) delivers the most resolved execution of the glazed-ceramic two-column concept: the bottle stands with a believable contact shadow on the tiled ledge, the dark glass reads crisply against the cool白 satin glaze under broad soft frontal light, and the serif type column (TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) sits clear of the瓶 shoulder in a clean editorial right column. Compared with version 1, whose瓶 base floats against a full-height tile grid with no ground plane, and versions 2-3, where the vertical glaze groove runs straight through the文字 column and breaks the book-spine separation, version 4 keeps the groove beside the type and maintains coherent spacing and hierarchy. Version 5's暖色 glow strip along the ledge contradicts the declared cool ceramic bounce and its中心 groove crowds the产品 column, so version 4 remains the strongest finished poster within this concept.",
+  "remaining_problems": [
+    "A tiny stray speck artifact floats in the空 area left of the 'TOM FORD' line in all candidates, including version 4.",
+    "The vertical glaze groove in version 4 stops at the ledge rather than reading as a continuous book-spine line between the two columns.",
+    "The bottle's contact shadow is soft but slightly ambiguous at the ledge junction, leaving minimal sense of weight.",
+    "The ceramic wall shows faint uneven sheen near the upper right, mildly inconsistent with the specified glare-free broad frontal light."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

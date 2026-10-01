@@ -1,0 +1,25 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-hammered copper sheet wall, dense dimple texture, broad soft frontal illumination melting into a smooth darker amber vignette across the upper third so the plaque zone calms, gentle warm metallic bounce pooling low center, fine dimples fading softer toward edges, no objects, no equipment, empty material and light only, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834694733,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "title.color",
+      "old": "#e8d3ae",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    },
+    {
+      "path": "subtitle.color",
+      "old": "#e8d3ae",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 212889834694732,
+  "background": {
+    "color": "#a4653a",
+    "prompt": "Hand-hammered copper sheet wall, dense dimple texture; the upper forty percent fully smoothed into a calm deep amber-brown patina veil of very low contrast with no specular dents at all so engraved plaque type rests on a quiet even field; dimple highlights reappear only below mid-height and gradually brighten toward the bottom; one soft warm metallic bounce pool centered low directly beneath the middle of the frame, dimples calming and darkening within one bottle-width of that center pool; gentle darker vignette at side edges; no objects, no equipment, empty material and light only",
+    "revision": 3
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 391,
+    "height": 864
+  },
+  "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+  "palette": [
+    "#a4653a",
+    "#22140c",
+    "#e8d3ae"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 216,
+    "y": 230,
+    "size": 64,
+    "color": "#e8d3ae",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 335,
+    "y": 322,
+    "size": 26,
+    "color": "#e8d3ae",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#22140c",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 443,
+    "y": 130,
+    "size": 26,
+    "color": "#e8d3ae",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 16,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 367,
+    "y": 425,
+    "width": 346,
+    "color": "#22140c"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

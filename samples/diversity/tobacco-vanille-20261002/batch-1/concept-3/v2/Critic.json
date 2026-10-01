@@ -1,0 +1,68 @@
+{
+  "pass": false,
+  "score": 77.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 78,
+    "background": 68,
+    "physical_integration": 82,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated field is no longer planks, but two hard vertical groove seams still run the full canvas height at x≈363 and x≈720, passing directly behind the bottle silhouette and through the contact zone visible in the detail crop; the declared concept is a seamless mirror-polished lacquer panel, so these panel joints contradict the material story and slice the hero."
+    },
+    {
+      "type": "typography",
+      "problem": "The serif upgrade landed (Georgia title now spans x235-850, a confident band), but the whole stacked band is dark brown #261E16 sitting on the darkest value zone of the teal lacquer: at the top the background reads near #1d4a4b, so logo (26px) and subtitle (22px) fall below luxury legibility contrast, and the declared cream #efe6d2 voice of the concept is unused in type; the 346px gold rule under a 615px title also leaves the band optically narrow."
+    },
+    {
+      "type": "composition",
+      "problem": "The theater grid still carries a dead zone: subtitle baseline y=239 and rule y≈288 leave ~245px of empty lacquer before the cap at y=533, while only ~187px sits below the base y=1253; references 3-5 interlock type, object and negative space, here the middle void plus the short floating rule weaken the vertical rhythm of the top-dense/bottom-empty concept."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact crop confirms a genuine soft contact shadow hugging the base at offset_y 0 (correct, not floating), yet the backdrop shows no horizontal reflective plane or tonal floor transition beneath the bottle, so the shadowed base reads as resting on an invisible ledge in front of a vertical panel; the bright frontal key on the glass is not echoed by any sheen pool or reflection low in frame."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 each stage a material light event (saturated gloss field, mirrored brass table, smoldering wood with water); this draft keeps an evenly lit teal panel with a single isolated bottle and no supporting light event or reflection, so the retouching and material-drama gap remains despite the cleaner type and smoother field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless deep teal lacquer panel, mirror-polished glossy surface with one soft broad vertical light gradient brightest at upper center, faint wide sheen streaks, a subtle horizontal reflective plane with soft mirrored glow low in frame, perfectly continuous coat, absolutely no lines, no grooves, no joints, no panels, no planks, no seams, no objects, even broad frontal illumination"
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#efe6d2"
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 873
+    }
+  ],
+  "reported_score": 77.4
+}

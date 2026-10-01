@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d3e02065f67afd5a5da6ec1b6619631b20473a64cd9a46ca65be36a1182c69ec"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "8fc5b6736063a76b2ece1a26c1f51e179bebadf4dd83ce5011b65bc4beedfadc"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-9b85a24c-bd7e-9cb2-8f40-d22e32dc5287",
+      "usage": {
+        "prompt_tokens": 6272,
+        "total_tokens": 7634,
+        "completion_tokens": 1362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5662,
+          "text_tokens": 610
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 337
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-9b85a24c-bd7e-9cb2-8f40-d22e32dc5287",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6272,
+    "total_tokens": 7634,
+    "completion_tokens": 1362,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5662,
+      "text_tokens": 610
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 337
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 (image 5) delivers the declared slate concept most faithfully: the cleft slate wall shows genuine natural cleavage grain and fracture planes, with a soft diagonal sweep reading from the upper left across the stone. The left text block (sans hierarchy TOM FORD / TOBACCO VANILLE / EAU DE PARFUM) sits in the upper-left half, its thin white rule landing exactly at the bottle's shoulder line as a chiseled baseline, preserving the beside layout and asymmetric stone-carved grid. The bottle is a recognizable, cleanly lit hero with legible gold label, matte stone versus glossy glass tactile contrast, and no studio gear. Version 2 (image 6) instead introduces a raised slate ledge behind the bottle while the packshot floats in front of it with its base hanging below the shelf edge and no contact shadow, the named defect; its stone also reads flatter and more uniform, weakening the cleft-cleavage character.",
+    "remaining_problems": [
+      "Version 1's bottle still reads as a wall-mounted cutout: no contact shadow or grounding plane ties it physically to the slate, so contact conviction is implied rather than proven",
+      "The diagonal light sweep is subtle and slightly competes with the natural cleavage diagonals, making the sweep direction less legible than intended",
+      "Text block vertical overlap with the shoulder line is achieved only via the baseline rule; the type group itself stops above the shoulder, leaving the left column slightly top-weighted"
+    ]
+  },
+  "duration_seconds": 36.632
+}

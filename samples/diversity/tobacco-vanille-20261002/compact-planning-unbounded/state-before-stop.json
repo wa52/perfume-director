@@ -1,0 +1,9 @@
+{
+  "id": "c9e990321f40461d9f21cbb75f043a55",
+  "status": "RUNNING",
+  "stage": "CONCEPTS",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\bb0bbb4e8f7b",
+  "direction_count": 4
+}

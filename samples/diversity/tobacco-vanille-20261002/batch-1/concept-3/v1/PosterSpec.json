@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 142344335301675,
+  "background": {
+    "color": "#0d3b3c",
+    "prompt": "Deep teal lacquered panel with vertical soft gradient, faint polished sheen streaks, smooth glossy depth, even frontal illumination",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 326,
+    "height": 720
+  },
+  "lighting": "broad soft frontal light over deep lacquer sheen",
+  "palette": [
+    "#0d3b3c",
+    "#efe6d2",
+    "#c9a24b"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 367,
+    "y": 122,
+    "size": 58,
+    "color": "#efe6d2",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 394,
+    "y": 223,
+    "size": 22,
+    "color": "#efe6d2",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#efe6d2",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 432,
+    "y": 65,
+    "size": 26,
+    "color": "#efe6d2",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 367,
+    "y": 288,
+    "width": 346,
+    "color": "#efe6d2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

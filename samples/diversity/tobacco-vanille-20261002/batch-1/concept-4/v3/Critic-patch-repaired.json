@@ -1,0 +1,35 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty powder blue matte seamless paper sweep lit by one broad diffused frontal light source, a single gentle diagonal paper undulation from upper left to lower right expressed only as a faint tonal gradient two percent darker than the paper with fully feathered invisible edges and no line no crease no ridge, uniform soft cool illumination with no highlights and no cast edges, fine matte fiber grain, completely empty scene"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 44
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 158
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 298
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.68
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 24
+    }
+  ]
+}

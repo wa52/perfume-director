@@ -1,0 +1,35 @@
+{
+  "pass": false,
+  "score": 67.6,
+  "dimensions": {
+    "product_fidelity": 88,
+    "composition": 74,
+    "typography": 82,
+    "background": 70,
+    "physical_integration": 35,
+    "reference_alignment": 58,
+    "creative_coherence": 66
+  },
+  "problems": [
+    "Physical integration fails: the spec's contact shadow (opacity 0.35, blur 10, offset 0,0) is not perceptible in the render; the bottle's base and sides meet the slate with crisp edges and no soft darkening, so the product reads as a浮 floating paste-up against the wall.",
+    "No support plane or grounding cue exists anywhere in the frame (background prompt is a wall only), and without the specified contact shadow the bottle has zero anchoring; luxury references (Chanel N°5 gradient floor, Diptyque pedestal) all ground the flacon.",
+    "Lighting contradiction: the slate shows a broad diagonal sweep running from upper left per spec, but the bottle's specular highlights sit on the cap top and right shoulder with a near-flat frontal body read, so the product's key light does not visibly agree with the background sweep.",
+    "Background tone drifts toward a lighter, more saturated blue than the specified #3c4550 deep blue-grey in the upper-left sweep zone, weakening the intended moody luxury value structure and reducing contrast for the #eef1f4 typography in that zone.",
+    "Reference alignment is partial: references place the flacon in a grounded, atmospheric setting (gradient floor or pedestal); this render's wall-only backdrop with an ungrounded product misses that staging logic."
+  ],
+  "changes": [
+    "Re-render the shadow layer exactly per spec (contact, opacity 0.35, blur 10, offset_x 0, offset_y 0) so a soft dark halo hugs the entire product silhouette, especially beneath the base at y=1239, giving the bottle a grounding cue without moving it.",
+    "Harmonize the product key light with the background's single diagonal sweep from upper left: shift the bottle's primary highlight to the upper-left cap edge and left shoulder, keeping one consistent light source.",
+    "Deepen the background sweep toward the specified #3c4550 value (reduce luminance/saturation in the upper-left band) so the wall reads deep blue-grey and the #eef1f4 type keeps strong contrast.",
+    "Optionally add a faint mineral-dust gradient or vignette at the bottle base zone (without adding objects) to reinforce depth, in the spirit of the Chanel reference's grounded gradient."
+  ],
+  "notes": {
+    "do_not_change": [
+      "Product scale and position: height ratio 0.6799 is inside the 35-74% band, base y=1239 (86.0%) is below the 91% limit, and bbox [514,260,955,1239] respects margins; do not rescale or reposition.",
+      "Shadow offset_y must remain 0 as specified; do not push the contact shadow downward.",
+      "Typography blocks: logo [65,302,194,320], title [65,403,482,438], subtitle [65,526,258,544] are legible, correctly placed left of the product with no overlap; keep as is.",
+      "Label artwork on the bottle is legible and faithful to the reference asset; keep."
+    ]
+  },
+  "reported_score": 62
+}

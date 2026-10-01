@@ -1,0 +1,101 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "diptyque-do-son.jpg",
+      "sha256": "b4d55f1eb4e5e4062052eb8de1d6b0158e03c21c34d566e2f08e6220cba23600"
+    },
+    {
+      "name": "chanel-no5-monochrome.jpg",
+      "sha256": "68b5962e6a819907c5973b4f0741600dc2152f32c3907779229fdfdd8cb84ace"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "00e0c3408aa94609b51769549ebdcf21fca99ccb3942be9db665bf9a9f45d47a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "6ad7b3002eeaa99cc9c53bc3d69a21af2e401ad6937899ff9910260cd60ef840"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "87c5da9341d8e9d551b30c819b658870d7bdd9c8a87e7a4293c11be7e117dbd8"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "2406e1e9abb87856e950c487f8e0938d241e1d0eb264d4bdd640f3ee7592d662"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "bed740a233138e619d0b018a036ee385c984e45cb90dfccba15438da9e3339b3"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6840ab20-27ee-96a4-8b80-b0e1fd32e4d8",
+      "usage": {
+        "prompt_tokens": 9832,
+        "total_tokens": 11258,
+        "completion_tokens": 1426,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 9175,
+          "text_tokens": 657
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 401
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6840ab20-27ee-96a4-8b80-b0e1fd32e4d8",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9832,
+    "total_tokens": 11258,
+    "completion_tokens": 1426,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9175,
+      "text_tokens": 657
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 401
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 4,
+    "evidence": "Version 4 (image 8) fulfills the silver-gelatin anti-grid most completely: the charcoal-to-mineral-gray top-down gradient reads as matte photographic paper with a faint grain, the dark flacon sits in the upper-mid field as the sole暗房 subject with a soft frontal key that keeps the glass volume and gold label legible, and the bottle base meets the ground with a contained contact shadow rather than a floating cutout. The bottom inscription band is correctly hierarchical and centered: thin silver rule, smallest brand line 'TOM FORD', largest sans title 'TOBACCO VANILLE', fragrance line 'EAU DE PARFUM'垫底, all沉入 the lower plaque zone. Compared with versions 1-2, whose base shadow is a smeared gray artifact and whose rule nearly collides with the bottle underside, and version 3, whose rule floats detached and whose gradient turns slightly greenish, version 4 balances rule placement, shadow control and paper tone; version 5 drifts warmer/beige away from the mineral gray palette and its title block sits marginally looser against the base line. No studio equipment or raised-support float appears in any kept element.",
+    "remaining_problems": [
+      "Contact shadow under the base is still a faint dark smudge rather than a crisp silver-gelatin contact print edge; it slightly muddies the matte paper read.",
+      "The thin dividing rule reads near-black instead of a metallic silver line, weakening the intended material dialogue with the glass highlights.",
+      "Top of the gradient stops at mid charcoal-gray rather than the deepest炭灰 of the declared palette, softening the darkroom vignette.",
+      "Lower plaque band lacks a defined宽铭牌 edge; text floats on open paper instead of sitting in a visually bounded inscription strip."
+    ]
+  },
+  "duration_seconds": 39.341
+}

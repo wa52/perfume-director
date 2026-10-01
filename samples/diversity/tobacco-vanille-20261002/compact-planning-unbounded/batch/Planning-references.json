@@ -1,0 +1,189 @@
+[
+  {
+    "id": "diptyque-eau-rose",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商品静物",
+    "source_url": "https://www.wallpaper.com/beauty-grooming/diptyque-eau-rose-perfume-revamp",
+    "image": "references/luxury/diptyque-eau-rose.jpg",
+    "selection_reason": "粉色帷幔和花束统一背景，香水在花束中心形成精致的小焦点。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.018,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_side_light",
+      "color": [
+        "pink",
+        "green",
+        "warm_white"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "同色帷幔",
+        "花束围合",
+        "商品小焦点"
+      ],
+      "perfume_suitability": 72,
+      "caveat": "适合参考花香场景，当前商品应更大，不能照搬其低商品占比。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "prada-paradoxe",
+    "brand": "Prada",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.sephora.com/product/paradoxe-eau-de-parfum-P501198",
+    "image": "references/luxury/prada-paradoxe.jpg",
+    "selection_reason": "薄荷绿、黑色服装与粉色瓶身形成清晰色块，左上文字和右下商品层级明确。",
+    "analysis": {
+      "composition": "diagonal",
+      "subject_ratio": 0.13,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "mint_green",
+        "black",
+        "coral_pink"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "对角线视线",
+        "左上品牌",
+        "右下商品"
+      ],
+      "perfume_suitability": 76,
+      "caveat": "人物构图仅作层级参考，第一版不生成人物。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "tom-ford-black-orchid-satin",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://models.com/work/tom-ford-lunar-new-year-campaign",
+    "image": "references/luxury/tom-ford-black-orchid-satin.jpg",
+    "selection_reason": "黑色丝绸与瓶身形成材质对比，金色标签提供唯一暖色焦点，适合第一版暗色高级风格。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.24,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "controlled_rim_light",
+      "color": [
+        "black",
+        "silver",
+        "gold"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "单瓶主视觉",
+        "丝绸高光引导视线",
+        "上下品牌信息"
+      ],
+      "perfume_suitability": 96,
+      "caveat": "商品主体与背景反光须控制对比，避免背景高光抢焦点。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-peony",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+    "image": "references/luxury/jo-malone-peony.jpg",
+    "selection_reason": "浅色留白、大瓶身与单侧牡丹构成轻盈的高级花香视觉。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.38,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_diffused_light",
+      "color": [
+        "warm_white",
+        "pink",
+        "silver"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "左侧商品",
+        "右侧花卉",
+        "顶部小品牌"
+      ],
+      "perfume_suitability": 92,
+      "caveat": "花朵不能遮挡商品标签。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "armani-cuir-nu",
+    "brand": "Armani",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.armani-beauty.ca/en_CA/armani-prive/les-mille-et-une-nuits/armani-prive-cuir-nu/ww-01017-arm.html",
+    "image": "references/luxury/armani-cuir-nu.jpg",
+    "selection_reason": "商品静物与人物分屏，在暖米色体系内用几何皮革强调材质。",
+    "analysis": {
+      "composition": "split_layout",
+      "subject_ratio": 0.09,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "directional_studio_light",
+      "color": [
+        "beige",
+        "brown",
+        "black",
+        "gold"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "分屏结构",
+        "几何材质",
+        "暖中性色"
+      ],
+      "perfume_suitability": 80,
+      "caveat": "第一版不执行人物分屏，可提取左侧静物构图和材质方向。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "dior-jadore-gold-bottle",
+    "brand": "Dior",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+    "image": "references/luxury/dior-jadore-gold-bottle.jpg",
+    "selection_reason": "全金色背景、偏右大瓶身与左侧文字实现统一色系下的主次分配。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.28,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_backlight",
+      "color": [
+        "gold",
+        "warm_white",
+        "amber"
+      ],
+      "typography": "serif",
+      "information_density": "low",
+      "characteristics": [
+        "右侧商品",
+        "左侧文字",
+        "单色高级感"
+      ],
+      "perfume_suitability": 95,
+      "caveat": "旧广告画质一般，适合构图参考，不作材质细节真值。"
+    },
+    "analysis_origin": "codex_visual_review"
+  }
+]

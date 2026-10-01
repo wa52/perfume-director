@@ -1,0 +1,11 @@
+{
+  "id": "c407b82d8eb24c019d02db1b050c7947",
+  "status": "ERROR",
+  "stage": "FAILED",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\6577a9eff80d",
+  "direction_count": 4,
+  "error": "RemoteDisconnected",
+  "message": "Loop stopped; inspect the saved run and server log. No PASS was recorded."
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 142344335299657,
+  "background": {
+    "color": "#9aa0a4",
+    "prompt": "Seamless raw cast concrete plane in cool grey, perfectly continuous matte mineral surface with no seams and no joints, very subtle broad vertical luminance falloff from a softly brighter center, even diffuse frontal illumination, empty architectural void",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 404,
+    "height": 893
+  },
+  "lighting": "broad soft frontal light with cool diffuse ambient",
+  "palette": [
+    "#9aa0a4",
+    "#16181a",
+    "#b0762a"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 76,
+    "y": 130,
+    "size": 72,
+    "color": "#16181a",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 76,
+    "y": 226,
+    "size": 24,
+    "color": "#16181a",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#16181a",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 76,
+    "y": 65,
+    "size": 26,
+    "color": "#16181a",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 295,
+    "width": 367,
+    "color": "#16181a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

@@ -1,0 +1,2 @@
+# Keep runtime evidence byte-identical across Windows/Linux checkouts.
+samples/diversity/** -text whitespace=cr-at-eol

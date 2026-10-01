@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Horizontal cleft slate stone ledge in deep blue-grey occupying the lower sixth of the frame, its split-plane top face catching soft light, rising into a vertical cleft slate wall of the same mineral behind; one broad diagonal band of soft light from upper left raking across both planes, matte mineral grain, even frontal illumination, no objects, full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 212889834695742,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

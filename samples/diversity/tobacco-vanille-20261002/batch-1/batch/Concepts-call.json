@@ -1,0 +1,267 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-lost-cherry.jpg",
+      "sha256": "27049f3f55038b1dbecc838f6f4d3fa59a48fccc63339997c4ffe2d5481c0cae"
+    },
+    {
+      "name": "diptyque-orpheon.jpg",
+      "sha256": "9689c236266e84a0323e9f5477352242702f9200949c64e02eb383119a77fd46"
+    },
+    {
+      "name": "hermes-terre.jpg",
+      "sha256": "c53c3db3cc812d79fe90afed18fcb48ef7d79a8812c59f6bd43adf36bfcaf10b"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "prada-paradoxe.jpg",
+      "sha256": "28b7ab06597a5146399cddb8909f9b1245d5c93f11da4dba073f13f220cddf47"
+    },
+    {
+      "name": "jo-malone-wild-bluebell.jpg",
+      "sha256": "51766692612a0d430ac7f69d8496f8466cef11804e731fdc591ff2fcb4e48632"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-777c416d-9b0a-9dc4-8c58-529f8557fa74",
+      "usage": {
+        "prompt_tokens": 11838,
+        "total_tokens": 13928,
+        "completion_tokens": 2090,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 7551,
+          "text_tokens": 4287
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1065
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-777c416d-9b0a-9dc4-8c58-529f8557fa74",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 11838,
+    "total_tokens": 13928,
+    "completion_tokens": 2090,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 7551,
+      "text_tokens": 4287
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1065
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "粗野混凝土纪念碑",
+        "brief": "冷灰清水混凝土墙面构成建筑式留白，商品居中偏下如纪念碑伫立，文字集中于左上小体量排印，一条细铜线横贯标题下方，形成上轻下重的纪念性网格；宽柔正面光让深色玻璃与冷灰墙面保持雕塑感。",
+        "material": "raw cast concrete",
+        "lighting": "broad soft frontal light with cool diffuse ambient",
+        "reference_ids": [
+          "diptyque-orpheon",
+          "hermes-terre",
+          "prada-paradoxe"
+        ],
+        "palette": [
+          "#9aa0a4",
+          "#16181a",
+          "#b0762a"
+        ],
+        "product": [
+          0.5,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.07,
+            0.09,
+            64
+          ],
+          "logo": [
+            0.07,
+            0.045,
+            30
+          ],
+          "subtitle": [
+            0.07,
+            0.165,
+            24
+          ]
+        },
+        "background_prompt": "Seamless raw cast concrete wall in cool grey, fine formwork seams, one soft horizontal shadow band across upper third, even diffuse illumination, matte mineral texture",
+        "line": [
+          0.07,
+          0.205,
+          0.34
+        ]
+      },
+      {
+        "name": "赤陶拱壁叙事",
+        "brief": "日晒赤陶灰泥墙带浅拱形凹壁，商品偏右立于拱心，左侧竖排文字柱形成非对称双栏网格；细线作为左栏底部分隔，暖土色家族与深色玻璃形成温度对比，宽柔正面光保留玻璃高光。",
+        "material": "sun-baked terracotta plaster",
+        "lighting": "broad soft frontal light, warm ambient bounce",
+        "reference_ids": [
+          "armani-santal-dansha",
+          "hermes-terre",
+          "jo-malone-wild-bluebell"
+        ],
+        "palette": [
+          "#b0562f",
+          "#f6ead9",
+          "#3a2417"
+        ],
+        "product": [
+          0.63,
+          0.58,
+          0.66
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.07,
+            0.11,
+            72
+          ],
+          "logo": [
+            0.07,
+            0.06,
+            28
+          ],
+          "subtitle": [
+            0.07,
+            0.2,
+            22
+          ]
+        },
+        "background_prompt": "Hand-troweled terracotta clay plaster wall with a shallow arched recess centered right, subtle trowel ridges, warm diffuse glow from front, no objects",
+        "line": [
+          0.07,
+          0.245,
+          0.26
+        ]
+      },
+      {
+        "name": "夜漆翠羽",
+        "brief": "深翠玉色漆面背景带垂直柔光渐变与漆层反光，商品居中且体量克制，文字全部收于顶部窄带，构成上密下空的剧院式网格；细金线悬于文字带之下，漆面材质呼应玻璃的深邃光泽。",
+        "material": "polished lacquer panel",
+        "lighting": "broad soft frontal light over deep lacquer sheen",
+        "reference_ids": [
+          "tom-ford-lost-cherry",
+          "diptyque-orpheon",
+          "armani-santal-dansha"
+        ],
+        "palette": [
+          "#0d3b3c",
+          "#efe6d2",
+          "#c9a24b"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/arial.ttf",
+          "title": [
+            0.34,
+            0.085,
+            58
+          ],
+          "logo": [
+            0.4,
+            0.045,
+            26
+          ],
+          "subtitle": [
+            0.365,
+            0.155,
+            22
+          ]
+        },
+        "background_prompt": "Deep teal lacquered panel with vertical soft gradient, faint polished sheen streaks, smooth glossy depth, even frontal illumination",
+        "line": [
+          0.34,
+          0.2,
+          0.32
+        ]
+      },
+      {
+        "name": "雾蓝纸幕对角",
+        "brief": "粉雾蓝无缝纸幕带一道斜向折痕阴影，商品偏左下，文字占据右上对角，形成对角牵引网格；细线短促置于右上文字组之下，纸质哑光与玻璃亮面构成触觉反差，光线宽柔均匀。",
+        "material": "matte seamless paper sweep",
+        "lighting": "broad soft frontal light, paper-diffused cool tone",
+        "reference_ids": [
+          "prada-paradoxe",
+          "jo-malone-wild-bluebell",
+          "diptyque-orpheon"
+        ],
+        "palette": [
+          "#bfd6de",
+          "#12303f",
+          "#8a5a2b"
+        ],
+        "product": [
+          0.37,
+          0.6,
+          0.58
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.56,
+            0.1,
+            66
+          ],
+          "logo": [
+            0.56,
+            0.055,
+            28
+          ],
+          "subtitle": [
+            0.56,
+            0.18,
+            22
+          ]
+        },
+        "background_prompt": "Powder blue seamless paper sweep with one gentle diagonal crease shadow from upper right, soft matte fiber texture, uniform diffuse light",
+        "line": [
+          0.56,
+          0.225,
+          0.3
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 54.385
+}

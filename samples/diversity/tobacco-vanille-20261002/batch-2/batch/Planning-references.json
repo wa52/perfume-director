@@ -1,0 +1,188 @@
+[
+  {
+    "id": "hermes-terre",
+    "brand": "Hermes",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://www.spellsmell.ru/articles/10905-opisanie-aromata-terre-germes--podrobnyi-obzor-dukhov-terre-d-hermes-s-foto/",
+    "image": "references/luxury/hermes-terre.jpg",
+    "selection_reason": "大地橙与天蓝互补，人物暗部和商品亮部形成分离，右侧信息克制。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.025,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "hard_daylight",
+      "color": [
+        "orange",
+        "sky_blue",
+        "black"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "橙蓝对比",
+        "烟尘景深",
+        "右侧商品"
+      ],
+      "perfume_suitability": 75,
+      "caveat": "人物和动态烟尘暂不执行，参考色彩与主次。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "jo-malone-wild-bluebell",
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "场景商业广告",
+    "source_url": "https://cahiersdemode.com/wild_bluebell_cologne/",
+    "image": "references/luxury/jo-malone-wild-bluebell.jpg",
+    "selection_reason": "蓝紫色单一色系与夸张商品尺度构成梦境，适合学习香调情绪的统一。",
+    "analysis": {
+      "composition": "asymmetric",
+      "subject_ratio": 0.16,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_window_light",
+      "color": [
+        "blue",
+        "violet",
+        "white"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "放大商品",
+        "同色花海",
+        "叙事布景"
+      ],
+      "perfume_suitability": 63,
+      "caveat": "场景复杂且含人物，只作色彩情绪参考，暂不复制其场景。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "diptyque-do-son",
+    "brand": "Diptyque",
+    "style": "luxury",
+    "reference_kind": "商业广告",
+    "source_url": "https://www.womenshealthmag.com/tw/beauty/spa/g39508466/diptyque-x-tim-walker2022/",
+    "image": "references/luxury/diptyque-do-son.jpg",
+    "selection_reason": "建筑、蝴蝶与香水的尺度变化形成超现实舞台，背景仍保留单纯蓝色。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.035,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "medium",
+      "lighting": "soft_studio_light",
+      "color": [
+        "blue",
+        "black",
+        "orange"
+      ],
+      "typography": "experimental_serif",
+      "information_density": "low",
+      "characteristics": [
+        "超现实尺度",
+        "建筑框景",
+        "拆分标题"
+      ],
+      "perfume_suitability": 73,
+      "caveat": "复杂建筑与拆分字体超出第一版 renderer，只参考框景和色彩。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "chanel-no5-monochrome",
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "历史商业广告",
+    "source_url": "https://www.scentissime.com/fr/blog/post/parfums-de-niche-quand-l-art-olfactif-rencontre-l-exclusivite.html",
+    "image": "references/luxury/chanel-no5-monochrome.jpg",
+    "selection_reason": "黑白渐变、单一瓶身与底部品牌构成稳定秩序，展示减少元素也能形成高级感。",
+    "analysis": {
+      "composition": "centered",
+      "subject_ratio": 0.2,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "high",
+      "lighting": "backlight_gradient",
+      "color": [
+        "black",
+        "white",
+        "gray"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "单瓶主视觉",
+        "大留白",
+        "底部品牌"
+      ],
+      "perfume_suitability": 90,
+      "caveat": "扫描纸张有自然泛黄，参考布局，不复制纸张瑕疵。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "ysl-libre",
+    "brand": "YSL",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://lareclame.fr/betcparis/realisations/libre",
+    "image": "references/luxury/ysl-libre.jpg",
+    "selection_reason": "左侧人物与品牌、右侧大商品清楚分工，金色火光和黑色服装形成高对比。",
+    "analysis": {
+      "composition": "split_layout",
+      "subject_ratio": 0.2,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "warm_firelight_and_studio",
+      "color": [
+        "black",
+        "gold",
+        "warm_white"
+      ],
+      "typography": "sans_serif",
+      "information_density": "low",
+      "characteristics": [
+        "人物商品分区",
+        "品牌字重突出",
+        "暖金背景"
+      ],
+      "perfume_suitability": 78,
+      "caveat": "背景火光较繁，可参考左右分区，不照搬复杂人物。"
+    },
+    "analysis_origin": "codex_visual_review"
+  },
+  {
+    "id": "tom-ford-lost-cherry",
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "人物商业广告",
+    "source_url": "https://bluebloom20.com/products/tom-ford-lost-cherry-edp",
+    "image": "references/luxury/tom-ford-lost-cherry.jpg",
+    "selection_reason": "红底、红唇与红色瓶身形成一致色彩，黑色衣服为商品提供对比区域。",
+    "analysis": {
+      "composition": "portrait_asymmetric",
+      "subject_ratio": 0.045,
+      "subject_ratio_method": "rough_visual_area_estimate",
+      "negative_space": "low",
+      "lighting": "soft_portrait_light",
+      "color": [
+        "red",
+        "black",
+        "skin_tone"
+      ],
+      "typography": "label_only",
+      "information_density": "low",
+      "characteristics": [
+        "同色呼应",
+        "简洁红底",
+        "黑色对比区"
+      ],
+      "perfume_suitability": 71,
+      "caveat": "没有独立海报标题，只参考色彩控制和商品辨识。"
+    },
+    "analysis_origin": "codex_visual_review"
+  }
+]

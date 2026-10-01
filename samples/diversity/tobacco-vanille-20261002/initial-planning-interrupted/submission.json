@@ -1,0 +1,30 @@
+{
+  "prompt_id": "a4da0241-beb8-4060-bcc4-8a9f563aa430",
+  "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。",
+  "product": "assets/products/tom-ford-tobacco-vanille-retailer.png",
+  "workflow": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "6ee68291593346ac9fac96c563d1cced.png"
+      }
+    },
+    "2": {
+      "class_type": "PerfumeDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。"
+      }
+    }
+  },
+  "trial": "batch-1",
+  "job_id": "c407b82d8eb24c019d02db1b050c7947",
+  "archive_root": "samples/diversity/tobacco-vanille-20261002"
+}

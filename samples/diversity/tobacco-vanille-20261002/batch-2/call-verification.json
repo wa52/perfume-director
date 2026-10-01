@@ -1,0 +1,605 @@
+[
+  {
+    "file": "batch/Concepts-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 55.252,
+    "usage": {
+      "prompt_tokens": 11451,
+      "total_tokens": 13696,
+      "completion_tokens": 2245,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 5403,
+        "text_tokens": 6048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1220
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "batch/Concepts-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 50.677,
+    "usage": {
+      "prompt_tokens": 12835,
+      "total_tokens": 15124,
+      "completion_tokens": 2289,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 5403,
+        "text_tokens": 7432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1264
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "batch/Product-copy-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 7.859,
+    "usage": {
+      "prompt_tokens": 1465,
+      "total_tokens": 1680,
+      "completion_tokens": 215,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1211,
+        "text_tokens": 254
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "text_tokens": 97
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/Selection-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 39.341,
+    "usage": {
+      "prompt_tokens": 9832,
+      "total_tokens": 11258,
+      "completion_tokens": 1426,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 9175,
+        "text_tokens": 657
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 401
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/Selection-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 39.761,
+    "usage": {
+      "prompt_tokens": 9350,
+      "total_tokens": 10716,
+      "completion_tokens": 1366,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 8715,
+        "text_tokens": 635
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 341
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-3/Selection-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 38.0,
+    "usage": {
+      "prompt_tokens": 7585,
+      "total_tokens": 8924,
+      "completion_tokens": 1339,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 6962,
+        "text_tokens": 623
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 314
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-4/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 38.571,
+    "usage": {
+      "prompt_tokens": 6847,
+      "total_tokens": 8255,
+      "completion_tokens": 1408,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4822,
+        "text_tokens": 2025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 383
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-4/v1/Critic-patch-repair-call.json",
+    "status": "ERROR",
+    "returned_model": null,
+    "finish_reason": null,
+    "duration_seconds": 33.434,
+    "usage": null,
+    "attempts": 3
+  },
+  {
+    "file": "concept-4/v1/Critic-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 69.673,
+    "usage": {
+      "prompt_tokens": 5680,
+      "total_tokens": 7531,
+      "completion_tokens": 1851,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4460,
+        "text_tokens": 1220
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 826
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-3/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 48.163,
+    "usage": {
+      "prompt_tokens": 7003,
+      "total_tokens": 8921,
+      "completion_tokens": 1918,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4980,
+        "text_tokens": 2023
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 893
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-3/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 49.496,
+    "usage": {
+      "prompt_tokens": 9162,
+      "total_tokens": 11169,
+      "completion_tokens": 2007,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "image_tokens": 6182,
+        "text_tokens": 2980
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 982
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-3/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 52.12,
+    "usage": {
+      "prompt_tokens": 9205,
+      "total_tokens": 11023,
+      "completion_tokens": 1818,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 6182,
+        "text_tokens": 3023
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 793
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 47.825,
+    "usage": {
+      "prompt_tokens": 6313,
+      "total_tokens": 8295,
+      "completion_tokens": 1982,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4299,
+        "text_tokens": 2014
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 957
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v1/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 29.178,
+    "usage": {
+      "prompt_tokens": 5623,
+      "total_tokens": 7011,
+      "completion_tokens": 1388,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 3907,
+        "text_tokens": 1716
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 363
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 46.124,
+    "usage": {
+      "prompt_tokens": 8739,
+      "total_tokens": 10730,
+      "completion_tokens": 1991,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "image_tokens": 5501,
+        "text_tokens": 3238
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 966
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v2/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 33.386,
+    "usage": {
+      "prompt_tokens": 5678,
+      "total_tokens": 7199,
+      "completion_tokens": 1521,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 3907,
+        "text_tokens": 1771
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 496
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 44.423,
+    "usage": {
+      "prompt_tokens": 8806,
+      "total_tokens": 10850,
+      "completion_tokens": 2044,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "image_tokens": 5501,
+        "text_tokens": 3305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1019
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v3/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 32.598,
+    "usage": {
+      "prompt_tokens": 5755,
+      "total_tokens": 7152,
+      "completion_tokens": 1397,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 3907,
+        "text_tokens": 1848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 372
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v4/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 43.738,
+    "usage": {
+      "prompt_tokens": 8864,
+      "total_tokens": 11002,
+      "completion_tokens": 2138,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 5501,
+        "text_tokens": 3363
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1113
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v4/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 29.436,
+    "usage": {
+      "prompt_tokens": 5842,
+      "total_tokens": 7203,
+      "completion_tokens": 1361,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 3907,
+        "text_tokens": 1935
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 336
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-2/v5/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 47.462,
+    "usage": {
+      "prompt_tokens": 9020,
+      "total_tokens": 11177,
+      "completion_tokens": 2157,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "image_tokens": 5501,
+        "text_tokens": 3519
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1132
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 47.831,
+    "usage": {
+      "prompt_tokens": 6830,
+      "total_tokens": 8876,
+      "completion_tokens": 2046,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4789,
+        "text_tokens": 2041
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1021
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v1/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 33.117,
+    "usage": {
+      "prompt_tokens": 6141,
+      "total_tokens": 7517,
+      "completion_tokens": 1376,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4367,
+        "text_tokens": 1774
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 351
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 65.021,
+    "usage": {
+      "prompt_tokens": 9372,
+      "total_tokens": 11414,
+      "completion_tokens": 2042,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "image_tokens": 5991,
+        "text_tokens": 3381
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 1017
+      }
+    },
+    "attempts": 2
+  },
+  {
+    "file": "concept-1/v2/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 29.085,
+    "usage": {
+      "prompt_tokens": 6201,
+      "total_tokens": 7388,
+      "completion_tokens": 1187,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 4367,
+        "text_tokens": 1834
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 162
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 43.838,
+    "usage": {
+      "prompt_tokens": 9233,
+      "total_tokens": 11203,
+      "completion_tokens": 1970,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 5991,
+        "text_tokens": 3242
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 945
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v4/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 51.533,
+    "usage": {
+      "prompt_tokens": 8989,
+      "total_tokens": 10839,
+      "completion_tokens": 1850,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 5991,
+        "text_tokens": 2998
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 825
+      }
+    },
+    "attempts": 1
+  },
+  {
+    "file": "concept-1/v5/Critic-call.json",
+    "status": "OK",
+    "returned_model": "qwen3.8-max",
+    "finish_reason": "stop",
+    "duration_seconds": 40.201,
+    "usage": {
+      "prompt_tokens": 8890,
+      "total_tokens": 10665,
+      "completion_tokens": 1775,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 5991,
+        "text_tokens": 2899
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1024,
+        "text_tokens": 750
+      }
+    },
+    "attempts": 1
+  }
+]

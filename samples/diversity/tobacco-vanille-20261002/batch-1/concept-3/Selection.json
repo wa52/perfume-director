@@ -1,0 +1,11 @@
+{
+  "selected_version": 3,
+  "evidence": "Version 3 (image 7) best fulfills the '夜漆翠羽' concept: a single seamless polished lacquer panel in deep jade with a broad soft frontal glow descending from the top band and genuine lacquer-layer sheen at the panel edges; the bottle is centered, restrained in scale (roughly mid-frame mass with base well inside the安全 bounds), and sits with a soft convincing contact shadow rather than floating; all typography is confined to the top narrow band in a coherent serif hierarchy with the fine gold rule suspended beneath it, echoing the gold plaque. Compared with version 1's flat painted-plank seams and sans-serif type, version 2's stray vertical seams cutting through the headline band and weak grounding, version 4's near-identical but slightly looser bottle-to-band balance with a faintly muddier sheen, and version 5's hard horizontal panel junction behind the bottle that reads as a raised support edge with the packshot floating in front of it, version 3 is the cleanest finished set with the most controlled material and lighting.",
+  "remaining_problems": [
+    "Contact shadow under the bottle is very subtle; the packshot still reads slightly adhered to the lacquer rather than weighted onto it.",
+    "The top light bloom slightly washes the lacquer depth near the headline band, softening the intended deep-jade saturation.",
+    "Gold rule and serif type are cream-dark rather than the richer gold accent of the palette; the gold note survives only on the bottle plaque."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

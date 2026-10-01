@@ -1,0 +1,99 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "runs/batches/c19f46f91c4f/Concepts-repair-call.json",
+  "creative_direction": {
+    "name": "锤铜壁龛上铭牌匾",
+    "brief": "暖调锤纹铜板以手工凹痕漫反射碎光；商品沉于下半幅如壁龛供奉物，上半幅留出完整铭牌带：品牌字、题名、香型字依次居中排印，题名最大统领画面，构成上铭下像的牌匾网格；细铜线横垫于铭牌带之下如同刻线。锤铜碎光与玻璃整面高光互为粗细对比，宽柔正面光压制金属火气。",
+    "material": "hand-hammered copper sheet",
+    "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+    "palette": [
+      "#a4653a",
+      "#22140c",
+      "#e8d3ae"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 212889834694732,
+    "background": {
+      "color": "#a4653a",
+      "prompt": "Hand-hammered copper sheet wall, dense dimple texture scattering warm light, subtle vertical tonal falloff toward edges, soft amber glow from front, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 391,
+      "height": 864
+    },
+    "lighting": "broad soft frontal light with warm metallic diffuse bounce",
+    "palette": [
+      "#a4653a",
+      "#22140c",
+      "#e8d3ae"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 216,
+      "y": 230,
+      "size": 64,
+      "color": "#22140c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 335,
+      "y": 360,
+      "size": 26,
+      "color": "#22140c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#22140c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 443,
+      "y": 130,
+      "size": 26,
+      "color": "#22140c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 367,
+      "y": 425,
+      "width": 346,
+      "color": "#22140c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  }
+}

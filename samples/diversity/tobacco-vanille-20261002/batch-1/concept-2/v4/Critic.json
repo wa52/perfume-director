@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 81.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 82,
+    "physical_integration": 80,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Geometry and pixels agree that the type patches were still not applied: title bbox [76,158,738,208], subtitle [76,288,250,303], logo [76,86,219,105] all render in dark #261E16, so the masthead is three dark lines stacked in the top 21% of the canvas while the concept's declared cream voice (#f6ead9, already used by the hairline rule at y=353) is absent from the type. The left column from the rule down to y=1440 is empty plaster, so the bottle (y=360-1310) has no vertical counterweight and the asymmetric two-column grid reads top-heavy."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [386,1170,974,1420] confirms a real contact shadow at the base line (offset_y 0 is correct, keep it), but the sliver spans only ~x 560-800 against the 428px footprint (x=466-894), so grounding reads faint at poster scale. The recess floor now meets the wall at y~1100-1140, i.e. ~170-210px ABOVE base y=1310, and no cast shading spreads on that plane around the base, so the bottle reads as standing in front of the ledge face rather than on the declared ledge."
+    },
+    {
+      "type": "background",
+      "problem": "The recess opening (~x 400-905) is only marginally wider than the bottle (x 466-894): the right jamb runs as a hard vertical tangent 30-40px from the bottle's right silhouette from y~450 to y~1130, clipping theHero's outline, and the rendered plaster is a mid clay-orange lighter than the declared saturated #b0562f, muting the warm-earth vs dark-glass temperature contrast the concept relies on."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-4 the dark glass still carries only two small cap highlights and no broad frontal glow or rim separation, so shoulders and neck merge into the mid-tone recess shadow; combined with type confined to the top fifth, the product-to-type dialogue is weaker than the continuous light-and-type stories of the Terre d'Hermès and Armani Privé campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 470
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 566
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#f6ead9"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.78
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled sun-baked terracotta clay plaster wall in deep saturated burnt-orange ochre close to hex b0562f, one very wide shallow vertical arched recess whose opening spans at least three quarters of the frame width and is centered in the right two thirds, recess interior descending smoothly to a horizontal plaster plane whose surface begins in the lower quarter of the frame and continues uninterrupted to the bottom edge, plane catching soft frontal daylight with gentle value fall-off and faint diffuse cast shading spreading outward low around the center of the plane, broad soft frontal light with warm ambient bounce and a subtle luminous pool of light behind the recess center, fine trowel ridges, empty scene, no objects"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#b0562f"
+    }
+  ],
+  "reported_score": 81.6
+}
