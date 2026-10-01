@@ -133,7 +133,9 @@ def rendered_geometry(spec, product, font):
             f = ImageFont.truetype(str(t.get('font', font)), round(t['size']))
             text_bbox[name] = list(draw.textbbox((t['x'], t['y']), t['text'], font=f, anchor='lt'))
     return {'coordinate_system': 'pixels, origin top left', 'product_bbox': product_bbox,
-        'product_base_y': product_bbox[3], 'text_bbox': text_bbox}
+        'product_base_y': product_bbox[3], 'text_bbox': text_bbox,
+        'text_product_overlap': {name: (max(box[0], product_bbox[0]) < min(box[2], product_bbox[2]) and
+            max(box[1], product_bbox[1]) < min(box[3], product_bbox[3])) for name, box in text_bbox.items()}}
 
 
 def http(url, data=None, headers=None, timeout=60):
@@ -220,13 +222,28 @@ def apply_changes(spec, changes):
     return validate(candidate)
 
 
-def validate_critique(result):
+CRITIC_DIMENSIONS = ("product_fidelity", "composition", "typography", "background", "physical_integration", "reference_alignment", "creative_coherence")
+
+
+def validate_critique(result, strict=False):
     if type(result.get('pass')) is not bool or type(result.get('score')) not in (int, float) or not math.isfinite(result['score']) or not 0 <= result['score'] <= 100:
         raise ValueError('Critic requires pass:boolean and score:0..100')
     if not isinstance(result.get('problems'), list) or not isinstance(result.get('changes'), list):
         raise ValueError('Critic requires problems and changes arrays')
     if result['pass'] and (result['problems'] or result['changes'] or result['score'] < 80):
         raise ValueError('PASS requires score >=80 and no unresolved problems/changes')
+    if strict:
+        dimensions = result.get('dimensions', {})
+        for name in CRITIC_DIMENSIONS:
+            value = dimensions.get(name)
+            if type(value) not in (int, float) or not math.isfinite(value) or not 0 <= value <= 100:
+                raise ValueError('Critic requires seven finite dimension scores')
+        result['reported_score'] = result['score']
+        result['score'] = round(sum(dimensions[name] for name in CRITIC_DIMENSIONS)/len(CRITIC_DIMENSIONS), 1)
+        failed = [name for name in CRITIC_DIMENSIONS if dimensions[name] < 80]
+        if result['pass'] and (result['score'] < 85 or failed):
+            result['pass'] = False
+            result['problems'].append({'type': 'quality_gate', 'problem': 'Requires average >=85 and every dimension >=80; below threshold: '+', '.join(failed)})
     return result
 
 
@@ -304,6 +321,10 @@ def build_kb(config):
     return entries
 
 
+def review_poster(config, spec, product, poster, ref_images, trace_path, previous=None):
+    return vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images]+([previous['poster']] if previous else []), trace_path=trace_path)
+
+
 def run(config, product, brief, background=None, demo=False, progress=None):
     if not Path(product).is_file():
         raise ValueError('Product image missing')
@@ -334,7 +355,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         progress({'stage': 'DIRECTOR', 'run_dir': str(run_dir)})
     if not demo:
         print('Director: analyzing product and 3 references', flush=True)
-    spec = template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The template is ONLY the field schema, NOT a design to echo: replace its placeholder text, layout, background prompt and colors with your own decisions. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Make the supporting surface broad and place the bottle base on its top, never below its front edge. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
+    spec = template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The template is ONLY the field schema, NOT a design to echo: replace its placeholder text, layout, background prompt and colors with your own decisions. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Make the supporting surface broad and place the bottle base on its top, never below its front edge. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
     validate(spec)
     if demo:
         spec['title']['size'] = 112
@@ -357,8 +378,9 @@ def run(config, product, brief, background=None, demo=False, progress=None):
             print(f'Critic: reviewing v{iteration} and 3 references', flush=True)
             if progress:
                 progress({'stage': 'CRITIC', 'version': iteration})
-            critique = vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Estimate the tabletop top-surface y range from the image in canvas pixels. If product_base_y is above that surface, move product.y far enough to put its bottom ON the surface; adjusting shadow alone cannot fix floating. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. PASS only score>=80 and no unresolved problems. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False), [poster, product, *ref_images], trace_path=folder/'Critic-call.json')
-        validate_critique(critique)
+            critique = review_poster(config, spec, product, poster, ref_images, folder/'Critic-call.json',
+                previous={'poster': run_dir/versions[-1]['poster'], 'critique': read(run_dir/versions[-1]['critic'])} if versions else None)
+        validate_critique(critique, strict=not demo)
         write(folder/'Critic.json', critique)
         versions.append({'version': iteration, 'score': critique['score'], 'pass': critique['pass'],
             'poster': poster.relative_to(run_dir).as_posix(), 'spec': f'v{iteration}/PosterSpec.json',
@@ -368,7 +390,12 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         if iteration < 3:
             if not critique['changes']:
                 break
-            spec = apply_changes(spec, critique['changes'])
+            try:
+                spec = apply_changes(spec, critique['changes'])
+            except (ValueError, KeyError, TypeError) as error:
+                write(folder/'Critic-patch-rejected.json', {'status': 'REJECTED', 'error_type': type(error).__name__,
+                    'reason': 'Critic patch failed schema or geometry validation; last valid poster preserved'})
+                break
     best = max(versions, key=lambda v: (v['pass'], v['score']))
     write(run_dir/'result.json', {'status': 'PASS' if best['pass'] else 'NEEDS_REVIEW',
         'mode': 'scripted_demo' if demo else 'live', 'standalone_vision_api_used': not demo,

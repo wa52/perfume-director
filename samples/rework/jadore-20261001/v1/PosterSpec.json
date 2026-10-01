@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 202610013,
+  "background": {
+    "color": "#F3E7D0",
+    "prompt": "Empty warm ivory seamless photographic cyclorama, quiet champagne beige tonal gradient, large diffused studio light from upper left, subtle soft warm glow on right, matte cream continuous floor merging into backdrop at lower frame, refined smooth low contrast surface, minimal luxury still-life studio lighting, clean open space",
+    "revision": 0
+  },
+  "product": {
+    "x": 570,
+    "y": 825,
+    "width": 500,
+    "height": 850
+  },
+  "lighting": "hard_side_light",
+  "palette": [
+    "#1A1A1A",
+    "#D4AF37",
+    "#F0E6D2"
+  ],
+  "title": {
+    "text": "J’ADORE",
+    "x": 298,
+    "y": 170,
+    "size": 116,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 445,
+    "y": 1330,
+    "size": 24,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#D4AF37"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 484,
+    "y": 82,
+    "size": 46,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.19,
+    "blur": 18,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#F0E6D2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

@@ -193,3 +193,9 @@ python -m unittest discover -s tests -v
 18 项测试覆盖后台调度非阻塞、重复提交保护、重启状态恢复、预览路径边界，以及多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
 
 协议参考：[ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes)、[Chat Completions API](https://developers.openai.com/api/reference/resources/chat)。
+
+### 审美评审修正（2026-10-01）
+
+旧案例两轮只修改阴影位置，75→86 分不能证明设计已达到商业水平；模型 PASS 仅是模型判断。新版 Critic 对商品保真、构图、字体、背景、物理融合、参考质量差距、创意一致性七项分别评分；程序使用七项平均值作为总分，平均至少 85 且每项至少 80、无未解决问题才能 PASS。保留模型原总分为 reported_score。缺少维度或非法评分会拒绝，不补造评分。Director 默认强调商品主视觉、克制背景和文字关系。阈值仍不能代替人的最终审美判断。
+
+重做样例：[暖白 J’adore 海报与真实评审记录](samples/rework/jadore-20261001/REPORT.md)。这是 Codex 指导的重做，状态为 NEEDS_REVIEW，不能宣称独立 Director 已成功。后续评审附上一版和真实文字/商品重叠计算；非法修改保留最后有效海报。当前共 21 项测试通过。

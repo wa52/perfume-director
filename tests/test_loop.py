@@ -36,6 +36,7 @@ class LoopTests(unittest.TestCase):
             geometry = poster.rendered_geometry(spec, path, config['font'])
         self.assertEqual(geometry['product_bbox'], [206, 156, 306, 356])
         self.assertEqual(geometry['product_base_y'], 356)
+        self.assertEqual(geometry['text_product_overlap'], {})
         result = poster.render(spec, padded, config['font'])
         pixels = result.load()
         self.assertEqual(pixels[206, 156], (255, 0, 0))
@@ -63,6 +64,24 @@ class LoopTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             poster.validate_critique({'pass': True, 'score': 90, 'problems': ['bad product'], 'changes': []})
 
+    def test_strict_gate_does_not_accept_high_total_with_weak_typography(self):
+        critique = {'pass': True, 'score': 90, 'problems': [], 'changes': [],
+                    'dimensions': dict.fromkeys(poster.CRITIC_DIMENSIONS, 90)}
+        critique['dimensions']['typography'] = 65
+        result = poster.validate_critique(critique, strict=True)
+        self.assertFalse(result['pass'])
+        self.assertEqual(result['reported_score'], 90)
+        self.assertTrue(result['problems'])
+
+    def test_strict_gate_requires_complete_scores_and_uses_average(self):
+        critique = {'pass': True, 'score': 99, 'problems': [], 'changes': [],
+                    'dimensions': dict.fromkeys(poster.CRITIC_DIMENSIONS, 82)}
+        self.assertFalse(poster.validate_critique(critique, strict=True)['pass'])
+        self.assertEqual(critique['score'], 82)
+        del critique['dimensions']['composition']
+        with self.assertRaises(ValueError):
+            poster.validate_critique(critique, strict=True)
+
     def exercise_loop(self, critiques):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -75,6 +94,8 @@ class LoopTests(unittest.TestCase):
             def fake_render(config, spec, product, destination, background):
                 Image.new('RGB', (10, 10)).save(destination)
 
+            for critique in critiques:
+                critique['dimensions'] = dict.fromkeys(poster.CRITIC_DIMENSIONS, critique['score'])
             with patch.object(poster, 'ROOT', root), patch.object(poster, 'vision', side_effect=[self.spec, *critiques]), patch.object(poster, 'comfy_render', side_effect=fake_render) as renderer:
                 result = poster.read(poster.run(config, product, 'test')/'result.json')
             return result, renderer.call_count
@@ -83,6 +104,14 @@ class LoopTests(unittest.TestCase):
         result, count = self.exercise_loop([{'pass': True, 'score': 85, 'problems': [], 'changes': []}])
         self.assertEqual(count, 1)
         self.assertEqual(result['status'], 'PASS')
+
+    def test_invalid_critic_patch_preserves_reviewable_poster(self):
+        result, count = self.exercise_loop([{'pass': False, 'score': 75,
+            'problems': [{'type': 'composition', 'problem': 'move'}],
+            'changes': [{'path': 'product.y', 'op': 'set', 'value': 9999}]}])
+        self.assertEqual(count, 1)
+        self.assertEqual(result['status'], 'NEEDS_REVIEW')
+        self.assertEqual(result['selected']['version'], 1)
 
     def test_three_render_limit_selects_best_not_last(self):
         critiques = [{'pass': False, 'score': score, 'problems': [{'type': 'typography', 'problem': 'adjust'}],

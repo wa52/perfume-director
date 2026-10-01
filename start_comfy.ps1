@@ -24,6 +24,13 @@ if ($Restart -and (Test-Path -LiteralPath (Join-Path $runtimeRoot 'comfy.pid')))
         }
         Stop-Process -Id $taskPid -Force
         Wait-Process -Id $taskPid -Timeout 10 -ErrorAction SilentlyContinue
+        $taskStopDeadline = (Get-Date).AddSeconds(10)
+        do {
+            $taskStillServing = $false
+            try { $null = Invoke-RestMethod -Uri "http://127.0.0.1:$Port/system_stats" -TimeoutSec 1; $taskStillServing = $true } catch { }
+            if ($taskStillServing) { Start-Sleep -Milliseconds 250 }
+        } while ($taskStillServing -and (Get-Date) -lt $taskStopDeadline)
+        if ($taskStillServing) { throw 'Project ComfyUI has not stopped; refusing to reuse the old service' }
     }
 }
 try {

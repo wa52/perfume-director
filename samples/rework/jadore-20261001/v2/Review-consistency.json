@@ -1,0 +1,39 @@
+{
+  "geometry": {
+    "coordinate_system": "pixels, origin top left",
+    "product_bbox": [
+      394,
+      400,
+      687,
+      1250
+    ],
+    "product_base_y": 1250,
+    "text_bbox": {
+      "title": [
+        298,
+        170,
+        781,
+        251
+      ],
+      "subtitle": [
+        445,
+        1330,
+        635,
+        1346
+      ],
+      "logo": [
+        484,
+        82,
+        598,
+        113
+      ]
+    },
+    "text_product_overlap": {
+      "title": false,
+      "subtitle": false,
+      "logo": false
+    }
+  },
+  "proposed_patch_valid": false,
+  "human_review": "Critic claims title/product overlap despite computed false; it also mistakes the studio floor transition for a raised tabletop. These claims are contradicted by geometry and should not be used as quality evidence. Background originality remains a subjective concern."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "NEEDS_REVIEW",
+  "mode": "codex_guided_comfyui_with_live_critic",
+  "standalone_director_success": false,
+  "selected": {
+    "version": 2,
+    "score": 75.0,
+    "pass": false,
+    "poster": "v2/poster.png"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 67.1,
+      "pass": false,
+      "poster": "v1/poster.png"
+    },
+    {
+      "version": 2,
+      "score": 75.0,
+      "pass": false,
+      "poster": "v2/poster.png"
+    }
+  ],
+  "note": "Human selected V2. Model scores are not proof of improvement; critic geometry claims were inconsistent. No automated PASS."
+}

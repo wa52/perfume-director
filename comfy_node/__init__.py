@@ -30,7 +30,7 @@ class PerfumeDirectorLoop:
     @classmethod
     def INPUT_TYPES(cls):
         return {'required': {'product': ('IMAGE',), 'product_mask': ('MASK',),
-            'brief': ('STRING', {'multiline': True, 'default': '为 Dior J’adore 做高级品牌海报。标题 J’ADORE，品牌 DIOR，副标题 EAU DE PARFUM，无价格、新品或促销声明。商品放在右下石台上，左上留白。'})}}
+            'brief': ('STRING', {'multiline': True, 'default': '为 Dior J’adore 做暖白香槟金极简品牌海报。瓶身为大幅主视觉，实际高度占画布约55-65%，柔和无接缝摄影棚背景。标题 J’ADORE，品牌 DIOR，副标题 EAU DE PARFUM，拉丁文字采用精细衬线字体，光线匹配商品原图。无价格、新品或促销声明。避免烟雾、复杂石台和杂乱装饰。'})}}
 
     RETURN_TYPES = ('STRING',)
     RETURN_NAMES = ('job_id',)

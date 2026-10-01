@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 75.0,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle floating: product_base_y (1250) is 190 pixels above tabletop surface (estimated y range 1060-1080), creating unrealistic detachment. Contact shadow offset_y (0) is misaligned, appearing as a detached silhouette instead of merging with the surface."
+    },
+    {
+      "type": "composition",
+      "problem": "Title/product overlap: title bbox [298,170,781,251] overlaps with product bbox [394,400,687,1250], disrupting visual hierarchy and readability."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Generic luxury backdrop: champagne beige gradient lacks unique storytelling, failing to distinguish from basic product shots. Disconnected typography (title, subtitle, logo) creates visual fragmentation."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lacks professional campaign sophistication: compared to references (Armani/Prive's contextual wood/splash, Tom Ford's dramatic lighting, Dior's integrated branding), the design feels unpolished and generic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 1060
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless photographic cyclorama, quiet champagne beige tonal gradient, large diffused studio light from upper left, subtle soft warm glow on right, matte cream continuous floor merging into backdrop at lower frame, refined smooth low contrast surface, minimal luxury still-life studio lighting, clean open space with faint golden texture evoking silk fabric"
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1380
+    }
+  ],
+  "reported_score": 78.5
+}
