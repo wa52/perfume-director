@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 2060,
+  "background": {
+    "color": "#F9F5F0",
+    "prompt": "An empty studio with a seamless warm ivory plaster wall and a broad matte white tabletop across the lower quarter, soft diffused front light, clean upper left negative space, no reflections or textures, only the empty wall and smooth surface.",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 660,
+    "width": 360,
+    "height": 864
+  },
+  "lighting": "soft_diffused",
+  "palette": [
+    "#F9F5F0",
+    "#D4AF37",
+    "#E8DCC0"
+  ],
+  "title": {
+    "text": "J'ADORE",
+    "x": 180,
+    "y": 180,
+    "size": 120,
+    "color": "#D4AF37",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 180,
+    "y": 320,
+    "size": 32,
+    "color": "#E8DCC0",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 180,
+    "y": 1280,
+    "size": 24,
+    "color": "#D4AF37"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 180,
+    "y": 80,
+    "size": 48,
+    "color": "#D4AF37",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.15,
+    "blur": 24,
+    "offset_x": 8,
+    "offset_y": 12,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "color": "#000000"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

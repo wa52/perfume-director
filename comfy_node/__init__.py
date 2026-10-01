@@ -37,7 +37,7 @@ class PerfumeDirectorLoop:
     FUNCTION = 'execute'
     CATEGORY = 'Perfume Director'
     OUTPUT_NODE = True
-    DESCRIPTION = 'Submit an independent vision Director/ComfyUI/Critic loop (max 3 rounds). Images are sent to the configured vision API. Progress and final preview appear here; the STRING output is a job ID, not an image.'
+    DESCRIPTION = 'Submit an independent vision Director/ComfyUI/Critic loop (four independent styles, max 3 rounds each). Images are sent to the configured vision API. Progress and final preview appear here; the STRING output is a job ID, not an image.'
 
     @classmethod
     def IS_CHANGED(cls, **kwargs):
@@ -80,7 +80,7 @@ class PerfumePosterSpecRender:
 
 
 NODE_CLASS_MAPPINGS = {'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
-NODE_DISPLAY_NAME_MAPPINGS = {'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 香水闭环'}
+NODE_DISPLAY_NAME_MAPPINGS = {'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
 
 
 def require_finite(value, stage):
@@ -153,6 +153,6 @@ async def director_status(request):
 @PromptServer.instance.routes.get('/perfume-director/jobs/{job_id}/preview')
 async def director_preview(request):
     try:
-        return web.FileResponse(director_jobs().preview(request.match_info['job_id']))
+        return web.FileResponse(director_jobs().preview(request.match_info['job_id'], request.query.get('direction')))
     except (ValueError, FileNotFoundError):
         raise web.HTTPNotFound()

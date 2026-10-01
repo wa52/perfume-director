@@ -1,0 +1,63 @@
+{
+  "pass": false,
+  "score": 71.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 70,
+    "typography": 65,
+    "background": 75,
+    "physical_integration": 60,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the tabletop with a detached contact shadow (offset_y=26px), violating the requirement for a close-to-zero offset_y. Visible cues (shadow position, lack of tabletop contact) indicate poor physical grounding."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies only ~45% of canvas height (660px/1440px), below the 50-65% professional standard for a hero product, reducing visual impact and hierarchy."
+    },
+    {
+      "type": "background",
+      "problem": "The background's dark tabletop lacks the 'restrained gold accents' specified in the prompt, appearing flat and inconsistent with the luxury style."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The bottle's y-coordinate (860px) places its center too high, causing the base to not align with the tabletop's contact line, creating a floating effect."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Armani/Prive, Tom Ford), the composition lacks dramatic lighting and contextual elements that enhance luxury, resulting in a generic feel."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 925
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "An empty studio with a broad matte black tabletop across the lower quarter, warm side light from the left, clean upper left negative space, restrained gold accents on the tabletop edges, only the empty tabletop and dark surface."
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 24
+    }
+  ],
+  "reported_score": 72
+}

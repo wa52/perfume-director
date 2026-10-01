@@ -77,11 +77,11 @@ class DirectorJobs:
 
     def work(self, job_id, config, product, brief):
         try:
-            run_dir = self.engine.run(config, product, brief,
+            run_dir = self.engine.run_four(config, product, brief,
                 progress=lambda values: self.update(job_id, values))
             result = self.engine.read(run_dir/'result.json')
             self.update(job_id, {'status': result['status'], 'stage': 'FINISHED',
-                'run_dir': str(run_dir), 'selected': result['selected'], 'versions': result['versions']})
+                'run_dir': str(run_dir), 'directions': result['directions']})
         except Exception as error:
             # Do not expose arbitrary provider messages, request data or credentials.
             self.update(job_id, {'status': 'ERROR', 'stage': 'FAILED', 'error': type(error).__name__,
@@ -91,8 +91,15 @@ class DirectorJobs:
             with self.lock:
                 self.active = None
 
-    def preview(self, job_id):
+    def preview(self, job_id, direction=None):
         state = self.status(job_id)
+        if state.get('directions'):
+            candidates = [item for item in state['directions'] if 'selected' in item and (direction is None or item['id']==direction)]
+            if not candidates:
+                raise FileNotFoundError('No preview for this direction')
+            state = candidates[0]
+        elif direction is not None:
+            raise FileNotFoundError('Unknown direction')
         if state['status'] not in ('PASS', 'NEEDS_REVIEW'):
             raise FileNotFoundError('No final preview yet')
         run = Path(state['run_dir']).resolve()

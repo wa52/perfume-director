@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 3069,
+  "background": {
+    "color": "#3A0A0A",
+    "prompt": "An empty studio with a deep burgundy matte paper surface across the lower quarter, sharp architectural shadows, cool side light, clean upper right negative space, only the empty paper and surface.",
+    "revision": 0
+  },
+  "product": {
+    "x": 240,
+    "y": 860,
+    "width": 360,
+    "height": 660
+  },
+  "lighting": "hard_side_light",
+  "palette": [
+    "#3A0A0A",
+    "#FFFFFF",
+    "#C0C0C0"
+  ],
+  "title": {
+    "text": "J'ADORE",
+    "x": 760,
+    "y": 160,
+    "size": 84,
+    "color": "#FFFFFF"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 760,
+    "y": 285,
+    "size": 26,
+    "color": "#C0C0C0"
+  },
+  "price": {
+    "text": "",
+    "x": 760,
+    "y": 1280,
+    "size": 24,
+    "color": "#FFFFFF"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 760,
+    "y": 80,
+    "size": 24,
+    "color": "#FFFFFF"
+  },
+  "shadow": {
+    "opacity": 0.28,
+    "blur": 32,
+    "offset_x": 20,
+    "offset_y": 26,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 760,
+    "y": 360,
+    "width": 80,
+    "color": "#C0C0C0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

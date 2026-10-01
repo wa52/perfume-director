@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with tabletop is visually inconsistent: the bottle appears to float with a detached shadow (offset_y=26px) rather than resting on the surface. Visible cues (shadow proximity, contact line) indicate misalignment with the studio floor geometry."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (660px) occupies only 45.8% of canvas height, falling below the 50-65% range for a single-bottle hero. This reduces visual impact and disrupts hierarchical balance against the minimalist background."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, concept-driven integration seen in professional luxury campaigns (e.g., Armani Prive's wood-texture synergy, Tom Ford's dynamic lighting). The current setup feels generic despite the luxury style."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Disconnected elements: the soft sage background and bold typography lack a unified narrative. The bottle's placement and lighting don't reinforce the 'empty studio' concept, weakening visual storytelling."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 930
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "An empty studio with a soft sage green plaster wall and a broad pale wood tabletop across the lower quarter, gentle morning light from the upper left, clean upper right negative space, subtle blurred sage leaves in the corners, only the empty wall and wood surface."
+    }
+  ],
+  "reported_score": 78
+}

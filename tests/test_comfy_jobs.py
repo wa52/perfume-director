@@ -25,6 +25,13 @@ class FakeEngine:
         self.entered = threading.Event()
         self.fail = False
 
+    def run_four(self, config, product, brief, progress):
+        folder = self.run(config, product, brief, progress)
+        result = self.read(folder/'result.json')
+        self.write(folder/'result.json', {'status': 'COMPLETED', 'directions': [
+            {'id': 'test', 'name': 'test', 'status': 'PASS', 'run_dir': str(folder), 'selected': result['selected'], 'versions': []}]})
+        return folder
+
     def run(self, config, product, brief, progress):
         self.config = config
         progress({'stage': 'RENDER', 'version': 1})
@@ -69,8 +76,11 @@ class ComfyJobsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'still running'):
             self.manager.start(self.product, 'again', 'http://127.0.0.1:8190')
         self.engine.gate.set()
-        self.assertEqual(self.finished(job)['status'], 'PASS')
+        self.assertEqual(self.finished(job)['status'], 'COMPLETED')
         self.assertTrue(self.manager.preview(job).is_file())
+        self.assertTrue(self.manager.preview(job,'test').is_file())
+        with self.assertRaises(FileNotFoundError):
+            self.manager.preview(job,'unknown')
         self.assertEqual(self.engine.config['comfy_url'], 'http://127.0.0.1:8190')
         self.assertEqual(self.engine.config['background_workflow'], str(self.root/'workflows/background.json'))
 

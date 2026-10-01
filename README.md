@@ -199,3 +199,18 @@ python -m unittest discover -s tests -v
 旧案例两轮只修改阴影位置，75→86 分不能证明设计已达到商业水平；模型 PASS 仅是模型判断。新版 Critic 对商品保真、构图、字体、背景、物理融合、参考质量差距、创意一致性七项分别评分；程序使用七项平均值作为总分，平均至少 85 且每项至少 80、无未解决问题才能 PASS。保留模型原总分为 reported_score。缺少维度或非法评分会拒绝，不补造评分。Director 默认强调商品主视觉、克制背景和文字关系。阈值仍不能代替人的最终审美判断。
 
 重做样例：[暖白 J’adore 海报与真实评审记录](samples/rework/jadore-20261001/REPORT.md)。这是 Codex 指导的重做，状态为 NEEDS_REVIEW，不能宣称独立 Director 已成功。后续评审附上一版和真实文字/商品重叠计算；非法修改保留最后有效海报。当前共 21 项测试通过。
+
+### 每次四个独立风格
+
+ComfyUI 中每次运行 `PerfumeDirectorLoop` 默认依次生成黑金奢华、奶油极简、酒红编辑风、清新植物风。四个方向分别规划构图、字体、材质、灯光，并独立执行 Director→ComfyUI→Critic，每方向最多 3 轮，不是共享图片换颜色。实际风格差异仍需看结果验收。商品与用户批准的文案保持一致，风格偏好由四方向要求覆盖。每方向使用不同 seed offset。
+
+节点以 2×2 卡片显示各方向的成品、分数和 PASS/NEEDS_REVIEW；点击图片打开对应文件。`COMPLETED` 表示四个方向已跑完，不代表全部通过审美评审。一个方向失败继续其余方向，部分失败为 `PARTIAL`，全失败为 `ERROR`。批次记录保存到 `runs/batches/`，每个方向各自保留原始运行目录。旧工作流刷新即可使用新版节点，或重新导入 `workflows/director-loop.ui.json` 获得更大的四图面板。
+
+CLI 同样支持：
+```powershell
+python poster.py four --config config.local.json --product assets/products/dior-jadore-retailer.png --brief "四种风格的香水品牌海报，无价格或促销声明"
+```
+
+四方向串行使用同一台 ComfyUI，耗时和 API 用量比单方向增加；仍只允许一个批次运行。配置可用 `max_rounds: 1..3` 控制各方向轮数，默认 3；没有配置则无需修改。Director 输出非法 Spec 时只允许一次带错误信息的模型修复，仍非法则该方向失败，保留记录，不伪造成功。
+
+四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。当前 25 项测试通过。

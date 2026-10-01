@@ -1,0 +1,102 @@
+{
+  "brief": "给 Dior J’adore 做四个不同风格的商业海报，标题 J’ADORE，品牌 DIOR，副标题 EAU DE PARFUM。只用这些文案，无价格、新品或促销声明。商品原图不变，保证瓶身清晰有存在感。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+  "product": "assets\\products\\dior-jadore-retailer.png",
+  "references": [
+    {
+      "id": "armani-santal-dansha",
+      "brand": "Armani",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.koichirodoistudio.com/1300",
+      "image": "references/luxury/armani-santal-dansha.jpg",
+      "selection_reason": "黑底、木材垂直纹理和金色标签统一，集中侧光让透明瓶身成为中心。",
+      "analysis": {
+        "composition": "centered",
+        "subject_ratio": 0.23,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "high",
+        "lighting": "hard_side_light",
+        "color": [
+          "black",
+          "wood_brown",
+          "gold"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "木材底座",
+          "侧光玻璃",
+          "上方品牌留白"
+        ],
+        "perfume_suitability": 97,
+        "caveat": "优先参考，木材不能覆盖瓶身标签。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "tom-ford-black-orchid-satin",
+      "brand": "Tom Ford",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://models.com/work/tom-ford-lunar-new-year-campaign",
+      "image": "references/luxury/tom-ford-black-orchid-satin.jpg",
+      "selection_reason": "黑色丝绸与瓶身形成材质对比，金色标签提供唯一暖色焦点，适合第一版暗色高级风格。",
+      "analysis": {
+        "composition": "centered",
+        "subject_ratio": 0.24,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "controlled_rim_light",
+        "color": [
+          "black",
+          "silver",
+          "gold"
+        ],
+        "typography": "sans_serif",
+        "information_density": "low",
+        "characteristics": [
+          "单瓶主视觉",
+          "丝绸高光引导视线",
+          "上下品牌信息"
+        ],
+        "perfume_suitability": 96,
+        "caveat": "商品主体与背景反光须控制对比，避免背景高光抢焦点。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "dior-jadore-gold-bottle",
+      "brand": "Dior",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+      "image": "references/luxury/dior-jadore-gold-bottle.jpg",
+      "selection_reason": "全金色背景、偏右大瓶身与左侧文字实现统一色系下的主次分配。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.28,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_backlight",
+        "color": [
+          "gold",
+          "warm_white",
+          "amber"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "右侧商品",
+          "左侧文字",
+          "单色高级感"
+        ],
+        "perfume_suitability": 95,
+        "caveat": "旧广告画质一般，适合构图参考，不作材质细节真值。"
+      },
+      "analysis_origin": "codex_visual_review"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "glm-4.6v",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4"
+}

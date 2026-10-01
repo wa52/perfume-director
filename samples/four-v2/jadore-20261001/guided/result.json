@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETED",
+  "mode": "codex_guided_style_redesign",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "status": "NEEDS_REVIEW",
+      "review_mode": "codex_guided",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\four-reworked\\jadore-20261001\\black-gold",
+      "selected": {
+        "version": 1,
+        "score": null,
+        "poster": "poster.png",
+        "sha256": "d6dff862fcb914a0ab19ec1d40100626109d12bebc62e5aacf93c9eb78425ed7"
+      },
+      "versions": []
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "status": "NEEDS_REVIEW",
+      "review_mode": "codex_guided",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\four-reworked\\jadore-20261001\\cream-minimal",
+      "selected": {
+        "version": 1,
+        "score": null,
+        "poster": "poster.png",
+        "sha256": "dee3e74f1ee699a5d8c124b2e551ca8b6361d0772a017f3557fa59835cc4dc14"
+      },
+      "versions": []
+    },
+    {
+      "id": "burgundy-editorial",
+      "name": "酒红编辑风",
+      "status": "NEEDS_REVIEW",
+      "review_mode": "codex_guided",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\four-reworked\\jadore-20261001\\burgundy-editorial",
+      "selected": {
+        "version": 1,
+        "score": null,
+        "poster": "poster.png",
+        "sha256": "d8eb69db3fd2af81d2ffef0e47d6d6686d65b9d590a547087de43bc6997cec07"
+      },
+      "versions": []
+    },
+    {
+      "id": "botanical",
+      "name": "清新植物风",
+      "status": "NEEDS_REVIEW",
+      "review_mode": "codex_guided",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\four-reworked\\jadore-20261001\\botanical",
+      "selected": {
+        "version": 1,
+        "score": null,
+        "poster": "poster.png",
+        "sha256": "3f21877ed48152877649e735d88e6e30a92da814b0b31232caa5635985ff14b0"
+      },
+      "versions": []
+    }
+  ],
+  "note": "Four completed human-guided drafts; no vision PASS or invented score. User selects based on actual images."
+}

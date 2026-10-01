@@ -325,6 +325,76 @@ def review_poster(config, spec, product, poster, ref_images, trace_path, previou
     return vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images]+([previous['poster']] if previous else []), trace_path=trace_path)
 
 
+DIRECTIONS = (
+    {'id': 'black-gold', 'name': '黑金奢华', 'brief': '黑色与克制金色，横向侧光，哑光黑色宽台面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。'},
+    {'id': 'cream-minimal', 'name': '奶油极简', 'brief': '暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。'},
+    {'id': 'burgundy-editorial', 'name': '酒红编辑风', 'brief': '深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。'},
+    {'id': 'botanical', 'name': '清新植物风', 'brief': '浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。'},
+)
+
+
+def direction_template(template, direction_id):
+    """Four curated starting plans: different grids, scale, material and type."""
+    spec = copy.deepcopy(template)
+    spec['canvas'] = {'width': 1080, 'height': 1440}
+    spec['product'].update(width=520, height=850, y=820)
+    spec['shadow'].update(kind='contact', offset_x=0, offset_y=0, opacity=.35, blur=10)
+    spec['decoration']['enabled'] = False
+    for name in TEXT_LAYERS:
+        spec[name]['font'] = 'C:/Windows/Fonts/times.ttf'
+    plans = {
+        'black-gold': (760, '#101216', '#D8C18E', 96, 350, 70, 'Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph'),
+        'cream-minimal': (540, '#F3E7D0', '#72552F', 300, 170, 116, 'Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space'),
+        'burgundy-editorial': (400, '#5A142B', '#FAE4D5', 680, 310, 62, 'Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left'),
+        'botanical': (750, '#DCE5D3', '#314B3B', 90, 410, 70, 'Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set'),
+    }
+    x, bg, ink, tx, ty, size, prompt = plans[direction_id]
+    spec['product']['x'] = x
+    spec['background'].update(color=bg,prompt=prompt,revision=0)
+    spec['title'].update(x=tx,y=ty,size=size,color=ink)
+    spec['logo'].update(x=tx,y=ty-90,size=34,color=ink)
+    spec['subtitle'].update(x=tx,y=ty+110,size=22,color=ink)
+    if direction_id == 'cream-minimal':
+        spec['logo'].update(x=488,y=82,size=46)
+        spec['subtitle'].update(x=445,y=1330,size=24)
+    if direction_id == 'burgundy-editorial':
+        for name in TEXT_LAYERS:
+            spec[name]['font'] = 'C:/Windows/Fonts/arial.ttf'
+    return validate(spec)
+
+
+def run_four(config, product, brief, progress=None):
+    batch = ROOT/'runs/batches'/uuid.uuid4().hex[:12]
+    batch.mkdir(parents=True)
+    directions = []
+    write(batch/'request.json', {'brief': brief, 'directions': DIRECTIONS, 'max_rounds_per_direction': config.get('max_rounds',3)})
+    for index, direction in enumerate(DIRECTIONS, 1):
+        child_record = {}
+        def report(values):
+            if values.get('run_dir'):
+                child_record['run_dir'] = values['run_dir']
+            if progress:
+                progress({**values, 'direction_index': index, 'direction_count': 4,
+                          'direction_name': direction['name'], 'directions': list(directions)})
+        report({'stage': 'DIRECTOR', 'version': None})
+        try:
+            child_config = copy.deepcopy(config)
+            child_config['direction_seed_offset'] = index * 1009
+            child_config['direction_id'] = direction['id']
+            child = run(child_config, product, brief+'\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：'+direction['brief'], progress=report)
+            result = read(child/'result.json')
+            item = {**direction, 'status': result['status'], 'run_dir': str(child),
+                    'selected': result['selected'], 'versions': result['versions']}
+        except Exception as error:
+            item = {**direction, **child_record, 'status': 'ERROR', 'error': type(error).__name__}
+        directions.append(item)
+        write(batch/'result.json', {'status': 'COMPLETED' if len(directions)==4 and all(d['status']!='ERROR' for d in directions) else 'PARTIAL' if any('selected' in d for d in directions) else 'ERROR', 'directions': directions})
+        report({'stage': 'DIRECTION_FINISHED'})
+    if progress:
+        progress({'stage': 'FINISHED', 'run_dir': str(batch), 'directions': directions})
+    return batch
+
+
 def run(config, product, brief, background=None, demo=False, progress=None):
     if not Path(product).is_file():
         raise ValueError('Product image missing')
@@ -343,6 +413,8 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         raise ValueError('Critic requires exactly 3 reference works')
     ref_images = [ROOT/r['image'] for r in references]
     template = read(ROOT/'examples/PosterSpec.json')
+    if config.get('direction_id'):
+        template = direction_template(template,config['direction_id'])
     run_dir = ROOT/'runs'/('demo' if demo else 'live')/uuid.uuid4().hex[:12]
     run_dir.mkdir(parents=True)
     product_path = Path(product).resolve()
@@ -355,12 +427,22 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         progress({'stage': 'DIRECTOR', 'run_dir': str(run_dir)})
     if not demo:
         print('Director: analyzing product and 3 references', flush=True)
-    spec = template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The template is ONLY the field schema, NOT a design to echo: replace its placeholder text, layout, background prompt and colors with your own decisions. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Make the supporting surface broad and place the bottle base on its top, never below its front edge. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
-    validate(spec)
+    spec = template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The supplied plan is a curated starting grid for this direction, not a finished design. Keep its distinct design language and strong product scale; replace placeholder copy with approved copy and refine optical typography alignment. Do not collapse different directions into the same layout. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Make the supporting surface broad and place the bottle base on its top, never below its front edge. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
+    try:
+        validate(spec)
+    except (ValueError, KeyError, TypeError) as error:
+        if demo:
+            raise
+        spec = vision(config, 'Repair this PosterSpec to the supplied schema. Preserve the requested design direction and truthful copy. All eight layers required; disabled text keeps size 8..240 and a valid color. Product box must stay within canvas. Error: '+str(error)+' Brief: '+brief+' Schema: '+json.dumps(template,ensure_ascii=False)+' Invalid spec: '+json.dumps(spec,ensure_ascii=False), [product,*ref_images], trace_path=run_dir/'Director-repair-call.json')
+        validate(spec)
+    spec['seed'] = (spec['seed']+config.get('direction_seed_offset',0)) % (2**63)
     if demo:
         spec['title']['size'] = 112
+    max_rounds = config.get('max_rounds', 3)
+    if type(max_rounds) is not int or not 1 <= max_rounds <= 3:
+        raise ValueError('max_rounds must be 1..3')
     versions = []
-    for iteration in range(1, 4):
+    for iteration in range(1, max_rounds+1):
         folder = run_dir/f'v{iteration}'
         folder.mkdir()
         write(folder/'PosterSpec.json', spec)
@@ -387,7 +469,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
             'critic': f'v{iteration}/Critic.json', 'sha256': hashlib.sha256(poster.read_bytes()).hexdigest()})
         if critique['pass']:
             break
-        if iteration < 3:
+        if iteration < max_rounds:
             if not critique['changes']:
                 break
             try:
@@ -407,7 +489,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=('demo', 'index', 'run'))
+    parser.add_argument('command', choices=('demo', 'index', 'run', 'four'))
     parser.add_argument('--config', default=str(ROOT/'config.example.json'))
     parser.add_argument('--product')
     parser.add_argument('--brief', default='给这个香水做一张高级新品海报')
@@ -429,7 +511,10 @@ def main():
     else:
         if not args.product:
             parser.error('run requires --product transparent.png')
-        run(config, args.product, args.brief, args.background)
+        if args.command == 'four':
+            print(run_four(config,args.product,args.brief))
+        else:
+            run(config, args.product, args.brief, args.background)
 
 
 if __name__ == '__main__':
