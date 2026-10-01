@@ -1,0 +1,57 @@
+{
+  "mode": "codex_guided_visual_review",
+  "pass": false,
+  "score": 81,
+  "score_note": "Subjective reviewer score; same product and background reused",
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 82,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 76
+  },
+  "problems": [
+    {
+      "type": "shadow",
+      "problem": "瓶底位置正确，但接触阴影仍偏柔，石台与瓶底的接触还可以更明确。",
+      "action": "shadow.opacity=0.54; shadow.blur=5; shadow.offset_y=0"
+    },
+    {
+      "type": "typography",
+      "problem": "EAU DE PARFUM仍略显抢眼，标题与副标题字号关系可以更精细。",
+      "action": "subtitle.size=20; title.size=72; logo.size=30"
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.54
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 72
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 30
+    }
+  ]
+}

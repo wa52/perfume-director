@@ -1,0 +1,46 @@
+{
+  "symptom": "generated background is pure black, all channels have range [0,0]",
+  "minimal_repro": "python check_background.py samples/guided/jadore-20260930/diagnostics/black-background.png",
+  "stage_probe": "PerfumeFiniteConditioning fails with non-finite tensor before sampling",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "FP16 encoder overflow",
+      "result": "Changing global text encoder dtype to BF16 did not fix output."
+    },
+    {
+      "hypothesis": "Damaged source encoder weights",
+      "result": "Direct safetensors scan found 9 non-finite tensors; existing GGUF encoder replacement produced finite conditioning, sampling and decoded images."
+    }
+  ],
+  "root_cause": "Existing qwen_3_4b.safetensors contains non-finite weights; file size alone was not a sufficient validation.",
+  "non_finite_keys": [
+    "model.layers.3.mlp.gate_proj.weight",
+    "model.layers.3.mlp.up_proj.weight",
+    "model.layers.3.self_attn.k_proj.weight",
+    "model.layers.3.self_attn.o_proj.weight",
+    "model.layers.3.self_attn.q_proj.weight",
+    "model.layers.3.self_attn.v_proj.weight",
+    "model.layers.30.mlp.down_proj.weight",
+    "model.layers.30.mlp.gate_proj.weight",
+    "model.layers.30.mlp.up_proj.weight"
+  ],
+  "resolution": "Use existing Qwen3-4B-UD-Q6_K_XL.gguf through installed ComfyUI-GGUF. No model downloads or corrupted-file replacement.",
+  "prevention": [
+    "Comfy tensor finite guards after encoding, sampling and decoding.",
+    "Generated-background constant-black output check."
+  ],
+  "verified_background_ranges": [
+    [
+      0,
+      173
+    ],
+    [
+      0,
+      144
+    ],
+    [
+      0,
+      137
+    ]
+  ]
+}

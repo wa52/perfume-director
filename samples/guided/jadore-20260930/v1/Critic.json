@@ -1,0 +1,88 @@
+{
+  "mode": "codex_guided_visual_review",
+  "pass": false,
+  "score": 72,
+  "score_note": "Subjective reviewer score, not calibrated or standalone model evaluation",
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 71,
+    "typography": 77,
+    "background": 80,
+    "physical_integration": 45
+  },
+  "problems": [
+    {
+      "type": "composite",
+      "problem": "瓶底约在y1302，已低于台面上表面的前沿约y1268，像挂在石台侧面而非放在台面上。",
+      "evidence": "v1/poster.png bottom third",
+      "action": "将product.y上移至816，height降至800，瓶底落在y1216。"
+    },
+    {
+      "type": "shadow",
+      "problem": "沿整瓶轮廓偏移的投影无法提供瓶底接触感。",
+      "action": "使用接触阴影，较短、较暗、较少模糊，贴近底部。"
+    },
+    {
+      "type": "typography",
+      "problem": "J’ADORE大字占据过强视觉权重，左侧信息组与商品的联系略弱。",
+      "action": "title.size从88减至76，信息组略下移。"
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 816
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 800
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 680
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 76
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 254
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 356
+    },
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.36
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    }
+  ]
+}

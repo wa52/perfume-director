@@ -1,0 +1,48 @@
+{
+  "mode": "codex_guided_visual_review",
+  "status": "GUIDED_PASS",
+  "selected": {
+    "version": 3,
+    "score": 84,
+    "pass": true,
+    "poster": "v3/poster.png",
+    "spec": "v3/PosterSpec.json",
+    "critic": "v3/Critic.json",
+    "sha256": "b6a9cb9360bf4b9fab7cbfb7e628c839bf5a18bd395626d39dc7ded75f9b8928"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 72,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "sha256": "fae63be13b095ccba06910058d68f718104acf8f69df00d7ffb49e83a9fbf0cc"
+    },
+    {
+      "version": 2,
+      "score": 81,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "sha256": "d2649892ceff646d346c6490034d54c7c4fdfa69276d7734894e986af7adcc31"
+    },
+    {
+      "version": 3,
+      "score": 84,
+      "pass": true,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "sha256": "b6a9cb9360bf4b9fab7cbfb7e628c839bf5a18bd395626d39dc7ded75f9b8928"
+    }
+  ],
+  "standalone_vision_api_used": false,
+  "renderer": "real_local_comfyui",
+  "background_model": "z_image_turbo_bf16.safetensors loaded as fp8_e4m3fn",
+  "text_encoder": "Qwen3-4B-UD-Q6_K_XL.gguf",
+  "background_seed": 20260930,
+  "score_interpretation": "Subjective Codex assessment after inspecting each rendered image."
+}

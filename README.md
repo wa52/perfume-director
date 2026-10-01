@@ -42,13 +42,13 @@ python guided_render.py --spec samples/jadore-four-directions/02-cream-minimal/P
 
 ## 先运行演示
 
-首次真实运行已完成，见 `runs/guided/jadore-20260930/`：商品原图 + 真实 ComfyUI 背景/合成 + Codex 逐版看图修改，共 3 版。打开 `comparison.png` 比较，最终选 v3；这次是对话引导模式，不是独立视觉 API 自动循环。
+首次真实运行已完成，见 `samples/guided/jadore-20260930/`：商品原图 + 真实 ComfyUI 背景/合成 + Codex 逐版看图修改，共 3 版。查看[三轮对比](samples/guided/jadore-20260930/comparison.png)、[审阅报告](samples/guided/jadore-20260930/REPORT.md)和[结果记录](samples/guided/jadore-20260930/result.json)，最终选 v3；这次是对话引导模式，不是独立视觉 API 自动循环。
 
 本机启动入口：`./start_comfy.ps1`，API 为 `http://127.0.0.1:8190`。它复用现有 ComfyUI (1) Python/GGUF 插件和共享模型，运行输出保存在项目 `runtime/`。脚本含本机路径，换机器需修改参数和 `extra_model_paths.local.yaml`。
 
 ```powershell
 .\start_comfy.ps1
-python guided_render.py --spec runs/guided/jadore-20260930/v3/PosterSpec.json --output runs/reproduce/poster.png --background runs/guided/jadore-20260930/v1/background.png
+python guided_render.py --spec samples/guided/jadore-20260930/v3/PosterSpec.json --output runs/reproduce/poster.png --background samples/guided/jadore-20260930/v1/background.png
 ```
 
 也可去掉 `--background`，按 Spec 重新生成 AI 背景。`config.local.json` 已配置本机渲染器；独立 Director/Critic 仍需填入视觉模型配置和 API 环境变量。
@@ -144,6 +144,6 @@ Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改�
 python -m unittest discover -s tests -v
 ```
 
-测试覆盖非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实视觉模型、真实 ComfyUI 和商品图需要完成一次实际运行后，才能验证画面是否改善。
+测试覆盖非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 闭环尚无真实运行验证。
 
 协议参考：[ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes)、[Chat Completions API](https://developers.openai.com/api/reference/resources/chat)。

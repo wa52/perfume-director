@@ -1,0 +1,15 @@
+{
+  "mode": "codex_guided_visual_review",
+  "brief": "Dior J'adore 高级品牌展示海报；真实商品原图、暗色暖金背景、克制排版、无价格/促销/新品声明。最多3版。",
+  "product": "assets/products/dior-jadore-retailer.png",
+  "references": [
+    "armani-santal-dansha",
+    "tom-ford-black-orchid-satin",
+    "dior-jadore-gold-bottle"
+  ],
+  "director_reasoning": "以Armani黑底木材侧光与Tom Ford单瓶主视觉为材质方向，借鉴Dior左文字右商品的信息分区，保持商品身份。",
+  "reviewer": "Codex in current conversation; not standalone vision API",
+  "status": "COMPLETE",
+  "result": "result.json",
+  "selected_version": 3
+}

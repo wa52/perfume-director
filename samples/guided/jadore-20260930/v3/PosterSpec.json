@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1024,
+    "height": 1360
+  },
+  "seed": 20260930,
+  "background": {
+    "color": "#171613",
+    "prompt": "A luxury perfume campaign BACKGROUND PLATE ONLY, vertical editorial studio photograph. Absolutely no bottle, no perfume, no product, no people, no letters, no text, no logo. A completely empty matte charcoal stone tabletop in the bottom 18 percent of the frame. Nearly black warm charcoal seamless wall behind it. A subtle soft bronze golden vertical light haze on the right side of the wall, subdued and elegant, very low contrast. The entire upper left half stays dark, smooth, empty negative space reserved for typography. Directional warm side light from upper right, realistic understated studio photography, tactile matte stone, restrained dark champagne gold palette, simple composition, no busy decor, no pedestals, no flowers, no dramatic spotlight circles.",
+    "revision": 0
+  },
+  "product": {
+    "x": 680,
+    "y": 816,
+    "width": 390,
+    "height": 800
+  },
+  "lighting": "warm_directional_side_light",
+  "palette": [
+    "#171613",
+    "#D6C39B",
+    "#F0E7D5"
+  ],
+  "title": {
+    "text": "J’ADORE",
+    "x": 80,
+    "y": 254,
+    "size": 72,
+    "color": "#F0E7D5",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 84,
+    "y": 356,
+    "size": 20,
+    "color": "#C6B794",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 80,
+    "y": 1220,
+    "size": 20,
+    "color": "#C6B794",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 82,
+    "y": 82,
+    "size": 30,
+    "color": "#F0E7D5",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "shadow": {
+    "opacity": 0.54,
+    "blur": 5,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 84,
+    "y": 398,
+    "width": 74,
+    "color": "#998463"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}
