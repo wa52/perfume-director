@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 79.3,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 80,
+    "typography": 75,
+    "background": 85,
+    "physical_integration": 80,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Generic Arial font used for title, subtitle, and logo; luxury brands typically employ custom or serif fonts to convey sophistication, reducing typographic alignment with professional references."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Background (deep burgundy with diagonal shadow) lacks cohesive elements that tie to the product's materials (gold neck, glass bottle) or scent, creating a disconnect between visual elements and brand identity."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Background and composition do not match the professional references' cohesive integration of product-relevant elements (e.g., Armani Prive's wood/water, Tom Ford's silk, Dior's gold gradient), resulting in a lower design quality gap."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep burgundy red studio with matte gold paper floor and wall, subtle gold foil texture matching the bottle's neck, soft gradient from burgundy to gold to complement the product's warm tones, large diagonal architectural shadow from upper right, editorial still-life set with clear foreground left"
+    }
+  ],
+  "reported_score": 76
+}

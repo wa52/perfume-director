@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 72.1,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 60,
+    "reference_alignment": 65,
+    "creative_coherence": 70
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle floating (not in contact with support surface). Evidence: product_base_y is 1250, which is 190 pixels above canvas bottom (1440), so the bottle does not rest on the seamless studio floor. Shadow.offset_y is 0, but the shadow should align with the bottle’s base (not the floor), indicating the bottle is suspended rather than grounded."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic background lacks thematic depth. Evidence: Professional references (Armani Prive with wood, Tom Ford with black silk, Dior J’Adore with gold gradient) use dramatic, context-rich backgrounds to elevate luxury; the final poster’s gradient is too plain and fails to match the narrative depth of campaign standards."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Weak visual concept due to disconnected elements. Evidence: The bottle is centered, but typography (Times font) and background (gradient) do not create a cohesive luxury narrative. Soft, undirectional lighting reduces emotional impact, making the composition feel generic rather than intentional."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 1008
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory studio with soft directional light, matte cream surface, subtle texture, gentle gradient from light to dark ivory"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 130
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 56
+    }
+  ],
+  "reported_score": 73
+}

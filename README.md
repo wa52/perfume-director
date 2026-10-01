@@ -214,3 +214,5 @@ python poster.py four --config config.local.json --product assets/products/dior-
 四方向串行使用同一台 ComfyUI，耗时和 API 用量比单方向增加；仍只允许一个批次运行。配置可用 `max_rounds: 1..3` 控制各方向轮数，默认 3；没有配置则无需修改。Director 输出非法 Spec 时只允许一次带错误信息的模型修复，仍非法则该方向失败，保留记录，不伪造成功。
 
 四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。当前 25 项测试通过。
+
+最新全自动实跑：[四方向自动任务原图、原始评审和失败记录](samples/automatic-four/jadore-20261001/REPORT.md)。通过真实 ComfyUI 节点提交，无人工改 Spec 或成品。四个方向都有生成图，批次最终为 PARTIAL，未产生有效 PASS；黑金评审自相矛盾、奶油 V2 评审断连，酒红和植物未通过。该案例不能用来证明稳定商业设计质量。

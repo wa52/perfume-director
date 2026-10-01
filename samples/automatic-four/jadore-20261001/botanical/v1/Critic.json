@@ -1,0 +1,60 @@
+{
+  "pass": false,
+  "score": 73.6,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 80,
+    "typography": 60,
+    "background": 85,
+    "physical_integration": 90,
+    "reference_alignment": 50,
+    "creative_coherence": 60
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Generic serif font (Times) and dark green color do not align with luxury perfume brand standards; professional references (e.g., Dior’s own campaign) use elegant script fonts and gold/white typography to reinforce luxury."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Background color (#DCE5D3 pale sage) and style (soft, natural leaves) differ significantly from professional references (Armani/Prive: dark with wood, Tom Ford: black with silk, Dior’s ad: gold), creating a visual gap in brand consistency."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Disconnected typography (generic Times) and background (pale sage) fail to express a cohesive luxury visual concept; the bottle (luxury) is paired with elements that lack the elegance of high-end perfume campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#F5F5F0"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#F5F5F0"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty dark charcoal seamless studio, dramatic spotlight from top left, subtle gold highlights on smooth surface, minimalistic elegant still-life set"
+    },
+    {
+      "path": "shadow.color",
+      "op": "set",
+      "value": "#000000"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    }
+  ],
+  "reported_score": 73
+}

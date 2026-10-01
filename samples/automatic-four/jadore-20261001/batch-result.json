@@ -1,0 +1,75 @@
+{
+  "status": "PARTIAL",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "brief": "黑色与克制金色，横向侧光，哑光黑色宽台面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\ded98c415138",
+      "status": "ERROR",
+      "error": "ValueError"
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "brief": "暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\6de13d09a4b5",
+      "status": "ERROR",
+      "error": "RemoteDisconnected"
+    },
+    {
+      "id": "burgundy-editorial",
+      "name": "酒红编辑风",
+      "brief": "深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\b004ecb8cb73",
+      "selected": {
+        "version": 1,
+        "score": 79.3,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "sha256": "ae7e8c84073fd3dedf5f324db8d7fe4b31286c2eaa9fbfc0a19493cd2481af7a"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 79.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "sha256": "ae7e8c84073fd3dedf5f324db8d7fe4b31286c2eaa9fbfc0a19493cd2481af7a"
+        }
+      ]
+    },
+    {
+      "id": "botanical",
+      "name": "清新植物风",
+      "brief": "浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\a3040c20bb17",
+      "selected": {
+        "version": 1,
+        "score": 73.6,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "sha256": "e47b0d8fa586045df7714124cfaa8a3933bb9060f4fb997e8010e43bd39a423d"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 73.6,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "sha256": "e47b0d8fa586045df7714124cfaa8a3933bb9060f4fb997e8010e43bd39a423d"
+        }
+      ]
+    }
+  ]
+}

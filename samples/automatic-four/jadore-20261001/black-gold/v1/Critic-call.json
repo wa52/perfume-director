@@ -1,0 +1,96 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "max_tokens": 8192
+  },
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "43bee48b20f7598246f582fe3ab37d06717b9eafd438e907c104f47b6a33309b"
+    },
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "response_id": "20261001181046ab452f6b465d4f85",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 4784,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4463
+    },
+    "prompt_tokens": 9116,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 13900
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": true,
+    "score": 86,
+    "dimensions": {
+      "product_fidelity": 90,
+      "composition": 85,
+      "typography": 85,
+      "background": 85,
+      "physical_integration": 85,
+      "reference_alignment": 85,
+      "creative_coherence": 85
+    },
+    "problems": [],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless extreme close-up of matte black wide tabletop with subtle gold gradient, deep black and charcoal values, soft highlights on tabletop, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with faint gold accents and gradient"
+      },
+      {
+        "path": "product.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.color",
+        "op": "set",
+        "value": "#F0D088"
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 24
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.4
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 75
+      }
+    ]
+  },
+  "duration_seconds": 54.454
+}

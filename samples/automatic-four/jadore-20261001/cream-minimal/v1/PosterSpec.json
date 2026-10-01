@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 2060,
+  "background": {
+    "color": "#F3E7D0",
+    "prompt": "Empty warm ivory seamless studio, soft diffused light, matte cream surface, clean central space, gentle tonal gradient",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 818,
+    "width": 520,
+    "height": 864
+  },
+  "lighting": "soft_diffused",
+  "palette": [
+    "#F3E7D0",
+    "#EAE3D5",
+    "#72552F"
+  ],
+  "title": {
+    "text": "J’ADORE",
+    "x": 300,
+    "y": 170,
+    "size": 116,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 445,
+    "y": 1330,
+    "size": 24,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EAE3D5",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 488,
+    "y": 82,
+    "size": 46,
+    "color": "#72552F",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "response": {
+    "prompt_id": "ce70f462-c5a0-4333-a7fb-87e59596a1e3",
+    "number": 0,
+    "node_errors": {}
+  },
+  "brief": "为 Dior J’adore 生成四种独立风格的商业海报。批准文案只有品牌 DIOR、标题 J’ADORE、副标题 EAU DE PARFUM；无价格、新品或促销声明。商品原图保持不变，瓶身清晰有存在感，文字与商品不要重叠，商品应自然落在支持面。按每个艺术方向的起始网格细化，不要把四个方向变成同一版式换色。",
+  "comfy_url": "http://127.0.0.1:8190",
+  "job_id": "03a710f9c249435d8da47cb8e1b310f0"
+}

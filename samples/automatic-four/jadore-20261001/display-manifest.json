@@ -1,0 +1,30 @@
+[
+  {
+    "id": "black-gold",
+    "displayed_poster": "black-gold/v1/poster.png",
+    "selection": "latest generated image; critique incomplete/invalid",
+    "status": "ERROR",
+    "sha256": "43bee48b20f7598246f582fe3ab37d06717b9eafd438e907c104f47b6a33309b"
+  },
+  {
+    "id": "cream-minimal",
+    "displayed_poster": "cream-minimal/v2/poster.png",
+    "selection": "latest generated image; critique incomplete/invalid",
+    "status": "ERROR",
+    "sha256": "cbba90edb56d694268bc1eec600d42d40a509f84b71b5cccb63be45d24baa034"
+  },
+  {
+    "id": "burgundy-editorial",
+    "displayed_poster": "burgundy-editorial/v1/poster.png",
+    "selection": "program-selected",
+    "status": "NEEDS_REVIEW",
+    "sha256": "ae7e8c84073fd3dedf5f324db8d7fe4b31286c2eaa9fbfc0a19493cd2481af7a"
+  },
+  {
+    "id": "botanical",
+    "displayed_poster": "botanical/v1/poster.png",
+    "selection": "program-selected",
+    "status": "NEEDS_REVIEW",
+    "sha256": "e47b0d8fa586045df7714124cfaa8a3933bb9060f4fb997e8010e43bd39a423d"
+  }
+]
