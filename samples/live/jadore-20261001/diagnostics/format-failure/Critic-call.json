@@ -1,0 +1,111 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "8060b723054aad39360c3a7a5521f23e2454eaebd56f57668cd03343e21f3828"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "response_id": "20261001123153fa75144e1e634133",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 432,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 8592,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 9024
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "answer": {
+      "pass": false,
+      "score": 65,
+      "dimensions": {
+        "product_fidelity": 85,
+        "composition": 70,
+        "typography": 60,
+        "background": 50,
+        "physical_integration": 40
+      },
+      "problems": [
+        {
+          "type": "composition",
+          "problem": "Secondary bottle (Dior Eau de Parfum) creates visual clutter and distracts from primary product focus"
+        },
+        {
+          "type": "physical_integration",
+          "problem": "Bottle appears to float above support surface with inconsistent shadow contact"
+        },
+        {
+          "type": "background",
+          "problem": "Background lacks luxury refinement; charcoal stone texture appears rough and unrefined"
+        },
+        {
+          "type": "typography",
+          "problem": "Title '静谧之境' lacks hierarchical weight; subtitle color lacks contrast against background"
+        }
+      ],
+      "changes": [
+        {
+          "path": "product.width",
+          "op": "set",
+          "value": 420
+        },
+        {
+          "path": "product.x",
+          "op": "set",
+          "value": 660
+        },
+        {
+          "path": "background.prompt",
+          "op": "set",
+          "value": "Luxury perfume campaign background, polished obsidian pedestal, soft golden sidelight, expansive negative space, subtle platinum accents, no text, no bottle"
+        },
+        {
+          "path": "shadow.kind",
+          "op": "set",
+          "value": "contact"
+        },
+        {
+          "path": "shadow.blur",
+          "op": "set",
+          "value": 24
+        },
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 96
+        },
+        {
+          "path": "subtitle.color",
+          "op": "set",
+          "value": "#FFFFFF"
+        }
+      ]
+    }
+  },
+  "duration_seconds": 8.755
+}

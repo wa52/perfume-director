@@ -1,0 +1,61 @@
+{
+  "pass": false,
+  "score": 72,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 65,
+    "physical_integration": 60
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the tabletop with no visible contact or shadow interaction, breaking physical realism"
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle is centered but lacks dynamic placement; background gradient distracts from product focus"
+    },
+    {
+      "type": "background",
+      "problem": "Wall texture is inconsistent with specified charcoal plaster; lacks subtle gold veining on stone"
+    },
+    {
+      "type": "typography",
+      "problem": "Title 'J'ADORE' color (#D4AF37) is too bright against the dark background, reducing elegance"
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 35
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 35
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "An empty studio with a smooth dark charcoal plaster wall and a broad dark stone tabletop across the lower quarter, warm ivory side light, clean upper left negative space, subtle gold veining on the stone, only the empty wall and stone surface."
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#B8860B"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 520
+    }
+  ]
+}

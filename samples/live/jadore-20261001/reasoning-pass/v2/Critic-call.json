@@ -1,0 +1,56 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "0f4615fe86665320c785232e07aab55d4ce3a8ef738a94dd52c761d05f49c073"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "response_id": "202610011238378864d7c7685f4737",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 2299,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2218
+    },
+    "prompt_tokens": 8795,
+    "prompt_tokens_details": {
+      "cached_tokens": 60
+    },
+    "total_tokens": 11094
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": true,
+    "score": 89,
+    "dimensions": {
+      "product_fidelity": 95,
+      "composition": 90,
+      "typography": 90,
+      "background": 85,
+      "physical_integration": 85
+    },
+    "problems": [],
+    "changes": []
+  },
+  "duration_seconds": 48.899
+}

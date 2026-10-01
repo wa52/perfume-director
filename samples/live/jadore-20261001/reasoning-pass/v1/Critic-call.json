@@ -1,0 +1,67 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "547ee8ad2e0be95d18b3538c84ae2947cd8866d20d39a565a7f35147f7441d2c"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "response_id": "20261001123656fb05ea28a44f4925",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 4489,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4327
+    },
+    "prompt_tokens": 8795,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 13284
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 84,
+    "dimensions": {
+      "product_fidelity": 90,
+      "composition": 85,
+      "typography": 90,
+      "background": 95,
+      "physical_integration": 60
+    },
+    "problems": [
+      {
+        "type": "shadow_detached",
+        "problem": "Shadow offset_y is 26, which is too high for a contact shadow (should be close to zero), making the bottle appear to float above the tabletop."
+      }
+    ],
+    "changes": [
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      }
+    ]
+  },
+  "duration_seconds": 52.622
+}

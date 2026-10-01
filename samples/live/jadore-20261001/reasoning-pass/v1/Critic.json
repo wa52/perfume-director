@@ -1,0 +1,24 @@
+{
+  "pass": false,
+  "score": 84,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 85,
+    "typography": 90,
+    "background": 95,
+    "physical_integration": 60
+  },
+  "problems": [
+    {
+      "type": "shadow_detached",
+      "problem": "Shadow offset_y is 26, which is too high for a contact shadow (should be close to zero), making the bottle appear to float above the tabletop."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ]
+}

@@ -7,49 +7,49 @@
   },
   "seed": 42,
   "background": {
-    "color": "#181B21",
-    "prompt": "An empty studio with a dark charcoal plaster wall and a broad dark stone tabletop across the lower quarter, warm ivory side light, clean upper left negative space, restrained silver accents, only the empty wall and stone surface.",
+    "color": "#1A1A1A",
+    "prompt": "An empty scene with a dark charcoal wall and a broad dark stone tabletop across the lower quarter, warm amber side light, clean upper left negative space, only the empty wall and stone surface.",
     "revision": 0
   },
   "product": {
     "x": 690,
-    "y": 860,
+    "y": 894,
     "width": 360,
     "height": 660
   },
   "lighting": "hard_side_light",
   "palette": [
-    "#181B21",
-    "#EAE3D5",
-    "#A6A9AF"
+    "#1A1A1A",
+    "#E8D5B5",
+    "#C4B5A0"
   ],
   "title": {
-    "text": "香氛",
+    "text": "J’ADORE",
     "x": 100,
     "y": 160,
     "size": 84,
-    "color": "#EAE3D5"
+    "color": "#E8D5B5"
   },
   "subtitle": {
     "text": "EAU DE PARFUM",
     "x": 104,
     "y": 285,
     "size": 26,
-    "color": "#A6A9AF"
+    "color": "#C4B5A0"
   },
   "price": {
     "text": "",
     "x": 104,
     "y": 1280,
     "size": 24,
-    "color": "#EAE3D5"
+    "color": "#E8D5B5"
   },
   "logo": {
-    "text": "",
+    "text": "DIOR",
     "x": 104,
     "y": 80,
     "size": 24,
-    "color": "#EAE3D5"
+    "color": "#E8D5B5"
   },
   "shadow": {
     "opacity": 0.28,
@@ -63,7 +63,7 @@
     "x": 104,
     "y": 360,
     "width": 80,
-    "color": "#A6A9AF"
+    "color": "#C4B5A0"
   },
   "layers": [
     "background",

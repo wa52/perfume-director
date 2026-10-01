@@ -1,0 +1,61 @@
+{
+  "pass": false,
+  "score": 72,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 70,
+    "typography": 75,
+    "background": 65,
+    "physical_integration": 60
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the tabletop, lacking a natural contact shadow that grounds it to the surface."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle is slightly off-center, creating an unbalanced visual weight that disrupts the intended symmetry."
+    },
+    {
+      "type": "background",
+      "problem": "The dark charcoal plaster wall has inconsistent texture and lacks the clean, restrained gold accents specified in the prompt, appearing overly busy."
+    },
+    {
+      "type": "typography",
+      "problem": "The subtitle 'EAU DE PARFUM' is positioned too close to the title 'J'ADORE', reducing hierarchy and readability."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 480
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "An empty studio with a smooth dark charcoal plaster wall and a broad dark stone tabletop across the lower quarter, warm ivory side light, clean upper left negative space, subtle gold veining on the stone, only the empty wall and stone surface."
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 310
+    }
+  ]
+}

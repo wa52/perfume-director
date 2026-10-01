@@ -20,7 +20,7 @@ Copy-Item config.comfy.example.json config.local.json
 Copy-Item extra_model_paths.example.yaml extra_model_paths.local.yaml
 ```
 
-修改 `extra_model_paths.local.yaml` 中的插件路径；用 `start_comfy.ps1 -ComfyRoot <ComfyUI目录> -ModelsRoot <模型目录>` 指定本机路径。独立 Director/Critic 需要另外配置视觉模型；当前样例由 Codex 在对话里担任 Director/Critic。
+修改 `extra_model_paths.local.yaml` 中的插件路径；用 `start_comfy.ps1 -ComfyRoot <ComfyUI目录> -ModelsRoot <模型目录>` 指定本机路径。四风格样例由 Codex 在对话里担任 Director/Critic；独立视觉 API 的两轮实际案例见下方智谱接入记录。
 
 重现单张样例（复用背景）：
 
@@ -65,6 +65,29 @@ python poster.py demo
 ```
 
 演示自动创建一个几何香水瓶示意图，以本地 Pillow 渲染 3 版。Critic 的修改和分数是**脚本预设**，只验证流程与文件留档，不代表视觉模型认为作品通过，也不证明审美提高。结果放在 `runs/demo/<id>/`。
+
+## 独立视觉模型：智谱 GLM-4.6V
+
+已完成真实独立运行：[案例报告](samples/live/jadore-20261001/REPORT.md)。开启推理的运行 V1 为 84 分但未通过，模型修改接触阴影后 V2 为 89 分并 PASS；完整 API 调用记录随样例保存。另保留三轮 NEEDS_REVIEW 和格式中止记录。这是单商品单方向验证，尚未实现四方向自动竞争。
+
+配置示例：`config.zhipu.example.json`。通过 [智谱官方 Chat Completions 接口](https://docs.bigmodel.cn/api-reference/模型-api/对话补全) 发送多张图片，Director 收到商品图和 3 张参考，Critic 收到成品、原商品图和同样的 3 张参考。图片会发送到 `open.bigmodel.cn`，并产生账号对应的 API 用量。
+
+```powershell
+Copy-Item config.zhipu.example.json config.local.json
+$env:ZHIPU_API_KEY = '你的智谱 API key'
+.\start_comfy.ps1
+python poster.py run --config config.local.json --product assets/products/dior-jadore-retailer.png --brief "为 Dior J’adore 做一张高级品牌展示海报，标题 J’ADORE，品牌 DIOR，副标题 EAU DE PARFUM，无价格、新品或促销声明。"
+```
+
+密钥只从环境变量读取，不写入配置、日志或仓库。此示例开启 `thinking`，最多输出 8192 tokens，每次调用超时 240 秒。其他兼容接口可替换 URL、模型和环境变量名，`vision_options` 只允许推理/采样选项，不能覆盖 messages、model 或鉴权。
+
+每次真实运行保存在 `runs/live/<id>/`。`Director-call.json` 和各版 `Critic-call.json` 保存实际返回的模型名、响应 ID、图片哈希、用量、耗时及结构化输出；不保存密钥或请求图片的 base64。单层 `answer` 包装可解包，但仍须通过原有 Spec/Critic 校验；截断响应会拒绝。`result.json` 保存版本、成品哈希和 `standalone_vision_api_used`。对比图工具只读取结果，不改写来源或评审结论：
+
+```powershell
+python build_review.py runs/live/<id>
+```
+
+Critic 额外收到合成器实际计算的商品边界、瓶底 y 和文字边界，辅助它提出具体坐标修改。这些几何数据不会自动替它作出审美判断。模型的 PASS 是模型评审结果，不是商业质量保证；失败或三轮未通过仍需人工复核。
 
 ## 接入真实视觉模型
 
@@ -144,6 +167,6 @@ Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改�
 python -m unittest discover -s tests -v
 ```
 
-测试覆盖非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 闭环尚无真实运行验证。
+14 项测试覆盖多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
 
 协议参考：[ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes)、[Chat Completions API](https://developers.openai.com/api/reference/resources/chat)。

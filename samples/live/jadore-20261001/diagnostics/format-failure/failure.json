@@ -1,0 +1,6 @@
+{
+  "status": "ABORTED",
+  "reason": "Critic response used a single answer envelope and failed top-level validation. Initial Director also copied placeholder values.",
+  "resolution": "Accept only a single answer envelope and still validate the extracted schema; change Director prompt and neutralize example copy.",
+  "counted_as_success": false
+}

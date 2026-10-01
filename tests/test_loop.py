@@ -30,6 +30,12 @@ class LoopTests(unittest.TestCase):
         padded = Image.new('RGBA', (400, 400))
         ImageDraw.Draw(padded).rectangle((150, 50, 249, 249), fill=(255, 0, 0, 255))
         config = poster.read(poster.ROOT/'config.example.json')
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'padded.png'
+            padded.save(path)
+            geometry = poster.rendered_geometry(spec, path, config['font'])
+        self.assertEqual(geometry['product_bbox'], [206, 156, 306, 356])
+        self.assertEqual(geometry['product_base_y'], 356)
         result = poster.render(spec, padded, config['font'])
         pixels = result.load()
         self.assertEqual(pixels[206, 156], (255, 0, 0))

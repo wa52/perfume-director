@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "score": 89,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 90,
+    "typography": 90,
+    "background": 85,
+    "physical_integration": 85
+  },
+  "problems": [],
+  "changes": []
+}
