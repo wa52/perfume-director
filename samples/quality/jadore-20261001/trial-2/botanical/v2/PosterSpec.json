@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 4078,
+  "background": {
+    "color": "#D8E8D8",
+    "prompt": "Empty pale sage green seamless studio, warm golden hour light, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set",
+    "revision": 1
+  },
+  "product": {
+    "x": 750,
+    "y": 830,
+    "width": 520,
+    "height": 850
+  },
+  "lighting": "soft_frontal_light",
+  "palette": [
+    "#314B3B",
+    "#F5F5F0",
+    "#A6A9AF"
+  ],
+  "title": {
+    "text": "J'adore",
+    "x": 90,
+    "y": 410,
+    "size": 70,
+    "color": "#314B3B",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 90,
+    "y": 520,
+    "size": 22,
+    "color": "#314B3B",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F5F5F0",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 90,
+    "y": 320,
+    "size": 34,
+    "color": "#314B3B",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 5,
+    "offset_x": 0,
+    "offset_y": 2,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface is ambiguous. The bottle appears to float with a detached shadow (offset_y=0 but shadow lacks contact cues), violating the seamless studio floor requirement. Visible shadow is too soft and lacks grounding, suggesting poor physical integration."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatches the product. The soft morning window light creates a cool tone, but the product's warm gold accents and bottle lighting feel disconnected, reducing visual harmony."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric composition lacks balance. The bottle is positioned too far right, leaving excessive empty space on the left, which weakens the visual flow and luxury impact."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Fails to match professional campaign sophistication. References (e.g., Dior's golden backdrop, Jo Malone's floral integration) demonstrate stronger thematic cohesion and product emphasis, while this design feels generic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, warm golden hour light, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#D8E8D8"
+    }
+  ],
+  "reported_score": 78
+}

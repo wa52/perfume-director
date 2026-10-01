@@ -1,0 +1,81 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "175e36e9eae8498376de34cd5209a897ef8a5514025085963036cc9d7890eaee"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "3d1605e32b7371c3ce369dc76f59349fdfa5c0834d5b7c748ea6d06c3c182642"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001230340c75284dafcdf4b7f",
+      "usage": {
+        "completion_tokens": 152,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7984,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 8136
+      }
+    }
+  ],
+  "response_id": "20261001230340c75284dafcdf4b7f",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 152,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7984,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 8136
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 demonstrates superior coherence in typography with clear, elegant gold lettering that complements the product's luxury aesthetic. The bottle is prominently and recognizably presented, with lighting that enhances its contours and materials without visible studio equipment. The two-tone background creates a distinct campaign concept, and the overall composition avoids behind-the-scenes artifacts or floating packshots, resulting in a clean, finished set that aligns with luxury campaign standards.",
+    "remaining_problems": [
+      "Version 2, while similar in composition, lacks the same level of typographic refinement and visual impact in its presentation, making it less compelling as a finished campaign piece."
+    ]
+  },
+  "duration_seconds": 7.987
+}

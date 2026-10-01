@@ -82,7 +82,7 @@ class LoopTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             poster.validate_critique(critique, strict=True)
 
-    def exercise_loop(self, critiques):
+    def exercise_loop(self, critiques, max_rounds=3):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             poster.write(root/'examples/PosterSpec.json', self.spec)
@@ -90,15 +90,30 @@ class LoopTests(unittest.TestCase):
             product = root/'product.png'
             Image.new('RGBA', (10, 10), (255, 255, 255, 128)).save(product)
             config = poster.read(poster.ROOT/'config.example.json')
+            config['max_rounds'] = max_rounds
 
             def fake_render(config, spec, product, destination, background):
-                Image.new('RGB', (10, 10)).save(destination)
+                Image.new('RGB', (spec['canvas']['width'],spec['canvas']['height'])).save(destination)
 
             for critique in critiques:
                 critique['dimensions'] = dict.fromkeys(poster.CRITIC_DIMENSIONS, critique['score'])
             with patch.object(poster, 'ROOT', root), patch.object(poster, 'vision', side_effect=[self.spec, *critiques]), patch.object(poster, 'comfy_render', side_effect=fake_render) as renderer:
                 result = poster.read(poster.run(config, product, 'test')/'result.json')
             return result, renderer.call_count
+
+    def test_quality_budget_can_continue_beyond_three_versions(self):
+        critiques = [{'pass':False,'score':score,'problems':[{'type':'typography','problem':'refine'}],
+                     'changes':[{'path':'title.size','op':'multiply','value':.95}]} for score in (70,71,72,73,74)]
+        result,count=self.exercise_loop(critiques,max_rounds=5)
+        self.assertEqual(count,5)
+        self.assertEqual(result['status'],'NEEDS_REVIEW')
+
+    def test_unchanged_patch_does_not_repeat_render(self):
+        critique={'pass':False,'score':70,'problems':[{'type':'typography','problem':'refine'}],
+                  'changes':[{'path':'title.size','op':'set','value':self.spec['title']['size']}]}
+        result,count=self.exercise_loop([critique],max_rounds=5)
+        self.assertEqual(count,1)
+        self.assertEqual(result['status'],'NEEDS_REVIEW')
 
     def test_pass_stops_first_render(self):
         result, count = self.exercise_loop([{'pass': True, 'score': 85, 'problems': [], 'changes': []}])

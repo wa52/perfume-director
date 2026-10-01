@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 80,
+    "typography": 85,
+    "background": 85,
+    "physical_integration": 75,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle still appears to float above the floor. The shadow offset_y is 2, but the bottle's base_y (1245) is 195 pixels above the canvas bottom (1440), creating an unrealistic gap. The contact shadow is too weak and detached, failing to ground the bottle in the scene."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric layout remains unbalanced. The product occupies 59% of canvas height (within hero range), but the left margin is disproportionately larger than the right, disrupting visual harmony. The empty space on the left feels disconnected from the product."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, concept-driven storytelling of professional references (e.g., Tom Ford's fig imagery, Byredo's abstract red form). The background is generic, reducing the design's impact compared to competitors."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph with subtle texture variations"
+    }
+  ],
+  "reported_score": 82.1
+}

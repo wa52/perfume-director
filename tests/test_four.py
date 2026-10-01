@@ -19,7 +19,7 @@ class FourDirectionsTests(unittest.TestCase):
                 folder = root/'runs/live'/str(index)
                 poster.write(folder/'result.json', {'status': 'NEEDS_REVIEW', 'selected': {'version': 1, 'score': 75, 'poster': 'v1/poster.png'}, 'versions': []})
                 return folder
-            with patch.object(poster, 'ROOT', root), patch.object(poster, 'run', side_effect=child):
+            with patch.object(poster, 'ROOT', root), patch.object(poster, 'run', side_effect=child), patch.object(poster,'resolve_copy',return_value={'title':'actual name','logo':'actual brand','subtitle':'','price':''}):
                 result = poster.read(poster.run_four({'vision_model': 'test'}, 'product', 'approved copy', progress=events.append)/'result.json')
             return result, calls, events
 
@@ -30,6 +30,7 @@ class FourDirectionsTests(unittest.TestCase):
         self.assertEqual(len({config['direction_seed_offset'] for config, brief in calls}), 4)
         self.assertEqual(len({brief for config, brief in calls}), 4)
         self.assertTrue(all('approved copy' in brief for config, brief in calls))
+        self.assertTrue(all(config['approved_copy']['title']=='actual name' for config,brief in calls))
         self.assertEqual([item['id'] for item in result['directions']], [item['id'] for item in poster.DIRECTIONS])
         self.assertEqual(events[-1]['stage'], 'FINISHED')
 

@@ -1,0 +1,89 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "f23e1a8e783bccb5f1efb8cace7f1ff4c213ca4bc88a639026942f3f87f5b2d8"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012243255a2b0b5eea1941f6",
+      "usage": {
+        "completion_tokens": 97,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7586,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 7683
+      }
+    }
+  ],
+  "response_id": "202610012243255a2b0b5eea1941f6",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 97,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7586,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 7683
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 920
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 1280
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 16
+      }
+    ]
+  },
+  "duration_seconds": 6.049
+}

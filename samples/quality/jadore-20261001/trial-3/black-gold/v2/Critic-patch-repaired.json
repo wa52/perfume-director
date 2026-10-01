@@ -1,0 +1,10 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ]
+}

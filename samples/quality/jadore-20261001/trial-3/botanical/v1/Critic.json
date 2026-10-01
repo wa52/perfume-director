@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base rests on the surface but lacks a visible contact shadow, violating physical realism. The enlarged detail (image 6) confirms no shadow beneath the base, which is critical for grounding the product in the scene."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The soft, diffused window light in the background does not align with the product's bright, studio-like illumination. The background appears flat and lacks the depth needed to support the product's luminosity, creating a disjointed visual hierarchy."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric imbalance: The bottle is positioned too far right, leaving excessive empty space on the left. This disrupts the visual flow and fails to create a balanced, luxurious composition compared to professional references (e.g., image 5's centered hero)."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Inconsistent lighting direction: The product's highlight (top-left) conflicts with the background's soft window light (implied top-right), creating a lighting inconsistency that weakens the scene's cohesion."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft diffused light from upper left, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 650
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 780
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 80,
+    "typography": 75,
+    "background": 85,
+    "physical_integration": 75,
+    "reference_alignment": 75,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with surface remains unresolved. The product_base_y (1245) is 86.4% of canvas height, but the shadow.offset_y (2) is insufficient for a contact shadow, creating a floating appearance. Visible surface interaction (e.g., subtle reflection, shadow alignment) is missing, violating the requirement for a raised tabletop or seamless studio floor."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric composition lacks balance. The product is positioned too far right (x:760), leaving excessive negative space on the left. The softbox light source is disconnected from the product's placement, reducing visual harmony and failing to integrate with the background's gradient."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lacks sophistication seen in references (e.g., Tom Ford's dramatic lighting, Armani's material storytelling). The composition feels generic, with a disconnected softbox and minimal environmental storytelling that fails to elevate the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 660
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty charcoal-black seamless studio with a continuous satin graphite floor, broad warm ivory softbox light from upper left illuminating the product, restrained warm vertical gradient behind the product, smooth deep black negative space on left, elegant photographic still life environment, full bleed"
+    }
+  ],
+  "reported_score": 82.5
+}

@@ -27,5 +27,7 @@
   },
   "vision_attempts": 3,
   "background_attempts": 2,
-  "vision_image_max_edge": 1280
+  "vision_image_max_edge": 1280,
+  "max_rounds": 5,
+  "compare_final_versions": true
 }

@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the tabletop with no visible contact shadow, violating the 'contact' shadow specification. The shadow offset_y is 0, but the bottle's base (1245px) is not visually anchored to the tabletop, creating an unrealistic floating effect."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric composition with the bottle positioned too far right (x:760) creates excessive negative space on the left, disrupting visual balance. The tabletop occupies the lower third but the bottle's placement feels disconnected from the surface."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks the specified 'soft horizontal side light from left'—lighting appears flat and does not support the product's form. The gradient behind the left foreground is absent, reducing depth."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Tom Ford Black Orchid, Armani Prive), the composition lacks dramatic lighting and textural contrast. The background feels generic rather than an intentional, luxurious environment."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 680
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty matte black studio with a broad horizontal black tabletop, soft horizontal side light from left illuminating right foreground, deep black negative space on right, smooth gradient behind left foreground, elegant photographic still life environment, no fabric folds, no raised pedestal, full bleed"
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty matte black studio with a broad horizontal black tabletop, soft horizontal side light from left illuminating right foreground, deep black negative space on right, smooth gradient behind left foreground, elegant photographic still life environment, no fabric folds, no raised pedestal, full bleed, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 1051,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

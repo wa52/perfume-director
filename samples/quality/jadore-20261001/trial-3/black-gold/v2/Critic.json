@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 78,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 70,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow misalignment: The bottle base rests on the surface, but the shadow.offset_y: -2 is incorrect (should be 0 for true contact). The contact detail crop [534, 1105, 987, 1355] shows no visible shadow, and the current offset violates the -2..0 range. Zero is correct for direct contact."
+    },
+    {
+      "type": "background",
+      "problem": "Uneven lighting distribution: The background's dark left side remains under-illuminated despite the revised prompt, creating a disjointed contrast with the brightly lit product. The 'broad warm ivory diffused frontal light' is not evenly applied, making the setup look artificial."
+    },
+    {
+      "type": "composition",
+      "problem": "Disconnected typography hierarchy: The centrally placed bottle (x: 760) and left-aligned text (logo/title/subtitle at x: 540) still feel unbalanced. Professional luxury campaigns require tighter integration between text and product to maintain visual flow."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic backdrop vs. premium references: Compared to Tom Ford (dramatic lighting) and Armani Prive (textural integration), the background lacks sophistication. The YSL Libre campaign's dynamic elements highlight how a simple backdrop can still feel premium when paired with strong composition."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty graphite-black seamless studio with a continuous satin charcoal floor, broad warm ivory diffused frontal light evenly illuminating the entire scene, smooth deep black negative space on left with subtle warm gradient, elegant photographic still life environment, full bleed"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 78.5
+}

@@ -1,0 +1,49 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the floor due to insufficient contact shadow. The shadow offset_y is 0, but the bottle's base (y=1245) is too high in the frame, creating a gap between the bottle and the floor that lacks a visible contact shadow to ground it. This violates the requirement for a contact shadow offset_y close to zero and visible contact cues."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle's vertical position (product_base_y=1245) places it too high in the canvas, leaving excessive empty space below. While the product height ratio (0.5903) is within the 50-65% range, the bottom margin is overly generous, disrupting the visual balance and making the bottle feel disconnected from the composition."
+    },
+    {
+      "type": "background",
+      "problem": "The background's soft morning window light and eucalyptus leaves feel generic and lack the dramatic, luxurious tone of professional perfume campaigns. The pale sage green color is muted, failing to enhance the product's elegance and creating a weak visual hierarchy."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the sophisticated, cohesive aesthetic of luxury references (e.g., Dior's golden backdrop or Jo Malone's floral integration). The background and lighting do not align with the high-end, polished style expected in professional campaigns, resulting in a generic feel."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty luxurious pale gold seamless studio, warm golden hour light, subtle gradient from deep gold to soft amber, minimalistic elegant still-life set with soft focus, emphasizing product's premium feel"
+    }
+  ],
+  "reported_score": 78
+}

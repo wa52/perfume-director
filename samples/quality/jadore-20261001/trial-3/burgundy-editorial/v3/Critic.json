@@ -1,0 +1,65 @@
+{
+  "pass": false,
+  "score": 81.6,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 80,
+    "typography": 78,
+    "background": 75,
+    "physical_integration": 85,
+    "reference_alignment": 78,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lighting remains inconsistent with product lighting - the dramatic diagonal shadow on the wall doesn't match the product's hard side lighting, creating visual dissonance"
+    },
+    {
+      "type": "composition",
+      "problem": "Typography lacks clear visual hierarchy - title, subtitle, and logo are aligned but lack intentional spacing and weight variation, failing to guide viewer attention effectively"
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Typography treatment is generic and lacks the sophisticated refinement seen in professional luxury campaigns, with inconsistent font weights and spacing compared to reference materials"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 72
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 290
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 400
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 210
+    }
+  ],
+  "reported_score": 82.1
+}

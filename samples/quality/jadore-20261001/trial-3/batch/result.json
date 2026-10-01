@@ -1,0 +1,185 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "brief": "黑色与克制金色，宽柔光，连续无接缝黑色地面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\891c2cb4c729",
+      "selected": {
+        "version": 1,
+        "score": 76.4,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "175e36e9eae8498376de34cd5209a897ef8a5514025085963036cc9d7890eaee"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "175e36e9eae8498376de34cd5209a897ef8a5514025085963036cc9d7890eaee"
+        },
+        {
+          "version": 2,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "3d1605e32b7371c3ce369dc76f59349fdfa5c0834d5b7c748ea6d06c3c182642"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "brief": "暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\aba92e805009",
+      "selected": {
+        "version": 1,
+        "score": 75.7,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "7772b043a30919b0ecee4b50d765077497eee086f0691b18c9b77ecf93438ad8"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "7772b043a30919b0ecee4b50d765077497eee086f0691b18c9b77ecf93438ad8"
+        },
+        {
+          "version": 2,
+          "score": 77.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "4a5d0c23d76e0ea2d6590f25bc54d499757253a2cbefa30991db0506f4e047bb"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "burgundy-editorial",
+      "name": "酒红编辑风",
+      "brief": "深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\963f75b4ef39",
+      "selected": {
+        "version": 1,
+        "score": 75.7,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "d73f22c1b7816f7958c8f1b4712f86dabc1422eec6eb685adba6ea7ec6bcb30f"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "d73f22c1b7816f7958c8f1b4712f86dabc1422eec6eb685adba6ea7ec6bcb30f"
+        },
+        {
+          "version": 2,
+          "score": 81.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "255703efb2694be9829eea1013e29fd43492566143aff756ac7398cf37657a12"
+        },
+        {
+          "version": 3,
+          "score": 81.6,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "f4888883d558083f895383fe6b5fa6ebbf06e1df0b907ddbbca63209b54b7b7a"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "botanical",
+      "name": "清新植物风",
+      "brief": "浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\89b61d2ab7a8",
+      "selected": {
+        "version": 2,
+        "score": 81.4,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "2ec96992183cd2aec1e204942e825ba05bce9ddf2373e628c8e73e1fcfa63930"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "39b58ccd8818bf9521a09b5ab0942f1740072b1eb8330620d367e8906bc27cb9"
+        },
+        {
+          "version": 2,
+          "score": 81.4,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "2ec96992183cd2aec1e204942e825ba05bce9ddf2373e628c8e73e1fcfa63930"
+        },
+        {
+          "version": 3,
+          "score": 81.4,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "8a395b9eb033c347d81b2a227de2a0c91ef8d1f77422147ad13c385be5774f1b"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base rests on the surface but lacks a corresponding shadow, violating physical realism. The contact detail crop [534, 1105, 987, 1355] confirms no shadow is present, and the current shadow.offset_y: 0 is misaligned (should be -2..0 for contact)."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The product is brightly lit, but the background's dark left side and warm gradient create a disjointed contrast. The prompt mentions 'broad warm ivory diffused frontal light,' but the dark left area lacks illumination, making the setup look artificial."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography hierarchy: The left-aligned text (logo, title, subtitle) feels disconnected from the centrally placed bottle, reducing visual flow. Professional luxury campaigns typically balance text and product more cohesively."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic backdrop vs. premium references: Compared to Tom Ford (dramatic lighting) and Armani Prive (textural integration), the background lacks sophistication. The YSL Libre campaign's dynamic elements highlight how a simple backdrop can still feel premium when paired with strong composition."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty graphite-black seamless studio with a continuous satin charcoal floor, broad warm ivory diffused frontal light evenly illuminating the entire scene, smooth deep black negative space on left with subtle warm gradient, elegant photographic still life environment, full bleed"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 78
+}

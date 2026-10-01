@@ -1,0 +1,94 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "069571c72e799a7af9d46b3d679b90c8a7fbb6572c5ee91ef0a911dc0bc02f5f"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012257222ecf4eb0a04248d8",
+      "usage": {
+        "completion_tokens": 124,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 9741,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        },
+        "total_tokens": 9865
+      }
+    }
+  ],
+  "response_id": "202610012257222ecf4eb0a04248d8",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 124,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 9741,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 9865
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 950
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 16
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.7
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 12
+      }
+    ]
+  },
+  "duration_seconds": 7.731
+}

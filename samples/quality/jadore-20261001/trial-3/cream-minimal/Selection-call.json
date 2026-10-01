@@ -1,0 +1,81 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "7772b043a30919b0ecee4b50d765077497eee086f0691b18c9b77ecf93438ad8"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "4a5d0c23d76e0ea2d6590f25bc54d499757253a2cbefa30991db0506f4e047bb"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012306147e8ac1d6afdf44ff",
+      "usage": {
+        "completion_tokens": 134,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 8098,
+        "prompt_tokens_details": {
+          "cached_tokens": 254
+        },
+        "total_tokens": 8232
+      }
+    }
+  ],
+  "response_id": "202610012306147e8ac1d6afdf44ff",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 134,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 8098,
+    "prompt_tokens_details": {
+      "cached_tokens": 254
+    },
+    "total_tokens": 8232
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 presents a clean, finished set with coherent typography, a recognizable product, and controlled lighting that emphasizes the perfume bottle's elegance. The background is a smooth, warm tone that complements the product without distractions, and there are no visible studio equipment or floating packshot defects. Version 2, while similar, has a slightly less refined background gradient that reduces the overall polish compared to Version 1.",
+    "remaining_problems": [
+      "Version 2's background gradient is less smooth, creating a minor distraction from the product's elegance."
+    ]
+  },
+  "duration_seconds": 6.095
+}

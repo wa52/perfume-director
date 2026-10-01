@@ -1,0 +1,43 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph with subtle texture variations"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.y",
+          "op": "set",
+          "value": 950
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

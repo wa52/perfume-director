@@ -1,0 +1,28 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.y",
+          "op": "set",
+          "value": 900
+        },
+        {
+          "path": "product.x",
+          "op": "set",
+          "value": 660
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

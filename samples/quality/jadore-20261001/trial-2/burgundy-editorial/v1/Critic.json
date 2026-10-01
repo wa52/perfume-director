@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the floor with no visible contact shadow, violating the 'contact' shadow kind specification. The shadow offset_y is 0, but the bottle's base_y (1245) is 195 pixels above the canvas bottom (1440), creating an unrealistic gap without supporting contact cues."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric layout feels unbalanced due to the large empty space on the left. The product occupies 59% of canvas height (within hero range), but the left margin is disproportionately larger than the right, disrupting visual harmony."
+    },
+    {
+      "type": "typography",
+      "problem": "Font choices (Arial) lack luxury refinement. The title 'J'adore' uses a generic sans-serif, which fails to match the sophisticated tone of luxury perfume campaigns and contrasts with the elegant bottle design."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, concept-driven storytelling of professional references (e.g., Tom Ford's fig imagery, Byredo's abstract red form). The background is generic, reducing the design's impact compared to competitors."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph with subtle texture variations"
+    }
+  ],
+  "reported_score": 78
+}

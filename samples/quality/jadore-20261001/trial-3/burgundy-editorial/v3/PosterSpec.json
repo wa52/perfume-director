@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 3069,
+  "background": {
+    "color": "#5A142B",
+    "prompt": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph",
+    "revision": 0
+  },
+  "product": {
+    "x": 400,
+    "y": 820,
+    "width": 520,
+    "height": 850
+  },
+  "lighting": "hard_side_light",
+  "palette": [
+    "#181B21",
+    "#EAE3D5",
+    "#A6A9AF"
+  ],
+  "title": {
+    "text": "J'adore",
+    "x": 780,
+    "y": 290,
+    "size": 72,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 780,
+    "y": 400,
+    "size": 28,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EAE3D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 780,
+    "y": 210,
+    "size": 40,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.4,
+    "blur": 8,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

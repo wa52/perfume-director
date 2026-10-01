@@ -1,0 +1,296 @@
+[
+  {
+    "trial": "trial-1",
+    "status": "COMPLETED",
+    "directions": [
+      {
+        "direction": "black-gold",
+        "selected_version": 1,
+        "versions": 1,
+        "score": 77.1,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": null
+      },
+      {
+        "direction": "cream-minimal",
+        "selected_version": 1,
+        "versions": 1,
+        "score": 75.7,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": null
+      },
+      {
+        "direction": "burgundy-editorial",
+        "selected_version": 1,
+        "versions": 2,
+        "score": 77.1,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 demonstrates stronger visual hierarchy with the product as the central focus, coherent typography that complements the bottle's elegance, and a more convincing interplay of lighting and materials that enhances the luxurious feel. The composition balances the bottle and text effectively, while Version 2's typography feels less integrated and the overall visual impact is slightly diminished by the background's uniformity.",
+          "remaining_problems": [
+            "Both versions could benefit from more dynamic physical interaction between the bottle and its environment to elevate the campaign concept beyond static presentation."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "botanical",
+        "selected_version": 1,
+        "versions": 1,
+        "score": 75.7,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": null
+      }
+    ]
+  },
+  {
+    "trial": "trial-2",
+    "status": "COMPLETED",
+    "directions": [
+      {
+        "direction": "black-gold",
+        "selected_version": 1,
+        "versions": 3,
+        "score": 77.1,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 presents the most cohesive execution: the product is clearly recognizable with accurate typography, the lighting is controlled to highlight the bottle's form, and the studio setup (including the softbox) creates a professional, polished aesthetic that aligns with luxury perfume advertising. The composition balances product focus with subtle contextual elements without overwhelming the viewer.",
+          "remaining_problems": [
+            "Version 2's lighting is less dynamic, reducing the bottle's visual impact and making the typography feel less integrated with the overall design.",
+            "Version 3's background elements (softbox) appear less refined, and the overall composition lacks the same level of polish as Version 1."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "cream-minimal",
+        "selected_version": 1,
+        "versions": 3,
+        "score": 75.7,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 demonstrates the most coherent typography with clear hierarchy, a recognizable product that matches the original bottle design, and controlled lighting that enhances the bottle's luxurious materials. The campaign concept of 'absolute femininity' is distinct and aligns with the product's branding, making it the strongest candidate.",
+          "remaining_problems": [
+            "Version 2 has less distinct typography and a less compelling campaign concept compared to Version 1.",
+            "Version 3 lacks a clear campaign concept and has less cohesive typography."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "burgundy-editorial",
+        "selected_version": 1,
+        "versions": 3,
+        "score": 77.1,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 presents the most cohesive execution: the typography is clean and harmonizes with the product's elegant aesthetic, the bottle is clearly recognizable with accurate detailing, and the lighting creates a sophisticated, luxurious mood that aligns with the brand's identity. The composition balances the product and text effectively, making it visually compelling and conceptually strong.",
+          "remaining_problems": [
+            "Version 2's typography feels slightly less integrated with the overall design, and the lighting lacks the depth and richness of Version 1.",
+            "Version 3, while consistent, does not offer the same level of visual impact or typographic refinement as Version 1."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "botanical",
+        "selected_version": 2,
+        "versions": 3,
+        "score": 81.4,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [
+          "contact_shadow_detached"
+        ],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "method": "score_fallback",
+          "error_type": "StopIteration",
+          "selected_version": 2,
+          "does_not_grant_pass": true
+        }
+      }
+    ]
+  },
+  {
+    "trial": "trial-3",
+    "status": "COMPLETED",
+    "directions": [
+      {
+        "direction": "black-gold",
+        "selected_version": 1,
+        "versions": 2,
+        "score": 76.4,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 demonstrates superior coherence in typography with clear, elegant gold lettering that complements the product's luxury aesthetic. The bottle is prominently and recognizably presented, with lighting that enhances its contours and materials without visible studio equipment. The two-tone background creates a distinct campaign concept, and the overall composition avoids behind-the-scenes artifacts or floating packshots, resulting in a clean, finished set that aligns with luxury campaign standards.",
+          "remaining_problems": [
+            "Version 2, while similar in composition, lacks the same level of typographic refinement and visual impact in its presentation, making it less compelling as a finished campaign piece."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "cream-minimal",
+        "selected_version": 1,
+        "versions": 2,
+        "score": 75.7,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 presents a clean, finished set with coherent typography, a recognizable product, and controlled lighting that emphasizes the perfume bottle's elegance. The background is a smooth, warm tone that complements the product without distractions, and there are no visible studio equipment or floating packshot defects. Version 2, while similar, has a slightly less refined background gradient that reduces the overall polish compared to Version 1.",
+          "remaining_problems": [
+            "Version 2's background gradient is less smooth, creating a minor distraction from the product's elegance."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "burgundy-editorial",
+        "selected_version": 1,
+        "versions": 3,
+        "score": 75.7,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "selected_version": 1,
+          "evidence": "Version 1 demonstrates the most coherent typography with clear hierarchy, a recognizable product presentation, and convincing lighting that enhances the bottle's luxury. The setup avoids visible studio equipment and floating packshots, maintaining a clean, finished aesthetic that aligns with luxury campaign standards.",
+          "remaining_problems": [
+            "Version 2 has typography that is less cohesive and the product placement feels less integrated with the background.",
+            "Version 3, while visually striking, may lack the same level of typographic coherence and product emphasis as Version 1."
+          ],
+          "method": "direct_visual_comparison",
+          "does_not_grant_pass": true
+        }
+      },
+      {
+        "direction": "botanical",
+        "selected_version": 2,
+        "versions": 3,
+        "score": 81.4,
+        "status": "NEEDS_REVIEW",
+        "layout_issues": [],
+        "background_issues": [],
+        "copy": {
+          "title": "J'adore",
+          "subtitle": "EAU DE PARFUM",
+          "price": "",
+          "logo": "Dior"
+        },
+        "sha256_matches": true,
+        "selection": {
+          "method": "score_fallback",
+          "error_type": "StopIteration",
+          "selected_version": 2,
+          "does_not_grant_pass": true
+        }
+      }
+    ]
+  }
+]

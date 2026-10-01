@@ -1,0 +1,9 @@
+{
+  "files": {
+    "poster.py": "f4973b41e2210ba0f449164134e993dfbbca9fcd7b705a1e54c6da23f0ff04f7",
+    "quality.py": "6b51b37dc949d7b496cb0825170c4996d1af8aaa83b53a80775f3c117b5d24a3",
+    "reference_store.py": "171b4a32b615f7c3f421777e413c65abec9048aaa664b7286abd0b7e05a3e263"
+  },
+  "frozen_matches_source": true,
+  "tests_passed": 56
+}

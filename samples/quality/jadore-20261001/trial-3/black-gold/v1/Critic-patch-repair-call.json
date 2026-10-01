@@ -1,0 +1,79 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "175e36e9eae8498376de34cd5209a897ef8a5514025085963036cc9d7890eaee"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100123023952317b8fe3c1477f",
+      "usage": {
+        "completion_tokens": 43,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7531,
+        "prompt_tokens_details": {
+          "cached_tokens": 215
+        },
+        "total_tokens": 7574
+      }
+    }
+  ],
+  "response_id": "2026100123023952317b8fe3c1477f",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 43,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7531,
+    "prompt_tokens_details": {
+      "cached_tokens": 215
+    },
+    "total_tokens": 7574
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": -2
+      }
+    ]
+  },
+  "duration_seconds": 4.754
+}

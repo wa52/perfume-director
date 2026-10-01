@@ -1,0 +1,61 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001230134880b57ee2fe24921",
+      "usage": {
+        "completion_tokens": 65,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1894,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 1959
+      }
+    }
+  ],
+  "response_id": "20261001230134880b57ee2fe24921",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 65,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1894,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 1959
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "J'adore",
+    "logo": "Dior",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "title, logo, subtitle from product image; price empty as not provided"
+  },
+  "duration_seconds": 5.336
+}

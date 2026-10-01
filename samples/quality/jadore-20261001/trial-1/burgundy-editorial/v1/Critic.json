@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 70,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the floor due to insufficient contact shadow. The shadow offset_y is 0, but the shadow lacks the subtle spread and softness expected for a contact shadow on a matte surface, making the bottle look disconnected from the floor."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle's position is too low in the frame, with the base at 1245px (86.5% of canvas height), leaving insufficient negative space above the bottle and disrupting the visual balance typical of luxury perfume hero shots."
+    },
+    {
+      "type": "background",
+      "problem": "The background's deep wine-red color (#5A142B) is too dark and lacks the subtle texture variation seen in professional references, reducing the sense of a realistic studio environment."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, concept-driven elements seen in references (e.g., Tom Ford's fig imagery, Byredo's red tulip), resulting in a generic presentation that doesn't match the creative quality of top-tier campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 670
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep burgundy painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+    }
+  ],
+  "reported_score": 78
+}

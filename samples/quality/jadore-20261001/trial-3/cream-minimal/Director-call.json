@@ -1,0 +1,148 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 4,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012303486e30ccbf804e4089",
+      "usage": {
+        "completion_tokens": 575,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 6602,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 7177
+      }
+    }
+  ],
+  "response_id": "202610012303486e30ccbf804e4089",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 575,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6602,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 7177
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 42,
+    "background": {
+      "color": "#F3E7D0",
+      "prompt": "Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "soft_frontal_light",
+    "palette": [
+      "#181B21",
+      "#EAE3D5",
+      "#A6A9AF"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 300,
+      "y": 170,
+      "size": 116,
+      "color": "#72552F",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 445,
+      "y": 1330,
+      "size": 24,
+      "color": "#72552F",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 488,
+      "y": 82,
+      "size": 46,
+      "color": "#72552F",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 104,
+      "y": 360,
+      "width": 80,
+      "color": "#A6A9AF"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "duration_seconds": 26.631
+}

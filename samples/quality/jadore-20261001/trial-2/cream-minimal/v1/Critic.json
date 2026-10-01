@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface cues, violating physical realism. The contact shadow offset_y is 0 but the bottle base is at 1245px (85.5% of canvas height), creating an unnatural gap between the bottle and the background floor."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography placement (title top-left, subtitle bottom-center) creates visual imbalance. The logo is too high (82px) and disconnected from the product, reducing compositional harmony."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks depth and texture; the ivory gradient is flat and generic, failing to match the luxurious, tactile quality of professional perfume campaigns. No tonal variation or subtle texture to enhance product presence."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Dior's golden gradient backdrop with reflective surface, Jo Malone's tactile floral context), the background is underdeveloped and lacks brand-specific luxury cues."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient with subtle texture, diffused light from upper left, matte continuous cream floor with faint surface texture, smooth low contrast surface with gentle tonal variation, clean central space"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 120
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 200
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,33 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty charcoal-black seamless studio with a continuous satin graphite floor, broad warm ivory softbox light from upper left illuminating the product, restrained warm vertical gradient behind the product, smooth deep black negative space on left, elegant photographic still life environment, full bleed"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.y",
+          "op": "set",
+          "value": 900
+        },
+        {
+          "path": "product.x",
+          "op": "set",
+          "value": 660
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

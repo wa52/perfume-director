@@ -1,0 +1,84 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "1326c067ce6781386b31b1fb9b4fec8d059ffbecab8a58f68a08482c9a1f1cd4"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001225536634b2222d6f4475f",
+      "usage": {
+        "completion_tokens": 70,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 9822,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 9892
+      }
+    }
+  ],
+  "response_id": "20261001225536634b2222d6f4475f",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 70,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 9822,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 9892
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 950
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 5
+      }
+    ]
+  },
+  "duration_seconds": 7.233
+}

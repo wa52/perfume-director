@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 85,
+    "background": 80,
+    "physical_integration": 75,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface remains ambiguous. The shadow offset_y=2 is too small for a contact shadow, and the bottle's base appears to float above the seamless floor. Visible shadow lacks grounding cues, violating the seamless studio floor requirement."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric composition lacks balance. The bottle is positioned too far right (x=750), leaving excessive empty space on the left, which weakens visual flow and luxury impact despite improved background."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Fails to match professional campaign sophistication. References (e.g., Dior's golden backdrop, Jo Malone's floral integration) demonstrate stronger thematic cohesion and product emphasis, while this design feels generic despite improved lighting."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 650
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, warm golden hour light, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set"
+    }
+  ],
+  "reported_score": 82.1
+}

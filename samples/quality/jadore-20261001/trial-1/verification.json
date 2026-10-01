@@ -1,0 +1,78 @@
+[
+  {
+    "direction": "black-gold",
+    "selected_version": 1,
+    "versions": 1,
+    "score": 77.1,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": null
+  },
+  {
+    "direction": "cream-minimal",
+    "selected_version": 1,
+    "versions": 1,
+    "score": 75.7,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": null
+  },
+  {
+    "direction": "burgundy-editorial",
+    "selected_version": 1,
+    "versions": 2,
+    "score": 77.1,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": {
+      "selected_version": 1,
+      "evidence": "Version 1 demonstrates stronger visual hierarchy with the product as the central focus, coherent typography that complements the bottle's elegance, and a more convincing interplay of lighting and materials that enhances the luxurious feel. The composition balances the bottle and text effectively, while Version 2's typography feels less integrated and the overall visual impact is slightly diminished by the background's uniformity.",
+      "remaining_problems": [
+        "Both versions could benefit from more dynamic physical interaction between the bottle and its environment to elevate the campaign concept beyond static presentation."
+      ],
+      "method": "direct_visual_comparison",
+      "does_not_grant_pass": true
+    }
+  },
+  {
+    "direction": "botanical",
+    "selected_version": 1,
+    "versions": 1,
+    "score": 75.7,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": null
+  }
+]

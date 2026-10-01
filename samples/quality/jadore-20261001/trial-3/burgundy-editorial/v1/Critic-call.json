@@ -1,0 +1,141 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "d73f22c1b7816f7958c8f1b4712f86dabc1422eec6eb685adba6ea7ec6bcb30f"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "a846eb13124bc6a31c78c64e1164e3cdfecd1f4a0a796f9d7bf85942f8e48a2d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100123070493918bec9b12497f",
+      "usage": {
+        "completion_tokens": 532,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 10567,
+        "prompt_tokens_details": {
+          "cached_tokens": 924
+        },
+        "total_tokens": 11099
+      }
+    }
+  ],
+  "response_id": "2026100123070493918bec9b12497f",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 532,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 10567,
+    "prompt_tokens_details": {
+      "cached_tokens": 924
+    },
+    "total_tokens": 11099
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78,
+    "dimensions": {
+      "product_fidelity": 95,
+      "composition": 75,
+      "typography": 70,
+      "background": 65,
+      "physical_integration": 80,
+      "reference_alignment": 70,
+      "creative_coherence": 75
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "Background contains studio equipment artifacts (softboxes, lighting stands) visible as unnatural bright edges and geometric shapes, breaking immersion in the luxury concept"
+      },
+      {
+        "type": "composition",
+        "problem": "Typography lacks visual hierarchy - title, subtitle, and logo are misaligned and lack intentional spacing, creating a disconnected layout that fails to guide viewer attention"
+      },
+      {
+        "type": "background",
+        "problem": "Background lighting is inconsistent with product lighting - the dramatic diagonal shadow on the wall doesn't match the product's hard side lighting, creating visual dissonance"
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Contact shadow offset_y is 0 (correct), but the shadow appears too soft and lacks definition, reducing the sense of physical grounding"
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Typography treatment is generic and lacks the sophisticated refinement seen in professional luxury campaigns, with inconsistent font weights and spacing"
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 780
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 780
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 780
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 8
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.4
+      }
+    ]
+  },
+  "duration_seconds": 15.35
+}

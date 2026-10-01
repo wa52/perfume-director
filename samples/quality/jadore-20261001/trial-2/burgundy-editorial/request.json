@@ -1,0 +1,102 @@
+{
+  "brief": "为图中的 Dior J’adore 香水设计四个完全不同的高级商业海报方向。只使用产品真实品牌与名称，不写价格、促销和新品承诺。确保产品是主角，文字清晰，材质与灯光协调。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。",
+  "product": "assets\\products\\dior-jadore-retailer.png",
+  "references": [
+    {
+      "id": "tom-ford-figue",
+      "brand": "Tom Ford",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.hanglungmalls.com/whats-happening/6979c26aac741e0002ea91b4?mall=fashion-walk",
+      "image": "references/luxury/tom-ford-figue.jpg",
+      "selection_reason": "瓶身与无花果切面共用紫色体系，用食材建立香调联想，信息克制。",
+      "analysis": {
+        "composition": "centered",
+        "subject_ratio": 0.29,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "backlight_and_rim_light",
+        "color": [
+          "purple",
+          "burgundy",
+          "green"
+        ],
+        "typography": "sans_serif",
+        "information_density": "low",
+        "characteristics": [
+          "同色背景",
+          "香调道具",
+          "底部品牌"
+        ],
+        "perfume_suitability": 89,
+        "caveat": "无花果是香调道具，仅参考道具与颜色关系。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "byredo-rose-absolu",
+      "brand": "Byredo",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.mecca.com/en-au/byredo/rose-of-no-mans-land-absolu-de-parfum-V-078221/",
+      "image": "references/luxury/byredo-rose-absolu.jpg",
+      "selection_reason": "黑底红色抽象玫瑰与底部瓶身形成强烈且克制的视觉对比。",
+      "analysis": {
+        "composition": "vertical_centered",
+        "subject_ratio": 0.1,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "controlled_studio_light",
+        "color": [
+          "black",
+          "red",
+          "white"
+        ],
+        "typography": "display_sans",
+        "information_density": "low",
+        "characteristics": [
+          "三段式层级",
+          "抽象香调道具",
+          "极简强对比"
+        ],
+        "perfume_suitability": 88,
+        "caveat": "装饰不要侵入商品区域，红色道具不能喧宾夺主。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "armani-santal-dansha",
+      "brand": "Armani",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.koichirodoistudio.com/1300",
+      "image": "references/luxury/armani-santal-dansha.jpg",
+      "selection_reason": "黑底、木材垂直纹理和金色标签统一，集中侧光让透明瓶身成为中心。",
+      "analysis": {
+        "composition": "centered",
+        "subject_ratio": 0.23,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "high",
+        "lighting": "hard_side_light",
+        "color": [
+          "black",
+          "wood_brown",
+          "gold"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "木材底座",
+          "侧光玻璃",
+          "上方品牌留白"
+        ],
+        "perfume_suitability": 97,
+        "caveat": "优先参考，木材不能覆盖瓶身标签。"
+      },
+      "analysis_origin": "codex_visual_review"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "glm-4.6v",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4"
+}

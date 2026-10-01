@@ -1,0 +1,104 @@
+[
+  {
+    "direction": "black-gold",
+    "selected_version": 1,
+    "versions": 3,
+    "score": 77.1,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": {
+      "selected_version": 1,
+      "evidence": "Version 1 presents the most cohesive execution: the product is clearly recognizable with accurate typography, the lighting is controlled to highlight the bottle's form, and the studio setup (including the softbox) creates a professional, polished aesthetic that aligns with luxury perfume advertising. The composition balances product focus with subtle contextual elements without overwhelming the viewer.",
+      "remaining_problems": [
+        "Version 2's lighting is less dynamic, reducing the bottle's visual impact and making the typography feel less integrated with the overall design.",
+        "Version 3's background elements (softbox) appear less refined, and the overall composition lacks the same level of polish as Version 1."
+      ],
+      "method": "direct_visual_comparison",
+      "does_not_grant_pass": true
+    }
+  },
+  {
+    "direction": "cream-minimal",
+    "selected_version": 1,
+    "versions": 3,
+    "score": 75.7,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": {
+      "selected_version": 1,
+      "evidence": "Version 1 demonstrates the most coherent typography with clear hierarchy, a recognizable product that matches the original bottle design, and controlled lighting that enhances the bottle's luxurious materials. The campaign concept of 'absolute femininity' is distinct and aligns with the product's branding, making it the strongest candidate.",
+      "remaining_problems": [
+        "Version 2 has less distinct typography and a less compelling campaign concept compared to Version 1.",
+        "Version 3 lacks a clear campaign concept and has less cohesive typography."
+      ],
+      "method": "direct_visual_comparison",
+      "does_not_grant_pass": true
+    }
+  },
+  {
+    "direction": "burgundy-editorial",
+    "selected_version": 1,
+    "versions": 3,
+    "score": 77.1,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": {
+      "selected_version": 1,
+      "evidence": "Version 1 presents the most cohesive execution: the typography is clean and harmonizes with the product's elegant aesthetic, the bottle is clearly recognizable with accurate detailing, and the lighting creates a sophisticated, luxurious mood that aligns with the brand's identity. The composition balances the product and text effectively, making it visually compelling and conceptually strong.",
+      "remaining_problems": [
+        "Version 2's typography feels slightly less integrated with the overall design, and the lighting lacks the depth and richness of Version 1.",
+        "Version 3, while consistent, does not offer the same level of visual impact or typographic refinement as Version 1."
+      ],
+      "method": "direct_visual_comparison",
+      "does_not_grant_pass": true
+    }
+  },
+  {
+    "direction": "botanical",
+    "selected_version": 2,
+    "versions": 3,
+    "score": 81.4,
+    "status": "NEEDS_REVIEW",
+    "layout_issues": [
+      "contact_shadow_detached"
+    ],
+    "background_issues": [],
+    "copy": {
+      "title": "J'adore",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "Dior"
+    },
+    "sha256_matches": true,
+    "selection": {
+      "method": "score_fallback",
+      "error_type": "StopIteration",
+      "selected_version": 2,
+      "does_not_grant_pass": true
+    }
+  }
+]

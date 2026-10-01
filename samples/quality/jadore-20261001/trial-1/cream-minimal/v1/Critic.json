@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface interaction. The contact shadow offset_y is 0, but the bottle base is at 1245px (85.9% of canvas height), creating an unnatural gap between the bottle and the background floor. Visible evidence: The bottle rests above the background's tonal transition, and the shadow lacks the grounding effect expected for a contact shadow."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is weak and disconnected. The title 'J'adore' (116pt) and subtitle 'EAU DE PARFUM' (24pt) compete for attention, with the subtitle positioned too low (1330px) and visually isolated from the product. Visible evidence: The subtitle's placement creates a vertical gap between the product and text, disrupting the visual flow."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the sophisticated minimalism of luxury perfume campaigns. The background is a generic gradient rather than a purposeful environment, and the typography feels generic compared to references with integrated branding (e.g., Dior's 'THE ABSOLUTE FEMININITY' tagline). Visible evidence: The poster's layout is less refined than the Dior reference, which uses the background to enhance the product's elegance."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 920
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1280
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor with subtle texture, smooth low contrast surface, clean central space with soft shadow under bottle"
+    }
+  ],
+  "reported_score": 78
+}

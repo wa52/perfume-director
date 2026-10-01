@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 85,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lighting inconsistency: The background's soft, diffused light (upper-left) creates dappled leaf shadows, but the product's highlight (top-left) and the background's shadow direction (lower-left) conflict, weakening the scene's cohesion. The background lacks the depth needed to support the product's luminosity, creating a disjointed visual hierarchy."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric imbalance: The bottle is positioned too far right (x=580), leaving excessive empty space on the left. This disrupts the visual flow and fails to create a balanced, luxurious composition compared to professional references (e.g., image 5's centered hero)."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow depth: The shadow.offset_y is set to -2 (correct), but the shadow's opacity (0.45) and blur (12) are insufficient to ground the bottle, making it appear slightly floating. The enlarged detail (image 6) shows a faint shadow, but it lacks the depth needed for physical realism."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft diffused light from upper left, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 580
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    }
+  ],
+  "reported_score": 82.1
+}

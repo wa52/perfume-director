@@ -1,6 +1,6 @@
 # Perfume Director — 最小闭环 v0.1
 
-只做香水、luxury 一个风格、最多 20 张参考、最多渲染 3 版。没有 LoRA、向量数据库或 agent 框架。
+只做香水，20 张参考，四个固定艺术方向。没有 LoRA、向量数据库或 agent 框架。真实闭环以质量为目标，单方向渲染预算可设 1～12 版；智谱示例配置为 5 版，预算耗尽仍未达标就保留 NEEDS_REVIEW。
 
 流程：参考分析 → Design KB → Director 输出 PosterSpec → ComfyUI 合成 → Critic 看成品、商品和 3 张参考 → 校验修改 → 下一版。
 
@@ -78,7 +78,7 @@ python poster.py demo
 
 首次安装/更新节点时运行 `./start_comfy.ps1 -Restart`，然后打开 `http://127.0.0.1:8190`，用 Ctrl+O 导入上述 JSON。在 LoadImage 上传商品，填写 brief，点击一次“运行”。节点显示 Director、Render、Critic 阶段以及最终 PASS/NEEDS_REVIEW、选中版本和成品预览。仍需现有 `config.local.json`、视觉 API 环境变量、参考数据库、ComfyUI 模型和字体。密钥不填写在工作流里。
 
-这是整个闭环的入口，不是只有合成器。后台协调器运行原有 `poster.run`，自动向当前 ComfyUI 提交背景/合成工作流，最多三轮。入口节点立即返回 job_id，以释放 ComfyUI 单任务执行队列；若在同一个执行节点里等待自己排队的渲染，会造成死锁。节点 STRING 输出是任务 ID，最终海报由节点的后台预览显示，不作为同步 IMAGE 输出连接到 SaveImage。
+这是整个闭环的入口，不是只有合成器。后台协调器运行原有 `poster.run`，自动向当前 ComfyUI 提交背景/合成工作流，按照配置的渲染预算循环。入口节点立即返回 job_id，以释放 ComfyUI 单任务执行队列；若在同一个执行节点里等待自己排队的渲染，会造成死锁。节点 STRING 输出是任务 ID，最终海报由节点的后台预览显示，不作为同步 IMAGE 输出连接到 SaveImage。
 
 视觉阶段的 ComfyUI 渲染队列可能暂时为空；以入口节点的终态为完成标志。每次手动点击运行会创建新任务，运行中禁止重复提交。刷新可恢复已保存工作流的 job_id 进度；重启服务器会中止未完成任务，需要重新运行。重启脚本只会停止 PID 与启动目录都匹配的本项目实例，并拒绝中断非空队列或正在运行的闭环。
 
@@ -86,7 +86,7 @@ python poster.py demo
 
 ## 独立视觉模型：智谱 GLM-4.6V
 
-已完成真实独立运行：[案例报告](samples/live/jadore-20261001/REPORT.md)。开启推理的运行 V1 为 84 分但未通过，模型修改接触阴影后 V2 为 89 分并 PASS；完整 API 调用记录随样例保存。另保留三轮 NEEDS_REVIEW 和格式中止记录。这是单商品单方向验证，尚未实现四方向自动竞争。
+已完成真实独立运行：[案例报告](samples/live/jadore-20261001/REPORT.md)。开启推理的运行 V1 为 84 分但未通过，模型修改接触阴影后 V2 为 89 分并 PASS；完整 API 调用记录随样例保存。另保留三轮 NEEDS_REVIEW 和格式中止记录。这是单商品单方向验证，该历史案例未涉及四方向竞争；当前四方向能力见后续记录。
 
 配置示例：`config.zhipu.example.json`。通过 [智谱官方 Chat Completions 接口](https://docs.bigmodel.cn/api-reference/模型-api/对话补全) 发送多张图片，Director 收到商品图和 3 张参考，Critic 收到成品、原商品图和同样的 3 张参考。图片会发送到 `open.bigmodel.cn`，并产生账号对应的 API 用量。
 
@@ -105,7 +105,7 @@ python poster.py run --config config.local.json --product assets/products/dior-j
 python build_review.py runs/live/<id>
 ```
 
-Critic 额外收到合成器实际计算的商品边界、瓶底 y 和文字边界，辅助它提出具体坐标修改。这些几何数据不会自动替它作出审美判断。模型的 PASS 是模型评审结果，不是商业质量保证；失败或三轮未通过仍需人工复核。
+Critic 额外收到合成器实际计算的商品边界、瓶底 y 和文字边界，辅助它提出具体坐标修改。这些几何数据不会自动替它作出审美判断。模型的 PASS 是模型评审结果，不是商业质量保证；失败或预算耗尽仍未通过则需人工复核。
 
 ## 接入真实视觉模型
 
@@ -211,7 +211,7 @@ CLI 同样支持：
 python poster.py four --config config.local.json --product assets/products/dior-jadore-retailer.png --brief "四种风格的香水品牌海报，无价格或促销声明"
 ```
 
-四方向串行使用同一台 ComfyUI，耗时和 API 用量比单方向增加；仍只允许一个批次运行。配置可用 `max_rounds: 1..3` 控制各方向轮数，默认 3；没有配置则无需修改。Director 输出非法 Spec 时只允许一次带错误信息的模型修复，仍非法则该方向失败，保留记录，不伪造成功。
+四方向串行使用同一台 ComfyUI，耗时和 API 用量比单方向增加；仍只允许一个批次运行。配置可用 `max_rounds: 1..12` 控制各方向预算，程序默认 3，智谱示例为 5。轮数不代表质量；未通过严格评审仍保留 NEEDS_REVIEW。Director 输出非法 Spec 时只允许一次带错误信息的模型修复，仍非法则该方向失败，保留记录，不伪造成功。
 
 四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。四风格初版 25 项测试通过。
 
@@ -233,3 +233,17 @@ python poster.py four --config config.local.json --product assets/products/dior-
 
 
 最新稳定性加固验收：[全部七批自动实跑与最终四张图](samples/stability/jadore-20261001/REPORT.md)。43 项检查通过；最终批次 4/4 可预览，全部确定性检查通过，审美仍全部 NEEDS_REVIEW。报告同时保留中途一次 API 失败、白边漏检和字体问题，不宣称长期或跨商品稳定性。
+
+
+## 继续优化：名称一致、执行有效修改、直接比较成品
+
+四风格批次先单独读取商品图与用户 Brief，保存 `Product-copy.json`，四个 Director 共用同一组商品名称、品牌、描述和价格字段，避免参考品牌或“香氛”占位词混入成品。无法确认的文字留空；识别结果仍需人工核实，并非品牌身份认证。
+
+Critic 可以通过白名单选择 Times、Georgia、Arial 或微软雅黑；修改前验证字体存在与字符覆盖。复杂修改仍先原子校验，再请求一次模型修复。若修复失败，程序按商品、文字、阴影、背景四组保留独立安全的修改，记录 `Critic-safe-groups.json`；不安全的商品移动不会阻止有效的背景调整。相同 Spec 停止重复渲染。
+
+`compare_final_versions: true` 会让视觉模型直接比较本方向的已评审版本与参考作品，保存 `Selection.json`，不向模型提供各版分数。选择可以回退到较早或较低分的作品；比较失败则明确记录并回退到分数选择。这是相对选优，**不能赋予 PASS**，仍使用原来的七维严格门槛。
+
+背景限定连续摄影棚地面，拒绝展台/台面/底座描述，以降低固定商品原图与生成透视不一致造成的悬浮。渲染器保持商品原图，因此强逆光、透光与真实环境反射仍是当前能力边界；不能靠提高评审分数掩盖这种差距。
+
+
+2026-10-01 质量迭代：Critic 额外看到按商品几何位置裁切、等比例放大的 `Contact-detail.png`，辅助识别细小的瓶底接触阴影。奶油方向强制保持文字光学居中，接触阴影垂直偏移限制为 -2～0，避免 Critic 将左上角误设到画布中心或移动阴影制造空隙。背景中的 softbox 词替换为光线效果描述；选图阶段也明确拒绝可见摄影设备。实际三批运行与局限见 [质量报告](samples/quality/jadore-20261001/REPORT.md)。
