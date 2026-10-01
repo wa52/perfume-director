@@ -4,6 +4,7 @@ import base64
 import copy
 import hashlib
 import io
+import importlib
 import json
 import math
 import mimetypes
@@ -19,6 +20,10 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 TEXT_LAYERS = ('title', 'subtitle', 'price', 'logo')
+
+
+def reference_store_module():
+    return importlib.import_module('.reference_store', __package__) if __package__ else importlib.import_module('reference_store')
 
 
 def read(path):
@@ -267,8 +272,8 @@ def comfy_render(config, spec, product, destination, background):
         for key, binding in config['background_bindings'].items():
             workflow[str(binding['node'])]['inputs'][binding['input']] = values[key]
         background = execute(config, workflow, config['background_output_node'], Path(destination).with_name('background.png'))
-        from check_background import check
-        check(background)
+        module = importlib.import_module('.check_background', __package__) if __package__ else importlib.import_module('check_background')
+        module.check(background)
     if background is None:
         background = Path(destination).with_name('background.png')
         Image.new('RGB', (spec['canvas']['width'], spec['canvas']['height']), spec['background']['color']).save(background)
@@ -292,16 +297,14 @@ def build_kb(config):
             raise ValueError('Invalid reference analysis')
         entries.append({'image': str(path.relative_to(ROOT)), 'style': 'luxury', 'analysis': analysis})
         if (ROOT/'kb/design_kb.sqlite3').exists():
-            from reference_store import update_analysis
-            update_analysis(ROOT, str(path.relative_to(ROOT)), analysis)
+            reference_store_module().update_analysis(ROOT, str(path.relative_to(ROOT)), analysis)
         write(ROOT/'kb/luxury.json', entries)
     if (ROOT/'kb/design_kb.sqlite3').exists():
-        from reference_store import export
-        export(ROOT)
+        reference_store_module().export(ROOT)
     return entries
 
 
-def run(config, product, brief, background=None, demo=False):
+def run(config, product, brief, background=None, demo=False, progress=None):
     if not Path(product).is_file():
         raise ValueError('Product image missing')
     with Image.open(product) as image:
@@ -312,8 +315,7 @@ def run(config, product, brief, background=None, demo=False):
     if demo:
         references = []
     elif (ROOT/'kb/design_kb.sqlite3').exists():
-        from reference_store import select
-        references = select(ROOT, 3)
+        references = reference_store_module().select(ROOT, 3)
     else:
         references = sorted(read(ROOT/'kb/luxury.json'), key=lambda r: r['analysis']['perfume_suitability'], reverse=True)[:3]
     if not demo and len(references) != 3:
@@ -328,6 +330,8 @@ def run(config, product, brief, background=None, demo=False):
         'mode': 'scripted_demo' if demo else 'live', 'vision_model': None if demo else config.get('vision_model'),
         'vision_endpoint': None if demo else config.get('vision_base_url')})
     print('Run directory:', run_dir, flush=True)
+    if progress:
+        progress({'stage': 'DIRECTOR', 'run_dir': str(run_dir)})
     if not demo:
         print('Director: analyzing product and 3 references', flush=True)
     spec = template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The template is ONLY the field schema, NOT a design to echo: replace its placeholder text, layout, background prompt and colors with your own decisions. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Make the supporting surface broad and place the bottle base on its top, never below its front edge. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
@@ -341,6 +345,8 @@ def run(config, product, brief, background=None, demo=False):
         write(folder/'PosterSpec.json', spec)
         poster = folder/'poster.png'
         print(f'Rendering v{iteration}', flush=True)
+        if progress:
+            progress({'stage': 'RENDER', 'version': iteration})
         if demo:
             render(spec, Image.open(product), config['font']).save(poster)
             critique = {'pass': iteration == 3, 'score': [60, 73, 85][iteration-1],
@@ -349,6 +355,8 @@ def run(config, product, brief, background=None, demo=False):
         else:
             comfy_render(config, spec, product, poster, background)
             print(f'Critic: reviewing v{iteration} and 3 references', flush=True)
+            if progress:
+                progress({'stage': 'CRITIC', 'version': iteration})
             critique = vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Estimate the tabletop top-surface y range from the image in canvas pixels. If product_base_y is above that surface, move product.y far enough to put its bottom ON the surface; adjusting shadow alone cannot fix floating. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. PASS only score>=80 and no unresolved problems. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False), [poster, product, *ref_images], trace_path=folder/'Critic-call.json')
         validate_critique(critique)
         write(folder/'Critic.json', critique)

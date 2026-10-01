@@ -66,6 +66,24 @@ python poster.py demo
 
 演示自动创建一个几何香水瓶示意图，以本地 Pillow 渲染 3 版。Critic 的修改和分数是**脚本预设**，只验证流程与文件留档，不代表视觉模型认为作品通过，也不证明审美提高。结果放在 `runs/demo/<id>/`。
 
+## 直接在 ComfyUI 工作流运行闭环
+
+已在界面点击运行并完成真实两轮：[实测报告](samples/comfyui-loop/jadore-20261001/REPORT.md)，V1 75 分未通过，自动改稿后 V2 86 分 PASS。本机工作流已另存为 `Perfume Director Loop`。
+
+![ComfyUI 闭环入口](samples/comfyui-loop-ui.jpg)
+
+加载 `workflows/director-loop.ui.json`，工作流只有两个入口节点：
+
+`LoadImage（透明商品 PNG，IMAGE + MASK） → AI Art Director Loop（brief）`
+
+首次安装/更新节点时运行 `./start_comfy.ps1 -Restart`，然后打开 `http://127.0.0.1:8190`，用 Ctrl+O 导入上述 JSON。在 LoadImage 上传商品，填写 brief，点击一次“运行”。节点显示 Director、Render、Critic 阶段以及最终 PASS/NEEDS_REVIEW、选中版本和成品预览。仍需现有 `config.local.json`、视觉 API 环境变量、参考数据库、ComfyUI 模型和字体。密钥不填写在工作流里。
+
+这是整个闭环的入口，不是只有合成器。后台协调器运行原有 `poster.run`，自动向当前 ComfyUI 提交背景/合成工作流，最多三轮。入口节点立即返回 job_id，以释放 ComfyUI 单任务执行队列；若在同一个执行节点里等待自己排队的渲染，会造成死锁。节点 STRING 输出是任务 ID，最终海报由节点的后台预览显示，不作为同步 IMAGE 输出连接到 SaveImage。
+
+视觉阶段的 ComfyUI 渲染队列可能暂时为空；以入口节点的终态为完成标志。每次手动点击运行会创建新任务，运行中禁止重复提交。刷新可恢复已保存工作流的 job_id 进度；重启服务器会中止未完成任务，需要重新运行。重启脚本只会停止 PID 与启动目录都匹配的本项目实例，并拒绝中断非空队列或正在运行的闭环。
+
+任务状态保存在 `runtime/director-jobs/<id>/state.json`，完整运行仍保存在 `runs/live/<id>/`。预览接口只能读取对应运行目录内的 PNG，不允许任意文件路径。
+
 ## 独立视觉模型：智谱 GLM-4.6V
 
 已完成真实独立运行：[案例报告](samples/live/jadore-20261001/REPORT.md)。开启推理的运行 V1 为 84 分但未通过，模型修改接触阴影后 V2 为 89 分并 PASS；完整 API 调用记录随样例保存。另保留三轮 NEEDS_REVIEW 和格式中止记录。这是单商品单方向验证，尚未实现四方向自动竞争。
@@ -108,12 +126,17 @@ python poster.py index --config config.json
 
 ## 安装 ComfyUI 合成节点
 
-将 `comfy_node/__init__.py` 和项目根目录的 `poster.py` 复制到你的 ComfyUI 实际 `custom_nodes/perfume_director/` 目录，布局为：
+推荐使用 `start_comfy.ps1` 安装并启动；它会复制所有节点文件、前端扩展和本机 project.json。手动安装需复制 `comfy_node/` 的内容，加上根目录的 `poster.py`、`reference_store.py`、`check_background.py`，并创建 `project.json`（内容为 `{"project_root":"项目绝对路径"}`）。布局为：
 
 ```text
 custom_nodes/perfume_director/
   __init__.py
   poster.py
+  reference_store.py
+  check_background.py
+  jobs.py
+  project.json
+  web/director.js
 ```
 
 ComfyUI 的 Python 环境需要 Pillow（以及 ComfyUI 已使用的 numpy/torch）。重启 ComfyUI 后，节点名为 `PerfumePosterSpecRender`。项目附带 `workflows/composite.api.json`，这是 API 格式，由 CLI 提交。
@@ -167,6 +190,6 @@ Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改�
 python -m unittest discover -s tests -v
 ```
 
-14 项测试覆盖多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
+18 项测试覆盖后台调度非阻塞、重复提交保护、重启状态恢复、预览路径边界，以及多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
 
 协议参考：[ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes)、[Chat Completions API](https://developers.openai.com/api/reference/resources/chat)。

@@ -1,0 +1,124 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "max_tokens": 8192
+  },
+  "timeout_seconds": 240,
+  "image_count": 4,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "response_id": "20261001125929621abaee97464521",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 1457,
+    "completion_tokens_details": {
+      "reasoning_tokens": 937
+    },
+    "prompt_tokens": 7458,
+    "prompt_tokens_details": {
+      "cached_tokens": 60
+    },
+    "total_tokens": 8915
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 42,
+    "background": {
+      "color": "#1A1A1A",
+      "prompt": "An empty studio with a dark charcoal velvet backdrop and a broad dark marble tabletop across the lower quarter, warm amber side light, clean upper left negative space, subtle gold metallic accents, only the empty velvet and marble surface.",
+      "revision": 0
+    },
+    "product": {
+      "x": 690,
+      "y": 860,
+      "width": 360,
+      "height": 660
+    },
+    "lighting": "hard_side_light",
+    "palette": [
+      "#1A1A1A",
+      "#D4AF37",
+      "#F0E6D2"
+    ],
+    "title": {
+      "text": "J’ADORE",
+      "x": 100,
+      "y": 160,
+      "size": 84,
+      "color": "#D4AF37"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 104,
+      "y": 285,
+      "size": 26,
+      "color": "#F0E6D2"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#D4AF37"
+    },
+    "logo": {
+      "text": "DIOR",
+      "x": 104,
+      "y": 80,
+      "size": 24,
+      "color": "#D4AF37"
+    },
+    "shadow": {
+      "opacity": 0.28,
+      "blur": 32,
+      "offset_x": 20,
+      "offset_y": 26,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 104,
+      "y": 360,
+      "width": 80,
+      "color": "#F0E6D2"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "duration_seconds": 48.058
+}

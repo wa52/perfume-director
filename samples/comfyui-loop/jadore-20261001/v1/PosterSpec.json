@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 42,
+  "background": {
+    "color": "#1A1A1A",
+    "prompt": "An empty studio with a dark charcoal velvet backdrop and a broad dark marble tabletop across the lower quarter, warm amber side light, clean upper left negative space, subtle gold metallic accents, only the empty velvet and marble surface.",
+    "revision": 0
+  },
+  "product": {
+    "x": 690,
+    "y": 860,
+    "width": 360,
+    "height": 660
+  },
+  "lighting": "hard_side_light",
+  "palette": [
+    "#1A1A1A",
+    "#D4AF37",
+    "#F0E6D2"
+  ],
+  "title": {
+    "text": "J’ADORE",
+    "x": 100,
+    "y": 160,
+    "size": 84,
+    "color": "#D4AF37"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 104,
+    "y": 285,
+    "size": 26,
+    "color": "#F0E6D2"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#D4AF37"
+  },
+  "logo": {
+    "text": "DIOR",
+    "x": 104,
+    "y": 80,
+    "size": 24,
+    "color": "#D4AF37"
+  },
+  "shadow": {
+    "opacity": 0.28,
+    "blur": 32,
+    "offset_x": 20,
+    "offset_y": 26,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#F0E6D2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

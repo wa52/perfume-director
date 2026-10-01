@@ -1,9 +1,60 @@
 """Copy this directory and poster.py to ComfyUI/custom_nodes/perfume_director/."""
 import json
+from pathlib import Path
 import numpy as np
 import torch
 from PIL import Image
 from .poster import render
+from . import poster as engine
+from .jobs import DirectorJobs
+
+WEB_DIRECTORY = './web'
+_jobs = None
+
+
+def director_jobs():
+    global _jobs
+    if _jobs is None:
+        marker = Path(__file__).parent/'project.json'
+        if not marker.is_file():
+            raise ValueError('Missing project.json; install this node with the project start_comfy.ps1')
+        root = Path(json.loads(marker.read_text(encoding='utf-8-sig'))['project_root']).resolve()
+        if not (root/'examples/PosterSpec.json').is_file():
+            raise ValueError('Perfume Director project directory is missing')
+        engine.ROOT = root
+        _jobs = DirectorJobs(root, engine)
+    return _jobs
+
+
+class PerfumeDirectorLoop:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {'required': {'product': ('IMAGE',), 'product_mask': ('MASK',),
+            'brief': ('STRING', {'multiline': True, 'default': '为 Dior J’adore 做高级品牌海报。标题 J’ADORE，品牌 DIOR，副标题 EAU DE PARFUM，无价格、新品或促销声明。商品放在右下石台上，左上留白。'})}}
+
+    RETURN_TYPES = ('STRING',)
+    RETURN_NAMES = ('job_id',)
+    FUNCTION = 'execute'
+    CATEGORY = 'Perfume Director'
+    OUTPUT_NODE = True
+    DESCRIPTION = 'Submit an independent vision Director/ComfyUI/Critic loop (max 3 rounds). Images are sent to the configured vision API. Progress and final preview appear here; the STRING output is a job ID, not an image.'
+
+    @classmethod
+    def IS_CHANGED(cls, **kwargs):
+        return float('nan')
+
+    def execute(self, product, product_mask, brief):
+        if product.shape[0] != 1 or product_mask.shape[0] != 1:
+            raise ValueError('The first version accepts one product, not a batch')
+        rgb = Image.fromarray((product[0].cpu().numpy().clip(0, 1)*255).astype(np.uint8)).convert('RGBA')
+        alpha = Image.fromarray(((1-product_mask[0].cpu().numpy()).clip(0, 1)*255).astype(np.uint8))
+        if alpha.size != rgb.size:
+            raise ValueError('Connect the MASK output of the same transparent LoadImage')
+        rgb.putalpha(alpha)
+        from server import PromptServer
+        base = 'http://127.0.0.1:'+str(PromptServer.instance.port)
+        job_id = director_jobs().start(rgb, brief, base)
+        return {'ui': {'perfume_job': [job_id]}, 'result': (job_id,)}
 
 
 class PerfumePosterSpecRender:
@@ -28,8 +79,8 @@ class PerfumePosterSpecRender:
         return (torch.from_numpy(np.array(result).astype(np.float32)/255)[None, ...],)
 
 
-NODE_CLASS_MAPPINGS = {'PerfumePosterSpecRender': PerfumePosterSpecRender}
-NODE_DISPLAY_NAME_MAPPINGS = {'PerfumePosterSpecRender': 'Perfume PosterSpec Render'}
+NODE_CLASS_MAPPINGS = {'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
+NODE_DISPLAY_NAME_MAPPINGS = {'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 香水闭环'}
 
 
 def require_finite(value, stage):
@@ -85,3 +136,23 @@ NODE_CLASS_MAPPINGS.update({
     'PerfumeFiniteLatent': PerfumeFiniteLatent,
     'PerfumeFiniteImage': PerfumeFiniteImage,
 })
+
+
+from aiohttp import web
+from server import PromptServer
+
+
+@PromptServer.instance.routes.get('/perfume-director/jobs/{job_id}')
+async def director_status(request):
+    try:
+        return web.json_response(director_jobs().status(request.match_info['job_id']))
+    except (ValueError, FileNotFoundError):
+        raise web.HTTPNotFound()
+
+
+@PromptServer.instance.routes.get('/perfume-director/jobs/{job_id}/preview')
+async def director_preview(request):
+    try:
+        return web.FileResponse(director_jobs().preview(request.match_info['job_id']))
+    except (ValueError, FileNotFoundError):
+        raise web.HTTPNotFound()
