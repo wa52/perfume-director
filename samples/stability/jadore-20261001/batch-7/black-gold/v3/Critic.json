@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with surface remains ambiguous. While shadow.offset_y is corrected to 2 (tight contact), the background lacks visible cues (e.g., fabric folds, surface texture) to confirm the bottle rests on the material. The product_base_y (1260) is 12% from canvas bottom (1440), but no fabric drape or shadow anchoring is visible to validate physical realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (720px) occupies 50% of canvas height (1440px), within the 50-65% range, but the left negative space remains overly dominant. The right side feels sparse, and the bottle’s right edge (884px) leaves excessive empty space, reducing visual balance."
+    },
+    {
+      "type": "background",
+      "problem": "Background texture is improved but still lacks luxury editorial depth. The anthracite silk has subtle folds, but the 'large smooth dark negative space' feels generic—professional references (e.g., Tom Ford’s dramatic silk, Armani’s wood) use more dynamic textures to create mood."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Mismatched with professional references: Tom Ford/Armani use textured backdrops to enhance drama, while YSL integrates human elements. This design’s minimalism feels generic, not competitive with high-end perfume campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, pronounced long diagonal folds across the right third, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with gentle fabric drape under the bottle"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 82.1
+}

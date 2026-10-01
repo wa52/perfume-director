@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 74.3,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface cues. The product_base_y (1245) is 86.5% of canvas height, but the shadow.offset_y (0) is detached from the bottle base, violating contact shadow requirements. No tonal transition or surface texture confirms grounding."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is weak: the title 'J'adore' (size 116) is too small relative to the bottle (height 850px, 59% of canvas), and the logo (size 46) is disproportionately large. The subtitle 'EAU DE PARFUM' (size 24) is too small and lacks visual weight, disrupting balance."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, luxurious staging of professional campaigns (e.g., Dior's golden gradient backdrop or Jo Malone's floral integration). The bottle is isolated without contextual elements, reducing emotional resonance."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The warm ivory background and soft lighting create a muted, generic mood that doesn't align with the product's elegant gold accents. The typography (Times font) feels disconnected from the luxury aesthetic, lacking refinement."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.size",
+      "op": "multiply",
+      "value": 1.3
+    },
+    {
+      "path": "logo.size",
+      "op": "multiply",
+      "value": 0.8
+    },
+    {
+      "path": "subtitle.size",
+      "op": "multiply",
+      "value": 1.5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, soft golden gradient backdrop, diffused light from upper left, matte continuous cream floor with subtle texture, clean central space"
+    }
+  ],
+  "reported_score": 78
+}

@@ -31,6 +31,17 @@ class StabilityTests(unittest.TestCase):
             self.assertEqual(len(poster.read(trace)['attempts']),2)
             self.assertNotIn('never-log',trace.read_text())
 
+    def test_retry_exhaustion_is_bounded_and_saved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            image=Path(directory)/'image.png';Image.new('RGB',(8,8),'white').save(image)
+            trace=Path(directory)/'trace.json'
+            config={'api_key_env':'TEST_VISION_KEY','vision_model':'test','vision_base_url':'https://example.invalid','vision_retry_delay':0,'vision_attempts':3}
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}),patch.object(poster,'http',side_effect=http.client.RemoteDisconnected()) as request:
+                with self.assertRaises(http.client.RemoteDisconnected):poster.vision(config,'test',[image],trace)
+            self.assertEqual(request.call_count,3)
+            self.assertEqual(poster.read(trace)['status'],'ERROR')
+            self.assertEqual(len(poster.read(trace)['attempts']),3)
+
     def test_actual_bad_cream_patch_is_blocked_by_safe_layout(self):
         spec = poster.read(SAMPLE/'cream-minimal/v1/PosterSpec.json')
         changes = poster.read(SAMPLE/'cream-minimal/v1/Critic.json')['changes']
@@ -56,6 +67,35 @@ class StabilityTests(unittest.TestCase):
         self.assertEqual(len({r['brand'] for r in cream}),3)
         self.assertTrue(any('green' in r['analysis']['color'] or 'mint_green' in r['analysis']['color'] for r in green))
 
+    def test_cream_subtitle_requires_clearance_not_just_no_overlap(self):
+        spec=poster.direction_template(poster.read(poster.ROOT/'examples/PosterSpec.json'),'cream-minimal')
+        spec['subtitle']['y']=1250
+        self.assertIn('subtitle_too_close_to_product',poster.layout_issues(spec,SAMPLE/'product.png','C:/Windows/Fonts/msyh.ttc','cream-minimal'))
+
+    def test_moving_editorial_type_block_requires_all_three_anchors(self):
+        spec=poster.direction_template(poster.read(poster.ROOT/'examples/PosterSpec.json'),'burgundy-editorial')
+        changes=[{'path':name+'.x','op':'set','value':500} for name in ('title','logo')]
+        with self.assertRaises(ValueError):poster.apply_safe_changes(spec,changes,SAMPLE/'product.png','C:/Windows/Fonts/msyh.ttc','burgundy-editorial')
+        self.assertEqual(spec['title']['x'],680)
+        changes.append({'path':'subtitle.x','op':'set','value':500})
+        # This requested block position is itself too near the product;
+        # move the whole block to a safe common anchor instead.
+        for change in changes:change['value']=650
+        changed=poster.apply_safe_changes(spec,changes,SAMPLE/'product.png','C:/Windows/Fonts/msyh.ttc','burgundy-editorial')
+        self.assertEqual({changed[n]['x'] for n in ('title','logo','subtitle')},{650})
+
+    def test_unsupported_chinese_glyphs_fall_back_without_changing_copy(self):
+        spec=poster.direction_template(poster.read(poster.ROOT/'examples/PosterSpec.json'),'burgundy-editorial')
+        spec['title']['text']='香氛'
+        self.assertFalse(poster.quality_module().font_supports_text(spec['title']['font'],spec['title']['text']))
+        with Image.open(SAMPLE/'product.png') as product:
+            with self.assertRaises(ValueError):poster.render(spec,product,'C:/Windows/Fonts/msyh.ttc')
+        prepared,issues=poster.prepare_layout({'font':'C:/Windows/Fonts/msyh.ttc','direction_id':'burgundy-editorial'},spec,SAMPLE/'product.png')
+        self.assertEqual(prepared['title']['text'],'香氛')
+        self.assertEqual(prepared['title']['font'],'C:/Windows/Fonts/msyh.ttc')
+        self.assertIn('title_font_fallback',issues)
+        self.assertTrue(poster.quality_module().font_supports_text(prepared['title']['font'],prepared['title']['text']))
+
     def test_actual_editorial_white_frame_is_detected(self):
         issues = poster.background_issues(SAMPLE/'burgundy-editorial/v1/background.png', 'burgundy-editorial')
         self.assertIn('unexpected_white_frame', issues)
@@ -68,6 +108,15 @@ class StabilityTests(unittest.TestCase):
             ImageDraw.Draw(image).rectangle((37,37,1042,1402),fill='#121416')
             image.save(path)
             self.assertIn('unexpected_white_frame',poster.background_issues(path,'black-gold'))
+
+    def test_two_opposite_white_margins_are_detected(self):
+        from PIL import ImageDraw
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'opposite.png'
+            image=Image.new('RGB',(1080,1440),'white')
+            ImageDraw.Draw(image).rectangle((190,0,890,1439),fill='#58192C')
+            image.save(path)
+            self.assertIn('unexpected_white_frame',poster.background_issues(path,'burgundy-editorial'))
 
     def test_review_failure_preserves_image_without_invented_score(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -129,6 +178,24 @@ class StabilityTests(unittest.TestCase):
             with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}), patch.object(poster,'http',side_effect=urllib.error.HTTPError('url',401,'Unauthorized',{},None)) as request:
                 with self.assertRaises(ValueError): poster.vision(config,'test',[image])
             self.assertEqual(request.call_count,1)
+
+    def test_unknown_400_can_retry_once_but_coded_rejection_cannot(self):
+        import urllib.error
+        import io
+        with tempfile.TemporaryDirectory() as directory:
+            image=Path(directory)/'image.png';Image.new('RGB',(8,8),'white').save(image)
+            config={'api_key_env':'TEST_VISION_KEY','vision_model':'test','vision_base_url':'https://example.invalid','vision_retry_delay':0}
+            response={'choices':[{'finish_reason':'stop','message':{'content':'{"ok":true}'}}]}
+            unknown=urllib.error.HTTPError('url',400,'Bad Request',{},io.BytesIO(b'Bad Request'))
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}),patch.object(poster,'http',side_effect=[unknown,json.dumps(response).encode()]) as request:
+                self.assertTrue(poster.vision(config,'test',[image])['ok'])
+                self.assertEqual(request.call_count,2)
+            rejection=urllib.error.HTTPError('url',400,'Bad Request',{},io.BytesIO(b'{"error":{"code":"1301"}}'))
+            trace=Path(directory)/'trace.json'
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}),patch.object(poster,'http',side_effect=rejection) as request:
+                with self.assertRaises(ValueError):poster.vision(config,'test',[image],trace)
+                self.assertEqual(request.call_count,1)
+            self.assertEqual(poster.read(trace)['attempts'][0]['provider_code'],'1301')
 
     def test_contact_shadow_is_darkest_at_actual_product_base(self):
         spec = poster.read(poster.ROOT/'examples/PosterSpec.json')

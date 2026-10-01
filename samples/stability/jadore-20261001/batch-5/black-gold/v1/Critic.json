@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface interaction, violating physical realism. The product_base_y (1245) is 86.5% of canvas height (1440), but the shadow.offset_y is 0, creating a detached appearance. Visible contact cues (shadow, surface texture) are missing, making the bottle seem unsupported."
+    },
+    {
+      "type": "composition",
+      "problem": "Unbalanced layout with excessive negative space on the left. The bottle occupies only 59% of canvas height (850/1440), below the 50-65% hero standard, reducing visual impact. The background's left negative space dominates, while the bottle feels isolated rather than integrated."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks luxury editorial depth. The 'anthracite silk' description is not fully realized—folds are subtle but the surface appears flat, lacking the tactile richness of professional campaigns. The dark negative space feels generic rather than purposefully dramatic."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lacks the sophisticated integration seen in references (e.g., Tom Ford's dramatic lighting, Armani's textural storytelling). The composition feels generic compared to luxury peers, with weaker visual storytelling."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with faint reflective sheen"
+    },
+    {
+      "path": "product.width",
+      "op": "multiply",
+      "value": 1.1
+    },
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.1
+    }
+  ],
+  "reported_score": 78
+}

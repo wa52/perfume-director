@@ -1,0 +1,36 @@
+{
+  "pass": false,
+  "score": 81.7,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 82,
+    "typography": 75,
+    "background": 85,
+    "physical_integration": 80,
+    "reference_alignment": 75,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "Bottle height (900px) occupies 62.5% of canvas (1440px), within the 50-65% hero bottle standard, but the bottle is positioned too far right (x=540), creating unbalanced negative space on the left. The composition lacks the dramatic, luxurious framing of professional references (e.g., Dior's golden backdrop or Diptyque's floral integration), resulting in a generic still-life feel."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The design lacks the dramatic, luxurious composition of professional references (e.g., Dior's golden backdrop or Diptyque's floral integration), resulting in a generic still-life feel. The background's soft sage green and eucalyptus leaves do not match the bold, high-contrast aesthetics of top-tier perfume campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set with warm golden highlights"
+    }
+  ],
+  "reported_score": 82.5
+}

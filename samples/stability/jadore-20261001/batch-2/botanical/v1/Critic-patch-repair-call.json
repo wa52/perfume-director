@@ -1,0 +1,84 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "d7f023171f7622a249cd4495cb38e2aa555af73f822ec126355dfd645506a222"
+    },
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "diptyque-eau-rose.jpg",
+      "sha256": "aacd4f3f6ab524b7900e460c2c2acd2bbb1830a2f134d159e11beab271a29351"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001193110100fd676b3db47d1",
+      "usage": {
+        "completion_tokens": 38,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7709,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 7747
+      }
+    }
+  ],
+  "response_id": "20261001193110100fd676b3db47d1",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 38,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7709,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 7747
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 8
+      }
+    ]
+  },
+  "duration_seconds": 6.657
+}

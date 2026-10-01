@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface is incorrect: product_base_y is 1245 (86.5% of canvas height), violating the 91% max bottom margin rule. Visible shadow offset_y is 0, but the bottle appears to float due to excessive bottom margin, lacking a natural contact line with the floor."
+    },
+    {
+      "type": "composition",
+      "problem": "Composition is unbalanced: the bottle is positioned too far right (x: 750), leaving excessive empty space on the left. The product occupies only 59% of canvas height (850/1440), below the 50-65% hero bottle height guideline for luxury campaigns, reducing visual impact."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks professional luxury cohesion: the eucalyptus leaves are confined to edges, creating a disconnected, sparse look. The pale sage green floor lacks the rich, tactile quality seen in reference campaigns (e.g., Dior's golden backdrop or Diptyque's textured pink fabric), reducing visual depth."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Mismatched with professional luxury references: the composition is generic (single bottle + minimal backdrop) compared to references with integrated elements (flowers, fabric, layered text). The lighting is soft but lacks the dramatic contrast or textural richness of top-tier campaigns, creating a gap in design quality."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 650
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty luxurious sage green seamless studio, soft golden morning light, subtle eucalyptus leaf shadows across the entire floor, rich textured fabric drape in upper right, spacious clean central area with natural fresh still-life set"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    }
+  ],
+  "reported_score": 78
+}

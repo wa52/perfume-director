@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 75,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Shadow offset_y=2 is still too large for a contact shadow, creating a visible gap between the bottle base and shadow. A luxury seamless studio requires a tightly attached shadow (offset_y≈0) to maintain physical realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) at 59% of canvas height is slightly below the optimal 60-65% for a luxury hero, reducing visual impact compared to Dior references with more dominant product presence."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Background lacks the rich amber gradient and glossy finish of Dior's luxury campaigns, resulting in a muted tone that doesn't match the brand's premium aesthetic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 930
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm gold seamless studio, rich amber tonal gradient, diffused light from upper left, glossy gold floor, smooth high contrast surface, clean central space"
+    }
+  ],
+  "reported_score": 82.1
+}

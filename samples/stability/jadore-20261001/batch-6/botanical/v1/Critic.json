@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface interaction. The product_base_y (1245) is 13% from canvas bottom (1440), but the shadow.offset_y (0) is detached and does not align with the bottle's base, violating contact shadow requirements."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle (height 850px) occupies 59% of canvas height (1440px), which is within acceptable range, but the composition feels unbalanced due to the large empty space on the left and the bottle's right-side placement, reducing visual harmony."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Dior's golden J'adore campaign), the current design lacks a strong brand narrative and cohesive visual concept, with a generic backdrop that doesn't elevate the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 870
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set with soft gradient background"
+    }
+  ],
+  "reported_score": 78
+}

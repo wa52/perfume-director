@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface is incorrect. The product_base_y is 1245, but the bottle appears to float with a detached shadow (offset_y=0 is correct, but visual cues show misalignment). The bottle should rest on the floor, not hover."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height is 850px (59% of canvas height), which is acceptable, but the composition feels unbalanced due to the bottle's right-side placement and empty left space. The background's eucalyptus leaves are too sparse, reducing visual interest."
+    },
+    {
+      "type": "background",
+      "problem": "The background's dappled leaf shadows are inconsistent with the soft lighting, appearing too sharp and disconnected from the bottle's shadow. The seamless studio floor lacks subtle texture variation, making it look artificial."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Dior's golden campaign), the current design lacks dramatic lighting and cohesive color harmony. The sage green background feels generic, not luxury-focused."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 750
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor with gentle texture variation, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 80,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Shadow offset_y=2 is still too high for a contact shadow, creating a visible gap between the bottle base and shadow. The deterministic geometry requires product_base_y=1255 to align with floor contact, but the shadow appears detached, reducing realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) occupies 59% of canvas (1440px), exceeding the 50-65% range for a single-bottle hero. This creates an unbalanced vertical hierarchy, with the bottle dominating the frame and reducing negative space."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic wine-red backdrop lacks conceptual depth compared to references (e.g., Tom Ford's fig imagery, Byredo's abstract red form). The design fails to establish a unique visual narrative, resulting in a disconnected brand story."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph with subtle texture variation in the floor to emphasize contact"
+    }
+  ],
+  "reported_score": 82.1
+}

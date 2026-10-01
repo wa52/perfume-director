@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 79.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 78,
+    "background": 82,
+    "physical_integration": 75,
+    "reference_alignment": 78,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle grounding remains weak: shadow.offset_y (2) is still detached from the bottle base (product_base_y 1245), violating contact shadow requirements. The seamless studio floor lacks visible texture or tonal transition to confirm contact, making the bottle appear to float."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is unbalanced: the title 'J'adore' (size 211.12) is too small relative to the bottle (height 850px, 59% of canvas), and the logo (size 25.76) is disproportionately large. The subtitle 'EAU DE PARFUM' (size 64.8) lacks visual weight, disrupting balance."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, luxurious staging of professional campaigns (e.g., Dior's golden gradient backdrop or Jo Malone's floral integration). The bottle is isolated without contextual elements, reducing emotional resonance."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The warm ivory background and soft lighting create a muted, generic mood that doesn't align with the product's elegant gold accents. The typography (Times font) feels disconnected from the luxury aesthetic, lacking refinement."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "title.size",
+      "op": "multiply",
+      "value": 1.5
+    },
+    {
+      "path": "logo.size",
+      "op": "multiply",
+      "value": 0.6
+    },
+    {
+      "path": "subtitle.size",
+      "op": "multiply",
+      "value": 2.0
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, soft golden gradient backdrop, diffused light from upper left, matte continuous cream floor with subtle texture, clean central space"
+    }
+  ],
+  "reported_score": 82.1
+}

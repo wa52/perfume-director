@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 75,
+    "background": 80,
+    "physical_integration": 75,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with the surface remains ambiguous. The product_base_y (1255) is 87.2% of canvas height (1440), but the shadow.offset_y (5) is still slightly detached from the bottle base, violating contact shadow physics. The burgundy floor lacks visible texture or tonal transition to confirm a raised tabletop, making the bottle appear to float."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography remains disconnected from the product. The title (\"J'adore\") and logo (\"Dior\") are placed in the upper right, creating a split visual flow between the bottle (left) and text (right). The product occupies 59% of canvas height (850/1440), which is within range, but the text placement lacks integration with the bottle's form."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Tom Ford Figue with fig integration, Byredo Rose of No Man's Land with bold graphic elements), the composition lacks a cohesive visual narrative. The burgundy background and diagonal shadow are generic, failing to create the thematic depth seen in luxury campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left, subtle texture on floor surface"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 600
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 600
+    }
+  ],
+  "reported_score": 82.1
+}

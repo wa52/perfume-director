@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle shadow offset_y is 0, creating a detached shadow that floats tens of pixels below the bottle base, violating contact shadow realism. Visible shadow separation indicates incorrect physical grounding."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) occupies 59% of canvas height, below the 50-65% hero bottle standard. The bottle appears undersized relative to the canvas, reducing visual impact and hierarchy."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Typography lacks luxury refinement: title font (Times) is generic and unrefined, contrasting with Dior's elegant serif standards. Logo placement at top-center is weak compared to professional campaigns' strategic positioning."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Background's warm ivory gradient feels generic and disconnected from the product's gold accents. The composition lacks a cohesive visual narrative, with elements not harmonizing to express a clear luxury concept."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.15
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, soft gold tonal gradient, diffused light from upper left, matte continuous gold floor, smooth low contrast surface, clean central space with subtle gold texture"
+    }
+  ],
+  "reported_score": 78
+}

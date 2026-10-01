@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm ivory seamless studio with subtle texture, soft directional light from upper left creating gentle highlights, matte cream floor with faint tonal variations, clean central space with minimal ambient shadows, full bleed photographic environment filling every edge, continuous surface, no frame, no white margins",
+      "seed": 2061,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

@@ -1,0 +1,6 @@
+{
+  "mode": "vision_diagnostic_only",
+  "original_failure": "../batch-3/burgundy-editorial/Director-call.json",
+  "result": "Director returned valid spec on replay; rendering intentionally not submitted",
+  "root_cause": "Unconfirmed: original run did not save provider error body"
+}

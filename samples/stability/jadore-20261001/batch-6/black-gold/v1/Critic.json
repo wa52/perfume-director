@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 75
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the surface due to shadow offset_y=0 (detached shadow) and product_base_y=1245 (bottle base 195px above canvas bottom, 13.5% margin). Visible contact cues (shadow proximity, surface texture) are missing, violating deterministic geometry."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric balance: bottle occupies 48% of canvas height (below 50% hero standard) and is right-aligned, while text is left-aligned. Negative space is uneven, reducing visual harmony."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lacks the dramatic, cohesive lighting of professional luxury campaigns (e.g., Tom Ford/Armani Prive). Lighting feels generic, not integrated with the product or background."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Disconnected elements: text (left) and bottle (right) lack visual connection. Background texture (stone) and bottle (gold/pearl) have mismatched tones, weakening the luxury concept."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine matte black stone surface filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal texture confined to far right edge, restrained soft highlights on stone, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with warm golden rim light on left edge"
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface cues. The product_base_y (1245) is 86.5% of canvas height (1440), but the shadow.offset_y (0) is detached from the bottle base, violating contact shadow physics. No visible tabletop or floor texture to ground the bottle."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography is disconnected from the product. The title (\"J'adore\") and logo (\"Dior\") are placed in the upper right, creating a split visual flow between the bottle (left) and text (right). The product occupies 59% of canvas height (850/1440), which is within range, but the text placement lacks integration with the bottle's form."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Tom Ford Figue with fig integration, Byredo Rose of No Man's Land with bold graphic elements), the composition lacks a cohesive visual narrative. The burgundy background and diagonal shadow are generic, failing to create the thematic depth seen in luxury campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left, subtle texture on floor surface"
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "One J'adore product, same brief; seven tuning batches, not cross-product reliability certification",
+  "batches": [
+    {
+      "batch": 1,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 0,
+      "background_issues": 0,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 2,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 2,
+      "background_issues": 0,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 3,
+      "status": "PARTIAL",
+      "previews": 3,
+      "layout_issues": 0,
+      "background_issues": 0,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 4,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 0,
+      "background_issues": 1,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 5,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 0,
+      "background_issues": 1,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 6,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 0,
+      "background_issues": 0,
+      "font_issues": 1,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    },
+    {
+      "batch": 7,
+      "status": "COMPLETED",
+      "previews": 4,
+      "layout_issues": 0,
+      "background_issues": 0,
+      "font_issues": 0,
+      "contrast_issues": 0,
+      "review_failures": 0,
+      "aesthetic_passes": 0
+    }
+  ],
+  "latest_acceptance": "4 previews, all deterministic checks clear; 0 aesthetic PASS",
+  "unit_tests": {
+    "count": 43,
+    "status": "passed",
+    "command": "python -m unittest discover -s tests"
+  },
+  "runtime_source_sha256": {
+    "poster.py": "4fb7b520f56f32178efff05adf847c6f8fb9ec4865de5dd3bbb8ba1c6201e456",
+    "quality.py": "e370b0e3fe7a2ee9d55f21f42539c41916e22e4e61263c13395d5ffd25bbcdbf",
+    "reference_store.py": "171b4a32b615f7c3f421777e413c65abec9048aaa664b7286abd0b7e05a3e263"
+  }
+}

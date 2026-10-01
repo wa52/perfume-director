@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 75,
+    "reference_alignment": 75,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle shadow remains slightly detached with offset_y=2px, showing minimal contact cues. The shadow lacks the tight, realistic diffusion expected for a contact shadow on a smooth surface, reducing physical realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is improved but still lacks strong visual connection to the bottle. The title and subtitle are positioned independently, creating a disjointed focal flow between text and product."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "While the design is more polished, it still falls short of professional luxury campaign sophistication. Competing references (e.g., Dior's golden gradient backdrop, Jo Malone's floral integration) demonstrate stronger visual storytelling, whereas this poster's minimalism feels generic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 1
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1350
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, soft golden gradient, diffused light from upper left, matte continuous cream floor with subtle texture, clean central space"
+    }
+  ],
+  "reported_score": 82.0
+}

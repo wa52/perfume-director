@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph, full bleed photographic environment filling every edge, continuous surface, no frame, no white margins",
+      "seed": 1051,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

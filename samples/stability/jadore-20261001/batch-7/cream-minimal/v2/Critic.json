@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 75,
+    "background": 85,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Title font (Times) remains generic and unrefined, lacking the elegant serif refinement expected for Dior's luxury branding. The font choice fails to match the sophistication of professional campaigns, reducing typographic luxury impact."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Logo placement at top-center is weak compared to professional campaigns' strategic positioning. Dior's branding typically uses more dynamic logo placement to reinforce luxury hierarchy, and the current placement feels disconnected from the product."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) occupies 59% of canvas height, below the 50-65% hero bottle standard. The bottle appears undersized relative to the canvas, reducing visual impact and hierarchy despite improved background cohesion."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 114
+    },
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.15
+    }
+  ],
+  "reported_score": 82.1
+}

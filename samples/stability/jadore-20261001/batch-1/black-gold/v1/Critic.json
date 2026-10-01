@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float without visible contact shadow or surface cues. The product_base_y (1245) is 86.5% of canvas height (1440), but the shadow.offset_y (0) is detached from the bottle base, violating contact shadow physics. No visible fabric texture or fold at the bottle's base to confirm surface contact."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle occupies 59% of canvas height (850/1440), slightly below the 50-65% hero standard. The left negative space is overly large, creating imbalance with the right-aligned bottle."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Armani/Prive, Tom Ford), the composition lacks dramatic lighting integration and text hierarchy. The typography feels generic and disconnected from the bottle's luxury aesthetic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 840
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with visible fabric texture at bottle base"
+    },
+    {
+      "path": "title.size",
+      "op": "multiply",
+      "value": 1.2
+    },
+    {
+      "path": "subtitle.size",
+      "op": "multiply",
+      "value": 1.2
+    }
+  ],
+  "reported_score": 78
+}

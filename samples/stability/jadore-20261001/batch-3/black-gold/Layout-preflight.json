@@ -1,0 +1,168 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 1051,
+    "background": {
+      "color": "#101216",
+      "prompt": "Seamless extreme close-up of fine matte black lacquered wood surface filling the entire frame edge to edge, deep black and graphite values, subtle horizontal grain texture, restrained soft highlights on surface, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph",
+      "revision": 0
+    },
+    "product": {
+      "x": 680,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "hard_side_light",
+    "palette": [
+      "#181B21",
+      "#EAE3D5",
+      "#A6A9AF"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 96,
+      "y": 350,
+      "size": 70,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 96,
+      "y": 460,
+      "size": 22,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 96,
+      "y": 260,
+      "size": 34,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 104,
+      "y": 360,
+      "width": 80,
+      "color": "#A6A9AF"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 1051,
+    "background": {
+      "color": "#101216",
+      "prompt": "Seamless extreme close-up of fine matte black lacquered wood surface filling the entire frame edge to edge, deep black and graphite values, subtle horizontal grain texture, restrained soft highlights on surface, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph",
+      "revision": 0
+    },
+    "product": {
+      "x": 680,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "hard_side_light",
+    "palette": [
+      "#181B21",
+      "#EAE3D5",
+      "#A6A9AF"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 96,
+      "y": 350,
+      "size": 70,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 96,
+      "y": 460,
+      "size": 22,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 96,
+      "y": 260,
+      "size": 34,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 104,
+      "y": 360,
+      "width": 80,
+      "color": "#A6A9AF"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

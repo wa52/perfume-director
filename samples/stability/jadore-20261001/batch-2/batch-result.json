@@ -1,0 +1,195 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "brief": "黑色与克制金色，横向侧光，哑光黑色宽台面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\ce904fd27354",
+      "selected": {
+        "version": 2,
+        "score": 80.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "c1d90a04ca722aebece936859daaf2ad9c10ce6021db245e789ba13500fc87bd"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "7550a4e90d55f0de0befcf2c0543a3daa020321d32c7a617ee272ca94bb7366a"
+        },
+        {
+          "version": 2,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "c1d90a04ca722aebece936859daaf2ad9c10ce6021db245e789ba13500fc87bd"
+        },
+        {
+          "version": 3,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "c6b0f7f8350869e07466575ffb3727c0debc2210156a34f24c205fb1507db003"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "brief": "暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\b9cdee7c1f64",
+      "selected": {
+        "version": 3,
+        "score": 79.3,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "dbdb559177f38d249d3558b266273438ec4e97543048cad6740ab55199464cf4"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 74.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "7b1b32bdb522739a3421b49b9dffaf4063dd5643a40af27571710b126eb12403"
+        },
+        {
+          "version": 2,
+          "score": 76.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "2f258aa10eb8e7ef414120eaafcae412c1ce93b379d0695e4affced4fdce9bdc"
+        },
+        {
+          "version": 3,
+          "score": 79.3,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "dbdb559177f38d249d3558b266273438ec4e97543048cad6740ab55199464cf4"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "burgundy-editorial",
+      "name": "酒红编辑风",
+      "brief": "深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\9588f908bbcc",
+      "selected": {
+        "version": 2,
+        "score": 80.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "0a44784b7cc7387d26e0de562a22bc2c7285c1adff62483d584159fa5ce475ba"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "c1cecd86c2c32e94be035a41192461b8f4134edc4e8eab87f43f88ee088cd311"
+        },
+        {
+          "version": 2,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "0a44784b7cc7387d26e0de562a22bc2c7285c1adff62483d584159fa5ce475ba"
+        },
+        {
+          "version": 3,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "0422c02b94cd6219c8e2a25718e5beaef09b91f34ccf92be1fc70144863a3dc8"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "botanical",
+      "name": "清新植物风",
+      "brief": "浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\8e041ebd4e80",
+      "selected": {
+        "version": 2,
+        "score": 80.7,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "425a67050a0888a79d0cab6acac7121464a37d82b8f470149673a605990c1136"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "d7f023171f7622a249cd4495cb38e2aa555af73f822ec126355dfd645506a222"
+        },
+        {
+          "version": 2,
+          "score": 80.7,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "425a67050a0888a79d0cab6acac7121464a37d82b8f470149673a605990c1136"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

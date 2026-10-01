@@ -1,8 +1,18 @@
 """Deterministic composition checks; these are not an aesthetic model or a PASS."""
-from PIL import Image, ImageColor, ImageDraw, ImageFilter, ImageStat
+from functools import lru_cache
+from PIL import Image, ImageColor, ImageDraw, ImageFilter, ImageFont, ImageStat
 
 
-def layout_issues(spec, geometry):
+@lru_cache(maxsize=256)
+def font_supports_text(path, text):
+    font = ImageFont.truetype(path,48)
+    missing = font.getmask('\U0010ffff')
+    signature = (missing.size, bytes(missing))
+    return all((mask.size, bytes(mask)) != signature for char in set(text) if not char.isspace()
+               for mask in [font.getmask(char)])
+
+
+def layout_issues(spec, geometry, direction=None):
     w, h = spec['canvas']['width'], spec['canvas']['height']
     box = geometry['product_bbox']
     issues = []
@@ -17,6 +27,15 @@ def layout_issues(spec, geometry):
             issues.append(name+'_outside_safe_area')
         if geometry['text_product_overlap'].get(name):
             issues.append(name+'_overlaps_product')
+        else:
+            dx = max(box[0]-bounds[2], bounds[0]-box[2], 0)
+            dy = max(box[1]-bounds[3], bounds[1]-box[3], 0)
+            if (dx == 0 and dy < h*.025) or (dy == 0 and dx < w*.025):
+                issues.append(name+'_too_close_to_product')
+    if direction and direction != 'cream-minimal':
+        anchors = [spec[name]['x'] for name in ('logo','title','subtitle') if spec[name]['text']]
+        if anchors and max(anchors)-min(anchors) > 8:
+            issues.append('text_group_not_aligned')
     return issues
 
 
@@ -26,9 +45,10 @@ def background_issues(path, direction):
     stats = ImageStat.Stat(image)
     r, g, b = stats.mean
     edges = [image.crop(box) for box in ((0,0,64,1), (0,95,64,96), (0,0,1,96), (63,0,64,96))]
-    white_edges = sum(min(ImageStat.Stat(edge).mean) > 243 and max(ImageStat.Stat(edge).stddev) < 12 for edge in edges)
+    white_edges = [min(ImageStat.Stat(edge).mean) > 243 and max(ImageStat.Stat(edge).stddev) < 12 for edge in edges]
     issues = []
-    if direction != 'cream-minimal' and white_edges >= 3 and min(stats.mean) < 220:
+    framed = sum(white_edges) >= 3 or all(white_edges[:2]) or all(white_edges[2:])
+    if direction != 'cream-minimal' and framed and min(stats.mean) < 220:
         issues.append('unexpected_white_frame')
     if direction == 'black-gold' and image.convert('L').getextrema()[0] > 110:
         issues.append('black_direction_too_bright')

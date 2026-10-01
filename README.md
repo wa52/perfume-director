@@ -174,7 +174,7 @@ python poster.py run --config config.json --product assets/perfume.png --brief '
 
 完整模板见 `examples/PosterSpec.json`。坐标以像素为单位；商品 `x/y` 为中心、`width/height` 为忽略透明留边、保持纵横比的容纳框；文字 `x/y` 为左上角。层顺序由 `layers` 显式控制，背景必须最先、阴影必须先于商品。超出画布的商品框和文字会被拒绝。
 
-Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改只允许白名单字段和 `set/add/multiply`，不执行模型生成的代码。修改一次性验证，越界/非法修改直接报错，保留已产生的版本，不静默截断参数。例子：
+Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改只允许白名单字段和 `set/add/multiply`，不执行模型生成的代码。修改一次性验证，越界/非法修改拒绝并保留已产生的版本；四方向模式最多要求一次模型安全修复，不静默截断参数。下面是字段简写示意，独立视觉调用必须同时返回七项 dimensions：
 
 ```json
 {"pass": false, "score": 72, "problems": [{"type":"typography","problem":"标题权重太高"}], "changes": [{"path":"title.size","op":"multiply","value":0.82}]}
@@ -190,7 +190,7 @@ Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改�
 python -m unittest discover -s tests -v
 ```
 
-18 项测试覆盖后台调度非阻塞、重复提交保护、重启状态恢复、预览路径边界，以及多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
+基础测试覆盖后台调度非阻塞、重复提交保护、重启状态恢复、预览路径边界，以及多图请求、视觉调用留档、截断拒绝、answer 包装兼容、几何辅助及非法修改拒绝、修改原子性、背景 revision、PASS 约束、提前停止、三轮上限和最佳版本选择。真实 ComfyUI + 商品原图的对话引导三轮案例已随仓库保存；独立视觉 API 的自动 Director/Critic 已新增一个两轮 PASS 案例和一个三轮 NEEDS_REVIEW 案例，详见 samples/live。
 
 协议参考：[ComfyUI server routes](https://docs.comfy.org/development/comfyui-server/comms_routes)、[Chat Completions API](https://developers.openai.com/api/reference/resources/chat)。
 
@@ -198,7 +198,7 @@ python -m unittest discover -s tests -v
 
 旧案例两轮只修改阴影位置，75→86 分不能证明设计已达到商业水平；模型 PASS 仅是模型判断。新版 Critic 对商品保真、构图、字体、背景、物理融合、参考质量差距、创意一致性七项分别评分；程序使用七项平均值作为总分，平均至少 85 且每项至少 80、无未解决问题才能 PASS。保留模型原总分为 reported_score。缺少维度或非法评分会拒绝，不补造评分。Director 默认强调商品主视觉、克制背景和文字关系。阈值仍不能代替人的最终审美判断。
 
-重做样例：[暖白 J’adore 海报与真实评审记录](samples/rework/jadore-20261001/REPORT.md)。这是 Codex 指导的重做，状态为 NEEDS_REVIEW，不能宣称独立 Director 已成功。后续评审附上一版和真实文字/商品重叠计算；非法修改保留最后有效海报。当前共 21 项测试通过。
+重做样例：[暖白 J’adore 海报与真实评审记录](samples/rework/jadore-20261001/REPORT.md)。这是 Codex 指导的重做，状态为 NEEDS_REVIEW，不能宣称独立 Director 已成功。后续评审附上一版和真实文字/商品重叠计算；非法修改保留最后有效海报。该阶段 21 项测试通过。
 
 ### 每次四个独立风格
 
@@ -213,7 +213,7 @@ python poster.py four --config config.local.json --product assets/products/dior-
 
 四方向串行使用同一台 ComfyUI，耗时和 API 用量比单方向增加；仍只允许一个批次运行。配置可用 `max_rounds: 1..3` 控制各方向轮数，默认 3；没有配置则无需修改。Director 输出非法 Spec 时只允许一次带错误信息的模型修复，仍非法则该方向失败，保留记录，不伪造成功。
 
-四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。当前 25 项测试通过。
+四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。四风格初版 25 项测试通过。
 
 最新全自动实跑：[四方向自动任务原图、原始评审和失败记录](samples/automatic-four/jadore-20261001/REPORT.md)。通过真实 ComfyUI 节点提交，无人工改 Spec 或成品。四个方向都有生成图，批次最终为 PARTIAL，未产生有效 PASS；黑金评审自相矛盾、奶油 V2 评审断连，酒红和植物未通过。该案例不能用来证明稳定商业设计质量。
 
@@ -221,9 +221,15 @@ python poster.py four --config config.local.json --product assets/products/dior-
 ### 稳定性保护
 
 - 临时断连、超时、429 和 5xx 最多重试三次，401 等配置错误立即停止。每次请求记录耗时、返回模型、用量和尝试记录，不记录密钥。
+- HTTP 400 保存可识别的服务方错误码；带错误码的拒绝直接停止，没有可识别错误码时只额外尝试一次，不反复重试或改写输入绕过明确拒绝。
 - 矛盾的 PASS（仍有问题或修改）保守降为未通过；缺失评审维度会要求模型重新看图一次，仍无有效评审则保留海报并标记未评审，不补造分数。
 - 四方向先检查实际商品、文字与安全边距；不安全的初始布局恢复该方向安全网格并保存原始/执行 Spec。Critic 危险修改保持原子拒绝，并最多要求一次安全修复。
+- 文字与商品至少留出画布高度/宽度 2.5% 的间距，非居中方向的品牌、标题、副标题作为一个对齐组检查，避免自动修改后文字贴瓶底或分散。
+- 字体须覆盖实际文案的全部字形；Director 会回退到配置的字体并记录修改，仍缺字则拒绝，不生成乱码方框。
 - AI 背景检查常量图、白边与方向色系。失败最多重新生成两次；仍失败采用显式标记的程序备用背景，禁止因此记为 PASS。此检查只防明显错误，不判断商业审美。
 - 文字与实际背景的平均对比度不足时，Director 执行前调整字色，保存修改记录；不改文案和商品。背景本身与商品的光线融合仍需要看图验收。
 
 默认智谱示例使用 GLM-4.6V、关闭深度思考、低随机性与 1280 像素多图输入。可在 config.local.json 调整；运行后仍须检查四张图，COMPLETED 不等于商业质量通过。Background-audit.json 标明生成尝试、备用背景和文字调整；Layout-preflight.json 保存初始布局保护记录。
+
+
+最新稳定性加固验收：[全部七批自动实跑与最终四张图](samples/stability/jadore-20261001/REPORT.md)。43 项检查通过；最终批次 4/4 可预览，全部确定性检查通过，审美仍全部 NEEDS_REVIEW。报告同时保留中途一次 API 失败、白边漏检和字体问题，不宣称长期或跨商品稳定性。

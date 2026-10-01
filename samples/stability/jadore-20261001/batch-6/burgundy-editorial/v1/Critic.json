@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the floor due to a detached contact shadow (offset_y=0 but shadow is visually separated from the bottle base, lacking realistic contact cues). Visible gap between bottle base and floor surface, with shadow not conforming to the floor's texture."
+    },
+    {
+      "type": "composition",
+      "problem": "Unbalanced layout: product occupies 59% of canvas height (within 50-65% range) but is left-aligned, creating negative space on the right. Typography (title/subtitle) is clustered on the right, disrupting visual flow and reducing hierarchy."
+    },
+    {
+      "type": "typography",
+      "problem": "Generic sans-serif font (Arial) lacks luxury refinement. Title/subtitle color (#FAE4D5) contrasts poorly with the dark background, reducing readability and failing to match the sophisticated tone of reference campaigns."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Background lacks the dramatic, concept-driven storytelling of references (e.g., Tom Ford's fig imagery, Byredo's abstract red form). The current background is a generic studio setup, not a cohesive visual narrative."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/PlayfairDisplay-Regular.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/PlayfairDisplay-Regular.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall with a single strong diagonal shadow cast across it from a high window, continuous matte red floor with subtle texture, smooth clean center and lower foreground, realistic physical studio environment photograph"
+    }
+  ],
+  "reported_score": 78
+}

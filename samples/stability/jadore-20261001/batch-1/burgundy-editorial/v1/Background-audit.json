@@ -1,0 +1,20 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left, full bleed photographic environment filling every edge, continuous surface, no frame, no white margins",
+      "seed": 3069,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-1.png"
+    },
+    {
+      "prompt": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left, full bleed photographic environment filling every edge, continuous surface, no frame, no white margins",
+      "seed": 103072,
+      "issues": [],
+      "image": "background-attempt-2.png"
+    }
+  ],
+  "ink_changes": []
+}

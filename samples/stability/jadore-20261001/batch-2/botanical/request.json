@@ -1,0 +1,102 @@
+{
+  "brief": "为图中的 Dior J'adore 香水设计四个完全不同的高级商业海报方向。只使用产品真实品牌与名称，不写价格、促销和新品承诺。确保产品是主角，文字清晰，材质与灯光协调。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+  "product": "runtime\\director-jobs\\7d50f380f082491683cf1fb1894042dd\\product.png",
+  "references": [
+    {
+      "id": "diptyque-eau-rose",
+      "brand": "Diptyque",
+      "style": "luxury",
+      "reference_kind": "商品静物",
+      "source_url": "https://www.wallpaper.com/beauty-grooming/diptyque-eau-rose-perfume-revamp",
+      "image": "references/luxury/diptyque-eau-rose.jpg",
+      "selection_reason": "粉色帷幔和花束统一背景，香水在花束中心形成精致的小焦点。",
+      "analysis": {
+        "composition": "centered",
+        "subject_ratio": 0.018,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_side_light",
+        "color": [
+          "pink",
+          "green",
+          "warm_white"
+        ],
+        "typography": "label_only",
+        "information_density": "low",
+        "characteristics": [
+          "同色帷幔",
+          "花束围合",
+          "商品小焦点"
+        ],
+        "perfume_suitability": 72,
+        "caveat": "适合参考花香场景，当前商品应更大，不能照搬其低商品占比。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "jo-malone-peony",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+      "image": "references/luxury/jo-malone-peony.jpg",
+      "selection_reason": "浅色留白、大瓶身与单侧牡丹构成轻盈的高级花香视觉。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.38,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_diffused_light",
+        "color": [
+          "warm_white",
+          "pink",
+          "silver"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "左侧商品",
+          "右侧花卉",
+          "顶部小品牌"
+        ],
+        "perfume_suitability": 92,
+        "caveat": "花朵不能遮挡商品标签。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "dior-jadore-gold-bottle",
+      "brand": "Dior",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+      "image": "references/luxury/dior-jadore-gold-bottle.jpg",
+      "selection_reason": "全金色背景、偏右大瓶身与左侧文字实现统一色系下的主次分配。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.28,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_backlight",
+        "color": [
+          "gold",
+          "warm_white",
+          "amber"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "右侧商品",
+          "左侧文字",
+          "单色高级感"
+        ],
+        "perfume_suitability": 95,
+        "caveat": "旧广告画质一般，适合构图参考，不作材质细节真值。"
+      },
+      "analysis_origin": "codex_visual_review"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "glm-4.6v",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4"
+}

@@ -1,0 +1,58 @@
+{
+  "batch_status": "COMPLETED",
+  "preview_count": 4,
+  "directions": [
+    {
+      "direction": "black-gold",
+      "selected": "black-gold/v2/poster.png",
+      "sha256": "1ca7793808e733604e050fd7f3040bc7463281e9ef34b7da686972c6b9b4fc2e",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 80.7
+    },
+    {
+      "direction": "cream-minimal",
+      "selected": "cream-minimal/v2/poster.png",
+      "sha256": "40530971f92654b2073859a7308615d473346d543047fd9d258423265c208fe2",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 81.4
+    },
+    {
+      "direction": "burgundy-editorial",
+      "selected": "burgundy-editorial/v2/poster.png",
+      "sha256": "d3e366b777602afae5b8337e235c4a467351ceaaab3f62af5a53350ffd0373f6",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 80.7
+    },
+    {
+      "direction": "botanical",
+      "selected": "botanical/v1/poster.png",
+      "sha256": "30fa1b5ed779f9c94e4751029b715f69dd8ea97ffd0220da827f5ed1e2cc2014",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 76.4
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "40530971f92654b2073859a7308615d473346d543047fd9d258423265c208fe2"
+    },
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100120175429cb0dabbf3a4ba4",
+      "usage": {
+        "completion_tokens": 131,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7445,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 7576
+      }
+    }
+  ],
+  "response_id": "2026100120175429cb0dabbf3a4ba4",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 131,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7445,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 7576
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "title.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/Didot.ttf"
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 114
+      },
+      {
+        "path": "product.height",
+        "op": "multiply",
+        "value": 1.15
+      }
+    ]
+  },
+  "duration_seconds": 7.391
+}

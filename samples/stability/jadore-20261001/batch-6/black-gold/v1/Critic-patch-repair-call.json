@@ -1,0 +1,84 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "976b27ef7e2dc11e93eaa48bc2a79595553cf9bfe41612db3b9b7ded0ea5aa73"
+    },
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100120012583eda19a595c4f74",
+      "usage": {
+        "completion_tokens": 35,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7522,
+        "prompt_tokens_details": {
+          "cached_tokens": 237
+        },
+        "total_tokens": 7557
+      }
+    }
+  ],
+  "response_id": "2026100120012583eda19a595c4f74",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 35,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7522,
+    "prompt_tokens_details": {
+      "cached_tokens": 237
+    },
+    "total_tokens": 7557
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 950
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 2
+      }
+    ]
+  },
+  "duration_seconds": 5.8
+}

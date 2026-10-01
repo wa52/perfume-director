@@ -119,6 +119,8 @@ def render(spec, product, font, background=None):
                 ImageDraw.Draw(canvas).line((d['x'], d['y'], d['x']+d['width'], d['y']), fill=d['color'], width=2)
         elif layer in TEXT_LAYERS:
             t = spec[layer]
+            if not quality_module().font_supports_text(str(t.get('font',font)),t['text']):
+                raise ValueError(layer+' font lacks required glyphs; run Director font preflight')
             f = ImageFont.truetype(str(t.get('font', font)), round(t['size']))
             draw = ImageDraw.Draw(canvas)
             bbox = draw.textbbox((t['x'], t['y']), t['text'], font=f, anchor='lt')
@@ -211,7 +213,16 @@ def vision(config, prompt, images, trace_path=None):
                 return result
             except urllib.error.HTTPError as error:
                 attempt_trace.update(status='ERROR', error_type='HTTPError', http_status=error.code)
-                if error.code not in (429, 500, 502, 503, 504) or attempt == attempts:
+                try:
+                    body = json.loads(error.read())
+                    code = body.get('error', {}).get('code')
+                    if isinstance(code,(str,int)) and re.fullmatch(r'[A-Za-z0-9_-]{1,32}',str(code)):
+                        attempt_trace['provider_code'] = str(code)
+                except (ValueError,AttributeError,TypeError):
+                    pass
+                # Retry an unclassified 400 once; never retry a coded rejection.
+                unknown_400_retry = error.code == 400 and 'provider_code' not in attempt_trace and attempt == 1
+                if (error.code not in (429, 500, 502, 503, 504) and not unknown_400_retry) or attempt == attempts:
                     trace['http_status'] = error.code
                     raise ValueError(f'Vision API HTTP {error.code}; check endpoint, model access and account balance') from None
             except (RemoteDisconnected, IncompleteRead, TimeoutError, ConnectionError, urllib.error.URLError) as error:
@@ -233,17 +244,17 @@ def quality_module():
     return importlib.import_module('.quality', __package__) if __package__ else importlib.import_module('quality')
 
 
-def layout_issues(spec, product, font):
-    return quality_module().layout_issues(spec, rendered_geometry(spec, product, font))
+def layout_issues(spec, product, font, direction=None):
+    return quality_module().layout_issues(spec, rendered_geometry(spec, product, font), direction)
 
 
 def background_issues(path, direction):
     return quality_module().background_issues(path, direction)
 
 
-def apply_safe_changes(spec, changes, product, font):
+def apply_safe_changes(spec, changes, product, font, direction=None):
     candidate = apply_changes(spec, changes)
-    issues = layout_issues(candidate, product, font)
+    issues = layout_issues(candidate, product, font, direction)
     if issues:
         raise ValueError('Unsafe layout: '+', '.join(issues))
     return candidate
@@ -432,7 +443,7 @@ def direction_template(template, direction_id):
     plans = {
         'black-gold': (760, '#101216', '#D8C18E', 96, 350, 70, 'Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph'),
         'cream-minimal': (540, '#F3E7D0', '#72552F', 300, 170, 116, 'Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space'),
-        'burgundy-editorial': (400, '#5A142B', '#FAE4D5', 680, 310, 62, 'Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left'),
+        'burgundy-editorial': (400, '#5A142B', '#FAE4D5', 680, 310, 62, 'Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, single strong diagonal shadow cast across wall from a high window, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph'),
         'botanical': (750, '#DCE5D3', '#314B3B', 90, 410, 70, 'Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set'),
     }
     x, bg, ink, tx, ty, size, prompt = plans[direction_id]
@@ -455,7 +466,18 @@ def prepare_layout(config, spec, product):
     direction = config.get('direction_id')
     if not direction:
         return candidate, []
-    issues = layout_issues(candidate, product, config['font'])
+    font_fixes = []
+    def ensure_fonts():
+        for name in TEXT_LAYERS:
+            t=candidate[name]
+            if t['text'] and not quality_module().font_supports_text(t.get('font',config['font']),t['text']):
+                if not quality_module().font_supports_text(config['font'],t['text']):
+                    raise ValueError('Configured fallback font lacks '+name+' glyphs')
+                t['font']=config['font']
+                if name+'_font_fallback' not in font_fixes:
+                    font_fixes.append(name+'_font_fallback')
+    ensure_fonts()
+    issues = layout_issues(candidate, product, config['font'],direction)
     if issues:
         safe = direction_template(read(ROOT/'examples/PosterSpec.json'), direction)
         candidate['canvas'] = safe['canvas']
@@ -465,6 +487,7 @@ def prepare_layout(config, spec, product):
         for name in TEXT_LAYERS:
             text, color = candidate[name]['text'], candidate[name]['color']
             candidate[name] = {**safe[name], 'text': text, 'color': color}
+    ensure_fonts()
     w = candidate['canvas']['width']
     for name in TEXT_LAYERS:
         t = candidate[name]
@@ -475,10 +498,10 @@ def prepare_layout(config, spec, product):
             t['size'] -= 1
         if direction == 'cream-minimal':
             t['x'] = round((w-ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']))/2)
-    remaining = layout_issues(candidate, product, config['font'])
+    remaining = layout_issues(candidate, product, config['font'],direction)
     if remaining:
         raise ValueError('Prepared layout still unsafe: '+', '.join(remaining))
-    return validate(candidate), issues
+    return validate(candidate), issues+font_fixes
 
 
 def review_validated(config, spec, product, poster, ref_images, folder, previous):
@@ -623,17 +646,17 @@ def run(config, product, brief, background=None, demo=False, progress=None):
             if not critique['changes']:
                 break
             try:
-                spec = apply_safe_changes(spec, critique['changes'],product,config['font']) if config.get('direction_id') else apply_changes(spec, critique['changes'])
+                spec = apply_safe_changes(spec, critique['changes'],product,config['font'],config['direction_id']) if config.get('direction_id') else apply_changes(spec, critique['changes'])
             except (ValueError, KeyError, TypeError) as error:
                 write(folder/'Critic-patch-rejected.json', {'status': 'REJECTED', 'error_type': type(error).__name__,
                     'reason': 'Critic patch failed schema or geometry validation; last valid poster preserved'})
                 if not config.get('direction_id'):
                     break
                 try:
-                    repair = vision(config, 'Repair only the unsafe Critic changes. Return {changes:[{path,op,value}]}. Do not invent copy, modify seed, canvas or product identity. Product center coordinates must preserve actual product bbox inside x 5..95%, y 16..91% and height 48..68%. Text must not overlap product. Contact shadow offset_y <=16 absolute. If the proposed move is unnecessary omit it, but keep other useful safe changes. Error: '+str(error)+' Spec: '+json.dumps(spec,ensure_ascii=False)+' Geometry: '+json.dumps(rendered_geometry(spec,product,config['font']))+' Previous critique: '+json.dumps(critique,ensure_ascii=False),[poster,product,*ref_images],trace_path=folder/'Critic-patch-repair-call.json')
+                    repair = vision(config, 'Repair only the unsafe Critic changes. Return {changes:[{path,op,value}]}. Do not invent copy, modify seed, canvas or product identity. Product center coordinates must preserve actual product bbox inside x 5..95%, y 16..91% and height 48..68%. Text must not overlap product and needs at least 2.5% canvas height vertical clearance or 2.5% canvas width horizontal clearance. For non-cream directions keep logo/title/subtitle aligned to one x coordinate: if shifting the text block, shift all three. Cream text remains centered. Contact shadow offset_y <=16 absolute. If the proposed move is unnecessary omit it, but keep other useful safe changes. Error: '+str(error)+' Spec: '+json.dumps(spec,ensure_ascii=False)+' Geometry: '+json.dumps(rendered_geometry(spec,product,config['font']))+' Previous critique: '+json.dumps(critique,ensure_ascii=False),[poster,product,*ref_images],trace_path=folder/'Critic-patch-repair-call.json')
                     if not repair.get('changes'):
                         break
-                    spec = apply_safe_changes(spec,repair['changes'],product,config['font'])
+                    spec = apply_safe_changes(spec,repair['changes'],product,config['font'],config['direction_id'])
                     write(folder/'Critic-patch-repaired.json',{'status':'VALIDATED','changes':repair['changes']})
                 except Exception as repair_error:
                     write(folder/'Critic-patch-repair-error.json',{'error_type':type(repair_error).__name__})

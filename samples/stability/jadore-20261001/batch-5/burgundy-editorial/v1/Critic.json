@@ -1,0 +1,60 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the background surface. Visible contact cues (shadow, surface interaction) are missing, and the bottle base is positioned at 1245px (86.5% of canvas height), which is too high for a grounded object. The shadow offset_y is 0, but the shadow appears detached and not anchored to the bottle base, violating contact shadow principles."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is unbalanced. The title 'J'adore' (size 62) is too large relative to the subtitle 'EAU DE PARFUM' (size 22), creating visual tension. The logo 'Dior' (size 34) is smaller than the title but larger than the subtitle, disrupting the logical flow of information."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the sophisticated integration seen in professional luxury campaigns. The bottle is isolated without contextual elements (e.g., props, texture) that enhance storytelling, unlike references where products are embedded in thematic environments (e.g., fig in Tom Ford, wood in Armani/Prive)."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 48
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, flat geometric color fields, editorial still-life set, clear foreground left, subtle texture on floor"
+    }
+  ],
+  "reported_score": 78
+}

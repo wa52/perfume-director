@@ -1,0 +1,79 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "c13bf9732f2085aa0599d09ec05a4fea084ac8e0874bdb086f8d1ec3f6743236"
+    },
+    {
+      "name": "product.png",
+      "sha256": "abf2ea682ce51e40ebb1d9342985c5302b8aedb013a4bf2653662de388824a1d"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100120170382583a63ff464117",
+      "usage": {
+        "completion_tokens": 43,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7518,
+        "prompt_tokens_details": {
+          "cached_tokens": 237
+        },
+        "total_tokens": 7561
+      }
+    }
+  ],
+  "response_id": "2026100120170382583a63ff464117",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 43,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7518,
+    "prompt_tokens_details": {
+      "cached_tokens": 237
+    },
+    "total_tokens": 7561
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 2
+      }
+    ]
+  },
+  "duration_seconds": 5.922
+}

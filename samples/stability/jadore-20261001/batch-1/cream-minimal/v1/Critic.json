@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface is incorrect. The product_base_y is 1245, but the contact shadow offset_y is 0, creating a floating appearance. Visible shadow shows a gap between the bottle base and the surface, violating the contact shadow requirement. The bottle height (850px) is 59% of canvas height (1440px), which is acceptable, but the shadow offset_y should be close to zero for a contact shadow, not detached."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is weak. The title 'J'adore' (size 116) and subtitle 'EAU DE PARFUM' (size 24) have insufficient contrast in size and positioning, reducing visual impact. The logo 'Dior' (size 46) is too small relative to the title, disrupting brand emphasis."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks luxury depth. The 'Empty warm ivory seamless studio' prompt results in a flat, untextured surface that fails to match the sophisticated, tactile quality of professional luxury campaigns (e.g., Armani/Prive's rich wood texture or Tom Ford's dramatic lighting). The gradient is too subtle, reducing visual interest."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Mismatched lighting and composition compared to references. The soft diffused lighting lacks the dramatic contrast seen in Tom Ford (high-contrast black) or Armani/Prive (warm wood highlights). The composition is generic, with the bottle centered but no dynamic elements (e.g., Armani/Prive's wood or Tom Ford's light flares) to elevate the design."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.size",
+      "op": "multiply",
+      "value": 1.2
+    },
+    {
+      "path": "logo.size",
+      "op": "multiply",
+      "value": 1.3
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio with subtle texture, soft directional light from upper left creating gentle highlights, matte cream floor with faint tonal variations, clean central space with minimal ambient shadows"
+    }
+  ],
+  "reported_score": 78
+}

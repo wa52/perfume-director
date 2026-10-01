@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm ivory seamless studio with subtle gold undertones, diffused light from upper left, matte continuous cream floor with gentle texture, smooth low contrast surface, clean central space, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 2061,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

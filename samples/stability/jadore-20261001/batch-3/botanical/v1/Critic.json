@@ -1,0 +1,49 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 75,
+    "reference_alignment": 70,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle contact with support surface is incorrect: product_base_y (1245) is 86.4% of canvas height (1440), violating the 91% maximum margin requirement. Visible shadow offset_y (0) is correct, but the bottle rests too high, creating an unnatural floating appearance."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) is 59% of canvas height (1440px), slightly below the 50-65% hero bottle range, making the product feel undersized relative to the canvas."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks sufficient visual interest: eucalyptus leaves are confined to edges, and the pale sage green floor appears flat, failing to create a luxurious, immersive environment consistent with professional perfume campaigns."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Mismatched with reference campaigns: the final poster’s minimal background and small bottle contrast with references featuring bold backdrops (e.g., pink velvet, golden textures) and larger product presence, reducing alignment with luxury standards."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves cascading across upper right and left edges, dappled leaf shadows on continuous pale green floor, spacious clean central area with subtle texture, natural fresh still-life set"
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,31 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space, full bleed photographic environment filling every edge, continuous surface, no frame, no white margins",
+      "seed": 2060,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "title.color",
+      "old": "#A67C52",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    },
+    {
+      "path": "subtitle.color",
+      "old": "#A67C52",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    },
+    {
+      "path": "logo.color",
+      "old": "#A67C52",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

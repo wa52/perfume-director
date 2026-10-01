@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The bottle occupies 59% of canvas height (850/1440), below the 50-65% hero standard. While improved from previous version, the bottle still feels slightly undersized relative to the canvas, reducing visual impact and failing to meet professional hero composition norms."
+    },
+    {
+      "type": "background",
+      "problem": "The background lacks sufficient luxury editorial depth. The 'anthracite silk' description is partially realized but the surface appears flat with minimal tactile richness. The dark negative space feels generic rather than purposefully dramatic, lacking the sophisticated textural storytelling seen in references."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the sophisticated integration of professional campaigns. Compared to references (e.g., Tom Ford's dramatic lighting, Armani's textural storytelling), the design feels generic with weaker visual storytelling and less refined luxury execution."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.05
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 790
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds confined to far right edge, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with faint reflective sheen and subtle texture variation"
+    }
+  ],
+  "reported_score": 82.1
+}

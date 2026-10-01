@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 85,
+    "physical_integration": 75,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle still appears to float with insufficient contact cues. The product_base_y (1265) is 87.8% of canvas height (1440), and the shadow.offset_y (5) is too small to create a natural contact shadow. Visible surface texture or shadow interaction with the background is missing, violating the requirement for a raised tabletop or seamless studio floor."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies 59% of canvas height (850/1440), which is within range, but the composition feels unbalanced due to the floating bottle and lack of visual weight distribution. The left-side text creates negative space that doesn't harmonize with the bottle's placement."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Tom Ford Black Orchid with dramatic lighting, Armani Prive with integrated props), the design lacks a cohesive visual concept. The generic dark fabric background and disconnected typography reduce alignment with luxury campaign standards."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Elements (bottle, text, background) lack a unified narrative. The dark fabric and gold typography don't create a strong visual story, unlike references where lighting/props reinforce the brand's identity."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 820
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric with subtle long diagonal folds on the far right, soft highlights on the fabric, large smooth dark negative space in the left half, low contrast macro texture, softly flat dark surface across the bottom, luxury editorial abstract material photograph with a faint gradient from deep black to graphite on the lower third to imply a raised surface"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 370
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 480
+    }
+  ],
+  "reported_score": 82.0
+}

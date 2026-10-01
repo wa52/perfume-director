@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface cues. The product_base_y (1245) is 13% from the bottom (1440), but the shadow.offset_y is 0, creating a detached effect. The seamless studio floor lacks a clear contact line, violating the requirement for visible support surface interaction."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies only 59% of canvas height (850/1440), below the 50-65% hero standard. The left-aligned text creates imbalance, and the central negative space feels underutilized, reducing visual impact."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared to professional references (e.g., Armani/Prive's integrated wood element, Tom Ford's dramatic lighting), the composition lacks a strong conceptual anchor. The background's eucalyptus leaves feel generic and disconnected from the product's luxury narrative."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves framing the bottle, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 180
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 180
+    }
+  ],
+  "reported_score": 78
+}

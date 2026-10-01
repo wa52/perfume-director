@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the burgundy surface with no visible contact shadow, violating the 'contact' shadow specification. The shadow offset_y is 0 but the bottle base (1245px) is 195px above the canvas bottom (1440px), creating an unrealistic gap. Visible contact cues (shadow proximity to bottle base) are absent, making the product look disconnected from the environment."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies only 59% of canvas height (850px/1440px), below the 50-65% hero bottle standard. This reduces visual impact and creates excessive negative space, weakening the luxury composition. The product is positioned too low (center_y=820px), leaving the top third of the canvas underutilized."
+    },
+    {
+      "type": "typography",
+      "problem": "Typography lacks hierarchy: the 'Dior' logo (34px) is smaller than the 'J'adore' title (62px), reversing the brand emphasis. The subtitle 'EAU DE PARFUM' (22px) is too small relative to the title, reducing readability. The font (Arial) is generic and does not match the luxury style of references like Armani Prive or Tom Ford, which use refined serif/sans-serif combinations."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition is generic compared to professional references: Armani Prive uses thematic props (wood, water) to enhance storytelling, while Tom Ford employs dramatic lighting and texture. This poster's minimal burgundy background lacks the layered, editorial sophistication of luxury campaigns, resulting in a 75/100 alignment score."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 930
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 48
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep burgundy red studio with matte wine-red paper floor and wall, large diagonal architectural shadow from upper right, subtle texture gradients, editorial still-life set, clear foreground left"
+    }
+  ],
+  "reported_score": 78
+}

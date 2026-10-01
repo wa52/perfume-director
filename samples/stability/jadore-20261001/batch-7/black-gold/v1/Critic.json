@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface interaction, violating physical realism. The product_base_y (1245) is 13% from canvas bottom (1440), but the shadow.offset_y (0) is misaligned—contact shadows should be tightly attached, not detached. No visible cues (e.g., fabric folds, shadow) confirm the bottle rests on the surface."
+    },
+    {
+      "type": "composition",
+      "problem": "Unbalanced layout: the bottle occupies 59% of canvas height (850/1440), exceeding the 50-65% range for a single-bottle hero. The left negative space is overly dominant, while the right side feels sparse, reducing visual harmony."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks luxury editorial depth—silky texture is flat, with no dynamic folds or highlights to elevate the composition. The 'large smooth dark negative space' feels generic, not aligned with high-end perfume references."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Mismatched with professional references: Tom Ford/Armani use dramatic, textured backdrops (e.g., silk folds, wood) to create mood, while YSL integrates human elements. This design’s minimalism feels generic, not competitive."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of fine anthracite silk fabric filling the entire frame edge to edge, deep black and graphite values, subtle long diagonal folds across the right third, restrained soft highlights on fabric, large smooth dark negative space in left half, low contrast macro texture, softly flat dark surface across bottom, luxury editorial abstract material photograph with gentle fabric drape under the bottle"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 720
+    }
+  ],
+  "reported_score": 78
+}

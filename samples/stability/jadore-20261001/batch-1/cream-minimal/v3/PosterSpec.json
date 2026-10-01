@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 2060,
+  "background": {
+    "color": "#F3E7D0",
+    "prompt": "Empty warm ivory seamless studio with subtle texture, soft directional light from upper left creating gentle highlights, matte cream floor with faint tonal variations, clean central space with minimal ambient shadows",
+    "revision": 2
+  },
+  "product": {
+    "x": 540,
+    "y": 820,
+    "width": 520,
+    "height": 850
+  },
+  "lighting": "soft_diffused",
+  "palette": [
+    "#F3E7D0",
+    "#D4C5A8",
+    "#A67C52"
+  ],
+  "title": {
+    "text": "J'adore",
+    "x": 378,
+    "y": 170,
+    "size": 139.2,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 445,
+    "y": 1330,
+    "size": 24,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#D4C5A8",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 498,
+    "y": 82,
+    "size": 59.800000000000004,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 1,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

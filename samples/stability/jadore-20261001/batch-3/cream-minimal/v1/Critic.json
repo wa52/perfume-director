@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float due to shadow offset_y=0 (no visible contact shadow), violating seamless studio floor physics. Contact shadow should be tightly attached to bottle base, not detached."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) is 59% of canvas (1440px), slightly below luxury hero standard (50-65% is acceptable but could be more impactful)."
+    },
+    {
+      "type": "typography",
+      "problem": "Title 'J'adore' (116px) lacks luxury refinement; Dior references use more elegant serif weights (e.g., Didot) for premium feel."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic cream background lacks the dramatic tonal depth of Dior's gold gradient references, reducing brand-specific luxury impact."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 130
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm gold seamless studio, rich amber tonal gradient, diffused light from upper left, glossy gold floor, smooth high contrast surface, clean central space"
+    }
+  ],
+  "reported_score": 78
+}

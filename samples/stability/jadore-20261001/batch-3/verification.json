@@ -1,0 +1,45 @@
+{
+  "batch_status": "PARTIAL",
+  "preview_count": 3,
+  "directions": [
+    {
+      "direction": "black-gold",
+      "selected": "black-gold/v1/poster.png",
+      "sha256": "6696d0e72daff4647013bcafe8377c074b70ab9b52ec87b0c52f6f86421551fc",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 76.4
+    },
+    {
+      "direction": "cream-minimal",
+      "selected": "cream-minimal/v3/poster.png",
+      "sha256": "db4b27df3dcc34b56f8d9c934afe4aa71c693737edbe2919c317d338f247fcb1",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 82.7
+    },
+    {
+      "direction": "botanical",
+      "selected": "botanical/v1/poster.png",
+      "sha256": "3c5998b38098965cbcd18f36b6105095aa38c02d1650950078e4e439af8eee96",
+      "layout_issues": [],
+      "background_source": "comfyui_generated",
+      "background_issues": [],
+      "contrast_issues": [],
+      "font_issues": [],
+      "review_failures": [],
+      "status": "NEEDS_REVIEW",
+      "score": 76.4
+    }
+  ]
+}

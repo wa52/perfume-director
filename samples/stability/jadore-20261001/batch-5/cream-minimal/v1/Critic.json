@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle shadow offset_y is 0, creating a detached shadow that floats tens of pixels below the bottle base, violating contact shadow realism. Visible evidence: shadow appears disconnected from the bottle's base in the final poster."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) occupies 59% of canvas height (1440px), which is within the 50-65% range, but the composition lacks visual balance due to the disconnected shadow and typography placement."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The design lacks the sophisticated typography hierarchy and cohesive visual concept seen in professional luxury campaigns (e.g., Dior's reference uses integrated text and lighting). The current typography feels generic and disconnected from the product."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The bottle's base is at 1245px (86% of canvas height), which is within the 91% limit, but the shadow's offset_y error undermines the physical realism of the product's placement on the surface."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1350
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space with subtle texture"
+    }
+  ],
+  "reported_score": 78
+}

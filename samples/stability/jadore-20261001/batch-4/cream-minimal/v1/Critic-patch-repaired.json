@@ -1,0 +1,20 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 5
+    }
+  ]
+}

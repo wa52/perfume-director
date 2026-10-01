@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 78,
+    "typography": 72,
+    "background": 80,
+    "physical_integration": 68,
+    "reference_alignment": 76,
+    "creative_coherence": 81
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle shadow offset_y is 2, but the shadow remains visually detached from the bottle base, creating an unrealistic floating effect. Visible evidence: The shadow appears as a separate dark shape below the bottle rather than a natural contact shadow, violating physical realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is weak and disconnected from the product. The title 'J'adore' (y=200) and subtitle 'EAU DE PARFUM' (y=1350) lack visual integration with the bottle, creating a disjointed layout. Visible evidence: Text elements feel arbitrarily placed rather than part of a cohesive visual flow."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The design lacks the sophisticated typography integration and cohesive visual concept seen in professional luxury campaigns (e.g., Dior's reference uses integrated text and lighting). The current typography feels generic and disconnected from the product."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The bottle's base is at 1245px (86% of canvas height), which is within the 91% limit, but the shadow's offset_y error undermines the physical realism of the product's placement on the surface."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 450
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1200
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient, diffused light from upper left, matte continuous cream floor, smooth low contrast surface, clean central space with subtle texture"
+    }
+  ],
+  "reported_score": 78.3
+}

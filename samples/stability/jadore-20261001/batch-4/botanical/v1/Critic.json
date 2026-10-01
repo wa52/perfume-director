@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 70,
+    "background": 85,
+    "physical_integration": 65,
+    "reference_alignment": 70,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float above the surface due to a detached contact shadow (offset_y=0 but shadow is visually separated by ~15px, lacking realistic grounding). Visible shadow does not align with the bottle's base, breaking physical realism."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height (850px) occupies 59% of canvas (1440px), slightly below the 50-65% hero bottle standard, reducing visual impact. The bottle is positioned too far right (x=750), creating an unbalanced negative space on the left."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lacks the dramatic, luxurious composition of professional references (e.g., Dior's golden backdrop or Diptyque's floral integration), resulting in a generic still-life feel."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 650
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set with warm golden highlights"
+    }
+  ],
+  "reported_score": 78
+}

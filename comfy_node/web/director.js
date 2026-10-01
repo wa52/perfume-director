@@ -15,7 +15,7 @@ app.registerExtension({
             const panel = document.createElement("div");
             panel.style.cssText = "padding:12px;box-sizing:border-box;color:var(--input-text,#eee);background:var(--comfy-input-bg,#252525);font:13px sans-serif;overflow:auto;height:100%;";
             const notice = document.createElement("div");
-            notice.textContent = "每次生成 4 种独立风格 · 各最多 3 轮 · 用量随方向和轮数增加";
+            notice.textContent = "每次生成 4 种独立风格 · 自动评审与修正 · 未达标保留最佳版本供确认";
             notice.style.cssText = "opacity:.7;line-height:1.6;margin-bottom:10px";
             const status = document.createElement("div");
             status.textContent = "上传透明 PNG，连接 IMAGE 与 MASK，填写 brief 后点击运行。";

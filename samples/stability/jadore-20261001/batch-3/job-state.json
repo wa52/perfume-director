@@ -1,0 +1,132 @@
+{
+  "id": "fc8fd2a9e3384e7590e9023f3fdf0c4b",
+  "status": "PARTIAL",
+  "stage": "FINISHED",
+  "vision_model": "glm-4.6v",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "version": 1,
+  "direction_index": 4,
+  "direction_count": 4,
+  "direction_name": "清新植物风",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "brief": "黑色与克制金色，横向侧光，哑光黑色宽台面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\4b40e0f2d06b",
+      "selected": {
+        "version": 1,
+        "score": 76.4,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "6696d0e72daff4647013bcafe8377c074b70ab9b52ec87b0c52f6f86421551fc"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "6696d0e72daff4647013bcafe8377c074b70ab9b52ec87b0c52f6f86421551fc"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "brief": "暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\3573346adc93",
+      "selected": {
+        "version": 3,
+        "score": 82.7,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "db4b27df3dcc34b56f8d9c934afe4aa71c693737edbe2919c317d338f247fcb1"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "844160b70d594a701692a13c3a29c6a1456ba1049b3920ca7d4f1e6993de3da3"
+        },
+        {
+          "version": 2,
+          "score": 81.4,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "61a5719978966f79ca75fd147a6c53412e06ebf2bb32bb45033b91bade5d617d"
+        },
+        {
+          "version": 3,
+          "score": 82.7,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "db4b27df3dcc34b56f8d9c934afe4aa71c693737edbe2919c317d338f247fcb1"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "id": "burgundy-editorial",
+      "name": "酒红编辑风",
+      "brief": "深酒红平整纸面与建筑式阴影，非对称杂志网格；大瓶身偏左，标题右上竖向分层（使用单行字段分别布局，不输入换行）；使用干净无衬线标题和小字号信息，呈现大胆编辑感，避免黑金或居中模板。",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d5ea2b1c3e22",
+      "status": "ERROR",
+      "error": "ValueError"
+    },
+    {
+      "id": "botanical",
+      "name": "清新植物风",
+      "brief": "浅鼠尾草绿与乳白，柔和晨光，背景仅在画面边缘有失焦叶片或枝影，中间清晰安静；瓶身偏右下且高55%，标题左上轻盈小号衬线字；有机背景、空气感和不对称留白，避免深色台面和杂志几何。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\2539eafc1716",
+      "selected": {
+        "version": 1,
+        "score": 76.4,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "3c5998b38098965cbcd18f36b6105095aa38c02d1650950078e4e439af8eee96"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3c5998b38098965cbcd18f36b6105095aa38c02d1650950078e4e439af8eee96"
+        }
+      ],
+      "review_failures": []
+    }
+  ],
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\3365434635e1"
+}

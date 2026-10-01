@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 70,
+    "background": 80,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle appears to float with no visible contact shadow or surface interaction. The product_base_y (1245) is 13% from canvas bottom (1440), but the shadow.offset_y (0) is detached and does not align with the bottle's base, violating contact shadow physics."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies 59% of canvas height (850/1440), which is within acceptable range, but the left-aligned typography creates imbalance with the right-placed bottle, reducing visual harmony."
+    },
+    {
+      "type": "typography",
+      "problem": "The title 'J'adore' (size 70) and subtitle 'EAU DE PARFUM' (size 22) use Times font, which lacks the elegance expected for luxury perfume. The font choice feels generic and disconnected from the product's premium identity."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition lacks the dramatic, cohesive styling of professional campaigns (e.g., Dior's golden backdrop or Diptyque's integrated floral elements). The background's soft eucalyptus leaves feel underdeveloped and fail to elevate the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/Didot.ttf"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light, blurred eucalyptus leaves confined to far upper right and far left edge, subtle dappled leaf shadows on continuous pale green floor, spacious clean central area, natural fresh still-life set with soft gradient light"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 830
+    }
+  ],
+  "reported_score": 78
+}

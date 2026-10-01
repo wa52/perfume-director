@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 82.9,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 82,
+    "typography": 85,
+    "background": 78,
+    "physical_integration": 82,
+    "reference_alignment": 82,
+    "creative_coherence": 86
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Bottle shadow offset_y=2 is still too high (4px gap between bottle base and shadow), creating a subtle floating effect. The product base (y=1245) is 13% from canvas bottom, but the shadow lacks tight contact, violating luxury campaign realism where shadows anchor objects to surfaces."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle positioned too far right (x=760) leaves excessive negative space on the left, disrupting balance. Professional luxury campaigns (e.g., Tom Ford) use tighter framing or complementary elements to distribute visual weight, but here the bottle feels isolated."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks tactile depth: the 'anthracite silk' description is generic, and folds are confined to the right edge, creating a flat backdrop. Luxury references (e.g., Tom Ford's reflective silk) use dynamic materials to enhance storytelling, but this background feels static."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lighting mismatch: hard side light on the bottle contrasts with the soft background, creating disjointedness. References like Tom Ford use cohesive lighting (dramatic side light on both bottle and fabric) to unify elements, but here the bottle's sharp shadows clash with the background's softness."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 660
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 1
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless extreme close-up of rich charcoal velvet fabric filling the entire frame edge to edge, deep black and charcoal values, subtle diagonal folds across the right third, soft highlights on fabric texture, large smooth dark negative space in the left half, low contrast macro texture, softly flat dark surface across the bottom, luxury editorial abstract material photograph with subtle sheen and gentle light gradients"
+    }
+  ],
+  "reported_score": 83.6
+}
