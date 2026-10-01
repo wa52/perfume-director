@@ -1,0 +1,55 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261002001952188b91568fae4aa8",
+      "usage": {
+        "completion_tokens": 97,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1928,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2025
+      }
+    }
+  ],
+  "response_id": "20261002001952188b91568fae4aa8",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 97,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1928,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2025
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "answer": "{\"title\":\"TOBACCO VANILLE\",\"logo\":\"TOM FORD\",\"subtitle\":\"EAU DE PARFUM\",\"price\":\"\",\"evidence\":\"标签上清晰可见 TOM FORD、TOBACCO VANILLE、EAU DE PARFUM；价格未提供故为空，四个海报方向均保留原图、商品为主角、文字清晰且光线材质协调，不含价格促销或容量信息\"}"
+  },
+  "duration_seconds": 4.209
+}

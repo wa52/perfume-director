@@ -1,0 +1,223 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "44b67ccca4ffd9f4af5e97974b13cc1c88811ac82258a726ddaf0d5c07b4899a"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "b95929bdd403665ce4e2888dca767056e4fd9acdd73336ebd03675cadbc0a6b7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012327520106a17d832c45ad",
+      "usage": {
+        "completion_tokens": 580,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 10538,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        },
+        "total_tokens": 11118
+      }
+    }
+  ],
+  "response_id": "202610012327520106a17d832c45ad",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 580,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 10538,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 11118
+  },
+  "finish_reason": "stop",
+  "raw_output": {
+    "answer": {
+      "pass": false,
+      "score": 78,
+      "dimensions": {
+        "product_fidelity": 90,
+        "composition": 75,
+        "typography": 80,
+        "background": 65,
+        "physical_integration": 70,
+        "reference_alignment": 75,
+        "creative_coherence": 80
+      },
+      "problems": [
+        {
+          "type": "background",
+          "problem": "Background contains studio setup artifacts (softbox shadows, lighting stands) that break immersion. The deep wine-red wall and red floor lack the dramatic, polished texture of luxury campaigns, appearing flat and generic."
+        },
+        {
+          "type": "physical_integration",
+          "problem": "Bottle lacks a contact shadow, violating physical realism. The enlarged detail (image 6) confirms the bottle rests on the red floor, but no shadow is cast beneath it, making the product appear to float."
+        },
+        {
+          "type": "composition",
+          "problem": "Typography is misaligned and disconnected from the product. The title 'TOBACCO VANILLE' is positioned too high on the right, creating an unbalanced layout that fails to integrate with the bottle's visual weight."
+        },
+        {
+          "type": "background",
+          "problem": "Background lighting is inconsistent with the product. The hard side light on the bottle clashes with the soft, diffused studio lighting in the background, reducing visual cohesion."
+        }
+      ],
+      "changes": [
+        {
+          "path": "background.prompt",
+          "op": "set",
+          "value": "Deep burgundy velvet wall meeting a polished mahogany floor, dramatic chiaroscuro lighting with sharp diagonal shadows, rich texture and depth, luxurious interior with warm ambient glow, no studio equipment visible"
+        },
+        {
+          "path": "shadow.offset_y",
+          "op": "set",
+          "value": -2
+        },
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 680
+        },
+        {
+          "path": "title.y",
+          "op": "set",
+          "value": 420
+        },
+        {
+          "path": "subtitle.x",
+          "op": "set",
+          "value": 680
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 470
+        },
+        {
+          "path": "logo.x",
+          "op": "set",
+          "value": 680
+        },
+        {
+          "path": "logo.y",
+          "op": "set",
+          "value": 280
+        }
+      ]
+    }
+  },
+  "normalization": "single_answer_envelope",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78,
+    "dimensions": {
+      "product_fidelity": 90,
+      "composition": 75,
+      "typography": 80,
+      "background": 65,
+      "physical_integration": 70,
+      "reference_alignment": 75,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "Background contains studio setup artifacts (softbox shadows, lighting stands) that break immersion. The deep wine-red wall and red floor lack the dramatic, polished texture of luxury campaigns, appearing flat and generic."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Bottle lacks a contact shadow, violating physical realism. The enlarged detail (image 6) confirms the bottle rests on the red floor, but no shadow is cast beneath it, making the product appear to float."
+      },
+      {
+        "type": "composition",
+        "problem": "Typography is misaligned and disconnected from the product. The title 'TOBACCO VANILLE' is positioned too high on the right, creating an unbalanced layout that fails to integrate with the bottle's visual weight."
+      },
+      {
+        "type": "background",
+        "problem": "Background lighting is inconsistent with the product. The hard side light on the bottle clashes with the soft, diffused studio lighting in the background, reducing visual cohesion."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep burgundy velvet wall meeting a polished mahogany floor, dramatic chiaroscuro lighting with sharp diagonal shadows, rich texture and depth, luxurious interior with warm ambient glow, no studio equipment visible"
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": -2
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 680
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 420
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 680
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 470
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 680
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 280
+      }
+    ]
+  },
+  "duration_seconds": 11.359
+}

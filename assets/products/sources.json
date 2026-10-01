@@ -22,5 +22,29 @@
     "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
     "rights_status": "original_rights_retained; commercial_reuse_unverified",
     "status": "downloaded"
+  },
+  {
+    "id": "tom-ford-tobacco-vanille-retailer",
+    "source_url": "https://mondo-parfum.de/Tom-Ford-Tobacco-Vanille-Eau-de-Parfum-30-ml/TOM-008.1",
+    "image_url": "https://mondo-parfum.de/media/02/95/be/1758712401/Tom%20Ford%20Tobacco%20Vanille%20Eau%20de%20Parfum.png?ts=1758712401",
+    "width": 1000,
+    "height": 1250,
+    "mode": "RGBA",
+    "format": "PNG",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      238,
+      26,
+      783,
+      1236
+    ],
+    "usable": true,
+    "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6",
+    "rights_status": "original_rights_retained; commercial_reuse_unverified",
+    "status": "downloaded",
+    "local_path": "assets/products/tom-ford-tobacco-vanille-retailer.png"
   }
 ]

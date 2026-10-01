@@ -51,6 +51,27 @@ class VisionTests(unittest.TestCase):
         self.assertEqual(trace['raw_output'], {'answer': result})
         self.assertEqual(trace['normalization'], 'single_answer_envelope')
 
+    def test_reasoning_effort_is_sent_and_audited(self):
+        _, trace, call = self.call(self.response({}), {'reasoning_effort': 'low', 'max_tokens': 32768})
+        self.assertEqual(json.loads(call.args[1])['reasoning_effort'], 'low')
+        self.assertEqual(trace['options']['reasoning_effort'], 'low')
+
+    def test_json_string_answer_envelope_is_decoded_without_losing_raw(self):
+        raw = {'answer': json.dumps({'title': 'TOBACCO VANILLE', 'logo': 'TOM FORD'})}
+        result, trace, _ = self.call(self.response(raw))
+        self.assertEqual(result, {'title': 'TOBACCO VANILLE', 'logo': 'TOM FORD'})
+        self.assertEqual(trace['raw_output'], raw)
+        self.assertEqual(trace['normalization'], 'json_string_answer_envelope')
+
+    def test_answer_string_must_contain_json_object(self):
+        for answer in ('not JSON', '[]', 'true'):
+            with self.subTest(answer=answer), self.assertRaises(ValueError):
+                self.call(self.response({'answer': answer}))
+
+    def test_invalid_reasoning_effort_is_rejected_before_request(self):
+        with self.assertRaisesRegex(ValueError, 'Unsupported reasoning_effort'):
+            self.call(self.response({}), {'reasoning_effort': 'unknown'})
+
     def test_truncated_response_is_rejected_and_recorded(self):
         with self.assertRaisesRegex(ValueError, 'incomplete'):
             self.call(self.response({'pass': True}, finish='length'))

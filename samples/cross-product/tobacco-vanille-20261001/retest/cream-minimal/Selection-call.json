@@ -1,0 +1,86 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d262ecb16aa343f6b41d0c6606b31923ab7311ab87714946145bde2609355c45"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "f0b7e19d4afb83f43c6d420afa532bab9a12e5b1d165a35c5b2d70ded15c5df4"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "96dd67335d354b77b121bcc7859b72c770734f9c8f30c3e7fe13fe22e1a3dd2d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001234319a920882a47264dde",
+      "usage": {
+        "completion_tokens": 148,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 9670,
+        "prompt_tokens_details": {
+          "cached_tokens": 258
+        },
+        "total_tokens": 9818
+      }
+    }
+  ],
+  "response_id": "20261001234319a920882a47264dde",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 148,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 9670,
+    "prompt_tokens_details": {
+      "cached_tokens": 258
+    },
+    "total_tokens": 9818
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 demonstrates the most refined execution of the campaign concept. The typography is coherent and elegant, the product is clearly recognizable with consistent branding, and the lighting is controlled to enhance the luxurious feel without revealing studio equipment. The overall composition is clean and polished, aligning with the preference for a finished set over behind-the-scenes photography.",
+    "remaining_problems": [
+      "Version 1, while clean, lacks the distinct campaign concept and refined typography of Version 2.",
+      "Version 3, though similar to Version 2, does not exhibit the same level of polish and refinement in typography and overall composition."
+    ]
+  },
+  "duration_seconds": 5.999
+}

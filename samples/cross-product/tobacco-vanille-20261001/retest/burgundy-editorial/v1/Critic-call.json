@@ -1,0 +1,223 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "d91cc8563ad6c738a90ccd758922c0d03b4ef0425b32a8b069b1244e46da20b7"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "b95929bdd403665ce4e2888dca767056e4fd9acdd73336ebd03675cadbc0a6b7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001234417f126d6806d03483d",
+      "usage": {
+        "completion_tokens": 695,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 10538,
+        "prompt_tokens_details": {
+          "cached_tokens": 924
+        },
+        "total_tokens": 11233
+      }
+    }
+  ],
+  "response_id": "20261001234417f126d6806d03483d",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 695,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 10538,
+    "prompt_tokens_details": {
+      "cached_tokens": 924
+    },
+    "total_tokens": 11233
+  },
+  "finish_reason": "stop",
+  "raw_output": {
+    "answer": {
+      "pass": false,
+      "score": 78,
+      "dimensions": {
+        "product_fidelity": 85,
+        "composition": 75,
+        "typography": 80,
+        "background": 70,
+        "physical_integration": 65,
+        "reference_alignment": 75,
+        "creative_coherence": 80
+      },
+      "problems": [
+        {
+          "type": "physical_integration",
+          "problem": "Missing contact shadow: The bottle base rests on the red floor, but no shadow is visible beneath it. The contact_detail_crop [128, 1105, 671, 1355] confirms the bottle's lower edge is in contact with the surface, yet the shadow.offset_y is 0 (correct for contact) but the shadow is absent entirely. A contact shadow is required for realistic grounding."
+        },
+        {
+          "type": "background",
+          "problem": "Background lighting mismatch: The background prompt describes a 'single strong diagonal shadow cast across wall from a high window,' but the poster shows inconsistent lighting—bright highlights on the left wall and uneven illumination on the red floor. The lighting does not support the product's hard side-light, creating a disjointed studio environment."
+        },
+        {
+          "type": "composition",
+          "problem": "Asymmetric typography placement: The text elements (logo, title, subtitle) are right-aligned, creating an unbalanced composition. Professional luxury campaigns typically use centered or symmetric typography to emphasize elegance, and the current layout feels disconnected from the product."
+        },
+        {
+          "type": "physical_integration",
+          "problem": "Inconsistent product height ratio: The product_height_ratio is 0.5903 (within 50-65% range), but the bottle appears slightly compressed vertically, reducing its hero presence. The product.y (820) is too high, leaving excessive empty space below the bottle and disrupting the visual flow."
+        }
+      ],
+      "changes": [
+        {
+          "path": "shadow.opacity",
+          "op": "set",
+          "value": 0.4
+        },
+        {
+          "path": "shadow.blur",
+          "op": "set",
+          "value": 8
+        },
+        {
+          "path": "shadow.offset_y",
+          "op": "set",
+          "value": -2
+        },
+        {
+          "path": "background.prompt",
+          "op": "set",
+          "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, soft diffused diagonal light from a high window casting gentle shadows, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+        },
+        {
+          "path": "product.y",
+          "op": "set",
+          "value": 780
+        },
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 540
+        },
+        {
+          "path": "subtitle.x",
+          "op": "set",
+          "value": 540
+        },
+        {
+          "path": "logo.x",
+          "op": "set",
+          "value": 540
+        }
+      ]
+    }
+  },
+  "normalization": "single_answer_envelope",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78,
+    "dimensions": {
+      "product_fidelity": 85,
+      "composition": 75,
+      "typography": 80,
+      "background": 70,
+      "physical_integration": 65,
+      "reference_alignment": 75,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "Missing contact shadow: The bottle base rests on the red floor, but no shadow is visible beneath it. The contact_detail_crop [128, 1105, 671, 1355] confirms the bottle's lower edge is in contact with the surface, yet the shadow.offset_y is 0 (correct for contact) but the shadow is absent entirely. A contact shadow is required for realistic grounding."
+      },
+      {
+        "type": "background",
+        "problem": "Background lighting mismatch: The background prompt describes a 'single strong diagonal shadow cast across wall from a high window,' but the poster shows inconsistent lighting—bright highlights on the left wall and uneven illumination on the red floor. The lighting does not support the product's hard side-light, creating a disjointed studio environment."
+      },
+      {
+        "type": "composition",
+        "problem": "Asymmetric typography placement: The text elements (logo, title, subtitle) are right-aligned, creating an unbalanced composition. Professional luxury campaigns typically use centered or symmetric typography to emphasize elegance, and the current layout feels disconnected from the product."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Inconsistent product height ratio: The product_height_ratio is 0.5903 (within 50-65% range), but the bottle appears slightly compressed vertically, reducing its hero presence. The product.y (820) is too high, leaving excessive empty space below the bottle and disrupting the visual flow."
+      }
+    ],
+    "changes": [
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.4
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 8
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": -2
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, soft diffused diagonal light from a high window casting gentle shadows, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 780
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 540
+      }
+    ]
+  },
+  "duration_seconds": 25.887
+}

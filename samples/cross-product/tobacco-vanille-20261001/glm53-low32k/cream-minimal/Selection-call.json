@@ -1,0 +1,85 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "6317e3976988b88f8c720371202bd9b2239f91330a78933e0b99eb7192652a35"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "7aa6dfcd394e4f28829d27ba32ba177d24ed6893266e2a4a27ce2a5f9a384eae"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b79ea9615720b88221e8a5701d0aee8b4dd3310ca540a3da481441dd4ec4d3ac"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610020027329499444df557425c",
+      "usage": {
+        "completion_tokens": 182,
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "prompt_tokens": 9891,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 10073
+      }
+    }
+  ],
+  "response_id": "202610020027329499444df557425c",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 182,
+    "completion_tokens_details": {
+      "reasoning_tokens": 37
+    },
+    "prompt_tokens": 9891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10073
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 3,
+    "evidence": "Version 3 grounds the bottle convincingly on a warm sculpted floor with coherent directional lighting and shadow contact, gives the label crisp legible typography matching the original product, and creates a distinct rich amber campaign mood; version 1 is a flat floating packshot on a raised gradient with weak lighting, and version 2, while coherent, reads as a neutral niche with less distinct concept and softer product separation.",
+    "remaining_problems": [
+      "Label reflection and highlight on the dark cap edges are slightly artificial",
+      "Background texture shows mild banding in the upper vignette",
+      "Typography hierarchy could differentiate the footer line further from the headline"
+    ]
+  },
+  "duration_seconds": 10.305
+}

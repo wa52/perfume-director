@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 4053,
+  "background": {
+    "color": "#DCE5D3",
+    "prompt": "Empty pale sage green matte seamless studio environment, continuous floor and wall with a soft far tonal transition, warm soft diffuse frontal light with gentle directional falloff from the upper right, large delicate out-of-focus leaf and thin branch shadows entering from the far left edge and upper right corner, one long soft dappled light shape sweeping across the floor from the left text area toward the center right where a calm brighter pool of light rests, a faint secondary soft warm glow low on the right wall catching the far midground, a subtle darker foreground tonal band along the bottom edge of the floor for depth, quiet airy organic still-life atmosphere, no furniture",
+    "revision": 3
+  },
+  "product": {
+    "x": 720,
+    "y": 842,
+    "width": 470,
+    "height": 792
+  },
+  "lighting": "soft_diffused_light",
+  "palette": [
+    "#DCE5D3",
+    "#F5F1E6",
+    "#3A4A3A",
+    "#1A1A18"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 84,
+    "y": 120,
+    "size": 56,
+    "color": "#3A4A3A",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 86,
+    "y": 180,
+    "size": 22,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 86,
+    "y": 1330,
+    "size": 20,
+    "color": "#5C6B58",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 84,
+    "y": 70,
+    "size": 30,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "shadow": {
+    "opacity": 0.42,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 86,
+    "y": 230,
+    "width": 70,
+    "color": "#9BAF94"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

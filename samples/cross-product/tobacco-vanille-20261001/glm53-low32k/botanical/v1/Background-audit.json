@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty pale sage green seamless studio floor and wall, soft diffuse morning window light from the front, blurred out-of-focus green leaves and thin branch shadows only at the far left and upper right edges, quiet clear open center, airy organic still-life atmosphere, gentle soft shadows on continuous matte floor, no furniture, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 4053,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

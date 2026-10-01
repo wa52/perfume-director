@@ -1,0 +1,31 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 85,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Undifferentiated studio backdrop: The background remains flat and lacks texture or atmospheric depth. Professional luxury campaigns (e.g., Dior's golden gradient, Jo Malone's soft pink) use textured or atmospheric backgrounds to enhance mood. The current background is a plain cream gradient, reducing visual interest and failing to reinforce the 'luxury' theme."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Weak narrative concept: The design lacks complementary elements (e.g., props, texture) to reinforce the 'luxury' theme. The bottle is isolated without contextual cues (e.g., tobacco leaves, vanilla pods) to connect with the fragrance's identity, making it feel generic compared to professional references."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient with subtle texture, diffused light from upper left, matte continuous cream floor with gentle tonal variation, smooth low contrast surface, clean central space"
+    }
+  ],
+  "reported_score": 82.0
+}

@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep wine-red matte seamless studio cyclorama wall flowing into a matching seamless floor, one crisp architectural diagonal shadow cast across the upper wall, a gentle warm amber glow rising from the lower right foreground like lamplight through amber glass, smooth uncluttered center, uniform broad soft frontal illumination, realistic physical studio environment photograph, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 3075,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

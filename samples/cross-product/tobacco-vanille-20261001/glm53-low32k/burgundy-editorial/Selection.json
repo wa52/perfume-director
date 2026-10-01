@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 faithfully reproduces the original Tobacco Vanille bottle with a plausible gold label, sits convincingly on a wine-red surface with a soft contact shadow and a warm light pool that reads as a finished studio set. Typography is clean and coherent (brand, product name, EDP line), the color mood suits the tobacco-vanille scent, and no studio equipment or floating-packshot defect appears. Versions 2–4 are near-identical weaker copies of the same layout with flatter lighting and a less grounded bottle.",
+  "remaining_problems": [
+    "Concept is safe but generic — no distinctive campaign storytelling element beyond color and light",
+    "Typography lacks the premium serif refinement of the actual Tom Ford brand system",
+    "Composition is static; a hero ingredient (tobacco leaf, vanilla pod) could add narrative depth"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

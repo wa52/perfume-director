@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 76.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 75,
+    "typography": 80,
+    "background": 65,
+    "physical_integration": 70,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background contains studio setup artifacts (softbox shadows, lighting stands) that break immersion. The deep wine-red wall and red floor lack the dramatic, polished texture of luxury campaigns, appearing flat and generic."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Bottle lacks a contact shadow, violating physical realism. The enlarged detail (image 6) confirms the bottle rests on the red floor, but no shadow is cast beneath it, making the product appear to float."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography is misaligned and disconnected from the product. The title 'TOBACCO VANILLE' is positioned too high on the right, creating an unbalanced layout that fails to integrate with the bottle's visual weight."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting is inconsistent with the product. The hard side light on the bottle clashes with the soft, diffused studio lighting in the background, reducing visual cohesion."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep burgundy velvet wall meeting a polished mahogany floor, dramatic chiaroscuro lighting with sharp diagonal shadows, rich texture and depth, luxurious interior with warm ambient glow, no studio equipment visible"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 680
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 680
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 470
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 680
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 280
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,173 @@
+{
+  "issues": [
+    "title_outside_safe_area",
+    "subtitle_outside_safe_area"
+  ],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 3069,
+    "background": {
+      "color": "#5A142B",
+      "prompt": "Deep wine-red seamless paper studio backdrop, flat matte burgundy paper wall flowing into a continuous matte red paper floor with no visible seam, broad soft frontal illumination with an even shadowless center, one soft-edged architectural diagonal shadow falling across the upper wall from a high window, dark burgundy material covering every horizontal and vertical edge, smooth clean empty lower foreground, minimal empty interior, realistic photographic backdrop",
+      "revision": 0
+    },
+    "product": {
+      "x": 340,
+      "y": 800,
+      "width": 392,
+      "height": 870
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#5A142B",
+      "#EFE6D8",
+      "#E3C98F",
+      "#2B1A10"
+    ],
+    "title": {
+      "text": "TOM FORD TOBACCO VANILLE",
+      "x": 600,
+      "y": 230,
+      "size": 88,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 600,
+      "y": 338,
+      "size": 88,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 600,
+      "y": 495,
+      "size": 24,
+      "color": "#E3C98F",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 600,
+      "y": 150,
+      "size": 40,
+      "color": "#EFE6D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.38,
+      "blur": 16,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 600,
+      "y": 545,
+      "width": 140,
+      "color": "#E3C98F"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 3069,
+    "background": {
+      "color": "#5A142B",
+      "prompt": "Deep wine-red seamless paper studio backdrop, flat matte burgundy paper wall flowing into a continuous matte red paper floor with no visible seam, broad soft frontal illumination with an even shadowless center, one soft-edged architectural diagonal shadow falling across the upper wall from a high window, dark burgundy material covering every horizontal and vertical edge, smooth clean empty lower foreground, minimal empty interior, realistic photographic backdrop",
+      "revision": 0
+    },
+    "product": {
+      "x": 400,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#5A142B",
+      "#EFE6D8",
+      "#E3C98F",
+      "#2B1A10"
+    ],
+    "title": {
+      "text": "TOM FORD TOBACCO VANILLE",
+      "x": 680,
+      "y": 310,
+      "size": 21,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 680,
+      "y": 420,
+      "size": 22,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#E3C98F",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 680,
+      "y": 220,
+      "size": 34,
+      "color": "#EFE6D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 600,
+      "y": 545,
+      "width": 140,
+      "color": "#E3C98F"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

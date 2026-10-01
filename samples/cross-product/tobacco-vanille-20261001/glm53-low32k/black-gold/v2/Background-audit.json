@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm charcoal-brown seamless studio environment, continuous softly polished dark floor, broad soft ivory diffused light from the upper left, rich amber and bronze light bloom wrapping the right side of the frame, faint warm golden tonal drift in the dark background suggesting tobacco and vanilla warmth, deep sculptural shadows receding to near-black on the left, elegant minimalist still-life atmosphere, full bleed, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 1057,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

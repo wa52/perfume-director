@@ -1,0 +1,34 @@
+{
+  "pass": false,
+  "score": 87.3,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 85,
+    "typography": 88,
+    "background": 88,
+    "physical_integration": 91,
+    "reference_alignment": 80,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "reference_alignment",
+      "problem": "The enlarged contact-detail crop (462,1098)-(979,1348) confirms the dark bottle base rests firmly on the pale surface with a thin soft shadow directly beneath the base edge — grounding is verified, offset_y=0 is correct and must not be moved. Against the references, the frame still leans minimal: Diptyque builds a floral midground, Jo Malone a peony foreground, Dior a tonal silk depth. This poster's dappled light sweep and leaf shadows are a competent but lighter answer; the gap is now one of richness, not correctness."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography block, light pool and bottle now read as one left-to-right light path, and the darker foreground tonal band at the bottom adds depth (composition 84→85). The right midground beyond the leaf shadow remains quieter than the connected asymmetric grids of the references; this is a refinement opportunity, not a defect."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green matte seamless studio environment, continuous floor and wall with a soft far tonal transition, warm soft diffuse frontal light with gentle directional falloff from the upper right, large delicate out-of-focus leaf and thin branch shadows entering from the far left edge and upper right corner, one long soft dappled light shape sweeping across the floor from the left text area toward the center right where a calm brighter pool of light rests, a faint secondary soft warm glow low on the right wall catching the far midground, a subtle darker foreground tonal band along the bottom edge of the floor for depth, quiet airy organic still-life atmosphere, no furniture"
+    }
+  ],
+  "reported_score": 86.8,
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ]
+}

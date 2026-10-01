@@ -1,0 +1,33 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 8192,
+    "temperature": 0.2,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "HTTPError",
+      "http_status": 400,
+      "provider_code": "1210"
+    }
+  ],
+  "http_status": 400,
+  "status": "ERROR",
+  "error_type": "ValueError",
+  "duration_seconds": 0.387
+}

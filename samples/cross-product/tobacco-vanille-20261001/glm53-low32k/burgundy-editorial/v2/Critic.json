@@ -1,0 +1,98 @@
+{
+  "pass": false,
+  "score": 79.6,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 68,
+    "background": 86,
+    "physical_integration": 84,
+    "reference_alignment": 74,
+    "creative_coherence": 72
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The rendered text is still Arial (geometry confirms font paths unchanged): a neutral grotesque with no luxury character, unlike the refined serif/gold logotype pairing in the Armani Privé reference. The right column remains a plain left-aligned stack with uneven vertical rhythm (logo y220, title y310, subtitle y420 — a 110px gap before the small subtitle), reading as a placeholder rather than a designed block."
+    },
+    {
+      "type": "composition",
+      "problem": "Bottle height 59% is correct hero scale, but the lower right two-thirds remains empty wine-red floor; the spec's reserved gold decoration slot is still disabled (decoration.enabled false), so no rule or accent anchors the text column to the product zone. Balance relies on the background glow rather than any compositional device."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The enlarged base crop (contact_detail_crop 128,1105–671,1355) shows the bottle genuinely resting with a visible dark contact band under the base — no floating. However the occlusion is still soft and shallow for a heavy dark glass bottle on a matte surface; the contact darkening fades within a narrow band and lacks the deeper grounded occlusion seen in the references."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The wine-red cyclorama with diagonal window shadow and warm amber glow is atmospherically coherent, but the concept remains a generic dramatic backdrop: no thematic material (tobacco leaf, lacquer, wood) expresses Tobacco Vanille, so it trails the fig/splash/sandalwood props of the three references."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Versus the references, the gap is now mainly typographic (Arial vs. crafted logotype) and conceptual (empty wall vs. sculptural prop interplay); lighting and palette are now close, but the overall result reads as a polished draft, not a fully resolved campaign."
+    }
+  ],
+  "changes": [
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 42
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 396
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": true
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 110
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.62
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ],
+  "reported_score": 79.5
+}

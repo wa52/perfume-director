@@ -1,0 +1,41 @@
+{
+  "pass": false,
+  "score": 80.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lighting still lacks natural dappled shadows: The current background shows uniform illumination without the subtle leaf shadow patterns described in the prompt. The soft morning window light is not effectively translated into visible dappled shadows, reducing the luxury still-life coherence."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography imbalance persists: The left-aligned text block (logo, title, subtitle) creates visual tension with the right-aligned bottle. The bottle's right-heavy placement feels disconnected from the text, disrupting compositional harmony despite minor x-coordinate adjustments."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light casting distinct dappled leaf shadows, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 720
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 150
+    }
+  ],
+  "reported_score": 82.1
+}

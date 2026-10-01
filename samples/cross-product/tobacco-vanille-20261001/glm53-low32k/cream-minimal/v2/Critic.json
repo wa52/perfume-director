@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 83.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 85,
+    "background": 81,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 81
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "No studio equipment is visible and the previous ivory sweep is warmer, but the environment remains an undifferentiated empty gradient. Unlike the Dior reference's satin gold atmosphere or Jo Malone's tactile fabric set, there is no material character, texture or light pooling that could carry a luxury tobacco-vanille concept."
+    },
+    {
+      "type": "composition",
+      "problem": "Contact detail crop confirms a true contact line with a soft occlusion shadow, base_y 1245 is within margins and the 0.5903 height ratio sits in the hero range, so physical integration is sound. But the frame is still a fully symmetric centered stack (logo, title, bottle, subtitle) with no secondary element, depth cue or asymmetry; against the layered reference layouts it reads generic and static."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "All three references build atmosphere and context around the product (gold satin light, human presence, botanical props). This poster keeps a bright frontal product shot on a flat field; the background does not echo the bottle's warm amber tones or extend its lighting, leaving the design-quality gap to the references unresolved."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm amber-toned seamless environment, softly lit curved plaster wall meeting a polished dark-gold floor plane in a seamless cove, gentle diffused frontal light with a warm golden glow pooling low behind the center, subtle mirrored sheen on the floor under the open center echoing the surrounding warmth, delicate low-contrast corner falloff, no objects, no horizon edge"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#EFE0C6"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ],
+  "reported_score": 83.6
+}

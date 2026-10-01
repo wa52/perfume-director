@@ -1,0 +1,33 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 499
+        },
+        {
+          "path": "logo.x",
+          "op": "set",
+          "value": 540
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

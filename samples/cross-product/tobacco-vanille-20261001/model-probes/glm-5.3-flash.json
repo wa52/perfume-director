@@ -1,0 +1,57 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 8192,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100123501805729453185d4cd7",
+      "usage": {
+        "completion_tokens": 269,
+        "completion_tokens_details": {
+          "reasoning_tokens": 201
+        },
+        "prompt_tokens": 1756,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2025
+      }
+    }
+  ],
+  "response_id": "2026100123501805729453185d4cd7",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 269,
+    "completion_tokens_details": {
+      "reasoning_tokens": 201
+    },
+    "prompt_tokens": 1756,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2025
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "brand": "Tom Ford",
+    "product_name": "Tobacco Vanille",
+    "visible_label": "TOM FORD / TOBACCO VANILLE / EAU DE PARFUM / 50 ML",
+    "shape": "rectangular dark brown glass bottle with wide flat rectangular cap"
+  },
+  "duration_seconds": 3.014
+}

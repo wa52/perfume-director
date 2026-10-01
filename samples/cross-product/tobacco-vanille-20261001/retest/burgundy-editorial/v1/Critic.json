@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base rests on the red floor, but no shadow is visible beneath it. The contact_detail_crop [128, 1105, 671, 1355] confirms the bottle's lower edge is in contact with the surface, yet the shadow.offset_y is 0 (correct for contact) but the shadow is absent entirely. A contact shadow is required for realistic grounding."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The background prompt describes a 'single strong diagonal shadow cast across wall from a high window,' but the poster shows inconsistent lighting—bright highlights on the left wall and uneven illumination on the red floor. The lighting does not support the product's hard side-light, creating a disjointed studio environment."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography placement: The text elements (logo, title, subtitle) are right-aligned, creating an unbalanced composition. Professional luxury campaigns typically use centered or symmetric typography to emphasize elegance, and the current layout feels disconnected from the product."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Inconsistent product height ratio: The product_height_ratio is 0.5903 (within 50-65% range), but the bottle appears slightly compressed vertically, reducing its hero presence. The product.y (820) is too high, leaving excessive empty space below the bottle and disrupting the visual flow."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.4
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, soft diffused diagonal light from a high window casting gentle shadows, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,65 @@
+{
+  "pass": false,
+  "score": 83.4,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 82,
+    "typography": 85,
+    "background": 78,
+    "physical_integration": 85,
+    "reference_alignment": 80,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lighting remains inconsistent. The burgundy wall shows flat, uneven texture with insufficient chiaroscuro contrast, and the floor's wood grain lacks the rich, reflective quality needed for luxury. The warm ambient glow feels artificial rather than integrated with the hard side light on the bottle."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Composition lacks the conceptual integration of references. Unlike Byredo's (image 4) fluid, symbolic composition or Armani/Prive's (image 5) textural harmony, the poster separates the bottle from typography with excessive negative space, reducing visual impact and failing to create a unified luxury narrative."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Lighting disconnect persists. The hard side light on the bottle clashes with the soft, diffused wall lighting, creating visual inconsistency that undermines the luxury concept. The background's warm glow does not complement the bottle's dramatic lighting, weakening the overall cohesion."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep burgundy velvet wall with rich, tactile texture meeting a polished mahogany floor with warm, reflective grain, dramatic chiaroscuro lighting casting sharp diagonal shadows, luxurious interior with warm ambient glow, no studio equipment visible"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#4A0F24"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 380
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 800
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 620
+    }
+  ],
+  "reported_score": 83.6
+}

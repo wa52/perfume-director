@@ -1,0 +1,254 @@
+[
+  {
+    "file": "batch/Product-copy-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 8.182,
+    "attempts": 1,
+    "tokens": 2016
+  },
+  {
+    "file": "black-gold/Director-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 8.52,
+    "attempts": 1,
+    "tokens": 7088
+  },
+  {
+    "file": "botanical/Director-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 12.625,
+    "attempts": 1,
+    "tokens": 7505
+  },
+  {
+    "file": "botanical/Selection-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 9.006,
+    "attempts": 1,
+    "tokens": 11907
+  },
+  {
+    "file": "burgundy-editorial/Director-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 12.079,
+    "attempts": 1,
+    "tokens": 9598
+  },
+  {
+    "file": "burgundy-editorial/Selection-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 7.753,
+    "attempts": 1,
+    "tokens": 13957
+  },
+  {
+    "file": "cream-minimal/Director-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 9.998,
+    "attempts": 1,
+    "tokens": 7340
+  },
+  {
+    "file": "cream-minimal/Selection-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 10.305,
+    "attempts": 1,
+    "tokens": 10073
+  },
+  {
+    "file": "cream-minimal/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 21.151,
+    "attempts": 1,
+    "tokens": 9416
+  },
+  {
+    "file": "cream-minimal/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 19.127,
+    "attempts": 1,
+    "tokens": 11418
+  },
+  {
+    "file": "cream-minimal/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 12.594,
+    "attempts": 1,
+    "tokens": 11267
+  },
+  {
+    "file": "cream-minimal/v3/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 5.185,
+    "attempts": 1,
+    "tokens": 7953
+  },
+  {
+    "file": "burgundy-editorial/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 33.078,
+    "attempts": 1,
+    "tokens": 11872
+  },
+  {
+    "file": "burgundy-editorial/v1/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 7.166,
+    "attempts": 1,
+    "tokens": 10627
+  },
+  {
+    "file": "burgundy-editorial/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 25.681,
+    "attempts": 1,
+    "tokens": 14432
+  },
+  {
+    "file": "burgundy-editorial/v2/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 4.739,
+    "attempts": 1,
+    "tokens": 10431
+  },
+  {
+    "file": "burgundy-editorial/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 15.82,
+    "attempts": 1,
+    "tokens": 14038
+  },
+  {
+    "file": "burgundy-editorial/v3/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 6.464,
+    "attempts": 1,
+    "tokens": 10498
+  },
+  {
+    "file": "burgundy-editorial/v4/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 13.606,
+    "attempts": 1,
+    "tokens": 13984
+  },
+  {
+    "file": "burgundy-editorial/v4/Critic-patch-repair-call.json",
+    "status": "ERROR",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 15.776,
+    "attempts": 1,
+    "tokens": 10414
+  },
+  {
+    "file": "botanical/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 19.606,
+    "attempts": 1,
+    "tokens": 9493
+  },
+  {
+    "file": "botanical/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 21.988,
+    "attempts": 1,
+    "tokens": 11891
+  },
+  {
+    "file": "botanical/v2/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 8.026,
+    "attempts": 1,
+    "tokens": 8255
+  },
+  {
+    "file": "botanical/v3/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 12.237,
+    "attempts": 1,
+    "tokens": 11513
+  },
+  {
+    "file": "botanical/v4/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 14.011,
+    "attempts": 1,
+    "tokens": 11445
+  },
+  {
+    "file": "black-gold/v1/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 20.916,
+    "attempts": 1,
+    "tokens": 9301
+  },
+  {
+    "file": "black-gold/v1/Critic-patch-repair-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 11.562,
+    "attempts": 1,
+    "tokens": 8382
+  },
+  {
+    "file": "black-gold/v2/Critic-call.json",
+    "status": "OK",
+    "returned_model": "glm-5.3-flash",
+    "finish_reason": "stop",
+    "duration_seconds": 14.696,
+    "attempts": 1,
+    "tokens": 11215
+  }
+]

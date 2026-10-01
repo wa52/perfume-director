@@ -1,0 +1,20 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep charcoal studio with a polished leather floor, warm directional light from upper left casting sharp gradients on the right, subtle wood grain texture in the background, elegant still life environment, full bleed"
+    }
+  ]
+}

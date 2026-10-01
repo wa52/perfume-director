@@ -1,0 +1,146 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 8192,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 4,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610020008539251e12b5fb24dfe",
+      "usage": {
+        "completion_tokens": 7237,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6595
+        },
+        "prompt_tokens": 8945,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 16182
+      }
+    }
+  ],
+  "response_id": "202610020008539251e12b5fb24dfe",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 7237,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6595
+    },
+    "prompt_tokens": 8945,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 16182
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 42,
+    "background": {
+      "color": "#5A142B",
+      "prompt": "Deep wine-red seamless paper studio backdrop, flat matte burgundy paper wall flowing into a continuous matte red paper floor with no visible seam, broad soft frontal illumination with an even shadowless center, one soft-edged architectural diagonal shadow falling across the upper wall from a high window, dark burgundy material covering every horizontal and vertical edge, smooth clean empty lower foreground, minimal empty interior, realistic photographic backdrop",
+      "revision": 0
+    },
+    "product": {
+      "x": 340,
+      "y": 800,
+      "width": 392,
+      "height": 870
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#5A142B",
+      "#EFE6D8",
+      "#E3C98F",
+      "#2B1A10"
+    ],
+    "title": {
+      "text": "TOBACCO",
+      "x": 600,
+      "y": 230,
+      "size": 88,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "subtitle": {
+      "text": "VANILLE",
+      "x": 600,
+      "y": 338,
+      "size": 88,
+      "color": "#F5EDDD",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "price": {
+      "text": "EAU DE PARFUM",
+      "x": 600,
+      "y": 495,
+      "size": 24,
+      "color": "#E3C98F",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 600,
+      "y": 150,
+      "size": 40,
+      "color": "#EFE6D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.38,
+      "blur": 16,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 600,
+      "y": 545,
+      "width": 140,
+      "color": "#E3C98F"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "duration_seconds": 131.398
+}

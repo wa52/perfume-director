@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 82.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 82,
+    "background": 80,
+    "physical_integration": 88,
+    "reference_alignment": 78,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "No studio equipment is visible, but the backdrop is a generic warm ivory gradient with a soft horizontal tonal transition behind the bottle base. Unlike the Dior reference's satin-lit gold environment or Jo Malone's contextual soft set, this reads as an undifferentiated empty sweep with no material character, weakening the luxury concept."
+    },
+    {
+      "type": "composition",
+      "problem": "The single bottle occupies 0.5903 of canvas height (in hero range) and sits correctly at base_y 1245 with bottom margin within limits; contact detail crop confirms a real contact line with a soft occlusion shadow at the base, so physical integration is sound. However, the frame is a purely symmetric, inert stack: logo, title, bottle, subtitle all dead-center with no secondary visual element or depth cue, which reads generic next to the layered reference compositions."
+    },
+    {
+      "type": "typography",
+      "problem": "Title and logo are clean Times with no product overlap (text_product_overlap all false), but the subtitle 'EAU DE PARFUM' at size 24 sits isolated under the bottle with weak presence, and title/brand/subtitle share one size logic with no contrast strategy, reducing editorial polish."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References build atmosphere (gold satin, soft flesh-toned light, contextual props) around the product. This poster's flat ivory field and single centered object fail to close that quality gap; lighting on the bottle is bright frontal and the background does not echo or extend it."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio environment, polished ivory floor plane meeting a softly lit wall in a seamless curve, broad diffused frontal light with a subtle warm glow pooling behind the central space, faint reflective sheen on the floor beneath the open center, gentle low-contrast falloff at the corners, no objects, no horizon edge"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#F3E9D8"
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1322
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#8A6F3C"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.4
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ],
+  "reported_score": 81
+}

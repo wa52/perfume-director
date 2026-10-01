@@ -1,0 +1,11 @@
+{
+  "selected_version": 3,
+  "evidence": "Version 3 grounds the bottle convincingly on a warm sculpted floor with coherent directional lighting and shadow contact, gives the label crisp legible typography matching the original product, and creates a distinct rich amber campaign mood; version 1 is a flat floating packshot on a raised gradient with weak lighting, and version 2, while coherent, reads as a neutral niche with less distinct concept and softer product separation.",
+  "remaining_problems": [
+    "Label reflection and highlight on the dark cap edges are slightly artificial",
+    "Background texture shows mild banding in the upper vignette",
+    "Typography hierarchy could differentiate the footer line further from the headline"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

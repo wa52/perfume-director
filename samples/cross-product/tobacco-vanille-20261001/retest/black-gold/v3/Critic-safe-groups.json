@@ -1,0 +1,28 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.55
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 6
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.x",
+          "op": "set",
+          "value": 730
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

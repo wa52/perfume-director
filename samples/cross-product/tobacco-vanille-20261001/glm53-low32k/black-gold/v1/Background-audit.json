@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty deep black seamless studio with a continuous polished charcoal-black floor, broad soft ivory diffused frontal light falling gently from the upper left, subtle warm bronze gradient on the right side of the frame, smooth dark sculptural shadows receding to pure black on the left, elegant minimalist photographic still life environment, full bleed, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 1056,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

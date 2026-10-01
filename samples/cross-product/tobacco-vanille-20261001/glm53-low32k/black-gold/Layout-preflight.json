@@ -1,0 +1,170 @@
+{
+  "issues": [
+    "title_overlaps_product"
+  ],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 1056,
+    "background": {
+      "color": "#0B0B0D",
+      "prompt": "Empty deep black seamless studio with a continuous polished charcoal-black floor, broad soft ivory diffused frontal light falling gently from the upper left, subtle warm bronze gradient on the right side of the frame, smooth dark sculptural shadows receding to pure black on the left, elegant minimalist photographic still life environment, full bleed",
+      "revision": 0
+    },
+    "product": {
+      "x": 790,
+      "y": 830,
+      "width": 520,
+      "height": 790
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#0B0B0D",
+      "#D8C18E",
+      "#EAE3D5"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 96,
+      "y": 560,
+      "size": 64,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 98,
+      "y": 660,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 98,
+      "y": 1280,
+      "size": 22,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 96,
+      "y": 460,
+      "size": 40,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.4,
+      "blur": 14,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 98,
+      "y": 720,
+      "width": 80,
+      "color": "#D8C18E"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 1056,
+    "background": {
+      "color": "#0B0B0D",
+      "prompt": "Empty deep black seamless studio with a continuous polished charcoal-black floor, broad soft ivory diffused frontal light falling gently from the upper left, subtle warm bronze gradient on the right side of the frame, smooth dark sculptural shadows receding to pure black on the left, elegant minimalist photographic still life environment, full bleed",
+      "revision": 0
+    },
+    "product": {
+      "x": 760,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#0B0B0D",
+      "#D8C18E",
+      "#EAE3D5"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 96,
+      "y": 350,
+      "size": 50,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 96,
+      "y": 460,
+      "size": 22,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 96,
+      "y": 260,
+      "size": 34,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 98,
+      "y": 720,
+      "width": 80,
+      "color": "#D8C18E"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

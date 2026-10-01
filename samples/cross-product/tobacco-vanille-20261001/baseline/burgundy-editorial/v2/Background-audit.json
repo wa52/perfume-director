@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep burgundy velvet wall meeting a polished mahogany floor, dramatic chiaroscuro lighting with sharp diagonal shadows, rich texture and depth, luxurious interior with warm ambient glow, no studio equipment visible, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 3070,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

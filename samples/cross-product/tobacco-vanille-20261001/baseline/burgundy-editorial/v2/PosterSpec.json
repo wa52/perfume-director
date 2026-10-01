@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 3069,
+  "background": {
+    "color": "#5A142B",
+    "prompt": "Deep burgundy velvet wall meeting a polished mahogany floor, dramatic chiaroscuro lighting with sharp diagonal shadows, rich texture and depth, luxurious interior with warm ambient glow, no studio equipment visible",
+    "revision": 1
+  },
+  "product": {
+    "x": 400,
+    "y": 820,
+    "width": 520,
+    "height": 850
+  },
+  "lighting": "hard_side_light",
+  "palette": [
+    "#181B21",
+    "#EAE3D5",
+    "#A6A9AF"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 680,
+    "y": 420,
+    "size": 35,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 680,
+    "y": 470,
+    "size": 22,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EAE3D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 680,
+    "y": 280,
+    "size": 34,
+    "color": "#FAE4D5",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": -2,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

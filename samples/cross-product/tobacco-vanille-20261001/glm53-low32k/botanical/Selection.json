@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 presents the Tom Ford Tobacco Vanille bottle with accurate label typography, convincing contact with the surface via a soft grounding shadow, layered leaf shadows and a clean horizon line that create a coherent, finished campaign set without any visible studio equipment or floating-packshot defect. Versions 2 and 4 lack a credible contact shadow, leaving the packshot seemingly hovering, and version 3, while showing a ledge, has flatter lighting and a less integrated composition.",
+  "remaining_problems": [
+    "The green spa-like palette and foliage feel generic and only weakly tied to the tobacco-vanille scent identity",
+    "The dark bottle edges merge slightly into the shadowed background at the base",
+    "Composition is safe and static, lacking a distinct campaign concept beyond a plain packshot"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

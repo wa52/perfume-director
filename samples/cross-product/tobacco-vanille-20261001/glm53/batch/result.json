@@ -1,0 +1,45 @@
+{
+  "status": "PARTIAL",
+  "directions": [
+    {
+      "id": "black-gold",
+      "name": "黑金奢华",
+      "brief": "黑色与克制金色，宽柔光，连续无接缝黑色地面；瓶身位于右侧且占画布高度55%，左侧对齐小型衬线文字，强调明暗雕塑感。禁止烟雾、闪光粒子、复杂大理石。",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\7b90a726b78b",
+      "status": "ERROR",
+      "error": "ValueError"
+    },
+    {
+      "id": "cream-minimal",
+      "name": "奶油极简",
+      "brief": "暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\3fb99f44f1c3",
+      "selected": {
+        "version": 1,
+        "score": null,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": "RemoteDisconnected",
+        "sha256": "9c7e6a6e4cd73eb8717be18073a5d55dab48ef3dc55d71c82d798c306afddc20"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": null,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": "RemoteDisconnected",
+          "sha256": "9c7e6a6e4cd73eb8717be18073a5d55dab48ef3dc55d71c82d798c306afddc20"
+        }
+      ],
+      "review_failures": [
+        1
+      ]
+    }
+  ]
+}

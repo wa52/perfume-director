@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 85.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 82,
+    "typography": 85,
+    "background": 84,
+    "physical_integration": 91,
+    "reference_alignment": 79,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "Contact detail crop confirms a genuine contact line with soft occlusion shadow on the amber floor plane; base_y 1245 sits within margins and the 0.5903 height ratio is in the hero range, so physical integration is resolved. However the layout remains a fully symmetric centered stack (logo, title, bottle, subtitle) with no secondary focal element or depth cue; against the layered reference compositions it still reads static and template-like."
+    },
+    {
+      "type": "background",
+      "problem": "No studio equipment is visible. The regenerated amber plaster cove with golden floor glow now echoes the bottle's warmth and matches the previous patch, a material improvement over the flat ivory field. Still, the environment is purely tonal: no tactile texture or light direction beyond a generic center pool, leaving it one step behind the satin-light atmospherics of the Dior reference."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The references integrate context (gold satin light, human presence, botanical props) around the product. This poster keeps an isolated bright product shot on a smooth field; the gap to professional campaign design quality is narrowed by the warmer environment but not closed, since background lighting character and typographic layering remain generic."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm amber-toned seamless environment, softly lit curved aged-plaster wall meeting a polished dark-gold floor plane in a seamless cove, gentle diffused frontal light with a warm golden glow pooling low behind the center, faintly brushed plaster texture catching low raking light on the left wall, subtle mirrored sheen on the floor under the open center, delicate low-contrast corner falloff, no objects, no horizon edge"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 104
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 82
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#8A6F3C"
+    }
+  ],
+  "reported_score": 84.5
+}

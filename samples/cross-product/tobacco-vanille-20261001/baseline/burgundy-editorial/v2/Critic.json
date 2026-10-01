@@ -1,0 +1,65 @@
+{
+  "pass": false,
+  "score": 82.1,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 80,
+    "typography": 85,
+    "background": 75,
+    "physical_integration": 85,
+    "reference_alignment": 78,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lacks luxury texture and dramatic lighting. The burgundy wall appears flat with inconsistent lighting, failing to match the polished, chiaroscuro style of high-end campaigns. The floor's wood grain is visible but lacks the rich, reflective quality needed for luxury."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The composition is generic compared to references. Unlike the integrated, concept-driven layouts of Byredo (image 4) or Armani/Prive (image 5), the poster separates the bottle from typography with excessive negative space, reducing visual impact."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Lighting and background elements are disconnected. The hard side light on the bottle clashes with the soft, diffused wall lighting, creating visual inconsistency that undermines the luxury concept."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep burgundy velvet wall with rich, tactile texture meeting a polished mahogany floor with warm, reflective grain, dramatic chiaroscuro lighting casting sharp diagonal shadows, luxurious interior with warm ambient glow, no studio equipment visible"
+    },
+    {
+      "path": "background.color",
+      "op": "set",
+      "value": "#4A0F24"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 380
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 800
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 620
+    }
+  ],
+  "reported_score": 82.1
+}

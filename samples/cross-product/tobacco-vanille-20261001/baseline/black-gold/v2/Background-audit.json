@@ -1,0 +1,16 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty graphite-black seamless studio with a continuous satin charcoal floor, broad warm ivory diffused side light from upper left illuminating right foreground, restrained warm vertical gradient behind the right foreground, smooth deep black negative space on left, elegant photographic still life environment, full bleed, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 1052,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "prompt_guard": {
+    "requested": "Empty deep charcoal studio with a satin-smooth floor, directional soft light from upper left casting subtle highlights on the right foreground, cool vertical gradient behind the product, elegant photographic still life environment, full bleed",
+    "reason": "background_requires_empty_continuous_floor_without_raised_support"
+  }
+}

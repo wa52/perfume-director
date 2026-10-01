@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep wine-red matte paper wall meeting a continuous seamless wine-red paper floor, flat even studio interior, one crisp architectural diagonal shadow falling across the upper wall like a window-frame cast, smooth uncluttered center and lower foreground, uniform broad soft frontal illumination across the whole scene, realistic physical studio environment photograph, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 3074,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

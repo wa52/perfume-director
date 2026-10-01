@@ -1,0 +1,142 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "f03dcb07f2854bfa1021e8428c72c531a40497a72b72caf1d089860f97f8c5d1"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "86be12e934ba9e3454ff16fb63377276e7b038668ba102a9f78550041218681b"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "44b67ccca4ffd9f4af5e97974b13cc1c88811ac82258a726ddaf0d5c07b4899a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001232842862177ce8af541d5",
+      "usage": {
+        "completion_tokens": 518,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 12616,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        },
+        "total_tokens": 13134
+      }
+    }
+  ],
+  "response_id": "20261001232842862177ce8af541d5",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 518,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 12616,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 13134
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 82.1,
+    "dimensions": {
+      "product_fidelity": 90,
+      "composition": 80,
+      "typography": 85,
+      "background": 75,
+      "physical_integration": 85,
+      "reference_alignment": 78,
+      "creative_coherence": 82
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "Background lacks luxury texture and dramatic lighting. The burgundy wall appears flat with inconsistent lighting, failing to match the polished, chiaroscuro style of high-end campaigns. The floor's wood grain is visible but lacks the rich, reflective quality needed for luxury."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "The composition is generic compared to references. Unlike the integrated, concept-driven layouts of Byredo (image 4) or Armani/Prive (image 5), the poster separates the bottle from typography with excessive negative space, reducing visual impact."
+      },
+      {
+        "type": "creative_coherence",
+        "problem": "Lighting and background elements are disconnected. The hard side light on the bottle clashes with the soft, diffused wall lighting, creating visual inconsistency that undermines the luxury concept."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep burgundy velvet wall with rich, tactile texture meeting a polished mahogany floor with warm, reflective grain, dramatic chiaroscuro lighting casting sharp diagonal shadows, luxurious interior with warm ambient glow, no studio equipment visible"
+      },
+      {
+        "path": "background.color",
+        "op": "set",
+        "value": "#4A0F24"
+      },
+      {
+        "path": "product.x",
+        "op": "set",
+        "value": 380
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 800
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 620
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 620
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 620
+      }
+    ]
+  },
+  "duration_seconds": 12.472
+}

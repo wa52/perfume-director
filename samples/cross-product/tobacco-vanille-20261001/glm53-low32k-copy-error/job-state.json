@@ -1,0 +1,9 @@
+{
+  "id": "53a96ed9480f41c694cd70fdc0c2b72e",
+  "status": "ERROR",
+  "stage": "FAILED",
+  "vision_model": "glm-5.3-flash",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "error": "ValueError",
+  "message": "Loop stopped; inspect the saved run and server log. No PASS was recorded."
+}

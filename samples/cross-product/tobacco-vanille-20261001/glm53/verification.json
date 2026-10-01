@@ -1,0 +1,27 @@
+[
+  {
+    "direction": "black-gold",
+    "status": "ERROR",
+    "error": "ValueError"
+  },
+  {
+    "direction": "cream-minimal",
+    "status": "NEEDS_REVIEW",
+    "versions": 1,
+    "selected_version": 1,
+    "score": null,
+    "layout_issues": [],
+    "background_issues": [],
+    "background_source": "comfyui_generated",
+    "copy": {
+      "title": "TOM FORD TOBACCO VANILLE",
+      "subtitle": "EAU DE PARFUM",
+      "price": "",
+      "logo": "TOM FORD"
+    },
+    "sha256_matches": true,
+    "review_failures": [
+      1
+    ]
+  }
+]

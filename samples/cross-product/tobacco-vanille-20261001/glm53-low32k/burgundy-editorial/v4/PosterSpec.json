@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 3074,
+  "background": {
+    "color": "#5A142B",
+    "prompt": "Deep wine-red matte seamless studio cyclorama wall flowing into a matching seamless floor, one crisp architectural diagonal shadow cast across the upper wall, a gentle warm amber glow rising from the lower right foreground like lamplight through amber glass, smooth uncluttered center, uniform broad soft frontal illumination, realistic physical studio environment photograph",
+    "revision": 1
+  },
+  "product": {
+    "x": 400,
+    "y": 820,
+    "width": 520,
+    "height": 850
+  },
+  "lighting": "soft_frontal_light",
+  "palette": [
+    "#5A142B",
+    "#F2E7D8",
+    "#C89A4B"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 680,
+    "y": 310,
+    "size": 35,
+    "color": "#F2E7D8",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 680,
+    "y": 420,
+    "size": 22,
+    "color": "#C89A4B",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F2E7D8",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 680,
+    "y": 220,
+    "size": 34,
+    "color": "#F2E7D8",
+    "font": "C:/Windows/Fonts/arial.ttf"
+  },
+  "shadow": {
+    "opacity": 0.7,
+    "blur": 18,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 680,
+    "y": 470,
+    "width": 90,
+    "color": "#C89A4B"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ]
+}

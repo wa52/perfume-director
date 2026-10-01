@@ -1,0 +1,33 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient with subtle texture, diffused light from upper left, matte continuous cream floor with gentle tonal variation, smooth low contrast surface, clean central space"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 499
+        },
+        {
+          "path": "logo.x",
+          "op": "set",
+          "value": 540
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

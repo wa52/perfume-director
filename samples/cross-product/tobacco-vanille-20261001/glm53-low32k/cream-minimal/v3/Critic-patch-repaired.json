@@ -1,0 +1,15 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 96
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 99
+    }
+  ]
+}

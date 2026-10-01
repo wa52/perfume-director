@@ -1,0 +1,31 @@
+{
+  "vision_base_url": "https://open.bigmodel.cn/api/paas/v4",
+  "vision_model": "glm-5.3-flash",
+  "api_key_env": "ZHIPU_API_KEY",
+  "comfy_url": "http://127.0.0.1:8190",
+  "render_timeout_seconds": 900,
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "background_workflow": "workflows/z-image-background.api.json",
+  "background_bindings": {
+    "prompt": {
+      "node": "5",
+      "input": "text"
+    },
+    "seed": {
+      "node": "8",
+      "input": "seed"
+    }
+  },
+  "background_output_node": "10",
+  "vision_timeout_seconds": 300,
+  "vision_options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "vision_attempts": 3,
+  "background_attempts": 2,
+  "vision_image_max_edge": 1280,
+  "max_rounds": 5,
+  "compare_final_versions": true
+}

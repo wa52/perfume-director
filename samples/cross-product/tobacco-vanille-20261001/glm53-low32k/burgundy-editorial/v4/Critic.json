@@ -1,0 +1,99 @@
+{
+  "pass": false,
+  "score": 80.6,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 68,
+    "background": 88,
+    "physical_integration": 87,
+    "reference_alignment": 75,
+    "creative_coherence": 73
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The current poster still renders TOM FORD / TOBACCO VANILLE / EAU DE PARFUM in the same neutral grotesque sans; the proposed serif fonts were not applied. Against the Armani Privé reference's crafted gold serif logotype this reads as system-font placeholder type, weakening the luxury register. The right column rhythm is also uneven: logo baseline at y245, title at y310, but subtitle drops to y420, leaving an 85px hole that breaks the text block."
+    },
+    {
+      "type": "composition",
+      "problem": "Hero scale is correct (ratio 0.5903, base at 86.5% of canvas height, well within margins) and the contact detail crop confirms a genuine soft contact shadow at the bottle base — no floating. But the lower-right field remains compositionally inert: decoration.enabled is still false, so the reserved gold accent never ties the text column to the product zone, and the layout leans entirely on the amber light pool for balance."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The wine-red cyclorama, diagonal wall shadow and amber glow are internally coherent, but the concept is still a generic dramatic backdrop. No material cue expresses Tobacco Vanille (tobacco leaf, lacquer, vanilla pod, wood), unlike the fig slice, red lacquer splash and sandalwood plank that give the three references narrative identity."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "The residual gap to the references is typographic (Arial vs. designed logotype) and conceptual (empty seamless wall vs. sculptural prop interplay). Lighting, palette harmony, product fidelity and grounding are at reference level; the result is a polished draft, not a resolved campaign."
+    }
+  ],
+  "changes": [
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/times.ttf"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/georgia.ttf"
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 42
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 396
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": true
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 950
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 110
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#C89A4B"
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.7
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 18
+    }
+  ],
+  "reported_score": 80.5
+}

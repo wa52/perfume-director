@@ -1,0 +1,15 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 380
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 490
+    }
+  ]
+}

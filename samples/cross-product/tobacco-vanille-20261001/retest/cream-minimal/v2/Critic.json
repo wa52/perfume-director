@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 78.0,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 78,
+    "typography": 80,
+    "background": 75,
+    "physical_integration": 70,
+    "reference_alignment": 78,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow misalignment: The bottle base (y=1245) has a shadow with offset_y=-2, but the enlarged detail (image 6) shows the shadow is too faint and lacks definition. A contact shadow should have higher opacity (0.35) and sharper blur (10) to match the product's glossy surface. The current shadow appears weak, reducing physical realism."
+    },
+    {
+      "type": "background",
+      "problem": "Undifferentiated studio backdrop: The background prompt describes a 'quiet cream tonal gradient' but lacks texture or atmosphere. Professional luxury campaigns (e.g., Dior's golden gradient, Jo Malone's soft pink) use textured or atmospheric backgrounds to enhance mood. The current background is flat and undifferentiated, reducing visual interest."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography hierarchy: The title 'TOBACCO VANILLE' (x=99) is left-aligned, while the logo 'TOM FORD' (x=422) is centered. Luxury campaigns (e.g., Chanel, Dior) use balanced, centered typography for coherence. The left-aligned title creates visual imbalance, weakening the composition."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Weak creative concept: The design lacks a clear narrative (unlike Dior's 'femininity' or Jo Malone's 'floral elegance'). The bottle is isolated without complementary elements (e.g., props, texture) to reinforce the 'luxury' theme, making it feel generic compared to professional references."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory seamless studio, quiet cream tonal gradient with subtle texture, diffused light from upper left, matte continuous cream floor with gentle tonal variation, smooth low contrast surface, clean central space"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 499
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 78.3
+}

@@ -1,0 +1,89 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 8,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "88407b71e748e9cfbb40dcd6ea0ae4f62b73f17edb690307ec319c2cc94a9b66"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "29925a451388a45be1e8f9b48b1d1f662ff700d90f0c8f053904f526df4b4a52"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "93d6437f3dd87660dea1692473032280401248c96c9587cacaf6a6829d3a3f08"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d46921c6ef7c6f97982dc23c50cac7a91eb1ce8d8b3bb95773167cbeb1d8d43a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261002003229848a6109ed264a2d",
+      "usage": {
+        "completion_tokens": 221,
+        "completion_tokens_details": {
+          "reasoning_tokens": 44
+        },
+        "prompt_tokens": 13736,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13957
+      }
+    }
+  ],
+  "response_id": "20261002003229848a6109ed264a2d",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 221,
+    "completion_tokens_details": {
+      "reasoning_tokens": 44
+    },
+    "prompt_tokens": 13736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 13957
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 faithfully reproduces the original Tobacco Vanille bottle with a plausible gold label, sits convincingly on a wine-red surface with a soft contact shadow and a warm light pool that reads as a finished studio set. Typography is clean and coherent (brand, product name, EDP line), the color mood suits the tobacco-vanille scent, and no studio equipment or floating-packshot defect appears. Versions 2–4 are near-identical weaker copies of the same layout with flatter lighting and a less grounded bottle.",
+    "remaining_problems": [
+      "Concept is safe but generic — no distinctive campaign storytelling element beyond color and light",
+      "Typography lacks the premium serif refinement of the actual Tom Ford brand system",
+      "Composition is static; a hero ingredient (tobacco leaf, vanilla pod) could add narrative depth"
+    ]
+  },
+  "duration_seconds": 7.753
+}

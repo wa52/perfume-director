@@ -1,0 +1,56 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "2026100200115981a3bbdf96a347f2",
+      "usage": {
+        "completion_tokens": 24,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1730,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 1754
+      }
+    }
+  ],
+  "response_id": "2026100200115981a3bbdf96a347f2",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 24,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1730,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1754
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "brand": "Tom Ford",
+    "product_name": "Tobacco Vanille"
+  },
+  "duration_seconds": 2.606
+}

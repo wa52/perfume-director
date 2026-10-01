@@ -1,0 +1,46 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 85,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Inconsistent lighting direction: The background prompt specifies 'soft diffused diagonal light from a high window,' but the poster shows a bright highlight on the left wall and uneven illumination on the red floor. The lighting does not align with the product's hard side-light, creating a disjointed studio environment."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography placement: The text elements (logo, title, subtitle) remain right-aligned, creating an unbalanced composition. Professional luxury campaigns typically use centered or symmetric typography to emphasize elegance, and the current layout feels disconnected from the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep wine-red painted plaster wall meeting a continuous matte red floor, close-up studio interior, soft diffused diagonal light from a high window casting gentle shadows, dark burgundy material spanning every horizontal and vertical edge, smooth clean center and lower foreground, realistic physical studio environment photograph"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "reported_score": 82.1
+}

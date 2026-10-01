@@ -1,0 +1,92 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "5e37849fbd53f18e474b85bd1fd5b5cdc019a3430ff4b107c4ea81d0cba26c10"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "67cfc23b08b512264e74c88cd4e56b4b946d11d092084c913f7d108c9d6f0283"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "63156351d8327b189db007d8c25154c7cd3e67e9c0732dfd554353b46230499c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261002002416b0eb6e735d944515",
+      "usage": {
+        "completion_tokens": 502,
+        "completion_tokens_details": {
+          "reasoning_tokens": 180
+        },
+        "prompt_tokens": 10713,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 11215
+      }
+    }
+  ],
+  "response_id": "20261002002416b0eb6e735d944515",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 502,
+    "completion_tokens_details": {
+      "reasoning_tokens": 180
+    },
+    "prompt_tokens": 10713,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 11215
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": true,
+    "score": 86,
+    "dimensions": {
+      "product_fidelity": 95,
+      "composition": 85,
+      "typography": 82,
+      "background": 86,
+      "physical_integration": 88,
+      "reference_alignment": 82,
+      "creative_coherence": 84
+    },
+    "problems": [],
+    "changes": [],
+    "notes": "Visible changes vs previous version: the background was regenerated with the warm charcoal-brown seamless environment - the flat two-tone wall/floor split is gone, replaced by a continuous polished floor with mottled texture, ivory upper-left diffusion and amber bloom wrapping the right side, finally expressing the tobacco-vanille warmth. Contact detail crop [488,1105,1031,1355] confirms the bottle base rests on the floor with a believable darkened contact line and soft reflection beneath the base; grounding is now solid (base_y=1245, within the 91% limit; height_ratio 0.5903 in hero range; no floating, no extra bottles, label matches the original product exactly). Title/product overlap is false on the geometry and visually confirmed - the left text stack stays clear of the bottle. Remaining minor weaknesses: the text stack is still modest in presence versus reference headline typography, and the environment, while much improved, is less sculpturally tactile than the foil/wood/fire references - competent-to-polished level rather than fully resolved campaign artistry, but no unresolved problems."
+  },
+  "duration_seconds": 14.696
+}

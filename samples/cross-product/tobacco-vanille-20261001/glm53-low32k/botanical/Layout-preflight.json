@@ -1,0 +1,170 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 4053,
+    "background": {
+      "color": "#DCE5D3",
+      "prompt": "Empty pale sage green seamless studio floor and wall, soft diffuse morning window light from the front, blurred out-of-focus green leaves and thin branch shadows only at the far left and upper right edges, quiet clear open center, airy organic still-life atmosphere, gentle soft shadows on continuous matte floor, no furniture",
+      "revision": 0
+    },
+    "product": {
+      "x": 720,
+      "y": 842,
+      "width": 470,
+      "height": 792
+    },
+    "lighting": "soft_diffused_light",
+    "palette": [
+      "#DCE5D3",
+      "#F5F1E6",
+      "#3A4A3A",
+      "#1A1A18"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 84,
+      "y": 120,
+      "size": 40,
+      "color": "#3A4A3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 86,
+      "y": 180,
+      "size": 20,
+      "color": "#5C6B58",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 86,
+      "y": 1330,
+      "size": 20,
+      "color": "#5C6B58",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 84,
+      "y": 70,
+      "size": 26,
+      "color": "#3A4A3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.28,
+      "blur": 14,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 86,
+      "y": 230,
+      "width": 70,
+      "color": "#9BAF94"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 4053,
+    "background": {
+      "color": "#DCE5D3",
+      "prompt": "Empty pale sage green seamless studio floor and wall, soft diffuse morning window light from the front, blurred out-of-focus green leaves and thin branch shadows only at the far left and upper right edges, quiet clear open center, airy organic still-life atmosphere, gentle soft shadows on continuous matte floor, no furniture",
+      "revision": 0
+    },
+    "product": {
+      "x": 720,
+      "y": 842,
+      "width": 470,
+      "height": 792
+    },
+    "lighting": "soft_diffused_light",
+    "palette": [
+      "#DCE5D3",
+      "#F5F1E6",
+      "#3A4A3A",
+      "#1A1A18"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 84,
+      "y": 120,
+      "size": 40,
+      "color": "#3A4A3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 86,
+      "y": 180,
+      "size": 20,
+      "color": "#5C6B58",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 86,
+      "y": 1330,
+      "size": 20,
+      "color": "#5C6B58",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 84,
+      "y": 70,
+      "size": 26,
+      "color": "#3A4A3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.28,
+      "blur": 14,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 86,
+      "y": 230,
+      "width": 70,
+      "color": "#9BAF94"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

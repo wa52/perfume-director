@@ -1,0 +1,61 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012334249add69ce8e2749dd",
+      "usage": {
+        "completion_tokens": 70,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1902,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        },
+        "total_tokens": 1972
+      }
+    }
+  ],
+  "response_id": "202610012334249add69ce8e2749dd",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 70,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1902,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 1972
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "TOBACCO VANILLE",
+    "logo": "TOM FORD",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "title, logo, subtitle from product image; price empty as per user instruction"
+  },
+  "duration_seconds": 2.098
+}

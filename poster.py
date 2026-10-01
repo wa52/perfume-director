@@ -164,8 +164,10 @@ def vision(config, prompt, images, trace_path=None):
     if not key or config['vision_model'] == 'YOUR_VISION_MODEL':
         raise ValueError('Set vision_model and the '+config['api_key_env']+' environment variable')
     options = config.get('vision_options', {})
-    if not isinstance(options, dict) or set(options)-{'thinking', 'max_tokens', 'temperature', 'top_p'}:
+    if not isinstance(options, dict) or set(options)-{'thinking', 'reasoning_effort', 'max_tokens', 'temperature', 'top_p'}:
         raise ValueError('Unsupported vision_options; model/messages/auth cannot be overridden')
+    if 'reasoning_effort' in options and options['reasoning_effort'] not in ('none','minimal','low','medium','high','xhigh','max'):
+        raise ValueError('Unsupported reasoning_effort')
     content = [{'type': 'text', 'text': prompt}]
     edge = config.get('vision_image_max_edge', 1280)
     if type(edge) is not int or not 512 <= edge <= 1600:
@@ -205,10 +207,13 @@ def vision(config, prompt, images, trace_path=None):
                 result = json.loads(choice['message']['content'])
                 if not isinstance(result, dict):
                     raise ValueError('Vision response must be a JSON object')
-                if set(result) == {'answer'} and isinstance(result['answer'], dict):
+                if set(result) == {'answer'} and isinstance(result['answer'], (dict,str)):
                     trace['raw_output'] = result
-                    result = result['answer']
-                    trace['normalization'] = 'single_answer_envelope'
+                    wrapped = result['answer']
+                    result = json.loads(wrapped) if isinstance(wrapped,str) else wrapped
+                    if not isinstance(result,dict):
+                        raise ValueError('Vision answer must contain a JSON object')
+                    trace['normalization'] = 'json_string_answer_envelope' if isinstance(wrapped,str) else 'single_answer_envelope'
                 attempt_trace.update(status='OK', response_id=response.get('id'), usage=response.get('usage'))
                 trace.update(status='OK', output=result)
                 return result
@@ -529,12 +534,23 @@ def prepare_layout(config, spec, product):
             candidate[name] = {**safe[name], 'text': text, 'color': color}
     ensure_fonts()
     w = candidate['canvas']['width']
+    product_box = rendered_geometry(candidate,product,config['font'])['product_bbox']
+    measuring = ImageDraw.Draw(Image.new('RGB',(1,1)))
     for name in TEXT_LAYERS:
         t = candidate[name]
         if not t['text']:
             continue
-        max_width = w*(.82 if direction == 'cream-minimal' else .30 if direction == 'burgundy-editorial' else .43)
-        while t['size'] > 16 and ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']) > max_width:
+        style_width = w*(.82 if direction == 'cream-minimal' else .30 if direction == 'burgundy-editorial' else .43)
+        while t['size'] > 16:
+            face = ImageFont.truetype(t.get('font',config['font']),round(t['size']))
+            box = measuring.textbbox((t['x'],t['y']),t['text'],font=face,anchor='lt')
+            max_width = min(style_width,w*.96-t['x']-2) if direction != 'cream-minimal' else style_width
+            # A fixed percentage is insufficient when the new bottle is wider.
+            # Recompute vertical intersection as shrinking can clear its top edge.
+            if direction != 'cream-minimal' and max(box[1],product_box[1]) < min(box[3],product_box[3]) and t['x'] < product_box[0]:
+                max_width = min(max_width,product_box[0]-t['x']-w*.025-2)
+            if max(face.getlength(t['text']),box[2]-box[0]) <= max_width:
+                break
             t['size'] -= 1
         if direction == 'cream-minimal':
             t['x'] = round((w-ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']))/2)
@@ -555,7 +571,7 @@ def review_validated(config, spec, product, poster, ref_images, folder, previous
 
 def resolve_copy(config, product, brief, folder):
     """Read product identity once, separately from creative layout decisions."""
-    result = vision(config, 'Read only the actual product image and user brief, not reference brands. Return exactly {title,logo,subtitle,price,evidence}, all single-line strings. title is the exact product name, logo the visible brand, subtitle only a legible product category/concentration or explicit user copy. price must be empty unless the user explicitly provides one. Never use placeholder category words such as 香氛 as the product name. If text cannot be read reliably, use empty strings rather than inventing identity. evidence explains which words are visible versus supplied by the user. User copy and prohibitions take priority. Brief: '+brief, [product], trace_path=folder/'Product-copy-call.json')
+    result = vision(config, 'Read only the actual product image and user brief, not reference brands. Return exactly {title,logo,subtitle,price,evidence}, all single-line strings. title is the exact product name without prepending the separately displayed brand; copy the product-name line on the label, not a combined retailer-style brand + name. logo is the visible brand, subtitle only a legible product category/concentration or explicit user copy. price must be empty unless the user explicitly provides one. Never use placeholder category words such as 香氛 as the product name. If text cannot be read reliably, use empty strings rather than inventing identity. evidence explains which words are visible versus supplied by the user. User copy and prohibitions take priority. Brief: '+brief, [product], trace_path=folder/'Product-copy-call.json')
     for name in (*TEXT_LAYERS,'evidence'):
         if not isinstance(result.get(name),str) or '\n' in result[name] or len(result[name]) > (1000 if name=='evidence' else 160):
             raise ValueError('Invalid product copy contract')
@@ -570,7 +586,7 @@ def select_final(config, run_dir, versions, product, ref_images):
     if len(pool)<2 or not config.get('compare_final_versions',False):
         return fallback
     try:
-        verdict = vision(config, 'Select the strongest finished perfume poster by directly comparing images, without numerical scores. First image is the original product, next three are references; remaining images are candidate posters in listed order. Prefer coherent typography, recognizable product, convincing physical contact and lighting, controlled materials and a distinct campaign concept. Visible studio equipment (softboxes, lamps, cameras, stands) is a rejected setup artifact, not a positive luxury campaign feature. A floating packshot in front of a raised support is also a defect. Prefer a clean finished set over behind-the-scenes photography. Do not choose a version merely because it is newer. Return {selected_version:integer,evidence:string,remaining_problems:[string]}. This is relative selection, never an approval or PASS. Candidates: '+json.dumps([{'version':v['version']} for v in pool]), [product,*ref_images,*[run_dir/v['poster'] for v in pool]],trace_path=run_dir/'Selection-call.json')
+        verdict = vision(config, 'Select the strongest finished perfume poster by directly comparing images, without numerical scores. First image is the original product, next three are references; remaining images are candidate posters in listed order. Prefer coherent typography, recognizable product, convincing physical contact and lighting, controlled materials and a distinct campaign concept. Visible studio equipment (softboxes, lamps, cameras, stands) is a rejected setup artifact, not a positive luxury campaign feature. A floating packshot in front of a raised support is also a defect. Prefer a clean finished set over behind-the-scenes photography. Do not choose a version merely because it is newer. Return {selected_version:integer,evidence:string,remaining_problems:[string]}. selected_version MUST be a listed candidate version, never the image_index: for example image 5 may mean version 1. This is relative selection, never an approval or PASS. Candidates: '+json.dumps([{'version':v['version'],'image_index':index+5} for index,v in enumerate(pool)]), [product,*ref_images,*[run_dir/v['poster'] for v in pool]],trace_path=run_dir/'Selection-call.json')
         if type(verdict.get('selected_version')) is not int or not isinstance(verdict.get('evidence'),str) or not verdict['evidence'].strip() or not isinstance(verdict.get('remaining_problems'),list) or not all(isinstance(p,str) for p in verdict['remaining_problems']):
             raise ValueError('Invalid visual selection contract')
         chosen = next(v for v in pool if v['version']==verdict['selected_version'])

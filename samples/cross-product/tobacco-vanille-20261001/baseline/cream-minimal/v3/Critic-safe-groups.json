@@ -1,0 +1,33 @@
+{
+  "accepted": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.55
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory velvet surface with subtle texture, soft directional light from upper left, muted gold accents, elegant studio ambiance"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "logo.size",
+          "op": "multiply",
+          "value": 1.2
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

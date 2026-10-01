@@ -1,0 +1,22 @@
+{
+  "runtime_matches_source": true,
+  "tests": {
+    "passed": 58,
+    "new_regressions": 2,
+    "failure_reproduced_before_fix": true
+  },
+  "base_commit": "5ac7322",
+  "control_model": "glm-4.6v",
+  "control_trial": "retest",
+  "control_source_sha256": "1a6583cf19c705c6ac7535e73e3b63fff5b93a3a7007c5cc0f76cdb77304f67e",
+  "control_runtime_sha256": "1a6583cf19c705c6ac7535e73e3b63fff5b93a3a7007c5cc0f76cdb77304f67e",
+  "final_source_sha256": "7135fb69a0254a580850026f1b606a700538384149f9a313461299f6d9d45929",
+  "final_runtime_sha256": "7135fb69a0254a580850026f1b606a700538384149f9a313461299f6d9d45929",
+  "final_runtime_matches_source": true,
+  "final_tests": {
+    "passed": 62,
+    "new_cases": 6,
+    "layout_failure_reproduced_before_fix": true,
+    "answer_envelope_failure_reproduced_before_fix": true
+  }
+}

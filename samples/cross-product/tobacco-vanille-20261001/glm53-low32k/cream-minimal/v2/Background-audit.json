@@ -1,0 +1,19 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm ivory seamless studio environment, polished ivory floor plane meeting a softly lit wall in a seamless curve, broad diffused frontal light with a subtle warm glow pooling behind the central space, faint reflective sheen on the floor beneath the open center, gentle low-contrast falloff at the corners, no objects, no horizon edge, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 2061,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "subtitle.color",
+      "old": "#8A6F3C",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

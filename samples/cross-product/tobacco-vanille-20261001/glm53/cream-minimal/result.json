@@ -1,0 +1,31 @@
+{
+  "status": "NEEDS_REVIEW",
+  "mode": "live",
+  "standalone_vision_api_used": true,
+  "vision_model": "glm-5.3-flash",
+  "selected": {
+    "version": 1,
+    "score": null,
+    "pass": false,
+    "poster": "v1/poster.png",
+    "spec": "v1/PosterSpec.json",
+    "critic": "v1/Critic.json",
+    "review_error": "RemoteDisconnected",
+    "sha256": "9c7e6a6e4cd73eb8717be18073a5d55dab48ef3dc55d71c82d798c306afddc20"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": null,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": "RemoteDisconnected",
+      "sha256": "9c7e6a6e4cd73eb8717be18073a5d55dab48ef3dc55d71c82d798c306afddc20"
+    }
+  ],
+  "review_failures": [
+    1
+  ]
+}

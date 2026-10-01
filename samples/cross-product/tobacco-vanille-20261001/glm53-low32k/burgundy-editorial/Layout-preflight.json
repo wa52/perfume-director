@@ -1,0 +1,172 @@
+{
+  "issues": [
+    "contact_shadow_detached",
+    "title_outside_safe_area",
+    "subtitle_outside_safe_area"
+  ],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 3074,
+    "background": {
+      "color": "#5A142B",
+      "prompt": "Deep wine-red matte paper wall meeting a continuous seamless wine-red paper floor, flat even studio interior, one crisp architectural diagonal shadow falling across the upper wall like a window-frame cast, smooth uncluttered center and lower foreground, uniform broad soft frontal illumination across the whole scene, realistic physical studio environment photograph",
+      "revision": 0
+    },
+    "product": {
+      "x": 380,
+      "y": 855,
+      "width": 460,
+      "height": 790
+    },
+    "lighting": "soft_frontal_light",
+    "palette": [
+      "#5A142B",
+      "#F2E7D8",
+      "#C89A4B"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 680,
+      "y": 300,
+      "size": 96,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arialbd.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 680,
+      "y": 410,
+      "size": 96,
+      "color": "#C89A4B",
+      "font": "C:/Windows/Fonts/arialbd.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 680,
+      "y": 1320,
+      "size": 20,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 680,
+      "y": 540,
+      "size": 26,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.45,
+      "blur": 6,
+      "offset_x": 26,
+      "offset_y": 10,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 680,
+      "y": 470,
+      "width": 90,
+      "color": "#C89A4B"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 3074,
+    "background": {
+      "color": "#5A142B",
+      "prompt": "Deep wine-red matte paper wall meeting a continuous seamless wine-red paper floor, flat even studio interior, one crisp architectural diagonal shadow falling across the upper wall like a window-frame cast, smooth uncluttered center and lower foreground, uniform broad soft frontal illumination across the whole scene, realistic physical studio environment photograph",
+      "revision": 0
+    },
+    "product": {
+      "x": 400,
+      "y": 820,
+      "width": 520,
+      "height": 850
+    },
+    "lighting": "soft_frontal_light",
+    "palette": [
+      "#5A142B",
+      "#F2E7D8",
+      "#C89A4B"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 680,
+      "y": 310,
+      "size": 35,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 680,
+      "y": 420,
+      "size": 22,
+      "color": "#C89A4B",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 680,
+      "y": 220,
+      "size": 34,
+      "color": "#F2E7D8",
+      "font": "C:/Windows/Fonts/arial.ttf"
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 680,
+      "y": 470,
+      "width": 90,
+      "color": "#C89A4B"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "source": "deterministic_director_guard"
+}

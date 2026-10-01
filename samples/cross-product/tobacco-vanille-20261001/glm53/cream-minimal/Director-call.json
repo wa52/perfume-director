@@ -1,0 +1,145 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 8192,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 4,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "dior-jadore-gold-bottle.jpg",
+      "sha256": "7aa2e40bfb02a3e0b85722d515a62fe5a4e8d907890cf9e8fc6f855fec9b11c3"
+    },
+    {
+      "name": "chanel-coco-mademoiselle.jpg",
+      "sha256": "07c47ba6d2085ea7313e277d6910d102ea1e8f712038ad5086eb63ad41882805"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012357500b74cc4e023e4112",
+      "usage": {
+        "completion_tokens": 5297,
+        "completion_tokens_details": {
+          "reasoning_tokens": 4709
+        },
+        "prompt_tokens": 6655,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 11952
+      }
+    }
+  ],
+  "response_id": "202610012357500b74cc4e023e4112",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 5297,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4709
+    },
+    "prompt_tokens": 6655,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 11952
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 12,
+    "background": {
+      "color": "#F4EBDA",
+      "prompt": "Empty warm ivory seamless photography studio, broad soft frontal light wrapping the space evenly, gentle cream tonal gradient from pale ivory to warm beige, continuous seamless matte floor merging smoothly into the back wall, smooth low-contrast surfaces, calm generous negative space, quiet minimal serene atmosphere",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 821,
+      "width": 674,
+      "height": 864
+    },
+    "lighting": "soft_frontal_light",
+    "palette": [
+      "#F4EBDA",
+      "#2B2015",
+      "#8A6B3A"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 109,
+      "y": 176,
+      "size": 92,
+      "color": "#2B2015",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 428,
+      "y": 1332,
+      "size": 28,
+      "color": "#8A6B3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#8A6B3A",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 401,
+      "y": 100,
+      "size": 54,
+      "color": "#2B2015",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.25,
+      "blur": 18,
+      "offset_x": 0,
+      "offset_y": 10,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 104,
+      "y": 360,
+      "width": 80,
+      "color": "#C7B793"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "duration_seconds": 104.872
+}

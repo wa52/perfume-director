@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 78.6,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 78,
+    "typography": 82,
+    "background": 72,
+    "physical_integration": 70,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow offset_y is incorrect: The bottle base (y=1245) has a shadow with offset_y=-2, but the enlarged detail (image 6) shows the shadow is too faint and misaligned, creating a subtle floating effect. The shadow should be darker and more tightly aligned to the base."
+    },
+    {
+      "type": "background",
+      "problem": "Background lacks luxury texture: The warm ivory gradient is still too plain. Professional campaigns (e.g., Dior J'adore, image 3) use textured materials like velvet or marble to enhance premium feel. The current background fails to provide tactile depth."
+    },
+    {
+      "type": "composition",
+      "problem": "Typography hierarchy is unbalanced: The title (96px) and subtitle (24px) are now larger, but the logo (46px) remains underemphasized. The logo should be more prominent to match the product's premium identity."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Disconnect from luxury references: Unlike Jo Malone (image 5), which uses cohesive color/lighting, this poster’s neutral background and weak typography fail to elevate the product’s premium identity."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory velvet surface, soft directional light from upper left, subtle texture, muted gold accents, elegant studio ambiance"
+    },
+    {
+      "path": "logo.size",
+      "op": "multiply",
+      "value": 1.15
+    }
+  ],
+  "reported_score": 78.2
+}

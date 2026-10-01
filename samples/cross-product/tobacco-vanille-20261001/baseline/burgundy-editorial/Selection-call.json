@@ -1,0 +1,86 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "44b67ccca4ffd9f4af5e97974b13cc1c88811ac82258a726ddaf0d5c07b4899a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "f03dcb07f2854bfa1021e8428c72c531a40497a72b72caf1d089860f97f8c5d1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "e2a0e8385849663f9b56783485c104a08c1eb465c4e4ceeb3c5665a7d5681b7a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001232950fe2fb622e58d4673",
+      "usage": {
+        "completion_tokens": 163,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 11835,
+        "prompt_tokens_details": {
+          "cached_tokens": 91
+        },
+        "total_tokens": 11998
+      }
+    }
+  ],
+  "response_id": "20261001232950fe2fb622e58d4673",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 163,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 11835,
+    "prompt_tokens_details": {
+      "cached_tokens": 91
+    },
+    "total_tokens": 11998
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 demonstrates the strongest campaign concept with a cohesive luxury aesthetic: the rich burgundy textured background and wooden floor create a sophisticated, tactile environment that complements the product's dark bottle. Typography is clean and well-integrated, with the product clearly recognizable and positioned naturally within the scene. Lighting is controlled, enhancing the bottle's contours without visible studio equipment, and the overall composition avoids defects like floating packshots or behind-the-scenes artifacts.",
+    "remaining_problems": [
+      "Version 1's background feels overly simple and lacks depth, reducing the luxurious atmosphere.",
+      "Version 3's background, while textured, appears slightly less refined in contrast to Version 2's more polished environment."
+    ]
+  },
+  "duration_seconds": 13.638
+}

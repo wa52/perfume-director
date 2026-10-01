@@ -1,0 +1,28 @@
+{
+  "accepted": [],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.x",
+          "op": "set",
+          "value": 720
+        }
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 150
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

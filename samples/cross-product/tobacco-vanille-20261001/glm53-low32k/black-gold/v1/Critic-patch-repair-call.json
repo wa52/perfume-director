@@ -1,0 +1,122 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "63156351d8327b189db007d8c25154c7cd3e67e9c0732dfd554353b46230499c"
+    },
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610020023278d0800315bf144ac",
+      "usage": {
+        "completion_tokens": 566,
+        "completion_tokens_details": {
+          "reasoning_tokens": 346
+        },
+        "prompt_tokens": 7816,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8382
+      }
+    }
+  ],
+  "response_id": "202610020023278d0800315bf144ac",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 566,
+    "completion_tokens_details": {
+      "reasoning_tokens": 346
+    },
+    "prompt_tokens": 7816,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 8382
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 58
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 310
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 40
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 240
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 430
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Empty warm charcoal-brown seamless studio environment, continuous softly polished dark floor, broad soft ivory diffused light from the upper left, rich amber and bronze light bloom wrapping the right side of the frame, faint warm golden tonal drift in the dark background suggesting tobacco and vanilla warmth, deep sculptural shadows receding to near-black on the left, elegant minimalist still-life atmosphere, full bleed"
+      }
+    ]
+  },
+  "duration_seconds": 11.562
+}

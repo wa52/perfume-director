@@ -1,0 +1,94 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "90776955a8bb83baf463c251ed89d10802b1a39933ea3d8623e0eb4a924b24ce"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "94f2e46269d29feb47f062c2ca982005012d9c57797523566e9d442883c9846e"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ebff9403b1727e84e8baf5a890b3a5d08fc23bf91ab793daee29a05e5efe10d7"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "671964e9a90108272648b983f334dafd8d34a72d4f00bcfa0bd6e144245879fc"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "3038d72a24947ad7cb1dfffe67f001b576ddcf53de4eb8cd2695c978121690b9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001233946da6e8b06c5f049cd",
+      "usage": {
+        "completion_tokens": 185,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 12700,
+        "prompt_tokens_details": {
+          "cached_tokens": 148
+        },
+        "total_tokens": 12885
+      }
+    }
+  ],
+  "response_id": "20261001233946da6e8b06c5f049cd",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 185,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 12700,
+    "prompt_tokens_details": {
+      "cached_tokens": 148
+    },
+    "total_tokens": 12885
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 7,
+    "evidence": "Version 7 presents the most refined execution of the campaign concept. The typography is coherent and elegant, the product is clearly recognizable, and the lighting creates a sophisticated, luxurious atmosphere. The materials (wooden wall, dark floor) are controlled and contribute to a distinct, high-end feel. The composition avoids any visible studio equipment or floating packshot defects, resulting in a clean, finished set that aligns with luxury perfume advertising standards.",
+    "remaining_problems": [
+      "Version 5 and 6 have a slightly less refined background texture compared to version 7, making the overall finish appear less premium.",
+      "Version 8 and 9, while similar to version 7, do not offer a significant improvement in lighting, material control, or overall polish to justify selection over version 7."
+    ]
+  },
+  "duration_seconds": 8.51
+}

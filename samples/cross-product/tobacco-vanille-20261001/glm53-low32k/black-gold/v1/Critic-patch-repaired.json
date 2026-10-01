@@ -1,0 +1,55 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 58
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 310
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 430
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm charcoal-brown seamless studio environment, continuous softly polished dark floor, broad soft ivory diffused light from the upper left, rich amber and bronze light bloom wrapping the right side of the frame, faint warm golden tonal drift in the dark background suggesting tobacco and vanilla warmth, deep sculptural shadows receding to near-black on the left, elegant minimalist still-life atmosphere, full bleed"
+    }
+  ]
+}

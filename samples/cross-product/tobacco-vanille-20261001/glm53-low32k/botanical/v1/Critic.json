@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 82.4,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 78,
+    "typography": 82,
+    "background": 84,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop (462,1098)-(979,1348) shows the bottle base resting on the floor with a faint soft shading line under the base, but the contact cue is very weak for a dark glossy bottle on a light matte floor; the shadow reads as ambient occlusion rather than a committed contact shadow, slightly weakening the grounded feel."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Compared with the three references, which use layered set design (florals, drapery, tonal depth, bold integrated typography), this poster is a single isolated bottle on a flat sage field. The references achieve depth via foreground/midground layering and typographic scale contrast; here the composition is competent but generic and lacks a signature element beyond the leaf shadows."
+    },
+    {
+      "type": "composition",
+      "problem": "The left text block (logo/title/subtitle confined to x 84-452, small sizes 20-40px) is disconnected in scale from the large hero bottle (55% of canvas height); the upper-left quadrant feels sparse while the bottle dominates the right-center, producing an unbalanced visual weight without an anchoring graphic device."
+    },
+    {
+      "type": "typography",
+      "problem": "Title at 40px in Times reads generic against the luxury references (Dior's oversized serif headline, Jo Malone's tracked caps); hierarchy between logo 26px / title 40px / subtitle 20px is too compressed and lacks letter-spacing refinement expected in a luxury campaign."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.38
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 56
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green matte seamless studio environment, continuous floor and wall with a soft far tonal transition, warm soft diffuse frontal light with a gentle directional falloff from the right, delicate out-of-focus leaf and thin branch shadows at the far left and upper right edges only, a low calm pool of brighter light on the floor at the center right where the hero sits, quiet airy organic still-life atmosphere, no furniture"
+    }
+  ],
+  "reported_score": 81
+}

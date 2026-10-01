@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "score": 86.0,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 85,
+    "typography": 82,
+    "background": 86,
+    "physical_integration": 88,
+    "reference_alignment": 82,
+    "creative_coherence": 84
+  },
+  "problems": [],
+  "changes": [],
+  "notes": "Visible changes vs previous version: the background was regenerated with the warm charcoal-brown seamless environment - the flat two-tone wall/floor split is gone, replaced by a continuous polished floor with mottled texture, ivory upper-left diffusion and amber bloom wrapping the right side, finally expressing the tobacco-vanille warmth. Contact detail crop [488,1105,1031,1355] confirms the bottle base rests on the floor with a believable darkened contact line and soft reflection beneath the base; grounding is now solid (base_y=1245, within the 91% limit; height_ratio 0.5903 in hero range; no floating, no extra bottles, label matches the original product exactly). Title/product overlap is false on the geometry and visually confirmed - the left text stack stays clear of the bottle. Remaining minor weaknesses: the text stack is still modest in presence versus reference headline typography, and the environment, while much improved, is less sculpturally tactile than the foil/wood/fire references - competent-to-polished level rather than fully resolved campaign artistry, but no unresolved problems.",
+  "reported_score": 86
+}

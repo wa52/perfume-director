@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base (y=1245) lacks a shadow, violating the -2..0 offset_y requirement. The enlarged detail (crop [488,1105,1031,1355]) confirms no shadow beneath the bottle, creating an unrealistic floating effect."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The prompt describes 'broad soft frontal light from upper left' but the poster shows a flat, untextured dark surface with no directional highlights. The lighting does not support the product's glossy finish, reducing luxury perception."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography hierarchy: The title 'TOBACCO VANILLE' (y=350) is too low, competing with the product's upper third. The logo (y=260) is misaligned, breaking the left-aligned text flow seen in professional references (e.g., Tom Ford Black Orchid)."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic backdrop: The seamless studio floor lacks the dramatic, textured environments of references (e.g., Armani Prive's wood/splashes, YSL Libre's fire). This reduces the campaign's premium feel."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep charcoal studio with a satin-smooth floor, directional soft light from upper left casting subtle highlights on the right foreground, cool vertical gradient behind the product, elegant photographic still life environment, full bleed"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 280
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 220
+    }
+  ],
+  "reported_score": 78
+}

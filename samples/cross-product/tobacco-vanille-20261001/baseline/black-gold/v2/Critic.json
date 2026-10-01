@@ -1,0 +1,31 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 80,
+    "typography": 85,
+    "background": 75,
+    "physical_integration": 80,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The prompt specifies 'directional soft light from upper left casting subtle highlights on the right foreground,' but the poster shows a flat, untextured dark surface with no visible highlights. The lighting fails to enhance the product's glossy finish, reducing luxury perception."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Generic backdrop: The seamless studio floor lacks the dramatic, textured environments of references (e.g., Armani Prive's wood/splashes, YSL Libre's fire). This diminishes the campaign's premium feel compared to professional luxury campaigns."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep charcoal studio with a satin-smooth floor, directional soft light from upper left casting subtle highlights on the right foreground, cool vertical gradient behind the product, elegant photographic still life environment, full bleed"
+    }
+  ],
+  "reported_score": 82.1
+}

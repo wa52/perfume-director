@@ -1,0 +1,86 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-figue.jpg",
+      "sha256": "3537f1305e42003b04c3f499533c3ca39e5f5bf0938ed14e35f41990cff0d9de"
+    },
+    {
+      "name": "byredo-rose-absolu.jpg",
+      "sha256": "f91b4043c2422c64c49560f0d5cf1a3ec9d7535e345699fbf128485507e9c3e9"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d91cc8563ad6c738a90ccd758922c0d03b4ef0425b32a8b069b1244e46da20b7"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "a3ca76d17c39bb416374765859f3799d6358ac5ad138594de7735fa2be34218d"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "2c6614855ef8aae420feb0b0dbd1e8414ddb58a4bf89df1f626726971c23d188"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001234657ead1a60f21a04903",
+      "usage": {
+        "completion_tokens": 142,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 11835,
+        "prompt_tokens_details": {
+          "cached_tokens": 260
+        },
+        "total_tokens": 11977
+      }
+    }
+  ],
+  "response_id": "20261001234657ead1a60f21a04903",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 142,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 11835,
+    "prompt_tokens_details": {
+      "cached_tokens": 260
+    },
+    "total_tokens": 11977
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 presents the most polished execution with a clean, controlled environment, consistent lighting that enhances the product's luxurious feel, and typography that is both legible and integrated into the composition. The product is clearly recognizable, and the overall aesthetic aligns with high-end luxury standards without visible studio artifacts or defects.",
+    "remaining_problems": [
+      "Version 1 has a slightly less refined background and lighting compared to Version 2, making it feel less polished.",
+      "Version 3, while clean, lacks the same level of visual impact and depth in lighting as Version 2."
+    ]
+  },
+  "duration_seconds": 8.535
+}

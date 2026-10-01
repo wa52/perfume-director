@@ -1,0 +1,63 @@
+{
+  "accepted": [],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "logo.font",
+          "op": "set",
+          "value": "C:/Windows/Fonts/times.ttf"
+        },
+        {
+          "path": "title.font",
+          "op": "set",
+          "value": "C:/Windows/Fonts/times.ttf"
+        },
+        {
+          "path": "subtitle.font",
+          "op": "set",
+          "value": "C:/Windows/Fonts/georgia.ttf"
+        },
+        {
+          "path": "logo.size",
+          "op": "set",
+          "value": 40
+        },
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 42
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 396
+        }
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "group": "decoration",
+      "changes": [
+        {
+          "path": "decoration.enabled",
+          "op": "set",
+          "value": true
+        },
+        {
+          "path": "decoration.y",
+          "op": "set",
+          "value": 950
+        },
+        {
+          "path": "decoration.width",
+          "op": "set",
+          "value": 110
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

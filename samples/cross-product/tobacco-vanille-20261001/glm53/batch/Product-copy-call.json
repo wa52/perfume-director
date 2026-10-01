@@ -1,0 +1,58 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 8192,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "20261001235329dbf8107508064de1",
+      "usage": {
+        "completion_tokens": 341,
+        "completion_tokens_details": {
+          "reasoning_tokens": 204
+        },
+        "prompt_tokens": 1902,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2243
+      }
+    }
+  ],
+  "response_id": "20261001235329dbf8107508064de1",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 341,
+    "completion_tokens_details": {
+      "reasoning_tokens": 204
+    },
+    "prompt_tokens": 1902,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2243
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "TOM FORD TOBACCO VANILLE",
+    "logo": "TOM FORD",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "瓶身金色标签上清晰可见品牌TOM FORD、品名TOBACCO VANILLE及浓度EAU DE PARFUM，均直接取自商品图；容量50 ML按用户要求不写入任何字段；价格为空因用户未提供；用户简报仅提出禁止事项（不写价格、促销、新品承诺、容量），未另行提供文案，故无用户补充文字被采用"
+  },
+  "duration_seconds": 9.648
+}

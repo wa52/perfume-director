@@ -1,0 +1,50 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 85,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base rests on the surface but lacks a corresponding contact shadow, violating physical realism. The contact detail crop [478,1105,1021,1355] confirms the base is in contact, yet the shadow.offset_y is 0 (no offset), which is incorrect for a contact shadow."
+    },
+    {
+      "type": "background",
+      "problem": "Background lighting mismatch: The soft morning window light description conflicts with the flat, uniform illumination in the poster. The background appears artificially lit rather than naturally dappled, reducing luxury coherence."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric typography imbalance: The left-aligned text creates visual tension with the right-aligned bottle, disrupting compositional harmony. The bottle's right-heavy placement feels disconnected from the text block."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green seamless studio, soft morning window light casting dappled leaf shadows, spacious clean central area, natural fresh still-life set"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 180
+    }
+  ],
+  "reported_score": 78
+}

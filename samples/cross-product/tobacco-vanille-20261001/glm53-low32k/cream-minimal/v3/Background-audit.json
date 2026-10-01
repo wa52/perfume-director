@@ -1,0 +1,25 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty warm amber-toned seamless environment, softly lit curved plaster wall meeting a polished dark-gold floor plane in a seamless cove, gentle diffused frontal light with a warm golden glow pooling low behind the center, subtle mirrored sheen on the floor under the open center echoing the surrounding warmth, delicate low-contrast corner falloff, no objects, no horizon edge, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 2062,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "title.color",
+      "old": "#2A211A",
+      "value": "#F9F4E9",
+      "reason": "text_background_contrast_below_3"
+    },
+    {
+      "path": "subtitle.color",
+      "old": "#261E16",
+      "value": "#F9F4E9",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

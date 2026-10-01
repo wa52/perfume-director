@@ -247,3 +247,15 @@ Critic 可以通过白名单选择 Times、Georgia、Arial 或微软雅黑；修
 
 
 2026-10-01 质量迭代：Critic 额外看到按商品几何位置裁切、等比例放大的 `Contact-detail.png`，辅助识别细小的瓶底接触阴影。奶油方向强制保持文字光学居中，接触阴影垂直偏移限制为 -2～0，避免 Critic 将左上角误设到画布中心或移动阴影制造空隙。背景中的 softbox 词替换为光线效果描述；选图阶段也明确拒绝可见摄影设备。实际三批运行与局限见 [质量报告](samples/quality/jadore-20261001/REPORT.md)。
+
+
+## 第二款商品的自动化验证
+
+使用 Tom Ford Tobacco Vanille 透明商品图，以不包含品牌名称的通用 Brief 运行真实 ComfyUI 节点。原版植物方向因长标题与宽瓶身间距不足失败；通用排版修复后同配置复测四方向全部出图，58 项检查通过，审美状态仍全部 NEEDS_REVIEW。完整失败、修复与复测记录见 [跨商品测试报告](samples/cross-product/tobacco-vanille-20261001/REPORT.md)。这次验证仅覆盖已抠图透明 PNG，不代表任意照片均能自动处理。
+
+千问视觉接入模板为 `config.qwen.example.json`，使用 `DASHSCOPE_API_KEY` 与你的阿里云百炼工作空间地址；须替换 YOUR_WORKSPACE_ID 并确认模型访问权限。本机尚无该密钥和地址，未完成千问实跑。此处千问担任 Director/Critic，与上面的 Qwen 背景 workflow 是不同角色。官方接入说明：[千问视觉 API](https://help.aliyun.com/zh/model-studio/vision/)。
+
+
+更强视觉模型模板 `config.glm53.example.json` 使用本机已实际调用的 GLM-5.3-Flash，`reasoning_effort: low`、32768 输出额度及 300 秒请求超时。该模型不支持关闭思考；沿用 GLM-4.6V 的 `thinking.type: disabled` 会报错。更换模板前保留本地配置，密钥继续放在环境变量。客户端支持官方推理强度参数，并对单层 answer 中的 JSON 字符串解包，保存原始包装证据；截断或非法 JSON 继续拒绝。全部 62 项检查通过，真实四方向结果见跨商品报告。
+
+GLM-5.3-Flash 的完整第二款商品批次已完成：4/4 出图，13 个版本均有有效 Critic，黑金 V2 为模型 PASS，其余三方向 NEEDS_REVIEW。奶油方向出现琥珀色风格漂移，酒红与植物选回首版；另有一次修改修复 JSON 无效且被拒绝。不能据此宣称稳定商业审美。原始图片、每轮 Spec、评审、修复拒绝与预览核对见跨商品报告。

@@ -1,0 +1,103 @@
+{
+  "brief": "为上传的香水商品设计四个完全不同的高级商业海报方向。自行读取商品图上的真实品牌与产品名称；不要沿用此前测试商品的名称。不要写价格、促销、新品承诺或容量。保留原商品图，商品为主角，文字清晰，材质与光线协调。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：暖象牙白无接缝摄影棚，柔光，大瓶身正中，居中衬线标题置上方、描述置底部。瓶身高度60%，依靠留白和柔和材质，不加装饰。",
+  "product": "runtime\\director-jobs\\b25c6934baa94d959c3660c7e8a1e3c1\\product.png",
+  "references": [
+    {
+      "id": "dior-jadore-gold-bottle",
+      "brand": "Dior",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://www.pinterest.com/pin/735212707955227998/",
+      "image": "references/luxury/dior-jadore-gold-bottle.jpg",
+      "selection_reason": "全金色背景、偏右大瓶身与左侧文字实现统一色系下的主次分配。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.28,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_backlight",
+        "color": [
+          "gold",
+          "warm_white",
+          "amber"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "右侧商品",
+          "左侧文字",
+          "单色高级感"
+        ],
+        "perfume_suitability": 95,
+        "caveat": "旧广告画质一般，适合构图参考，不作材质细节真值。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "brand": "Chanel",
+      "style": "luxury",
+      "reference_kind": "人物商业广告",
+      "source_url": "https://cahiersdemode.com/coco-mademoiselle/",
+      "image": "references/luxury/chanel-coco-mademoiselle.jpg",
+      "selection_reason": "柔和米色人物背景、中央偏下商品与手写标题体现轻盈优雅的品牌气质。",
+      "analysis": {
+        "composition": "portrait_centered",
+        "subject_ratio": 0.13,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "low",
+        "lighting": "soft_portrait_light",
+        "color": [
+          "beige",
+          "peach",
+          "black",
+          "white"
+        ],
+        "typography": "handwritten",
+        "information_density": "low",
+        "characteristics": [
+          "亲近的人物",
+          "手写标题",
+          "暖色瓶身"
+        ],
+        "perfume_suitability": 69,
+        "caveat": "人物和手写字体不在第一版实现范围，只作情绪参考。"
+      },
+      "analysis_origin": "codex_visual_review"
+    },
+    {
+      "id": "jo-malone-peony",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "商业广告",
+      "source_url": "https://exclusivelines.lk/pages/brand-page-jomalone",
+      "image": "references/luxury/jo-malone-peony.jpg",
+      "selection_reason": "浅色留白、大瓶身与单侧牡丹构成轻盈的高级花香视觉。",
+      "analysis": {
+        "composition": "asymmetric",
+        "subject_ratio": 0.38,
+        "subject_ratio_method": "rough_visual_area_estimate",
+        "negative_space": "medium",
+        "lighting": "soft_diffused_light",
+        "color": [
+          "warm_white",
+          "pink",
+          "silver"
+        ],
+        "typography": "serif",
+        "information_density": "low",
+        "characteristics": [
+          "左侧商品",
+          "右侧花卉",
+          "顶部小品牌"
+        ],
+        "perfume_suitability": 92,
+        "caveat": "花朵不能遮挡商品标签。"
+      },
+      "analysis_origin": "codex_visual_review"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "glm-4.6v",
+  "vision_endpoint": "https://open.bigmodel.cn/api/paas/v4"
+}

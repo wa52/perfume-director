@@ -1,0 +1,81 @@
+{
+  "requested_model": "glm-4.6v",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "temperature": 0.2
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 180,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ddec3abc86493cfd9598a8c39842f6050a85bda0f7d91f484203db61555f2a1e"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "f44640a26d8be6fddd529d22f18b4b359ff0ae495b1f1cf11de49c718a2f691d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610012323025bcc7050ae764628",
+      "usage": {
+        "completion_tokens": 133,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7984,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        },
+        "total_tokens": 8117
+      }
+    }
+  ],
+  "response_id": "202610012323025bcc7050ae764628",
+  "returned_model": "glm-4.6v",
+  "usage": {
+    "completion_tokens": 133,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 7984,
+    "prompt_tokens_details": {
+      "cached_tokens": 58
+    },
+    "total_tokens": 8117
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 demonstrates superior visual hierarchy with a clean, minimalist background that emphasizes the product. The typography is coherent and elegant, matching the luxury brand identity. The lighting is controlled and highlights the bottle's contours without visible studio equipment, creating a polished, finished look. The product is clearly recognizable and the overall composition feels more refined than Version 1.",
+    "remaining_problems": [
+      "Version 1's background, while dark, lacks the same level of refinement and could be perceived as less polished compared to Version 2's minimalist approach."
+    ]
+  },
+  "duration_seconds": 6.654
+}

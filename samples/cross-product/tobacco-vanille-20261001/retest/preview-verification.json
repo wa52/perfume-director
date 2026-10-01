@@ -1,0 +1,22 @@
+[
+  {
+    "direction": "black-gold",
+    "sha256": "671964e9a90108272648b983f334dafd8d34a72d4f00bcfa0bd6e144245879fc",
+    "matches_selected": true
+  },
+  {
+    "direction": "cream-minimal",
+    "sha256": "f0b7e19d4afb83f43c6d420afa532bab9a12e5b1d165a35c5b2d70ded15c5df4",
+    "matches_selected": true
+  },
+  {
+    "direction": "burgundy-editorial",
+    "sha256": "a3ca76d17c39bb416374765859f3799d6358ac5ad138594de7735fa2be34218d",
+    "matches_selected": true
+  },
+  {
+    "direction": "botanical",
+    "sha256": "7e35aabc49389d768ff432f02fdd6472275ad2c7d17760c0e75e8fb1adb17fd8",
+    "matches_selected": true
+  }
+]

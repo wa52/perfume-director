@@ -1,0 +1,146 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 4,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "armani-santal-dansha.jpg",
+      "sha256": "bcaa7c3a11fc767c74a99b29362509ff32f876a0fb6203f9febcaf2ca0db3a03"
+    },
+    {
+      "name": "ysl-libre.jpg",
+      "sha256": "12a76859cb2e40d2751a18234f314515a991018a5c9b93e7fa17988e4ad388a1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610020022171024f55a74d5419d",
+      "usage": {
+        "completion_tokens": 508,
+        "completion_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "prompt_tokens": 6580,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7088
+      }
+    }
+  ],
+  "response_id": "202610020022171024f55a74d5419d",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 508,
+    "completion_tokens_details": {
+      "reasoning_tokens": 102
+    },
+    "prompt_tokens": 6580,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7088
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 47,
+    "background": {
+      "color": "#0B0B0D",
+      "prompt": "Empty deep black seamless studio with a continuous polished charcoal-black floor, broad soft ivory diffused frontal light falling gently from the upper left, subtle warm bronze gradient on the right side of the frame, smooth dark sculptural shadows receding to pure black on the left, elegant minimalist photographic still life environment, full bleed",
+      "revision": 0
+    },
+    "product": {
+      "x": 790,
+      "y": 830,
+      "width": 520,
+      "height": 790
+    },
+    "lighting": "broad_soft_frontal_light",
+    "palette": [
+      "#0B0B0D",
+      "#D8C18E",
+      "#EAE3D5"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 96,
+      "y": 560,
+      "size": 64,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 98,
+      "y": 660,
+      "size": 24,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "price": {
+      "text": "",
+      "x": 98,
+      "y": 1280,
+      "size": 22,
+      "color": "#EAE3D5",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 96,
+      "y": 460,
+      "size": 40,
+      "color": "#D8C18E",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "shadow": {
+      "opacity": 0.4,
+      "blur": 14,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": false,
+      "x": 98,
+      "y": 720,
+      "width": 80,
+      "color": "#D8C18E"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ]
+  },
+  "duration_seconds": 8.52
+}

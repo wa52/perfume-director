@@ -1,0 +1,17 @@
+{
+  "accepted": [],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "logo.size",
+          "op": "multiply",
+          "value": 1.2
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

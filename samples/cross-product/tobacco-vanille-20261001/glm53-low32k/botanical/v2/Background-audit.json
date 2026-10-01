@@ -1,0 +1,25 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Empty pale sage green matte seamless studio environment, continuous floor and wall with a soft far tonal transition, warm soft diffuse frontal light with a gentle directional falloff from the right, delicate out-of-focus leaf and thin branch shadows at the far left and upper right edges only, a low calm pool of brighter light on the floor at the center right where the hero sits, quiet airy organic still-life atmosphere, no furniture, full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 4054,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "subtitle.color",
+      "old": "#5C6B58",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    },
+    {
+      "path": "logo.color",
+      "old": "#3A4A3A",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

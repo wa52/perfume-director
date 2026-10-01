@@ -1,0 +1,63 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "options": {
+    "max_tokens": 32768,
+    "temperature": 0.2,
+    "reasoning_effort": "low"
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 300,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "product.png",
+      "sha256": "a489f7368937f7f6b74fdf3dbe1ea515728da9619901916aa0e0489758bd89e0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "202610020022080e65ab58a4df431c",
+      "usage": {
+        "completion_tokens": 88,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 1928,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2016
+      }
+    }
+  ],
+  "response_id": "202610020022080e65ab58a4df431c",
+  "returned_model": "glm-5.3-flash",
+  "usage": {
+    "completion_tokens": 88,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1928,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2016
+  },
+  "finish_reason": "stop",
+  "raw_output": {
+    "answer": "{\"title\":\"TOBACCO VANILLE\",\"logo\":\"TOM FORD\",\"subtitle\":\"EAU DE PARFUM\",\"price\":\"\",\"evidence\":\"Label clearly shows 'TOM FORD', 'TOBACCO VANILLE', 'EAU DE PARFUM, 50 ML'; no price given by user; brief supplies only design directions, no product copy.\"}"
+  },
+  "normalization": "json_string_answer_envelope",
+  "status": "OK",
+  "output": {
+    "title": "TOBACCO VANILLE",
+    "logo": "TOM FORD",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "Label clearly shows 'TOM FORD', 'TOBACCO VANILLE', 'EAU DE PARFUM, 50 ML'; no price given by user; brief supplies only design directions, no product copy."
+  },
+  "duration_seconds": 8.182
+}

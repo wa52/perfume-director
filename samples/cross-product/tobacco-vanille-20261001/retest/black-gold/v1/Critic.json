@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 75,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 65,
+    "reference_alignment": 75,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Missing contact shadow: The bottle base (y=1245) lacks a visible contact shadow, violating the -2..0 offset_y requirement. The enlarged detail (crop [488,1105,1031,1355]) confirms no shadow beneath the bottle, creating an unrealistic floating effect."
+    },
+    {
+      "type": "background",
+      "problem": "Generic studio backdrop: The background prompt includes 'seamless studio' and 'soft frontal light,' but the execution lacks luxury refinement. The dark gradient feels flat and disconnected from the product's rich brown tones, failing to enhance the premium feel seen in references (e.g., Armani/Prive's textured wood or Tom Ford's dramatic lighting)."
+    },
+    {
+      "type": "composition",
+      "problem": "Asymmetric imbalance: The product (x=760) is right-aligned, but the left negative space is overly empty, reducing visual tension. References (e.g., YSL Libre) use balanced negative space to guide focus, while this poster's left side feels underutilized."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Lighting mismatch: The soft frontal light creates a flat highlight on the bottle, unlike the dramatic, directional lighting in Tom Ford Black Orchid (Image 3) or Armani/Prive (Image 4), which adds depth and luxury. The current lighting feels generic and fails to elevate the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": -2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep charcoal studio with a polished leather floor, warm directional light from upper left casting soft gradients on the right, subtle texture in the background, elegant still life environment, full bleed"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 690
+    },
+    {
+      "path": "lighting",
+      "op": "set",
+      "value": "directional_warm_light"
+    }
+  ],
+  "reported_score": 78
+}

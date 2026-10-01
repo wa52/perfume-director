@@ -1,0 +1,20 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty pale sage green matte seamless studio environment, continuous floor and wall with a soft far tonal transition, warm soft diffuse frontal light with gentle directional falloff from the upper right, large delicate out-of-focus leaf and thin branch shadows entering from the far left edge and upper right corner, one long soft dappled light shape sweeping across the floor from the left text area toward the center right where a calm brighter pool of light rests, a subtle darker foreground tonal band along the bottom edge of the floor for depth, quiet airy organic still-life atmosphere, no furniture"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ]
+}
