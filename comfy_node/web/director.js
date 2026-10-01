@@ -60,6 +60,7 @@ app.registerExtension({
                             label.textContent = `${direction.name} · ${statusLabels[direction.status] || direction.status}${typeof direction.selected?.score === "number" ? ` · ${direction.selected.score}分` : ""}`;
                             label.style.cssText = "line-height:1.5;margin-bottom:5px";
                             card.append(label);
+                            if (direction.selected?.review_error) label.textContent += ' · 评审中断，图片已保留';
                             if (direction.selected) {
                                 const url = api.apiURL(`/perfume-director/jobs/${encodeURIComponent(id)}/preview?direction=${encodeURIComponent(direction.id)}`);
                                 const anchor = document.createElement("a");

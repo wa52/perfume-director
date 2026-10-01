@@ -180,7 +180,7 @@ Critic 返回 `pass`、0–100 的 `score`、`problems` 和 `changes`。修改�
 {"pass": false, "score": 72, "problems": [{"type":"typography","problem":"标题权重太高"}], "changes": [{"path":"title.size","op":"multiply","value":0.82}]}
 ```
 
-种子固定，背景 prompt 修改时才增加 revision，背景种子为 base seed + revision。PASS 必须分数至少 80 且没有待处理问题/修改。最多 **3 次渲染，包括第一版**；未通过时选择最高评分版并标记 `NEEDS_REVIEW`，不会强行宣布成功。模型分数是自评，尚未经过人工标定。
+种子固定，背景 prompt 修改时才增加 revision，背景首次种子为 base seed + revision；质量重试使用明确记录的 seed offset。独立视觉评审 PASS 必须七项均不低于 80、均分至少 85，且没有待处理问题/修改。最多 **3 次渲染，包括第一版**；未通过时选择最高评分版并标记 `NEEDS_REVIEW`，不会强行宣布成功。模型分数是自评，尚未经过人工标定。
 
 每次运行保存 request、各版 PosterSpec、poster.png、Critic、最终 result。超时后 ComfyUI 任务可能还在队列中，程序不自动打断其他任务。成功案例暂只留档，尚不训练或统计 Style DNA。
 
@@ -216,3 +216,14 @@ python poster.py four --config config.local.json --product assets/products/dior-
 四个方向使用人工整理的不同起始网格供 Director 细化，而非四次重复同一个示例；最终仍以实际海报检查风格与完成度。当前 25 项测试通过。
 
 最新全自动实跑：[四方向自动任务原图、原始评审和失败记录](samples/automatic-four/jadore-20261001/REPORT.md)。通过真实 ComfyUI 节点提交，无人工改 Spec 或成品。四个方向都有生成图，批次最终为 PARTIAL，未产生有效 PASS；黑金评审自相矛盾、奶油 V2 评审断连，酒红和植物未通过。该案例不能用来证明稳定商业设计质量。
+
+
+### 稳定性保护
+
+- 临时断连、超时、429 和 5xx 最多重试三次，401 等配置错误立即停止。每次请求记录耗时、返回模型、用量和尝试记录，不记录密钥。
+- 矛盾的 PASS（仍有问题或修改）保守降为未通过；缺失评审维度会要求模型重新看图一次，仍无有效评审则保留海报并标记未评审，不补造分数。
+- 四方向先检查实际商品、文字与安全边距；不安全的初始布局恢复该方向安全网格并保存原始/执行 Spec。Critic 危险修改保持原子拒绝，并最多要求一次安全修复。
+- AI 背景检查常量图、白边与方向色系。失败最多重新生成两次；仍失败采用显式标记的程序备用背景，禁止因此记为 PASS。此检查只防明显错误，不判断商业审美。
+- 文字与实际背景的平均对比度不足时，Director 执行前调整字色，保存修改记录；不改文案和商品。背景本身与商品的光线融合仍需要看图验收。
+
+默认智谱示例使用 GLM-4.6V、关闭深度思考、低随机性与 1280 像素多图输入。可在 config.local.json 调整；运行后仍须检查四张图，COMPLETED 不等于商业质量通过。Background-audit.json 标明生成尝试、备用背景和文字调整；Layout-preflight.json 保存初始布局保护记录。

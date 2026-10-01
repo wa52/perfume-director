@@ -3,12 +3,14 @@ import argparse
 import base64
 import copy
 import hashlib
+from http.client import RemoteDisconnected, IncompleteRead
 import io
 import importlib
 import json
 import math
 import mimetypes
 import os
+import re
 from pathlib import Path
 import time
 import urllib.request
@@ -16,7 +18,7 @@ import urllib.error
 import urllib.parse
 import uuid
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageColor, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 TEXT_LAYERS = ('title', 'subtitle', 'price', 'logo')
@@ -57,8 +59,12 @@ def validate(spec):
     if p['x'] - p['width']/2 < 0 or p['x'] + p['width']/2 > w or p['y'] - p['height']/2 < 0 or p['y'] + p['height']/2 > h:
         raise ValueError('Product bounding box outside canvas')
     for name in TEXT_LAYERS:
-        if not isinstance(spec[name]['text'], str) or not 8 <= spec[name]['size'] <= 240:
+        if not isinstance(spec[name]['text'], str) or '\n' in spec[name]['text'] or not 8 <= spec[name]['size'] <= 240:
             raise ValueError(f'Invalid {name}')
+        ImageColor.getrgb(spec[name]['color'])
+        if spec[name].get('font') and not Path(spec[name]['font']).is_file():
+            raise ValueError(f'Missing {name} font')
+    ImageColor.getrgb(spec['background']['color'])
     if len(spec['layers']) != 8 or set(spec['layers']) != {'background', 'shadow', 'product', 'decoration', *TEXT_LAYERS}:
         raise ValueError('Invalid layer stack')
     if spec['layers'][0] != 'background' or spec['layers'].index('shadow') > spec['layers'].index('product'):
@@ -99,6 +105,12 @@ def render(spec, product, font, background=None):
                 mask = product.getchannel('A').point(lambda a: round(a*s['opacity']))
                 shadow.paste((0, 0, 0, 255), (px+round(s['offset_x']), py+round(s['offset_y'])), mask)
             canvas = Image.alpha_composite(canvas, shadow.filter(ImageFilter.GaussianBlur(s['blur'])))
+            if s.get('kind') == 'contact':
+                core = Image.new('RGBA', (w, h))
+                base = py+product.height-1+s['offset_y']
+                ImageDraw.Draw(core).ellipse((center_x-product.width*.28, base-2, center_x+product.width*.28, base+3),
+                    fill=(0,0,0,round(255*min(.85,s['opacity']*1.6))))
+                canvas = Image.alpha_composite(canvas, core.filter(ImageFilter.GaussianBlur(1.5)))
         elif layer == 'product':
             canvas.alpha_composite(product, (px, py))
         elif layer == 'decoration':
@@ -152,9 +164,12 @@ def vision(config, prompt, images, trace_path=None):
     if not isinstance(options, dict) or set(options)-{'thinking', 'max_tokens', 'temperature', 'top_p'}:
         raise ValueError('Unsupported vision_options; model/messages/auth cannot be overridden')
     content = [{'type': 'text', 'text': prompt}]
+    edge = config.get('vision_image_max_edge', 1280)
+    if type(edge) is not int or not 512 <= edge <= 1600:
+        raise ValueError('vision_image_max_edge must be 512..1600')
     for path in images:
         with Image.open(path) as source:
-            source.thumbnail((1600, 1600))
+            source.thumbnail((edge, edge))
             buffer = io.BytesIO()
             source.convert('RGB').save(buffer, format='JPEG', quality=90)
         encoded = base64.b64encode(buffer.getvalue()).decode()
@@ -164,32 +179,46 @@ def vision(config, prompt, images, trace_path=None):
         {'role': 'user', 'content': content}], 'response_format': {'type': 'json_object'}, **options}
     started = time.monotonic()
     trace = {'requested_model': config['vision_model'], 'endpoint': config['vision_base_url'],
-        'options': options, 'timeout_seconds': config.get('vision_timeout_seconds', 180),
+        'options': options, 'image_max_edge':edge, 'timeout_seconds': config.get('vision_timeout_seconds', 180),
         'image_count': len(images), 'images': [{'name': Path(p).name,
             'sha256': hashlib.sha256(Path(p).read_bytes()).hexdigest()} for p in images]}
+    attempts = config.get('vision_attempts', 3)
+    if type(attempts) is not int or not 1 <= attempts <= 3:
+        raise ValueError('vision_attempts must be 1..3')
+    trace['attempts'] = []
     try:
-        response = json.loads(http(config['vision_base_url'].rstrip('/')+'/chat/completions', json.dumps(payload).encode(),
-            {'Authorization': 'Bearer '+key, 'Content-Type': 'application/json'},
-            timeout=config.get('vision_timeout_seconds', 180)))
-        choice = response['choices'][0]
-        trace.update(response_id=response.get('id'), returned_model=response.get('model'),
-            usage=response.get('usage'), finish_reason=choice.get('finish_reason'))
-        if choice.get('finish_reason') != 'stop':
-            raise ValueError('Vision response incomplete: '+str(choice.get('finish_reason')))
-        result = json.loads(choice['message']['content'])
-        if not isinstance(result, dict):
-            raise ValueError('Vision response must be a JSON object')
-        # Some compatible APIs add a single answer envelope despite JSON mode.
-        # Unwrap only this exact shape; the caller still validates the full schema.
-        if set(result) == {'answer'} and isinstance(result['answer'], dict):
-            trace['raw_output'] = result
-            result = result['answer']
-            trace['normalization'] = 'single_answer_envelope'
-        trace.update(status='OK', output=result)
-        return result
-    except urllib.error.HTTPError as error:
-        trace.update(status='ERROR', http_status=error.code)
-        raise ValueError(f'Vision API HTTP {error.code}; check endpoint, model access and account balance') from None
+        for attempt in range(1, attempts+1):
+            attempt_trace = {'attempt': attempt}
+            trace['attempts'].append(attempt_trace)
+            try:
+                response = json.loads(http(config['vision_base_url'].rstrip('/')+'/chat/completions', json.dumps(payload).encode(),
+                    {'Authorization': 'Bearer '+key, 'Content-Type': 'application/json'},
+                    timeout=config.get('vision_timeout_seconds', 180)))
+                choice = response['choices'][0]
+                trace.update(response_id=response.get('id'), returned_model=response.get('model'),
+                    usage=response.get('usage'), finish_reason=choice.get('finish_reason'))
+                if choice.get('finish_reason') != 'stop':
+                    raise ValueError('Vision response incomplete: '+str(choice.get('finish_reason')))
+                result = json.loads(choice['message']['content'])
+                if not isinstance(result, dict):
+                    raise ValueError('Vision response must be a JSON object')
+                if set(result) == {'answer'} and isinstance(result['answer'], dict):
+                    trace['raw_output'] = result
+                    result = result['answer']
+                    trace['normalization'] = 'single_answer_envelope'
+                attempt_trace.update(status='OK', response_id=response.get('id'), usage=response.get('usage'))
+                trace.update(status='OK', output=result)
+                return result
+            except urllib.error.HTTPError as error:
+                attempt_trace.update(status='ERROR', error_type='HTTPError', http_status=error.code)
+                if error.code not in (429, 500, 502, 503, 504) or attempt == attempts:
+                    trace['http_status'] = error.code
+                    raise ValueError(f'Vision API HTTP {error.code}; check endpoint, model access and account balance') from None
+            except (RemoteDisconnected, IncompleteRead, TimeoutError, ConnectionError, urllib.error.URLError) as error:
+                attempt_trace.update(status='ERROR', error_type=type(error).__name__)
+                if attempt == attempts:
+                    raise
+            time.sleep(min(4, config.get('vision_retry_delay', 1)*attempt))
     except Exception as error:
         trace.update(status='ERROR', error_type=type(error).__name__)
         raise
@@ -197,6 +226,27 @@ def vision(config, prompt, images, trace_path=None):
         trace['duration_seconds'] = round(time.monotonic()-started, 3)
         if trace_path:
             write(trace_path, trace)
+
+
+
+def quality_module():
+    return importlib.import_module('.quality', __package__) if __package__ else importlib.import_module('quality')
+
+
+def layout_issues(spec, product, font):
+    return quality_module().layout_issues(spec, rendered_geometry(spec, product, font))
+
+
+def background_issues(path, direction):
+    return quality_module().background_issues(path, direction)
+
+
+def apply_safe_changes(spec, changes, product, font):
+    candidate = apply_changes(spec, changes)
+    issues = layout_issues(candidate, product, font)
+    if issues:
+        raise ValueError('Unsafe layout: '+', '.join(issues))
+    return candidate
 
 
 def apply_changes(spec, changes):
@@ -231,7 +281,10 @@ def validate_critique(result, strict=False):
     if not isinstance(result.get('problems'), list) or not isinstance(result.get('changes'), list):
         raise ValueError('Critic requires problems and changes arrays')
     if result['pass'] and (result['problems'] or result['changes'] or result['score'] < 80):
-        raise ValueError('PASS requires score >=80 and no unresolved problems/changes')
+        if not strict:
+            raise ValueError('PASS requires score >=80 and no unresolved problems/changes')
+        result['pass'] = False
+        result['validation_notes'] = ['Contradictory approval downgraded: outstanding problems/changes or score below threshold']
     if strict:
         dimensions = result.get('dimensions', {})
         for name in CRITIC_DIMENSIONS:
@@ -282,18 +335,52 @@ def execute(config, workflow, output_node, destination):
 
 
 def comfy_render(config, spec, product, destination, background):
+    audit = {'source': 'supplied', 'attempts': [], 'ink_changes': []}
+    direction = config.get('direction_id')
     if config.get('background_workflow'):
-        workflow = read(config['background_workflow'])
-        values = {'prompt': spec['background']['prompt'], 'seed': spec['seed']+spec['background']['revision'],
-                  'width': spec['canvas']['width'], 'height': spec['canvas']['height']}
-        for key, binding in config['background_bindings'].items():
-            workflow[str(binding['node'])]['inputs'][binding['input']] = values[key]
-        background = execute(config, workflow, config['background_output_node'], Path(destination).with_name('background.png'))
         module = importlib.import_module('.check_background', __package__) if __package__ else importlib.import_module('check_background')
-        module.check(background)
+        attempts = config.get('background_attempts', 2)
+        if type(attempts) is not int or not 1 <= attempts <= 3:
+            raise ValueError('background_attempts must be 1..3')
+        for attempt in range(attempts):
+            workflow = read(config['background_workflow'])
+            prompt = spec['background']['prompt'] if attempt == 0 or not direction else direction_template(spec, direction)['background']['prompt']
+            if direction and re.search(r'\b(perfume|fragrance|bottle|logo|label|person|people|model|woman|man)\b|香水|瓶|人物|人像', prompt, re.I):
+                audit['prompt_guard'] = {'requested': prompt, 'reason': 'background_must_not_generate_products_or_people'}
+                prompt = direction_template(spec, direction)['background']['prompt']
+            prompt += ', full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface'
+            values = {'prompt': prompt, 'seed': spec['seed']+spec['background']['revision']+attempt*100003,
+                      'width': spec['canvas']['width'], 'height': spec['canvas']['height']}
+            for key, binding in config['background_bindings'].items():
+                workflow[str(binding['node'])]['inputs'][binding['input']] = values[key]
+            candidate = execute(config, workflow, config['background_output_node'], Path(destination).with_name(f'background-attempt-{attempt+1}.png'))
+            issues = background_issues(candidate, direction) if direction else []
+            try:
+                module.check(candidate)
+            except ValueError:
+                issues.append('invalid_background')
+            audit['attempts'].append({'prompt': prompt, 'seed': values['seed'], 'issues': issues, 'image': candidate.name})
+            write(Path(destination).with_name('Background-audit.json'), audit)
+            if not issues:
+                background = candidate
+                audit['source'] = 'comfyui_generated'
+                break
+        else:
+            if not direction:
+                raise ValueError('Background failed checks after bounded retries')
+            background = Path(destination).with_name('background-fallback.png')
+            quality_module().fallback_background(spec, direction).save(background)
+            audit['source'] = 'procedural_fallback'
+            audit['warning'] = 'AI background failed checks; this draft requires manual review'
     if background is None:
         background = Path(destination).with_name('background.png')
         Image.new('RGB', (spec['canvas']['width'], spec['canvas']['height']), spec['background']['color']).save(background)
+        audit['source'] = 'solid_color'
+    if direction:
+        audit['ink_changes'] = quality_module().contrast_adjustments(spec, rendered_geometry(spec, product, config['font']), background)
+        for change in audit['ink_changes']:
+            spec[change['path'].split('.')[0]]['color'] = change['value']
+    write(Path(destination).with_name('Background-audit.json'), audit)
     workflow = read(ROOT/'workflows/composite.api.json')
     workflow['1']['inputs']['image'] = upload(config, product)
     workflow['2']['inputs']['image'] = upload(config, background)
@@ -322,7 +409,7 @@ def build_kb(config):
 
 
 def review_poster(config, spec, product, poster, ref_images, trace_path, previous=None):
-    return vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images]+([previous['poster']] if previous else []), trace_path=trace_path)
+    return vision(config, 'Critique final poster (first image), original product (second), and 3 references. Check product fidelity, composition, typography, background interference and hierarchy. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon or to canvas bottom. Product base being above the bottom edge is normal: keep bottom within 91% of canvas height and preserve comfortable margins. The deterministic geometry is authoritative; do not invent floating from empty margin alone. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y should be close to zero, not a detached shadow tens of pixels below the bottle. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(rendered_geometry(spec, product, config['font']))+' Spec: '+json.dumps(spec, ensure_ascii=False)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images]+([previous['poster']] if previous else []), trace_path=trace_path)
 
 
 DIRECTIONS = (
@@ -363,11 +450,53 @@ def direction_template(template, direction_id):
     return validate(spec)
 
 
+def prepare_layout(config, spec, product):
+    candidate = copy.deepcopy(spec)
+    direction = config.get('direction_id')
+    if not direction:
+        return candidate, []
+    issues = layout_issues(candidate, product, config['font'])
+    if issues:
+        safe = direction_template(read(ROOT/'examples/PosterSpec.json'), direction)
+        candidate['canvas'] = safe['canvas']
+        candidate['product'] = safe['product']
+        candidate['shadow'] = safe['shadow']
+        candidate['decoration']['enabled'] = False
+        for name in TEXT_LAYERS:
+            text, color = candidate[name]['text'], candidate[name]['color']
+            candidate[name] = {**safe[name], 'text': text, 'color': color}
+    w = candidate['canvas']['width']
+    for name in TEXT_LAYERS:
+        t = candidate[name]
+        if not t['text']:
+            continue
+        max_width = w*(.82 if direction == 'cream-minimal' else .30 if direction == 'burgundy-editorial' else .43)
+        while t['size'] > 16 and ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']) > max_width:
+            t['size'] -= 1
+        if direction == 'cream-minimal':
+            t['x'] = round((w-ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']))/2)
+    remaining = layout_issues(candidate, product, config['font'])
+    if remaining:
+        raise ValueError('Prepared layout still unsafe: '+', '.join(remaining))
+    return validate(candidate), issues
+
+
+def review_validated(config, spec, product, poster, ref_images, folder, previous):
+    critique = review_poster(config, spec, product, poster, ref_images, folder/'Critic-call.json',previous=previous)
+    try:
+        return validate_critique(critique, strict=True)
+    except (ValueError,KeyError,TypeError) as error:
+        repaired = vision(config, 'Your previous Critic output failed the contract. Re-evaluate rather than inventing missing scores. Return pass:boolean, score:0..100, all seven dimensions: '+json.dumps(CRITIC_DIMENSIONS)+', problems array and changes array. PASS must have no problems or changes. If uncertain use pass:false with evidence. Error: '+str(error)+' Previous output: '+json.dumps(critique,ensure_ascii=False)+' Render geometry and safe ranges: '+json.dumps(rendered_geometry(spec,product,config['font']))+' Product bottom must remain below 91% canvas height; the canvas bottom is NOT a required contact line. Spec: '+json.dumps(spec,ensure_ascii=False),[poster,product,*ref_images],trace_path=folder/'Critic-repair-call.json')
+        return validate_critique(repaired, strict=True)
+
+
 def run_four(config, product, brief, progress=None):
     batch = ROOT/'runs/batches'/uuid.uuid4().hex[:12]
     batch.mkdir(parents=True)
     directions = []
-    write(batch/'request.json', {'brief': brief, 'directions': DIRECTIONS, 'max_rounds_per_direction': config.get('max_rounds',3)})
+    write(batch/'request.json', {'brief': brief, 'directions': DIRECTIONS, 'max_rounds_per_direction': config.get('max_rounds',3),
+        'execution_config': {key:config.get(key) for key in ('vision_model','vision_options','vision_timeout_seconds','vision_attempts','vision_image_max_edge','background_attempts')},
+        'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
     for index, direction in enumerate(DIRECTIONS, 1):
         child_record = {}
         def report(values):
@@ -384,7 +513,7 @@ def run_four(config, product, brief, progress=None):
             child = run(child_config, product, brief+'\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：'+direction['brief'], progress=report)
             result = read(child/'result.json')
             item = {**direction, 'status': result['status'], 'run_dir': str(child),
-                    'selected': result['selected'], 'versions': result['versions']}
+                    'selected': result['selected'], 'versions': result['versions'],'review_failures':result.get('review_failures',[])}
         except Exception as error:
             item = {**direction, **child_record, 'status': 'ERROR', 'error': type(error).__name__}
         directions.append(item)
@@ -406,7 +535,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
     if demo:
         references = []
     elif (ROOT/'kb/design_kb.sqlite3').exists():
-        references = reference_store_module().select(ROOT, 3)
+        references = reference_store_module().select(ROOT, 3, direction=config.get('direction_id'))
     else:
         references = sorted(read(ROOT/'kb/luxury.json'), key=lambda r: r['analysis']['perfume_suitability'], reverse=True)[:3]
     if not demo and len(references) != 3:
@@ -436,6 +565,10 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         spec = vision(config, 'Repair this PosterSpec to the supplied schema. Preserve the requested design direction and truthful copy. All eight layers required; disabled text keeps size 8..240 and a valid color. Product box must stay within canvas. Error: '+str(error)+' Brief: '+brief+' Schema: '+json.dumps(template,ensure_ascii=False)+' Invalid spec: '+json.dumps(spec,ensure_ascii=False), [product,*ref_images], trace_path=run_dir/'Director-repair-call.json')
         validate(spec)
     spec['seed'] = (spec['seed']+config.get('direction_seed_offset',0)) % (2**63)
+    if not demo and config.get('direction_id'):
+        raw_spec = copy.deepcopy(spec)
+        spec, issues = prepare_layout(config,spec,product)
+        write(run_dir/'Layout-preflight.json', {'issues':issues,'raw_spec':raw_spec,'effective_spec':spec,'source':'deterministic_director_guard'})
     if demo:
         spec['title']['size'] = 112
     max_rounds = config.get('max_rounds', 3)
@@ -456,33 +589,60 @@ def run(config, product, brief, background=None, demo=False, progress=None):
                 'problems': [] if iteration == 3 else [{'type': 'typography' if iteration == 1 else 'composition', 'problem': 'SCRIPTED DEMO: title too large' if iteration == 1 else 'SCRIPTED DEMO: product position adjustment'}],
                 'changes': [] if iteration == 3 else [{'path': 'title.size', 'op': 'multiply', 'value': 0.75}] if iteration == 1 else [{'path': 'product.x', 'op': 'add', 'value': 45}]}
         else:
-            comfy_render(config, spec, product, poster, background)
+            try:
+                comfy_render(config, spec, product, poster, background)
+                write(folder/'PosterSpec.json', spec)
+            except Exception as error:
+                write(folder/'Render-error.json', {'error_type':type(error).__name__})
+                if versions:
+                    break
+                raise
             print(f'Critic: reviewing v{iteration} and 3 references', flush=True)
             if progress:
                 progress({'stage': 'CRITIC', 'version': iteration})
-            critique = review_poster(config, spec, product, poster, ref_images, folder/'Critic-call.json',
-                previous={'poster': run_dir/versions[-1]['poster'], 'critique': read(run_dir/versions[-1]['critic'])} if versions else None)
-        validate_critique(critique, strict=not demo)
+            try:
+                critique = review_validated(config, spec, product, poster, ref_images, folder,
+                    previous={'poster': run_dir/versions[-1]['poster'], 'critique': read(run_dir/versions[-1]['critic'])} if versions else None)
+            except Exception as error:
+                critique = {'pass':False,'score':None,'problems':[{'type':'review_unavailable','problem':'No validated Critic response; image retained for manual review'}],
+                    'changes':[],'review_error':type(error).__name__,'source':'program_failure_record'}
+                write(folder/'Critic-error.json',{'error_type':type(error).__name__,'status':'UNREVIEWED'})
+        if demo:
+            validate_critique(critique)
+        audit_path = folder/'Background-audit.json'
+        if audit_path.exists() and read(audit_path).get('source') == 'procedural_fallback':
+            critique['pass'] = False
+            critique['problems'].append({'type':'background_fallback','problem':'AI background failed checks; procedural draft requires manual review'})
         write(folder/'Critic.json', critique)
         versions.append({'version': iteration, 'score': critique['score'], 'pass': critique['pass'],
             'poster': poster.relative_to(run_dir).as_posix(), 'spec': f'v{iteration}/PosterSpec.json',
-            'critic': f'v{iteration}/Critic.json', 'sha256': hashlib.sha256(poster.read_bytes()).hexdigest()})
+            'critic': f'v{iteration}/Critic.json', 'review_error':critique.get('review_error'), 'sha256': hashlib.sha256(poster.read_bytes()).hexdigest()})
         if critique['pass']:
             break
         if iteration < max_rounds:
             if not critique['changes']:
                 break
             try:
-                spec = apply_changes(spec, critique['changes'])
+                spec = apply_safe_changes(spec, critique['changes'],product,config['font']) if config.get('direction_id') else apply_changes(spec, critique['changes'])
             except (ValueError, KeyError, TypeError) as error:
                 write(folder/'Critic-patch-rejected.json', {'status': 'REJECTED', 'error_type': type(error).__name__,
                     'reason': 'Critic patch failed schema or geometry validation; last valid poster preserved'})
-                break
-    best = max(versions, key=lambda v: (v['pass'], v['score']))
+                if not config.get('direction_id'):
+                    break
+                try:
+                    repair = vision(config, 'Repair only the unsafe Critic changes. Return {changes:[{path,op,value}]}. Do not invent copy, modify seed, canvas or product identity. Product center coordinates must preserve actual product bbox inside x 5..95%, y 16..91% and height 48..68%. Text must not overlap product. Contact shadow offset_y <=16 absolute. If the proposed move is unnecessary omit it, but keep other useful safe changes. Error: '+str(error)+' Spec: '+json.dumps(spec,ensure_ascii=False)+' Geometry: '+json.dumps(rendered_geometry(spec,product,config['font']))+' Previous critique: '+json.dumps(critique,ensure_ascii=False),[poster,product,*ref_images],trace_path=folder/'Critic-patch-repair-call.json')
+                    if not repair.get('changes'):
+                        break
+                    spec = apply_safe_changes(spec,repair['changes'],product,config['font'])
+                    write(folder/'Critic-patch-repaired.json',{'status':'VALIDATED','changes':repair['changes']})
+                except Exception as repair_error:
+                    write(folder/'Critic-patch-repair-error.json',{'error_type':type(repair_error).__name__})
+                    break
+    best = max(versions, key=lambda v: (v['pass'], v['score'] if v['score'] is not None else -1))
     write(run_dir/'result.json', {'status': 'PASS' if best['pass'] else 'NEEDS_REVIEW',
         'mode': 'scripted_demo' if demo else 'live', 'standalone_vision_api_used': not demo,
         'vision_model': None if demo else config.get('vision_model'),
-        'selected': best, 'versions': versions})
+        'selected': best, 'versions': versions, 'review_failures':[v['version'] for v in versions if v.get('review_error')]})
     print('Result:', run_dir, flush=True)
     return run_dir
 

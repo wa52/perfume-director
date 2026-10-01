@@ -66,8 +66,15 @@ def entries(root):
              'analysis': json.loads(row['analysis_json']), 'analysis_origin': row['analysis_origin']} for row in rows]
 
 
-def select(root, limit=3):
-    ranked = sorted(entries(root), key=lambda row: row['analysis']['perfume_suitability'], reverse=True)
+def select(root, limit=3, direction=None):
+    colors = {'black-gold':('black','gold','silver'), 'cream-minimal':('beige','warm_white','peach'),
+              'burgundy-editorial':('burgundy','red','purple'), 'botanical':('green','mint_green','warm_white','pink')}
+    def relevance(row):
+        observed = row['analysis'].get('color', [])
+        matches = sum(color in observed for color in colors.get(direction,()))
+        penalty = 20 if direction == 'cream-minimal' and 'black' in observed and 'beige' not in observed else 0
+        return row['analysis']['perfume_suitability']+matches*25-penalty
+    ranked = sorted(entries(root), key=relevance, reverse=True)
     selected, brands = [], set()
     # Avoid choosing three variants from the same brand/campaign.
     for row in ranked:

@@ -49,6 +49,7 @@ Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\__init__.py') -Destin
 Copy-Item -LiteralPath (Join-Path $projectRoot 'poster.py') -Destination (Join-Path $nodeRoot 'poster.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'reference_store.py') -Destination (Join-Path $nodeRoot 'reference_store.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'check_background.py') -Destination (Join-Path $nodeRoot 'check_background.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'quality.py') -Destination (Join-Path $nodeRoot 'quality.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\jobs.py') -Destination (Join-Path $nodeRoot 'jobs.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\web') -Destination $nodeRoot -Recurse -Force
 @{project_root = $projectRoot} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $nodeRoot 'project.json') -Encoding utf8
