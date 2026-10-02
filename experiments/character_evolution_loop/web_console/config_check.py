@@ -100,6 +100,28 @@ def check_config(
         add("critic_model", False, "missing critic object")
         add("critic_api_key", False, "missing critic object")
 
+    director = config.get("director") if isinstance(config, dict) else None
+    if not isinstance(director, dict):
+        director = critic if isinstance(critic, dict) else None
+        director_source = "reusing critic model"
+    else:
+        director_source = "dedicated director config"
+    if isinstance(director, dict):
+        env_name = str(director.get("api_key_env", "")).strip()
+        add(
+            "director_agent",
+            bool(director.get("base_url") and director.get("model")),
+            f"{director_source}: {director.get('model', '')}",
+        )
+        add(
+            "director_api_key",
+            bool(env_name and os.environ.get(env_name)),
+            env_name or "api_key_env missing",
+        )
+    else:
+        add("director_agent", False, "no director or critic model available")
+        add("director_api_key", False, "no director or critic API key available")
+
     scene = config.get("scene_comfyui") if isinstance(config, dict) else None
     if isinstance(scene, dict):
         scene_path = _resolve(root, str(scene.get("workflow_path", "")))
