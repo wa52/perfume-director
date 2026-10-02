@@ -1,4 +1,4 @@
-# Character Evolution Loop — incubator v0.9
+# Character Evolution Loop — incubator v1.0
 
 一个面向小说漫改的角色设计闭环。目标不是反复“抽卡”，而是让角色在 **原著证据 + 自动审稿 + 人工选择 + 身份锚点 + 长期记忆 + 场景一致性验证** 下逐轮收敛。
 
@@ -547,6 +547,135 @@ overbeautification_control
 
 因此旧本地配置继续存在时，新内置角色也能自动出现，不需要手工重建整份注册表。
 
+## v1.0：Director Agent 建议 → 可见 → 可采用 → 真正进入下一轮
+
+之前的 `CharacterDirector` 主要是规则式 Patch 过滤器：它能限制最多修改 3 项、保护 Lock，但不会像一个真正的导演 Agent 那样给出完整的优化判断。
+
+v1.0 增加 `OpenAICompatibleDirectorAgent`，形成：
+
+```text
+候选图
+  ↓
+Vision Critic
+  ├─ 各维度分数
+  ├─ 具体问题
+  └─ 原始 change_requests
+  ↓
+Director Agent
+  ├─ summary
+  ├─ strengths
+  ├─ priority_issues
+  ├─ KEEP
+  ├─ CHANGE（最多 3 项）
+  ├─ DO NOT CHANGE
+  ├─ next_round_goal
+  └─ evidence / human-feedback guardrails
+  ↓
+Revision Patch
+  ↓
+下一轮 Prompt
+```
+
+### A / B / C 各有独立导演建议
+
+为了控制调用成本，Director Agent 默认只对 shortlist A/B/C 运行。
+
+Web 中选择 A、B 或 C 后，右侧会直接显示：
+
+- 当前候选最值得保留什么
+- 最大的 1–3 个偏差
+- 下一轮具体改哪些视觉特征
+- 每项为什么要改
+- 哪些特征必须保持
+- 哪些特征禁止回退
+- 下一轮的单一目标
+
+每条 `CHANGE` 都有“采用此建议”按钮，可以直接填入人工修改区，再由人继续调整。
+
+### 人工反馈优先级
+
+下一轮修改优先级明确为：
+
+```text
+Canon Lock
+    >
+Human explicit change / Lock / Reject
+    >
+Director Agent advice
+    >
+Vision Critic raw change_request
+```
+
+所以 Agent 负责提建议，人仍然做最终决定。
+
+自然语言人工反馈也会持续写入 Character Memory，并进入后续 Prompt。
+
+### Agent 失败不伪装成功
+
+如果 Director LLM 调用失败：
+
+- 当前生成轮不会整体报废
+- 自动回退到规则式 CharacterDirector
+- Web 明确显示“规则兜底”
+- 保存真实错误信息到 `director_agent_error`
+- 不会把规则建议伪装成 LLM Agent 输出
+
+### 配置
+
+默认情况下 Director Agent 直接复用 `critic` 的 OpenAI-compatible endpoint / model / API key，因此现有本地配置不需要增加新字段。
+
+如需单独指定导演模型，可以加入：
+
+```json
+{
+  "director": {
+    "base_url": "https://YOUR_OPENAI_COMPATIBLE_ENDPOINT/v1",
+    "model": "YOUR_TEXT_OR_VISION_MODEL",
+    "api_key_env": "CHARACTER_VISION_API_KEY",
+    "timeout_seconds": 120,
+    "max_changes": 3
+  }
+}
+```
+
+配置体检会显示 `director_agent` 与 `director_api_key` 状态。
+
+### Web Director
+
+候选 A/B/C 现在会出现 `AGENT` 标记。
+
+右侧新增：
+
+```text
+AGENT DIRECTOR
+下一轮优化建议
+
+导演判断
+保留优点
+优先问题
+下一轮修改
+KEEP
+DO NOT CHANGE
+下一轮目标
+证据 / 人工反馈护栏
+```
+
+因此现在完整的人物养成循环已经变成：
+
+```text
+Generate 8
+ → Vision Critic
+ → A/B/C
+ → Director Agent 给每张建议
+ → 人查看图片 + Agent 建议
+ → 人选 A/B/C
+ → 可采用/修改 Agent 建议
+ → Lock / Reject / Feedback
+ → Character Memory
+ → Revision Patch
+ → 下一轮 8 张
+```
+
 ## 测试
 
 ```powershell
@@ -569,13 +698,13 @@ GitHub Actions 使用同一套测试验证：
 
 ## 下一阶段
 
-v0.9 已把陈菁、韩冰、壁虎正式接入人物迭代系统。下一阶段重点：
+v1.0 已补齐真正的 Director Agent 优化建议闭环。下一阶段重点：
 
-1. 对三人的 appearance / clothing strongest evidence 做逐 chunk Canon Review，确认真正属于本人且反复稳定的视觉事实。
-2. 为陈菁、韩冰、壁虎分别建立 Scene Profile，不复用陆辛 office/home/abnormal 模板。
-3. 建角色关系图和 alias resolution，处理真实姓名、代号、称谓、同一人物别名。
-4. 扩展剩余高价值角色草稿进入 Contract / State。
-5. 增加分支版本语义：回滚后形成 V04a / V04b，不覆盖旧分支。
-6. 最终把 Character Director 从 `perfume-director` incubator 迁出为独立项目。
+1. 增加 **多轮改进评估**：比较 V02 → V03 后 Agent 建议是否真的让目标维度上升，而不是只给建议。
+2. 给 Director Agent 增加 plateau / regression 判断：连续两轮不提升时自动改变探索策略。
+3. 对陈菁、韩冰、壁虎的 appearance / clothing strongest evidence 做逐 chunk Canon Review。
+4. 为每个角色建立独立 Scene Profile。
+5. 增加角色版本分支：V04a / V04b，并比较哪条演化路线更好。
+6. 建角色关系图与 alias resolution，继续扩展其余主要角色。
 
 > 核心原则：自动模型负责提出和审稿，人负责确认角色是谁。一旦确认，系统要记住，而不是下一轮重新抽卡。
