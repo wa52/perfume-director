@@ -11,6 +11,7 @@ from character_evolution.providers.comfyui import ComfyUICharacterGenerator, Com
 from character_evolution.providers.vision_critic import (
     OpenAICompatibleVisionCritic,
     VisionCriticConfig,
+    critic_dimensions,
 )
 
 
@@ -189,11 +190,33 @@ class CharacterProviderTests(unittest.TestCase):
                 review = critic.review(
                     image_ref=str(image),
                     canon=CanonProfile(character="陆辛"),
-                    state=CharacterState(character="陆辛"),
+                    state=CharacterState(character="陆辛", locked={"daily_role_context": "company_office_worker"}),
                 )
             self.assertEqual(review.candidate_id, str(image))
             self.assertEqual(review.scores["canon"], 92)
             self.assertEqual(review.change_requests[0]["feature"], "eyes")
+
+    def test_generic_character_uses_generic_rubric(self):
+        state = CharacterState(
+            character="陈菁",
+            design_targets={
+                "recurring_work_context": {
+                    "instruction": "特清部、组长、调查等工作语境",
+                    "confidence": 0.68,
+                }
+            },
+        )
+        self.assertEqual(
+            critic_dimensions(state),
+            (
+                "canon",
+                "context_fit",
+                "identity_clarity",
+                "character_specificity",
+                "design_coherence",
+                "overbeautification_control",
+            ),
+        )
 
     def test_acceptance_rejects_lock_violation_even_with_high_scores(self):
         scores = {
