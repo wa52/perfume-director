@@ -136,6 +136,24 @@ def main() -> None:
     )
 
     labels = ("A", "B", "C")
+    top_ids = {critique.candidate_id: labels[index] for index, critique in enumerate(top)}
+    all_candidates = []
+    for rank, (image_ref, critique) in enumerate(loop.last_reviewed, start=1):
+        all_candidates.append(
+            {
+                "rank": rank,
+                "label": top_ids.get(critique.candidate_id),
+                "image_ref": image_ref,
+                "candidate_id": critique.candidate_id,
+                "overall": critique.overall,
+                "scores": critique.scores,
+                "problems": critique.problems,
+                "locked_violations": critique.locked_violations,
+                "evidence_alignment": critique.evidence_alignment,
+                "change_requests": critique.change_requests,
+            }
+        )
+
     report = {
         "character": state.character,
         "version": state.version,
@@ -143,10 +161,17 @@ def main() -> None:
         "selection_status": "PROVISIONAL_AUTO_RANKING",
         "selected_image": state.history[-1].image_ref,
         "selected_score": state.history[-1].score,
+        "candidate_count": len(all_candidates),
+        "candidates": all_candidates,
         "shortlist": [
             {
                 "label": labels[index] if index < len(labels) else str(index + 1),
-                "image_ref": critique.candidate_id,
+                "image_ref": next(
+                    image_ref
+                    for image_ref, reviewed in loop.last_reviewed
+                    if reviewed.candidate_id == critique.candidate_id
+                ),
+                "candidate_id": critique.candidate_id,
                 "overall": critique.overall,
                 "scores": critique.scores,
                 "problems": critique.problems,
