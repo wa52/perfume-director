@@ -67,6 +67,12 @@ def main() -> None:
     latest_state = Path("runs/character_evolution/latest_state.json")
     state_path = args.state or (latest_state if latest_state.exists() else Path("examples/lu_xin_state_v01.json"))
     state = CharacterMemory(state_path).load(contract["character"]["name"])
+    if state_path.exists():
+        archive_version(
+            run_dir=args.state_output.parent,
+            state_path=state_path,
+            batch_path=args.report_output if args.report_output.exists() else None,
+        )
     apply_contract(contract, state)
     canon = contract_to_canon_profile(contract)
 
