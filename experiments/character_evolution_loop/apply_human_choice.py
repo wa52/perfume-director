@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from character_evolution.archive import archive_version
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from character_evolution.human_choice import apply_human_choice
 from character_evolution.memory import CharacterMemory
@@ -73,6 +74,11 @@ def main() -> None:
 
     output = args.output or args.state
     CharacterMemory(output).save(state)
+    archive_version(
+        run_dir=output.parent,
+        state_path=output,
+        batch_path=args.batch,
+    )
     print(
         json.dumps(
             {
