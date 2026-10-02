@@ -1,4 +1,4 @@
-# Character Evolution Loop — incubator v0.8
+# Character Evolution Loop — incubator v0.9
 
 一个面向小说漫改的角色设计闭环。目标不是反复“抽卡”，而是让角色在 **原著证据 + 自动审稿 + 人工选择 + 身份锚点 + 长期记忆 + 场景一致性验证** 下逐轮收敛。
 
@@ -457,6 +457,96 @@ canon/character_drafts.json
 
 下一步必须先为草稿建立证据绑定的 Canon Profile / Contract，才允许加入 Character Director 注册表。
 
+## v0.9：陈菁 / 韩冰 / 壁虎进入人物迭代
+
+Canon 仓库已为三名高频主要角色生成 evidence-bound Profile 与 passage-free Contract：
+
+```text
+canon/chen_jing.profile.json
+canon/chen_jing.character_contract.json
+
+canon/han_bing.profile.json
+canon/han_bing.character_contract.json
+
+canon/bi_hu.profile.json
+canon/bi_hu.character_contract.json
+```
+
+这些 Contract 的策略与陆辛不同：
+
+- 暂时 **0 个 hard visual locks**
+- 只加入 1 个跨章节证据支持的 `recurring_work_context` soft constraint
+- 年龄、脸型、发型、眼睛、身材、身高、服装、颜值、默认表情、默认姿势全部保持 unresolved
+- appearance / clothing / demeanor 的词法证据只留作 Canon Review Candidate，不直接进入生成硬约束
+
+这样可以开始探索人物形象，同时不会把“某个词在同一个 chunk 出现”误当成角色本人固定外貌。
+
+Character Director 现在内置四个角色：
+
+```text
+陆辛
+陈菁
+韩冰
+壁虎
+```
+
+新增角色分别拥有独立：
+
+- Canon Contract
+- V01 Character State
+- run directory
+- version archive
+- identity anchor
+- human feedback / locks / rejects
+
+默认仍共用同一个本机 ComfyUI workflow 和作品级 Art Direction。
+
+### 角色自适应 Visual Critic
+
+陆辛继续使用专用评分：
+
+```text
+canon
+ordinary
+office_worker
+restraint
+identity_clarity
+overbeautification_control
+```
+
+其他角色使用通用评分：
+
+```text
+canon
+context_fit
+identity_clarity
+character_specificity
+design_coherence
+overbeautification_control
+```
+
+因此陈菁、韩冰、壁虎不会因为共用系统而被错误要求“普通上班族感”。
+
+### Scene Profile 隔离
+
+当前 office / home / abnormal 三场景是陆辛专用。
+
+注册表现在有：
+
+```json
+{
+  "scene_validation_enabled": true
+}
+```
+
+只有陆辛开启。陈菁、韩冰、壁虎在建立各自 Scene Profile 前，Web 上的三场景验证按钮保持关闭，避免拿错角色模板验收。
+
+### 本地注册表升级兼容
+
+`characters.example.json` 现在提供内置角色；已有 `characters.local.json` 不再完全覆盖它，而是作为 override / extension 合并。
+
+因此旧本地配置继续存在时，新内置角色也能自动出现，不需要手工重建整份注册表。
+
 ## 测试
 
 ```powershell
@@ -479,13 +569,13 @@ GitHub Actions 使用同一套测试验证：
 
 ## 下一阶段
 
-v0.8 已完成作品级 Art Direction 与全文角色发现/草稿生成。下一阶段重点：
+v0.9 已把陈菁、韩冰、壁虎正式接入人物迭代系统。下一阶段重点：
 
-1. 把 13 个待审角色草稿逐个自动建立 evidence-bound Canon Profile / Contract。
-2. 优先处理陈菁、韩冰、壁虎等高频主要角色，并自动加入 Character Director 注册表。
-3. 建角色关系图，区分真实姓名、代号、称谓和同一人物别名，避免重复建角色。
-4. 增加版本分支语义：回滚后生成 V04a / V04b，而不是覆盖历史。
-5. 在 Web 中直接编辑 ComfyUI 节点映射和作品 Art Direction。
+1. 对三人的 appearance / clothing strongest evidence 做逐 chunk Canon Review，确认真正属于本人且反复稳定的视觉事实。
+2. 为陈菁、韩冰、壁虎分别建立 Scene Profile，不复用陆辛 office/home/abnormal 模板。
+3. 建角色关系图和 alias resolution，处理真实姓名、代号、称谓、同一人物别名。
+4. 扩展剩余高价值角色草稿进入 Contract / State。
+5. 增加分支版本语义：回滚后形成 V04a / V04b，不覆盖旧分支。
 6. 最终把 Character Director 从 `perfume-director` incubator 迁出为独立项目。
 
 > 核心原则：自动模型负责提出和审稿，人负责确认角色是谁。一旦确认，系统要记住，而不是下一轮重新抽卡。
