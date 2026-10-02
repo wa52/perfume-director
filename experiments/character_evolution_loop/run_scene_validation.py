@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+from character_evolution.archive import archive_version
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from character_evolution.generation_prompt import CharacterGenerationPrompt
 from character_evolution.memory import CharacterMemory
@@ -149,6 +150,11 @@ def main() -> None:
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    archive_version(
+        run_dir=args.state.parent,
+        state_path=args.state,
+        scene_path=args.output,
+    )
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
