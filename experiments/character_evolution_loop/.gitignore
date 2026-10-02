@@ -3,7 +3,7 @@ corpus/private/
 corpus/index/
 
 # Local runtime/config outputs
-config/character_v01.local.json
+config/*.local.json
 workflows/character_portrait.api.json
 workflows/character_scene.api.json
 runs/
