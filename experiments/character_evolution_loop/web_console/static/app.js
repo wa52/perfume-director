@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s);let data=null,selected=null,characterId=null,pollTimer=null;
-const labels={canon:"Canon",ordinary:"普通感",office_worker:"上班族",restraint:"克制",identity_clarity:"身份清晰",overbeautification_control:"去美型化"};
+const labels={canon:"Canon",ordinary:"普通感",office_worker:"上班族",restraint:"克制",identity_clarity:"身份清晰",overbeautification_control:"去美型化",context_fit:"语境匹配",character_specificity:"角色辨识",design_coherence:"设计一致"};
 const esc=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.remove("hidden");setTimeout(()=>e.classList.add("hidden"),2800)}
 function busy(t,m){$("#busyTitle").textContent=t;$("#busyText").textContent=m;$("#busy").classList.remove("hidden")}function unbusy(){$("#busy").classList.add("hidden")}
