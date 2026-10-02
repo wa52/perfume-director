@@ -5,6 +5,8 @@ from .loop import CharacterEvolutionLoop
 from .acceptance import AcceptancePolicy
 from .canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from .generation_prompt import CharacterGenerationPrompt
+from .human_choice import apply_human_choice
+from .scene_validation import DEFAULT_SCENES, SceneAcceptancePolicy, SceneValidationResult
 from .prompt_renderer import CanonPromptRenderer
 
 __all__ = [
@@ -21,5 +23,9 @@ __all__ = [
     "contract_to_canon_profile",
     "load_contract",
     "CharacterGenerationPrompt",
+    "apply_human_choice",
+    "DEFAULT_SCENES",
+    "SceneAcceptancePolicy",
+    "SceneValidationResult",
     "CanonPromptRenderer",
 ]
