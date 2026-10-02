@@ -134,6 +134,7 @@ def build_dashboard(character_id: str | None = None) -> dict[str, Any]:
             "shortlist": [_candidate_view(x) for x in shortlist],
         },
         "scene_validation": scene,
+        "scene_validation_enabled": spec.scene_validation_enabled,
         "evidence_groups": evidence_groups,
         "versions": versions,
         "archived_versions": archived,
@@ -240,6 +241,8 @@ def run_character_job(spec: CharacterSpec, kind: str) -> dict[str, Any]:
             "--report-output", str(spec.latest_batch),
         ]
     elif kind == "scenes":
+        if not spec.scene_validation_enabled:
+            raise ValueError("scene validation is not configured for this character yet")
         if not spec.latest_state.exists():
             raise ValueError("scene validation requires a generated/human-reviewed latest_state")
         command = [
