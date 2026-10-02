@@ -1,4 +1,4 @@
-# Character Evolution Loop — incubator v0.6
+# Character Evolution Loop — incubator v0.7
 
 一个面向小说漫改的角色设计闭环。目标不是反复“抽卡”，而是让角色在 **原著证据 + 自动审稿 + 人工选择 + 身份锚点 + 长期记忆 + 场景一致性验证** 下逐轮收敛。
 
@@ -336,6 +336,46 @@ http://127.0.0.1:8765
 
 网页只暴露固定的 Character Evolution 操作，不接受任意 shell 命令。生成图片读取也限制在 `runs/character_evolution/` 下，避免路径穿越读取其它本机文件。
 
+## v0.7：项目级导演台
+
+这一版把单角色实验升级成可以长期使用的项目层：
+
+- **多角色注册表**：`config/characters.example.json` 定义角色 id / 名称 / contract / base state / local config / run directory。
+- **角色切换**：Web 顶部可以切换已注册角色；不同角色使用独立 run 目录，state / batch / scene 不串写。
+- **后台任务队列**：生成下一轮与三场景验证通过 `job_id` 后台执行，页面每秒轮询状态，不再用一个长 HTTP 请求阻塞。
+- **同角色互斥**：同一角色不能同时跑两个长任务；不同角色可以独立运行。
+- **版本归档**：每轮生成前、生成后、人工确认后、场景验证后都会保存 `versions/vNNN/`。
+- **版本回滚**：Web 版本卡可以恢复对应的 state / batch / scene；归档本身保留。
+- **配置体检**：网页检查 contract/base state/local config、ComfyUI workflow、prompt/output/seed/reference 节点、Critic 模型/API key 环境变量，并可尝试连接 `/system_stats`。
+- **前端语法验收**：CI 新增 `node --check web_console/static/app.js`。
+
+本地多角色配置建议复制：
+
+```powershell
+Copy-Item config/characters.example.json config/characters.local.json
+```
+
+然后为新角色新增一项：
+
+```json
+{
+  "id": "new_character",
+  "name": "新角色",
+  "contract": "examples/new_character_contract.json",
+  "base_state": "examples/new_character_state_v01.json",
+  "config": "config/new_character.local.json",
+  "run_dir": "runs/characters/new_character"
+}
+```
+
+网页仍然通过：
+
+```text
+http://127.0.0.1:8765
+```
+
+访问。角色切换、配置检查、生成任务、三场景任务、回滚都在同一页完成。
+
 ## 测试
 
 ```powershell
@@ -358,13 +398,13 @@ GitHub Actions 使用同一套测试验证：
 
 ## 下一阶段
 
-v0.6 已完成 Web Director Console 的第一版。下一阶段重点转为真正的产品化：
+v0.7 已完成版本回滚、多角色注册/切换、配置体检和后台任务队列。下一阶段重点：
 
-1. 增加版本回滚：从 V05 一键回到任意人工确认版本。
-2. 增加多人角色管理，不再只显示陆辛。
-3. 在网页内配置 ComfyUI workflow / 节点映射并做连通性检查。
-4. 增加生成任务状态流，不让长时间 ComfyUI 请求阻塞页面。
-5. 给三场景结果显示真实场景图、回归特征和对比视图。
+1. 在网页中直接编辑并保存每个角色的本地 ComfyUI 节点映射，而不再手改 JSON。
+2. 把三场景的真实图片放进对比视图，突出 identity drift / regression feature。
+3. 增加“分支版本”语义：从 V03 回滚后再生成，不覆盖旧 V04，而是形成 V03 → V04a / V04b。
+4. 从 Canon RAG 自动发现主要角色并创建角色草稿，不再手工登记每个人。
+5. 增加整部作品的角色关系图和统一 2D 美术风格锁。
 6. 最终把 Character Director 从 `perfume-director` incubator 迁出为独立项目。
 
 > 核心原则：自动模型负责提出和审稿，人负责确认角色是谁。一旦确认，系统要记住，而不是下一轮重新抽卡。
