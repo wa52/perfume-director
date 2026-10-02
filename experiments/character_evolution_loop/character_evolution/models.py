@@ -76,6 +76,10 @@ class CharacterState:
     canon_source: dict[str, Any] = field(default_factory=dict)
     forbidden_interpretations: list[str] = field(default_factory=list)
 
+    # Human-selected image is the identity anchor used for later iterations/scenes.
+    identity_anchor: str | None = None
+    human_selections: list[dict[str, Any]] = field(default_factory=list)
+
     history: list[IterationRecord] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
