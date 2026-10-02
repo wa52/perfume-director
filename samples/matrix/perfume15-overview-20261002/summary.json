@@ -1569,7 +1569,7 @@
     },
     {
       "product_id": "kenzo-jungle",
-      "status": "RUNNING",
+      "status": "ERROR",
       "selected_tag": "remaining-four-sequential-20261002",
       "selected_directions": 0,
       "attempts": [
@@ -1587,9 +1587,9 @@
         },
         {
           "tag": "remaining-four-sequential-20261002",
-          "status": "RUNNING",
-          "error_type": null,
-          "error": null
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Concepts repeat: require four names, >=3 geometry grids, >=3 coarse background colors, both serif and sans title families and >=3 materials; color swaps alone are insufficient"
         }
       ],
       "directions": []
@@ -1752,7 +1752,7 @@
     },
     {
       "product_id": "versace-yellow-diamond-intense",
-      "status": "PENDING",
+      "status": "RUNNING",
       "selected_tag": "remaining-four-sequential-20261002",
       "selected_directions": 0,
       "attempts": [
@@ -1770,7 +1770,7 @@
         },
         {
           "tag": "remaining-four-sequential-20261002",
-          "status": "PENDING",
+          "status": "RUNNING",
           "error_type": null,
           "error": null
         }

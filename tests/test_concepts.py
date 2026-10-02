@@ -54,6 +54,17 @@ class FreshConceptTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'topology'):
             concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
 
+    def test_repair_diagnostics_include_palette_and_collision_in_the_same_request(self):
+        value=self.plans()
+        for item in value['directions']:item['spec']['background']['color']='#e0e0e0'
+        spec=value['directions'][1]['spec']
+        spec['logo'].update(x=spec['product']['x'],y=spec['product']['y'])
+        original=copy.deepcopy(value)
+        errors=concepts.planning_diagnostics(poster,self.config,value,self.product,self.words)
+        self.assertTrue(any('overlap' in error for error in errors))
+        self.assertTrue(any('colors repeat' in error for error in errors))
+        self.assertEqual(value,original)
+
     def test_campaign_typography_reference_is_required_when_available(self):
         refs=copy.deepcopy(self.refs)
         refs.append({'id':'type-ref','brand':'TYPE','analysis':{'has_campaign_typography':True}})

@@ -1,0 +1,15 @@
+{
+  "title": "Yellow Diamond Intense",
+  "logo": "VERSACE",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label lines visibly read 'VERSACE' (brand) and 'YELLOW DIAMOND INTENSE' (product name); title copies only the product-name lines, logo copies the brand line; no concentration, category, price or promo text is legible on the packshot; the brief supplies only the brand+name confirmation and prohibits price/claims.",
+  "product_profile": {
+    "material": "faceted cut yellow glass bottle with matching gem-cut faceted glass cap",
+    "color": "vivid golden yellow with pale lemon-white highlight zones",
+    "transparency": "translucent refractive glass overall, but the central label panel reads as a bright near-opaque yellow field",
+    "illumination": "soft frontal studio light with strong internal glow; broad specular highlights on cap facets and a bright band along the base",
+    "view": "straight-on frontal elevation, bottle upright and centered, no ground plane or cast shadow visible",
+    "integration_limits": "pure black cutout background with no shadow or reflection; the bright opaque label panel cannot transmit a newly generated background, so backgrounds must sit behind intact edges and not expect see-through in that region"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "offline diagnostics replay; no new image generation",
+  "source": "../remaining-four-sequential-20261002/kenzo-jungle/planning/Concepts-call.json",
+  "errors": [
+    "Concept 3: Prepared layout still unsafe: logo_overlaps_product",
+    "Concept 4: Prepared layout still unsafe: title_overlaps_product, logo_overlaps_product",
+    "Background colors repeat: require at least3 clearly different coarse color families, not four near-white pastels"
+  ],
+  "scope": "reports simultaneous issues; does not prove automatic planning succeeded",
+  "original_local_trace_sha256": "79906ed745056ee5e7bdb64a892ac65238d3dd109f52796f58464844d7c84bc1",
+  "source_sha256": "c068b4e59e58a9a606b5d8cbc572f03a7a9f8e0d4778e9b4cc8093400b183650"
+}

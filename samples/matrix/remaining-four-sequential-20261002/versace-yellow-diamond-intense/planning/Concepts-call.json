@@ -1,0 +1,377 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-97918883-70a0-900c-9442-70e5b7b03185",
+      "usage": {
+        "prompt_tokens": 31224,
+        "total_tokens": 37549,
+        "completion_tokens": 6325,
+        "prompt_tokens_details": {
+          "cached_tokens": 31104,
+          "image_tokens": 9144,
+          "text_tokens": 22080
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2228
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-97918883-70a0-900c-9442-70e5b7b03185",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 31224,
+    "total_tokens": 37549,
+    "completion_tokens": 6325,
+    "prompt_tokens_details": {
+      "cached_tokens": 31104,
+      "image_tokens": 9144,
+      "text_tokens": 22080
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2228
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Lapidary Marquise Blueprint",
+        "brief": "把宽马眼形宝石盖读作一张琢石图纸：深钴蓝丝印卡纸上，一枚硬边柠檬色马眼椭圆精确套住盖部轮廓，其后错出一枚更大的低不透明度同形椭圆如放大一级的琢面刻度，椭圆之下再压一条象牙细横缝如剖切线。商品沉于下幅，剪影自身补全椭圆的中断；顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条柠檬细线横垫其下如制图套准线。哑光丝印吞光，让金黄折面玻璃 owning 全部高光。无地面无 horizon，纯琢石几何叙事。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）与 R5 的居中几何光环聚焦、R7 的同品牌金属光泽秩序。",
+        "material": "flat matte silkscreen-printed card with hard-edge printed marquise oval fields",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R7"
+        ],
+        "palette": [
+          "#16307a",
+          "#f2ecd8",
+          "#e9c63c"
+        ],
+        "product": [
+          0.5,
+          0.63,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.072,
+            0.145,
+            86
+          ],
+          "logo": [
+            0.396,
+            0.062,
+            40
+          ],
+          "subtitle": [
+            0.46,
+            0.235,
+            24
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.533,
+            "width": 0.8,
+            "height": 0.17,
+            "color": "#e9c63c",
+            "opacity": 0.92
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.512,
+            "width": 0.92,
+            "height": 0.25,
+            "color": "#e9c63c",
+            "opacity": 0.22
+          }
+        ],
+        "line": [
+          0.35,
+          0.223,
+          0.3
+        ]
+      },
+      {
+        "name": "Citrus Atrium Caustic Column",
+        "brief": "把标签的柠檬白高光读作一整间晨光中庭：cool  pale lime-washed 灰泥墙在真实基准线处接连续 honed 浅石灰岩地面，硬晨光穿过 unseen 玻璃天窗，在墙地投下一池暖黄 caustic 光斑与一道 crisp 斜影边；商品立于光池左缘，测量接触阴影陷进磨石面。右半幅墙保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如蚀刻签条，一条石墨细线横垫柱底如日照刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；矿物的冷哑光与金黄折光互为冷暖。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬光 caustic 光池与 R6 的柔光宝石感。",
+        "material": "lime-washed pale grey plaster wall with continuous honed pale limestone ground",
+        "lighting": "hard morning sunlight casting one crisp oblique shadow edge and a warm caustic light pool across wall and ground, bright cool ambient elsewhere, no visible light equipment",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R6"
+        ],
+        "palette": [
+          "#dfe4e2",
+          "#1d2a2e",
+          "#d9b32c"
+        ],
+        "product": [
+          0.33,
+          0.62,
+          0.46
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.63,
+            0.44,
+            92
+          ],
+          "logo": [
+            0.63,
+            0.375,
+            34
+          ],
+          "subtitle": [
+            0.63,
+            0.66,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 360,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Lime-washed pale cool grey plaster wall meeting a continuous honed pale limestone ground at a horizontal horizon six tenths down the frame, one warm golden caustic light pool lying across the wall-ground junction left of centre, one crisp oblique shadow edge raking the upper wall from left, matte mineral grain, bright cool morning ambient, no objects",
+        "shapes": [],
+        "line": [
+          0.63,
+          0.635,
+          0.22
+        ]
+      },
+      {
+        "name": "Citron Facet Grid Ledger",
+        "brief": "把瓶身的梯形折面读作一整张 gem-cut 网格：饱和柠檬黄平涂卡纸上，细密象牙刻线自中心放射成琢面格网，格网在下三分之一处被一道硬边留白横带截断，如同折面沉入铭牌；一枚硬边深墨矩形板沉于格网之后托住剪影下半。商品提至上幅立于格网心，刻线从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Georgia 题名以近满带宽的单行衬线大字居中统领，一条墨色细线横于带顶如刻刀零点。哑光丝印吞光，让透明黄玻璃的 internal glow owning 全部亮度。无地面无 horizon，纯线密度下坠叙事。参考 R2 的纸面分区铭牌秩序与 R4 的硬阴影色块对比、R6 的宝石切面光。",
+        "material": "flat matte silkscreen-printed card with fine engraved facet grid lines and one hard-edge blank plaque band",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R2",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#e5c227",
+          "#221a06",
+          "#f4eeda"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.128,
+            0.79,
+            78
+          ],
+          "logo": [
+            0.402,
+            0.735,
+            36
+          ],
+          "subtitle": [
+            0.44,
+            0.872,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/georgia.ttf",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre, one hard-edge blank horizontal plaque band without lines across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond engraved lines, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.62,
+            "height": 0.34,
+            "color": "#221a06",
+            "opacity": 0.16
+          }
+        ],
+        "line": [
+          0.42,
+          0.775,
+          0.16
+        ]
+      },
+      {
+        "name": "Basalt Court Noon Shadow",
+        "brief": "把盖顶的镜面碎光放进一座正午石庭：深玄武岩灰石板墙以细密干缝排成横向石层，连续 honed 同料石板地面在真实基准线接墙；正午顶光在墙根压出一道锐利水平影带，石面保持冷哑光。商品立于石地居中偏右，测量接触阴影陷进干缝；左半幅石墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽两行排印如仪器铭牌，一条柠檬短横线垫于柱底如日晷刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏网格诚实成立；玄武岩的冷哑光与金黄折面玻璃的暖透互为温度悖论。参考 R1 的左图右文负空间层级、R4 的硬方向光阴影秩序与 R8 的深色建筑感负空间。",
+        "material": "dark basalt stone slab wall with fine dry joints and continuous honed basalt ground",
+        "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R8"
+        ],
+        "palette": [
+          "#3a3d42",
+          "#f0eee6",
+          "#e9c63c"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.46
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.08,
+            0.45,
+            74
+          ],
+          "logo": [
+            0.08,
+            0.385,
+            34
+          ],
+          "subtitle": [
+            0.08,
+            0.63,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 3,
+              "max_width": 330,
+              "line_height": 1.14,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Dark basalt grey stone slab wall with fine horizontal dry joints meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte stone grain, cool diffuse ambient, no objects",
+        "shapes": [],
+        "line": [
+          0.08,
+          0.608,
+          0.18
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 237.178
+}

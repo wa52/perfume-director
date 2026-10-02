@@ -158,6 +158,33 @@ def validate_plans(engine, config, value, product, references, approved_copy):
     return directions
 
 
+def planning_diagnostics(engine,config,value,product,approved_copy):
+    """Expose independent geometry and diversity failures in the same repair."""
+    items=value.get('directions')
+    if not isinstance(items,list) or len(items)!=4:
+        return ['Exactly four new concepts required']
+    errors=[];colors=set();fonts=set();materials=set();inspected=0
+    for index,item in enumerate(items,1):
+        try:
+            spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
+            for layer,text in approved_copy.items():spec[layer]['text']=text
+            rgb=engine.ImageColor.getrgb(spec['background']['color'])
+            colors.add(tuple(c//64 for c in rgb[:3]))
+            fonts.add(title_family(spec['title'].get('font',config['font'])))
+            materials.add(item['material'].strip().casefold())
+            inspected+=1
+            engine.validate(spec)
+            spec,_=engine.prepare_layout({**config,'direction_id':f'concept-{index}'},spec,product)
+            title_relationship(engine.rendered_geometry(spec,product,config['font']))
+        except (ValueError,KeyError,TypeError) as error:
+            errors.append(f'Concept {index}: {error}')
+    if inspected==4:
+        if len(colors)<3:errors.append('Background colors repeat: require at least3 clearly different coarse color families, not four near-white pastels')
+        if len(fonts)<2:errors.append('Title families repeat: require both serif and sans')
+        if len(materials)<3:errors.append('Materials repeat: require at least3 different materials')
+    return errors
+
+
 def plan_four(engine,config,product,brief,folder,approved_copy):
     store=engine.reference_store_module()
     pool=store.planning_pool(engine.ROOT,limit=8) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
@@ -233,7 +260,9 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         except (ValueError,KeyError,TypeError) as error:
             if attempt==2:raise
             trace='Concepts-repair-call.json' if attempt==0 else 'Concepts-repair-2-call.json'
-            value=engine.vision(planning,prompt+' Repair these plans without reverting to a fixed template. Preserve valid concepts; correct the failing geometry in its named concept. Return all four. Validation error: '+str(error)+
+            problems=list(dict.fromkeys([str(error),*planning_diagnostics(engine,config,resolve_reference_ids(value,refs),product,approved_copy)]))
+            engine.write(folder/f'Planning-errors-{attempt+1}.json',{'errors':problems})
+            value=engine.vision(planning,prompt+' Repair these plans without reverting to a fixed template. Preserve valid concepts; fix ALL reported geometry and diversity issues together. Return all four. Validation errors: '+json.dumps(problems,ensure_ascii=False)+
                 ' Invalid plans: '+json.dumps(value,ensure_ascii=False),[product,*[engine.ROOT/r['image'] for r in refs]],folder/trace)
     engine.write(folder/'Concepts.json',plans)
     return plans,refs

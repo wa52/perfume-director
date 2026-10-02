@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-3ef761b9-a0d9-9c79-b647-7ff3651f966c",
+      "usage": {
+        "prompt_tokens": 1572,
+        "total_tokens": 2738,
+        "completion_tokens": 1166,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 361
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 874,
+          "text_tokens": 291
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-3ef761b9-a0d9-9c79-b647-7ff3651f966c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1572,
+    "total_tokens": 2738,
+    "completion_tokens": 1166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 361
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 874,
+      "text_tokens": 291
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Yellow Diamond Intense",
+    "logo": "VERSACE",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Label lines visibly read 'VERSACE' (brand) and 'YELLOW DIAMOND INTENSE' (product name); title copies only the product-name lines, logo copies the brand line; no concentration, category, price or promo text is legible on the packshot; the brief supplies only the brand+name confirmation and prohibits price/claims.",
+    "product_profile": {
+      "material": "faceted cut yellow glass bottle with matching gem-cut faceted glass cap",
+      "color": "vivid golden yellow with pale lemon-white highlight zones",
+      "transparency": "translucent refractive glass overall, but the central label panel reads as a bright near-opaque yellow field",
+      "illumination": "soft frontal studio light with strong internal glow; broad specular highlights on cap facets and a bright band along the base",
+      "view": "straight-on frontal elevation, bottle upright and centered, no ground plane or cast shadow visible",
+      "integration_limits": "pure black cutout background with no shadow or reflection; the bright opaque label panel cannot transmit a newly generated background, so backgrounds must sit behind intact edges and not expect see-through in that region"
+    }
+  },
+  "duration_seconds": 27.657
+}
