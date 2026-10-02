@@ -19,6 +19,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check Director Console JavaScript syntax
+        working-directory: experiments/character_evolution_loop
+        run: node --check web_console/static/app.js
       - name: Run Character Evolution tests
         working-directory: experiments/character_evolution_loop
         run: python -m unittest discover -s tests -v
