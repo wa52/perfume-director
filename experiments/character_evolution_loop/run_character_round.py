@@ -80,6 +80,12 @@ def main() -> None:
                 else None
             ),
             seed_input=comfy_raw.get("seed_input", "seed"),
+            reference_image_node=(
+                str(comfy_raw["reference_image_node"])
+                if comfy_raw.get("reference_image_node") is not None
+                else None
+            ),
+            reference_image_input=comfy_raw.get("reference_image_input", "image"),
             seed_start=int(comfy_raw.get("seed_start", 2026100201)),
             timeout_seconds=float(comfy_raw.get("timeout_seconds", 300)),
             poll_seconds=float(comfy_raw.get("poll_seconds", 1)),
@@ -131,6 +137,7 @@ def main() -> None:
         "character": state.character,
         "version": state.version,
         "accepted": state.history[-1].accepted,
+        "selection_status": "PROVISIONAL_AUTO_RANKING",
         "selected_image": state.history[-1].image_ref,
         "selected_score": state.history[-1].score,
         "shortlist": [
@@ -141,10 +148,12 @@ def main() -> None:
                 "scores": critique.scores,
                 "problems": critique.problems,
                 "locked_violations": critique.locked_violations,
+                "evidence_alignment": critique.evidence_alignment,
                 "change_requests": critique.change_requests,
             }
             for index, critique in enumerate(top)
         ],
+        "human_choice_required": True,
         "next_patch": state.history[-1].patch,
         "next_prompt": state.prompt,
         "state_output": str(args.state_output),
