@@ -1,0 +1,7 @@
+# Local copyrighted/private novel corpus. Keep these files out of the public repository.
+corpus/private/
+corpus/index/
+
+# Local Python artifacts
+__pycache__/
+*.pyc
