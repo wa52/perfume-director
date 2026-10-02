@@ -24,6 +24,8 @@ class ComfyUIConfig:
     prompt_input: str = "text"
     seed_node: str | None = None
     seed_input: str = "seed"
+    reference_image_node: str | None = None
+    reference_image_input: str = "image"
     seed_start: int = 2026100201
     timeout_seconds: float = 300.0
     poll_seconds: float = 1.0
@@ -56,6 +58,8 @@ class ComfyUICharacterGenerator:
             raise ValueError(f"output node {self.config.output_node!r} not found in workflow")
         if self.config.seed_node and self.config.seed_node not in workflow:
             raise ValueError(f"seed node {self.config.seed_node!r} not found in workflow")
+        if self.config.reference_image_node and self.config.reference_image_node not in workflow:
+            raise ValueError(f"reference image node {self.config.reference_image_node!r} not found in workflow")
         return workflow
 
     @staticmethod
@@ -65,6 +69,27 @@ class ComfyUICharacterGenerator:
         if input_name not in inputs:
             raise ValueError(f"workflow node {node_id!r} has no input {input_name!r}")
         inputs[input_name] = value
+
+
+    def _upload_image(self, path: str | Path) -> str:
+        path = Path(path)
+        boundary = "----CharacterEvolutionBoundary"
+        body = (
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="image"; filename="{path.name}"\r\n'
+            "Content-Type: application/octet-stream\r\n\r\n"
+        ).encode("utf-8") + path.read_bytes() + f"\r\n--{boundary}--\r\n".encode("utf-8")
+        result = json.loads(
+            self.http_fn(
+                self.config.base_url.rstrip("/") + "/upload/image",
+                body,
+                {"Content-Type": "multipart/form-data; boundary=" + boundary},
+                min(self.config.timeout_seconds, 60.0),
+            )
+        )
+        return "/".join(
+            part for part in (result.get("subfolder"), result["name"]) if part
+        )
 
     def _execute_one(self, workflow: dict[str, Any], destination: Path) -> Path:
         base = self.config.base_url.rstrip("/")
@@ -141,6 +166,9 @@ class ComfyUICharacterGenerator:
         template = self._load_workflow()
         run_dir = self.config.output_dir / state.character / f"v{state.version + 1:03d}"
         refs: list[str] = []
+        uploaded_reference = None
+        if self.config.reference_image_node and state.identity_anchor:
+            uploaded_reference = self._upload_image(state.identity_anchor)
 
         for index in range(count):
             workflow = copy.deepcopy(template)
@@ -150,6 +178,13 @@ class ComfyUICharacterGenerator:
                 self.config.prompt_input,
                 prompt,
             )
+            if self.config.reference_image_node and uploaded_reference:
+                self._set_input(
+                    workflow,
+                    self.config.reference_image_node,
+                    self.config.reference_image_input,
+                    uploaded_reference,
+                )
             seed = self.config.seed_start + state.version * 1000 + index
             if self.config.seed_node:
                 self._set_input(
