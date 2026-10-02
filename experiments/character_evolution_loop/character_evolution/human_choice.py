@@ -49,6 +49,8 @@ def apply_human_choice(
     image_ref = str(selected.get("image_ref", "")).strip()
     if not image_ref:
         raise ValueError("selected shortlist item has no image_ref")
+    if selected.get("locked_violations"):
+        raise ValueError("cannot promote a candidate with locked Canon violations")
 
     if feedback:
         CharacterMemory.add_feedback(state, feedback)
@@ -108,6 +110,6 @@ def apply_human_choice(
         record.critique = asdict(critique)
         record.patch = asdict(patch)
         record.human_feedback = feedback
-        record.accepted = not critique.locked_violations
+        record.accepted = True
 
     return state
