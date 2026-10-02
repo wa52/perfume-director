@@ -7,7 +7,8 @@
       "contract": "examples/lu_xin_canon_contract.json",
       "base_state": "examples/lu_xin_state_v01.json",
       "config": "config/character_v01.local.json",
-      "run_dir": "runs/character_evolution"
+      "run_dir": "runs/character_evolution",
+      "scene_validation_enabled": true
     }
   ]
 }
