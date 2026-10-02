@@ -6,6 +6,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from character_evolution.acceptance import AcceptancePolicy
+from character_evolution.archive import archive_version
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from character_evolution.generation_prompt import CharacterGenerationPrompt
 from character_evolution.loop import CharacterEvolutionLoop
@@ -190,6 +191,11 @@ def main() -> None:
     args.report_output.write_text(
         json.dumps(report, ensure_ascii=False, indent=2),
         encoding="utf-8",
+    )
+    archive_version(
+        run_dir=args.state_output.parent,
+        state_path=args.state_output,
+        batch_path=args.report_output,
     )
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
