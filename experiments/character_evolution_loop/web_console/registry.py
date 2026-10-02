@@ -56,12 +56,31 @@ def _resolve(root: Path, raw: str, *, run_dir: bool = False) -> Path:
 def load_registry(root: Path) -> CharacterRegistry:
     local = root / "config" / "characters.local.json"
     example = root / "config" / "characters.example.json"
-    source = local if local.exists() else example
-    raw = json.loads(source.read_text(encoding="utf-8"))
+    base_raw = json.loads(example.read_text(encoding="utf-8"))
+    local_raw = json.loads(local.read_text(encoding="utf-8")) if local.exists() else {}
 
-    items = raw.get("characters")
-    if not isinstance(items, list) or not items:
-        raise ValueError("character registry requires non-empty characters list")
+    base_items = base_raw.get("characters")
+    local_items = local_raw.get("characters", [])
+    if not isinstance(base_items, list) or not base_items:
+        raise ValueError("character registry requires non-empty built-in characters list")
+    if not isinstance(local_items, list):
+        raise ValueError("local character registry entries must be a list")
+
+    merged: dict[str, dict[str, Any]] = {}
+    order: list[str] = []
+    for item in [*base_items, *local_items]:
+        if not isinstance(item, dict):
+            raise ValueError("character registry entries must be objects")
+        character_id = str(item.get("id", "")).strip()
+        if not character_id:
+            raise ValueError("each character requires id")
+        if character_id not in merged:
+            order.append(character_id)
+            merged[character_id] = dict(item)
+        else:
+            merged[character_id].update(item)
+
+    items = [merged[character_id] for character_id in order]
 
     characters: dict[str, CharacterSpec] = {}
     for item in items:
@@ -83,7 +102,7 @@ def load_registry(root: Path) -> CharacterRegistry:
             scene_validation_enabled=bool(item.get("scene_validation_enabled", False)),
         )
 
-    default = str(raw.get("default_character", "")).strip() or next(iter(characters))
+    default = str(local_raw.get("default_character", "")).strip() or str(base_raw.get("default_character", "")).strip() or next(iter(characters))
     if default not in characters:
         raise ValueError(f"default_character {default!r} is not registered")
     return CharacterRegistry(default_character=default, characters=characters)
