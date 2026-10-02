@@ -21,5 +21,10 @@
   "batch": {
     "candidates": 8,
     "shortlist": 3
+  },
+  "acceptance": {
+    "minimum_overall": 78,
+    "minimum_canon": 85,
+    "minimum_identity": 72
   }
 }
