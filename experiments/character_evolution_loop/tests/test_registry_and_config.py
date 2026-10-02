@@ -31,6 +31,7 @@ class RegistryAndConfigTests(unittest.TestCase):
                                 "base_state": "examples/a.state.json",
                                 "config": "config/a.local.json",
                                 "run_dir": "runs/a",
+                                "scene_validation_enabled": true,
                             },
                             {
                                 "id": "b",
@@ -50,6 +51,8 @@ class RegistryAndConfigTests(unittest.TestCase):
                 registry.characters["a"].latest_state,
                 registry.characters["b"].latest_state,
             )
+            self.assertTrue(registry.characters["a"].scene_validation_enabled)
+            self.assertFalse(registry.characters["b"].scene_validation_enabled)
 
     def test_config_check_validates_nodes_and_api_key_env(self):
         with tempfile.TemporaryDirectory() as td:
