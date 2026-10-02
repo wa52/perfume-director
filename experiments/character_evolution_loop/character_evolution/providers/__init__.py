@@ -1,6 +1,7 @@
 from .comfyui import ComfyUICharacterGenerator, ComfyUIConfig
 from .vision_critic import OpenAICompatibleVisionCritic, VisionCriticConfig
 from .scene_validator import OpenAICompatibleSceneValidator, SceneValidatorConfig
+from .director_agent import OpenAICompatibleDirectorAgent, DirectorAgentConfig
 
 __all__ = [
     "ComfyUICharacterGenerator",
@@ -9,4 +10,6 @@ __all__ = [
     "VisionCriticConfig",
     "OpenAICompatibleSceneValidator",
     "SceneValidatorConfig",
+    "OpenAICompatibleDirectorAgent",
+    "DirectorAgentConfig",
 ]
