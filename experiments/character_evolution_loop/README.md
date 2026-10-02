@@ -1,4 +1,4 @@
-# Character Evolution Loop — incubator v0.5
+# Character Evolution Loop — incubator v0.6
 
 一个面向小说漫改的角色设计闭环。目标不是反复“抽卡”，而是让角色在 **原著证据 + 自动审稿 + 人工选择 + 身份锚点 + 长期记忆 + 场景一致性验证** 下逐轮收敛。
 
@@ -293,6 +293,49 @@ locked violations = 0
 
 任何 locked violation 都排在所有 lock-safe 候选后面。
 
+## Web Director Console
+
+v0.6 已把命令行闭环搬到同一个本地网页，不引入 Node/Next.js，直接使用 Python 标准库服务。
+
+启动：
+
+```powershell
+cd experiments/character_evolution_loop
+python -m web_console.server
+```
+
+浏览器打开：
+
+```text
+http://127.0.0.1:8765
+```
+
+页面布局：
+
+```text
+┌──────────────┬──────────────────────────────┬──────────────────┐
+│ Canon 原著证据 │ 8 张候选 / A-B-C / 版本历史     │ Human Review     │
+│ Locks        │ 当前轮 Critic 分数             │ 反馈 / Lock / Reject│
+│ 章节锚点       │ 三场景一致性                   │ identity anchor   │
+└──────────────┴──────────────────────────────┴──────────────────┘
+```
+
+网页可以直接完成：
+
+- 显示全部 8 张候选，不只 A/B/C。
+- A/B/C 只是自动推荐标记。
+- 点击候选查看完整 Critic 分数与问题。
+- 写自然语言反馈。
+- 指定一项重点修改。
+- 勾选并锁定满意的视觉特征。
+- 输入永久拒绝的设计。
+- 点击“确认所选角色”写入 Character Memory。
+- 点击“确认并继续下一轮”直接生成下一版。
+- 点击“三场景验证”执行 office / home / abnormal 一致性检查。
+- 查看 V01 → V02 → V03 历史。
+
+网页只暴露固定的 Character Evolution 操作，不接受任意 shell 命令。生成图片读取也限制在 `runs/character_evolution/` 下，避免路径穿越读取其它本机文件。
+
 ## 测试
 
 ```powershell
@@ -315,13 +358,13 @@ GitHub Actions 使用同一套测试验证：
 
 ## 下一阶段
 
-v0.5 之后真正剩下的是产品层，而不是核心链路：
+v0.6 已完成 Web Director Console 的第一版。下一阶段重点转为真正的产品化：
 
-1. 做一个 Web Director Console，把 8 张图和 A/B/C 直接显示出来。
-2. 点 B 就完成 `apply_human_choice`，不用命令行。
-3. 右侧直接编辑“锁定 / 可修改 / 拒绝”。
-4. 点击“继续迭代”进入 V03。
-5. 三场景结果在同一页面展示身份一致性评分。
-6. 版本树显示 V01 → V02 → V03，并允许回滚到任意已确认身份。
+1. 增加版本回滚：从 V05 一键回到任意人工确认版本。
+2. 增加多人角色管理，不再只显示陆辛。
+3. 在网页内配置 ComfyUI workflow / 节点映射并做连通性检查。
+4. 增加生成任务状态流，不让长时间 ComfyUI 请求阻塞页面。
+5. 给三场景结果显示真实场景图、回归特征和对比视图。
+6. 最终把 Character Director 从 `perfume-director` incubator 迁出为独立项目。
 
 > 核心原则：自动模型负责提出和审稿，人负责确认角色是谁。一旦确认，系统要记住，而不是下一轮重新抽卡。
