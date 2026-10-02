@@ -34,6 +34,48 @@ class Critique:
 
 
 @dataclass(slots=True)
+class DirectorAdvice:
+    candidate_id: str
+    summary: str = ""
+    strengths: list[str] = field(default_factory=list)
+    priority_issues: list[dict[str, Any]] = field(default_factory=list)
+    keep: list[str] = field(default_factory=list)
+    changes: list[dict[str, Any]] = field(default_factory=list)
+    do_not_change: list[str] = field(default_factory=list)
+    next_round_goal: str = ""
+    evidence_notes: list[str] = field(default_factory=list)
+
+    def to_patch(self) -> "RevisionPatch":
+        return RevisionPatch(
+            keep=list(self.keep),
+            change=[
+                {
+                    "feature": str(item.get("feature", "")).strip(),
+                    "target": str(item.get("target", "")).strip(),
+                }
+                for item in self.changes
+                if str(item.get("feature", "")).strip()
+                and str(item.get("target", "")).strip()
+            ],
+            do_not_change=list(self.do_not_change),
+            rationale=[
+                self.summary,
+                *[
+                    str(item.get("diagnosis", "")).strip()
+                    for item in self.priority_issues
+                    if str(item.get("diagnosis", "")).strip()
+                ],
+                *self.evidence_notes,
+                (
+                    f"Next round goal: {self.next_round_goal}"
+                    if self.next_round_goal
+                    else ""
+                ),
+            ],
+        )
+
+
+@dataclass(slots=True)
 class RevisionPatch:
     keep: list[str] = field(default_factory=list)
     change: list[dict[str, Any]] = field(default_factory=list)
@@ -51,6 +93,7 @@ class IterationRecord:
     critique: dict[str, Any]
     patch: dict[str, Any]
     human_feedback: str | None = None
+    director_advice: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass(slots=True)
