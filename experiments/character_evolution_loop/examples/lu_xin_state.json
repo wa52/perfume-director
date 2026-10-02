@@ -1,0 +1,19 @@
+{
+  "character": "陆辛",
+  "version": 0,
+  "prompt": "",
+  "traits": {
+    "ordinary": 0.0,
+    "office_worker": 0.0,
+    "low_presence": 0.0,
+    "restrained": 0.0,
+    "hidden_abnormality": 0.0
+  },
+  "locked": {},
+  "modifiable": ["face_shape", "hairstyle", "eyes", "clothing", "posture"],
+  "rejected": ["sharp_jaw", "hero_pose", "aggressive_gaze", "fashionable_hair", "korean_webtoon_face"],
+  "human_feedback": [
+    "日常状态首先应该像普通上班族，不要主动往帅或强者方向设计。"
+  ],
+  "history": []
+}
