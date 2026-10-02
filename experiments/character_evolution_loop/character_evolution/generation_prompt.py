@@ -1,17 +1,28 @@
 from __future__ import annotations
 
+from .art_direction import ArtDirection
 from .models import CanonProfile, CharacterState
 
 
 class CharacterGenerationPrompt:
-    """Compile a visual prompt from Canon + design direction without inventing unresolved appearance."""
+    """Compile a visual prompt from Canon + work-level art direction + character state."""
+
+    def __init__(self, art_direction: ArtDirection | None = None):
+        self.art_direction = art_direction
 
     def render(self, *, canon: CanonProfile, state: CharacterState, patch=None) -> str:
         parts = [
-            "2D animation character design, clean production concept art",
+            "character production concept art",
             f"single character: {state.character}",
             "character-focused half-body design, simple neutral background",
         ]
+
+        if self.art_direction is not None:
+            fragment = self.art_direction.prompt_fragment()
+            if fragment:
+                parts.append(fragment)
+        else:
+            parts.append("2D animation character design, clean production concept art")
 
         age = state.locked.get("age")
         if age is not None:
@@ -48,8 +59,6 @@ class CharacterGenerationPrompt:
                     f"revision {change.get('feature', '')}: {change.get('target', '')}"
                 )
 
-        # These are intentionally left open. Different seeds may explore them,
-        # but the generator must not present any result as an original-novel fact.
         if state.modifiable:
             parts.append(
                 "open visual exploration, not canon facts: " + ", ".join(state.modifiable)
