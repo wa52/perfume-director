@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Protocol, Sequence
 
+from .acceptance import AcceptancePolicy
 from .director import CharacterDirector
 from .memory import CharacterMemory
 from .models import CanonProfile, CharacterState, Critique, IterationRecord, RevisionPatch
@@ -43,12 +44,14 @@ class CharacterEvolutionLoop:
         prompt_renderer: PromptRenderer,
         memory: CharacterMemory,
         director: CharacterDirector | None = None,
+        acceptance_policy: AcceptancePolicy | None = None,
     ):
         self.generator = generator
         self.critic = critic
         self.prompt_renderer = prompt_renderer
         self.memory = memory
         self.director = director or CharacterDirector()
+        self.acceptance_policy = acceptance_policy or AcceptancePolicy()
 
     def run_round(
         self,
@@ -66,16 +69,16 @@ class CharacterEvolutionLoop:
         if not refs:
             raise RuntimeError("generator returned no candidates")
 
-        critiques = [
-            self.critic.review(image_ref=ref, canon=canon, state=state) for ref in refs
-        ]
-        critiques.sort(key=self._rank_key, reverse=True)
-        selected = critiques[0]
-        selected_ref = (
-            refs[next(i for i, ref in enumerate(refs) if ref == selected.candidate_id)]
-            if selected.candidate_id in refs
-            else selected.candidate_id
+        reviewed: list[tuple[str, Critique]] = []
+        for ref in refs:
+            critique = self.critic.review(image_ref=ref, canon=canon, state=state)
+            reviewed.append((ref, critique))
+
+        reviewed.sort(
+            key=lambda item: self.acceptance_policy.rank(item[1]),
+            reverse=True,
         )
+        selected_ref, selected = reviewed[0]
 
         patch = self.director.plan(canon, state, selected)
         next_prompt = self.prompt_renderer.render(canon=canon, state=state, patch=patch)
@@ -90,16 +93,10 @@ class CharacterEvolutionLoop:
                 candidate_id=selected.candidate_id,
                 image_ref=selected_ref,
                 score=selected.overall,
-                accepted=selected.eligible,
+                accepted=self.acceptance_policy.passes(selected),
                 critique=asdict(selected),
                 patch=asdict(patch),
             )
         )
         self.memory.save(state)
-        return state, critiques[: min(shortlist, len(critiques))]
-
-    @staticmethod
-    def _rank_key(critique: Critique) -> tuple[int, float, float]:
-        # Any locked-feature violation loses to every lock-safe candidate.
-        minimum = min(critique.scores.values()) if critique.scores else 0.0
-        return (1 if critique.eligible else 0, critique.overall, minimum)
+        return state, [item[1] for item in reviewed[: min(shortlist, len(reviewed))]]
