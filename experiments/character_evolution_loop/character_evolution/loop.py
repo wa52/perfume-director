@@ -52,6 +52,7 @@ class CharacterEvolutionLoop:
         self.memory = memory
         self.director = director or CharacterDirector()
         self.acceptance_policy = acceptance_policy or AcceptancePolicy()
+        self.last_reviewed: list[tuple[str, Critique]] = []
 
     def run_round(
         self,
@@ -78,6 +79,7 @@ class CharacterEvolutionLoop:
             key=lambda item: self.acceptance_policy.rank(item[1]),
             reverse=True,
         )
+        self.last_reviewed = list(reviewed)
         selected_ref, selected = reviewed[0]
 
         patch = self.director.plan(canon, state, selected)
