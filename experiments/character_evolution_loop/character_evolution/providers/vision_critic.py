@@ -14,7 +14,7 @@ from ..models import CanonProfile, CharacterState, Critique
 
 HttpFn = Callable[[str, bytes | None, dict[str, str] | None, float], bytes]
 
-CRITIC_DIMENSIONS = (
+LU_XIN_DIMENSIONS = (
     "canon",
     "ordinary",
     "office_worker",
@@ -22,6 +22,27 @@ CRITIC_DIMENSIONS = (
     "identity_clarity",
     "overbeautification_control",
 )
+
+GENERIC_DIMENSIONS = (
+    "canon",
+    "context_fit",
+    "identity_clarity",
+    "character_specificity",
+    "design_coherence",
+    "overbeautification_control",
+)
+
+SCORE_DESCRIPTIONS = {
+    "canon": "Does the image avoid contradicting locked Canon facts and forbidden interpretations?",
+    "ordinary": "Does the daily presentation read as ordinary/low protagonist aura rather than glamorized?",
+    "office_worker": "Does the everyday presentation plausibly fit the Canon office-worker context without turning it into a costume?",
+    "restraint": "Is the default expression/posture restrained rather than aggressive or theatrically dangerous?",
+    "identity_clarity": "Is this a coherent reusable character identity rather than a generic unstable face?",
+    "overbeautification_control": "Does it avoid unnecessary idol/webtoon-model beautification when Canon does not require it?",
+    "context_fit": "Does the design fit the character's evidence-bound soft work/organization context without literalizing uncertain role words?",
+    "character_specificity": "Does the design feel like a deliberate reusable character rather than a generic anime template?",
+    "design_coherence": "Do face, hair, clothing, posture and expression form one coherent character design without internal style conflict?",
+}
 
 
 @dataclass(slots=True)
@@ -37,6 +58,15 @@ class VisionCriticConfig:
         "Do not invent novel facts. Do not reward generic attractiveness, hero aura, "
         "aggression, or fashionability unless explicitly supported."
     )
+
+
+def critic_dimensions(state: CharacterState) -> tuple[str, ...]:
+    if (
+        state.locked.get("daily_role_context") == "company_office_worker"
+        or "ordinary_presentation" in state.design_targets
+    ):
+        return LU_XIN_DIMENSIONS
+    return GENERIC_DIMENSIONS
 
 
 def _http(url: str, data: bytes | None = None, headers: dict[str, str] | None = None, timeout: float = 60.0) -> bytes:
@@ -65,14 +95,17 @@ def _state_payload(canon: CanonProfile, state: CharacterState) -> dict[str, Any]
     }
 
 
-def validate_critic_result(result: dict[str, Any]) -> Critique:
+def validate_critic_result(
+    result: dict[str, Any],
+    expected_dimensions: tuple[str, ...] = LU_XIN_DIMENSIONS,
+) -> Critique:
     if not isinstance(result, dict):
         raise ValueError("critic response must be an object")
     scores = result.get("scores")
     if not isinstance(scores, dict):
         raise ValueError("critic response requires scores")
     clean_scores: dict[str, float] = {}
-    for name in CRITIC_DIMENSIONS:
+    for name in expected_dimensions:
         value = scores.get(name)
         if isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 <= value <= 100:
             raise ValueError(f"critic score {name!r} must be 0..100")
@@ -117,24 +150,23 @@ class OpenAICompatibleVisionCritic:
         if not key:
             raise ValueError(f"missing API key environment variable {self.config.api_key_env}")
 
+        dimensions = critic_dimensions(state)
         rubric = {
             "score_dimensions": {
-                "canon": "Does the image avoid contradicting locked Canon facts?",
-                "ordinary": "Does the daily presentation read as ordinary/low protagonist aura rather than glamorized?",
-                "office_worker": "Does the everyday presentation plausibly fit the Canon office-worker context without turning it into a costume?",
-                "restraint": "Is the default expression/posture restrained rather than aggressive or theatrically dangerous?",
-                "identity_clarity": "Is this a coherent reusable character identity rather than a generic unstable face?",
-                "overbeautification_control": "Does it avoid unnecessary idol/webtoon-model beautification when Canon does not require it?",
+                name: SCORE_DESCRIPTIONS[name]
+                for name in dimensions
             },
             "rules": [
                 "A locked violation is concrete contradiction with canon_locks, not merely an aesthetic preference.",
+                "Soft constraints are directional context, not hard visual facts.",
                 "Do not lock unresolved appearance from this one image.",
                 "Return at most 3 change_requests, targeting editable features only.",
                 "Each change target must be observable and specific.",
+                "Do not force one character's rubric onto another character.",
             ],
             "response_schema": {
                 "candidate_id": image_ref,
-                "scores": {name: 0 for name in CRITIC_DIMENSIONS},
+                "scores": {name: 0 for name in dimensions},
                 "problems": [],
                 "change_requests": [{"feature": "eyes", "target": "less sharp"}],
                 "locked_violations": [],
@@ -181,4 +213,4 @@ class OpenAICompatibleVisionCritic:
         message = response["choices"][0]["message"]["content"]
         result = json.loads(message)
         result["candidate_id"] = image_ref
-        return validate_critic_result(result)
+        return validate_critic_result(result, expected_dimensions=dimensions)
