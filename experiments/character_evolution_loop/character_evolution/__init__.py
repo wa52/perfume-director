@@ -3,6 +3,7 @@ from .memory import CharacterMemory
 from .director import CharacterDirector
 from .loop import CharacterEvolutionLoop
 from .acceptance import AcceptancePolicy
+from .art_direction import ArtDirection, load_art_direction
 from .canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from .generation_prompt import CharacterGenerationPrompt
 from .human_choice import apply_human_choice
@@ -19,6 +20,8 @@ __all__ = [
     "CharacterDirector",
     "CharacterEvolutionLoop",
     "AcceptancePolicy",
+    "ArtDirection",
+    "load_art_direction",
     "apply_contract",
     "contract_to_canon_profile",
     "load_contract",
