@@ -44,7 +44,8 @@ def main() -> None:
     parser.add_argument(
         "--state",
         type=Path,
-        default=Path("examples/lu_xin_state_v01.json"),
+        default=None,
+        help="Input state. Defaults to latest_state.json when present, otherwise V01.",
     )
     parser.add_argument(
         "--state-output",
@@ -62,7 +63,9 @@ def main() -> None:
     config = read_json(args.config)
     contract = load_contract(args.contract)
 
-    state = CharacterMemory(args.state).load(contract["character"]["name"])
+    latest_state = Path("runs/character_evolution/latest_state.json")
+    state_path = args.state or (latest_state if latest_state.exists() else Path("examples/lu_xin_state_v01.json"))
+    state = CharacterMemory(state_path).load(contract["character"]["name"])
     apply_contract(contract, state)
     canon = contract_to_canon_profile(contract)
 
