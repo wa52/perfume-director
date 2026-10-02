@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from character_evolution.archive import archive_version
+from character_evolution.art_direction import load_art_direction
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from character_evolution.generation_prompt import CharacterGenerationPrompt
 from character_evolution.memory import CharacterMemory
@@ -77,6 +78,8 @@ def main() -> None:
     root = Path.cwd()
     config = read_json(args.config)
     contract = load_contract(args.contract)
+    art_path = config.get("art_direction_path")
+    art_direction = load_art_direction(resolve(root, art_path)) if art_path else None
     canon = contract_to_canon_profile(contract)
     state = CharacterMemory(args.state).load(contract["character"]["name"])
     apply_contract(contract, state)
@@ -90,7 +93,7 @@ def main() -> None:
             "scene generation requires reference_image_node so the human-selected identity anchor is actually supplied to ComfyUI"
         )
 
-    base_prompt = CharacterGenerationPrompt().render(canon=canon, state=state)
+    base_prompt = CharacterGenerationPrompt(art_direction=art_direction).render(canon=canon, state=state)
     scene_images: dict[str, str] = {}
     for scene in DEFAULT_SCENES:
         output_dir = resolve(
