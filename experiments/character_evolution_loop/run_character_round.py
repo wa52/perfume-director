@@ -6,6 +6,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from character_evolution.acceptance import AcceptancePolicy
+from character_evolution.art_direction import load_art_direction
 from character_evolution.archive import archive_version
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
 from character_evolution.generation_prompt import CharacterGenerationPrompt
@@ -63,6 +64,8 @@ def main() -> None:
     root = Path.cwd()
     config = read_json(args.config)
     contract = load_contract(args.contract)
+    art_path = config.get("art_direction_path")
+    art_direction = load_art_direction(resolve(root, art_path)) if art_path else None
 
     latest_state = Path("runs/character_evolution/latest_state.json")
     state_path = args.state or (latest_state if latest_state.exists() else Path("examples/lu_xin_state_v01.json"))
@@ -131,7 +134,7 @@ def main() -> None:
     loop = CharacterEvolutionLoop(
         generator=generator,
         critic=critic,
-        prompt_renderer=CharacterGenerationPrompt(),
+        prompt_renderer=CharacterGenerationPrompt(art_direction=art_direction),
         memory=output_memory,
         acceptance_policy=policy,
     )
