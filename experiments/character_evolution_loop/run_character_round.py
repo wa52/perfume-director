@@ -17,6 +17,8 @@ from character_evolution.providers import (
     ComfyUIConfig,
     OpenAICompatibleVisionCritic,
     VisionCriticConfig,
+    OpenAICompatibleDirectorAgent,
+    DirectorAgentConfig,
 )
 
 
@@ -119,6 +121,17 @@ def main() -> None:
         )
     )
 
+    director_raw = config.get("director", critic_raw)
+    director_agent = OpenAICompatibleDirectorAgent(
+        DirectorAgentConfig(
+            base_url=director_raw["base_url"],
+            model=director_raw["model"],
+            api_key_env=director_raw["api_key_env"],
+            timeout_seconds=float(director_raw.get("timeout_seconds", 120)),
+            max_changes=int(director_raw.get("max_changes", 3)),
+        )
+    )
+
     policy_raw = config.get("acceptance", {})
     policy = AcceptancePolicy(
         minimum_overall=float(policy_raw.get("minimum_overall", 78)),
@@ -136,6 +149,7 @@ def main() -> None:
         critic=critic,
         prompt_renderer=CharacterGenerationPrompt(art_direction=art_direction),
         memory=output_memory,
+        director_agent=director_agent,
         acceptance_policy=policy,
     )
     state, top = loop.run_round(
@@ -161,6 +175,12 @@ def main() -> None:
                 "locked_violations": critique.locked_violations,
                 "evidence_alignment": critique.evidence_alignment,
                 "change_requests": critique.change_requests,
+                "director_advice": (
+                    asdict(loop.last_advice[critique.candidate_id])
+                    if critique.candidate_id in loop.last_advice
+                    else None
+                ),
+                "director_agent_error": loop.last_advice_errors.get(critique.candidate_id),
             }
         )
 
@@ -188,11 +208,19 @@ def main() -> None:
                 "locked_violations": critique.locked_violations,
                 "evidence_alignment": critique.evidence_alignment,
                 "change_requests": critique.change_requests,
+                "director_advice": (
+                    asdict(loop.last_advice[critique.candidate_id])
+                    if critique.candidate_id in loop.last_advice
+                    else None
+                ),
+                "director_agent_error": loop.last_advice_errors.get(critique.candidate_id),
             }
             for index, critique in enumerate(top)
         ],
         "human_choice_required": True,
         "next_patch": state.history[-1].patch,
+        "next_director_advice": state.history[-1].director_advice,
+        "director_agent_errors": loop.last_advice_errors,
         "next_prompt": state.prompt,
         "state_output": str(args.state_output),
     }
