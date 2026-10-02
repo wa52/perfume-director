@@ -2,7 +2,9 @@ from .models import CanonProfile, CharacterState, Critique, IterationRecord, Rev
 from .memory import CharacterMemory
 from .director import CharacterDirector
 from .loop import CharacterEvolutionLoop
+from .acceptance import AcceptancePolicy
 from .canon_adapter import apply_contract, contract_to_canon_profile, load_contract
+from .generation_prompt import CharacterGenerationPrompt
 from .prompt_renderer import CanonPromptRenderer
 
 __all__ = [
@@ -14,8 +16,10 @@ __all__ = [
     "CharacterMemory",
     "CharacterDirector",
     "CharacterEvolutionLoop",
+    "AcceptancePolicy",
     "apply_contract",
     "contract_to_canon_profile",
     "load_contract",
+    "CharacterGenerationPrompt",
     "CanonPromptRenderer",
 ]
