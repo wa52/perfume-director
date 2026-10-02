@@ -1,0 +1,186 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b"
+    },
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "ref-7838477a52de.webp",
+      "sha256": "90303aabf42db36d437f9b881bba2bc858782eea7f3d7935c09b1fda4f1637b6"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "bc3e713f83326a0bbcc6871ea001528e19e28b8f4253300324df7039a8faf5d2"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "eb51a730c2f6f814ba5ebab089c5eaa35d1b7cb5d20aa8fd84155cb81d31ec08"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-ccc07b32-e66a-9622-8d24-f1157f07b0c2",
+      "usage": {
+        "prompt_tokens": 10110,
+        "total_tokens": 12102,
+        "completion_tokens": 1992,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6656,
+          "text_tokens": 3454
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 967
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ccc07b32-e66a-9622-8d24-f1157f07b0c2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10110,
+    "total_tokens": 12102,
+    "completion_tokens": 1992,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6656,
+      "text_tokens": 3454
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 967
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78.2,
+    "dimensions": {
+      "product_fidelity": 93,
+      "composition": 80,
+      "typography": 72,
+      "background": 80,
+      "physical_integration": 84,
+      "reference_alignment": 70,
+      "creative_coherence": 84
+    },
+    "problems": [
+      {
+        "type": "alignment",
+        "problem": "The top band is no longer on one axis: geometry gives title bbox [420,202,620,250] center x=520 while subtitle bbox [411,324,669,343] centers at 540 and logo bbox [500,108,576,133] at 538. In the poster the 'J'adore' line visibly sits ~20px left of the subtitle and rule it should stack with, so the couture top band reads subtly skewed instead of perfectly plum."
+      },
+      {
+        "type": "hierarchy",
+        "problem": "The subtitle 'EAU DE PARFUM' renders 258px wide against the title's 200px (bbox widths), i.e. the subordinate line is wider than the dominant line; visually the tracked caps line competes with 'J'adore' and flattens the declared top-light hierarchy step between title and subtitle."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "In the contact crop the shadow is a thin hard dark dash pinned exactly at the base line while the pleat stripes run straight and unbroken beneath it; on a radiating folded fan the grounding zone should pool slightly softer and wider. The bottle is correctly seated (offset_y 0 confirmed in crop), but the shadow edge quality reads pasted rather than born from the pleats."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Against references 3 and 5 the ink block lacks a finishing anchor: those campaigns close the composition with a price or descriptor line in the lower field, while here the entire lower 8% of canvas is empty pleats and the price layer carries an empty string, leaving the bottom of the poster unresolved."
+      }
+    ],
+    "changes": [
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 24
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 4
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 18
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.15
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.36
+      },
+      {
+        "path": "price.text",
+        "op": "set",
+        "value": "100 ML - VAPORISATEUR"
+      },
+      {
+        "path": "price.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "price.y",
+        "op": "set",
+        "value": 1372
+      },
+      {
+        "path": "price.size",
+        "op": "set",
+        "value": 20
+      },
+      {
+        "path": "price.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "price.color",
+        "op": "set",
+        "value": "#3a2430"
+      }
+    ]
+  },
+  "duration_seconds": 54.727
+}

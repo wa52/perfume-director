@@ -1,0 +1,117 @@
+{
+  "brief": "为 Tom Ford Tobacco Vanille 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\nA theatrical still-life: crushed aubergine velvet hangs in soft vertical folds, its pile catching a gentle frontal sheen that fades toward the edges like a house curtain before encore. The flacon is lifted into the upper two-thirds so the lower third becomes a quiet plaque band: brand line, then the name in generous Baskerville capitals centred, then the eau de parfum line, with a thin rule floating between image and text like a curtain rail. Opaque dark glass against plush plum pile reads purely by texture contrast; the gold plate supplies the only warm spark in an otherwise velvet-dark house.",
+  "product": "assets\\products\\tom-ford-tobacco-vanille-retailer.png",
+  "references": [
+    {
+      "id": "ref-361c5f732a2a",
+      "brand": "Juliette has a gun",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-361c5f732a2a.webp",
+      "selection_reason": "Professionally resolved multi-product perfume still life with strong atmospheric set design, dramatic lighting, and clear brand legibility on the central bottle.",
+      "analysis": {
+        "composition": "Asymmetrical arrangement of four fragrance bottles placed at varying heights across a textured, moss-covered rocky terrain, creating depth and visual flow.",
+        "subject_ratio": 0.65,
+        "negative_space": "Soft, out-of-focus gradient background in the upper half provides breathing room and contrasts with the highly detailed foreground.",
+        "lighting": "Dramatic, directional spotlighting from the upper left creates a moody, chiaroscuro effect, highlighting the glass textures and moss while casting deep shadows.",
+        "color": [
+          "forest green",
+          "charcoal grey",
+          "amber",
+          "cream",
+          "gold"
+        ],
+        "typography": "None present outside of the product labels.",
+        "information_density": "Low; purely visual focus on the products and their environment without external text overlays.",
+        "characteristics": [
+          "mossy texture",
+          "rocky terrain",
+          "moody atmosphere",
+          "multi-product display",
+          "directional spotlight"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

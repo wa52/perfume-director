@@ -1,0 +1,63 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "ed4c33fcc8dc9bd7baf0023e88b63c5f387e358c69da82d5e0a9b764209504c9"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "2e5ea9ce3d4ab11f1812730ae927d6c49c60487709b54328a268cf85c2d97519"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "dac05e230be01b2a10db73d5cb5def8714fb2e05b08e9570e50602fe749d3a47"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 3,
+      "status": "ERROR",
+      "error_type": "URLError"
+    }
+  ],
+  "status": "ERROR",
+  "error_type": "URLError",
+  "duration_seconds": 33.784
+}

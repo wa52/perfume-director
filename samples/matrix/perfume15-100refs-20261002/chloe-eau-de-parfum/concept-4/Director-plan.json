@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\8291d1e2ce3a\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Powder Rose Bow Halo",
+    "brief": "把蝴蝶结放大成一轮粉雾日晕：摄影感玫瑰泥墙上悬一枚巨大硬边浅玫瑰圆环，圆心精确对齐蝴蝶结，圆环从其身后掠过却不触碰标签，像把织带的弧度扩成建筑拱线；连续磨光浅玫瑰地面在真实基准线处接墙，商品低立于地，接触阴影轻落粉面。左上一组宽距 Arial Narrow 排印在圆环之外的安静墙区结束于瓶顶之上，构成对角纪念碑网格；一条玫瑰细线短促垫于文字组下如拱心石刻度。粉泥的矿物哑光与银盖镜面、桃色液体的柔光互为冷暖与柔刚。",
+    "material": "powder rose mineral plaster wall with honed matching rose ground and one hard-edge pale rose disc",
+    "lighting": "soft high-key diffuse daylight, gentle frontal with one broad calm glow on the disc, no hard shadows",
+    "palette": [
+      "#d8a49c",
+      "#4a221e",
+      "#b06a5e"
+    ],
+    "layout_relation": "above",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803174952,
+    "background": {
+      "color": "#d8a49c",
+      "prompt": "Powder rose mineral plaster wall in medium saturated dusty rose meeting a continuous honed pale rose ground at a horizontal horizon seven tenths down the frame, one large hard-edge flat disc in lighter blush rose centred at one third down the frame, matte mineral grain, soft high-key diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 605,
+      "y": 979,
+      "width": 795,
+      "height": 648
+    },
+    "lighting": "soft high-key diffuse daylight, gentle frontal with one broad calm glow on the disc, no hard shadows",
+    "palette": [
+      "#d8a49c",
+      "#4a221e",
+      "#b06a5e"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 97,
+      "y": 166,
+      "size": 140,
+      "color": "#4a221e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 97,
+      "y": 353,
+      "size": 20,
+      "color": "#4a221e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#4a221e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 100,
+      "y": 72,
+      "size": 30,
+      "color": "#4a221e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 97,
+      "y": 324,
+      "width": 173,
+      "color": "#b06a5e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

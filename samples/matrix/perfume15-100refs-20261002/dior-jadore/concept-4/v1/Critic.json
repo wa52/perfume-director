@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 75.4,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 52,
+    "background": 78,
+    "physical_integration": 86,
+    "reference_alignment": 66,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "stray_artifact_text",
+      "problem": "Four lines of bracketed coordinate strings ('[36, 32, 64, 92]', '[39, 14, 61, 18]', '[33, 22, 58, 24]', '[46, 8, 53, 9') are burned into the top-left corner of the poster. They are generation debug leakage, not campaign copy, and they visibly collide with the quiet top band the concept requires, destroying the couture grid at first glance."
+    },
+    {
+      "type": "hierarchy",
+      "problem": "The declared direction asks for a restrained title size, but the rendered 'J'adore' (84px, bbox width 237px) is nearly as wide as the subtitle line plus rule and reads heavier than the 'top-light, bottom-heavy' grid intends; the subtitle's wide 4px tracking makes it compete with the title instead of sitting quietly beneath it, so the top band lacks a clear dominant-to-subordinate step."
+    },
+    {
+      "type": "alignment",
+      "problem": "Subtitle 'EAU DE PARFUM' renders at bbox [354,324,624,343], center x=489, while the title center is x=538 and the logo center x=538: the subtitle is visibly shifted ~49px left of the centered axis, breaking the symmetric top band; the purple rule (decoration center x=540) then hangs off-center relative to the line it should underline."
+    },
+    {
+      "type": "background_interference",
+      "problem": "The pleats radiate from a point at the very bottom edge of the canvas, directly under the bottle base, so the highest-contrast crease convergence sits behind the product's contact zone (visible in the contact crop as busy stripes meeting the shadow line); the放射 focal point should sit behind the bottle body, not collide with the grounding shadow."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 68
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "subtitle.max_width",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "subtitle.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 330
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-folded pleated paper fan in warm saffron yellow, sharp radiating creases spreading outward from a point at mid-canvas height behind the center, alternating soft stripe shades of light and shadow across the folds, matte paper texture, flat graphic illumination, calm even tone in the upper third, no objects, no horizon, no text"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.4
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    }
+  ],
+  "reported_score": 66
+}

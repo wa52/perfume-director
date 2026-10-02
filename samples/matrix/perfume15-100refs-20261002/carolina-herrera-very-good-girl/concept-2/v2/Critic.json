@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 76.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 78,
+    "background": 66,
+    "physical_integration": 68,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact crop (456,1069,970,1319) inspected first: a soft dark contact shadow does exist under the red toe at the correct offset (offset_y 0, keep it), but the polished gold stiletto tip terminates ~25px above that shadow line with no darkening, occlusion or reflection beneath it, so the heel visibly hovers while the toe rests; the declared concept requires contact at toe AND heel tips. The same crop also shows the shoe's base plane sitting on the blue wall band above a dark baseboard strip, so the foot contacts wall paint rather than the parquet ground."
+    },
+    {
+      "type": "background",
+      "problem": "The regenerated field is clean of the previous digit glyphs (verified against last version), but the parquet now renders as bright honey-toned boards with a hard warm hotspot patch directly under the shoe, clashing with the declared deep ink-blue nocturnal lacquered ground and with the product's cool soft studio key from upper-front-left; references 3-4 keep grounds tonally unified with the palette, here the floor reads as a different room and steals attention from the vermilion flacon."
+    },
+    {
+      "type": "composition",
+      "problem": "The left column now wraps to the intended two lines and closes with the gold rule at y≈985, but everything below the rule to the canvas bottom (~455px of empty wall and parquet in the lower-left quadrant) carries no anchor, while the right column's shoe base sits at y=1209; the two columns never rhyme at the foot and the lower-left void reads as unfinished layout rather than intentional negative space, unlike references 2-3 where ground glow or reflection ties the frame together."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy logo→title→rule is correct and text_product_overlap is false, but the subtitle and price slots remain empty strings, so the narrow-sans monument carries only two text masses; the column lacks a closing informational line (e.g. concentration or price) that professional campaign layouts in references 2-4 use to balance tall display type, leaving the tracked logo as the only small-size voice."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep ink-blue matte painted hall wall, perfectly clean and unmarked, meeting a continuous dark espresso-black lacquered parquet ground at a low horizontal horizon near the bottom of the frame; one soft cool-warm neutral pool of ambient light glowing low on the parquet centered beneath the right-hand subject zone, faint elongated sheen stretching toward the viewer on the lacquered boards, gentle diffuse nocturnal illumination, low overall floor value, no objects, no text, no marks"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 831
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.45
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "Eau de Parfum"
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1040
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 24
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1000
+    }
+  ],
+  "reported_score": 76.6
+}

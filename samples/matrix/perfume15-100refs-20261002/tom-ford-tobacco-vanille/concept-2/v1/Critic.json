@@ -1,0 +1,78 @@
+{
+  "pass": false,
+  "score": 74.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 66,
+    "physical_integration": 62,
+    "reference_alignment": 72,
+    "creative_coherence": 74
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail (crop 62,1069,585,1319) proves the bottle base touches the limestone at y=1209 with a real soft contact shadow (spec offset_y 0 is correct, do not move it), but that shadow is a neutral ambient pool while the background shows a hard raking sun edge at the upper left and the product cutout carries soft frontal-top studio speculars. Three different light stories coexist: the bottle reads pasted onto the wall/ground junction instead of standing in the declared sunlight."
+    },
+    {
+      "type": "background",
+      "problem": "The 'honed limestone ground' rendered as glossy veined marble tiles with visible grout lines andSheen, contradicting the declared matte honed limestone and the matte mineral grain of the wall; the tiled foreground fights the ultramarine plaster and cheapens the courtyard concept."
+    },
+    {
+      "type": "background",
+      "problem": "The promised single crisp diagonal shadow edge is only a small dark wedge clipped at the top-left canvas corner; most of the wall is flat unmodulated ultramarine, so the sundial concept reads as an accident at the frame edge rather than as composed light."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the right column is top-loaded and then collapses: after the strong two-line title there is a ~110 px void before 'EAU DE PARFUM' (y 907) and the gold rule (y 976), leaving the lower third of the column and the area beside the bottle body empty; the column does not visually close against the bottle base line."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle occupies the left 47% but its base sits exactly on the wall/ground junction line, so the foreground floor band (y 1210-1440) is dead space holding nothing; references (Hermes, Sisley) let the ground plane carry shadow and props, here it is an empty tiled strip that disconnects product from setting."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep ultramarine lime-washed plaster wall meeting a continuous matte honed pale limestone ground with no tiles and no grout lines, one broad hard diagonal shadow edge raking the wall from upper left across a third of its height, bright warm direct sunlight grazing the mineral grain, empty scene, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": -6
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 940
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1000
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 260
+    }
+  ],
+  "reported_score": 76
+}

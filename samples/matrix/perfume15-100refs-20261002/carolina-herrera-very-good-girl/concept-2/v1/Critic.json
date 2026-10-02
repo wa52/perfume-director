@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "score": 75.4,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 66,
+    "physical_integration": 70,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The generated hall wall carries scattered faint digit glyphs ('8', '20', '28', '82', '84', '40' near y=190 and y=695) baked into the paint. In the contact-detail crop (456,1069,970,1319) a stray light speck also sits on the parquet right of the gold heel. These read as rendering artifacts on an otherwise clean matte wall and cheapen an otherwise luxe field; references 3-4 show immaculate gradient grounds."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Inspecting the contact crop before judging: a soft dark contact shadow does exist under the red toe (shadow offset_y 0 is correct, do not move it down). However the polished gold stiletto tip ends ~25px above the parquet with no darkening or reflection beneath it, so the heel reads as hovering; the brief's own concept demands contact at 'toe and heel tips'. Additionally the baked pool of light on the floor sits left of the shoe (crop x≈0-260) while the shoe's own key comes from upper-front-left, so the floor glow does not motivate the product's highlights."
+    },
+    {
+      "type": "typography",
+      "problem": "The narrow-sans monument wraps to three lines ('Very / Good / Girl') although the concept declares two tall wrapped lines; at max_width 360 the third line 'Girl' plus the gold rule push the column foot to y≈929, leaving a dead gap of ~350px between the rule and the floor horizon and unbalancing the left column against the 806px-tall shoe. Hierarchy logo→title is correct and text_product_overlap is false, so this is a wrapping/rhythm fault, not an overlap."
+    },
+    {
+      "type": "composition",
+      "problem": "Empty subtitle and price slots were still reserved in the layout logic: the left column terminates at the rule (y≈929) while the right column's shoe base sits at y=1209, so the two columns never visually rhyme; the lower-left quadrant is a large vacant parquet area with no anchor, unlike references 2-3 where the ground plane carries reflection or glow that ties product to frame."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep ink-blue matte painted hall wall, perfectly clean and unmarked, meeting a continuous dark lacquered parquet ground at a low horizontal horizon; one soft warm pool of ambient light glowing on the parquet centered beneath the right-hand subject zone, faint elongated sheen stretching toward the viewer on the lacquered boards, gentle diffuse nocturnal illumination, no objects, no text, no marks"
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "title.line_height",
+      "op": "set",
+      "value": 1.05
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 610
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 985
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.25
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    }
+  ],
+  "reported_score": 74
+}

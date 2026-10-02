@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 resolves the plaque band exactly as the concept demands: the die-cut contour valley stays contained in the upper two-thirds with clean hairline shades under each cut edge, leaving the lower third a quiet flat blush field where 'Carolina Herrera', the thin rose rule and the wide-tracked geometric sans 'Very Good Girl' stack on a single centered axis with clear hierarchy. The shoe silhouette reads crisply against the contour rings, keeps its baked-in glossy speculars and gold heel gradient, and sits with a soft contact shade at toe and heel instead of floating. Version 2's oval rings run down through the type zone so the plaque band is no longer quiet, its rose rule is knocked off-axis to the right and collides with the centered title, and the brand line crowds the shoe's base; its contour edges also fade unevenly at the sides, weakening the topographic read.",
+  "remaining_problems": [
+    "Version 1's contour valley reads as a wavy rounded square rather than the briefed soft topographic oval, and only three cut layers are legible.",
+    "The rose rule sits between brand line and title rather than floating strictly between image and text as the brief describes.",
+    "Contact shadow under the toe is very faint, so physical grounding of the flacon remains slightly soft against the flat graphic field."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

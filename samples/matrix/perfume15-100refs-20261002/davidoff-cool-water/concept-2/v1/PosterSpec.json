@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 40661490897498,
+  "background": {
+    "color": "#0f3a44",
+    "prompt": "Seamless flat matte card in deep petrol teal, thin pale ice-blue bathymetric contour lines swirling across the upper two thirds like a sea-floor survey map, one hard-edge darker teal depth band crossing behind the middle, perfectly even shadowless illumination, no texture gradients beyond printed lines, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 634,
+    "width": 330,
+    "height": 792
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#0f3a44",
+    "#e8f2f0",
+    "#5fc0d0"
+  ],
+  "title": {
+    "text": "Cool Water",
+    "x": 228,
+    "y": 1152,
+    "size": 104,
+    "color": "#e8f2f0",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 5,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "EAU DE TOILETTE",
+    "x": 397,
+    "y": 1270,
+    "size": 30,
+    "color": "#e8f2f0",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#e8f2f0",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "DAVIDOFF",
+    "x": 444,
+    "y": 1080,
+    "size": 30,
+    "color": "#e8f2f0",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 1332,
+    "width": 130,
+    "color": "#5fc0d0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

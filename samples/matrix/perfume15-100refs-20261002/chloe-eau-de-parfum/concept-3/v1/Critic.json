@@ -1,0 +1,88 @@
+{
+  "pass": false,
+  "score": 74.0,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 72,
+    "typography": 56,
+    "background": 74,
+    "physical_integration": 84,
+    "reference_alignment": 66,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The declared 'Times vertical text column' is not delivered: logo 'Chloé' (bbox y 511-532) and title 'Chloé' (bbox y 605-633) are both ~94px wide set at 30px/40px, stacked 73px apart in the upper-left. Read together they look like a duplicated wordmark mistake, not a brand-over-title editorial column, and the column floats in empty linen far above the bottle's visual mass. text_product_overlap is false, so this is a hierarchy/spacing fault, not a collision."
+    },
+    {
+      "type": "typography",
+      "problem": "Subtitle and price carry empty strings, so the left column promised by the brief ('题名以窄柱大字排印如裁缝签条') collapses to two tiny marks occupying under 7% of canvas width; against references 3-5, whose type blocks anchor the composition, the typographic hierarchy here is under-scaled and disconnected from the product."
+    },
+    {
+      "type": "composition",
+      "problem": "The 4px linen-color decoration rule at (475,605) is a barely visible stub beside the title instead of the brief's full-height 'seam stitch' between the two columns; it reads as a stray artifact rather than an intentional grid line, weakening the two-column editorial structure."
+    },
+    {
+      "type": "background",
+      "problem": "The linen drape-to-ground sweep is coherent and light-matched, but the wall/ground horizon sits at roughly y≈1120 while the bottle base rests at y=1224 (confirmed grounded in the contact crop), leaving only a shallow ~100px ground band; the bottle therefore reads close to the back wall plane and the setting feels like a textured backdrop rather than the deep cloth cyclorama of the concept."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 integrate product, light and type into one resolved image (cast shadow as composition line, props echoing the bottle, type scaled to the frame); this poster keeps a faithful cutout and a correct contact shadow but the type cluster and micro-rule remain pasted-on elements, so the design-quality gap to the references is still obvious."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 76
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 24
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon three quarters down the frame, deep unbroken cloth floor plane in the foreground, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    }
+  ],
+  "reported_score": 71
+}

@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "bvlgari-omnia-crystalline-retailer.png",
+      "sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-dd7d0b4a-48b4-9126-a5c4-759d6ed220a9",
+      "usage": {
+        "prompt_tokens": 1576,
+        "total_tokens": 2835,
+        "completion_tokens": 1259,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 365
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 991,
+          "text_tokens": 267
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-dd7d0b4a-48b4-9126-a5c4-759d6ed220a9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1576,
+    "total_tokens": 2835,
+    "completion_tokens": 1259,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 991,
+      "text_tokens": 267
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Omnia Crystalline",
+    "logo": "BVLGARI",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Arc lettering 'BVLGARI' is legible on both circular faces (lower one rotated); the product name 'Omnia Crystalline' comes from the user brief, not from visible label text; no category, concentration or price text appears on the packshot.",
+    "product_profile": {
+      "material": "Opaque ivory-white disc faces framed by polished clear crystal-glass bands",
+      "color": "Ivory/cream white with silver-clear glass edges",
+      "transparency": "Disc faces fully opaque matte; outer ring bands transparent with refractive edges",
+      "illumination": "Soft diffused high-key studio light, broad gentle highlights along curved glass rims, no hard shadows",
+      "view": "Three-quarter tilted view of two interlocking circular discs, slight elevation revealing band depth",
+      "integration_limits": "Pure-white cutout background; opaque ivory faces cannot transmit a new background; glass band reflections assume a bright white environment, so any backdrop must remain high-key and light"
+    }
+  },
+  "duration_seconds": 32.982
+}

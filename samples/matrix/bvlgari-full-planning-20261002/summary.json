@@ -1,0 +1,167 @@
+{
+  "tag": "bvlgari-full-planning-20261002",
+  "products_finished": 1,
+  "products_requested": 1,
+  "directions_with_selection": 4,
+  "reference_count": 100,
+  "preview_encoding": "JPEG94 derivative; original and preview SHA recorded separately",
+  "products": [
+    {
+      "product_id": "bvlgari-omnia-crystalline",
+      "status": "COMPLETED",
+      "started_at": 1790945788.495382,
+      "input_sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "18b13b902b18b85e6e3320a6aa8e2c77aab3cc7f2dbf86536415bb368e17b747",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/7093ad9abb9f",
+      "rounds_per_direction": 2,
+      "stage": "FINISHED",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\eae01081e310",
+      "direction_count": 4,
+      "version": 2,
+      "direction_index": 4,
+      "direction_name": "Celadon Slab Ledger Oblique",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Nacre Twin-Disc Tide",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "05e6a958a22e380d9a36051cfb781323e55b6c3b1742793d0bb0edc82987fa0e",
+              "preview": "bvlgari-omnia-crystalline/concept-1/v1.jpg",
+              "original_sha256": "05e6a958a22e380d9a36051cfb781323e55b6c3b1742793d0bb0edc82987fa0e",
+              "preview_sha256": "8e74e89d5c341185f1de14b338e9b5ce5f39e1ad9b678b3a56d1938d24f37765"
+            },
+            {
+              "version": 2,
+              "score": 82.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "22951ac2eaa3564a8682b2f0eefe40e1b8e0f3c9664ca41e95deaea9be287578",
+              "preview": "bvlgari-omnia-crystalline/concept-1/v2.jpg",
+              "original_sha256": "22951ac2eaa3564a8682b2f0eefe40e1b8e0f3c9664ca41e95deaea9be287578",
+              "preview_sha256": "989e981a2cb82fefe4a0fe2217c5b4278a41c6c4112a709c3b6671228c9945b6"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Saffron Disc Eclipse Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a6436fdaf229bbd5bb4595533c52a32d1db339f026d076d3b9b59db5b8202ded",
+              "preview": "bvlgari-omnia-crystalline/concept-2/v1.jpg",
+              "original_sha256": "a6436fdaf229bbd5bb4595533c52a32d1db339f026d076d3b9b59db5b8202ded",
+              "preview_sha256": "ffa62596413b16a9de7887d32e30235fdcfc20957d8048d2884e1483c2ac23a6"
+            },
+            {
+              "version": 2,
+              "score": 82.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "bb37ab9d9f3e3afa13b6d451dd34fb304916d850e78f485263b7036c86f4847e",
+              "preview": "bvlgari-omnia-crystalline/concept-2/v2.jpg",
+              "original_sha256": "bb37ab9d9f3e3afa13b6d451dd34fb304916d850e78f485263b7036c86f4847e",
+              "preview_sha256": "38bfeeae405d62474274b4fc75b3f8e16bd80369b03cadbbeda4e07f43774080"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Plum Vesica Night Plaque",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": null,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": "ValueError",
+              "sha256": "ce6da167b878579648a743bb596148b1072d6e7c8b9a2bce42616fc4b47d1b61",
+              "preview": "bvlgari-omnia-crystalline/concept-3/v1.jpg",
+              "original_sha256": "ce6da167b878579648a743bb596148b1072d6e7c8b9a2bce42616fc4b47d1b61",
+              "preview_sha256": "d6dd83aa509f8b0ab9cbe94545837029c095fc19c6cf4a0641e91349882b233e"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Celadon Slab Ledger Oblique",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "93a7feeebbed0d2984c48c0cd995465a839b7bba17bc5ea4abdc56568f7e0332",
+              "preview": "bvlgari-omnia-crystalline/concept-4/v1.jpg",
+              "original_sha256": "93a7feeebbed0d2984c48c0cd995465a839b7bba17bc5ea4abdc56568f7e0332",
+              "preview_sha256": "a283d21ae646f3e622c8a9130565e474875edde77e68dd17b0ed623d99d90d66"
+            },
+            {
+              "version": 2,
+              "score": 79.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "ff3765481bbe5722dfa853160a7d201e4fff53bf6c758a010e55fb021c904858",
+              "preview": "bvlgari-omnia-crystalline/concept-4/v2.jpg",
+              "original_sha256": "ff3765481bbe5722dfa853160a7d201e4fff53bf6c758a010e55fb021c904858",
+              "preview_sha256": "e6b8bb123b14c53431483b3e3d32d9906c7d1185f7c88f13d2d437d694b60c6a"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "batch_dir": "runs/batches/eae01081e310",
+      "duration_seconds": 837.4,
+      "brand": "Bvlgari",
+      "name": "Omnia Crystalline"
+    }
+  ]
+}

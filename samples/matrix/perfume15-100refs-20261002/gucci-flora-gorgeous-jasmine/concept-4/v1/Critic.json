@@ -1,0 +1,85 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 70,
+    "background": 74,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The first title line 'Flora' (title bbox y 518-590) is set directly over the pale mint ribbon band, which crosses the text column at y ~460-620. Cream ink #f0ece0 on pale mint drops far below readable contrast exactly where the name begins, while lines 2-3 sit on clean viridian; the column reads unevenly and the headline's entry point is its weakest moment."
+    },
+    {
+      "type": "background",
+      "problem": "The declared material is a flat hard-edge printed ribbon on shadowless matte gouache, but the generated ribbon is a dimensional 3D band with fold shading and, critically, a cast drop shadow on the green field beneath the twist at roughly x 640-980, y 545-640 - directly under and behind the 'Flora' line. That shadow both breaks the shadowless flat-light concept and adds murky value noise behind the headline."
+    },
+    {
+      "type": "composition",
+      "problem": "The right column is top-loaded: logo at y 425, three title lines to y 803 and the gold rule at y 871, then roughly 570 px of empty viridian below the rule while the bottle base sits at y 1311. The column never closes against the product's baseline, so the asymmetric grid feels unfinished rather than deliberate; the brief's 'monument' column should extend its rhythm toward the bottle's base zone."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The ribbon's modeled highlights and soft cast shadow conflict with the product photograph's soft diffuse frontal studio light and with the declared perfectly even graphic illumination; the band reads as a rendered object pasted into a flat card instead of a printed loop completing the circuit behind the silhouette."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat printed ribbon loop in uniform pale mint with no folds, no shading and no cast shadow, sweeping from lower left behind centre and re-emerging upper right but staying entirely below y 700 on the right half so the upper right quadrant remains plain uninterrupted green, perfectly even shadowless illumination, no texture gradients, no objects"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 88
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1010
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 626
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1080
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#e0b23e"
+    }
+  ],
+  "notes": "Contact verified in the base crop [88,1171,625,1421]: a soft dark-green contact shadow hugs the full base line at y 1311 with no gap, so the bottle is not floating; shadow offset_y 0 is correct and left untouched. Product bbox [168,418,545,1311] gives height ratio 0.6201, inside both the hero range and the fresh-concept bounds (top 29%, base 91%, sides 15.6%-50.5%); silhouette, mint lacquer body, ribbed gold cap and printed floral label match the original with no extra bottles or invented labels. text_product_overlap is false for title and logo, so no overlap claim is made. No softboxes, lamps, stands or cameras appear; the flagged background issue is the ribbon's cast shadow and modeled folds versus the declared shadowless flat print, not studio equipment. References 3-5 show resolved integration (graphic orbit, lit environment, grounded group); this draft matches their ambition on product and concept but trails on headline legibility over the ribbon, column closure and light consistency, hence scores in the high-70s rather than pass territory.",
+  "reported_score": 76
+}

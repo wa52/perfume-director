@@ -1,0 +1,95 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-3f0d76419877.webp",
+      "sha256": "f0dd78bee699179c31a6e0bd729b0b43d03c3e6661e403a5aaa71377989ca93c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-33cee1ed-c0cc-9fe9-b0de-23d48525adc6",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 854,
+        "completion_tokens": 351,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 351
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-33cee1ed-c0cc-9fe9-b0de-23d48525adc6",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 854,
+    "completion_tokens": 351,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 351
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Yves Saint Laurent",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "High-end commercial perfume still life featuring dynamic fluid effects and dramatic studio lighting. Professionally resolved product hero shot suitable for luxury fragrance design reference.",
+    "analysis": {
+      "composition": "Centralized vertical composition with the bottle suspended within a swirling column of dark blue ink/smoke, anchored by concentric water ripples at the base.",
+      "subject_ratio": 0.65,
+      "negative_space": "Clean, graduated cool-grey background providing high contrast to the dark central subject.",
+      "lighting": "Dramatic studio lighting with a bright central backlight creating a halo effect, emphasizing the translucency of the fluid and the glass bottle.",
+      "color": [
+        "deep navy blue",
+        "teal",
+        "black",
+        "silver",
+        "cool grey"
+      ],
+      "typography": "None visible outside the product label.",
+      "information_density": "Low; singular focus on the product and its atmospheric visual metaphor.",
+      "characteristics": [
+        "fluid dynamics",
+        "ink dispersion",
+        "water ripples",
+        "high contrast",
+        "masculine aesthetic",
+        "dynamic motion"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 21.56
+}

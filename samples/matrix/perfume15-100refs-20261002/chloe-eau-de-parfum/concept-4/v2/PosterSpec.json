@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 143562803174952,
+  "background": {
+    "color": "#d8a49c",
+    "prompt": "Powder rose mineral plaster wall in medium saturated dusty rose with visible fine matte grain, meeting a continuous honed pale rose ground at a horizontal horizon eight tenths down the frame, one large hard-edge flat disc in lighter blush rose centred at fifty six percent down the frame so its upper arc passes behind the middle of the wall, matte mineral grain, soft high-key diffuse illumination, no objects",
+    "revision": 1
+  },
+  "product": {
+    "x": 605,
+    "y": 979,
+    "width": 795,
+    "height": 648
+  },
+  "lighting": "soft high-key diffuse daylight, gentle frontal with one broad calm glow on the disc, no hard shadows",
+  "palette": [
+    "#d8a49c",
+    "#4a221e",
+    "#b06a5e"
+  ],
+  "title": {
+    "text": "Chloé",
+    "x": 97,
+    "y": 166,
+    "size": 140,
+    "color": "#4a221e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 97,
+    "y": 353,
+    "size": 20,
+    "color": "#4a221e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#4a221e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Chloé",
+    "x": 100,
+    "y": 72,
+    "size": 30,
+    "color": "#4a221e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.42,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 97,
+    "y": 300,
+    "width": 173,
+    "color": "#b06a5e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

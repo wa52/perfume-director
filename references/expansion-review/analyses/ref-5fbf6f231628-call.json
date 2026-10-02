@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-5fbf6f231628.webp",
+      "sha256": "f4b919cb94d8c5b62b2f8088d59c72743b0383687ef72c9acec15d3bba97ab9e"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-b72212d2-cb9c-90c0-b6db-3df558ca76b6",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1877,
+        "completion_tokens": 338,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 338
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-b72212d2-cb9c-90c0-b6db-3df558ca76b6",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1877,
+    "completion_tokens": 338,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 338
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Yves Saint Laurent",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring classical sculptural props and a stark monochromatic palette, serving as an excellent reference for high-contrast product staging.",
+    "analysis": {
+      "composition": "Centralized black bottle framed by a dense, layered arrangement of white classical plaster busts.",
+      "subject_ratio": 0.35,
+      "negative_space": "Minimal, largely filled by the overlapping sculptural elements creating a textured backdrop.",
+      "lighting": "Soft, diffused studio lighting creating gentle gradients on the white statues while maintaining deep, solid blacks on the product.",
+      "color": [
+        "black",
+        "white",
+        "light grey",
+        "pale gold"
+      ],
+      "typography": "None; text is restricted to the product label.",
+      "information_density": "Low, focusing entirely on the visual interplay between the modern product and classical art.",
+      "characteristics": [
+        "neoclassical motifs",
+        "monochromatic",
+        "high contrast",
+        "sculptural staging",
+        "masculine aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.147
+}

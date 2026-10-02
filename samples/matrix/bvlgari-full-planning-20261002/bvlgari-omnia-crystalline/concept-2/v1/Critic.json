@@ -1,0 +1,78 @@
+{
+  "pass": false,
+  "score": 78.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The brief's eclipse narrative places ONE ivory disc slightly above centre with one offset umber ring; the render shows a second large ivory disc plus its own olive shadow disc bleeding off the right edge (x≈700-1080, y≈600-1270). This右-side mass balances nothing, collides with the product's right silhouette and dilutes the single-disc eclipse reading into generic circle scatter."
+    },
+    {
+      "type": "composition",
+      "problem": "The ivory halo disc (decoration, x324 y266 w432) sits high behind the bottle's upper disc, leaving a saffron gap between its lower edge and the bottle base; the brief asks the product silhouette to complete the interrupted circle, but the disc currently floats detached above the packshot instead of being eclipsed by it."
+    },
+    {
+      "type": "typography",
+      "problem": "The registration rule under the title is ivory #f0e8d8 on saffron #c98f2a - a very lowValue contrast hairline that nearly vanishes at print size, while the brief defines it as an ink-yellow plate line; it reads as a leftover artifact rather than an intentional rule."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Contact detail (crop 6) confirms a correct soft contact shadow at the base (offset_y 0), but the shadow's diffuse photographic falloff is the only non-flat element in an otherwise shadowless gouache field; it is acceptable yet should stay minimal - currently its blur halo is slightly wider than the base footprint on the left, reading as a smudge against the flat card."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 300,
+          "width": 670,
+          "height": 670,
+          "color": "#241a08",
+          "opacity": 0.18
+        },
+        {
+          "kind": "ellipse",
+          "x": 265,
+          "y": 360,
+          "width": 620,
+          "height": 620,
+          "color": "#f0e8d8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": false
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#241a08"
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 0.95
+    }
+  ],
+  "reported_score": 77
+}

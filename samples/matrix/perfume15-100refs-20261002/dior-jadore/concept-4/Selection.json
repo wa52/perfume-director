@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 delivers the declared concept cleanly: a quiet saffron top band carries the couture grid (smallest Dior brand line, restrained serif J'adore title, fragrance line beneath, deep-purple bone rule), while the hand-folded pleats radiate from behind the flacon so the bottle appears born from the fan folds in the lower half. Typography is coherent and centered with clear hierarchy; the product silhouette, ribbed gold collar and pearl stopper stay faithful to the original packshot; matte paper creases contrast with the glass highlights as intended. Version 1, although its full-bleed radiating pleats are attractive, is disqualified as a finished poster by leftover bracketed coordinate/debug text printed in the upper-left corner, and its pleats run through the type zone instead of leaving the quiet top band the brief demands.",
+  "remaining_problems": [
+    "The pleat starburst converges visibly at the bottle's neck/shoulder, reading slightly like a printed backdrop decal rather than folds physically behind the flacon; a softer occlusion gradient around the convergence point would help.",
+    "Contact at the base is minimal: the bottle meets the lower pleats with only a faint shadow, so grounding within the graphic field remains subtly ambiguous.",
+    "The flat upper field shows a very slight tonal seam where the pleats begin, which could be blended for a cleaner couture grid."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

@@ -1,0 +1,206 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 182058145773179,
+    "background": {
+      "color": "#d9932f",
+      "prompt": "Seamless saturated marigold ochre matte gouache paper, faint fine dry-brush grain, uniform diffuse frontal illumination, uninterrupted flat color field",
+      "revision": 1,
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 80,
+          "y": 650,
+          "width": 600,
+          "height": 600,
+          "color": "#A44728",
+          "opacity": 1
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 864,
+      "width": 404,
+      "height": 893
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+    "palette": [
+      "#d9932f",
+      "#2b1508",
+      "#8c3b12"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 240,
+      "y": 223,
+      "size": 64,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 414,
+      "y": 350,
+      "size": 22,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 430,
+      "y": 137,
+      "size": 26,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.45,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact",
+      "width_scale": 1.05
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 392,
+      "width": 173,
+      "color": "#8c3b12"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 182058145773179,
+    "background": {
+      "color": "#d9932f",
+      "prompt": "Seamless saturated marigold ochre matte gouache paper, faint fine dry-brush grain, uniform diffuse frontal illumination, uninterrupted flat color field",
+      "revision": 1,
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 80,
+          "y": 650,
+          "width": 600,
+          "height": 600,
+          "color": "#A44728",
+          "opacity": 1
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 864,
+      "width": 404,
+      "height": 893
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+    "palette": [
+      "#d9932f",
+      "#2b1508",
+      "#8c3b12"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 240,
+      "y": 223,
+      "size": 64,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 414,
+      "y": 350,
+      "size": 22,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 430,
+      "y": 137,
+      "size": 26,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.45,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact",
+      "width_scale": 1.05
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 392,
+      "width": 173,
+      "color": "#8c3b12"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

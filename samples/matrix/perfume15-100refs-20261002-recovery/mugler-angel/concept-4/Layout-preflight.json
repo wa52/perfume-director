@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081377857,
+    "background": {
+      "color": "#dfe4ea",
+      "prompt": "Frosted acrylic sheet in pale ice grey hanging as a wall and sweeping into a continuous matching frosted ground at a horizontal horizon six tenths down the frame, one soft cool white backlight glow blooming behind upper centre, fine frost grain, soft high-key diffuse dawn illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 367,
+      "y": 835,
+      "width": 483,
+      "height": 720
+    },
+    "lighting": "soft high-key dawn backlight diffused through frosted sheet, gentle frontal fill, no hard shadows",
+    "palette": [
+      "#dfe4ea",
+      "#1c2430",
+      "#8fa6c4"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 670,
+      "y": 605,
+      "size": 120,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3,
+      "max_width": 360,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 670,
+      "y": 806,
+      "size": 18,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 670,
+      "y": 518,
+      "size": 36,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 7
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 670,
+      "y": 763,
+      "width": 151,
+      "color": "#8fa6c4"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081377857,
+    "background": {
+      "color": "#dfe4ea",
+      "prompt": "Frosted acrylic sheet in pale ice grey hanging as a wall and sweeping into a continuous matching frosted ground at a horizontal horizon six tenths down the frame, one soft cool white backlight glow blooming behind upper centre, fine frost grain, soft high-key diffuse dawn illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 367,
+      "y": 835,
+      "width": 483,
+      "height": 720
+    },
+    "lighting": "soft high-key dawn backlight diffused through frosted sheet, gentle frontal fill, no hard shadows",
+    "palette": [
+      "#dfe4ea",
+      "#1c2430",
+      "#8fa6c4"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 670,
+      "y": 605,
+      "size": 120,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3,
+      "max_width": 360,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 670,
+      "y": 806,
+      "size": 18,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 670,
+      "y": 518,
+      "size": 36,
+      "color": "#1c2430",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 7
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 670,
+      "y": 763,
+      "width": 151,
+      "color": "#8fa6c4"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

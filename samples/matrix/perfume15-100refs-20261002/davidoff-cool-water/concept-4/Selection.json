@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 resolves the 'Glacier Meltwater Basin' concept more cleanly: the matte ice sheet reads as a continuous平面 sweeping to a low, calm horizon with a believable turquoise meltwater caustic band drifting at the horizon line, matching the declared palette (#e6eeef ice, #37b0c4 caustics, #12333c type). The bottle sits left of centre with a soft contact shadow absorbed at its foot, so physical contact is convincing under the diffuse high-key polar light; the saturated ocean-blue glass still reads backlit against the frozen white matte. The right-hand column is coherent and hierarchical: DAVIDOFF at column head, 'Cool / Water' across two tall lines, EAU DE TOILETTE and the short glacier rule closing the column, with wide horizontal clearance from the cap zone. Version 1 by contrast uses busy diagonal marbled streaks that cut across the bottle's base and behind the type column, weakening ground contact, horizon calm and column clearance; its ice texture reads as decorative veining rather than meltwater caustics. Neither version shows studio equipment or floating-packshot defects, and product fidelity (silhouette, opaque cap, white print) is intact in both, so the calmer, better-grounded set wins.",
+  "remaining_problems": [
+    "Title sets in a regular-weight sans rather than a truly condensed Arial Narrow cut; the 'two tall condensed lines' read wider than the brief's column spec.",
+    "Turquoise caustic ripples concentrate in a horizon band and do not visibly drift across the foreground ice or the pale mist sky above, partially under-delivering the declared light movement.",
+    "Contact shadow at the bottle foot is very faint; grounding is plausible but could absorb slightly more to anchor the packshot on the matte ice.",
+    "The glacier rule and EAU DE TOILETTE line sit close to the caustic band, slightly muddying the column's closing whitespace against the horizon."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

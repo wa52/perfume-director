@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5368741b-5d0b-9fa3-858b-a07c530392bb",
+      "usage": {
+        "prompt_tokens": 1571,
+        "total_tokens": 2829,
+        "completion_tokens": 1258,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 233
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5368741b-5d0b-9fa3-858b-a07c530392bb",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1571,
+    "total_tokens": 2829,
+    "completion_tokens": 1258,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 360
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 233
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Flora Gorgeous Jasmine",
+    "logo": "GUCCI",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Label visibly reads 'GUCCI' (brand line), 'FLORA' and 'GORGEOUS JASMINE' (product-name lines); title copies only the product-name lines, brand kept separate as logo; no category, concentration, price or volume text is legible on the packshot, and the user brief supplied none, so subtitle and price are empty.",
+    "product_profile": {
+      "material": "opaque lacquered glass body with metallic ribbed gold cylindrical cap and printed paper label",
+      "color": "mint turquoise body, gold cap, cream label with red lilies, yellow and blue florals and green foliage",
+      "transparency": "fully opaque; no translucent or transmissive regions on body or label",
+      "illumination": "soft diffuse frontal studio light with gentle vertical highlights along shoulder and side facets, low contrast, no hard shadow",
+      "view": "straight-on frontal elevation, bottle upright, centered, full bottle visible",
+      "integration_limits": "opaque body and printed label cannot transmit a generated background; background must sit only behind the silhouette and respect the flat base contact line"
+    }
+  },
+  "duration_seconds": 28.235
+}

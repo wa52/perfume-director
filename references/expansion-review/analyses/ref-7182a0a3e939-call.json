@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-7182a0a3e939.webp",
+      "sha256": "8d8eaf2625f1aa277054dae0ea5fe6907cbdc27bd2fd58a088e98eeaf0c580b8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6c5bb7b4-70d6-9201-8a5d-f7cd85567e57",
+      "usage": {
+        "prompt_tokens": 1419,
+        "total_tokens": 1809,
+        "completion_tokens": 390,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1122,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 390
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6c5bb7b4-70d6-9201-8a5d-f7cd85567e57",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1419,
+    "total_tokens": 1809,
+    "completion_tokens": 390,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1122,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 390
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Diptyque",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved dual-panel perfume still life featuring Diptyque and Bella Freud on marble; clean lighting and composition make it a strong design reference despite lacking external campaign typography.",
+    "analysis": {
+      "composition": "Split-screen diptych layout; left panel features an angled perspective of a rectangular bottle on a marble slab edge, right panel shows a top-down flat lay of an oval bottle on a flat marble surface.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous, dominated by white and light grey marble textures providing a clean backdrop.",
+      "lighting": "Bright, soft studio lighting with distinct, directional shadows indicating a single light source per panel, highlighting glass refraction.",
+      "color": [
+        "#FFFFFF",
+        "#E5E5E5",
+        "#1A1A1A",
+        "#F2F4EB",
+        "#D4C4B7"
+      ],
+      "typography": "None outside the container; text is limited to product labels (handwritten style on left, classic oval emblem on right).",
+      "information_density": "Low; focuses entirely on product form and material texture.",
+      "characteristics": [
+        "marble texture",
+        "glass refraction",
+        "diptych layout",
+        "high-key lighting",
+        "product comparison"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 12.825
+}

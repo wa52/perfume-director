@@ -1,0 +1,73 @@
+{
+  "pass": false,
+  "score": 82.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 81,
+    "background": 78,
+    "physical_integration": 88,
+    "reference_alignment": 76,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated terrazzo now matches the sea-glass mint matrix with dense coral/teal chips, but the wall-to-ground plane change still lands at roughly y=1150, i.e. behind the label's lower lily cluster (label spans ~735-1320), so a horizontal tonal seam crosses the hero's reading zone; the brief's 'very low horizon near the bottom edge' is not yet delivered, and references 3-5 keep plane changes clear of the product silhouette."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [272,1199,809,1440] confirms the bottle is seated, not floating: a soft dark contact band hugs the base line at y=1339 with offset_y 0 and the faceted foot corners darken into the matrix. However the band is a narrow uniform smudge that stops almost exactly at the base corners; against the now busier chip-density ground it reads slightly pasted compared with the references' settled, slightly wider occlusion footprint."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical rhythm is still top-loaded: logo band y=150-170, title y=262-336, rule y=372, then a ~74px void to the cap at y=446, while everything below the base (y=1339-1440, ~100px) is empty ground; the lower field carries no compositional event, leaving the monument band and the bottle stacked rather than interlocked as in references 4-5."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy remains thin at the ends of the band: the 30px tracked GUCCI line and the 168px coral rule read as equal minor weights, and the single 841px title line sits at 117/122px side margins, so the band feels stretched edge-to-edge instead of the 'generous serif line' the concept declares; tracking on the title could relax the tension."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The tide-line narrative is still only half delivered: the coral rule floats isolated in empty wall with no chip-density or tone echo beneath it, so the 'waterline mark' reads as a stray dash rather than closing the monument band into the ground story."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Honed pale sea-glass green terrazzo wall flowing into a continuous matching terrazzo ground at an extremely low horizon just above the bottom edge, dense fine aggregate of coral red and teal marble chips evenly set in cool mint cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects"
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.3
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 210
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 380
+    }
+  ],
+  "reported_score": 81.6
+}

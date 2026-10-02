@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-troweled limewash plaster wall in pale iris lilac, recessed arched niche whose interior is washed BRIGHTER than the surrounding wall by one broad soft pool of luminous light falling from top center, fine trowel arcs and matte mineral grain, a subtle slightly lighter horizontal plaster ledge plane inside the niche at two-thirds height catching the falling light, smooth continuous pale plaster ground below, even diffuse high-key illumination, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [37, 14, 63, 70]. A continuous horizontal ground plane must be visible through y=70 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[24, 80, 82, 89], [32, 92, 58, 93], [46, 73, 54, 75]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 254490615814560,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

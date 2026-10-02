@@ -1,0 +1,29 @@
+{
+  "mode": "deterministic_compositor_regression; not a new ComfyUI or Critic run",
+  "source_run": "runs\\live\\dfa9417c30cd",
+  "old_compositor_matches_original_pixels": false,
+  "changed_pixel_bbox": [
+    801,
+    1162,
+    854,
+    1210
+  ],
+  "contacts": [
+    {
+      "center_x": 656.5,
+      "base_y": 1208,
+      "width": 235
+    },
+    {
+      "center_x": 828.5,
+      "base_y": 1185,
+      "width": 21
+    }
+  ],
+  "crop": [
+    500,
+    1100,
+    930,
+    1270
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Omnia Crystalline",
+  "logo": "BVLGARI",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Arc-set lettering 'BVLGARI' is legible on both circular discs; the product name 'Omnia Crystalline' comes from the user brief and is not printed on the visible packshot; no category, concentration or price text is visible.",
+  "product_profile": {
+    "material": "pearlescent ivory opaque disc faces with clear crystal-like glossy band edges",
+    "color": "ivory white body with silver-clear transparent rims",
+    "transparency": "large opaque matte-pearl regions; only the narrow curved band is transparent and reflective",
+    "illumination": "soft diffuse high-key studio light, broad gentle highlights on the clear band, no hard shadows",
+    "view": "oblique three-quarter front view of the interlocking double-disc form, slight rotational tilt, no visible base contact",
+    "integration_limits": "opaque ivory faces cannot transmit a new background; clear band refracts surroundings; cutout has transparent background and no contact shadow, so background must be added behind the whole silhouette"
+  }
+}

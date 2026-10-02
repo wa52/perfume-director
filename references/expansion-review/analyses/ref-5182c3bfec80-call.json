@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-5182c3bfec80.webp",
+      "sha256": "6baca34846e0cb646d2b2b857c96401fcfa842493fe65ec97fdf17864df86063"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-31b1d411-4c73-9f30-a2d8-bff3a1882fde",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 863,
+        "completion_tokens": 360,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 360
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-31b1d411-4c73-9f30-a2d8-bff3a1882fde",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 863,
+    "completion_tokens": 360,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 360
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "luxury",
+    "reference_kind": "material_detail",
+    "reason": "Highly resolved macro still-life showcasing premium glass refraction, textured cap details, and elegant typographic integration on the vessel. Useful reference for material rendering and luxury fragrance aesthetics.",
+    "analysis": {
+      "composition": "Tight vertical macro crop centered on the upper half of the bottle, emphasizing the ampersand logo and cap texture against a subtly textured background.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, restricted to narrow margins of textured white/grey background on the left and right edges.",
+      "lighting": "Soft, diffused studio lighting creating gentle gradients across the curved glass and highlighting the pebbled texture of the background and cap.",
+      "color": [
+        "teal",
+        "cyan",
+        "black",
+        "silver",
+        "off-white"
+      ],
+      "typography": "Elegant black serif ampersand printed directly on the glass face; no external campaign typography present.",
+      "information_density": "Low, highly focused on material and form.",
+      "characteristics": [
+        "glass refraction",
+        "textured leather-like cap",
+        "macro detail",
+        "monogram branding",
+        "cool color palette"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.191
+}

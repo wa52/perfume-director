@@ -1,0 +1,73 @@
+{
+  "pass": false,
+  "score": 78.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 68,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared concept is three stacked colour blocks in SHIFTED olive tones carrying the image weight, but the render shows one near-uniform olive field with three faint hairline seams (approx y=535, y=827, y=1130). The tonal shift between blocks is almost invisible, so the 'ledger' architecture reads as a flat wall with scratch lines and the bottle looks pasted onto a single plane rather than seated within a constructed graphic stack."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the left column is loose: the gap from logo baseline (y=523) to title top (y=605) is 82px while the gap from title bottom (y=741) to subtitle (y=864) is 123px, and the gold rule sits another 52px below at y=933. The column drifts instead of reading as one locked ledger entry; against the references' confident type blocks the setting feels tentative. Tracking of 2px on the 72px title also leaves the two wrapped lines slightly airy and uneven in colour."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle base (y=1239) lands inside the bottom block while the seam behind the flacon at y=1130 cuts the body at an arbitrary height, and the middle block - which the brief says carries the whole weight - holds only the title. The visual mass sits low-right with a large inert olive area above the cap (top 34% of canvas empty), so the promised 'middle block carries the weight' balance is not achieved."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [486,1099,983,1349] confirms the base IS seated: a soft dark contact shadow hugs the full base edge at offset_y=0, no floating. However the shadow is a neutral soft smudge on a declared shadowless flat-graphic field; it reads slightly photographic against the matte panels, a minor mode inconsistency rather than a floating fault."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References (007 rose burst, Escentric Molecule graphic circles, Versace tonal field) each commit fully to one bold visual device. This poster's device - the stacked tonal blocks - is present only as hairlines, so the execution sits at competent-generic rather than resolved campaign grade."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Three wide horizontal matte painted plywood panels stacked edge to edge, clearly shifted olive green tones: pale sage olive top block, deep olive middle block, mid olive bottom block, crisp hard seams between blocks, perfectly even shadowless flat illumination, no texture gradients, no objects, no horizon"
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 1
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 585
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 810
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 862
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "reported_score": 76
+}

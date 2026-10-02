@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 182058145774188,
+  "background": {
+    "color": "#223055",
+    "prompt": "Deep ultramarine lime-washed plaster wall meeting a continuous honed pale limestone ground at a low horizontal horizon, one hard diagonal shadow edge raking the wall from upper left, bright direct sunlight, matte mineral grain, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 324,
+    "y": 806,
+    "width": 365,
+    "height": 806
+  },
+  "lighting": "hard direct sunlight casting one crisp diagonal shadow edge on the wall, bright warm ambient on the ground",
+  "palette": [
+    "#223055",
+    "#f2e9d8",
+    "#c9862f"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 610,
+    "y": 634,
+    "size": 88,
+    "color": "#f2e9d8",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 3,
+    "max_width": 390,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 610,
+    "y": 907,
+    "size": 24,
+    "color": "#f2e9d8",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 5
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f2e9d8",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 610,
+    "y": 540,
+    "size": 26,
+    "color": "#f2e9d8",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 610,
+    "y": 976,
+    "width": 216,
+    "color": "#c9862f"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

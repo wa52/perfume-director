@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "guerlain-shalimar-retailer.png",
+      "sha256": "16f14f209aa3391890febf4d15941aa73ae2c839b2e61e57fb8cdc4b857f566c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-051532a3-67d0-92c4-957f-c9c91330003f",
+      "usage": {
+        "prompt_tokens": 1571,
+        "total_tokens": 2589,
+        "completion_tokens": 1018,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 742,
+          "text_tokens": 275
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-051532a3-67d0-92c4-957f-c9c91330003f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1571,
+    "total_tokens": 2589,
+    "completion_tokens": 1018,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 360
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 742,
+      "text_tokens": 275
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "SHALIMAR",
+    "logo": "GUERLAIN",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Cap reads 'GUERLAIN PARIS' in gold; body reads 'SHALIMAR' in black; brand and name corroborated by user brief; no concentration, price or category text visible on label.",
+    "product_profile": {
+      "material": "clear glass flacon with amber juice, glossy opaque blue dome cap, black grosgrain ribbon at neck",
+      "color": "golden-amber liquid, deep blue cap, gold cap lettering, black body lettering",
+      "transparency": "body translucent tinted liquid in glass; cap and ribbon opaque; pedestal foot clear",
+      "illumination": "soft frontal studio light with specular highlights on cap dome and glass shoulders; liquid glows from internal transmission, brightest at lower center",
+      "view": "straight-on frontal elevation, full bottle centered, slight eye-level camera",
+      "integration_limits": "hard cutout on white; opaque blue cap and bright white highlight zones on shoulder/foot cannot transmit a new background; amber liquid tints anything placed behind it; no cast shadow in source"
+    }
+  },
+  "duration_seconds": 24.871
+}

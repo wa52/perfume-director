@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-092f7d058a0d.jpg",
+      "sha256": "10975e93b1366e57259139267281552a96ec27dbd0becb08dfd6f11d7f783363"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-d11d5b89-0b8d-9066-a360-b9a9542f33e7",
+      "usage": {
+        "prompt_tokens": 527,
+        "total_tokens": 907,
+        "completion_tokens": 380,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 230,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 380
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d11d5b89-0b8d-9066-a360-b9a9542f33e7",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 527,
+    "total_tokens": 907,
+    "completion_tokens": 380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 230,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 380
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Versace",
+    "style": "fashion",
+    "reference_kind": "campaign_poster",
+    "reason": "High-impact commercial fragrance advertisement featuring a mythological male figure holding an oversized product prop, anchored by bold campaign typography and a vibrant monochromatic teal palette.",
+    "analysis": {
+      "composition": "Centralized vertical layout with a muscular male model standing behind a dramatically scaled-up perfume bottle prop, grounded by large typographic lockup at the base.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, restricted to the solid teal background flanking the central figure and prop.",
+      "lighting": "High-contrast studio lighting with strong directional highlights emphasizing musculature and the glossy, metallic textures of the oversized bottle.",
+      "color": [
+        "teal",
+        "cyan",
+        "yellow",
+        "gold",
+        "red"
+      ],
+      "typography": "Large, bold yellow sans-serif brand name and product line at the bottom, accompanied by a smaller white tagline; distinct from the label lettering on the bottle prop.",
+      "information_density": "Low, focusing entirely on the hero product, the brand name, and the atmospheric model.",
+      "characteristics": [
+        "oversized product prop",
+        "mythological styling",
+        "vibrant monochromatic background",
+        "high contrast",
+        "bold yellow typography"
+      ],
+      "perfume_suitability": 98,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 35
+    }
+  },
+  "duration_seconds": 15.097
+}

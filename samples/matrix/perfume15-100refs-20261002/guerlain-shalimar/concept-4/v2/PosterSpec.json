@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 250442642211919,
+  "background": {
+    "color": "#d8d3c6",
+    "prompt": "Seamless pale alabaster plaster studio cyclorama, continuous honed pale stone ground plane sweeping up into the wall with no visible junction line, one soft arched pool of diffuse morning light falling from top center, faint water caustic ripple light drifting across the upper wall, matte mineral grain, even high-key frontal illumination matching a front-lit subject, no objects, no horizon edge",
+    "revision": 1
+  },
+  "product": {
+    "x": 320,
+    "y": 795,
+    "width": 500,
+    "height": 655
+  },
+  "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+  "palette": [
+    "#d8d3c6",
+    "#1f2a33",
+    "#3f6f8f"
+  ],
+  "title": {
+    "text": "SHALIMAR",
+    "x": 605,
+    "y": 730,
+    "size": 78,
+    "color": "#1f2a33",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3,
+    "max_width": 440,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 540,
+    "y": 720,
+    "size": 16,
+    "color": "#1f2a33",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1f2a33",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "GUERLAIN",
+    "x": 605,
+    "y": 640,
+    "size": 24,
+    "color": "#1f2a33",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.42,
+    "blur": 12,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.1
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 605,
+    "y": 830,
+    "width": 281,
+    "color": "#3f6f8f"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

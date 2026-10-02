@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-2bf1d952503e.webp",
+      "sha256": "870bd36f38d25d951a27702e8d5822930af21f60ddfa3387fe8defc8942fca5b"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ef26d759-936a-9818-b58c-89bc8e9399a5",
+      "usage": {
+        "prompt_tokens": 1579,
+        "total_tokens": 1884,
+        "completion_tokens": 305,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1282,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 305
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ef26d759-936a-9818-b58c-89bc8e9399a5",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1884,
+    "completion_tokens": 305,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1282,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 305
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Ferragamo",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring clear geometric props and high-key lighting, suitable as a minimalist design reference.",
+    "analysis": {
+      "composition": "Asymmetrical arrangement of a glass fragrance bottle and cylindrical cap elevated on transparent acrylic blocks against a seamless background.",
+      "subject_ratio": 0.65,
+      "negative_space": "Generous clean white space surrounding the central geometric composition.",
+      "lighting": "Bright, diffused high-key studio lighting creating soft shadows and crisp specular highlights on glass and acrylic surfaces.",
+      "color": [
+        "white",
+        "clear",
+        "black",
+        "silver"
+      ],
+      "typography": "None; text is limited to the product label printed directly on the bottle.",
+      "information_density": "Low",
+      "characteristics": [
+        "geometric props",
+        "transparent materials",
+        "high-key",
+        "monochromatic",
+        "clean"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 9.898
+}

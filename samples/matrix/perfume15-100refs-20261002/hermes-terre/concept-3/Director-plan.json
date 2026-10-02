@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\dfb9cd499599\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Ember Horizon Night Field",
+    "brief": "Night over worked earth: a flat matte ink-night card carrying one oversized hard-edge burnt-ember half-disc rising from the bottom edge, its crown passing behind the flacon's shoulders like a buried sun, crossed by one thin orange seam at the disc crown. The cutout is lifted into the upper two-thirds so the ember field below becomes a quiet plaque band: tracked geometric-sans brand line, then the name set wide and centred in Century Gothic capitals near band width, closed by a short rule floating between image and text like a print registration mark. No floor, no horizon - pure rising-disc geometry against translucent amber glass.",
+    "material": "flat matte ink-night card with hard-edge printed ember half-disc",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#191d26",
+      "#f0e8da",
+      "#c96a2a"
+    ],
+    "layout_relation": "below",
+    "title_family": "sans",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 245989106098582,
+    "background": {
+      "color": "#191d26",
+      "prompt": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc rising from the bottom edge centred, its crown at three quarters down the frame, one thin hard-edge lighter orange seam line along the disc crown, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 468,
+      "height": 806
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#191d26",
+      "#f0e8da",
+      "#c96a2a"
+    ],
+    "title": {
+      "text": "TERRE D'HERMÈS",
+      "x": 151,
+      "y": 1152,
+      "size": 76,
+      "color": "#f0e8da",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 475,
+      "y": 1274,
+      "size": 16,
+      "color": "#f0e8da",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0e8da",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Hermès",
+      "x": 475,
+      "y": 1073,
+      "size": 28,
+      "color": "#f0e8da",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 5
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 1274,
+      "width": 130,
+      "color": "#c96a2a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

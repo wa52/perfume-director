@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "bvlgari-omnia-crystalline-retailer.png",
+      "sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-66578a60-6c0e-92d9-a581-5877becc2f42",
+      "usage": {
+        "prompt_tokens": 1576,
+        "total_tokens": 2548,
+        "completion_tokens": 972,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "image_tokens": 1211,
+          "text_tokens": 365
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 700,
+          "text_tokens": 271
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-66578a60-6c0e-92d9-a581-5877becc2f42",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1576,
+    "total_tokens": 2548,
+    "completion_tokens": 972,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "image_tokens": 1211,
+      "text_tokens": 365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 700,
+      "text_tokens": 271
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Omnia Crystalline",
+    "logo": "BVLGARI",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Arc-set lettering 'BVLGARI' is legible on both circular discs; the product name 'Omnia Crystalline' comes from the user brief and is not printed on the visible packshot; no category, concentration or price text is visible.",
+    "product_profile": {
+      "material": "pearlescent ivory opaque disc faces with clear crystal-like glossy band edges",
+      "color": "ivory white body with silver-clear transparent rims",
+      "transparency": "large opaque matte-pearl regions; only the narrow curved band is transparent and reflective",
+      "illumination": "soft diffuse high-key studio light, broad gentle highlights on the clear band, no hard shadows",
+      "view": "oblique three-quarter front view of the interlocking double-disc form, slight rotational tilt, no visible base contact",
+      "integration_limits": "opaque ivory faces cannot transmit a new background; clear band refracts surroundings; cutout has transparent background and no contact shadow, so background must be added behind the whole silhouette"
+    }
+  },
+  "duration_seconds": 20.442
+}

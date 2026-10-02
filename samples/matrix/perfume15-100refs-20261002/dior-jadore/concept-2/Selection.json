@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) fulfills the declared concept far more literally and cohesively: a genuine soft arched pool of light falls from the top of the limewash plaster wall, rim-lighting the niche and letting the pearl-white stopper read as the excuse for the glow, while version 1 (image 5) renders the arch as a flat, uniformly lit recessed niche with no top light pool, losing the 'arched light from above' idea. In version 2 the troweled plaster grain is visible and contrasts with the glass's broad highlight as the brief demands; the bottle sits in the upper half with a soft credible contact shadow at its base, and the lower half resolves into a clean full-width nameplate band: small 'Dior' top line, the pale lavender hairline rule like a trowel score, near-full-width Century Gothic-style 'J'adore', and 'EAU DE PARFUM' anchoring the base. Version 1's typography is the same hierarchy but sits awkwardly over the niche's floor edge with a muddier value separation, and its niche interior darkens behind the bottle so the halo effect collapses. Product fidelity (gold ribbed collar, pearl cap, peach liquid, label lettering) is intact in both, but version 2's matched top-down lighting on cap dome and shoulders integrates the packshot more convincingly into the plaster scene. No studio equipment or floating-packshot-over-support artifacts in either; version 2 simply delivers the cathedral-quiet arched light and the upper-image/lower-nameplate anti-grid with stronger craft.",
+  "remaining_problems": [
+    "The arched light pool in version 2 peaks above the niche and slightly hot-spots the top edge of the frame, pulling the eye off the stopper.",
+    "The bottle's contact shadow is a soft ellipse that does not fully respond to the single overhead pool; a slightly tighter, directional shadow would seat it better on the implied plaster ledge.",
+    "The large 'J'adore' title crosses the wall-to-floor junction line, so the nameplate band's top edge and the hairline rule compete with the horizon rather than sitting cleanly within the band.",
+    "Plaster texture softens behind the title area, reducing legibility contrast of 'EAU DE PARFUM' against the lighter floor plane."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

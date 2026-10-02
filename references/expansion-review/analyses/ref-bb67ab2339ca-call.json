@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-bb67ab2339ca.webp",
+      "sha256": "0804cecb6dc8a4315443ff293d2b7fcd44e29d09e10d813dfcb22544b87670d0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6d3e2bf8-06d5-9c0f-885d-94e295252aa0",
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1661,
+        "completion_tokens": 322,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1042,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 322
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6d3e2bf8-06d5-9c0f-885d-94e295252aa0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1661,
+    "completion_tokens": 322,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1042,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 322
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring dramatic textural contrast and moody lighting; excellent design reference for masculine fragrance campaigns.",
+    "analysis": {
+      "composition": "Dynamic diagonal placement of the bottle centered over a textured, cracked surface, creating visual tension.",
+      "subject_ratio": 0.55,
+      "negative_space": "Moderate, framing the central subject with smooth gradient transitions at the edges.",
+      "lighting": "Soft, diffused top-down studio lighting emphasizing the glossy glass reflections and the matte texture of the cracked ground.",
+      "color": [
+        "midnight blue",
+        "slate grey",
+        "charcoal",
+        "silver"
+      ],
+      "typography": "None outside the container; text is strictly product labeling on the glass.",
+      "information_density": "Low, focused entirely on the product and its immediate atmospheric setting.",
+      "characteristics": [
+        "textural contrast",
+        "monochromatic palette",
+        "masculine aesthetic",
+        "premium product photography"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.17
+}

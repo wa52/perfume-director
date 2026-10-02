@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 79.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 76,
+    "background": 68,
+    "physical_integration": 88,
+    "reference_alignment": 76,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The plaque band still renders as a rounded-corner card floating on the sage field, with a soft cast shadow along its right and lower edge (visible in the poster at roughly x930-960, y1010-1370). The declared concept specifies one hard-edge blank band with perfectly square corners and absolutely no cast shadow; the shadow also implies a directional light source that the flat shadowless ink illumination forbids. The previous prompt revision removed the stray top glyphs (top edge is now clean) but did not fix the band geometry."
+    },
+    {
+      "type": "background",
+      "problem": "The engraved vertical fluting lines promised by the concept are barely perceptible: the green field reads as a near-flat wash with only faint vertical striation, so the 'line-density falling' narrative that should continue behind the bottle shoulders never registers at poster scale. Compared with the confident graphic fields in the reference campaigns, the backdrop reads as an under-textured wall with a pasted cutout."
+    },
+    {
+      "type": "composition",
+      "problem": "The plaque band (approx y1005-1370) carries the logo, etch line and title in its upper two thirds, leaving a dead empty green strip of roughly 140px below the title baseline (y1224-1370). The band feels under-filled and bottom-heavy with void, unlike the resolved typographic plaques of the references which balance their band height to their ink."
+    },
+    {
+      "type": "typography",
+      "problem": "The graphite etch line (decoration, x440-640 at y1112) sits only ~26px above the title capline and visually collides with the logo lockup above it (logo baseline y1063), crowding the three band elements into one cluster while the lower band stays empty; vertical rhythm inside the plaque needs redistribution rather than more ink."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte card in medium sage green, clearly visible fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band with perfectly square ninety-degree corners flush into the card and absolutely no cast shadow no drop shadow no rounding, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects, no letters, no numbers, no glyphs"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1180
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1128
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1052
+    }
+  ],
+  "reported_score": 79.6
+}

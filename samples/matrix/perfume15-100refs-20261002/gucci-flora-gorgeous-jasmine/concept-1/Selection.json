@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 fulfills the Lido Terrazzo Tide-Line concept far more faithfully: the honed sea-glass mint terrazzo sweeps from wall into a continuous matching ground at a low horizon, with coral and teal marble chips echoing the label's garden exactly as briefed, while version 1 substitutes a warm oatmeal-cream terrazzo that drifts off the declared palette (#d9e6df mint ground) and reads as sandstone rather than sea-glass. In version 2 the opaque mint flacon sits flush on its true base line with a soft, measured contact shadow settling into the matte cement matrix under diffuse overcast open-shade light; version 1's base contact is fainter and the bottle feels slightly pasted against a wall/ground split whose two terrazzo scales do not match. Typography in both is a centred monument band (tracked Baskerville brand line, one generous serif name line, short coral ink rule), but version 2's deep-teal type holds better contrast against the mint matrix and the rule sits calmly above the cap. No studio equipment, no floating packshot, no raised support in either; version 2 simply delivers the tactile mineral-matte versus lacquer-gloss story with a more coherent, continuous set.",
+  "remaining_problems": [
+    "Version 2's upper wall chip density is busier than the 'calm upper wall' ideal; the monument band would breathe better with slightly quieter aggregate behind the type.",
+    "Contact shadow in version 2 is soft but very shallow; a touch more settled grounding at the base corners would reinforce physical contact.",
+    "Coral ink rule floats a little close to the name line in both versions; marginally more spacing would complete the waterline metaphor."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

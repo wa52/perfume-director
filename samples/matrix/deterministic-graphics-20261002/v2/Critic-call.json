@@ -1,0 +1,153 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "8844ff62a0116be4d3a86ce957fa75102b3a26068dc783021c12493e0ed235d1"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "59cccf8d0aac69dcf8f371ff2e4d8dce9fa2c3e3e36213c709a56a77167389a2"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "77e382832a63fd25c132cc3aa21ed3ea37c872a75c2914f34fc90ab5c6101610"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-36a542f8-5d8e-9f44-a112-7a2f0183ed5a",
+      "usage": {
+        "prompt_tokens": 10396,
+        "total_tokens": 12536,
+        "completion_tokens": 2140,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6881,
+          "text_tokens": 3515
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1115
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-36a542f8-5d8e-9f44-a112-7a2f0183ed5a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10396,
+    "total_tokens": 12536,
+    "completion_tokens": 2140,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6881,
+      "text_tokens": 3515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1115
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 79.4,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 76,
+      "background": 76,
+      "physical_integration": 88,
+      "reference_alignment": 74,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "composition",
+        "problem": "The disc still reads as a left-side tab, not a sun passing behind the flacon: shape spans x=150..790 while the bottle spans x=339..741, so only a ~49px sienna sliver emerges right of the silhouette (visible y≈790..1130) against a ~189px crescent on the left; the brief's 'disc passes behind its shoulders' geometry is only marginally achieved and the lower-right field (x>790, y>640) stays dead empty ochre."
+      },
+      {
+        "type": "typography",
+        "problem": "The monument band still does not lock: title bottom y=267 to subtitle top y=322 leaves a 55px void inside the stack, while subtitle bottom y=336 to rule y=366 to cap top y=418 leaves only ~30px and ~52px, so the internal gap is the largest interval in the band and the rule crowds the cap; the three lines plus rule read as loose fragments rather than one registration block."
+      },
+      {
+        "type": "background",
+        "problem": "The declared matte gouache paper with dry-brush grain is still not visibly present: apart from a faint scuff near the crop's right edge (contact detail, approx x=740,y=1290 canvas coords) the field renders as a flat digital fill, so the concept's painted-paper material claim is unsupported and the backdrop reads as a plain color wall behind a pasted cutout."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Against references 3-5, whose single prop (branch, orb, reflective floor) actively structures the whole frame, this poster's disc is a passive backdrop element: it never intersects the typography band, never casts tonal influence, and the shadowless flat light leaves the composition without the directional tension the references achieve, so the design gap to professional campaign craft remains."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": [
+          {
+            "kind": "ellipse",
+            "x": 200,
+            "y": 600,
+            "width": 700,
+            "height": 700,
+            "color": "#A44728",
+            "opacity": 1
+          }
+        ]
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 296
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 340
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless saturated marigold ochre matte gouache paper hand-painted with visible coarse dry-brush strokes, ragged pigment mottling and slight tonal drift toward edges, uniform diffuse frontal illumination, uninterrupted flat painted color field, empty environment"
+      }
+    ],
+    "evidence_notes": {
+      "contact_shadow": "Contact detail crop [259,1171,821,1421] shows a soft dark alpha footprint hugging the full base width directly under y=1311 with offset_y=0; contact is correct, no floating, no downward move proposed.",
+      "product_geometry": "product_bbox [339,418,741,1311], height ratio 0.6201 inside 0.50..0.65 hero range and inside graphic safety bounds (top 29%, base 91%); single bottle, label typography identical to original packshot, baked speculars preserved.",
+      "overlap": "text_product_overlap all false; title/product intersection none on both axes, so no overlap claim made.",
+      "studio_artifacts": "None visible; no softboxes, lamps, stands or cameras.",
+      "previous_changes_verified": "Subtitle moved 322 vs prior 350 and rule 366 vs 392: cap crowding eased (52px vs 26px) but internal title-subtitle void persists; disc right sliver now exists (~49px) yet remains too thin to read as a sun behind the flacon."
+    }
+  },
+  "duration_seconds": 59.057
+}

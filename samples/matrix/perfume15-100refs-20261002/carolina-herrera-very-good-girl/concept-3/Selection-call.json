@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "2ce64ffb14e81cd585f20ff7f9d217382230aeb4f7f364932d3f06269c0c711a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-15af63fb-55b1-9af1-b2ff-4aa1a1be1258",
+      "usage": {
+        "prompt_tokens": 8124,
+        "total_tokens": 9449,
+        "completion_tokens": 1325,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 7201,
+          "text_tokens": 923
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 300
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-15af63fb-55b1-9af1-b2ff-4aa1a1be1258",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8124,
+    "total_tokens": 9449,
+    "completion_tokens": 1325,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 7201,
+      "text_tokens": 923
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 300
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 resolves the plaque band exactly as the concept demands: the die-cut contour valley stays contained in the upper two-thirds with clean hairline shades under each cut edge, leaving the lower third a quiet flat blush field where 'Carolina Herrera', the thin rose rule and the wide-tracked geometric sans 'Very Good Girl' stack on a single centered axis with clear hierarchy. The shoe silhouette reads crisply against the contour rings, keeps its baked-in glossy speculars and gold heel gradient, and sits with a soft contact shade at toe and heel instead of floating. Version 2's oval rings run down through the type zone so the plaque band is no longer quiet, its rose rule is knocked off-axis to the right and collides with the centered title, and the brand line crowds the shoe's base; its contour edges also fade unevenly at the sides, weakening the topographic read.",
+    "remaining_problems": [
+      "Version 1's contour valley reads as a wavy rounded square rather than the briefed soft topographic oval, and only three cut layers are legible.",
+      "The rose rule sits between brand line and title rather than floating strictly between image and text as the brief describes.",
+      "Contact shadow under the toe is very faint, so physical grounding of the flacon remains slightly soft against the flat graphic field."
+    ]
+  },
+  "duration_seconds": 35.923
+}

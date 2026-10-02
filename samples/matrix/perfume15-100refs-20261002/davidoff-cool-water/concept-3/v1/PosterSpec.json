@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 40661490898507,
+  "background": {
+    "color": "#b9c0c2",
+    "prompt": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground at a horizontal horizon six tenths down the frame, matte cement grain, cool diffuse overcast fog light, even shadowless illumination, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 734,
+    "y": 864,
+    "width": 359,
+    "height": 864
+  },
+  "lighting": "cool diffuse overcast sea-fog daylight, soft frontal with no hard shadows, matching the baked studio light",
+  "palette": [
+    "#b9c0c2",
+    "#16232a",
+    "#2e7f96"
+  ],
+  "title": {
+    "text": "Cool Water",
+    "x": 76,
+    "y": 576,
+    "size": 96,
+    "color": "#16232a",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 1,
+    "max_width": 340,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE TOILETTE",
+    "x": 76,
+    "y": 842,
+    "size": 26,
+    "color": "#16232a",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#16232a",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "DAVIDOFF",
+    "x": 76,
+    "y": 497,
+    "size": 28,
+    "color": "#16232a",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 5
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 929,
+    "width": 108,
+    "color": "#2e7f96"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

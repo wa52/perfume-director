@@ -1,0 +1,15 @@
+{
+  "title": "Chloé",
+  "logo": "Chloé",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Embossed word 'Chloé' is visible on the glass front; brand Chloé is supplied by the user brief; no concentration, volume, price or promotional text is legible on the packshot.",
+  "product_profile": {
+    "material": "fluted transparent glass bottle, polished silver-tone metal cap, nude grosgrain fabric ribbon bow",
+    "color": "pale peach-champagne juice, clear glass, bright silver cap, beige ribbon",
+    "transparency": "glass walls and juice translucent; metal cap and ribbon fully opaque",
+    "illumination": "soft diffuse high-key studio light, even frontal brightness, gentle specular highlights on cap and glass edges, no hard shadow",
+    "view": "straight-on front elevation at eye level, bottle upright and centered, flat rectangular base resting on unseen plane",
+    "integration_limits": "packshot is a clean cutout on plain white; opaque ribbon and cap cannot transmit a new background; the bright pale juice region reads near-opaque so any backdrop must stay light and neutral; wide bow requires horizontal clearance"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-ebe7e5019cb1.webp",
+      "sha256": "8d0e07eeeb895f9091d0e7f83cc99a592809765583dbd25e8bb085439c5a220b"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-dfcedfc1-3854-9094-8ce5-0ec84d45431b",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1897,
+        "completion_tokens": 358,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 358
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-dfcedfc1-3854-9094-8ce5-0ec84d45431b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1897,
+    "completion_tokens": 358,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 358
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Maison Francis Kurkdjian Paris",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring classical sculptural props and symmetrical composition; excellent design reference for opulent, heritage-driven fragrance campaigns.",
+    "analysis": {
+      "composition": "Symmetrical arrangement with the perfume bottle elevated on a central column, flanked by classical busts and broken pillar fragments on a seamless white background.",
+      "subject_ratio": 0.65,
+      "negative_space": "Generous clean white space at the top and bottom, focusing attention entirely on the central tableau.",
+      "lighting": "Soft, diffused studio lighting creating gentle gradients on the white plaster and distinct, soft shadows anchoring the columns to the floor.",
+      "color": [
+        "white",
+        "deep purple",
+        "rose gold",
+        "light grey"
+      ],
+      "typography": "None outside the container; text is limited to the product label printed directly on the glass bottle.",
+      "information_density": "Low; purely visual and atmospheric with no external campaign copy.",
+      "characteristics": [
+        "classical motifs",
+        "symmetrical balance",
+        "sculptural props",
+        "high-key background",
+        "opulent aesthetic"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.539
+}

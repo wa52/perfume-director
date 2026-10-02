@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "77e382832a63fd25c132cc3aa21ed3ea37c872a75c2914f34fc90ab5c6101610"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "8844ff62a0116be4d3a86ce957fa75102b3a26068dc783021c12493e0ed235d1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-117f48d1-f9e5-9a7c-b493-01195b0c9939",
+      "usage": {
+        "prompt_tokens": 7503,
+        "total_tokens": 8883,
+        "completion_tokens": 1380,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6489,
+          "text_tokens": 1014
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 355
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-117f48d1-f9e5-9a7c-b493-01195b0c9939",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7503,
+    "total_tokens": 8883,
+    "completion_tokens": 1380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6489,
+      "text_tokens": 1014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 355
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 fulfils the Ochre Signal Disc concept more completely: the burnt-sienna disc reads as one continuous sun passing behind the flacon, emerging on both sides of the espresso silhouette so the silhouette-plus-disc geometry locks together, whereas version 1's disc only appears as a left-side lune and reads as an unbalanced blob rather than a setting sun. Both keep the centred monument typography band (wide-tracked TOM FORD, heavy Bodoni TOBACCO VANILLE, small EAU DE PARFUM line closed by a short registration rule), the faithful opaque cutout with baked vertical speculars and legible gold plate, and the flat shadowless marigold gouache field with no floor or horizon. Version 2's field also carries a faint matte paper grain consistent with gouache paper, and its disc sits low and off-centre behind the shoulders without crossing the gold plate's visible face, giving the stronger resolved campaign graphic.",
+    "remaining_problems": [
+      "In version 2 the disc's right-hand emergence sits at the same height as the gold plate's lower half, brushing the plate zone rather than clearing it fully behind the shoulders",
+      "The flacon base floats on the flat field with no contact shadow or grounding device; acceptable for the graphic mode but the base edge still reads slightly pasted",
+      "Baked white specular chips under the cap corners remain harsh against the matte field in both versions",
+      "Typography band sits high with a large empty gap between the registration rule and the cap, leaving the upper monument band slightly disconnected from the product"
+    ]
+  },
+  "duration_seconds": 47.874
+}

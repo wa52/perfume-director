@@ -1,0 +1,349 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 3,
+      "status": "OK",
+      "response_id": "chatcmpl-8d9e33a9-444b-9b95-93b6-d34387fbb935",
+      "usage": {
+        "prompt_tokens": 25381,
+        "total_tokens": 31324,
+        "completion_tokens": 5943,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 9144,
+          "text_tokens": 16237
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1846
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8d9e33a9-444b-9b95-93b6-d34387fbb935",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 25381,
+    "total_tokens": 31324,
+    "completion_tokens": 5943,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9144,
+      "text_tokens": 16237
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1846
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Lido Terrazzo Tide-Line",
+        "brief": "A quiet photographic lido morning: honed sea-glass terrazzo sweeps from wall into a continuous matching ground at a low horizon, its coral and teal marble chips whispering the label's garden without quoting it. The opaque mint flacon stands flush on that ground at its true base line under overcast open-shade light, the measured contact shadow settling into the matte cement matrix. All type floats in a centred monument band in the calm upper wall: small tracked Baskerville brand line, the name in one generous serif line, closed by a short ink rule like a waterline mark. Mineral chip matte against lacquer gloss keeps the story tactile and architectural.",
+        "material": "honed terrazzo wall and continuous terrazzo ground with marble chip aggregate",
+        "lighting": "soft overcast open-shade daylight, diffuse frontal with no hard shadows, matching the baked studio light",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-6661b9238858",
+          "ref-efb51dc5d487"
+        ],
+        "palette": [
+          "#d9e6df",
+          "#123a3a",
+          "#d46a4e"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.108,
+            0.16,
+            84
+          ],
+          "logo": [
+            0.444,
+            0.09,
+            30
+          ],
+          "subtitle": [
+            0.45,
+            0.245,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.1,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Honed pale sea-glass terrazzo wall meeting a continuous matching terrazzo ground at a low horizontal horizon, fine chips of coral red and teal marble set in matte cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects",
+        "line": [
+          0.44,
+          0.245,
+          0.12
+        ]
+      },
+      {
+        "name": "Silkscreen Jasmine Corolla",
+        "brief": "A flat silkscreen poster: one oversized eight-lobed scalloped corolla in pale mint blooms out of a deep gentian field, its hard printed edge passing behind the flacon's shoulders like a graphic halo. No floor, no horizon - pure shape narrative, the matte ink swallowing light so the lacquered mint body and ribbed gold cap own every highlight. The product is lifted into the upper two-thirds and the whole typographic plaque sits in a calm lower band: tracked geometric-sans brand line, the name set wide and centred near band width, a short poppy rule floating between image and text like a print registration mark.",
+        "material": "flat silkscreen ink on matte card with hard-edge scalloped corolla shape",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-453438bbcb76",
+          "ref-6ced6279f2e6",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#1e3a6e",
+          "#eaf4ee",
+          "#e2554a"
+        ],
+        "product": [
+          0.5,
+          0.44,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.117,
+            0.845,
+            64
+          ],
+          "logo": [
+            0.445,
+            0.785,
+            26
+          ],
+          "subtitle": [
+            0.45,
+            0.905,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Seamless flat silkscreen-printed matte card in deep gentian blue, one oversized hard-edge flat scalloped eight-lobed corolla shape in pale mint centred slightly above middle, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.46,
+          0.762,
+          0.08
+        ]
+      },
+      {
+        "name": "Apricot Stucco Ledger Column",
+        "brief": "A photographic terrace after rain-light: warm apricot lime-washed stucco meets a continuous honed sandstone ground at a low horizon, one soft cloud-shadow band drifting across the upper wall. The flacon stands right of centre at its true base line, contact shadow absorbed by the matte stone, while the left half of the wall stays calm for a wrapped editorial column: brand line at column head, the name set large across three narrow serif lines, a short vertical rule closing the column like a ledger margin. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column grid honest; mineral matte against lacquer gloss tells the whole story.",
+        "material": "lime-washed apricot stucco wall with continuous honed sandstone ground",
+        "lighting": "bright but diffuse overcast-warm daylight, soft frontal with one gentle cloud-shadow band, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-6661b9238858",
+          "ref-efb51dc5d487",
+          "ref-f305dbbdf3bc"
+        ],
+        "palette": [
+          "#e2a06b",
+          "#3a1d10",
+          "#1f5f58"
+        ],
+        "product": [
+          0.68,
+          0.55,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.07,
+            0.4,
+            88
+          ],
+          "logo": [
+            0.07,
+            0.335,
+            30
+          ],
+          "subtitle": [
+            0.07,
+            0.66,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 1,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Warm apricot lime-washed stucco wall meeting a continuous honed pale sandstone ground at a low horizontal horizon, one soft broad cloud-shadow band drifting across the upper wall, matte mineral grain, bright diffuse warm daylight, no objects",
+        "line": [
+          0.352,
+          0.4,
+          0.006
+        ]
+      },
+      {
+        "name": "Viridian Ribbon Orbit",
+        "brief": "An experimental graphic orbit: on a deep viridian matte field, one continuous pale-mint ribbon band sweeps in a flat printed loop, diving behind the flacon's waist and re-emerging at the opposite shoulder so the silhouette itself completes the circuit. No floor, no horizon - the ribbon is the only architecture, echoing the ribbed gold cap as a drawn line against lacquer volume. The product sits low and left-weighted while a right-hand stacked column carries the monument: tracked narrow-sans brand line at column head, the name across three tall wrapped lines, a short horizontal rule closing the column; vertical overlap with the cap zone but wide horizontal clearance keeps the asymmetric grid deliberate.",
+        "material": "flat matte gouache-painted card with one continuous hard-edge printed ribbon loop",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-453438bbcb76",
+          "ref-7a523ada9a2c",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#174437",
+          "#f0ece0",
+          "#e0b23e"
+        ],
+        "product": [
+          0.33,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.58,
+            0.36,
+            96
+          ],
+          "logo": [
+            0.58,
+            0.295,
+            30
+          ],
+          "subtitle": [
+            0.58,
+            0.63,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 380,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat ribbon loop in pale mint sweeping from lower left behind centre and re-emerging upper right, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.58,
+          0.605,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 144.187
+}

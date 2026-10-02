@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Endless dawn salt plain of fine polygonal crust cracks, small tight mineral polygons fading softer and hazier toward a low mist-grey horizon, cool diffuse overcast frontal daylight, matte white mineral grain with subtle warm dawn blush near the horizon, continuous flat ground plane, empty environment, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [49, 35, 91, 90]. A continuous horizontal ground plane must be visible through y=90 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[6, 39, 42, 50], [6, 35, 16, 36]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 245989106097574,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

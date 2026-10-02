@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 40661490896489,
+  "background": {
+    "color": "#d7e6e3",
+    "prompt": "Seamless flat matte chart paper in pale glacier mint, fine concentric sonar rings in deep marine teal expanding from the exact center of the frame, one thicker hard-edge ring at mid radius, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 371,
+    "height": 893
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#d7e6e3",
+    "#0d2b33",
+    "#1f7f96"
+  ],
+  "title": {
+    "text": "Cool Water",
+    "x": 278,
+    "y": 144,
+    "size": 110,
+    "color": "#0d2b33",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "EAU DE TOILETTE",
+    "x": 374,
+    "y": 259,
+    "size": 30,
+    "color": "#0d2b33",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#0d2b33",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "DAVIDOFF",
+    "x": 441,
+    "y": 75,
+    "size": 30,
+    "color": "#0d2b33",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 328,
+    "width": 130,
+    "color": "#1f7f96"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

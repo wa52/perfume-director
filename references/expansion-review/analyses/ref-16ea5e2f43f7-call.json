@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-16ea5e2f43f7.webp",
+      "sha256": "2964346fdcb4fd2478c7f1f8e9060d10f95782b9339154bc8ec1c3ba83849e50"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-851d3b9f-d102-976b-8afe-9661d3b8fd6c",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 831,
+        "completion_tokens": 328,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 328
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-851d3b9f-d102-976b-8afe-9661d3b8fd6c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 831,
+    "completion_tokens": 328,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 328
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Burberry",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life with high-end lighting and material rendering; lacks external campaign typography but serves as an excellent visual reference for product photography.",
+    "analysis": {
+      "composition": "Tight macro crop centered on the upper half of the flacon, emphasizing the cap and embossed medallion.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, soft gradient background framing the subject closely.",
+      "lighting": "Warm, directional studio lighting creating strong specular highlights on the glass and metallic cap.",
+      "color": [
+        "gold",
+        "amber",
+        "bronze",
+        "warm beige"
+      ],
+      "typography": "Embossed lettering on the bottle medallion only; no external campaign text.",
+      "information_density": "Low, singular focus on product texture and form.",
+      "characteristics": [
+        "monochromatic gold palette",
+        "glass refraction",
+        "metallic textures",
+        "embossed details",
+        "macro perspective"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 20.508
+}

@@ -1,0 +1,113 @@
+{
+  "brief": "为 Carolina Herrera Very Good Girl 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A photographic night interior: a deep ink-blue painted hall meets a continuous dark lacquered parquet ground at a low horizon, one soft pool of ambient light breathing on the floor behind the subject's true base line where the measured contact shadow lands on toe and heel tips. The cutout holds the right column while the left column carries a wrapped narrow-sans monument: brand at column head, the name across two tall wrapped lines, a short pale rule closing the column - vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest. Matte night paint against vermilion lacquer reads as quiet theatre after hours.",
+  "product": "assets\\products\\carolina-herrera-very-good-girl-retailer.png",
+  "references": [
+    {
+      "id": "ref-403f9139347c",
+      "brand": "YSL",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-403f9139347c.webp",
+      "selection_reason": "Highly resolved luxury perfume still-life featuring dramatic backlighting, architectural composition, and premium material rendering. Excellent design reference for high-end fragrance campaigns.",
+      "analysis": {
+        "composition": "Low-angle hero shot centering a monumental, trapezoidal bottle on a textured geometric plinth against a gradient backdrop.",
+        "subject_ratio": 0.65,
+        "negative_space": "Expansive gradient sky above and smooth, undulating metallic surface below framing the central subject.",
+        "lighting": "Dramatic backlighting creating a radiant halo behind the bottle, with soft frontal fill highlighting the embossed logo and base textures.",
+        "color": [
+          "matte black",
+          "warm bronze",
+          "slate blue",
+          "champagne gold"
+        ],
+        "typography": "None; only the embossed brand monogram on the container is visible.",
+        "information_density": "Low; purely visual focus on product silhouette and atmosphere.",
+        "characteristics": [
+          "monolithic silhouette",
+          "textured stone base",
+          "metallic liquid reflections",
+          "dawn/dusk gradient",
+          "architectural staging"
+        ],
+        "perfume_suitability": 98,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

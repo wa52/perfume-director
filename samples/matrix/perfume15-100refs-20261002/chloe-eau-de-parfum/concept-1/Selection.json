@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 executes the 'Grosgrain Meridian Graph' concept more completely: the grosgrain band carries clearly engraved fine vertical rib lines across its full width, reading as an enlarged ribbon horizon, while in version 1 the band is nearly flat matte tan and loses the rib-density narrative. The band in version 2 sits precisely at bow height so the bow and silver cap interrupt and complete the meridian line, and the bottle floats out of the band with a clean silhouette against the flat mist-blue field. Typography hierarchy is better resolved in version 2: tracked brand line top, large serif Baskerville-style title commanding the plaque zone, and a thin rule placed closer to the band so the nameplate reads as one composed unit rather than drifting (version 1 leaves a dead gap between rule and band). Product fidelity is equal in both (recognizable fluted glass, silver cap, nude bow, pale juice), lighting stays flat and shadowless per the graphic mode, no studio equipment or floating-support artifacts appear, and the bottle respects the safety bounds in both. Version 2 wins on material control and hierarchy within the declared concept.",
+  "remaining_problems": [
+    "The thin rule under the title renders in warm tan rather than the specified silver-gray刻度 line",
+    "Top brand line reads serif-ish rather than a clean wide-tracked sans (Arial) as briefed",
+    "Rib engraving inside the band stops where the bow overlaps, slightly weakening the 'silhouette completes the interruption' idea at the knot",
+    "Flat frontal light is correct for the concept but the cap retains soft photographic speculars that slightly contradict the pure ink-flat field"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

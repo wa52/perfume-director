@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-36be39fef9d3.webp",
+      "sha256": "7eb6fa80b12c0b22be433ef0e400bc7d931a0dbd456bc444fa18d7858093f633"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-b2fac69b-09e4-9f97-9099-07ea79a58291",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 798,
+        "completion_tokens": 295,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 295
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-b2fac69b-09e4-9f97-9099-07ea79a58291",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 798,
+    "completion_tokens": 295,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 295
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring a textured leather background and clean glass bottle. High material quality and lighting make it a strong design reference, despite the lack of campaign typography.",
+    "analysis": {
+      "composition": "Centered vertical product shot on a textured surface.",
+      "subject_ratio": 0.55,
+      "negative_space": "Uniform textured background surrounding the central subject.",
+      "lighting": "Soft, diffused studio lighting creating gentle highlights on the glass and defining the leather grain.",
+      "color": [
+        "teal",
+        "black",
+        "white",
+        "silver"
+      ],
+      "typography": "None visible outside the container; ampersand is part of the bottle design.",
+      "information_density": "Low",
+      "characteristics": [
+        "textured background",
+        "glass refraction",
+        "minimalist",
+        "clean aesthetic"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 8.074
+}

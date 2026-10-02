@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 255395513707041,
+    "background": {
+      "color": "#e7c9c2",
+      "prompt": "Concentric die-cut layered paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, hairline soft shade under each cut edge, matte card fibre grain, even shadowless frontal illumination, no objects, no horizon",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 634,
+      "width": 356,
+      "height": 806
+    },
+    "lighting": "even diffuse frontal light with hairline shade under each cut edge, flat graphic illumination",
+    "palette": [
+      "#e7c9c2",
+      "#4a2027",
+      "#b8455a"
+    ],
+    "title": {
+      "text": "Very Good Girl",
+      "x": 151,
+      "y": 1152,
+      "size": 72,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 1296,
+      "size": 20,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Carolina Herrera",
+      "x": 405,
+      "y": 1073,
+      "size": 24,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1126,
+      "width": 173,
+      "color": "#b8455a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 255395513707041,
+    "background": {
+      "color": "#e7c9c2",
+      "prompt": "Concentric die-cut layered paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, hairline soft shade under each cut edge, matte card fibre grain, even shadowless frontal illumination, no objects, no horizon",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 634,
+      "width": 356,
+      "height": 806
+    },
+    "lighting": "even diffuse frontal light with hairline shade under each cut edge, flat graphic illumination",
+    "palette": [
+      "#e7c9c2",
+      "#4a2027",
+      "#b8455a"
+    ],
+    "title": {
+      "text": "Very Good Girl",
+      "x": 151,
+      "y": 1152,
+      "size": 72,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 1296,
+      "size": 20,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Carolina Herrera",
+      "x": 405,
+      "y": 1073,
+      "size": 24,
+      "color": "#4a2027",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1126,
+      "width": 173,
+      "color": "#b8455a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

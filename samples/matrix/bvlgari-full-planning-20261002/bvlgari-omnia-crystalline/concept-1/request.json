@@ -1,0 +1,115 @@
+{
+  "brief": "为 Bvlgari Omnia Crystalline 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把双盘珠光读作一整面贝母海：母贝拼贴墙面以细密贝壳片排成旋涡纹， iridescent 冷光在片缝间流转，连续同料贝母地面在真实基准线接墙。商品立于贝地偏左，测量接触阴影陷进贝壳拼缝；右半幅贝面保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如蚀刻签条，一条贝蓝细线横垫柱底如潮位刻度。垂直方向与盘肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；贝母的冷 iridescent 哑光与透明晶带的硬折光互为虚实。参考 R1 的负空间右栏排印层级与 R7 的柔光珠色秩序。",
+  "product": "assets\\products\\bvlgari-omnia-crystalline-retailer.png",
+  "references": [
+    {
+      "id": "ref-6ced6279f2e6",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-6ced6279f2e6.jpg",
+      "selection_reason": "Highly resolved commercial perfume advertisement featuring dramatic floral explosion, strong contrast, and clear campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the faceted bottle anchored lower-left against an exploding rose, counterweighted by right-aligned typography in the negative space.",
+        "subject_ratio": 0.65,
+        "negative_space": "Dark, textured void on the right utilized effectively for legible white text placement.",
+        "lighting": "Dramatic studio lighting with high contrast; sharp specular highlights on the geometric glass facets and soft, directional light defining the rose petals.",
+        "color": [
+          "crimson red",
+          "obsidian black",
+          "charcoal grey",
+          "stark white"
+        ],
+        "typography": "Clean, sans-serif and serif mix in white; prominent '007' logo lockup with supporting tagline and URL, distinctly separate from the product container.",
+        "information_density": "Moderate; focuses on brand identity, product name, and evocative tagline without clutter.",
+        "characteristics": [
+          "dynamic motion",
+          "high contrast",
+          "faceted texture",
+          "floral motif",
+          "cinematic mood"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

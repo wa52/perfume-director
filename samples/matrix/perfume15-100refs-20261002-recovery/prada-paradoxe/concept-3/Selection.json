@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 resolves the Cocoa Glaze Tile Ledger concept more completely: the bottle's base meets the glazed tile ground at a believable baseline with a soft contact shadow settling into the grout, whereas version 1 leaves the flacon hovering just above the wall/floor junction with no anchoring shadow, reading as a pasted cutout. Version 2's wall glaze carries the low glossy sheen arcs the brief demands, and its floor perspective joins the wall on a continuous matching material. Typography is decisively stronger in version 2: the tracked sans brand line sits at the top of the lower ledger band, the peach hairline rule spans the band like a kintsugi crack, and the serif 'Paradoxe' title is centered and scaled to nearly the full band width; version 1's title drifts left of center and its rule is短 and misaligned with the brand line, breaking the ledger hierarchy. Product fidelity (triangle silhouette, black lacquer cap, gold collar, pink juice) is intact in both, but version 2's warmer frontal key matches the baked studio lighting of the cutout more convincingly on the glass edges.",
+  "remaining_problems": [
+    "Contact shadow under the bottle in version 2 is faint and slightly diffuse; a tighter occlusion darkening into the nearest grout line would lock the packshot to the ground.",
+    "Wall grout reads as a uniform square grid rather than the brief's distinct vertical tile columns with fine grout; the column rhythm is weak.",
+    "Baked-in white luminance of the pink juice still fights the dark cocoa surround; a subtle warm rim or reflected tile tone on the glass edges would unify temperatures.",
+    "The peach hairline and brand line sit close together, compressing the top of the nameplate band; slightly more air between rule and brand line would sharpen the ledger hierarchy."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

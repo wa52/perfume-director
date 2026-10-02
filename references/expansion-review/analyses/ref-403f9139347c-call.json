@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-bc8cf959-f46b-9a4d-be23-dc14a0130898",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 855,
+        "completion_tokens": 352,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 352
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-bc8cf959-f46b-9a4d-be23-dc14a0130898",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 855,
+    "completion_tokens": 352,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 352
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "YSL",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring dramatic backlighting, architectural composition, and premium material rendering. Excellent design reference for high-end fragrance campaigns.",
+    "analysis": {
+      "composition": "Low-angle hero shot centering a monumental, trapezoidal bottle on a textured geometric plinth against a gradient backdrop.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive gradient sky above and smooth, undulating metallic surface below framing the central subject.",
+      "lighting": "Dramatic backlighting creating a radiant halo behind the bottle, with soft frontal fill highlighting the embossed logo and base textures.",
+      "color": [
+        "matte black",
+        "warm bronze",
+        "slate blue",
+        "champagne gold"
+      ],
+      "typography": "None; only the embossed brand monogram on the container is visible.",
+      "information_density": "Low; purely visual focus on product silhouette and atmosphere.",
+      "characteristics": [
+        "monolithic silhouette",
+        "textured stone base",
+        "metallic liquid reflections",
+        "dawn/dusk gradient",
+        "architectural staging"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.311
+}

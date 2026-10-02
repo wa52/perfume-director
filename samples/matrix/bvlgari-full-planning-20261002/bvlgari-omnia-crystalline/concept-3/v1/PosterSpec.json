@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 258248070524685,
+  "background": {
+    "color": "#4a2440",
+    "prompt": "Deep plum mineral plaster wall in matte aubergine tone meeting a continuous honed darker plum ground at a horizontal horizon seven tenths down the frame, one large hard-edge flat pale mauve vesica panel centred upper middle, matte mineral grain, soft diffuse nocturnal illumination, no objects",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 634,
+    "width": 525,
+    "height": 720
+  },
+  "lighting": "soft diffuse nocturnal ambient with one broad calm glow on the vesica panel, gentle frontal matching the baked studio key, no hard shadows",
+  "palette": [
+    "#4a2440",
+    "#f2eaf0",
+    "#c8a2bc"
+  ],
+  "title": {
+    "text": "Omnia Crystalline",
+    "x": 130,
+    "y": 1138,
+    "size": 96,
+    "color": "#f2eaf0",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.06,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 454,
+    "y": 1296,
+    "size": 20,
+    "color": "#f2eaf0",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f2eaf0",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "BVLGARI",
+    "x": 448,
+    "y": 1058,
+    "size": 28,
+    "color": "#f2eaf0",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 7
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 346,
+    "y": 1116,
+    "width": 389,
+    "color": "#c8a2bc"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

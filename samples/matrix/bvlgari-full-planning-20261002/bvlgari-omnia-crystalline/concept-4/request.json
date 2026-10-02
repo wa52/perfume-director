@@ -1,0 +1,115 @@
+{
+  "brief": "为 Bvlgari Omnia Crystalline 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把晶带的斜折光读作一道切过纸面的斜影：浅青瓷绿平涂卡纸上，三枚硬边石墨矩形板自左上向右下逐级错叠如石阶剖面，板缘一条斜向留白缝精确平行双盘斜轴；商品提至中上幅立于板阶之前，矩形从其肩后掠过却不触碰标签。左下幅留出安静斜角铭牌区：宽距 Arial 品牌字居区顶，Century Gothic 几何大写题名以两行宽排收左缘起排，与盘体下缘垂直错开、水平宽距分离，一条石墨细线横垫区底如剖面刻度。无地面无 horizon，纯板阶几何对抗珠光圆盘的柔体积。参考 R2 的矩形叠层分区与 R8 的冷静单色阶秩序。",
+  "product": "assets\\products\\bvlgari-omnia-crystalline-retailer.png",
+  "references": [
+    {
+      "id": "ref-f74fe25870eb",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-f74fe25870eb.webp",
+      "selection_reason": "Professionally resolved flat-lay still life featuring perfume and candle with elegant stationery props and integrated handwritten campaign copy.",
+      "analysis": {
+        "composition": "Geometric flat-lay arrangement utilizing overlapping rectangular envelopes and cards to frame the products diagonally.",
+        "subject_ratio": 0.35,
+        "negative_space": "Structured by layered cream and black paper elements, creating distinct zones.",
+        "lighting": "Soft, diffused top-down studio lighting with gentle, natural drop shadows.",
+        "color": [
+          "cream",
+          "black",
+          "silver",
+          "clear"
+        ],
+        "typography": "Handwritten script campaign copy ('Will you be my valentine?') placed directly on a prop envelope.",
+        "information_density": "low",
+        "characteristics": [
+          "flat-lay",
+          "valentine theme",
+          "ribbon detail",
+          "duo product display",
+          "handwritten note"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-04eb11dcf323",
+      "brand": "Scentbird",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/editorial/ref-04eb11dcf323.webp",
+      "selection_reason": "Professionally resolved perfume still-life with vibrant color blocking, hard directional lighting, and botanical styling. High utility for composition and palette reference.",
+      "analysis": {
+        "composition": "Dynamic flat-lay scatter of cylindrical atomizers interspersed with fresh floral elements on a textured beige surface.",
+        "subject_ratio": 0.75,
+        "negative_space": "Minimal, mostly filled by products and botanicals; small patches of textured background visible.",
+        "lighting": "Hard, direct sunlight creating sharp, distinct drop shadows that add depth and graphic contrast.",
+        "color": [
+          "beige",
+          "hot pink",
+          "mustard yellow",
+          "burgundy",
+          "orange",
+          "gold"
+        ],
+        "typography": "None outside of container labeling.",
+        "information_density": "Medium-high due to multiple product variations and scattered props.",
+        "characteristics": [
+          "vibrant palette",
+          "hard shadows",
+          "botanical props",
+          "flat lay",
+          "multi-product display"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

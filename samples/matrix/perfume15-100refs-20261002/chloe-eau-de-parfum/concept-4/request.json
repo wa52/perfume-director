@@ -1,0 +1,115 @@
+{
+  "brief": "为 Chloé Chloé 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把蝴蝶结放大成一轮粉雾日晕：摄影感玫瑰泥墙上悬一枚巨大硬边浅玫瑰圆环，圆心精确对齐蝴蝶结，圆环从其身后掠过却不触碰标签，像把织带的弧度扩成建筑拱线；连续磨光浅玫瑰地面在真实基准线处接墙，商品低立于地，接触阴影轻落粉面。左上一组宽距 Arial Narrow 排印在圆环之外的安静墙区结束于瓶顶之上，构成对角纪念碑网格；一条玫瑰细线短促垫于文字组下如拱心石刻度。粉泥的矿物哑光与银盖镜面、桃色液体的柔光互为冷暖与柔刚。",
+  "product": "assets\\products\\chloe-eau-de-parfum-retailer.png",
+  "references": [
+    {
+      "id": "ref-d2db4b80bde2",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-d2db4b80bde2.jpg",
+      "selection_reason": "Professionally resolved perfume advertisement featuring dynamic floral elements, clear campaign typography, and high-end product rendering suitable for design reference.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the product and floral explosion on the left counterweighted by negative space and typography on the right.",
+        "subject_ratio": 0.35,
+        "negative_space": "Significant dark gradient space on the right utilized for text placement.",
+        "lighting": "Dramatic studio lighting with high contrast, highlighting the faceted glass and metallic cap against a dark background.",
+        "color": [
+          "rose pink",
+          "deep burgundy",
+          "black",
+          "metallic copper",
+          "white"
+        ],
+        "typography": "Clean white sans-serif logo and serif tagline positioned in the right negative space; URL at the bottom.",
+        "information_density": "Moderate; focuses on brand identity and a single tagline without clutter.",
+        "characteristics": [
+          "exploding rose petals",
+          "faceted glass bottle",
+          "metallic accents",
+          "dark moody atmosphere",
+          "reflection"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-6661b9238858",
+      "brand": "Avon",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-6661b9238858.webp",
+      "selection_reason": "Professionally resolved perfume still-life with strong summer thematic styling, vibrant color palette, and clear product focus. Useful as a design reference for seasonal fragrance campaigns.",
+      "analysis": {
+        "composition": "Centralized product placement on a geometric white pedestal, flanked by thematic props (fruit slice, flower, amber stone) against a bright sky background.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space in the upper sky area, providing room for potential campaign copy.",
+        "lighting": "Bright, high-key naturalistic lighting simulating intense sunlight, creating a warm, summery atmosphere with soft shadows.",
+        "color": [
+          "#FF7F50",
+          "#87CEEB",
+          "#FFFFFF",
+          "#FF4500",
+          "#FFD700"
+        ],
+        "typography": "None visible outside the container. Text on the bottle is product labeling.",
+        "information_density": "Low, focused entirely on the product and mood.",
+        "characteristics": [
+          "summery",
+          "vibrant",
+          "fresh",
+          "geometric pedestal",
+          "thematic props"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

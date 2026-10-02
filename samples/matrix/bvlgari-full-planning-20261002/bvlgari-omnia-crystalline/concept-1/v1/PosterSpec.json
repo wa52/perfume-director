@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 258248070522667,
+  "background": {
+    "color": "#d3dbe0",
+    "prompt": "Mother-of-pearl shell inlay wall in cool pale blue-grey with fine iridescent nacre flakes set in a slow swirl pattern, meeting a continuous matching nacre shell ground at a horizontal horizon six tenths down the frame, gentle iridescent sheen drift, soft high-key diffuse illumination, matte shell grain, no objects",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 356,
+    "y": 864,
+    "width": 546,
+    "height": 749
+  },
+  "lighting": "soft high-key diffuse studio light with gentle iridescent sheen drift across shell facets, cool frontal matching the baked softbox key, no hard shadows",
+  "palette": [
+    "#d3dbe0",
+    "#18242e",
+    "#6f9aa8"
+  ],
+  "title": {
+    "text": "Omnia Crystalline",
+    "x": 707,
+    "y": 720,
+    "size": 74,
+    "color": "#18242e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 300,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 713,
+    "y": 1037,
+    "size": 20,
+    "color": "#18242e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#18242e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "BVLGARI",
+    "x": 713,
+    "y": 605,
+    "size": 30,
+    "color": "#18242e",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 713,
+    "y": 1008,
+    "width": 259,
+    "color": "#6f9aa8"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

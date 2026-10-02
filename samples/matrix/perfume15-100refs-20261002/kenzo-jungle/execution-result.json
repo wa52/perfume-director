@@ -1,0 +1,21 @@
+{
+  "product_id": "kenzo-jungle",
+  "status": "ERROR",
+  "started_at": 1790928061.980475,
+  "input_sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15",
+  "reference_count": 100,
+  "source_sha256": {
+    "poster.py": "1022914e0cb06d99f6a400c168d3d282f0e6c88ebbc1bcb0ee87ad03591cf99b",
+    "concepts.py": "e2124c44d686c2b9d29c3c3ec4793acb55205a609fdad5704d0b9788f105c2b8",
+    "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+    "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+    "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70"
+  },
+  "rounds_per_direction": 2,
+  "stage": "CONCEPTS",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\09b65b7da56e",
+  "direction_count": 4,
+  "error_type": "RemoteDisconnected",
+  "error": "Remote end closed connection without response",
+  "duration_seconds": 193.2
+}

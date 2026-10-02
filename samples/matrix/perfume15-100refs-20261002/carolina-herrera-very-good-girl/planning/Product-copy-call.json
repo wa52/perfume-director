@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-695cb2a2-3eea-9a9b-b55a-38a7dd834bb9",
+      "usage": {
+        "prompt_tokens": 1571,
+        "total_tokens": 2895,
+        "completion_tokens": 1324,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 299
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-695cb2a2-3eea-9a9b-b55a-38a7dd834bb9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1571,
+    "total_tokens": 2895,
+    "completion_tokens": 1324,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 360
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 299
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Very Good Girl",
+    "logo": "Carolina Herrera",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Only a gold 'H' monogram is legible on the red body; no product-name, concentration or price text appears on the packshot; 'Carolina Herrera' and 'Very Good Girl' are supplied by the user brief.",
+    "product_profile": {
+      "material": "Opaque lacquered shoe-shaped flacon: glossy red body, glossy black faceted cap, polished gold-metal stiletto heel",
+      "color": "Saturated vermilion red body, jet black cap, warm gold heel",
+      "transparency": "Fully opaque; no translucent or glass-transmitting regions",
+      "illumination": "Soft studio key from upper front-left: long vertical specular streak on red body, broad soft gradient sheen, sharp glossy reflections on black cap, metallic gradient on gold heel",
+      "view": "Three-quarter side profile at near eye level; bottle rests on two points (toe and heel tip), no flat base or visible ground plane",
+      "integration_limits": "Opaque glossy surfaces cannot transmit a generated background; baked-in highlights and reflections must be preserved; contact shadow only at toe and heel tips; background must stay neutral-soft to match existing studio lighting"
+    }
+  },
+  "duration_seconds": 33.581
+}

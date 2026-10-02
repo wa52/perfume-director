@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Both candidates honor the Bathymetric Contour Plaque concept: flat petrol-teal card, pale contour engraving confined to the upper field, calm lower plaque band with tracked DAVIDOFF line, wide centred geometric-sans name, EDT line and floating pale rule; no studio gear, no浮 floating packshot, product silhouette and white print faithful in both. Version 2 wins on concept execution: its contour_survey field reads as clearer line-density descent with a distinct hard-edge darker depth band sinking behind the shoulders (visible as a second tonal step on the right flank), whereas version 1's contour mass stops in a heavier, more uniform swirl block whose wavy cut edge sits abruptly at shoulder height and muddies the silhouette edge. Version 2's plaque stack is better proportioned: the name spans closer to band width with airier tracking, the EDT line and survey tick rule keep even vertical rhythm, and the bottle lift leaves a calmer breathing zone above the type. Lighting stays flat graphic ink light in both, but version 2's even field shows less tonal blotching around the contour boundary, giving a cleaner finished print feel.",
+  "remaining_problems": [
+    "Name is set in geometric-sans title case rather than the brief's Century Gothic capitals; hierarchy is correct but the case deviates from the declared type lockup.",
+    "Darker depth band edge on the right side runs close behind the bottle flank, slightly competing with the silhouette instead of sinking fully behind the shoulders.",
+    "Contour line density thins out toward the upper corners, leaving the top-left field marginally emptier than the survey narrative intends.",
+    "Bottle cutout retains a faint soft studio sheen inconsistent with perfectly shadowless frontal ink light, though integration edges remain clean."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

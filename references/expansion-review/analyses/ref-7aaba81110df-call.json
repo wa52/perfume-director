@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-7aaba81110df.webp",
+      "sha256": "f635c9b3e22f40cd59619d6f6abfec1017ead15042f3db7c152042c97b5af2c1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-9d272575-f6f7-983b-a17e-27bf75d96efb",
+      "usage": {
+        "prompt_tokens": 1899,
+        "total_tokens": 2238,
+        "completion_tokens": 339,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1602,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 339
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-9d272575-f6f7-983b-a17e-27bf75d96efb",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1899,
+    "total_tokens": 2238,
+    "completion_tokens": 339,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1602,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 339
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "MQUEEN",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved surreal perfume still-life with strong atmospheric set design and clear brand legibility.",
+    "analysis": {
+      "composition": "Centered hero product placed on a textured foreground against a layered mountain and starry sky background.",
+      "subject_ratio": 0.45,
+      "negative_space": "Upper half utilized for cosmic sky backdrop; lower half filled with detailed cracked earth texture.",
+      "lighting": "Soft, diffused studio lighting on the bottle contrasting with the ambient, moody glow of the night sky environment.",
+      "color": [
+        "violet",
+        "lilac",
+        "black",
+        "gold",
+        "deep purple"
+      ],
+      "typography": "None outside the container; text is restricted to the physical product label and neckband.",
+      "information_density": "Low; focus is entirely on the product and the immersive environment.",
+      "characteristics": [
+        "surreal landscape",
+        "cracked earth texture",
+        "starry night sky",
+        "monochromatic purple palette",
+        "textured black cap"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.465
+}

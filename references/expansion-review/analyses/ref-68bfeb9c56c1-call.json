@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-df339578-dfd6-9746-94b1-dcc505217404",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 810,
+        "completion_tokens": 307,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 307
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-df339578-dfd6-9746-94b1-dcc505217404",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 810,
+    "completion_tokens": 307,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 307
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life featuring a dynamic multi-bottle arrangement with premium lighting and cohesive color grading.",
+    "analysis": {
+      "composition": "Asymmetrical stacked grouping of four bottles varying in orientation to create visual rhythm and depth.",
+      "subject_ratio": 0.75,
+      "negative_space": "Clean, uncluttered gradient background providing ample breathing room around the central cluster.",
+      "lighting": "Soft studio illumination with precise specular highlights on glass edges and caps, emphasizing material quality.",
+      "color": [
+        "deep teal",
+        "midnight blue",
+        "gold",
+        "pale ice blue"
+      ],
+      "typography": "None visible outside of container labels.",
+      "information_density": "Low, focused entirely on product aesthetics and brand recognition.",
+      "characteristics": [
+        "glass refraction",
+        "geometric stacking",
+        "monochromatic palette",
+        "premium finish"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 9.325
+}

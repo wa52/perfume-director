@@ -1,0 +1,493 @@
+[
+  {
+    "name": "Nacre Twin-Disc Tide",
+    "brief": "把双盘珠光读作一整面贝母海：母贝拼贴墙面以细密贝壳片排成旋涡纹， iridescent 冷光在片缝间流转，连续同料贝母地面在真实基准线接墙。商品立于贝地偏左，测量接触阴影陷进贝壳拼缝；右半幅贝面保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如蚀刻签条，一条贝蓝细线横垫柱底如潮位刻度。垂直方向与盘肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；贝母的冷 iridescent 哑光与透明晶带的硬折光互为虚实。参考 R1 的负空间右栏排印层级与 R7 的柔光珠色秩序。",
+    "material": "mother-of-pearl shell inlay wall sweeping into continuous matching nacre ground",
+    "lighting": "soft high-key diffuse studio light with gentle iridescent sheen drift across shell facets, cool frontal matching the baked softbox key, no hard shadows",
+    "id": "concept-1",
+    "signature": "cb766bbc3867357d9ca5dda49b95bdff3f9d5a9815b5892dd3cd1eba76295822",
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#d3dbe0",
+      "#18242e",
+      "#6f9aa8"
+    ],
+    "reference_ids": [
+      "ref-6ced6279f2e6",
+      "ref-b6e669a924a3",
+      "ref-f305dbbdf3bc"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#d3dbe0",
+        "prompt": "Mother-of-pearl shell inlay wall in cool pale blue-grey with fine iridescent nacre flakes set in a slow swirl pattern, meeting a continuous matching nacre shell ground at a horizontal horizon six tenths down the frame, gentle iridescent sheen drift, soft high-key diffuse illumination, matte shell grain, no objects",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 356,
+        "y": 864,
+        "width": 546,
+        "height": 749
+      },
+      "lighting": "soft high-key diffuse studio light with gentle iridescent sheen drift across shell facets, cool frontal matching the baked softbox key, no hard shadows",
+      "palette": [
+        "#d3dbe0",
+        "#18242e",
+        "#6f9aa8"
+      ],
+      "title": {
+        "text": "Omnia Crystalline",
+        "x": 707,
+        "y": 720,
+        "size": 74,
+        "color": "#18242e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 2,
+        "max_width": 300,
+        "line_height": 1.12,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 713,
+        "y": 1037,
+        "size": 20,
+        "color": "#18242e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#18242e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "logo": {
+        "text": "BVLGARI",
+        "x": 713,
+        "y": 605,
+        "size": 30,
+        "color": "#18242e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 6
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 713,
+        "y": 1008,
+        "width": 259,
+        "color": "#6f9aa8"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic"
+    }
+  },
+  {
+    "name": "Saffron Disc Eclipse Monument",
+    "brief": "把互锁双盘读作一次日食：深藏红花黄平涂卡纸上，一枚硬边象牙大圆盘自画面中心偏上浮出，其后错出一枚细墨描边圆环如食甚前的最后一圈光；商品沉于下幅立于圆盘之前，剪影自身补全圆的中断。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条墨黄细线横垫其下如制版套准线。哑光水粉吞光，让珠光 ivory 盘面与晶带 owning 全部高光。无地面无 horizon，纯圆盘几何叙事。参考 R2 的纸面分区铭牌秩序与 R5 的圆心聚焦构图。",
+    "material": "flat matte gouache-painted card with hard-edge printed disc and offset outline ring",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-2",
+    "signature": "d21ed5acef23b8f2003f9529f60d6fe03c59caff0421ad0154570560c6ff57b8",
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#c98f2a",
+      "#241a08",
+      "#f0e8d8"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-453438bbcb76",
+      "ref-7a523ada9a2c"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#c98f2a",
+        "prompt": "Seamless flat matte gouache-painted card in deep saffron yellow, one large hard-edge flat ivory disc centred slightly above middle, one thin hard-edge dark umber outline ring offset up and left behind the disc, perfectly even shadowless illumination, no texture gradients, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 605,
+            "width": 670,
+            "height": 670,
+            "color": "#f0e8d8",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 475,
+            "y": 518,
+            "width": 540,
+            "height": 540,
+            "color": "#241a08",
+            "opacity": 0.18
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 893,
+        "width": 587,
+        "height": 806
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#c98f2a",
+        "#241a08",
+        "#f0e8d8"
+      ],
+      "title": {
+        "text": "Omnia Crystalline",
+        "x": 97,
+        "y": 144,
+        "size": 104,
+        "color": "#241a08",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 1,
+        "max_width": 0,
+        "line_height": 1.05,
+        "align": "center"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 454,
+        "y": 288,
+        "size": 20,
+        "color": "#241a08",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#241a08",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "BVLGARI",
+        "x": 450,
+        "y": 69,
+        "size": 28,
+        "color": "#241a08",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 8
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 324,
+        "y": 266,
+        "width": 432,
+        "color": "#f0e8d8"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  },
+  {
+    "name": "Plum Vesica Night Plaque",
+    "brief": "把双盘交叠读作一枚鱼形囊：深李子矿塑墙上印一枚硬边浅李色 vesica 竖瓣，瓣心精确对齐双盘交叠处，如把两圆相交的公共域放大成建筑壁龛；连续 honed 深李地面在真实基准线接墙，商品低立于地，接触阴影轻落塑面。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Baskerville 题名以近满带宽的衬线大字居中统领，一条浅李细线横于带顶如龛缘刻度。矿塑的矿物哑光与晶带镜面互为冷暖与柔刚。参考 R1 的深色负空间与白铭牌对比层级与 R6 的中心光环隐喻。",
+    "material": "deep plum mineral plaster wall with honed matching plum ground and one hard-edge pale vesica panel",
+    "lighting": "soft diffuse nocturnal ambient with one broad calm glow on the vesica panel, gentle frontal matching the baked studio key, no hard shadows",
+    "id": "concept-3",
+    "signature": "53b78a14e1c9a536d84d62f68870fc0a200d0dac3b4c90d16e3add7581fb54ba",
+    "scene_mode": "photographic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#4a2440",
+      "#f2eaf0",
+      "#c8a2bc"
+    ],
+    "reference_ids": [
+      "ref-6ced6279f2e6",
+      "ref-7a523ada9a2c",
+      "ref-b4d87aee2707"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#4a2440",
+        "prompt": "Deep plum mineral plaster wall in matte aubergine tone meeting a continuous honed darker plum ground at a horizontal horizon seven tenths down the frame, one large hard-edge flat pale mauve vesica panel centred upper middle, matte mineral grain, soft diffuse nocturnal illumination, no objects",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 540,
+        "y": 634,
+        "width": 525,
+        "height": 720
+      },
+      "lighting": "soft diffuse nocturnal ambient with one broad calm glow on the vesica panel, gentle frontal matching the baked studio key, no hard shadows",
+      "palette": [
+        "#4a2440",
+        "#f2eaf0",
+        "#c8a2bc"
+      ],
+      "title": {
+        "text": "Omnia Crystalline",
+        "x": 130,
+        "y": 1138,
+        "size": 96,
+        "color": "#f2eaf0",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.06,
+        "align": "center"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 454,
+        "y": 1296,
+        "size": 20,
+        "color": "#f2eaf0",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#f2eaf0",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "logo": {
+        "text": "BVLGARI",
+        "x": 448,
+        "y": 1058,
+        "size": 28,
+        "color": "#f2eaf0",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 7
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 346,
+        "y": 1116,
+        "width": 389,
+        "color": "#c8a2bc"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic"
+    }
+  },
+  {
+    "name": "Celadon Slab Ledger Oblique",
+    "brief": "把晶带的斜折光读作一道切过纸面的斜影：浅青瓷绿平涂卡纸上，三枚硬边石墨矩形板自左上向右下逐级错叠如石阶剖面，板缘一条斜向留白缝精确平行双盘斜轴；商品提至中上幅立于板阶之前，矩形从其肩后掠过却不触碰标签。左下幅留出安静斜角铭牌区：宽距 Arial 品牌字居区顶，Century Gothic 几何大写题名以两行宽排收左缘起排，与盘体下缘垂直错开、水平宽距分离，一条石墨细线横垫区底如剖面刻度。无地面无 horizon，纯板阶几何对抗珠光圆盘的柔体积。参考 R2 的矩形叠层分区与 R8 的冷静单色阶秩序。",
+    "material": "flat matte screen-printed card with hard-edge stacked rectangle slabs and one oblique blank seam",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-4",
+    "signature": "b238ee6b0d4bec1ae7a1f185dbff23c07354f02641319d3ae01d6fb39eeab22e",
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "sans",
+    "palette": [
+      "#b9d2c4",
+      "#1e2b26",
+      "#8aa89a"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-f305dbbdf3bc",
+      "ref-04eb11dcf323"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#b9d2c4",
+        "prompt": "Seamless flat matte screen-printed card in pale celadon green, three hard-edge flat graphite green rectangle slabs stacked obliquely from upper left toward lower right with one thin blank celadon seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 194,
+            "y": 202,
+            "width": 540,
+            "height": 230,
+            "color": "#1e2b26",
+            "opacity": 0.85
+          },
+          {
+            "kind": "rectangle",
+            "x": 324,
+            "y": 461,
+            "width": 594,
+            "height": 230,
+            "color": "#1e2b26",
+            "opacity": 0.6
+          },
+          {
+            "kind": "rectangle",
+            "x": 454,
+            "y": 720,
+            "width": 540,
+            "height": 230,
+            "color": "#1e2b26",
+            "opacity": 0.35
+          }
+        ]
+      },
+      "product": {
+        "x": 670,
+        "y": 576,
+        "width": 482,
+        "height": 662
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#b9d2c4",
+        "#1e2b26",
+        "#8aa89a"
+      ],
+      "title": {
+        "text": "Omnia Crystalline",
+        "x": 86,
+        "y": 1037,
+        "size": 72,
+        "color": "#1e2b26",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4,
+        "max_width": 420,
+        "line_height": 1.14,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 86,
+        "y": 1267,
+        "size": 20,
+        "color": "#1e2b26",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1e2b26",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF"
+      },
+      "logo": {
+        "text": "BVLGARI",
+        "x": 86,
+        "y": 950,
+        "size": 28,
+        "color": "#1e2b26",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 7
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 86,
+        "y": 1339,
+        "width": 324,
+        "color": "#8aa89a"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  }
+]

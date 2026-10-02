@@ -1,0 +1,113 @@
+{
+  "brief": "为 Mugler Angel 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把银盖楔的拉丝金属放大成整座观测台：环形拉丝阳极铝墙在真实基准线处接连续 honed 铝地面，冷暮光让金属保持哑光灰蓝；商品立于地面偏右，接触阴影陷进拉丝纹。左半幅墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽大字排印如仪器铭牌，一条钢蓝短横线垫于柱底如刻度。垂直方向与瓶肩重叠、水平方向宽距分离，双栏网格诚实成立；金属的冷哑光与星瓶折射的紫蓝碎光互为粗细。参考 R2 的分区式纸面秩序与 R8 的金属反射地面。",
+  "product": "assets\\products\\mugler-angel-retailer.png",
+  "references": [
+    {
+      "id": "ref-f74fe25870eb",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-f74fe25870eb.webp",
+      "selection_reason": "Professionally resolved flat-lay still life featuring perfume and candle with elegant stationery props and integrated handwritten campaign copy.",
+      "analysis": {
+        "composition": "Geometric flat-lay arrangement utilizing overlapping rectangular envelopes and cards to frame the products diagonally.",
+        "subject_ratio": 0.35,
+        "negative_space": "Structured by layered cream and black paper elements, creating distinct zones.",
+        "lighting": "Soft, diffused top-down studio lighting with gentle, natural drop shadows.",
+        "color": [
+          "cream",
+          "black",
+          "silver",
+          "clear"
+        ],
+        "typography": "Handwritten script campaign copy ('Will you be my valentine?') placed directly on a prop envelope.",
+        "information_density": "low",
+        "characteristics": [
+          "flat-lay",
+          "valentine theme",
+          "ribbon detail",
+          "duo product display",
+          "handwritten note"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

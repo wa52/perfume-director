@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 40661490899516,
+  "background": {
+    "color": "#e6eeef",
+    "prompt": "Continuous matte glacier ice sheet in pale blue-white sweeping to a low horizontal horizon six tenths down the frame under a pale mist sky, soft turquoise meltwater caustic ripple light drifting across ice and sky, fine snow grain, soft high-key diffuse polar illumination, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 346,
+    "y": 864,
+    "width": 359,
+    "height": 864
+  },
+  "lighting": "soft high-key polar daylight, diffuse cool frontal with gentle moving caustic ripples, no hard shadows",
+  "palette": [
+    "#e6eeef",
+    "#12333c",
+    "#37b0c4"
+  ],
+  "title": {
+    "text": "Cool Water",
+    "x": 605,
+    "y": 576,
+    "size": 104,
+    "color": "#12333c",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 400,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE TOILETTE",
+    "x": 605,
+    "y": 852,
+    "size": 26,
+    "color": "#12333c",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#12333c",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "DAVIDOFF",
+    "x": 605,
+    "y": 497,
+    "size": 28,
+    "color": "#12333c",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 605,
+    "y": 939,
+    "width": 108,
+    "color": "#37b0c4"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

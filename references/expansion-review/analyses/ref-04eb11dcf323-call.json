@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-f300256f-51c8-95c5-9e0b-e8fb12efb2a2",
+      "usage": {
+        "prompt_tokens": 1579,
+        "total_tokens": 1910,
+        "completion_tokens": 331,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1282,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 331
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f300256f-51c8-95c5-9e0b-e8fb12efb2a2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1910,
+    "completion_tokens": 331,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1282,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 331
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Scentbird",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with vibrant color blocking, hard directional lighting, and botanical styling. High utility for composition and palette reference.",
+    "analysis": {
+      "composition": "Dynamic flat-lay scatter of cylindrical atomizers interspersed with fresh floral elements on a textured beige surface.",
+      "subject_ratio": 0.75,
+      "negative_space": "Minimal, mostly filled by products and botanicals; small patches of textured background visible.",
+      "lighting": "Hard, direct sunlight creating sharp, distinct drop shadows that add depth and graphic contrast.",
+      "color": [
+        "beige",
+        "hot pink",
+        "mustard yellow",
+        "burgundy",
+        "orange",
+        "gold"
+      ],
+      "typography": "None outside of container labeling.",
+      "information_density": "Medium-high due to multiple product variations and scattered props.",
+      "characteristics": [
+        "vibrant palette",
+        "hard shadows",
+        "botanical props",
+        "flat lay",
+        "multi-product display"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.296
+}

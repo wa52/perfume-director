@@ -1,0 +1,61 @@
+{
+  "pass": false,
+  "score": 87.0,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 85,
+    "typography": 84,
+    "background": 87,
+    "physical_integration": 90,
+    "reference_alignment": 82,
+    "creative_coherence": 88
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The left editorial column still closes at the slate rule (decoration y=906, bottom ~910) while the bottle column runs to base y=1296, so roughly the lower third of the left field (y 910-1440) is bare concrete; the column reads top-loaded against the references' balanced negative space. Rhythm inside the column is also uneven: logo bottom 516 to title top 576 is a 60px gap and subtitle bottom 859 to rule 906 a 47px gap, versus the tight 842-859 subtitle block, so the rule still floats rather than closing the block."
+    },
+    {
+      "type": "background",
+      "problem": "The requested foreground falloff arrived as a broad dark vignette across the whole lower band of the honed ground (visible from ~y=1150 to the bottom edge, darkest at the corners), while the mid-ground behind the bottle base stays pale; the gradient competes with the contact shadow zone and slightly heavies the frame bottom instead of seating the hero. The wall/ground horizon at ~y=985 also sits well above the true base line y=1296, contradicting the declared direction of a horizon aligned with the base line, though the bottle's own contact cue (verified in the contact_detail crop: dark compressed ellipse plus occlusion directly under the glass foot at y=1296) confirms correct seating."
+    }
+  ],
+  "changes": [
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 880
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 946
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 150
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground low in the frame near four fifths of the height, matte cement grain, cool diffuse overcast fog light, soft frontal even illumination, only a faint localized luminance falloff within half a metre of the standing point, no corner vignette, no dark band across the foreground, no objects"
+    }
+  ],
+  "validation_notes": [
+    "Contact verified in contact_detail_crop [476,1156,993,1406]: compressed dark ellipse and glass-foot occlusion sit exactly at product_base_y 1296; shadow offset_y 0 retained, not moved.",
+    "text_product_overlap all false; title bbox right edge 307 versus product left edge 556 gives 249px horizontal clearance, beside relation preserved.",
+    "Product height ratio 0.60 inside the 0.35-0.74 safety bound; base 1296 <= 94% of 1440; no studio equipment, no extra bottles, no generated labels beyond the baked original print."
+  ],
+  "reported_score": 85.5
+}

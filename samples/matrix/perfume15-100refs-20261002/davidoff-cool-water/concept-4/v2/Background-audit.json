@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Continuous matte glacier ice sheet in pale blue-white sweeping to a very low horizontal horizon near the bottom tenth of the frame under a vast pale mist sky, faint turquoise meltwater caustic ripple light confined to the low ice band, smooth unmarked ice and clean negative space in the middle and upper frame, fine snow grain only near the base band, soft high-key diffuse polar illumination, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [16, 30, 49, 90]. A continuous horizontal ground plane must be visible through y=90 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[56, 40, 78, 53], [56, 57, 78, 58], [56, 35, 70, 36]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 40661490899517,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

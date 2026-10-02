@@ -1,0 +1,124 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "a7ab52c993347c9f119a669361ba27187fd691aebf51146470bbc6aef2368d32"
+    },
+    {
+      "name": "davidoff-cool-water-retailer.png",
+      "sha256": "69351a277f92031180d3bc91d2e4137f6535b84b57ae872c4830335bcd1f034c"
+    },
+    {
+      "name": "ref-62ff901b9d4a.webp",
+      "sha256": "d1d9ce1dc6e14beacf166a7b3d41de5a0e864963fe777688bf8cc3d2d9f95572"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "24f1c89396f914adba4db5310e807ba9bce9b69532d85271d23bef53ca443a71"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-dc82d95d-3a5b-9463-b67c-af4cff80cb3a",
+      "usage": {
+        "prompt_tokens": 8031,
+        "total_tokens": 9578,
+        "completion_tokens": 1547,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5465,
+          "text_tokens": 2566
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 522
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-dc82d95d-3a5b-9463-b67c-af4cff80cb3a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8031,
+    "total_tokens": 9578,
+    "completion_tokens": 1547,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5465,
+      "text_tokens": 2566
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 522
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": true,
+    "score": 86,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 86,
+      "typography": 85,
+      "background": 86,
+      "physical_integration": 88,
+      "reference_alignment": 82,
+      "creative_coherence": 88
+    },
+    "problems": [
+      {
+        "type": "typography",
+        "problem": "The left editorial column ends at the 108px slate rule (y=929) while the bottle column runs to y=1296, leaving the lower-left third of the concrete field empty; against the references' balanced negative space the column reads top-loaded and the tide-gauge rule floats detached from the block above it (subtitle bottom 859 to rule 929 is a 70px gap versus the tighter logo-to-title rhythm)."
+      },
+      {
+        "type": "background",
+        "problem": "The honed ground plane between the horizon (~y=1040) and the bottle base is a nearly uniform pale band with no tonal gradient or grain falloff, so the ground reads slightly flatter than the wall's formwork texture; the reference campaigns modulate their support planes with soft light falloff to seat the hero."
+      }
+    ],
+    "changes": [
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 906
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 132
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 4
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground at a horizontal horizon six tenths down the frame, matte cement grain, cool diffuse overcast fog light with a gentle luminance falloff darkening the ground toward the foreground, even shadowless illumination, no objects"
+      }
+    ]
+  },
+  "duration_seconds": 39.848
+}

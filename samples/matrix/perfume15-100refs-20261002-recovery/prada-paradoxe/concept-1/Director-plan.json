@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\d05dc9f0089e\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Chartreuse Hard-Edge Paradox",
+    "brief": "把三角瓶身读作一张平面几何定理：酸橙绿平涂卡纸上叠两枚硬边三角——一枚实心底沉三角托住剪影下半，一枚细白描边三角自其后错位穿出，斜边与瓶体斜边平行却永不相交，悖论即构图本身。无地面无 horizon，纯硬边形状叙事；商品居中沉于下幅，顶带完全安静：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行大字居中统领，一条墨绿细线横垫其下如制版套准线。哑光水粉吞光，让桃色液体与黑漆盖 owning 全部高光。",
+    "material": "flat matte gouache-painted card with hard-edge printed triangle solids and one offset outline triangle",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c8d64b",
+      "#1c2410",
+      "#f2e8d8"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238488249,
+    "background": {
+      "color": "#c8d64b",
+      "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one hard-edge flat solid triangle in deep ink olive seated at the bottom edge centred, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 950,
+      "width": 749,
+      "height": 749
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c8d64b",
+      "#1c2410",
+      "#f2e8d8"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 140,
+      "y": 144,
+      "size": 118,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 338,
+      "size": 20,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 432,
+      "y": 65,
+      "size": 30,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 324,
+      "y": 310,
+      "width": 432,
+      "color": "#f2e8d8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

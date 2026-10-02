@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "score": 79.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 76,
+    "physical_integration": 82,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The nameplate ledger is mis-sequenced and mis-centered: the peach kintsugi rule (decoration y=1112) renders BELOW the 'PRADA' logo band (y 1064-1083) instead of capping the band top as the brief specifies, so the plaque reads rule-under-logo; simultaneously the logo ink centers at x≈540 while the rule spans 300-780 (center 540) but the title 'Paradoxe' bbox 290-790 centers at 540 only nominally - visible render shows the title optically shifted left of the rule's midpoint by ~10px because tracking 2 on 132px Times pulls the optical center; the three type elements therefore do not share one crisp axis, fracturing the ledger the concept demands."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical rhythm remains top-heavy: 304px of empty wall above the cap versus only 40px between the bottle base (y=1024) and the logo band top (y=1064), so the hero crowds the nameplate while the upper third stays vacant; references (images 3-4) balance negative space around the packshot, here the margin distribution fights the 'complete wide nameplate band' intent."
+    },
+    {
+      "type": "background",
+      "problem": "The glazed-floor promise is only half delivered behind the type: the floor zone shows perspective grout but almost no mirrored warm reflection streaks or sheen arcs, while the wall tiles carry strong glossy arcs; the lower band behind 'Paradoxe' is a flat mid-value field, so the cream ink sits on a busy-to-flat inversion and the title zone lacks the reflective depth that would tie the wet glaze concept to the glass flacon."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-5 the poster still reads as a pasted cutout on a texture: no reflected bottle silhouette or warm bounce light on the tile ground beneath the base (reference 5 shows a mirrored return, reference 4 shows cast warmth), and the single small-scale hero at exactly 50% height with vacant shoulders lacks the confident scale and light-story of the campaign boards."
+    }
+  ],
+  "changes": [
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1046
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1078
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1160
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.55
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame; low glossy sheen arcs on each wall tile face, and the floor tiles carry long soft mirrored warm reflection streaks plus a faint vertical mirrored return of any warm light source standing on the ground, gentle warm diffuse frontal illumination fading darker toward the lower band, no objects"
+    }
+  ],
+  "reported_score": 79
+}

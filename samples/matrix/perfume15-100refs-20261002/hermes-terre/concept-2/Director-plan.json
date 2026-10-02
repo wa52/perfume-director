@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\dfb9cd499599\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Salt Flat Dawn Mirror",
+    "brief": "The juice returned to its mineral origin: a photographic dawn salt plain where a continuous cracked crust sweeps to a low horizon exactly at the true base line, cool mist-grey sky above. The cutout stands right of centre on that crust, its measured contact shadow settling into the white mineral cracks, while the left half stays calm for a wrapped Arial Narrow column: brand at column head, the name across two tall lines, a short rust rule closing the column like a survey stake. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cold salt matte against warm amber liquid is the entire temperature story.",
+    "material": "cracked salt crust plain under a hazy dawn sky",
+    "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+    "palette": [
+      "#dde2df",
+      "#22282a",
+      "#b4552e"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 245989106097573,
+    "background": {
+      "color": "#dde2df",
+      "prompt": "Vast cracked white salt crust plain meeting a pale hazy mist-grey sky at a low horizontal horizon nine tenths down the frame, fine polygonal crust cracks across a continuous flat ground, cool diffuse dawn light, matte mineral grain, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 756,
+      "y": 893,
+      "width": 460,
+      "height": 792
+    },
+    "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+    "palette": [
+      "#dde2df",
+      "#22282a",
+      "#b4552e"
+    ],
+    "title": {
+      "text": "TERRE D'HERMÈS",
+      "x": 70,
+      "y": 576,
+      "size": 88,
+      "color": "#22282a",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3,
+      "max_width": 400,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 70,
+      "y": 806,
+      "size": 16,
+      "color": "#22282a",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#22282a",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "Hermès",
+      "x": 70,
+      "y": 482,
+      "size": 30,
+      "color": "#22282a",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 70,
+      "y": 814,
+      "width": 173,
+      "color": "#b4552e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

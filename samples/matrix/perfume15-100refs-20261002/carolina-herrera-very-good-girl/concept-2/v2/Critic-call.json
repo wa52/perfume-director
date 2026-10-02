@@ -1,0 +1,156 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "8c7ff962544080f9b4011263f16e269de5dfa25606bbbbcb669ab2f67c203cb6"
+    },
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "1739b91df8fa852b79f957c5294b37641c8a0da7e3cdaab3fc8142b15dd76dc0"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "5ed5835ff80ba30c7f41163664d185087f39b290ee944fb6bd4819d764594305"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-723db43d-6bd9-9453-b7c9-f2bb24190a96",
+      "usage": {
+        "prompt_tokens": 9263,
+        "total_tokens": 11256,
+        "completion_tokens": 1993,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5730,
+          "text_tokens": 3533
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 968
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-723db43d-6bd9-9453-b7c9-f2bb24190a96",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9263,
+    "total_tokens": 11256,
+    "completion_tokens": 1993,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5730,
+      "text_tokens": 3533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 968
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76.6,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 74,
+      "typography": 78,
+      "background": 66,
+      "physical_integration": 68,
+      "reference_alignment": 74,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "Contact crop (456,1069,970,1319) inspected first: a soft dark contact shadow does exist under the red toe at the correct offset (offset_y 0, keep it), but the polished gold stiletto tip terminates ~25px above that shadow line with no darkening, occlusion or reflection beneath it, so the heel visibly hovers while the toe rests; the declared concept requires contact at toe AND heel tips. The same crop also shows the shoe's base plane sitting on the blue wall band above a dark baseboard strip, so the foot contacts wall paint rather than the parquet ground."
+      },
+      {
+        "type": "background",
+        "problem": "The regenerated field is clean of the previous digit glyphs (verified against last version), but the parquet now renders as bright honey-toned boards with a hard warm hotspot patch directly under the shoe, clashing with the declared deep ink-blue nocturnal lacquered ground and with the product's cool soft studio key from upper-front-left; references 3-4 keep grounds tonally unified with the palette, here the floor reads as a different room and steals attention from the vermilion flacon."
+      },
+      {
+        "type": "composition",
+        "problem": "The left column now wraps to the intended two lines and closes with the gold rule at y≈985, but everything below the rule to the canvas bottom (~455px of empty wall and parquet in the lower-left quadrant) carries no anchor, while the right column's shoe base sits at y=1209; the two columns never rhyme at the foot and the lower-left void reads as unfinished layout rather than intentional negative space, unlike references 2-3 where ground glow or reflection ties the frame together."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy logo→title→rule is correct and text_product_overlap is false, but the subtitle and price slots remain empty strings, so the narrow-sans monument carries only two text masses; the column lacks a closing informational line (e.g. concentration or price) that professional campaign layouts in references 2-4 use to balance tall display type, leaving the tracked logo as the only small-size voice."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep ink-blue matte painted hall wall, perfectly clean and unmarked, meeting a continuous dark espresso-black lacquered parquet ground at a low horizontal horizon near the bottom of the frame; one soft cool-warm neutral pool of ambient light glowing low on the parquet centered beneath the right-hand subject zone, faint elongated sheen stretching toward the viewer on the lacquered boards, gentle diffuse nocturnal illumination, low overall floor value, no objects, no text, no marks"
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 831
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.45
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "Eau de Parfum"
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 1040
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 24
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1000
+      }
+    ]
+  },
+  "duration_seconds": 45.988
+}

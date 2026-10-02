@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-813f54ccb0b2.webp",
+      "sha256": "f0aa916088d211767437426092228486eb156c8189e1dad92565bd13c82ba614"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-41c811df-ebfa-993c-96df-a9576ecfac28",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1842,
+        "completion_tokens": 303,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 303
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-41c811df-ebfa-993c-96df-a9576ecfac28",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1842,
+    "completion_tokens": 303,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 303
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Miu Miu",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "High-end product photography featuring dynamic levitation and spray effects; excellent lighting and composition suitable for luxury fragrance reference.",
+    "analysis": {
+      "composition": "Centralized vertical arrangement with a tilted bottle balancing on a pedestal corner, creating dynamic tension.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous soft beige background allowing focus on the product and spray mist.",
+      "lighting": "Soft studio lighting with directional highlights on the glass facets and metallic collar; subtle shadows grounding the pedestal.",
+      "color": [
+        "beige",
+        "aqua blue",
+        "white",
+        "gold"
+      ],
+      "typography": "None visible outside the product container.",
+      "information_density": "Low",
+      "characteristics": [
+        "levitating object",
+        "spray mist",
+        "faceted glass",
+        "geometric pedestal",
+        "pastel palette"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 20.292
+}

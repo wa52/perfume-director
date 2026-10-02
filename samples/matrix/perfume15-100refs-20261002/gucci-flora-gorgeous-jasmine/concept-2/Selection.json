@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Both candidates honour the Silkscreen Jasmine Corolla concept: flat gentian field, matte mint八-lobed scalloped corolla passing behind the flacon's shoulders as a graphic halo, shadowless frontal ink light, faithful opaque mint body with ribbed gold cap and legible Flora label, and a sans typographic plaque in the lower band with the poppy registration rule. Version 2 (image 6) resolves the plaque better: the short poppy rule floats with clear air between the corolla's bottom lobe tip and the tracked GUCCI brand line, and the rule-brand-name stack is evenly spaced inside a calm lower band, giving cleaner hierarchy and a true registration-mark read. Version 1 (image 5) crowds the rule against the corolla's lower point and pushes the name line higher, leaving a dead empty strip at the foot of the poster; its plaque feels compressed rather than calm. Version 2's centred name line sits better balanced within the band width while keeping the wide tracking and geometric sans family.",
+  "remaining_problems": [
+    "The corolla's lower lobe tip protrudes below the bottle base as a small stray point that still visually nudges the poppy rule zone in both versions; trimming or masking it behind the base would clean the silhouette.",
+    "The name line, though wide, sits slightly closer to the poster's bottom edge than to the brand line in version 2, leaving the lower band marginally bottom-heavy.",
+    "The corolla reads as four visible side lobes plus hidden top/bottom lobes behind the flacon; the eight-lobed scallop count is only partly legible at poster scale."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

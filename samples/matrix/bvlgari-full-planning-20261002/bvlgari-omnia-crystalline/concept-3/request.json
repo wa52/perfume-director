@@ -1,0 +1,114 @@
+{
+  "brief": "为 Bvlgari Omnia Crystalline 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把双盘交叠读作一枚鱼形囊：深李子矿塑墙上印一枚硬边浅李色 vesica 竖瓣，瓣心精确对齐双盘交叠处，如把两圆相交的公共域放大成建筑壁龛；连续 honed 深李地面在真实基准线接墙，商品低立于地，接触阴影轻落塑面。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Baskerville 题名以近满带宽的衬线大字居中统领，一条浅李细线横于带顶如龛缘刻度。矿塑的矿物哑光与晶带镜面互为冷暖与柔刚。参考 R1 的深色负空间与白铭牌对比层级与 R6 的中心光环隐喻。",
+  "product": "assets\\products\\bvlgari-omnia-crystalline-retailer.png",
+  "references": [
+    {
+      "id": "ref-6ced6279f2e6",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-6ced6279f2e6.jpg",
+      "selection_reason": "Highly resolved commercial perfume advertisement featuring dramatic floral explosion, strong contrast, and clear campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the faceted bottle anchored lower-left against an exploding rose, counterweighted by right-aligned typography in the negative space.",
+        "subject_ratio": 0.65,
+        "negative_space": "Dark, textured void on the right utilized effectively for legible white text placement.",
+        "lighting": "Dramatic studio lighting with high contrast; sharp specular highlights on the geometric glass facets and soft, directional light defining the rose petals.",
+        "color": [
+          "crimson red",
+          "obsidian black",
+          "charcoal grey",
+          "stark white"
+        ],
+        "typography": "Clean, sans-serif and serif mix in white; prominent '007' logo lockup with supporting tagline and URL, distinctly separate from the product container.",
+        "information_density": "Moderate; focuses on brand identity, product name, and evocative tagline without clutter.",
+        "characteristics": [
+          "dynamic motion",
+          "high contrast",
+          "faceted texture",
+          "floral motif",
+          "cinematic mood"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

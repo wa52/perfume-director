@@ -1,0 +1,94 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d563a3358d0c3dccb8c4cf243eded644244c7524886adb70a4e686f82680fdc8"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "41e676d9f77353cd4a9c28123e2936db42113264d8155aea2879c274b3ad9a8e"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-b3fcf573-5fe5-9ec6-8369-4cca0e801f87",
+      "usage": {
+        "prompt_tokens": 7221,
+        "total_tokens": 8593,
+        "completion_tokens": 1372,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6274,
+          "text_tokens": 947
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 347
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-b3fcf573-5fe5-9ec6-8369-4cca0e801f87",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7221,
+    "total_tokens": 8593,
+    "completion_tokens": 1372,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6274,
+      "text_tokens": 947
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 347
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Both candidates keep the flat indigo gouache field, the centered monumental flacon and the quiet top inscription band (small Dior, largest Bodoni J'adore, EAU DE PARFUM, foil rule) required by the Art-Deco sun-disc concept, with clean serif hierarchy and a faithful, unretouched packshot. Version 2 wins on composition: its inscription band sits tighter and higher, the foil rule clears the pearl stopper with a more deliberate gap, and the bottle's base lands lower in the frame, giving the monument grid a better balanced top-band-to-image ratio; version 1 leaves a slightly awkward dead zone between rule and stopper and a heavier empty foot margin. Neither shows studio equipment or floating-support artifacts, and the graphic scene mode needs no photographic floor.",
+    "remaining_problems": [
+      "The concept's signature metal-leaf sun disc with engraved concentric rings is absent in both candidates: the bottle stands on a plain indigo field, so the core decorative element of the campaign is missing.",
+      "Without the disc, the promised contrast of flat gouache versus metallic foil glint never appears; the background reads as a flat wall color rather than an applied-leaf material.",
+      "Product sits with no contact cue at all (acceptable in graphic mode, but a faint engraved ring or foil tick under the base would anchor the monument).",
+      "Typography band hierarchy is correct but the foil rule is thin and short relative to the title width; it could read more clearly as the sun-disc scale tick described in the brief."
+    ]
+  },
+  "duration_seconds": 60.737
+}

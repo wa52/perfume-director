@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 80.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 78,
+    "physical_integration": 84,
+    "reference_alignment": 74,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The prompt's 'niche interior washed BRIGHTER' executed as a hot white cone at the very top of the canvas (y 0-190) that dies out before reaching the arch; inside the arch头 (y 200-420) the plaster is visibly DARKER and more saturated than the surrounding wall, so the declared falling pool never actually washes the recess where the bottle stands. The product's own packshot light is a soft frontal key with bright cap dome and shoulders; a recess that darkens exactly behind the bright cap reads as backlight contradiction, not support."
+    },
+    {
+      "type": "composition",
+      "problem": "The rendered niche sill lands at y≈845-855, i.e. behind the bottle's widest belly, so the recess appears to terminate in mid-bottle while the base rests 150px lower on undifferentiated wall; the lighter ground plane only begins at y≈1160, below the base and behind the title. The support story is therefore split across three unrelated planes (sill at 850, contact shadow at 1008, floor at 1160). Contact detail crop [322,868,759,1118] confirms a real soft shadow at offset_y 0 (no floating), but the shadow alone still carries the ground cue against a wall that offers no plane at 1008."
+    },
+    {
+      "type": "typography",
+      "problem": "The nameplate band rhythm is inverted: logo block y 1046-1073 to decoration rule y≈1102 gives ~29px, while rule to title top (1150) gives ~48px, so the rule hugs the logo instead of heading the band; simultaneously the title block bottom (1277) to subtitle top (1318) is only ~41px, crowding the bottom of the band. The brief's 'near-full band width' title now spans 262-885 (623px of 1080, ~58%), still under-filled versus the references' confident type scale, and the title's descender zone sits on the wall/floor tonal seam at y≈1160, slightly muddying the ink edge."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 each resolve one light story and one support story (Byredo's motivated spray plus grounded soft shadow; Chanel's and Kayali's articulated tabletops with consistent key and soft occlusion under every base). Here the light source (top cone), the recess (dark arch head), the support (shadow only) and the floor (low seam) are four separate statements; the poster is a polished draft but not yet a single resolved campaign image."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled limewash plaster wall in pale iris lilac, one broad soft luminous pool of light falling from top center that washes the whole recessed arched niche interior one value BRIGHTER than the surrounding wall from the arch crown down to a subtle lighter horizontal plaster ledge plane at two-thirds height, gentle gradient continuing onto a smooth continuous pale plaster ground below, matte mineral grain and fine trowel arcs, even diffuse high-key illumination, no objects"
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1034
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1092
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1140
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1326
+    }
+  ],
+  "reported_score": 80.6
+}

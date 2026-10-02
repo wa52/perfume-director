@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 230243689468973,
+  "background": {
+    "color": "#174437",
+    "prompt": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat ribbon loop in pale mint sweeping from lower left behind centre and re-emerging upper right, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 356,
+    "y": 864,
+    "width": 379,
+    "height": 893
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+  "palette": [
+    "#174437",
+    "#f0ece0",
+    "#e0b23e"
+  ],
+  "title": {
+    "text": "Flora Gorgeous Jasmine",
+    "x": 626,
+    "y": 518,
+    "size": 96,
+    "color": "#f0ece0",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 380,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 626,
+    "y": 907,
+    "size": 20,
+    "color": "#f0ece0",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f0ece0",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "GUCCI",
+    "x": 626,
+    "y": 425,
+    "size": 30,
+    "color": "#f0ece0",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 626,
+    "y": 871,
+    "width": 151,
+    "color": "#e0b23e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-c0f73aa3afc5.webp",
+      "sha256": "d34403cc21d9e8266928d7eab387663ff368e814a80ed151d355e6b9162187a9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-1d9c7f48-48fc-9361-aba5-59d0d35c2593",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 820,
+        "completion_tokens": 317,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 317
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-1d9c7f48-48fc-9361-aba5-59d0d35c2593",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 820,
+    "completion_tokens": 317,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 317
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Yves Saint Laurent",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with dramatic lighting and clear brand identity, highly suitable as a design reference for masculine fragrance campaigns.",
+    "analysis": {
+      "composition": "Dynamic diagonal arrangement with a dominant foreground bottle and a secondary background bottle creating depth.",
+      "subject_ratio": 0.65,
+      "negative_space": "Atmospheric gradient background providing breathing room at the top and bottom.",
+      "lighting": "Dramatic backlighting and volumetric light rays highlighting the glass texture and liquid gradient.",
+      "color": [
+        "amber",
+        "black",
+        "cool blue",
+        "warm gold"
+      ],
+      "typography": "None outside the container; text is strictly on-bottle labeling.",
+      "information_density": "Low, focused entirely on the product silhouette and atmosphere.",
+      "characteristics": [
+        "volumetric light",
+        "glass refraction",
+        "gradient liquid",
+        "geometric cap",
+        "depth of field"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 8.749
+}

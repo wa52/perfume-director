@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "mugler-angel-retailer.png",
+      "sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-99748c94-0466-91ed-b425-bebb676958cb",
+      "usage": {
+        "prompt_tokens": 1569,
+        "total_tokens": 2589,
+        "completion_tokens": 1020,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 358
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 770,
+          "text_tokens": 249
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-99748c94-0466-91ed-b425-bebb676958cb",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1569,
+    "total_tokens": 2589,
+    "completion_tokens": 1020,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 358
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 770,
+      "text_tokens": 249
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Angel",
+    "logo": "Mugler",
+    "subtitle": "",
+    "price": "",
+    "evidence": "No legible label text on the packshot; brand 'Mugler' and product name 'Angel' come solely from the user brief; no category, concentration or price text is visible.",
+    "product_profile": {
+      "material": "Faceted cut-glass star flacon with an opaque brushed-silver metal cap wedge and small visible spray nozzle",
+      "color": "Lavender-violet body grading to pale icy blue at the star points",
+      "transparency": "Translucent glass body with transparent refractive edges; upper cap wedge fully opaque",
+      "illumination": "Soft diffuse studio light from front-top; broad gentle facet highlights, no hard cast shadow",
+      "view": "Near-frontal three-quarter view with slight tilt; bottle floats with no base contact or ground plane",
+      "integration_limits": "Isolated cutout on black; opaque silver cap cannot transmit a new background; translucent glass will tint from any generated backdrop behind it"
+    }
+  },
+  "duration_seconds": 29.476
+}

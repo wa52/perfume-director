@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 78,
+    "physical_integration": 78,
+    "reference_alignment": 74,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "In contact_detail_crop [349,1096,1080,1346] the pedestal foot clearly meets the stone and a dark contact band hugs its rim (shadow offset_y 0, opacity 0.5, blur 14), so the bottle is not floating and the shadow must not be moved down; however the footprint is a symmetric soft pad while the scene light rakes from upper right (diagonal shadow bands on wall and ground), so no directional cast shadow extends left of the foot. References 3-5 sell weight with a核心 contact plus a raking cast shadow; the cutout's frontal studio illumination still sits half a step away from the scene light."
+    },
+    {
+      "type": "background",
+      "problem": "No studio equipment artifacts are visible, but the regenerated ground still renders large-format tile grout joints across the foreground and a faint skirting seam at the wall/ground meeting line behind the bottle base (visible around y≈1050-1070), contradicting the concept's seamless honed sandstone ground; these joints run through the contact zone and compete with the contact line. The lattice shadow now reads as broad diagonal bands rather than the concept's crisp diamond mashrabiya lattice, so the signature light pattern is only half delivered."
+    },
+    {
+      "type": "typography",
+      "problem": "The left column rhythm is improved (logo 163px wide over title 263px, rule 200px) but still loose: logo bottom y555 to title top y610 leaves 55px of bare plaster and title bottom y655 to the rule at y748 leaves 93px, so the three marks read as spaced fragments rather than the tight stacked column of references 3-4; the title at 60px Arial Narrow also sets narrower than the rule-plus-margin block, weakening the column's closing edge."
+    },
+    {
+      "type": "composition",
+      "problem": "Product height ratio 0.5417 (base y1236 = 85.8% of canvas, inside the 35-74% / <=94% safety bounds) is now a credible hero scale, but the upper-left quadrant above the logo (y0-530) is completely empty plaster while the visual weight of the diagonal shadow bands sits upper-right, leaving the asymmetric balance top-heavy on the bottle side with no counter-anchor in the text column."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": -14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.3
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.55
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 622
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 64
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 716
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Warm sand-toned limewash plaster wall meeting one continuous honed sandstone ground, perfectly seamless with no joints, no tiles, no grout lines and no skirting, soft horizon three quarters down the frame; a crisp diamond lattice of soft shadow rakes diagonally across the whole wall and ground from upper right as if through a pierced screen, matte mineral grain, warm directional late-day illumination with bright ambient on the ground, empty scene, no objects"
+    }
+  ],
+  "reported_score": 79.6
+}

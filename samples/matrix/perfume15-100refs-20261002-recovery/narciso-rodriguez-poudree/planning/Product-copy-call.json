@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6a633d97-86b6-9aa4-8fdd-f0827be9ef2e",
+      "usage": {
+        "prompt_tokens": 1574,
+        "total_tokens": 2887,
+        "completion_tokens": 1313,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 363
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 288
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6a633d97-86b6-9aa4-8fdd-f0827be9ef2e",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1574,
+    "total_tokens": 2887,
+    "completion_tokens": 1313,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 363
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 288
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Narciso Poudrée",
+    "logo": "NARCISO",
+    "subtitle": "Eau de Parfum",
+    "price": "",
+    "evidence": "Label line visible on the bottle reads only 'NARCISO' in black capitals; 'Poudrée' and the brand Narciso Rodriguez are supplied by the user brief, not legible on this packshot; 'Eau de Parfum' is a category convention and not printed visibly, price absent per brief.",
+    "product_profile": {
+      "material": "Clear thick-walled glass cube enclosing an opaque cream lacquered inner vessel; matte cream rectangular cap",
+      "color": "Powder beige / nude cream inner block and cap, colorless glass edges",
+      "transparency": "Transparent only at glass rim and base; large central inner block is fully opaque and cannot transmit background",
+      "illumination": "Soft diffuse frontal-top studio light, gentle highlights on cap top and glass shoulders, no hard shadows",
+      "view": "Straight-on frontal elevation, slight eye-level camera, bottle upright on implied flat base",
+      "integration_limits": "Opaque beige core blocks any transmitted background; keep background bright and neutral behind clear glass edges; preserve soft even lighting, avoid rim-only dark setups"
+    }
+  },
+  "duration_seconds": 33.206
+}

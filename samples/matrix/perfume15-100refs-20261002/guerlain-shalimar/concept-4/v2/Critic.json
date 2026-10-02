@@ -1,0 +1,94 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 78,
+    "background": 72,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'one soft arched pool' and 'water caustic ripple' never arrived: image 1 shows only a faint diffuse blob at top center on an otherwise uniform beige wall, and the floor is a flat, textureless pale plane. The result reads as a generic seamless backdrop with a pasted cutout, not the morning-cloister light story of the concept, and sits well below the atmospheric richness of references 3-5 (visible caustic beams, dappled light, coloredShadow play)."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Lighting story mismatch: the unmodified cutout carries soft frontal studio light with bright speculars on the blue dome and glass shoulders, while the scene's only visible illumination is a vague top-center glow that the bottle neither receives nor responds to; the promised 'cool stone matte against warm amber liquid' temperature contrast is muted because the stone field is a single flat warm beige with no cool counter-tone anywhere in the environment."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column closes at the blue rule (y=830) but the bottle continues to y=1123, leaving the entire lower-right quadrant (roughly x 600-1080, y 850-1440) as dead space; the column also hugs the right edge (title bbox ends x=1001 of 1080, ~79px margin vs ~71px left margin of the bottle), so the editorial column feels squeezed against the trim while the void below it unbalances the asymmetric grid."
+    },
+    {
+      "type": "composition",
+      "problem": "At product_height_ratio 0.4549 the flacon is inside the concept's safety bounds and the brief's 'scaled down' direction, but combined with the empty lower-right quadrant the hero still reads slightly small and isolated in the frame; references 3-5 give the product either dominant scale or an active light/shadow counterpart, neither of which is fully present here."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless pale alabaster plaster studio cyclorama, continuous honed pale stone ground sweeping up into the wall with no visible junction line, one soft arched pool of diffuse morning light falling from top center, delicate cool-toned water caustic ripple light drifting across the upper wall and faint warm caustic refraction glints on the ground plane, subtle cool grey-blue shadow tint in the lower corners against the warm pale stone, matte mineral grain, even high-key frontal illumination matching a front-lit subject, no objects, no horizon edge"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 534
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 320
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 773
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 760
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 665
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 872
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 300
+    }
+  ],
+  "reported_score": 76.4
+}

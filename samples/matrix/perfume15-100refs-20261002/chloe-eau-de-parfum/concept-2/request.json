@@ -1,0 +1,117 @@
+{
+  "brief": "为 Chloé Chloé 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把凹槽玻璃的竖棱放大成整面蚀刻：鼠尾草绿平涂卡纸上，细密深绿竖凹线自顶垂落，在下三分之一处被一道硬边留白带截断，如同棱纹沉入铭牌；商品被提至上幅，竖棱从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以近满带宽居中统领，一条石墨细线横于带顶如蚀刻刀痕。无地面无 horizon，纯线密度下坠叙事，对抗银盖的镜面碎光。",
+  "product": "assets\\products\\chloe-eau-de-parfum-retailer.png",
+  "references": [
+    {
+      "id": "ref-6661b9238858",
+      "brand": "Avon",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-6661b9238858.webp",
+      "selection_reason": "Professionally resolved perfume still-life with strong summer thematic styling, vibrant color palette, and clear product focus. Useful as a design reference for seasonal fragrance campaigns.",
+      "analysis": {
+        "composition": "Centralized product placement on a geometric white pedestal, flanked by thematic props (fruit slice, flower, amber stone) against a bright sky background.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space in the upper sky area, providing room for potential campaign copy.",
+        "lighting": "Bright, high-key naturalistic lighting simulating intense sunlight, creating a warm, summery atmosphere with soft shadows.",
+        "color": [
+          "#FF7F50",
+          "#87CEEB",
+          "#FFFFFF",
+          "#FF4500",
+          "#FFD700"
+        ],
+        "typography": "None visible outside the container. Text on the bottle is product labeling.",
+        "information_density": "Low, focused entirely on the product and mood.",
+        "characteristics": [
+          "summery",
+          "vibrant",
+          "fresh",
+          "geometric pedestal",
+          "thematic props"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

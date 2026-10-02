@@ -1,0 +1,469 @@
+{
+  "brief": "为 Hermès Terre d’Hermès 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+  "direction_mode": "dynamic",
+  "directions": [
+    {
+      "name": "Sediment Strata Monument",
+      "brief": "Terre d'Hermès as geological time: a flat screen-printed poster of hard-edge sedimentary strata bands - pale sky, sand, ochre, sienna, deep umber - stacked like a core sample, with one thin flint-orange seam marking the burial line. The upright flacon stands centred as the monument extracted from those layers, its baked high-key speculars untouched by the flat ink world. All type stacks in the calm pale sky band at the top: tracked Baskerville brand line, the name in one generous serif line, closed by a short printed rule like a survey mark. No floor, no horizon - pure stratigraphic narrative against clear glass and amber juice.",
+      "material": "screen-printed matte paper with hard-edge sedimentary strata bands",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "a414c56528f9e588373b084afc0c844b43243af7f39835e9d484678a1a7e4a9f",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#c98a2e",
+        "#241408",
+        "#d4552a"
+      ],
+      "reference_ids": [
+        "ref-f72a7e1dd1ad",
+        "ref-68bfeb9c56c1",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#c98a2e",
+          "prompt": "Seamless flat screen-printed matte paper poster of horizontal sedimentary strata bands in pale bone, sand, ochre, burnt sienna and deep umber stacked from top to bottom, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 519,
+          "height": 893
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#c98a2e",
+          "#241408",
+          "#d4552a"
+        ],
+        "title": {
+          "text": "TERRE D'HERMÈS",
+          "x": 167,
+          "y": 216,
+          "size": 84,
+          "color": "#241408",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3,
+          "max_width": 0,
+          "line_height": 1.06,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 475,
+          "y": 346,
+          "size": 16,
+          "color": "#241408",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#241408",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Hermès",
+          "x": 475,
+          "y": 122,
+          "size": 30,
+          "color": "#241408",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 4
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 338,
+          "width": 173,
+          "color": "#d4552a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    },
+    {
+      "name": "Salt Flat Dawn Mirror",
+      "brief": "The juice returned to its mineral origin: a photographic dawn salt plain where a continuous cracked crust sweeps to a low horizon exactly at the true base line, cool mist-grey sky above. The cutout stands right of centre on that crust, its measured contact shadow settling into the white mineral cracks, while the left half stays calm for a wrapped Arial Narrow column: brand at column head, the name across two tall lines, a short rust rule closing the column like a survey stake. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cold salt matte against warm amber liquid is the entire temperature story.",
+      "material": "cracked salt crust plain under a hazy dawn sky",
+      "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+      "id": "concept-2",
+      "signature": "92534d53d9614d111712056c9d5a1382920b65cc75806ede15e86e5f5b68f432",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#dde2df",
+        "#22282a",
+        "#b4552e"
+      ],
+      "reference_ids": [
+        "ref-90208e77758d",
+        "ref-efb51dc5d487",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#dde2df",
+          "prompt": "Vast cracked white salt crust plain meeting a pale hazy mist-grey sky at a low horizontal horizon nine tenths down the frame, fine polygonal crust cracks across a continuous flat ground, cool diffuse dawn light, matte mineral grain, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 756,
+          "y": 893,
+          "width": 460,
+          "height": 792
+        },
+        "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+        "palette": [
+          "#dde2df",
+          "#22282a",
+          "#b4552e"
+        ],
+        "title": {
+          "text": "TERRE D'HERMÈS",
+          "x": 70,
+          "y": 576,
+          "size": 88,
+          "color": "#22282a",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3,
+          "max_width": 400,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 70,
+          "y": 806,
+          "size": 16,
+          "color": "#22282a",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#22282a",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "Hermès",
+          "x": 70,
+          "y": 482,
+          "size": 30,
+          "color": "#22282a",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 70,
+          "y": 814,
+          "width": 173,
+          "color": "#b4552e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    },
+    {
+      "name": "Ember Horizon Night Field",
+      "brief": "Night over worked earth: a flat matte ink-night card carrying one oversized hard-edge burnt-ember half-disc rising from the bottom edge, its crown passing behind the flacon's shoulders like a buried sun, crossed by one thin orange seam at the disc crown. The cutout is lifted into the upper two-thirds so the ember field below becomes a quiet plaque band: tracked geometric-sans brand line, then the name set wide and centred in Century Gothic capitals near band width, closed by a short rule floating between image and text like a print registration mark. No floor, no horizon - pure rising-disc geometry against translucent amber glass.",
+      "material": "flat matte ink-night card with hard-edge printed ember half-disc",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-3",
+      "signature": "7b9c5b300cce0e027091df4f05a2583a36ef9a22b1bb6d4c9039382e6eabdc64",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#191d26",
+        "#f0e8da",
+        "#c96a2a"
+      ],
+      "reference_ids": [
+        "ref-7a523ada9a2c",
+        "ref-d2db4b80bde2",
+        "ref-f72a7e1dd1ad"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#191d26",
+          "prompt": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc rising from the bottom edge centred, its crown at three quarters down the frame, one thin hard-edge lighter orange seam line along the disc crown, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 605,
+          "width": 468,
+          "height": 806
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#191d26",
+          "#f0e8da",
+          "#c96a2a"
+        ],
+        "title": {
+          "text": "TERRE D'HERMÈS",
+          "x": 151,
+          "y": 1152,
+          "size": 76,
+          "color": "#f0e8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 475,
+          "y": 1274,
+          "size": 16,
+          "color": "#f0e8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f0e8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Hermès",
+          "x": 475,
+          "y": 1073,
+          "size": 28,
+          "color": "#f0e8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 5
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 1274,
+          "width": 130,
+          "color": "#c96a2a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    },
+    {
+      "name": "Flint Gallery Oblique",
+      "brief": "A constructed mineral gallery: one monolithic cleft flint wall in cool bone-grey stone meets a continuous honed pale stone ground at a horizon aligned with the true base line, while a single crisp oblique shadow edge rakes the wall from upper left like late sun through a gallery slot. The cutout stands left of centre on that ground, contact shadow anchoring its foot, while the right wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, a short rust rule closing the column like a chisel mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column grid deliberate; cold split-stone matte against warm amber juice reads as earth under architecture.",
+      "material": "cleft flint stone wall with honed pale stone ground",
+      "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+      "id": "concept-4",
+      "signature": "44cc3091c7dc3e47712b9acdeadc54f60d18e0d58d36ebee9b7f0d4833c7707c",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#c9c4b8",
+        "#26221c",
+        "#a8502a"
+      ],
+      "reference_ids": [
+        "ref-efb51dc5d487",
+        "ref-90208e77758d",
+        "ref-68bfeb9c56c1"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#c9c4b8",
+          "prompt": "Monolithic cleft flint stone wall in cool bone grey with natural split-plane facets, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, one crisp oblique shadow edge raking the wall from upper left, bright directional late-day light, matte mineral grain, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 324,
+          "y": 864,
+          "width": 435,
+          "height": 749
+        },
+        "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+        "palette": [
+          "#c9c4b8",
+          "#26221c",
+          "#a8502a"
+        ],
+        "title": {
+          "text": "TERRE D'HERMÈS",
+          "x": 610,
+          "y": 605,
+          "size": 74,
+          "color": "#26221c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 2,
+          "max_width": 380,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 610,
+          "y": 864,
+          "size": 16,
+          "color": "#26221c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#26221c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "Hermès",
+          "x": 610,
+          "y": 504,
+          "size": 30,
+          "color": "#26221c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 4
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 610,
+          "y": 886,
+          "width": 151,
+          "color": "#a8502a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    }
+  ],
+  "max_rounds_per_direction": 2,
+  "execution_config": {
+    "vision_model": "qwen3.8-max",
+    "vision_options": {
+      "temperature": 0.2,
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "max_completion_tokens": 8192
+    },
+    "vision_timeout_seconds": 240,
+    "vision_attempts": 3,
+    "vision_image_max_edge": 1280,
+    "background_attempts": 2
+  },
+  "product_profile": {
+    "material": "Clear glass flacon with polished silver-metal collar and opaque dark brown-black cylindrical cap",
+    "color": "Pale amber-yellow juice inside colorless glass, red-orange lettering, silver collar, near-black cap",
+    "transparency": "Body translucent with lightly tinted liquid; cap and collar opaque; glass edges read near-white",
+    "illumination": "Soft diffuse high-key studio light; gentle vertical highlights along glass shoulders and edges, specular streaks on metal collar, no hard cast shadow",
+    "view": "Straight-on front elevation at bottle mid-height, upright rectangular flacon with flat base and recessed foot notch",
+    "integration_limits": "Opaque cap/collar and bright near-white glass edge zones cannot transmit a new background; pale liquid is only faintly transmissive, so generated backdrops must sit behind the intact cutout silhouette and keep the label unmodified"
+  },
+  "engine_sha256": "1022914e0cb06d99f6a400c168d3d282f0e6c88ebbc1bcb0ee87ad03591cf99b"
+}

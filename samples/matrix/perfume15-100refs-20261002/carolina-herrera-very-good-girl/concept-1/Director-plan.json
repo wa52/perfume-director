@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\e847e6df1e24\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Risograph Stride Halftone",
+    "brief": "A flat print-shop poster: matte sea-glass risograph paper carries an oversized halftone dot field that thickens toward the lower right like a stride freezing into motion, crossed by one hard vermilion diagonal bar echoing the stiletto arch. The opaque red cutout stands centred in the lower two-thirds, its baked speculars untouched by the flat ink world, while the whole typographic monument stacks in a calm upper band: wide-tracked brand line, heavy Bodoni name, closed by a short ink rule like a press registration mark. No floor, no horizon - pure dot-gradient narrative against lacquer gloss.",
+    "material": "risograph-printed matte paper with halftone dot gradient and hard-edge printed stripe",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#bcd6c6",
+      "#123328",
+      "#d8402f"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 255395513705023,
+    "background": {
+      "color": "#bcd6c6",
+      "prompt": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot gradient densifying toward lower right, one hard-edge flat vermilion diagonal stripe crossing lower third, perfectly even shadowless illumination, no texture gradients beyond dots, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 382,
+      "height": 864
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#bcd6c6",
+      "#123328",
+      "#d8402f"
+    ],
+    "title": {
+      "text": "Very Good Girl",
+      "x": 340,
+      "y": 223,
+      "size": 88,
+      "color": "#123328",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 374,
+      "size": 20,
+      "color": "#123328",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#123328",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "Carolina Herrera",
+      "x": 416,
+      "y": 108,
+      "size": 26,
+      "color": "#123328",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 363,
+      "width": 130,
+      "color": "#d8402f"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

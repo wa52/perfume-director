@@ -1,0 +1,94 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-2efbca41f55c.webp",
+      "sha256": "3f1079fca0227b6ffc4a3412cc8466ae6ba4a268845de1e63862b138453cf559"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-d1e63c11-6cad-9d2b-b17c-64308e2308d1",
+      "usage": {
+        "prompt_tokens": 1379,
+        "total_tokens": 1744,
+        "completion_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1082,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 365
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d1e63c11-6cad-9d2b-b17c-64308e2308d1",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1379,
+    "total_tokens": 1744,
+    "completion_tokens": 365,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1082,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 365
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved multi-brand perfume still life featuring warm directional lighting, textured travertine staging, and cohesive earthy palette; highly useful for material and lighting reference despite lacking campaign typography.",
+    "analysis": {
+      "composition": "Layered horizontal arrangement of five distinct fragrance bottles on staggered travertine slabs against a matching marble backdrop, utilizing depth through foreground, midground, and background placement.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, primarily occupied by the textured marble background and cast shadows in the upper third.",
+      "lighting": "Warm, hard directional sunlight from the upper left, casting distinct, sharp shadows and dappled leaf-like patterns on the background wall.",
+      "color": [
+        "beige",
+        "gold",
+        "soft pink",
+        "cream",
+        "amber"
+      ],
+      "typography": "None outside of container labels.",
+      "information_density": "Medium-high due to the presence of five distinct products with legible labels.",
+      "characteristics": [
+        "travertine texture",
+        "dappled shadows",
+        "warm golden hour aesthetic",
+        "multi-brand curation",
+        "tactile materials"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 22.573
+}

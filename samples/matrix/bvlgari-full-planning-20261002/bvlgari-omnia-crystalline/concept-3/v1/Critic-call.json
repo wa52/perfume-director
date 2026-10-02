@@ -1,0 +1,53 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "ce6da167b878579648a743bb596148b1072d6e7c8b9a2bce42616fc4b47d1b61"
+    },
+    {
+      "name": "bvlgari-omnia-crystalline-retailer.png",
+      "sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "f23bf75b69f2d1d403c9dfc4abb73c08b53a39729499a5d3b9593daec436e5c7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "HTTPError",
+      "http_status": 400,
+      "provider_message": "Model output became abnormal while generating a JSON response for response_format. The generation was aborted because the partial output may be incomplete or invalid JSON. Please retry the request or adjust your prompt or JSON schema.",
+      "provider_code": "invalid_parameter_error"
+    }
+  ],
+  "http_status": 400,
+  "status": "ERROR",
+  "error_type": "ValueError",
+  "duration_seconds": 44.615
+}

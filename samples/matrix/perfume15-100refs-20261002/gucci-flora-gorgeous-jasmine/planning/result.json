@@ -1,0 +1,585 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "Lido Terrazzo Tide-Line",
+      "brief": "A quiet photographic lido morning: honed sea-glass terrazzo sweeps from wall into a continuous matching ground at a low horizon, its coral and teal marble chips whispering the label's garden without quoting it. The opaque mint flacon stands flush on that ground at its true base line under overcast open-shade light, the measured contact shadow settling into the matte cement matrix. All type floats in a centred monument band in the calm upper wall: small tracked Baskerville brand line, the name in one generous serif line, closed by a short ink rule like a waterline mark. Mineral chip matte against lacquer gloss keeps the story tactile and architectural.",
+      "material": "honed terrazzo wall and continuous terrazzo ground with marble chip aggregate",
+      "lighting": "soft overcast open-shade daylight, diffuse frontal with no hard shadows, matching the baked studio light",
+      "id": "concept-1",
+      "signature": "ae2af94cbd5b9fd550ae3f7712d55aad26b8682a0ed9a5f63e8ba4a4b82cd878",
+      "scene_mode": "photographic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#d9e6df",
+        "#123a3a",
+        "#d46a4e"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-6661b9238858",
+        "ref-efb51dc5d487"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d9e6df",
+          "prompt": "Honed pale sea-glass terrazzo wall meeting a continuous matching terrazzo ground at a low horizontal horizon, fine chips of coral red and teal marble set in matte cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 379,
+          "height": 893
+        },
+        "lighting": "soft overcast open-shade daylight, diffuse frontal with no hard shadows, matching the baked studio light",
+        "palette": [
+          "#d9e6df",
+          "#123a3a",
+          "#d46a4e"
+        ],
+        "title": {
+          "text": "Flora Gorgeous Jasmine",
+          "x": 117,
+          "y": 230,
+          "size": 84,
+          "color": "#123a3a",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.1,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 353,
+          "size": 20,
+          "color": "#123a3a",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#123a3a",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "GUCCI",
+          "x": 480,
+          "y": 130,
+          "size": 30,
+          "color": "#123a3a",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 353,
+          "width": 130,
+          "color": "#d46a4e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d0cff57162ea",
+      "selected": {
+        "version": 2,
+        "score": 82.1,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "549b4fcf469a4cfcd980799db9f65e43de6fc6577fc34318dbb12afaf12890f5"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3505cd4b5ee0e6f59f0a137de3a2f8defa75dc4c83901a2b384cd850aaf789c7"
+        },
+        {
+          "version": 2,
+          "score": 82.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "549b4fcf469a4cfcd980799db9f65e43de6fc6577fc34318dbb12afaf12890f5"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Silkscreen Jasmine Corolla",
+      "brief": "A flat silkscreen poster: one oversized eight-lobed scalloped corolla in pale mint blooms out of a deep gentian field, its hard printed edge passing behind the flacon's shoulders like a graphic halo. No floor, no horizon - pure shape narrative, the matte ink swallowing light so the lacquered mint body and ribbed gold cap own every highlight. The product is lifted into the upper two-thirds and the whole typographic plaque sits in a calm lower band: tracked geometric-sans brand line, the name set wide and centred near band width, a short poppy rule floating between image and text like a print registration mark.",
+      "material": "flat silkscreen ink on matte card with hard-edge scalloped corolla shape",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-2",
+      "signature": "48667092f49175da16782d3ed4560b7054ede469a803f046fe94fe32559a74e4",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#1e3a6e",
+        "#eaf4ee",
+        "#e2554a"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-6ced6279f2e6",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#1e3a6e",
+          "prompt": "Seamless flat silkscreen-printed matte card in deep gentian blue, one oversized hard-edge flat scalloped eight-lobed corolla shape in pale mint centred slightly above middle, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 634,
+          "width": 367,
+          "height": 864
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#1e3a6e",
+          "#eaf4ee",
+          "#e2554a"
+        ],
+        "title": {
+          "text": "Flora Gorgeous Jasmine",
+          "x": 126,
+          "y": 1217,
+          "size": 64,
+          "color": "#eaf4ee",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 1303,
+          "size": 20,
+          "color": "#eaf4ee",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#eaf4ee",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "GUCCI",
+          "x": 481,
+          "y": 1130,
+          "size": 26,
+          "color": "#eaf4ee",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 497,
+          "y": 1097,
+          "width": 86,
+          "color": "#e2554a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\a02c0ef33d85",
+      "selected": {
+        "version": 2,
+        "score": 83.1,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "9be8408f3878599ae0f7c936aba8c146d2f52dcd082411e8e3c874dbb58b2e55"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 82.6,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "ccdf7f885bf42cb496086ec679aab31916758f0c6c7d0fedcc501ed5ae6847c0"
+        },
+        {
+          "version": 2,
+          "score": 83.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "9be8408f3878599ae0f7c936aba8c146d2f52dcd082411e8e3c874dbb58b2e55"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Apricot Stucco Ledger Column",
+      "brief": "A photographic terrace after rain-light: warm apricot lime-washed stucco meets a continuous honed sandstone ground at a low horizon, one soft cloud-shadow band drifting across the upper wall. The flacon stands right of centre at its true base line, contact shadow absorbed by the matte stone, while the left half of the wall stays calm for a wrapped editorial column: brand line at column head, the name set large across three narrow serif lines, a short vertical rule closing the column like a ledger margin. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column grid honest; mineral matte against lacquer gloss tells the whole story.",
+      "material": "lime-washed apricot stucco wall with continuous honed sandstone ground",
+      "lighting": "bright but diffuse overcast-warm daylight, soft frontal with one gentle cloud-shadow band, no hard shadows",
+      "id": "concept-3",
+      "signature": "2e4dfb69bb5e3af046ca22c492721db197c73bd4e79b6443a679ded359e005f0",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#e2a06b",
+        "#3a1d10",
+        "#1f5f58"
+      ],
+      "reference_ids": [
+        "ref-6661b9238858",
+        "ref-efb51dc5d487",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e2a06b",
+          "prompt": "Warm apricot lime-washed stucco wall meeting a continuous honed pale sandstone ground at a low horizontal horizon, one soft broad cloud-shadow band drifting across the upper wall, matte mineral grain, bright diffuse warm daylight, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 734,
+          "y": 792,
+          "width": 379,
+          "height": 893
+        },
+        "lighting": "bright but diffuse overcast-warm daylight, soft frontal with one gentle cloud-shadow band, no hard shadows",
+        "palette": [
+          "#e2a06b",
+          "#3a1d10",
+          "#1f5f58"
+        ],
+        "title": {
+          "text": "Flora Gorgeous Jasmine",
+          "x": 76,
+          "y": 576,
+          "size": 84,
+          "color": "#3a1d10",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 1,
+          "max_width": 330,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 76,
+          "y": 950,
+          "size": 20,
+          "color": "#3a1d10",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#3a1d10",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "GUCCI",
+          "x": 76,
+          "y": 482,
+          "size": 30,
+          "color": "#3a1d10",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 380,
+          "y": 576,
+          "width": 6,
+          "color": "#1f5f58"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d347bf695f66",
+      "selected": {
+        "version": 2,
+        "score": 80.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "b35103271b7b2792d734aa0efcc41c05ad009c428c991f04fd71d9e1c8a7597f"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "8aba7f554f2dad2f2bc6477db371b145945ebcd7ef68ee8f2c83517e8b1cece2"
+        },
+        {
+          "version": 2,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "b35103271b7b2792d734aa0efcc41c05ad009c428c991f04fd71d9e1c8a7597f"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Viridian Ribbon Orbit",
+      "brief": "An experimental graphic orbit: on a deep viridian matte field, one continuous pale-mint ribbon band sweeps in a flat printed loop, diving behind the flacon's waist and re-emerging at the opposite shoulder so the silhouette itself completes the circuit. No floor, no horizon - the ribbon is the only architecture, echoing the ribbed gold cap as a drawn line against lacquer volume. The product sits low and left-weighted while a right-hand stacked column carries the monument: tracked narrow-sans brand line at column head, the name across three tall wrapped lines, a short horizontal rule closing the column; vertical overlap with the cap zone but wide horizontal clearance keeps the asymmetric grid deliberate.",
+      "material": "flat matte gouache-painted card with one continuous hard-edge printed ribbon loop",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+      "id": "concept-4",
+      "signature": "ffcb09fd97294c2e717ebbdaaa34f913056e4858fef7eee1a669e17010c97109",
+      "scene_mode": "graphic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#174437",
+        "#f0ece0",
+        "#e0b23e"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-7a523ada9a2c",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#174437",
+          "prompt": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat ribbon loop in pale mint sweeping from lower left behind centre and re-emerging upper right, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 356,
+          "y": 864,
+          "width": 379,
+          "height": 893
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+        "palette": [
+          "#174437",
+          "#f0ece0",
+          "#e0b23e"
+        ],
+        "title": {
+          "text": "Flora Gorgeous Jasmine",
+          "x": 626,
+          "y": 518,
+          "size": 96,
+          "color": "#f0ece0",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 380,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 626,
+          "y": 907,
+          "size": 20,
+          "color": "#f0ece0",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f0ece0",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "GUCCI",
+          "x": 626,
+          "y": 425,
+          "size": 30,
+          "color": "#f0ece0",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 626,
+          "y": 871,
+          "width": 151,
+          "color": "#e0b23e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\4dccc2534546",
+      "selected": {
+        "version": 1,
+        "score": 78.3,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6"
+        },
+        {
+          "version": 2,
+          "score": 80.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "d901910af332fef069d1b0793a812a177ceaaddc86d961fabb359754db85b0b5"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "brief": "为 Chloé Chloé 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把裸色罗缎蝴蝶结读作一条横贯纸面的经线：雾蓝平涂卡纸上，一条硬边罗缎色横带精确穿过蝴蝶结的高度，带内压出细密竖向罗纹刻线，像把织带放大成地平线；银盖与凹槽玻璃从带前浮出，剪影自身补全织带的中断。商品沉于下幅，顶带留出安静铭牌区：宽距 Arial 品牌字置顶，Baskerville 题名以近满幅宽的大字居中统领，一条银灰细线横于铭带之下如织带刻度。无地面无 horizon，纯横带几何与罗纹密度叙事，对抗高透光玻璃的柔渐液体。",
+  "product": "assets\\products\\chloe-eau-de-parfum-retailer.png",
+  "references": [
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-453438bbcb76",
+      "brand": "Escentric Molecules",
+      "style": "tech",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/tech/ref-453438bbcb76.webp",
+      "selection_reason": "Highly resolved digital still-life featuring a clear perfume subject with strong geometric background elements and cohesive amber palette; excellent reference for tech-forward fragrance visuals.",
+      "analysis": {
+        "composition": "Centered rectangular bottle framed by large, soft-focus circular gradients creating depth and focus.",
+        "subject_ratio": 0.65,
+        "negative_space": "Dark, gradient periphery focusing attention on the illuminated center.",
+        "lighting": "Backlit and internal glow emphasizing liquid color and glass transparency against a dark void.",
+        "color": [
+          "amber",
+          "gold",
+          "black",
+          "silver"
+        ],
+        "typography": "None outside the container; label text is part of the product packaging.",
+        "information_density": "Low; purely visual focus on product and abstract atmosphere.",
+        "characteristics": [
+          "geometric abstraction",
+          "binary code motifs",
+          "warm monochromatic scheme",
+          "glass refraction"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f305dbbdf3bc",
+      "brand": "Versace",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+      "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+      "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+      "analysis": {
+        "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+        "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+        "color": [
+          "emerald green",
+          "gold",
+          "teal blue"
+        ],
+        "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+        "information_density": "Low, focusing entirely on the product form and material.",
+        "characteristics": [
+          "textured glass",
+          "metallic accents",
+          "reflection",
+          "gradient background",
+          "product focus"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

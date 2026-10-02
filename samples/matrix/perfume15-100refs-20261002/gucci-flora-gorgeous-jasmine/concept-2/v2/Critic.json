@@ -1,0 +1,80 @@
+{
+  "pass": false,
+  "score": 83.1,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 78,
+    "background": 83,
+    "physical_integration": 87,
+    "reference_alignment": 77,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "In the contact-detail crop (region 278,926-803,1176) the mint corolla's lower lobe tip protrudes below the bottle's base line as a small printed point at approx x540, y1066-1085, sitting inside the soft contact shadow. It reads as a stray registration artifact breaking the clean base line, and it vertically crowds the poppy rule now at y1122, compressing the calm gap the brief reserves between image and plaque."
+    },
+    {
+      "type": "typography",
+      "problem": "The plaque is internally unbalanced and bottom-light: logo band 1163-1182, title band 1252-1313, leaving 127px of dead gentian below the title versus a 68px logo-to-title gap and ~140px above the cap; the subtitle slot is still empty (spec text ''), so there is no mediating line between the tracked GUCCI brand line and the 64px name as in the reference lockups, and the name's optical weight sits low instead of centered in the band."
+    },
+    {
+      "type": "background",
+      "problem": "The gentian field remains optically dead flat: compared with the references' tonal bloom behind the hero (007's smoky gradient, Molecule's radial glow), the ink shows no radial value lift, so the pale-mint corolla reads as a pasted vector shape rather than a printed halo that owns the light behind the flacon."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat silkscreen-printed matte card in deep gentian blue with one very soft broad radial lift of value centred slightly above middle, one oversized hard-edge flat scalloped eight-lobed corolla shape in pale mint centred slightly above middle whose lowest lobe ends well above the lower third, perfectly even shadowless frontal ink illumination, no texture gradients, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1140
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1186
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1262
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 466
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1336
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#eaf4ee"
+    }
+  ],
+  "reported_score": 81
+}

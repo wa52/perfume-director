@@ -1,0 +1,1835 @@
+{
+  "products_requested": 15,
+  "products_with_four_directions": 11,
+  "selected_directions": 44,
+  "source_tags": [
+    "perfume15-100refs-20261002",
+    "perfume15-100refs-20261002-recovery",
+    "bvlgari-full-planning-20261002",
+    "remaining-four-sequential-20261002"
+  ],
+  "products": [
+    {
+      "product_id": "dior-jadore",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "子夜金环·装饰艺术日轮",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "d563a3358d0c3dccb8c4cf243eded644244c7524886adb70a4e686f82680fdc8",
+              "preview": "dior-jadore/concept-1/v1.jpg",
+              "original_sha256": "d563a3358d0c3dccb8c4cf243eded644244c7524886adb70a4e686f82680fdc8",
+              "preview_sha256": "dc35dc8a8f5ab54a9ccf894cd121f3793827685bee0ae48be213dae75ccb54b9"
+            },
+            {
+              "version": 2,
+              "score": 74.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "41e676d9f77353cd4a9c28123e2936db42113264d8155aea2879c274b3ad9a8e",
+              "preview": "dior-jadore/concept-1/v2.jpg",
+              "original_sha256": "41e676d9f77353cd4a9c28123e2936db42113264d8155aea2879c274b3ad9a8e",
+              "preview_sha256": "de82ffa819cb31fc5cea2018cb8c39e025ad44d2b6c826b7f831152587775932"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": " Iris 灰泥拱光·下带宽铭",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "f9885f0739e60cf9813887dc57687d26faa079e7d31dc5b8443c06871dfb5d9b",
+              "preview": "dior-jadore/concept-2/v1.jpg",
+              "original_sha256": "f9885f0739e60cf9813887dc57687d26faa079e7d31dc5b8443c06871dfb5d9b",
+              "preview_sha256": "454dadc0f52a64abe5106683884fd6ee080755640b4012307f8df89926682cdf"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "c01ca263f22d6c7f1db70d35219d070206f1d2609c94479414ceb48250318f46",
+              "preview": "dior-jadore/concept-2/v2.jpg",
+              "original_sha256": "c01ca263f22d6c7f1db70d35219d070206f1d2609c94479414ceb48250318f46",
+              "preview_sha256": "67e98e9a3be3cada78844cbe15a751c1f2e51f8157142bb4a4c8f09dc86ed181"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "潮线晨光·左柱右像",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "3792b2cef33f8f97084fd63fa1aa79ed0e8a73e46e6bc8c73fac7464dc1c5350",
+              "preview": "dior-jadore/concept-3/v1.jpg",
+              "original_sha256": "3792b2cef33f8f97084fd63fa1aa79ed0e8a73e46e6bc8c73fac7464dc1c5350",
+              "preview_sha256": "4ed2e8a7ff3f81d960bde365df827531f20357a2d4dc48525351740300604355"
+            },
+            {
+              "version": 2,
+              "score": 76.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "ed44b566eb7bb8910a46cca55a0f4e6d314996f7bb0f0c6880787c769c282b1e",
+              "preview": "dior-jadore/concept-3/v2.jpg",
+              "original_sha256": "ed44b566eb7bb8910a46cca55a0f4e6d314996f7bb0f0c6880787c769c282b1e",
+              "preview_sha256": "79d6a83fb0dcb07393f6c2b1cdf5e3b13f507081a6eca144b3bd840fb56d7770"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "折扇纸韵·顶带轻铭",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "eb51a730c2f6f814ba5ebab089c5eaa35d1b7cb5d20aa8fd84155cb81d31ec08",
+              "preview": "dior-jadore/concept-4/v1.jpg",
+              "original_sha256": "eb51a730c2f6f814ba5ebab089c5eaa35d1b7cb5d20aa8fd84155cb81d31ec08",
+              "preview_sha256": "9059bf5c474f4b8f05e204f63b95bc7d23818dadf4cfd442f915501f265e4136"
+            },
+            {
+              "version": 2,
+              "score": 80.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b",
+              "preview": "dior-jadore/concept-4/v2.jpg",
+              "original_sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b",
+              "preview_sha256": "3bf12169909d394d91bcff8016011bdb6aeb592444d88aa56240506d95074d7b"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "tom-ford-tobacco-vanille",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Ochre Signal Disc",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 71.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "dac05e230be01b2a10db73d5cb5def8714fb2e05b08e9570e50602fe749d3a47",
+              "preview": "tom-ford-tobacco-vanille/concept-1/v1.jpg",
+              "original_sha256": "dac05e230be01b2a10db73d5cb5def8714fb2e05b08e9570e50602fe749d3a47",
+              "preview_sha256": "7f25b9711ae4fdad8dc15fff2833385028a34d93dbd539ae0f34d0832fa5065c"
+            },
+            {
+              "version": 2,
+              "score": null,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": "URLError",
+              "sha256": "ed4c33fcc8dc9bd7baf0023e88b63c5f387e358c69da82d5e0a9b764209504c9",
+              "preview": "tom-ford-tobacco-vanille/concept-1/v2.jpg",
+              "original_sha256": "ed4c33fcc8dc9bd7baf0023e88b63c5f387e358c69da82d5e0a9b764209504c9",
+              "preview_sha256": "45760738ddbefbdcfc923cc58eb757d94f4062a6f32447cd8de9637e4527bf6c"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Ultramarine Courtyard Sundial",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 74.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "123109780501cb7f70d35cbecc8577367950fec1265e92cb78e8c5c4328e40a3",
+              "preview": "tom-ford-tobacco-vanille/concept-2/v1.jpg",
+              "original_sha256": "123109780501cb7f70d35cbecc8577367950fec1265e92cb78e8c5c4328e40a3",
+              "preview_sha256": "cbf67c816527a829e02c107b1a26e847a236dc171a41fce5b27bca3002cb5557"
+            },
+            {
+              "version": 2,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "c077f9eca878a42dd0ac1203c2e24992ddf5a48edeba2e2daef0c3211d25719d",
+              "preview": "tom-ford-tobacco-vanille/concept-2/v2.jpg",
+              "original_sha256": "c077f9eca878a42dd0ac1203c2e24992ddf5a48edeba2e2daef0c3211d25719d",
+              "preview_sha256": "b35ce07d496ffbec0b45c1debd01e79a6a47418456623fb68bcc806951870223"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Plum Velvet Curtain Call",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "42454d4f4b3c257203ee01548be0b3b1613528f5fd159416452038a3737c00f4",
+              "preview": "tom-ford-tobacco-vanille/concept-3/v1.jpg",
+              "original_sha256": "42454d4f4b3c257203ee01548be0b3b1613528f5fd159416452038a3737c00f4",
+              "preview_sha256": "ee8c8d4cdf717aac56fa35001dfe3a7e1cfe42b69248afb6a21bacf94aec0feb"
+            },
+            {
+              "version": 2,
+              "score": 61.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "9de2b4d52f2b7ed1b9816bf0228be0aeb0e36c2c823568651ee5e0169d593fd5",
+              "preview": "tom-ford-tobacco-vanille/concept-3/v2.jpg",
+              "original_sha256": "9de2b4d52f2b7ed1b9816bf0228be0aeb0e36c2c823568651ee5e0169d593fd5",
+              "preview_sha256": "44fa03b22bb8a8f7df568c1607f3938b5aa5597a8b0e2a02d5e5e214f7b7e13b"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Olive Grove Ledger",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "3c71af8939cc130c36e1b1c511f7732939816930477c4d702343f2f3735d9c49",
+              "preview": "tom-ford-tobacco-vanille/concept-4/v1.jpg",
+              "original_sha256": "3c71af8939cc130c36e1b1c511f7732939816930477c4d702343f2f3735d9c49",
+              "preview_sha256": "d7b3289d5dee5067df0566a74ec0f5e762075ba83a2740f5c01c469f0898e3e1"
+            },
+            {
+              "version": 2,
+              "score": 82.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "87995fec162489b9b9067af06f25c199254376d9596a6e87d119effad7735632",
+              "preview": "tom-ford-tobacco-vanille/concept-4/v2.jpg",
+              "original_sha256": "87995fec162489b9b9067af06f25c199254376d9596a6e87d119effad7735632",
+              "preview_sha256": "981be654c7a128dca4d4569e860ea776196ace6c807e2f3e6e313704311de8d1"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "prada-paradoxe",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002-recovery",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "URLError",
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Chartreuse Hard-Edge Paradox",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "70f858a72f73689f6c1713000190a9b52393cec512d17fa0aef36586be698460",
+              "preview": "prada-paradoxe/concept-1/v1.jpg",
+              "original_sha256": "70f858a72f73689f6c1713000190a9b52393cec512d17fa0aef36586be698460",
+              "preview_sha256": "238ea21360e09d760832e48e0dd3ed9435e4fb76529ef8c8b241334375bfa86c"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "9e604a96d40656de76dd72c5d9fb661123aff9f1065fc126306cc8cac50207b8",
+              "preview": "prada-paradoxe/concept-1/v2.jpg",
+              "original_sha256": "9e604a96d40656de76dd72c5d9fb661123aff9f1065fc126306cc8cac50207b8",
+              "preview_sha256": "6242c96615f1b3b572099501d4509add705da32ab96e994749a81dfb00e726fd"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Chrome Vapor Meridian",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "f8a57e3ed7aabdef9a16b4a019bf06c52cf69c799ce1ca9dbdc511505c500a57",
+              "preview": "prada-paradoxe/concept-2/v1.jpg",
+              "original_sha256": "f8a57e3ed7aabdef9a16b4a019bf06c52cf69c799ce1ca9dbdc511505c500a57",
+              "preview_sha256": "59e80f1ca7257683df5741826746a941687eb92c1a62893ae96834b686d4b510"
+            },
+            {
+              "version": 2,
+              "score": 77.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "73e6e0dd2d1392ca8dcfa95a82e9e567de4cbd9ec7fbb2fb03d6a443da54c4b1",
+              "preview": "prada-paradoxe/concept-2/v2.jpg",
+              "original_sha256": "73e6e0dd2d1392ca8dcfa95a82e9e567de4cbd9ec7fbb2fb03d6a443da54c4b1",
+              "preview_sha256": "4be3b2eacc63fb09c28877a9bcd4b594a18ccfaf79d25c70a2168eb692e4f0ae"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Cocoa Glaze Tile Ledger",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 72.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "53cde0cd9d5db2b0e7f4a468cd5b6de79675ea7e6444e462f9a24d321a78f059",
+              "preview": "prada-paradoxe/concept-3/v1.jpg",
+              "original_sha256": "53cde0cd9d5db2b0e7f4a468cd5b6de79675ea7e6444e462f9a24d321a78f059",
+              "preview_sha256": "b5576b2afa1752a37a6a95a80b0447cfafc898c52987146f9d14fff0f54f3cc3"
+            },
+            {
+              "version": 2,
+              "score": 79.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "0fa2d0b8d453612648ed30f3cad02f753ccec95a1cfa27a2ae699a53696c9fc9",
+              "preview": "prada-paradoxe/concept-3/v2.jpg",
+              "original_sha256": "0fa2d0b8d453612648ed30f3cad02f753ccec95a1cfa27a2ae699a53696c9fc9",
+              "preview_sha256": "f4711d120ce297a84a09e3744b8726ba114b0440bd0d267b08637831e6d719d4"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Orchid Fresnel Stair",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb",
+              "preview": "prada-paradoxe/concept-4/v1.jpg",
+              "original_sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb",
+              "preview_sha256": "0415d61ec34efce84163b180ab5751be22f07a6c45d0964c3ae6447eed6e9936"
+            },
+            {
+              "version": 2,
+              "score": 77.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "b0b5354194562ee39d94a01f55e10db6030839e1766afde63c6c7c5ac22867ea",
+              "preview": "prada-paradoxe/concept-4/v2.jpg",
+              "original_sha256": "b0b5354194562ee39d94a01f55e10db6030839e1766afde63c6c7c5ac22867ea",
+              "preview_sha256": "e6a1b3b73fd384b39004d1e974f876f15e739e6753c4c3d8149b186e676e881a"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "mugler-angel",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002-recovery",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Each concept requires three supplied reference IDs"
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Star-Chart Engraving Plate",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "643d9f652c1d906b64ff61321b8aaba3ed805f2fbd11ded1d3ef88e38547b235",
+              "preview": "mugler-angel/concept-1/v1.jpg",
+              "original_sha256": "643d9f652c1d906b64ff61321b8aaba3ed805f2fbd11ded1d3ef88e38547b235",
+              "preview_sha256": "3a2e0512b7a5acd3ed2a76d068c589efb5e9c153e459bfd3052c5c5096854bbd"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "a1b64a011acc6aab3f43d9f6d4808a56f4560c7acdd8c09f8dfc8eade581b39d",
+              "preview": "mugler-angel/concept-1/v2.jpg",
+              "original_sha256": "a1b64a011acc6aab3f43d9f6d4808a56f4560c7acdd8c09f8dfc8eade581b39d",
+              "preview_sha256": "1c640c91c08d25982778dbb36dfb2af654d16581aff3718380cd5723015418f3"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Brushed Aluminium Observatory Deck",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "4e4ee5acf6b09ce88a28592963d19d3b1e1a2e69d5812d89d66e398c5af60e86",
+              "preview": "mugler-angel/concept-2/v1.jpg",
+              "original_sha256": "4e4ee5acf6b09ce88a28592963d19d3b1e1a2e69d5812d89d66e398c5af60e86",
+              "preview_sha256": "0fb1b9ca9ecfce97babad88ce2934f22bff258d50b7db5c8ad732bac7ab3be39"
+            },
+            {
+              "version": 2,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "6ebe18b9214592f43db53a69b289afa5d64697d526e81c8c1ead80d72d30ffa2",
+              "preview": "mugler-angel/concept-2/v2.jpg",
+              "original_sha256": "6ebe18b9214592f43db53a69b289afa5d64697d526e81c8c1ead80d72d30ffa2",
+              "preview_sha256": "6a80271051417477f0a6427403d15f74eee257a5351dcfe5960761e93f02c874"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Midnight Meridian Foil Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": null,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": "ValueError",
+              "sha256": "634ae3b0718a2190e5d847338eeac5a9067977b404f7d57137c7bd800b368a49",
+              "preview": "mugler-angel/concept-3/v1.jpg",
+              "original_sha256": "634ae3b0718a2190e5d847338eeac5a9067977b404f7d57137c7bd800b368a49",
+              "preview_sha256": "0c983676096ac45d29b9b9037c085fca6894111796da7e920b5b8d52c73afeeb"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Frosted Glass Dawn Veil",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "e2449e4d6beb862f417a6529c8e6d7a2da9ea9b576cd355506454e82293cc37e",
+              "preview": "mugler-angel/concept-4/v1.jpg",
+              "original_sha256": "e2449e4d6beb862f417a6529c8e6d7a2da9ea9b576cd355506454e82293cc37e",
+              "preview_sha256": "2b73fcbd45ec90a535adf19c3e79b267f6249086044ee6d813647cd2f1650508"
+            },
+            {
+              "version": 2,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "75df1e0e34165f9352095b221d1b8b4834544fcaa761d5c8dc44d544d1d1b2dc",
+              "preview": "mugler-angel/concept-4/v2.jpg",
+              "original_sha256": "75df1e0e34165f9352095b221d1b8b4834544fcaa761d5c8dc44d544d1d1b2dc",
+              "preview_sha256": "5b386cd8d2e91398f58edb077d547125b82e82f3056902b597970383cb7811af"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "carolina-herrera-very-good-girl",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Risograph Stride Halftone",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "cbfb8c01cd1ed2000cb9154fdd133d4e6c3fc9fbab967beba15dae5c088989fe",
+              "preview": "carolina-herrera-very-good-girl/concept-1/v1.jpg",
+              "original_sha256": "cbfb8c01cd1ed2000cb9154fdd133d4e6c3fc9fbab967beba15dae5c088989fe",
+              "preview_sha256": "b9cd4aa1646d5659a6672e7143f752968a6d7288090ba4ac8288d9647258d393"
+            },
+            {
+              "version": 2,
+              "score": 79.7,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "fcfa79c6dfbc9f50a44caa07a4f9b57ba28dea6f3d868e8d55e2aac5fa22a7f1",
+              "preview": "carolina-herrera-very-good-girl/concept-1/v2.jpg",
+              "original_sha256": "fcfa79c6dfbc9f50a44caa07a4f9b57ba28dea6f3d868e8d55e2aac5fa22a7f1",
+              "preview_sha256": "334e73f04ab0baecee4a2da0b805e21363d556c7c1dd367ee51d1a181e2dfc54"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Midnight Ballroom Two-Column",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "5ed5835ff80ba30c7f41163664d185087f39b290ee944fb6bd4819d764594305",
+              "preview": "carolina-herrera-very-good-girl/concept-2/v1.jpg",
+              "original_sha256": "5ed5835ff80ba30c7f41163664d185087f39b290ee944fb6bd4819d764594305",
+              "preview_sha256": "1809c75607a4884376f37e1f8d23905991e6564fec874e80971121988df9483e"
+            },
+            {
+              "version": 2,
+              "score": 76.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "8c7ff962544080f9b4011263f16e269de5dfa25606bbbbcb669ab2f67c203cb6",
+              "preview": "carolina-herrera-very-good-girl/concept-2/v2.jpg",
+              "original_sha256": "8c7ff962544080f9b4011263f16e269de5dfa25606bbbbcb669ab2f67c203cb6",
+              "preview_sha256": "5ff2c5ffe8b845ee86cec45f7440302bd29052a6631fc26a5335056d97df101d"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Blush Paper Contour Plaque",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 79.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2",
+              "preview": "carolina-herrera-very-good-girl/concept-3/v1.jpg",
+              "original_sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2",
+              "preview_sha256": "b04440e0c3d495b2e2f8792241057f1215d48ff14bdc35367049a909d694a869"
+            },
+            {
+              "version": 2,
+              "score": 79.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "2ce64ffb14e81cd585f20ff7f9d217382230aeb4f7f364932d3f06269c0c711a",
+              "preview": "carolina-herrera-very-good-girl/concept-3/v2.jpg",
+              "original_sha256": "2ce64ffb14e81cd585f20ff7f9d217382230aeb4f7f364932d3f06269c0c711a",
+              "preview_sha256": "31e89b6d3e812d50d8a6731303c509298cb2847e588221fc4023677415ea692a"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Verdigris Felt Spotlight Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 79.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489",
+              "preview": "carolina-herrera-very-good-girl/concept-4/v1.jpg",
+              "original_sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489",
+              "preview_sha256": "1128b034630479f43d4431a35d90614ccacb21ca543110d04eb3c117fb93a347"
+            },
+            {
+              "version": 2,
+              "score": 82.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0",
+              "preview": "carolina-herrera-very-good-girl/concept-4/v2.jpg",
+              "original_sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0",
+              "preview_sha256": "e2854042d3288a9f7e50281c45273bc642c7c35da5a4532c27088263ce7bf0da"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "bvlgari-omnia-crystalline",
+      "status": "COMPLETED",
+      "selected_tag": "bvlgari-full-planning-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Concept 3 (玫瑰盐滩正午·顶带右铭): Prepared layout still unsafe: title_outside_safe_area, logo_outside_safe_area. Actual geometry: {\"coordinate_system\": \"pixels, origin top left\", \"product_bbox\": [192, 504, 715, 1224], \"product_base_y\": 1224, \"product_height_ratio\": 0.5, \"text_bbox\": {\"title\": [950, 173, 1450, 232], \"logo\": [956, 79, 1101, 94]}, \"text_product_overlap\": {\"title\": false, \"logo\": false}}. For a side layout reduce visible height of a wide cutout toward35% to free a real text column; resizing type alone cannot fix text origins inside the product."
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Vision API HTTP 403; check endpoint, model access and account balance"
+        },
+        {
+          "tag": "bvlgari-full-planning-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Nacre Twin-Disc Tide",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "05e6a958a22e380d9a36051cfb781323e55b6c3b1742793d0bb0edc82987fa0e",
+              "preview": "bvlgari-omnia-crystalline/concept-1/v1.jpg",
+              "original_sha256": "05e6a958a22e380d9a36051cfb781323e55b6c3b1742793d0bb0edc82987fa0e",
+              "preview_sha256": "8e74e89d5c341185f1de14b338e9b5ce5f39e1ad9b678b3a56d1938d24f37765"
+            },
+            {
+              "version": 2,
+              "score": 82.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "22951ac2eaa3564a8682b2f0eefe40e1b8e0f3c9664ca41e95deaea9be287578",
+              "preview": "bvlgari-omnia-crystalline/concept-1/v2.jpg",
+              "original_sha256": "22951ac2eaa3564a8682b2f0eefe40e1b8e0f3c9664ca41e95deaea9be287578",
+              "preview_sha256": "989e981a2cb82fefe4a0fe2217c5b4278a41c6c4112a709c3b6671228c9945b6"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Saffron Disc Eclipse Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a6436fdaf229bbd5bb4595533c52a32d1db339f026d076d3b9b59db5b8202ded",
+              "preview": "bvlgari-omnia-crystalline/concept-2/v1.jpg",
+              "original_sha256": "a6436fdaf229bbd5bb4595533c52a32d1db339f026d076d3b9b59db5b8202ded",
+              "preview_sha256": "ffa62596413b16a9de7887d32e30235fdcfc20957d8048d2884e1483c2ac23a6"
+            },
+            {
+              "version": 2,
+              "score": 82.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "bb37ab9d9f3e3afa13b6d451dd34fb304916d850e78f485263b7036c86f4847e",
+              "preview": "bvlgari-omnia-crystalline/concept-2/v2.jpg",
+              "original_sha256": "bb37ab9d9f3e3afa13b6d451dd34fb304916d850e78f485263b7036c86f4847e",
+              "preview_sha256": "38bfeeae405d62474274b4fc75b3f8e16bd80369b03cadbbeda4e07f43774080"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Plum Vesica Night Plaque",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": null,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": "ValueError",
+              "sha256": "ce6da167b878579648a743bb596148b1072d6e7c8b9a2bce42616fc4b47d1b61",
+              "preview": "bvlgari-omnia-crystalline/concept-3/v1.jpg",
+              "original_sha256": "ce6da167b878579648a743bb596148b1072d6e7c8b9a2bce42616fc4b47d1b61",
+              "preview_sha256": "d6dd83aa509f8b0ab9cbe94545837029c095fc19c6cf4a0641e91349882b233e"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Celadon Slab Ledger Oblique",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "93a7feeebbed0d2984c48c0cd995465a839b7bba17bc5ea4abdc56568f7e0332",
+              "preview": "bvlgari-omnia-crystalline/concept-4/v1.jpg",
+              "original_sha256": "93a7feeebbed0d2984c48c0cd995465a839b7bba17bc5ea4abdc56568f7e0332",
+              "preview_sha256": "a283d21ae646f3e622c8a9130565e474875edde77e68dd17b0ed623d99d90d66"
+            },
+            {
+              "version": 2,
+              "score": 79.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "ff3765481bbe5722dfa853160a7d201e4fff53bf6c758a010e55fb021c904858",
+              "preview": "bvlgari-omnia-crystalline/concept-4/v2.jpg",
+              "original_sha256": "ff3765481bbe5722dfa853160a7d201e4fff53bf6c758a010e55fb021c904858",
+              "preview_sha256": "e6b8bb123b14c53431483b3e3d32d9906c7d1185f7c88f13d2d437d694b60c6a"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "gucci-flora-gorgeous-jasmine",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Lido Terrazzo Tide-Line",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "3505cd4b5ee0e6f59f0a137de3a2f8defa75dc4c83901a2b384cd850aaf789c7",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-1/v1.jpg",
+              "original_sha256": "3505cd4b5ee0e6f59f0a137de3a2f8defa75dc4c83901a2b384cd850aaf789c7",
+              "preview_sha256": "e357c8f982f7df6a7d54a7b3378a52abd5b19a99a8dd17fcebed097d4b9b97b9"
+            },
+            {
+              "version": 2,
+              "score": 82.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "549b4fcf469a4cfcd980799db9f65e43de6fc6577fc34318dbb12afaf12890f5",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-1/v2.jpg",
+              "original_sha256": "549b4fcf469a4cfcd980799db9f65e43de6fc6577fc34318dbb12afaf12890f5",
+              "preview_sha256": "1ecdeba7ceeb040f01978169f7c8cffce9d5e4131df19f984dc4ae4ecd14a208"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Silkscreen Jasmine Corolla",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 82.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "ccdf7f885bf42cb496086ec679aab31916758f0c6c7d0fedcc501ed5ae6847c0",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-2/v1.jpg",
+              "original_sha256": "ccdf7f885bf42cb496086ec679aab31916758f0c6c7d0fedcc501ed5ae6847c0",
+              "preview_sha256": "a47f964a7dd00473f0ca145d2b8a6cf9ca753c3fca0e0885de59bf021f81c7a3"
+            },
+            {
+              "version": 2,
+              "score": 83.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "9be8408f3878599ae0f7c936aba8c146d2f52dcd082411e8e3c874dbb58b2e55",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-2/v2.jpg",
+              "original_sha256": "9be8408f3878599ae0f7c936aba8c146d2f52dcd082411e8e3c874dbb58b2e55",
+              "preview_sha256": "cfef029cae5f7c9ebba5ee81885c3c283dff2a237629662d30e2590a55dfc2d0"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Apricot Stucco Ledger Column",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "8aba7f554f2dad2f2bc6477db371b145945ebcd7ef68ee8f2c83517e8b1cece2",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-3/v1.jpg",
+              "original_sha256": "8aba7f554f2dad2f2bc6477db371b145945ebcd7ef68ee8f2c83517e8b1cece2",
+              "preview_sha256": "dade0c6a530ac8a77cf9fabffd9fa2f4cd16f8d80bfc65bfdefde4621833f3a4"
+            },
+            {
+              "version": 2,
+              "score": 80.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "b35103271b7b2792d734aa0efcc41c05ad009c428c991f04fd71d9e1c8a7597f",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-3/v2.jpg",
+              "original_sha256": "b35103271b7b2792d734aa0efcc41c05ad009c428c991f04fd71d9e1c8a7597f",
+              "preview_sha256": "dce8bf084a655ef3d750beb98b91c9eb9b984e92067bcb06b1740e703c8103c2"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Viridian Ribbon Orbit",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-4/v1.jpg",
+              "original_sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6",
+              "preview_sha256": "1fa206541b682ecbba68202e58a49ff4ea674845a91ada40ecca028201fef54a"
+            },
+            {
+              "version": 2,
+              "score": 80.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "d901910af332fef069d1b0793a812a177ceaaddc86d961fabb359754db85b0b5",
+              "preview": "gucci-flora-gorgeous-jasmine/concept-4/v2.jpg",
+              "original_sha256": "d901910af332fef069d1b0793a812a177ceaaddc86d961fabb359754db85b0b5",
+              "preview_sha256": "33888af73bbc6ce47c68f18c508683928a989e88fa689fc595da738fa70146f9"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "guerlain-shalimar",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Engine-turned Guilloché Tide",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "63622e162f9cee4b2ec94e32e615cb7a1441e06e86c6725181ed49a04fb3ed2f",
+              "preview": "guerlain-shalimar/concept-1/v1.jpg",
+              "original_sha256": "63622e162f9cee4b2ec94e32e615cb7a1441e06e86c6725181ed49a04fb3ed2f",
+              "preview_sha256": "dcc450b2c0c775b61e70900377add63eeba76c002ff0074dc917d7276f402f5a"
+            },
+            {
+              "version": 2,
+              "score": 83.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "f890f03392afadc42887036c40059e7c583ae3e93b4eac07ea7de21c91b9f39f",
+              "preview": "guerlain-shalimar/concept-1/v2.jpg",
+              "original_sha256": "f890f03392afadc42887036c40059e7c583ae3e93b4eac07ea7de21c91b9f39f",
+              "preview_sha256": "6ce8901875f175a84e2fc8b70563a0685d5cd78f14cf01e101b6305cbd22595f"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Mashrabiya Brass Shadow Garden",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "84dd6e303a01cf03177f78820182a052bd35291b83a5658d38e414c56f33658b",
+              "preview": "guerlain-shalimar/concept-2/v1.jpg",
+              "original_sha256": "84dd6e303a01cf03177f78820182a052bd35291b83a5658d38e414c56f33658b",
+              "preview_sha256": "8d3bf9655eddc6fccab6a1899fe023f091b06b5de0b87e9d00c560d66749b104"
+            },
+            {
+              "version": 2,
+              "score": 80.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "34256d05dad3ae4b58d86d55f4ecf9959aefb8c0102e37c508f34ce492bbbbc0",
+              "preview": "guerlain-shalimar/concept-2/v2.jpg",
+              "original_sha256": "34256d05dad3ae4b58d86d55f4ecf9959aefb8c0102e37c508f34ce492bbbbc0",
+              "preview_sha256": "f4e8473e2573dc089a1251ab72c127f91baa1d3a6f26d8000f630966536b9cc4"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Lapis Intarsia Night Vault",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "673fb3c515496798d9968600a62447b522e8ba5a1bdfb51e56da5edfd22af669",
+              "preview": "guerlain-shalimar/concept-3/v1.jpg",
+              "original_sha256": "673fb3c515496798d9968600a62447b522e8ba5a1bdfb51e56da5edfd22af669",
+              "preview_sha256": "5b8ec3b483fc2c1252d727927e556032b307e6928ff0cb6fe2afbda933348bcb"
+            },
+            {
+              "version": 2,
+              "score": 83.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "6c1c7749e609a1e3b7d4cd442a2570e683ff887117093d0d74433dec8c0cb2e6",
+              "preview": "guerlain-shalimar/concept-3/v2.jpg",
+              "original_sha256": "6c1c7749e609a1e3b7d4cd442a2570e683ff887117093d0d74433dec8c0cb2e6",
+              "preview_sha256": "4d6ac93ed7f5ac41941bfbf0c6320250db2f33b230b86f7be819b60f0a3e2c1d"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Alabaster Arcade Caustics",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 65.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "45cbf751e05e76a89a9887fd556b1dfacc0022f5ab9479ea87840816b84be903",
+              "preview": "guerlain-shalimar/concept-4/v1.jpg",
+              "original_sha256": "45cbf751e05e76a89a9887fd556b1dfacc0022f5ab9479ea87840816b84be903",
+              "preview_sha256": "5040e7126fcd8be92a413b56a681bcdc855ebad95aee2dbc84ba2ded6accf465"
+            },
+            {
+              "version": 2,
+              "score": 78.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "d7b7b941100b7c2f3a80f7d5b9712237aa405668f0c53242d4871282432b6840",
+              "preview": "guerlain-shalimar/concept-4/v2.jpg",
+              "original_sha256": "d7b7b941100b7c2f3a80f7d5b9712237aa405668f0c53242d4871282432b6840",
+              "preview_sha256": "7c704415c20e803f49352d2a2815a92cbe7ef159495b6e2a56a9dc92517f5919"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "hermes-terre",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Sediment Strata Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5",
+              "preview": "hermes-terre/concept-1/v1.jpg",
+              "original_sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5",
+              "preview_sha256": "133e29a8912dc039c5ddeddef3611e7d9ea25f70db38b59e4e971d07462962e2"
+            },
+            {
+              "version": 2,
+              "score": 80.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "23d01fb885aaa6ddf8183d40ddab43a6fb180234918e997ce944d4261a219ea8",
+              "preview": "hermes-terre/concept-1/v2.jpg",
+              "original_sha256": "23d01fb885aaa6ddf8183d40ddab43a6fb180234918e997ce944d4261a219ea8",
+              "preview_sha256": "54216bb81532ff70bb29a307423e6245cf78e43b7c0bfe9dcb168a79c5d83131"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Salt Flat Dawn Mirror",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 79.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "27ba8771886cf99fed5b0a1d19768865a3d5d92354ebe77950733125c6855adb",
+              "preview": "hermes-terre/concept-2/v1.jpg",
+              "original_sha256": "27ba8771886cf99fed5b0a1d19768865a3d5d92354ebe77950733125c6855adb",
+              "preview_sha256": "81eeec5a9448723ac2119a6b4b51686dd122f4d75ac2a57ee86afcb7507c2c11"
+            },
+            {
+              "version": 2,
+              "score": 80.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "14f32080e4017ae15a59cc3030fda5f2a44cb2d711aeec61989e7b41a07f9b16",
+              "preview": "hermes-terre/concept-2/v2.jpg",
+              "original_sha256": "14f32080e4017ae15a59cc3030fda5f2a44cb2d711aeec61989e7b41a07f9b16",
+              "preview_sha256": "bbb36995fa8323cb0248d890f9a6d81c41192087f4c57390448b2abefd165a42"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Ember Horizon Night Field",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 86.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "95b36645d6801742e4d121553d69c3dc08d53041edd75eb17b33f8a6a02aa6d7",
+              "preview": "hermes-terre/concept-3/v1.jpg",
+              "original_sha256": "95b36645d6801742e4d121553d69c3dc08d53041edd75eb17b33f8a6a02aa6d7",
+              "preview_sha256": "8fabcbf9ae89091473e1193930a8394af810b88b3476aa1c139707650c632ffa"
+            },
+            {
+              "version": 2,
+              "score": 85.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "131864f51f1c7c036e4eaf3900b8c7bfb1ed2fd4fb7c7e5f579c8f1a414daf67",
+              "preview": "hermes-terre/concept-3/v2.jpg",
+              "original_sha256": "131864f51f1c7c036e4eaf3900b8c7bfb1ed2fd4fb7c7e5f579c8f1a414daf67",
+              "preview_sha256": "40e82234872b0530c2c34177b7aeb64d8d25e9f45a1b315084b4fadf0fa9592b"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Flint Gallery Oblique",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "6dc77ad948752d44ad10afa5e0feed4c42201a32784690383a408cbc3d2975be",
+              "preview": "hermes-terre/concept-4/v1.jpg",
+              "original_sha256": "6dc77ad948752d44ad10afa5e0feed4c42201a32784690383a408cbc3d2975be",
+              "preview_sha256": "c2094ba9c58b0954473e2294870f031c65d72d1426aad438bad1d8a29130bb20"
+            },
+            {
+              "version": 2,
+              "score": 79.4,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "3986c730ee726e7f049e6c8a98e866038838ba82c887f7cefeba9dde6a6a9946",
+              "preview": "hermes-terre/concept-4/v2.jpg",
+              "original_sha256": "3986c730ee726e7f049e6c8a98e866038838ba82c887f7cefeba9dde6a6a9946",
+              "preview_sha256": "210f51a4f65cb4dc0a6088783cdabbfa02fbcacdbc5371e0ac5fd9b596a86800"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "davidoff-cool-water",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Sonar Ping Chart Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 82.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "1779603c3c482fefd8ab69126c9e747edb33b8e2211d2c679f178b1ba97190c6",
+              "preview": "davidoff-cool-water/concept-1/v1.jpg",
+              "original_sha256": "1779603c3c482fefd8ab69126c9e747edb33b8e2211d2c679f178b1ba97190c6",
+              "preview_sha256": "620a146d9f15d1b1184bb3c0b501309def25567af653a11fd8a8cb228d9955a6"
+            },
+            {
+              "version": 2,
+              "score": 83.7,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "27d676814a159e65c8a61652d6bd7ea24ca5bad500155a050f9f23e1b79e1e83",
+              "preview": "davidoff-cool-water/concept-1/v2.jpg",
+              "original_sha256": "27d676814a159e65c8a61652d6bd7ea24ca5bad500155a050f9f23e1b79e1e83",
+              "preview_sha256": "8611aaa1989ac259266f52d687d99950375523ea5dccba31da6237b956a434ec"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Bathymetric Contour Plaque",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 79.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "0d426fbbbb2be5303d2159cbf215d815ddaff44da516a3103100f1ef9735fad4",
+              "preview": "davidoff-cool-water/concept-2/v1.jpg",
+              "original_sha256": "0d426fbbbb2be5303d2159cbf215d815ddaff44da516a3103100f1ef9735fad4",
+              "preview_sha256": "17e0a8e8b56df6da106cc2be63f6572fe91d697d92667f2c8bf47d42e58e8a7b"
+            },
+            {
+              "version": 2,
+              "score": 82.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "99a0743fe90a426907721f93eb813d4cc86925c40ac50449ea11d1b86a834b7f",
+              "preview": "davidoff-cool-water/concept-2/v2.jpg",
+              "original_sha256": "99a0743fe90a426907721f93eb813d4cc86925c40ac50449ea11d1b86a834b7f",
+              "preview_sha256": "8f21504e77fd1d0b8184eb5d78c168ddb41957b81b8e4e0fab5cdd10845ad1ea"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Board-formed Sea Wall Ledger",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 86.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a7ab52c993347c9f119a669361ba27187fd691aebf51146470bbc6aef2368d32",
+              "preview": "davidoff-cool-water/concept-3/v1.jpg",
+              "original_sha256": "a7ab52c993347c9f119a669361ba27187fd691aebf51146470bbc6aef2368d32",
+              "preview_sha256": "d824f52176c2d6a45fbb1d688ed8c81d7233c2f626e590e89f3bc1a573336257"
+            },
+            {
+              "version": 2,
+              "score": 87.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "02d1163665bedc0c543d3ed2234e8b63b2ce3d9af2a90b43afb691d5e84f9dbe",
+              "preview": "davidoff-cool-water/concept-3/v2.jpg",
+              "original_sha256": "02d1163665bedc0c543d3ed2234e8b63b2ce3d9af2a90b43afb691d5e84f9dbe",
+              "preview_sha256": "af9b38eab72b23f571abc01307fe866a302cd6deb511c4194b955eac1ecde0bb"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Glacier Meltwater Basin",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "6bec35177faac0dec05ddcbca9cd27f56c6f0de3b083f33cddf3d7efbb39c735",
+              "preview": "davidoff-cool-water/concept-4/v1.jpg",
+              "original_sha256": "6bec35177faac0dec05ddcbca9cd27f56c6f0de3b083f33cddf3d7efbb39c735",
+              "preview_sha256": "05b25bbe891571740195d8f5266e775581fd501073e8449db54a2dd5a4eb865c"
+            },
+            {
+              "version": 2,
+              "score": 82.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "7f88ba8b7348dd2b7ce6705e393a8537166a52fbe9b7d58f43d553bf70d1a0ba",
+              "preview": "davidoff-cool-water/concept-4/v2.jpg",
+              "original_sha256": "7f88ba8b7348dd2b7ce6705e393a8537166a52fbe9b7d58f43d553bf70d1a0ba",
+              "preview_sha256": "55882952d32b396e704cb41d4c955f14db512e41eed47df20c95412685364908"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "kenzo-jungle",
+      "status": "RUNNING",
+      "selected_tag": "remaining-four-sequential-20261002",
+      "selected_directions": 0,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "RemoteDisconnected",
+          "error": "Remote end closed connection without response"
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Vision API HTTP 403; check endpoint, model access and account balance"
+        },
+        {
+          "tag": "remaining-four-sequential-20261002",
+          "status": "RUNNING",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": []
+    },
+    {
+      "product_id": "chloe-eau-de-parfum",
+      "status": "COMPLETED",
+      "selected_tag": "perfume15-100refs-20261002",
+      "selected_directions": 4,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "COMPLETED",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Grosgrain Meridian Graph",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "0108c81ff5453498d4ebf331d5dadef49be3b35ba819f2ec7c24cb91fa2677eb",
+              "preview": "chloe-eau-de-parfum/concept-1/v1.jpg",
+              "original_sha256": "0108c81ff5453498d4ebf331d5dadef49be3b35ba819f2ec7c24cb91fa2677eb",
+              "preview_sha256": "a9cf6e5adbf71b7061a124c9238111fb70e34767c0620dab0e33fd98c7ca1d07"
+            },
+            {
+              "version": 2,
+              "score": 83.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "24ceae30719cc47cd9477bba133b17704d47fe53229d3ac96d4762730274f722",
+              "preview": "chloe-eau-de-parfum/concept-1/v2.jpg",
+              "original_sha256": "24ceae30719cc47cd9477bba133b17704d47fe53229d3ac96d4762730274f722",
+              "preview_sha256": "5c73cac72f61e41860b8c427e5a7ca0b0d20c7f59e2e9b4801a40c3677c31b9e"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Silver Pleat Etching Plaque",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a16ee9c0015120b6f9ac6cfdaca94ee0282e46b3a1ea52f982066f0f7abb65dc",
+              "preview": "chloe-eau-de-parfum/concept-2/v1.jpg",
+              "original_sha256": "a16ee9c0015120b6f9ac6cfdaca94ee0282e46b3a1ea52f982066f0f7abb65dc",
+              "preview_sha256": "76c94bbf8d94efeb8beb00ca4ae2e0783df5ec0338338f1f56507c7b95a09e17"
+            },
+            {
+              "version": 2,
+              "score": 79.7,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "79f54870f5768229608145eabde2e6b998520f688a41b44145e654f97f539d51",
+              "preview": "chloe-eau-de-parfum/concept-2/v2.jpg",
+              "original_sha256": "79f54870f5768229608145eabde2e6b998520f688a41b44145e654f97f539d51",
+              "preview_sha256": "2a30d395ebeac42dc8c9276cbc77023e235aeab2c52fad6b8e9cc698595f73c0"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Washed Linen Morning Column",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 74.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "f72995c0932952dcdbc6ed85536503ac981b7e6ca1e82bf3f8876b1fb8b1b6ea",
+              "preview": "chloe-eau-de-parfum/concept-3/v1.jpg",
+              "original_sha256": "f72995c0932952dcdbc6ed85536503ac981b7e6ca1e82bf3f8876b1fb8b1b6ea",
+              "preview_sha256": "f3be95df7f91b11afd177f721d8a4762eecdae31ec78def6227864bcd74d10c5"
+            },
+            {
+              "version": 2,
+              "score": 78.0,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "eaeeaa7ca6d12e975f3fedff5022989b8581270c9421c30b0758ae72c0b32ae0",
+              "preview": "chloe-eau-de-parfum/concept-3/v2.jpg",
+              "original_sha256": "eaeeaa7ca6d12e975f3fedff5022989b8581270c9421c30b0758ae72c0b32ae0",
+              "preview_sha256": "9a95250714572b3b8b19434e672d2ebb57fb771cede09bae88a592d4c2dbffab"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Powder Rose Bow Halo",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "3f95600b954223d18de478d324cd2473c4c9bd23fb17a6de4a9b617f3de194be",
+              "preview": "chloe-eau-de-parfum/concept-4/v1.jpg",
+              "original_sha256": "3f95600b954223d18de478d324cd2473c4c9bd23fb17a6de4a9b617f3de194be",
+              "preview_sha256": "a5df9efdde0ec7b3b69d4fd3656d77c50bf3d89a6b54e35406bfc40fd89addfd"
+            },
+            {
+              "version": 2,
+              "score": 80.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "f103ea997a269f112fba308ffa8707d1dea754428e8a1b0405b022114e19627b",
+              "preview": "chloe-eau-de-parfum/concept-4/v2.jpg",
+              "original_sha256": "f103ea997a269f112fba308ffa8707d1dea754428e8a1b0405b022114e19627b",
+              "preview_sha256": "d7754f180f91b08057c3ae22a83913edba910a8a382e63702c49f00e8033a685"
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "product_id": "versace-yellow-diamond-intense",
+      "status": "PENDING",
+      "selected_tag": "remaining-four-sequential-20261002",
+      "selected_directions": 0,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Concepts repeat: require four names, >=3 geometry grids, >=3 coarse background colors, both serif and sans title families and >=3 materials; color swaps alone are insufficient"
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Vision API HTTP 403; check endpoint, model access and account balance"
+        },
+        {
+          "tag": "remaining-four-sequential-20261002",
+          "status": "PENDING",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": []
+    },
+    {
+      "product_id": "narciso-rodriguez-poudree",
+      "status": "PENDING",
+      "selected_tag": "remaining-four-sequential-20261002",
+      "selected_directions": 0,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "RemoteDisconnected",
+          "error": "Remote end closed connection without response"
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Vision API HTTP 403; check endpoint, model access and account balance"
+        },
+        {
+          "tag": "remaining-four-sequential-20261002",
+          "status": "PENDING",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": []
+    },
+    {
+      "product_id": "guerlain-mandarine-basilic",
+      "status": "PENDING",
+      "selected_tag": "remaining-four-sequential-20261002",
+      "selected_directions": 0,
+      "attempts": [
+        {
+          "tag": "perfume15-100refs-20261002",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Concept 1 (叶脉升图·香橼底铭): Prepared layout still unsafe: product_outside_safe_area, title_outside_safe_area, logo_outside_safe_area. Actual geometry: {\"coordinate_system\": \"pixels, origin top left\", \"product_bbox\": [354, 490, 726, 1354], \"product_base_y\": 1354, \"product_height_ratio\": 0.6, \"text_bbox\": {\"title\": [642, 86, 1319, 241], \"logo\": [540, 50, 689, 71]}, \"text_product_overlap\": {\"title\": false, \"logo\": false}}. For a side layout reduce visible height of a wide cutout toward35% to free a real text column; resizing type alone cannot fix text origins inside the product."
+        },
+        {
+          "tag": "perfume15-100refs-20261002-recovery",
+          "status": "ERROR",
+          "error_type": "ValueError",
+          "error": "Vision API HTTP 403; check endpoint, model access and account balance"
+        },
+        {
+          "tag": "remaining-four-sequential-20261002",
+          "status": "PENDING",
+          "error_type": null,
+          "error": null
+        }
+      ],
+      "directions": []
+    }
+  ]
+}

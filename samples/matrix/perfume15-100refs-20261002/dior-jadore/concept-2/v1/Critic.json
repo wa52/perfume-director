@@ -1,0 +1,88 @@
+{
+  "pass": false,
+  "score": 78.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 76,
+    "physical_integration": 80,
+    "reference_alignment": 70,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail (crop 322,868-759,1118) confirms a real soft contact shadow under the base at offset_y=0, so the bottle is NOT floating; however the shadow is a thin dark sliver narrower and harder than the diffuse frontal light of the packshot. In the detail the shadow reads as a tight dark line only under the center of the base while the broad diffuse illumination of the product (soft, no hard cast shadow) would throw a wider, softer footprint; blur 10 and opacity 0.35 with default width leave the edges of the base (visible glass skirt left and right in the crop) without any occlusion gradient, slightly undercutting the otherwise correct contact."
+    },
+    {
+      "type": "composition",
+      "problem": "The arch niche's implied interior floor is never articulated: the wall-to-ground tonal transition sits near y≈1230 (below the title), while the bottle rests at base_y 1008 inside the recess. The contact shadow alone carries the ground cue, but the niche jambs continue downward past the base with no shelf, step or tonal plane change at 1008, so the eye reads the bottle as standing on an invisible plane inside a wall recess; references (Chanel N°5 tabletop, Kayali grounded群 group) always articulate the support plane. The concept allows the lifted placement, but the plaster needs a subtle value shift or ledge line at the base level to make the support intentional rather than accidental."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the铭牌 band is muddled: the 'Dior' logo lockup (y 1058-1085) floats in the empty plaster between the bottle base and the decoration rule at y≈1097 with only ~12px clearance to the rule and ~50px to the base, reading as a stray caption rather than the declared top strip of the nameplate; meanwhile the title baseline block (1138-1250) sits very close under the rule (gap ≈41px) so rule-to-title spacing is tighter than logo-to-rule spacing, inverting the intended rhythm of the band. Title tracking 6 at size 150 spans 262-833 (571px of 1080), leaving the 'near-full band width' ambition of the brief unmet and the band visually under-filled compared to the references' confident type scale."
+    },
+    {
+      "type": "background",
+      "problem": "No studio equipment artifacts are present (good), but the arched light pool is rendered as a painted darker-violet arch shape with a hard-ish edge rather than a luminous pool falling from top center: the interior of the arch is slightly DARKER and more saturated than the surrounding wall in the upper half, contradicting the declared 'soft arched pool of lighter light falling from top center' and the product's own bright frontal key. The background light therefore fights, not supports, the observed illumination of the unmodified packshot."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-5 the poster lacks a resolved support-and-light story: Byredo uses a motivated spray and grounded soft shadow, Chanel and Kayali articulate tabletop planes and consistent key direction. Here the single bottle sits in a symmetric niche with even ambient light and a minimal sliver shadow; competent but generic luxury-template feel, with the niche doing decorative duty instead of defining light direction."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled limewash plaster wall in pale iris lilac, recessed arched niche whose interior is washed BRIGHTER than the surrounding wall by one broad soft pool of luminous light falling from top center, fine trowel arcs and matte mineral grain, a subtle slightly lighter horizontal plaster ledge plane inside the niche at two-thirds height catching the falling light, smooth continuous pale plaster ground below, even diffuse high-key illumination, no objects"
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1046
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1102
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 168
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1150
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1318
+    }
+  ],
+  "reported_score": 76
+}

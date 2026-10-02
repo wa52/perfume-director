@@ -1,0 +1,19 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame; the wall darkens gently toward the left third and carries one broad calm sheen band low on the right half; the honed ground shows a faint soft vertical reflection and slight tonal deepening near the centre-right; cool diffuse twilight illumination, matte metal grain, no hard shadows, no objects, Reserve a calm empty middle right area. A continuous horizontal ground plane fills the foreground from the lower third of the image to its bottom edge. The distant wall-to-ground transition stays above the foreground; no ledges, recesses or raised edges. Keep low visual detail in the middle left area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 200987081375840,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "title.color",
+      "old": "#101820",
+      "value": "#F9F4E9",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

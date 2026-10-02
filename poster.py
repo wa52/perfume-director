@@ -23,7 +23,17 @@ from PIL import Image, ImageColor, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 TEXT_LAYERS = ('title', 'subtitle', 'price', 'logo')
-FONT_CHOICES = tuple('C:/Windows/Fonts/'+name for name in ('times.ttf','georgia.ttf','arial.ttf','msyh.ttc'))
+FONT_CHOICES = tuple('C:/Windows/Fonts/'+name for name in
+    ('times.ttf','georgia.ttf','arial.ttf','msyh.ttc','BOD_R.TTF','BASKVILL.TTF','ARIALN.TTF','GOTHIC.TTF')
+    if Path('C:/Windows/Fonts/'+name).is_file())
+
+
+def typography_module():
+    return importlib.import_module('.typography', __package__) if __package__ else importlib.import_module('typography')
+
+
+def graphic_module():
+    return importlib.import_module('.graphic_shapes', __package__) if __package__ else importlib.import_module('graphic_shapes')
 
 
 def reference_store_module():
@@ -42,6 +52,8 @@ def write(path, value):
 def validate(spec):
     if spec['version'] != 1 or spec['style'] != 'luxury':
         raise ValueError('v1 supports luxury perfume only')
+    if spec.get('scene_mode','photographic') not in ('photographic','graphic'):
+        raise ValueError('Invalid scene_mode')
     if type(spec['seed']) is not int or not 0 <= spec['seed'] < 2**63 or type(spec['background']['revision']) is not int or spec['background']['revision'] < 0:
         raise ValueError('Invalid seed or background revision')
     w, h = spec['canvas']['width'], spec['canvas']['height']
@@ -66,7 +78,9 @@ def validate(spec):
         ImageColor.getrgb(spec[name]['color'])
         if spec[name].get('font') and not Path(spec[name]['font']).is_file():
             raise ValueError(f'Missing {name} font')
+        typography_module().validate_style(spec[name], w)
     ImageColor.getrgb(spec['background']['color'])
+    graphic_module().validate_shapes(spec['background'].get('shapes',[]),w,h)
     if len(spec['layers']) != 8 or set(spec['layers']) != {'background', 'shadow', 'product', 'decoration', *TEXT_LAYERS}:
         raise ValueError('Invalid layer stack')
     if spec['layers'][0] != 'background' or spec['layers'].index('shadow') > spec['layers'].index('product'):
@@ -75,7 +89,59 @@ def validate(spec):
         raise ValueError('Invalid shadow')
     if spec['shadow'].get('kind', 'silhouette') not in ('silhouette', 'contact'):
         raise ValueError('Invalid shadow kind')
+    scale = spec['shadow'].get('width_scale', 1)
+    if isinstance(scale, bool) or not isinstance(scale, (int, float)) or not math.isfinite(scale) or not .3 <= scale <= 1.8:
+        raise ValueError('Invalid shadow width_scale')
+    d = spec['decoration']
+    if type(d.get('enabled')) is not bool:
+        raise ValueError('Invalid decoration enabled')
+    for key in ('x','y','width'):
+        if isinstance(d.get(key),bool) or not isinstance(d.get(key),(int,float)) or not math.isfinite(d[key]):
+            raise ValueError('Invalid decoration '+key)
+    if not (0 <= d['x'] <= w and 0 <= d['y'] <= h and 0 <= d['width'] <= w-d['x']):
+        raise ValueError('Decoration outside canvas')
+    ImageColor.getrgb(d['color'])
     return spec
+
+
+def contact_footprint(product):
+    """Measure the opaque lower footprint, not the cap or the widest shoulders."""
+    alpha = product.getchannel('A')
+    solid = alpha.point(lambda a: 255 if a >= 96 else 0)
+    bbox = solid.getbbox() or alpha.getbbox()
+    if not bbox:
+        raise ValueError('Product image is fully transparent')
+    base = bbox[3]
+    band_top = max(bbox[1], base-max(2, round(product.height*.025)))
+    band = solid.crop((0, band_top, product.width, base)).getbbox()
+    left, right = (band[0], band[2]) if band else (bbox[0], bbox[2])
+    return (left+right)/2, base, max(4, right-left)
+
+
+def contact_footprints(product):
+    """Separate disconnected low supports (e.g. a shoe toe and raised heel)."""
+    solid=product.getchannel('A').point(lambda a:255 if a>=96 else 0)
+    bounds=solid.getbbox()
+    if not bounds:
+        return [contact_footprint(product)]
+    top=max(bounds[1],bounds[3]-max(3,round(product.height*.08)))
+    band=solid.crop((0,top,product.width,bounds[3]))
+    columns=band.resize((product.width,1),Image.Resampling.BOX).tobytes()
+    spans=[];start=None
+    for x,value in enumerate((*columns,0)):
+        if value and start is None:start=x
+        elif not value and start is not None:
+            if x-start>=2:spans.append((start,x))
+            start=None
+    feet=[]
+    for left,right in spans:
+        local=band.crop((left,0,right,band.height)).getbbox()
+        if not local:continue
+        base=top+local[3]
+        foot=solid.crop((left,max(top,base-max(2,round(product.height*.025))),right,base)).getbbox()
+        if foot:
+            feet.append((left+(foot[0]+foot[2])/2,base,max(4,foot[2]-foot[0])))
+    return feet or [contact_footprint(product)]
 
 
 def render(spec, product, font, background=None):
@@ -85,6 +151,7 @@ def render(spec, product, font, background=None):
     canvas = Image.new('RGBA', (w, h), spec['background']['color'])
     if background is not None:
         canvas = background.convert('RGBA').resize((w, h), Image.Resampling.LANCZOS)
+    canvas=graphic_module().compose(canvas,spec['background'].get('shapes',[]))
     p = spec['product']
     product = product.convert('RGBA').copy()
     bounds = product.getchannel('A').getbbox()
@@ -98,20 +165,25 @@ def render(spec, product, font, background=None):
             s = spec['shadow']
             shadow = Image.new('RGBA', (w, h))
             if s.get('kind') == 'contact':
-                center_x = px+product.width/2+s['offset_x']
-                center_y = py+product.height+s['offset_y']
-                radius_x, radius_y = product.width*.43, max(3, product.height*.012)
-                ImageDraw.Draw(shadow).ellipse((center_x-radius_x, center_y-radius_y, center_x+radius_x, center_y+radius_y),
-                    fill=(0, 0, 0, round(255*s['opacity'])))
+                feet=contact_footprints(product)
+                for foot_x,foot_y,foot_width in feet:
+                    center_x = px+foot_x+s['offset_x']
+                    center_y = py+foot_y+s['offset_y']
+                    radius_x, radius_y = foot_width*.52*s.get('width_scale',1), max(3, product.height*.012)
+                    ImageDraw.Draw(shadow).ellipse((center_x-radius_x, center_y-radius_y, center_x+radius_x, center_y+radius_y),
+                        fill=(0, 0, 0, round(255*s['opacity'])))
             else:
                 mask = product.getchannel('A').point(lambda a: round(a*s['opacity']))
                 shadow.paste((0, 0, 0, 255), (px+round(s['offset_x']), py+round(s['offset_y'])), mask)
             canvas = Image.alpha_composite(canvas, shadow.filter(ImageFilter.GaussianBlur(s['blur'])))
             if s.get('kind') == 'contact':
                 core = Image.new('RGBA', (w, h))
-                base = py+product.height-1+s['offset_y']
-                ImageDraw.Draw(core).ellipse((center_x-product.width*.28, base-2, center_x+product.width*.28, base+3),
-                    fill=(0,0,0,round(255*min(.85,s['opacity']*1.6))))
+                for foot_x,foot_y,foot_width in feet:
+                    center_x=px+foot_x+s['offset_x']
+                    base = py+foot_y-1+s['offset_y']
+                    core_radius = foot_width*.44*s.get('width_scale',1)
+                    ImageDraw.Draw(core).ellipse((center_x-core_radius, base-2, center_x+core_radius, base+3),
+                        fill=(0,0,0,round(255*min(.85,s['opacity']*1.6))))
                 canvas = Image.alpha_composite(canvas, core.filter(ImageFilter.GaussianBlur(1.5)))
         elif layer == 'product':
             canvas.alpha_composite(product, (px, py))
@@ -123,12 +195,10 @@ def render(spec, product, font, background=None):
             t = spec[layer]
             if not quality_module().font_supports_text(str(t.get('font',font)),t['text']):
                 raise ValueError(layer+' font lacks required glyphs; run Director font preflight')
-            f = ImageFont.truetype(str(t.get('font', font)), round(t['size']))
-            draw = ImageDraw.Draw(canvas)
-            bbox = draw.textbbox((t['x'], t['y']), t['text'], font=f, anchor='lt')
+            bbox = typography_module().text_layout(t, font)['bbox']
             if bbox[2] > w or bbox[3] > h:
                 raise ValueError(f'{layer} text exceeds canvas')
-            draw.text((t['x'], t['y']), t['text'], font=f, fill=t['color'], anchor='lt')
+            typography_module().draw_text(canvas, t, font)
     return canvas.convert('RGB')
 
 
@@ -141,14 +211,15 @@ def rendered_geometry(spec, product, font):
         source.thumbnail((round(p['width']), round(p['height'])), Image.Resampling.LANCZOS)
         x, y = round(p['x']-source.width/2), round(p['y']-source.height/2)
         product_bbox = [x, y, x+source.width, y+source.height]
+        contacts=[{'center_x':round(x+fx,2),'base_y':y+fy,'width':fw} for fx,fy,fw in contact_footprints(source)]
     draw = ImageDraw.Draw(Image.new('RGB', (1, 1)))
     text_bbox = {}
     for name in TEXT_LAYERS:
         t = spec[name]
         if t['text']:
-            f = ImageFont.truetype(str(t.get('font', font)), round(t['size']))
-            text_bbox[name] = list(draw.textbbox((t['x'], t['y']), t['text'], font=f, anchor='lt'))
+            text_bbox[name] = typography_module().text_layout(t, font)['bbox']
     return {'coordinate_system': 'pixels, origin top left', 'product_bbox': product_bbox,
+        'contact_points': contacts,
         'product_base_y': product_bbox[3], 'product_height_ratio': round((product_bbox[3]-product_bbox[1])/spec['canvas']['height'],4), 'text_bbox': text_bbox,
         'text_product_overlap': {name: (max(box[0], product_bbox[0]) < min(box[2], product_bbox[2]) and
             max(box[1], product_bbox[1]) < min(box[3], product_bbox[3])) for name, box in text_bbox.items()}}
@@ -230,15 +301,28 @@ def vision(config, prompt, images, trace_path=None):
                 try:
                     body = json.loads(error.read())
                     code = body.get('error', {}).get('code')
+                    message = body.get('error', {}).get('message')
+                    if isinstance(message,str):
+                        attempt_trace['provider_message']=message[:700].replace(key,'[redacted]').replace(config['vision_base_url'],'[private endpoint]')
                     if isinstance(code,(str,int)) and re.fullmatch(r'[A-Za-z0-9_-]{1,32}',str(code)):
                         attempt_trace['provider_code'] = str(code)
                 except (ValueError,AttributeError,TypeError):
                     pass
-                # Retry an unclassified 400 once; never retry a coded rejection.
+                # This provider also uses 400 for an aborted JSON generation,
+                # explicitly requesting a retry. Keep the same strict format;
+                # other parameter/access/content rejections stay terminal.
+                provider_message=attempt_trace.get('provider_message','').casefold()
+                json_generation_retry = (error.code == 400
+                    and attempt_trace.get('provider_code') == 'invalid_parameter_error'
+                    and 'model output became abnormal' in provider_message
+                    and 'response_format' in provider_message
+                    and 'generation was aborted' in provider_message)
+                if json_generation_retry:
+                    attempt_trace['retry_reason']='provider_aborted_json_generation'
                 unknown_400_retry = error.code == 400 and 'provider_code' not in attempt_trace and attempt == 1
-                if (error.code not in (429, 500, 502, 503, 504) and not unknown_400_retry) or attempt == attempts:
+                if (error.code not in (429, 500, 502, 503, 504) and not unknown_400_retry and not json_generation_retry) or attempt == attempts:
                     trace['http_status'] = error.code
-                    raise ValueError(f'Vision API HTTP {error.code}; check endpoint, model access and account balance') from None
+                    raise ValueError(f'Vision API HTTP {error.code}; inspect the saved provider response') from None
             except (RemoteDisconnected, IncompleteRead, TimeoutError, ConnectionError, urllib.error.URLError) as error:
                 attempt_trace.update(status='ERROR', error_type=type(error).__name__)
                 if attempt == attempts:
@@ -267,11 +351,15 @@ def concept_context(config):
     if not config.get('creative_direction'):return ''
     return (' Declared artistic direction to preserve throughout critique and selection: '+json.dumps(config['creative_direction'],ensure_ascii=False)+
         '. Judge craft within THIS concept. Do not replace its palette, material, composition or typography with another genre to raise scores. '
+        'In explicit graphic scene_mode, judge intentional graphic placement, clear hierarchy and silhouette; a flat graphic field does not need a photographic horizon. Do not force a realistic floor into graphic work. In photographic mode require plausible ground and matched lighting. Both modes still require faithful product and a resolved professional composition. '
         'Preserve its title/product layout_relation and serif/sans title_family; those are enforced on patches. Refining a font within its family is allowed. '
         'Intentional centered minimalism need not gain props; asymmetric or small-scale editorial compositions need not become centered large packshots. '
         'For this fresh-concept mode the authoritative safety bounds override the generic hero guidance: actual height 35-74%, top >=10%, base <=94%, sides 5-95%. '
         'Background patches must preserve this concept and describe empty materials/light without the forbidden identity/people/support keywords. '
-        'Only supported patch fields are actionable; a line decoration may exist in the initial design but is not a supported patch field.')
+        'Text supports tracking, wrapping via max_width, line_height and align; decoration is editable. Use these when spacing or hierarchy is weak. '
+        'background.shapes is an optional list of up to8 deterministic ellipse/rectangle primitives behind the product; x/y are upper-left pixels, width/height pixels, color string, opacity0..1. To adjust graphic geometry use set on background.shapes with the complete validated list. Keep identity and geometry edits separate from background material regeneration. '
+        'A background must provide an intentional setting, not merely a flat wall texture with a pasted cutout. '
+        'Observed original product lighting/material: '+json.dumps(config.get('product_profile',{}),ensure_ascii=False))
 
 
 def layout_issues(spec, product, font, direction=None):
@@ -338,22 +426,32 @@ def apply_changes(spec, changes):
     validate_change_shapes(changes)
     candidate = copy.deepcopy(spec)
     numeric = {'product.x', 'product.y', 'product.width', 'product.height',
-        *{f'{name}.{key}' for name in TEXT_LAYERS for key in ('x', 'y', 'size')},
-        'shadow.opacity', 'shadow.blur', 'shadow.offset_x', 'shadow.offset_y'}
-    strings = {'background.prompt', 'background.color', 'shadow.kind', *{f'{name}.{key}' for name in TEXT_LAYERS for key in ('color','font')}}
+        *{f'{name}.{key}' for name in TEXT_LAYERS for key in ('x', 'y', 'size','tracking','max_width','line_height')},
+        'shadow.opacity', 'shadow.blur', 'shadow.offset_x', 'shadow.offset_y','shadow.width_scale',
+        'decoration.x','decoration.y','decoration.width'}
+    strings = {'background.prompt', 'background.color', 'shadow.kind','decoration.color', *{f'{name}.{key}' for name in TEXT_LAYERS for key in ('color','font','align')}}
+    booleans = {'decoration.enabled'}
     for change in changes:
         path, op, value = change['path'], change['op'], change['value']
-        if path not in numeric | strings or op not in ('set', 'add', 'multiply'):
+        if path=='background.shapes':
+            if op!='set':raise ValueError('Graphic list requires set')
+            graphic_module().validate_shapes(value,candidate['canvas']['width'],candidate['canvas']['height'])
+            candidate['background']['shapes']=copy.deepcopy(value)
+            continue
+        if path not in numeric | strings | booleans or op not in ('set', 'add', 'multiply'):
             raise ValueError(f'Unsupported patch: {path}/{op}')
         group, key = path.split('.')
-        if path in strings:
+        if path in booleans:
+            if op != 'set' or type(value) is not bool:
+                raise ValueError('Boolean fields require set/bool')
+        elif path in strings:
             if op != 'set' or not isinstance(value, str):
                 raise ValueError('String fields require set/string')
         elif isinstance(value, bool) or not isinstance(value, (float, int)) or not math.isfinite(value):
             raise ValueError('Numeric patch requires finite number')
         if key == 'font' and (value not in FONT_CHOICES or not quality_module().font_supports_text(value,candidate[group]['text'])):
             raise ValueError('Font patch requires an installed approved font with all required glyphs')
-        old = candidate[group].get(key)
+        old = candidate[group].get(key, {'tracking':0,'max_width':0,'line_height':1.15,'width_scale':1}.get(key))
         candidate[group][key] = value if op == 'set' else old+value if op == 'add' else old*value
         if path == 'background.prompt' and value != old:
             candidate['background']['revision'] += 1
@@ -444,6 +542,7 @@ def comfy_render(config, spec, product, destination, background):
             if re.search(r'\bsoftbox\b',prompt,re.I):
                 audit['lighting_word_guard'] = {'requested':prompt,'reason':'describe_illumination_without_visible_studio_equipment'}
                 prompt = re.sub(r'\bsoftbox(?: light)?\b','diffused illumination',prompt,flags=re.I)
+            prompt += background_placement(spec, product, config['font'])
             prompt += ', full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface' if dynamic else ', full bleed photographic environment filling every edge, uninterrupted material extending beyond all image edges, continuous surface'
             values = {'prompt': prompt, 'seed': spec['seed']+spec['background']['revision']+attempt*100003,
                       'width': spec['canvas']['width'], 'height': spec['canvas']['height']}
@@ -473,7 +572,13 @@ def comfy_render(config, spec, product, destination, background):
         Image.new('RGB', (spec['canvas']['width'], spec['canvas']['height']), spec['background']['color']).save(background)
         audit['source'] = 'solid_color'
     if direction:
-        audit['ink_changes'] = quality_module().contrast_adjustments(spec, rendered_geometry(spec, product, config['font']), background)
+        contrast_background=background
+        if spec['background'].get('shapes'):
+            contrast_background=Path(destination).with_name('background-shapes-preview.png')
+            with Image.open(background) as base:
+                graphic_module().compose(base.resize((spec['canvas']['width'],spec['canvas']['height'])),spec['background']['shapes']).convert('RGB').save(contrast_background)
+            audit['deterministic_shapes']=spec['background']['shapes']
+        audit['ink_changes'] = quality_module().contrast_adjustments(spec, rendered_geometry(spec, product, config['font']), contrast_background)
         for change in audit['ink_changes']:
             spec[change['path'].split('.')[0]]['color'] = change['value']
     write(Path(destination).with_name('Background-audit.json'), audit)
@@ -484,11 +589,36 @@ def comfy_render(config, spec, product, destination, background):
     return execute(config, workflow, '4', destination)
 
 
+def background_placement(spec, product, font):
+    """Translate geometry into prose: numeric arrays can become visible image glyphs."""
+    geo = rendered_geometry(spec, product, font)
+    w,h = spec['canvas']['width'],spec['canvas']['height']
+    box = geo['product_bbox']
+    def area(b):
+        cx,cy=(b[0]+b[2])/2/w,(b[1]+b[3])/2/h
+        horizontal='left' if cx<.38 else 'right' if cx>.62 else 'central'
+        vertical='upper' if cy<.34 else 'lower' if cy>.66 else 'middle'
+        return vertical+' '+horizontal+' area'
+    region=area(box)
+    text_regions=', '.join(dict.fromkeys(area(b) for b in geo['text_bbox'].values())) or 'outer margins'
+    empty_glyphs=' Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. '
+    if spec.get('scene_mode')=='graphic':
+        return (', Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. '
+            'Keep the '+region+' uncluttered; reserve quiet negative space in the '+text_regions+'. '+empty_glyphs)
+    # Place the horizon above the future base with a generous margin, in natural language.
+    base=box[3]/h
+    horizon='upper third' if base<.65 else 'middle' if base<.85 else 'lower third'
+    return (', Reserve a calm empty '+region+'. A continuous horizontal ground plane fills the foreground '
+        'from the '+horizon+' of the image to its bottom edge. The distant wall-to-ground transition stays '
+        'above the foreground; no ledges, recesses or raised edges. Keep low visual detail in the '+text_regions+'. '+empty_glyphs)
+
+
 def build_kb(config):
     entries = []
-    files = sorted(p for p in (ROOT/'references/luxury').glob('*') if p.suffix.lower() in ('.png', '.jpg', '.jpeg', '.webp'))[:20]
+    stored = reference_store_module().entries(ROOT) if (ROOT/'kb/design_kb.sqlite3').exists() else []
+    files = [ROOT/r['image'] for r in stored] if stored else sorted(p for p in (ROOT/'references').glob('*/*') if p.parent.name!='candidates' and p.suffix.lower() in ('.png','.jpg','.jpeg','.webp'))
     if len(files) < 3:
-        raise ValueError('Add at least 3 real references to references/luxury (target: 20)')
+        raise ValueError('Add at least 3 real accepted references before analysis')
     for path in files:
         print('Analyze:', path.name, flush=True)
         analysis = vision(config, 'Analyze this commercial poster. Return composition:string, subject_ratio:number 0..1, negative_space:string, lighting:string, color:string[], typography:string, information_density:string, characteristics:string[], perfume_suitability:number 0..100. Describe observed design only.', [path])
@@ -526,7 +656,7 @@ def review_poster(config, spec, product, poster, ref_images, trace_path, previou
         scale = min(960/detail.width,500/detail.height)
         detail.resize((round(detail.width*scale),round(detail.height*scale)),Image.Resampling.LANCZOS).save(detail_path)
     geometry['contact_detail_crop'] = crop
-    return vision(config, 'Critique final poster (first image), original product (second), and 3 references (images 3-5). Image 6 is an enlarged bottle-base contact detail cropped from the first poster; inspect this detail before claiming the contact shadow is absent. The detail has its own crop coordinates in geometry; it is not a second poster. Check product fidelity, composition, typography, background interference and hierarchy. Visible softboxes, lamps, lighting stands or cameras are studio setup artifacts, not campaign scenery: flag them as background problems and replace the background prompt with illumination descriptions without equipment names. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon or to canvas bottom. Product base being above the bottom edge is normal: keep bottom within 91% of canvas height and preserve comfortable margins. The deterministic geometry is authoritative; do not invent floating from empty margin alone. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y must be -2..0. Zero is correct contact, do not move a correctly aligned shadow downward. Cream direction text x coordinates are upper-left, never set them to canvas center: x = (canvas_width - actual_text_width)/2. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size, shadow.opacity/blur/offset_x/offset_y; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color/font. Font must be one of C:/Windows/Fonts/times.ttf, C:/Windows/Fonts/georgia.ttf, C:/Windows/Fonts/arial.ttf, C:/Windows/Fonts/msyh.ttc with glyph coverage. Never propose tiny shadow-only adjustments when the real problem is a lighting mismatch: background light must support the unmodified bright product photograph. Asymmetric grids are intentional; do not penalize them merely for not being centered. If exact product_height_ratio is already in 0.50..0.65, do not claim it is below the hero range. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(geometry)+' Spec: '+json.dumps(spec, ensure_ascii=False)+concept_context(config)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images, detail_path]+([previous['poster']] if previous else []), trace_path=trace_path)
+    return vision(config, 'Critique final poster (first image), original product (second), and 3 references (images 3-5). Image 6 is an enlarged bottle-base contact detail cropped from the first poster; inspect this detail before claiming the contact shadow is absent. The detail has its own crop coordinates in geometry; it is not a second poster. Check product fidelity, composition, typography, background interference and hierarchy. Visible softboxes, lamps, lighting stands or cameras are studio setup artifacts, not campaign scenery: flag them as background problems and replace the background prompt with illumination descriptions without equipment names. Closely inspect bottle contact with the support surface, floating, extra bottles or generated labels. Use the supplied exact render geometry. Distinguish a raised tabletop from a seamless studio floor. A floor horizon or tonal transition is not the required bottle contact line: an object in the foreground can rest lower in the frame. Do not move it to a guessed horizon or to canvas bottom. Product base being above the bottom edge is normal: keep bottom within 91% of canvas height and preserve comfortable margins. The deterministic geometry is authoritative; do not invent floating from empty margin alone. Use visible contact cues and shadow. Geometry includes computed text_product_overlap; do not claim title/product overlap if that boolean is false. Only intersections on BOTH axes count. Calculate center_y = target_base_y - actual_height/2, never set center_y equal to the intended base. Patches must keep the entire product within canvas. Contact shadow offset_y must be -2..0. Zero is correct contact, do not move a correctly aligned shadow downward. Cream direction text x coordinates are upper-left, never set them to canvas center: x = (canvas_width - actual_text_width)/2. Also fix any title/product overlap. Explain visible evidence in each problem. Return pass:boolean, score:number 0..100, dimensions:{product_fidelity,composition,typography,background,physical_integration,reference_alignment,creative_coherence} scored 0..100, problems:[{type,problem}], changes:[{path,op,value}]. Evaluate against professional campaign references, not merely valid layout. 50-69 means obvious amateur weaknesses, 70-79 competent but generic, 80-84 polished draft, 85+ professionally resolved. PASS requires average dimension score>=85, EVERY dimension>=80, and no unresolved problems. Do not reward a large score jump for fixing only shadow offset: assess all remaining weaknesses anew. Reference_alignment measures the design quality gap to the references, not brand imitation; creative_coherence measures whether all elements express a clear visual concept. A small isolated bottle, generic dramatic backdrop, disconnected typography, or mismatched lighting must reduce the relevant scores and produce concrete problems. Inspect actual bottle height from render geometry: a single-bottle hero usually occupies 50-65 percent of canvas height. No mechanical size mandate if the brief explicitly calls for another composition. Patches: set/add/multiply numerical product.x/y/width/height, title/subtitle/price/logo.x/y/size/tracking/max_width/line_height, shadow.opacity/blur/offset_x/offset_y/width_scale, decoration.x/y/width; set boolean decoration.enabled; set decoration.color; set string background.prompt/color, shadow.kind (contact/silhouette), or title/subtitle/price/logo.color/font/align. Text tracking is pixels -1..24, max_width 0 (one line) or positive pixels for automatic word wrapping up to4 lines, line_height1..2; align left/center/right within max_width. Preserve exact copy; never insert linebreaks into text. Font must be an installed approved font with glyph coverage: '+json.dumps(FONT_CHOICES)+' . Never propose tiny shadow-only adjustments when the real problem is a lighting mismatch: background light must support the actual observed illumination of this unmodified product photograph. Shadow width_scale controls the alpha-derived bottom footprint from0.3 to1.8; never use cap width to infer contact width. Asymmetric grids are intentional; do not penalize them merely for not being centered. If exact product_height_ratio is already in 0.50..0.65, do not claim it is below the hero range. Product x/y are center. Change background.prompt to regenerate; describe only empty environment/material/light without perfume/bottle/product words. Do not alter product identity or seed. If not passing, propose concrete supported patches addressing the problems. Render geometry: '+json.dumps(geometry)+' Spec: '+json.dumps(spec, ensure_ascii=False)+concept_context(config)+(' Previous version is the last image. Compare visible changes. Re-verify all previous claims against current geometry and images; never copy previous problems as facts. Keep scores for unaffected dimensions stable; explain any material score increase with visible evidence. Previous critique: '+json.dumps(previous['critique'], ensure_ascii=False) if previous else ''), [poster, product, *ref_images, detail_path]+([previous['poster']] if previous else []), trace_path=trace_path)
 
 
 DIRECTIONS = (
@@ -583,8 +713,29 @@ def prepare_layout(config, spec, product):
                 if name+'_font_fallback' not in font_fixes:
                     font_fixes.append(name+'_font_fallback')
     ensure_fonts()
-    issues = layout_issues(candidate, product, config['font'],direction)
     dynamic = direction.startswith('concept-')
+    # A narrow wrapped column must fit its longest word before collision checks.
+    for name in TEXT_LAYERS:
+        t=candidate[name]
+        while t['text'] and t['size']>16:
+            try:
+                typography_module().text_layout(t,config['font'])
+                break
+            except ValueError as error:
+                if not any(word in str(error) for word in ('Unbreakable','four lines')):
+                    raise
+                t['size']-=1
+        if dynamic and t['text']:
+            # Translate overflowing ink before shrinking it. In particular,
+            # right-aligned single lines still use a top-left x coordinate.
+            box=typography_module().text_layout(t,config['font'])['bbox']
+            canvas_w=candidate['canvas']['width']
+            target=max(canvas_w*.04,min(box[0],canvas_w*.96-3-(box[2]-box[0])))
+            shift=round(target-box[0])
+            if shift:
+                t['x']+=shift
+                font_fixes.append(name+'_horizontal_frame_fit')
+    issues = layout_issues(candidate, product, config['font'],direction)
     if issues and not dynamic:
         safe = direction_template(read(ROOT/'examples/PosterSpec.json'), direction)
         candidate['canvas'] = safe['canvas']
@@ -605,17 +756,18 @@ def prepare_layout(config, spec, product):
         style_width = w*(.92 if dynamic else .82 if direction == 'cream-minimal' else .30 if direction == 'burgundy-editorial' else .43)
         while t['size'] > 16:
             face = ImageFont.truetype(t.get('font',config['font']),round(t['size']))
-            box = measuring.textbbox((t['x'],t['y']),t['text'],font=face,anchor='lt')
+            box = typography_module().text_layout(t,config['font'])['bbox']
             max_width = min(style_width,w*.96-t['x']-2) if direction != 'cream-minimal' else style_width
             # A fixed percentage is insufficient when the new bottle is wider.
             # Recompute vertical intersection as shrinking can clear its top edge.
             if direction != 'cream-minimal' and max(box[1],product_box[1]) < min(box[3],product_box[3]) and t['x'] < product_box[0]:
                 max_width = min(max_width,product_box[0]-t['x']-w*.025-2)
-            if max(face.getlength(t['text']),box[2]-box[0]) <= max_width:
+            if box[2]-box[0] <= max_width:
                 break
             t['size'] -= 1
         if direction == 'cream-minimal':
-            t['x'] = round((w-ImageFont.truetype(t.get('font',config['font']),round(t['size'])).getlength(t['text']))/2)
+            box = typography_module().text_layout(t,config['font'])['bbox']
+            t['x'] = round((w-(box[2]-box[0]))/2)
     remaining = layout_issues(candidate, product, config['font'],direction)
     if remaining:
         raise ValueError('Prepared layout still unsafe: '+', '.join(remaining))
@@ -633,10 +785,14 @@ def review_validated(config, spec, product, poster, ref_images, folder, previous
 
 def resolve_copy(config, product, brief, folder):
     """Read product identity once, separately from creative layout decisions."""
-    result = vision(config, 'Read only the actual product image and user brief, not reference brands. Return exactly {title,logo,subtitle,price,evidence}, all single-line strings. title is the exact product name without prepending the separately displayed brand; copy the product-name line on the label, not a combined retailer-style brand + name. logo is the visible brand, subtitle only a legible product category/concentration or explicit user copy. price must be empty unless the user explicitly provides one. Never use placeholder category words such as 香氛 as the product name. If text cannot be read reliably, use empty strings rather than inventing identity. evidence explains which words are visible versus supplied by the user. User copy and prohibitions take priority. Brief: '+brief, [product], trace_path=folder/'Product-copy-call.json')
+    result = vision(config, 'Read only the actual product image and user brief, not reference brands. Return {title,logo,subtitle,price,evidence,product_profile}. The first five fields are single-line strings. product_profile is an object with material, color, transparency, illumination, view, integration_limits (short observed strings, use unknown if uncertain). Inspect this actual packshot: highlight direction/softness, brightness, reflective or translucent regions, camera elevation and base geometry. Do not assume all products are dark glass or front lit. Describe constraints for the background to match the unmodified packshot; a bright opaque region in a glass cutout cannot transmit a newly generated background. This is visual observation, not a fragrance or brand claim. title is the exact product name without prepending the separately displayed brand; copy the product-name line on the label, not a combined retailer-style brand + name. logo is the visible brand, subtitle only a legible product category/concentration or explicit user copy. price must be empty unless the user explicitly provides one. Never use placeholder category words such as 香氛 as the product name. If text cannot be read reliably, use empty strings rather than inventing identity. evidence explains which words are visible versus supplied by the user. User copy and prohibitions take priority. Brief: '+brief, [product], trace_path=folder/'Product-copy-call.json')
     for name in (*TEXT_LAYERS,'evidence'):
         if not isinstance(result.get(name),str) or '\n' in result[name] or len(result[name]) > (1000 if name=='evidence' else 160):
             raise ValueError('Invalid product copy contract')
+    profile = result.get('product_profile', {})
+    if not isinstance(profile,dict) or any(not isinstance(v,str) or len(v)>1000 for v in profile.values()):
+        raise ValueError('Invalid product observation contract')
+    config['product_profile'] = profile
     write(folder/'Product-copy.json',result)
     return {name:result[name] for name in TEXT_LAYERS}
 
@@ -660,9 +816,11 @@ def select_final(config, run_dir, versions, product, ref_images):
 
 
 def run_four(config, product, brief, progress=None):
+    config = copy.deepcopy(config)
     batch = ROOT/'runs/batches'/uuid.uuid4().hex[:12]
     batch.mkdir(parents=True)
     directions = []
+    if progress:progress({'stage':'PRODUCT_OBSERVATION','run_dir':str(batch),'direction_count':4})
     approved_copy = config.get('approved_copy') or resolve_copy(config,product,brief,batch)
     mode=config.get('direction_mode','dynamic')
     if mode not in ('dynamic','curated'):raise ValueError('direction_mode must be dynamic or curated')
@@ -674,7 +832,7 @@ def run_four(config, product, brief, progress=None):
     else:plans=DIRECTIONS
     write(batch/'request.json', {'brief': brief, 'direction_mode':mode, 'directions': plans, 'max_rounds_per_direction': config.get('max_rounds',3),
         'execution_config': {key:config.get(key) for key in ('vision_model','vision_options','vision_timeout_seconds','vision_attempts','vision_image_max_edge','background_attempts')},
-        'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
+        'product_profile':config.get('product_profile',{}), 'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
     for index, direction in enumerate(plans, 1):
         child_record = {}
         def report(values):
@@ -692,7 +850,7 @@ def run_four(config, product, brief, progress=None):
             if mode=='dynamic':
                 child_config['initial_spec']=direction['initial_spec']
                 child_config['references']=[row for row in refs if row['id'] in direction['reference_ids']]
-                child_config['creative_direction']={k:direction[k] for k in ('name','brief','material','lighting','palette','layout_relation','title_family') if k in direction}
+                child_config['creative_direction']={k:direction[k] for k in ('name','brief','material','lighting','palette','layout_relation','title_family','scene_mode') if k in direction}
                 child_config['planning_trace']=str(batch/'Concepts-call.json')
             child = run(child_config, product, brief+'\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：'+direction['brief'], progress=report)
             result = read(child/'result.json')
@@ -744,7 +902,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         progress({'stage': 'DIRECTOR', 'run_dir': str(run_dir)})
     if not demo:
         print('Director: executing fresh batch concept' if config.get('initial_spec') else 'Director: analyzing product and 3 references', flush=True)
-    spec = copy.deepcopy(config['initial_spec']) if config.get('initial_spec') and not demo else template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The supplied plan is a curated starting grid for this direction, not a finished design. Keep its distinct design language and strong product scale; replace placeholder copy with approved copy and refine optical typography alignment. Do not collapse different directions into the same layout. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. The unmodified product was photographed with broad soft frontal light. Design the background to match that light rather than requiring the product to be relit. Describe illumination, never visible lighting equipment: do not name a softbox, lamp, camera or lighting stand in the background prompt. Use a continuous seamless floor only, never a raised table, tabletop, pedestal, plinth or platform: a fixed packshot cannot reliably match their perspective and front edges. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
+    spec = copy.deepcopy(config['initial_spec']) if config.get('initial_spec') and not demo else template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The supplied plan is a curated starting grid for this direction, not a finished design. Keep its distinct design language and strong product scale; replace placeholder copy with approved copy and refine optical typography alignment. Do not collapse different directions into the same layout. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Only luxury perfume, preserve product identity. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Observe the actual product highlights, material, translucency and camera angle in its input photograph. Match this observed illumination rather than assuming a dark glass bottle or relighting it. Describe illumination, never visible lighting equipment: do not name a softbox, lamp, camera or lighting stand in the background prompt. Use a continuous seamless floor only, never a raised table, tabletop, pedestal, plinth or platform: a fixed packshot cannot reliably match their perspective and front edges. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
     try:
         validate(spec)
     except (ValueError, KeyError, TypeError) as error:

@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-3364886cd88b.webp",
+      "sha256": "e69fbf4cb351f99fce695d18cd84398ee1fbe9e9307a0fd8edf7e0492589e4da"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-1be8e8a0-fab0-9643-a0e0-9f9f046d60fb",
+      "usage": {
+        "prompt_tokens": 1379,
+        "total_tokens": 1721,
+        "completion_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1082,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 342
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-1be8e8a0-fab0-9643-a0e0-9f9f046d60fb",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1379,
+    "total_tokens": 1721,
+    "completion_tokens": 342,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1082,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 342
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Balmain",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved multi-brand perfume still life featuring high-end material contrast and sculptural composition; excellent reference for luxury product staging.",
+    "analysis": {
+      "composition": "Three distinct fragrance bottles arranged linearly on the edge of a massive, rough-hewn stone slab against a clean gradient background.",
+      "subject_ratio": 0.45,
+      "negative_space": "Expansive smooth grey gradient occupying the lower two-thirds and left side, emphasizing the weight of the stone prop.",
+      "lighting": "Hard directional studio lighting from the upper left, casting sharp, defined shadows of the bottles onto the stone surface.",
+      "color": [
+        "charcoal grey",
+        "warm beige",
+        "translucent glass",
+        "matte olive green",
+        "gold"
+      ],
+      "typography": "None visible outside of container labels.",
+      "information_density": "Low; purely visual focus on product forms and textures.",
+      "characteristics": [
+        "textural contrast",
+        "sculptural prop",
+        "multi-product display",
+        "hard shadows",
+        "minimalist staging"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.936
+}

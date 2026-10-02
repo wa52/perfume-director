@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large crisply hard-edge darker midnight octagon panel centred upper middle with clean straight cut facets fully visible behind the upper zone, intarsia lines fading to faint low-contrast mineral trace across the lower third plaque band, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [21, 18, 79, 76] uncluttered; reserve quiet negative space for ink in these areas: [[30, 87, 70, 91], [42, 83, 58, 84]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 250442642210911,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

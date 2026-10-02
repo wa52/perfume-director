@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "score": 78.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 62,
+    "background": 80,
+    "physical_integration": 88,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The left column still reads as a duplicated wordmark: logo 'Chloé' (bbox x90-171, y560-577, 24px) and title 'Chloé' (bbox x86-188, y700-728, 40px) are the same word at nearly the same width, stacked 123px apart. Visually (poster image 1) this is one word printed twice, not brand-mark-over-title; the brief's 'tailor's label' large-type title never appears because the only title string is the brand name again. text_product_overlap is false, so this is a hierarchy fault, not a collision."
+    },
+    {
+      "type": "typography",
+      "problem": "Subtitle and price are empty strings, so the promised narrow editorial column occupies only ~102px of the 1080px canvas (<10% width) and stops at y=728, floating in empty linen roughly 300px above the bottle's visual mass (bottle spans y562-1224). Against references 3-5, whose type blocks are scaled to anchor the frame, this type cluster is under-scaled and disconnected."
+    },
+    {
+      "type": "composition",
+      "problem": "The 2px linen-brown seam rule at (300,830) is nearly invisible against the #d9c09a cloth and sits in the gap between the type cluster (ends y728) and nothing below; the brief's full-height 'stitch' separating the two columns is not delivered, so the two-column editorial grid reads as an accident of margin rather than an intentional structure."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 fuse product, light and type into one resolved image (cast shadow as a compositional line, props echoing the bottle, type scaled to the frame). Here the cutout is faithful and the contact shadow is correct (confirmed in the base crop), but the micro-type and invisible rule remain pasted-on marks; the design-quality gap to the references is still obvious despite the improved linen cyclorama."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 96
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 820
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 252
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#6b4f33"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.46
+    }
+  ],
+  "reported_score": 76.0
+}

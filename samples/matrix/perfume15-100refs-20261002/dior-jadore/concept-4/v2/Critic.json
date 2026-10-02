@@ -1,0 +1,99 @@
+{
+  "pass": false,
+  "score": 80.4,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 72,
+    "background": 80,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "alignment",
+      "problem": "The top band is no longer on one axis: geometry gives title bbox [420,202,620,250] center x=520 while subtitle bbox [411,324,669,343] centers at 540 and logo bbox [500,108,576,133] at 538. In the poster the 'J'adore' line visibly sits ~20px left of the subtitle and rule it should stack with, so the couture top band reads subtly skewed instead of perfectly plum."
+    },
+    {
+      "type": "hierarchy",
+      "problem": "The subtitle 'EAU DE PARFUM' renders 258px wide against the title's 200px (bbox widths), i.e. the subordinate line is wider than the dominant line; visually the tracked caps line competes with 'J'adore' and flattens the declared top-light hierarchy step between title and subtitle."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "In the contact crop the shadow is a thin hard dark dash pinned exactly at the base line while the pleat stripes run straight and unbroken beneath it; on a radiating folded fan the grounding zone should pool slightly softer and wider. The bottle is correctly seated (offset_y 0 confirmed in crop), but the shadow edge quality reads pasted rather than born from the pleats."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3 and 5 the ink block lacks a finishing anchor: those campaigns close the composition with a price or descriptor line in the lower field, while here the entire lower 8% of canvas is empty pleats and the price layer carries an empty string, leaving the bottom of the poster unresolved."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 24
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 18
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.36
+    },
+    {
+      "path": "price.text",
+      "op": "set",
+      "value": "100 ML - VAPORISATEUR"
+    },
+    {
+      "path": "price.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "price.y",
+      "op": "set",
+      "value": 1372
+    },
+    {
+      "path": "price.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "price.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "price.color",
+      "op": "set",
+      "value": "#3a2430"
+    }
+  ],
+  "reported_score": 78.2
+}

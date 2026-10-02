@@ -1,0 +1,117 @@
+{
+  "brief": "为 Dior J’adore 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n把瓶颈的罗纹放大成整面背景：手工折纸的藏红扇褶自商品身后放射展开，纸褶的明暗条纹如高级定制的褶裙；商品沉于下幅如从褶裥中诞生，上半幅留出安静顶带。Times 题名以克制字号居中轻置、品牌字最小置顶、香型字垫于题名之下，构成上轻下重的 couture 网格；一条深紫细线横于顶带之下如折扇的骨线。纸的哑光折痕与玻璃的流动高光互为刚柔，放射褶是唯一的光线叙事。",
+  "product": "assets\\products\\dior-jadore-retailer.png",
+  "references": [
+    {
+      "id": "ref-7838477a52de",
+      "brand": "Chanel",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-7838477a52de.webp",
+      "selection_reason": "Professionally resolved luxury perfume still life featuring iconic branding, dynamic composition, and high-end studio lighting. Useful as a design reference for product arrangement and glass rendering.",
+      "analysis": {
+        "composition": "Dynamic asymmetrical arrangement with a large tilted bottle in the foreground left and a vertical stack of smaller bottles on the right, creating depth and visual interest.",
+        "subject_ratio": 0.75,
+        "negative_space": "Clean, uncluttered light grey gradient background at the top provides breathing room and emphasizes the product silhouette.",
+        "lighting": "High-key studio lighting with soft diffusion, creating crisp specular highlights on the glass facets and caps, and gentle shadows on the textured surface.",
+        "color": [
+          "#F5F5DC",
+          "#E0E0E0",
+          "#FFFFFF",
+          "#000000",
+          "#C0C0C0"
+        ],
+        "typography": "None visible outside the container labels. Text is strictly limited to the product packaging (N°5 L'EAU CHANEL PARIS).",
+        "information_density": "Low; focus is entirely on the product form and brand identity without extraneous copy.",
+        "characteristics": [
+          "Glass refraction",
+          "Iconic bottle shape",
+          "Pale yellow liquid",
+          "Textured ground plane",
+          "Minimalist aesthetic"
+        ],
+        "perfume_suitability": 98,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 254490615813550,
+  "background": {
+    "color": "#1c2657",
+    "prompt": "Seamless flat matte gouache-painted card in deep ink ultramarine, one large flat metal-leaf gold disc centered slightly above middle, fine engraved concentric rings radiating from the disc edge, perfectly even shadowless illumination, no objects, no texture gradients",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 309,
+    "height": 893
+  },
+  "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on leaf ring",
+  "palette": [
+    "#1c2657",
+    "#f2e6c8",
+    "#c9a24b"
+  ],
+  "title": {
+    "text": "J'adore",
+    "x": 352,
+    "y": 194,
+    "size": 120,
+    "color": "#f2e6c8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 386,
+    "y": 328,
+    "size": 30,
+    "color": "#f2e6c8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f2e6c8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 500,
+    "y": 122,
+    "size": 40,
+    "color": "#f2e6c8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 3
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 378,
+    "y": 377,
+    "width": 324,
+    "color": "#c9a24b"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

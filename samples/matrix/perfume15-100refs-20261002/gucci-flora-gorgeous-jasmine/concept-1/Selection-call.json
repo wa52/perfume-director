@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "3505cd4b5ee0e6f59f0a137de3a2f8defa75dc4c83901a2b384cd850aaf789c7"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "549b4fcf469a4cfcd980799db9f65e43de6fc6577fc34318dbb12afaf12890f5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c2c8116e-f999-95e3-b651-c467921362d4",
+      "usage": {
+        "prompt_tokens": 7367,
+        "total_tokens": 8777,
+        "completion_tokens": 1410,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6465,
+          "text_tokens": 902
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 385
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c2c8116e-f999-95e3-b651-c467921362d4",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7367,
+    "total_tokens": 8777,
+    "completion_tokens": 1410,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6465,
+      "text_tokens": 902
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 385
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 fulfills the Lido Terrazzo Tide-Line concept far more faithfully: the honed sea-glass mint terrazzo sweeps from wall into a continuous matching ground at a low horizon, with coral and teal marble chips echoing the label's garden exactly as briefed, while version 1 substitutes a warm oatmeal-cream terrazzo that drifts off the declared palette (#d9e6df mint ground) and reads as sandstone rather than sea-glass. In version 2 the opaque mint flacon sits flush on its true base line with a soft, measured contact shadow settling into the matte cement matrix under diffuse overcast open-shade light; version 1's base contact is fainter and the bottle feels slightly pasted against a wall/ground split whose two terrazzo scales do not match. Typography in both is a centred monument band (tracked Baskerville brand line, one generous serif name line, short coral ink rule), but version 2's deep-teal type holds better contrast against the mint matrix and the rule sits calmly above the cap. No studio equipment, no floating packshot, no raised support in either; version 2 simply delivers the tactile mineral-matte versus lacquer-gloss story with a more coherent, continuous set.",
+    "remaining_problems": [
+      "Version 2's upper wall chip density is busier than the 'calm upper wall' ideal; the monument band would breathe better with slightly quieter aggregate behind the type.",
+      "Contact shadow in version 2 is soft but very shallow; a touch more settled grounding at the base corners would reinforce physical contact.",
+      "Coral ink rule floats a little close to the name line in both versions; marginally more spacing would complete the waterline metaphor."
+    ]
+  },
+  "duration_seconds": 32.532
+}

@@ -1,0 +1,198 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803173943,
+    "background": {
+      "color": "#d9c09a",
+      "prompt": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon six tenths down the frame, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 620,
+      "y": 893,
+      "width": 812,
+      "height": 662
+    },
+    "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9c09a",
+      "#3a2c1c",
+      "#8a6a4a"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 86,
+      "y": 605,
+      "size": 40,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 907,
+      "size": 20,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 90,
+      "y": 511,
+      "size": 30,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 605,
+      "width": 4,
+      "color": "#8a6a4a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic",
+    "layout_fit": {
+      "requested_product": {
+        "x": 713,
+        "y": 893,
+        "height": 662
+      },
+      "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+    }
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803173943,
+    "background": {
+      "color": "#d9c09a",
+      "prompt": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon six tenths down the frame, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 620,
+      "y": 893,
+      "width": 812,
+      "height": 662
+    },
+    "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9c09a",
+      "#3a2c1c",
+      "#8a6a4a"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 86,
+      "y": 605,
+      "size": 40,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 907,
+      "size": 20,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 90,
+      "y": 511,
+      "size": 30,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 605,
+      "width": 4,
+      "color": "#8a6a4a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic",
+    "layout_fit": {
+      "requested_product": {
+        "x": 713,
+        "y": 893,
+        "height": 662
+      },
+      "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+    }
+  },
+  "source": "deterministic_director_guard"
+}

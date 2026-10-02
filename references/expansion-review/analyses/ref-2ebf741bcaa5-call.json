@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-2ebf741bcaa5.webp",
+      "sha256": "539d4652f1ca1c79f6997b764302f24bb9415dea21482e1ae0fdfb7d03148295"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-8b0801cc-b3cf-99d1-9b83-93c108ee14f4",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1861,
+        "completion_tokens": 322,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 322
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8b0801cc-b3cf-99d1-9b83-93c108ee14f4",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1861,
+    "completion_tokens": 322,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 322
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Amouage",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life with dramatic lighting and clear brand identity, suitable for high-end design reference.",
+    "analysis": {
+      "composition": "Centered, symmetrical product shot with a strong vertical axis emphasized by the light flare.",
+      "subject_ratio": 0.65,
+      "negative_space": "Smooth gradient background providing ample breathing room around the central subject.",
+      "lighting": "Dramatic backlighting creating a starburst lens flare at the cap, with soft frontal fill illuminating the white bottle.",
+      "color": [
+        "white",
+        "gold",
+        "beige",
+        "brown"
+      ],
+      "typography": "None outside the container; text is limited to embossed branding on the bottle and collar.",
+      "information_density": "Low, focused entirely on the product form and material quality.",
+      "characteristics": [
+        "opulent",
+        "radiant",
+        "symmetrical",
+        "high-contrast",
+        "metallic accents"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 30.774
+}

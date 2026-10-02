@@ -1,0 +1,339 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6a525390-af18-9689-b3b3-8ebe30d67509",
+      "usage": {
+        "prompt_tokens": 23470,
+        "total_tokens": 29377,
+        "completion_tokens": 5907,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 8944,
+          "text_tokens": 14526
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1810
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6a525390-af18-9689-b3b3-8ebe30d67509",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 23470,
+    "total_tokens": 29377,
+    "completion_tokens": 5907,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 8944,
+      "text_tokens": 14526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1810
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Risograph Stride Halftone",
+        "brief": "A flat print-shop poster: matte sea-glass risograph paper carries an oversized halftone dot field that thickens toward the lower right like a stride freezing into motion, crossed by one hard vermilion diagonal bar echoing the stiletto arch. The opaque red cutout stands centred in the lower two-thirds, its baked speculars untouched by the flat ink world, while the whole typographic monument stacks in a calm upper band: wide-tracked brand line, heavy Bodoni name, closed by a short ink rule like a press registration mark. No floor, no horizon - pure dot-gradient narrative against lacquer gloss.",
+        "material": "risograph-printed matte paper with halftone dot gradient and hard-edge printed stripe",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-6ced6279f2e6",
+          "ref-453438bbcb76",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#bcd6c6",
+          "#123328",
+          "#d8402f"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.315,
+            0.155,
+            88
+          ],
+          "logo": [
+            0.385,
+            0.075,
+            26
+          ],
+          "subtitle": [
+            0.45,
+            0.26,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot gradient densifying toward lower right, one hard-edge flat vermilion diagonal stripe crossing lower third, perfectly even shadowless illumination, no texture gradients beyond dots, no objects",
+        "line": [
+          0.44,
+          0.252,
+          0.12
+        ]
+      },
+      {
+        "name": "Midnight Ballroom Two-Column",
+        "brief": "A photographic night interior: a deep ink-blue painted hall meets a continuous dark lacquered parquet ground at a low horizon, one soft pool of ambient light breathing on the floor behind the subject's true base line where the measured contact shadow lands on toe and heel tips. The cutout holds the right column while the left column carries a wrapped narrow-sans monument: brand at column head, the name across two tall wrapped lines, a short pale rule closing the column - vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest. Matte night paint against vermilion lacquer reads as quiet theatre after hours.",
+        "material": "ink-blue painted hall wall with continuous dark lacquered parquet ground",
+        "lighting": "soft diffuse nocturnal ambient with one gentle pool of light on the ground, no hard shadows, matching upper-front-left key",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-7a523ada9a2c",
+          "ref-403f9139347c",
+          "ref-f305dbbdf3bc"
+        ],
+        "palette": [
+          "#1b2a44",
+          "#eef962",
+          "#c9a24b"
+        ],
+        "product": [
+          0.66,
+          0.56,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.08,
+            0.4,
+            110
+          ],
+          "logo": [
+            0.08,
+            0.315,
+            26
+          ],
+          "subtitle": [
+            0.08,
+            0.66,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 360,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Deep ink-blue painted hall wall meeting a continuous dark lacquered parquet ground at a low horizontal horizon, one soft pool of pale ambient light glowing on the ground behind center, matte paint grain, gentle diffuse nocturnal illumination, no objects",
+        "line": [
+          0.08,
+          0.645,
+          0.1
+        ]
+      },
+      {
+        "name": "Blush Paper Contour Plaque",
+        "brief": "A constructed paper sculpture: concentric die-cut blush paper layers stack into a soft topographic oval valley centred upper-middle, each cut edge casting a hairline shade so depth reads as contour lines behind the silhouette. The cutout is lifted into the upper two-thirds, standing out of the paper valley, while the lower third becomes a quiet plaque band: brand line, then the geometric sans name set wide and centred at near band width, closed by a thin rose rule floating between image and text like a cut edge. Layered matte card against glossy lacquer tells the story entirely through cut depth.",
+        "material": "concentric die-cut layered paper cards in shifted blush tones",
+        "lighting": "even diffuse frontal light with hairline shade under each cut edge, flat graphic illumination",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-41b5b67289d6",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#e7c9c2",
+          "#4a2027",
+          "#b8455a"
+        ],
+        "product": [
+          0.5,
+          0.44,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.14,
+            0.8,
+            72
+          ],
+          "logo": [
+            0.375,
+            0.745,
+            24
+          ],
+          "subtitle": [
+            0.45,
+            0.9,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Concentric die-cut layered paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, hairline soft shade under each cut edge, matte card fibre grain, even shadowless frontal illumination, no objects, no horizon",
+        "line": [
+          0.42,
+          0.782,
+          0.16
+        ]
+      },
+      {
+        "name": "Verdigris Felt Spotlight Monument",
+        "brief": "A tactile photographic cyclorama: deep verdigris wool felt sweeps from wall into a continuous felt ground with no visible seam, one soft elliptical spotlight pool falling behind the upper zone so the pile glows gently around the silhouette. The cutout rests low-right at its true base line, contact shadow absorbed by the pile at toe and heel tips, while a compact Baskerville monument sits in the calm upper-left felt: brand line above, name below, ending well above the cap so the grid stays upper-left weighted against the lower-right subject. Felt pile swallows light; the lacquered red and gold heel own every highlight.",
+        "material": "deep verdigris wool felt cyclorama with soft pile",
+        "lighting": "one soft elliptical spotlight pool from upper front on felt, otherwise gentle diffuse ambient, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-41b5b67289d6",
+          "ref-b4d87aee2707",
+          "ref-403f9139347c"
+        ],
+        "palette": [
+          "#2f4a40",
+          "#f2e8da",
+          "#c9a24b"
+        ],
+        "product": [
+          0.62,
+          0.66,
+          0.55
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.08,
+            0.15,
+            72
+          ],
+          "logo": [
+            0.08,
+            0.075,
+            24
+          ],
+          "subtitle": [
+            0.08,
+            0.245,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.08,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Deep verdigris green wool felt cyclorama sweeping from wall into continuous felt ground with no visible seam, one soft elliptical pool of lighter light on the upper center pile, fine felt fibre grain, gentle diffuse illumination, no objects",
+        "line": [
+          0.08,
+          0.232,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 141.881
+}

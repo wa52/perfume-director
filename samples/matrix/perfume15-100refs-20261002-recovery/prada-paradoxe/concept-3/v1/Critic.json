@@ -1,0 +1,118 @@
+{
+  "pass": false,
+  "score": 72.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 72,
+    "typography": 66,
+    "background": 70,
+    "physical_integration": 62,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [101,854,979,1104] shows the glass base edge ending at y≈994 with only a faint 10px blur bleed, while the wall-to-floor horizon sits ~14px lower at y≈1008; the bottle reads as hovering just in front of the wall joint instead of resting on the glazed ground. The shadow footprint (width_scale default, opacity 0.35) is too weak and too narrow against the 618px contact width to anchor the 720px hero on a reflective tile floor."
+    },
+    {
+      "type": "typography",
+      "problem": "The nameplate band is broken: logo 'PRADA' renders centered at x≈495 while the title 'Paradoxe' (bbox 173-600, center ≈386) is left-aligned, so the two type blocks sit on different axes; the peach decoration rule (x 346-735, center ≈540) sits on a third axis. Three competing centers fracture the ledger band that the concept intends as one aligned plaque."
+    },
+    {
+      "type": "typography",
+      "problem": "Title hierarchy is under-scaled for a hero campaign: 'Paradoxe' spans only 427px of a 1080px canvas (≈40% width) at size 112, leaving the lower band mostly empty tile; references carry a confident full-band masthead. The cream ink #f2e4d2 on mid-value cocoa tile also sits near the renderer's contrast correction threshold."
+    },
+    {
+      "type": "background",
+      "problem": "The generated tile ground reads as a flat repeating texture with perspective grout lines but no glossy sheen arcs or reflected warmth on the floor plane, so the 'glazed cellar' material claim is only half delivered; the floor zone behind the type is busier than the wall zone behind the product, inverting the figure-ground emphasis the references achieve."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical rhythm is top-heavy: 274px of empty wall above the cap versus a cramped 130px between bottle base and logo, so the product floats high while the nameplate band feels squeezed against the base; the brief's 'complete wide nameplate band' is not given enough breathing room."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 90
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 132
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1150
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 476
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1064
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1112
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 480
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 664
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame; low glossy sheen arcs on each wall tile face and soft mirrored warm reflections streaking across the floor tiles, gentle warm diffuse frontal illumination fading darker toward the lower band, no objects"
+    }
+  ],
+  "reported_score": 74
+}

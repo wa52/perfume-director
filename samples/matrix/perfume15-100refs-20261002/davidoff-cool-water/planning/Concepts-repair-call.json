@@ -1,0 +1,344 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "davidoff-cool-water-retailer.png",
+      "sha256": "69351a277f92031180d3bc91d2e4137f6535b84b57ae872c4830335bcd1f034c"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-62ff901b9d4a.webp",
+      "sha256": "d1d9ce1dc6e14beacf166a7b3d41de5a0e864963fe777688bf8cc3d2d9f95572"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "TimeoutError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-464e0815-b055-99fc-928b-80a89c7c29e2",
+      "usage": {
+        "prompt_tokens": 31952,
+        "total_tokens": 37931,
+        "completion_tokens": 5979,
+        "prompt_tokens_details": {
+          "cached_tokens": 31744,
+          "image_tokens": 9144,
+          "text_tokens": 22808
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1882
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-464e0815-b055-99fc-928b-80a89c7c29e2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 31952,
+    "total_tokens": 37931,
+    "completion_tokens": 5979,
+    "prompt_tokens_details": {
+      "cached_tokens": 31744,
+      "image_tokens": 9144,
+      "text_tokens": 22808
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1882
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Sonar Ping Chart Monument",
+        "brief": "Cool Water as a single ping on a nautical chart: a flat matte glacier-mint card carries fine concentric sonar rings in deep marine teal expanding from the exact centre of the frame, one thicker hard-edge ring marking the return echo. The upright blue slab stands centred in the lower two-thirds as the source of the ping, its baked backlight glow untouched by the flat ink world. All type stacks in a calm centred monument band at the top: wide-tracked Bodoni brand line, the name in one generous Didone line, the eau de toilette line closing the stack, with a short teal rule floating beneath like a chart刻度. No floor, no horizon - pure radial echo geometry against translucent ocean glass.",
+        "material": "flat matte screen-printed chart paper with concentric sonar rings",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-453438bbcb76",
+          "ref-f305dbbdf3bc"
+        ],
+        "palette": [
+          "#d7e6e3",
+          "#0d2b33",
+          "#1f7f96"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.257,
+            0.1,
+            110
+          ],
+          "logo": [
+            0.408,
+            0.052,
+            30
+          ],
+          "subtitle": [
+            0.346,
+            0.18,
+            30
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte chart paper in pale glacier mint, fine concentric sonar rings in deep marine teal expanding from the exact center of the frame, one thicker hard-edge ring at mid radius, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.44,
+          0.228,
+          0.12
+        ]
+      },
+      {
+        "name": "Bathymetric Contour Plaque",
+        "brief": "The juice read as ocean depth: a flat petrol-teal card printed with thin pale bathymetric contour lines swirling across the upper two-thirds like a sea-floor survey, one hard-edge darker depth band sinking behind the shoulders. The cutout is lifted into the upper zone so the lower third stays a completely calm plaque band: tracked geometric-sans brand line, the name set wide and centred in Century Gothic capitals near band width, the eau de toilette line beneath, closed by a short pale rule floating under the stack like a survey tick. No floor, no horizon - pure line-density descent narrative against glowing blue glass.",
+        "material": "flat matte printed card with bathymetric contour line engraving",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-453438bbcb76",
+          "ref-7a523ada9a2c",
+          "ref-d2db4b80bde2"
+        ],
+        "palette": [
+          "#0f3a44",
+          "#e8f2f0",
+          "#5fc0d0"
+        ],
+        "product": [
+          0.5,
+          0.45,
+          0.58
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.2113,
+            0.8,
+            104
+          ],
+          "logo": [
+            0.4111,
+            0.75,
+            30
+          ],
+          "subtitle": [
+            0.3675,
+            0.882,
+            30
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 5,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte card in deep petrol teal, thin pale ice-blue bathymetric contour lines swirling across the upper two thirds like a sea-floor survey map, one hard-edge darker teal depth band crossing behind the middle, perfectly even shadowless illumination, no texture gradients beyond printed lines, no objects",
+        "line": [
+          0.44,
+          0.925,
+          0.12
+        ]
+      },
+      {
+        "name": "Board-formed Sea Wall Ledger",
+        "brief": "A brutalist coast after mist: board-formed concrete wall with horizontal formwork seams and round tie marks meets a continuous honed concrete ground at a horizon aligned exactly with the true base line, cool diffuse sea-fog light keeping every tone matte. The cutout stands right of centre on that ground, its measured contact shadow settling into the pale cement, while the left wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, the eau de toilette line and a short slate rule closing the column like a tide gauge mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column editorial grid honest; cold cement matte against luminous ocean-blue glass is the whole temperature story.",
+        "material": "board-formed concrete wall with continuous honed concrete ground",
+        "lighting": "cool diffuse overcast sea-fog daylight, soft frontal with no hard shadows, matching the baked studio light",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-62ff901b9d4a",
+          "ref-efb51dc5d487",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#b9c0c2",
+          "#16232a",
+          "#2e7f96"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.07,
+            0.4,
+            96
+          ],
+          "logo": [
+            0.07,
+            0.345,
+            28
+          ],
+          "subtitle": [
+            0.07,
+            0.585,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 1,
+              "max_width": 340,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 5
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground at a horizontal horizon six tenths down the frame, matte cement grain, cool diffuse overcast fog light, even shadowless illumination, no objects",
+        "line": [
+          0.07,
+          0.645,
+          0.1
+        ]
+      },
+      {
+        "name": "Glacier Meltwater Basin",
+        "brief": "Meltlight under ice: a photographic polar basin where a continuous matte glacier-ice sheet sweeps to a low horizon exactly at the true base line, and soft turquoise meltwater caustic ripples drift across the ice and the pale mist sky above. The cutout stands left of centre on that ice, contact shadow absorbed at its foot, while the right half stays calm for a wrapped Arial Narrow column: brand at column head, the name across two tall condensed lines, the eau de toilette line and a short glacier rule closing the column like a core-sample mark. Vertical overlap with the cap zone but wide horizontal clearance keeps the asymmetric grid deliberate; frozen white matte against saturated ocean-blue glass reads as water at both ends of its life.",
+        "material": "matte glacier ice sheet with turquoise meltwater caustic light",
+        "lighting": "soft high-key polar daylight, diffuse cool frontal with gentle moving caustic ripples, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-7a523ada9a2c",
+          "ref-efb51dc5d487"
+        ],
+        "palette": [
+          "#e6eeef",
+          "#12333c",
+          "#37b0c4"
+        ],
+        "product": [
+          0.32,
+          0.6,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.56,
+            0.4,
+            104
+          ],
+          "logo": [
+            0.56,
+            0.345,
+            28
+          ],
+          "subtitle": [
+            0.56,
+            0.592,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 400,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Continuous matte glacier ice sheet in pale blue-white sweeping to a low horizontal horizon six tenths down the frame under a pale mist sky, soft turquoise meltwater caustic ripple light drifting across ice and sky, fine snow grain, soft high-key diffuse polar illumination, no objects",
+        "line": [
+          0.56,
+          0.652,
+          0.1
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 1635.215
+}

@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) is the only candidate that satisfies the Alabaster Arcade Caustics brief as a finished photograph: the honed pale stone ground meets the plaster wall at a horizon that coincides with the flacon's true base line, so the bottle stands rather than floats, and a soft contact shadow plus faint reflected warmth anchor the foot. The single soft arched pool of morning light falls from above with gentle caustic ripple drifting across the floor, matching the declared lighting with no hard shadows. The Century Gothic column is correctly built on the calm right wall: GUERLAIN at column head, SHALIMAR in one wide line, short blue rule closing the column, with honest horizontal clearance from the bottle's shoulder. The cool stone matte against the warm amber juice reads exactly as the intended temperature story, and the product cutout (blue dome cap, grosgrain ribbon, amber transmission) stays faithful and recognisable. Version 1 (image 5) instead parks the bottle inside a deep arched niche whose sill sits above the visible floor horizon, leaving the foot without a credible ground plane or contact shadow - a floating packshot in front of a raised support - and its diagonal shaft of light cuts across the type zone, disturbing the column's calm.",
+  "remaining_problems": [
+    "Version 2's caustic ripple is strongest on the floor and only faintly drifts across the upper light pool; the brief's 'ripples across the arch' motif could be more legible on the wall.",
+    "The contact shadow under the pedestal is very tight and slightly dark-edged; a softer, more directional morning shadow would integrate the foot further.",
+    "The right-hand column sits a touch高 in vertical relation to the bottle shoulder, leaving the lower right quadrant emptier than the upper; minor grid imbalance.",
+    "Version 1 remains unusable as-is: floating base line above the horizon, niche sill acting as an unintended support, and硬 light shaft competing with the typography."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

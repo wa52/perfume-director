@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) delivers the 'Silver Pleat Etching Plaque' concept with a cleaner finish: the sage matte card carries fine engraved vertical fluting that falls uninterrupted from the top and is cut by one hard-edge blank plaque band in the lower third, exactly per the brief. The product cutout is faithful (fluted glass, silver cap, nude bow fully legible) and sits lifted in the upper field with the fluting passing behind its shoulders without touching the embossed label. Typography inside the plaque is coherent and hierarchical: wide-tracked small brand line at the band top, a graphite hairline like an etching scratch, then a large geometric sans title centered and spanning most of the band width. Lighting is the required flat, shadowless graphic ink light, and the set is free of studio equipment, floating-support artifacts or behind-the-scenes clutter. Version 1 (image 5) is weaker: stray debossed alphanumeric glyphs noise the top margin, the large title drifts off-center and left-weighted inside the band, the small brand line collides with the band's top edge, and the plaque's heavy drop shadow reads as a pasted panel rather than an etched band.",
+  "remaining_problems": [
+    "Title sets 'Chloé' in mixed case rather than the briefed geometric uppercase capitals, softening the etched-plaque authority",
+    "Plaque band reads as a rounded rectangle with a soft drop shadow, slightly undercutting the 'hard-edge blank band sunk into the card' idea",
+    "Vertical fluting lines are very low contrast in the upper field, so the line-density fall narrative is subtler than intended",
+    "Graphite hairline is faint and short relative to band width, weakening the etching-knife mark gesture"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

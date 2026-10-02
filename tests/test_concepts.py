@@ -54,6 +54,25 @@ class FreshConceptTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'topology'):
             concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
 
+    def test_campaign_typography_reference_is_required_when_available(self):
+        refs=copy.deepcopy(self.refs)
+        refs.append({'id':'type-ref','brand':'TYPE','analysis':{'has_campaign_typography':True}})
+        with self.assertRaisesRegex(ValueError,'actual campaign typography'):
+            concepts.validate_plans(poster,self.config,self.plans(),self.product,refs,self.words)
+        plans=self.plans()
+        for item in plans['directions']:item['reference_ids'][0]='type-ref'
+        self.assertEqual(len(concepts.validate_plans(poster,self.config,plans,self.product,refs,self.words)),4)
+
+    def test_short_reference_aliases_resolve_exactly_without_guessing_unknown_ids(self):
+        value=self.plans()
+        for item in value['directions']:item['reference_ids']=['R1','R2','R3']
+        resolved=concepts.resolve_reference_ids(value,self.refs)
+        self.assertEqual(resolved['directions'][0]['reference_ids'],['0','1','2'])
+        self.assertEqual(value['directions'][0]['reference_ids'],['R1','R2','R3'])
+        value['directions'][0]['reference_ids'][0]='R9'
+        with self.assertRaisesRegex(ValueError,'supplied reference IDs'):
+            concepts.validate_plans(poster,self.config,concepts.resolve_reference_ids(value,self.refs),self.product,self.refs,self.words)
+
     def test_relationship_uses_actual_visible_bboxes_not_declared_names(self):
         plans=concepts.validate_plans(poster,self.config,self.plans(),self.product,self.refs,self.words)
         self.assertEqual({p['layout_relation'] for p in plans},{'above','below','beside'})

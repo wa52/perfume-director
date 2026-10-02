@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-9f140246ff69.webp",
+      "sha256": "7755801eb829e1e45660301c0302933f04b5cc30fb3afe71e29cafcd42d550c9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-8e87aac6-3101-9358-9384-a0943ef40a20",
+      "usage": {
+        "prompt_tokens": 1499,
+        "total_tokens": 1815,
+        "completion_tokens": 316,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1202,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 316
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8e87aac6-3101-9358-9384-a0943ef40a20",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1499,
+    "total_tokens": 1815,
+    "completion_tokens": 316,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1202,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 316
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved editorial still-life featuring dynamic bottle arrangement and striking internal bubble textures; excellent lighting and material study for fragrance design reference.",
+    "analysis": {
+      "composition": "Tight, interlocking cluster of three cubic glass bottles oriented at varying angles to create a geometric, puzzle-like structure.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, soft warm gradient background tightly framing the subjects.",
+      "lighting": "Bright studio backlighting and softbox reflections emphasizing glass transparency, refraction, and liquid volume.",
+      "color": [
+        "warm beige",
+        "amber yellow",
+        "cobalt blue",
+        "clear",
+        "black"
+      ],
+      "typography": "None",
+      "information_density": "Low, purely visual focus on form and texture.",
+      "characteristics": [
+        "internal liquid bubbles",
+        "thick glass bases",
+        "geometric stacking",
+        "high refraction",
+        "macro product detail"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.401
+}

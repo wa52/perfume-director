@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-338e8aabc8bc.webp",
+      "sha256": "2750487160b05a6867bc4cbd975764d925c9f12bd4fe80e1555476f3a3b24cb1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-a474c4c1-a735-9ac3-a826-666b3f9ec892",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 835,
+        "completion_tokens": 332,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 332
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-a474c4c1-a735-9ac3-a826-666b3f9ec892",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 835,
+    "completion_tokens": 332,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 332
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Mizensir",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life featuring elegant staging, warm directional lighting, and organic props. High design reference value for editorial product photography.",
+    "analysis": {
+      "composition": "Triangular arrangement of three glass flacons on cylindrical pedestals, intersected by rustic wooden branches within an arched backdrop framing.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate, structured by the architectural arch and deep shadows at the periphery.",
+      "lighting": "Warm, directional studio lighting creating golden highlights on glass and metallic caps, with soft, defining shadows.",
+      "color": [
+        "amber",
+        "gold",
+        "olive green",
+        "bronze",
+        "warm brown"
+      ],
+      "typography": "None visible outside of product labels.",
+      "information_density": "Low, focused entirely on product aesthetics and mood.",
+      "characteristics": [
+        "organic props",
+        "architectural framing",
+        "golden hour palette",
+        "glass refraction",
+        "pedestal display"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 13.095
+}

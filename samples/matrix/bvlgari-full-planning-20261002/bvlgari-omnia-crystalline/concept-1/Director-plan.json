@@ -1,0 +1,108 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\eae01081e310\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Nacre Twin-Disc Tide",
+    "brief": "把双盘珠光读作一整面贝母海：母贝拼贴墙面以细密贝壳片排成旋涡纹， iridescent 冷光在片缝间流转，连续同料贝母地面在真实基准线接墙。商品立于贝地偏左，测量接触阴影陷进贝壳拼缝；右半幅贝面保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如蚀刻签条，一条贝蓝细线横垫柱底如潮位刻度。垂直方向与盘肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；贝母的冷 iridescent 哑光与透明晶带的硬折光互为虚实。参考 R1 的负空间右栏排印层级与 R7 的柔光珠色秩序。",
+    "material": "mother-of-pearl shell inlay wall sweeping into continuous matching nacre ground",
+    "lighting": "soft high-key diffuse studio light with gentle iridescent sheen drift across shell facets, cool frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#d3dbe0",
+      "#18242e",
+      "#6f9aa8"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 258248070522667,
+    "background": {
+      "color": "#d3dbe0",
+      "prompt": "Mother-of-pearl shell inlay wall in cool pale blue-grey with fine iridescent nacre flakes set in a slow swirl pattern, meeting a continuous matching nacre shell ground at a horizontal horizon six tenths down the frame, gentle iridescent sheen drift, soft high-key diffuse illumination, matte shell grain, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 356,
+      "y": 864,
+      "width": 546,
+      "height": 749
+    },
+    "lighting": "soft high-key diffuse studio light with gentle iridescent sheen drift across shell facets, cool frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#d3dbe0",
+      "#18242e",
+      "#6f9aa8"
+    ],
+    "title": {
+      "text": "Omnia Crystalline",
+      "x": 707,
+      "y": 720,
+      "size": 74,
+      "color": "#18242e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 713,
+      "y": 1037,
+      "size": 20,
+      "color": "#18242e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#18242e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "BVLGARI",
+      "x": 713,
+      "y": 605,
+      "size": 30,
+      "color": "#18242e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 713,
+      "y": 1008,
+      "width": 259,
+      "color": "#6f9aa8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

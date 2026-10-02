@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "target_count": 15,
+  "count": 15,
+  "products": [
+    {
+      "id": "dior-jadore",
+      "brand": "Dior",
+      "name": "J’adore",
+      "source_url": "https://mondo-parfum.de/Dior-J-adore-Eau-de-Parfum-100-ml/SW10238.2",
+      "image_url": "https://mondo-parfum.de/media/9d/05/00/1759494959/Dior%20Jadore%20Eau%20de%20Parfum.png?ts=1759494959",
+      "visual_challenges": "细长金色瓶颈、圆形透明瓶腹，窄轮廓和金属反射",
+      "fragrance_position": "floral",
+      "fragrance_position_status": "coarse test-coverage label; linked retailer description",
+      "brief": "为 Dior J’adore 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Dior",
+        "title": "J’adore",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        290,
+        16,
+        710,
+        1236
+      ],
+      "transparent_fraction": 0.74645,
+      "opaque_fraction": 0.24758,
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+      "local_path": "assets/products/dior-jadore-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "tom-ford-tobacco-vanille",
+      "brand": "Tom Ford",
+      "name": "Tobacco Vanille",
+      "source_url": "https://mondo-parfum.de/Tom-Ford-Tobacco-Vanille-Eau-de-Parfum-30-ml/TOM-008.1",
+      "image_url": "https://mondo-parfum.de/media/02/95/be/1758712401/Tom%20Ford%20Tobacco%20Vanille%20Eau%20de%20Parfum.png?ts=1758712401",
+      "visual_challenges": "深棕不透明直角瓶、金色边框标签，暗部识别与接触阴影",
+      "fragrance_position": "tobacco_vanilla",
+      "fragrance_position_status": "coarse test-coverage label; linked retailer description",
+      "brief": "为 Tom Ford Tobacco Vanille 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Tom Ford",
+        "title": "Tobacco Vanille",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        238,
+        26,
+        783,
+        1236
+      ],
+      "transparent_fraction": 0.52403,
+      "opaque_fraction": 0.46708,
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6",
+      "local_path": "assets/products/tom-ford-tobacco-vanille-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "prada-paradoxe",
+      "brand": "Prada",
+      "name": "Paradoxe",
+      "source_url": "https://mondo-parfum.de/Prada-Paradoxe-Eau-de-Parfum-90ml/SW10250.2",
+      "image_url": "https://mondo-parfum.de/media/70/41/c6/1772189666/Prada%20Paradoxe%20Eau%20de%20Parfum.png?ts=1772189666",
+      "visual_challenges": "三角形透明瓶、黑色侧盖，宽轮廓与留白协调",
+      "fragrance_position": "floral_amber",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Prada Paradoxe 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Prada",
+        "title": "Paradoxe",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:06.859137+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        38,
+        161,
+        962,
+        1088
+      ],
+      "transparent_fraction": 0.49426,
+      "opaque_fraction": 0.49835,
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418",
+      "local_path": "assets/products/prada-paradoxe-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "mugler-angel",
+      "brand": "Mugler",
+      "name": "Angel",
+      "source_url": "https://mondo-parfum.de/Thierry-Mugler-Angel-Eau-de-Parfum-50ml/SW10267",
+      "image_url": "https://mondo-parfum.de/media/2f/a3/d8/1758058638/Thierry%20Mugler%20Angel%20Eau%20de%20Parfum.png?ts=1758058638",
+      "visual_challenges": "蓝色透明星形瓶、尖角与镜面金属，非矩形接地",
+      "fragrance_position": "gourmand",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Mugler Angel 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Mugler",
+        "title": "Angel",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:07.867427+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        80,
+        41,
+        873,
+        1228
+      ],
+      "transparent_fraction": 0.59946,
+      "opaque_fraction": 0.38928,
+      "sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558",
+      "local_path": "assets/products/mugler-angel-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "carolina-herrera-very-good-girl",
+      "brand": "Carolina Herrera",
+      "name": "Very Good Girl",
+      "source_url": "https://mondo-parfum.de/Carolina-Herrera-Very-Good-Girl-Eau-de-Parfum-50ml/SW10152",
+      "image_url": "https://mondo-parfum.de/media/c3/61/91/1753051153/Carolina%20Herrera%20Very%20Good%20Girl%20Eau%20de%20Parfum%2050%20ml.png?ts=1759488360",
+      "visual_challenges": "红色高跟鞋造型、细金属鞋跟，非单点接地",
+      "fragrance_position": "fruity_floral",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Carolina Herrera Very Good Girl 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Carolina Herrera",
+        "title": "Very Good Girl",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:08.013875+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        231,
+        12,
+        770,
+        1239
+      ],
+      "transparent_fraction": 0.71612,
+      "opaque_fraction": 0.27682,
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538",
+      "local_path": "assets/products/carolina-herrera-very-good-girl-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "bvlgari-omnia-crystalline",
+      "brand": "Bvlgari",
+      "name": "Omnia Crystalline",
+      "source_url": "https://mondo-parfum.de/Bvlgari-Omnia-Crystalline-Woman-Eau-de-Toilette-40ml/BVL-00001",
+      "image_url": "https://mondo-parfum.de/media/7c/2c/7b/1758481754/Bvlgari%20Omnia%20Crystalline%20Woman%20Eau%20de%20Toilette%2040ml-png--.png?ts=1758481819",
+      "visual_challenges": "双环银色透明瓶、内部镂空与高反光",
+      "fragrance_position": "floral_woody",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Bvlgari Omnia Crystalline 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Bvlgari",
+        "title": "Omnia Crystalline",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:08.169787+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        74,
+        36,
+        937,
+        1225
+      ],
+      "transparent_fraction": 0.29024,
+      "opaque_fraction": 0.69439,
+      "sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901",
+      "local_path": "assets/products/bvlgari-omnia-crystalline-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "gucci-flora-gorgeous-jasmine",
+      "brand": "Gucci",
+      "name": "Flora Gorgeous Jasmine",
+      "source_url": "https://mondo-parfum.de/Gucci-Flora-Gorgeous-Jasmine-Eau-de-Parfum-100ml/SW10249.2",
+      "image_url": "https://mondo-parfum.de/media/13/e3/73/1759505511/Gucci%20Flora%20Gucci%20Gorgeous%20Jasmine%20Eau%20de%20Parfum%20----.png?ts=1759505511",
+      "visual_challenges": "青绿色不透明细长瓶、繁复花纹标签与大黑盖",
+      "fragrance_position": "white_floral",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Gucci Flora Gorgeous Jasmine 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Gucci",
+        "title": "Flora Gorgeous Jasmine",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:11.660994+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        242,
+        16,
+        757,
+        1235
+      ],
+      "transparent_fraction": 0.59421,
+      "opaque_fraction": 0.40096,
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66",
+      "local_path": "assets/products/gucci-flora-gorgeous-jasmine-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "guerlain-shalimar",
+      "brand": "Guerlain",
+      "name": "Shalimar",
+      "source_url": "https://mondo-parfum.de/Guerlain-Shalimar-Eau-de-Parfum-90ml/SW10313",
+      "image_url": "https://mondo-parfum.de/media/70/66/1e/1758056107/Guerlain%20Shalimar-1.png?ts=1758056107",
+      "visual_challenges": "扇形蓝色大盖、宽玻璃瓶、金色液体和小底座",
+      "fragrance_position": "amber_vanilla",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Guerlain Shalimar 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Guerlain",
+        "title": "Shalimar",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:12.043984+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        40,
+        20,
+        960,
+        1229
+      ],
+      "transparent_fraction": 0.47846,
+      "opaque_fraction": 0.51453,
+      "sha256": "16f14f209aa3391890febf4d15941aa73ae2c839b2e61e57fb8cdc4b857f566c",
+      "local_path": "assets/products/guerlain-shalimar-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "hermes-terre",
+      "brand": "Hermès",
+      "name": "Terre d’Hermès",
+      "source_url": "https://mondo-parfum.de/Hermes-Terre-d-Hermes-Eau-de-Toilette-100ml/SW10236.1",
+      "image_url": "https://mondo-parfum.de/media/42/9c/de/1759514809/Terre%20de%20Hermes%20edt.png?ts=1759514809",
+      "visual_challenges": "棕色透明直角瓶、黑橙底部、边缘反射与小字",
+      "fragrance_position": "woody_citrus",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Hermès Terre d’Hermès 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Hermès",
+        "title": "Terre d’Hermès",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:12.294892+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        162,
+        7,
+        874,
+        1238
+      ],
+      "transparent_fraction": 0.42779,
+      "opaque_fraction": 0.5608,
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755",
+      "local_path": "assets/products/hermes-terre-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "davidoff-cool-water",
+      "brand": "Davidoff",
+      "name": "Cool Water",
+      "source_url": "https://mondo-parfum.de/Davidoff-Cool-Water-Men-Eau-de-Toilette-125ml/DAV-00008.1",
+      "image_url": "https://mondo-parfum.de/media/db/bc/de/1759491387/Davidoff%20Cool%20Water%20Men%20EDT-----.png?ts=1759491387",
+      "visual_challenges": "细长深蓝透明瓶、小金色字标与深色底部",
+      "fragrance_position": "aromatic_aquatic",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Davidoff Cool Water 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Davidoff",
+        "title": "Cool Water",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:12.581718+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        254,
+        18,
+        754,
+        1227
+      ],
+      "transparent_fraction": 0.58705,
+      "opaque_fraction": 0.40252,
+      "sha256": "69351a277f92031180d3bc91d2e4137f6535b84b57ae872c4830335bcd1f034c",
+      "local_path": "assets/products/davidoff-cool-water-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "kenzo-jungle",
+      "brand": "Kenzo",
+      "name": "Jungle",
+      "source_url": "https://mondo-parfum.de/Kenzo-Jungle-Eau-de-Parfum-30ml/SW10154",
+      "image_url": "https://mondo-parfum.de/media/0d/80/f5/1758055985/Kenzo%20Jungle%20edp%2030%20ml.png?ts=1758055985",
+      "visual_challenges": "金色象形雕塑瓶盖、琥珀圆肩瓶，轮廓细节复杂",
+      "fragrance_position": "spicy_amber",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Kenzo Jungle 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Kenzo",
+        "title": "Jungle",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:16.030706+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        28,
+        57,
+        949,
+        1193
+      ],
+      "transparent_fraction": 0.34463,
+      "opaque_fraction": 0.6181,
+      "sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15",
+      "local_path": "assets/products/kenzo-jungle-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "chloe-eau-de-parfum",
+      "brand": "Chloé",
+      "name": "Chloé",
+      "source_url": "https://mondo-parfum.de/Chloe-Chloe-Eau-de-Parfum-50ml/CHL-00001.1",
+      "image_url": "https://mondo-parfum.de/media/4e/a3/f2/1759489859/Chloe%20Chloe%20Eau%20de%20Parfum%2050ml---.png?ts=1759489859",
+      "visual_challenges": "米色丝带、银色肩部、透明竖纹玻璃及浅色液体",
+      "fragrance_position": "rose_floral",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Chloé Chloé 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Chloé",
+        "title": "Chloé",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:16.524361+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        5,
+        220,
+        996,
+        1030
+      ],
+      "transparent_fraction": 0.59932,
+      "opaque_fraction": 0.39149,
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924",
+      "local_path": "assets/products/chloe-eau-de-parfum-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "versace-yellow-diamond-intense",
+      "brand": "Versace",
+      "name": "Yellow Diamond Intense",
+      "source_url": "https://mondo-parfum.de/Versace-Yellow-Diamond-Intense-Eau-de-Parfum-30-ml/SW10705",
+      "image_url": "https://mondo-parfum.de/media/74/09/b5/1769861685/Versace%20Yellow%20Diamond%20Intense%20Eau%20de%20Parfum%2030%20ml.png?ts=1769861685",
+      "visual_challenges": "超宽钻石切面瓶盖、黄色透明玻璃、高亮边缘",
+      "fragrance_position": "citrus_floral",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Versace Yellow Diamond Intense 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Versace",
+        "title": "Yellow Diamond Intense",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:16.547571+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        88,
+        245,
+        913,
+        1004
+      ],
+      "transparent_fraction": 0.59698,
+      "opaque_fraction": 0.3938,
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7",
+      "local_path": "assets/products/versace-yellow-diamond-intense-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "narciso-rodriguez-poudree",
+      "brand": "Narciso Rodriguez",
+      "name": "Narciso Poudrée",
+      "source_url": "https://mondo-parfum.de/Narciso-Rodriguez-Narciso-Poudree-Eau-de-Parfum-90ml/SW10259",
+      "image_url": "https://mondo-parfum.de/media/03/30/2e/1758057852/Narciso%20Rodriguez%20Narciso%20Poudree%20Eau%20de%20Parfum.png?ts=1758057852",
+      "visual_challenges": "浅粉方形磨砂内胆、低对比边缘与同色立方瓶盖",
+      "fragrance_position": "powdery_musk",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Narciso Rodriguez Narciso Poudrée 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Narciso Rodriguez",
+        "title": "Narciso Poudrée",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:16.859301+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        68,
+        7,
+        933,
+        1239
+      ],
+      "transparent_fraction": 0.2309,
+      "opaque_fraction": 0.68687,
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c",
+      "local_path": "assets/products/narciso-rodriguez-poudree-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    },
+    {
+      "id": "guerlain-mandarine-basilic",
+      "brand": "Guerlain",
+      "name": "Aqua Allegoria Mandarine Basilic",
+      "source_url": "https://mondo-parfum.de/Guerlain-Aqua-Allegoria-Mandarine-Basilic-Eau-de-Toilette-75ml/SW10261",
+      "image_url": "https://mondo-parfum.de/media/5c/12/37/1758054360/Aqua%20Allegoria%20Mandarine%20Basilic%20edt%2075%20ml-1.png?ts=1758054360",
+      "visual_challenges": "蜂窝金属笼罩、金色球盖、透明圆柱瓶",
+      "fragrance_position": "citrus_aromatic",
+      "fragrance_position_status": "coarse test-coverage label; verify against linked retailer description",
+      "brief": "为 Guerlain Aqua Allegoria Mandarine Basilic 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+      "approved_copy": {
+        "logo": "Guerlain",
+        "title": "Aqua Allegoria Mandarine Basilic",
+        "subtitle": "",
+        "price": ""
+      },
+      "rights_status": "original_rights_retained; commercial_reuse_unverified",
+      "acquired_at": "2026-10-01T19:05:20.360998+00:00",
+      "width": 1000,
+      "height": 1250,
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        224,
+        20,
+        745,
+        1229
+      ],
+      "transparent_fraction": 0.60609,
+      "opaque_fraction": 0.38403,
+      "sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7",
+      "local_path": "assets/products/guerlain-mandarine-basilic-retailer.png",
+      "image_processing": "none; original source bytes",
+      "usable": true
+    }
+  ],
+  "errors": []
+}

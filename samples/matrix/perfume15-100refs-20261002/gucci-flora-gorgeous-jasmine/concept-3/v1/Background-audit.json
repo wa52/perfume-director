@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Warm apricot lime-washed stucco wall meeting a continuous honed pale sandstone ground at a low horizontal horizon, one soft broad cloud-shadow band drifting across the upper wall, matte mineral grain, bright diffuse warm daylight, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [51, 24, 85, 86]. A continuous horizontal ground plane must be visible through y=86 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[7, 40, 37, 57], [7, 33, 18, 35]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 230243689467964,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

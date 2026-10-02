@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-3cbcc11471d0.webp",
+      "sha256": "77e4087086172bf9dff8fa84601bc6f873c1b1d40ddc08a8ed3b353068d18463"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-8b867718-cb62-988b-bdff-829ac2d4f606",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1879,
+        "completion_tokens": 340,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 340
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8b867718-cb62-988b-bdff-829ac2d4f606",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1879,
+    "completion_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 340
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Prada",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "High-end commercial perfume still-life featuring dynamic liquid motion and pristine studio lighting; excellent reference for product-centric fragrance advertising.",
+    "analysis": {
+      "composition": "Central vertical bottle intersected by a dynamic, diagonal S-curve of splashing liquid against a clean gradient background.",
+      "subject_ratio": 0.65,
+      "negative_space": "Ample clean space on the left and right margins, balancing the central kinetic action.",
+      "lighting": "Bright, high-key studio lighting with sharp specular highlights on the glass, metal cap, and liquid droplets.",
+      "color": [
+        "lilac",
+        "magenta",
+        "silver",
+        "white",
+        "light grey"
+      ],
+      "typography": "None outside the container; brand name is embossed on the product collar.",
+      "information_density": "Low; purely visual focus on the product and its fluid essence.",
+      "characteristics": [
+        "high-speed liquid capture",
+        "monochromatic pink palette",
+        "glossy textures",
+        "dynamic motion",
+        "clean studio aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 9.6
+}

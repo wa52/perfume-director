@@ -1,0 +1,66 @@
+{
+  "pass": false,
+  "score": 85.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 86,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 88,
+    "reference_alignment": 83,
+    "creative_coherence": 88
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'crisp two-pixel lighter orange seam line along the disc crown edge' is still absent after a second regeneration with the same prompt: tracing the arc in image 1 (and in the previous image 7) the crown is a single flat #c96a2a edge against ink-night with no distinguishable lighter stroke, so one of the concept's two crafted devices never renders and the disc reads as a plain flat shape next to the references' layered geometry."
+    },
+    {
+      "type": "composition",
+      "problem": "The disc base now cuts the frame at y≈795 (55% down) instead of the declared 73% (y≈1051), so the 'quiet plaque band' the brief reserves for the type is only ~85px of ink between the orange base line (y≈795) and the logo cap (y≈1080), while ~165px of dead ink sits below the rule (y≈1300-1440). Evidence in image 1: the text block visibly crowds the disc edge and the bottom margin dwarfs the disc-to-logo gap, inverting the band hierarchy the references keep optically even."
+    },
+    {
+      "type": "typography",
+      "problem": "The brand line is optically lost: 'Hermès' at 28px with tracking 5 measures only ~123px wide (text_bbox logo [475,1092,598,1113]) against a 658px title block, so the first line of the plaque reads as a stray caption rather than a tracked brand line; references (007, Byredo) keep their brand lockups legible at poster distance."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc centred, flat base line at seventy-three percent down the frame, crown rising to thirty percent down the frame, the crown edge outlined by a continuous concentric ring stroke eight pixels wide in pale cream orange clearly lighter than the disc fill and separated from it by a hairline of the card colour, perfectly even shadowless frontal illumination, no texture, no gradients, no objects, no furniture, no horizon"
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1100
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1188
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1312
+    }
+  ],
+  "validation_notes": [
+    "Contact verified in the supplied detail crop [227,868,853,1118]: a soft dark compression sits directly under the foot notch at offset_y 0; shadow left untouched.",
+    "text_product_overlap false on both axes; no overlap claimed.",
+    "Product bbox [307,202,773,1008]: height ratio 0.5597 inside 0.50-0.65, top 14%, base 70%, sides 28-72% - all inside safety bounds; no position patches.",
+    "No studio equipment, no extra bottles, label unmodified; cutout silhouette intact against the flat field."
+  ],
+  "reported_score": 84.4
+}

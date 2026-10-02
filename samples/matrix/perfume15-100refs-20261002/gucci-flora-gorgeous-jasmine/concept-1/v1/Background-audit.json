@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Honed pale sea-glass terrazzo wall meeting a continuous matching terrazzo ground at a low horizontal horizon, fine chips of coral red and teal marble set in matte cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [33, 31, 68, 93]. A continuous horizontal ground plane must be visible through y=93 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[11, 16, 89, 21], [44, 9, 55, 10]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 230243689465946,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

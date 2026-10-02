@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-0e352874b6fa.webp",
+      "sha256": "2e21fc6d9c2dc269ebb253a457a946adb6c76c234ddfad577d387d0099b50f89"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-88bbf9f4-ea51-9ae6-aba6-f96e6f0098c0",
+      "usage": {
+        "prompt_tokens": 1299,
+        "total_tokens": 1683,
+        "completion_tokens": 384,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1002,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 384
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-88bbf9f4-ea51-9ae6-aba6-f96e6f0098c0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1299,
+    "total_tokens": 1683,
+    "completion_tokens": 384,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1002,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 384
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring intricate crystal engraving and dramatic chiaroscuro lighting. Excellent reference for material detail and high-contrast product photography, despite the absence of campaign typography.",
+    "analysis": {
+      "composition": "Asymmetrical placement with the subject anchored to the left, balanced by expansive negative space on the right. Includes a subtle surface reflection at the base.",
+      "subject_ratio": 0.45,
+      "negative_space": "Dominant solid black void occupying the right half and upper background, providing high contrast and potential copy space.",
+      "lighting": "Dramatic low-key studio lighting utilizing rim light and backlighting to accentuate the refractive qualities of the cut glass and the amber tone of the liquid.",
+      "color": [
+        "#000000",
+        "#B87333",
+        "#E5E4E2",
+        "#FFD700"
+      ],
+      "typography": "None visible. No external campaign text or overlays present.",
+      "information_density": "Low. Focus is entirely on the singular object and its material properties.",
+      "characteristics": [
+        "Intricate floral relief engraving",
+        "Heavy crystal glass",
+        "Amber liquid",
+        "Chiaroscuro",
+        "Reflective surface"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 23.14
+}

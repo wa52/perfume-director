@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\e77536c11193\\Concepts-call.json",
+  "creative_direction": {
+    "name": "潮线晨光·左柱右像",
+    "brief": "把泪滴瓶身放回水的原点：黎明浅滩上一层静止薄水铺过细沙，天际线压低在画面下三分之一，商品立于真实潮线，倒影与接触阴影没入水面。左半幅让出完整文字柱：Baskerville 题名以三行内的大字号竖柱排印如海岸碑文，品牌字居柱顶、香型字垫柱底，与瓶肩垂直重叠却水平保持宽距，形成左铭右像的双栏编辑网格；一条沙金细线竖于两栏之间如水痕分界。冷雾蓝的天光与桃金液体构成冷暖对位，水的镜面是唯一叙事光源。",
+    "material": "still shallow water sheet over fine pale sand at dawn tide line",
+    "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+    "palette": [
+      "#a9c4cf",
+      "#22333e",
+      "#c98a5e"
+    ],
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 254490615815568,
+    "background": {
+      "color": "#a9c4cf",
+      "prompt": "Calm shallow water sheet over fine pale sand at dawn, low horizon line at lower third, misty pale blue-grey sky gradient meeting water, smooth continuous wet ground plane, soft diffuse cool light, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 713,
+      "y": 720,
+      "width": 299,
+      "height": 864
+    },
+    "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+    "palette": [
+      "#a9c4cf",
+      "#22333e",
+      "#c98a5e"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 86,
+      "y": 518,
+      "size": 110,
+      "color": "#22333e",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 86,
+      "y": 893,
+      "size": 26,
+      "color": "#22333e",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#22333e",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 86,
+      "y": 403,
+      "size": 40,
+      "color": "#22333e",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 4
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 490,
+      "width": 2,
+      "color": "#c98a5e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

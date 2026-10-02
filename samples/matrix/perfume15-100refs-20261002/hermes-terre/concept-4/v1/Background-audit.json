@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Monolithic cleft flint stone wall in cool bone grey with natural split-plane facets, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, one crisp oblique shadow edge raking the wall from upper left, bright directional late-day light, matte mineral grain, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [10, 34, 50, 86]. A continuous horizontal ground plane must be visible through y=86 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[56, 42, 91, 51], [56, 35, 67, 36]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 245989106099591,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

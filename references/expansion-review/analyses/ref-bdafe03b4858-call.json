@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-bdafe03b4858.webp",
+      "sha256": "fe79ad25a07e97c00a0948f706a36974a2e486c899537095bfbe61dfadd637e6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-b7277239-3e1c-992c-af16-827fdf713b86",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 834,
+        "completion_tokens": 331,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 331
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-b7277239-3e1c-992c-af16-827fdf713b86",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 834,
+    "completion_tokens": 331,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 331
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Jo Malone London",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved flat-lay still life featuring iconic brand packaging arranged with a bold graphic prop. High aesthetic quality and clear commercial intent suitable for design reference.",
+    "analysis": {
+      "composition": "Symmetrical flat-lay centered around a large black tape tic-tac-toe grid; products placed at top and bottom vertical axes to frame the graphic.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous warm beige background providing high contrast for the black graphic elements and glass products.",
+      "lighting": "Soft, diffuse studio lighting creating gentle, natural drop shadows that add slight depth to the flat arrangement.",
+      "color": [
+        "cream",
+        "black",
+        "clear glass",
+        "silver"
+      ],
+      "typography": "None visible outside of product labels.",
+      "information_density": "Low; focused entirely on visual arrangement and brand identity.",
+      "characteristics": [
+        "flat lay",
+        "graphic prop",
+        "symmetrical",
+        "high contrast",
+        "playful minimalism"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 44.751
+}

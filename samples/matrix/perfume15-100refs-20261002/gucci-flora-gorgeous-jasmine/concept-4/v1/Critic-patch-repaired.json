@@ -1,0 +1,45 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat printed ribbon loop in uniform pale mint with no folds, no shading and no cast shadow, sweeping from lower left behind centre and re-emerging upper right but staying entirely below y 700 on the right half so the upper right quadrant remains plain uninterrupted green, perfectly even shadowless illumination, no texture gradients, no objects"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 88
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1010
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1080
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#e0b23e"
+    }
+  ]
+}

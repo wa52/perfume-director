@@ -1,0 +1,142 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "6dc77ad948752d44ad10afa5e0feed4c42201a32784690383a408cbc3d2975be"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-90208e77758d.webp",
+      "sha256": "45801261d65b445c4168087efea23da41c19986616fac59d86fcee44c1bd1b24"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "f930d7205675c05f4b7a5c7a41fa08f40eeeca61297b13232f77df0fe1df3243"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-a361dd08-2d7e-9e4c-a512-c1b0dbda2e1c",
+      "usage": {
+        "prompt_tokens": 7852,
+        "total_tokens": 9612,
+        "completion_tokens": 1760,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5255,
+          "text_tokens": 2597
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 735
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-a361dd08-2d7e-9e4c-a512-c1b0dbda2e1c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7852,
+    "total_tokens": 9612,
+    "completion_tokens": 1760,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5255,
+      "text_tokens": 2597
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 735
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 78,
+      "background": 68,
+      "physical_integration": 66,
+      "reference_alignment": 74,
+      "creative_coherence": 72
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The rendered wall and ground read as large-format grey ceramic tiles with straight grout joints and a skirting-like seam, not the declared monolithic cleft flint with honed pale stone ground; the tiling cheapens the 'Flint Gallery' concept versus the seamless mineral planes in references 3-5."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Lighting mismatch: the dark triangular wedge raking the upper-left wall implies hard late-day sun, yet the unmodified cutout carries soft diffuse high-key studio light with only gentle vertical highlights, and the contact detail (crop 28,1099-621,1349) shows a soft ambient contact shadow with no directional cast or caustic on the floor. Background light direction and product illumination disagree."
+      },
+      {
+        "type": "composition",
+        "problem": "The rust rule (decoration at y=886) floats in empty wall between the title block and the floor with no anchoring element, leaving a dead vertical gap in the right column; the column does not read as a closed editorial unit."
+      },
+      {
+        "type": "typography",
+        "problem": "Right column hierarchy is under-resolved: 30px logo versus 74px title leaves a weak brand head, and the two title lines sit high (bbox 605-739) so the column's optical center floats above the bottle's shoulder line instead of locking to it."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless monolithic cleft flint stone plane in cool bone grey with natural split-plane facets and matte mineral grain, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, no joints no tiles no grout lines, soft diffuse daylight from above with one gentle broad oblique tonal gradient raking the upper left of the wall, even shadowless ambient illumination, empty scene, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.42
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 800
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 34
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 640
+      }
+    ]
+  },
+  "duration_seconds": 49.783
+}

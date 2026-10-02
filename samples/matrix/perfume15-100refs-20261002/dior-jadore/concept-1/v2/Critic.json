@@ -1,0 +1,72 @@
+{
+  "pass": false,
+  "score": 74.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 82,
+    "background": 52,
+    "physical_integration": 90,
+    "reference_alignment": 68,
+    "creative_coherence": 60
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The concept's defining element still has not rendered: image 1 shows a uniformly flat ultramarine card with no metal-leaf gold disc, no engraved concentric rings and no metallic glint anywhere, despite the revised prompt. Evidence: side-by-side with the previous version (last image) the backdrop is pixel-for-pixel the same flat navy; the only visible change is the ~20px upward shift of bottle and type band. The bottle therefore reads as an isolated cutout pasted on a plain color card, exactly the gap the references (007 rose burst, Versace gold field) never show - every reference builds a deliberate setting around the packshot."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Because the sun-disc never appeared, the declared dialogue of the concept (flat foil plane vs. volumetric glass, ring echoing the ribbed satin-gold collar) does not exist on the poster. The only surviving trace of the idea is the 324px foil rule under the subtitle, so the visual story remains unfinished and the palette's gold (#c9a24b) appears only in thin lines and type accents."
+    },
+    {
+      "type": "composition",
+      "problem": "With the disc missing, the middle band outside the bottle silhouette (roughly y 400-1150, x < 386 and x > 693) is dead empty navy. The eye jumps from the inscription band straight to the bottle with no mediating shape, so the 'Art-Deco monument grid' reads as two stacked layouts. The brief's own relation 'the ring sweeps behind the shoulders without touching the label' cannot be satisfied while nothing sits behind the shoulders."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the top band is correct (logo 40px smallest at y112, title 120px Bodoni largest, tracked caps subtitle, foil rule closing the band) and text_product_overlap is false on both axes, but the band still floats: the gap from the foil rule (bottom edge y~377) to the stopper top (y=398) is only ~21px while the margin above the logo is ~112px, so the inscription crowns nothing and nearly collides with the pearl stopper."
+    },
+    {
+      "type": "background_fallback",
+      "problem": "AI background failed checks again; procedural draft requires manual review"
+    },
+    {
+      "type": "background_fallback",
+      "problem": "AI background failed checks; procedural draft requires manual review"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Flat matte gouache-painted card in deep ink ultramarine filling the whole frame; one single enormous circular field of applied gold metal leaf, its circle centered in the middle of the card and wider than half the card width, leaf surface bright warm gold with faint crinkle glint; fine engraved concentric circle lines radiating outward from the circle edge into the surrounding ultramarine; perfectly even shadowless frontal illumination; empty setting only, no objects, no horizon, no texture gradients, no equipment"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 864
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 150
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 288
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 336
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 92
+    }
+  ],
+  "reported_score": 74.6
+}

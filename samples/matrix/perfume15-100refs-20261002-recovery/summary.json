@@ -1,0 +1,466 @@
+{
+  "tag": "perfume15-100refs-20261002-recovery",
+  "products_finished": 7,
+  "products_requested": 7,
+  "directions_with_selection": 8,
+  "reference_count": 100,
+  "preview_encoding": "JPEG94 derivative; original and preview SHA recorded separately",
+  "products": [
+    {
+      "product_id": "prada-paradoxe",
+      "status": "COMPLETED",
+      "started_at": 1790944675.9490213,
+      "input_sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "stage": "FINISHED",
+      "direction_index": 4,
+      "direction_name": "Orchid Fresnel Stair",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Chartreuse Hard-Edge Paradox",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "70f858a72f73689f6c1713000190a9b52393cec512d17fa0aef36586be698460",
+              "preview": "prada-paradoxe/concept-1/v1.jpg",
+              "original_sha256": "70f858a72f73689f6c1713000190a9b52393cec512d17fa0aef36586be698460",
+              "preview_sha256": "238ea21360e09d760832e48e0dd3ed9435e4fb76529ef8c8b241334375bfa86c"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "9e604a96d40656de76dd72c5d9fb661123aff9f1065fc126306cc8cac50207b8",
+              "preview": "prada-paradoxe/concept-1/v2.jpg",
+              "original_sha256": "9e604a96d40656de76dd72c5d9fb661123aff9f1065fc126306cc8cac50207b8",
+              "preview_sha256": "6242c96615f1b3b572099501d4509add705da32ab96e994749a81dfb00e726fd"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Chrome Vapor Meridian",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "f8a57e3ed7aabdef9a16b4a019bf06c52cf69c799ce1ca9dbdc511505c500a57",
+              "preview": "prada-paradoxe/concept-2/v1.jpg",
+              "original_sha256": "f8a57e3ed7aabdef9a16b4a019bf06c52cf69c799ce1ca9dbdc511505c500a57",
+              "preview_sha256": "59e80f1ca7257683df5741826746a941687eb92c1a62893ae96834b686d4b510"
+            },
+            {
+              "version": 2,
+              "score": 77.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "73e6e0dd2d1392ca8dcfa95a82e9e567de4cbd9ec7fbb2fb03d6a443da54c4b1",
+              "preview": "prada-paradoxe/concept-2/v2.jpg",
+              "original_sha256": "73e6e0dd2d1392ca8dcfa95a82e9e567de4cbd9ec7fbb2fb03d6a443da54c4b1",
+              "preview_sha256": "4be3b2eacc63fb09c28877a9bcd4b594a18ccfaf79d25c70a2168eb692e4f0ae"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Cocoa Glaze Tile Ledger",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 72.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "53cde0cd9d5db2b0e7f4a468cd5b6de79675ea7e6444e462f9a24d321a78f059",
+              "preview": "prada-paradoxe/concept-3/v1.jpg",
+              "original_sha256": "53cde0cd9d5db2b0e7f4a468cd5b6de79675ea7e6444e462f9a24d321a78f059",
+              "preview_sha256": "b5576b2afa1752a37a6a95a80b0447cfafc898c52987146f9d14fff0f54f3cc3"
+            },
+            {
+              "version": 2,
+              "score": 79.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "0fa2d0b8d453612648ed30f3cad02f753ccec95a1cfa27a2ae699a53696c9fc9",
+              "preview": "prada-paradoxe/concept-3/v2.jpg",
+              "original_sha256": "0fa2d0b8d453612648ed30f3cad02f753ccec95a1cfa27a2ae699a53696c9fc9",
+              "preview_sha256": "f4711d120ce297a84a09e3744b8726ba114b0440bd0d267b08637831e6d719d4"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Orchid Fresnel Stair",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb",
+              "preview": "prada-paradoxe/concept-4/v1.jpg",
+              "original_sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb",
+              "preview_sha256": "0415d61ec34efce84163b180ab5751be22f07a6c45d0964c3ae6447eed6e9936"
+            },
+            {
+              "version": 2,
+              "score": 77.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "b0b5354194562ee39d94a01f55e10db6030839e1766afde63c6c7c5ac22867ea",
+              "preview": "prada-paradoxe/concept-4/v2.jpg",
+              "original_sha256": "b0b5354194562ee39d94a01f55e10db6030839e1766afde63c6c7c5ac22867ea",
+              "preview_sha256": "e6a1b3b73fd384b39004d1e974f876f15e739e6753c4c3d8149b186e676e881a"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\d05dc9f0089e",
+      "direction_count": 4,
+      "version": 2,
+      "batch_dir": "runs/batches/d05dc9f0089e",
+      "duration_seconds": 547.3,
+      "brand": "Prada",
+      "name": "Paradoxe"
+    },
+    {
+      "product_id": "mugler-angel",
+      "status": "COMPLETED",
+      "started_at": 1790944675.953106,
+      "input_sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "stage": "FINISHED",
+      "direction_index": 4,
+      "direction_name": "Frosted Glass Dawn Veil",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Star-Chart Engraving Plate",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 80.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "643d9f652c1d906b64ff61321b8aaba3ed805f2fbd11ded1d3ef88e38547b235",
+              "preview": "mugler-angel/concept-1/v1.jpg",
+              "original_sha256": "643d9f652c1d906b64ff61321b8aaba3ed805f2fbd11ded1d3ef88e38547b235",
+              "preview_sha256": "3a2e0512b7a5acd3ed2a76d068c589efb5e9c153e459bfd3052c5c5096854bbd"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "a1b64a011acc6aab3f43d9f6d4808a56f4560c7acdd8c09f8dfc8eade581b39d",
+              "preview": "mugler-angel/concept-1/v2.jpg",
+              "original_sha256": "a1b64a011acc6aab3f43d9f6d4808a56f4560c7acdd8c09f8dfc8eade581b39d",
+              "preview_sha256": "1c640c91c08d25982778dbb36dfb2af654d16581aff3718380cd5723015418f3"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Brushed Aluminium Observatory Deck",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "4e4ee5acf6b09ce88a28592963d19d3b1e1a2e69d5812d89d66e398c5af60e86",
+              "preview": "mugler-angel/concept-2/v1.jpg",
+              "original_sha256": "4e4ee5acf6b09ce88a28592963d19d3b1e1a2e69d5812d89d66e398c5af60e86",
+              "preview_sha256": "0fb1b9ca9ecfce97babad88ce2934f22bff258d50b7db5c8ad732bac7ab3be39"
+            },
+            {
+              "version": 2,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "6ebe18b9214592f43db53a69b289afa5d64697d526e81c8c1ead80d72d30ffa2",
+              "preview": "mugler-angel/concept-2/v2.jpg",
+              "original_sha256": "6ebe18b9214592f43db53a69b289afa5d64697d526e81c8c1ead80d72d30ffa2",
+              "preview_sha256": "6a80271051417477f0a6427403d15f74eee257a5351dcfe5960761e93f02c874"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Midnight Meridian Foil Monument",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": null,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": "ValueError",
+              "sha256": "634ae3b0718a2190e5d847338eeac5a9067977b404f7d57137c7bd800b368a49",
+              "preview": "mugler-angel/concept-3/v1.jpg",
+              "original_sha256": "634ae3b0718a2190e5d847338eeac5a9067977b404f7d57137c7bd800b368a49",
+              "preview_sha256": "0c983676096ac45d29b9b9037c085fca6894111796da7e920b5b8d52c73afeeb"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Frosted Glass Dawn Veil",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.4,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "e2449e4d6beb862f417a6529c8e6d7a2da9ea9b576cd355506454e82293cc37e",
+              "preview": "mugler-angel/concept-4/v1.jpg",
+              "original_sha256": "e2449e4d6beb862f417a6529c8e6d7a2da9ea9b576cd355506454e82293cc37e",
+              "preview_sha256": "2b73fcbd45ec90a535adf19c3e79b267f6249086044ee6d813647cd2f1650508"
+            },
+            {
+              "version": 2,
+              "score": 78.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "75df1e0e34165f9352095b221d1b8b4834544fcaa761d5c8dc44d544d1d1b2dc",
+              "preview": "mugler-angel/concept-4/v2.jpg",
+              "original_sha256": "75df1e0e34165f9352095b221d1b8b4834544fcaa761d5c8dc44d544d1d1b2dc",
+              "preview_sha256": "5b386cd8d2e91398f58edb077d547125b82e82f3056902b597970383cb7811af"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\b6cbf396f853",
+      "direction_count": 4,
+      "version": 2,
+      "batch_dir": "runs/batches/b6cbf396f853",
+      "duration_seconds": 399.7,
+      "brand": "Mugler",
+      "name": "Angel"
+    },
+    {
+      "product_id": "bvlgari-omnia-crystalline",
+      "status": "ERROR",
+      "started_at": 1790945075.6649246,
+      "input_sha256": "9e4fe279e4fc3693030c9f9665031c1e91ad82f5e4f521b8f7c43efb0e3fc901",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "stage": "CONCEPTS",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\21a3eb0daff0",
+      "direction_count": 4,
+      "error_type": "ValueError",
+      "error": "Vision API HTTP 403; check endpoint, model access and account balance",
+      "duration_seconds": 149.0,
+      "brand": "Bvlgari",
+      "name": "Omnia Crystalline",
+      "directions": []
+    },
+    {
+      "product_id": "kenzo-jungle",
+      "status": "ERROR",
+      "started_at": 1790945223.2544687,
+      "input_sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "error_type": "ValueError",
+      "error": "Vision API HTTP 403; check endpoint, model access and account balance",
+      "duration_seconds": 4.1,
+      "brand": "Kenzo",
+      "name": "Jungle",
+      "directions": []
+    },
+    {
+      "product_id": "versace-yellow-diamond-intense",
+      "status": "ERROR",
+      "started_at": 1790945224.6463504,
+      "input_sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "error_type": "ValueError",
+      "error": "Vision API HTTP 403; check endpoint, model access and account balance",
+      "duration_seconds": 5.8,
+      "brand": "Versace",
+      "name": "Yellow Diamond Intense",
+      "directions": []
+    },
+    {
+      "product_id": "narciso-rodriguez-poudree",
+      "status": "ERROR",
+      "started_at": 1790945227.3635478,
+      "input_sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "stage": "CONCEPTS",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\56bb4372746a",
+      "direction_count": 4,
+      "error_type": "ValueError",
+      "error": "Vision API HTTP 403; check endpoint, model access and account balance",
+      "duration_seconds": 37.4,
+      "brand": "Narciso Rodriguez",
+      "name": "Narciso Poudrée",
+      "directions": []
+    },
+    {
+      "product_id": "guerlain-mandarine-basilic",
+      "status": "ERROR",
+      "started_at": 1790945230.419808,
+      "input_sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/f9da8702ffb5",
+      "rounds_per_direction": 2,
+      "stage": "CONCEPTS",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28a627225c09",
+      "direction_count": 4,
+      "error_type": "ValueError",
+      "error": "Vision API HTTP 403; check endpoint, model access and account balance",
+      "duration_seconds": 34.1,
+      "brand": "Guerlain",
+      "name": "Aqua Allegoria Mandarine Basilic",
+      "directions": []
+    }
+  ]
+}

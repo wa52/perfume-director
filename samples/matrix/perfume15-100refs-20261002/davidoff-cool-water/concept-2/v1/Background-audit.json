@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte card in deep petrol teal, thin pale ice-blue bathymetric contour lines swirling across the upper two thirds like a sea-floor survey map, one hard-edge darker teal depth band crossing behind the middle, perfectly even shadowless illumination, no texture gradients beyond printed lines, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [35, 17, 65, 72] uncluttered; reserve quiet negative space for ink in these areas: [[21, 80, 78, 85], [37, 88, 63, 90], [41, 75, 59, 77]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 40661490897498,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

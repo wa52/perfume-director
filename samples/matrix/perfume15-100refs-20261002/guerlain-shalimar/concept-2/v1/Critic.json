@@ -1,0 +1,104 @@
+{
+  "pass": false,
+  "score": 78.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 80,
+    "physical_integration": 76,
+    "reference_alignment": 72,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "In the contact_detail_crop [359,1084,1067,1334] the pedestal foot does meet the sandstone tiles and a faint darkening hugs its rim, so the bottle is NOT floating and the contact shadow is present at offset_y 0; however at opacity 0.35 with blur 10 the footprint reads as a thin sticker edge rather than weight. References 3-5 show bottles whose contact is sold by a saturated core shadow plus a directional cast shadow; here the late-day light rakes from upper right across wall and floor (lattice shadows at right), yet no cast shadow extends left of the foot, so the cutout's frontal studio illumination sits one step apart from the scene light."
+    },
+    {
+      "type": "typography",
+      "problem": "The left column is under-resolved: logo 'GUERLAIN' renders only ~140px wide against a 313px title, and the closing rule (decoration at y 958) floats ~270px below the title baseline with empty plaster between, so the wrapped sans column reads as three disconnected marks instead of one composed block; hierarchy logo-to-title is correct but the column lacks internal rhythm versus the tight stacked columns in references 3-4."
+    },
+    {
+      "type": "background",
+      "problem": "No studio equipment artifacts are visible, but the rendered ground shows large-format tile grout lines and a skirting board while the concept calls for a continuous honed sandstone ground; the grout grid plus the硬 skirting line behind the bottle base competes with the contact line and slightly flattens the dusk-garden read. The lattice shadow also only grazes the right edge and lower corners, leaving the mid-wall behind the text column plain, so the signature light pattern under-delivers."
+    },
+    {
+      "type": "composition",
+      "problem": "Product height ratio is exactly 0.50 (base y 1224 = 85% of canvas, within the 35-74% height and <=94% base safety bounds), but at the low end of hero scale the flacon reads small against 1440px of plaster; the upper-left quadrant is entirely empty while the title block sits mid-left, leaving the eye without a top anchor and weakening the asymmetric balance the concept intends."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": -6
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 610
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 760
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 596
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 846
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Warm sand-toned limewash plaster wall meeting a seamless honed sandstone ground with no joints or skirting at a soft horizon three quarters down the frame, a broad soft diamond lattice of shadow raking diagonally across the whole wall and ground from upper right as if through a pierced screen, matte mineral grain, warm directional late-day illumination with bright ambient on the ground, empty scene, no objects"
+    }
+  ],
+  "reported_score": 78
+}

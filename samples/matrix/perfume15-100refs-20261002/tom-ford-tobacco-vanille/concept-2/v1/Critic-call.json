@@ -1,0 +1,156 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "123109780501cb7f70d35cbecc8577367950fec1265e92cb78e8c5c4328e40a3"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "47ef8c5e944be841a7c143d14148c38e2804a35cccc37a0e4e04be63c5281cda"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-2540021b-37d8-976a-8c81-f6683c3816b7",
+      "usage": {
+        "prompt_tokens": 9305,
+        "total_tokens": 11254,
+        "completion_tokens": 1949,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6681,
+          "text_tokens": 2624
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 924
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-2540021b-37d8-976a-8c81-f6683c3816b7",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9305,
+    "total_tokens": 11254,
+    "completion_tokens": 1949,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6681,
+      "text_tokens": 2624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 924
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 78,
+      "background": 66,
+      "physical_integration": 62,
+      "reference_alignment": 72,
+      "creative_coherence": 74
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "The contact detail (crop 62,1069,585,1319) proves the bottle base touches the limestone at y=1209 with a real soft contact shadow (spec offset_y 0 is correct, do not move it), but that shadow is a neutral ambient pool while the background shows a hard raking sun edge at the upper left and the product cutout carries soft frontal-top studio speculars. Three different light stories coexist: the bottle reads pasted onto the wall/ground junction instead of standing in the declared sunlight."
+      },
+      {
+        "type": "background",
+        "problem": "The 'honed limestone ground' rendered as glossy veined marble tiles with visible grout lines andSheen, contradicting the declared matte honed limestone and the matte mineral grain of the wall; the tiled foreground fights the ultramarine plaster and cheapens the courtyard concept."
+      },
+      {
+        "type": "background",
+        "problem": "The promised single crisp diagonal shadow edge is only a small dark wedge clipped at the top-left canvas corner; most of the wall is flat unmodulated ultramarine, so the sundial concept reads as an accident at the frame edge rather than as composed light."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy inside the right column is top-loaded and then collapses: after the strong two-line title there is a ~110 px void before 'EAU DE PARFUM' (y 907) and the gold rule (y 976), leaving the lower third of the column and the area beside the bottle body empty; the column does not visually close against the bottle base line."
+      },
+      {
+        "type": "composition",
+        "problem": "The bottle occupies the left 47% but its base sits exactly on the wall/ground junction line, so the foreground floor band (y 1210-1440) is dead space holding nothing; references (Hermes, Sisley) let the ground plane carry shadow and props, here it is an empty tiled strip that disconnects product from setting."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep ultramarine lime-washed plaster wall meeting a continuous matte honed pale limestone ground with no tiles and no grout lines, one broad hard diagonal shadow edge raking the wall from upper left across a third of its height, bright warm direct sunlight grazing the mineral grain, empty scene, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 8
+      },
+      {
+        "path": "shadow.offset_x",
+        "op": "set",
+        "value": -6
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.15
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 940
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1000
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 260
+      }
+    ]
+  },
+  "duration_seconds": 35.843
+}

@@ -1,0 +1,177 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2"
+    },
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "c449b016f405d71880fdfa2244da51327d04e2bb0f5c2a22c56d1cce26a6743d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6a7cc5a6-1307-9b4c-bea3-5f18c5aebae9",
+      "usage": {
+        "prompt_tokens": 9011,
+        "total_tokens": 11137,
+        "completion_tokens": 2126,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6451,
+          "text_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1101
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6a7cc5a6-1307-9b4c-bea3-5f18c5aebae9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9011,
+    "total_tokens": 11137,
+    "completion_tokens": 2126,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6451,
+      "text_tokens": 2560
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1101
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 77,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 74,
+      "background": 82,
+      "physical_integration": 76,
+      "reference_alignment": 72,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "In the contact detail crop (283,897,797,1147) a soft graphite contact shadow IS present under the toe at the base line, so contact is not absent; however the gold stiletto heel tip terminates roughly 25px above that shadow plane with no shadow of its own. The original cutout rests on two points (toe and heel tip), so the heel reads as amputated/floating while the toe is grounded. The single soft ellipse also spreads slightly wider than the toe footprint and sits a touch diffuse for the declared flat frontal light."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy inside the plaque band is inverted against the brief: the logo line 'Carolina Herrera' (bbox 405-684, ~279px wide, tracking 6) reads wider and optically heavier than intended, while the name 'Very Good Girl' (bbox 151-714, ~563px) occupies only ~52% of canvas width although the brief calls for the name set wide at near band width. The 173px rose rule is a stub between two much wider text lines, so band rhythm logo > rule > title feels accidental rather than stepped."
+      },
+      {
+        "type": "composition",
+        "problem": "The die-cut valley is centred upper-middle but the shoe silhouette sits slightly right of the valley's optical centre (product centre x=540 vs valley centre nearer x=520-530), leaving the left contour rings heavier; combined with the empty 220px band under the title the lower third reads under-weighted versus the dense upper two-thirds."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Against references 3-5 the poster's light is flatter: refs build depth with one decisive directional key (long cast shadow in ref 3, raking sun in ref 4, soft gradient floor in ref 5). Here the paper contours carry all depth while the bottle's baked upper-front-left key is matched only by a uniform frontal field, so the hero lacks the tonal fall-off the references use to seat the product."
+      }
+    ],
+    "changes": [
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.42
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 7
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 0.85
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 92
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 6
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 20
+      },
+      {
+        "path": "logo.tracking",
+        "op": "set",
+        "value": 5
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 240
+      },
+      {
+        "path": "decoration.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Concentric die-cut layered matte paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, each cut edge casting a hairline soft shade, gentle broad luminance fall-off from upper front left across the card fibre grain, darkest tone pooling in the lowest contour ring, no objects, no horizon, no equipment"
+      }
+    ]
+  },
+  "duration_seconds": 51.686
+}

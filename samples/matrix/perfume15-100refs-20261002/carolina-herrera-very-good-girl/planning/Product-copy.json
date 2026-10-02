@@ -1,0 +1,15 @@
+{
+  "title": "Very Good Girl",
+  "logo": "Carolina Herrera",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Only a gold 'H' monogram is legible on the red body; no product-name, concentration or price text appears on the packshot; 'Carolina Herrera' and 'Very Good Girl' are supplied by the user brief.",
+  "product_profile": {
+    "material": "Opaque lacquered shoe-shaped flacon: glossy red body, glossy black faceted cap, polished gold-metal stiletto heel",
+    "color": "Saturated vermilion red body, jet black cap, warm gold heel",
+    "transparency": "Fully opaque; no translucent or glass-transmitting regions",
+    "illumination": "Soft studio key from upper front-left: long vertical specular streak on red body, broad soft gradient sheen, sharp glossy reflections on black cap, metallic gradient on gold heel",
+    "view": "Three-quarter side profile at near eye level; bottle rests on two points (toe and heel tip), no flat base or visible ground plane",
+    "integration_limits": "Opaque glossy surfaces cannot transmit a generated background; baked-in highlights and reflections must be preserved; contact shadow only at toe and heel tips; background must stay neutral-soft to match existing studio lighting"
+  }
+}

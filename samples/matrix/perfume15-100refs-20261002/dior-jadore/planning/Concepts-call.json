@@ -1,0 +1,339 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-90208e77758d.webp",
+      "sha256": "45801261d65b445c4168087efea23da41c19986616fac59d86fcee44c1bd1b24"
+    },
+    {
+      "name": "ref-7838477a52de.webp",
+      "sha256": "90303aabf42db36d437f9b881bba2bc858782eea7f3d7935c09b1fda4f1637b6"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ee50e42e-ac8f-914b-888d-39d718e97287",
+      "usage": {
+        "prompt_tokens": 19927,
+        "total_tokens": 25883,
+        "completion_tokens": 5956,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 8704,
+          "text_tokens": 11223
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1859
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ee50e42e-ac8f-914b-888d-39d718e97287",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 19927,
+    "total_tokens": 25883,
+    "completion_tokens": 5956,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 8704,
+      "text_tokens": 11223
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1859
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "子夜金环·装饰艺术日轮",
+        "brief": "把 J'adore 的金颈读作一轮子夜里的日轮：平涂靛蓝 gouache 卡纸上贴一枚巨大金属箔圆环，环外刻出细密同心环线，呼应瓶颈的缎金罗纹；商品居中如纪念碑立于日轮之前，圆环从其肩后掠过却不触碰标签。全部排印沉在圆环之上的安静顶带：Bodoni 题名最大居中、品牌字最小置顶、香型字垫底，构成上铭下像的装饰艺术纪念碑网格；一条箔金细线横于铭带之下如日轮刻度。硬边平涂与金属箔的碎光，与玻璃的柔渐液体形成平面与体积的反差。",
+        "material": "flat matte gouache-painted card with applied metal-leaf disc and engraved concentric rings",
+        "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on leaf ring",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-7a523ada9a2c",
+          "ref-f305dbbdf3bc",
+          "ref-d2db4b80bde2"
+        ],
+        "palette": [
+          "#1c2657",
+          "#f2e6c8",
+          "#c9a24b"
+        ],
+        "product": [
+          0.5,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.326,
+            0.135,
+            120
+          ],
+          "logo": [
+            0.463,
+            0.085,
+            40
+          ],
+          "subtitle": [
+            0.357,
+            0.228,
+            30
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 3
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in deep ink ultramarine, one large flat metal-leaf gold disc centered slightly above middle, fine engraved concentric rings radiating from the disc edge, perfectly even shadowless illumination, no objects, no texture gradients",
+        "line": [
+          0.35,
+          0.262,
+          0.3
+        ]
+      },
+      {
+        "name": " Iris 灰泥拱光·下带宽铭",
+        "brief": "让珍珠白瓶盖成为唯一光源的借口：手工抹灰的鸢尾紫泥墙上一道柔拱光自顶部垂落，商品被提至上幅如浮出墙面光晕，下半幅留出完整宽铭牌带。Century Gothic 宽距题名以近满带宽的大字号居中统领，品牌字最小置顶带、香型字垫底，构成上像下铭的反网格；一条浅紫细线横于铭带之顶如抹灰刀的刻痕。哑光灰泥的颗粒与玻璃的整面高光互为粗细，拱光的建筑感赋予淡紫以教堂式的安静。",
+        "material": "hand-troweled limewash plaster wall with soft arched light pool",
+        "lighting": "one broad soft arched pool of light from above on plaster, otherwise even diffuse high-key",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-7838477a52de",
+          "ref-b6e669a924a3",
+          "ref-f72a7e1dd1ad"
+        ],
+        "palette": [
+          "#c9bede",
+          "#2e2440",
+          "#8f7bb5"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.243,
+            0.79,
+            150
+          ],
+          "logo": [
+            0.462,
+            0.735,
+            36
+          ],
+          "subtitle": [
+            0.317,
+            0.9,
+            30
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 6,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 4
+            },
+            "subtitle": {
+              "tracking": 5
+            }
+          }
+        },
+        "background_prompt": "Hand-troweled limewash plaster wall in pale iris lilac, one soft arched pool of lighter light falling from top center, fine trowel arcs and matte mineral grain, smooth continuous pale plaster ground plane at bottom, even diffuse illumination, no objects",
+        "line": [
+          0.2,
+          0.762,
+          0.6
+        ]
+      },
+      {
+        "name": "潮线晨光·左柱右像",
+        "brief": "把泪滴瓶身放回水的原点：黎明浅滩上一层静止薄水铺过细沙，天际线压低在画面下三分之一，商品立于真实潮线，倒影与接触阴影没入水面。左半幅让出完整文字柱：Baskerville 题名以三行内的大字号竖柱排印如海岸碑文，品牌字居柱顶、香型字垫柱底，与瓶肩垂直重叠却水平保持宽距，形成左铭右像的双栏编辑网格；一条沙金细线竖于两栏之间如水痕分界。冷雾蓝的天光与桃金液体构成冷暖对位，水的镜面是唯一叙事光源。",
+        "material": "still shallow water sheet over fine pale sand at dawn tide line",
+        "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-efb51dc5d487",
+          "ref-90208e77758d",
+          "ref-f72a7e1dd1ad"
+        ],
+        "palette": [
+          "#a9c4cf",
+          "#22333e",
+          "#c98a5e"
+        ],
+        "product": [
+          0.66,
+          0.5,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.08,
+            0.36,
+            110
+          ],
+          "logo": [
+            0.08,
+            0.28,
+            40
+          ],
+          "subtitle": [
+            0.08,
+            0.62,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 2,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 4
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Calm shallow water sheet over fine pale sand at dawn, low horizon line at lower third, misty pale blue-grey sky gradient meeting water, smooth continuous wet ground plane, soft diffuse cool light, no objects",
+        "line": [
+          0.42,
+          0.34,
+          0.002
+        ]
+      },
+      {
+        "name": "折扇纸韵·顶带轻铭",
+        "brief": "把瓶颈的罗纹放大成整面背景：手工折纸的藏红扇褶自商品身后放射展开，纸褶的明暗条纹如高级定制的褶裙；商品沉于下幅如从褶裥中诞生，上半幅留出安静顶带。Times 题名以克制字号居中轻置、品牌字最小置顶、香型字垫于题名之下，构成上轻下重的 couture 网格；一条深紫细线横于顶带之下如折扇的骨线。纸的哑光折痕与玻璃的流动高光互为刚柔，放射褶是唯一的光线叙事。",
+        "material": "hand-folded pleated paper fan backdrop with radiating creases",
+        "lighting": "even diffuse frontal light raking across paper pleats into soft alternating stripe shades",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-b6e669a924a3",
+          "ref-7838477a52de",
+          "ref-7a523ada9a2c"
+        ],
+        "palette": [
+          "#d09a2f",
+          "#3a2430",
+          "#7a4a6e"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.389,
+            0.14,
+            84
+          ],
+          "logo": [
+            0.463,
+            0.075,
+            36
+          ],
+          "subtitle": [
+            0.328,
+            0.225,
+            28
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 3
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Hand-folded pleated paper fan in warm saffron yellow, sharp radiating creases spreading from lower center outward, alternating soft stripe shades of light and shadow across the folds, flat graphic illumination, no objects, no horizon",
+        "line": [
+          0.34,
+          0.272,
+          0.32
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 104.348
+}

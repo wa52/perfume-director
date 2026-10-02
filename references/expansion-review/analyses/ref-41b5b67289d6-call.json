@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-8b9fe398-1ffc-9fac-a6fd-1685500fdcf3",
+      "usage": {
+        "prompt_tokens": 1379,
+        "total_tokens": 1736,
+        "completion_tokens": 357,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1082,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 357
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8b9fe398-1ffc-9fac-a6fd-1685500fdcf3",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1379,
+    "total_tokens": 1736,
+    "completion_tokens": 357,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1082,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 357
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Scentbird",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved multi-brand perfume still life with strong directional lighting, textured props, and cohesive warm palette; useful as a design reference for editorial fragrance campaigns.",
+    "analysis": {
+      "composition": "Asymmetrical arrangement of multiple fragrance bottles and a travel atomizer on travertine blocks, framed by draped fabrics and diagonal light shafts.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space in the upper left and lower foreground, balanced by heavy drapery on the right.",
+      "lighting": "Hard, directional sunlight creating sharp diagonal shadows and high-contrast highlights across the scene.",
+      "color": [
+        "amber",
+        "terracotta",
+        "cream",
+        "emerald green",
+        "bronze"
+      ],
+      "typography": "None outside of container labels; relies entirely on product packaging lettering.",
+      "information_density": "Medium; multiple products displayed with scattered textural props (caramel/resin chunks).",
+      "characteristics": [
+        "warm tones",
+        "hard shadows",
+        "textured stone props",
+        "draped fabric",
+        "multi-product display"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 12.041
+}

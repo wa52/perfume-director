@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-8741bf5d37ba.webp",
+      "sha256": "fd385ed961989c3d3bc76d7d57f6f739b926e2175e28b96bc45c8b15ad6dc57e"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-315902c0-1a63-984c-a794-71a11b0fb4df",
+      "usage": {
+        "prompt_tokens": 1899,
+        "total_tokens": 2229,
+        "completion_tokens": 330,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1602,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 330
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-315902c0-1a63-984c-a794-71a11b0fb4df",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1899,
+    "total_tokens": 2229,
+    "completion_tokens": 330,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1602,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 330
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring dramatic lighting, rich textures, and a classic black-and-gold palette. Excellent reference for premium product photography.",
+    "analysis": {
+      "composition": "Centered, symmetrical product shot on a reflective surface with a shallow depth of field background.",
+      "subject_ratio": 0.65,
+      "negative_space": "Dark, atmospheric periphery filled with soft golden bokeh, framing the central subject.",
+      "lighting": "Dramatic studio lighting highlighting the vertical ridges of the bottle, contrasted against warm, out-of-focus background lights.",
+      "color": [
+        "black",
+        "gold",
+        "amber"
+      ],
+      "typography": "None outside the container; text is strictly limited to the embossed metallic label on the bottle.",
+      "information_density": "Low, focused entirely on the product and mood.",
+      "characteristics": [
+        "ribbed glass texture",
+        "metallic label",
+        "bokeh background",
+        "surface reflection",
+        "opulent mood"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 13.555
+}

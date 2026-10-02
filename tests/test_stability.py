@@ -162,7 +162,7 @@ class StabilityTests(unittest.TestCase):
                     image.paste('#58192C',(0,0,1080,1440))
                     ImageDraw.Draw(image).rectangle((600,0,1080,1440),fill='#6C2035')
                 image.save(path);return Path(path)
-            with patch.object(poster,'execute',side_effect=execute) as renderer, patch.object(poster,'upload',return_value='input.png'), patch.object(poster,'rendered_geometry',return_value={'text_bbox':{}}):
+            with patch.object(poster,'execute',side_effect=execute) as renderer, patch.object(poster,'upload',return_value='input.png'), patch.object(poster,'rendered_geometry',return_value={'text_bbox':{},'product_bbox':[420,400,750,1150]}):
                 poster.comfy_render(config,spec,'product.png',destination,None)
             audit = poster.read(destination.with_name('Background-audit.json'))
             self.assertEqual(renderer.call_count,3)
@@ -196,6 +196,40 @@ class StabilityTests(unittest.TestCase):
                 with self.assertRaises(ValueError):poster.vision(config,'test',[image],trace)
                 self.assertEqual(request.call_count,1)
             self.assertEqual(poster.read(trace)['attempts'][0]['provider_code'],'1301')
+
+    def test_aborted_provider_json_generation_retries_without_relaxing_format(self):
+        import io
+        import urllib.error
+        with tempfile.TemporaryDirectory() as directory:
+            image=Path(directory)/'image.png'; Image.new('RGB',(10,10),'white').save(image)
+            config={'api_key_env':'TEST_VISION_KEY','vision_model':'test','vision_base_url':'https://example.invalid','vision_retry_delay':0}
+            message='Model output became abnormal while generating a JSON response for response_format. The generation was aborted because the partial output may be incomplete or invalid JSON. Please retry the request.'
+            body=json.dumps({'error':{'code':'invalid_parameter_error','message':message}}).encode()
+            error=urllib.error.HTTPError('url',400,'Bad Request',{},io.BytesIO(body))
+            response=json.dumps({'choices':[{'finish_reason':'stop','message':{'content':'{"ok":true}'}}]}).encode()
+            trace=Path(directory)/'trace.json'
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}),patch.object(poster,'http',side_effect=[error,response]) as request:
+                self.assertTrue(poster.vision(config,'test',[image],trace)['ok'])
+                self.assertEqual(request.call_count,2)
+                for call in request.call_args_list:
+                    self.assertEqual(json.loads(call.args[1])['response_format'],{'type':'json_object'})
+            self.assertEqual(poster.read(trace)['attempts'][0]['retry_reason'],'provider_aborted_json_generation')
+
+    def test_coded_parameter_error_is_terminal_and_provider_message_is_redacted(self):
+        import io
+        import urllib.error
+        with tempfile.TemporaryDirectory() as directory:
+            image=Path(directory)/'image.png'; Image.new('RGB',(10,10),'white').save(image)
+            config={'api_key_env':'TEST_VISION_KEY','vision_model':'test','vision_base_url':'https://example.invalid','vision_retry_delay':0}
+            body=json.dumps({'error':{'code':'invalid_parameter_error','message':'Invalid temperature never-log https://example.invalid'}}).encode()
+            error=urllib.error.HTTPError('url',400,'Bad Request',{},io.BytesIO(body))
+            trace=Path(directory)/'trace.json'
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'never-log'}),patch.object(poster,'http',side_effect=error) as request:
+                with self.assertRaises(ValueError):poster.vision(config,'test',[image],trace)
+                self.assertEqual(request.call_count,1)
+            message=poster.read(trace)['attempts'][0]['provider_message']
+            self.assertNotIn('never-log',message)
+            self.assertNotIn('https://example.invalid',message)
 
     def test_contact_shadow_is_darkest_at_actual_product_base(self):
         spec = poster.read(poster.ROOT/'examples/PosterSpec.json')

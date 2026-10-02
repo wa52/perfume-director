@@ -1,0 +1,344 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-361c5f732a2a.webp",
+      "sha256": "d548a5dc3b7d930eb753ace2d5a16913e0f3d3bc30154aacf1c4f243af45d1fd"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-c96883c4-e6f8-9a5d-890e-2313523e064e",
+      "usage": {
+        "prompt_tokens": 20364,
+        "total_tokens": 26189,
+        "completion_tokens": 5825,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 9144,
+          "text_tokens": 11220
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1728
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c96883c4-e6f8-9a5d-890e-2313523e064e",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 20364,
+    "total_tokens": 26189,
+    "completion_tokens": 5825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9144,
+      "text_tokens": 11220
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1728
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": " Ochre Signal Disc",
+        "brief": "A flat graphic signal poster: one saturated ochre gouache field carrying a single hard-edge burnt-sienna disc set low and off-centre, reading as a setting sun behind the flacon. The opaque espresso cutout sits centred and tall, its baked vertical speculars untouched, while the disc passes behind its shoulders without touching the gold plate. All typography stacks in a centred monument band across the upper field: wide-tracked brand, heavy Bodoni name, small香型 line, closed by a short rule like a print registration mark. Narrative is pure silhouette-plus-disc geometry, no floor, no horizon.",
+        "material": "flat matte gouache-painted paper with hard-edge painted disc",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-453438bbcb76",
+          "ref-f305dbbdf3bc",
+          "ref-b4d87aee2707"
+        ],
+        "palette": [
+          "#d9932f",
+          "#2b1508",
+          "#8c3b12"
+        ],
+        "product": [
+          0.5,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.222,
+            0.155,
+            64
+          ],
+          "logo": [
+            0.398,
+            0.095,
+            26
+          ],
+          "subtitle": [
+            0.383,
+            0.243,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 5
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted paper field in saturated marigold ochre, one large hard-edge flat circle in deep burnt sienna centred slightly below middle, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.42,
+          0.288,
+          0.16
+        ]
+      },
+      {
+        "name": "Ultramarine Courtyard Sundial",
+        "brief": "A photographic courtyard moment: a deep ultramarine lime-washed wall meets a continuous pale limestone ground at a low horizon, one hard diagonal shadow edge raking the wall from upper left like late sun across a patio. The flacon stands flush on that ground at its true base line, its own measured contact shadow anchoring it, while the right half of the wall stays calm for a wrapped narrow-sans column: brand at column head, the name set large across two wrapped lines,香型 line and a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column editorial grid honest.",
+        "material": "lime-washed plaster wall with honed limestone ground",
+        "lighting": "hard direct sunlight casting one crisp diagonal shadow edge on the wall, bright warm ambient on the ground",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-efb51dc5d487",
+          "ref-d2db4b80bde2"
+        ],
+        "palette": [
+          "#223055",
+          "#f2e9d8",
+          "#c9862f"
+        ],
+        "product": [
+          0.3,
+          0.56,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.565,
+            0.44,
+            88
+          ],
+          "logo": [
+            0.565,
+            0.375,
+            26
+          ],
+          "subtitle": [
+            0.565,
+            0.63,
+            24
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 3,
+              "max_width": 390,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 5
+            }
+          }
+        },
+        "background_prompt": "Deep ultramarine lime-washed plaster wall meeting a continuous honed pale limestone ground at a low horizontal horizon, one hard diagonal shadow edge raking the wall from upper left, bright direct sunlight, matte mineral grain, no objects",
+        "line": [
+          0.565,
+          0.678,
+          0.2
+        ]
+      },
+      {
+        "name": "Plum Velvet Curtain Call",
+        "brief": "A theatrical still-life: crushed aubergine velvet hangs in soft vertical folds, its pile catching a gentle frontal sheen that fades toward the edges like a house curtain before encore. The flacon is lifted into the upper two-thirds so the lower third becomes a quiet plaque band: brand line, then the name in generous Baskerville capitals centred, then the香型 line, with a thin rule floating between image and text like a curtain rail. Opaque dark glass against plush plum pile reads purely by texture contrast; the gold plate supplies the only warm spark.",
+        "material": "crushed aubergine velvet drape with vertical fold sheen",
+        "lighting": "soft diffused frontal light with gentle velvet sheen gradient, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-7a523ada9a2c",
+          "ref-b6e669a924a3",
+          "ref-361c5f732a2a"
+        ],
+        "palette": [
+          "#4b2b3a",
+          "#f0e6ea",
+          "#d9b06a"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.185,
+            0.79,
+            72
+          ],
+          "logo": [
+            0.4,
+            0.735,
+            26
+          ],
+          "subtitle": [
+            0.386,
+            0.878,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.08,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 5
+            }
+          }
+        },
+        "background_prompt": "Crushed aubergine plum velvet drape hanging in soft vertical folds, pile sheen catching gentle light along fold crowns, deep matte shadows in fold valleys, smooth tonal falloff toward edges, no objects",
+        "line": [
+          0.36,
+          0.762,
+          0.28
+        ]
+      },
+      {
+        "name": "Olive Grove Ledger",
+        "brief": "A constructed graphic ledger: three flat matte olive plywood panels of slightly shifted tone stacked as horizontal colour blocks, the middle block carrying the whole image weight. The flacon rests low-right on the panel seam line implied by the block edge, while the left column holds a wrapped Century Gothic name set across two lines at generous size, brand above and香型 below, plus a short vertical-aligned rule under the column. No floor, no horizon: the block seams act as the only architecture, and the geometric sans against lacquered glass keeps the poster crisp and modern.",
+        "material": "flat matte painted plywood panels in stacked colour blocks",
+        "lighting": "even shadowless studio illumination across painted panels, flat graphic light",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-453438bbcb76",
+          "ref-d2db4b80bde2",
+          "ref-f305dbbdf3fc"
+        ],
+        "palette": [
+          "#35402a",
+          "#efe8da",
+          "#d9932f"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.07,
+            0.42,
+            84
+          ],
+          "logo": [
+            0.07,
+            0.35,
+            26
+          ],
+          "subtitle": [
+            0.07,
+            0.6,
+            24
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 2,
+              "max_width": 330,
+              "line_height": 1.15,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 5
+            }
+          }
+        },
+        "background_prompt": "Three flat matte painted plywood panels stacked as horizontal colour blocks in shifted olive green tones, clean hard seams between blocks, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.07,
+          0.648,
+          0.18
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 120.716
+}

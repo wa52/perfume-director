@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-71635e8a47cb.webp",
+      "sha256": "ccaac0df691a6c4ad6588305d21229e5684854db74dd84511599d6379ac90706"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-967e56fa-ad6d-95a5-ab8a-ead7cf9402a2",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1887,
+        "completion_tokens": 348,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 348
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-967e56fa-ad6d-95a5-ab8a-ead7cf9402a2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1887,
+    "completion_tokens": 348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 348
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life with strong geometric composition, high-contrast reflective staging, and clear brand legibility; highly suitable as a design reference for premium fragrance campaigns.",
+    "analysis": {
+      "composition": "Centralized vertical bottle placement on a diagonal split background creating dynamic tension between the dark upper plane and reflective gold lower plane.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous and balanced, divided diagonally between matte charcoal grey and glossy amber-gold.",
+      "lighting": "Controlled studio lighting with sharp specular highlights on the bottle edges and cap, emphasizing the glossy texture and geometric form.",
+      "color": [
+        "charcoal grey",
+        "amber gold",
+        "black",
+        "metallic gold"
+      ],
+      "typography": "None outside the container; text is strictly limited to the product label and cap engraving.",
+      "information_density": "Low; focused entirely on the product silhouette and material contrast.",
+      "characteristics": [
+        "geometric",
+        "reflective",
+        "high-contrast",
+        "opulent",
+        "architectural"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.717
+}

@@ -1,0 +1,51 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "prada-paradoxe-retailer.png",
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b0b5354194562ee39d94a01f55e10db6030839e1766afde63c6c7c5ac22867ea"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "HTTPError",
+      "http_status": 403
+    }
+  ],
+  "http_status": 403,
+  "status": "ERROR",
+  "error_type": "ValueError",
+  "duration_seconds": 7.257
+}

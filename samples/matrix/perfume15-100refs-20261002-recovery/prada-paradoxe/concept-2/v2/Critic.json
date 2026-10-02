@@ -1,0 +1,113 @@
+{
+  "pass": false,
+  "score": 77.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 76,
+    "background": 70,
+    "physical_integration": 79,
+    "reference_alignment": 69,
+    "creative_coherence": 81
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated steel field still carries a broad vertical softbox-style bright column at top center (visible from y=0 fading to ~y=500) despite the prompt forbidding vertical streaks; it fights the declared cool diffuse even illumination, contradicts the horizontal mist-band logic, and pulls the eye into the empty upper frame instead of toward the bottle or the type column."
+    },
+    {
+      "type": "composition",
+      "problem": "Product bbox [73,641,575,1145] gives a height ratio of 0.35, at the floor of the allowed 35-74% band for this concept; the top 44% of canvas is unmodulated steel with no tonal event, so the frame reads as an under-scaled packshot in dead space versus references 3 and 5 where the hero or its atmosphere commands the frame. The previous scale-up patch was rejected, so a corrected in-bounds geometry must be supplied."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column holds only PRADA (y684-703), Paradoxe (y792-846) and the peach rule at y1010; subtitle and price are empty strings, leaving a void from the rule to the canvas bottom and denying the layered brand/name/descriptor hierarchy references 3 and 5 use to hold negative space. The previous subtitle patch was rejected on validation, so it must be re-issued with geometry that fits the column."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [0,1005,655,1255] confirms the base meets the steel with a soft shadow at offset_y 0 (no floating), but the shadow remains a thin uniform smudge under the base run with no occlusion gradient stretching into the brushed grain and no faint metal reflection, so the glass still reads as a cutout placed on metal rather than standing in it; the baked upper-left key is also unanswered by any directional bias in the contact."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References resolve their scenes with atmospheric density (007 petals), a reflective ground plane (Cartier, Versace) or a controlled gradient; this poster offers flat brushed texture plus one glow line and a stray vertical streak, so the 'metal climate' concept is stated but not built to campaign density."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Brushed stainless steel wall with fine horizontal grain sweeping into a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, perfectly even cool diffuse illumination from above with uniform brightness across the top edge and absolutely no vertical columns or streaks, faint anisotropic sheen following the grain only, matte metal texture, empty environment, no objects"
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 336
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 828
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 659
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#14181c"
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1030
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.52
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 18
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.25
+    }
+  ],
+  "reported_score": 75.6
+}

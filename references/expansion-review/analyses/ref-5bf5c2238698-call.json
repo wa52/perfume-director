@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-5bf5c2238698.webp",
+      "sha256": "fbca7e6e3512b928a67b5124dc1dc6125d08d013f25bd21dce909d84f0facddd"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-7a63e3a1-7585-9238-aff8-66bf3cdc9d4e",
+      "usage": {
+        "prompt_tokens": 1379,
+        "total_tokens": 1722,
+        "completion_tokens": 343,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1082,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 343
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7a63e3a1-7585-9238-aff8-66bf3cdc9d4e",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1379,
+    "total_tokens": 1722,
+    "completion_tokens": 343,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1082,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 343
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Chloé",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with elegant prop styling, warm lighting, and clear brand identity, highly suitable for design reference.",
+    "analysis": {
+      "composition": "Vertical arrangement with the flacon elevated on a translucent pink glass dome, balanced by a partial pear prop on the left.",
+      "subject_ratio": 0.75,
+      "negative_space": "Clean, warm beige background providing ample breathing room around the central subject.",
+      "lighting": "Soft, warm studio lighting creating gentle highlights on the ribbed glass and metallic collar, with soft shadows.",
+      "color": [
+        "warm beige",
+        "gold",
+        "translucent pink",
+        "amber",
+        "ochre"
+      ],
+      "typography": "None outside the container; text is limited to label lettering on the bottle and collar.",
+      "information_density": "Low, focused entirely on the product and immediate props.",
+      "characteristics": [
+        "ribbed glass texture",
+        "metallic gold accents",
+        "translucent pedestal",
+        "organic fruit prop",
+        "warm monochromatic palette"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.467
+}

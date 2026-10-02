@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 255395513705023,
+  "background": {
+    "color": "#bcd6c6",
+    "prompt": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot field of deep ink green dots gradually densifying and darkening toward the lower right corner with no hard tonal break, one single hard-edge flat vermilion red-orange diagonal band in exact hue #d8402f crossing the lower third from lower left to mid right, perfectly even shadowless frontal illumination, no texture beyond dots, no objects, no horizon",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 382,
+    "height": 864
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#bcd6c6",
+    "#123328",
+    "#d8402f"
+  ],
+  "title": {
+    "text": "Very Good Girl",
+    "x": 340,
+    "y": 223,
+    "size": 88,
+    "color": "#123328",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 486,
+    "y": 374,
+    "size": 20,
+    "color": "#123328",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#123328",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "Carolina Herrera",
+    "x": 416,
+    "y": 108,
+    "size": 26,
+    "color": "#123328",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.2
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 340,
+    "width": 168,
+    "color": "#d8402f"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

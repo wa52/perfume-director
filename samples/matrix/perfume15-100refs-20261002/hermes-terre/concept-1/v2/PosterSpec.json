@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 245989106096564,
+  "background": {
+    "color": "#c98a2e",
+    "prompt": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 519,
+    "height": 893
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#c98a2e",
+    "#241408",
+    "#d4552a"
+  ],
+  "title": {
+    "text": "TERRE D'HERMÈS",
+    "x": 167,
+    "y": 216,
+    "size": 84,
+    "color": "#241408",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 3,
+    "max_width": 0,
+    "line_height": 1.06,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 475,
+    "y": 346,
+    "size": 16,
+    "color": "#241408",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#241408",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Hermès",
+    "x": 475,
+    "y": 122,
+    "size": 30,
+    "color": "#241408",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 454,
+    "y": 330,
+    "width": 173,
+    "color": "#d4552a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

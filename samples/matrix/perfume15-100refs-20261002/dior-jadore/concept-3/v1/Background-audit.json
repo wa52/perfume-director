@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Calm shallow water sheet over fine pale sand at dawn, low horizon line at lower third, misty pale blue-grey sky gradient meeting water, smooth continuous wet ground plane, soft diffuse cool light, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [52, 20, 80, 80]. A continuous horizontal ground plane must be visible through y=80 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[8, 36, 38, 42], [8, 62, 31, 63], [8, 28, 16, 30]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 254490615815568,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

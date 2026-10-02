@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-97c509013519.jpg",
+      "sha256": "614740d845770b478699d3305ee6be923882340d0ecffe111a25df84b433efe1"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-764585e3-70b7-94f6-aed9-9f2991ba86b2",
+      "usage": {
+        "prompt_tokens": 527,
+        "total_tokens": 909,
+        "completion_tokens": 382,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 230,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 382
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-764585e3-70b7-94f6-aed9-9f2991ba86b2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 527,
+    "total_tokens": 909,
+    "completion_tokens": 382,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 230,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 382
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Dolce & Gabbana",
+    "style": "fashion",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved human-led fragrance campaign with clear brand lockup and dual product placement against a textured Mediterranean backdrop.",
+    "analysis": {
+      "composition": "Asymmetrical split layout; intimate couple occupies the left two-thirds, while product duo and brand logotype anchor the right third against a weathered stone surface.",
+      "subject_ratio": 0.65,
+      "negative_space": "Minimal; the rough stone texture fills the background, providing negative space primarily around the typography and bottles on the right.",
+      "lighting": "Warm, directional sunlight creating high contrast, deep shadows, and glowing skin highlights typical of golden-hour editorial photography.",
+      "color": [
+        "warm beige",
+        "sun-kissed bronze",
+        "deep black",
+        "soft lavender",
+        "pale yellow"
+      ],
+      "typography": "Classic black serif logotype 'DOLCE & GABBANA' placed in the upper right quadrant, distinct from the physical product labels.",
+      "information_density": "Moderate; balances a strong emotional human narrative with clear commercial product identification.",
+      "characteristics": [
+        "romantic intimacy",
+        "Mediterranean aesthetic",
+        "textured stone backdrop",
+        "dual gender targeting",
+        "warm color grading"
+      ],
+      "perfume_suitability": 95,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 35
+    }
+  },
+  "duration_seconds": 12.212
+}

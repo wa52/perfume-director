@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-1a40d10cb201.webp",
+      "sha256": "b87992b323fd382d375e496de31e3a9bae2d6c1ac5c1981b31dd3751487fab53"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-38f45a36-6e05-9300-8fcb-5e132c636bd9",
+      "usage": {
+        "prompt_tokens": 1659,
+        "total_tokens": 1988,
+        "completion_tokens": 329,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1362,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 329
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-38f45a36-6e05-9300-8fcb-5e132c636bd9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1659,
+    "total_tokens": 1988,
+    "completion_tokens": 329,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1362,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 329
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Fendi",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring a sculptural arrangement of Fendi bottles on concrete blocks. High design value for reference.",
+    "analysis": {
+      "composition": "Vertical, architectural stack of geometric concrete blocks interspersed with glass perfume bottles in various orientations.",
+      "subject_ratio": 0.45,
+      "negative_space": "Expansive, clean off-white background surrounding the central vertical structure.",
+      "lighting": "Bright, directional studio lighting creating distinct, sharp shadows to the right, emphasizing volume and texture.",
+      "color": [
+        "off-white",
+        "concrete grey",
+        "pale yellow",
+        "soft pink",
+        "mint green",
+        "black"
+      ],
+      "typography": "None visible outside of product labels.",
+      "information_density": "Low; focused entirely on the product arrangement and material contrast.",
+      "characteristics": [
+        "architectural",
+        "sculptural",
+        "textural contrast",
+        "pastel liquids",
+        "brutalist props"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 9.905
+}

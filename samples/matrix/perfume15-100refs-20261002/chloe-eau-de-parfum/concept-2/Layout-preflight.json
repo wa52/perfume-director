@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803172934,
+    "background": {
+      "color": "#a9c4a4",
+      "prompt": "Seamless flat matte card in medium sage green, fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band without lines across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 576,
+      "width": 847,
+      "height": 691
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#a9c4a4",
+      "#20301f",
+      "#8f9aa2"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 214,
+      "y": 1138,
+      "size": 110,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 8,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 1339,
+      "size": 20,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 480,
+      "y": 1040,
+      "size": 30,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1112,
+      "width": 173,
+      "color": "#8f9aa2"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803172934,
+    "background": {
+      "color": "#a9c4a4",
+      "prompt": "Seamless flat matte card in medium sage green, fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band without lines across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 576,
+      "width": 847,
+      "height": 691
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#a9c4a4",
+      "#20301f",
+      "#8f9aa2"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 214,
+      "y": 1138,
+      "size": 110,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 8,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 1339,
+      "size": 20,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 480,
+      "y": 1040,
+      "size": 30,
+      "color": "#20301f",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1112,
+      "width": 173,
+      "color": "#8f9aa2"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

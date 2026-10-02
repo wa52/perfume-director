@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The sienna disc's arc dies exactly into the bottle's left silhouette edge (disc right edge x=680 vs bottle left edge x=339..741), so instead of reading as a sun passing behind the flacon it reads as a半 tab welded to the bottle's left flank; the lower-right quadrant of the canvas is dead empty ochre, unbalancing the off-centre disc against the centred bottle."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical rhythm is top-heavy with a void in the middle: subtitle baseline band ends at y=364, the registration rule sits at y=392, then only ~26px of air before the cap hits y=418, while an ~83px gap sits between title (bottom 267) and subtitle (top 350); the monument band feels squeezed against the product and loose internally."
+    },
+    {
+      "type": "background",
+      "problem": "The declared 'faint fine dry-brush grain' is not visibly present; the field renders as a flat digital fill, so the matte gouache paper material claim of the concept is unsupported in the final image and the backdrop reads as a plain color wall rather than a painted paper surface."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy steps are uneven: logo (26px, tracking 6) to title (64px) jumps strongly, but title to subtitle (22px) is separated by excessive white space relative to the subtitle-to-rule-to-cap spacing, so the three-line band does not lock into one monument block; the rule at y=392 nearly collides with the cap top at y=418."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 150,
+          "y": 640,
+          "width": 640,
+          "height": 640,
+          "color": "#A44728",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless saturated marigold ochre matte gouache paper with visible fine dry-brush grain and subtle pigment mottling, uniform diffuse frontal illumination, uninterrupted flat painted color field, empty environment"
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 322
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 366
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    }
+  ],
+  "reported_score": 78
+}

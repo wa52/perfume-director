@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 executes the Celad Slab Ledger Oblique concept with cleaner craft: the three graphite slabs are truly flat, hard-edge screen-printed rectangles stepping down from upper-left to lower-right in a legible stair剖面, each passing behind the double-disc silhouette without touching the engraved labels, exactly as the brief demands. Version 1's topmost 'slab' is a rotated, perspective-thickened green card stack with visible side edges, which breaks the flat matte print logic and fights the shadowless frontal illumination; its半transparent middle rectangles also muddy the硬边 graphite秩序. In version 2 the product sits in the upper-middle field with a crisp silhouette against stepped tonal values (dark graphite, mid graphite, sage), preserving the pearlescent ivory faces and clear band readings from the original packshot. Typography in version 2 is more coherent: the wide-tracked BVLGARI brand line, the two-line geometric sans title anchored to the left margin, and the graphite rule under the plaque zone form one quiet lower-left ledger block, vertically clear of the disc's base. Neither poster shows studio equipment, floating-support artifacts or false horizons, and version 2's even ink-light field matches the declared graphic scene mode.",
+  "remaining_problems": [
+    "Title sets in title case ('Omnia Crystalline') rather than the brief's geometric all-caps two-line lockup, weakening the ledger plaque's authority in both versions",
+    "The oblique blank seam parallel to the double-disc oblique axis is implied only by the slab stepping; no single crisp diagonal留白 seam reads across the slab edges",
+    "A faint soft shadow under the disc contradicts the declared perfectly shadowless frontal ink light",
+    "Slab steps align to a right-hand edge, leaving the right margin heavier than the intended pure stair剖面 rhythm"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

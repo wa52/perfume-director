@@ -1,0 +1,157 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "141b536324fb0af391a4e5d699843202dfeb98814cca165a8605ad6c509f8800"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-54940bf5-1905-930d-8758-bb45e1271136",
+      "usage": {
+        "prompt_tokens": 7935,
+        "total_tokens": 9809,
+        "completion_tokens": 1874,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5335,
+          "text_tokens": 2600
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 849
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-54940bf5-1905-930d-8758-bb45e1271136",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7935,
+    "total_tokens": 9809,
+    "completion_tokens": 1874,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5335,
+      "text_tokens": 2600
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 849
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 74,
+      "background": 72,
+      "physical_integration": 84,
+      "reference_alignment": 70,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The declared concept specifies hard-edge horizontal sedimentary strata stacked like a core sample, but the render shows soft undulating dune-like waves. The wavy contours read as generic landscape hills rather than the crisp stratigraphic bands of the brief, weakening the geological core-sample narrative."
+      },
+      {
+        "type": "composition",
+        "problem": "The flint-orange seam (the concept's burial line) sits at roughly y 965-990, almost exactly where the bottle's widest glass body begins, so the strongest color accent collides with the product silhouette edge instead of reading as an independent stratum line; the seam is also partially hidden behind the flacon, losing its survey-mark role."
+      },
+      {
+        "type": "typography",
+        "problem": "The subtitle and price strings are empty, so the calm top band carries only logo, title and rule; against references (Byredo, Bleu de Chanel) the type block lacks a supporting descriptor line, leaving hierarchy thin and the lower two-thirds of the poster text-free and unbalanced."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "The contact shadow verified in the base crop (soft darkening under the foot notch at y≈1339) is correct in offset, but at opacity 0.35 with blur 10 over the deep umber band it is nearly invisible, so the monument appears to hover slightly against the darkest stratum; the product's own baked high-key speculars also conflict mildly with the declared flat shadowless ink light."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "EAU DE TOILETTE"
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 372
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 20
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 6
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 330
+      }
+    ]
+  },
+  "duration_seconds": 58.814
+}

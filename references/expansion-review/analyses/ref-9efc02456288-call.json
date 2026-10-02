@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-9efc02456288.webp",
+      "sha256": "d153902bb47240b525f041506b2de448dad1bbc7220d94f00d240b12d9a3595b"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-386b1d3f-74b0-99cf-b425-7a497dba901a",
+      "usage": {
+        "prompt_tokens": 1379,
+        "total_tokens": 1703,
+        "completion_tokens": 324,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1082,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 324
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-386b1d3f-74b0-99cf-b425-7a497dba901a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1379,
+    "total_tokens": 1703,
+    "completion_tokens": 324,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1082,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 324
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "ROADS",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved minimalist perfume still-life featuring a clear brand identity and conceptual prop arrangement, highly suitable for design reference.",
+    "analysis": {
+      "composition": "Centralized product placement surrounded by a scattered, floating arrangement of uniform white spheres creating depth and framing.",
+      "subject_ratio": 0.15,
+      "negative_space": "Soft, gradient grey-white background providing ample breathing room around the central cluster.",
+      "lighting": "High-key, diffused studio lighting with soft shadows emphasizing the spherical volume and glass transparency.",
+      "color": [
+        "#FFFFFF",
+        "#F0F0F0",
+        "#E6E6E6",
+        "#FDF5E6"
+      ],
+      "typography": "Minimalist sans-serif lettering printed directly on the glass container; no external campaign typography present.",
+      "information_density": "Low",
+      "characteristics": [
+        "monochromatic",
+        "geometric props",
+        "floating elements",
+        "clean aesthetic",
+        "soft focus background"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.1
+}

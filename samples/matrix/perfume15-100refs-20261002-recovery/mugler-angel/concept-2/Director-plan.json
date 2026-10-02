@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\b6cbf396f853\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Brushed Aluminium Observatory Deck",
+    "brief": "把银盖楔的拉丝金属放大成整座观测台：环形拉丝阳极铝墙在真实基准线处接连续 honed 铝地面，冷暮光让金属保持哑光灰蓝；商品立于地面偏右，接触阴影陷进拉丝纹。左半幅墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽大字排印如仪器铭牌，一条钢蓝短横线垫于柱底如刻度。垂直方向与瓶肩重叠、水平方向宽距分离，双栏网格诚实成立；金属的冷哑光与星瓶折射的紫蓝碎光互为粗细。参考 R2 的分区式纸面秩序与 R8 的金属反射地面。",
+    "material": "anodized aluminium wall with circular brush grain and continuous honed aluminium ground",
+    "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#b9c2cc",
+      "#101820",
+      "#5f7fa6"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081375839,
+    "background": {
+      "color": "#b9c2cc",
+      "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame, matte metal grain with one broad calm sheen band low on the wall, cool diffuse twilight illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 502,
+      "height": 749
+    },
+    "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#b9c2cc",
+      "#101820",
+      "#5f7fa6"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 76,
+      "y": 576,
+      "size": 100,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 320,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 770,
+      "size": 18,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 76,
+      "y": 490,
+      "size": 34,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 720,
+      "width": 130,
+      "color": "#5f7fa6"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

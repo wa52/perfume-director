@@ -1,0 +1,129 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "f8a57e3ed7aabdef9a16b4a019bf06c52cf69c799ce1ca9dbdc511505c500a57"
+    },
+    {
+      "name": "prada-paradoxe-retailer.png",
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-22fd62d5-286f-9f4b-9b1c-1f691e0e5a81",
+      "usage": {
+        "prompt_tokens": 7749,
+        "total_tokens": 9001,
+        "completion_tokens": 1252,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5072,
+          "text_tokens": 2677
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 227
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-22fd62d5-286f-9f4b-9b1c-1f691e0e5a81",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7749,
+    "total_tokens": 9001,
+    "completion_tokens": 1252,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5072,
+      "text_tokens": 2677
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 227
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.x",
+        "op": "set",
+        "value": 340
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 846
+      },
+      {
+        "path": "product.width",
+        "op": "set",
+        "value": 620
+      },
+      {
+        "path": "product.height",
+        "op": "set",
+        "value": 620
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Brushed stainless steel wall with fine horizontal grain sweeping into a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, cool diffuse even illumination from above with no vertical streaks, faint anisotropic sheen following the grain, matte metal texture, empty environment, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1010
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 260
+      }
+    ]
+  },
+  "duration_seconds": 27.953
+}

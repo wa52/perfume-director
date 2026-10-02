@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-53f7b1aedf36.webp",
+      "sha256": "03febbb8788be372459f682783a2d5ea93dd11728d37c08a0a1d74fa5fe68025"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ed6e3f89-1c9e-91d0-bdb3-219ae00b965d",
+      "usage": {
+        "prompt_tokens": 939,
+        "total_tokens": 1272,
+        "completion_tokens": 333,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 642,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 333
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ed6e3f89-1c9e-91d0-bdb3-219ae00b965d",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 939,
+    "total_tokens": 1272,
+    "completion_tokens": 333,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 642,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 333
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved multi-brand perfume still life with strong atmospheric lighting and shadow play, highly useful for composition and mood reference.",
+    "analysis": {
+      "composition": "Horizontal linear arrangement of five varied perfume bottles on a textured ledge, balanced by scattered floral props and dramatic cast shadows on the backdrop.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous textured background area dominated by artistic leaf and bottle shadows, providing visual breathing room.",
+      "lighting": "Warm, hard directional sunlight creating sharp, high-contrast silhouettes and distinct shadows on the back wall.",
+      "color": [
+        "sand beige",
+        "crimson red",
+        "clear glass",
+        "soft peach",
+        "deep burgundy"
+      ],
+      "typography": "None visible outside of the product labels.",
+      "information_density": "Low, purely visual and atmospheric.",
+      "characteristics": [
+        "hard shadows",
+        "warm golden hour tone",
+        "textured paper backdrop",
+        "multi-brand grouping",
+        "botanical accents"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.345
+}

@@ -1,8 +1,48 @@
 # Perfume Director — 最小闭环 v0.1
 
-只做香水，20 张参考，每次由视觉模型重新规划四个方向。没有 LoRA、向量数据库或 agent 框架。真实闭环以质量为目标，单方向渲染预算可设 1～12 版；视觉模型示例配置为 5 版，预算耗尽仍未达标就保留 NEEDS_REVIEW。
+只做香水，100 张广告/商业静物参考，每次由视觉模型重新规划四个方向。没有 LoRA、向量数据库或 agent 框架。真实闭环以质量为目标，单方向渲染预算可设 1～12 版；视觉模型示例配置为 5 版，预算耗尽仍未达标就保留 NEEDS_REVIEW。
 
 流程：参考分析 → Design KB → Director 输出 PosterSpec → ComfyUI 合成 → Critic 看成品、商品和 3 张参考 → 校验修改 → 下一版。
+
+## 100张参考与15款商品测试（2026-10-02）
+
+15款真实透明商品图已准备，覆盖细长瓶、宽三角瓶、星形瓶、鞋形、双环、透明玻璃与不透明瓶体。输入与来源见 `assets/products/test-products-15.json`；这是15款不同商品的视觉覆盖，不是声称15种互斥香调分类。图片保留原始字节，不重新绘制瓶身。
+
+新增能力：商品视觉观察随 Director/Critic 传递；背景接收实际合成区域与文字留白坐标；平面图形与摄影场景区分处理；标题支持字距、自动换行、行距与对齐；装饰线可由Critic修改；接触阴影从瓶底alpha轮廓测量，并支持宽度微调。宽瓶按实际宽高比限制最大尺寸；规划修复收到真实碰撞坐标。
+
+首轮15款均已尝试：8款完成四方向，7款失败；补测已补齐星形瓶、三角瓶与双环瓶，目前11款具有完整四方向，共44个选中海报，均为 NEEDS_REVIEW。初次补测中5款遇到403；双环瓶逐款重试已成功，其余4款正在单并发恢复。首轮每方向最多两版，用于广泛发现问题，不能据此宣称已稳定或商业质量通过。见 [合并总览](samples/matrix/perfume15-overview-20261002/gallery.html)、[首轮报告](samples/matrix/perfume15-100refs-20261002/REPORT.md)及各批证据。预览为JPEG副本，原始PNG与预览SHA分别保存；原始完整运行位于本机 `runs/`。
+
+运行批量测试（先启动ComfyUI并配置API环境变量）：
+
+```powershell
+python test_product_matrix.py --tag my-test --rounds 2 --workers 2 --wait-for-100
+python matrix_report.py --tag my-test
+```
+
+同名tag默认跳过已完成商品；复测修复请使用新tag，以保留旧失败证据。可加 `--ids prada-paradoxe mugler-angel` 只复测特定商品。常规ComfyUI入口仍每次输入一款商品、生成四个新方向。
+
+Windows 长时间批量运行建议使用独立后台进程，避免终端关闭中断：
+
+```powershell
+.\start_comfy.ps1
+.\launch_matrix.ps1 -Tag my-test -Rounds 2 -Workers 1
+```
+
+`launch_matrix.ps1` 通过 Windows WMI 创建隐藏进程，使批次独立于调用它的会话；`run_matrix.ps1` 是其内部启动入口，单独调用时仍可能随会话中断。电脑关机或服务停止仍会中断。进度保存在 `runs/matrix/my-test/`，日志位于 `runtime/matrix-my-test.stdout.log`。意外停止后再次运行同名 tag，可复用已完成方向；中断中的方向重新渲染，旧文件保留。运行中重复启动会被拒绝。不要在批量生成期间重启 ComfyUI。
+
+首次实图检查发现数值坐标可能被背景模型画成文字，因此后续版本把背景位置提示改为自然语言区域，精确坐标仍用于确定性合成。当前已启动批次保留原引擎快照，其结果不能算作这项修复的验证。
+
+后续修复与证据：
+
+- [坐标泄漏的同构图真实复测](samples/matrix/coordinate-leak-fix-20261002/REPORT.md)：相同 Spec 和种子，修复后不再出现该例中的坐标文字，仍是 NEEDS_REVIEW。
+- 参考池至少保留两张带广告排版的作品，每个方向在有合适参考时至少选一张；商品标签不算广告文字层级。规划使用 R1～R8 短编号，避免长引用 ID 抄错导致整批中止。
+- [鞋形瓶多支撑点回归](samples/matrix/multiple-support-fix-20261002/REPORT.md)：鞋头和鞋跟分别测量接触位置；已完成本地合成对照，尚需完整 ComfyUI 补测。
+- 越界标题先平移回安全区域再检查碰撞，不直接缩成很小的字。双环瓶的真实失败方案回放保留64px标题并通过几何校验。
+- [背景图形的真实两轮验证](samples/matrix/deterministic-graphics-20261002/REPORT.md)：Critic 给出圆形坐标和尺寸，ComfyUI 按命令重绘。初始迁移由对话指导完成，之后的评审和修改为真实千问调用；仍未通过审美验收。
+
+当前116项自动检查通过，只证明对应程序行为，不证明审美通过。首轮与初次补测均已结束；后续针对服务拒绝另开单款/逐款记录，保留旧失败状态。`finish_matrix.ps1 -ReportOnly` 可持续导出已有批次的本地对比页，不发起新的生成。服务端明确报出 JSON 生成中止时有限重试；参数、权限和内容拒绝仍停止，不修改输出契约绕过。
+
+采集辅助脚本依赖 `requirements-research.txt`。当前100张图可直接使用，不需要重新采集。参考筛选脚本中的临时抓取/批量筛选记录在本机 `runtime/`，公开逐张分析与入选来源在 `references/expansion-review/`。
 
 ## 千问与动态方向（2026-10-02）
 
@@ -20,7 +60,7 @@
 
 已保存黑金奢华、奶油极简、酒红编辑风、清新植物风四种实际 ComfyUI 渲染样例。各目录包含 PosterSpec、背景和成品，商品使用同一张原图。这些是供选择方向的预览，不是独立视觉模型自动审核通过的最终广告。
 
-仓库包含 20 张参考、SQLite 审美库、商品来源和四种样例；模型权重、ComfyUI 环境、缓存和本地配置不上传。参考和商品图片的权利归原权利人，来源记录随文件保留。
+仓库包含 100 张参考、SQLite 审美库、商品来源和四种样例；模型权重、ComfyUI 环境、缓存和本地配置不上传。参考和商品图片的权利归原权利人，来源记录随文件保留。
 
 换机器后先安装 Python 依赖，准备现有 ComfyUI、ComfyUI-GGUF 及 workflow 中指定的模型，然后复制配置：
 
@@ -40,11 +80,11 @@ python guided_render.py --spec samples/jadore-four-directions/02-cream-minimal/P
 
 ## 已准备好的审美库
 
-已从公开网页挑选、下载并逐张查看 20 张香水商业参考，覆盖 11 个品牌。浏览 `references/gallery.html`，来源与选择理由见 `references/sources.md`。
+当前有100张参考：保留原20张，新增80张香水广告与商业静物。新增图先批量筛选，再逐张调用千问进行独立分析，并经联系表视觉复核。SHA与感知哈希用于排除完全重复和近似重复；同一作品集与品牌设数量上限。浏览 `references/gallery.html`，来源与选择理由见 `references/sources.md`。
 
-`kb/design_kb.sqlite3` 是 SQLite 数据库，保存图片原始字节、SHA-256、尺寸、来源网页、图片链接、类型、入选理由和结构化审美标注。图片另有文件副本保存在 `references/luxury/`；`kb/luxury.json` 是兼容导出。Director 优先读取数据库，并按适配分选择 3 个不同品牌，避免全选同一品牌。
+`kb/design_kb.sqlite3` 是 SQLite 数据库，保存图片原始字节、SHA-256、尺寸、来源网页、图片链接、类型、入选理由和结构化审美标注。图片另有文件副本按风格保存在 `references/` 下；`kb/luxury.json` 是兼容导出。动态 Director 从库中按质量、渲染适配性、构图/字体/光线差异与来源分散程度选择8张不同品牌参考，再给每个方向选3张。最新选择器在接近最佳综合分的候选中加权抽样，并降低近期重复使用的权重。固定20次抽样的覆盖从15张提高到59张，仍保证每组至少两张广告排版参考；这仅是选择器验证，见 [抽样对照](references/pool-sampling-review/REPORT.md)。
 
-当前标注来自 Codex 实际看图后的视觉审阅（`analysis_origin=codex_visual_review`），商品面积比例是估计值，适配分为选图偏好；没有调用你的外部视觉模型。已将人物广告、场景广告、商品静物和完整广告分别标记，且注明第一版可借鉴的范围。执行 `index` 可用你的视觉 API 重新分析，同步更新数据库并导出 JSON。
+原20张保留 `analysis_origin=codex_visual_review`；新增80张为 `vision_api`，每次调用只输入一张图，记录模型、图像SHA及原始响应。重新复核原20张，有17张具有画外广告排版；新增80张中有9张，总计26张。其余主要学习摄影、材质和构图；不把瓶身标签字误称为海报排版。审美分与面积比例均是模型估计，不能视为客观评分。核对记录见 `references/expansion-review/verification.json`。
 
 参考文件版权仍属于原权利人，数据库保留来源，商业复用授权未核实。只用于研究设计语言，不将品牌文字和成品广告直接用作你的最终海报。
 
@@ -212,7 +252,7 @@ python -m unittest discover -s tests -v
 
 ### 每次四个独立风格
 
-ComfyUI 中每次运行 `PerfumeDirectorLoop` 默认使用 `direction_mode: dynamic`：先识别商品文案，再由视觉模型同时看商品与随机抽取的六个不同品牌参考，规划四个新概念。模型决定商品位置/大小、文字网格/字体、配色、材料和背景叙事，程序将紧凑方案转换成 PosterSpec 后执行，保留商品原图。各方向独立渲染、评审、修改和选优，文案保持一致。每批使用新背景种子。
+ComfyUI 中每次运行 `PerfumeDirectorLoop` 默认使用 `direction_mode: dynamic`：先识别商品文案，再由视觉模型同时看商品与按设计语言分散选择的八个不同品牌参考，规划四个新概念。模型决定商品位置/大小、文字网格/字体、配色、材料和背景叙事，程序将紧凑方案转换成 PosterSpec 后执行，保留商品原图。各方向独立渲染、评审、修改和选优，文案保持一致。每批使用新背景种子。
 
 规划会参考最近八批设计，拒绝已有的粗粒度布局/颜色/字体组合；同批至少三个布局网格、三个背景色族、衬线与无衬线标题类型和三种材料。另外必须包含标题在商品上方、下方和侧边的空间关系，以实际渲染包围盒判断，不能只移动几像素就算新布局。Critic 修改须保持该方向的标题/商品空间关系与字体类型。这个检查只防明显重复，不保证四张成品具有足够的审美差异。非法方案仅请求一次修复，仍不安全则停止，不回退到固定风格。
 
@@ -251,7 +291,7 @@ python poster.py four --config config.local.json --product assets/products/dior-
 
 四风格批次先单独读取商品图与用户 Brief，保存 `Product-copy.json`，四个 Director 共用同一组商品名称、品牌、描述和价格字段，避免参考品牌或“香氛”占位词混入成品。无法确认的文字留空；识别结果仍需人工核实，并非品牌身份认证。
 
-Critic 可以通过白名单选择 Times、Georgia、Arial 或微软雅黑；修改前验证字体存在与字符覆盖。复杂修改仍先原子校验，再请求一次模型修复。若修复失败，程序按商品、文字、阴影、背景四组保留独立安全的修改，记录 `Critic-safe-groups.json`；不安全的商品移动不会阻止有效的背景调整。相同 Spec 停止重复渲染。
+Critic 可以通过白名单选择本机已安装的 Times、Georgia、Arial、微软雅黑、Bodoni、Baskerville、Arial Narrow 和 Century Gothic；修改前验证字体存在与字符覆盖。复杂修改仍先原子校验，再请求一次模型修复。若修复失败，程序按商品、文字、阴影、背景四组保留独立安全的修改，记录 `Critic-safe-groups.json`；不安全的商品移动不会阻止有效的背景调整。相同 Spec 停止重复渲染。
 
 Critic 同时收到本轮 `Background-audit.json` 的文字颜色纠正，以及上一轮修改的执行/拒绝记录。浅色背景上反复要求浅色文字、反复撞瓶的移动不应被当作新改进；模型仍可能提出无效建议，程序继续校验并留档。动态模式的字体修改限制在原定衬线/无衬线类型内。
 

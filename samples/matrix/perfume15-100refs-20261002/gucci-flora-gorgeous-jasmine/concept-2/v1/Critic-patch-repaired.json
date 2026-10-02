@@ -1,0 +1,20 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1122
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1163
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1252
+    }
+  ]
+}

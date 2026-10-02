@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 182058145776206,
+  "background": {
+    "color": "#35402a",
+    "prompt": "Three flat matte painted plywood panels stacked as horizontal colour blocks in shifted olive green tones, clean hard seams between blocks, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 734,
+    "y": 864,
+    "width": 339,
+    "height": 749
+  },
+  "lighting": "even shadowless studio illumination across painted panels, flat graphic light",
+  "palette": [
+    "#35402a",
+    "#efe8da",
+    "#d9932f"
+  ],
+  "title": {
+    "text": "TOBACCO VANILLE",
+    "x": 76,
+    "y": 605,
+    "size": 72,
+    "color": "#efe8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 2,
+    "max_width": 380,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 76,
+    "y": 864,
+    "size": 24,
+    "color": "#efe8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 5
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#efe8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "TOM FORD",
+    "x": 76,
+    "y": 504,
+    "size": 26,
+    "color": "#efe8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 933,
+    "width": 194,
+    "color": "#d9932f"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

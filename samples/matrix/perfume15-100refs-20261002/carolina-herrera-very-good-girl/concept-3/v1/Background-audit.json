@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Concentric die-cut layered paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, hairline soft shade under each cut edge, matte card fibre grain, even shadowless frontal illumination, no objects, no horizon, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [34, 16, 66, 72] uncluttered; reserve quiet negative space for ink in these areas: [[14, 80, 66, 85], [38, 75, 63, 76]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 255395513707041,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 229101238488249,
+  "background": {
+    "color": "#c8d64b",
+    "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one large hard-edge flat solid triangle in deep ink olive with its base seated exactly on the bottom edge and centred, apex rising to mid-canvas so its sloped edges frame the lower silhouette, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges that never touch the solid shape, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 950,
+    "width": 749,
+    "height": 749
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#c8d64b",
+    "#1c2410",
+    "#f2e8d8"
+  ],
+  "title": {
+    "text": "Paradoxe",
+    "x": 70,
+    "y": 144,
+    "size": 168,
+    "color": "#1c2410",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 0,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 454,
+    "y": 338,
+    "size": 20,
+    "color": "#1c2410",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1c2410",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "PRADA",
+    "x": 432,
+    "y": 78,
+    "size": 30,
+    "color": "#1c2410",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 70,
+    "y": 372,
+    "width": 940,
+    "color": "#f2e8d8"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

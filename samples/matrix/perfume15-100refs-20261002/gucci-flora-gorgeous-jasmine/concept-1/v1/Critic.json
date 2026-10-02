@@ -1,0 +1,77 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 80,
+    "background": 68,
+    "physical_integration": 86,
+    "reference_alignment": 70,
+    "creative_coherence": 74
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The generated terrazzo reads warm cream/greige cement, not the declared sea-glass mint matrix (#d9e6df); the wall-to-ground tonal shift is a warm beige band, so the mineral field fights the mint lacquer instead of echoing it, and the aggregate chips are sparse confetti flecks rather than the dense fine coral/teal marble chip matrix the concept specifies."
+    },
+    {
+      "type": "background",
+      "problem": "The wall/ground horizon at roughly y=1075 cuts directly across the bottle silhouette atlabel height, creating a hard tonal seam through the hero; references integrate their horizon or plane change away from the product's reading zone."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [272,1199,809,1440] confirms the bottle IS seated: a soft dark contact band hugs the base line at y=1339 with offset_y 0, correctly not floating. However the shadow is a narrow uniform smudge that stops at the base corners; the faceted foot's outer corners read slightly light against the ground, weakening the settled mass compared to the references' grounded contact."
+    },
+    {
+      "type": "composition",
+      "problem": "The monument band is top-loaded: logo y=130-150, title y=230-304, rule y=353, then a 93px void before the cap at y=446, while the ground plane below the base carries only empty terrazzo; the vertical rhythm leaves the lower third inert versus the references' balanced negative space."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy is competent but thin: the 30px tracked GUCCI line and the 130px coral rule are visually equal weights at opposite ends of the band, and the title's single 841px line sits close to the side margins (117/122px), giving the band a stretched, under-designed feel against the generous serif concept."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The 'tide-line' story (rule as waterline mark, chips whispering the label garden) is only half delivered: the rule floats isolated in empty wall and the chips are too sparse and too warm to rhyme with the label's florals, so concept elements read as decoration rather than narrative."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Honed pale sea-glass green terrazzo wall flowing into a continuous matching terrazzo ground at a very low horizon near the bottom edge, dense fine aggregate of coral red and teal marble chips evenly set in cool mint cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects"
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 262
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 150
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 168
+    }
+  ],
+  "reported_score": 76
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Jungle",
+  "logo": "Kenzo",
+  "subtitle": "",
+  "price": "",
+  "evidence": "No legible printed label on the bottle; only a faint cursive signature engraving at the lower right of the glass (not reliably readable). Brand 'Kenzo' and product name 'Jungle' are supplied by the user brief; no price, volume or category text is visible on the packshot.",
+  "product_profile": {
+    "material": "Clear glass flacon with a polished gold-tone metal sculptural cap (elephant with raised trunk and leaf fronds)",
+    "color": "Near-colorless ivory-champagne glass; warm satin gold metal sculpture",
+    "transparency": "Highly translucent body rendered almost white by high-key fill; edge refraction lines visible, interior reads bright and near-opaque",
+    "illumination": "Soft, diffuse high-key lighting from front/above; gentle broad highlights on metal curves, no hard shadows, pure white cutout background",
+    "view": "Straight-on frontal eye-level view, bottle upright and centered",
+    "integration_limits": "Glass body is a bright near-white cutout region that cannot transmit a newly generated background; backgrounds must stay light/high-key or sit behind the silhouette; metal cap carries soft gradients and must keep its diffuse highlight direction"
+  }
+}

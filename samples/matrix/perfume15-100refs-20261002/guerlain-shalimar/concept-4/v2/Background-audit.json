@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless pale alabaster plaster studio cyclorama, continuous honed pale stone ground plane sweeping up into the wall with no visible junction line, one soft arched pool of diffuse morning light falling from top center, faint water caustic ripple light drifting across the upper wall, matte mineral grain, even high-key frontal illumination matching a front-lit subject, no objects, no horizon edge, Composition coordinates in percentages measured from upper left: reserve a calm empty area [7, 32, 53, 78]. A continuous horizontal ground plane must be visible through y=78 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[56, 51, 93, 55], [56, 44, 70, 46]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 250442642211920,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 255395513708050,
+  "background": {
+    "color": "#2f4a40",
+    "prompt": "Deep verdigris green wool felt cyclorama sweeping from wall into continuous felt ground with no visible seam, one soft elliptical pool of lighter light on the upper center pile, fine felt fibre grain, gentle diffuse illumination, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 670,
+    "y": 950,
+    "width": 350,
+    "height": 792
+  },
+  "lighting": "one soft elliptical spotlight pool from upper front on felt, otherwise gentle diffuse ambient, no hard shadows",
+  "palette": [
+    "#2f4a40",
+    "#f2e8da",
+    "#c9a24b"
+  ],
+  "title": {
+    "text": "Very Good Girl",
+    "x": 86,
+    "y": 216,
+    "size": 72,
+    "color": "#f2e8da",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.08,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 86,
+    "y": 353,
+    "size": 20,
+    "color": "#f2e8da",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f2e8da",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Carolina Herrera",
+    "x": 86,
+    "y": 108,
+    "size": 24,
+    "color": "#f2e8da",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 334,
+    "width": 151,
+    "color": "#c9a24b"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

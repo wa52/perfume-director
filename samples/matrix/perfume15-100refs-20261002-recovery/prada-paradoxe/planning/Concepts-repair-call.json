@@ -1,0 +1,339 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "prada-paradoxe-retailer.png",
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-7d3ef5ba-23bd-9ced-a41e-cf5ebed529ec",
+      "usage": {
+        "prompt_tokens": 32298,
+        "total_tokens": 38215,
+        "completion_tokens": 5917,
+        "prompt_tokens_details": {
+          "cached_tokens": 20480,
+          "image_tokens": 8904,
+          "text_tokens": 23394
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1820
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7d3ef5ba-23bd-9ced-a41e-cf5ebed529ec",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 32298,
+    "total_tokens": 38215,
+    "completion_tokens": 5917,
+    "prompt_tokens_details": {
+      "cached_tokens": 20480,
+      "image_tokens": 8904,
+      "text_tokens": 23394
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1820
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Chartreuse Hard-Edge Paradox",
+        "brief": "把三角瓶身读作一张平面几何定理：酸橙绿平涂卡纸上叠两枚硬边三角——一枚实心底沉三角托住剪影下半，一枚细白描边三角自其后错位穿出，斜边与瓶体斜边平行却永不相交，悖论即构图本身。无地面无 horizon，纯硬边形状叙事；商品居中沉于下幅，顶带完全安静：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行大字居中统领，一条墨绿细线横垫其下如制版套准线。哑光水粉吞光，让桃色液体与黑漆盖 owning 全部高光。",
+        "material": "flat matte gouache-painted card with hard-edge printed triangle solids and one offset outline triangle",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R5"
+        ],
+        "palette": [
+          "#c8d64b",
+          "#1c2410",
+          "#f2e8d8"
+        ],
+        "product": [
+          0.5,
+          0.66,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.13,
+            0.1,
+            118
+          ],
+          "logo": [
+            0.4,
+            0.045,
+            30
+          ],
+          "subtitle": [
+            0.42,
+            0.235,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one hard-edge flat solid triangle in deep ink olive seated at the bottom edge centred, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.3,
+          0.215,
+          0.4
+        ]
+      },
+      {
+        "name": "Chrome Vapor Meridian",
+        "brief": "把黑漆盖的镜面碎光放大成整座金属气候：拉丝不锈钢墙面垂落并折成连续同料地面，horizon 精确压在真实基准线；一道柔和水平雾光带横贯墙地交界，像蒸汽擦过钢面。商品缩小立于钢地偏左，测量接触阴影陷进细拉丝纹；右半钢面保持安静冷灰，承载一条真正的右栏排印：宽距 Arial 品牌字居柱顶，Century Gothic 几何大写题名以单行大字收左缘起排，与瓶盖区垂直重叠却水平宽距分离，一条钢灰细线横垫柱中如蒸汽刻度。冷钢的哑光丝纹与桃色液体的暖透互为温度悖论。",
+        "material": "brushed stainless steel wall sweeping into continuous matching brushed steel ground with one soft mist band",
+        "lighting": "cool diffuse studio light with one soft horizontal mist glow at the horizon, gentle frontal matching the baked softbox key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R6",
+          "R7"
+        ],
+        "palette": [
+          "#aeb6bd",
+          "#14181c",
+          "#e8b48e"
+        ],
+        "product": [
+          0.3,
+          0.62,
+          0.35
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.61,
+            0.55,
+            72
+          ],
+          "logo": [
+            0.61,
+            0.475,
+            26
+          ],
+          "subtitle": [
+            0.61,
+            0.665,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 0,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Brushed stainless steel wall with fine horizontal grain meeting a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, cool diffuse even illumination, matte metal grain, no objects",
+        "line": [
+          0.61,
+          0.63,
+          0.2
+        ]
+      },
+      {
+        "name": "Cocoa Glaze Tile Ledger",
+        "brief": "把金颈的暖光放进一间釉面砖窖：深可可棕釉面砖墙以细密灰缝排成竖向砖柱，釉光在砖面留下低亮弧光；连续同料釉砖地面在真实基准线接墙。商品立于地面居中偏上，接触阴影落进砖缝；下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Times 题名以近满带宽的单行衬线大字居中统领，一条桃色细线横于带顶如釉裂金缮。釉面的湿亮与玻璃三角的硬折光同源却不同温，棕与桃构成可可与肌肤的味觉悖论。",
+        "material": "glazed cocoa-brown ceramic tile wall with fine grout lines and continuous matching glazed tile ground",
+        "lighting": "soft warm diffuse light with low glossy sheen arcs on tile glaze, gentle frontal matching the baked studio key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#4a2c1e",
+          "#f2e4d2",
+          "#e8a87c"
+        ],
+        "product": [
+          0.5,
+          0.44,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.16,
+            0.79,
+            112
+          ],
+          "logo": [
+            0.4,
+            0.735,
+            28
+          ],
+          "subtitle": [
+            0.42,
+            0.905,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame, low glossy sheen arcs on each tile face, soft warm diffuse illumination, no objects",
+        "line": [
+          0.32,
+          0.775,
+          0.36
+        ]
+      },
+      {
+        "name": "Orchid Fresnel Stair",
+        "brief": "把瓶盖的斜切面读作一级光阶：中饱和兰花紫平涂卡纸上，一组硬边同心矩形阶自画面中心向外逐级放大，如菲涅尔透镜的刻阶；商品提至上幅立于阶心之前，矩形阶从其肩后掠过却不触碰标签。下幅留出安静宽铭牌带：宽距 Arial Narrow 品牌字居带顶，Baskerville 题名以近满带宽的衬线大字居中统领，一条浅紫细线横垫其下如刻阶零点。纯平面阶纹与三角玻璃的体积折光构成维度悖论，无地面无 horizon。",
+        "material": "flat matte screen-printed card with hard-edge concentric rectangular step rings",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R8"
+        ],
+        "palette": [
+          "#8a5fa8",
+          "#f4eef8",
+          "#d8b45e"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.15,
+            0.78,
+            110
+          ],
+          "logo": [
+            0.39,
+            0.725,
+            28
+          ],
+          "subtitle": [
+            0.41,
+            0.895,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 3,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte screen-printed card in medium orchid violet, hard-edge concentric rectangular step rings in lighter lilac expanding from the exact centre of the frame like fresnel lens steps, one thin gold seam ring at mid step, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.33,
+          0.885,
+          0.34
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 110.998
+}

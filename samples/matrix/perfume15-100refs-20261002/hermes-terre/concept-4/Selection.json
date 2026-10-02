@@ -1,0 +1,13 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 delivers the more resolved campaign within the Flint Gallery Oblique concept: the honed pale stone ground reads as a continuous matte plane meeting the cool grey wall at a horizon that sits at the bottle's true base line, and the foot carries a soft contact shadow that anchors the cutout. The right-hand Times column is tighter and more deliberate here - 'Hermès' at column head, the name across two tall serif lines, and the rust rule closing the column immediately beneath the name like a chisel mark - whereas version 1 leaves the rule stranded in empty wall with a dead gap. The oblique light raking the wall from upper left in version 2 is integrated with the ambient warmth on the ground and with the gentle highlights on the glass shoulders, so product and set share one light story; version 1's hard black triangular shadow at the upper-left corner reads as a pasted graphic wedge fighting the tile grid, and its gridded floor joints pull the eye away from the packshot. Product fidelity is intact in both, but version 2's calmer stone, coherent column and believable contact make it the stronger finished poster.",
+  "remaining_problems": [
+    "The wall still reads as large-format smooth stone tiles with visible joints rather than a monolithic cleft flint surface; the mineral texture is too uniform for the declared material.",
+    "The oblique shadow edge on the wall is soft and diffuse rather than the single crisp late-day shadow line the concept calls for.",
+    "The ground plane terminates in a visible slab front edge at the bottom of frame, reading as a raised plinth lip instead of a continuous honed ground running to the horizon.",
+    "Contact shadow under the foot is faint; a slightly firmer anchor would settle the bottle onto the stone.",
+    "The rust rule is short and thin relative to the column width, weakening the closing chisel-mark gesture."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

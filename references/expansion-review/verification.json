@@ -1,0 +1,22 @@
+{
+  "count": 100,
+  "new": 80,
+  "original": 20,
+  "styles": {
+    "luxury": 70,
+    "editorial": 13,
+    "fashion": 5,
+    "minimal": 11,
+    "tech": 1
+  },
+  "analysis_origins": {
+    "codex_visual_review": 20,
+    "vision_api": 80
+  },
+  "new_has_campaign_typography": 9,
+  "new_single_image_api_verified": 80,
+  "all_blob_and_file_hashes_match": true,
+  "manual_contact_sheet_review": true,
+  "original_has_campaign_typography": 17,
+  "total_has_campaign_typography": 26
+}

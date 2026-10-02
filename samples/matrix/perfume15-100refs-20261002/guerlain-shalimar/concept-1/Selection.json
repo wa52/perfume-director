@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) delivers the declared 'Engine-turned Guilloché Tide' concept as a finished poster: a clean centred Bodoni monument (tracked GUERLAIN line, heavy serif SHALIMAR, short engraver's rule) sits in a calm pale-ice top band with no collisions; the fine engine-turned wave lines read consistently across the flat matte field; the single hard graphite ribbon band crosses the lower sheet exactly as briefed, and the fan flacon stands lifted with its baked speculars and amber transmission untouched by the flat ink world. Version 1 (image 5) shares the same silhouette and band but is disqualified by stray layout-coordinate numerals ('16, 23, 83, 89', '[30, 12, 79, 16]', '[38, 5, 54, 16]') printed into the title zone, colliding with the SHALIMAR logotype and destroying typographic coherence; its guilloché engraving also collapses into two isolated side patches instead of a continuous line-density field. Neither candidate shows studio equipment or a floating packshot in front of a raised support; version 2's product scale and margins sit inside the safety bounds.",
+  "remaining_problems": [
+    "The graphite band reads as a flat printed stripe behind the pedestal foot rather than a resolved ground relation; the faint soft shadow under the foot slightly contradicts the declared shadowless flat ink light.",
+    "Guilloché wave lines run as fairly uniform horizontal ripples rather than concentric arcs visibly swelling from the lower centre; line density could be modulated more dramatically.",
+    "The wave engraving stops abruptly at the band edge and near the sheet borders, leaving the top band and band interior plain, which weakens the continuous line-density narrative."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

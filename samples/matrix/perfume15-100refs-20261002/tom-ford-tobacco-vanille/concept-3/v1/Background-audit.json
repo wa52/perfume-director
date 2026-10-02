@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Crushed aubergine plum velvet drape hanging in soft vertical folds, pile sheen catching gentle light along fold crowns, deep matte shadows in fold valleys, smooth tonal falloff toward edges, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [33, 14, 67, 70]. A continuous horizontal ground plane must be visible through y=70 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[19, 79, 85, 82], [39, 88, 61, 89], [40, 73, 57, 75]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 182058145775197,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

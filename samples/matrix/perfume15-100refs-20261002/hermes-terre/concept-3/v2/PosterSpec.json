@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 245989106098582,
+  "background": {
+    "color": "#191d26",
+    "prompt": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc centred, flat base line at seventy-three percent down the frame, crown rising to thirty percent down the frame so it passes behind the upper third of the frame, one crisp two-pixel lighter orange seam line exactly along the disc crown edge, perfectly even shadowless frontal illumination, no texture, no gradients, no objects, no furniture, no horizon",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 605,
+    "width": 468,
+    "height": 806
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#191d26",
+    "#f0e8da",
+    "#c96a2a"
+  ],
+  "title": {
+    "text": "TERRE D'HERMÈS",
+    "x": 151,
+    "y": 1176,
+    "size": 76,
+    "color": "#f0e8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 475,
+    "y": 1274,
+    "size": 16,
+    "color": "#f0e8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f0e8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "Hermès",
+    "x": 475,
+    "y": 1092,
+    "size": 28,
+    "color": "#f0e8da",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 5
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 1300,
+    "width": 130,
+    "color": "#c96a2a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

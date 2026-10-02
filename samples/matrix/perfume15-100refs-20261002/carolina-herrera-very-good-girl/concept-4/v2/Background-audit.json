@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep verdigris green wool felt cyclorama curving continuously from back wall into ground with no seam and no horizon line, fine felt fibre grain, one soft elliptical pool of lighter light entering from upper front-left and fading diagonally toward lower right, gentle diffuse ambient falloff, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [46, 38, 78, 93]. A continuous horizontal ground plane must be visible through y=93 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[8, 15, 51, 19], [8, 8, 31, 9]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 255395513708051,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

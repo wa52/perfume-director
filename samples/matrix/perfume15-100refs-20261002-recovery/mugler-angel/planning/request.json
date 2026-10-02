@@ -1,0 +1,469 @@
+{
+  "brief": "为 Mugler Angel 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+  "direction_mode": "dynamic",
+  "directions": [
+    {
+      "name": "Star-Chart Engraving Plate",
+      "brief": "把星形瓶读作一张星图的原点：平涂冰紫卡纸上，细密刻线 constellation 从画面中心放射，五枚十字星 tick 精确对齐星瓶的五个尖角，像制图师为这颗星标定坐标；商品居中沉于下幅，刻线从其肩后穿过却不触碰标签。顶带留出安静铭牌区：宽距 Arial 品牌字最小置顶，Baskerville 题名以近半幅宽的大字居中统领，一条银蓝细线横于铭带之下如子午刻度。无地面无 horizon，纯刻线放射几何对抗半透玻璃的柔渐液体。参考 R1 的铭牌层级：品牌行轻、题名重、副行垫底。",
+      "material": "flat matte screen-printed card with engraved constellation lines and cross ticks",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "998428fbd92341f99d63c0862987e8c1de80e5b5a9f9eca0e04e5ec64ef64d24",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#e4e2ee",
+        "#241f38",
+        "#7f8ac0"
+      ],
+      "reference_ids": [
+        "ref-d2db4b80bde2",
+        "ref-f72a7e1dd1ad",
+        "ref-b4d87aee2707"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e4e2ee",
+          "prompt": "Seamless flat matte screen-printed card in pale ice lilac, fine engraved constellation lines in deep violet radiating from the exact centre with five small cross ticks at star points across the field, one thin hard-edge silver-blue meridian arc sweeping behind centre, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 907,
+          "width": 579,
+          "height": 864
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#e4e2ee",
+          "#241f38",
+          "#7f8ac0"
+        ],
+        "title": {
+          "text": "Angel",
+          "x": 353,
+          "y": 187,
+          "size": 150,
+          "color": "#241f38",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 458,
+          "y": 353,
+          "size": 20,
+          "color": "#241f38",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#241f38",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Mugler",
+          "x": 458,
+          "y": 94,
+          "size": 40,
+          "color": "#241f38",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 353,
+          "y": 353,
+          "width": 373,
+          "color": "#7f8ac0"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    },
+    {
+      "name": "Brushed Aluminium Observatory Deck",
+      "brief": "把银盖楔的拉丝金属放大成整座观测台：环形拉丝阳极铝墙在真实基准线处接连续 honed 铝地面，冷暮光让金属保持哑光灰蓝；商品立于地面偏右，接触阴影陷进拉丝纹。左半幅墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽大字排印如仪器铭牌，一条钢蓝短横线垫于柱底如刻度。垂直方向与瓶肩重叠、水平方向宽距分离，双栏网格诚实成立；金属的冷哑光与星瓶折射的紫蓝碎光互为粗细。参考 R2 的分区式纸面秩序与 R8 的金属反射地面。",
+      "material": "anodized aluminium wall with circular brush grain and continuous honed aluminium ground",
+      "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+      "id": "concept-2",
+      "signature": "6aa6dfae67b5399ef211fcbe8e8a0849129710d87c89051292d37dac840d28ac",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#b9c2cc",
+        "#101820",
+        "#5f7fa6"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-f305dbbdf3bc",
+        "ref-7a523ada9a2c"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#b9c2cc",
+          "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame, matte metal grain with one broad calm sheen band low on the wall, cool diffuse twilight illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 734,
+          "y": 864,
+          "width": 502,
+          "height": 749
+        },
+        "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+        "palette": [
+          "#b9c2cc",
+          "#101820",
+          "#5f7fa6"
+        ],
+        "title": {
+          "text": "Angel",
+          "x": 76,
+          "y": 576,
+          "size": 100,
+          "color": "#101820",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4,
+          "max_width": 320,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 76,
+          "y": 770,
+          "size": 18,
+          "color": "#101820",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#101820",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Mugler",
+          "x": 76,
+          "y": 490,
+          "size": 34,
+          "color": "#101820",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 720,
+          "width": 130,
+          "color": "#5f7fa6"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    },
+    {
+      "name": "Midnight Meridian Foil Monument",
+      "brief": "把星瓶悬进子夜：平涂深靛卡纸上贴一枚金属箔细环，环心精确对齐星瓶中心，环外刻出五道放射箔线如星芒刻度，箔的碎光与银盖楔的哑光金属互为镜像；商品被提至上幅如浮出夜面，下幅留出完整宽铭牌带。Times 题名以近满带宽的大字居中统领，宽距 Arial 品牌字置顶带、细箔线横于铭带之顶如天球仪刻度。无地面无 horizon，纯箔环几何与夜面平涂对抗半透玻璃的紫蓝内光。参考 R1 的深色负空间与白铭牌对比层级。",
+      "material": "flat matte gouache card with applied metal-leaf ring and engraved radial foil lines",
+      "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on foil ring",
+      "id": "concept-3",
+      "signature": "94765da09dd227183b3671405cdd147fdd86a4131788dfad4efb25a8034d31dd",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "serif",
+      "palette": [
+        "#1a1830",
+        "#eceaf4",
+        "#a9b4d8"
+      ],
+      "reference_ids": [
+        "ref-d2db4b80bde2",
+        "ref-7a523ada9a2c",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#1a1830",
+          "prompt": "Seamless flat matte gouache-painted card in deep midnight indigo, one thin metal-leaf silver ring centred slightly above middle with five fine engraved radial foil lines extending from the ring edge, perfectly even shadowless illumination, no texture gradients beyond foil lines, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 634,
+          "width": 540,
+          "height": 806
+        },
+        "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on foil ring",
+        "palette": [
+          "#1a1830",
+          "#eceaf4",
+          "#a9b4d8"
+        ],
+        "title": {
+          "text": "Angel",
+          "x": 302,
+          "y": 1152,
+          "size": 170,
+          "color": "#eceaf4",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 8,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 450,
+          "y": 1332,
+          "size": 20,
+          "color": "#eceaf4",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#eceaf4",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "Mugler",
+          "x": 450,
+          "y": 1073,
+          "size": 42,
+          "color": "#eceaf4",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 9
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 302,
+          "y": 1116,
+          "width": 475,
+          "color": "#a9b4d8"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    },
+    {
+      "name": "Frosted Glass Dawn Veil",
+      "brief": "晨雾后的磨砂玻璃幕墙：整面 frosted 亚克力板自墙垂落并铺成连续同料地面，背光在板后晕出一团冷白晨光，织出细密霜纹；商品立于霜地偏左，接触阴影陷进磨砂颗粒。右半幅霜面保持安静，承载一根 Arial Narrow 竖排文字柱：品牌字居柱顶，题名以窄柱三行内大字排印如蚀刻签条，一条霜蓝细线横于柱底如冰裂刻度。垂直方向与瓶肩重叠、水平方向宽距分离；磨砂的漫射哑光与星瓶折面高光互为虚实。参考 R2 的手写签条式排印节奏与 R3 的雾面渐变负空间。",
+      "material": "frosted acrylic sheet wall sweeping into continuous frosted ground with backlight glow",
+      "lighting": "soft high-key dawn backlight diffused through frosted sheet, gentle frontal fill, no hard shadows",
+      "id": "concept-4",
+      "signature": "65ce41d9e38f3ff4f5e021bca8cb499a694037c1583a7d9614549c71d7046c86",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#dfe4ea",
+        "#1c2430",
+        "#8fa6c4"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-f72a7e1dd1ad",
+        "ref-182ff709ad69"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#dfe4ea",
+          "prompt": "Frosted acrylic sheet in pale ice grey hanging as a wall and sweeping into a continuous matching frosted ground at a horizontal horizon six tenths down the frame, one soft cool white backlight glow blooming behind upper centre, fine frost grain, soft high-key diffuse dawn illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 367,
+          "y": 835,
+          "width": 483,
+          "height": 720
+        },
+        "lighting": "soft high-key dawn backlight diffused through frosted sheet, gentle frontal fill, no hard shadows",
+        "palette": [
+          "#dfe4ea",
+          "#1c2430",
+          "#8fa6c4"
+        ],
+        "title": {
+          "text": "Angel",
+          "x": 670,
+          "y": 605,
+          "size": 120,
+          "color": "#1c2430",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3,
+          "max_width": 360,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 670,
+          "y": 806,
+          "size": 18,
+          "color": "#1c2430",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#1c2430",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "Mugler",
+          "x": 670,
+          "y": 518,
+          "size": 36,
+          "color": "#1c2430",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 7
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 670,
+          "y": 763,
+          "width": 151,
+          "color": "#8fa6c4"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    }
+  ],
+  "max_rounds_per_direction": 2,
+  "execution_config": {
+    "vision_model": "qwen3.8-max",
+    "vision_options": {
+      "temperature": 0.2,
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "max_completion_tokens": 8192
+    },
+    "vision_timeout_seconds": 240,
+    "vision_attempts": 3,
+    "vision_image_max_edge": 1280,
+    "background_attempts": 2
+  },
+  "product_profile": {
+    "material": "Faceted cut-glass star flacon with an opaque brushed-silver metal cap wedge and small visible spray nozzle",
+    "color": "Lavender-violet body grading to pale icy blue at the star points",
+    "transparency": "Translucent glass body with transparent refractive edges; upper cap wedge fully opaque",
+    "illumination": "Soft diffuse studio light from front-top; broad gentle facet highlights, no hard cast shadow",
+    "view": "Near-frontal three-quarter view with slight tilt; bottle floats with no base contact or ground plane",
+    "integration_limits": "Isolated cutout on black; opaque silver cap cannot transmit a new background; translucent glass will tint from any generated backdrop behind it"
+  },
+  "engine_sha256": "657d819b026c6a32d8779788ab6a24ca74d63adc46eefab4cccf006f792636e7"
+}

@@ -1,0 +1,605 @@
+{
+  "product_id": "davidoff-cool-water",
+  "status": "COMPLETED",
+  "started_at": 1790925585.2495606,
+  "input_sha256": "69351a277f92031180d3bc91d2e4137f6535b84b57ae872c4830335bcd1f034c",
+  "reference_count": 100,
+  "source_sha256": {
+    "poster.py": "1022914e0cb06d99f6a400c168d3d282f0e6c88ebbc1bcb0ee87ad03591cf99b",
+    "concepts.py": "e2124c44d686c2b9d29c3c3ec4793acb55205a609fdad5704d0b9788f105c2b8",
+    "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+    "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+    "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70"
+  },
+  "rounds_per_direction": 2,
+  "stage": "FINISHED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\24fb3db88a4e",
+  "direction_count": 4,
+  "version": 2,
+  "direction_index": 4,
+  "direction_name": "Glacier Meltwater Basin",
+  "directions": [
+    {
+      "name": "Sonar Ping Chart Monument",
+      "brief": "Cool Water as a single ping on a nautical chart: a flat matte glacier-mint card carries fine concentric sonar rings in deep marine teal expanding from the exact centre of the frame, one thicker hard-edge ring marking the return echo. The upright blue slab stands centred in the lower two-thirds as the source of the ping, its baked backlight glow untouched by the flat ink world. All type stacks in a calm centred monument band at the top: wide-tracked Bodoni brand line, the name in one generous Didone line, the eau de toilette line closing the stack, with a short teal rule floating beneath like a chart tick. No floor, no horizon - pure radial echo geometry against translucent ocean glass.",
+      "material": "flat matte screen-printed chart paper with concentric sonar rings",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "012408ecdd3f2aba9b8da9c19236cde972ed3082a4301c225aa8253915bdf409",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#d7e6e3",
+        "#0d2b33",
+        "#1f7f96"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-453438bbcb76",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d7e6e3",
+          "prompt": "Seamless flat matte chart paper in pale glacier mint, fine concentric sonar rings in deep marine teal expanding from the exact center of the frame, one thicker hard-edge ring at mid radius, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 371,
+          "height": 893
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#d7e6e3",
+          "#0d2b33",
+          "#1f7f96"
+        ],
+        "title": {
+          "text": "Cool Water",
+          "x": 278,
+          "y": 144,
+          "size": 110,
+          "color": "#0d2b33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "EAU DE TOILETTE",
+          "x": 374,
+          "y": 259,
+          "size": 30,
+          "color": "#0d2b33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#0d2b33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "DAVIDOFF",
+          "x": 441,
+          "y": 75,
+          "size": 30,
+          "color": "#0d2b33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 328,
+          "width": 130,
+          "color": "#1f7f96"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\94c456eea669",
+      "selected": {
+        "version": 1,
+        "score": 82.3,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "1779603c3c482fefd8ab69126c9e747edb33b8e2211d2c679f178b1ba97190c6"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 82.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "1779603c3c482fefd8ab69126c9e747edb33b8e2211d2c679f178b1ba97190c6"
+        },
+        {
+          "version": 2,
+          "score": 83.7,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "27d676814a159e65c8a61652d6bd7ea24ca5bad500155a050f9f23e1b79e1e83"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Bathymetric Contour Plaque",
+      "brief": "The juice read as ocean depth: a flat petrol-teal card printed with thin pale bathymetric contour lines swirling across the upper field like a sea-floor survey, one hard-edge darker depth band sinking behind the shoulders. The cutout is lifted high into the upper zone so the lower third stays a completely calm plaque band with real breathing room: tracked geometric-sans brand line, the name set wide and centred in Century Gothic capitals near band width, the eau de toilette line beneath, closed by a short pale rule floating under the stack like a survey tick. No floor, no horizon - pure line-density descent narrative against glowing blue glass.",
+      "material": "flat matte printed card with bathymetric contour line engraving",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-2",
+      "signature": "69d63ef363f844f483bd098370633fd729437cc77b9fdcb0bdc45ebad25f1368",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#0f3a44",
+        "#e8f2f0",
+        "#5fc0d0"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-7a523ada9a2c",
+        "ref-d2db4b80bde2"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#0f3a44",
+          "prompt": "Seamless flat matte card in deep petrol teal, thin pale ice-blue bathymetric contour lines swirling across the upper two thirds like a sea-floor survey map, one hard-edge darker teal depth band crossing behind the middle, perfectly even shadowless illumination, no texture gradients beyond printed lines, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 634,
+          "width": 330,
+          "height": 792
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#0f3a44",
+          "#e8f2f0",
+          "#5fc0d0"
+        ],
+        "title": {
+          "text": "Cool Water",
+          "x": 228,
+          "y": 1152,
+          "size": 104,
+          "color": "#e8f2f0",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 5,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "EAU DE TOILETTE",
+          "x": 397,
+          "y": 1270,
+          "size": 30,
+          "color": "#e8f2f0",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#e8f2f0",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "DAVIDOFF",
+          "x": 444,
+          "y": 1080,
+          "size": 30,
+          "color": "#e8f2f0",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 1332,
+          "width": 130,
+          "color": "#5fc0d0"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\04cea899176f",
+      "selected": {
+        "version": 2,
+        "score": 82.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "99a0743fe90a426907721f93eb813d4cc86925c40ac50449ea11d1b86a834b7f"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 79.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "0d426fbbbb2be5303d2159cbf215d815ddaff44da516a3103100f1ef9735fad4"
+        },
+        {
+          "version": 2,
+          "score": 82.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "99a0743fe90a426907721f93eb813d4cc86925c40ac50449ea11d1b86a834b7f"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Board-formed Sea Wall Ledger",
+      "brief": "A brutalist coast after mist: board-formed concrete wall with horizontal formwork seams and round tie marks meets a continuous honed concrete ground at a horizon aligned exactly with the true base line, cool diffuse sea-fog light keeping every tone matte. The cutout stands right of centre on that ground, its measured contact shadow settling into the pale cement, while the left wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, the eau de toilette line and a short slate rule closing the column like a tide gauge mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column editorial grid honest; cold cement matte against luminous ocean-blue glass is the whole temperature story.",
+      "material": "board-formed concrete wall with continuous honed concrete ground",
+      "lighting": "cool diffuse overcast sea-fog daylight, soft frontal with no hard shadows, matching the baked studio light",
+      "id": "concept-3",
+      "signature": "cc6867bbd39de3af9b6792149a9dae7d20f1c77f42d9f633da05543729ff2101",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#b9c0c2",
+        "#16232a",
+        "#2e7f96"
+      ],
+      "reference_ids": [
+        "ref-62ff901b9d4a",
+        "ref-efb51dc5d487",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#b9c0c2",
+          "prompt": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground at a horizontal horizon six tenths down the frame, matte cement grain, cool diffuse overcast fog light, even shadowless illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 734,
+          "y": 864,
+          "width": 359,
+          "height": 864
+        },
+        "lighting": "cool diffuse overcast sea-fog daylight, soft frontal with no hard shadows, matching the baked studio light",
+        "palette": [
+          "#b9c0c2",
+          "#16232a",
+          "#2e7f96"
+        ],
+        "title": {
+          "text": "Cool Water",
+          "x": 76,
+          "y": 576,
+          "size": 96,
+          "color": "#16232a",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 1,
+          "max_width": 340,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE TOILETTE",
+          "x": 76,
+          "y": 842,
+          "size": 26,
+          "color": "#16232a",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#16232a",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "DAVIDOFF",
+          "x": 76,
+          "y": 497,
+          "size": 28,
+          "color": "#16232a",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 5
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 929,
+          "width": 108,
+          "color": "#2e7f96"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\774a89633cb1",
+      "selected": {
+        "version": 2,
+        "score": 87.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "02d1163665bedc0c543d3ed2234e8b63b2ce3d9af2a90b43afb691d5e84f9dbe"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 86.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "a7ab52c993347c9f119a669361ba27187fd691aebf51146470bbc6aef2368d32"
+        },
+        {
+          "version": 2,
+          "score": 87.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "02d1163665bedc0c543d3ed2234e8b63b2ce3d9af2a90b43afb691d5e84f9dbe"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Glacier Meltwater Basin",
+      "brief": "Meltlight under ice: a photographic polar basin where a continuous matte glacier-ice sheet sweeps to a low horizon exactly at the true base line, and soft turquoise meltwater caustic ripples drift across the ice and the pale mist sky above. The cutout stands left of centre on that ice, contact shadow absorbed at its foot, while the right half stays calm for a wrapped Arial Narrow column: brand at column head, the name across two tall condensed lines, the eau de toilette line and a short glacier rule closing the column like a core-sample mark. Vertical overlap with the cap zone but wide horizontal clearance keeps the asymmetric grid deliberate; frozen white matte against saturated ocean-blue glass reads as water at both ends of its life.",
+      "material": "matte glacier ice sheet with turquoise meltwater caustic light",
+      "lighting": "soft high-key polar daylight, diffuse cool frontal with gentle moving caustic ripples, no hard shadows",
+      "id": "concept-4",
+      "signature": "ce43c4388452801ab4c90b6fa16fbd478e11ed1a8c052603263534de529ee279",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#e6eeef",
+        "#12333c",
+        "#37b0c4"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-7a523ada9a2c",
+        "ref-efb51dc5d487"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e6eeef",
+          "prompt": "Continuous matte glacier ice sheet in pale blue-white sweeping to a low horizontal horizon six tenths down the frame under a pale mist sky, soft turquoise meltwater caustic ripple light drifting across ice and sky, fine snow grain, soft high-key diffuse polar illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 346,
+          "y": 864,
+          "width": 359,
+          "height": 864
+        },
+        "lighting": "soft high-key polar daylight, diffuse cool frontal with gentle moving caustic ripples, no hard shadows",
+        "palette": [
+          "#e6eeef",
+          "#12333c",
+          "#37b0c4"
+        ],
+        "title": {
+          "text": "Cool Water",
+          "x": 605,
+          "y": 576,
+          "size": 104,
+          "color": "#12333c",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 400,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE TOILETTE",
+          "x": 605,
+          "y": 852,
+          "size": 26,
+          "color": "#12333c",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#12333c",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "DAVIDOFF",
+          "x": 605,
+          "y": 497,
+          "size": 28,
+          "color": "#12333c",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 605,
+          "y": 939,
+          "width": 108,
+          "color": "#37b0c4"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\493fd106aef6",
+      "selected": {
+        "version": 2,
+        "score": 82.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "7f88ba8b7348dd2b7ce6705e393a8537166a52fbe9b7d58f43d553bf70d1a0ba"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "6bec35177faac0dec05ddcbca9cd27f56c6f0de3b083f33cddf3d7efbb39c735"
+        },
+        {
+          "version": 2,
+          "score": 82.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "7f88ba8b7348dd2b7ce6705e393a8537166a52fbe9b7d58f43d553bf70d1a0ba"
+        }
+      ],
+      "review_failures": []
+    }
+  ],
+  "batch_dir": "runs/batches/24fb3db88a4e",
+  "duration_seconds": 3011.0
+}

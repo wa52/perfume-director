@@ -1,0 +1,155 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "f103ea997a269f112fba308ffa8707d1dea754428e8a1b0405b022114e19627b"
+    },
+    {
+      "name": "chloe-eau-de-parfum-retailer.png",
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "f28f81ac40a5371a75d9fbd7a70f9bb7e20c398635f3d68c935bcc783aa88430"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "3f95600b954223d18de478d324cd2473c4c9bd23fb17a6de4a9b617f3de194be"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ce27f5bb-3370-998a-9268-778d754e4903",
+      "usage": {
+        "prompt_tokens": 8924,
+        "total_tokens": 10978,
+        "completion_tokens": 2054,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5495,
+          "text_tokens": 3429
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1029
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ce27f5bb-3370-998a-9268-778d754e4903",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8924,
+    "total_tokens": 10978,
+    "completion_tokens": 2054,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5495,
+      "text_tokens": 3429
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1029
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 80.4,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 80,
+      "background": 76,
+      "physical_integration": 84,
+      "reference_alignment": 74,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "composition",
+        "problem": "The halo is still not the declared 'bow halo': the bow knot sits at roughly y=800 (product bbox top 655 plus cap height) while the disc's visible circle spans about y=290-830, putting its centre near y=560 at the silver cap, not on the ribbon knot; the ring therefore reads as a generic backdrop circle behind the cap instead of an architectural ring centred on the bow, and its lower arc dies behind the bottle shoulder instead of sweeping past the ribbon ends."
+      },
+      {
+        "type": "background",
+        "problem": "The wall-to-ground horizon at about y=1155 crosses the bottle's lower third behind the fluted transparent glass, and the ground is a clearly lighter value than the wall, so a bright horizontal band sits exactly in the juice/base read zone; references (Versace Eros, 007) keep value transitions out of the product silhouette, and the current prompt's 'horizon eight tenths down' plus 'lighter blush ground' forces this clash every regeneration."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "The contact crop [128,1163,1080,1413] confirms a real soft contact shadow at offset_y 0 (correct, do not move), but on the light honed ground it stays a thin grey seam: there is no faint warm reflection or value bleed of the peach juice into the surface under the glass base, so the bottle rests on the plane without being optically married to it the way the Versace reference marries bottle and ground."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy remains under-resolved for a luxury campaign: the 30px logo and the 140px title are the same ink and same narrow sans stacked 74px apart top-left with no size/weight contrast step, the subtitle and price strings are empty leaving dead spec slots, and the rose rule at y=300 floats 31px under the title baseline zone instead of reading as a deliberate keystone tick tied to the type block's measure."
+      },
+      {
+        "type": "creative_coherence",
+        "problem": "The 'powder rose mineral plaster' grain is nearly invisible at poster scale - the wall reads as flat matte paint - so the concept's stated cold/warm, soft/hard dialogue (matte mineral plaster vs mirror cap vs peach juice) is declared but not delivered; only the disc edge gives any material event."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Powder rose mineral plaster wall in medium saturated dusty rose with softly visible troweled matte grain and one broad calm diffuse glow, meeting a continuous honed rose ground of nearly the same value as the wall at a low horizontal horizon near ninety one percent down the frame so the seam falls behind the lowest edge of the glass, one large hard-edge flat disc in lighter blush rose centred at fifty six percent down the frame with its arc sweeping behind the middle of the wall, matte mineral grain, soft high-key diffuse illumination, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 18
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.15
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 22
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 292
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 210
+      }
+    ]
+  },
+  "duration_seconds": 44.95
+}

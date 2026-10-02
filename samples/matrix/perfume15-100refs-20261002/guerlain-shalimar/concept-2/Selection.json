@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 wins on the concept's own terms: the bottle sits convincingly on the honed stone ground with a soft contact shadow at its foot and a cast shadow direction consistent with the raking upper-right light, the amber juice and blue dome cap stay faithful to the source cutout, and the left sans column (GUERLAIN head, SHALIMAR in one broad line, closing rule) holds a clean hierarchy with wide clearance from the флаcon silhouette. Version 1 does render a finer diamond lattice on the right wall, but its bottle reads pasted: the foot meets the tiles with almost no anchoring shadow, the lattice light on the ground ignores the bottle entirely, and the column's rule floats低 with weaker vertical dialogue with the shoulder. Version 2's warmer dusk gradient, coherent ground plane and settled packshot make it the stronger finished campaign frame despite its coarser shadow pattern.",
+  "remaining_problems": [
+    "The pierced-screen lattice degenerates into broad diagonal window bands on the wall rather than the crisp brass diamond lattice the brief demands",
+    "Ground still reads as grouted stone tiles instead of a continuous honed sandstone plane",
+    "Contact shadow at the foot is soft and slightly airbrushed; a tighter occlusion core would seat the cutout fully",
+    "Closing rule sits high relative to the shoulder line, leaving the column's bottom slightly unresolved against the empty wall"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

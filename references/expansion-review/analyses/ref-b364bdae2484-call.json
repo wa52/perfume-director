@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-b364bdae2484.webp",
+      "sha256": "e9c58ff1a6da6a43a552dc61ffaf4e7ab4833e5324fd73e4ee1111bf4e27d0dc"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-98399bdd-72e9-967d-b02a-6ab1d0101068",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 867,
+        "completion_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 364
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-98399bdd-72e9-967d-b02a-6ab1d0101068",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 867,
+    "completion_tokens": 364,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 364
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Viktor&Rolf",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved commercial perfume still-life featuring dynamic fluid simulation and premium product rendering, serving as an excellent visual reference for luxury fragrance campaigns.",
+    "analysis": {
+      "composition": "Centered symmetrical arrangement with a vertical explosion of magenta ink/smoke erupting from the bottle, grounded by subtle concentric water ripples at the base.",
+      "subject_ratio": 0.65,
+      "negative_space": "Soft, uncluttered pale pink gradient background providing high contrast for the dark magenta plume.",
+      "lighting": "Studio softbox lighting with specular highlights on the faceted glass and metallic rose-gold cap; backlit effect on the upper smoke plume.",
+      "color": [
+        "magenta",
+        "pale pink",
+        "rose gold",
+        "black"
+      ],
+      "typography": "None. Text is restricted to the product label.",
+      "information_density": "Low, focused entirely on the product and the singular visual metaphor of the scent 'bomb'.",
+      "characteristics": [
+        "fluid dynamics",
+        "faceted glass",
+        "monochromatic pink palette",
+        "surreal eruption",
+        "high-gloss finish"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.634
+}

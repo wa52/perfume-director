@@ -1,0 +1,49 @@
+{
+  "pass": false,
+  "score": 86.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 86,
+    "typography": 85,
+    "background": 86,
+    "physical_integration": 88,
+    "reference_alignment": 82,
+    "creative_coherence": 88
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The left editorial column ends at the 108px slate rule (y=929) while the bottle column runs to y=1296, leaving the lower-left third of the concrete field empty; against the references' balanced negative space the column reads top-loaded and the tide-gauge rule floats detached from the block above it (subtitle bottom 859 to rule 929 is a 70px gap versus the tighter logo-to-title rhythm)."
+    },
+    {
+      "type": "background",
+      "problem": "The honed ground plane between the horizon (~y=1040) and the bottle base is a nearly uniform pale band with no tonal gradient or grain falloff, so the ground reads slightly flatter than the wall's formwork texture; the reference campaigns modulate their support planes with soft light falloff to seat the hero."
+    }
+  ],
+  "changes": [
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 906
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 132
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Board-formed concrete wall in cool pale grey with horizontal formwork seams and small round tie marks, meeting a continuous honed concrete ground at a horizontal horizon six tenths down the frame, matte cement grain, cool diffuse overcast fog light with a gentle luminance falloff darkening the ground toward the foreground, even shadowless illumination, no objects"
+    }
+  ],
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ],
+  "reported_score": 86
+}

@@ -1,0 +1,115 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\8291d1e2ce3a\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Washed Linen Morning Column",
+    "brief": "晨光里的亚麻幕：水洗亚麻布自墙面垂落并铺成连续同料地面，折痕在真实基准线处没入布面，柔和窗光把织纹照成细暖的颗粒；商品立于布地偏右，接触阴影陷进织纹，宽蝴蝶结两侧保留完整横向呼吸。左半幅布面保持安静，承载一根 Times 竖排文字柱：品牌字居柱顶，题名以窄柱大字排印如裁缝签条，一条麻色细线竖于两栏之间如缝线。垂直方向与瓶肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；织物的哑光与玻璃凹槽的高光互为粗细。",
+    "material": "washed linen cloth cyclorama sweeping from hanging drape into continuous linen ground",
+    "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9c09a",
+      "#3a2c1c",
+      "#8a6a4a"
+    ],
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 143562803173943,
+    "background": {
+      "color": "#d9c09a",
+      "prompt": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon six tenths down the frame, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 620,
+      "y": 893,
+      "width": 812,
+      "height": 662
+    },
+    "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9c09a",
+      "#3a2c1c",
+      "#8a6a4a"
+    ],
+    "title": {
+      "text": "Chloé",
+      "x": 86,
+      "y": 605,
+      "size": 40,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 907,
+      "size": 20,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Chloé",
+      "x": 90,
+      "y": 511,
+      "size": 30,
+      "color": "#3a2c1c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 605,
+      "width": 4,
+      "color": "#8a6a4a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic",
+    "layout_fit": {
+      "requested_product": {
+        "x": 713,
+        "y": 893,
+        "height": 662
+      },
+      "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+    }
+  }
+}

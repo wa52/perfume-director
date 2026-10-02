@@ -1,0 +1,158 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "0108c81ff5453498d4ebf331d5dadef49be3b35ba819f2ec7c24cb91fa2677eb"
+    },
+    {
+      "name": "chloe-eau-de-parfum-retailer.png",
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "c6b0dce6034212f6eb73e0a1ecb33f57b468b5146ffd873e6b3f8c0d95c4b5b7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-94a55350-9094-9e11-a00a-52d88b720b9f",
+      "usage": {
+        "prompt_tokens": 8094,
+        "total_tokens": 10270,
+        "completion_tokens": 2176,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5499,
+          "text_tokens": 2595
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1151
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-94a55350-9094-9e11-a00a-52d88b720b9f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8094,
+    "total_tokens": 10270,
+    "completion_tokens": 2176,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5499,
+      "text_tokens": 2595
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1151
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 74,
+      "background": 72,
+      "physical_integration": 84,
+      "reference_alignment": 70,
+      "creative_coherence": 82
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The declared concept specifies 'fine engraved vertical rib lines inside the band only', but the rendered nude band reads as a flat, unmodulated beige stripe with no legible rib engraving at poster scale. The band is the conceptual payload (grosgrain magnified into a horizon); without visible rib density it collapses into a generic color block, and the bottle's own fluted glass becomes the only rib texture in the frame, inverting the intended dialogue."
+      },
+      {
+        "type": "typography",
+        "problem": "The nameplate stacks two identical words: logo 'Chloé' (30px, y94) directly above title 'Chloé' (150px, y187). Read together they form a stuttering duplicate rather than a brand-mark/nameplate hierarchy; references resolve this by differentiating content (brand mark vs product name) or scale gap. The small logotype also sits only ~79px above the title cap, crowding the plate."
+      },
+      {
+        "type": "composition",
+        "problem": "The meridian rule (decoration, 173px wide at y377) floats in a large empty blue field with ~190px of dead space between it and the band top edge, so the 'ribbon gauge line' reads as a stray dash instead of a tick on the meridian system; its nude color on blue also lacks the crisp ink authority the concept assigns to the nameplate zone."
+      },
+      {
+        "type": "background",
+        "problem": "Illumination is coherent (shadowless frontal graphic light matches the high-key packshot), but the blue field is a perfectly uniform matte with no printed-ink character; against references 3-5, whose fields carry either caustic light play, gradient depth or reflective ground, this field reads slightly pasted-behind rather than printed-with, weakening the screen-print card illusion."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte screen-printed card in medium dusty cornflower blue with faint paper-grain ink settle, one hard-edge horizontal grosgrain nude-beige band crossing at four tenths down the frame, inside the band only a dense row of fine engraved vertical rib lines like magnified ribbon weave catching slightly darker beige ink, perfectly even shadowless frontal illumination, no texture gradients outside the band, no objects"
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 78
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 200
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 452
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 240
+      },
+      {
+        "path": "decoration.color",
+        "op": "set",
+        "value": "#c9a184"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.3
+      }
+    ],
+    "evidence_notes": {
+      "contact_check": "Image 6 (crop 20,1170-1061,1420) shows the fluted glass base meeting the blue field with a soft compressed darkening hugging the base edge across its full width; contact shadow is present and correctly seated (offset_y 0), no floating.",
+      "geometry_check": "product_height_ratio 0.50 is inside the 0.50-0.65 hero range and inside this concept's 35-74% safety bound; base_y 1310 = 91.0% of canvas, under the 94% cap; sides 100-981 within 5-95%; text_product_overlap false for title and logo, so no overlap claimed.",
+      "artifacts_check": "No softboxes, lamps, stands or cameras visible; no extra bottles or generated labels; embossed 'Chloé' on glass matches the original packshot.",
+      "mode_check": "Graphic scene_mode honored: flat printed card, no forced floor horizon; band-at-bow-height relation preserved as declared."
+    }
+  },
+  "duration_seconds": 53.736
+}

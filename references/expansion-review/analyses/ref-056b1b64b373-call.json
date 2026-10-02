@@ -1,0 +1,93 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-056b1b64b373.webp",
+      "sha256": "2f9770c882d895b8f4f2798f5ef6f0290871ea298e8826763582c8b23f2476c9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-068c5113-f76a-970f-848e-a3bf686901ce",
+      "usage": {
+        "prompt_tokens": 1499,
+        "total_tokens": 1843,
+        "completion_tokens": 344,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1202,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 344
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-068c5113-f76a-970f-848e-a3bf686901ce",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1499,
+    "total_tokens": 1843,
+    "completion_tokens": 344,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1202,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 344
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Coty",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with strong monochromatic color grading and elegant floral staging; high utility for lighting and composition reference.",
+    "analysis": {
+      "composition": "Centralized vertical alignment of the bottle framed by organic floral curves at the base, creating a pedestal effect against a clean gradient background.",
+      "subject_ratio": 0.65,
+      "negative_space": "Generous upper negative space with a smooth radial gradient, focusing attention on the spherical cap and bottle silhouette.",
+      "lighting": "Soft, diffused studio lighting with warm backlighting that illuminates the liquid and creates a glowing halo effect around the subject.",
+      "color": [
+        "amber",
+        "gold",
+        "bronze",
+        "warm yellow"
+      ],
+      "typography": "None visible outside the container; text is restricted to the product label and embossed glass.",
+      "information_density": "Low; purely visual focus on product and mood.",
+      "characteristics": [
+        "monochromatic palette",
+        "floral props",
+        "spherical cap",
+        "glass refraction",
+        "warm gradient"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 43.497
+}

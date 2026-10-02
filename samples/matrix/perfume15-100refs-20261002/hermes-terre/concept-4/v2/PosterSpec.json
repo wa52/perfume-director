@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 245989106099591,
+  "background": {
+    "color": "#c9c4b8",
+    "prompt": "Seamless monolithic cleft flint stone plane in cool bone grey with natural split-plane facets and matte mineral grain, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, no joints no tiles no grout lines, soft diffuse daylight from above with one gentle broad oblique tonal gradient raking the upper left of the wall, even shadowless ambient illumination, empty scene, no objects",
+    "revision": 1
+  },
+  "product": {
+    "x": 324,
+    "y": 864,
+    "width": 435,
+    "height": 749
+  },
+  "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+  "palette": [
+    "#c9c4b8",
+    "#26221c",
+    "#a8502a"
+  ],
+  "title": {
+    "text": "TERRE D'HERMÈS",
+    "x": 610,
+    "y": 640,
+    "size": 74,
+    "color": "#26221c",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 2,
+    "max_width": 380,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 610,
+    "y": 864,
+    "size": 16,
+    "color": "#26221c",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#26221c",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "Hermès",
+    "x": 610,
+    "y": 504,
+    "size": 34,
+    "color": "#26221c",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.42,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 610,
+    "y": 800,
+    "width": 151,
+    "color": "#a8502a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

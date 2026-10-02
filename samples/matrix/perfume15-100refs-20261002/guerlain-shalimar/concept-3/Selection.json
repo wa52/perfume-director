@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) holds the declared 'Lapis Intarsia Night Vault' concept most faithfully: the gold star-lattice intarsia reads as a flat, even lapidary grid across the whole field with no perspective distortion, the hard-edge midnight octagon sits centred upper-middle directly behind the glossy blue dome cap like a vault panel, and the lower third resolves into a quiet plaque band - thin gold inlay seam, tracked GUERLAIN line, then the Baskerville SHALIMAR set wide and centred with real breathing room above the seam. The瓶 cutout keeps its original specular cap highlights and glowing amber transmission against the matte stone, silhouette is clean, hierarchy is unambiguous, and there is no studio equipment, no floating packshot over a raised support, no behind-the-scenes artifact. Version 2 (image 6) breaks the flat graphic brief: its lattice warps into a receding perspective floor/ceiling grid, the oversized octagon drifts to the top edge so the cap only clips its lower border instead of sitting inside a vault panel, and the coarse converging lines run through the plaque band, crowding the type and destroying the quiet band the concept demands.",
+  "remaining_problems": [
+    "In version 1 the octagon vault panel is only subtly darker than the surrounding field; a deeper midnight value would separate it more decisively as a hard-edge panel behind the dome cap.",
+    "The star-lattice continues at full strength through the lower plaque band, slightly competing with the tracked brand line and serif name instead of leaving the band fully quiet.",
+    "Faint mineral blotches in the lapis (left mid-field) read as texture noise rather than intentional veining at poster scale."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

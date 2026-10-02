@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Three flat matte painted plywood panels stacked as horizontal colour blocks in shifted olive green tones, clean hard seams between blocks, perfectly even shadowless illumination, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [52, 34, 84, 86] uncluttered; reserve quiet negative space for ink in these areas: [[7, 42, 42, 51], [7, 60, 30, 61], [7, 35, 23, 36]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 182058145776206,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

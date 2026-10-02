@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-3fdde389b0b3.webp",
+      "sha256": "92bdd5f38b0029e3f66c2c55e24992a38b14149640fc92b3cbb35f860f482825"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-09a1aef8-ce0a-9688-a0e3-1de871175c3b",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1904,
+        "completion_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 365
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-09a1aef8-ce0a-9688-a0e3-1de871175c3b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1904,
+    "completion_tokens": 365,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 365
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved conceptual still life featuring the iconic Chanel No. 5 silhouette embossed into a cracked, monochromatic plaster texture. Excellent use of material detail and negative space for luxury perfume reference.",
+    "analysis": {
+      "composition": "Centered, symmetrical bas-relief composition where the bottle shape is integrated directly into the textured background surface.",
+      "subject_ratio": 0.65,
+      "negative_space": "Textured, cracked surface surrounding the central embossed motif, providing balanced framing.",
+      "lighting": "Soft, directional top-down lighting creating subtle highlights on the upper edges and soft shadows within the recessed areas to define the 3D form.",
+      "color": [
+        "beige",
+        "sand",
+        "taupe",
+        "warm grey"
+      ],
+      "typography": "Embossed lettering integral to the sculpted bottle design; no external campaign typography present.",
+      "information_density": "Low, focusing entirely on texture, form, and brand iconography.",
+      "characteristics": [
+        "bas-relief",
+        "cracked plaster texture",
+        "monochromatic",
+        "iconic silhouette",
+        "tactile",
+        "conceptual"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.706
+}

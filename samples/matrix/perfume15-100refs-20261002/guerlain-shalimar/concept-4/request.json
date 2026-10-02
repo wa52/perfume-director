@@ -1,0 +1,116 @@
+{
+  "brief": "为 Guerlain Shalimar 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A photographic morning cloister: pale alabaster plaster wall meets a continuous honed pale stone ground at a horizon level with the true base line, one soft arched pool of light falling from above while water-born caustic ripples drift across the arch like light off a fountain basin. The cutout is scaled down and stands left of centre on that ground, contact shadow anchoring the foot, while the right wall stays calm for a genuine Century Gothic column: brand at column head, the geometric name in one wide line, a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cool stone matte against warm amber liquid is the whole temperature story.",
+  "product": "assets\\products\\guerlain-shalimar-retailer.png",
+  "references": [
+    {
+      "id": "ref-f72a7e1dd1ad",
+      "brand": "BYREDO",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/minimal/ref-f72a7e1dd1ad.webp",
+      "selection_reason": "High-quality dynamic product shot capturing the spray mechanism in action against a clean gradient background. Excellent reference for minimalist perfume photography and liquid texture rendering.",
+      "analysis": {
+        "composition": "Diagonal orientation of the bottle creates dynamic movement, balanced by the spray plume extending into the upper left negative space.",
+        "subject_ratio": 0.55,
+        "negative_space": "Generous gradient grey space surrounds the subject, emphasizing the fine mist particles.",
+        "lighting": "Crisp studio lighting with high specular highlights on the glass and metal atomizer; soft drop shadow anchors the floating object.",
+        "color": [
+          "silver",
+          "white",
+          "grey",
+          "pale yellow"
+        ],
+        "typography": "None outside the container label.",
+        "information_density": "Low; focus is entirely on the product form and function.",
+        "characteristics": [
+          "dynamic spray",
+          "floating object",
+          "monochromatic palette",
+          "glass refraction",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-efb51dc5d487",
+      "brand": "Sisley",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/luxury/ref-efb51dc5d487.webp",
+      "selection_reason": "Professionally resolved luxury perfume still-life featuring the L'Eau Rêvée collection. High-quality lighting, elegant composition with botanical props, and clear product visibility make it an excellent design reference.",
+      "analysis": {
+        "composition": "Dynamic flat-lay arrangement on a split-level beige stone surface; bottles are scattered organically, interspersed with white flowers and green foliage to create depth and movement.",
+        "subject_ratio": 0.65,
+        "negative_space": "Moderate negative space provided by the textured stone background, balancing the multiple subjects without feeling cluttered.",
+        "lighting": "Hard, directional sunlight creating sharp, dramatic shadows and bright caustic refractions through the glass bottles and sculpted caps.",
+        "color": [
+          "beige",
+          "pale yellow",
+          "white",
+          "forest green",
+          "clear"
+        ],
+        "typography": "None visible outside of product labels.",
+        "information_density": "Medium; focuses entirely on the product range and atmospheric styling.",
+        "characteristics": [
+          "sculpted glass caps",
+          "botanical props",
+          "hard shadows",
+          "caustics",
+          "stone texture",
+          "collection display"
+        ],
+        "perfume_suitability": 98,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

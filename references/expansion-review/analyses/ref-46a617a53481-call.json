@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-46a617a53481.webp",
+      "sha256": "faaef88b0579fb08f872a403384c4cf354d0489efda73e42ff4e4f71de881f43"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-568c37d2-4219-9cf9-928c-0d53082f8a51",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1878,
+        "completion_tokens": 339,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 339
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-568c37d2-4219-9cf9-928c-0d53082f8a51",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1878,
+    "completion_tokens": 339,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 339
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Jimmy Choo",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring a faceted glass bottle within a transparent acrylic block, accented by suspended floral elements and condensation. High-quality commercial execution suitable for design reference.",
+    "analysis": {
+      "composition": "Centered product placement framed by a rectangular transparent block, creating a layered depth effect with floating botanicals.",
+      "subject_ratio": 0.45,
+      "negative_space": "Clean, light grey gradient background providing ample breathing room around the central prop.",
+      "lighting": "Soft, diffused studio lighting with crisp specular highlights on the glass facets, metal cap, and water droplets.",
+      "color": [
+        "pale pink",
+        "silver",
+        "white",
+        "light grey"
+      ],
+      "typography": "None outside the container; text is limited to the brand and product name printed directly on the bottle.",
+      "information_density": "Low",
+      "characteristics": [
+        "faceted glass",
+        "suspended florals",
+        "condensation texture",
+        "acrylic framing",
+        "pastel palette"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 10.999
+}

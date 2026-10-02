@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\d167c952843f\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Lido Terrazzo Tide-Line",
+    "brief": "A quiet photographic lido morning: honed sea-glass terrazzo sweeps from wall into a continuous matching ground at a low horizon, its coral and teal marble chips whispering the label's garden without quoting it. The opaque mint flacon stands flush on that ground at its true base line under overcast open-shade light, the measured contact shadow settling into the matte cement matrix. All type floats in a centred monument band in the calm upper wall: small tracked Baskerville brand line, the name in one generous serif line, closed by a short ink rule like a waterline mark. Mineral chip matte against lacquer gloss keeps the story tactile and architectural.",
+    "material": "honed terrazzo wall and continuous terrazzo ground with marble chip aggregate",
+    "lighting": "soft overcast open-shade daylight, diffuse frontal with no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9e6df",
+      "#123a3a",
+      "#d46a4e"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 230243689465946,
+    "background": {
+      "color": "#d9e6df",
+      "prompt": "Honed pale sea-glass terrazzo wall meeting a continuous matching terrazzo ground at a low horizontal horizon, fine chips of coral red and teal marble set in matte cement matrix, soft overcast diffuse daylight, even shadowless illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 379,
+      "height": 893
+    },
+    "lighting": "soft overcast open-shade daylight, diffuse frontal with no hard shadows, matching the baked studio light",
+    "palette": [
+      "#d9e6df",
+      "#123a3a",
+      "#d46a4e"
+    ],
+    "title": {
+      "text": "Flora Gorgeous Jasmine",
+      "x": 117,
+      "y": 230,
+      "size": 84,
+      "color": "#123a3a",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.1,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 486,
+      "y": 353,
+      "size": 20,
+      "color": "#123a3a",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#123a3a",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "GUCCI",
+      "x": 480,
+      "y": 130,
+      "size": 30,
+      "color": "#123a3a",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 353,
+      "width": 130,
+      "color": "#d46a4e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 330
+    }
+  ]
+}

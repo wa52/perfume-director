@@ -1,0 +1,176 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489"
+    },
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "e849d3b2a26c20292b3c88dec9f0c7f3333ca25afa172e342d94d425c680c92d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ebe09753-f678-9e16-b627-2b993689aac3",
+      "usage": {
+        "prompt_tokens": 8044,
+        "total_tokens": 10143,
+        "completion_tokens": 2099,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5485,
+          "text_tokens": 2559
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1074
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ebe09753-f678-9e16-b627-2b993689aac3",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8044,
+    "total_tokens": 10143,
+    "completion_tokens": 2099,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5485,
+      "text_tokens": 2559
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1074
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 79,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 78,
+      "background": 74,
+      "physical_integration": 76,
+      "reference_alignment": 74,
+      "creative_coherence": 82
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The declared concept specifies a seamless felt cyclorama 'with no visible seam', but the render shows a hard horizontal wall/floor junction line at y≈830 spanning the full canvas width, with an abrupt tonal and grain change above/below it. It reads as a pasted backdrop edge rather than a swept cyclorama, and the sharp line competes with the silhouette behind the bottle's midsection."
+      },
+      {
+        "type": "background",
+        "problem": "Lighting mismatch: the baked product lighting is a soft key from upper front-left (long specular streak on the red body, bright cap facets), but the felt's elliptical light pool sits upper-center/upper-right of the text block and the floor is lit almost uniformly. The environment does not visibly support the product's actual key direction, so the cutout reads slightly pasted despite good contact."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [416,1206,924,1440] confirms the toe rests on the pile with a soft absorbed shadow (contact is real, not floating), but at the gold stiletto heel tip the shadow is nearly absent: the tip meets the felt with only a faint darkening and no occlusion pool, so the second support point reads a few pixels light. Shadow opacity 0.35 with blur 10 is too weak for the opaque glossy mass on absorbent felt."
+      },
+      {
+        "type": "typography",
+        "problem": "The upper-left monument is under-resolved relative to the references: the subtitle and price strings are empty, leaving logo + title + a lone 151px gold rule with a large dead zone between the rule (y≈334) and the bottle cap (y≈554); hierarchy stops at two levels and the gold rule floats without a text partner below it."
+      },
+      {
+        "type": "composition",
+        "problem": "The spotlight pool's brightest felt sits behind the title zone upper-center while the hero occupies lower-right, so the light accent and the subject pull in different directions; the mid-band (y≈350-550) is empty felt with no tonal event bridging text block and product."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep verdigris green wool felt cyclorama curving continuously from back wall into ground with no seam and no horizon line, fine felt fibre grain, one soft elliptical pool of lighter light entering from upper front-left and fading diagonally toward lower right, gentle diffuse ambient falloff, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.15
+      },
+      {
+        "path": "shadow.offset_y",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "Eau de Parfum"
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 86
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 372
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 22
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 5
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 340
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 120
+      }
+    ]
+  },
+  "duration_seconds": 45.776
+}

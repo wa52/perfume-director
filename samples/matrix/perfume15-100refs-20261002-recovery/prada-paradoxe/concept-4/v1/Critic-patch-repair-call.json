@@ -1,0 +1,140 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "a6bf9855bbb389d56ef24f1a182ab27fb060076b8f40f4be11d99c190a6e2deb"
+    },
+    {
+      "name": "prada-paradoxe-retailer.png",
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-9bc5a0aa-b841-9317-b1b8-ebcc79dac875",
+      "usage": {
+        "prompt_tokens": 9080,
+        "total_tokens": 10450,
+        "completion_tokens": 1370,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6119,
+          "text_tokens": 2961
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 345
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-9bc5a0aa-b841-9317-b1b8-ebcc79dac875",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9080,
+    "total_tokens": 10450,
+    "completion_tokens": 1370,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6119,
+      "text_tokens": 2961
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 345
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": [
+          {
+            "kind": "rectangle",
+            "x": 90,
+            "y": 150,
+            "width": 900,
+            "height": 1010,
+            "color": "#9a74bd",
+            "opacity": 0.55
+          },
+          {
+            "kind": "rectangle",
+            "x": 170,
+            "y": 255,
+            "width": 740,
+            "height": 800,
+            "color": "#a987ca",
+            "opacity": 0.5
+          },
+          {
+            "kind": "rectangle",
+            "x": 250,
+            "y": 360,
+            "width": 580,
+            "height": 590,
+            "color": "#b798d6",
+            "opacity": 0.45
+          },
+          {
+            "kind": "rectangle",
+            "x": 330,
+            "y": 465,
+            "width": 420,
+            "height": 380,
+            "color": "#c5a9e0",
+            "opacity": 0.4
+          },
+          {
+            "kind": "rectangle",
+            "x": 300,
+            "y": 425,
+            "width": 480,
+            "height": 460,
+            "color": "#d8b45e",
+            "opacity": 0.9
+          }
+        ]
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 162
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "left"
+      }
+    ]
+  },
+  "duration_seconds": 31.563
+}

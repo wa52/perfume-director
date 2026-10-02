@@ -1,0 +1,15 @@
+{
+  "title": "Paradoxe",
+  "logo": "PRADA",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label visibly reads 'PRADA', 'MILANO', 'DAL 1913' with a crest emblem; the product name 'Paradoxe' is supplied by the user brief and is not printed on the visible label; no category, concentration or price text is legible on the packshot.",
+  "product_profile": {
+    "material": "Clear glass triangular flacon with glossy black lacquered cap and polished gold-tone metal collar",
+    "color": "Pale peach-pink juice inside colorless glass; jet-black cap; warm metallic gold neck",
+    "transparency": "Translucent pink liquid filling the triangular body behind transparent glass walls; cap and collar fully opaque",
+    "illumination": "Soft diffuse studio lighting from upper left; sharp specular facets on the black cap and bright rim highlights tracing the glass edges; no cast shadow, indicating a cutout render",
+    "view": "Near-frontal camera with the bottle rotated about 45 degrees so the triangle sits diagonally and the cap points to the upper right; flat label plane faces the viewer",
+    "integration_limits": "Pure white cutout background; the pink liquid and glass carry baked-in white luminance so a newly generated dark background cannot transmit through the body; cap speculars are fixed to the original softbox setup and contact shadow must be added artificially"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-569a60ad-9121-9dc2-9bf0-f544e6e24e33",
+      "usage": {
+        "prompt_tokens": 1439,
+        "total_tokens": 1809,
+        "completion_tokens": 370,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1142,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 370
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-569a60ad-9121-9dc2-9bf0-f544e6e24e33",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1439,
+    "total_tokens": 1809,
+    "completion_tokens": 370,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1142,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 370
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Kayali",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+    "analysis": {
+      "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+      "subject_ratio": 0.75,
+      "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+      "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+      "color": [
+        "pastel yellow",
+        "mint green",
+        "pale blue",
+        "soft orange",
+        "cream beige",
+        "gold"
+      ],
+      "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+      "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+      "characteristics": [
+        "faceted glass",
+        "jewel-like caps",
+        "pastel liquids",
+        "gold accents",
+        "clean aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 21.595
+}

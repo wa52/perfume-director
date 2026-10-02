@@ -1,0 +1,344 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-90208e77758d.webp",
+      "sha256": "45801261d65b445c4168087efea23da41c19986616fac59d86fcee44c1bd1b24"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-398b361f-74a1-9b10-92c1-a8bf3df91983",
+      "usage": {
+        "prompt_tokens": 28501,
+        "total_tokens": 34475,
+        "completion_tokens": 5974,
+        "prompt_tokens_details": {
+          "cached_tokens": 27648,
+          "image_tokens": 8704,
+          "text_tokens": 19797
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1877
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-398b361f-74a1-9b10-92c1-a8bf3df91983",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 28501,
+    "total_tokens": 34475,
+    "completion_tokens": 5974,
+    "prompt_tokens_details": {
+      "cached_tokens": 27648,
+      "image_tokens": 8704,
+      "text_tokens": 19797
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1877
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Sediment Strata Monument",
+        "brief": "Terre d'Hermès as geological time: a flat screen-printed poster of hard-edge sedimentary strata bands - pale sky, sand, ochre, sienna, deep umber - stacked like a core sample, with one thin flint-orange seam marking the burial line. The upright flacon stands centred as the monument extracted from those layers, its baked high-key speculars untouched by the flat ink world. All type stacks in the calm pale sky band at the top: tracked Baskerville brand line, the name in one generous serif line, closed by a short printed rule like a survey mark. No floor, no horizon - pure stratigraphic narrative against clear glass and amber juice.",
+        "material": "screen-printed matte paper with hard-edge sedimentary strata bands",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-f72a7e1dd1ad",
+          "ref-68bfeb9c56c1",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#c98a2e",
+          "#241408",
+          "#d4552a"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.155,
+            0.15,
+            84
+          ],
+          "logo": [
+            0.44,
+            0.085,
+            30
+          ],
+          "subtitle": [
+            0.44,
+            0.24,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 3,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 4
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Seamless flat screen-printed matte paper poster of horizontal sedimentary strata bands in pale bone, sand, ochre, burnt sienna and deep umber stacked from top to bottom, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.42,
+          0.235,
+          0.16
+        ]
+      },
+      {
+        "name": "Salt Flat Dawn Mirror",
+        "brief": "The juice returned to its mineral origin: a photographic dawn salt plain where a continuous cracked crust sweeps to a low horizon exactly at the true base line, cool mist-grey sky above. The cutout stands right of centre on that crust, its measured contact shadow settling into the white mineral cracks, while the left half stays calm for a wrapped Arial Narrow column: brand at column head, the name across two tall lines, a short rust rule closing the column like a survey stake. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cold salt matte against warm amber liquid is the entire temperature story.",
+        "material": "cracked salt crust plain under a hazy dawn sky",
+        "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-90208e77758d",
+          "ref-efb51dc5d487",
+          "ref-f305dbbdf3bc"
+        ],
+        "palette": [
+          "#dde2df",
+          "#22282a",
+          "#b4552e"
+        ],
+        "product": [
+          0.7,
+          0.62,
+          0.55
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.065,
+            0.4,
+            88
+          ],
+          "logo": [
+            0.065,
+            0.335,
+            30
+          ],
+          "subtitle": [
+            0.065,
+            0.56,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 3,
+              "max_width": 400,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 4
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Vast cracked white salt crust plain meeting a pale hazy mist-grey sky at a low horizontal horizon nine tenths down the frame, fine polygonal crust cracks across a continuous flat ground, cool diffuse dawn light, matte mineral grain, no objects",
+        "line": [
+          0.065,
+          0.565,
+          0.16
+        ]
+      },
+      {
+        "name": "Ember Horizon Night Field",
+        "brief": "Night over worked earth: a flat matte ink-night card carrying one oversized hard-edge burnt-ember half-disc rising from the bottom edge, its crown passing behind the flacon's shoulders like a buried sun, crossed by one thin orange seam at the disc crown. The cutout is lifted into the upper two-thirds so the ember field below becomes a quiet plaque band: tracked geometric-sans brand line, then the name set wide and centred in Century Gothic capitals near band width, closed by a short rule floating between image and text like a print registration mark. No floor, no horizon - pure rising-disc geometry against translucent amber glass.",
+        "material": "flat matte ink-night card with hard-edge printed ember half-disc",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-7a523ada9a2c",
+          "ref-d2db4b80bde2",
+          "ref-f72a7e1dd1ad"
+        ],
+        "palette": [
+          "#191d26",
+          "#f0e8da",
+          "#c96a2a"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.14,
+            0.8,
+            76
+          ],
+          "logo": [
+            0.44,
+            0.745,
+            28
+          ],
+          "subtitle": [
+            0.44,
+            0.885,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 5
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc rising from the bottom edge centred, its crown at three quarters down the frame, one thin hard-edge lighter orange seam line along the disc crown, perfectly even shadowless illumination, no texture gradients, no objects",
+        "line": [
+          0.44,
+          0.885,
+          0.12
+        ]
+      },
+      {
+        "name": "Flint Gallery Oblique",
+        "brief": "A constructed mineral gallery: one monolithic cleft flint wall in cool bone-grey stone meets a continuous honed pale stone ground at a horizon aligned with the true base line, while a single crisp oblique shadow edge rakes the wall from upper left like late sun through a gallery slot. The cutout stands left of centre on that ground, contact shadow anchoring its foot, while the right wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, a short rust rule closing the column like a chisel mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column grid deliberate; cold split-stone matte against warm amber juice reads as earth under architecture.",
+        "material": "cleft flint stone wall with honed pale stone ground",
+        "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-efb51dc5d487",
+          "ref-90208e77758d",
+          "ref-68bfeb9c56c1"
+        ],
+        "palette": [
+          "#c9c4b8",
+          "#26221c",
+          "#a8502a"
+        ],
+        "product": [
+          0.3,
+          0.6,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.565,
+            0.42,
+            84
+          ],
+          "logo": [
+            0.565,
+            0.35,
+            30
+          ],
+          "subtitle": [
+            0.565,
+            0.6,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 2,
+              "max_width": 380,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 4
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Monolithic cleft flint stone wall in cool bone grey with natural split-plane facets, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, one crisp oblique shadow edge raking the wall from upper left, bright directional late-day light, matte mineral grain, no objects",
+        "line": [
+          0.565,
+          0.615,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 276.289
+}

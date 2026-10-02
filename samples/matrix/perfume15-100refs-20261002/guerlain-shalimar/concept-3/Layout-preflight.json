@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 250442642210910,
+    "background": {
+      "color": "#1c2a5e",
+      "prompt": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large hard-edge darker midnight octagon panel centred upper middle, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 677,
+      "width": 637,
+      "height": 835
+    },
+    "lighting": "even shadowless frontal illumination with faint mineral glint on inlay lines, flat graphic light",
+    "palette": [
+      "#1c2a5e",
+      "#f0e6cf",
+      "#c9a24b"
+    ],
+    "title": {
+      "text": "SHALIMAR",
+      "x": 319,
+      "y": 1256,
+      "size": 80,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 540,
+      "y": 720,
+      "size": 16,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "GUERLAIN",
+      "x": 457,
+      "y": 1192,
+      "size": 24,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 378,
+      "y": 1152,
+      "width": 324,
+      "color": "#c9a24b"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 250442642210910,
+    "background": {
+      "color": "#1c2a5e",
+      "prompt": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large hard-edge darker midnight octagon panel centred upper middle, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 677,
+      "width": 637,
+      "height": 835
+    },
+    "lighting": "even shadowless frontal illumination with faint mineral glint on inlay lines, flat graphic light",
+    "palette": [
+      "#1c2a5e",
+      "#f0e6cf",
+      "#c9a24b"
+    ],
+    "title": {
+      "text": "SHALIMAR",
+      "x": 319,
+      "y": 1256,
+      "size": 80,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 540,
+      "y": 720,
+      "size": 16,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "GUERLAIN",
+      "x": 457,
+      "y": 1192,
+      "size": 24,
+      "color": "#f0e6cf",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 378,
+      "y": 1152,
+      "width": 324,
+      "color": "#c9a24b"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

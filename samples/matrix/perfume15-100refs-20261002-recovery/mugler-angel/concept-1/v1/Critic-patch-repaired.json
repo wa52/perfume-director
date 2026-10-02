@@ -1,0 +1,40 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 468
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 424
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 373
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in pale ice lilac, perfectly even shadowless frontal illumination; fine engraved constellation lines in deep violet with exactly five small cross ticks placed only in open field, kept clear of the centre and clear of the upper quarter of the field, connected by hairline segments that never cross the centre; one thin hard-edge silver-blue meridian arc whose crest stays in the middle band of the field, never entering the upper quarter; no texture gradients beyond engraved lines, no objects, no horizon"
+    }
+  ]
+}

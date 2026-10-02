@@ -1,0 +1,94 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-36b8ea121719.webp",
+      "sha256": "be3f682b1f3a10b6cfada35d19819bb109c84e0938fe319ca61504fa2d04e09d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-264b08ca-6f2b-9157-b5e0-593401098318",
+      "usage": {
+        "prompt_tokens": 1499,
+        "total_tokens": 1868,
+        "completion_tokens": 369,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1202,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 369
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-264b08ca-6f2b-9157-b5e0-593401098318",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1499,
+    "total_tokens": 1868,
+    "completion_tokens": 369,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1202,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 369
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Cartier",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring a Cartier flacon integrated with illuminated vintage Edison bulbs. Excellent dramatic lighting, reflective surface work, and conceptual prop styling make it a strong design reference.",
+    "analysis": {
+      "composition": "Radial arrangement of glowing filament bulbs surrounding a central, diagonally placed perfume bottle on a dark reflective surface.",
+      "subject_ratio": 0.75,
+      "negative_space": "Dark, moody periphery with subtle teal gradients and reflections anchoring the glowing subjects.",
+      "lighting": "Dramatic practical illumination from the bulb filaments creating warm internal glows, contrasted against a cool, dark ambient background with sharp specular highlights on glass and metal.",
+      "color": [
+        "amber",
+        "warm orange",
+        "deep teal",
+        "black",
+        "silver"
+      ],
+      "typography": "None. The script on the bottle is container labeling, not external campaign typography.",
+      "information_density": "Low, focused entirely on the product and conceptual props.",
+      "characteristics": [
+        "industrial-chic props",
+        "warm-cool color contrast",
+        "high reflectivity",
+        "conceptual staging",
+        "dramatic chiaroscuro"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 21.721
+}

@@ -1,0 +1,23 @@
+{
+  "source": "procedural_fallback",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte gouache-painted card in deep ink ultramarine, one very large flat metal-leaf gold disc occupying the middle of the card, disc edge passing behind the center of the frame, fine engraved concentric rings radiating outward from the disc edge into the ultramarine, faint metallic glint on the leaf, perfectly even shadowless frontal illumination, no objects, no horizon, no texture gradients, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [36, 28, 64, 90] uncluttered; reserve quiet negative space for ink in these areas: [[33, 12, 67, 18], [36, 22, 63, 23], [46, 8, 54, 10]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 254490615813551,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-1.png"
+    },
+    {
+      "prompt": "Seamless flat matte gouache-painted card in deep ink ultramarine, one very large flat metal-leaf gold disc occupying the middle of the card, disc edge passing behind the center of the frame, fine engraved concentric rings radiating outward from the disc edge into the ultramarine, faint metallic glint on the leaf, perfectly even shadowless frontal illumination, no objects, no horizon, no texture gradients, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [36, 28, 64, 90] uncluttered; reserve quiet negative space for ink in these areas: [[33, 12, 67, 18], [36, 22, 63, 23], [46, 8, 54, 10]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 254490615913554,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-2.png"
+    }
+  ],
+  "ink_changes": [],
+  "warning": "AI background failed checks; this draft requires manual review"
+}

@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-7838477a52de.webp",
+      "sha256": "90303aabf42db36d437f9b881bba2bc858782eea7f3d7935c09b1fda4f1637b6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-29f373be-9a0c-9020-ac29-8b1378063065",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 900,
+        "completion_tokens": 397,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 397
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-29f373be-9a0c-9020-ac29-8b1378063065",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 900,
+    "completion_tokens": 397,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 397
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Chanel",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still life featuring iconic branding, dynamic composition, and high-end studio lighting. Useful as a design reference for product arrangement and glass rendering.",
+    "analysis": {
+      "composition": "Dynamic asymmetrical arrangement with a large tilted bottle in the foreground left and a vertical stack of smaller bottles on the right, creating depth and visual interest.",
+      "subject_ratio": 0.75,
+      "negative_space": "Clean, uncluttered light grey gradient background at the top provides breathing room and emphasizes the product silhouette.",
+      "lighting": "High-key studio lighting with soft diffusion, creating crisp specular highlights on the glass facets and caps, and gentle shadows on the textured surface.",
+      "color": [
+        "#F5F5DC",
+        "#E0E0E0",
+        "#FFFFFF",
+        "#000000",
+        "#C0C0C0"
+      ],
+      "typography": "None visible outside the container labels. Text is strictly limited to the product packaging (N°5 L'EAU CHANEL PARIS).",
+      "information_density": "Low; focus is entirely on the product form and brand identity without extraneous copy.",
+      "characteristics": [
+        "Glass refraction",
+        "Iconic bottle shape",
+        "Pale yellow liquid",
+        "Textured ground plane",
+        "Minimalist aesthetic"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.376
+}

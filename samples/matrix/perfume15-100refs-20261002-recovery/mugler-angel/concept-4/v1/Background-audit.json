@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Frosted acrylic sheet in pale ice grey hanging as a wall and sweeping into a continuous matching frosted ground at a horizontal horizon six tenths down the frame, one soft cool white backlight glow blooming behind upper centre, fine frost grain, soft high-key diffuse dawn illumination, no objects, Reserve a calm empty middle left area. A continuous horizontal ground plane fills the foreground from the middle of the image to its bottom edge. The distant wall-to-ground transition stays above the foreground; no ledges, recesses or raised edges. Keep low visual detail in the middle right area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 200987081377857,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

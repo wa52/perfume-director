@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 182058145775197,
+    "background": {
+      "color": "#4b2b3a",
+      "prompt": "Crushed aubergine plum velvet drape hanging in soft vertical folds, pile sheen catching gentle light along fold crowns, deep matte shadows in fold valleys, smooth tonal falloff toward edges, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 365,
+      "height": 806
+    },
+    "lighting": "soft diffused frontal light with gentle velvet sheen gradient, no hard shadows",
+    "palette": [
+      "#4b2b3a",
+      "#f0e6ea",
+      "#d9b06a"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 200,
+      "y": 1138,
+      "size": 72,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.08,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 417,
+      "y": 1264,
+      "size": 22,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 432,
+      "y": 1058,
+      "size": 26,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 389,
+      "y": 1097,
+      "width": 302,
+      "color": "#d9b06a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 182058145775197,
+    "background": {
+      "color": "#4b2b3a",
+      "prompt": "Crushed aubergine plum velvet drape hanging in soft vertical folds, pile sheen catching gentle light along fold crowns, deep matte shadows in fold valleys, smooth tonal falloff toward edges, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 365,
+      "height": 806
+    },
+    "lighting": "soft diffused frontal light with gentle velvet sheen gradient, no hard shadows",
+    "palette": [
+      "#4b2b3a",
+      "#f0e6ea",
+      "#d9b06a"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 200,
+      "y": 1138,
+      "size": 72,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.08,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 417,
+      "y": 1264,
+      "size": 22,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 432,
+      "y": 1058,
+      "size": 26,
+      "color": "#f0e6ea",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 389,
+      "y": 1097,
+      "width": 302,
+      "color": "#d9b06a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

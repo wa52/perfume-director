@@ -1,0 +1,94 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-c9d4cec4-df5a-99d8-8414-8cb4d0c25afb",
+      "usage": {
+        "prompt_tokens": 1579,
+        "total_tokens": 1927,
+        "completion_tokens": 348,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1282,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 348
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c9d4cec4-df5a-99d8-8414-8cb4d0c25afb",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1927,
+    "completion_tokens": 348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1282,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 348
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Good Kind Pure",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with lush floral styling and clear product focus; high utility for fragrance campaign design reference.",
+    "analysis": {
+      "composition": "Diagonal placement of a rectangular glass bottle nestled within dense, layered peony blooms filling the frame.",
+      "subject_ratio": 0.45,
+      "negative_space": "Minimal; negative space is entirely occupied by soft-focus floral textures surrounding the central subject.",
+      "lighting": "Soft, diffused studio lighting creating gentle highlights on the metallic cap and glass, enhancing the translucency of the pink liquid.",
+      "color": [
+        "coral pink",
+        "peach",
+        "magenta",
+        "silver",
+        "cream"
+      ],
+      "typography": "Sans-serif logotype and scent name printed directly on the bottle label; no external campaign typography present.",
+      "information_density": "Low; visual focus is strictly on the product and its olfactory ingredients (peonies).",
+      "characteristics": [
+        "floral immersion",
+        "gradient liquid",
+        "macro texture",
+        "warm palette",
+        "soft focus background"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 23.503
+}

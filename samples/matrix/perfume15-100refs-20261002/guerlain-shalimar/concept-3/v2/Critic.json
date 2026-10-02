@@ -1,0 +1,60 @@
+{
+  "pass": false,
+  "score": 83.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 84,
+    "typography": 80,
+    "background": 78,
+    "physical_integration": 86,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The accepted recovery only moved decoration.width; the typography group was rejected, so the plaque axis fault persists in the executed geometry: title bbox [319,1256,756,1311] centers at x=537.5 while the logo line centers at 540 and the gold seam at 540, and the spec still carries align:left with tracking 3. On a lapidary plaque every element must share one deliberate axis; a 2.5px drift plus a left-align token reads as accident, not intent."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the plaque band is still under-scaled against the brief and the references: the name sets 437px wide (40% of canvas) at size 80 / tracking 3, while the brief calls for the Baskerville name 'set wide and centred at near band width'. The 380px seam and the tracked GUERLAIN line now outrun the name's weight ratio seen in the reference campaigns, where the logotype name dominates its band."
+    },
+    {
+      "type": "background",
+      "problem": "The regenerated field fixed the vault (the octagon now reads as a crisply cut midnight panel fully visible behind the dome and shoulders), but the promised fade never executed in the lower third: full-contrast gold stars and diagonals still cross the plaque band, with a lattice node and crossing lines directly beneath the pedestal foot and lines running through the title zone y1256-1311. The 'quiet plaque band' of the concept is still visually busy."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 88
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large crisply hard-edge darker midnight octagon panel centred upper middle with clean straight cut facets fully visible behind the upper zone, intarsia lines fading gradually to a nearly invisible faint mineral trace from mid-height downward so the lower third plaque band is an almost plain calm polished lapis surface, faint mineral glint on inlay lines only in the upper two thirds, perfectly even shadowless illumination, no objects, no horizon"
+    }
+  ],
+  "reported_score": 82.4
+}

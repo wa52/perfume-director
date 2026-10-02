@@ -1,0 +1,79 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-dbeae21d-4ecf-9a36-a24e-1e200b300f35",
+      "usage": {
+        "prompt_tokens": 1570,
+        "total_tokens": 2660,
+        "completion_tokens": 1090,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 359
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 802,
+          "text_tokens": 287
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-dbeae21d-4ecf-9a36-a24e-1e200b300f35",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1570,
+    "total_tokens": 2660,
+    "completion_tokens": 1090,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 359
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 802,
+      "text_tokens": 287
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "J'adore",
+    "logo": "Dior",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "Label lines visible on bottle: 'J'adore' (gold script), 'EAU DE PARFUM', 'Dior'; brand/name corroborate user brief; no price, volume or promo text visible, so price left empty.",
+    "product_profile": {
+      "material": "Clear glass teardrop flacon, ribbed satin-gold metal collar neck, opaque pearl-white spherical stopper",
+      "color": "Pale peach-champagne liquid, warm gold neck, ivory-white cap",
+      "transparency": "Body glass translucent with sheer tinted liquid; core and cap read bright and near-opaque, cannot transmit background",
+      "illumination": "Soft diffuse frontal studio light, broad gentle highlights on cap dome and glass shoulders, no hard cast shadow",
+      "view": "Straight-on front elevation, bottle centered and full-height, rounded base resting on unseen plane",
+      "integration_limits": "Packshot is isolated on plain white/transparent ground with no contact shadow; bright opaque cap and pale liquid block transmission, so any new background must sit behind the cutout, not show through it"
+    }
+  },
+  "duration_seconds": 32.138
+}

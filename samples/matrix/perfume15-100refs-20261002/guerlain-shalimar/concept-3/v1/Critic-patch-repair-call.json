@@ -1,0 +1,129 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "673fb3c515496798d9968600a62447b522e8ba5a1bdfb51e56da5edfd22af669"
+    },
+    {
+      "name": "guerlain-shalimar-retailer.png",
+      "sha256": "16f14f209aa3391890febf4d15941aa73ae2c839b2e61e57fb8cdc4b857f566c"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-856bda6d-7533-973b-87df-b9009217ee6e",
+      "usage": {
+        "prompt_tokens": 7421,
+        "total_tokens": 8868,
+        "completion_tokens": 1447,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5072,
+          "text_tokens": 2349
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 422
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-856bda6d-7533-973b-87df-b9009217ee6e",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7421,
+    "total_tokens": 8868,
+    "completion_tokens": 1447,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5072,
+      "text_tokens": 2349
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 422
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 1226
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 92
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 8
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 1170
+      },
+      {
+        "path": "logo.tracking",
+        "op": "set",
+        "value": 8
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1132
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 380
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large crisply hard-edge darker midnight octagon panel centred upper middle with clean straight cut facets fully visible behind the upper zone, intarsia lines fading to faint low-contrast mineral trace across the lower third plaque band, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon"
+      }
+    ]
+  },
+  "duration_seconds": 30.558
+}

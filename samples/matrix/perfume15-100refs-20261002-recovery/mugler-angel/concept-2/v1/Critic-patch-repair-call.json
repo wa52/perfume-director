@@ -1,0 +1,129 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "4e4ee5acf6b09ce88a28592963d19d3b1e1a2e69d5812d89d66e398c5af60e86"
+    },
+    {
+      "name": "mugler-angel-retailer.png",
+      "sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-b4373eff-0a0c-9ec7-8670-734b3a91f1c5",
+      "usage": {
+        "prompt_tokens": 6699,
+        "total_tokens": 8061,
+        "completion_tokens": 1362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 4076,
+          "text_tokens": 2623
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 337
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-b4373eff-0a0c-9ec7-8670-734b3a91f1c5",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6699,
+    "total_tokens": 8061,
+    "completion_tokens": 1362,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 4076,
+      "text_tokens": 2623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 337
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.5
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame; the wall darkens gently toward the left third and carries one broad calm sheen band low on the right half; the honed ground shows a faint soft vertical reflection and slight tonal deepening near the centre-right; cool diffuse twilight illumination, matte metal grain, no hard shadows, no objects"
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 112
+      },
+      {
+        "path": "title.max_width",
+        "op": "set",
+        "value": 340
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 2
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 30
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 700
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 168
+      }
+    ]
+  },
+  "duration_seconds": 33.584
+}

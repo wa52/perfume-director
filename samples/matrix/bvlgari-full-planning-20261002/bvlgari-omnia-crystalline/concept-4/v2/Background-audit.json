@@ -1,0 +1,41 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte screen-printed card in pale celadon green, perfectly even shadowless frontal illumination, absolutely flat graphic field with no perspective, no depth, no bevels, no cast shadows, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle right area uncluttered; reserve quiet negative space in the lower left area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 258248070525695,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "rectangle",
+      "x": 250,
+      "y": 250,
+      "width": 700,
+      "height": 215,
+      "color": "#1e2b26",
+      "opacity": 0.85
+    },
+    {
+      "kind": "rectangle",
+      "x": 330,
+      "y": 480,
+      "width": 620,
+      "height": 215,
+      "color": "#1e2b26",
+      "opacity": 0.6
+    },
+    {
+      "kind": "rectangle",
+      "x": 410,
+      "y": 710,
+      "width": 540,
+      "height": 240,
+      "color": "#1e2b26",
+      "opacity": 0.35
+    }
+  ]
+}

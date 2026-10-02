@@ -1,0 +1,66 @@
+{
+  "pass": false,
+  "score": 83.0,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 76,
+    "background": 82,
+    "physical_integration": 86,
+    "reference_alignment": 78,
+    "creative_coherence": 86
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The nameplate still stacks the identical word twice: logo 'Chloé' (bbox y78-96) sits directly above title 'Chloé' (bbox y200-305). Read top-to-bottom they stutter ('Chloé / Chloé') instead of forming a brand-mark-plus-nameplate hierarchy; references 3-5 never repeat the same string at two scales in one column. The 26px logotype is also only ~104px above the 150px title cap, so the plate reads crowded rather than layered."
+    },
+    {
+      "type": "composition",
+      "problem": "The meridian rule (decoration at x454 width240, y452) renders with its span centered near x574 instead of the canvas axis x540, so the 'ribbon gauge tick' sits visibly right of the centered logo/title column and of the bottle axis; a measuring tick in a meridian system must share the axis it gauges. It also still floats ~128px below the title baseline in empty blue, keeping part of the stray-dash read."
+    },
+    {
+      "type": "background",
+      "problem": "The rib engraving now reads inside theband (visible change vs previous version), but the engraved rib lines stop at the bow tips: in the left zone x≈100-285 and right zone x≈800-981 at band height the beige reads as flat unmodulated ink with no ribs, while the center is masked by the bow. The concept declares the rib row dense across the band; the partial coverage makes the band read as two different materials left/right of the bottle."
+    }
+  ],
+  "changes": [
+    {
+      "path": "logo.text",
+      "op": "set",
+      "value": "PARIS"
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 70
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 408
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in medium dusty cornflower blue with faint paper-grain ink settle, one hard-edge horizontal grosgrain nude-beige band crossing at four tenths down the frame, inside the band only a dense unbroken row of fine engraved vertical rib lines running edge to edge across the full width like magnified ribbon weave catching slightly darker beige ink, perfectly even shadowless frontal illumination, no texture gradients outside the band, no objects"
+    }
+  ],
+  "evidence_notes": {
+    "contact_check": "Image 6 (crop 20,1170-1061,1420) shows the fluted glass base meeting the blue field with a soft compressed darkening hugging the base edge across its full width; contact shadow present and correctly seated at offset_y 0, no floating, no extra bottles or generated labels.",
+    "geometry_check": "product_height_ratio 0.50 within this concept's 35-74% bound; base_y 1310 = 91.0% of canvas height, under 94%; sides 100-981 within 5-95%; text_product_overlap false for title and logo, so no overlap claimed; center_y derived from base 1310 minus height/2, product not moved.",
+    "visible_changes": "Vs previous version: rib engraving now legible inside the band, logo lifted to y78 at 26px, title at y200, rule widened to 240px; these justify raising background 72→82 and composition 78→80. Remaining: duplicate word stack, off-axis rule, ribs fading at band edges.",
+    "mode_check": "Graphic scene_mode honored: flat printed card, no forced floor horizon; band-at-bow-height relation and serif title family preserved; no studio equipment artifacts visible."
+  },
+  "reported_score": 81.6
+}

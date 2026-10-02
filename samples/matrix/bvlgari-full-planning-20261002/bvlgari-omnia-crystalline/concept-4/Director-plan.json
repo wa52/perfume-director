@@ -1,0 +1,136 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\eae01081e310\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Celadon Slab Ledger Oblique",
+    "brief": "把晶带的斜折光读作一道切过纸面的斜影：浅青瓷绿平涂卡纸上，三枚硬边石墨矩形板自左上向右下逐级错叠如石阶剖面，板缘一条斜向留白缝精确平行双盘斜轴；商品提至中上幅立于板阶之前，矩形从其肩后掠过却不触碰标签。左下幅留出安静斜角铭牌区：宽距 Arial 品牌字居区顶，Century Gothic 几何大写题名以两行宽排收左缘起排，与盘体下缘垂直错开、水平宽距分离，一条石墨细线横垫区底如剖面刻度。无地面无 horizon，纯板阶几何对抗珠光圆盘的柔体积。参考 R2 的矩形叠层分区与 R8 的冷静单色阶秩序。",
+    "material": "flat matte screen-printed card with hard-edge stacked rectangle slabs and one oblique blank seam",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#b9d2c4",
+      "#1e2b26",
+      "#8aa89a"
+    ],
+    "layout_relation": "below",
+    "title_family": "sans",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 258248070525694,
+    "background": {
+      "color": "#b9d2c4",
+      "prompt": "Seamless flat matte screen-printed card in pale celadon green, three hard-edge flat graphite green rectangle slabs stacked obliquely from upper left toward lower right with one thin blank celadon seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 194,
+          "y": 202,
+          "width": 540,
+          "height": 230,
+          "color": "#1e2b26",
+          "opacity": 0.85
+        },
+        {
+          "kind": "rectangle",
+          "x": 324,
+          "y": 461,
+          "width": 594,
+          "height": 230,
+          "color": "#1e2b26",
+          "opacity": 0.6
+        },
+        {
+          "kind": "rectangle",
+          "x": 454,
+          "y": 720,
+          "width": 540,
+          "height": 230,
+          "color": "#1e2b26",
+          "opacity": 0.35
+        }
+      ]
+    },
+    "product": {
+      "x": 670,
+      "y": 576,
+      "width": 482,
+      "height": 662
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#b9d2c4",
+      "#1e2b26",
+      "#8aa89a"
+    ],
+    "title": {
+      "text": "Omnia Crystalline",
+      "x": 86,
+      "y": 1037,
+      "size": 72,
+      "color": "#1e2b26",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 420,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 1267,
+      "size": 20,
+      "color": "#1e2b26",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1e2b26",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "BVLGARI",
+      "x": 86,
+      "y": 950,
+      "size": 28,
+      "color": "#1e2b26",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 7
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 1339,
+      "width": 324,
+      "color": "#8aa89a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

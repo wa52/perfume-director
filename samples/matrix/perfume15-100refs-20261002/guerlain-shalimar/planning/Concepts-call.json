@@ -1,0 +1,339 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "guerlain-shalimar-retailer.png",
+      "sha256": "16f14f209aa3391890febf4d15941aa73ae2c839b2e61e57fb8cdc4b857f566c"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-62ff901b9d4a.webp",
+      "sha256": "d1d9ce1dc6e14beacf166a7b3d41de5a0e864963fe777688bf8cc3d2d9f95572"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-d4f42f30-e73e-9554-abee-7723f3b20378",
+      "usage": {
+        "prompt_tokens": 25317,
+        "total_tokens": 31250,
+        "completion_tokens": 5933,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 9104,
+          "text_tokens": 16213
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1836
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d4f42f30-e73e-9554-abee-7723f3b20378",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 25317,
+    "total_tokens": 31250,
+    "completion_tokens": 5933,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9104,
+      "text_tokens": 16213
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1836
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": " engine-turned Guilloché Tide",
+        "brief": "A flat banknote-engraver poster: pale ice porcelain card carries fine concentric guilloché wave lines swelling from the lower centre like turned water, crossed by one hard graphite ribbon band echoing the neck bow. The fan-flacon stands lifted in the upper two-thirds, its baked speculars untouched by the flat ink world, while a centred Bodoni monument stacks in the calm top band: tracked brand line, heavy serif name, closed by a short rule like an engraver's刻 line. No floor, no horizon - pure line-density narrative against lacquer gloss.",
+        "material": "flat matte card with engine-turned guilloché wave engraving and one hard printed band",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-f72a7e1dd1ad",
+          "ref-b4d87aee2707",
+          "ref-62ff901b9d4a"
+        ],
+        "palette": [
+          "#dfe7e9",
+          "#101d33",
+          "#274b8f"
+        ],
+        "product": [
+          0.5,
+          0.56,
+          0.66
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.295,
+            0.115,
+            96
+          ],
+          "logo": [
+            0.375,
+            0.052,
+            26
+          ],
+          "subtitle": [
+            0.5,
+            0.5,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte card in pale ice porcelain blue-grey, fine concentric engine-turned guilloché wave lines swelling from lower center, one hard-edge flat graphite blue horizontal band across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+        "line": [
+          0.42,
+          0.205,
+          0.16
+        ]
+      },
+      {
+        "name": "Mashrabiya Brass Shadow Garden",
+        "brief": "A photographic dusk interior: warm sand limewashed plaster meets a continuous honed sandstone ground at a low horizon, and light raking through an unseen pierced screen lays a soft brass lattice of diamond shadows across wall and ground behind the true base line. The cutout stands right of centre on that ground, contact shadow landing on its foot, while the left wall stays calm for a wrapped窄 sans column: brand at column head, the name across two tall lines, a short rule closing the column - vertical overlap with the shoulder, wide horizontal clearance. Mineral matte against amber glass reads as a garden house at golden hour.",
+        "material": "sand limewash plaster wall with honed sandstone ground and pierced-screen shadow lattice",
+        "lighting": "warm directional late-day light raking from upper right through a pierced screen, crisp lattice shadow, bright ambient on ground",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-efb51dc5d487",
+          "ref-62ff901b9d4a",
+          "ref-b6e669a924a3"
+        ],
+        "palette": [
+          "#c8a171",
+          "#241407",
+          "#8a5a2b"
+        ],
+        "product": [
+          0.66,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.08,
+            0.44,
+            104
+          ],
+          "logo": [
+            0.08,
+            0.372,
+            24
+          ],
+          "subtitle": [
+            0.5,
+            0.5,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Warm sand-toned limewash plaster wall meeting a continuous honed sandstone ground at a low horizontal horizon, soft diamond lattice shadow pattern raking across wall and ground from upper right as if through a pierced screen, matte mineral grain, warm directional light, no objects",
+        "line": [
+          0.08,
+          0.665,
+          0.24
+        ]
+      },
+      {
+        "name": "Lapis Intarsia Night Vault",
+        "brief": "A flat lapidary poster: deep lapis field inlaid with a fine gold star-lattice intarsia, one large hard-edge midnight octagon centred upper-middle like a vault panel behind the dome cap. The cutout is lifted into the upper two-thirds so the lower third becomes a quiet plaque band: tracked brand line, then the Baskerville name set wide and centred at near band width, closed by a thin gold rule floating between image and text like an inlay seam. Stone matte against glossy blue dome and glowing amber tells the story entirely through inlay geometry.",
+        "material": "polished lapis lazuli slab with gold star-lattice intarsia inlay",
+        "lighting": "even shadowless frontal illumination with faint mineral glint on inlay lines, flat graphic light",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "ref-7a523ada9a2c",
+          "ref-f305dbbdf3bc",
+          "ref-6ced6279f2e6"
+        ],
+        "palette": [
+          "#1c2a5e",
+          "#f0e6cf",
+          "#c9a24b"
+        ],
+        "product": [
+          0.5,
+          0.5,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.2,
+            0.865,
+            80
+          ],
+          "logo": [
+            0.385,
+            0.818,
+            24
+          ],
+          "subtitle": [
+            0.5,
+            0.5,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 3,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large hard-edge darker midnight octagon panel centred upper middle, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon",
+        "line": [
+          0.35,
+          0.842,
+          0.3
+        ]
+      },
+      {
+        "name": "Alabaster Arcade Caustics",
+        "brief": "A photographic morning cloister: pale alabaster plaster wall meets a continuous honed pale stone ground at a low horizon, one soft arched pool of light falling from above while water-born caustic ripples drift across the arch like light off a fountain basin. The cutout stands left of centre on that ground at its true base line, contact shadow anchoring the foot, while the right wall stays calm for a wrapped Century Gothic column: brand at column head, the name across two geometric lines, a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cool stone matte against warm amber liquid is the whole temperature story.",
+        "material": "alabaster plaster arcade wall with honed pale stone ground and water caustic light",
+        "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "ref-b4d87aee2707",
+          "ref-efb51dc5d487",
+          "ref-f72a7e1dd1ad"
+        ],
+        "palette": [
+          "#d8d3c6",
+          "#1f2a33",
+          "#3f6f8f"
+        ],
+        "product": [
+          0.33,
+          0.58,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.6,
+            0.44,
+            92
+          ],
+          "logo": [
+            0.6,
+            0.375,
+            24
+          ],
+          "subtitle": [
+            0.5,
+            0.5,
+            16
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 3,
+              "max_width": 360,
+              "line_height": 1.15,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 2
+            }
+          }
+        },
+        "background_prompt": "Pale alabaster plaster arcade wall with one soft arched pool of light falling from top center, continuous honed pale stone ground at a low horizontal horizon, gentle water caustic ripple light drifting across the arch, matte mineral grain, soft high-key diffuse illumination, no objects",
+        "line": [
+          0.6,
+          0.655,
+          0.26
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 146.099
+}

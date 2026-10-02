@@ -1,0 +1,344 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "mugler-angel-retailer.png",
+      "sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-5c530868-94c2-9905-8524-e6ed896c0029",
+      "usage": {
+        "prompt_tokens": 30234,
+        "total_tokens": 36185,
+        "completion_tokens": 5951,
+        "prompt_tokens_details": {
+          "cached_tokens": 29952,
+          "image_tokens": 9104,
+          "text_tokens": 21130
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 1854
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5c530868-94c2-9905-8524-e6ed896c0029",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 30234,
+    "total_tokens": 36185,
+    "completion_tokens": 5951,
+    "prompt_tokens_details": {
+      "cached_tokens": 29952,
+      "image_tokens": 9104,
+      "text_tokens": 21130
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 1854
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Star-Chart Engraving Plate",
+        "brief": "把星形瓶读作一张星图的原点：平涂冰紫卡纸上，细密刻线 constellation 从画面中心放射，五枚十字星 tick 精确对齐星瓶的五个尖角，像制图师为这颗星标定坐标；商品居中沉于下幅，刻线从其肩后穿过却不触碰标签。顶带留出安静铭牌区：宽距 Arial 品牌字最小置顶，Baskerville 题名以近半幅宽的大字居中统领，一条银蓝细线横于铭带之下如子午刻度。无地面无 horizon，纯刻线放射几何对抗半透玻璃的柔渐液体。参考 R1 的铭牌层级：品牌行轻、题名重、副行垫底。",
+        "material": "flat matte screen-printed card with engraved constellation lines and cross ticks",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R3",
+          "R6"
+        ],
+        "palette": [
+          "#e4e2ee",
+          "#241f38",
+          "#7f8ac0"
+        ],
+        "product": [
+          0.5,
+          0.63,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.327,
+            0.13,
+            150
+          ],
+          "logo": [
+            0.424,
+            0.065,
+            40
+          ],
+          "subtitle": [
+            0.424,
+            0.245,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 6,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte screen-printed card in pale ice lilac, fine engraved constellation lines in deep violet radiating from the exact centre with five small cross ticks at star points across the field, one thin hard-edge silver-blue meridian arc sweeping behind centre, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+        "line": [
+          0.327,
+          0.245,
+          0.345
+        ]
+      },
+      {
+        "name": "Brushed Aluminium Observatory Deck",
+        "brief": "把银盖楔的拉丝金属放大成整座观测台：环形拉丝阳极铝墙在真实基准线处接连续 honed 铝地面，冷暮光让金属保持哑光灰蓝；商品立于地面偏右，接触阴影陷进拉丝纹。左半幅墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽大字排印如仪器铭牌，一条钢蓝短横线垫于柱底如刻度。垂直方向与瓶肩重叠、水平方向宽距分离，双栏网格诚实成立；金属的冷哑光与星瓶折射的紫蓝碎光互为粗细。参考 R2 的分区式纸面秩序与 R8 的金属反射地面。",
+        "material": "anodized aluminium wall with circular brush grain and continuous honed aluminium ground",
+        "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R8",
+          "R5"
+        ],
+        "palette": [
+          "#b9c2cc",
+          "#101820",
+          "#5f7fa6"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.07,
+            0.4,
+            100
+          ],
+          "logo": [
+            0.07,
+            0.34,
+            34
+          ],
+          "subtitle": [
+            0.07,
+            0.535,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 320,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame, matte metal grain with one broad calm sheen band low on the wall, cool diffuse twilight illumination, no objects",
+        "line": [
+          0.07,
+          0.5,
+          0.12
+        ]
+      },
+      {
+        "name": "Midnight Meridian Foil Monument",
+        "brief": "把星瓶悬进子夜：平涂深靛卡纸上贴一枚金属箔细环，环心精确对齐星瓶中心，环外刻出五道放射箔线如星芒刻度，箔的碎光与银盖楔的哑光金属互为镜像；商品被提至上幅如浮出夜面，下幅留出完整宽铭牌带。Times 题名以近满带宽的大字居中统领，宽距 Arial 品牌字置顶带、细箔线横于铭带之顶如天球仪刻度。无地面无 horizon，纯箔环几何与夜面平涂对抗半透玻璃的紫蓝内光。参考 R1 的深色负空间与白铭牌对比层级。",
+        "material": "flat matte gouache card with applied metal-leaf ring and engraved radial foil lines",
+        "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on foil ring",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R7"
+        ],
+        "palette": [
+          "#1a1830",
+          "#eceaf4",
+          "#a9b4d8"
+        ],
+        "product": [
+          0.5,
+          0.44,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.28,
+            0.8,
+            170
+          ],
+          "logo": [
+            0.417,
+            0.745,
+            42
+          ],
+          "subtitle": [
+            0.417,
+            0.925,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 8,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 9
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in deep midnight indigo, one thin metal-leaf silver ring centred slightly above middle with five fine engraved radial foil lines extending from the ring edge, perfectly even shadowless illumination, no texture gradients beyond foil lines, no objects",
+        "line": [
+          0.28,
+          0.775,
+          0.44
+        ]
+      },
+      {
+        "name": "Frosted Glass Dawn Veil",
+        "brief": "晨雾后的磨砂玻璃幕墙：整面 frosted 亚克力板自墙垂落并铺成连续同料地面，背光在板后晕出一团冷白晨光，织出细密霜纹；商品立于霜地偏左，接触阴影陷进磨砂颗粒。右半幅霜面保持安静，承载一根 Arial Narrow 竖排文字柱：品牌字居柱顶，题名以窄柱三行内大字排印如蚀刻签条，一条霜蓝细线横于柱底如冰裂刻度。垂直方向与瓶肩重叠、水平方向宽距分离；磨砂的漫射哑光与星瓶折面高光互为虚实。参考 R2 的手写签条式排印节奏与 R3 的雾面渐变负空间。",
+        "material": "frosted acrylic sheet wall sweeping into continuous frosted ground with backlight glow",
+        "lighting": "soft high-key dawn backlight diffused through frosted sheet, gentle frontal fill, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "palette": [
+          "#dfe4ea",
+          "#1c2430",
+          "#8fa6c4"
+        ],
+        "product": [
+          0.34,
+          0.58,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.62,
+            0.42,
+            120
+          ],
+          "logo": [
+            0.62,
+            0.36,
+            36
+          ],
+          "subtitle": [
+            0.62,
+            0.56,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 3,
+              "max_width": 360,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 7
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Frosted acrylic sheet in pale ice grey hanging as a wall and sweeping into a continuous matching frosted ground at a horizontal horizon six tenths down the frame, one soft cool white backlight glow blooming behind upper centre, fine frost grain, soft high-key diffuse dawn illumination, no objects",
+        "line": [
+          0.62,
+          0.53,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 254.787
+}

@@ -1,0 +1,15 @@
+{
+  "title": "TOBACCO VANILLE",
+  "logo": "TOM FORD",
+  "subtitle": "EAU DE PARFUM",
+  "price": "",
+  "evidence": "Visible label lines: 'TOM FORD', 'TOBACCO VANILLE', 'EAU DE PARFUM', '50 ML'; title copied from the product-name line, logo from the brand line, subtitle from the concentration line; price empty because the user supplied none and brief forbids it.",
+  "product_profile": {
+    "material": "glossy lacquered opaque glass flacon with stepped shoulder and wide flat cap; satin metallic gold paper label",
+    "color": "deep espresso brown-black body and cap; warm champagne-gold label with dark brown typography",
+    "transparency": "fully opaque; no translucent or light-transmitting regions in body, cap or label",
+    "illumination": "soft diffused frontal-top studio light; narrow vertical specular highlights along cap and body edges, broad soft sheen on cap top and shoulder, label evenly lit with slight brightness gradient toward top",
+    "view": "straight-on frontal elevation at label height, symmetric axis-aligned composition, flat base resting flush",
+    "integration_limits": "opaque body and bright gold label cannot transmit a newly generated background; baked-in edge speculars must be preserved; packshot is a shadowless cutout, so any composite background must supply its own contact shadow and match frontal soft lighting"
+  }
+}

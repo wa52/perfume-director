@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte chart paper in pale glacier mint, crisp fine concentric sonar rings in deep marine teal expanding from the exact center of the frame with clean even spacing and no moire banding, rings fading out before reaching the canvas edges, one thicker hard-edge ring at mid radius, perfectly even shadowless illumination, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [33, 31, 67, 93] uncluttered; reserve quiet negative space for ink in these areas: [[26, 10, 74, 15], [35, 18, 65, 19], [41, 5, 59, 7]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 40661490896490,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

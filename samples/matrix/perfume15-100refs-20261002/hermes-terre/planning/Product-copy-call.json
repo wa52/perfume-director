@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-596cc884-08e8-9399-bc4a-ce097535d1ce",
+      "usage": {
+        "prompt_tokens": 1574,
+        "total_tokens": 2919,
+        "completion_tokens": 1345,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 363
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 320
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-596cc884-08e8-9399-bc4a-ce097535d1ce",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1574,
+    "total_tokens": 2919,
+    "completion_tokens": 1345,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 363
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 320
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "TERRE D'HERMÈS",
+    "logo": "Hermès",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Label on bottle legibly reads 'TERRE' / 'D'HERMÈS' in red-orange capitals; brand Hermès is confirmed by the brief and by the 'D'HERMÈS' line; no concentration, category, price or promo text is visible on the packshot, so subtitle and price are left empty.",
+    "product_profile": {
+      "material": "Clear glass flacon with polished silver-metal collar and opaque dark brown-black cylindrical cap",
+      "color": "Pale amber-yellow juice inside colorless glass, red-orange lettering, silver collar, near-black cap",
+      "transparency": "Body translucent with lightly tinted liquid; cap and collar opaque; glass edges read near-white",
+      "illumination": "Soft diffuse high-key studio light; gentle vertical highlights along glass shoulders and edges, specular streaks on metal collar, no hard cast shadow",
+      "view": "Straight-on front elevation at bottle mid-height, upright rectangular flacon with flat base and recessed foot notch",
+      "integration_limits": "Opaque cap/collar and bright near-white glass edge zones cannot transmit a new background; pale liquid is only faintly transmissive, so generated backdrops must sit behind the intact cutout silhouette and keep the label unmodified"
+    }
+  },
+  "duration_seconds": 38.187
+}

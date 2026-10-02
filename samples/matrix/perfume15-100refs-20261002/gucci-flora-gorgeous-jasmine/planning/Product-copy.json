@@ -1,0 +1,15 @@
+{
+  "title": "Flora Gorgeous Jasmine",
+  "logo": "GUCCI",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label visibly reads 'GUCCI' (brand line), 'FLORA' and 'GORGEOUS JASMINE' (product-name lines); title copies only the product-name lines, brand kept separate as logo; no category, concentration, price or volume text is legible on the packshot, and the user brief supplied none, so subtitle and price are empty.",
+  "product_profile": {
+    "material": "opaque lacquered glass body with metallic ribbed gold cylindrical cap and printed paper label",
+    "color": "mint turquoise body, gold cap, cream label with red lilies, yellow and blue florals and green foliage",
+    "transparency": "fully opaque; no translucent or transmissive regions on body or label",
+    "illumination": "soft diffuse frontal studio light with gentle vertical highlights along shoulder and side facets, low contrast, no hard shadow",
+    "view": "straight-on frontal elevation, bottle upright, centered, full bottle visible",
+    "integration_limits": "opaque body and printed label cannot transmit a generated background; background must sit only behind the silhouette and respect the flat base contact line"
+  }
+}

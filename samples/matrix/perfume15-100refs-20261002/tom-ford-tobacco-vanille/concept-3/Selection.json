@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) delivers the declared 'Plum Velvet Curtain Call' concept most purely: crushed aubergine velvet with soft vertical fold sheen and a gentle frontal gradient, no hard shadows, and the flacon lifted into the upper two-thirds so the lower third reads as a quiet plaque band. Its typography is the most coherent of the candidates: letterspaced 'TOM FORD' brand line, a thin gold rule floating like a curtain rail, generous Baskerville capitals for 'TOBACCO VANILLE', then the eau de parfum line, all centred and clean against undisturbed velvet. The product is fully recognizable (opaque espresso glass, stepped shoulder, wide flat cap, champagne-gold label with legible dark typography) and its baked frontal speculars sit plausibly against the soft frontal velvet light. Version 2 (image 6) breaks the concept and the craft: the bottle's base terminates on the front face of a velvet-covered block rather than on its top plane, i.e. a floating packshot pasted in front of a raised support with no convincing contact shadow; literal aubergine vegetables and shredded purple debris invade the plaque band, colliding with the 'EAU DE PARFUM' line and turning a theatrical luxury still-life into a kitschy produce shot; the velvet table edge also cuts a hard horizontal seam behind the bottle that fights the curtain's soft folds.",
+  "remaining_problems": [
+    "Version 1: the flacon悬 floats against the curtain with no contact shadow or grounding cue, so physical contact relies entirely on the concept's suspended-curtain logic rather than a resolved still-life rest",
+    "Version 1: velvet sheen is slightly uniform across the frame; the brief's fade toward the edges could be stronger for more theatrical depth",
+    "Version 2: floating packshot in front of a raised velvet support, literal eggplant props cluttering and colliding with the eau de parfum line, and a hard horizontal table seam behind the bottle remain unresolved defects"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

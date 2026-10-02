@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) resolves the Board-formed Sea Wall Ledger more completely: the wall reads as cast panels with horizontal formwork seams plus vertical panel joints and evenly spaced round tie marks, the honed ground plane carries a soft tonal gradient and a believable receding perspective, and the bottle's base settles into it with a soft matte contact shadow consistent with the diffuse sea-fog light. The left Times column is cleaner here: DAVIDOFF at column head, 'Cool / Water' across two tall serif lines with generous leading, EAU DE TOILETTE and the short slate tide-gauge rule closing the column, all with wide horizontal clearance from the bottle shoulder. The product cutout stays faithful (opaque black cap, luminous ocean-blue slab, crisp white print) and sits right of centre within the safety bounds. Version 1 (image 5) is close but weaker: its wall shows only a single horizontal seam with sparse tie marks so the board-formed ledger rhythm is thin, the floor plane is flatter and reads more like a pasted band, the contact shadow is fainter so the bottle grips the cement less convincingly, and the column's slate rule and EDT line sit slightly tighter against the tie-mark rows, muddying the calm left wall the concept demands.",
+  "remaining_problems": [
+    "Contact shadow under the bottle in version 2 is still very soft and slightly uniform; a touch more density at the base line would anchor the packshot further into the honed ground.",
+    "The vertical panel joints in the wall introduce a grid the brief's purely horizontal board rhythm did not ask for, mildly competing with the horizontal tide-gauge logic of the type column.",
+    "The slate rule and EAU DE TOILETTE line float with a large vertical gap below the serif title, leaving the column's middle slightly under-weighted.",
+    "Cool sea-fog light is convincing on the cement but the glass body keeps a studio-style internal glow with little environmental reflection from the pale ground, so material dialogue between cement and glass remains mostly tonal rather than optical."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

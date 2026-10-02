@@ -1,0 +1,51 @@
+{
+  "pass": false,
+  "score": 83.3,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 84,
+    "background": 76,
+    "physical_integration": 88,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The engine-turned guilloché tide, the concept's core device, only renders in the mid-field (roughly y300-1080, strongest at the left and right margins); the entire top band behind the GUERLAIN/SHALIMAR monument (y0-250) is flat unengraved card. The declared 'edge to edge' line-density narrative is therefore half-delivered, and the typographic zone loses its banknote texture."
+    },
+    {
+      "type": "background",
+      "problem": "The graphite ribbon band stops at y≈1352, leaving an ~88px pale strip of card under it (visible in the contact crop [98,1141,981,1391] as the light row below the band). The strip carries no line work and no type, so the ribbon reads as a mis-set crop instead of a deliberate printed band closing the poster."
+    },
+    {
+      "type": "composition",
+      "problem": "The engraved wave amplitude peaks at the left and right margins exactly at the bottle's shoulder height (y≈650-1050), producing busy line noise against the flacon's widest silhouette edge while the field behind the title stays empty; the line-density gradient fights the product outline instead of swelling quietly beneath it."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte card in pale ice porcelain blue-grey, engraved edge to edge from the top margin to the bottom margin with extremely fine faint concentric engine-turned guilloché wave lines swelling upward from lower center, line contrast whisper-soft and uniform in the upper half behind the type zone, one hard-edge flat graphite blue horizontal band across the lower third running full width to both side edges and stopping cleanly with equal pale card margin above and below it, perfectly even shadowless illumination, absolutely no letters, no numbers, no digits, no punctuation, no text of any kind, no objects"
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 240
+    }
+  ],
+  "notes": {
+    "contact_evidence": "Crop [98,1141,981,1391] re-inspected: the clear pedestal foot settles onto the graphite band at y≈1281 with a soft dark contact smudge hugging the foot underside and slight lateral spread; shadow offset_y 0 is correct contact and was not moved. Base at 88.9% of canvas height sits inside the 94% bound, so no floating claim is made.",
+    "fidelity_evidence": "Single flacon matches the source cutout: amber juice glowing brightest at lower center, opaque blue dome cap with gold GUERLAIN PARIS lettering, black grosgrain ribbon tails, black SHALIMAR body lettering, clear faceted foot; baked speculars untouched, no extra bottles, no relabeled glass.",
+    "resolved_since_previous": "The hallucinated coordinate strings ('16, 23, 83, 89' etc.) that collided with the title's left serif edge in the last version are gone; the top band now reads GUERLAIN / SHALIMAR / rule with clean hierarchy, which is why typography rises from 66 to 84 and the stray-text problems are dropped rather than repeated.",
+    "concept_preserved": "Palette (#dfe7e9/#101d33/#274b8f), flat graphic scene_mode, centered Bodoni monument above the product and the graphite ribbon band are retained; patches only extend the engraving coverage, balance the ribbon margins and widen the engraver's rule toward the title measure."
+  },
+  "reported_score": 81.9
+}

@@ -1,0 +1,68 @@
+{
+  "pass": false,
+  "score": 76.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 80,
+    "background": 66,
+    "physical_integration": 82,
+    "reference_alignment": 72,
+    "creative_coherence": 68
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The generated diagonal stripe rendered as cool magenta-pink, not the declared vermilion #d8402f of the palette and brief ('hard vermilion diagonal bar echoing the stiletto arch'). Visually it sits beside the shoe's warm vermilion lacquer as a foreign hue, so the intended echo reads as a clash; the small ink rule under the title IS correct vermilion, which makes the stripe's off-palette hue even more obvious."
+    },
+    {
+      "type": "background",
+      "problem": "The halftone dot field does not read as a gradient 'densifying toward lower right': dots appear at near-uniform density across the field, and the stripe acts as a hard boundary between a darker mint zone above and a paler zone below, so the lower band reads as a separate flat panel rather than a continuous stride of dots. The dot narrative of the concept is therefore only half-executed."
+    },
+    {
+      "type": "composition",
+      "problem": "The stripe crosses the canvas at roughly y 890-1270 at the edges and passes directly behind the narrow gold stiletto heel and the red ankle, cutting the product silhouette at its most delicate point. In the concept the bar should echo the arch; instead it intersects the heel rod so the thin gold line visually collides with the bar edge, weakening silhouette clarity against the references' clean figure-ground separation."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [270,1185,810,1435] confirms a soft contact shadow under the toe pad at the correct base line (base_y 1325, shadow offset_y 0 - correct, do not move), but the gold stiletto heel tip terminates visibly above the toe contact with no shadow of its own, so the two-point rest described in the product notes reads as one grounded point plus a floating heel. The shoe also rests on an implied plane inside a declared 'no floor' graphic field; the toe shadow is the only grounding cue and it is very faint at opacity 0.35."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy is calm but under-articulated: the subtitle and price strings are empty, leaving the upper band as logo + title + rule only, and the 130px vermilion rule at y 363 floats in a large empty mint gap between title baseline (~305) and shoe cap (~461), reading as a stray mark rather than a press registration mark closing the type block."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot field of deep ink green dots gradually densifying and darkening toward the lower right corner with no hard tonal break, one single hard-edge flat vermilion red-orange diagonal band in exact hue #d8402f crossing the lower third from lower left to mid right, perfectly even shadowless frontal illumination, no texture beyond dots, no objects, no horizon"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.2
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 340
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 168
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    }
+  ],
+  "reported_score": 76
+}

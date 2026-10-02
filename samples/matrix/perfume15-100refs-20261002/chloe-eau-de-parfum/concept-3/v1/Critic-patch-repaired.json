@@ -1,0 +1,55 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 24
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon three quarters down the frame, deep unbroken cloth floor plane in the foreground, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) fulfils the Sonar Ping Chart Monument concept far more completely: the matte glacier-mint card carries fine concentric sonar rings across the whole field with a single thicker hard-edge teal echo ring centred in the frame, exactly as briefed, while version 2 (image 6) replaces that delicate chart geometry with one heavy textured torus and loses the fine radial rings entirely. In version 1 the centred monument type band (wide-tracked Bodoni brand line, generous Didone 'Cool Water', closing EDT line) sits in clean mint space with the short teal chart tick legible beneath it; in version 2 the donut climbs into the type zone, swallowing the teal rule and pressing against the EDT line, collapsing the hierarchy. The product slab is faithful in both (translucent backlit blue glass, opaque black cap, crisp white print), but version 1's ring passes behind the bottle at shoulder height so the slab still reads as the ping source against open chart paper, whereas version 2's thick band crowds the cap and flattens the silhouette. Version 1's even shadowless frontal ink light and controlled screen-print material match the declared graphic scene mode; no studio equipment, no floating packshot over a support in either, but version 1 is the resolved finished set.",
+  "remaining_problems": [
+    "The fine concentric rings read slightly spiralled/moiré-textured rather than perfectly crisp screen-printed chart lines at full size",
+    "The thick return-echo ring centre sits a touch above the exact frame centre, so the radial geometry is marginally off-axis from the bottle as ping source",
+    "The teal rule under the type stack is very thin and low-contrast against the mint field, weakening the closing chart tick of the monument band"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

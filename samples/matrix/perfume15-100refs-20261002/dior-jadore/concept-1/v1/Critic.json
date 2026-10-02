@@ -1,0 +1,68 @@
+{
+  "pass": false,
+  "score": 75.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 82,
+    "background": 55,
+    "physical_integration": 88,
+    "reference_alignment": 70,
+    "creative_coherence": 62
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared concept's defining element is absent: the brief and background prompt call for a large metal-leaf gold disc with engraved concentric rings centered slightly above middle, behind the bottle's shoulders, but the rendered poster (image 1) shows a uniformly flat ultramarine field with no disc, no rings and no metallic glint anywhere. The bottle therefore reads as an isolated cutout pasted on a plain color card, not as a monument standing before the midnight sun; this is the single largest gap to the references, where every campaign builds a deliberate setting around the packshot."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Because the sun-disc never rendered, the concept's core dialogue (flat foil plane vs. volumetric glass, ring echoing the ribbed satin collar) does not exist on the poster; only the small foil rule under the subtitle survives as a trace of the idea, leaving the visual story unfinished."
+    },
+    {
+      "type": "composition",
+      "problem": "With the disc missing, the middle band of the canvas (roughly y 400-1100 outside the bottle silhouette) is dead empty navy, so the eye jumps from the type band straight to the bottle with no mediating shape; the top inscription band and the image below feel like two stacked layouts rather than one Art-Deco monument grid."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the top band is correct (logo smallest, title largest, subtitle tracked caps) but the band floats: the gap between the foil rule at y≈377 and the stopper top at y≈418 is only ~41px while the gap above the logo is ~122px, so the inscription band sits visually detached from the 'monument' it is supposed to crown."
+    },
+    {
+      "type": "background_fallback",
+      "problem": "AI background failed checks; procedural draft requires manual review"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte gouache-painted card in deep ink ultramarine, one very large flat metal-leaf gold disc occupying the middle of the card, disc edge passing behind the center of the frame, fine engraved concentric rings radiating outward from the disc edge into the ultramarine, faint metallic glint on the leaf, perfectly even shadowless frontal illumination, no objects, no horizon, no texture gradients"
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 844
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 176
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 312
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 360
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 112
+    }
+  ],
+  "reported_score": 74
+}

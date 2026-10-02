@@ -1,0 +1,129 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "f72995c0932952dcdbc6ed85536503ac981b7e6ca1e82bf3f8876b1fb8b1b6ea"
+    },
+    {
+      "name": "chloe-eau-de-parfum-retailer.png",
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-dcac2e75-4248-9010-9c4b-6797fde7b9fe",
+      "usage": {
+        "prompt_tokens": 8740,
+        "total_tokens": 10162,
+        "completion_tokens": 1422,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6199,
+          "text_tokens": 2541
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 397
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-dcac2e75-4248-9010-9c4b-6797fde7b9fe",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8740,
+    "total_tokens": 10162,
+    "completion_tokens": 1422,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6199,
+      "text_tokens": 2541
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 397
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 40
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 700
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 2
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 24
+      },
+      {
+        "path": "decoration.x",
+        "op": "set",
+        "value": 300
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 830
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 2
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon three quarters down the frame, deep unbroken cloth floor plane in the foreground, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.42
+      }
+    ]
+  },
+  "duration_seconds": 35.025
+}

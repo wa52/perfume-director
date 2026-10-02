@@ -1,0 +1,6 @@
+{
+  "method": "score_fallback",
+  "error_type": "ValueError",
+  "selected_version": 2,
+  "does_not_grant_pass": true
+}

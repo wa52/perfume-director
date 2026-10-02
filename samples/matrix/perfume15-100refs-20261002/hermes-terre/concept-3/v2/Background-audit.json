@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc centred, flat base line at seventy-three percent down the frame, crown rising to thirty percent down the frame so it passes behind the upper third of the frame, one crisp two-pixel lighter orange seam line exactly along the disc crown edge, perfectly even shadowless frontal illumination, no texture, no gradients, no objects, no furniture, no horizon, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [28, 14, 72, 70] uncluttered; reserve quiet negative space for ink in these areas: [[14, 82, 75, 87], [44, 76, 55, 77]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 245989106098583,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

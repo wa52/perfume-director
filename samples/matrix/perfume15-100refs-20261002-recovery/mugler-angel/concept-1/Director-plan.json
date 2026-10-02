@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\b6cbf396f853\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Star-Chart Engraving Plate",
+    "brief": "把星形瓶读作一张星图的原点：平涂冰紫卡纸上，细密刻线 constellation 从画面中心放射，五枚十字星 tick 精确对齐星瓶的五个尖角，像制图师为这颗星标定坐标；商品居中沉于下幅，刻线从其肩后穿过却不触碰标签。顶带留出安静铭牌区：宽距 Arial 品牌字最小置顶，Baskerville 题名以近半幅宽的大字居中统领，一条银蓝细线横于铭带之下如子午刻度。无地面无 horizon，纯刻线放射几何对抗半透玻璃的柔渐液体。参考 R1 的铭牌层级：品牌行轻、题名重、副行垫底。",
+    "material": "flat matte screen-printed card with engraved constellation lines and cross ticks",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e4e2ee",
+      "#241f38",
+      "#7f8ac0"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081374830,
+    "background": {
+      "color": "#e4e2ee",
+      "prompt": "Seamless flat matte screen-printed card in pale ice lilac, fine engraved constellation lines in deep violet radiating from the exact centre with five small cross ticks at star points across the field, one thin hard-edge silver-blue meridian arc sweeping behind centre, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 907,
+      "width": 579,
+      "height": 864
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e4e2ee",
+      "#241f38",
+      "#7f8ac0"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 353,
+      "y": 187,
+      "size": 150,
+      "color": "#241f38",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 6,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 458,
+      "y": 353,
+      "size": 20,
+      "color": "#241f38",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#241f38",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 458,
+      "y": 94,
+      "size": 40,
+      "color": "#241f38",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 353,
+      "y": 353,
+      "width": 373,
+      "color": "#7f8ac0"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

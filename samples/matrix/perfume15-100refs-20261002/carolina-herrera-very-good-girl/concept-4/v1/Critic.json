@@ -1,0 +1,98 @@
+{
+  "pass": false,
+  "score": 79.4,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 74,
+    "physical_integration": 76,
+    "reference_alignment": 74,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared concept specifies a seamless felt cyclorama 'with no visible seam', but the render shows a hard horizontal wall/floor junction line at y≈830 spanning the full canvas width, with an abrupt tonal and grain change above/below it. It reads as a pasted backdrop edge rather than a swept cyclorama, and the sharp line competes with the silhouette behind the bottle's midsection."
+    },
+    {
+      "type": "background",
+      "problem": "Lighting mismatch: the baked product lighting is a soft key from upper front-left (long specular streak on the red body, bright cap facets), but the felt's elliptical light pool sits upper-center/upper-right of the text block and the floor is lit almost uniformly. The environment does not visibly support the product's actual key direction, so the cutout reads slightly pasted despite good contact."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [416,1206,924,1440] confirms the toe rests on the pile with a soft absorbed shadow (contact is real, not floating), but at the gold stiletto heel tip the shadow is nearly absent: the tip meets the felt with only a faint darkening and no occlusion pool, so the second support point reads a few pixels light. Shadow opacity 0.35 with blur 10 is too weak for the opaque glossy mass on absorbent felt."
+    },
+    {
+      "type": "typography",
+      "problem": "The upper-left monument is under-resolved relative to the references: the subtitle and price strings are empty, leaving logo + title + a lone 151px gold rule with a large dead zone between the rule (y≈334) and the bottle cap (y≈554); hierarchy stops at two levels and the gold rule floats without a text partner below it."
+    },
+    {
+      "type": "composition",
+      "problem": "The spotlight pool's brightest felt sits behind the title zone upper-center while the hero occupies lower-right, so the light accent and the subject pull in different directions; the mid-band (y≈350-550) is empty felt with no tonal event bridging text block and product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep verdigris green wool felt cyclorama curving continuously from back wall into ground with no seam and no horizon line, fine felt fibre grain, one soft elliptical pool of lighter light entering from upper front-left and fading diagonally toward lower right, gentle diffuse ambient falloff, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "Eau de Parfum"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 86
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 340
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 120
+    }
+  ],
+  "reported_score": 79
+}

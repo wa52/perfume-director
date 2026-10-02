@@ -9,7 +9,7 @@ $projectRoot = $PSScriptRoot
 $runtimeRoot = Join-Path $projectRoot 'runtime'
 $taskConfigPath = Join-Path $projectRoot 'config.local.json'
 if (Test-Path -LiteralPath $taskConfigPath) {
-    $taskKeyName = (Get-Content -LiteralPath $taskConfigPath -Raw | ConvertFrom-Json).api_key_env
+    $taskKeyName = (Get-Content -LiteralPath $taskConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json).api_key_env
     if ($taskKeyName -and ![Environment]::GetEnvironmentVariable($taskKeyName, 'Process')) {
         $taskSavedKey = [Environment]::GetEnvironmentVariable($taskKeyName, 'User')
         if ($taskSavedKey) { [Environment]::SetEnvironmentVariable($taskKeyName, $taskSavedKey, 'Process') }
@@ -26,7 +26,7 @@ if ($Restart -and (Test-Path -LiteralPath (Join-Path $runtimeRoot 'comfy.pid')))
         if ($queue.queue_running.Count -or $queue.queue_pending.Count) { throw 'ComfyUI queue is busy; wait before restarting' }
         if ($queue -and (Test-Path -LiteralPath (Join-Path $runtimeRoot 'director-jobs'))) {
             foreach ($stateFile in (Get-ChildItem -LiteralPath (Join-Path $runtimeRoot 'director-jobs') -Filter state.json -Recurse -File)) {
-                $jobState = Get-Content -LiteralPath $stateFile.FullName -Raw | ConvertFrom-Json
+                $jobState = Get-Content -LiteralPath $stateFile.FullName -Raw -Encoding UTF8 | ConvertFrom-Json
                 if ($jobState.status -eq 'RUNNING') { throw 'A director loop is running; wait before restarting' }
             }
         }
@@ -59,6 +59,8 @@ Copy-Item -LiteralPath (Join-Path $projectRoot 'reference_store.py') -Destinatio
 Copy-Item -LiteralPath (Join-Path $projectRoot 'check_background.py') -Destination (Join-Path $nodeRoot 'check_background.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'quality.py') -Destination (Join-Path $nodeRoot 'quality.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'concepts.py') -Destination (Join-Path $nodeRoot 'concepts.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'typography.py') -Destination (Join-Path $nodeRoot 'typography.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'graphic_shapes.py') -Destination (Join-Path $nodeRoot 'graphic_shapes.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\jobs.py') -Destination (Join-Path $nodeRoot 'jobs.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\web') -Destination $nodeRoot -Recurse -Force
 @{project_root = $projectRoot} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $nodeRoot 'project.json') -Encoding utf8

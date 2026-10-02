@@ -1,0 +1,431 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "kenzo-jungle-retailer.png",
+      "sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-8b74b4e1-46f9-9910-bcca-23f4edbfd801",
+      "usage": {
+        "prompt_tokens": 34302,
+        "total_tokens": 40830,
+        "completion_tokens": 6528,
+        "prompt_tokens_details": {
+          "cached_tokens": 33792,
+          "image_tokens": 9144,
+          "text_tokens": 25158
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2431
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8b74b4e1-46f9-9910-bcca-23f4edbfd801",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 34302,
+    "total_tokens": 40830,
+    "completion_tokens": 6528,
+    "prompt_tokens_details": {
+      "cached_tokens": 33792,
+      "image_tokens": 9144,
+      "text_tokens": 25158
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2431
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Frond-Echo Silkscreen Monument",
+        "brief": "把盖顶的三片叶状雕塑读作纸面上的三枚印刷回声：浅天青平涂丝网卡纸上，三枚硬边竖向窄椭圆自瓶盖身后逐级错高浮出，如叶片投在纸上的平印影子，一枚扁椭圆垫于剪影基部如印制的落影盘。无地面无 horizon，纯椭圆节奏对抗抛光金属雕塑的柔体积。顶带留出完全安静的纪念碑铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条青墨细线横垫其下如制版套准刻度。哑光丝印吞光，让近白玻璃与 satin 金雕塑 owning 全部高光。参考 R1 的铭牌层级（品牌行轻、题名重、副行垫底）与 R7 的柔粉彩秩序、R4 的居中几何聚焦。",
+        "material": "flat matte silkscreen-printed card with hard-edge printed vertical frond ellipses and one flat base disc",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R7",
+          "R4"
+        ],
+        "palette": [
+          "#dbe7ec",
+          "#14323e",
+          "#2e8090"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.1,
+            0.135,
+            150
+          ],
+          "logo": [
+            0.415,
+            0.062,
+            34
+          ],
+          "subtitle": [
+            0.45,
+            0.26,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in pale sky azure blue, perfectly even shadowless frontal illumination, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.4,
+            "y": 0.3,
+            "width": 0.13,
+            "height": 0.34,
+            "color": "#2e8090",
+            "opacity": 0.3
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.26,
+            "width": 0.15,
+            "height": 0.42,
+            "color": "#2e8090",
+            "opacity": 0.45
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.6,
+            "y": 0.31,
+            "width": 0.12,
+            "height": 0.32,
+            "color": "#2e8090",
+            "opacity": 0.22
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.9,
+            "width": 0.52,
+            "height": 0.07,
+            "color": "#14323e",
+            "opacity": 0.12
+          }
+        ],
+        "line": [
+          0.42,
+          0.255,
+          0.16
+        ]
+      },
+      {
+        "name": "Savanna Ripple Dawn Column",
+        "brief": "把金象与叶冠放回它名字里的旷野：摄影感黎明沙原，细密风纹沙面在真实基准线处接住低 horizon，上幅是雾粉暖天光；商品立于沙面偏右，测量接触阴影陷进风纹脊线。左半幅沙原与天空保持安静，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如蚀刻签条，一条赭橙细线横垫柱底如探坑刻度。垂直方向与叶冠区重叠、水平方向宽距分离，双栏编辑网格诚实成立；沙的矿物哑光与 satin 金雕塑的柔渐高光互为粗细冷暖。参考 R2 的签条式排印节奏与分区纸面秩序、R3 的硬光有机线影、R8 的低 horizon 反射地面。",
+        "material": "fine wind-rippled pale sand plain sweeping to a low horizon under a hazy warm dawn sky",
+        "lighting": "soft diffuse warm dawn daylight, gentle frontal matching the baked studio key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R8"
+        ],
+        "palette": [
+          "#e9d2ae",
+          "#4a2a12",
+          "#c96f2e"
+        ],
+        "product": [
+          0.66,
+          0.6,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.08,
+            0.44,
+            120
+          ],
+          "logo": [
+            0.08,
+            0.355,
+            34
+          ],
+          "subtitle": [
+            0.08,
+            0.665,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Fine wind-rippled pale sand plain in warm oat apricot tone sweeping to a low horizontal horizon six tenths down the frame under a hazy warm ivory dawn sky, delicate parallel ripple ridges across a continuous flat ground, soft diffuse warm dawn illumination, matte mineral grain, no objects",
+        "shapes": [],
+        "line": [
+          0.08,
+          0.645,
+          0.14
+        ]
+      },
+      {
+        "name": "Elephant Trail Debossed Ledger",
+        "brief": "把金象读作一位留下足迹的旅者：浅 pistachio 棉浆纸上压出一串盲压小椭圆足迹，自左上斜向走入画面中心并隐没于剪影身后，如象群小径穿过纸面；一枚宽扁盲压椭圆垫于基部如林间水洼。商品提至上幅并整体收小，让下幅铭牌带获得真正的安全距离：宽距 Arial 品牌字居带顶且完全落在剪影基准线之下，Century Gothic 几何大写题名以近满带宽居中统领，一条橄榄细线横于品牌与题名之间如小径零点刻度。棉浆纸的纤维哑光与抛光金属的柔渐高光互为柔刚，无地面无 horizon，纯足迹叙事。参考 R1 的深色铭牌对比层级、R5 的柔光有机沉浸、R3 的负空间光戏。",
+        "material": "pressed cotton-rag paper with blind-debossed footprint ellipses and one wide debossed pool disc",
+        "lighting": "perfectly even shadowless frontal illumination with faint fibre grain, flat graphic light",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R3"
+        ],
+        "palette": [
+          "#e0e8d0",
+          "#26331d",
+          "#7fa05a"
+        ],
+        "product": [
+          0.5,
+          0.44,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.14,
+            0.807,
+            96
+          ],
+          "logo": [
+            0.4426,
+            0.765,
+            32
+          ],
+          "subtitle": [
+            0.46,
+            0.894,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 6,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless pressed cotton-rag paper in pale pistachio green with a diagonal trail of small blind-debossed ellipse footprints descending from upper left toward centre and one wide shallow debossed ellipse pool low centre, faint fibre grain, perfectly even shadowless frontal illumination, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.16,
+            "y": 0.14,
+            "width": 0.07,
+            "height": 0.045,
+            "color": "#7fa05a",
+            "opacity": 0.35
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.25,
+            "y": 0.21,
+            "width": 0.07,
+            "height": 0.045,
+            "color": "#7fa05a",
+            "opacity": 0.3
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.34,
+            "y": 0.28,
+            "width": 0.07,
+            "height": 0.045,
+            "color": "#7fa05a",
+            "opacity": 0.25
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.43,
+            "y": 0.35,
+            "width": 0.07,
+            "height": 0.045,
+            "color": "#7fa05a",
+            "opacity": 0.2
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.74,
+            "width": 0.46,
+            "height": 0.06,
+            "color": "#7fa05a",
+            "opacity": 0.18
+          }
+        ],
+        "line": [
+          0.44,
+          0.794,
+          0.12
+        ]
+      },
+      {
+        "name": "Still Water Mirror Serif Column",
+        "brief": "把高key近白的玻璃读作一面黎明静水：摄影感浅水镜面，薄薄一层静水覆于细沙之上，在真实基准线处接住低 horizon，水面只留一圈极淡的同心涟漪与天空的暖白倒影；商品立于浅水偏左，测量接触阴影化作脚下的一圈水痕。右半幅水面与雾天保持安静，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Times 题名以窄柱两行衬线大字排印如碑刻签条，一条水蓝细线横垫柱底如水位刻度。垂直方向与叶冠区重叠、水平方向宽距分离；水的镜面冷静与 satin 金雕塑的暖柔互为温度悖论。参考 R2 的手写签条式排印节奏、R8 的镜面反射地面、R6 的 halo 负空间。",
+        "material": "thin sheet of still water over smooth pale sand reflecting a warm mist sky, one faint ripple ring",
+        "lighting": "soft high-key diffuse dawn light, gentle frontal matching the baked studio key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R8",
+          "R6"
+        ],
+        "palette": [
+          "#e4e9e6",
+          "#1d3a34",
+          "#3f8f8a"
+        ],
+        "product": [
+          0.36,
+          0.58,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.62,
+            0.42,
+            110
+          ],
+          "logo": [
+            0.62,
+            0.34,
+            34
+          ],
+          "subtitle": [
+            0.62,
+            0.645,
+            20
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 2,
+              "max_width": 350,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Thin sheet of perfectly still water over smooth pale sand meeting a warm white mist sky at a low horizontal horizon six tenths down the frame, one faint concentric ripple ring low centre, soft mirror reflection of sky on the continuous water ground, soft high-key diffuse dawn illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.62,
+          0.625,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 244.492
+}

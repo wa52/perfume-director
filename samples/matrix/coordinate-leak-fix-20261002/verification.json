@@ -1,0 +1,17 @@
+{
+  "same_spec_and_seed": true,
+  "only_engine_change": "background_placement numeric arrays replaced with spatial prose",
+  "runs": {
+    "before": {
+      "run_id": "10a137f28131",
+      "sha256": "dac05e230be01b2a10db73d5cb5def8714fb2e05b08e9570e50602fe749d3a47",
+      "seed": 182058145773179
+    },
+    "after": {
+      "run_id": "3b84af0d51c5",
+      "sha256": "9b7bcaca74f4ed360fabe09660f0158ea9889896850317bf80ba30ec11b2886d",
+      "seed": 182058145773179
+    }
+  },
+  "human_visual_observation": "Coordinate garbage visible upper-left before; absent after. Both still NEEDS_REVIEW."
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-c98a9b945cd5.jpg",
+      "sha256": "cfe2c1fc95ff28e7407807de4b1e4a8cca24637aa78221c93c33a190ba2f9149"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ed27ed2b-5fc6-9637-a9a3-4bc3287fa02b",
+      "usage": {
+        "prompt_tokens": 515,
+        "total_tokens": 814,
+        "completion_tokens": 299,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 218,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 299
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ed27ed2b-5fc6-9637-a9a3-4bc3287fa02b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 515,
+    "total_tokens": 814,
+    "completion_tokens": 299,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 218,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 299
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Givenchy",
+    "style": "luxury",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved luxury fragrance campaign featuring a male model, clear brand hierarchy, and product integration.",
+    "analysis": {
+      "composition": "Central portrait with product placement in the lower right foreground; strong vertical alignment.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal dark background space at the top for typography.",
+      "lighting": "High-contrast studio lighting emphasizing facial structure and product reflections.",
+      "color": [
+        "black",
+        "white",
+        "grey",
+        "blue",
+        "red"
+      ],
+      "typography": "Bold sans-serif brand name at the top; smaller sub-line and URL.",
+      "information_density": "Low; focused on brand, product line, and visual impact.",
+      "characteristics": [
+        "monochrome portrait",
+        "color accent products",
+        "masculine aesthetic",
+        "high contrast"
+      ],
+      "perfume_suitability": 95,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 40
+    }
+  },
+  "duration_seconds": 9.108
+}

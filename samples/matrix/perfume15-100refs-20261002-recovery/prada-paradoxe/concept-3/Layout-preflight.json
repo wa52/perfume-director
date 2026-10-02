@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238490267,
+    "background": {
+      "color": "#4a2c1e",
+      "prompt": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame, low glossy sheen arcs on each tile face, soft warm diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 634,
+      "width": 720,
+      "height": 720
+    },
+    "lighting": "soft warm diffuse light with low glossy sheen arcs on tile glaze, gentle frontal matching the baked studio key, no hard shadows",
+    "palette": [
+      "#4a2c1e",
+      "#f2e4d2",
+      "#e8a87c"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 173,
+      "y": 1138,
+      "size": 112,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 1303,
+      "size": 20,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 432,
+      "y": 1058,
+      "size": 28,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 346,
+      "y": 1116,
+      "width": 389,
+      "color": "#e8a87c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238490267,
+    "background": {
+      "color": "#4a2c1e",
+      "prompt": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame, low glossy sheen arcs on each tile face, soft warm diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 634,
+      "width": 720,
+      "height": 720
+    },
+    "lighting": "soft warm diffuse light with low glossy sheen arcs on tile glaze, gentle frontal matching the baked studio key, no hard shadows",
+    "palette": [
+      "#4a2c1e",
+      "#f2e4d2",
+      "#e8a87c"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 173,
+      "y": 1138,
+      "size": 112,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 1303,
+      "size": 20,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 432,
+      "y": 1058,
+      "size": 28,
+      "color": "#f2e4d2",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 346,
+      "y": 1116,
+      "width": 389,
+      "color": "#e8a87c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

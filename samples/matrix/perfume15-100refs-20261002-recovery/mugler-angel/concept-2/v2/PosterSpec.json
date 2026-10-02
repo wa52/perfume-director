@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200987081375839,
+  "background": {
+    "color": "#b9c2cc",
+    "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame; the wall darkens gently toward the left third and carries one broad calm sheen band low on the right half; the honed ground shows a faint soft vertical reflection and slight tonal deepening near the centre-right; cool diffuse twilight illumination, matte metal grain, no hard shadows, no objects",
+    "revision": 1
+  },
+  "product": {
+    "x": 734,
+    "y": 864,
+    "width": 502,
+    "height": 749
+  },
+  "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+  "palette": [
+    "#b9c2cc",
+    "#101820",
+    "#5f7fa6"
+  ],
+  "title": {
+    "text": "Angel",
+    "x": 76,
+    "y": 576,
+    "size": 112,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 2,
+    "max_width": 340,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 76,
+    "y": 770,
+    "size": 18,
+    "color": "#101820",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#101820",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "Mugler",
+    "x": 76,
+    "y": 490,
+    "size": 30,
+    "color": "#101820",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.5
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 700,
+    "width": 168,
+    "color": "#5f7fa6"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

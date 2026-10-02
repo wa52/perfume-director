@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "dior-jadore-retailer.png",
+      "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8"
+    },
+    {
+      "name": "ref-7838477a52de.webp",
+      "sha256": "90303aabf42db36d437f9b881bba2bc858782eea7f3d7935c09b1fda4f1637b6"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "eb51a730c2f6f814ba5ebab089c5eaa35d1b7cb5d20aa8fd84155cb81d31ec08"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-650bb961-4d41-9365-90f7-cb3c772ae1e2",
+      "usage": {
+        "prompt_tokens": 7107,
+        "total_tokens": 8446,
+        "completion_tokens": 1339,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6190,
+          "text_tokens": 917
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 314
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-650bb961-4d41-9365-90f7-cb3c772ae1e2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7107,
+    "total_tokens": 8446,
+    "completion_tokens": 1339,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6190,
+      "text_tokens": 917
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 314
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 delivers the declared concept cleanly: a quiet saffron top band carries the couture grid (smallest Dior brand line, restrained serif J'adore title, fragrance line beneath, deep-purple bone rule), while the hand-folded pleats radiate from behind the flacon so the bottle appears born from the fan folds in the lower half. Typography is coherent and centered with clear hierarchy; the product silhouette, ribbed gold collar and pearl stopper stay faithful to the original packshot; matte paper creases contrast with the glass highlights as intended. Version 1, although its full-bleed radiating pleats are attractive, is disqualified as a finished poster by leftover bracketed coordinate/debug text printed in the upper-left corner, and its pleats run through the type zone instead of leaving the quiet top band the brief demands.",
+    "remaining_problems": [
+      "The pleat starburst converges visibly at the bottle's neck/shoulder, reading slightly like a printed backdrop decal rather than folds physically behind the flacon; a softer occlusion gradient around the convergence point would help.",
+      "Contact at the base is minimal: the bottle meets the lower pleats with only a faint shadow, so grounding within the graphic field remains subtly ambiguous.",
+      "The flat upper field shows a very slight tonal seam where the pleats begin, which could be blended for a cleaner couture grid."
+    ]
+  },
+  "duration_seconds": 35.707
+}

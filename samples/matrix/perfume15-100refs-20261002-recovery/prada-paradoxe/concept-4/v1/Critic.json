@@ -1,0 +1,129 @@
+{
+  "pass": false,
+  "score": 75.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 62,
+    "physical_integration": 86,
+    "reference_alignment": 70,
+    "creative_coherence": 66
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared concept is 'hard-edge concentric RECTANGULAR step rings expanding from the exact centre like fresnel lens steps', but the render shows soft, blurred CIRCULAR halo bands plus a rounded-rectangle card inset with a drop-shadowed border at the canvas edges. The step geometry reads as an accidental radial glow and a framed card, not as crisp printed stair rings; against references 3-5 (each with one decisive graphic device) this background looks like a generic violet gradient with a vignette frame."
+    },
+    {
+      "type": "background",
+      "problem": "The single thin gold seam is rendered as a CIRCLE arcing out from behind the bottle's lower-right flank and re-entering under the base (visible in the contact detail crop as a gold curve crossing beneath the glass). Inside a rectangular step system a circular seam is a genre mismatch, and because it is partly occluded it reads as a stray halo ring around the product rather than as a step seam; it also crowds the base contact zone."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy in the lower plaque band is unresolved: the 'PRADA' logotype (28px, dark ink, centered at x=421) sits left of the band center while the gold rule (decoration at x=356 width 367, center ~540) is centered, so the two plaque elements disagree on axis; the left-aligned 110px 'Paradoxe' then starts at x=162, leaving a large dead zone on the right of the band. The band reads as three unrelated placements instead of one composed plaque, unlike the confident lockups in references 3 and 5."
+    },
+    {
+      "type": "typography",
+      "problem": "The renderer already rejected the light logo ink (#f4eef8 -> #261E16) for contrast below 3 on this orchid field; the surviving dark-brown logo now reads as a forced correction rather than a chosen ink, and its small size plus wide tracking makes it the weakest element of the plaque against the dominant title."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The concept's 'dimensional paradox' (flat printed stair vs. volumetric glass refraction) is undercut: the steps are soft and circular, the seam is circular, and the card frame adds a third unrelated device, so the flat-graphic side of the paradox never clearly asserts itself; the bottle's baked-in softbox speculars then float on an ambiguous field instead of playing against crisp printed geometry."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in medium orchid violet, perfectly even shadowless frontal illumination, six crisp hard-edge concentric rectangular step rings in lighter lilac expanding from the exact centre of the frame like fresnel lens steps with clean 90-degree corners, one thin straight-edged rectangular gold seam line aligned to the third step, no circles, no rounded card border, no frame, no vignette, no texture gradients, no objects"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "shape": "rectangle",
+          "x": 90,
+          "y": 150,
+          "width": 900,
+          "height": 1010,
+          "color": "#9a74bd",
+          "opacity": 0.55
+        },
+        {
+          "shape": "rectangle",
+          "x": 170,
+          "y": 255,
+          "width": 740,
+          "height": 800,
+          "color": "#a987ca",
+          "opacity": 0.5
+        },
+        {
+          "shape": "rectangle",
+          "x": 250,
+          "y": 360,
+          "width": 580,
+          "height": 590,
+          "color": "#b798d6",
+          "opacity": 0.45
+        },
+        {
+          "shape": "rectangle",
+          "x": 330,
+          "y": 465,
+          "width": 420,
+          "height": 380,
+          "color": "#c5a9e0",
+          "opacity": 0.4
+        },
+        {
+          "shape": "rectangle",
+          "x": 300,
+          "y": 425,
+          "width": 480,
+          "height": 460,
+          "color": "#d8b45e",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 476
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#261E16"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 328
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 356
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 367
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    }
+  ],
+  "reported_score": 74
+}

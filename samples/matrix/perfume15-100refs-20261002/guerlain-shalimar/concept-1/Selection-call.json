@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "guerlain-shalimar-retailer.png",
+      "sha256": "16f14f209aa3391890febf4d15941aa73ae2c839b2e61e57fb8cdc4b857f566c"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-62ff901b9d4a.webp",
+      "sha256": "d1d9ce1dc6e14beacf166a7b3d41de5a0e864963fe777688bf8cc3d2d9f95572"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "63622e162f9cee4b2ec94e32e615cb7a1441e06e86c6725181ed49a04fb3ed2f"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "f890f03392afadc42887036c40059e7c583ae3e93b4eac07ea7de21c91b9f39f"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-a3d32b92-28c6-9bbe-b413-cbbbfb9800c8",
+      "usage": {
+        "prompt_tokens": 7327,
+        "total_tokens": 8760,
+        "completion_tokens": 1433,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6425,
+          "text_tokens": 902
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 408
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-a3d32b92-28c6-9bbe-b413-cbbbfb9800c8",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7327,
+    "total_tokens": 8760,
+    "completion_tokens": 1433,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6425,
+      "text_tokens": 902
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 408
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 (image 6) delivers the declared 'Engine-turned Guilloché Tide' concept as a finished poster: a clean centred Bodoni monument (tracked GUERLAIN line, heavy serif SHALIMAR, short engraver's rule) sits in a calm pale-ice top band with no collisions; the fine engine-turned wave lines read consistently across the flat matte field; the single hard graphite ribbon band crosses the lower sheet exactly as briefed, and the fan flacon stands lifted with its baked speculars and amber transmission untouched by the flat ink world. Version 1 (image 5) shares the same silhouette and band but is disqualified by stray layout-coordinate numerals ('16, 23, 83, 89', '[30, 12, 79, 16]', '[38, 5, 54, 16]') printed into the title zone, colliding with the SHALIMAR logotype and destroying typographic coherence; its guilloché engraving also collapses into two isolated side patches instead of a continuous line-density field. Neither candidate shows studio equipment or a floating packshot in front of a raised support; version 2's product scale and margins sit inside the safety bounds.",
+    "remaining_problems": [
+      "The graphite band reads as a flat printed stripe behind the pedestal foot rather than a resolved ground relation; the faint soft shadow under the foot slightly contradicts the declared shadowless flat ink light.",
+      "Guilloché wave lines run as fairly uniform horizontal ripples rather than concentric arcs visibly swelling from the lower centre; line density could be modulated more dramatically.",
+      "The wave engraving stops abruptly at the band edge and near the sheet borders, leaving the top band and band interior plain, which weakens the continuous line-density narrative."
+    ]
+  },
+  "duration_seconds": 37.06
+}

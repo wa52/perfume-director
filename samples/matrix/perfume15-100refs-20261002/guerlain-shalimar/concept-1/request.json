@@ -1,0 +1,113 @@
+{
+  "brief": "为 Guerlain Shalimar 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A flat banknote-engraver poster: pale ice porcelain card carries fine concentric guilloché wave lines swelling from the lower centre like turned water, crossed by one hard graphite ribbon band echoing the neck bow. The fan-flacon stands lifted in the upper two-thirds, its baked speculars untouched by the flat ink world, while a centred Bodoni monument stacks in the calm top band: tracked brand line, heavy serif name, closed by a short rule like an engraver's刻 line. No floor, no horizon - pure line-density narrative against lacquer gloss.",
+  "product": "assets\\products\\guerlain-shalimar-retailer.png",
+  "references": [
+    {
+      "id": "ref-f72a7e1dd1ad",
+      "brand": "BYREDO",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/minimal/ref-f72a7e1dd1ad.webp",
+      "selection_reason": "High-quality dynamic product shot capturing the spray mechanism in action against a clean gradient background. Excellent reference for minimalist perfume photography and liquid texture rendering.",
+      "analysis": {
+        "composition": "Diagonal orientation of the bottle creates dynamic movement, balanced by the spray plume extending into the upper left negative space.",
+        "subject_ratio": 0.55,
+        "negative_space": "Generous gradient grey space surrounds the subject, emphasizing the fine mist particles.",
+        "lighting": "Crisp studio lighting with high specular highlights on the glass and metal atomizer; soft drop shadow anchors the floating object.",
+        "color": [
+          "silver",
+          "white",
+          "grey",
+          "pale yellow"
+        ],
+        "typography": "None outside the container label.",
+        "information_density": "Low; focus is entirely on the product form and function.",
+        "characteristics": [
+          "dynamic spray",
+          "floating object",
+          "monochromatic palette",
+          "glass refraction",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-62ff901b9d4a",
+      "brand": "Parle Moi de Parfum",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-62ff901b9d4a.webp",
+      "selection_reason": "Professionally resolved perfume still-life with strong atmospheric lighting and clear brand identity, suitable as a design reference.",
+      "analysis": {
+        "composition": "Two staggered cylindrical bottles on a flat surface, framed by dappled shadows.",
+        "subject_ratio": 0.45,
+        "negative_space": "Generous top and bottom areas filled with textured light and shadow.",
+        "lighting": "Hard, directional sunlight creating sharp cast shadows and a dappled foliage effect.",
+        "color": [
+          "pale green",
+          "olive green",
+          "black",
+          "clear glass"
+        ],
+        "typography": "None outside the container; text is limited to product labels.",
+        "information_density": "Low",
+        "characteristics": [
+          "dappled shadows",
+          "monochromatic green palette",
+          "minimalist glass bottles",
+          "natural light simulation"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

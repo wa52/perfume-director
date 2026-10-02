@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-4f5bbfa4aed8.webp",
+      "sha256": "4396882b8910c007956569f882241a69fd45b75accd5c96b87235976cd591a56"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-38214598-07f6-94ba-8470-1561bb8f1354",
+      "usage": {
+        "prompt_tokens": 1579,
+        "total_tokens": 1938,
+        "completion_tokens": 359,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1282,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 359
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-38214598-07f6-94ba-8470-1561bb8f1354",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1938,
+    "completion_tokens": 359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1282,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 359
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Ferragamo",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring a creative stacked composition of two distinct fragrances. High-quality studio lighting highlights glass textures and liquid colors against a clean background, making it a strong reference for product arrangement and material rendering.",
+    "analysis": {
+      "composition": "Vertical stacking arrangement where a cylindrical bottle balances horizontally atop a rectangular bottle, creating a sculptural, gravity-defying focal point.",
+      "subject_ratio": 0.65,
+      "negative_space": "Generous, clean off-white space surrounding the central stack, emphasizing the product forms.",
+      "lighting": "Soft, high-key studio lighting with precise specular highlights on the glass curves and metallic atomizer, casting soft shadows to the right.",
+      "color": [
+        "off-white",
+        "clear",
+        "chartreuse",
+        "silver",
+        "black"
+      ],
+      "typography": "None visible outside the container; text is limited to embossed metal plates and printed labels on the bottles themselves.",
+      "information_density": "Low",
+      "characteristics": [
+        "stacked composition",
+        "glass refraction",
+        "mixed bottle shapes",
+        "clean studio aesthetic",
+        "liquid color contrast"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.436
+}

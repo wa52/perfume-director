@@ -1,0 +1,166 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "27ba8771886cf99fed5b0a1d19768865a3d5d92354ebe77950733125c6855adb"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-90208e77758d.webp",
+      "sha256": "45801261d65b445c4168087efea23da41c19986616fac59d86fcee44c1bd1b24"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "1ef27fdb318df38de4c5b6a4b248e845ee65c923e1fda2f9df3f6d1dcc95c4d0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "TimeoutError"
+    },
+    {
+      "attempt": 3,
+      "status": "OK",
+      "response_id": "chatcmpl-50a0538c-627a-9415-b8fe-c3dcb2f7bcd0",
+      "usage": {
+        "prompt_tokens": 7799,
+        "total_tokens": 9808,
+        "completion_tokens": 2009,
+        "prompt_tokens_details": {
+          "cached_tokens": 7168,
+          "image_tokens": 5249,
+          "text_tokens": 2550
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 984
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-50a0538c-627a-9415-b8fe-c3dcb2f7bcd0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7799,
+    "total_tokens": 9808,
+    "completion_tokens": 2009,
+    "prompt_tokens_details": {
+      "cached_tokens": 7168,
+      "image_tokens": 5249,
+      "text_tokens": 2550
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 984
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 77,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 74,
+      "background": 76,
+      "physical_integration": 84,
+      "reference_alignment": 72,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "In the contact detail crop [447,1149,1065,1399] the bottle foot does rest on the crust with a visible soft darkening under the base edge, so contact is present and offset_y 0 is correct; however at opacity 0.35 with blur 10 the anchor reads as a faint grey seam against the bright mineral crust. Reference 4's bottles sit in clearly graded contact shadows; here the footprint is too timid for the bottle's visual mass, leaving the hero lightly tethered."
+      },
+      {
+        "type": "typography",
+        "problem": "The left column loses its head: the 30px 'Hermès' logo at y 482-504 floats in empty sky while the horizon seam at ~y 510 runs immediately beneath it, and the 88px title starts at y 576 leaving a 72px dead gap. The column reads as two disconnected islands rather than the briefed wrapped column with brand at column head; against references 3-5 the type block lacks optical weight versus the hero."
+      },
+      {
+        "type": "background",
+        "problem": "No studio equipment is present, but the generated crust contradicts the declared material scale: the brief specifies fine polygonal crust cracks, yet the render shows metre-scale plates with wide沟 channels, one crack channel running directly under the bottle base in the contact crop. The coarse plates read as concrete paving slabs and compete with the bottle silhouette instead of receding as matte mineral grain."
+      },
+      {
+        "type": "composition",
+        "problem": "The rust rule at y 814 closes the column 78px below the title's last baseline and sits isolated on the crust like a stray mark; the vertical rhythm logo-title-rule is uneven (72px gap above the title, 78px below), so the editorial column never resolves into one closed block as the concept intends."
+      },
+      {
+        "type": "reference_alignment",
+        "problem": "Against references 3-5 the poster is competent but under-art-directed: the sky占 the top third as empty flat gradient with no atmospheric event, the crust texture is uniform front-to-back with no depth fade, and the single soft shadow is the only integration cue. References achieve depth via graded ground response and richer light; this draft stops at a clean paste-on with one shadow."
+      }
+    ],
+    "changes": [
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.05
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 500
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 560
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 94
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 782
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Endless dawn salt plain of fine polygonal crust cracks, small tight mineral polygons fading softer and hazier toward a low mist-grey horizon high in the frame, cool diffuse overcast frontal daylight, matte white mineral grain with subtle warm dawn blush near the horizon, continuous flat ground plane, empty environment, no objects"
+      }
+    ]
+  },
+  "duration_seconds": 1594.332
+}

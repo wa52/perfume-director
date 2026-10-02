@@ -1,0 +1,78 @@
+{
+  "pass": false,
+  "score": 75.4,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 66,
+    "physical_integration": 72,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The dawn tide-line material reads as three stacked bands instead of one continuous wet plane: a hard horizontal seam crosses the frame at ~y860 (behind the subtitle), a second darker crease line runs at ~y1200-1260 just below the bottle, and a speckled dry-sand strip occupies the bottom edge. The bottle therefore appears parked on a mid-frame shelf of grey water while前景 sand sits lower, breaking the single 'still water sheet' plane the concept requires; references 3-5 each show one coherent ground/space."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail (crop 484,1012-941,1262) confirms a contact shadow IS present at offset_y 0 directly under the base - correctly aligned, do not move down. However it renders as a thin hard dark slit (~x626-794) narrower than the visible glass footprint (~x569-849), so the base reads pinched onto a line rather than settled into wet sand. The brief's '倒影没入水面' mirror reflection is absent: only flat grey water surrounds the base, so the water narrative光源 is not delivered."
+    },
+    {
+      "type": "typography",
+      "problem": "The left inscription column loses its vertical rhythm: logo baseline ~430 to title top 518 is an 88px gap, but title bottom 608 to subtitle top 893 is a 285px void, so 'EAU DE PARFUM' floats orphaned at mid-height instead of anchoring the column foot as briefed; the column no longer reads as one coastal-stele block beside the bottle."
+    },
+    {
+      "type": "composition",
+      "problem": "The sand-gold divider line (decoration at x454,y490) renders as a ~2x10px speck between the columns - visible in the poster as a stray dot right of the title - rather than the intended vertical water-mark rule; it currently reads as a render artifact, not a grid device."
+    },
+    {
+      "type": "background",
+      "problem": "Lighting mismatch: the unmodified packshot carries soft diffuse frontal studio light with broad cap/shoulder highlights, but the backdrop's brightest zone is the upper sky and the water plane darkens toward the base, so the bottle's luminance sits above its surroundings without a supporting bounce; references 4-5 match subject and ground luminance deliberately."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "One continuous seamless sheet of still shallow water over fine pale sand, single unbroken wet plane from lower third to bottom edge, no horizon seam, no cracks, no dry sand strip, faint soft mirror reflection gradient in the water, low luminous misty pale blue-grey dawn sky above, soft diffuse cool frontal light with gentle even bounce across the whole plane, empty scene, no objects"
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.25
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1040
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 430
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 1
+    }
+  ],
+  "reported_score": 74
+}

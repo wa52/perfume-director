@@ -1,0 +1,27 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat printed ribbon loop in uniform pale mint with no folds, no shading and no cast shadow, sweeping from lower left behind centre and re-emerging upper right but staying entirely below y 700 on the right half so the upper right quadrant remains plain uninterrupted green, perfectly even shadowless illumination, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [16, 29, 50, 91] uncluttered; reserve quiet negative space for ink in these areas: [[58, 44, 88, 63], [58, 30, 68, 31]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 230243689468974,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-1.png"
+    },
+    {
+      "prompt": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat printed ribbon loop in uniform pale mint with no folds, no shading and no cast shadow, sweeping from lower left behind centre and re-emerging upper right but staying entirely below y 700 on the right half so the upper right quadrant remains plain uninterrupted green, perfectly even shadowless illumination, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [16, 29, 50, 91] uncluttered; reserve quiet negative space for ink in these areas: [[58, 44, 88, 63], [58, 30, 68, 31]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 230243689568977,
+      "issues": [],
+      "image": "background-attempt-2.png"
+    }
+  ],
+  "ink_changes": [
+    {
+      "path": "title.color",
+      "old": "#f0ece0",
+      "value": "#261E16",
+      "reason": "text_background_contrast_below_3"
+    }
+  ]
+}

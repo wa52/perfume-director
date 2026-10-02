@@ -1,0 +1,442 @@
+[
+  {
+    "name": "Chartreuse Hard-Edge Paradox",
+    "brief": "把三角瓶身读作一张平面几何定理：酸橙绿平涂卡纸上叠两枚硬边三角——一枚实心底沉三角托住剪影下半，一枚细白描边三角自其后错位穿出，斜边与瓶体斜边平行却永不相交，悖论即构图本身。无地面无 horizon，纯硬边形状叙事；商品居中沉于下幅，顶带完全安静：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行大字居中统领，一条墨绿细线横垫其下如制版套准线。哑光水粉吞光，让桃色液体与黑漆盖 owning 全部高光。",
+    "material": "flat matte gouache-painted card with hard-edge printed triangle solids and one offset outline triangle",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-1",
+    "signature": "28e143570e86bc2f85ced4197559a5a585a48582f6f8faea8e6f13513ee2c9f9",
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#c8d64b",
+      "#1c2410",
+      "#f2e8d8"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-f72a7e1dd1ad",
+      "ref-b6e669a924a3"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#c8d64b",
+        "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one hard-edge flat solid triangle in deep ink olive seated at the bottom edge centred, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges, perfectly even shadowless illumination, no texture gradients, no objects",
+        "revision": 0
+      },
+      "product": {
+        "x": 540,
+        "y": 950,
+        "width": 749,
+        "height": 749
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#c8d64b",
+        "#1c2410",
+        "#f2e8d8"
+      ],
+      "title": {
+        "text": "Paradoxe",
+        "x": 140,
+        "y": 144,
+        "size": 118,
+        "color": "#1c2410",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.05,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 454,
+        "y": 338,
+        "size": 20,
+        "color": "#1c2410",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1c2410",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "PRADA",
+        "x": 432,
+        "y": 65,
+        "size": 30,
+        "color": "#1c2410",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 8
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 324,
+        "y": 310,
+        "width": 432,
+        "color": "#f2e8d8"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  },
+  {
+    "name": "Chrome Vapor Meridian",
+    "brief": "把黑漆盖的镜面碎光放大成整座金属气候：拉丝不锈钢墙面垂落并折成连续同料地面，horizon 精确压在真实基准线；一道柔和水平雾光带横贯墙地交界，像蒸汽擦过钢面。商品缩小立于钢地偏左，测量接触阴影陷进细拉丝纹；右半钢面保持安静冷灰，承载一条真正的右栏排印：宽距 Arial 品牌字居柱顶，Century Gothic 几何大写题名以单行大字收左缘起排，与瓶盖区垂直重叠却水平宽距分离，一条钢灰细线横垫柱中如蒸汽刻度。冷钢的哑光丝纹与桃色液体的暖透互为温度悖论。",
+    "material": "brushed stainless steel wall sweeping into continuous matching brushed steel ground with one soft mist band",
+    "lighting": "cool diffuse studio light with one soft horizontal mist glow at the horizon, gentle frontal matching the baked softbox key, no hard shadows",
+    "id": "concept-2",
+    "signature": "bc9752e0ae7de17289e7a4b9727ce03ce681f48edcbae5a68e4b3cc732c5b4de",
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#aeb6bd",
+      "#14181c",
+      "#e8b48e"
+    ],
+    "reference_ids": [
+      "ref-6ced6279f2e6",
+      "ref-7a523ada9a2c",
+      "ref-f305dbbdf3bc"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#aeb6bd",
+        "prompt": "Brushed stainless steel wall with fine horizontal grain meeting a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, cool diffuse even illumination, matte metal grain, no objects",
+        "revision": 0
+      },
+      "product": {
+        "x": 324,
+        "y": 893,
+        "width": 504,
+        "height": 504
+      },
+      "lighting": "cool diffuse studio light with one soft horizontal mist glow at the horizon, gentle frontal matching the baked softbox key, no hard shadows",
+      "palette": [
+        "#aeb6bd",
+        "#14181c",
+        "#e8b48e"
+      ],
+      "title": {
+        "text": "Paradoxe",
+        "x": 659,
+        "y": 792,
+        "size": 72,
+        "color": "#14181c",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4,
+        "max_width": 0,
+        "line_height": 1.12,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 659,
+        "y": 958,
+        "size": 18,
+        "color": "#14181c",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#14181c",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF"
+      },
+      "logo": {
+        "text": "PRADA",
+        "x": 659,
+        "y": 684,
+        "size": 26,
+        "color": "#14181c",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 8
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 659,
+        "y": 907,
+        "width": 216,
+        "color": "#e8b48e"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic"
+    }
+  },
+  {
+    "name": "Cocoa Glaze Tile Ledger",
+    "brief": "把金颈的暖光放进一间釉面砖窖：深可可棕釉面砖墙以细密灰缝排成竖向砖柱，釉光在砖面留下低亮弧光；连续同料釉砖地面在真实基准线接墙。商品立于地面居中偏上，接触阴影落进砖缝；下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Times 题名以近满带宽的单行衬线大字居中统领，一条桃色细线横于带顶如釉裂金缮。釉面的湿亮与玻璃三角的硬折光同源却不同温，棕与桃构成可可与肌肤的味觉悖论。",
+    "material": "glazed cocoa-brown ceramic tile wall with fine grout lines and continuous matching glazed tile ground",
+    "lighting": "soft warm diffuse light with low glossy sheen arcs on tile glaze, gentle frontal matching the baked studio key, no hard shadows",
+    "id": "concept-3",
+    "signature": "32ea4a65b4ea8f9a78cb148d53ce65e41472cea21daabd708c0de3bf802d2cae",
+    "scene_mode": "photographic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#4a2c1e",
+      "#f2e4d2",
+      "#e8a87c"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-41b5b67289d6",
+      "ref-7a523ada9a2c"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#4a2c1e",
+        "prompt": "Glazed cocoa brown ceramic tile wall with fine pale grout lines in a vertical stack bond, meeting a continuous matching glazed tile ground at a horizontal horizon seven tenths down the frame, low glossy sheen arcs on each tile face, soft warm diffuse illumination, no objects",
+        "revision": 0
+      },
+      "product": {
+        "x": 540,
+        "y": 634,
+        "width": 720,
+        "height": 720
+      },
+      "lighting": "soft warm diffuse light with low glossy sheen arcs on tile glaze, gentle frontal matching the baked studio key, no hard shadows",
+      "palette": [
+        "#4a2c1e",
+        "#f2e4d2",
+        "#e8a87c"
+      ],
+      "title": {
+        "text": "Paradoxe",
+        "x": 173,
+        "y": 1138,
+        "size": 112,
+        "color": "#f2e4d2",
+        "font": "C:/Windows/Fonts/times.ttf",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.05,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 454,
+        "y": 1303,
+        "size": 20,
+        "color": "#f2e4d2",
+        "font": "C:/Windows/Fonts/times.ttf",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#f2e4d2",
+        "font": "C:/Windows/Fonts/times.ttf"
+      },
+      "logo": {
+        "text": "PRADA",
+        "x": 432,
+        "y": 1058,
+        "size": 28,
+        "color": "#f2e4d2",
+        "font": "C:/Windows/Fonts/times.ttf",
+        "tracking": 8
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 346,
+        "y": 1116,
+        "width": 389,
+        "color": "#e8a87c"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic"
+    }
+  },
+  {
+    "name": "Orchid Fresnel Stair",
+    "brief": "把瓶盖的斜切面读作一级光阶：中饱和兰花紫平涂卡纸上，一组硬边同心矩形阶自画面中心向外逐级放大，如菲涅尔透镜的刻阶；商品提至上幅立于阶心之前，矩形阶从其肩后掠过却不触碰标签。下幅留出安静宽铭牌带：宽距 Arial Narrow 品牌字居带顶，Baskerville 题名以近满带宽的衬线大字居中统领，一条浅紫细线横垫其下如刻阶零点。纯平面阶纹与三角玻璃的体积折光构成维度悖论，无地面无 horizon。",
+    "material": "flat matte screen-printed card with hard-edge concentric rectangular step rings",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-4",
+    "signature": "dc9bee75b952af6f9a2122fcca89ba627dee0d5ab8da22d8e53e8c0b3e57def0",
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#8a5fa8",
+      "#f4eef8",
+      "#d8b45e"
+    ],
+    "reference_ids": [
+      "ref-6ced6279f2e6",
+      "ref-b6e669a924a3",
+      "ref-b4d87aee2707"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#8a5fa8",
+        "prompt": "Seamless flat matte screen-printed card in medium orchid violet, hard-edge concentric rectangular step rings in lighter lilac expanding from the exact centre of the frame like fresnel lens steps, one thin gold seam ring at mid step, perfectly even shadowless illumination, no texture gradients, no objects",
+        "revision": 0
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 720,
+        "height": 720
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#8a5fa8",
+        "#f4eef8",
+        "#d8b45e"
+      ],
+      "title": {
+        "text": "Paradoxe",
+        "x": 162,
+        "y": 1123,
+        "size": 110,
+        "color": "#f4eef8",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 3,
+        "max_width": 0,
+        "line_height": 1.06,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 443,
+        "y": 1289,
+        "size": 20,
+        "color": "#f4eef8",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#f4eef8",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "logo": {
+        "text": "PRADA",
+        "x": 421,
+        "y": 1044,
+        "size": 28,
+        "color": "#f4eef8",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 8
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 356,
+        "y": 1274,
+        "width": 367,
+        "color": "#d8b45e"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  }
+]

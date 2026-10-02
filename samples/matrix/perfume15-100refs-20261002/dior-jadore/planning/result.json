@@ -1,0 +1,592 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "子夜金环·装饰艺术日轮",
+      "brief": "把 J'adore 的金颈读作一轮子夜里的日轮：平涂靛蓝 gouache 卡纸上贴一枚巨大金属箔圆环，环外刻出细密同心环线，呼应瓶颈的缎金罗纹；商品居中如纪念碑立于日轮之前，圆环从其肩后掠过却不触碰标签。全部排印沉在圆环之上的安静顶带：Bodoni 题名最大居中、品牌字最小置顶、香型字垫底，构成上铭下像的装饰艺术纪念碑网格；一条箔金细线横于铭带之下如日轮刻度。硬边平涂与金属箔的碎光，与玻璃的柔渐液体形成平面与体积的反差。",
+      "material": "flat matte gouache-painted card with applied metal-leaf disc and engraved concentric rings",
+      "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on leaf ring",
+      "id": "concept-1",
+      "signature": "9ed4ec22df855735a814c51d40261e032fbccd02f9e073b80dcf0365a69cde70",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#1c2657",
+        "#f2e6c8",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "ref-7a523ada9a2c",
+        "ref-f305dbbdf3bc",
+        "ref-d2db4b80bde2"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#1c2657",
+          "prompt": "Seamless flat matte gouache-painted card in deep ink ultramarine, one large flat metal-leaf gold disc centered slightly above middle, fine engraved concentric rings radiating from the disc edge, perfectly even shadowless illumination, no objects, no texture gradients",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 864,
+          "width": 309,
+          "height": 893
+        },
+        "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on leaf ring",
+        "palette": [
+          "#1c2657",
+          "#f2e6c8",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "J'adore",
+          "x": 352,
+          "y": 194,
+          "size": 120,
+          "color": "#f2e6c8",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 386,
+          "y": 328,
+          "size": 30,
+          "color": "#f2e6c8",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f2e6c8",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "Dior",
+          "x": 500,
+          "y": 122,
+          "size": 40,
+          "color": "#f2e6c8",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 3
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 378,
+          "y": 377,
+          "width": 324,
+          "color": "#c9a24b"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\077fee4b9bac",
+      "selected": {
+        "version": 2,
+        "score": 74.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "41e676d9f77353cd4a9c28123e2936db42113264d8155aea2879c274b3ad9a8e"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "d563a3358d0c3dccb8c4cf243eded644244c7524886adb70a4e686f82680fdc8"
+        },
+        {
+          "version": 2,
+          "score": 74.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "41e676d9f77353cd4a9c28123e2936db42113264d8155aea2879c274b3ad9a8e"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": " Iris 灰泥拱光·下带宽铭",
+      "brief": "让珍珠白瓶盖成为唯一光源的借口：手工抹灰的鸢尾紫泥墙上一道柔拱光自顶部垂落，商品被提至上幅如浮出墙面光晕，下半幅留出完整宽铭牌带。Century Gothic 宽距题名以近满带宽的大字号居中统领，品牌字最小置顶带、香型字垫底，构成上像下铭的反网格；一条浅紫细线横于铭带之顶如抹灰刀的刻痕。哑光灰泥的颗粒与玻璃的整面高光互为粗细，拱光的建筑感赋予淡紫以教堂式的安静。",
+      "material": "hand-troweled limewash plaster wall with soft arched light pool",
+      "lighting": "one broad soft arched pool of light from above on plaster, otherwise even diffuse high-key",
+      "id": "concept-2",
+      "signature": "6835d161b60a97c531ebc81b52fa8b453a4a38e0193274a76789fa372bb5486b",
+      "scene_mode": "photographic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#c9bede",
+        "#2e2440",
+        "#8f7bb5"
+      ],
+      "reference_ids": [
+        "ref-7838477a52de",
+        "ref-b6e669a924a3",
+        "ref-f72a7e1dd1ad"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#c9bede",
+          "prompt": "Hand-troweled limewash plaster wall in pale iris lilac, one soft arched pool of lighter light falling from top center, fine trowel arcs and matte mineral grain, smooth continuous pale plaster ground plane at bottom, even diffuse illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 605,
+          "width": 279,
+          "height": 806
+        },
+        "lighting": "one broad soft arched pool of light from above on plaster, otherwise even diffuse high-key",
+        "palette": [
+          "#c9bede",
+          "#2e2440",
+          "#8f7bb5"
+        ],
+        "title": {
+          "text": "J'adore",
+          "x": 262,
+          "y": 1138,
+          "size": 150,
+          "color": "#2e2440",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 342,
+          "y": 1296,
+          "size": 30,
+          "color": "#2e2440",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 5
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#2e2440",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Dior",
+          "x": 499,
+          "y": 1058,
+          "size": 36,
+          "color": "#2e2440",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 216,
+          "y": 1097,
+          "width": 648,
+          "color": "#8f7bb5"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\c2335ca3d0ab",
+      "selected": {
+        "version": 2,
+        "score": 80.9,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "c01ca263f22d6c7f1db70d35219d070206f1d2609c94479414ceb48250318f46"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "f9885f0739e60cf9813887dc57687d26faa079e7d31dc5b8443c06871dfb5d9b"
+        },
+        {
+          "version": 2,
+          "score": 80.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "c01ca263f22d6c7f1db70d35219d070206f1d2609c94479414ceb48250318f46"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "潮线晨光·左柱右像",
+      "brief": "把泪滴瓶身放回水的原点：黎明浅滩上一层静止薄水铺过细沙，天际线压低在画面下三分之一，商品立于真实潮线，倒影与接触阴影没入水面。左半幅让出完整文字柱：Baskerville 题名以三行内的大字号竖柱排印如海岸碑文，品牌字居柱顶、香型字垫柱底，与瓶肩垂直重叠却水平保持宽距，形成左铭右像的双栏编辑网格；一条沙金细线竖于两栏之间如水痕分界。冷雾蓝的天光与桃金液体构成冷暖对位，水的镜面是唯一叙事光源。",
+      "material": "still shallow water sheet over fine pale sand at dawn tide line",
+      "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+      "id": "concept-3",
+      "signature": "7f0787bc27d28e64a9c2ca929a6611d17b6a54ba3fe593a20a2feccdc5c88870",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#a9c4cf",
+        "#22333e",
+        "#c98a5e"
+      ],
+      "reference_ids": [
+        "ref-efb51dc5d487",
+        "ref-90208e77758d",
+        "ref-f72a7e1dd1ad"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#a9c4cf",
+          "prompt": "Calm shallow water sheet over fine pale sand at dawn, low horizon line at lower third, misty pale blue-grey sky gradient meeting water, smooth continuous wet ground plane, soft diffuse cool light, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 713,
+          "y": 720,
+          "width": 299,
+          "height": 864
+        },
+        "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+        "palette": [
+          "#a9c4cf",
+          "#22333e",
+          "#c98a5e"
+        ],
+        "title": {
+          "text": "J'adore",
+          "x": 86,
+          "y": 518,
+          "size": 110,
+          "color": "#22333e",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 2,
+          "max_width": 330,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 86,
+          "y": 893,
+          "size": 26,
+          "color": "#22333e",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#22333e",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Dior",
+          "x": 86,
+          "y": 403,
+          "size": 40,
+          "color": "#22333e",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 4
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 490,
+          "width": 2,
+          "color": "#c98a5e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\c7feec788a15",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 2,
+        "score": 76.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "ed44b566eb7bb8910a46cca55a0f4e6d314996f7bb0f0c6880787c769c282b1e"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3792b2cef33f8f97084fd63fa1aa79ed0e8a73e46e6bc8c73fac7464dc1c5350"
+        },
+        {
+          "version": 2,
+          "score": 76.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "ed44b566eb7bb8910a46cca55a0f4e6d314996f7bb0f0c6880787c769c282b1e"
+        }
+      ],
+      "review_failures": [],
+      "interrupted_run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\36e97af32ecc"
+    },
+    {
+      "name": "折扇纸韵·顶带轻铭",
+      "brief": "把瓶颈的罗纹放大成整面背景：手工折纸的藏红扇褶自商品身后放射展开，纸褶的明暗条纹如高级定制的褶裙；商品沉于下幅如从褶裥中诞生，上半幅留出安静顶带。Times 题名以克制字号居中轻置、品牌字最小置顶、香型字垫于题名之下，构成上轻下重的 couture 网格；一条深紫细线横于顶带之下如折扇的骨线。纸的哑光折痕与玻璃的流动高光互为刚柔，放射褶是唯一的光线叙事。",
+      "material": "hand-folded pleated paper fan backdrop with radiating creases",
+      "lighting": "even diffuse frontal light raking across paper pleats into soft alternating stripe shades",
+      "id": "concept-4",
+      "signature": "a8fde3c96aa664a58e5761511fbecf0d7d53408f3c98fda4f9be630dc82b6f62",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#d09a2f",
+        "#3a2430",
+        "#7a4a6e"
+      ],
+      "reference_ids": [
+        "ref-b6e669a924a3",
+        "ref-7838477a52de",
+        "ref-7a523ada9a2c"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d09a2f",
+          "prompt": "Hand-folded pleated paper fan in warm saffron yellow, sharp radiating creases spreading from lower center outward, alternating soft stripe shades of light and shadow across the folds, flat graphic illumination, no objects, no horizon",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 299,
+          "height": 864
+        },
+        "lighting": "even diffuse frontal light raking across paper pleats into soft alternating stripe shades",
+        "palette": [
+          "#d09a2f",
+          "#3a2430",
+          "#7a4a6e"
+        ],
+        "title": {
+          "text": "J'adore",
+          "x": 420,
+          "y": 202,
+          "size": 84,
+          "color": "#3a2430",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 1,
+          "max_width": 0,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 354,
+          "y": 324,
+          "size": 28,
+          "color": "#3a2430",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#3a2430",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "Dior",
+          "x": 500,
+          "y": 108,
+          "size": 36,
+          "color": "#3a2430",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 3
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 367,
+          "y": 392,
+          "width": 346,
+          "color": "#7a4a6e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\5b8f42246bee",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 2,
+        "score": 80.4,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "eb51a730c2f6f814ba5ebab089c5eaa35d1b7cb5d20aa8fd84155cb81d31ec08"
+        },
+        {
+          "version": 2,
+          "score": 80.4,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "dd336e7e457b4905461ef6c820e129ab77cea0b4c94765a90728818b2821927b"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

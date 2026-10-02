@@ -1,0 +1,585 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "Risograph Stride Halftone",
+      "brief": "A flat print-shop poster: matte sea-glass risograph paper carries an oversized halftone dot field that thickens toward the lower right like a stride freezing into motion, crossed by one hard vermilion diagonal bar echoing the stiletto arch. The opaque red cutout stands centred in the lower two-thirds, its baked speculars untouched by the flat ink world, while the whole typographic monument stacks in a calm upper band: wide-tracked brand line, heavy Bodoni name, closed by a short ink rule like a press registration mark. No floor, no horizon - pure dot-gradient narrative against lacquer gloss.",
+      "material": "risograph-printed matte paper with halftone dot gradient and hard-edge printed stripe",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "4a0af13c5f1d81cbf0b31d9ad651b5fecf3222f8692c47b3448a1ec2c2eff2da",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#bcd6c6",
+        "#123328",
+        "#d8402f"
+      ],
+      "reference_ids": [
+        "ref-6ced6279f2e6",
+        "ref-453438bbcb76",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#bcd6c6",
+          "prompt": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot gradient densifying toward lower right, one hard-edge flat vermilion diagonal stripe crossing lower third, perfectly even shadowless illumination, no texture gradients beyond dots, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 382,
+          "height": 864
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#bcd6c6",
+          "#123328",
+          "#d8402f"
+        ],
+        "title": {
+          "text": "Very Good Girl",
+          "x": 340,
+          "y": 223,
+          "size": 88,
+          "color": "#123328",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 1,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 374,
+          "size": 20,
+          "color": "#123328",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#123328",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "Carolina Herrera",
+          "x": 416,
+          "y": 108,
+          "size": 26,
+          "color": "#123328",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 363,
+          "width": 130,
+          "color": "#d8402f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\e02bac8426e6",
+      "selected": {
+        "version": 2,
+        "score": 79.7,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "fcfa79c6dfbc9f50a44caa07a4f9b57ba28dea6f3d868e8d55e2aac5fa22a7f1"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "cbfb8c01cd1ed2000cb9154fdd133d4e6c3fc9fbab967beba15dae5c088989fe"
+        },
+        {
+          "version": 2,
+          "score": 79.7,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "fcfa79c6dfbc9f50a44caa07a4f9b57ba28dea6f3d868e8d55e2aac5fa22a7f1"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Midnight Ballroom Two-Column",
+      "brief": "A photographic night interior: a deep ink-blue painted hall meets a continuous dark lacquered parquet ground at a low horizon, one soft pool of ambient light breathing on the floor behind the subject's true base line where the measured contact shadow lands on toe and heel tips. The cutout holds the right column while the left column carries a wrapped narrow-sans monument: brand at column head, the name across two tall wrapped lines, a short pale rule closing the column - vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest. Matte night paint against vermilion lacquer reads as quiet theatre after hours.",
+      "material": "ink-blue painted hall wall with continuous dark lacquered parquet ground",
+      "lighting": "soft diffuse nocturnal ambient with one gentle pool of light on the ground, no hard shadows, matching upper-front-left key",
+      "id": "concept-2",
+      "signature": "4974af19c40caec4ca50afbe2212f5bc16bee38b968dfc8597d9aa2dd67dd65b",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#1b2a44",
+        "#eef962",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "ref-7a523ada9a2c",
+        "ref-403f9139347c",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#1b2a44",
+          "prompt": "Deep ink-blue painted hall wall meeting a continuous dark lacquered parquet ground at a low horizontal horizon, one soft pool of pale ambient light glowing on the ground behind center, matte paint grain, gentle diffuse nocturnal illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 713,
+          "y": 806,
+          "width": 356,
+          "height": 806
+        },
+        "lighting": "soft diffuse nocturnal ambient with one gentle pool of light on the ground, no hard shadows, matching upper-front-left key",
+        "palette": [
+          "#1b2a44",
+          "#eef962",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "Very Good Girl",
+          "x": 86,
+          "y": 576,
+          "size": 110,
+          "color": "#eef962",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 360,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 86,
+          "y": 950,
+          "size": 20,
+          "color": "#eef962",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#eef962",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "Carolina Herrera",
+          "x": 86,
+          "y": 454,
+          "size": 26,
+          "color": "#eef962",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 86,
+          "y": 929,
+          "width": 108,
+          "color": "#c9a24b"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\dfa9417c30cd",
+      "selected": {
+        "version": 2,
+        "score": 76.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "8c7ff962544080f9b4011263f16e269de5dfa25606bbbbcb669ab2f67c203cb6"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "5ed5835ff80ba30c7f41163664d185087f39b290ee944fb6bd4819d764594305"
+        },
+        {
+          "version": 2,
+          "score": 76.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "8c7ff962544080f9b4011263f16e269de5dfa25606bbbbcb669ab2f67c203cb6"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Blush Paper Contour Plaque",
+      "brief": "A constructed paper sculpture: concentric die-cut blush paper layers stack into a soft topographic oval valley centred upper-middle, each cut edge casting a hairline shade so depth reads as contour lines behind the silhouette. The cutout is lifted into the upper two-thirds, standing out of the paper valley, while the lower third becomes a quiet plaque band: brand line, then the geometric sans name set wide and centred at near band width, closed by a thin rose rule floating between image and text like a cut edge. Layered matte card against glossy lacquer tells the story entirely through cut depth.",
+      "material": "concentric die-cut layered paper cards in shifted blush tones",
+      "lighting": "even diffuse frontal light with hairline shade under each cut edge, flat graphic illumination",
+      "id": "concept-3",
+      "signature": "1bb61549bace2941406a8714c23295f3af6d7765383b39569c88d79e50266e02",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#e7c9c2",
+        "#4a2027",
+        "#b8455a"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-41b5b67289d6",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e7c9c2",
+          "prompt": "Concentric die-cut layered paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, hairline soft shade under each cut edge, matte card fibre grain, even shadowless frontal illumination, no objects, no horizon",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 634,
+          "width": 356,
+          "height": 806
+        },
+        "lighting": "even diffuse frontal light with hairline shade under each cut edge, flat graphic illumination",
+        "palette": [
+          "#e7c9c2",
+          "#4a2027",
+          "#b8455a"
+        ],
+        "title": {
+          "text": "Very Good Girl",
+          "x": 151,
+          "y": 1152,
+          "size": 72,
+          "color": "#4a2027",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 1296,
+          "size": 20,
+          "color": "#4a2027",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#4a2027",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Carolina Herrera",
+          "x": 405,
+          "y": 1073,
+          "size": 24,
+          "color": "#4a2027",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 1126,
+          "width": 173,
+          "color": "#b8455a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\e4800e171117",
+      "selected": {
+        "version": 1,
+        "score": 79.1,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 79.1,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "290673ccce69724708a9e60ade2d22d6f4d82fc6f34bdcc55e1ded2cfe3d78e2"
+        },
+        {
+          "version": 2,
+          "score": 79.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "2ce64ffb14e81cd585f20ff7f9d217382230aeb4f7f364932d3f06269c0c711a"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Verdigris Felt Spotlight Monument",
+      "brief": "A tactile photographic cyclorama: deep verdigris wool felt sweeps from wall into a continuous felt ground with no visible seam, one soft elliptical spotlight pool falling behind the upper zone so the pile glows gently around the silhouette. The cutout rests low-right at its true base line, contact shadow absorbed by the pile at toe and heel tips, while a compact Baskerville monument sits in the calm upper-left felt: brand line above, name below, ending well above the cap so the grid stays upper-left weighted against the lower-right subject. Felt pile swallows light; the lacquered red and gold heel own every highlight.",
+      "material": "deep verdigris wool felt cyclorama with soft pile",
+      "lighting": "one soft elliptical spotlight pool from upper front on felt, otherwise gentle diffuse ambient, no hard shadows",
+      "id": "concept-4",
+      "signature": "b17056ea64ed689f113a4cb12976c17291d8d0c1574a98aaaffe2f0148985bef",
+      "scene_mode": "photographic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#2f4a40",
+        "#f2e8da",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "ref-41b5b67289d6",
+        "ref-b4d87aee2707",
+        "ref-403f9139347c"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#2f4a40",
+          "prompt": "Deep verdigris green wool felt cyclorama sweeping from wall into continuous felt ground with no visible seam, one soft elliptical pool of lighter light on the upper center pile, fine felt fibre grain, gentle diffuse illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 670,
+          "y": 950,
+          "width": 350,
+          "height": 792
+        },
+        "lighting": "one soft elliptical spotlight pool from upper front on felt, otherwise gentle diffuse ambient, no hard shadows",
+        "palette": [
+          "#2f4a40",
+          "#f2e8da",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "Very Good Girl",
+          "x": 86,
+          "y": 216,
+          "size": 72,
+          "color": "#f2e8da",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 1,
+          "max_width": 0,
+          "line_height": 1.08,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 86,
+          "y": 353,
+          "size": 20,
+          "color": "#f2e8da",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f2e8da",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Carolina Herrera",
+          "x": 86,
+          "y": 108,
+          "size": 24,
+          "color": "#f2e8da",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 86,
+          "y": 334,
+          "width": 151,
+          "color": "#c9a24b"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\1ce89686d986",
+      "selected": {
+        "version": 2,
+        "score": 82.4,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 79.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489"
+        },
+        {
+          "version": 2,
+          "score": 82.4,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

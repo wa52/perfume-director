@@ -1,0 +1,133 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "95b36645d6801742e4d121553d69c3dc08d53041edd75eb17b33f8a6a02aa6d7"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "1be3275e7a3063870feba2dc6f122defe6da13b00f47e93826a33d500a88a224"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5efbdfcf-2890-9c01-a1fa-579080f6d585",
+      "usage": {
+        "prompt_tokens": 9022,
+        "total_tokens": 10774,
+        "completion_tokens": 1752,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6446,
+          "text_tokens": 2576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 727
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5efbdfcf-2890-9c01-a1fa-579080f6d585",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9022,
+    "total_tokens": 10774,
+    "completion_tokens": 1752,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6446,
+      "text_tokens": 2576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 727
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": true,
+    "score": 86,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 86,
+      "typography": 85,
+      "background": 84,
+      "physical_integration": 86,
+      "reference_alignment": 83,
+      "creative_coherence": 90
+    },
+    "problems": [
+      {
+        "type": "composition",
+        "problem": "The declared direction places the disc crown 'behind the flacon's shoulders', but in the render the ember crown crosses the glass at roughly y=690-700, i.e. mid-body well below the shoulder line at ~y=435. Evidence: the orange arc emerges from behind the bottle sides at label height, not at the shoulder, so the 'buried sun' reads as a mound behind the belly and the pale juice zone loses part of its ink-night contrast frame."
+      },
+      {
+        "type": "typography",
+        "problem": "The plaque band is bottom-light: title baseline block ends at y=1224 and the registration rule sits at y~1274, leaving ~166px (11.5% of canvas) of dead ink field below while the gap between disc base (y~1050) and the logo line (y=1073) is only ~23px. Evidence: in image 1 the logo nearly touches the disc edge while the lower margin dwarfs it, unbalancing the band hierarchy against the references' even optical spacing."
+      },
+      {
+        "type": "background",
+        "problem": "The 'thin hard-edge lighter orange seam line along the disc crown' is not legible in the render; the crown reads as a single flat orange edge against ink-night. Evidence: inspecting the arc in image 1 there is no distinguishable lighter seam stroke, so one declared concept device is missing and the disc silhouette carries less crafted detail than the reference campaigns' layered geometry."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte card in deep ink-night blue-charcoal, one oversized hard-edge flat burnt-ember orange half-disc centred, flat base line at seventy-three percent down the frame, crown rising to thirty percent down the frame so it passes behind the upper third of the frame, one crisp two-pixel lighter orange seam line exactly along the disc crown edge, perfectly even shadowless frontal illumination, no texture, no gradients, no objects, no furniture, no horizon"
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 1092
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 1176
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1300
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 6
+      }
+    ]
+  },
+  "duration_seconds": 41.5
+}

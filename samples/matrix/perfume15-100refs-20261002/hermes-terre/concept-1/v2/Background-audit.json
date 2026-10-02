@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [26, 31, 74, 93] uncluttered; reserve quiet negative space for ink in these areas: [[15, 15, 85, 20], [44, 8, 55, 10]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 245989106096565,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

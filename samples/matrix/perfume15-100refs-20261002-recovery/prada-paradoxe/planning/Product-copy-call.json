@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "prada-paradoxe-retailer.png",
+      "sha256": "1b0e813698037d884ce97b234ec33a45d88a68979841383d3a22aef388e93418"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-68847311-eacd-9593-b34a-699f94801cb7",
+      "usage": {
+        "prompt_tokens": 1571,
+        "total_tokens": 2906,
+        "completion_tokens": 1335,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1005,
+          "text_tokens": 329
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-68847311-eacd-9593-b34a-699f94801cb7",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1571,
+    "total_tokens": 2906,
+    "completion_tokens": 1335,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 360
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1005,
+      "text_tokens": 329
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Paradoxe",
+    "logo": "PRADA",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Label visibly reads 'PRADA', 'MILANO', 'DAL 1913' with a crest emblem; the product name 'Paradoxe' is supplied by the user brief and is not printed on the visible label; no category, concentration or price text is legible on the packshot.",
+    "product_profile": {
+      "material": "Clear glass triangular flacon with glossy black lacquered cap and polished gold-tone metal collar",
+      "color": "Pale peach-pink juice inside colorless glass; jet-black cap; warm metallic gold neck",
+      "transparency": "Translucent pink liquid filling the triangular body behind transparent glass walls; cap and collar fully opaque",
+      "illumination": "Soft diffuse studio lighting from upper left; sharp specular facets on the black cap and bright rim highlights tracing the glass edges; no cast shadow, indicating a cutout render",
+      "view": "Near-frontal camera with the bottle rotated about 45 degrees so the triangle sits diagonally and the cap points to the upper right; flat label plane faces the viewer",
+      "integration_limits": "Pure white cutout background; the pink liquid and glass carry baked-in white luminance so a newly generated dark background cannot transmit through the body; cap speculars are fixed to the original softbox setup and contact shadow must be added artificially"
+    }
+  },
+  "duration_seconds": 37.044
+}

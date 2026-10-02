@@ -1,0 +1,176 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0"
+    },
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "636e11839707929edb712c8c3f0a5298159db8523623dad7eefdd79f3b4a9d4c"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-3ae0163e-03a5-9452-81be-88d6e22e8620",
+      "usage": {
+        "prompt_tokens": 10489,
+        "total_tokens": 12440,
+        "completion_tokens": 1951,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6687,
+          "text_tokens": 3802
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 926
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-3ae0163e-03a5-9452-81be-88d6e22e8620",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10489,
+    "total_tokens": 12440,
+    "completion_tokens": 1951,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6687,
+      "text_tokens": 3802
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 926
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 81.6,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 82,
+      "typography": 76,
+      "background": 80,
+      "physical_integration": 84,
+      "reference_alignment": 78,
+      "creative_coherence": 85
+    },
+    "problems": [
+      {
+        "type": "typography",
+        "problem": "The declared subtitle 'Eau de Parfum' and the price line are not visible anywhere on the poster: the upper-left monument stops at logo + title + a lone 120px gold rule at y≈340, leaving hierarchy at two levels and a dead felt band from the rule (y≈346) to the cap top (y≈554). References 3-5 all carry a secondary text tier; here the rule floats with no text partner below it."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [416,1206,924,1440] confirms a real absorbed occlusion pool under the red toe (contact is genuine, not floating), but at the gold stiletto heel tip (global y≈1323, matching the original's two-point stance) there is still no local darkening: the tip meets亮 felt with zero occlusion, so the second support point reads a few pixels light against the strengthened toe shadow."
+      },
+      {
+        "type": "background",
+        "problem": "The swept cyclorama is now seamless (the old hard wall/floor line is gone) and the pool enters从 upper-left as declared, but the_pool's brightest felt sits in the empty mid-left band (y≈900-1150) while the hero stands in comparatively dimmer felt at lower-right; the light accent and the subject still pull in opposite diagonal corners, unlike references 4-5 where the pool crowns the product."
+      },
+      {
+        "type": "composition",
+        "problem": "With subtitle and price missing, the entire ink load occupies y=108-346 and the product y=554-1346, leaving the mid-band and the whole lower-left quadrant as unmodulated felt; the asymmetric grid is intentional, but the empty lower-left needs either the price tier or a tonal event to balance the lower-right mass, as the reference grids do with props or shadow play."
+      }
+    ],
+    "changes": [
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "Eau de Parfum"
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 86
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 372
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 22
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 5
+      },
+      {
+        "path": "price.text",
+        "op": "set",
+        "value": "EUR 98"
+      },
+      {
+        "path": "price.x",
+        "op": "set",
+        "value": 86
+      },
+      {
+        "path": "price.y",
+        "op": "set",
+        "value": 1296
+      },
+      {
+        "path": "price.size",
+        "op": "set",
+        "value": 22
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.58
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.3
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Deep verdigris green wool felt cyclorama curving continuously from back wall into ground with no seam and no horizon line, fine felt fibre grain, one soft elliptical pool of lighter light entering from upper front-left, stretching diagonally across the ground and brightening the felt beneath and behind the lower-right subject zone, gentle diffuse ambient falloff toward the corners, no objects"
+      }
+    ]
+  },
+  "duration_seconds": 44.02
+}

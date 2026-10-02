@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 76.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 66,
+    "background": 60,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated card carries hallucinated coordinate strings in the upper-left ('16, 23, 83, 89', '[30, 12, 79, 16]', '[38, 5, 54, 16]' in pale blue-grey). These glyphs are not in the spec copy; they sit directly left of the SHALIMAR title (title bbox x319-848, y166-231) and the second/third string rows visually collide with the title's left serif edge, reading as leaked debug text and destroying the clean engraver top band."
+    },
+    {
+      "type": "typography",
+      "problem": "The stray numeric strings create a competing pseudo-text block at the same optical height as the title, so the eye enters the poster through garbage glyphs instead of the GUERLAIN/SHALIMAR monument; hierarchy is compromised even though computed title/product overlap is false and the Bodoni monument itself is well tracked."
+    },
+    {
+      "type": "background",
+      "problem": "The guilloché wave engraving only survives as faint fragments at the left and right mid-edges; the declared 'concentric wave lines swelling from lower centre' narrative is nearly invisible behind the bottle, so the background reads as a flat wall plus one band rather than the intended line-density tide, weakening the concept's core device."
+    },
+    {
+      "type": "composition",
+      "problem": "The graphite band's lower edge (~y1330) leaves a pale dead strip of card at the very bottom (~110px) that carries no line work or type, so the band floats instead of closing the poster; the bottom margin reads as unfinished crop rather than intentional border."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte card in pale ice porcelain blue-grey, covered edge to edge with fine concentric engine-turned guilloché wave lines swelling from lower center, one hard-edge flat graphite blue horizontal band across the lower third running full width to both side edges, perfectly even shadowless illumination, absolutely no letters, no numbers, no digits, no punctuation, no text of any kind, no objects"
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 200
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.4
+    }
+  ],
+  "notes": {
+    "contact_evidence": "Inspected crop [98,1141,981,1391]: the pedestal foot meets the graphite band at y≈1281 with a soft dark contact smudge hugging the foot underside; shadow offset_y 0 is correct and was not moved. Base at 88.9% of canvas height is within the 94% bound, so no floating claim is made.",
+    "fidelity_evidence": "Single bottle, amber juice, blue dome cap with gold GUERLAIN PARIS lettering, black grosgrain ribbon tails and SHALIMAR body lettering all match the source cutout; no extra bottles, no relabeled glass; baked speculars untouched as the concept requires.",
+    "concept_preserved": "Palette, flat graphic scene_mode, centered Bodoni monument above the product and the graphite ribbon band are retained; patches only clean the背景 ink, strengthen the engraved tide and close the bottom band."
+  },
+  "reported_score": 76
+}

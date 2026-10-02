@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200987081374830,
+  "background": {
+    "color": "#e4e2ee",
+    "prompt": "Seamless flat matte screen-printed card in pale ice lilac, perfectly even shadowless frontal illumination; fine engraved constellation lines in deep violet with exactly five small cross ticks placed only in open field, kept clear of the centre and clear of the upper quarter of the field, connected by hairline segments that never cross the centre; one thin hard-edge silver-blue meridian arc whose crest stays in the middle band of the field, never entering the upper quarter; no texture gradients beyond engraved lines, no objects, no horizon",
+    "revision": 1
+  },
+  "product": {
+    "x": 540,
+    "y": 907,
+    "width": 579,
+    "height": 864
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#e4e2ee",
+    "#241f38",
+    "#7f8ac0"
+  ],
+  "title": {
+    "text": "Angel",
+    "x": 353,
+    "y": 187,
+    "size": 150,
+    "color": "#241f38",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 458,
+    "y": 353,
+    "size": 20,
+    "color": "#241f38",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#241f38",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Mugler",
+    "x": 468,
+    "y": 94,
+    "size": 30,
+    "color": "#241f38",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 12
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 353,
+    "y": 424,
+    "width": 373,
+    "color": "#7f8ac0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

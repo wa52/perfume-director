@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 255395513706032,
+  "background": {
+    "color": "#1b2a44",
+    "prompt": "Deep ink-blue matte painted hall wall, perfectly clean and unmarked, meeting a continuous dark lacquered parquet ground at a low horizontal horizon; one soft warm pool of ambient light glowing on the parquet centered beneath the right-hand subject zone, faint elongated sheen stretching toward the viewer on the lacquered boards, gentle diffuse nocturnal illumination, no objects, no text, no marks",
+    "revision": 1
+  },
+  "product": {
+    "x": 713,
+    "y": 806,
+    "width": 356,
+    "height": 806
+  },
+  "lighting": "soft diffuse nocturnal ambient with one gentle pool of light on the ground, no hard shadows, matching upper-front-left key",
+  "palette": [
+    "#1b2a44",
+    "#eef962",
+    "#c9a24b"
+  ],
+  "title": {
+    "text": "Very Good Girl",
+    "x": 86,
+    "y": 610,
+    "size": 110,
+    "color": "#eef962",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 420,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 86,
+    "y": 950,
+    "size": 20,
+    "color": "#eef962",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#eef962",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Carolina Herrera",
+    "x": 86,
+    "y": 454,
+    "size": 26,
+    "color": "#eef962",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 12,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.25
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 985,
+    "width": 108,
+    "color": "#c9a24b"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

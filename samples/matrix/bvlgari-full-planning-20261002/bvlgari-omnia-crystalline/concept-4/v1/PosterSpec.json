@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 258248070525694,
+  "background": {
+    "color": "#b9d2c4",
+    "prompt": "Seamless flat matte screen-printed card in pale celadon green, three hard-edge flat graphite green rectangle slabs stacked obliquely from upper left toward lower right with one thin blank celadon seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 194,
+        "y": 202,
+        "width": 540,
+        "height": 230,
+        "color": "#1e2b26",
+        "opacity": 0.85
+      },
+      {
+        "kind": "rectangle",
+        "x": 324,
+        "y": 461,
+        "width": 594,
+        "height": 230,
+        "color": "#1e2b26",
+        "opacity": 0.6
+      },
+      {
+        "kind": "rectangle",
+        "x": 454,
+        "y": 720,
+        "width": 540,
+        "height": 230,
+        "color": "#1e2b26",
+        "opacity": 0.35
+      }
+    ]
+  },
+  "product": {
+    "x": 670,
+    "y": 576,
+    "width": 482,
+    "height": 662
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#b9d2c4",
+    "#1e2b26",
+    "#8aa89a"
+  ],
+  "title": {
+    "text": "Omnia Crystalline",
+    "x": 86,
+    "y": 1037,
+    "size": 72,
+    "color": "#1e2b26",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4,
+    "max_width": 420,
+    "line_height": 1.14,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 86,
+    "y": 1267,
+    "size": 20,
+    "color": "#1e2b26",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1e2b26",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "BVLGARI",
+    "x": 86,
+    "y": 950,
+    "size": 28,
+    "color": "#1e2b26",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 7
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 1339,
+    "width": 324,
+    "color": "#8aa89a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

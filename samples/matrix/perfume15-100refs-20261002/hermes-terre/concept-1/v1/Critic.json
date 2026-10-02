@@ -1,0 +1,79 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared concept specifies hard-edge horizontal sedimentary strata stacked like a core sample, but the render shows soft undulating dune-like waves. The wavy contours read as generic landscape hills rather than the crisp stratigraphic bands of the brief, weakening the geological core-sample narrative."
+    },
+    {
+      "type": "composition",
+      "problem": "The flint-orange seam (the concept's burial line) sits at roughly y 965-990, almost exactly where the bottle's widest glass body begins, so the strongest color accent collides with the product silhouette edge instead of reading as an independent stratum line; the seam is also partially hidden behind the flacon, losing its survey-mark role."
+    },
+    {
+      "type": "typography",
+      "problem": "The subtitle and price strings are empty, so the calm top band carries only logo, title and rule; against references (Byredo, Bleu de Chanel) the type block lacks a supporting descriptor line, leaving hierarchy thin and the lower two-thirds of the poster text-free and unbalanced."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact shadow verified in the base crop (soft darkening under the foot notch at y≈1339) is correct in offset, but at opacity 0.35 with blur 10 over the deep umber band it is nearly invisible, so the monument appears to hover slightly against the darkest stratum; the product's own baked high-key speculars also conflict mildly with the declared flat shadowless ink light."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE TOILETTE"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 330
+    }
+  ],
+  "reported_score": 76
+}

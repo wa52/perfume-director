@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 74,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The applied strata prompt still renders imperfectly: band edges keep a faint手-drawn undulation instead of the crisp硬-edge core-sample lines (visible at the tan/brown boundaries near y≈390 and y≈545), and TWO flint-orange seam lines appear (y≈1070 and y≈1245) where the concept specifies ONE burial-line seam, diluting the accent and cluttering the lower strata behind the flacon."
+    },
+    {
+      "type": "typography",
+      "problem": "The subtitle and price strings remain empty, so the top band carries only logo, title and rule; against the Byredo and Bleu de Chanel references the type block lacks a supporting descriptor line, leaving the hierarchy thin and the lower two-thirds of the poster completely text-free."
+    },
+    {
+      "type": "composition",
+      "problem": "The title line (x 167-917) is set left-aligned and optically off-center relative to the centered logo, centered rule and centered flacon; in this symmetric monument composition the mismatch reads as drift, not intentional asymmetry."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The base crop confirms a correct contact shadow (soft darkening under the foot notch at y≈1339, offset_y 0), but at opacity 0.5 over the mid-tan stratum it is a faint smudge; the monument's grounding reads weaker than the concept's extracted-core narrative demands, and the baked high-key speculars still sit slightly at odds with the flat ink field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat screen-printed matte paper poster of perfectly straight ruler-drawn horizontal sedimentary strata bands with razor crisp hard edges and zero waviness, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, exactly one single thin hard-edge flint-orange seam line placed between the ochre and sienna bands and nowhere else, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves, no second orange line"
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE TOILETTE"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "subtitle.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.62
+    }
+  ],
+  "reported_score": 79.6
+}

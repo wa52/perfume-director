@@ -1,0 +1,99 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-f548832a6eb8.webp",
+      "sha256": "3b77f3b9fc33120781641f3a63767e6529a9ecb0242c3edf58bb4eebe17215ea"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 3,
+      "status": "OK",
+      "response_id": "chatcmpl-0fbea040-2fd9-9801-96fd-48dcf22bc728",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 839,
+        "completion_tokens": 336,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 336
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-0fbea040-2fd9-9801-96fd-48dcf22bc728",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 839,
+    "completion_tokens": 336,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 336
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Yves Saint Laurent",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with dramatic lighting and clear brand identity, suitable as a high-end design reference.",
+    "analysis": {
+      "composition": "Centralized product placement on a reflective surface, framed by a diagonal beam of light creating depth and focus.",
+      "subject_ratio": 0.35,
+      "negative_space": "Expansive gradient background transitioning from deep shadow to bright highlight, emphasizing the silhouette.",
+      "lighting": "High-contrast chiaroscuro with a strong directional backlight and soft frontal fill, highlighting the glass texture and liquid gradient.",
+      "color": [
+        "deep navy",
+        "amber",
+        "black",
+        "soft white",
+        "gold"
+      ],
+      "typography": "None visible outside the container; text is limited to the product label.",
+      "information_density": "Low; purely visual focus on the product form and atmosphere.",
+      "characteristics": [
+        "dramatic lighting",
+        "gradient glass",
+        "geometric cap",
+        "reflective surface",
+        "masculine aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 53.48
+}

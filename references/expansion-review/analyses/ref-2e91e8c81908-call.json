@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-2e91e8c81908.jpg",
+      "sha256": "6606324c6d3944dba102fb6820e8408d7d6eb48a1a9956e4d24915527b119473"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-7106d612-3137-9cc3-b231-ecc3c0682e48",
+      "usage": {
+        "prompt_tokens": 491,
+        "total_tokens": 828,
+        "completion_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 194,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 337
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7106d612-3137-9cc3-b231-ecc3c0682e48",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 491,
+    "total_tokens": 828,
+    "completion_tokens": 337,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 194,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 337
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Versace",
+    "style": "fashion",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved human-led fragrance advertisement with clear campaign typography and product integration.",
+    "analysis": {
+      "composition": "Intimate close-up of a couple dominating the upper frame, with the product bottle and brand logotype anchored in the lower right quadrant.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, mostly occupied by the models and dark background shadows.",
+      "lighting": "High-contrast studio lighting with strong highlights on skin and deep shadows to create a sensual, dramatic mood.",
+      "color": [
+        "deep blue",
+        "warm skin tones",
+        "crisp white",
+        "silver"
+      ],
+      "typography": "Bold serif logotype 'VERSACE' paired with smaller sans-serif subtext 'pour homme' and tagline, placed externally over the image.",
+      "information_density": "Moderate; focuses on emotional imagery with essential branding text at the bottom.",
+      "characteristics": [
+        "sensual",
+        "high-contrast",
+        "celebrity-style portraiture",
+        "classic luxury aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 40
+    }
+  },
+  "duration_seconds": 10.292
+}

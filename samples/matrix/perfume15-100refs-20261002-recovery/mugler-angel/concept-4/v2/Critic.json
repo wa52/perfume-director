@@ -1,0 +1,85 @@
+{
+  "pass": false,
+  "score": 78.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 80,
+    "background": 74,
+    "physical_integration": 66,
+    "reference_alignment": 78,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [13,1076,721,1326] (image 6) confirms a real contact shadow: a soft dark smudge sits exactly under the lower-left star point at (132,1216), so the shadow is NOT absent and offset_y 0 is correct - do not move it down. But the grounded footprint is only 54px under that single needle tip while the lower-right star point terminates near y≈1130 with no shadow or contact at all, so the 548px-wide flacon reads as balancing impossibly on one point. References 2 and 4 ground their bottles with a footprint proportional to the visible base. width_scale 1.35 has not widened the alpha footprint enough; raise it toward the 1.8 cap and deepen opacity/blur so the mass sinks into the frosted grain as the concept demands."
+    },
+    {
+      "type": "background",
+      "problem": "The regenerated sheet still shows a hard curved edge sweeping from (0,1035) up to (540,975) and down to (1080,1030) directly behind the star's lower points: it reads as a raised dome tabletop rim, not the declared seamless frosted sheet sweeping wall-to-ground, and its arc competes with the bottle silhouette. The promised 'fine frost grain' is also absent - the field is a clean smooth gradient, so the matte diffuse half of the concept's matte-vs-facet dialogue is missing. No studio equipment artifacts are present."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column still collapses after the title: logo 518-551, title 605-726, then only the 200px frost-blue rule at y790, leaving roughly 450px of empty frosted column beneath against an 820px-tall product. The etched-label rhythm promised by the concept (reference 2's confident label block) is unresolved; the subtitle slot at y806 sits empty and the column lacks a closing line."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.8
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.58
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 18
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "One continuous seamless frosted acrylic sheet curving gently from vertical wall into horizontal ground with no seam, no edge, no horizon and no platform rim, dense fine frost grain texture visible across the whole surface, a single soft cool white glow blooming behind upper centre, soft high-key diffuse dawn illumination fading evenly toward the lower frame, empty scene, no objects"
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 671
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 806
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 26
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 886
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 240
+    }
+  ],
+  "reported_score": 79.4
+}

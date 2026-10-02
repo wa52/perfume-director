@@ -1,0 +1,116 @@
+{
+  "brief": "为 Prada Paradoxe 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把三角瓶身读作一张平面几何定理：酸橙绿平涂卡纸上叠两枚硬边三角——一枚实心底沉三角托住剪影下半，一枚细白描边三角自其后错位穿出，斜边与瓶体斜边平行却永不相交，悖论即构图本身。无地面无 horizon，纯硬边形状叙事；商品居中沉于下幅，顶带完全安静：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行大字居中统领，一条墨绿细线横垫其下如制版套准线。哑光水粉吞光，让桃色液体与黑漆盖 owning 全部高光。",
+  "product": "assets\\products\\prada-paradoxe-retailer.png",
+  "references": [
+    {
+      "id": "ref-f74fe25870eb",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-f74fe25870eb.webp",
+      "selection_reason": "Professionally resolved flat-lay still life featuring perfume and candle with elegant stationery props and integrated handwritten campaign copy.",
+      "analysis": {
+        "composition": "Geometric flat-lay arrangement utilizing overlapping rectangular envelopes and cards to frame the products diagonally.",
+        "subject_ratio": 0.35,
+        "negative_space": "Structured by layered cream and black paper elements, creating distinct zones.",
+        "lighting": "Soft, diffused top-down studio lighting with gentle, natural drop shadows.",
+        "color": [
+          "cream",
+          "black",
+          "silver",
+          "clear"
+        ],
+        "typography": "Handwritten script campaign copy ('Will you be my valentine?') placed directly on a prop envelope.",
+        "information_density": "low",
+        "characteristics": [
+          "flat-lay",
+          "valentine theme",
+          "ribbon detail",
+          "duo product display",
+          "handwritten note"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f72a7e1dd1ad",
+      "brand": "BYREDO",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/minimal/ref-f72a7e1dd1ad.webp",
+      "selection_reason": "High-quality dynamic product shot capturing the spray mechanism in action against a clean gradient background. Excellent reference for minimalist perfume photography and liquid texture rendering.",
+      "analysis": {
+        "composition": "Diagonal orientation of the bottle creates dynamic movement, balanced by the spray plume extending into the upper left negative space.",
+        "subject_ratio": 0.55,
+        "negative_space": "Generous gradient grey space surrounds the subject, emphasizing the fine mist particles.",
+        "lighting": "Crisp studio lighting with high specular highlights on the glass and metal atomizer; soft drop shadow anchors the floating object.",
+        "color": [
+          "silver",
+          "white",
+          "grey",
+          "pale yellow"
+        ],
+        "typography": "None outside the container label.",
+        "information_density": "Low; focus is entirely on the product form and function.",
+        "characteristics": [
+          "dynamic spray",
+          "floating object",
+          "monochromatic palette",
+          "glass refraction",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

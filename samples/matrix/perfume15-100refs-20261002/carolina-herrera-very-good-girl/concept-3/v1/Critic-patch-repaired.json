@@ -1,0 +1,65 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 72
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 151
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "left"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 7
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Concentric die-cut layered matte paper cards in shifted blush rose tones forming a topographic oval valley centred upper middle, each cut edge casting a hairline soft shade, gentle broad luminance fall-off from upper front left across the card fibre grain, darkest tone pooling in the lowest contour ring, no objects, no horizon, no equipment"
+    }
+  ]
+}

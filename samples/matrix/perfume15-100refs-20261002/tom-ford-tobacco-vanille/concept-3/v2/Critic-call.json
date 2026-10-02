@@ -1,0 +1,146 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "9de2b4d52f2b7ed1b9816bf0228be0aeb0e36c2c823568651ee5e0169d593fd5"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-361c5f732a2a.webp",
+      "sha256": "d548a5dc3b7d930eb753ace2d5a16913e0f3d3bc30154aacf1c4f243af45d1fd"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "5c02833da11ac13ac38f78b41f3367f00b199e0a7afe728f120228d6ff5f6de3"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "42454d4f4b3c257203ee01548be0b3b1613528f5fd159416452038a3737c00f4"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c626bb36-6b44-9772-8283-d17399287aee",
+      "usage": {
+        "prompt_tokens": 10265,
+        "total_tokens": 12299,
+        "completion_tokens": 2034,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6612,
+          "text_tokens": 3653
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1009
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c626bb36-6b44-9772-8283-d17399287aee",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10265,
+    "total_tokens": 12299,
+    "completion_tokens": 2034,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6612,
+      "text_tokens": 3653
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1009
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 61.4,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 62,
+      "typography": 66,
+      "background": 40,
+      "physical_integration": 74,
+      "reference_alignment": 55,
+      "creative_coherence": 41
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The regenerated scene inserted four literal aubergines (eggplants) with green calyxes plus a pile of shredded紫色 vegetable matter across the bottom band (y≈1200-1440), directly under and beside the 'EAU DE PARFUM' line. The concept's 'pooled pile' was meant as settled velvet nap, not produce; these generated props read as a grocery still-life, contradict the luxury velvet concept and clash with the clean staged surfaces of references 3 and 5. No studio equipment is visible, but the props are worse interference."
+      },
+      {
+        "type": "typography",
+        "problem": "The subtitle 'EAU DE PARFUM' at y=1284-1299 is set inside the debris field: white confetti flecks and an eggplant silhouette sit behind and between its letters (visible at x≈420-660), destroying legibility and the quiet plaque band. The title's descender zone also grazes the top of the debris pile. Ink contrast itself is fine; the fault is the busy generated matter behind the smallest type."
+      },
+      {
+        "type": "composition",
+        "problem": "The new velvet ledge does seat the flacon (base y=1008 rests on the raised tabletop, not floating), but the ledge's bright front-facing sheen band runs straight behind the lower body at the same value as the cap highlights, and the eggplant cluster at bottom-left/right outweighs the plaque band, so the eye exits the poster through the props instead of resting on the name line."
+      },
+      {
+        "type": "creative_coherence",
+        "problem": "The theatrical 'curtain call' concept (velvet house curtain, calm plaque band, single gold spark) is broken: the vegetable props introduce a second, incompatible narrative and a second material family (wet glossy produce vs dry velvet), so material, palette and copy no longer express one idea."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Crushed aubergine plum velvet hanging in soft vertical folds behind, meeting a smooth horizontal velvet-covered ledge in the lower third whose top plane catches a gentle frontal sheen and whose front face falls into deep matte shadow, folds settling into calm pooled pile with a slightly darker quiet band at the lowest edge, completely empty scene, no objects, no food, no plants"
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 1300
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 1160
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1108
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.55
+      }
+    ],
+    "evidence_notes": {
+      "contact_detail": "Crop [278,868,801,1118] confirms the base edge at crop y≈136 with a soft dark occlusion bleed across the full base width on the velvet ledge top; contact shadow exists, offset_y 0 retained and only opacity nudged for pile depth.",
+      "geometry_checks": "product_height_ratio 0.5597 is inside the 0.50-0.65 hero range and base 1008 (70%) is within bounds, so the bottle was not moved; text_product_overlap all false, so no overlap claimed; subtitle/title shifts are spacing-only within the plaque band.",
+      "references": "References 3 and 5 ground their bottles on moss and on a seamless table with calm negative space around type; the current poster's eggplant debris is the opposite of that discipline and must be regenerated out."
+    }
+  },
+  "duration_seconds": 48.554
+}

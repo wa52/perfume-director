@@ -1,0 +1,68 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 74,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared horizon sits at the true base line, but the render places the ice/sky tonal break near y≈740-760 while the bottle base is at y=1296; the bottle therefore stands on a deep foreground ice plane with a high horizon behind the title block, contradicting the concept's low horizon and leaving the right text column floating over the busiest zone of the sheet."
+    },
+    {
+      "type": "background",
+      "problem": "The turquoise meltwater channel and snow-grain streaks run diagonally through x≈700-950, y≈760-1100, directly behind and below the subtitle and glacier rule; compared with the clean negative fields in references 1-2, this texture competes with the smallest type and weakens column legibility."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column reads as four detached fragments: logo band ends y=517, title starts y=576, title ends y=768, subtitle starts y=852, then an 84px gap to the rule at y=939; the uneven vertical rhythm and the short 108px rule make the column feel spaced by accident rather than set like the confident single-column lockups in the references."
+    },
+    {
+      "type": "composition",
+      "problem": "Upper canvas is dead space: nothing occupies y<430 on the left and y<490 on the right, roughly a third of the frame, so the asymmetric grid lacks the counterweight (shadow play, prop line, caustic glow) that references 1-3 use to activate empty field."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [88,1156,605,1406] confirms the base meets the ice with a soft absorbed shadow (no floating), but at opacity 0.35 with blur 10 the footprint is fainter than the surrounding snow-grain contrast, so the bottle's grip on the sheet reads weaker than the crisp caustic contact shadows in references 1-2."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Continuous matte glacier ice sheet in pale blue-white sweeping to a very low horizontal horizon near the bottom tenth of the frame under a vast pale mist sky, faint turquoise meltwater caustic ripple light confined to the low ice band, smooth unmarked ice and clean negative space in the middle and upper frame, fine snow grain only near the base band, soft high-key diffuse polar illumination, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 820
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 884
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 150
+    }
+  ],
+  "reported_score": 77
+}

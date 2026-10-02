@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 245989106097573,
+  "background": {
+    "color": "#dde2df",
+    "prompt": "Endless dawn salt plain of fine polygonal crust cracks, small tight mineral polygons fading softer and hazier toward a low mist-grey horizon, cool diffuse overcast frontal daylight, matte white mineral grain with subtle warm dawn blush near the horizon, continuous flat ground plane, empty environment, no objects",
+    "revision": 1
+  },
+  "product": {
+    "x": 756,
+    "y": 893,
+    "width": 460,
+    "height": 792
+  },
+  "lighting": "soft overcast dawn daylight, diffuse cool frontal with no hard shadows, matching the baked studio light",
+  "palette": [
+    "#dde2df",
+    "#22282a",
+    "#b4552e"
+  ],
+  "title": {
+    "text": "TERRE D'HERMÈS",
+    "x": 70,
+    "y": 560,
+    "size": 88,
+    "color": "#22282a",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 3,
+    "max_width": 440,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 70,
+    "y": 806,
+    "size": 16,
+    "color": "#22282a",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#22282a",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Hermès",
+    "x": 70,
+    "y": 500,
+    "size": 30,
+    "color": "#22282a",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.05
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 70,
+    "y": 782,
+    "width": 173,
+    "color": "#b4552e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

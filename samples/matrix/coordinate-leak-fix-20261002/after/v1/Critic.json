@@ -1,0 +1,68 @@
+{
+  "pass": false,
+  "score": 78.1,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 76,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The burnt-sienna disc renders almost concentric with the bottle axis (visible disc edges at roughly x=280 and x=800, centre near x=540, y=710), so the declared 'low and off-centre setting sun' reads as a symmetric halo; the asymmetric tension that gives the concept its signal-poster character is lost."
+    },
+    {
+      "type": "composition",
+      "problem": "The sienna registration rule (decoration at y=415, width 173) sits only ~5px above the cap top (product_bbox top y=418), so the closing mark of the type band visually collides with the flacon silhouette instead of separating monument band from object."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the upper band is loose: the title block ends at y=267 but the subtitle starts at y=350, an ~83px void between name and 'EAU DE PARFUM' that reads as an accidental gap rather than a stacked monument band."
+    },
+    {
+      "type": "background",
+      "problem": "The gouache field is perfectly even and textureless; against references 3-5 (which all carry directional light, cast shadow or reflective ground) the backdrop reads as a flat digital fill with a pasted cutout, weakening the printed-paper material story."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [259,1171,821,1421] confirms a real soft contact shadow under the base at offset_y=0 (correct, not floating), but at opacity 0.35 with blur 10 the anchoring smear is fainter than the crisp silhouette discipline elsewhere; the flacon's grounding cue is present yet under-weighted."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte gouache-painted paper field in saturated marigold ochre with faint dry-brush paper grain, one large hard-edge flat circle in deep burnt sienna centred left of middle and low in the frame, perfectly even shadowless frontal illumination, no horizon, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 392
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 140
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 320
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "reported_score": 76
+}

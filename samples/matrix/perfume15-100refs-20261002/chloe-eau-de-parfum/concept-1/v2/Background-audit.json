@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte screen-printed card in medium dusty cornflower blue with faint paper-grain ink settle, one hard-edge horizontal grosgrain nude-beige band crossing at four tenths down the frame, inside the band only a dense row of fine engraved vertical rib lines like magnified ribbon weave catching slightly darker beige ink, perfectly even shadowless frontal illumination, no texture gradients outside the band, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [9, 41, 91, 91] uncluttered; reserve quiet negative space for ink in these areas: [[33, 14, 66, 21], [44, 5, 52, 7]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 143562803171926,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

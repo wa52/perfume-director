@@ -1,0 +1,48 @@
+{
+  "accepted": [
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 380
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large crisply hard-edge darker midnight octagon panel centred upper middle with clean straight cut facets fully visible behind the upper zone, intarsia lines fading to faint low-contrast mineral trace across the lower third plaque band, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon"
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.align",
+          "op": "set",
+          "value": "center"
+        },
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 540
+        },
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 92
+        },
+        {
+          "path": "title.tracking",
+          "op": "set",
+          "value": 8
+        },
+        {
+          "path": "logo.tracking",
+          "op": "set",
+          "value": 8
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

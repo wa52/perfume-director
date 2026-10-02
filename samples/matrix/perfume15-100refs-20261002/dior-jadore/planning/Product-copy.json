@@ -1,0 +1,15 @@
+{
+  "title": "J'adore",
+  "logo": "Dior",
+  "subtitle": "EAU DE PARFUM",
+  "price": "",
+  "evidence": "Label lines visible on bottle: 'J'adore' (gold script), 'EAU DE PARFUM', 'Dior'; brand/name corroborate user brief; no price, volume or promo text visible, so price left empty.",
+  "product_profile": {
+    "material": "Clear glass teardrop flacon, ribbed satin-gold metal collar neck, opaque pearl-white spherical stopper",
+    "color": "Pale peach-champagne liquid, warm gold neck, ivory-white cap",
+    "transparency": "Body glass translucent with sheer tinted liquid; core and cap read bright and near-opaque, cannot transmit background",
+    "illumination": "Soft diffuse frontal studio light, broad gentle highlights on cap dome and glass shoulders, no hard cast shadow",
+    "view": "Straight-on front elevation, bottle centered and full-height, rounded base resting on unseen plane",
+    "integration_limits": "Packshot is isolated on plain white/transparent ground with no contact shadow; bright opaque cap and pale liquid block transmission, so any new background must sit behind the cutout, not show through it"
+  }
+}

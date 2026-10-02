@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\e3c6b8b9b461\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Alabaster Arcade Caustics",
+    "brief": "A photographic morning cloister: pale alabaster plaster wall meets a continuous honed pale stone ground at a horizon level with the true base line, one soft arched pool of light falling from above while water-born caustic ripples drift across the arch like light off a fountain basin. The cutout is scaled down and stands left of centre on that ground, contact shadow anchoring the foot, while the right wall stays calm for a genuine Century Gothic column: brand at column head, the geometric name in one wide line, a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cool stone matte against warm amber liquid is the whole temperature story.",
+    "material": "alabaster plaster arcade wall with honed pale stone ground and water caustic light",
+    "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+    "palette": [
+      "#d8d3c6",
+      "#1f2a33",
+      "#3f6f8f"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 250442642211919,
+    "background": {
+      "color": "#d8d3c6",
+      "prompt": "Pale alabaster plaster arcade wall with one soft arched pool of light falling from top center, continuous honed pale stone ground meeting the wall at a horizontal horizon three quarters down the frame, gentle water caustic ripple light drifting across the arch, matte mineral grain, soft high-key diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 302,
+      "y": 835,
+      "width": 440,
+      "height": 576
+    },
+    "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+    "palette": [
+      "#d8d3c6",
+      "#1f2a33",
+      "#3f6f8f"
+    ],
+    "title": {
+      "text": "SHALIMAR",
+      "x": 605,
+      "y": 662,
+      "size": 78,
+      "color": "#1f2a33",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3,
+      "max_width": 440,
+      "line_height": 1.15,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 540,
+      "y": 720,
+      "size": 16,
+      "color": "#1f2a33",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1f2a33",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "GUERLAIN",
+      "x": 605,
+      "y": 576,
+      "size": 24,
+      "color": "#1f2a33",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 605,
+      "y": 893,
+      "width": 281,
+      "color": "#3f6f8f"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

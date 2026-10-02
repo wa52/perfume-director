@@ -1,2 +1,4 @@
 # Keep runtime evidence byte-identical across Windows/Linux checkouts.
 samples/diversity/** -text whitespace=cr-at-eol
+samples/matrix/** -text whitespace=cr-at-eol
+references/pool-sampling-review/** -text whitespace=cr-at-eol

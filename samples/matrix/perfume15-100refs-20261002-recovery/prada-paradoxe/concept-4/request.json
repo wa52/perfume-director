@@ -1,0 +1,116 @@
+{
+  "brief": "为 Prada Paradoxe 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n把瓶盖的斜切面读作一级光阶：中饱和兰花紫平涂卡纸上，一组硬边同心矩形阶自画面中心向外逐级放大，如菲涅尔透镜的刻阶；商品提至上幅立于阶心之前，矩形阶从其肩后掠过却不触碰标签。下幅留出安静宽铭牌带：宽距 Arial Narrow 品牌字居带顶，Baskerville 题名以近满带宽的衬线大字居中统领，一条浅紫细线横垫其下如刻阶零点。纯平面阶纹与三角玻璃的体积折光构成维度悖论，无地面无 horizon。",
+  "product": "assets\\products\\prada-paradoxe-retailer.png",
+  "references": [
+    {
+      "id": "ref-6ced6279f2e6",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-6ced6279f2e6.jpg",
+      "selection_reason": "Highly resolved commercial perfume advertisement featuring dramatic floral explosion, strong contrast, and clear campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the faceted bottle anchored lower-left against an exploding rose, counterweighted by right-aligned typography in the negative space.",
+        "subject_ratio": 0.65,
+        "negative_space": "Dark, textured void on the right utilized effectively for legible white text placement.",
+        "lighting": "Dramatic studio lighting with high contrast; sharp specular highlights on the geometric glass facets and soft, directional light defining the rose petals.",
+        "color": [
+          "crimson red",
+          "obsidian black",
+          "charcoal grey",
+          "stark white"
+        ],
+        "typography": "Clean, sans-serif and serif mix in white; prominent '007' logo lockup with supporting tagline and URL, distinctly separate from the product container.",
+        "information_density": "Moderate; focuses on brand identity, product name, and evocative tagline without clutter.",
+        "characteristics": [
+          "dynamic motion",
+          "high contrast",
+          "faceted texture",
+          "floral motif",
+          "cinematic mood"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

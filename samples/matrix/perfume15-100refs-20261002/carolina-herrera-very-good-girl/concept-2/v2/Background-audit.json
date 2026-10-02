@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep ink-blue matte painted hall wall, perfectly clean and unmarked, meeting a continuous dark lacquered parquet ground at a low horizontal horizon; one soft warm pool of ambient light glowing on the parquet centered beneath the right-hand subject zone, faint elongated sheen stretching toward the viewer on the lacquered boards, gentle diffuse nocturnal illumination, no objects, no text, no marks, Composition coordinates in percentages measured from upper left: reserve a calm empty area [50, 28, 82, 84]. A continuous horizontal ground plane must be visible through y=84 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[8, 42, 44, 56], [8, 32, 31, 33]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 255395513706033,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

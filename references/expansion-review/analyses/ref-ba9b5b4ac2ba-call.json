@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-ba9b5b4ac2ba.jpg",
+      "sha256": "9bfd56ebafd70847df16ded020f9e063df1678de70aea64cac5a71bffda0326e"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-035d9dcf-6f1d-94de-9dc9-fca2d7eda61b",
+      "usage": {
+        "prompt_tokens": 749,
+        "total_tokens": 1162,
+        "completion_tokens": 413,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 452,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 413
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-035d9dcf-6f1d-94de-9dc9-fca2d7eda61b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 749,
+    "total_tokens": 1162,
+    "completion_tokens": 413,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 452,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 413
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Lanvin",
+    "style": "fashion",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved men's fragrance advertisement featuring a clear dual-subject layout, distinct campaign typography, and high-contrast editorial styling suitable for design reference.",
+    "analysis": {
+      "composition": "Asymmetrical split layout with a male model anchored on the left against a vertical color block, balanced by the product and logotype isolated in the expansive negative space on the right.",
+      "subject_ratio": 0.65,
+      "negative_space": "Extensive clean white space dominating the center and right, providing high contrast and focus for the product and text.",
+      "lighting": "High-key studio lighting on the background; directional, slightly contrasted lighting on the model to define facial features and suit texture; soft product illumination highlighting the matte bottle and glossy stripe.",
+      "color": [
+        "#FFFFFF",
+        "#1A1A1A",
+        "#00A89D",
+        "#E0E0E0"
+      ],
+      "typography": "Distinct campaign typography located below the product: 'AVANT GARDE' in a stylized, thin teal sans-serif, stacked above 'LANVIN PARIS' in a classic black serif font.",
+      "information_density": "Low; strictly limited to the model, product, and essential brand/product naming.",
+      "characteristics": [
+        "menswear fashion integration",
+        "high contrast",
+        "asymmetrical balance",
+        "teal accent color",
+        "editorial portrait"
+      ],
+      "perfume_suitability": 92,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 45
+    }
+  },
+  "duration_seconds": 11.788
+}

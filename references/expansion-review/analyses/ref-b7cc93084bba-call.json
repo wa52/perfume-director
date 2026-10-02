@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-b7cc93084bba.webp",
+      "sha256": "7ab9a1ccfdbb2ccf8e3f5bccfce3433a44e810114c52d79f35fd34c4ea46fb16"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ebdf4eed-1811-9212-8d98-3aaa7af00933",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 813,
+        "completion_tokens": 310,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 310
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ebdf4eed-1811-9212-8d98-3aaa7af00933",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 813,
+    "completion_tokens": 310,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 310
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Mizensir",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with elegant composition, warm monochromatic palette, and high-end material rendering suitable for luxury fragrance reference.",
+    "analysis": {
+      "composition": "Triangular arrangement of three rectangular glass flacons on a circular reflective surface, creating depth and symmetry.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate, filled with warm gradient background to maintain focus on products.",
+      "lighting": "Soft studio lighting with specular highlights on gold caps and glass edges; warm ambient glow.",
+      "color": [
+        "amber",
+        "gold",
+        "bronze",
+        "cream"
+      ],
+      "typography": "None visible outside container labels.",
+      "information_density": "Low; purely visual product showcase without overlay text.",
+      "characteristics": [
+        "reflective surface",
+        "glass texture",
+        "metallic accents",
+        "warm tonality",
+        "product grouping"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 8.513
+}

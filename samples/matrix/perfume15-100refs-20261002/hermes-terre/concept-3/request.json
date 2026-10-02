@@ -1,0 +1,115 @@
+{
+  "brief": "为 Hermès Terre d’Hermès 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：Night over worked earth: a flat matte ink-night card carrying one oversized hard-edge burnt-ember half-disc rising from the bottom edge, its crown passing behind the flacon's shoulders like a buried sun, crossed by one thin orange seam at the disc crown. The cutout is lifted into the upper two-thirds so the ember field below becomes a quiet plaque band: tracked geometric-sans brand line, then the name set wide and centred in Century Gothic capitals near band width, closed by a short rule floating between image and text like a print registration mark. No floor, no horizon - pure rising-disc geometry against translucent amber glass.",
+  "product": "assets\\products\\hermes-terre-retailer.png",
+  "references": [
+    {
+      "id": "ref-d2db4b80bde2",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-d2db4b80bde2.jpg",
+      "selection_reason": "Professionally resolved perfume advertisement featuring dynamic floral elements, clear campaign typography, and high-end product rendering suitable for design reference.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the product and floral explosion on the left counterweighted by negative space and typography on the right.",
+        "subject_ratio": 0.35,
+        "negative_space": "Significant dark gradient space on the right utilized for text placement.",
+        "lighting": "Dramatic studio lighting with high contrast, highlighting the faceted glass and metallic cap against a dark background.",
+        "color": [
+          "rose pink",
+          "deep burgundy",
+          "black",
+          "metallic copper",
+          "white"
+        ],
+        "typography": "Clean white sans-serif logo and serif tagline positioned in the right negative space; URL at the bottom.",
+        "information_density": "Moderate; focuses on brand identity and a single tagline without clutter.",
+        "characteristics": [
+          "exploding rose petals",
+          "faceted glass bottle",
+          "metallic accents",
+          "dark moody atmosphere",
+          "reflection"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f72a7e1dd1ad",
+      "brand": "BYREDO",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/minimal/ref-f72a7e1dd1ad.webp",
+      "selection_reason": "High-quality dynamic product shot capturing the spray mechanism in action against a clean gradient background. Excellent reference for minimalist perfume photography and liquid texture rendering.",
+      "analysis": {
+        "composition": "Diagonal orientation of the bottle creates dynamic movement, balanced by the spray plume extending into the upper left negative space.",
+        "subject_ratio": 0.55,
+        "negative_space": "Generous gradient grey space surrounds the subject, emphasizing the fine mist particles.",
+        "lighting": "Crisp studio lighting with high specular highlights on the glass and metal atomizer; soft drop shadow anchors the floating object.",
+        "color": [
+          "silver",
+          "white",
+          "grey",
+          "pale yellow"
+        ],
+        "typography": "None outside the container label.",
+        "information_density": "Low; focus is entirely on the product form and function.",
+        "characteristics": [
+          "dynamic spray",
+          "floating object",
+          "monochromatic palette",
+          "glass refraction",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-a1ed74f7e5d2.webp",
+      "sha256": "4edadcfa2322d90f5ace88e77185b625841a232e89badea57f3c267f8616dd51"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-d0b45795-a712-9711-b97f-9249171537be",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1902,
+        "completion_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 363
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d0b45795-a712-9711-b97f-9249171537be",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1902,
+    "completion_tokens": 363,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 363
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "KAR",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved conceptual still life featuring a perfume bottle amidst classical plaster ruins. Excellent use of hard lighting and monochromatic palette to highlight glass textures and liquid color. Professional campaign quality.",
+    "analysis": {
+      "composition": "Central product placement framed by a reclining classical bust and scattered column fragments; diagonal flow created by the statue's orientation.",
+      "subject_ratio": 0.35,
+      "negative_space": "Minimal; the frame is densely filled with white sculptural elements and debris, creating a textured background.",
+      "lighting": "Hard, directional studio lighting creating sharp, distinct shadows that emphasize the relief of the plaster and the facets of the glass bottle.",
+      "color": [
+        "White",
+        "Pale Gold",
+        "Silver",
+        "Light Grey"
+      ],
+      "typography": "None visible outside the container; brand name is embossed on the glass base.",
+      "information_density": "Low; purely visual focus on product and atmosphere without text overlays.",
+      "characteristics": [
+        "Neoclassical aesthetic",
+        "Monochromatic set design",
+        "Hard shadows",
+        "Textural contrast between matte plaster and glossy glass",
+        "Sculptural props"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 12.482
+}

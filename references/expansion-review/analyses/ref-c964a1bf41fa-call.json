@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-c964a1bf41fa.webp",
+      "sha256": "b4a5a7ff3d21d54fa96e5abee1e87ce0ff0244b8246b18d108a53197fc481d15"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-96a51ddc-4b69-9580-aef2-8eca1f6848ec",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 845,
+        "completion_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 342
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-96a51ddc-4b69-9580-aef2-8eca1f6848ec",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 845,
+    "completion_tokens": 342,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 342
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Burberry",
+    "style": "luxury",
+    "reference_kind": "material_detail",
+    "reason": "Highly resolved macro still-life of a luxury perfume bottle showcasing premium glass refraction and metallic detailing. Accepted as a material detail reference despite lacking campaign typography.",
+    "analysis": {
+      "composition": "Extreme close-up focusing on the upper right shoulder and cap of the bottle, cropped tightly to emphasize texture and form.",
+      "subject_ratio": 0.85,
+      "negative_space": "Minimal, restricted to a smooth gradient background in the upper right quadrant.",
+      "lighting": "Warm, directional studio lighting creating sharp specular highlights on the glass edges and deep shadows within the ribbed cap.",
+      "color": [
+        "amber",
+        "gold",
+        "bronze",
+        "warm beige"
+      ],
+      "typography": "None. Visible lettering is embossed directly onto the bottle's medallion and does not qualify as campaign typography.",
+      "information_density": "Low, purely visual and textural focus.",
+      "characteristics": [
+        "macro photography",
+        "glass refraction",
+        "metallic accents",
+        "monochromatic warm palette",
+        "premium product detail"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 14.231
+}

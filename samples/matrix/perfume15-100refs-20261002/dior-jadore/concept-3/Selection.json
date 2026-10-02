@@ -1,0 +1,13 @@
+{
+  "selected_version": 2,
+  "evidence": "Both candidates keep the leftinscription/rightimage editorial grid, serif Baskerville-style column (brand top, title middle, fragrance line bottom) and the cool dawn palette against the peach liquid, but version 2 (image 6) resolves the physical story better: the flacon sits on the湿 tide平面 with a definite soft contact shadow anchoring the base, theStill water sheet reads as one continuous mirror plane from horizon to foreground sand, and the horizon sits lower with a calmer sky-to-water gradient, matching the dawn tide-line concept. Version 1 (image 5) places a hard horizontal seam just behind the bottle base and breaks the water sheet into banded strips, so the bottle appears parked on a ledge rather than standing in shallow water; its contact is weaker and the foreground sand band reads as a separate strip. Typography in version 2 is evenly spaced down the left column with the fragrance line sitting clear of the horizon seam, giving a更 coherent vertical rhythm beside the bottle shoulder.",
+  "remaining_problems": [
+    "The sand-gold vertical divider line between text column and image column specified by the concept is missing in both versions (only a stray orange speck remains near the title).",
+    "No true mirror reflection of the bottle in the water sheet; the brief calls for reflection and contact shadow sinking into the water, but only a thin base shadow is present.",
+    " Horizon in version 2 sits near mid-frame rather than pressed into the lower third, weakening the low tide-line composition.",
+    "A small orphan orange artifact dot floats in the sky left of the stopper.",
+    "Foreground sand band at the bottom edge reads slightly detached from the water sheet, and the water specular sheet is very subdued rather than acting as the narrative light source."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

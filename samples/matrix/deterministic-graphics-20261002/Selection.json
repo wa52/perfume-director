@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 fulfils the Ochre Signal Disc concept more completely: the burnt-sienna disc reads as one continuous sun passing behind the flacon, emerging on both sides of the espresso silhouette so the silhouette-plus-disc geometry locks together, whereas version 1's disc only appears as a left-side lune and reads as an unbalanced blob rather than a setting sun. Both keep the centred monument typography band (wide-tracked TOM FORD, heavy Bodoni TOBACCO VANILLE, small EAU DE PARFUM line closed by a short registration rule), the faithful opaque cutout with baked vertical speculars and legible gold plate, and the flat shadowless marigold gouache field with no floor or horizon. Version 2's field also carries a faint matte paper grain consistent with gouache paper, and its disc sits low and off-centre behind the shoulders without crossing the gold plate's visible face, giving the stronger resolved campaign graphic.",
+  "remaining_problems": [
+    "In version 2 the disc's right-hand emergence sits at the same height as the gold plate's lower half, brushing the plate zone rather than clearing it fully behind the shoulders",
+    "The flacon base floats on the flat field with no contact shadow or grounding device; acceptable for the graphic mode but the base edge still reads slightly pasted",
+    "Baked white specular chips under the cap corners remain harsh against the matte field in both versions",
+    "Typography band sits high with a large empty gap between the registration rule and the cap, leaving the upper monument band slightly disconnected from the product"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

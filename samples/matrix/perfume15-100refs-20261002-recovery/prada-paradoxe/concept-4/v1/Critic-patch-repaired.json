@@ -1,0 +1,66 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 90,
+          "y": 150,
+          "width": 900,
+          "height": 1010,
+          "color": "#9a74bd",
+          "opacity": 0.55
+        },
+        {
+          "kind": "rectangle",
+          "x": 170,
+          "y": 255,
+          "width": 740,
+          "height": 800,
+          "color": "#a987ca",
+          "opacity": 0.5
+        },
+        {
+          "kind": "rectangle",
+          "x": 250,
+          "y": 360,
+          "width": 580,
+          "height": 590,
+          "color": "#b798d6",
+          "opacity": 0.45
+        },
+        {
+          "kind": "rectangle",
+          "x": 330,
+          "y": 465,
+          "width": 420,
+          "height": 380,
+          "color": "#c5a9e0",
+          "opacity": 0.4
+        },
+        {
+          "kind": "rectangle",
+          "x": 300,
+          "y": 425,
+          "width": 480,
+          "height": 460,
+          "color": "#d8b45e",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 162
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "left"
+    }
+  ]
+}

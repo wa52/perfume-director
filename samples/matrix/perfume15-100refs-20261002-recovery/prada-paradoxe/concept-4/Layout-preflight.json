@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238491276,
+    "background": {
+      "color": "#8a5fa8",
+      "prompt": "Seamless flat matte screen-printed card in medium orchid violet, hard-edge concentric rectangular step rings in lighter lilac expanding from the exact centre of the frame like fresnel lens steps, one thin gold seam ring at mid step, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 720,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#8a5fa8",
+      "#f4eef8",
+      "#d8b45e"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 162,
+      "y": 1123,
+      "size": 110,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 443,
+      "y": 1289,
+      "size": 20,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 421,
+      "y": 1044,
+      "size": 28,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 356,
+      "y": 1274,
+      "width": 367,
+      "color": "#d8b45e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238491276,
+    "background": {
+      "color": "#8a5fa8",
+      "prompt": "Seamless flat matte screen-printed card in medium orchid violet, hard-edge concentric rectangular step rings in lighter lilac expanding from the exact centre of the frame like fresnel lens steps, one thin gold seam ring at mid step, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 720,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#8a5fa8",
+      "#f4eef8",
+      "#d8b45e"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 162,
+      "y": 1123,
+      "size": 110,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 443,
+      "y": 1289,
+      "size": 20,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 421,
+      "y": 1044,
+      "size": 28,
+      "color": "#f4eef8",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 356,
+      "y": 1274,
+      "width": 367,
+      "color": "#d8b45e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

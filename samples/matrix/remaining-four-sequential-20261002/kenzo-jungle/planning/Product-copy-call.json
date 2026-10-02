@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "kenzo-jungle-retailer.png",
+      "sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-98ac58da-ef18-96c0-83b2-421909872851",
+      "usage": {
+        "prompt_tokens": 1569,
+        "total_tokens": 2896,
+        "completion_tokens": 1327,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 358
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 302
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-98ac58da-ef18-96c0-83b2-421909872851",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1569,
+    "total_tokens": 2896,
+    "completion_tokens": 1327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 358
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 302
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Jungle",
+    "logo": "Kenzo",
+    "subtitle": "",
+    "price": "",
+    "evidence": "No legible printed label on the bottle; only a faint cursive signature engraving at the lower right of the glass (not reliably readable). Brand 'Kenzo' and product name 'Jungle' are supplied by the user brief; no price, volume or category text is visible on the packshot.",
+    "product_profile": {
+      "material": "Clear glass flacon with a polished gold-tone metal sculptural cap (elephant with raised trunk and leaf fronds)",
+      "color": "Near-colorless ivory-champagne glass; warm satin gold metal sculpture",
+      "transparency": "Highly translucent body rendered almost white by high-key fill; edge refraction lines visible, interior reads bright and near-opaque",
+      "illumination": "Soft, diffuse high-key lighting from front/above; gentle broad highlights on metal curves, no hard shadows, pure white cutout background",
+      "view": "Straight-on frontal eye-level view, bottle upright and centered",
+      "integration_limits": "Glass body is a bright near-white cutout region that cannot transmit a newly generated background; backgrounds must stay light/high-key or sit behind the silhouette; metal cap carries soft gradients and must keep its diffuse highlight direction"
+    }
+  },
+  "duration_seconds": 36.216
+}

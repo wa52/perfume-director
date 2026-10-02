@@ -1,0 +1,117 @@
+{
+  "brief": "为 Davidoff Cool Water 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A brutalist coast after mist: board-formed concrete wall with horizontal formwork seams and round tie marks meets a continuous honed concrete ground at a horizon aligned exactly with the true base line, cool diffuse sea-fog light keeping every tone matte. The cutout stands right of centre on that ground, its measured contact shadow settling into the pale cement, while the left wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, the eau de toilette line and a short slate rule closing the column like a tide gauge mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column editorial grid honest; cold cement matte against luminous ocean-blue glass is the whole temperature story.",
+  "product": "assets\\products\\davidoff-cool-water-retailer.png",
+  "references": [
+    {
+      "id": "ref-62ff901b9d4a",
+      "brand": "Parle Moi de Parfum",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-62ff901b9d4a.webp",
+      "selection_reason": "Professionally resolved perfume still-life with strong atmospheric lighting and clear brand identity, suitable as a design reference.",
+      "analysis": {
+        "composition": "Two staggered cylindrical bottles on a flat surface, framed by dappled shadows.",
+        "subject_ratio": 0.45,
+        "negative_space": "Generous top and bottom areas filled with textured light and shadow.",
+        "lighting": "Hard, directional sunlight creating sharp cast shadows and a dappled foliage effect.",
+        "color": [
+          "pale green",
+          "olive green",
+          "black",
+          "clear glass"
+        ],
+        "typography": "None outside the container; text is limited to product labels.",
+        "information_density": "Low",
+        "characteristics": [
+          "dappled shadows",
+          "monochromatic green palette",
+          "minimalist glass bottles",
+          "natural light simulation"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-efb51dc5d487",
+      "brand": "Sisley",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/luxury/ref-efb51dc5d487.webp",
+      "selection_reason": "Professionally resolved luxury perfume still-life featuring the L'Eau Rêvée collection. High-quality lighting, elegant composition with botanical props, and clear product visibility make it an excellent design reference.",
+      "analysis": {
+        "composition": "Dynamic flat-lay arrangement on a split-level beige stone surface; bottles are scattered organically, interspersed with white flowers and green foliage to create depth and movement.",
+        "subject_ratio": 0.65,
+        "negative_space": "Moderate negative space provided by the textured stone background, balancing the multiple subjects without feeling cluttered.",
+        "lighting": "Hard, directional sunlight creating sharp, dramatic shadows and bright caustic refractions through the glass bottles and sculpted caps.",
+        "color": [
+          "beige",
+          "pale yellow",
+          "white",
+          "forest green",
+          "clear"
+        ],
+        "typography": "None visible outside of product labels.",
+        "information_density": "Medium; focuses entirely on the product range and atmospheric styling.",
+        "characteristics": [
+          "sculpted glass caps",
+          "botanical props",
+          "hard shadows",
+          "caustics",
+          "stone texture",
+          "collection display"
+        ],
+        "perfume_suitability": 98,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

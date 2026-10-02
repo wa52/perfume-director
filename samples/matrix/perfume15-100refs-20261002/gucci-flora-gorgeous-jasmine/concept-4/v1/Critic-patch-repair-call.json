@@ -1,0 +1,119 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6"
+    },
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-ae1f4004-ee3f-9da8-b6c4-aa67ce0347c8",
+      "usage": {
+        "prompt_tokens": 8711,
+        "total_tokens": 9950,
+        "completion_tokens": 1239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6064,
+          "text_tokens": 2647
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 214
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-ae1f4004-ee3f-9da8-b6c4-aa67ce0347c8",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8711,
+    "total_tokens": 9950,
+    "completion_tokens": 1239,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6064,
+      "text_tokens": 2647
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 214
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte gouache-painted card in deep viridian green, one continuous hard-edge flat printed ribbon loop in uniform pale mint with no folds, no shading and no cast shadow, sweeping from lower left behind centre and re-emerging upper right but staying entirely below y 700 on the right half so the upper right quadrant remains plain uninterrupted green, perfectly even shadowless illumination, no texture gradients, no objects"
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 640
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 88
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1010
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 1080
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 6
+      },
+      {
+        "path": "subtitle.color",
+        "op": "set",
+        "value": "#e0b23e"
+      }
+    ]
+  },
+  "duration_seconds": 33.431
+}

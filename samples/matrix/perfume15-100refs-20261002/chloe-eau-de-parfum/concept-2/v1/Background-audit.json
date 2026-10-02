@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte card in medium sage green, fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band without lines across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [11, 16, 89, 64] uncluttered; reserve quiet negative space for ink in these areas: [[20, 79, 52, 85], [44, 72, 55, 74]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 143562803172934,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

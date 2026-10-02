@@ -1,0 +1,13 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 fulfills the Brushed Aluminium Observatory Deck concept more completely: theAnodized wall reads darker slate grey-blue under a cool twilight glow from above, so the white geometric sans 'Angel' title and the steel-blue rule achieve nameplate-grade contrast, while version 1's charcoal title sits at mid-tone on a pale wall and loses instrument-plate authority. Version 2's honed aluminium ground is brighter and continuous with a believable baseline behind the bottle, giving the star flacon a plausible standing plane and a small dark contact shadow sunk at the tip; the wall-to-floor junction reads as a real observatory deck rather than a backdrop card. Product fidelity is equal in both (opaque silver cap wedge, lavender-to-icy violet facets, visible nozzle), but version 2's left-half text column (brand at column top, large title, rule at column base) holds a cleaner two-column grid against the quieter dark wall, and the metal's cool matte sheen answers the violet refraction as intended. Version 1's lighter, flatter wall and floor gradient feel closer to a plain studio sweep with a pasted cutout.",
+  "remaining_problems": [
+    "Title is set in title case ('Angel') rather than the geometric all-caps instrument-nameplate lettering the brief specifies.",
+    "Contact shadow at the star tip is a small dark dot rather than a shadow sunk into the brushed grain; the flacon still balances implausibly on a single point.",
+    "The honed aluminium ground shows almost no reflection of the bottle, weakening the referenced metal-reflection floor cue.",
+    "The 'Mugler' brand line in dark grey has low contrast against the mid-tone wall zone in both versions, more so in version 2.",
+    "Wall brush grain reads vertical-linear rather than the specified circular brush pattern."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

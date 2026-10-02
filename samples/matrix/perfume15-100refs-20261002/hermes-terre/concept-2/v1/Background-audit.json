@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Vast cracked white salt crust plain meeting a pale hazy mist-grey sky at a low horizontal horizon nine tenths down the frame, fine polygonal crust cracks across a continuous flat ground, cool diffuse dawn light, matte mineral grain, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [49, 35, 91, 90]. A continuous horizontal ground plane must be visible through y=90 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[6, 40, 42, 51], [6, 33, 16, 35]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 245989106097573,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

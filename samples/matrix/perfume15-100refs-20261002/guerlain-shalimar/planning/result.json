@@ -1,0 +1,585 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "Engine-turned Guilloché Tide",
+      "brief": "A flat banknote-engraver poster: pale ice porcelain card carries fine concentric guilloché wave lines swelling from the lower centre like turned water, crossed by one hard graphite ribbon band echoing the neck bow. The fan-flacon stands lifted in the upper two-thirds, its baked speculars untouched by the flat ink world, while a centred Bodoni monument stacks in the calm top band: tracked brand line, heavy serif name, closed by a short rule like an engraver's刻 line. No floor, no horizon - pure line-density narrative against lacquer gloss.",
+      "material": "flat matte card with engine-turned guilloché wave engraving and one hard printed band",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "84e9dbcad23a0de93bc7f0a1684e8c449ac949dc293ff8d07ba88a6e051ab72e",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#dfe7e9",
+        "#101d33",
+        "#274b8f"
+      ],
+      "reference_ids": [
+        "ref-f72a7e1dd1ad",
+        "ref-b4d87aee2707",
+        "ref-62ff901b9d4a"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#dfe7e9",
+          "prompt": "Seamless flat matte card in pale ice porcelain blue-grey, fine concentric engine-turned guilloché wave lines swelling from lower center, one hard-edge flat graphite blue horizontal band across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 806,
+          "width": 725,
+          "height": 950
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#dfe7e9",
+          "#101d33",
+          "#274b8f"
+        ],
+        "title": {
+          "text": "SHALIMAR",
+          "x": 319,
+          "y": 166,
+          "size": 96,
+          "color": "#101d33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 540,
+          "y": 720,
+          "size": 16,
+          "color": "#101d33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#101d33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "GUERLAIN",
+          "x": 405,
+          "y": 75,
+          "size": 26,
+          "color": "#101d33",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 295,
+          "width": 173,
+          "color": "#274b8f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\5fd29fa138d1",
+      "selected": {
+        "version": 2,
+        "score": 83.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "f890f03392afadc42887036c40059e7c583ae3e93b4eac07ea7de21c91b9f39f"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "63622e162f9cee4b2ec94e32e615cb7a1441e06e86c6725181ed49a04fb3ed2f"
+        },
+        {
+          "version": 2,
+          "score": 83.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "f890f03392afadc42887036c40059e7c583ae3e93b4eac07ea7de21c91b9f39f"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Mashrabiya Brass Shadow Garden",
+      "brief": "A photographic dusk interior: warm sand limewashed plaster meets a continuous honed sandstone ground at a horizon aligned with the true base line, and light raking through an unseen pierced screen lays a soft brass lattice of diamond shadows across wall and ground. The cutout stands right of centre on that ground, contact shadow landing on its foot, while the left wall stays calm for a wrapped narrow sans column: brand at column head, the name in one broad line, a short rule closing the column - vertical overlap with the shoulder, wide horizontal clearance. Mineral matte against amber glass reads as a garden house at golden hour.",
+      "material": "sand limewash plaster wall with honed sandstone ground and pierced-screen shadow lattice",
+      "lighting": "warm directional late-day light raking from upper right through a pierced screen, crisp lattice shadow, bright ambient on ground",
+      "id": "concept-2",
+      "signature": "ca362ed728ff3659c0a88f48c3bbdd0681d5b805bd32d49502d0a2b214669660",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#c8a171",
+        "#241407",
+        "#8a5a2b"
+      ],
+      "reference_ids": [
+        "ref-efb51dc5d487",
+        "ref-62ff901b9d4a",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#c8a171",
+          "prompt": "Warm sand-toned limewash plaster wall meeting a continuous honed sandstone ground at a horizontal horizon three quarters down the frame, soft diamond lattice shadow pattern raking across wall and ground from upper right as if through a pierced screen, matte mineral grain, warm directional light, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 713,
+          "y": 864,
+          "width": 550,
+          "height": 720
+        },
+        "lighting": "warm directional late-day light raking from upper right through a pierced screen, crisp lattice shadow, bright ambient on ground",
+        "palette": [
+          "#c8a171",
+          "#241407",
+          "#8a5a2b"
+        ],
+        "title": {
+          "text": "SHALIMAR",
+          "x": 86,
+          "y": 634,
+          "size": 72,
+          "color": "#241407",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 330,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 540,
+          "y": 720,
+          "size": 16,
+          "color": "#241407",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#241407",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "GUERLAIN",
+          "x": 86,
+          "y": 536,
+          "size": 24,
+          "color": "#241407",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 86,
+          "y": 958,
+          "width": 259,
+          "color": "#8a5a2b"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\73523fc40f26",
+      "selected": {
+        "version": 2,
+        "score": 80.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "34256d05dad3ae4b58d86d55f4ecf9959aefb8c0102e37c508f34ce492bbbbc0"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "84dd6e303a01cf03177f78820182a052bd35291b83a5658d38e414c56f33658b"
+        },
+        {
+          "version": 2,
+          "score": 80.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "34256d05dad3ae4b58d86d55f4ecf9959aefb8c0102e37c508f34ce492bbbbc0"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Lapis Intarsia Night Vault",
+      "brief": "A flat lapidary poster: deep lapis field inlaid with a fine gold star-lattice intarsia, one large hard-edge midnight octagon centred upper-middle like a vault panel behind the dome cap. The cutout is lifted into the upper two-thirds so the lower third becomes a quiet plaque band with real breathing room above it: a thin gold inlay seam, tracked brand line, then the Baskerville name set wide and centred at near band width. Stone matte against glossy blue dome and glowing amber tells the story entirely through inlay geometry.",
+      "material": "polished lapis lazuli slab with gold star-lattice intarsia inlay",
+      "lighting": "even shadowless frontal illumination with faint mineral glint on inlay lines, flat graphic light",
+      "id": "concept-3",
+      "signature": "b522296a018f516e0f53168894e4e33eb42fb9ed7a8cf8405a79b06eb30fd830",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "serif",
+      "palette": [
+        "#1c2a5e",
+        "#f0e6cf",
+        "#c9a24b"
+      ],
+      "reference_ids": [
+        "ref-7a523ada9a2c",
+        "ref-f305dbbdf3bc",
+        "ref-6ced6279f2e6"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#1c2a5e",
+          "prompt": "Deep lapis blue polished stone field inlaid with a fine gold star-lattice geometric intarsia pattern, one large hard-edge darker midnight octagon panel centred upper middle, faint mineral glint on inlay lines, perfectly even shadowless illumination, no objects, no horizon",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 677,
+          "width": 637,
+          "height": 835
+        },
+        "lighting": "even shadowless frontal illumination with faint mineral glint on inlay lines, flat graphic light",
+        "palette": [
+          "#1c2a5e",
+          "#f0e6cf",
+          "#c9a24b"
+        ],
+        "title": {
+          "text": "SHALIMAR",
+          "x": 319,
+          "y": 1256,
+          "size": 80,
+          "color": "#f0e6cf",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3,
+          "max_width": 0,
+          "line_height": 1.06,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 540,
+          "y": 720,
+          "size": 16,
+          "color": "#f0e6cf",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f0e6cf",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "GUERLAIN",
+          "x": 457,
+          "y": 1192,
+          "size": 24,
+          "color": "#f0e6cf",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 378,
+          "y": 1152,
+          "width": 324,
+          "color": "#c9a24b"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\43c8a0190d1f",
+      "selected": {
+        "version": 1,
+        "score": 80.6,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "673fb3c515496798d9968600a62447b522e8ba5a1bdfb51e56da5edfd22af669"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 80.6,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "673fb3c515496798d9968600a62447b522e8ba5a1bdfb51e56da5edfd22af669"
+        },
+        {
+          "version": 2,
+          "score": 83.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "6c1c7749e609a1e3b7d4cd442a2570e683ff887117093d0d74433dec8c0cb2e6"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Alabaster Arcade Caustics",
+      "brief": "A photographic morning cloister: pale alabaster plaster wall meets a continuous honed pale stone ground at a horizon level with the true base line, one soft arched pool of light falling from above while water-born caustic ripples drift across the arch like light off a fountain basin. The cutout is scaled down and stands left of centre on that ground, contact shadow anchoring the foot, while the right wall stays calm for a genuine Century Gothic column: brand at column head, the geometric name in one wide line, a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the editorial grid honest; cool stone matte against warm amber liquid is the whole temperature story.",
+      "material": "alabaster plaster arcade wall with honed pale stone ground and water caustic light",
+      "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+      "id": "concept-4",
+      "signature": "05fe94a73687e95b284177c172764f6a0c7c3406a93a46dee32b120550049d8b",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#d8d3c6",
+        "#1f2a33",
+        "#3f6f8f"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-efb51dc5d487",
+        "ref-f72a7e1dd1ad"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d8d3c6",
+          "prompt": "Pale alabaster plaster arcade wall with one soft arched pool of light falling from top center, continuous honed pale stone ground meeting the wall at a horizontal horizon three quarters down the frame, gentle water caustic ripple light drifting across the arch, matte mineral grain, soft high-key diffuse illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 302,
+          "y": 835,
+          "width": 440,
+          "height": 576
+        },
+        "lighting": "soft high-key morning light with one arched pool and gentle moving caustic ripple patterns, no hard shadows",
+        "palette": [
+          "#d8d3c6",
+          "#1f2a33",
+          "#3f6f8f"
+        ],
+        "title": {
+          "text": "SHALIMAR",
+          "x": 605,
+          "y": 662,
+          "size": 78,
+          "color": "#1f2a33",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 3,
+          "max_width": 440,
+          "line_height": 1.15,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 540,
+          "y": 720,
+          "size": 16,
+          "color": "#1f2a33",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 2
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#1f2a33",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "GUERLAIN",
+          "x": 605,
+          "y": 576,
+          "size": 24,
+          "color": "#1f2a33",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 605,
+          "y": 893,
+          "width": 281,
+          "color": "#3f6f8f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\92f7532b3a19",
+      "selected": {
+        "version": 2,
+        "score": 78.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "d7b7b941100b7c2f3a80f7d5b9712237aa405668f0c53242d4871282432b6840"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 65.1,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "45cbf751e05e76a89a9887fd556b1dfacc0022f5ab9479ea87840816b84be903"
+        },
+        {
+          "version": 2,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "d7b7b941100b7c2f3a80f7d5b9712237aa405668f0c53242d4871282432b6840"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

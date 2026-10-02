@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-70404f2ba6a2.webp",
+      "sha256": "c097d621bc4f34c436131bf322df2abb4f10846874e4fa881eb1276aa8c836f2"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-87863ac1-4873-9a13-8faf-76e1672cf652",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 833,
+        "completion_tokens": 330,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 330
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-87863ac1-4873-9a13-8faf-76e1672cf652",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 833,
+    "completion_tokens": 330,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 330
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Hugo Boss",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved commercial still life featuring a rhythmic arrangement of Hugo Boss bottles with high-end studio lighting and cohesive cool-toned palette.",
+    "analysis": {
+      "composition": "Repetitive diagonal grid pattern creating depth through overlapping foreground and background elements.",
+      "subject_ratio": 0.95,
+      "negative_space": "Minimal, mostly filled by the dense arrangement of bottles and their reflections on the glossy surface.",
+      "lighting": "High-key studio lighting with strong specular highlights on glass and caps, casting soft blue-tinted shadows.",
+      "color": [
+        "deep violet",
+        "indigo",
+        "silver",
+        "cool white",
+        "black"
+      ],
+      "typography": "None visible outside of the embossed bottle lettering.",
+      "information_density": "Low, purely visual focus on product form and color.",
+      "characteristics": [
+        "repetition",
+        "glass refraction",
+        "monochromatic cool tones",
+        "glossy reflections",
+        "embossed branding"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 14.375
+}

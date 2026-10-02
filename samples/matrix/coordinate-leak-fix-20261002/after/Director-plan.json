@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\a594b71b7260\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Ochre Signal Disc",
+    "brief": "A flat graphic signal poster: one saturated marigold gouache field carrying a single hard-edge burnt-sienna disc set low and off-centre, reading as a setting sun behind the flacon. The opaque espresso cutout sits centred and tall, its baked vertical speculars untouched, while the disc passes behind its shoulders without touching the gold plate. All typography stacks in a centred monument band across the upper field: wide-tracked brand, heavy Bodoni name, small eau de parfum line, closed by a short rule like a print registration mark. Narrative is pure silhouette-plus-disc geometry, no floor, no horizon; the matte paper swallows light so the lacquered glass owns every highlight.",
+    "material": "flat matte gouache-painted paper with hard-edge painted disc",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+    "palette": [
+      "#d9932f",
+      "#2b1508",
+      "#8c3b12"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 182058145773179,
+    "background": {
+      "color": "#d9932f",
+      "prompt": "Seamless flat matte gouache-painted paper field in saturated marigold ochre, one large hard-edge flat circle in deep burnt sienna centred slightly below middle, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 864,
+      "width": 404,
+      "height": 893
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+    "palette": [
+      "#d9932f",
+      "#2b1508",
+      "#8c3b12"
+    ],
+    "title": {
+      "text": "TOBACCO VANILLE",
+      "x": 240,
+      "y": 223,
+      "size": 64,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 414,
+      "y": 350,
+      "size": 22,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "TOM FORD",
+      "x": 430,
+      "y": 137,
+      "size": 26,
+      "color": "#2b1508",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 415,
+      "width": 173,
+      "color": "#8c3b12"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

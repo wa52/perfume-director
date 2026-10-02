@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) actually delivers the declared 'Olive Grove Ledger': three legible stacked matte olive panels of shifted tone, with the darker middle block carrying the entire typographic column and the flacon's冠, exactly as briefed. The left column hierarchy is coherent (TOM FORD above, two-line geometric sans TOBACCO VANILLE at generous size, EAU DE PARFUM below, short gold rule under the column), and the rule now sits inside the middle block so the column reads as one locked unit. The flacon is faithful to the original packshot (opaque espresso glass, stepped shoulder, wide flat cap, champagne-gold label with correct typography), sits low-right across the middle/bottom seam as the concept's only architecture, and the flat graphic light matches the shadowless cutout. Version 1 (image 5) by comparison collapses the ledger into a near-uniform sage field: the panel seams are hairline-faint, the 'slightly shifted tones' never register as stacked blocks, the middle block carries no weight, and the composition reads as a pasted cutout on a flat wall rather than a constructed graphic ledger.",
+  "remaining_problems": [
+    "The flacon's base rests inside the lower block rather than precisely on the middle/bottom seam, so the 'rests on the panel seam' relation is only partially honoured.",
+    "No contact shadow or grounding tone under the flacon base; in graphic mode the silhouette floats slightly against the flat panels.",
+    "Top block is a large empty expanse; the middle block's dominance is correct per brief but the upper third feels under-utilised rather than intentionally quiet.",
+    "Palette drift: the ochre accent (#d9932f) appears only in the thin rule; the third declared tone is otherwise absent from the block stack, which reads green-on-green rather than olive/cream/ochre ledger."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

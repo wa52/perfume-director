@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-752b23d87cae.webp",
+      "sha256": "ea717276b3ba0105716f67c86be2cb63f45dba2c1798b0aba20607a517f898b2"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-775a6ed8-9f46-920d-a4bc-0bb8eb31590a",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1865,
+        "completion_tokens": 326,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 326
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-775a6ed8-9f46-920d-a4bc-0bb8eb31590a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1865,
+    "completion_tokens": 326,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 326
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Prada",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved architectural still-life with clear brand identity, high production value, and strong compositional geometry suitable for design reference.",
+    "analysis": {
+      "composition": "Centralized product placement within a geometric, tiered architectural set featuring sharp angles and depth.",
+      "subject_ratio": 0.35,
+      "negative_space": "Structured white planes and open sky background provide balanced breathing room around the subject.",
+      "lighting": "Bright, directional sunlight simulation creating distinct, hard shadows that emphasize the three-dimensional forms.",
+      "color": [
+        "white",
+        "sky blue",
+        "silver",
+        "grey",
+        "black"
+      ],
+      "typography": "None visible outside the container; branding is limited to the embossed label on the bottle.",
+      "information_density": "Low; focus is entirely on the product and atmospheric setting.",
+      "characteristics": [
+        "architectural geometry",
+        "marble texture",
+        "glass refraction",
+        "clean lines",
+        "daylight atmosphere"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 11.657
+}

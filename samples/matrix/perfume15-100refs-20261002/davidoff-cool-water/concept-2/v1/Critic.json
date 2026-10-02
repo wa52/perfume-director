@@ -1,0 +1,65 @@
+{
+  "pass": false,
+  "score": 79.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 72,
+    "physical_integration": 86,
+    "reference_alignment": 70,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'one hard-edge darker teal depth band crossing behind the middle' never rendered: image 1 shows only a single wavy contour-field edge at roughly y 490-560 sitting behind the cap and shoulders, after which the card is one uniform mid-teal. The promised depth-band descent is missing, so the 'line-density descent narrative' reads as one decorative patch instead of a layered survey map."
+    },
+    {
+      "type": "background",
+      "problem": "The contour engraving stops dead at the bottle's shoulder line, leaving the entire lower two-thirds (including the whole type plaque) as unmodulated flat teal. Against references 3-4, whose backgrounds carry graded atmosphere or compositional graphics behind the subject, this lower field reads as an empty wall with a pasted cutout rather than a designed plaque."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the plaque is compressed: the DAVIDOFF brand line (size 30, bbox y 1080-1102) and the EAU DE TOILETTE line (size 30, bbox y 1270-1292) are identical in size and weight, so the stack reads logo-title-twin-small-lines; only the closing rule differentiates the footer. Measured gaps are also uneven (base 1030 to logo 50px, logo to title 50px, title to subtitle 39px, subtitle to rule ~40px), giving no clear primary/secondary step below the title."
+    },
+    {
+      "type": "typography",
+      "problem": "Title 'Cool Water' measures 618px wide (bbox x 228-846) against the brief's 'name set wide and centred near band width'; at roughly 57% of canvas width it sits visibly narrower than the contour band above and leaves the plaque under-occupied versus the wide centred lockups in the references."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte card in deep petrol teal, thin pale ice-blue bathymetric contour lines engraved across the upper half like a sea-floor survey map, a second sparser set of contour rings continuing faintly behind the middle zone, one hard-edge darker teal depth band crossing horizontally behind the middle, lower third calming to a very subtle vertical deepening of the same teal, perfectly even shadowless frontal illumination, no texture gradients beyond printed lines, no objects"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 118
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 25
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 33
+    }
+  ],
+  "evidence": {
+    "contact_check": "Image 6 (crop 296,890,784,1140) shows the slab base seated with a soft dark teal bleed hugging the footprint directly under the glass edge; with shadow offset_y 0, opacity 0.35, blur 10 this is correct zero-offset contact, not floating. No correction needed.",
+    "geometry_check": "product_height_ratio 0.55 sits inside both the hero 0.50-0.65 band and the graphic-mode safety bounds; base 1030 = 71.5% of canvas height, top 238 = 16.5%; sides 376-704 well inside 5-95%. text_product_overlap false for logo, title and subtitle, so no overlap claim is made.",
+    "artifact_check": "No softboxes, lamps, stands or cameras anywhere in the poster; references 5's hanging bulbs are reference-only and correctly excluded.",
+    "fidelity_check": "Poster bottle matches image 2: translucent ocean-blue slab, opaque black cylindrical cap with satin sheen, white DAVIDOFF / Cool Water script and EAU DE TOILETTE print intact, single bottle, no generated label drift."
+  },
+  "reported_score": 77
+}

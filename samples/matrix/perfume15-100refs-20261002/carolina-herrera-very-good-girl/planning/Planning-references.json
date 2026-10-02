@@ -1,0 +1,283 @@
+[
+  {
+    "id": "ref-6ced6279f2e6",
+    "brand": "007",
+    "style": "luxury",
+    "reference_kind": "campaign_poster",
+    "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+    "image": "references/luxury/ref-6ced6279f2e6.jpg",
+    "selection_reason": "Highly resolved commercial perfume advertisement featuring dramatic floral explosion, strong contrast, and clear campaign typography.",
+    "analysis": {
+      "composition": "Asymmetrical balance with the faceted bottle anchored lower-left against an exploding rose, counterweighted by right-aligned typography in the negative space.",
+      "subject_ratio": 0.65,
+      "negative_space": "Dark, textured void on the right utilized effectively for legible white text placement.",
+      "lighting": "Dramatic studio lighting with high contrast; sharp specular highlights on the geometric glass facets and soft, directional light defining the rose petals.",
+      "color": [
+        "crimson red",
+        "obsidian black",
+        "charcoal grey",
+        "stark white"
+      ],
+      "typography": "Clean, sans-serif and serif mix in white; prominent '007' logo lockup with supporting tagline and URL, distinctly separate from the product container.",
+      "information_density": "Moderate; focuses on brand identity, product name, and evocative tagline without clutter.",
+      "characteristics": [
+        "dynamic motion",
+        "high contrast",
+        "faceted texture",
+        "floral motif",
+        "cinematic mood"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 90
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-b4d87aee2707",
+    "brand": "Hermès",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+    "image": "references/minimal/ref-b4d87aee2707.webp",
+    "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+    "analysis": {
+      "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+      "subject_ratio": 0.25,
+      "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+      "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+      "color": [
+        "off-white",
+        "aquamarine",
+        "deep teal",
+        "burgundy"
+      ],
+      "typography": "None visible outside the container; text is strictly limited to the product label.",
+      "information_density": "Very low; focuses entirely on material, light, and form.",
+      "characteristics": [
+        "caustic refractions",
+        "hard shadows",
+        "organic props",
+        "flat lay",
+        "aquatic palette"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-453438bbcb76",
+    "brand": "Escentric Molecules",
+    "style": "tech",
+    "reference_kind": "still_life",
+    "source_url": "https://www.joshcaudwell.com/",
+    "image": "references/tech/ref-453438bbcb76.webp",
+    "selection_reason": "Highly resolved digital still-life featuring a clear perfume subject with strong geometric background elements and cohesive amber palette; excellent reference for tech-forward fragrance visuals.",
+    "analysis": {
+      "composition": "Centered rectangular bottle framed by large, soft-focus circular gradients creating depth and focus.",
+      "subject_ratio": 0.65,
+      "negative_space": "Dark, gradient periphery focusing attention on the illuminated center.",
+      "lighting": "Backlit and internal glow emphasizing liquid color and glass transparency against a dark void.",
+      "color": [
+        "amber",
+        "gold",
+        "black",
+        "silver"
+      ],
+      "typography": "None outside the container; label text is part of the product packaging.",
+      "information_density": "Low; purely visual focus on product and abstract atmosphere.",
+      "characteristics": [
+        "geometric abstraction",
+        "binary code motifs",
+        "warm monochromatic scheme",
+        "glass refraction"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-41b5b67289d6",
+    "brand": "Scentbird",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+    "image": "references/editorial/ref-41b5b67289d6.webp",
+    "selection_reason": "Professionally resolved multi-brand perfume still life with strong directional lighting, textured props, and cohesive warm palette; useful as a design reference for editorial fragrance campaigns.",
+    "analysis": {
+      "composition": "Asymmetrical arrangement of multiple fragrance bottles and a travel atomizer on travertine blocks, framed by draped fabrics and diagonal light shafts.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space in the upper left and lower foreground, balanced by heavy drapery on the right.",
+      "lighting": "Hard, directional sunlight creating sharp diagonal shadows and high-contrast highlights across the scene.",
+      "color": [
+        "amber",
+        "terracotta",
+        "cream",
+        "emerald green",
+        "bronze"
+      ],
+      "typography": "None outside of container labels; relies entirely on product packaging lettering.",
+      "information_density": "Medium; multiple products displayed with scattered textural props (caramel/resin chunks).",
+      "characteristics": [
+        "warm tones",
+        "hard shadows",
+        "textured stone props",
+        "draped fabric",
+        "multi-product display"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-403f9139347c",
+    "brand": "YSL",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "source_url": "https://www.davidlineton.com/fragrances",
+    "image": "references/luxury/ref-403f9139347c.webp",
+    "selection_reason": "Highly resolved luxury perfume still-life featuring dramatic backlighting, architectural composition, and premium material rendering. Excellent design reference for high-end fragrance campaigns.",
+    "analysis": {
+      "composition": "Low-angle hero shot centering a monumental, trapezoidal bottle on a textured geometric plinth against a gradient backdrop.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive gradient sky above and smooth, undulating metallic surface below framing the central subject.",
+      "lighting": "Dramatic backlighting creating a radiant halo behind the bottle, with soft frontal fill highlighting the embossed logo and base textures.",
+      "color": [
+        "matte black",
+        "warm bronze",
+        "slate blue",
+        "champagne gold"
+      ],
+      "typography": "None; only the embossed brand monogram on the container is visible.",
+      "information_density": "Low; purely visual focus on product silhouette and atmosphere.",
+      "characteristics": [
+        "monolithic silhouette",
+        "textured stone base",
+        "metallic liquid reflections",
+        "dawn/dusk gradient",
+        "architectural staging"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-b6e669a924a3",
+    "brand": "Kayali",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+    "image": "references/luxury/ref-b6e669a924a3.webp",
+    "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+    "analysis": {
+      "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+      "subject_ratio": 0.75,
+      "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+      "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+      "color": [
+        "pastel yellow",
+        "mint green",
+        "pale blue",
+        "soft orange",
+        "cream beige",
+        "gold"
+      ],
+      "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+      "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+      "characteristics": [
+        "faceted glass",
+        "jewel-like caps",
+        "pastel liquids",
+        "gold accents",
+        "clean aesthetic"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-f305dbbdf3bc",
+    "brand": "Versace",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "source_url": "https://www.malemodelscene.net/ad-campaigns/brian-shimansky-versace/",
+    "image": "references/luxury/ref-f305dbbdf3bc.jpg",
+    "selection_reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+    "analysis": {
+      "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+      "subject_ratio": 0.45,
+      "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+      "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+      "color": [
+        "emerald green",
+        "gold",
+        "teal blue"
+      ],
+      "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+      "information_density": "Low, focusing entirely on the product form and material.",
+      "characteristics": [
+        "textured glass",
+        "metallic accents",
+        "reflection",
+        "gradient background",
+        "product focus"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    },
+    "analysis_origin": "vision_api"
+  },
+  {
+    "id": "ref-7a523ada9a2c",
+    "brand": "Cartier",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "source_url": "https://luxstudio.london/cartier-perfume",
+    "image": "references/luxury/ref-7a523ada9a2c.webp",
+    "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+    "analysis": {
+      "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+      "subject_ratio": 0.65,
+      "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+      "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+      "color": [
+        "deep teal",
+        "amber",
+        "warm orange",
+        "black"
+      ],
+      "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+      "information_density": "Low, focused entirely on the visual concept and product.",
+      "characteristics": [
+        "conceptual",
+        "glowing filaments",
+        "reflection",
+        "industrial luxury",
+        "symmetrical"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    },
+    "analysis_origin": "vision_api"
+  }
+]

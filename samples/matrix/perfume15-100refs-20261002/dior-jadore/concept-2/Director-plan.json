@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\e77536c11193\\Concepts-call.json",
+  "creative_direction": {
+    "name": " Iris 灰泥拱光·下带宽铭",
+    "brief": "让珍珠白瓶盖成为唯一光源的借口：手工抹灰的鸢尾紫泥墙上一道柔拱光自顶部垂落，商品被提至上幅如浮出墙面光晕，下半幅留出完整宽铭牌带。Century Gothic 宽距题名以近满带宽的大字号居中统领，品牌字最小置顶带、香型字垫底，构成上像下铭的反网格；一条浅紫细线横于铭带之顶如抹灰刀的刻痕。哑光灰泥的颗粒与玻璃的整面高光互为粗细，拱光的建筑感赋予淡紫以教堂式的安静。",
+    "material": "hand-troweled limewash plaster wall with soft arched light pool",
+    "lighting": "one broad soft arched pool of light from above on plaster, otherwise even diffuse high-key",
+    "palette": [
+      "#c9bede",
+      "#2e2440",
+      "#8f7bb5"
+    ],
+    "layout_relation": "below",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 254490615814559,
+    "background": {
+      "color": "#c9bede",
+      "prompt": "Hand-troweled limewash plaster wall in pale iris lilac, one soft arched pool of lighter light falling from top center, fine trowel arcs and matte mineral grain, smooth continuous pale plaster ground plane at bottom, even diffuse illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 279,
+      "height": 806
+    },
+    "lighting": "one broad soft arched pool of light from above on plaster, otherwise even diffuse high-key",
+    "palette": [
+      "#c9bede",
+      "#2e2440",
+      "#8f7bb5"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 262,
+      "y": 1138,
+      "size": 150,
+      "color": "#2e2440",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 342,
+      "y": 1296,
+      "size": 30,
+      "color": "#2e2440",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 5
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#2e2440",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 499,
+      "y": 1058,
+      "size": 36,
+      "color": "#2e2440",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 216,
+      "y": 1097,
+      "width": 648,
+      "color": "#8f7bb5"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

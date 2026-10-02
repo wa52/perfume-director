@@ -1,0 +1,118 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 76,
+    "background": 72,
+    "physical_integration": 78,
+    "reference_alignment": 68,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The bottle occupies only 35% of canvas height (bbox .GroupLayout73,641-575,1145), leaving the top 44% of the frame as empty brushed steel with no tonal event, prop or typographic anchor; against references 3 and 5, where theHero object or its atmosphere commands the frame, this reads as an under-scaled packshot floating in dead space rather than a campaign image."
+    },
+    {
+      "type": "background",
+      "problem": "The generated steel field carries a strong vertical softbox-style streak (bright column top-center fading down) that fights the declared cool diffuse even illumination and pulls the eye above the product; the mist band at the horizon is the only intentional light event, so the stray vertical glow reads as an uncontrolled studio artifact baked into the backdrop."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop [0,1005,655,1255] confirms the bottle base does meet the steel with a soft shadow at offset_y 0 (no floating), but the shadow is a thin uniform smudge that ignores the diagonal base run and the baked upper-left key: there is no faint reflection or occlusion gradient stretching into the brushed grain, so the glass still reads as a cutout placed on metal rather than glass standing in it."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column is only three sparse items (PRADA / Paradoxe / peach rule) with a large void between the rule at y~907 and the canvas bottom; the subtitle and price slots are empty strings, so the column lacks the layered hierarchy (brand, name, descriptor, detail) that references 3 and 5 use to hold the negative space."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References resolve their scenes with either rich atmosphere (007 petals), reflective ground plane (Cartier, Versace) or controlled gradient; this poster offers a flat brushed texture plus one glow line, so the 'metal climate' concept is stated but not yet built to campaign density."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 340
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 846
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Brushed stainless steel wall with fine horizontal grain sweeping into a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, cool diffuse even illumination from above with no vertical streaks, faint anisotropic sheen following the grain, matte metal texture, empty environment, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 659
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 962
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#F9F4E9"
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1010
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 260
+    }
+  ],
+  "reported_score": 74
+}

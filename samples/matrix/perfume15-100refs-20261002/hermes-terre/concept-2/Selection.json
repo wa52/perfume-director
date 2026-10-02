@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) resolves the 'Salt Flat Dawn Mirror' concept more convincingly: the cracked crust recedes in consistent perspective to a低 hazy horizon with a warm dawn bleed at upper left, and the fine polygonal crack scale reads believable against the flacon's base, so the cutout sits into the plain rather than on a pasted slab. Typography is the cleaner editorial column: 'Hermès' at column head, 'TERRE / D'HERMÈS' across two tall sans lines with even tracking, and the rust rule closing the column clear of the bottle silhouette; horizontal clearance to the packshot is wide and the grid stays honest. The product cutout is faithful (label, silver collar, dark cap intact) and the cool salt matte against the warm amber juice carries the temperature story. Version 1 by comparison uses oversized crust plates whose crack scale fights the bottle, a horizon that cuts awkwardly behind the brand line, and a flatter, greyer sky with less dawn atmosphere, making the packshot read more pasted.",
+  "remaining_problems": [
+    "Contact shadow at the bottle base is still too faint in both versions; the flacon lacks a measured shadow settling into the cracks, weakening physical contact",
+    "Version 2's crust ridges near the foreground read slightly foamy/granular rather than baked mineral crust",
+    "The rust rule in version 2 floats over a crack junction, slightly muddying the survey-stake closure of the type column",
+    "Bottle base sits close to the lower safety bound, leaving little crust breathing room below the foot notch"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

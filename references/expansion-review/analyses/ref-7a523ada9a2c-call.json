@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-1713f704-c02d-9847-8a08-e652af48489b",
+      "usage": {
+        "prompt_tokens": 1524,
+        "total_tokens": 1855,
+        "completion_tokens": 331,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1227,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 331
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-1713f704-c02d-9847-8a08-e652af48489b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1524,
+    "total_tokens": 1855,
+    "completion_tokens": 331,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1227,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 331
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Cartier",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+    "analysis": {
+      "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+      "subject_ratio": 0.65,
+      "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+      "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+      "color": [
+        "deep teal",
+        "amber",
+        "warm orange",
+        "black"
+      ],
+      "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+      "information_density": "Low, focused entirely on the visual concept and product.",
+      "characteristics": [
+        "conceptual",
+        "glowing filaments",
+        "reflection",
+        "industrial luxury",
+        "symmetrical"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.424
+}

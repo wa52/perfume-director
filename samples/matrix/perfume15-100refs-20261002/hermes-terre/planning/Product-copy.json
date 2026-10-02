@@ -1,0 +1,15 @@
+{
+  "title": "TERRE D'HERMÈS",
+  "logo": "Hermès",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label on bottle legibly reads 'TERRE' / 'D'HERMÈS' in red-orange capitals; brand Hermès is confirmed by the brief and by the 'D'HERMÈS' line; no concentration, category, price or promo text is visible on the packshot, so subtitle and price are left empty.",
+  "product_profile": {
+    "material": "Clear glass flacon with polished silver-metal collar and opaque dark brown-black cylindrical cap",
+    "color": "Pale amber-yellow juice inside colorless glass, red-orange lettering, silver collar, near-black cap",
+    "transparency": "Body translucent with lightly tinted liquid; cap and collar opaque; glass edges read near-white",
+    "illumination": "Soft diffuse high-key studio light; gentle vertical highlights along glass shoulders and edges, specular streaks on metal collar, no hard cast shadow",
+    "view": "Straight-on front elevation at bottle mid-height, upright rectangular flacon with flat base and recessed foot notch",
+    "integration_limits": "Opaque cap/collar and bright near-white glass edge zones cannot transmit a new background; pale liquid is only faintly transmissive, so generated backdrops must sit behind the intact cutout silhouette and keep the label unmodified"
+  }
+}

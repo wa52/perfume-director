@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-5cb07377329b.webp",
+      "sha256": "f9ad96387ec645755e589a654699b172c6d23d75b73237bc40cf881fdb5d53f3"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-e362e769-a90e-9129-b640-cddc250cb4c7",
+      "usage": {
+        "prompt_tokens": 1508,
+        "total_tokens": 1831,
+        "completion_tokens": 323,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 323
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-e362e769-a90e-9129-b640-cddc250cb4c7",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1508,
+    "total_tokens": 1831,
+    "completion_tokens": 323,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 323
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "ZARA",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved minimalist perfume still-life with clean geometric composition and soft studio lighting, highly suitable as a design reference.",
+    "analysis": {
+      "composition": "Diagonal arrangement utilizing curved grey paper props to frame the centrally placed bottle against a flat background.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous negative space in the upper left and right, balanced by the structural curves of the props.",
+      "lighting": "Soft, diffused studio lighting creating gentle gradients on the paper and crisp specular highlights on the glass.",
+      "color": [
+        "pale mint green",
+        "cool grey",
+        "clear glass",
+        "white",
+        "black"
+      ],
+      "typography": "None outside the container; text is limited to product labeling printed directly on the glass.",
+      "information_density": "Low",
+      "characteristics": [
+        "geometric props",
+        "soft shadows",
+        "clean lines",
+        "pastel palette",
+        "glass reflections"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 9.65
+}

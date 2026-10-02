@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5c763038-2264-9b27-9df5-f868dce5896d",
+      "usage": {
+        "prompt_tokens": 1579,
+        "total_tokens": 1890,
+        "completion_tokens": 311,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1282,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 311
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5c763038-2264-9b27-9df5-f868dce5896d",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1890,
+    "completion_tokens": 311,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1282,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 311
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Escentric Molecules",
+    "style": "tech",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved digital still-life featuring a clear perfume subject with strong geometric background elements and cohesive amber palette; excellent reference for tech-forward fragrance visuals.",
+    "analysis": {
+      "composition": "Centered rectangular bottle framed by large, soft-focus circular gradients creating depth and focus.",
+      "subject_ratio": 0.65,
+      "negative_space": "Dark, gradient periphery focusing attention on the illuminated center.",
+      "lighting": "Backlit and internal glow emphasizing liquid color and glass transparency against a dark void.",
+      "color": [
+        "amber",
+        "gold",
+        "black",
+        "silver"
+      ],
+      "typography": "None outside the container; label text is part of the product packaging.",
+      "information_density": "Low; purely visual focus on product and abstract atmosphere.",
+      "characteristics": [
+        "geometric abstraction",
+        "binary code motifs",
+        "warm monochromatic scheme",
+        "glass refraction"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 31.12
+}

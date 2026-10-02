@@ -1,0 +1,89 @@
+{
+  "pass": false,
+  "score": 80.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 75,
+    "physical_integration": 86,
+    "reference_alignment": 75,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The plaque hierarchy is still two tiers only: subtitle.text is empty in the executed spec and no 'EAU DE PARFUM' line renders anywhere in image 1, so the band between the hairline rule at y=424 and the arc/bottle zone is dead space and the brief's third 'sub-line垫底' tier (R1 plaque model) is absent. The previous subtitle patch never executed (the repaired change list contains only logo/decoration/background ops), so it must be re-issued."
+    },
+    {
+      "type": "background",
+      "problem": "The constellation device still mis-registers against the flacon: the mid-left polyline (ticks near (253,997)-(305,1105)-(218,1237)) terminates INTO the bottle's left glass arm at ~(330,1010) and vanishes behind the translucent edge, and the lower-right polyline's end tick at ~(676,1262) sits on the glass foot rather than in open field. None of the five ticks aligns with a star point of the bottle, so the 'cartographer fixing coordinates on the star' concept reads as scattered marks colliding with the cutout instead of a measured chart."
+    },
+    {
+      "type": "composition",
+      "problem": "The meridian arc now clears the title (crest ~y=490 vs title bbox bottom 317, a real improvement over the previous version), but it exits the canvas at both side edges (left ~y=720, right ~y=730), turning the intended quiet scale line into a cropped dome that slices the field into two zones; the brief's meridian should read as a contained刻度 arc within the middle band."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against R1-R3 the plaque lacks a closing tier and the field lacks a resolved device-to-object relationship: references resolve either full typographic stacks (007) or precise object-line interactions (Hermès branch shadow); here the engraved lines interact accidentally (clipping into glass) and the nameplate stops after two lines, keeping the draft below professional resolution."
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 353
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 366
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "subtitle.max_width",
+      "op": "set",
+      "value": 373
+    },
+    {
+      "path": "subtitle.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#241f38"
+    },
+    {
+      "path": "subtitle.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 430
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in pale ice lilac, perfectly even shadowless frontal illumination; fine engraved constellation lines in deep violet with exactly five small cross ticks placed only in open field at safe distance from the centre silhouette, connected by hairline segments that stop short of the centre and never touch or pass behind it; one thin hard-edge silver-blue meridian arc fully contained inside the field, its crest in the middle band and both ends fading out before reaching the side edges; no texture gradients beyond engraved lines, no objects, no horizon"
+    }
+  ],
+  "reported_score": 80.0
+}

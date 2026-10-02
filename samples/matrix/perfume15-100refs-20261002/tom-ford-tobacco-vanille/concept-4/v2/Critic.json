@@ -1,0 +1,55 @@
+{
+  "pass": false,
+  "score": 82.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 82,
+    "physical_integration": 88,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The left ledger column still drifts: geometry gives logo block y504-523, title y585-721, subtitle y810-827, rule y862, i.e. a 62px logo-to-title gap against a 89px title-to-subtitle gap and only 35px subtitle-to-rule. The eye reads two loose clusters instead of one locked entry, and the 90px of dead olive under the rule inside the middle block leaves the column visually unfinished next to the references' confident type blocks."
+    },
+    {
+      "type": "composition",
+      "problem": "The middle block (seams measured at approx y480 and y975) carries logo, title, subtitle and rule, but the block's lower third (y870-975) is empty while the top block (0-480, 33% of canvas) is completely inert. The promised 'middle block carries the whole weight' is only half achieved: mass still pools low-right and the pale top band reads as unused canvas rather than deliberate ledger headroom."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 each commit to one bold device executed at full strength (petal burst, oversized graphic circles, saturated tonal field with reflection). Here the stacked-block device now reads clearly, but the blocks are matte-flat with zero interaction: no tonal echo of the gold label, no seam accent, no scale play. The poster is a competent graphic layout, not yet a campaign image with a memorable device."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 762
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 812
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Three wide horizontal matte painted plywood panels stacked edge to edge with clearly shifted olive tones: pale sage olive top block, deep olive middle block, mid olive bottom block, crisp hard seams between blocks; inside the deep middle block one very subtle oversized flat circle of slightly lighter olive, centered right, diameter almost the canvas width, printed matte like the panel paint; perfectly even shadowless flat illumination, no texture gradients, no objects, no horizon"
+    }
+  ],
+  "reported_score": 81
+}

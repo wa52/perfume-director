@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 230243689466955,
+  "background": {
+    "color": "#1e3a6e",
+    "prompt": "Seamless flat silkscreen-printed matte card in deep gentian blue, one oversized hard-edge flat scalloped eight-lobed corolla shape in pale mint centred slightly above middle, perfectly even shadowless illumination, no texture gradients, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 540,
+    "y": 634,
+    "width": 367,
+    "height": 864
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#1e3a6e",
+    "#eaf4ee",
+    "#e2554a"
+  ],
+  "title": {
+    "text": "Flora Gorgeous Jasmine",
+    "x": 126,
+    "y": 1217,
+    "size": 64,
+    "color": "#eaf4ee",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 486,
+    "y": 1303,
+    "size": 20,
+    "color": "#eaf4ee",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#eaf4ee",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "GUCCI",
+    "x": 481,
+    "y": 1130,
+    "size": 26,
+    "color": "#eaf4ee",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 497,
+    "y": 1097,
+    "width": 86,
+    "color": "#e2554a"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

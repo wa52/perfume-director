@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Hand-folded pleated paper fan in warm saffron yellow, sharp radiating creases spreading outward from a point at mid-canvas height behind the center, alternating soft stripe shades of light and shadow across the folds, matte paper texture, flat graphic illumination, calm even tone in the upper third, no objects, no horizon, no text, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [36, 32, 64, 92] uncluttered; reserve quiet negative space for ink in these areas: [[39, 14, 57, 17], [38, 22, 62, 24], [46, 8, 53, 9]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 254490615816578,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

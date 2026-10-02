@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081375839,
+    "background": {
+      "color": "#b9c2cc",
+      "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame, matte metal grain with one broad calm sheen band low on the wall, cool diffuse twilight illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 502,
+      "height": 749
+    },
+    "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#b9c2cc",
+      "#101820",
+      "#5f7fa6"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 76,
+      "y": 576,
+      "size": 100,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 320,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 770,
+      "size": 18,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 76,
+      "y": 490,
+      "size": 34,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 720,
+      "width": 130,
+      "color": "#5f7fa6"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081375839,
+    "background": {
+      "color": "#b9c2cc",
+      "prompt": "Anodized aluminium wall in cool steel blue-grey with fine circular brush grain, meeting a continuous honed aluminium ground at a horizontal horizon six tenths down the frame, matte metal grain with one broad calm sheen band low on the wall, cool diffuse twilight illumination, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 502,
+      "height": 749
+    },
+    "lighting": "cool diffuse twilight ambient, soft frontal with gentle metal sheen, no hard shadows, matching the baked studio light",
+    "palette": [
+      "#b9c2cc",
+      "#101820",
+      "#5f7fa6"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 76,
+      "y": 576,
+      "size": 100,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 320,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 770,
+      "size": 18,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 76,
+      "y": 490,
+      "size": 34,
+      "color": "#101820",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 720,
+      "width": 130,
+      "color": "#5f7fa6"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-78013406-e62b-9836-9524-4a622b0ccf1d",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 812,
+        "completion_tokens": 309,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 309
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-78013406-e62b-9836-9524-4a622b0ccf1d",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 812,
+    "completion_tokens": 309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 309
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Jo Malone",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved flat-lay still life featuring perfume and candle with elegant stationery props and integrated handwritten campaign copy.",
+    "analysis": {
+      "composition": "Geometric flat-lay arrangement utilizing overlapping rectangular envelopes and cards to frame the products diagonally.",
+      "subject_ratio": 0.35,
+      "negative_space": "Structured by layered cream and black paper elements, creating distinct zones.",
+      "lighting": "Soft, diffused top-down studio lighting with gentle, natural drop shadows.",
+      "color": [
+        "cream",
+        "black",
+        "silver",
+        "clear"
+      ],
+      "typography": "Handwritten script campaign copy ('Will you be my valentine?') placed directly on a prop envelope.",
+      "information_density": "low",
+      "characteristics": [
+        "flat-lay",
+        "valentine theme",
+        "ribbon detail",
+        "duo product display",
+        "handwritten note"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 8.834
+}

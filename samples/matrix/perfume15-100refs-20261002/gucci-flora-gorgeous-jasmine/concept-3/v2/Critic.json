@@ -1,0 +1,109 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 80,
+    "typography": 76,
+    "background": 72,
+    "physical_integration": 84,
+    "reference_alignment": 76,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "decoration",
+      "problem": "The teal ledger rule that closes the editorial column still fails to render: at the declared position (420,576) only a ~6px teal dash is visible in both the current poster and the previous version, so the concept's 'vertical rule closing the column like a ledger margin' is absent and the left column has no closing edge. The device must be repositioned/re-sized so it renders as a legible vertical stroke."
+    },
+    {
+      "type": "background",
+      "problem": "The ground still contradicts 'one continuous honed sandstone floor, joints barely visible': the render shows large format tiles with clearly visible grout joints in perspective across the whole foreground, plus a segmented joint band running across the wall/floor junction at y≈1035-1065 that reads as a low tiled skirting course. The改善 over the previous curb is real (the bottle base y=1239 now sits clearly in front of and below that band, on the open floor plane), but the joint grid is busier than the declared honed seamless stone and competes with the matte mineral calm the concept asks for."
+    },
+    {
+      "type": "typography",
+      "problem": "The left column head is still under-resolved versus the references' editorial blocks: GUCCI at 30px sits ~76px above the 84px title with an optically dead gap, and the title's three wrapped lines end at y≈837 leaving the lower half of the column empty; the column therefore floats in the upper-left quadrant with no closing element (the rule is missing) and no bottom anchor, reading sparse next to the dense caption tiers of references 3-5."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop (466,1099-1003,1349) confirms the bottle is correctly seated: soft occlusion hugs the full base footprint at offset_y=0 with no floating and no double shadow. However the occlusion is a narrow, fairly uniform grey line that extends slightly past the base corners as thin whiskers, while the scene's bright diffuse daylight on matte stone would produce a softer, broader halo that dissolves into the stone grain; at poster scale the footprint still reads marginally applied rather than absorbed."
+    }
+  ],
+  "changes": [
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 452
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "title.line_height",
+      "op": "set",
+      "value": 1.14
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "Eau de Parfum floralissime — jasmine, lily and wild blossom on warm stone"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 76
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.max_width",
+      "op": "set",
+      "value": 330
+    },
+    {
+      "path": "subtitle.line_height",
+      "op": "set",
+      "value": 1.35
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.38
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Warm apricot lime-washed stucco wall meeting one continuous honed pale sandstone ground with no step, no curb, no skirting and no tile joints, a single seamless matte stone plane, faint mineral grain only, low horizontal horizon behind the standing plane, a single very soft wide daylight gradient drifting across the upper wall, bright diffuse warm daylight, empty scene, no objects"
+    }
+  ],
+  "reported_score": 79.4
+}

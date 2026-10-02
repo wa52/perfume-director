@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-62ff901b9d4a.webp",
+      "sha256": "d1d9ce1dc6e14beacf166a7b3d41de5a0e864963fe777688bf8cc3d2d9f95572"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-85291cf4-eeee-94da-9915-6531deafa5aa",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 804,
+        "completion_tokens": 301,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 301
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-85291cf4-eeee-94da-9915-6531deafa5aa",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 804,
+    "completion_tokens": 301,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 301
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Parle Moi de Parfum",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with strong atmospheric lighting and clear brand identity, suitable as a design reference.",
+    "analysis": {
+      "composition": "Two staggered cylindrical bottles on a flat surface, framed by dappled shadows.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous top and bottom areas filled with textured light and shadow.",
+      "lighting": "Hard, directional sunlight creating sharp cast shadows and a dappled foliage effect.",
+      "color": [
+        "pale green",
+        "olive green",
+        "black",
+        "clear glass"
+      ],
+      "typography": "None outside the container; text is limited to product labels.",
+      "information_density": "Low",
+      "characteristics": [
+        "dappled shadows",
+        "monochromatic green palette",
+        "minimalist glass bottles",
+        "natural light simulation"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 9.266
+}

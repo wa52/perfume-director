@@ -1,0 +1,147 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "77e382832a63fd25c132cc3aa21ed3ea37c872a75c2914f34fc90ab5c6101610"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "323acf9dcfb3ccd8efa0d95c69b5f4691d8e0f4a2c6791d8e7d12c115e524022"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-31bde9c8-b99c-91c9-b334-0fb787ff4f69",
+      "usage": {
+        "prompt_tokens": 8442,
+        "total_tokens": 10261,
+        "completion_tokens": 1819,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5679,
+          "text_tokens": 2763
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 794
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-31bde9c8-b99c-91c9-b334-0fb787ff4f69",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8442,
+    "total_tokens": 10261,
+    "completion_tokens": 1819,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5679,
+      "text_tokens": 2763
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 794
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 76,
+      "typography": 74,
+      "background": 72,
+      "physical_integration": 86,
+      "reference_alignment": 72,
+      "creative_coherence": 76
+    },
+    "problems": [
+      {
+        "type": "composition",
+        "problem": "The sienna disc's arc dies exactly into the bottle's left silhouette edge (disc right edge x=680 vs bottle left edge x=339..741), so instead of reading as a sun passing behind the flacon it reads as a半 tab welded to the bottle's left flank; the lower-right quadrant of the canvas is dead empty ochre, unbalancing the off-centre disc against the centred bottle."
+      },
+      {
+        "type": "composition",
+        "problem": "Vertical rhythm is top-heavy with a void in the middle: subtitle baseline band ends at y=364, the registration rule sits at y=392, then only ~26px of air before the cap hits y=418, while an ~83px gap sits between title (bottom 267) and subtitle (top 350); the monument band feels squeezed against the product and loose internally."
+      },
+      {
+        "type": "background",
+        "problem": "The declared 'faint fine dry-brush grain' is not visibly present; the field renders as a flat digital fill, so the matte gouache paper material claim of the concept is unsupported in the final image and the backdrop reads as a plain color wall rather than a painted paper surface."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy steps are uneven: logo (26px, tracking 6) to title (64px) jumps strongly, but title to subtitle (22px) is separated by excessive white space relative to the subtitle-to-rule-to-cap spacing, so the three-line band does not lock into one monument block; the rule at y=392 nearly collides with the cap top at y=418."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": [
+          {
+            "kind": "ellipse",
+            "x": 150,
+            "y": 640,
+            "width": 640,
+            "height": 640,
+            "color": "#A44728",
+            "opacity": 1
+          }
+        ]
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless saturated marigold ochre matte gouache paper with visible fine dry-brush grain and subtle pigment mottling, uniform diffuse frontal illumination, uninterrupted flat painted color field, empty environment"
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 322
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 366
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 4
+      }
+    ]
+  },
+  "duration_seconds": 48.474
+}

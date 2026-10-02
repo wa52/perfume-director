@@ -1,0 +1,59 @@
+{
+  "pass": false,
+  "score": 82.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 82,
+    "background": 76,
+    "physical_integration": 88,
+    "reference_alignment": 74,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The fine concentric sonar rings read as a moiré-like mechanical texture rather than crisp chart linework: at poster scale the hairline rings alias into soft bands (visible across the whole mint field and inside the contact crop), and the outer fine rings clip the left and right canvas edges unevenly, so the radial geometry looks accidental at the margins instead of deliberately cropped. The field also sits at a single flat value, giving the type band no tonal separation beyond ink contrast."
+    },
+    {
+      "type": "composition",
+      "problem": "The thick hard-edge echo ring is concentric with the frame centre, not with the bottle as ping source: its visible arc crowns the cap around y≈370-470 while the bottle's vertical mass centre sits near y≈890, so the 'return echo' reads as a halo behind the cap rather than an emission from the slab; the ping metaphor is stated but not geometrically true."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the monument band is competent but loose: the gap between the subtitle baseline (y≈279) and the teal chart tick (y≈328) is nearly double the gap between title bottom (y≈218) and subtitle top (y≈259), so the tick floats detached from the stack instead of closing it; the tick is also narrower than needed to act as a decisive chart mark at this scale."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The concept promises 'one ping' but the field delivers undifferentiated rings: there is no tonal or weight accent tying the bottle base to the ring system (no ring terminates at or emanates from the contact point), so product and chart coexist rather than interact; references 3-5 each bind object and backdrop through shadow, caustics or reflection, which this draft only partially achieves via the centered halo."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte chart paper in pale glacier mint, crisp fine concentric sonar rings in deep marine teal expanding from the exact center of the frame with clean even spacing and no moire banding, rings fading out before reaching the canvas edges, one thicker hard-edge ring at mid radius, perfectly even shadowless illumination, no texture gradients, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 312
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 168
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "reported_score": 80
+}

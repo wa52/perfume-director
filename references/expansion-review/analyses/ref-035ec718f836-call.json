@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-035ec718f836.webp",
+      "sha256": "a82b5c8d55a86f4a1e824e4d28bef4e5953ecec6991d14ad38ab413962c24764"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-89830891-e189-986b-a614-133bb11d9e98",
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1713,
+        "completion_tokens": 374,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1042,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 374
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-89830891-e189-986b-a614-133bb11d9e98",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1713,
+    "completion_tokens": 374,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1042,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 374
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Unknown",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved multi-brand perfume still life featuring a creative papercraft London skyline set; high design value for composition and prop styling reference.",
+    "analysis": {
+      "composition": "Horizontal linear arrangement of five distinct fragrance bottles in the foreground, backed by a layered, white papercraft diorama of London landmarks (Big Ben, London Eye, St Paul's, The Shard, The Gherkin) with paper clouds above and miniature paper cars below.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space in the upper grey background surrounding the paper clouds and skyline peaks.",
+      "lighting": "Soft, diffused studio lighting creating gentle shadows that emphasize the depth of the paper cutouts and the glass reflections on the bottles.",
+      "color": [
+        "grey",
+        "white",
+        "gold",
+        "amber",
+        "pale blue",
+        "black"
+      ],
+      "typography": "None outside of container labels.",
+      "information_density": "Medium-high due to multiple detailed subjects and intricate background props.",
+      "characteristics": [
+        "papercraft diorama",
+        "multi-brand lineup",
+        "London landmarks",
+        "whimsical set design",
+        "soft studio lighting"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 12.561
+}

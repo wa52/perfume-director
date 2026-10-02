@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\d05dc9f0089e\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Chrome Vapor Meridian",
+    "brief": "把黑漆盖的镜面碎光放大成整座金属气候：拉丝不锈钢墙面垂落并折成连续同料地面，horizon 精确压在真实基准线；一道柔和水平雾光带横贯墙地交界，像蒸汽擦过钢面。商品缩小立于钢地偏左，测量接触阴影陷进细拉丝纹；右半钢面保持安静冷灰，承载一条真正的右栏排印：宽距 Arial 品牌字居柱顶，Century Gothic 几何大写题名以单行大字收左缘起排，与瓶盖区垂直重叠却水平宽距分离，一条钢灰细线横垫柱中如蒸汽刻度。冷钢的哑光丝纹与桃色液体的暖透互为温度悖论。",
+    "material": "brushed stainless steel wall sweeping into continuous matching brushed steel ground with one soft mist band",
+    "lighting": "cool diffuse studio light with one soft horizontal mist glow at the horizon, gentle frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#aeb6bd",
+      "#14181c",
+      "#e8b48e"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238489258,
+    "background": {
+      "color": "#aeb6bd",
+      "prompt": "Brushed stainless steel wall with fine horizontal grain meeting a continuous matching brushed steel ground at a horizontal horizon six tenths down the frame, one soft pale horizontal mist glow band lying along the horizon, cool diffuse even illumination, matte metal grain, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 324,
+      "y": 893,
+      "width": 504,
+      "height": 504
+    },
+    "lighting": "cool diffuse studio light with one soft horizontal mist glow at the horizon, gentle frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#aeb6bd",
+      "#14181c",
+      "#e8b48e"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 659,
+      "y": 792,
+      "size": 72,
+      "color": "#14181c",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 0,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 659,
+      "y": 958,
+      "size": 18,
+      "color": "#14181c",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#14181c",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 659,
+      "y": 684,
+      "size": 26,
+      "color": "#14181c",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 659,
+      "y": 907,
+      "width": 216,
+      "color": "#e8b48e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

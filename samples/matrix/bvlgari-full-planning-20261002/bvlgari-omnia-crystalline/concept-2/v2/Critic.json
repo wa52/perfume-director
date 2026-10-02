@@ -1,0 +1,98 @@
+{
+  "pass": false,
+  "score": 82.9,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 78,
+    "background": 82,
+    "physical_integration": 88,
+    "reference_alignment": 78,
+    "creative_coherence": 81
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Title ink block bbox [97,144,897,240] centres at x=497 while the canvas centre and the BVLGARI logo centre sit at ~538-540; in image 1 the Didone line visibly hangs left (left margin ~97px vs right ~183px), so the plaque axis of the brief's铭牌区 is skewed against the perfectly centred logo and disc."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The brief's ink registration rule ('一条墨黄细线横垫其下如制版套准线') is absent: decoration.enabled=false removed it entirely instead of recoloring it, so the title plaque floats without its plate line and one declared concept element is lost from the render."
+    },
+    {
+      "type": "composition",
+      "problem": "The ivory eclipse disc (shapes ellipse y=360 h=620, lower edge ~980) stops ~316px above the bottle base (1296); in image 1 a wide saffron gap separates disc bottom from the contact line, so the silhouette does not 'complete the interrupted circle' as the brief demands and the lower third reads as empty field."
+    },
+    {
+      "type": "background",
+      "problem": "Contact crop 6 confirms a correct, well-seated contact shadow (offset_y 0), but its soft photographic falloff is the only gradient in an otherwise shadowless gouache card; at blur 8 with width_scale 0.95 the halo still feathers a few pixels past the 283px footprint on the left, reading as a faint smudge on the flat matte surface."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 140
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": true
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#241a08"
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 340
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 268
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 400
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 330,
+          "width": 670,
+          "height": 670,
+          "color": "#241a08",
+          "opacity": 0.18
+        },
+        {
+          "kind": "ellipse",
+          "x": 265,
+          "y": 390,
+          "width": 620,
+          "height": 620,
+          "color": "#f0e8d8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 0.9
+    }
+  ],
+  "reported_score": 81.4
+}

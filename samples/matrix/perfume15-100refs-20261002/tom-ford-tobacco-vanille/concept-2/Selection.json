@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) fulfills the courtyard concept more completely: the flacon stands forward of the wall on the limestone ground with a soft measured contact shadow under its base, so physical contact reads convincingly, whereas version 1 (image 5) parks the bottle exactly on the wall/floor junction line with no anchoring shadow, leaving it pasted against the seam. Version 2 also delivers the brief's raking light as a clean diagonal shade edge across the upper wall, while version 1 substitutes an odd blue architectural protrusion at the upper left that reads as a set artifact rather than sunlight. Typography in both is a coherent narrow-sans column (brand head, two-line wrapped name, eau de parfum line, closing rule), but version 2's column sits in calmer wall space with better vertical rhythm against the shoulder line, and its honed pale limestone ground is quieter and more controlled than version 1's busy veined marble tiles, which compete with the label. Product fidelity (opaque espresso lacquer, champagne-gold label, baked speculars) is intact in both; version 2's frontal soft light matches the packshot better and the matte mineral wall against lacquer gloss tells the concept's story without studio equipment or floating-packshot defects.",
+  "remaining_problems": [
+    "The diagonal shadow edge on the wall is soft and gradient-like rather than the crisp hard sunline the brief specifies.",
+    "Contact shadow is a diffuse smudge under the base; a sharper, directionally consistent cast shadow matching the implied late sun would anchor the flacon more firmly.",
+    "Floor tile perspective is slightly flat and frontal relative to the wall plane, weakening the courtyard depth cue.",
+    "Wide horizontal clearance between the flacon shoulder and the type column is preserved, but the column head ('TOM FORD') floats a touch high relative to the cap line, loosening the two-column grid alignment."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

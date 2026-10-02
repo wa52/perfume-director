@@ -1,0 +1,94 @@
+{
+  "pass": false,
+  "score": 82.4,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 82,
+    "typography": 76,
+    "background": 80,
+    "physical_integration": 84,
+    "reference_alignment": 78,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The declared subtitle 'Eau de Parfum' and the price line are not visible anywhere on the poster: the upper-left monument stops at logo + title + a lone 120px gold rule at y≈340, leaving hierarchy at two levels and a dead felt band from the rule (y≈346) to the cap top (y≈554). References 3-5 all carry a secondary text tier; here the rule floats with no text partner below it."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [416,1206,924,1440] confirms a real absorbed occlusion pool under the red toe (contact is genuine, not floating), but at the gold stiletto heel tip (global y≈1323, matching the original's two-point stance) there is still no local darkening: the tip meets亮 felt with zero occlusion, so the second support point reads a few pixels light against the strengthened toe shadow."
+    },
+    {
+      "type": "background",
+      "problem": "The swept cyclorama is now seamless (the old hard wall/floor line is gone) and the pool enters从 upper-left as declared, but the_pool's brightest felt sits in the empty mid-left band (y≈900-1150) while the hero stands in comparatively dimmer felt at lower-right; the light accent and the subject still pull in opposite diagonal corners, unlike references 4-5 where the pool crowns the product."
+    },
+    {
+      "type": "composition",
+      "problem": "With subtitle and price missing, the entire ink load occupies y=108-346 and the product y=554-1346, leaving the mid-band and the whole lower-left quadrant as unmodulated felt; the asymmetric grid is intentional, but the empty lower-left needs either the price tier or a tonal event to balance the lower-right mass, as the reference grids do with props or shadow play."
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "Eau de Parfum"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 86
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "price.text",
+      "op": "set",
+      "value": "EUR 98"
+    },
+    {
+      "path": "price.x",
+      "op": "set",
+      "value": 86
+    },
+    {
+      "path": "price.y",
+      "op": "set",
+      "value": 1296
+    },
+    {
+      "path": "price.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.58
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.3
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep verdigris green wool felt cyclorama curving continuously from back wall into ground with no seam and no horizon line, fine felt fibre grain, one soft elliptical pool of lighter light entering from upper front-left, stretching diagonally across the ground and brightening the felt beneath and behind the lower-right subject zone, gentle diffuse ambient falloff toward the corners, no objects"
+    }
+  ],
+  "reported_score": 81.6
+}

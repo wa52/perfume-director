@@ -1,0 +1,109 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 76,
+    "background": 74,
+    "physical_integration": 84,
+    "reference_alignment": 74,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The declared plaque hierarchy (brand line light, title heavy, subtitle垫底) is only two-thirds executed: the subtitle string is empty, so the nameplate band ends abruptly at the 1px hairline at y=353 and the 'sub-line垫底' tier of the R1-derived hierarchy is missing, leaving dead space between the rule and the arc/bottle zone."
+    },
+    {
+      "type": "typography",
+      "problem": "The 'Mugler' brand line and the 'Angel' title are both set in Baskerville; the brief specifies a wide-tracked sans (Arial) brand line at minimum size topping the plaque. Two serif tiers flatten the plaque hierarchy and read as one undifferentiated stack."
+    },
+    {
+      "type": "background",
+      "problem": "The engraved constellation device is under-delivered versus the concept: only four cross ticks are visible (upper-right, mid-upper-left, mid-left, lower-left) instead of the declared five, none of them registers precisely on a star point of the flacon, and the left-side tick polyline runs into the bottle's left arm and disappears behind the glass, so the 'cartographer fixing coordinates' idea reads as scattered marks rather than a measured chart."
+    },
+    {
+      "type": "composition",
+      "problem": "The silver-blue meridian arc crests at roughly y=215-230 directly inside the title band (title bbox y 187-317), threading between the glyphs of 'Angel'; the concept places the meridian as a quiet scale line under the plaque, and the arc grazing the wordmark visually competes with the heaviest typographic element."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    {
+      "path": "logo.font",
+      "op": "set",
+      "value": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 353
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 372
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "subtitle.max_width",
+      "op": "set",
+      "value": 373
+    },
+    {
+      "path": "subtitle.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#241f38"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 424
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 373
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in pale ice lilac, perfectly even shadowless frontal illumination; fine engraved constellation lines in deep violet with exactly five small cross ticks placed only in open field, kept clear of the centre and clear of the upper quarter of the field, connected by hairline segments that never cross the centre; one thin hard-edge silver-blue meridian arc whose crest stays in the middle band of the field, never entering the upper quarter; no texture gradients beyond engraved lines, no objects, no horizon"
+    }
+  ],
+  "reported_score": 78
+}

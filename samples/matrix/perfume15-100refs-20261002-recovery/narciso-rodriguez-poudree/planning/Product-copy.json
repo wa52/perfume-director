@@ -1,0 +1,15 @@
+{
+  "title": "Narciso Poudrée",
+  "logo": "NARCISO",
+  "subtitle": "Eau de Parfum",
+  "price": "",
+  "evidence": "Label line visible on the bottle reads only 'NARCISO' in black capitals; 'Poudrée' and the brand Narciso Rodriguez are supplied by the user brief, not legible on this packshot; 'Eau de Parfum' is a category convention and not printed visibly, price absent per brief.",
+  "product_profile": {
+    "material": "Clear thick-walled glass cube enclosing an opaque cream lacquered inner vessel; matte cream rectangular cap",
+    "color": "Powder beige / nude cream inner block and cap, colorless glass edges",
+    "transparency": "Transparent only at glass rim and base; large central inner block is fully opaque and cannot transmit background",
+    "illumination": "Soft diffuse frontal-top studio light, gentle highlights on cap top and glass shoulders, no hard shadows",
+    "view": "Straight-on frontal elevation, slight eye-level camera, bottle upright on implied flat base",
+    "integration_limits": "Opaque beige core blocks any transmitted background; keep background bright and neutral behind clear glass edges; preserve soft even lighting, avoid rim-only dark setups"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 delivers the cleaner finished campaign: the ink-blue hall meets the lacquered parquet at a low horizon with a single warm pool of light on the ground, the鞋 flacon keeps its vermilion lacquer, black faceted cap and gold stiletto heel with the baked-in upper-front-left specular streak intact, and the left column reads brand-head, two tall wrapped sans lines ('Very / Good Girl'), pale rule — exactly the declared two-column monument. Version 1 is undermined by stray ghost numerals (8, 20, 28, 40, 82, 84…) scattered across the wall like registration artifacts, and its title wraps to three lines, breaking the specified two-line monument; itsRule sits tighter but the背景 noise disqualifies it as a finished poster.",
+  "remaining_problems": [
+    "In version 2 the pale closing rule floats far below the name block, leaving a dead gap in the left column instead of closing it directly under the title",
+    "Contact shadow reads as a thin dark line under the toe; the heel tip's contact with the parquet is implied more than measured, slightly softening the physical grounding",
+    "The light pool sits partly in front of the base line on the parquet rather than fully breathing behind the subject's true base line as briefed",
+    "Parquet grain in the foreground is busier than the 'continuous dark lacquered parquet' described, pulling a little attention from the silhouette"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

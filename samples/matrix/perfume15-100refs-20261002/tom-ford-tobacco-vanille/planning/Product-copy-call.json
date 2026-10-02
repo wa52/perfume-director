@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5a1040bf-b134-9aff-b88a-dc916ad03eef",
+      "usage": {
+        "prompt_tokens": 1571,
+        "total_tokens": 2751,
+        "completion_tokens": 1180,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 864,
+          "text_tokens": 315
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5a1040bf-b134-9aff-b88a-dc916ad03eef",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1571,
+    "total_tokens": 2751,
+    "completion_tokens": 1180,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 360
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 864,
+      "text_tokens": 315
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "TOBACCO VANILLE",
+    "logo": "TOM FORD",
+    "subtitle": "EAU DE PARFUM",
+    "price": "",
+    "evidence": "Visible label lines: 'TOM FORD', 'TOBACCO VANILLE', 'EAU DE PARFUM', '50 ML'; title copied from the product-name line, logo from the brand line, subtitle from the concentration line; price empty because the user supplied none and brief forbids it.",
+    "product_profile": {
+      "material": "glossy lacquered opaque glass flacon with stepped shoulder and wide flat cap; satin metallic gold paper label",
+      "color": "deep espresso brown-black body and cap; warm champagne-gold label with dark brown typography",
+      "transparency": "fully opaque; no translucent or light-transmitting regions in body, cap or label",
+      "illumination": "soft diffused frontal-top studio light; narrow vertical specular highlights along cap and body edges, broad soft sheen on cap top and shoulder, label evenly lit with slight brightness gradient toward top",
+      "view": "straight-on frontal elevation at label height, symmetric axis-aligned composition, flat base resting flush",
+      "integration_limits": "opaque body and bright gold label cannot transmit a newly generated background; baked-in edge speculars must be preserved; packshot is a shadowless cutout, so any composite background must supply its own contact shadow and match frontal soft lighting"
+    }
+  },
+  "duration_seconds": 22.367
+}

@@ -1,0 +1,115 @@
+{
+  "brief": "为 Mugler Angel 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把星形瓶读作一张星图的原点：平涂冰紫卡纸上，细密刻线 constellation 从画面中心放射，五枚十字星 tick 精确对齐星瓶的五个尖角，像制图师为这颗星标定坐标；商品居中沉于下幅，刻线从其肩后穿过却不触碰标签。顶带留出安静铭牌区：宽距 Arial 品牌字最小置顶，Baskerville 题名以近半幅宽的大字居中统领，一条银蓝细线横于铭带之下如子午刻度。无地面无 horizon，纯刻线放射几何对抗半透玻璃的柔渐液体。参考 R1 的铭牌层级：品牌行轻、题名重、副行垫底。",
+  "product": "assets\\products\\mugler-angel-retailer.png",
+  "references": [
+    {
+      "id": "ref-d2db4b80bde2",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-d2db4b80bde2.jpg",
+      "selection_reason": "Professionally resolved perfume advertisement featuring dynamic floral elements, clear campaign typography, and high-end product rendering suitable for design reference.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the product and floral explosion on the left counterweighted by negative space and typography on the right.",
+        "subject_ratio": 0.35,
+        "negative_space": "Significant dark gradient space on the right utilized for text placement.",
+        "lighting": "Dramatic studio lighting with high contrast, highlighting the faceted glass and metallic cap against a dark background.",
+        "color": [
+          "rose pink",
+          "deep burgundy",
+          "black",
+          "metallic copper",
+          "white"
+        ],
+        "typography": "Clean white sans-serif logo and serif tagline positioned in the right negative space; URL at the bottom.",
+        "information_density": "Moderate; focuses on brand identity and a single tagline without clutter.",
+        "characteristics": [
+          "exploding rose petals",
+          "faceted glass bottle",
+          "metallic accents",
+          "dark moody atmosphere",
+          "reflection"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-f72a7e1dd1ad",
+      "brand": "BYREDO",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.joshcaudwell.com/",
+      "image": "references/minimal/ref-f72a7e1dd1ad.webp",
+      "selection_reason": "High-quality dynamic product shot capturing the spray mechanism in action against a clean gradient background. Excellent reference for minimalist perfume photography and liquid texture rendering.",
+      "analysis": {
+        "composition": "Diagonal orientation of the bottle creates dynamic movement, balanced by the spray plume extending into the upper left negative space.",
+        "subject_ratio": 0.55,
+        "negative_space": "Generous gradient grey space surrounds the subject, emphasizing the fine mist particles.",
+        "lighting": "Crisp studio lighting with high specular highlights on the glass and metal atomizer; soft drop shadow anchors the floating object.",
+        "color": [
+          "silver",
+          "white",
+          "grey",
+          "pale yellow"
+        ],
+        "typography": "None outside the container label.",
+        "information_density": "Low; focus is entirely on the product form and function.",
+        "characteristics": [
+          "dynamic spray",
+          "floating object",
+          "monochromatic palette",
+          "glass refraction",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

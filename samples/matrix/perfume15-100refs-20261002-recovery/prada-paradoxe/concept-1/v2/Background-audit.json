@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one large hard-edge flat solid triangle in deep ink olive with its base seated exactly on the bottom edge and centred, apex rising to mid-canvas so its sloped edges frame the lower silhouette, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges that never touch the solid shape, perfectly even shadowless illumination, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the lower central area uncluttered; reserve quiet negative space in the upper left area, upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 229101238488250,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

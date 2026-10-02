@@ -1,0 +1,87 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-513a9893-c878-9e3e-8e10-020178ad7a57",
+      "usage": {
+        "prompt_tokens": 527,
+        "total_tokens": 844,
+        "completion_tokens": 317,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 230,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 317
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-513a9893-c878-9e3e-8e10-020178ad7a57",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 527,
+    "total_tokens": 844,
+    "completion_tokens": 317,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 230,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 317
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Versace",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with high-end lighting and material detail, suitable as a design reference for luxury fragrance campaigns.",
+    "analysis": {
+      "composition": "Centered single-subject composition on a reflective surface against a gradient backdrop.",
+      "subject_ratio": 0.45,
+      "negative_space": "Ample negative space above and around the bottle, filled with a smooth golden gradient.",
+      "lighting": "Soft, diffused studio lighting creating specular highlights on the glass edges and metallic cap, with a clear reflection below.",
+      "color": [
+        "emerald green",
+        "gold",
+        "teal blue"
+      ],
+      "typography": "None. Text is limited to the brand label printed directly on the glass container.",
+      "information_density": "Low, focusing entirely on the product form and material.",
+      "characteristics": [
+        "textured glass",
+        "metallic accents",
+        "reflection",
+        "gradient background",
+        "product focus"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.153
+}

@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-325245f3f479.webp",
+      "sha256": "57b951ad6c2e90dc88f10f4b773da88d4d13377dcf2f5ac807e769a9efc4720f"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-90761805-ad58-9922-98a5-7a7e8b264c3c",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1915,
+        "completion_tokens": 376,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 376
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-90761805-ad58-9922-98a5-7a7e8b264c3c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1915,
+    "completion_tokens": 376,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 376
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Hugo Boss",
+    "style": "luxury",
+    "style_secondary": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life featuring a structured architectural composition with high production value. Useful reference for masculine fragrance staging and material contrast.",
+    "analysis": {
+      "composition": "Three bottles arranged on staggered, varying-height concrete pillars against a sky background, creating a dynamic vertical rhythm and sense of elevation.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space in the upper sky area, balancing the heavy visual weight of the concrete structures below.",
+      "lighting": "Soft, diffused naturalistic lighting simulating daylight, with subtle highlights on the glass curves and metallic caps to define form.",
+      "color": [
+        "slate grey",
+        "sky blue",
+        "amber gold",
+        "pale yellow",
+        "concrete grey"
+      ],
+      "typography": "None visible outside the container; text is limited to embossed and printed labeling on the bottles themselves.",
+      "information_density": "Low; focus is purely on the product trio and the atmospheric setting without distracting graphical elements.",
+      "characteristics": [
+        "architectural props",
+        "masculine aesthetic",
+        "material contrast",
+        "product trio",
+        "outdoor atmosphere"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 15.233
+}

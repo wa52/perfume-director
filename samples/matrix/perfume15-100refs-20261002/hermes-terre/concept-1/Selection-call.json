@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "23d01fb885aaa6ddf8183d40ddab43a6fb180234918e997ce944d4261a219ea8"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-94430398-d517-9a64-b1db-3dbcd553313b",
+      "usage": {
+        "prompt_tokens": 7146,
+        "total_tokens": 8542,
+        "completion_tokens": 1396,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6205,
+          "text_tokens": 941
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 371
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-94430398-d517-9a64-b1db-3dbcd553313b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7146,
+    "total_tokens": 8542,
+    "completion_tokens": 1396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6205,
+      "text_tokens": 941
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 371
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 (image 5) fulfills the 'Sediment Strata Monument' concept far more literally: a calm, uninterrupted pale-sky band at the top carries the tracked serif brand line, the single generous serif title line and the short flint-orange survey rule, exactly as briefed. Below it, five broad hard-edge strata (sand, ochre, sienna, deep umber) stack like a core sample with one thin flint-orange seam reading as the burial line, and the intact flacon stands centred as the extracted monument with its baked high-key speculars untouched by the flat ink field. Version 2 (image 6) dissolves the stratigraphy into a busy repeating stripe wallpaper: the title line collides with a sand band instead of resting in the calm pale sky, the orange seam appears multiple times (losing the single burial-line idea), and the narrow alternating stripes read as decorative textile rather than geological core sample. Both keep the product faithful and centred within bounds, but version 1's hierarchy, silhouette and stratigraphic narrative are cleaner and more resolved.",
+    "remaining_problems": [
+      "Version 1 strata edges undulate softly like dunes rather than the perfectly hard, straight screen-printed band edges of a core sample",
+      "Bottle base sits very low in the frame (near the 94% bound), leaving almost no breathing room in the deep umber band",
+      "The single flint-orange seam is partially hidden behind the flacon, weakening its read as a continuous burial line",
+      "Flat ink field shows slight tonal softness at band intersections instead of crisp matte screen-print edges"
+    ]
+  },
+  "duration_seconds": 36.557
+}

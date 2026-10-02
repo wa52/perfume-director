@@ -1,0 +1,99 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-7fe523d7-0447-9bd2-815c-33e3e1fa0f3d",
+      "usage": {
+        "prompt_tokens": 7354,
+        "total_tokens": 8605,
+        "completion_tokens": 1251,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5003,
+          "text_tokens": 2351
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 226
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7fe523d7-0447-9bd2-815c-33e3e1fa0f3d",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7354,
+    "total_tokens": 8605,
+    "completion_tokens": 1251,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5003,
+      "text_tokens": 2351
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 226
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat screen-printed matte paper poster of perfectly straight horizontal sedimentary strata bands with crisp hard edges, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, one thin hard-edge flint-orange seam line between the ochre and sienna bands, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 330
+      }
+    ]
+  },
+  "duration_seconds": 35.063
+}

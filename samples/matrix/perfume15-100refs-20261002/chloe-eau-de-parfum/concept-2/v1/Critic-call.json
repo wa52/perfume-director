@@ -1,0 +1,151 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "a16ee9c0015120b6f9ac6cfdaca94ee0282e46b3a1ea52f982066f0f7abb65dc"
+    },
+    {
+      "name": "chloe-eau-de-parfum-retailer.png",
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "cadbb54d3866a43f9a7632f89c735c1cb2d6c6aaf72a6e27fb88ec2647790666"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-7d4e356a-350e-9a44-866f-37ef1550698c",
+      "usage": {
+        "prompt_tokens": 7770,
+        "total_tokens": 9617,
+        "completion_tokens": 1847,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 5200,
+          "text_tokens": 2570
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 822
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-7d4e356a-350e-9a44-866f-37ef1550698c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7770,
+    "total_tokens": 9617,
+    "completion_tokens": 1847,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 5200,
+      "text_tokens": 2570
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 822
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 74,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 74,
+      "typography": 66,
+      "background": 70,
+      "physical_integration": 86,
+      "reference_alignment": 70,
+      "creative_coherence": 76
+    },
+    "problems": [
+      {
+        "type": "typography",
+        "problem": "The title 'Chloé' (bbox x 214-558) sits left-aligned inside a plaque band that spans nearly the full canvas, so the declared near-full-band centered command collapses to a left-heavy block with ~460px of dead plaque to its right; hierarchy inside the band is unbalanced against the centered logo above it."
+      },
+      {
+        "type": "typography",
+        "problem": "The graphite etch line (decoration at x454-627, y1112) is centered on the canvas while the title below it is left-aligned, so the 'etching knife mark' no longer keys to the title it is meant to crown; the two read as unrelated marks."
+      },
+      {
+        "type": "background",
+        "problem": "The plaque band rendered as a rounded-corner card with a soft cast shadow at its lower-right edge, contradicting the concept's hard-edge blank band and its perfectly even shadowless illumination; the shadow implies a light source the flat graphic ink light forbids."
+      },
+      {
+        "type": "background",
+        "problem": "Stray engraved alphanumeric glyphs ('12L 79 9 38 43 72 58 6H') appear across the top edge of the card; they are generated artifacts not part of the declared etching narrative and read as noise above the bottle's cap."
+      },
+      {
+        "type": "composition",
+        "problem": "The plaque band carries only two short text marks in its upper half, leaving a large empty green area below the title (roughly y1230-1360); the band feels under-filled compared with the dense typographic plaques in the reference campaigns."
+      }
+    ],
+    "changes": [
+      {
+        "path": "title.max_width",
+        "op": "set",
+        "value": 880
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 100
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "decoration.x",
+        "op": "set",
+        "value": 440
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 200
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte card in medium sage green, fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band with perfectly square corners and absolutely no cast shadow across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects, no letters, no numbers, no glyphs"
+      }
+    ]
+  },
+  "duration_seconds": 39.165
+}

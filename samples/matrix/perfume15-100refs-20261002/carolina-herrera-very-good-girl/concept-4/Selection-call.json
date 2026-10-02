@@ -1,0 +1,94 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "carolina-herrera-very-good-girl-retailer.png",
+      "sha256": "180242eec3309684cbf96bd759a5e6701fde3dc6f2eada0c037776352e54c538"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-41b5b67289d6.webp",
+      "sha256": "3712bc146e85290a255e8d7f5043210b60e61b23a9b8c882b26f34af3c8f1afe"
+    },
+    {
+      "name": "ref-403f9139347c.webp",
+      "sha256": "3e2c16def1302565e9e7a0f3c92cd0636533e2c856094f78e3d380947dddead8"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ef2ed0f6ee72fa5309205e4cc32ca5b8127ab9317eccf62cc4573b4155169489"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "0c8a5f8eec6c669bd942da716d7d907a65459ca95d0fa9086438af771fa0a4c0"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "URLError"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-2e317c10-831e-9dc5-bcc2-30712f36b034",
+      "usage": {
+        "prompt_tokens": 7201,
+        "total_tokens": 8579,
+        "completion_tokens": 1378,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6265,
+          "text_tokens": 936
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 353
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-2e317c10-831e-9dc5-bcc2-30712f36b034",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7201,
+    "total_tokens": 8579,
+    "completion_tokens": 1378,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6265,
+      "text_tokens": 936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 353
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 (image 6) delivers the declared monument-on-felt concept far more convincingly: the verdigris felt sweeps from wall to ground through a soft curved cyc transition instead of version 1's hard horizontal wall/floor seam, which reads as a flat pasted backdrop. Its single elliptical spotlight pool lands on the felt pile behind the subject so the glow wraps the shoe's silhouette and the pile visibly absorbs light, while the toe and heel tips sit into the ground with soft absorbed contact shadows; version 1's pool sits high on the wall, leaving the shoe's base comparatively flat and the ground plane unlit. Both keep the upper-left Baskerville monument (brand line above, name below, gold rule, ending well above the cap) and the faithful opaque lacquered flacon with preserved specular streaks, black cap reflections and gold heel gradient, but version 2's lighting, ground contact and seamless cyclorama make it the stronger finished campaign frame.",
+    "remaining_problems": [
+      "The felt cyclorama curve is still faintly readable as an edge line behind the shoe rather than a fully seamless sweep.",
+      "The elliptical pool sits slightly left of the silhouette, so the glow halo is off-axis from the shoe's upper zone and the cap area lacks a gentle rim of felt light.",
+      "Contact shadow at the heel tip is very subtle; the stiletto point could be seated a touch deeper into the pile.",
+      "The gold rule under the title floats with a wide gap, slightly loosening the otherwise tight upper-left typographic block."
+    ]
+  },
+  "duration_seconds": 44.297
+}

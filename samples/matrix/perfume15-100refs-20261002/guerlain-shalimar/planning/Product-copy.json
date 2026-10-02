@@ -1,0 +1,15 @@
+{
+  "title": "SHALIMAR",
+  "logo": "GUERLAIN",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Cap reads 'GUERLAIN PARIS' in gold; body reads 'SHALIMAR' in black; brand and name corroborated by user brief; no concentration, price or category text visible on label.",
+  "product_profile": {
+    "material": "clear glass flacon with amber juice, glossy opaque blue dome cap, black grosgrain ribbon at neck",
+    "color": "golden-amber liquid, deep blue cap, gold cap lettering, black body lettering",
+    "transparency": "body translucent tinted liquid in glass; cap and ribbon opaque; pedestal foot clear",
+    "illumination": "soft frontal studio light with specular highlights on cap dome and glass shoulders; liquid glows from internal transmission, brightest at lower center",
+    "view": "straight-on frontal elevation, full bottle centered, slight eye-level camera",
+    "integration_limits": "hard cutout on white; opaque blue cap and bright white highlight zones on shoulder/foot cannot transmit a new background; amber liquid tints anything placed behind it; no cast shadow in source"
+  }
+}

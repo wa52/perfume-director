@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238488249,
+    "background": {
+      "color": "#c8d64b",
+      "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one hard-edge flat solid triangle in deep ink olive seated at the bottom edge centred, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 950,
+      "width": 749,
+      "height": 749
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c8d64b",
+      "#1c2410",
+      "#f2e8d8"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 140,
+      "y": 144,
+      "size": 118,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 338,
+      "size": 20,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 432,
+      "y": 65,
+      "size": 30,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 324,
+      "y": 310,
+      "width": 432,
+      "color": "#f2e8d8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 229101238488249,
+    "background": {
+      "color": "#c8d64b",
+      "prompt": "Seamless flat matte gouache-painted card in saturated acid chartreuse, one hard-edge flat solid triangle in deep ink olive seated at the bottom edge centred, one thin hard-edge outline triangle in pale bone offset up and right of the solid triangle with parallel斜 edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 950,
+      "width": 749,
+      "height": 749
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c8d64b",
+      "#1c2410",
+      "#f2e8d8"
+    ],
+    "title": {
+      "text": "Paradoxe",
+      "x": 140,
+      "y": 144,
+      "size": 118,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 338,
+      "size": 20,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "PRADA",
+      "x": 432,
+      "y": 65,
+      "size": 30,
+      "color": "#1c2410",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 324,
+      "y": 310,
+      "width": 432,
+      "color": "#f2e8d8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

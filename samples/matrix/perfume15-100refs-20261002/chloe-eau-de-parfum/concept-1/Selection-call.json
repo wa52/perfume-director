@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "chloe-eau-de-parfum-retailer.png",
+      "sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "0108c81ff5453498d4ebf331d5dadef49be3b35ba819f2ec7c24cb91fa2677eb"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "24ceae30719cc47cd9477bba133b17704d47fe53229d3ac96d4762730274f722"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-cfc3f29f-df9a-988b-b183-56aa3960a938",
+      "usage": {
+        "prompt_tokens": 7441,
+        "total_tokens": 8834,
+        "completion_tokens": 1393,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6489,
+          "text_tokens": 952
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 368
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-cfc3f29f-df9a-988b-b183-56aa3960a938",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7441,
+    "total_tokens": 8834,
+    "completion_tokens": 1393,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6489,
+      "text_tokens": 952
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 368
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 executes the 'Grosgrain Meridian Graph' concept more completely: the grosgrain band carries clearly engraved fine vertical rib lines across its full width, reading as an enlarged ribbon horizon, while in version 1 the band is nearly flat matte tan and loses the rib-density narrative. The band in version 2 sits precisely at bow height so the bow and silver cap interrupt and complete the meridian line, and the bottle floats out of the band with a clean silhouette against the flat mist-blue field. Typography hierarchy is better resolved in version 2: tracked brand line top, large serif Baskerville-style title commanding the plaque zone, and a thin rule placed closer to the band so the nameplate reads as one composed unit rather than drifting (version 1 leaves a dead gap between rule and band). Product fidelity is equal in both (recognizable fluted glass, silver cap, nude bow, pale juice), lighting stays flat and shadowless per the graphic mode, no studio equipment or floating-support artifacts appear, and the bottle respects the safety bounds in both. Version 2 wins on material control and hierarchy within the declared concept.",
+    "remaining_problems": [
+      "The thin rule under the title renders in warm tan rather than the specified silver-gray刻度 line",
+      "Top brand line reads serif-ish rather than a clean wide-tracked sans (Arial) as briefed",
+      "Rib engraving inside the band stops where the bow overlaps, slightly weakening the 'silhouette completes the interruption' idea at the knot",
+      "Flat frontal light is correct for the concept but the cap retains soft photographic speculars that slightly contradict the pure ink-flat field"
+    ]
+  },
+  "duration_seconds": 38.06
+}

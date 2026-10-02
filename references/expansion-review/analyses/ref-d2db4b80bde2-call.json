@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-098f4dca-c90f-9f8c-b5d1-030c804df583",
+      "usage": {
+        "prompt_tokens": 1499,
+        "total_tokens": 1847,
+        "completion_tokens": 348,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1202,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 348
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-098f4dca-c90f-9f8c-b5d1-030c804df583",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1499,
+    "total_tokens": 1847,
+    "completion_tokens": 348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1202,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 348
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "007",
+    "style": "luxury",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved perfume advertisement featuring dynamic floral elements, clear campaign typography, and high-end product rendering suitable for design reference.",
+    "analysis": {
+      "composition": "Asymmetrical balance with the product and floral explosion on the left counterweighted by negative space and typography on the right.",
+      "subject_ratio": 0.35,
+      "negative_space": "Significant dark gradient space on the right utilized for text placement.",
+      "lighting": "Dramatic studio lighting with high contrast, highlighting the faceted glass and metallic cap against a dark background.",
+      "color": [
+        "rose pink",
+        "deep burgundy",
+        "black",
+        "metallic copper",
+        "white"
+      ],
+      "typography": "Clean white sans-serif logo and serif tagline positioned in the right negative space; URL at the bottom.",
+      "information_density": "Moderate; focuses on brand identity and a single tagline without clutter.",
+      "characteristics": [
+        "exploding rose petals",
+        "faceted glass bottle",
+        "metallic accents",
+        "dark moody atmosphere",
+        "reflection"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 11.009
+}

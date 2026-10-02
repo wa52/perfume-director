@@ -52,7 +52,7 @@ class QualitySelectionTests(unittest.TestCase):
             ImageDraw.Draw(image).rectangle((600,0,1080,1440),fill='#D8CBB5')
             image.save(path)
             return Path(path)
-        with tempfile.TemporaryDirectory() as directory, patch.object(poster,'execute',side_effect=execute), patch.object(poster,'upload',return_value='input'), patch.object(poster,'rendered_geometry',return_value={'text_bbox':{}}):
+        with tempfile.TemporaryDirectory() as directory, patch.object(poster,'execute',side_effect=execute), patch.object(poster,'upload',return_value='input'), patch.object(poster,'rendered_geometry',return_value={'text_bbox':{},'product_bbox':[420,400,750,1150]}):
             poster.comfy_render(config,spec,'product',Path(directory)/'poster.png',None)
         self.assertEqual(len(prompts),1)
         self.assertNotIn('softbox',prompts[0])

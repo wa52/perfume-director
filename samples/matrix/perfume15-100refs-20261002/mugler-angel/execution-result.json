@@ -1,0 +1,21 @@
+{
+  "product_id": "mugler-angel",
+  "status": "ERROR",
+  "started_at": 1790922872.3938694,
+  "input_sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558",
+  "reference_count": 100,
+  "source_sha256": {
+    "poster.py": "ce9dc8aa68faa96f1a0659aeb048f29fe9e58f2b4bcfa65358a84bceaa7d3d89",
+    "concepts.py": "1be2e60113df7770bf8a40660cc503cd8b4f1f598057833c676bf044cafd2fca",
+    "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+    "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+    "reference_store.py": "2b00c0399cb408972b1366a162be67e35b6a0f17a178e5dd41f86674c7218e95"
+  },
+  "rounds_per_direction": 2,
+  "stage": "CONCEPTS",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\3279e6d9b4af",
+  "direction_count": 4,
+  "error_type": "ValueError",
+  "error": "Each concept requires three supplied reference IDs",
+  "duration_seconds": 534.7
+}

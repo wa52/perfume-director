@@ -1,0 +1,157 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "42454d4f4b3c257203ee01548be0b3b1613528f5fd159416452038a3737c00f4"
+    },
+    {
+      "name": "tom-ford-tobacco-vanille-retailer.png",
+      "sha256": "cdcff5cf6181940b3e7058252696990f42258c39c26a5b0766c95114e67f4fd6"
+    },
+    {
+      "name": "ref-361c5f732a2a.webp",
+      "sha256": "d548a5dc3b7d930eb753ace2d5a16913e0f3d3bc30154aacf1c4f243af45d1fd"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "f2e240c0a2827b457f3fe8790dc8882fb94a6710414d42b08b3f2a171577a204"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-a8235ab4-9e7f-9cbf-be80-65f49377843c",
+      "usage": {
+        "prompt_tokens": 8011,
+        "total_tokens": 10134,
+        "completion_tokens": 2123,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5410,
+          "text_tokens": 2601
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1098
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-a8235ab4-9e7f-9cbf-be80-65f49377843c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8011,
+    "total_tokens": 10134,
+    "completion_tokens": 2123,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5410,
+      "text_tokens": 2601
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1098
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 74,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 76,
+      "typography": 78,
+      "background": 68,
+      "physical_integration": 62,
+      "reference_alignment": 70,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "physical_integration",
+        "problem": "In the contact detail crop [278,868,801,1118] a soft contact shadow IS present at the base edge (offset_y 0 is correct, do not move it), but the shadow reads as a faint暗 smudge on a vertically hanging drape: the velvet folds run straight down behind and beneath the base with no horizontal support plane, no pooled fabric and no occlusion gradient, so the flacon still reads as a cutout pasted on a curtain while references 3 and 5 seat their bottles in a believable surface."
+      },
+      {
+        "type": "background",
+        "problem": "The backdrop is one uniform vertical drape from top edge to bottom edge; the fold crowns behind the cap and shoulders compete with the silhouette, and the lower third plaque band sits on the same busy pile texture as the hero zone, so text rests on mottled fold highlights instead of a calmed field. No studio equipment is visible, but the environment lacks the intentional staged depth (surface plus backdrop) that the references achieve."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy inside the plaque band is compressed: the logo line ends at y=1075, the gold rule sits at y≈1097 and the title cap-line starts at y=1138, leaving only ~22px of air between rule and title while ~55px separates title baseline from subtitle; the rule crowds the brand line and the band lacks the generous spacing the concept's 'quiet plaque' calls for. Contrast of #f0e6ea ink on fold crowns behind the subtitle is marginal in places."
+      },
+      {
+        "type": "composition",
+        "problem": "Product height ratio 0.5597 is correctly in hero range and margins are comfortable, but the hero zone and plaque zone carry equal visual weight: bright fold sheen at upper left and right of the cap pulls the eye off the flacon, so the theatrical 'curtain framing the hero' effect is not resolved."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Crushed aubergine plum velvet hanging in soft vertical folds behind, meeting a smooth horizontal velvet-covered ledge in the lower third where the folds settle into calm pooled pile, gentle frontal sheen on fold crowns fading to deep matte shadow at edges, slightly darker quiet pile in the lowest band, empty scene, no objects"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.5
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.1
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 1152
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 1284
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1104
+      },
+      {
+        "path": "logo.tracking",
+        "op": "set",
+        "value": 7
+      }
+    ],
+    "evidence_notes": {
+      "contact_detail": "Crop [278,868,801,1118] shows the base edge at crop y≈140 with a soft dark bleed directly beneath it across the base width: contact shadow exists and offset_y 0 is retained; the fault is the missing support plane, not a missing shadow.",
+      "geometry_checks": "text_product_overlap all false, so no title/product collision claimed; product base y=1008 (70% of canvas) is within bounds and was not moved; center_y recomputation avoided because only background, shadow and type spacing are patched.",
+      "references": "Reference 3 seats bottles on mossy rock with grounded occlusion shadows, reference 5 on a seamless reflective table; both give a readable support surface and calmed text field that this poster currently lacks."
+    }
+  },
+  "duration_seconds": 54.848
+}

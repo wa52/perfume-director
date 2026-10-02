@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "score": 65.1,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 62,
+    "typography": 74,
+    "background": 58,
+    "physical_integration": 40,
+    "reference_alignment": 62,
+    "creative_coherence": 70
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "In the contact detail crop (3,983,601,1233) a thin contact shadow does exist at the foot (offset_y 0 is correct), but the foot ends at y=1123 while the rendered wall-to-floor junction sits lower, around y=1165-1200, and the caustic-lit floor plane only begins below that. A bottle standing in front of the wall must have its base BELOW the wall-floor horizon, not above it; as rendered the flacon's shadowed foot rests on the vertical plaster plane and reads as hovering in the niche. The declared horizon 'level with the true base line' was not delivered by the background."
+    },
+    {
+      "type": "composition",
+      "problem": "Product height ratio is 0.40 (bbox 547-1123), below the 50-65% hero band this concept calls for; combined with the left-niche placement the bottle reads as a small pasted element inside a large empty arch rather than the campaign hero, unlike references 3-5 where the product commands the frame."
+    },
+    {
+      "type": "background",
+      "problem": "The generated arch reads as a shallow wall niche with a vertical pilaster edge at x~130-160 passing directly behind the bottle's left flank (visible in the contact crop), so the 'arcade' competes with the silhouette; the promised arched pool of light and caustic ripple are only faint diagonal washes, giving a generic plaster backdrop instead of the declared morning-cloister light story."
+    },
+    {
+      "type": "typography",
+      "problem": "The right-hand column is unbalanced: logo at y=576 and title at y=662 sit high while the blue rule floats at y=893, leaving a ~230px dead gap between 'SHALIMAR' and the rule and a heavy empty zone below it; the column never visually closes against the bottle's vertical span (547-1123)."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Lighting mismatch: the cutout carries soft frontal studio light with bright speculars on cap and shoulders, while the scene shows a directional diagonal light wash from upper left across the arch; the bottle neither receives nor casts that direction, weakening the 'temperature story' concept."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless pale alabaster plaster studio cyclorama, continuous honed pale stone ground plane sweeping up into the wall with no visible junction line, one soft arched pool of diffuse morning light falling from top center, faint water caustic ripple light drifting across the upper wall, matte mineral grain, even high-key frontal illumination matching a front-lit subject, no objects, no horizon edge"
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 655
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 320
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 795
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 640
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 730
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    }
+  ],
+  "reported_score": 66
+}

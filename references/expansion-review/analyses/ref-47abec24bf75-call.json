@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-47abec24bf75.webp",
+      "sha256": "a419b9660ece1722655ae6630296452ee7da2b37938dacc28e4eac9936f4e866"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-d208abe7-e2b1-9c27-82a3-2c4820025cdd",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 840,
+        "completion_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 337
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-d208abe7-e2b1-9c27-82a3-2c4820025cdd",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 840,
+    "completion_tokens": 337,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 337
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Hugo Boss",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved commercial still life featuring a symmetrical multi-bottle arrangement with strong geometric composition and controlled studio lighting.",
+    "analysis": {
+      "composition": "Symmetrical V-formation of identical bottles receding in depth, anchored by a central hero bottle on a split-tone geometric pedestal.",
+      "subject_ratio": 0.75,
+      "negative_space": "Clean gradient backdrop at the top; sharp diagonal division of light and shadow on the foreground plinth.",
+      "lighting": "Soft, diffused studio lighting creating vertical specular highlights on the glass and metallic caps, with a smooth radial gradient background.",
+      "color": [
+        "taupe",
+        "bronze",
+        "silver",
+        "white",
+        "dark brown"
+      ],
+      "typography": "None outside the container; branding is printed directly on the glass.",
+      "information_density": "Low; purely visual product focus.",
+      "characteristics": [
+        "repetition",
+        "symmetry",
+        "metallic accents",
+        "geometric base",
+        "monochromatic palette"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 9.669
+}

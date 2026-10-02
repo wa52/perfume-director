@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "score": 71.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 58,
+    "background": 45,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background_artifact",
+      "problem": "Three lines of generated coordinate garbage ('[22, 15, 80, 19]', '[38, 24, 61, 25]', '40, 10, 56, 11]') are burned into the background at the upper-left corner (approx x 90-285, y 68-180), outside every spec text box. It reads as leaked production data on a luxury poster and destroys the clean monument band; the background must be regenerated with an explicit no-glyph instruction."
+    },
+    {
+      "type": "composition",
+      "problem": "The sienna disc sits at canvas mid-height behind the neck and upper shoulders, so its widest arc erupts beside the narrow neck (visible左右 of the neck at y approx 490-720) while the broad label zone below y approx 950 rests on plain ochre. The declared concept is a setting sun low behind the shoulders; the current disc position makes the silhouette read top-heavy and leaves the label block unsupported by the disc geometry."
+    },
+    {
+      "type": "typography",
+      "problem": "The closing rule (decoration at y 415, width 173) sits only about 3 px above the cap top (product top y 418), so the registration mark visually collides with the flacon instead of closing the type band; the band also leaves a 86 px dead gap between subtitle (base y 364) and the rule."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [259,1171,821,1421] confirms a real soft contact shadow under the base at offset_y 0 (base y 1311, shadow footprint visible at crop y approx 135-145): contact is correct and must not be moved. However the shadow alpha is thin (opacity 0.35) against a matte field, so at poster scale the 893 px flacon reads slightly pasted; a denser footprint would seat it without breaking the flat graphic light."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte gouache-painted paper field in saturated marigold ochre, one large hard-edge flat circle in deep burnt sienna centred low in the lower half, perfectly even shadowless illumination, no texture gradients, no objects, absolutely no text, no numbers, no brackets, no glyphs anywhere"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 392
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.05
+    }
+  ],
+  "reported_score": 66
+}

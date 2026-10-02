@@ -1,0 +1,45 @@
+{
+  "status": "VALIDATED",
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.05
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 440
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 782
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Endless dawn salt plain of fine polygonal crust cracks, small tight mineral polygons fading softer and hazier toward a low mist-grey horizon, cool diffuse overcast frontal daylight, matte white mineral grain with subtle warm dawn blush near the horizon, continuous flat ground plane, empty environment, no objects"
+    }
+  ]
+}

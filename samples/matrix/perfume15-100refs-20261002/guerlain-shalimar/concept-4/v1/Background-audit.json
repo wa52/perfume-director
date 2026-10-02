@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Pale alabaster plaster arcade wall with one soft arched pool of light falling from top center, continuous honed pale stone ground meeting the wall at a horizontal horizon three quarters down the frame, gentle water caustic ripple light drifting across the arch, matte mineral grain, soft high-key diffuse illumination, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [8, 38, 48, 78]. A continuous horizontal ground plane must be visible through y=78 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[56, 46, 93, 50], [56, 40, 70, 41]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 250442642211919,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

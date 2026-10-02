@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-192e8faf319d.webp",
+      "sha256": "46cd1f7655542de3ab5b0cd40f802b772f31846aa7da9a0512585c527e2601b5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-0bed11b2-f5eb-9519-b41b-072ddc56b272",
+      "usage": {
+        "prompt_tokens": 1539,
+        "total_tokens": 1888,
+        "completion_tokens": 349,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1242,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 349
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-0bed11b2-f5eb-9519-b41b-072ddc56b272",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1888,
+    "completion_tokens": 349,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1242,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 349
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Louis Vuitton",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life featuring high-end material contrast (glass, marble) and sophisticated lighting. Useful reference for minimalist product staging.",
+    "analysis": {
+      "composition": "Centralized subject placed on a geometric marble plinth with a diagonal shadow element adding depth to the background.",
+      "subject_ratio": 0.45,
+      "negative_space": "Generous white and light grey space surrounding the bottle, emphasizing the product's isolation and premium status.",
+      "lighting": "Soft, diffused studio lighting with a distinct, artistic cast shadow in the upper left, creating a sense of natural light interaction.",
+      "color": [
+        "white",
+        "pale beige",
+        "black",
+        "silver",
+        "grey"
+      ],
+      "typography": "None outside the container; text is limited to the bottle label and embossed glass lettering.",
+      "information_density": "Low; focuses entirely on the product form and material quality.",
+      "characteristics": [
+        "marble texture",
+        "glass refraction",
+        "minimalist staging",
+        "soft shadows",
+        "neutral palette"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 10.619
+}

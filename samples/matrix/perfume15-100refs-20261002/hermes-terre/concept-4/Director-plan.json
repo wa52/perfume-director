@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\dfb9cd499599\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Flint Gallery Oblique",
+    "brief": "A constructed mineral gallery: one monolithic cleft flint wall in cool bone-grey stone meets a continuous honed pale stone ground at a horizon aligned with the true base line, while a single crisp oblique shadow edge rakes the wall from upper left like late sun through a gallery slot. The cutout stands left of centre on that ground, contact shadow anchoring its foot, while the right wall stays calm for a wrapped Times column: brand at column head, the name across two tall serif lines, a short rust rule closing the column like a chisel mark. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column grid deliberate; cold split-stone matte against warm amber juice reads as earth under architecture.",
+    "material": "cleft flint stone wall with honed pale stone ground",
+    "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+    "palette": [
+      "#c9c4b8",
+      "#26221c",
+      "#a8502a"
+    ],
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 245989106099591,
+    "background": {
+      "color": "#c9c4b8",
+      "prompt": "Monolithic cleft flint stone wall in cool bone grey with natural split-plane facets, meeting a continuous honed pale stone ground at a horizontal horizon six tenths down the frame, one crisp oblique shadow edge raking the wall from upper left, bright directional late-day light, matte mineral grain, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 324,
+      "y": 864,
+      "width": 435,
+      "height": 749
+    },
+    "lighting": "bright directional late-day light casting one crisp oblique shadow edge on the wall, warm ambient on the ground",
+    "palette": [
+      "#c9c4b8",
+      "#26221c",
+      "#a8502a"
+    ],
+    "title": {
+      "text": "TERRE D'HERMÈS",
+      "x": 610,
+      "y": 605,
+      "size": 74,
+      "color": "#26221c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 2,
+      "max_width": 380,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 610,
+      "y": 864,
+      "size": 16,
+      "color": "#26221c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 2
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#26221c",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Hermès",
+      "x": 610,
+      "y": 504,
+      "size": 30,
+      "color": "#26221c",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 610,
+      "y": 886,
+      "width": 151,
+      "color": "#a8502a"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

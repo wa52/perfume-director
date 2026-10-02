@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-8f7e9224c881.webp",
+      "sha256": "175cdc58093f7c408273411cff91c3b5a87115147daa6968f6c141de1ead8e40"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-191a81bd-4f00-98ba-acb2-53ba1c357c6e",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 853,
+        "completion_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 350
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-191a81bd-4f00-98ba-acb2-53ba1c357c6e",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 853,
+    "completion_tokens": 350,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 350
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Tiffany & Co.",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved luxury perfume still-life with high-end material rendering and dramatic lighting, suitable as a design reference for premium fragrance campaigns.",
+    "analysis": {
+      "composition": "High-angle close-up centered on the bottle, utilizing a strong diagonal shadow to create depth and visual interest on the textured surface.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space at the top and bottom left, balanced by the diagonal light beam.",
+      "lighting": "Hard, directional spotlight creating sharp caustics through the glass and deep, defined shadows, emphasizing transparency and texture.",
+      "color": [
+        "aqua blue",
+        "silver",
+        "black",
+        "white",
+        "cool grey"
+      ],
+      "typography": "None visible outside the container; text is limited to embossed cap details and printed bottle logo.",
+      "information_density": "Low, focused entirely on product aesthetics and material quality.",
+      "characteristics": [
+        "caustic light refraction",
+        "textured leather background",
+        "metallic accents",
+        "high contrast",
+        "macro detail"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 9.918
+}

@@ -1,0 +1,469 @@
+{
+  "brief": "为 Tom Ford Tobacco Vanille 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。",
+  "direction_mode": "dynamic",
+  "directions": [
+    {
+      "name": "Ochre Signal Disc",
+      "brief": "A flat graphic signal poster: one saturated marigold gouache field carrying a single hard-edge burnt-sienna disc set low and off-centre, reading as a setting sun behind the flacon. The opaque espresso cutout sits centred and tall, its baked vertical speculars untouched, while the disc passes behind its shoulders without touching the gold plate. All typography stacks in a centred monument band across the upper field: wide-tracked brand, heavy Bodoni name, small eau de parfum line, closed by a short rule like a print registration mark. Narrative is pure silhouette-plus-disc geometry, no floor, no horizon; the matte paper swallows light so the lacquered glass owns every highlight.",
+      "material": "flat matte gouache-painted paper with hard-edge painted disc",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+      "id": "concept-1",
+      "signature": "e02702f25e550302ec19e6c7c1ee44bdd192f638139ac113f15f0382fb2be8c1",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#d9932f",
+        "#2b1508",
+        "#8c3b12"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-f305dbbdf3bc",
+        "ref-b4d87aee2707"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d9932f",
+          "prompt": "Seamless flat matte gouache-painted paper field in saturated marigold ochre, one large hard-edge flat circle in deep burnt sienna centred slightly below middle, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 864,
+          "width": 404,
+          "height": 893
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic light with no falloff",
+        "palette": [
+          "#d9932f",
+          "#2b1508",
+          "#8c3b12"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 240,
+          "y": 223,
+          "size": 64,
+          "color": "#2b1508",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 414,
+          "y": 350,
+          "size": 22,
+          "color": "#2b1508",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 5
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#2b1508",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 430,
+          "y": 137,
+          "size": 26,
+          "color": "#2b1508",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 415,
+          "width": 173,
+          "color": "#8c3b12"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    },
+    {
+      "name": "Ultramarine Courtyard Sundial",
+      "brief": "A photographic courtyard moment: a deep ultramarine lime-washed wall meets a continuous pale limestone ground at a low horizon, one hard diagonal shadow edge raking the wall from upper left like late sun across a patio. The flacon stands flush on that ground at its true base line, its own measured contact shadow anchoring it, while the right half of the wall stays calm for a wrapped narrow-sans column: brand at column head, the name set large across two wrapped lines, eau de parfum line and a short rule closing the column. Vertical overlap with the shoulder but wide horizontal clearance keeps the two-column editorial grid honest; mineral matte against lacquer gloss tells the whole story.",
+      "material": "lime-washed plaster wall with honed limestone ground",
+      "lighting": "hard direct sunlight casting one crisp diagonal shadow edge on the wall, bright warm ambient on the ground",
+      "id": "concept-2",
+      "signature": "4c2e4f9e1ed83b9fc40433f792850db202d9ba867e52b2d20497a82c0ecf26c6",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#223055",
+        "#f2e9d8",
+        "#c9862f"
+      ],
+      "reference_ids": [
+        "ref-b4d87aee2707",
+        "ref-efb51dc5d487",
+        "ref-d2db4b80bde2"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#223055",
+          "prompt": "Deep ultramarine lime-washed plaster wall meeting a continuous honed pale limestone ground at a low horizontal horizon, one hard diagonal shadow edge raking the wall from upper left, bright direct sunlight, matte mineral grain, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 324,
+          "y": 806,
+          "width": 365,
+          "height": 806
+        },
+        "lighting": "hard direct sunlight casting one crisp diagonal shadow edge on the wall, bright warm ambient on the ground",
+        "palette": [
+          "#223055",
+          "#f2e9d8",
+          "#c9862f"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 610,
+          "y": 634,
+          "size": 88,
+          "color": "#f2e9d8",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3,
+          "max_width": 390,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 610,
+          "y": 907,
+          "size": 24,
+          "color": "#f2e9d8",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 5
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f2e9d8",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 610,
+          "y": 540,
+          "size": 26,
+          "color": "#f2e9d8",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 610,
+          "y": 976,
+          "width": 216,
+          "color": "#c9862f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    },
+    {
+      "name": "Plum Velvet Curtain Call",
+      "brief": "A theatrical still-life: crushed aubergine velvet hangs in soft vertical folds, its pile catching a gentle frontal sheen that fades toward the edges like a house curtain before encore. The flacon is lifted into the upper two-thirds so the lower third becomes a quiet plaque band: brand line, then the name in generous Baskerville capitals centred, then the eau de parfum line, with a thin rule floating between image and text like a curtain rail. Opaque dark glass against plush plum pile reads purely by texture contrast; the gold plate supplies the only warm spark in an otherwise velvet-dark house.",
+      "material": "crushed aubergine velvet drape with vertical fold sheen",
+      "lighting": "soft diffused frontal light with gentle velvet sheen gradient, no hard shadows",
+      "id": "concept-3",
+      "signature": "fe62acc897a0719c952f8e2d47ed56a360223a9c3de1fc825c5dbdbff07603c1",
+      "scene_mode": "photographic",
+      "layout_relation": "below",
+      "title_family": "serif",
+      "palette": [
+        "#4b2b3a",
+        "#f0e6ea",
+        "#d9b06a"
+      ],
+      "reference_ids": [
+        "ref-7a523ada9a2c",
+        "ref-b6e669a924a3",
+        "ref-361c5f732a2a"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#4b2b3a",
+          "prompt": "Crushed aubergine plum velvet drape hanging in soft vertical folds, pile sheen catching gentle light along fold crowns, deep matte shadows in fold valleys, smooth tonal falloff toward edges, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 605,
+          "width": 365,
+          "height": 806
+        },
+        "lighting": "soft diffused frontal light with gentle velvet sheen gradient, no hard shadows",
+        "palette": [
+          "#4b2b3a",
+          "#f0e6ea",
+          "#d9b06a"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 200,
+          "y": 1138,
+          "size": 72,
+          "color": "#f0e6ea",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 2,
+          "max_width": 0,
+          "line_height": 1.08,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 417,
+          "y": 1264,
+          "size": 22,
+          "color": "#f0e6ea",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 5
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f0e6ea",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 432,
+          "y": 1058,
+          "size": 26,
+          "color": "#f0e6ea",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 389,
+          "y": 1097,
+          "width": 302,
+          "color": "#d9b06a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      }
+    },
+    {
+      "name": "Olive Grove Ledger",
+      "brief": "A constructed graphic ledger: three flat matte olive plywood panels of slightly shifted tone stacked as horizontal colour blocks, the middle block carrying the whole image weight. The flacon rests low-right on the panel seam implied by the block edge, while the left column holds a wrapped Century Gothic name set across two lines at generous size, brand above and eau de parfum below, plus a short rule under the column. No floor, no horizon: the block seams act as the only architecture, and the geometric sans against lacquered glass keeps the poster crisp, modern and quietly agricultural in its olive秩序.",
+      "material": "flat matte painted plywood panels in stacked colour blocks",
+      "lighting": "even shadowless studio illumination across painted panels, flat graphic light",
+      "id": "concept-4",
+      "signature": "bd4479d95331eb2b8015282a20fdcbf59509608e173be90c1d00060e2942d47c",
+      "scene_mode": "graphic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#35402a",
+        "#efe8da",
+        "#d9932f"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-d2db4b80bde2",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#35402a",
+          "prompt": "Three flat matte painted plywood panels stacked as horizontal colour blocks in shifted olive green tones, clean hard seams between blocks, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 734,
+          "y": 864,
+          "width": 339,
+          "height": 749
+        },
+        "lighting": "even shadowless studio illumination across painted panels, flat graphic light",
+        "palette": [
+          "#35402a",
+          "#efe8da",
+          "#d9932f"
+        ],
+        "title": {
+          "text": "TOBACCO VANILLE",
+          "x": 76,
+          "y": 605,
+          "size": 72,
+          "color": "#efe8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 2,
+          "max_width": 380,
+          "line_height": 1.15,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "EAU DE PARFUM",
+          "x": 76,
+          "y": 864,
+          "size": 24,
+          "color": "#efe8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 5
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#efe8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "TOM FORD",
+          "x": 76,
+          "y": 504,
+          "size": 26,
+          "color": "#efe8da",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 933,
+          "width": 194,
+          "color": "#d9932f"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      }
+    }
+  ],
+  "max_rounds_per_direction": 2,
+  "execution_config": {
+    "vision_model": "qwen3.8-max",
+    "vision_options": {
+      "temperature": 0.2,
+      "enable_thinking": true,
+      "thinking_budget": 1024,
+      "max_completion_tokens": 8192
+    },
+    "vision_timeout_seconds": 240,
+    "vision_attempts": 3,
+    "vision_image_max_edge": 1280,
+    "background_attempts": 2
+  },
+  "product_profile": {
+    "material": "glossy lacquered opaque glass flacon with stepped shoulder and wide flat cap; satin metallic gold paper label",
+    "color": "deep espresso brown-black body and cap; warm champagne-gold label with dark brown typography",
+    "transparency": "fully opaque; no translucent or light-transmitting regions in body, cap or label",
+    "illumination": "soft diffused frontal-top studio light; narrow vertical specular highlights along cap and body edges, broad soft sheen on cap top and shoulder, label evenly lit with slight brightness gradient toward top",
+    "view": "straight-on frontal elevation at label height, symmetric axis-aligned composition, flat base resting flush",
+    "integration_limits": "opaque body and bright gold label cannot transmit a newly generated background; baked-in edge speculars must be preserved; packshot is a shadowless cutout, so any composite background must supply its own contact shadow and match frontal soft lighting"
+  },
+  "engine_sha256": "8fbeed784a49cf5ff0c3815cca5017ca7fa405da39028f78c042712f75142bad"
+}

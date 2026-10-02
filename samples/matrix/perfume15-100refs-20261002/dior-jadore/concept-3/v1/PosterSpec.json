@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 254490615815568,
+  "background": {
+    "color": "#a9c4cf",
+    "prompt": "Calm shallow water sheet over fine pale sand at dawn, low horizon line at lower third, misty pale blue-grey sky gradient meeting water, smooth continuous wet ground plane, soft diffuse cool light, no objects",
+    "revision": 0
+  },
+  "product": {
+    "x": 713,
+    "y": 720,
+    "width": 299,
+    "height": 864
+  },
+  "lighting": "soft dawn frontal light with cool sky bounce, gentle specular sheet on water, no hard shadows",
+  "palette": [
+    "#a9c4cf",
+    "#22333e",
+    "#c98a5e"
+  ],
+  "title": {
+    "text": "J'adore",
+    "x": 86,
+    "y": 518,
+    "size": 110,
+    "color": "#22333e",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2,
+    "max_width": 330,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "EAU DE PARFUM",
+    "x": 86,
+    "y": 893,
+    "size": 26,
+    "color": "#22333e",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#22333e",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 86,
+    "y": 403,
+    "size": 40,
+    "color": "#22333e",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 454,
+    "y": 490,
+    "width": 2,
+    "color": "#c98a5e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

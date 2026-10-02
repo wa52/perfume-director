@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-f22c082f-7f81-94ce-944f-4c4f76427790",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 861,
+        "completion_tokens": 358,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 206,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 358
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f22c082f-7f81-94ce-944f-4c4f76427790",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 503,
+    "total_tokens": 861,
+    "completion_tokens": 358,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 206,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 358
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Avon",
+    "style": "editorial",
+    "reference_kind": "still_life",
+    "reason": "Professionally resolved perfume still-life with strong summer thematic styling, vibrant color palette, and clear product focus. Useful as a design reference for seasonal fragrance campaigns.",
+    "analysis": {
+      "composition": "Centralized product placement on a geometric white pedestal, flanked by thematic props (fruit slice, flower, amber stone) against a bright sky background.",
+      "subject_ratio": 0.45,
+      "negative_space": "Ample negative space in the upper sky area, providing room for potential campaign copy.",
+      "lighting": "Bright, high-key naturalistic lighting simulating intense sunlight, creating a warm, summery atmosphere with soft shadows.",
+      "color": [
+        "#FF7F50",
+        "#87CEEB",
+        "#FFFFFF",
+        "#FF4500",
+        "#FFD700"
+      ],
+      "typography": "None visible outside the container. Text on the bottle is product labeling.",
+      "information_density": "Low, focused entirely on the product and mood.",
+      "characteristics": [
+        "summery",
+        "vibrant",
+        "fresh",
+        "geometric pedestal",
+        "thematic props"
+      ],
+      "perfume_suitability": 92,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 13.721
+}

@@ -1,0 +1,13 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 keeps the declared Apricot Stucco Ledger Column concept intact and resolves it better than version 1: the flacon sits right of centre on a continuous honed sandstone ground with a soft absorbed contact shadow at its true base line, so the matte mineral set physically holds the lacquered bottle. The lime-washed apricot wall carries a gentle cloud-shadow band without hard shadows, matching the overcast-warm brief. The left editorial column is coherent: 'GUCCI' brand line at column head, the name set large across three narrow serif lines with even leading and wide horizontal clearance from the bottle shoulder, honouring the beside layout relation. The product silhouette, opaque mint body, ribbed gold cap and printed floral label are faithful to the original packshot. Version 1 by comparison seats the bottle ambiguously against the raised skirting course with a weaker, almost missing contact shadow, a busier tiled foreground that fights the continuous ground, and a cloud-shadow smudge colliding with the title column, making its typography feel pasted rather than integrated.",
+  "remaining_problems": [
+    "A small stray teal dash artifact floats between the title column and the bottle shoulder in both versions; in version 2 it reads as a speck rather than the intended vertical ledger rule.",
+    "The brief's short vertical rule closing the ledger column is absent; the column ends without its margin stroke.",
+    "The sandstone ground still reads as large format tiles with visible grout joints rather than a fully continuous honed stone plane.",
+    "Contact shadow under the base is present but very faint and slightly uneven, leaving a mild pasted-in feel at the base line.",
+    "Cloud-shadow band on the upper wall is extremely subtle in version 2, nearly losing the declared drifting shadow element."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

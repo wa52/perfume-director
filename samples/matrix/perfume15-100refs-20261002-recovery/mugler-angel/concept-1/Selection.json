@@ -1,0 +1,12 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 keeps the plaque zone quiet and correctly ordered: small letterspaced brand line at top, heavy Baskerville 'Angel' centered at near half-width, and the silver-blue meridian rule seated directly under the title band, matching the R1 hierarchy (brand light, title heavy, rule closing the band). Its engraved constellation reads as one coherent chart: a single great circle orbiting the composition with cross ticks and fine lines that pass behind the cap shoulder without touching the glass, and the star flacon sits centered, sunk into the lower half on the flat matte ice-violet card with shadowless frontal ink light. Version 2 breaks the concept's calm plaque: constellation fragments and cross ticks collide with the 'Angel' title line on both sides, the meridian rule floats detached in empty space far below the title, and the lower-right tick line pins itself onto the bottle's star point instead of passing behind the shoulder, so the engraving reads as scattered decals rather than a calibrated chart. Product fidelity (faceted star, opaque silver cap wedge, nozzle) is intact in both, but version 1's typography and chart geometry are markedly more resolved.",
+  "remaining_problems": [
+    "Brand line 'Mugler' renders in a serif face rather than the specified wide-tracked Arial sans, slightly blurring the light-brand/heavy-title contrast",
+    "Cross ticks do not achieve the exact five-tick calibration to the five star points; left-side constellation fragments sit arbitrarily rather than registering coordinates",
+    "The great circle arc clips close to the lower star points and exits the frame unevenly, weakening the centered radial geometry",
+    "No sub-line under the rule to complete the R1 three-tier plaque hierarchy"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

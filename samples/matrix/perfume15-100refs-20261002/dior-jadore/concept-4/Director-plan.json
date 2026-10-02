@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\e77536c11193\\Concepts-call.json",
+  "creative_direction": {
+    "name": "折扇纸韵·顶带轻铭",
+    "brief": "把瓶颈的罗纹放大成整面背景：手工折纸的藏红扇褶自商品身后放射展开，纸褶的明暗条纹如高级定制的褶裙；商品沉于下幅如从褶裥中诞生，上半幅留出安静顶带。Times 题名以克制字号居中轻置、品牌字最小置顶、香型字垫于题名之下，构成上轻下重的 couture 网格；一条深紫细线横于顶带之下如折扇的骨线。纸的哑光折痕与玻璃的流动高光互为刚柔，放射褶是唯一的光线叙事。",
+    "material": "hand-folded pleated paper fan backdrop with radiating creases",
+    "lighting": "even diffuse frontal light raking across paper pleats into soft alternating stripe shades",
+    "palette": [
+      "#d09a2f",
+      "#3a2430",
+      "#7a4a6e"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 254490615816577,
+    "background": {
+      "color": "#d09a2f",
+      "prompt": "Hand-folded pleated paper fan in warm saffron yellow, sharp radiating creases spreading from lower center outward, alternating soft stripe shades of light and shadow across the folds, flat graphic illumination, no objects, no horizon",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 299,
+      "height": 864
+    },
+    "lighting": "even diffuse frontal light raking across paper pleats into soft alternating stripe shades",
+    "palette": [
+      "#d09a2f",
+      "#3a2430",
+      "#7a4a6e"
+    ],
+    "title": {
+      "text": "J'adore",
+      "x": 420,
+      "y": 202,
+      "size": 84,
+      "color": "#3a2430",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "EAU DE PARFUM",
+      "x": 354,
+      "y": 324,
+      "size": 28,
+      "color": "#3a2430",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a2430",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Dior",
+      "x": 500,
+      "y": 108,
+      "size": 36,
+      "color": "#3a2430",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 3
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 367,
+      "y": 392,
+      "width": 346,
+      "color": "#7a4a6e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

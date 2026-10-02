@@ -1,0 +1,80 @@
+{
+  "pass": false,
+  "score": 82.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 84,
+    "physical_integration": 86,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The corolla's lower lobe tip escapes below the bottle base (visible in the contact crop at approx x540, y1066-1080 as a mint point under the base line). It collides with the contact shadow and reads as a stray registration artifact, and it vertically crowds the poppy rule at y1097, muddying the calm lower band the brief demands."
+    },
+    {
+      "type": "typography",
+      "problem": "The type plaque is bottom-light and internally unbalanced: the tracked GUCCI line (bbox 481-598) and 64px title (bbox 126-947) end at y1278, leaving roughly 162px of dead gentian field below versus only about 150px above the cap, so the plaque floats low instead of sitting as a centered band; the subtitle slot is empty, leaving no mediating line between brand and name as in the reference lockups."
+    },
+    {
+      "type": "background",
+      "problem": "The printed field is optically flat dead color: compared with the references' atmospheric depth (tonal bloom behind the hero), the gentian ink shows no radial value shift, so the mint corolla reads as a pasted vector shape rather than a printed halo owning the light."
+    }
+  ],
+  "changes": [
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1122
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1163
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1252
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 462
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1330
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#eaf4ee"
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat silkscreen-printed matte card in deep gentian blue with one very soft broad radial lift of value centred slightly above middle, one oversized hard-edge flat scalloped eight-lobed corolla shape in pale mint centred slightly above middle, even shadowless frontal ink illumination, no texture gradients, no objects"
+    }
+  ],
+  "reported_score": 81
+}

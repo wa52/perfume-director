@@ -1,0 +1,117 @@
+{
+  "brief": "为 Gucci Flora Gorgeous Jasmine 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A quiet photographic lido morning: honed sea-glass terrazzo sweeps from wall into a continuous matching ground at a low horizon, its coral and teal marble chips whispering the label's garden without quoting it. The opaque mint flacon stands flush on that ground at its true base line under overcast open-shade light, the measured contact shadow settling into the matte cement matrix. All type floats in a centred monument band in the calm upper wall: small tracked Baskerville brand line, the name in one generous serif line, closed by a short ink rule like a waterline mark. Mineral chip matte against lacquer gloss keeps the story tactile and architectural.",
+  "product": "assets\\products\\gucci-flora-gorgeous-jasmine-retailer.png",
+  "references": [
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-6661b9238858",
+      "brand": "Avon",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/editorial/ref-6661b9238858.webp",
+      "selection_reason": "Professionally resolved perfume still-life with strong summer thematic styling, vibrant color palette, and clear product focus. Useful as a design reference for seasonal fragrance campaigns.",
+      "analysis": {
+        "composition": "Centralized product placement on a geometric white pedestal, flanked by thematic props (fruit slice, flower, amber stone) against a bright sky background.",
+        "subject_ratio": 0.45,
+        "negative_space": "Ample negative space in the upper sky area, providing room for potential campaign copy.",
+        "lighting": "Bright, high-key naturalistic lighting simulating intense sunlight, creating a warm, summery atmosphere with soft shadows.",
+        "color": [
+          "#FF7F50",
+          "#87CEEB",
+          "#FFFFFF",
+          "#FF4500",
+          "#FFD700"
+        ],
+        "typography": "None visible outside the container. Text on the bottle is product labeling.",
+        "information_density": "Low, focused entirely on the product and mood.",
+        "characteristics": [
+          "summery",
+          "vibrant",
+          "fresh",
+          "geometric pedestal",
+          "thematic props"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-efb51dc5d487",
+      "brand": "Sisley",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/luxury/ref-efb51dc5d487.webp",
+      "selection_reason": "Professionally resolved luxury perfume still-life featuring the L'Eau Rêvée collection. High-quality lighting, elegant composition with botanical props, and clear product visibility make it an excellent design reference.",
+      "analysis": {
+        "composition": "Dynamic flat-lay arrangement on a split-level beige stone surface; bottles are scattered organically, interspersed with white flowers and green foliage to create depth and movement.",
+        "subject_ratio": 0.65,
+        "negative_space": "Moderate negative space provided by the textured stone background, balancing the multiple subjects without feeling cluttered.",
+        "lighting": "Hard, directional sunlight creating sharp, dramatic shadows and bright caustic refractions through the glass bottles and sculpted caps.",
+        "color": [
+          "beige",
+          "pale yellow",
+          "white",
+          "forest green",
+          "clear"
+        ],
+        "typography": "None visible outside of product labels.",
+        "information_density": "Medium; focuses entirely on the product range and atmospheric styling.",
+        "characteristics": [
+          "sculpted glass caps",
+          "botanical props",
+          "hard shadows",
+          "caustics",
+          "stone texture",
+          "collection display"
+        ],
+        "perfume_suitability": 98,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

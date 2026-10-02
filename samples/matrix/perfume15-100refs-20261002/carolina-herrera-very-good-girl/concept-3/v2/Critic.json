@@ -1,0 +1,89 @@
+{
+  "pass": false,
+  "score": 79.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 84,
+    "physical_integration": 74,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop (283,897,797,1147) confirms a soft graphite contact shadow IS present under the toe at base y=1037, so contact is not absent and offset_y 0 is correct; however the gold stiletto heel tip terminates ~25px above that shadow plane with no shadow of its own, and the original cutout rests on two points (toe and heel tip). The heel therefore reads amputated/floating while the toe is grounded, and the single soft ellipse spreads slightly wider than the toe footprint for the declared flat frontal light."
+    },
+    {
+      "type": "typography",
+      "problem": "The plaque band rhythm is broken: the rose rule (decoration x=540, width=240) renders from x~540 to ~780, i.e. hanging off the right edge instead of centred under the logo line (bbox 405-638), so it reads as a stray dash colliding with the title's right margin; meanwhile the name 'Very Good Girl' (bbox 151-714, ~563px, ~52% of canvas) still sits narrower than the brief's 'set wide at near band width', leaving hierarchy logo > off-axis rule > title feeling accidental rather than stepped."
+    },
+    {
+      "type": "composition",
+      "problem": "The oval valley centres near x~520-530 while the shoe silhouette centres at x=540, leaving the left contour rings optically heavier, and below the title baseline (y=1220) there is a ~220px empty blush band to the canvas bottom, so the lower plaque reads under-weighted against the dense upper two-thirds."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against references 3-5 the poster's light is flatter: the refs seat the hero with one decisive directional key (long cast shadow ref 3, raking sun ref 4, soft gradient floor ref 5), whereas here the paper contours carry all depth and the bottle's baked upper-front-left key is answered only by a near-uniform frontal field with a very gentle fall-off, so the hero lacks the tonal gradient the references use to ground the product."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 0.7
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.46
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 435
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 210
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 84
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1085
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Concentric die-cut layered matte paper cards in shifted blush rose tones forming a topographic oval valley centred slightly left of centre at x 520 in the upper middle, each cut edge casting a hairline soft shade, one broad soft luminance gradient falling from bright upper front left to a gently deeper rose at lower right across the card fibre grain, darkest tone pooling in the lowest contour ring, no objects, no horizon, no equipment"
+    }
+  ],
+  "reported_score": 78.6
+}

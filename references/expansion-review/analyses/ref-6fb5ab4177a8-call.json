@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-6fb5ab4177a8.webp",
+      "sha256": "074fc3ec211f2b9731c269b55110c3ec250d5038a94f5310a9831c5dbbfdc29a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-49ee2d15-3bde-972c-8ab3-f2f8d755955a",
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1668,
+        "completion_tokens": 329,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1042,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 329
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-49ee2d15-3bde-972c-8ab3-f2f8d755955a",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1668,
+    "completion_tokens": 329,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1042,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 329
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Creed",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring dramatic atmospheric smoke and textured stone props. Excellent monochromatic lighting and composition make it a strong design reference for masculine or niche fragrance campaigns.",
+    "analysis": {
+      "composition": "Dynamic diagonal arrangement of two bottles nestled among jagged stone fragments, enveloped in swirling smoke.",
+      "subject_ratio": 0.45,
+      "negative_space": "Filled with volumetric smoke and dark textured background, creating depth without empty voids.",
+      "lighting": "Dramatic studio lighting with high contrast, emphasizing glass reflections, metallic caps, and the texture of the smoke and stone.",
+      "color": [
+        "charcoal grey",
+        "silver",
+        "white",
+        "black"
+      ],
+      "typography": "None outside the container labels.",
+      "information_density": "Low, purely visual and atmospheric.",
+      "characteristics": [
+        "monochromatic",
+        "textural contrast",
+        "volumetric smoke",
+        "masculine aesthetic",
+        "premium product photography"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 10.863
+}

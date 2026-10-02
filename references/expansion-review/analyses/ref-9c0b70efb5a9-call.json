@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-9c0b70efb5a9.webp",
+      "sha256": "25899f812df8323c5564383f04b9b40e8e847b9b4fa0b1f8c51cee664defe22c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-abd38efd-6cc7-9e93-9da1-04bbec1d36fe",
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1671,
+        "completion_tokens": 332,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1042,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 332
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-abd38efd-6cc7-9e93-9da1-04bbec1d36fe",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1671,
+    "completion_tokens": 332,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1042,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 332
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Amouage",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved luxury perfume still-life featuring dramatic textural contrast and premium material rendering, ideal for high-end fragrance campaign reference.",
+    "analysis": {
+      "composition": "Strict central symmetry with the bottle anchored in the middle of a dynamic, concentric rippling liquid background.",
+      "subject_ratio": 0.35,
+      "negative_space": "Filled entirely with active, glossy black liquid ripples; no flat negative space.",
+      "lighting": "High-contrast studio lighting creating sharp specular highlights on the viscous liquid and metallic gold accents.",
+      "color": [
+        "emerald green",
+        "metallic gold",
+        "glossy black",
+        "silver-grey"
+      ],
+      "typography": "None outside the container; text is limited to the brand logo and product name printed directly on the bottle.",
+      "information_density": "Low; purely visual and atmospheric focus.",
+      "characteristics": [
+        "viscous texture",
+        "opulent materials",
+        "high contrast",
+        "central framing",
+        "dark luxury"
+      ],
+      "perfume_suitability": 98,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95
+    }
+  },
+  "duration_seconds": 11.499
+}

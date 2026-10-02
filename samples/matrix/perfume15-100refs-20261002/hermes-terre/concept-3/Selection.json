@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) fulfills the declared graphic concept far more literally: the hard-edge burnt-ember half-disc crowns at the flacon's shoulders, reading as a buried sun behind the glass, while the bottle cutout is lifted into the upper two-thirds and the lower third resolves into a quiet plaque band (tracked 'Hermès' line, wide Century Gothic-style capital title, short floating rule as registration mark). The flat matte ink-night field stays shadowless and even, the palette holds to ink-night/cream/ember, and the product cutout is faithful with unmodified label, opaque cap and near-white glass edges intact. Version 1 (image 5) sinks the disc too low so its crown sits behind the mid-body rather than the shoulders, and worse, rests the bottle base on the disc's flat base line, which reads as aSupport-like plinth/floor and breaks the 'no floor, pure rising-disc geometry' instruction; its disc also crowds the plaque band. Version 2's silhouette hierarchy (disc behind shoulders, bottle floating free, clean band below) is the stronger finished poster.",
+  "remaining_problems": [
+    "The thin orange seam specified at the disc crown is not clearly visible in either version.",
+    "In version 2 the bottle base floats in empty ink with the disc base line cutting across the glass, which is conceptually correct but leaves a slight visual tension between the disc's flat base and the bottle's lower third.",
+    "Title tracking is wide but stops short of true band width; the plaque band could carry slightly more optical weight to balance the oversized disc.",
+    "Glass cutout retains its original high-key studio highlights, mildly at odds with the perfectly flat graphic ink light of the field."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

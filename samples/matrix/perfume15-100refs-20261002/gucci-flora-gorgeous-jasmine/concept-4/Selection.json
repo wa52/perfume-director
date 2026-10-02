@@ -1,0 +1,11 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) executes the Viridian Ribbon Orbit concept most completely: the pale-mint band reads as one continuous printed loop, entering low-left, diving behind the flacon's waist and re-emerging at the opposite shoulder before sweeping to the top-right corner, so the silhouette genuinely completes the circuit. The product sits low and left-weighted on a flat matte viridian field with no floor or horizon, and the right-hand column carries the monument exactly as briefed: tracked narrow-sans GUCCI brand line at column head, the name wrapped across three tall lines, and a short gold rule closing the column, with vertical overlap into the cap zone but clear horizontal clearance. Typography is coherent cream sans throughout, matching the declared palette, and the flacon is faithful (opaque mint body, ribbed gold cap, floral label) under even shadowless graphic light. Version 2 (image 6) breaks the single-loop logic: the ribbon forms a detached halo loop behind the cap plus a separate right-hand wave and a chopped pointed shard at the left edge, so the circuit reads as fragments rather than one continuous band, and its name block switches to a dark off-palette ink that muddies hierarchy against the green field and the mint ribbon passing behind it.",
+  "remaining_problems": [
+    "In version 1 the cream name lines partially cross the pale-mint ribbon, slightly lowering local contrast at the 'Flora' line; a minor tracking or ribbon-route adjustment would keep text fully on the viridian field.",
+    "The ribbon's twist near the right shoulder shows a soft shaded fold that hints at dimensional fabric rather than the strictly flat hard-edge printed band the concept calls for.",
+    "The gold closing rule sits a little far below the last name line, leaving the column's closure slightly loose."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-1059b255f246.webp",
+      "sha256": "26ddd63726852e0da46f6a4724f772a58a888ae9b949fae3611b97100379ee12"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-f41d7a95-9505-96d0-bc79-4a73a9f65265",
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1686,
+        "completion_tokens": 347,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1042,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 347
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f41d7a95-9505-96d0-bc79-4a73a9f65265",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1686,
+    "completion_tokens": 347,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1042,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 347
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Tom Ford",
+    "style": "luxury",
+    "reference_kind": "still_life",
+    "reason": "High-end perfume still life featuring a Tom Ford Oud Wood bottle centered against a dynamic, radiating liquid-metal background. The dramatic lighting and monochromatic palette create a sophisticated, opulent mood suitable for luxury fragrance reference.",
+    "analysis": {
+      "composition": "Strictly symmetrical central placement with radial background lines drawing focus to the product; mirrored reflection on the surface below.",
+      "subject_ratio": 0.35,
+      "negative_space": "Filled with high-contrast, textured metallic ripples radiating from the center; no empty void space.",
+      "lighting": "High-contrast studio lighting emphasizing specular highlights on the chrome-like background and the glass edges of the bottle.",
+      "color": [
+        "black",
+        "silver",
+        "white",
+        "charcoal"
+      ],
+      "typography": "None outside the container; text is limited to the product label.",
+      "information_density": "Low; purely visual focus on the product and texture.",
+      "characteristics": [
+        "metallic texture",
+        "radial symmetry",
+        "monochromatic",
+        "high gloss",
+        "reflection"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90
+    }
+  },
+  "duration_seconds": 10.811
+}

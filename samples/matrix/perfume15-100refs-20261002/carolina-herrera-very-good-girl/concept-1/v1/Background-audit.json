@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte risograph paper in pale sea-glass mint, oversized halftone dot gradient densifying toward lower right, one hard-edge flat vermilion diagonal stripe crossing lower third, perfectly even shadowless illumination, no texture gradients beyond dots, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Coordinates in percentages from upper left: keep the main silhouette region [32, 32, 68, 92] uncluttered; reserve quiet negative space for ink in these areas: [[31, 15, 84, 21], [39, 8, 64, 9]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 255395513705023,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

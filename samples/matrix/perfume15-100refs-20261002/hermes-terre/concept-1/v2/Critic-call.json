@@ -1,0 +1,166 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "23d01fb885aaa6ddf8183d40ddab43a6fb180234918e997ce944d4261a219ea8"
+    },
+    {
+      "name": "hermes-terre-retailer.png",
+      "sha256": "b165538b54ca575dcaa9a259c2a646ce96defe9350314141365fe2820f937755"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-68bfeb9c56c1.webp",
+      "sha256": "d22aa3ff0ef42653c6a6ffb3de8d3b1d6ff291c78826275d168c89d8ba82fa68"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "dddaae29f331d18cd38ae25a8d8724e6ecab8334371b47b287ec4deb0f0e4056"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b5de46c5248750157424f10bbbb3018f9233a186402360f40b33337e569703e5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5764999f-84f8-99a4-85ca-5bacdcc40f96",
+      "usage": {
+        "prompt_tokens": 10151,
+        "total_tokens": 12088,
+        "completion_tokens": 1937,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6537,
+          "text_tokens": 3614
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 912
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5764999f-84f8-99a4-85ca-5bacdcc40f96",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10151,
+    "total_tokens": 12088,
+    "completion_tokens": 1937,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6537,
+      "text_tokens": 3614
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 912
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 79.6,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 80,
+      "typography": 76,
+      "background": 74,
+      "physical_integration": 86,
+      "reference_alignment": 74,
+      "creative_coherence": 80
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The applied strata prompt still renders imperfectly: band edges keep a faint手-drawn undulation instead of the crisp硬-edge core-sample lines (visible at the tan/brown boundaries near y≈390 and y≈545), and TWO flint-orange seam lines appear (y≈1070 and y≈1245) where the concept specifies ONE burial-line seam, diluting the accent and cluttering the lower strata behind the flacon."
+      },
+      {
+        "type": "typography",
+        "problem": "The subtitle and price strings remain empty, so the top band carries only logo, title and rule; against the Byredo and Bleu de Chanel references the type block lacks a supporting descriptor line, leaving the hierarchy thin and the lower two-thirds of the poster completely text-free."
+      },
+      {
+        "type": "composition",
+        "problem": "The title line (x 167-917) is set left-aligned and optically off-center relative to the centered logo, centered rule and centered flacon; in this symmetric monument composition the mismatch reads as drift, not intentional asymmetry."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "The base crop confirms a correct contact shadow (soft darkening under the foot notch at y≈1339, offset_y 0), but at opacity 0.5 over the mid-tan stratum it is a faint smudge; the monument's grounding reads weaker than the concept's extracted-core narrative demands, and the baked high-key speculars still sit slightly at odds with the flat ink field."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat screen-printed matte paper poster of perfectly straight ruler-drawn horizontal sedimentary strata bands with razor crisp hard edges and zero waviness, pale bone, sand, ochre, burnt sienna and deep umber stacked top to bottom like a drilled core sample, exactly one single thin hard-edge flint-orange seam line placed between the ochre and sienna bands and nowhere else, perfectly even shadowless illumination, no texture gradients, no objects, no waves, no curves, no second orange line"
+      },
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "EAU DE TOILETTE"
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 372
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 20
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 6
+      },
+      {
+        "path": "subtitle.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.62
+      }
+    ]
+  },
+  "duration_seconds": 43.079
+}

@@ -1,0 +1,182 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 230243689467964,
+    "background": {
+      "color": "#e2a06b",
+      "prompt": "Warm apricot lime-washed stucco wall meeting a continuous honed pale sandstone ground at a low horizontal horizon, one soft broad cloud-shadow band drifting across the upper wall, matte mineral grain, bright diffuse warm daylight, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 792,
+      "width": 379,
+      "height": 893
+    },
+    "lighting": "bright but diffuse overcast-warm daylight, soft frontal with one gentle cloud-shadow band, no hard shadows",
+    "palette": [
+      "#e2a06b",
+      "#3a1d10",
+      "#1f5f58"
+    ],
+    "title": {
+      "text": "Flora Gorgeous Jasmine",
+      "x": 76,
+      "y": 576,
+      "size": 84,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 950,
+      "size": 20,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "GUCCI",
+      "x": 76,
+      "y": 482,
+      "size": 30,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 380,
+      "y": 576,
+      "width": 6,
+      "color": "#1f5f58"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 230243689467964,
+    "background": {
+      "color": "#e2a06b",
+      "prompt": "Warm apricot lime-washed stucco wall meeting a continuous honed pale sandstone ground at a low horizontal horizon, one soft broad cloud-shadow band drifting across the upper wall, matte mineral grain, bright diffuse warm daylight, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 734,
+      "y": 792,
+      "width": 379,
+      "height": 893
+    },
+    "lighting": "bright but diffuse overcast-warm daylight, soft frontal with one gentle cloud-shadow band, no hard shadows",
+    "palette": [
+      "#e2a06b",
+      "#3a1d10",
+      "#1f5f58"
+    ],
+    "title": {
+      "text": "Flora Gorgeous Jasmine",
+      "x": 76,
+      "y": 576,
+      "size": 84,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 1,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 950,
+      "size": 20,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "GUCCI",
+      "x": 76,
+      "y": 482,
+      "size": 30,
+      "color": "#3a1d10",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 380,
+      "y": 576,
+      "width": 6,
+      "color": "#1f5f58"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

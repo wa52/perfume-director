@@ -1,0 +1,12 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Deep ultramarine lime-washed plaster wall meeting a continuous matte honed pale limestone ground with no tiles and no grout lines, one broad hard diagonal shadow edge raking the wall from upper left across a third of its height, bright warm direct sunlight grazing the mineral grain, empty scene, no objects, Composition coordinates in percentages measured from upper left: reserve a calm empty area [13, 28, 47, 84]. A continuous horizontal ground plane must be visible through y=84 percent; make its distant transition higher than this level, never a vertical wall across this point. No ledges or raised edges. Keep low visual detail in these empty ink areas: [[56, 44, 91, 55], [56, 65, 77, 66], [56, 38, 71, 39]]. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 182058145774189,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": []
+}

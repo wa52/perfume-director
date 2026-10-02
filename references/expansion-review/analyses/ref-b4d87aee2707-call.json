@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-8fd37487-704e-9c8a-8153-734035a9b43c",
+      "usage": {
+        "prompt_tokens": 1659,
+        "total_tokens": 2009,
+        "completion_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1362,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 350
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-8fd37487-704e-9c8a-8153-734035a9b43c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1659,
+    "total_tokens": 2009,
+    "completion_tokens": 350,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1362,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 350
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Hermès",
+    "style": "minimal",
+    "reference_kind": "still_life",
+    "reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+    "analysis": {
+      "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+      "subject_ratio": 0.25,
+      "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+      "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+      "color": [
+        "off-white",
+        "aquamarine",
+        "deep teal",
+        "burgundy"
+      ],
+      "typography": "None visible outside the container; text is strictly limited to the product label.",
+      "information_density": "Very low; focuses entirely on material, light, and form.",
+      "characteristics": [
+        "caustic refractions",
+        "hard shadows",
+        "organic props",
+        "flat lay",
+        "aquatic palette"
+      ],
+      "perfume_suitability": 95,
+      "has_people": false,
+      "has_campaign_typography": false,
+      "renderer_compatibility": 98
+    }
+  },
+  "duration_seconds": 16.265
+}

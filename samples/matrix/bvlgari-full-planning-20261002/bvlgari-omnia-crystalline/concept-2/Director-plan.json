@@ -1,0 +1,127 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\eae01081e310\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Saffron Disc Eclipse Monument",
+    "brief": "把互锁双盘读作一次日食：深藏红花黄平涂卡纸上，一枚硬边象牙大圆盘自画面中心偏上浮出，其后错出一枚细墨描边圆环如食甚前的最后一圈光；商品沉于下幅立于圆盘之前，剪影自身补全圆的中断。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条墨黄细线横垫其下如制版套准线。哑光水粉吞光，让珠光 ivory 盘面与晶带 owning 全部高光。无地面无 horizon，纯圆盘几何叙事。参考 R2 的纸面分区铭牌秩序与 R5 的圆心聚焦构图。",
+    "material": "flat matte gouache-painted card with hard-edge printed disc and offset outline ring",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c98f2a",
+      "#241a08",
+      "#f0e8d8"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 258248070523676,
+    "background": {
+      "color": "#c98f2a",
+      "prompt": "Seamless flat matte gouache-painted card in deep saffron yellow, one large hard-edge flat ivory disc centred slightly above middle, one thin hard-edge dark umber outline ring offset up and left behind the disc, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 605,
+          "width": 670,
+          "height": 670,
+          "color": "#f0e8d8",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 475,
+          "y": 518,
+          "width": 540,
+          "height": 540,
+          "color": "#241a08",
+          "opacity": 0.18
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 587,
+      "height": 806
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#c98f2a",
+      "#241a08",
+      "#f0e8d8"
+    ],
+    "title": {
+      "text": "Omnia Crystalline",
+      "x": 97,
+      "y": 144,
+      "size": 104,
+      "color": "#241a08",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 454,
+      "y": 288,
+      "size": 20,
+      "color": "#241a08",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#241a08",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "BVLGARI",
+      "x": 450,
+      "y": 69,
+      "size": 28,
+      "color": "#241a08",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 324,
+      "y": 266,
+      "width": 432,
+      "color": "#f0e8d8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

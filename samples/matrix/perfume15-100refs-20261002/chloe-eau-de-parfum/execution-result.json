@@ -1,0 +1,613 @@
+{
+  "product_id": "chloe-eau-de-parfum",
+  "status": "COMPLETED",
+  "started_at": 1790928255.2380815,
+  "input_sha256": "306d21e17503929a909d8175aa127a400f7ed171fb3c4ee5a96c029dff9f6924",
+  "reference_count": 100,
+  "source_sha256": {
+    "poster.py": "1022914e0cb06d99f6a400c168d3d282f0e6c88ebbc1bcb0ee87ad03591cf99b",
+    "concepts.py": "e2124c44d686c2b9d29c3c3ec4793acb55205a609fdad5704d0b9788f105c2b8",
+    "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+    "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+    "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70"
+  },
+  "rounds_per_direction": 2,
+  "stage": "FINISHED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\8291d1e2ce3a",
+  "direction_count": 4,
+  "version": 2,
+  "direction_index": 4,
+  "direction_name": "Powder Rose Bow Halo",
+  "directions": [
+    {
+      "name": "Grosgrain Meridian Graph",
+      "brief": "把裸色罗缎蝴蝶结读作一条横贯纸面的经线：雾蓝平涂卡纸上，一条硬边罗缎色横带精确穿过蝴蝶结的高度，带内压出细密竖向罗纹刻线，像把织带放大成地平线；银盖与凹槽玻璃从带前浮出，剪影自身补全织带的中断。商品沉于下幅，顶带留出安静铭牌区：宽距 Arial 品牌字置顶，Baskerville 题名以近满幅宽的大字居中统领，一条银灰细线横于铭带之下如织带刻度。无地面无 horizon，纯横带几何与罗纹密度叙事，对抗高透光玻璃的柔渐液体。",
+      "material": "flat matte screen-printed card with one hard-edge grosgrain ribbon band carrying fine engraved vertical rib lines",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "3ddc6043668736b6ba85d3aacb6e4b05ccd13d59ccef4778a84f9b33e000e95a",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#a9c6d8",
+        "#1f3242",
+        "#c9a184"
+      ],
+      "reference_ids": [
+        "ref-453438bbcb76",
+        "ref-b4d87aee2707",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#a9c6d8",
+          "prompt": "Seamless flat matte screen-printed card in medium dusty cornflower blue, one hard-edge horizontal grosgrain nude-beige band crossing at four tenths down the frame, fine engraved vertical rib lines inside the band only, perfectly even shadowless illumination, no texture gradients beyond printed ribs, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 950,
+          "width": 883,
+          "height": 720
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#a9c6d8",
+          "#1f3242",
+          "#c9a184"
+        ],
+        "title": {
+          "text": "Chloé",
+          "x": 355,
+          "y": 187,
+          "size": 150,
+          "color": "#1f3242",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 1375,
+          "size": 20,
+          "color": "#1f3242",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#1f3242",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Chloé",
+          "x": 480,
+          "y": 94,
+          "size": 30,
+          "color": "#1f3242",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 377,
+          "width": 173,
+          "color": "#c9a184"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\0b0dfd4c1712",
+      "selected": {
+        "version": 2,
+        "score": 83.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "24ceae30719cc47cd9477bba133b17704d47fe53229d3ac96d4762730274f722"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "0108c81ff5453498d4ebf331d5dadef49be3b35ba819f2ec7c24cb91fa2677eb"
+        },
+        {
+          "version": 2,
+          "score": 83.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "24ceae30719cc47cd9477bba133b17704d47fe53229d3ac96d4762730274f722"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Silver Pleat Etching Plaque",
+      "brief": "把凹槽玻璃的竖棱放大成整面蚀刻：鼠尾草绿平涂卡纸上，细密深绿竖凹线自顶垂落，在下三分之一处被一道硬边留白带截断，如同棱纹沉入铭牌；商品被提至上幅，竖棱从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以近满带宽居中统领，一条石墨细线横于带顶如蚀刻刀痕。无地面无 horizon，纯线密度下坠叙事，对抗银盖的镜面碎光。",
+      "material": "flat matte card with fine engraved vertical fluting lines and one hard-edge blank plaque band",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-2",
+      "signature": "24d4f0f8e43d254a1d68300f51a5e265ef471e9371152144b8252989a1ea5454",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#a9c4a4",
+        "#20301f",
+        "#8f9aa2"
+      ],
+      "reference_ids": [
+        "ref-b6e669a924a3",
+        "ref-6661b9238858",
+        "ref-7a523ada9a2c"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#a9c4a4",
+          "prompt": "Seamless flat matte card in medium sage green, fine engraved vertical fluting lines in darker olive grey falling from the top edge, one hard-edge blank horizontal plaque band without lines across the lower third, perfectly even shadowless illumination, no texture gradients beyond engraved lines, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 540,
+          "y": 576,
+          "width": 847,
+          "height": 691
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#a9c4a4",
+          "#20301f",
+          "#8f9aa2"
+        ],
+        "title": {
+          "text": "Chloé",
+          "x": 214,
+          "y": 1138,
+          "size": 110,
+          "color": "#20301f",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 8,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 486,
+          "y": 1339,
+          "size": 20,
+          "color": "#20301f",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#20301f",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Chloé",
+          "x": 480,
+          "y": 1040,
+          "size": 30,
+          "color": "#20301f",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 1112,
+          "width": 173,
+          "color": "#8f9aa2"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\16951d0554e7",
+      "selected": {
+        "version": 2,
+        "score": 79.7,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "79f54870f5768229608145eabde2e6b998520f688a41b44145e654f97f539d51"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "a16ee9c0015120b6f9ac6cfdaca94ee0282e46b3a1ea52f982066f0f7abb65dc"
+        },
+        {
+          "version": 2,
+          "score": 79.7,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "79f54870f5768229608145eabde2e6b998520f688a41b44145e654f97f539d51"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Washed Linen Morning Column",
+      "brief": "晨光里的亚麻幕：水洗亚麻布自墙面垂落并铺成连续同料地面，折痕在真实基准线处没入布面，柔和窗光把织纹照成细暖的颗粒；商品立于布地偏右，接触阴影陷进织纹，宽蝴蝶结两侧保留完整横向呼吸。左半幅布面保持安静，承载一根 Times 竖排文字柱：品牌字居柱顶，题名以窄柱大字排印如裁缝签条，一条麻色细线竖于两栏之间如缝线。垂直方向与瓶肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；织物的哑光与玻璃凹槽的高光互为粗细。",
+      "material": "washed linen cloth cyclorama sweeping from hanging drape into continuous linen ground",
+      "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+      "id": "concept-3",
+      "signature": "6a694b47cd04280ca49125c5fe051bfd70ecc25123bb1f1c413081d22a0a7fe7",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#d9c09a",
+        "#3a2c1c",
+        "#8a6a4a"
+      ],
+      "reference_ids": [
+        "ref-efb51dc5d487",
+        "ref-b4d87aee2707",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d9c09a",
+          "prompt": "Washed natural linen cloth in warm honey oat tone hanging as a soft drape wall and sweeping into a continuous matching linen ground at a horizontal horizon six tenths down the frame, gentle cloth creases and fine weave grain, soft diffuse warm morning light, even illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 620,
+          "y": 893,
+          "width": 812,
+          "height": 662
+        },
+        "lighting": "soft diffuse morning window light, gentle frontal with faint weave grain glow, no hard shadows, matching the baked studio light",
+        "palette": [
+          "#d9c09a",
+          "#3a2c1c",
+          "#8a6a4a"
+        ],
+        "title": {
+          "text": "Chloé",
+          "x": 86,
+          "y": 605,
+          "size": 40,
+          "color": "#3a2c1c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 1,
+          "max_width": 300,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 86,
+          "y": 907,
+          "size": 20,
+          "color": "#3a2c1c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#3a2c1c",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "Chloé",
+          "x": 90,
+          "y": 511,
+          "size": 30,
+          "color": "#3a2c1c",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 605,
+          "width": 4,
+          "color": "#8a6a4a"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic",
+        "layout_fit": {
+          "requested_product": {
+            "x": 713,
+            "y": 893,
+            "height": 662
+          },
+          "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+        }
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\86c662275d3b",
+      "selected": {
+        "version": 2,
+        "score": 78.0,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "eaeeaa7ca6d12e975f3fedff5022989b8581270c9421c30b0758ae72c0b32ae0"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 74.0,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "f72995c0932952dcdbc6ed85536503ac981b7e6ca1e82bf3f8876b1fb8b1b6ea"
+        },
+        {
+          "version": 2,
+          "score": 78.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "eaeeaa7ca6d12e975f3fedff5022989b8581270c9421c30b0758ae72c0b32ae0"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Powder Rose Bow Halo",
+      "brief": "把蝴蝶结放大成一轮粉雾日晕：摄影感玫瑰泥墙上悬一枚巨大硬边浅玫瑰圆环，圆心精确对齐蝴蝶结，圆环从其身后掠过却不触碰标签，像把织带的弧度扩成建筑拱线；连续磨光浅玫瑰地面在真实基准线处接墙，商品低立于地，接触阴影轻落粉面。左上一组宽距 Arial Narrow 排印在圆环之外的安静墙区结束于瓶顶之上，构成对角纪念碑网格；一条玫瑰细线短促垫于文字组下如拱心石刻度。粉泥的矿物哑光与银盖镜面、桃色液体的柔光互为冷暖与柔刚。",
+      "material": "powder rose mineral plaster wall with honed matching rose ground and one hard-edge pale rose disc",
+      "lighting": "soft high-key diffuse daylight, gentle frontal with one broad calm glow on the disc, no hard shadows",
+      "id": "concept-4",
+      "signature": "cb99c0d705c3324cb49f442c80576a956325fb0f5cc8b40c4ced105254aea74e",
+      "scene_mode": "photographic",
+      "layout_relation": "above",
+      "title_family": "sans",
+      "palette": [
+        "#d8a49c",
+        "#4a221e",
+        "#b06a5e"
+      ],
+      "reference_ids": [
+        "ref-d2db4b80bde2",
+        "ref-6661b9238858",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#d8a49c",
+          "prompt": "Powder rose mineral plaster wall in medium saturated dusty rose meeting a continuous honed pale rose ground at a horizontal horizon seven tenths down the frame, one large hard-edge flat disc in lighter blush rose centred at one third down the frame, matte mineral grain, soft high-key diffuse illumination, no objects",
+          "revision": 0
+        },
+        "product": {
+          "x": 605,
+          "y": 979,
+          "width": 795,
+          "height": 648
+        },
+        "lighting": "soft high-key diffuse daylight, gentle frontal with one broad calm glow on the disc, no hard shadows",
+        "palette": [
+          "#d8a49c",
+          "#4a221e",
+          "#b06a5e"
+        ],
+        "title": {
+          "text": "Chloé",
+          "x": 97,
+          "y": 166,
+          "size": 140,
+          "color": "#4a221e",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 97,
+          "y": 353,
+          "size": 20,
+          "color": "#4a221e",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#4a221e",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "Chloé",
+          "x": 100,
+          "y": 72,
+          "size": 30,
+          "color": "#4a221e",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 97,
+          "y": 324,
+          "width": 173,
+          "color": "#b06a5e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\a255fe922a7e",
+      "selected": {
+        "version": 2,
+        "score": 80.6,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "f103ea997a269f112fba308ffa8707d1dea754428e8a1b0405b022114e19627b"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3f95600b954223d18de478d324cd2473c4c9bd23fb17a6de4a9b617f3de194be"
+        },
+        {
+          "version": 2,
+          "score": 80.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "f103ea997a269f112fba308ffa8707d1dea754428e8a1b0405b022114e19627b"
+        }
+      ],
+      "review_failures": []
+    }
+  ],
+  "batch_dir": "runs/batches/8291d1e2ce3a",
+  "duration_seconds": 1434.4
+}

@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.1,
+    "enable_thinking": false,
+    "max_completion_tokens": 3072
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "ref-41a992f3eb88.jpg",
+      "sha256": "ee0e7efaca07d728f121fe4f021e01cba4b974365bc0684422a7eeb3065e6d68"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-580cf7de-67cb-9397-a17e-d66df95dcc73",
+      "usage": {
+        "prompt_tokens": 1127,
+        "total_tokens": 1455,
+        "completion_tokens": 328,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 830,
+          "text_tokens": 297
+        },
+        "completion_tokens_details": {
+          "text_tokens": 328
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-580cf7de-67cb-9397-a17e-d66df95dcc73",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1127,
+    "total_tokens": 1455,
+    "completion_tokens": 328,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 830,
+      "text_tokens": 297
+    },
+    "completion_tokens_details": {
+      "text_tokens": 328
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "accepted": true,
+    "brand": "Versace",
+    "style": "fashion",
+    "reference_kind": "campaign_poster",
+    "reason": "Professionally resolved celebrity-led fragrance advertisement with clear campaign typography and product integration.",
+    "analysis": {
+      "composition": "Close-up portrait dominating the left and center, balanced by the product shot and logotype in the lower right quadrant.",
+      "subject_ratio": 0.75,
+      "negative_space": "Minimal, mostly occupied by the model's face and a softly blurred background.",
+      "lighting": "Soft, diffused studio lighting highlighting facial features with cool undertones.",
+      "color": [
+        "cool blue",
+        "silver",
+        "white",
+        "skin tone",
+        "dark grey"
+      ],
+      "typography": "Clean, white sans-serif logotype and tagline placed in the lower right, distinct from the product label.",
+      "information_density": "Low, focused on the model's gaze, brand name, and product.",
+      "characteristics": [
+        "male model",
+        "direct gaze",
+        "cool color palette",
+        "product placement",
+        "celebrity endorsement style"
+      ],
+      "perfume_suitability": 95,
+      "has_people": true,
+      "has_campaign_typography": true,
+      "renderer_compatibility": 40
+    }
+  },
+  "duration_seconds": 10.207
+}

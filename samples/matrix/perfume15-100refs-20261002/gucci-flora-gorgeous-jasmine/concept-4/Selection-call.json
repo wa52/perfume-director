@@ -1,0 +1,88 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "9a80ab5f6c75f9763fadfcd7133952ee90ee608da8afe57724d6e1c0d0e41dc6"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "d901910af332fef069d1b0793a812a177ceaaddc86d961fabb359754db85b0b5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-3fc332df-1386-995e-8e8f-06500e7b0f65",
+      "usage": {
+        "prompt_tokens": 8164,
+        "total_tokens": 9588,
+        "completion_tokens": 1424,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 7266,
+          "text_tokens": 898
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 399
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-3fc332df-1386-995e-8e8f-06500e7b0f65",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8164,
+    "total_tokens": 9588,
+    "completion_tokens": 1424,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 7266,
+      "text_tokens": 898
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 399
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 (image 5) executes the Viridian Ribbon Orbit concept most completely: the pale-mint band reads as one continuous printed loop, entering low-left, diving behind the flacon's waist and re-emerging at the opposite shoulder before sweeping to the top-right corner, so the silhouette genuinely completes the circuit. The product sits low and left-weighted on a flat matte viridian field with no floor or horizon, and the right-hand column carries the monument exactly as briefed: tracked narrow-sans GUCCI brand line at column head, the name wrapped across three tall lines, and a short gold rule closing the column, with vertical overlap into the cap zone but clear horizontal clearance. Typography is coherent cream sans throughout, matching the declared palette, and the flacon is faithful (opaque mint body, ribbed gold cap, floral label) under even shadowless graphic light. Version 2 (image 6) breaks the single-loop logic: the ribbon forms a detached halo loop behind the cap plus a separate right-hand wave and a chopped pointed shard at the left edge, so the circuit reads as fragments rather than one continuous band, and its name block switches to a dark off-palette ink that muddies hierarchy against the green field and the mint ribbon passing behind it.",
+    "remaining_problems": [
+      "In version 1 the cream name lines partially cross the pale-mint ribbon, slightly lowering local contrast at the 'Flora' line; a minor tracking or ribbon-route adjustment would keep text fully on the viridian field.",
+      "The ribbon's twist near the right shoulder shows a soft shaded fold that hints at dimensional fabric rather than the strictly flat hard-edge printed band the concept calls for.",
+      "The gold closing rule sits a little far below the last name line, leaving the column's closure slightly loose."
+    ]
+  },
+  "duration_seconds": 35.956
+}

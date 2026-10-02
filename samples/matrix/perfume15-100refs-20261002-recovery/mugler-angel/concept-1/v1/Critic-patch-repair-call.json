@@ -1,0 +1,114 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "643d9f652c1d906b64ff61321b8aaba3ed805f2fbd11ded1d3ef88e38547b235"
+    },
+    {
+      "name": "mugler-angel-retailer.png",
+      "sha256": "022d8e2c338a88703172eb0a9d9fe81ae3405a5772b9aa2327fced391f359558"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-f72a7e1dd1ad.webp",
+      "sha256": "4dbff4c89c52a18d4585b200a74c2c9d98b7b60870abaa4f2082be00953e78d4"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-0982d10b-e54e-9f98-bc11-7ace65764cf6",
+      "usage": {
+        "prompt_tokens": 8762,
+        "total_tokens": 10139,
+        "completion_tokens": 1377,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6219,
+          "text_tokens": 2543
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 352
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-0982d10b-e54e-9f98-bc11-7ace65764cf6",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8762,
+    "total_tokens": 10139,
+    "completion_tokens": 1377,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6219,
+      "text_tokens": 2543
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 352
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "logo.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 30
+      },
+      {
+        "path": "logo.tracking",
+        "op": "set",
+        "value": 12
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 468
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 424
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 373
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte screen-printed card in pale ice lilac, perfectly even shadowless frontal illumination; fine engraved constellation lines in deep violet with exactly five small cross ticks placed only in open field, kept clear of the centre and clear of the upper quarter of the field, connected by hairline segments that never cross the centre; one thin hard-edge silver-blue meridian arc whose crest stays in the middle band of the field, never entering the upper quarter; no texture gradients beyond engraved lines, no objects, no horizon"
+      }
+    ]
+  },
+  "duration_seconds": 32.513
+}

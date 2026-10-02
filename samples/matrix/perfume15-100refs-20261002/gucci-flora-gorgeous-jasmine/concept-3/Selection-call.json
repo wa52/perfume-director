@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "gucci-flora-gorgeous-jasmine-retailer.png",
+      "sha256": "2fe39bf0ce4917b6ff86885b9025f6f2419f7def40d6294ae53c8ced8c2a8f66"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-efb51dc5d487.webp",
+      "sha256": "1ddd79208e239f840fdf5b53e5118fc6f81f2a400623d4673a55d4754751ead1"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "8aba7f554f2dad2f2bc6477db371b145945ebcd7ef68ee8f2c83517e8b1cece2"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "b35103271b7b2792d734aa0efcc41c05ad009c428c991f04fd71d9e1c8a7597f"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-9d84cca8-ee0b-9d61-b1ba-9cdc627a7346",
+      "usage": {
+        "prompt_tokens": 6238,
+        "total_tokens": 7660,
+        "completion_tokens": 1422,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5333,
+          "text_tokens": 905
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 397
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-9d84cca8-ee0b-9d61-b1ba-9cdc627a7346",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 6238,
+    "total_tokens": 7660,
+    "completion_tokens": 1422,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5333,
+      "text_tokens": 905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 397
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 keeps the declared Apricot Stucco Ledger Column concept intact and resolves it better than version 1: the flacon sits right of centre on a continuous honed sandstone ground with a soft absorbed contact shadow at its true base line, so the matte mineral set physically holds the lacquered bottle. The lime-washed apricot wall carries a gentle cloud-shadow band without hard shadows, matching the overcast-warm brief. The left editorial column is coherent: 'GUCCI' brand line at column head, the name set large across three narrow serif lines with even leading and wide horizontal clearance from the bottle shoulder, honouring the beside layout relation. The product silhouette, opaque mint body, ribbed gold cap and printed floral label are faithful to the original packshot. Version 1 by comparison seats the bottle ambiguously against the raised skirting course with a weaker, almost missing contact shadow, a busier tiled foreground that fights the continuous ground, and a cloud-shadow smudge colliding with the title column, making its typography feel pasted rather than integrated.",
+    "remaining_problems": [
+      "A small stray teal dash artifact floats between the title column and the bottle shoulder in both versions; in version 2 it reads as a speck rather than the intended vertical ledger rule.",
+      "The brief's short vertical rule closing the ledger column is absent; the column ends without its margin stroke.",
+      "The sandstone ground still reads as large format tiles with visible grout joints rather than a fully continuous honed stone plane.",
+      "Contact shadow under the base is present but very faint and slightly uneven, leaving a mild pasted-in feel at the base line.",
+      "Cloud-shadow band on the upper wall is extremely subtle in version 2, nearly losing the declared drifting shadow element."
+    ]
+  },
+  "duration_seconds": 40.551
+}

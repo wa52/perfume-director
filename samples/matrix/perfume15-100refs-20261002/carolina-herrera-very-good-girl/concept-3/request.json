@@ -1,0 +1,117 @@
+{
+  "brief": "为 Carolina Herrera Very Good Girl 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：A constructed paper sculpture: concentric die-cut blush paper layers stack into a soft topographic oval valley centred upper-middle, each cut edge casting a hairline shade so depth reads as contour lines behind the silhouette. The cutout is lifted into the upper two-thirds, standing out of the paper valley, while the lower third becomes a quiet plaque band: brand line, then the geometric sans name set wide and centred at near band width, closed by a thin rose rule floating between image and text like a cut edge. Layered matte card against glossy lacquer tells the story entirely through cut depth.",
+  "product": "assets\\products\\carolina-herrera-very-good-girl-retailer.png",
+  "references": [
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-41b5b67289d6",
+      "brand": "Scentbird",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/editorial/ref-41b5b67289d6.webp",
+      "selection_reason": "Professionally resolved multi-brand perfume still life with strong directional lighting, textured props, and cohesive warm palette; useful as a design reference for editorial fragrance campaigns.",
+      "analysis": {
+        "composition": "Asymmetrical arrangement of multiple fragrance bottles and a travel atomizer on travertine blocks, framed by draped fabrics and diagonal light shafts.",
+        "subject_ratio": 0.65,
+        "negative_space": "Moderate negative space in the upper left and lower foreground, balanced by heavy drapery on the right.",
+        "lighting": "Hard, directional sunlight creating sharp diagonal shadows and high-contrast highlights across the scene.",
+        "color": [
+          "amber",
+          "terracotta",
+          "cream",
+          "emerald green",
+          "bronze"
+        ],
+        "typography": "None outside of container labels; relies entirely on product packaging lettering.",
+        "information_density": "Medium; multiple products displayed with scattered textural props (caramel/resin chunks).",
+        "characteristics": [
+          "warm tones",
+          "hard shadows",
+          "textured stone props",
+          "draped fabric",
+          "multi-product display"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

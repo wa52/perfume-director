@@ -1,0 +1,107 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\b6cbf396f853\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Midnight Meridian Foil Monument",
+    "brief": "把星瓶悬进子夜：平涂深靛卡纸上贴一枚金属箔细环，环心精确对齐星瓶中心，环外刻出五道放射箔线如星芒刻度，箔的碎光与银盖楔的哑光金属互为镜像；商品被提至上幅如浮出夜面，下幅留出完整宽铭牌带。Times 题名以近满带宽的大字居中统领，宽距 Arial 品牌字置顶带、细箔线横于铭带之顶如天球仪刻度。无地面无 horizon，纯箔环几何与夜面平涂对抗半透玻璃的紫蓝内光。参考 R1 的深色负空间与白铭牌对比层级。",
+    "material": "flat matte gouache card with applied metal-leaf ring and engraved radial foil lines",
+    "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on foil ring",
+    "palette": [
+      "#1a1830",
+      "#eceaf4",
+      "#a9b4d8"
+    ],
+    "layout_relation": "below",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 200987081376848,
+    "background": {
+      "color": "#1a1830",
+      "prompt": "Seamless flat matte gouache-painted card in deep midnight indigo, one thin metal-leaf silver ring centred slightly above middle with five fine engraved radial foil lines extending from the ring edge, perfectly even shadowless illumination, no texture gradients beyond foil lines, no objects",
+      "revision": 0
+    },
+    "product": {
+      "x": 540,
+      "y": 634,
+      "width": 540,
+      "height": 806
+    },
+    "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on foil ring",
+    "palette": [
+      "#1a1830",
+      "#eceaf4",
+      "#a9b4d8"
+    ],
+    "title": {
+      "text": "Angel",
+      "x": 302,
+      "y": 1152,
+      "size": 170,
+      "color": "#eceaf4",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 8,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 450,
+      "y": 1332,
+      "size": 20,
+      "color": "#eceaf4",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#eceaf4",
+      "font": "C:/Windows/Fonts/times.ttf"
+    },
+    "logo": {
+      "text": "Mugler",
+      "x": 450,
+      "y": 1073,
+      "size": 42,
+      "color": "#eceaf4",
+      "font": "C:/Windows/Fonts/times.ttf",
+      "tracking": 9
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 302,
+      "y": 1116,
+      "width": 475,
+      "color": "#a9b4d8"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

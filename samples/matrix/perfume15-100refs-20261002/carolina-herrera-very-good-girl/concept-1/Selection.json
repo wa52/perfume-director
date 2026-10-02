@@ -1,0 +1,11 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) fulfills the Risograph Stride Halftone concept far more completely: the oversized halftone dot field is genuinely present and thickens toward the lower right into the deep green ink, exactly the 'stride freezing into motion' gradient the brief demands, while version 1's field is a barely perceptible noise texture on flat mint. The single hard diagonal bar in version 2 is true vermilion (#d8402f family) and sits low, echoing the stiletto arch behind toe and heel; version 1's bar drifts to an off-palette magenta and cuts across mid-height, fighting the silhouette instead of rhyming with it. Both keep the typographic monument in a calm upper band (wide-tracked brand line, heavy Bodoni name, short vermilion press rule) and preserve the opaque red cutout with its baked speculars untouched by the flat ink world, but version 2's dot gradient gives the poster its distinct campaign narrative whereas version 1 reads as a pasted cutout on a flat wall. No studio equipment, no floating packshot over a raised support in either; version 2's product placement within the safety bounds and its clear graphic hierarchy make it the stronger finished poster.",
+  "remaining_problems": [
+    "Halftone dots creep into the upper typographic band, slightly disturbing the calm press-sheet zone behind the brand line and title",
+    "At the right edge the dot gradient coalesces into near-solid green, losing some of the risograph dot character the concept relies on",
+    "The vermilion bar passes directly behind the toe and heel tips, so the intentional no-floor composition briefly reads as an implied ground line at the contact points"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

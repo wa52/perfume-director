@@ -1,0 +1,15 @@
+{
+  "title": "Cool Water",
+  "logo": "DAVIDOFF",
+  "subtitle": "EAU DE TOILETTE",
+  "price": "",
+  "evidence": "Label shows 'DAVIDOFF' in caps, script 'Cool Water', and 'EAU DE TOILETTE' at bottom; brand and name also supplied by user brief; no price, volume or promo text visible.",
+  "product_profile": {
+    "material": "translucent blue glass slab bottle with opaque black cylindrical cap",
+    "color": "saturated ocean-blue body, black cap, white printed lettering",
+    "transparency": "glass body translucent and glowing; cap and white print fully opaque",
+    "illumination": "soft diffuse studio light, gentle vertical highlights on glass edges, satin sheen band on cap, body reads backlit",
+    "view": "straight-on frontal view at eye level, bottle upright on flat rectangular base",
+    "integration_limits": "cutout on pure black; blue glass carries its own tint so a new background will not transmit neutrally; opaque cap and print block background; preserve clean silhouette edges"
+  }
+}

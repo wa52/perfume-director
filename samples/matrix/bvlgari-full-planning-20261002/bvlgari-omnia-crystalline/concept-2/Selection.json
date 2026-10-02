@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) delivers the eclipse monument as one coherent gesture: a single hard-edge ivory disc centered above middle with a darker saffron crescent offset behind it reading as the last ring of light, and the interlocking double-disc product sunk into the lower field so its silhouette interrupts and completes the circle. The plaque zone is quiet and hierarchical: minimal tracked BVLGARI at top, near-full-width single-line Didone title, matte flat saffron gouache field with no horizon and no studio artifacts. Version 1 (image 5) keeps the same typography and adds the thin registration rule, but its disc geometry scatters: extra taupe and ivory circles drift off the right edge, breaking the centered eclipse narrative into generic decorative blobs and unbalancing the composition; its offset crescent also sits awkwardly behind the product's upper-left shoulder. Both keep the product faithful (pearlescent ivory faces, clear crystal band owning the highlights) and within the safety bounds, but version 2's singular centered geometry and cleaner silhouette hierarchy make it the stronger finished poster within this graphic concept.",
+  "remaining_problems": [
+    "The brief's thin ink outline ring offset behind the ivory disc (last-light ring) is not literally present in either version; version 2 substitutes a solid darker crescent, weakening the eclipse 'outline ring' cue.",
+    "The thin ink-yellow registration rule under the Didone title present in version 1 is missing in version 2, slightly reducing the plaque-zone finish.",
+    "Product sits as a pasted cutout with only a faint soft shadow at its base; on a shadowless flat gouache field this reads slightly floating rather than intentionally placed in front of the disc.",
+    "Ivory disc is partially swallowed by the product silhouette at center, so the 'disc floating above center' reads merged with the packshot rather than clearly layered behind it."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}
