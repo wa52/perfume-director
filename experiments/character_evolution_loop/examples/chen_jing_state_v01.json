@@ -1,0 +1,105 @@
+{
+  "character": "陈菁",
+  "version": 1,
+  "prompt": "",
+  "traits": {},
+  "locked": {},
+  "modifiable": [
+    "age",
+    "face_shape",
+    "hairstyle",
+    "eyes",
+    "body_proportions",
+    "height",
+    "clothing",
+    "attractiveness",
+    "default_expression",
+    "default_posture"
+  ],
+  "rejected": [],
+  "human_feedback": [],
+  "canon_constraints": {},
+  "design_targets": {
+    "recurring_work_context": {
+      "instruction": "原著证据中该角色附近跨多个章节反复出现工作/组织语境词：工作、特清部、组长、调查、领导、任务、会议、信息。生成日常形象时应与这一广义职业语境兼容；这些词只作为场景/气质方向，不能自动推导具体职级、制服、年龄或外貌。",
+      "confidence": 0.68
+    }
+  },
+  "evidence_refs": {
+    "recurring_work_context": [
+      {
+        "chapter_id": "ch-0389",
+        "chapter_title": "第三百八十五章 正常工作的死人",
+        "chunk_id": "ch-0389-ck-002",
+        "line_start": 40254,
+        "line_end": 40284
+      },
+      {
+        "chapter_id": "ch-0408",
+        "chapter_title": "第四百零四章 黑暗中的孤岛",
+        "chunk_id": "ch-0408-ck-001",
+        "line_start": 42797,
+        "line_end": 42832
+      },
+      {
+        "chapter_id": "ch-0386",
+        "chapter_title": "第三百八十二章 挑选队员",
+        "chunk_id": "ch-0386-ck-001",
+        "line_start": 39872,
+        "line_end": 39900
+      },
+      {
+        "chapter_id": "ch-0390",
+        "chapter_title": "第三百八十六章 微笑的小镇",
+        "chunk_id": "ch-0390-ck-001",
+        "line_start": 40338,
+        "line_end": 40366
+      },
+      {
+        "chapter_id": "ch-0489",
+        "chapter_title": "第四百八十四章 一千九百六十二万六千一百七十六元",
+        "chunk_id": "ch-0489-ck-001",
+        "line_start": 53411,
+        "line_end": 53435
+      },
+      {
+        "chapter_id": "ch-0163",
+        "chapter_title": "第一百六十一章 压力排谴绝招（陆辛版）",
+        "chunk_id": "ch-0163-ck-002",
+        "line_start": 14035,
+        "line_end": 14065
+      },
+      {
+        "chapter_id": "ch-0225",
+        "chapter_title": "第二百二十三章 双线任务",
+        "chunk_id": "ch-0225-ck-002",
+        "line_start": 20784,
+        "line_end": 20814
+      },
+      {
+        "chapter_id": "ch-0263",
+        "chapter_title": "第二百五十九章 请假探亲",
+        "chunk_id": "ch-0263-ck-004",
+        "line_start": 25220,
+        "line_end": 25248
+      }
+    ]
+  },
+  "canon_source": {
+    "schema_version": "character-canon-contract/1",
+    "character_id": "CHAR-CHENJING",
+    "source_profile": "canon/chen_jing.profile.json",
+    "source_profile_schema": "generic-character-profile/1",
+    "source_profile_sha256": "7e6d7e48468e8a3684e6631755b13443638e7a5d1972463031571d4ed054646c",
+    "contains_novel_passages": false
+  },
+  "forbidden_interpretations": [
+    "不能从角色重要性推导颜值、英雄感或固定镜头语言。",
+    "不能把战斗/异常场景中的临时表演当成默认气质。",
+    "不能把职业或组织词直接转换成固定服装，除非正文有明确反复证据。",
+    "没有明确正文描述前，不锁定年龄、脸型、发型、眼型、身材、身高和默认服装。"
+  ],
+  "identity_anchor": null,
+  "human_selections": [],
+  "history": []
+}
