@@ -59,10 +59,23 @@ class CharacterState:
     version: int = 0
     prompt: str = ""
     traits: dict[str, float] = field(default_factory=dict)
+
+    # Features that future revisions must not change.
     locked: dict[str, Any] = field(default_factory=dict)
+    # Visual features still open for design exploration.
     modifiable: list[str] = field(default_factory=list)
+    # Human/design choices that should not be reintroduced.
     rejected: list[str] = field(default_factory=list)
     human_feedback: list[str] = field(default_factory=list)
+
+    # Canon is kept separate from image scores so evidence confidence is never
+    # confused with a visual-quality score.
+    canon_constraints: dict[str, Any] = field(default_factory=dict)
+    design_targets: dict[str, Any] = field(default_factory=dict)
+    evidence_refs: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
+    canon_source: dict[str, Any] = field(default_factory=dict)
+    forbidden_interpretations: list[str] = field(default_factory=list)
+
     history: list[IterationRecord] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
