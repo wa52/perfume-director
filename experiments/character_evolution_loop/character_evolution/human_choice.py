@@ -6,7 +6,7 @@ from typing import Any
 from .director import CharacterDirector
 from .generation_prompt import CharacterGenerationPrompt
 from .memory import CharacterMemory
-from .models import CanonProfile, CharacterState, Critique
+from .models import CanonProfile, CharacterState, Critique, DirectorAdvice
 
 
 def _critique_from_entry(entry: dict[str, Any]) -> Critique:
@@ -17,6 +17,23 @@ def _critique_from_entry(entry: dict[str, Any]) -> Critique:
         change_requests=[dict(x) for x in entry.get("change_requests", [])],
         locked_violations=[str(x) for x in entry.get("locked_violations", [])],
         evidence_alignment=[str(x) for x in entry.get("evidence_alignment", [])],
+    )
+
+
+def _advice_from_entry(entry: dict[str, Any]) -> DirectorAdvice | None:
+    raw = entry.get("director_advice")
+    if not isinstance(raw, dict):
+        return None
+    return DirectorAdvice(
+        candidate_id=str(raw.get("candidate_id") or entry.get("image_ref", "")),
+        summary=str(raw.get("summary", "")),
+        strengths=[str(x) for x in raw.get("strengths", [])],
+        priority_issues=[dict(x) for x in raw.get("priority_issues", []) if isinstance(x, dict)],
+        keep=[str(x) for x in raw.get("keep", [])],
+        changes=[dict(x) for x in raw.get("changes", []) if isinstance(x, dict)],
+        do_not_change=[str(x) for x in raw.get("do_not_change", [])],
+        next_round_goal=str(raw.get("next_round_goal", "")),
+        evidence_notes=[str(x) for x in raw.get("evidence_notes", [])],
     )
 
 
@@ -31,11 +48,12 @@ def apply_human_choice(
     rejected: list[str] | None = None,
     explicit_changes: list[dict[str, Any]] | None = None,
     director: CharacterDirector | None = None,
+    prompt_renderer: CharacterGenerationPrompt | None = None,
 ) -> CharacterState:
     """Promote A/B/C to the human identity anchor and rebuild the next patch.
 
-    Automatic ranking proposes a shortlist; only this function makes a human choice
-    authoritative for the identity anchor.
+    Automatic A/B/C and Director Agent advice are proposals. Human choice,
+    explicit changes and locks become authoritative only here.
     """
     label = label.strip().upper()
     choices = {
@@ -59,7 +77,6 @@ def apply_human_choice(
         feature = feature.strip()
         if not feature:
             continue
-        # Canon locks cannot be silently contradicted by a human visual lock.
         if feature in state.canon_constraints:
             canon_value = state.canon_constraints[feature].get("value")
             if canon_value != value:
@@ -74,13 +91,30 @@ def apply_human_choice(
             state.rejected.append(item)
 
     critique = _critique_from_entry(selected)
-    if explicit_changes:
-        merged = [dict(x) for x in explicit_changes] + critique.change_requests
-        critique.change_requests = merged
+    advice = _advice_from_entry(selected)
+
+    agent_changes = []
+    if advice is not None:
+        agent_changes = [
+            {
+                "feature": str(item.get("feature", "")),
+                "target": str(item.get("target", "")),
+            }
+            for item in advice.changes
+        ]
+
+    # Human explicit edits outrank Director Agent suggestions, which outrank the
+    # raw Vision Critic change_requests.
+    critique.change_requests = [
+        *[dict(x) for x in (explicit_changes or [])],
+        *agent_changes,
+        *critique.change_requests,
+    ]
 
     director = director or CharacterDirector()
     patch = director.plan(canon, state, critique)
-    next_prompt = CharacterGenerationPrompt().render(
+    prompt_renderer = prompt_renderer or CharacterGenerationPrompt()
+    next_prompt = prompt_renderer.render(
         canon=canon,
         state=state,
         patch=patch,
@@ -96,12 +130,11 @@ def apply_human_choice(
             "feedback": feedback,
             "locks": dict(locks or {}),
             "rejected": list(rejected or []),
+            "director_advice": asdict(advice) if advice else None,
             "patch": asdict(patch),
         }
     )
 
-    # Replace the provisional auto-selection for the current version with the
-    # human-authoritative selection. History remains one record per generated round.
     if state.history and state.history[-1].version == state.version:
         record = state.history[-1]
         record.candidate_id = critique.candidate_id
@@ -110,6 +143,7 @@ def apply_human_choice(
         record.critique = asdict(critique)
         record.patch = asdict(patch)
         record.human_feedback = feedback
+        record.director_advice = asdict(advice) if advice else {}
         record.accepted = True
 
     return state
