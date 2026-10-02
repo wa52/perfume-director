@@ -1,4 +1,4 @@
-# Character Evolution Loop — incubator v0.7
+# Character Evolution Loop — incubator v0.8
 
 一个面向小说漫改的角色设计闭环。目标不是反复“抽卡”，而是让角色在 **原著证据 + 自动审稿 + 人工选择 + 身份锚点 + 长期记忆 + 场景一致性验证** 下逐轮收敛。
 
@@ -376,6 +376,87 @@ http://127.0.0.1:8765
 
 访问。角色切换、配置检查、生成任务、三场景任务、回滚都在同一页完成。
 
+## v0.8：作品级风格锁 + 自动角色发现
+
+### 作品级 Art Direction
+
+`config/work_style.example.json` 定义整部作品共享的视觉语言，而不是某个角色的脸：
+
+- 2D animation medium
+- clean controlled linework
+- restrained cel shading
+- natural human proportions
+- graphic rather than photorealistic material rendering
+- character-readable medium / half-body default framing
+- background supports acting instead of dominating it
+
+同时明确拒绝默认漂移到：
+
+- glossy mobile-game splash art
+- generic Korean webtoon beauty template
+- photorealistic skin
+- excessive neon cyberpunk
+- ordinary scenes rendered as hero posters
+
+角色脸型、眼睛、发型、身材等仍属于 Character State 的可迭代空间。**作品风格锁和人物身份锁是两套不同约束。**
+
+每个角色配置可以引用：
+
+```json
+{
+  "art_direction_path": "config/work_style.example.json"
+}
+```
+
+生成角色轮次和三场景验证都会自动带上同一套 Art Direction。
+
+Web Director 左侧会显示当前作品级风格锁，配置体检也会检查它。
+
+### 自动发现主要角色
+
+原著 Canon 仓库 `wa52/1-2203151F522` 已增加：
+
+```text
+tools/discover_characters.py
+tools/build_character_drafts.py
+canon/character_discovery.json
+canon/character_drafts.json
+```
+
+发现器不再使用简单汉字高频，而是先要求角色名称出现在“名字 → 说/问/看/点头/开口”等主体动作结构或自我介绍结构中，再统计跨章节覆盖。
+
+当前全文自动产生 **13 个 Canon 待审角色草稿**，包括：
+
+- 陆辛
+- 陈菁
+- 韩冰
+- 白教授
+- 壁虎
+- 安博士
+- 夏虫
+- 老院长
+- 秦燃
+- 二号
+- 苏先生
+- 沈部长
+- 高婷
+
+这些条目只是 `CANON_REVIEW_REQUIRED` 草稿，**不会因为出现频率高就自动获得外貌、性格或进入生成器**。
+
+每个草稿只有：
+
+- 名称
+- 候选类型（个人名 / 称谓 / 代号）
+- 出现次数
+- 跨章节数
+- 主体动作证据次数
+- 首次出现章节/chunk
+- Canon Contract = null
+- Base State = null
+- registry_ready = false
+
+下一步必须先为草稿建立证据绑定的 Canon Profile / Contract，才允许加入 Character Director 注册表。
+
 ## 测试
 
 ```powershell
@@ -398,13 +479,13 @@ GitHub Actions 使用同一套测试验证：
 
 ## 下一阶段
 
-v0.7 已完成版本回滚、多角色注册/切换、配置体检和后台任务队列。下一阶段重点：
+v0.8 已完成作品级 Art Direction 与全文角色发现/草稿生成。下一阶段重点：
 
-1. 在网页中直接编辑并保存每个角色的本地 ComfyUI 节点映射，而不再手改 JSON。
-2. 把三场景的真实图片放进对比视图，突出 identity drift / regression feature。
-3. 增加“分支版本”语义：从 V03 回滚后再生成，不覆盖旧 V04，而是形成 V03 → V04a / V04b。
-4. 从 Canon RAG 自动发现主要角色并创建角色草稿，不再手工登记每个人。
-5. 增加整部作品的角色关系图和统一 2D 美术风格锁。
+1. 把 13 个待审角色草稿逐个自动建立 evidence-bound Canon Profile / Contract。
+2. 优先处理陈菁、韩冰、壁虎等高频主要角色，并自动加入 Character Director 注册表。
+3. 建角色关系图，区分真实姓名、代号、称谓和同一人物别名，避免重复建角色。
+4. 增加版本分支语义：回滚后生成 V04a / V04b，而不是覆盖历史。
+5. 在 Web 中直接编辑 ComfyUI 节点映射和作品 Art Direction。
 6. 最终把 Character Director 从 `perfume-director` incubator 迁出为独立项目。
 
 > 核心原则：自动模型负责提出和审稿，人负责确认角色是谁。一旦确认，系统要记住，而不是下一轮重新抽卡。
