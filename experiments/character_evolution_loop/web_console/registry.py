@@ -14,6 +14,7 @@ class CharacterSpec:
     base_state: Path
     config: Path
     run_dir: Path
+    scene_validation_enabled: bool = False
 
     @property
     def latest_state(self) -> Path:
@@ -79,6 +80,7 @@ def load_registry(root: Path) -> CharacterRegistry:
             base_state=_resolve(root, str(item["base_state"])),
             config=_resolve(root, str(item["config"])),
             run_dir=_resolve(root, str(item["run_dir"]), run_dir=True),
+            scene_validation_enabled=bool(item.get("scene_validation_enabled", False)),
         )
 
     default = str(raw.get("default_character", "")).strip() or next(iter(characters))
@@ -96,6 +98,7 @@ def registry_summary(registry: CharacterRegistry) -> list[dict[str, Any]]:
             "has_base_state": spec.base_state.is_file(),
             "has_config": spec.config.is_file(),
             "run_dir": str(spec.run_dir),
+            "scene_validation_enabled": spec.scene_validation_enabled,
         }
         for spec in registry.characters.values()
     ]
