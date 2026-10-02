@@ -9,6 +9,33 @@
       "config": "config/character_v01.local.json",
       "run_dir": "runs/character_evolution",
       "scene_validation_enabled": true
+    },
+    {
+      "id": "chen_jing",
+      "name": "陈菁",
+      "contract": "examples/chen_jing_canon_contract.json",
+      "base_state": "examples/chen_jing_state_v01.json",
+      "config": "config/character_v01.local.json",
+      "run_dir": "runs/characters/chen_jing",
+      "scene_validation_enabled": false
+    },
+    {
+      "id": "han_bing",
+      "name": "韩冰",
+      "contract": "examples/han_bing_canon_contract.json",
+      "base_state": "examples/han_bing_state_v01.json",
+      "config": "config/character_v01.local.json",
+      "run_dir": "runs/characters/han_bing",
+      "scene_validation_enabled": false
+    },
+    {
+      "id": "bi_hu",
+      "name": "壁虎",
+      "contract": "examples/bi_hu_canon_contract.json",
+      "base_state": "examples/bi_hu_state_v01.json",
+      "config": "config/character_v01.local.json",
+      "run_dir": "runs/characters/bi_hu",
+      "scene_validation_enabled": false
     }
   ]
 }
