@@ -79,6 +79,76 @@ class CharacterProviderTests(unittest.TestCase):
             self.assertEqual(submitted[1]["3"]["inputs"]["seed"], 1101)
             self.assertEqual(Path(refs[0]).read_bytes(), b"fake-png")
 
+    def test_identity_anchor_is_uploaded_and_mapped_into_reference_node(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            anchor = root / "anchor.png"
+            anchor.write_bytes(b"anchor-bytes")
+            workflow = {
+                "3": {"inputs": {"seed": 0}, "class_type": "KSampler"},
+                "6": {"inputs": {"text": "old"}, "class_type": "CLIPTextEncode"},
+                "10": {"inputs": {"image": "old.png"}, "class_type": "LoadImage"},
+                "9": {"inputs": {}, "class_type": "SaveImage"},
+            }
+            workflow_path = root / "workflow.json"
+            workflow_path.write_text(json.dumps(workflow), encoding="utf-8")
+            submitted = []
+
+            def fake_http(url, data=None, headers=None, timeout=60):
+                if url.endswith("/upload/image"):
+                    return json.dumps({"name": "uploaded-anchor.png", "subfolder": ""}).encode()
+                if url.endswith("/prompt"):
+                    body = json.loads(data)
+                    submitted.append(body["prompt"])
+                    return json.dumps({"prompt_id": "p1"}).encode()
+                if "/history/" in url:
+                    return json.dumps({
+                        "p1": {
+                            "status": {"completed": True},
+                            "outputs": {
+                                "9": {
+                                    "images": [
+                                        {
+                                            "filename": "p1.png",
+                                            "subfolder": "",
+                                            "type": "output",
+                                        }
+                                    ]
+                                }
+                            },
+                        }
+                    }).encode()
+                if "/view?" in url:
+                    return b"scene-png"
+                raise AssertionError(url)
+
+            generator = ComfyUICharacterGenerator(
+                ComfyUIConfig(
+                    base_url="http://127.0.0.1:8190",
+                    workflow_path=workflow_path,
+                    output_node="9",
+                    prompt_node="6",
+                    seed_node="3",
+                    reference_image_node="10",
+                    output_dir=root / "runs",
+                    poll_seconds=0,
+                ),
+                http_fn=fake_http,
+            )
+            generator.generate(
+                prompt="next version",
+                state=CharacterState(
+                    character="陆辛",
+                    version=2,
+                    identity_anchor=str(anchor),
+                ),
+                count=1,
+            )
+            self.assertEqual(
+                submitted[0]["10"]["inputs"]["image"],
+                "uploaded-anchor.png",
+            )
+
     def test_vision_critic_returns_structured_critique(self):
         with tempfile.TemporaryDirectory() as td:
             image = Path(td) / "candidate.png"
