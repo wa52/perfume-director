@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Character Director</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div><span class="eyebrow">NOVEL → ANIMATION</span><h1>Character Director</h1></div>
+  <div class="actions"><span id="configBadge" class="chip">检查配置</span><button id="refreshBtn">刷新</button><button id="sceneBtn">三场景验证</button><button id="runBtn" class="primary">生成下一轮</button></div>
+</header>
+<main class="layout">
+  <aside class="panel side">
+    <div class="heading"><div><span class="eyebrow">CANON</span><h2>原著证据</h2></div><span id="versionBadge" class="chip">V--</span></div>
+    <div id="characterMeta" class="meta"></div>
+    <h3>Canon Locks</h3><div id="canonLocks" class="stack"></div>
+    <h3>证据锚点</h3><div id="evidenceList" class="stack"></div>
+  </aside>
+  <section class="center">
+    <div class="summary"><div><span class="eyebrow">CURRENT ROUND</span><h2 id="roundTitle">候选角色</h2></div><div id="roundStats" class="metrics"></div></div>
+    <div id="emptyState" class="empty hidden"><strong>还没有候选图</strong><p>本机 ComfyUI 配置完成后，生成 8 张并自动评审。</p><button id="emptyRunBtn" class="primary">生成首轮</button></div>
+    <div id="candidateGrid" class="grid"></div>
+    <div class="section"><div class="heading"><div><span class="eyebrow">EVOLUTION</span><h2>版本历史</h2></div></div><div id="timeline" class="timeline"></div></div>
+    <div class="section"><div class="heading"><div><span class="eyebrow">CONTINUITY</span><h2>三场景一致性</h2></div><div id="sceneStatus"></div></div><div id="sceneGrid" class="scene-grid"></div></div>
+  </section>
+  <aside class="panel side review">
+    <div class="heading"><div><span class="eyebrow">HUMAN REVIEW</span><h2>人工定稿</h2></div><span id="selectedLabel" class="chip">未选择</span></div>
+    <div id="selectedPreview" class="preview">点击中间候选图</div>
+    <div id="selectedScores" class="stack"></div><div id="selectedProblems" class="stack"></div>
+    <label>你的反馈<textarea id="feedbackInput" rows="4" placeholder="例如：B 最接近，但眼睛太锐，普通感还不够。"></textarea></label>
+    <label>重点修改特征<select id="changeFeature"><option value="">不指定</option></select></label>
+    <label>修改方向<input id="changeTarget" placeholder="例如：眼神更中性、少一点锐利"></label>
+    <h3>锁定满意特征</h3><div id="lockFeatures" class="checks"></div>
+    <label>永久拒绝设计<input id="rejectInput" placeholder="aggressive_gaze,fashionable_hair"></label>
+    <button id="confirmChoiceBtn" class="primary wide" disabled>确认所选角色</button>
+    <button id="confirmContinueBtn" class="wide" disabled>确认并继续下一轮</button>
+    <h3>当前身份锚点</h3><div id="anchorCard" class="meta">尚未人工确认</div>
+  </aside>
+</main>
+<div id="toast" class="toast hidden"></div>
+<div id="busy" class="busy hidden"><div class="busy-card"><div class="spinner"></div><h3 id="busyTitle">正在处理</h3><p id="busyText"></p></div></div>
+<script src="/assets/app.js"></script>
+</body>
+</html>
