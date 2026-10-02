@@ -7,3 +7,21 @@
 .config-check.ok b{color:var(--success)}.config-check.bad b{color:var(--danger)}
 .rollback{display:block;width:100%;margin-top:7px;padding:6px 7px;font-size:10px;background:#fff}
 @media(max-width:760px){.actions{flex-wrap:wrap;justify-content:flex-end}.topbar{height:auto;min-height:72px;padding:10px}.top-select{max-width:140px}}
+
+.badge.agent{right:8px;top:38px;background:#17202aee;color:#fff;letter-spacing:.08em}
+.agent-panel{margin:14px 0;border-top:1px solid var(--border);padding-top:14px}
+.agent-panel .heading h3{font-size:13px;margin:0}
+.director-advice{margin:8px 0 0;color:var(--text);line-height:1.55}
+.director-advice h4{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
+.director-advice ul{padding-left:18px;margin:5px 0;font-size:11px}
+.agent-summary{font-size:12px;font-weight:700;background:#edf3ff;border-radius:8px;padding:9px}
+.agent-warning{font-size:10px;color:#8a5d21;background:#fff7e7;border-radius:7px;padding:7px;margin-bottom:7px;word-break:break-word}
+.agent-issue,.agent-change{display:grid;gap:3px;border:1px solid var(--border);background:#fff;border-radius:8px;padding:8px;margin-top:6px;font-size:11px}
+.agent-issue b{color:#8d463d}.agent-issue span,.agent-change small{color:var(--muted);font-weight:400}
+.agent-change b{color:var(--accent)}
+.agent-change .use-advice,.use-advice{justify-self:start;padding:5px 7px;margin-top:3px;font-size:9px;background:#fff}
+.agent-tags{display:flex;gap:5px;flex-wrap:wrap}
+.agent-tags span{font-size:9px;border-radius:999px;padding:4px 6px;background:#f2f5f7;border:1px solid var(--border)}
+.agent-tags.keep span{color:var(--success);background:#edf8f2}
+.agent-tags.frozen span{color:#695f7a;background:#f4f0fa}
+.agent-goal{font-size:11px;font-weight:700;border-left:3px solid var(--accent);padding:7px 9px;background:#f8fafb}
