@@ -111,6 +111,15 @@ def build_dashboard(character_id: str | None = None) -> dict[str, Any]:
 
     active_job = JOBS.active_for(spec.id)
     config_state = check_config(root=ROOT, spec=spec, check_connection=False)
+    art_direction = None
+    if spec.config.is_file():
+        local_config = read_json(spec.config, {}) or {}
+        art_raw = local_config.get("art_direction_path")
+        if art_raw:
+            art_path = Path(str(art_raw))
+            art_path = art_path if art_path.is_absolute() else ROOT / art_path
+            if art_path.is_file():
+                art_direction = read_json(art_path, {})
 
     return {
         "character_id": spec.id,
@@ -130,6 +139,7 @@ def build_dashboard(character_id: str | None = None) -> dict[str, Any]:
         "archived_versions": archived,
         "config_ready": config_state["ready"],
         "config_state": config_state,
+        "art_direction": art_direction,
         "identity_anchor_media_url": media_url(state.get("identity_anchor")),
         "active_job": active_job.to_dict() if active_job else None,
     }
