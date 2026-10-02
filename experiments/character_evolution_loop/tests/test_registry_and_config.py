@@ -31,7 +31,7 @@ class RegistryAndConfigTests(unittest.TestCase):
                                 "base_state": "examples/a.state.json",
                                 "config": "config/a.local.json",
                                 "run_dir": "runs/a",
-                                "scene_validation_enabled": true,
+                                "scene_validation_enabled": True,
                             },
                             {
                                 "id": "b",
