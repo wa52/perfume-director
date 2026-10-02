@@ -1,0 +1,13 @@
+{
+  "default_character": "lu_xin",
+  "characters": [
+    {
+      "id": "lu_xin",
+      "name": "陆辛",
+      "contract": "examples/lu_xin_canon_contract.json",
+      "base_state": "examples/lu_xin_state_v01.json",
+      "config": "config/character_v01.local.json",
+      "run_dir": "runs/character_evolution"
+    }
+  ]
+}
