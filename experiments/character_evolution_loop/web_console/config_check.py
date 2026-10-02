@@ -38,6 +38,20 @@ def check_config(
             add("config_json", False, str(error))
             config = {}
 
+    art_path_raw = config.get("art_direction_path") if isinstance(config, dict) else None
+    if art_path_raw:
+        art_path = _resolve(root, str(art_path_raw))
+        if art_path.is_file():
+            try:
+                art_raw = json.loads(art_path.read_text(encoding="utf-8"))
+                add("art_direction", art_raw.get("schema_version") == "work-art-direction/1", str(art_path))
+            except Exception as error:
+                add("art_direction", False, f"{art_path}: {error}")
+        else:
+            add("art_direction", False, str(art_path))
+    else:
+        add("art_direction", False, "art_direction_path missing")
+
     comfy = config.get("comfyui") if isinstance(config, dict) else None
     if isinstance(comfy, dict):
         required = ("base_url", "workflow_path", "output_node", "prompt_node")
