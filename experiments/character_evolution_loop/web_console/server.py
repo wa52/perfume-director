@@ -11,7 +11,9 @@ from pathlib import Path
 from typing import Any
 
 from character_evolution.archive import available_versions, archive_version, rollback_version
+from character_evolution.art_direction import load_art_direction
 from character_evolution.canon_adapter import apply_contract, contract_to_canon_profile, load_contract
+from character_evolution.generation_prompt import CharacterGenerationPrompt
 from character_evolution.human_choice import apply_human_choice
 from character_evolution.memory import CharacterMemory
 from web_console.config_check import check_config
@@ -167,6 +169,15 @@ def apply_choice_payload(payload: dict[str, Any]) -> dict[str, Any]:
     if not isinstance(lock_features, list) or not isinstance(rejects, list) or not isinstance(changes, list):
         raise ValueError("lock_features, rejected and changes must be arrays")
 
+    local_config = read_json(spec.config, {}) or {}
+    art_raw = local_config.get("art_direction_path")
+    art_direction = None
+    if art_raw:
+        art_path = Path(str(art_raw))
+        art_path = art_path if art_path.is_absolute() else ROOT / art_path
+        if art_path.is_file():
+            art_direction = load_art_direction(art_path)
+
     apply_human_choice(
         state=state,
         canon=canon,
@@ -182,6 +193,7 @@ def apply_choice_payload(payload: dict[str, Any]) -> dict[str, Any]:
             and str(x.get("feature", "")).strip()
             and str(x.get("target", "")).strip()
         ],
+        prompt_renderer=CharacterGenerationPrompt(art_direction=art_direction),
     )
     spec.run_dir.mkdir(parents=True, exist_ok=True)
     CharacterMemory(spec.latest_state).save(state)
