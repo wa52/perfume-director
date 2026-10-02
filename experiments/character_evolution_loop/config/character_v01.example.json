@@ -48,5 +48,6 @@
     "minimum_identity": 82,
     "minimum_canon": 80,
     "minimum_overall": 80
-  }
+  },
+  "art_direction_path": "config/work_style.example.json"
 }
