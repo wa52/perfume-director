@@ -51,6 +51,7 @@ def main():
     parser.add_argument('--comfy-url',default='http://127.0.0.1:8191')
     parser.add_argument('--tag',default='categories-20261003')
     parser.add_argument('--wait-for-kb',action='store_true')
+    parser.add_argument('--categories',nargs='+',choices=['watches','footwear','beverage','skincare'])
     args=parser.parse_args()
     if not args.tag.replace('-','').isalnum():raise ValueError('Invalid tag')
     folder=ROOT/'samples/categories'/args.tag;folder.mkdir(parents=True,exist_ok=True)
@@ -60,6 +61,11 @@ def main():
             if time.monotonic()>deadline:raise TimeoutError('Category KB preparation did not finish')
             time.sleep(10)
     products=poster.read(ROOT/'assets/products/categories/products.json');records=[]
+    if args.categories:
+        for item in products:
+            saved=folder/item['product_category']/'state.json'
+            if item['product_category'] not in args.categories and saved.exists():records.append(poster.read(saved))
+        products=[item for item in products if item['product_category'] in args.categories]
     for product in products:
         category=product['product_category'];target=folder/category;target.mkdir(exist_ok=True)
         saved=target/'state.json'
@@ -68,7 +74,7 @@ def main():
         if state['status'] in ('COMPLETED','PARTIAL','ERROR'):
             if state.get('job_id'):
                 live=request(args.comfy_url,'/perfume-director/jobs/'+state['job_id'])
-                state['directions']=live.get('directions',[])
+                state.update({k:live[k] for k in ('status','stage','directions') if k in live})
             export(folder,records);continue
         pool=reference_store.planning_pool(ROOT,category=category)
         if len({r['brand'] for r in pool})<3:

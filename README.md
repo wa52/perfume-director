@@ -8,7 +8,7 @@
 
 已建立四个ComfyUI工作流和ProductDirectorLoop类别选择节点，见 [四类入口与运行说明](workflows/categories/README.md)。32张新参考经千问逐张分析：美妆14、腕表珠宝5、鞋履7、饮品6；其中带外部广告排版的数量分别为2、2、1、0，不把静物摄影或包装标签算作完整海报。保留原图来源、独立分析和SHA，参见 `references/categories/summary.json`。新参考存入同一个SQLite数据库的分类关联表；香水旧参考默认仍属香水，跨类别不会静默混用。
 
-测试用实际透明商品图是腕表、运动鞋、玻璃瓶可乐和口红，见 `assets/products/categories/products.json`；口红只代表美妆，不代表护肤包装已验证，腕表也不能代替珠宝验证。首轮真实节点批测在本机8191端口运行，报告为 `samples/categories/categories-policy-20261003/gallery.html`，尚未完成商业效果验收。127项程序检查通过仅说明相应代码行为。
+测试用实际透明商品图是腕表、运动鞋、玻璃瓶可乐和口红，见 `assets/products/categories/products.json`；口红只代表美妆，不代表护肤包装已验证，腕表也不能代替珠宝验证。首轮真实节点批测在本机8191端口运行，报告为 `samples/categories/categories-recovery-20261003/gallery.html`，尚未完成商业效果验收。130项程序检查通过仅说明相应代码行为。
 
 类别策略关注真实包装文字与禁止虚构功效、腕表指针/刻度与金属反光、鞋底前后接触、饮品标签与液体外观。横向鞋子按可见宽度占幅验收，不强套香水瓶高度规则；规划和Critic均收到类别约束。未通过仍保留NEEDS_REVIEW，不放宽评分以制造商业通过。
 

@@ -84,6 +84,13 @@ class ComfyJobsTests(unittest.TestCase):
         self.assertEqual(self.engine.config['comfy_url'], 'http://127.0.0.1:8190')
         self.assertEqual(self.engine.config['background_workflow'], str(self.root/'workflows/background.json'))
 
+    def test_independent_recovery_blocks_duplicate_submission(self):
+        saved=self.manager.state_path('b'*32)
+        self.engine.write(saved,{'id':'b'*32,'status':'RUNNING','stage':'CRITIC'})
+        self.assertIsNone(self.manager.active)
+        with self.assertRaisesRegex(ValueError,'recovery is still running'):
+            self.manager.start(self.product,'again','http://127.0.0.1:8191')
+
     def test_error_does_not_publish_pass_or_provider_message(self):
         self.engine.fail = True
         self.engine.gate.set()

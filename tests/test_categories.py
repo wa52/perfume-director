@@ -61,5 +61,23 @@ class CategoryTests(unittest.TestCase):
         self.assertFalse(geometry['shape_geometry'][0]['crosses_canvas_edge'])
         self.assertIn('Never penalize',categories.context({'product_category':'watches'}))
 
+    def test_cyrillic_fallback_preserves_serif_art_direction(self):
+        spec=poster.read(poster.ROOT/'samples/categories/watch-first-iteration/v2/PosterSpec.json')
+        spec['title'].update(text='РОССИЯ',font='C:/Windows/Fonts/BASKVILL.TTF',size=96)
+        config={'font':'C:/Windows/Fonts/msyh.ttc','direction_id':'concept-1'}
+        fitted,fixes=poster.prepare_layout(config,spec,poster.ROOT/'assets/products/categories/watches.png')
+        self.assertEqual(categories.font_family(fitted['title']['font']),'serif')
+        self.assertTrue(quality.font_supports_text(fitted['title']['font'],'РОССИЯ'))
+        self.assertIn('title_font_fallback',fixes)
+
+    def test_unreadable_shoe_name_gets_explicit_factual_headline(self):
+        observed={'title':'','logo':'Nike','subtitle':'','price':'','evidence':'Swoosh only.'}
+        result=categories.complete_copy(copy.deepcopy(observed),{'product_category':'footwear'})
+        self.assertEqual(result['title'],'FOOTWEAR')
+        self.assertEqual(result['observed_product_name'],'')
+        self.assertEqual(result['copy_mode'],'factual_category_headline')
+        self.assertEqual(result['price'],'')
+        self.assertEqual(categories.complete_copy(copy.deepcopy(observed),{}),observed)
+
 
 if __name__=='__main__':unittest.main()

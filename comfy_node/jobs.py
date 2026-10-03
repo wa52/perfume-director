@@ -102,6 +102,8 @@ class DirectorJobs:
         with self.lock:
             if self.active:
                 raise ValueError('A director loop is still running; wait for its final result')
+            if any(self.engine.read(saved).get('status')=='RUNNING' for saved in self.directory.glob('*/state.json')):
+                raise ValueError('A saved director recovery is still running; wait for its final result')
             job_id = uuid.uuid4().hex
             path = self.state_path(job_id).parent
             path.mkdir(parents=True)

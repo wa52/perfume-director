@@ -96,7 +96,7 @@ def title_relationship(geometry):
 
 
 def title_family(font):
-    return 'serif' if font.replace('\\','/').rsplit('/',1)[-1].lower() in ('times.ttf','georgia.ttf','bod_r.ttf','baskvill.ttf') else 'sans'
+    return 'serif' if font.replace('\\','/').rsplit('/',1)[-1].lower() in ('times.ttf','georgia.ttf','bod_r.ttf','baskvill.ttf','simsun.ttc') else 'sans'
 
 
 def color_family(rgb):
@@ -187,11 +187,11 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
             for layer,text in approved_copy.items():spec[layer]['text']=text
             rgb=engine.ImageColor.getrgb(spec['background']['color'])
             colors.add(color_family(rgb))
-            fonts.add(title_family(spec['title'].get('font',config['font'])))
             materials.add(item['material'].strip().casefold())
             inspected+=1
             engine.validate(spec)
             spec,_=engine.prepare_layout({**config,'direction_id':f'concept-{index}'},spec,product)
+            fonts.add(title_family(spec['title'].get('font',config['font'])))
             title_relationship(engine.rendered_geometry(spec,product,config['font']))
         except (ValueError,KeyError,TypeError) as error:
             errors.append(f'Concept {index}: {error}')
@@ -245,7 +245,7 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         'The four layouts MUST include all THREE spatial relationships: title ABOVE product, title BELOW product, and title BESIDE product with vertical overlap but horizontal separation. '
         'An upper-left title is still ABOVE if it ends above the product top; shifting it sideways does not count as BESIDE. '
         'Choose your own coordinates and sizes. For lower titles move the product upward and reserve a lower text band; for a side title use a deliberate wrapped column instead of making a long name tiny. '
-        'Fonts only '+json.dumps(engine.FONT_CHOICES)+'. Return compact JSON {directions:[{name,brief,material,lighting,scene_mode:graphic/photographic,reference_ids:[3 supplied IDs with distinct brands],'
+        'Fonts only '+json.dumps(engine.FONT_CHOICES)+'. Fonts verified to cover the actual title: '+json.dumps([font for font in engine.FONT_CHOICES if engine.quality_module().font_supports_text(font,approved_copy['title'])])+'. Choose title fonts from the verified list, including serif and sans; an unsupported script cannot be rendered in a Latin-only font. Return compact JSON {directions:[{name,brief,material,lighting,scene_mode:graphic/photographic,reference_ids:[3 supplied IDs with distinct brands],'
         'palette:[background color,ink color,accent color],product:[center_x_fraction,center_y_fraction,visible_height_fraction],'
         'type:{font:approved font path,title:[x_fraction,y_fraction,font_size_px],logo:[x_fraction,y_fraction,font_size_px],subtitle:[x_fraction,y_fraction,font_size_px],'
         'styles:{title:{font,tracking,max_width,line_height,align},logo:{tracking},subtitle:{tracking}}},'

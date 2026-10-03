@@ -30,6 +30,10 @@ python run_category_matrix.py --comfy-url http://127.0.0.1:8191 --tag my-categor
 python prepare_category_kb.py
 ```
 
-批量测试顺序为腕表→鞋履→饮品→美妆，每款规划四方向，并调用真实 Critic 修改。报告保存在 `samples/categories/<tag>/gallery.html`。当前 `categories-policy-20261003` 是正在运行的首轮验证，尚未完成四类验收；不要把该页的进度状态当作最终结论。
+批量测试顺序为腕表→鞋履→饮品→美妆，每款规划四方向，并调用真实 Critic 修改。报告保存在 `samples/categories/<tag>/gallery.html`。当前 `categories-recovery-20261003` 是正在运行的首轮验证，尚未完成四类验收；不要把该页的进度状态当作最终结论。
 
 首批腕表的评审存在将空价格层误判为信息缺失、误报图形裁切的问题，因此保留草稿后中止并升级策略。新批次显式传递允许文案、故意留空层与每个图形的真实边界，不要求补充未授权价格来模仿参考。过程证据见 `samples/categories/watch-first-iteration/REPORT.md`。
+
+针对没有可读型号的运动鞋，空标题不再导致永远无法验证构图：使用明确的类别标题FOOTWEAR，记录copy_mode=factual_category_headline和空observed_product_name，不将其伪称为识别出的型号。无价格与禁止功效约束继续保留。
+
+当前腕表补测复用千问真实四方案，修正编译器后继续渲染，不额外请求新规划。新商品仍由节点重新规划四方向。断点补测工具resume_category_batch.py仅接受本项目保存的合法批次/任务ID，先完整校验原图和四方案；过程中节点显示真实草稿。

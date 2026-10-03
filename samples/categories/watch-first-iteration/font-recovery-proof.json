@@ -1,0 +1,18 @@
+{
+  "mode": "offline_replay_of_real_qwen_plans",
+  "validated_concepts": 4,
+  "title_families": [
+    "serif",
+    "sans",
+    "serif",
+    "sans"
+  ],
+  "layout_relations": [
+    "above",
+    "beside",
+    "below",
+    "above"
+  ],
+  "new_api_planning_calls": 0,
+  "aesthetic_pass": false
+}

@@ -28,3 +28,19 @@ def minimum_height(category, aspect):
     if category not in PROFILES:
         raise ValueError('Unsupported product category')
     return .35 if category == 'perfume' else min(.35, .55*1080/(1440*aspect))
+
+
+def font_family(path):
+    name=path.replace('\\','/').rsplit('/',1)[-1].lower()
+    return 'serif' if name in ('times.ttf','georgia.ttf','bod_r.ttf','baskvill.ttf','simsun.ttc') else 'sans'
+
+
+def complete_copy(result, config):
+    """A factual category headline is not an invented product/model name."""
+    category=config.get('product_category','perfume')
+    if category!='perfume' and not result['title'].strip():
+        result['observed_product_name']=''
+        result['title']={'skincare':'BEAUTY','watches':'TIMEPIECES','footwear':'FOOTWEAR','beverage':'BEVERAGES'}[category]
+        result['copy_mode']='factual_category_headline'
+        result['evidence']+=' No readable model name; the title is an explicit category headline, not an inferred product name.'
+    return result
