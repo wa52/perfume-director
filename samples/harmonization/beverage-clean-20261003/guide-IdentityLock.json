@@ -1,0 +1,38 @@
+{
+  "source_sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "zones": [
+    {
+      "name": "cap",
+      "bbox": [
+        0,
+        0,
+        1,
+        0.09
+      ]
+    },
+    {
+      "name": "brand label",
+      "bbox": [
+        0,
+        0.35,
+        1,
+        0.59
+      ]
+    },
+    {
+      "name": "liquid boundary",
+      "bbox": [
+        0,
+        0.12,
+        1,
+        0.17
+      ]
+    }
+  ],
+  "zone_source": "provided manual zones; not inferred material classes",
+  "zone_file_sha256": "231ede0a1bd94bc3ee7059c9a75124121f1d42c805ff5be4d13a2b3d9da35f15",
+  "output_size": [
+    576,
+    768
+  ]
+}

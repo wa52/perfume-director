@@ -1,0 +1,122 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 98,
+        "edge_quality": 84,
+        "lighting_coherence": 90,
+        "grounding": 86
+      },
+      "problems": [
+        {
+          "problem": "Faint pale dashed fringe along the underside of the bottle base where the cutout alpha meets the linen",
+          "evidence": "Image 6 row 'baseline', left contact crop: a light stippled halo traces the bottom contour against the cloth",
+          "root_cause": "Original compositor alpha edge retains semi-transparent source-background pixels (edge remnant), not cleaned",
+          "repair": "Refine alpha at the contact contour and defringe the bottom 2-3 px so the base silhouette closes against the linen"
+        },
+        {
+          "problem": "Contact shadow under the base is extremely weak for the diffuse frontal key",
+          "evidence": "Image 6 row 'baseline' left crop and image 1: only a barely perceptible darkening under the base; the bottle reads slightly floated",
+          "root_cause": "Baseline compositing applied little or no projected contact shadow on the linen plane",
+          "repair": "Add a short soft elliptical contact shadow (low opacity, high blur) consistent with frontal diffuse light"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 86,
+        "lighting_coherence": 93,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Residual pale dashed fringe persists along the base underside despite edge cleanup",
+          "evidence": "Image 6 row 'A', left contact crop: stippled light line still visible under the glass base",
+          "root_cause": "Alpha refinement (1730 px changed, mean abs 0.47) tightened but did not fully defringe the original contact contour",
+          "repair": "Extend defringe/inpaint 1-2 px inward along the bottom contour and re-verify at 4x zoom"
+        },
+        {
+          "problem": "Cast contact shadow is present but very subtle, slightly uneven at the left heel",
+          "evidence": "Image 6 row 'A' left crop: soft darkening exists under the base (authoritative detail) but fades asymmetrically toward the left",
+          "root_cause": "Projected shadow at cast_opacity 0.16 with blur 18 interacts with linen wrinkle highlights near the heel",
+          "repair": "Rebalance shadow ellipse opacity falloff so the contact reads evenly under both heels"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 92,
+        "edge_quality": 86,
+        "lighting_coherence": 84,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Whole product uniformly darkened relative to the packshot source and the scene's frontal key",
+          "evidence": "Images 3 and 6 row 'B': label red, cap red and liquid amber all sit noticeably deeper/duller than baseline and image 5 source; renderer gain 0.85",
+          "root_cause": "illumination_gain 0.85 applied globally although the source key light is already frontal and matched; darkening is not motivated by scene light",
+          "repair": "Restore gain to 1.0 (or <=3% trim) so label chroma and glass transmission match the observed packshot illumination"
+        },
+        {
+          "problem": "Residual pale dashed fringe along base underside",
+          "evidence": "Image 6 row 'B', left contact crop: stippled light contour under the base",
+          "root_cause": "Same incomplete defringe of original contact contour as other versions",
+          "repair": "Local defringe/inpaint along bottom contour"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 92,
+        "edge_quality": 86,
+        "lighting_coherence": 84,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Same unmotivated global darkening as B (gain 0.85): label and liquid read muted versus source packshot",
+          "evidence": "Images 4 and 6 row 'C': reds and ambers deeper than image 5 source and baseline",
+          "root_cause": "illumination_gain 0.85 applied despite source-compatible frontal light",
+          "repair": "Set gain to 1.0 to preserve packshot illumination match"
+        },
+        {
+          "problem": "Residual pale dashed fringe along base underside",
+          "evidence": "Image 6 row 'C', left contact crop: stippled light contour under the base",
+          "root_cause": "Incomplete defringe of original contact contour",
+          "repair": "Local defringe/inpaint along bottom contour"
+        },
+        {
+          "problem": "Neck liquid/meniscus contrast slightly muddied by the darkening, weakening observed glass transmission",
+          "evidence": "Image 6 row 'C' middle crop: clear-glass-to-liquid transition lacks the luminance separation seen in baseline and source",
+          "root_cause": "Global 0.85 gain compresses the bright transmission highlight in the neck",
+          "repair": "After restoring gain, verify neck transmission highlight against source crop"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "A",
+  "reason": "A keeps source illumination (gain 1.0), so bottle, cap, label lettering texture, liquid level and glass transmission match the packshot and the diffuse frontal scene light; its contact detail confirms an actual soft shadow consistent with frontal light, giving the best grounding and lighting coherence. B and C are identical geometries but globally darkened (gain 0.85), which breaks packshot illumination match and mutes label/glass luminance without any scene motivation. Baseline lacks a confirmed contact shadow and shows the same edge fringe, so it grounds worse than A. No version passes acceptance because the pale dashed base fringe remains unresolved everywhere and A's shadow falloff is slightly uneven.",
+  "next_repairs": [
+    {
+      "target": "A base contact contour",
+      "action": "Defringe/inpaint the remaining 1-2 px pale stippled halo under the bottle base and re-check at 4x contact crop"
+    },
+    {
+      "target": "A contact shadow",
+      "action": "Even out the soft shadow ellipse opacity under both heels (keep low opacity/high blur appropriate to diffuse frontal light; do not add a hard directional cast)"
+    },
+    {
+      "target": "B and C illumination",
+      "action": "If reused, reset illumination_gain to 1.0 so label red and liquid amber match the source packshot; retain only scene-consistent micro-contrast"
+    }
+  ]
+}

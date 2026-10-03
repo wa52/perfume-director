@@ -1,0 +1,36 @@
+{
+  "strength": 0,
+  "ground_top": 0.72,
+  "contact_opacity": 0.5,
+  "contour_contact": true,
+  "refine_alpha": true,
+  "identity_zones": [
+    {
+      "name": "cap",
+      "bbox": [
+        0,
+        0,
+        1,
+        0.09
+      ]
+    },
+    {
+      "name": "brand label",
+      "bbox": [
+        0,
+        0.35,
+        1,
+        0.59
+      ]
+    },
+    {
+      "name": "liquid boundary",
+      "bbox": [
+        0,
+        0.12,
+        1,
+        0.17
+      ]
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Source-quality correction: the original packshot has visible matte/background contamination. Earlier integration scores do not establish commercial source quality. See [replacement experiment](../beverage-clean-20261003/REPORT.md). Historical results remain unchanged.
+
 # Six actual 2D optimization rounds — beverage pilot
 
 Same original transparent bottle, 1080×1440 PosterSpec, clean source background and original typography in every round. The illumination guide is the actual previous Mage-Flow ComfyUI output from material-edit trial 2. No new model generation is claimed for these rounds.

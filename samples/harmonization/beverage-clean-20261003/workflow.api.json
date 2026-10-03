@@ -1,0 +1,74 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "product.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "source-background.png"
+    }
+  },
+  "3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "guide-before.png"
+    }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "guide-raw-material-edit.png"
+    }
+  },
+  "5": {
+    "class_type": "Product2DHarmonize",
+    "inputs": {
+      "product": [
+        "1",
+        0
+      ],
+      "product_mask": [
+        "1",
+        1
+      ],
+      "background": [
+        "2",
+        0
+      ],
+      "guide_before": [
+        "3",
+        0
+      ],
+      "guide": [
+        "4",
+        0
+      ],
+      "spec_json": "{\"version\": 1, \"style\": \"luxury\", \"canvas\": {\"width\": 1080, \"height\": 1440}, \"seed\": 42, \"background\": {\"color\": \"#DDD6C9\", \"prompt\": \"Empty seamless warm grey studio wall with a gentle vertical light gradient, meeting a horizontal plane draped in neutral oatmeal linen whose receding top surface fills the lower two fifths of the frame with horizontal weave falloff and no hanging vertical folds, its soft far edge crossing near mid-frame height, a broad soft daylight pool warming the near-right span of linen, diffuse frontal daylight with gentle wrap and calm soft shadows, no harsh highlights\", \"revision\": 2, \"shapes\": []}, \"product\": {\"x\": 324, \"y\": 827, \"width\": 216, \"height\": 650}, \"lighting\": \"soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light\", \"palette\": [\"#DDD6C9\", \"#2A2622\", \"#D6231F\"], \"title\": {\"text\": \"Coca-Cola\", \"x\": 700, \"y\": 605, \"size\": 74, \"color\": \"#2A2622\", \"font\": \"C:/Windows/Fonts/BASKVILL.TTF\", \"tracking\": 1, \"max_width\": 320, \"line_height\": 1.12, \"align\": \"left\"}, \"subtitle\": {\"text\": \"REFRESCO\", \"x\": 705, \"y\": 690, \"size\": 24, \"color\": \"#2A2622\", \"font\": \"C:/Windows/Fonts/BASKVILL.TTF\", \"tracking\": 6}, \"price\": {\"text\": \"\", \"x\": 104, \"y\": 1280, \"size\": 24, \"color\": \"#2A2622\", \"font\": \"C:/Windows/Fonts/BASKVILL.TTF\"}, \"logo\": {\"text\": \"\", \"x\": 648, \"y\": 605, \"size\": 74, \"color\": \"#2A2622\", \"font\": \"C:/Windows/Fonts/BASKVILL.TTF\", \"tracking\": 1}, \"shadow\": {\"opacity\": 0.4, \"blur\": 14, \"offset_x\": 0, \"offset_y\": 0, \"kind\": \"contact\"}, \"decoration\": {\"enabled\": false, \"x\": 104, \"y\": 360, \"width\": 80, \"color\": \"#A6A9AF\"}, \"layers\": [\"background\", \"shadow\", \"product\", \"decoration\", \"logo\", \"title\", \"subtitle\", \"price\"], \"product_category\": \"beverage\", \"scene_mode\": \"photographic\", \"integration_plan\": {\"source_key_light\": \"front\", \"ground_material\": \"linen-draped horizontal plane\", \"cast_length_ratio\": 0.1, \"cast_opacity\": 0.2, \"cast_blur\": 22}}",
+      "font_path": "C:/Windows/Fonts/arial.ttf",
+      "parameters_json": "{\"strength\": 0, \"ground_top\": 0.72, \"contact_opacity\": 0.5, \"contour_contact\": true, \"refine_alpha\": true, \"identity_zones\": [{\"name\": \"cap\", \"bbox\": [0, 0, 1, 0.09]}, {\"name\": \"brand label\", \"bbox\": [0, 0.35, 1, 0.59]}, {\"name\": \"liquid boundary\", \"bbox\": [0, 0.12, 1, 0.17]}]}"
+    }
+  },
+  "6": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "5",
+        0
+      ],
+      "filename_prefix": "perfume-director/2d-clean-source/poster"
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "5",
+        1
+      ],
+      "filename_prefix": "perfume-director/2d-clean-source/scene"
+    }
+  }
+}

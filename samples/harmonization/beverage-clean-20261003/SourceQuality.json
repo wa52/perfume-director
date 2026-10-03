@@ -1,0 +1,23 @@
+{
+  "old_source": {
+    "status": "REJECTED_FOR_RELEASE",
+    "reason": "Visible original-background contamination around label, neck and base; historical runs retained."
+  },
+  "replacement": {
+    "status": "LIMITED_EXPERIMENT_ONLY",
+    "checks": [
+      "Bottle and printed label visually checked",
+      "White, neutral, dark background inspection saved",
+      "Native crop 180x650; no source upscaling in compositing",
+      "New guide actually generated on this source"
+    ],
+    "remaining": [
+      "White photograph transmission baked into neck",
+      "Fine pale edge on dark background",
+      "Insufficient resolution for large print"
+    ],
+    "commercial_release_allowed": false
+  },
+  "manual_review": true,
+  "not_automated_source_gate": true
+}
