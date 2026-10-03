@@ -11,7 +11,8 @@
   "rights_status": "research_only; original rights retained; commercial reuse unverified",
   "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
   "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
-  "status": "RUNNING",
+  "status": "ERROR",
   "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
-  "stage": "CONCEPTS"
+  "stage": "FAILED",
+  "error": "ValueError"
 }

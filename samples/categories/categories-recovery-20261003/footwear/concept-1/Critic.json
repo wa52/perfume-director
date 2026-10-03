@@ -1,0 +1,92 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 76,
+    "typography": 76,
+    "background": 78,
+    "physical_integration": 88,
+    "reference_alignment": 74,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The lime swoosh-echo disc (ellipse bbox x850-1060, y870-1060) is still majority-occluded by the toe: only a right-side crescent (roughly x940-1060) emerges past the white toe bumper, so the brief's 'lime disc echoing the swoosh at the toe' reads as a green blob clipped by the product instead of a composed printed mark framing the toe. Shift the disc so clear disc geometry surrounds the toe tip (e.g. center further right/up) while staying inside the canvas."
+    },
+    {
+      "type": "composition",
+      "problem": "A dead lemon void of roughly 420px (title/logo block ends y263, shoe collar starts y599) separates the Bodoni plate from the product zone; the thin navy rule at y760-774 now stops in margin at both ends but still floats inside that void touching nothing, so headline, rule and lane band never share a grid line and the type block feels pasted above the product. Either lift the product zone or pull the rule/lane into one aligned grid so the upper third connects to the silhouette."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy stays top-loaded: the band bottom (y1190) to canvas bottom (y1440, ~17% of height) is empty lemon paper with no closing element, while the 46px 'Nike' logo and the lime decoration rule sit isolated under the title. References 3-4 close their compositions with type or a mark near the product zone; here the lower margin reads as unfinished space rather than intentional negative space."
+    },
+    {
+      "type": "background",
+      "problem": "The lane band (x60-1020, y960-1190) now correctly insets both ends and covers heel and forefoot, but its top edge y960 cuts the white sole mid-height at the heel while the forefoot lugs dip to y1109, leaving a tall navy slab (y1109-1190, ~80px) below the contact line that visually outweighs the shoe; the printed lane reads as a plinth block rather than a track lane the silhouette rides."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 60,
+          "y": 1000,
+          "width": 960,
+          "height": 150,
+          "color": "#14213D",
+          "opacity": 1.0
+        },
+        {
+          "kind": "rectangle",
+          "x": 60,
+          "y": 640,
+          "width": 960,
+          "height": 14,
+          "color": "#14213D",
+          "opacity": 0.85
+        },
+        {
+          "kind": "ellipse",
+          "x": 880,
+          "y": 830,
+          "width": 190,
+          "height": 190,
+          "color": "#7ED957",
+          "opacity": 0.95
+        }
+      ]
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1210
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 205
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 663
+    }
+  ],
+  "reported_score": 79.0
+}

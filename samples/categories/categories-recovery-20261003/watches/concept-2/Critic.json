@@ -1,0 +1,87 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 80,
+    "typography": 80,
+    "background": 78,
+    "physical_integration": 80,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop (362,983)-(1064,1233) confirms a real shadow at the strap-loop base y=1123 with correct offset_y 0, but it renders as a thin hard dark rule: the loop's curved underside touches it at a single point while both shadow ends extend past the leather into open floor (visible x≈590-640 and x≈870-900), and no soft ambient-occlusion gradient wraps the loop's right flank (x≈880-984), so the hero reads slightly decal-pasted at poster scale despite the correct contact point."
+    },
+    {
+      "type": "background",
+      "problem": "The honed pale-grey stone ground is now clearly differentiated from the glazed tile wall (junction y≈850-870, no saturated grout below it), but the promised 'soft luminance pool center-right' is barely present: the floor stays a near-uniform light grey with only faint slab seams, so the setting reads as a clean empty room texture rather than a lit hall with graded depth, and the black hero sits on flat value instead of inside a luminance stage."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References R1 and R3 separate their heroes with a deliberate luminance or framing stage (framed black field, radial brushed-metal falloff with reflection); here the declared staging ellipse (#9FB6C4 at 0.18, bbox 380,900-1140,1320) is imperceptible in the render, so the watch floats on pattern-free but stage-free ground and the design remains one step below the references' resolved settings."
+    },
+    {
+      "type": "typography",
+      "problem": "The marine-ink left column (logo y432-452, title y518-574, subtitle y640-663) is legible and clear of the junction, but the 190px dead band between subtitle bottom (663) and the wall/floor junction (~850), plus the fully empty lower-left floor quadrant, leaves the column visually unanchored: hierarchy stops mid-canvas while the hero owns everything below, unlike R2's column which runs through the full editorial field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 416,
+          "y": 86,
+          "width": 13,
+          "height": 900,
+          "color": "#16324A",
+          "opacity": 0.5
+        },
+        {
+          "kind": "ellipse",
+          "x": 400,
+          "y": 930,
+          "width": 720,
+          "height": 380,
+          "color": "#F2F7FA",
+          "opacity": 0.3
+        },
+        {
+          "kind": "ellipse",
+          "x": 470,
+          "y": 1030,
+          "width": 580,
+          "height": 200,
+          "color": "#8FA6B6",
+          "opacity": 0.22
+        }
+      ]
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 10
+    }
+  ],
+  "reported_score": 81.6
+}

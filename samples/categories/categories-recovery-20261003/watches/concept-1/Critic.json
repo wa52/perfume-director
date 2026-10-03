@@ -1,0 +1,30 @@
+{
+  "pass": false,
+  "score": 88.6,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 88,
+    "typography": 88,
+    "background": 87,
+    "physical_integration": 88,
+    "reference_alignment": 85,
+    "creative_coherence": 90
+  },
+  "problems": [],
+  "changes": [
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 16
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    }
+  ],
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ],
+  "reported_score": 88
+}

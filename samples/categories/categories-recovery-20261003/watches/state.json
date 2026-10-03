@@ -1,0 +1,562 @@
+{
+  "id": "watches-pilot",
+  "product_category": "watches",
+  "local_path": "assets/products/categories/watches.png",
+  "source_url": "https://pngimg.com/images/objects/watches",
+  "image_url": "https://pngimg.com/uploads/watches/watches_PNG101457.png",
+  "sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "width": 1000,
+  "height": 1000,
+  "caption": "Watches transparent PNG picture 101457",
+  "rights_status": "research_only; original rights retained; commercial reuse unverified",
+  "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+  "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
+  "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "status": "ERROR",
+  "stage": "FAILED",
+  "directions": [
+    {
+      "name": "Malachite Banding Manifesto",
+      "brief": "Flat mineral-print placard: concentric malachite rings radiate behind the upright timepiece like a sliced Ural stone, while a centered Bodoni masthead stack with a short rule sits high above and a single tracked name line closes the calm base band, echoing R1's printed exhibition hierarchy.",
+      "material": "Matte mineral-pigment screen print on dense poster stock, opaque flat ink layers with crisp printed edges",
+      "lighting": "Even ink-flat diffuse illumination, no cast gradient, pure graphic field",
+      "id": "concept-1",
+      "signature": "1dfa09e5c4262d4f6be93f699f480a100bc5939e96ac783e91fe8095382aa843",
+      "signature_version": 2,
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#0F3D33",
+        "#F4F1E8",
+        "#6FB59C"
+      ],
+      "reference_ids": [
+        "category-98e55045b7c5df98",
+        "category-fc3303d1382aa0eb",
+        "category-eea6b38fcf844a70"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#0F3D33",
+          "prompt": "Deep malachite green matte mineral poster field, flat opaque ink coverage, faint stone-vein grain, uniform diffuse illumination, completely empty, no horizon",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "ellipse",
+              "x": 76,
+              "y": 353,
+              "width": 929,
+              "height": 950,
+              "color": "#1C5A4A",
+              "opacity": 0.9
+            },
+            {
+              "kind": "ellipse",
+              "x": 184,
+              "y": 468,
+              "width": 713,
+              "height": 720,
+              "color": "#2E7D67",
+              "opacity": 0.85
+            },
+            {
+              "kind": "ellipse",
+              "x": 292,
+              "y": 576,
+              "width": 497,
+              "height": 504,
+              "color": "#57A98F",
+              "opacity": 0.8
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 828,
+          "width": 583,
+          "height": 864
+        },
+        "lighting": "Even ink-flat diffuse illumination, no cast gradient, pure graphic field",
+        "palette": [
+          "#0F3D33",
+          "#F4F1E8",
+          "#6FB59C"
+        ],
+        "title": {
+          "text": "РОССИЯ",
+          "x": 336,
+          "y": 144,
+          "size": 96,
+          "color": "#F4F1E8",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 6,
+          "max_width": 0,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "КВАРЦ",
+          "x": 435,
+          "y": 1318,
+          "size": 28,
+          "color": "#F4F1E8",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 10
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#F4F1E8",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "НИКА",
+          "x": 450,
+          "y": 65,
+          "size": 30,
+          "color": "#F4F1E8",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 288,
+          "width": 173,
+          "color": "#6FB59C"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "product_category": "watches",
+        "scene_mode": "graphic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\f0f838aef5e2",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 4,
+        "score": 88.6,
+        "pass": false,
+        "poster": "v4/poster.png",
+        "spec": "v4/PosterSpec.json",
+        "critic": "v4/Critic.json",
+        "review_error": null,
+        "sha256": "bd9d881d59f8a5bf7d343a369115bce7afaff2cf76a772fb6a66b1d4d292dc0d"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 86.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3d384306ea20c3b7f7dbb31214ee98fc96eab4948879e3d2da0b65e47f0bbcf1"
+        },
+        {
+          "version": 2,
+          "score": 87.0,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "a6e417ac1704e29c67e35afc64892c7b4f4fc68c323d92230d8be6f18faadec7"
+        },
+        {
+          "version": 3,
+          "score": 88.0,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "697addd129fc01ffdf61fcad329a264666f8492149d978884f96c9e8262ecf08"
+        },
+        {
+          "version": 4,
+          "score": 88.6,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "bd9d881d59f8a5bf7d343a369115bce7afaff2cf76a772fb6a66b1d4d292dc0d"
+        },
+        {
+          "version": 5,
+          "score": 89.1,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "f1c25e30f09da3c3aa0dcc80c5021bdf2abf96746e9af4dd6dae63b0a99b5145"
+        }
+      ],
+      "review_failures": [],
+      "engine_snapshot": null
+    },
+    {
+      "name": "Porcelain Ice Hall",
+      "brief": "Photographic glazed-tile hall: a pale ice wall meets a continuous honed stone ground exactly at the strap loop base, cool north light grazing the glaze; a narrow marine-ink sans column runs down the left margin, vertically overlapping the hero yet fully separated horizontally, in the split-editorial spirit of R2.",
+      "material": "Glazed porcelain tile wall and honed pale stone ground with soft satin sheen",
+      "lighting": "Cool diffused daylight from upper front-left, gentle falloff, believable contact shadow on the continuous ground",
+      "id": "concept-2",
+      "signature": "3b157ac0aee53011632468a7237580b71112032b36b0aeb1b5569446c0cf739c",
+      "signature_version": 2,
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#DCE6EC",
+        "#16324A",
+        "#9FB6C4"
+      ],
+      "reference_ids": [
+        "category-dd135a777efc75a7",
+        "category-98e55045b7c5df98",
+        "category-eea6b38fcf844a70"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#DCE6EC",
+          "prompt": "Pale ice-blue glazed porcelain tile wall meeting a smooth honed stone ground in one continuous horizontal junction, cool soft daylight from upper left, faint satin sheen on glaze, empty architectural space",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "rectangle",
+              "x": 416,
+              "y": 86,
+              "width": 13,
+              "height": 1181,
+              "color": "#9FB6C4",
+              "opacity": 0.6
+            }
+          ]
+        },
+        "product": {
+          "x": 713,
+          "y": 720,
+          "width": 544,
+          "height": 806
+        },
+        "lighting": "Cool diffused daylight from upper front-left, gentle falloff, believable contact shadow on the continuous ground",
+        "palette": [
+          "#DCE6EC",
+          "#16324A",
+          "#9FB6C4"
+        ],
+        "title": {
+          "text": "РОССИЯ",
+          "x": 76,
+          "y": 518,
+          "size": 75,
+          "color": "#16324A",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 4,
+          "max_width": 280,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "КВАРЦ",
+          "x": 76,
+          "y": 828,
+          "size": 24,
+          "color": "#16324A",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 8
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#16324A",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "НИКА",
+          "x": 76,
+          "y": 432,
+          "size": 26,
+          "color": "#16324A",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": false,
+          "x": 104,
+          "y": 360,
+          "width": 80,
+          "color": "#A6A9AF"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "product_category": "watches",
+        "scene_mode": "photographic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\58233690acfb",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 3,
+        "score": 81.4,
+        "pass": false,
+        "poster": "v3/poster.png",
+        "spec": "v3/PosterSpec.json",
+        "critic": "v3/Critic.json",
+        "review_error": null,
+        "sha256": "4ba3dc2ab3e5c2cc56eafd000a2d848983bdadcf36a2f41cfb5d0b9dcf75ec83"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.4,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3c5c1cbbaea5e2f09439dd813d625722cb4e31a0e30458d2aceaefeb1671e6af"
+        },
+        {
+          "version": 2,
+          "score": 80.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "5ecec059b0d31140cc00847fc15005ef3adc2cf16706d99b63a88d1dd98bb750"
+        },
+        {
+          "version": 3,
+          "score": 81.4,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "4ba3dc2ab3e5c2cc56eafd000a2d848983bdadcf36a2f41cfb5d0b9dcf75ec83"
+        },
+        {
+          "version": 4,
+          "score": 80.1,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "5e1a546d6eb48bee9957a820b7d358bc9f9e26ba6da654f1d8a1976d7c95431a"
+        },
+        {
+          "version": 5,
+          "score": 81.9,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "dc91edd451c63f605dcfef165f9b0deef59454d9d85d207ca4b3c96b453697f4"
+        }
+      ],
+      "review_failures": [],
+      "engine_snapshot": null
+    },
+    {
+      "name": "Violet Felt Nocturne",
+      "brief": "Tactile pressed-wool field in deep aubergine: two soft felt discs layer behind the silver case like muted moons while the entire lower band stays calm for a left-set Baskerville statement anchored by a thin rule, recalling R2's anchored brand block rhythm.",
+      "material": "Pressed wool felt panel with dense matte fibre texture and soft die-cut disc insets",
+      "lighting": "Soft frontal wash from upper left, velvet-like falloff toward corners, no horizon",
+      "id": "concept-3",
+      "signature": "51cbbfce70995d14457fbf31eb5ef03f09de2aaaa0be587317376cdd4da34e6d",
+      "signature_version": 2,
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "serif",
+      "palette": [
+        "#2E2440",
+        "#EFE9F2",
+        "#B7A6C9"
+      ],
+      "reference_ids": [
+        "category-dd135a777efc75a7",
+        "category-eea6b38fcf844a70",
+        "category-fc3303d1382aa0eb"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#2E2440",
+          "prompt": "Deep aubergine pressed wool felt surface, dense matte fibre texture, soft even frontal wash from upper left, velvet falloff toward corners, completely empty flat field",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "ellipse",
+              "x": 151,
+              "y": 187,
+              "width": 778,
+              "height": 778,
+              "color": "#3B2F52",
+              "opacity": 0.9
+            },
+            {
+              "kind": "ellipse",
+              "x": 270,
+              "y": 310,
+              "width": 540,
+              "height": 533,
+              "color": "#4A3C66",
+              "opacity": 0.85
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 576,
+          "width": 506,
+          "height": 749
+        },
+        "lighting": "Soft frontal wash from upper left, velvet-like falloff toward corners, no horizon",
+        "palette": [
+          "#2E2440",
+          "#EFE9F2",
+          "#B7A6C9"
+        ],
+        "title": {
+          "text": "РОССИЯ",
+          "x": 108,
+          "y": 1094,
+          "size": 110,
+          "color": "#EFE9F2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 10,
+          "max_width": 0,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "КВАРЦ",
+          "x": 108,
+          "y": 1260,
+          "size": 30,
+          "color": "#EFE9F2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 12
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#EFE9F2",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "НИКА",
+          "x": 108,
+          "y": 1015,
+          "size": 30,
+          "color": "#EFE9F2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 10
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 108,
+          "y": 1058,
+          "width": 302,
+          "color": "#B7A6C9"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "product_category": "watches",
+        "scene_mode": "graphic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d60ff661ba94",
+      "status": "ERROR",
+      "error": "OSError"
+    }
+  ],
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d60ff661ba94",
+  "direction_index": 3,
+  "direction_count": 4,
+  "direction_name": "Violet Felt Nocturne",
+  "version": 1,
+  "error": "OSError"
+}

@@ -1,9 +1,25 @@
 [
   {
     "product_category": "watches",
+    "status": "ERROR",
+    "stage": "FAILED",
+    "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "footwear",
+    "status": "ERROR",
+    "stage": "FAILED",
+    "job_id": "0f3bd9f9b5c64255a4baf9808e777430",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "beverage",
     "status": "RUNNING",
     "stage": "CONCEPTS",
-    "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
+    "job_id": "c33a77c2ab9e4ff19cb569726ffd7472",
     "selected_directions": 0,
     "model_pass_directions": 0
   }

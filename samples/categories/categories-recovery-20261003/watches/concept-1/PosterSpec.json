@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 205854958020546,
+  "background": {
+    "color": "#0F3D33",
+    "prompt": "Deep malachite green matte mineral poster field, flat opaque ink coverage, faint stone-vein grain, uniform diffuse illumination, completely empty, no horizon",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 76,
+        "y": 353,
+        "width": 929,
+        "height": 950,
+        "color": "#175243",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 150,
+        "y": 428,
+        "width": 780,
+        "height": 790,
+        "color": "#27705C",
+        "opacity": 0.85
+      },
+      {
+        "kind": "ellipse",
+        "x": 224,
+        "y": 502,
+        "width": 632,
+        "height": 640,
+        "color": "#4C9A81",
+        "opacity": 0.8
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 828,
+    "width": 583,
+    "height": 864
+  },
+  "lighting": "Even ink-flat diffuse illumination, no cast gradient, pure graphic field",
+  "palette": [
+    "#0F3D33",
+    "#F4F1E8",
+    "#6FB59C"
+  ],
+  "title": {
+    "text": "РОССИЯ",
+    "x": 336,
+    "y": 168,
+    "size": 96,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "КВАРЦ",
+    "x": 435,
+    "y": 1316,
+    "size": 28,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 14
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 450,
+    "y": 84,
+    "size": 30,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 454,
+    "y": 292,
+    "width": 173,
+    "color": "#6FB59C"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic"
+}

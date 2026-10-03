@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 205854958021555,
+  "background": {
+    "color": "#DCE6EC",
+    "prompt": "Vast empty hall: pale ice-blue glazed porcelain tile wall with visible satin sheen and soft specular gradients lit by cool north daylight grazing from upper left, meeting a smooth honed pale grey stone ground with faint matte reflection and no grout lines, single continuous horizontal junction placed high in the frame, soft luminance pool falling on the ground center-right and gentle falloff toward edges, no objects, no figures, no equipment",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 416,
+        "y": 86,
+        "width": 13,
+        "height": 560,
+        "color": "#16324A",
+        "opacity": 0.5
+      },
+      {
+        "kind": "ellipse",
+        "x": 380,
+        "y": 900,
+        "width": 760,
+        "height": 420,
+        "color": "#9FB6C4",
+        "opacity": 0.18
+      }
+    ]
+  },
+  "product": {
+    "x": 713,
+    "y": 720,
+    "width": 544,
+    "height": 806
+  },
+  "lighting": "Cool diffused daylight from upper front-left, gentle falloff, believable contact shadow on the continuous ground",
+  "palette": [
+    "#DCE6EC",
+    "#16324A",
+    "#9FB6C4"
+  ],
+  "title": {
+    "text": "РОССИЯ",
+    "x": 76,
+    "y": 518,
+    "size": 75,
+    "color": "#16324A",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4,
+    "max_width": 280,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "КВАРЦ",
+    "x": 76,
+    "y": 640,
+    "size": 24,
+    "color": "#16324A",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 8
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#16324A",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 76,
+    "y": 432,
+    "size": 26,
+    "color": "#16324A",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.35
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "photographic"
+}
