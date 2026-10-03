@@ -1,0 +1,139 @@
+[
+  {
+    "product_category": "menswear",
+    "id": "category-dd0b8eb29c16d46f",
+    "brand": "Diesel",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://kioskproductions.co.uk/ss-folio",
+    "image": "references/categories/menswear/dd0b8eb29c16d46f.webp",
+    "selection_reason": "High-quality commercial fashion campaign image that accurately matches the menswear category (featuring a male model in distinct outerwear and trousers). The brand is clearly identified, and the image includes specific external campaign typography. It is a complex lifestyle scene with multiple subjects and environmental lighting, making it unsuitable for simple product rendering or isolated garment extraction tasks.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Diesel",
+      "quality_score": 92,
+      "composition": "Dynamic editorial layout featuring two models seated at a diner table, utilizing a diagonal visual flow from the top-right logo to the bottom-left campaign copy, anchored by foreground props.",
+      "subject_ratio": 0.65,
+      "negative_space": "Minimal; the frame is densely packed with environmental details, neon signage, and subjects, typical of high-energy fashion editorials.",
+      "lighting": "Harsh, direct on-camera flash creating high contrast, specular highlights on leather and vinyl surfaces, and distinct hard shadows, evoking a raw, paparazzi-style aesthetic.",
+      "color": [
+        "black",
+        "neon blue",
+        "denim blue",
+        "white",
+        "red"
+      ],
+      "typography": "Bold, white sans-serif campaign slogan ('ENJOY BEFORE RETURNING') stacked in the lower left; standard brand logotype in the upper right.",
+      "information_density": "Moderate; balances complex visual storytelling with clear, legible brand and campaign messaging.",
+      "characteristics": [
+        "flash photography",
+        "diner setting",
+        "neon lights",
+        "leather texture",
+        "acid wash denim",
+        "grunge aesthetic",
+        "lifestyle context"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 15,
+      "reason": "High-quality commercial fashion campaign image that accurately matches the menswear category (featuring a male model in distinct outerwear and trousers). The brand is clearly identified, and the image includes specific external campaign typography. It is a complex lifestyle scene with multiple subjects and environmental lighting, making it unsuitable for simple product rendering or isolated garment extraction tasks.",
+      "garment_types": [
+        "outerwear",
+        "tshirt",
+        "trousers"
+      ],
+      "category_suitability": 92
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  },
+  {
+    "product_category": "menswear",
+    "id": "category-3e7dfae607d86639",
+    "brand": "Hugo Boss",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+    "image": "references/categories/menswear/3e7dfae607d86639.jpg",
+    "selection_reason": "High-quality menswear campaign image featuring visible tailoring and shirt details. The composition effectively uses negative space for brand placement. The lighting is professional and stylized. Category match is confirmed as menswear.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Hugo Boss",
+      "quality_score": 92,
+      "composition": "Split-frame editorial layout with the subject occupying the upper two-thirds against a dual-tone sky background, balanced by a substantial lower white negative space anchoring the logo.",
+      "subject_ratio": 0.45,
+      "negative_space": "Expansive solid white field in the lower third; vertical color block division in the upper background.",
+      "lighting": "Hard, directional natural sunlight creating sharp facial shadows and high contrast, juxtaposed with a stylized blue color overlay on the left side.",
+      "color": [
+        "#FFFFFF",
+        "#1E5AA8",
+        "#8BB4E5",
+        "#3A3A3A",
+        "#000000"
+      ],
+      "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+      "information_density": "Minimalist; strictly brand identification with no promotional copy or pricing.",
+      "characteristics": [
+        "High-fashion editorial",
+        "Dual-exposure effect",
+        "Sharp tailoring focus",
+        "Minimalist branding",
+        "Profile silhouette"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "High-quality menswear campaign image featuring visible tailoring and shirt details. The composition effectively uses negative space for brand placement. The lighting is professional and stylized. Category match is confirmed as menswear.",
+      "garment_types": [
+        "tailoring",
+        "shirt"
+      ],
+      "category_suitability": 92
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  },
+  {
+    "product_category": "menswear",
+    "id": "category-103e2a523a57e7e8",
+    "brand": "Tommy Hilfiger",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+    "image": "references/categories/menswear/103e2a523a57e7e8.jpg",
+    "selection_reason": "High-quality commercial fashion photography featuring a visible menswear garment (t-shirt) with distinct fabric texture and construction details (rolled sleeves, crew neck). The image fits the menswear campaign category as a lifestyle/editorial shot, despite the tight crop focusing on the model's face, the garment is clearly present and styled.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Tommy Hilfiger",
+      "quality_score": 82,
+      "composition": "Tight editorial portrait framing with the subject offset to the right, balancing the negative space of the sky and blurred rock formation on the left.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space provided by the clear blue sky in the upper right and out-of-focus background elements.",
+      "lighting": "Strong, warm directional golden hour sunlight creating high contrast, deep shadows, and vibrant highlights on the hair and skin.",
+      "color": [
+        "ochre",
+        "sky blue",
+        "warm beige",
+        "brown"
+      ],
+      "typography": "None",
+      "information_density": "Low; purely visual imagery with no text overlays or graphical elements.",
+      "characteristics": [
+        "golden hour lighting",
+        "editorial portrait",
+        "windblown hair",
+        "slub cotton texture",
+        "rolled sleeves",
+        "outdoor setting"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "High-quality commercial fashion photography featuring a visible menswear garment (t-shirt) with distinct fabric texture and construction details (rolled sleeves, crew neck). The image fits the menswear campaign category as a lifestyle/editorial shot, despite the tight crop focusing on the model's face, the garment is clearly present and styled.",
+      "garment_types": [
+        "tshirt"
+      ],
+      "category_suitability": 82
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  }
+]

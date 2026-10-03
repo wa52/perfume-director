@@ -1,0 +1,137 @@
+[
+  {
+    "product_category": "womenswear",
+    "id": "category-f65da8385e29c33e",
+    "brand": "Claudie",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+    "image": "references/categories/womenswear/f65da8385e29c33e.jpg",
+    "selection_reason": "High-quality commercial fashion campaign image featuring a clear womenswear look (knit cardigan and skirt) with prominent, correctly identified brand typography overlay. The composition is clean, well-lit, and strictly adheres to professional advertising standards.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Claudie",
+      "quality_score": 92,
+      "composition": "Centered full-body editorial portrait with bold horizontal typographic overlay intersecting the subject's midsection.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive, uniform light grey studio backdrop providing high contrast for the central figure and white typography.",
+      "lighting": "Soft, diffused, flat frontal studio lighting minimizing shadows to emphasize graphic shapes and garment textures.",
+      "color": [
+        "navy blue",
+        "white",
+        "light grey",
+        "black",
+        "yellow"
+      ],
+      "typography": "Large, bold, uppercase sans-serif logotype ('CLAUDIE') in white, layered centrally over the subject.",
+      "information_density": "Low; focused entirely on the brand name and the visual styling of the single look.",
+      "characteristics": [
+        "editorial fashion",
+        "minimalist",
+        "graphic overlay",
+        "studio portrait",
+        "contemporary styling"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-quality commercial fashion campaign image featuring a clear womenswear look (knit cardigan and skirt) with prominent, correctly identified brand typography overlay. The composition is clean, well-lit, and strictly adheres to professional advertising standards.",
+      "garment_types": [
+        "knitwear",
+        "skirt"
+      ],
+      "category_suitability": 92
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  },
+  {
+    "product_category": "womenswear",
+    "id": "category-b2437b8786b4b159",
+    "brand": "Max Mara",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://www.stefanbeckman.com/campaign",
+    "image": "references/categories/womenswear/b2437b8786b4b159.webp",
+    "selection_reason": "High-end fashion campaign image featuring a clear monochromatic womenswear look (coat and knit set) with visible construction details like ribbing and pockets. The brand is explicitly identified via logo and caption. Lighting and composition are professional and evocative.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Max Mara",
+      "quality_score": 92,
+      "composition": "Centralized full-body figure anchored against a dramatic landscape horizon, utilizing a low-angle perspective to emphasize stature and garment drape.",
+      "subject_ratio": 0.65,
+      "negative_space": "Atmospheric sky and foreground terrain provide framing negative space, though the subject dominates the vertical axis.",
+      "lighting": "Cinematic, moody illumination with soft directional light on the subject contrasting against a dark, overcast background; highlights fabric textures effectively.",
+      "color": [
+        "burgundy",
+        "maroon",
+        "slate grey",
+        "olive green",
+        "ochre",
+        "white"
+      ],
+      "typography": "Large, white serif logotype centered at the bottom, high contrast against the dark foreground.",
+      "information_density": "Low; focused purely on brand identity and visual mood without extraneous copy.",
+      "characteristics": [
+        "monochromatic styling",
+        "textural contrast",
+        "atmospheric mood",
+        "luxury aesthetic",
+        "wind-blown elements"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-end fashion campaign image featuring a clear monochromatic womenswear look (coat and knit set) with visible construction details like ribbing and pockets. The brand is explicitly identified via logo and caption. Lighting and composition are professional and evocative.",
+      "garment_types": [
+        "outerwear",
+        "knitwear"
+      ],
+      "category_suitability": 92
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  },
+  {
+    "product_category": "womenswear",
+    "id": "category-f42a296942c5f8bf",
+    "brand": "Monsoon",
+    "style": "editorial",
+    "reference_kind": "commercial_reference",
+    "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+    "image": "references/categories/womenswear/f42a296942c5f8bf.webp",
+    "selection_reason": "The image is a high-quality, finished commercial fashion advertisement for Monsoon womenswear. It clearly displays the primary product (a charcoal double-breasted coat) worn by a model in an atmospheric outdoor setting. The campaign typography is prominent and professionally integrated, and the lighting effectively showcases the garment's texture and cut.",
+    "analysis": {
+      "category_match": true,
+      "brand": "Monsoon",
+      "quality_score": 88,
+      "composition": "Centered vertical portrait with the subject framed by receding stone steps and foliage; large brand logotype overlaid across the mid-torso creates a strong horizontal anchor.",
+      "subject_ratio": 0.65,
+      "negative_space": "Limited due to the full-bleed environmental background, but visual breathing room is maintained through the shallow depth of field blurring the surrounding greenery and stonework.",
+      "lighting": "Soft, diffused natural overcast light providing even illumination across the face and garment, minimizing harsh shadows and highlighting the fabric's matte texture.",
+      "color": [
+        "Charcoal Grey",
+        "Forest Green",
+        "Stone Grey",
+        "White",
+        "Blonde"
+      ],
+      "typography": "Bold, white, geometric sans-serif logotype centered horizontally; smaller secondary sans-serif URL and social media icons anchored at the bottom center.",
+      "information_density": "Low; strictly limited to essential brand identity and digital contact points, prioritizing the visual impact of the fashion photography.",
+      "characteristics": [
+        "Editorial fashion photography",
+        "Outdoor environmental portrait",
+        "Double-breasted wool coat",
+        "Moody atmospheric tone",
+        "Shallow depth of field"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "The image is a high-quality, finished commercial fashion advertisement for Monsoon womenswear. It clearly displays the primary product (a charcoal double-breasted coat) worn by a model in an atmospheric outdoor setting. The campaign typography is prominent and professionally integrated, and the lighting effectively showcases the garment's texture and cut.",
+      "garment_types": [
+        "outerwear"
+      ],
+      "category_suitability": 88
+    },
+    "analysis_origin": "vision_api",
+    "retrieval_scope": "same_audience_style_fallback"
+  }
+]

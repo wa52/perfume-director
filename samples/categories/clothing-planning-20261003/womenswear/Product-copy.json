@@ -1,0 +1,17 @@
+{
+  "title": "WOMENSWEAR",
+  "logo": "",
+  "subtitle": "Dress",
+  "price": "",
+  "evidence": "No label, tag, logo or price text is visible anywhere on the packshot; title and logo are therefore empty. 'Dress' in subtitle is supplied by the user brief (garment type), not read from the image. Price empty because none was provided. No readable model name; the title is an explicit category headline, not an inferred product name.",
+  "product_profile": {
+    "material": "Layered sheer organza/tulle ruffles on skirt; ruched bodice with bead and pearl embellishment and appliqued waistband",
+    "color": "Ombre from pale ice blue bodice and upper skirt through aqua turquoise mid ruffles to royal blue hem ruffles",
+    "transparency": "Skirt ruffle layers semi-translucent with visible layer-over-layer see-through; bodice opaque and lined",
+    "illumination": "Soft, diffuse, near-frontal studio light; even brightness with gentle highlights on ruffle edges; no hard cast shadow",
+    "view": "Front-facing full-length ghost-form cutout, eye-level camera, complete silhouette from sweetheart neckline to hem",
+    "integration_limits": "Translucent ruffles will tint or reveal any new background behind them; opaque beaded bodice blocks transmission; no ground contact or shadow present, so background must be a floating editorial field; hem ruffles approach canvas sides but silhouette is完整 not clipped"
+  },
+  "observed_product_name": "",
+  "copy_mode": "factual_category_headline"
+}

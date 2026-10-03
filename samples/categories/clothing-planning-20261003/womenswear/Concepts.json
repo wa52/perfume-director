@@ -1,0 +1,543 @@
+[
+  {
+    "name": "Colorfield Interrupt",
+    "brief": "Flat apricot poster field sliced by one ultramarine horizon band; the gown floats across the seam so sheer ruffles tint against the band while the beaded bodice stays crisp on apricot. A single ice ellipse halo crowns the neckline. Bold geometric sans headline sits in calm space above, echoing the reference's tracked uppercase overlay rhythm without touching the silhouette.",
+    "material": "Matte screen-print ink on smooth apricot paper, flat vector band edges",
+    "lighting": "Even shadowless graphic illumination, no directional source, pure flat print light",
+    "id": "concept-1",
+    "signature": "37269a5be88e54e9ba6532760860620f0ce106fadff227ab304d64a267bebe06",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "sans",
+    "palette": [
+      "#F2C49C",
+      "#142066",
+      "#2E4BE0"
+    ],
+    "reference_ids": [
+      "category-f65da8385e29c33e",
+      "category-b2437b8786b4b159",
+      "category-f42a296942c5f8bf"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#F2C49C",
+        "prompt": "Flat matte apricot paper field crossed by one crisp horizontal ultramarine band across the lower half, edges perfectly straight, uniform shadowless print illumination, no horizon depth, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0,
+            "y": 950,
+            "width": 1080,
+            "height": 490,
+            "color": "#142066",
+            "opacity": 1.0
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 497,
+            "height": 432,
+            "color": "#EAF3FF",
+            "opacity": 0.95
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 864,
+        "width": 676,
+        "height": 893
+      },
+      "lighting": "Even shadowless graphic illumination, no directional source, pure flat print light",
+      "palette": [
+        "#F2C49C",
+        "#142066",
+        "#2E4BE0"
+      ],
+      "title": {
+        "text": "WOMENSWEAR",
+        "x": 198,
+        "y": 89,
+        "size": 88,
+        "color": "#142066",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "Dress",
+        "x": 483,
+        "y": 184,
+        "size": 30,
+        "color": "#142066",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 10
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#142066",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 104,
+        "y": 80,
+        "size": 24,
+        "color": "#142066",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF"
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "womenswear",
+      "scene_mode": "graphic",
+      "garment_type": "dress",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Porcelain Tide Gradation",
+    "brief": "Airbrushed celadon field with three stacked soft ellipses mirroring the ombre ruffle tiers, ice to aqua to cobalt, so the geometry reads as an abstract echo of the skirt. The gown rides high; a quiet serif band below the hem carries the title in Baskerville with generous leading, studied from the reference's centered bottom logotype.",
+    "material": "Airbrush gradient on fine grain photographic paper, soft sprayed edges",
+    "lighting": "Diffuse frontal studio glow matching the cutout, gentle radial brightening behind the bodice",
+    "id": "concept-2",
+    "signature": "90aa2fb05ac6bc4c50b8e2b582b438a120d3970c257962681b295d5fb30bd026",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#E2ECE7",
+      "#0E3A44",
+      "#5FC4DA"
+    ],
+    "reference_ids": [
+      "category-b2437b8786b4b159",
+      "category-f65da8385e29c33e",
+      "category-f42a296942c5f8bf"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#E2ECE7",
+        "prompt": "Smooth airbrushed pale celadon paper field with a soft radial glow at upper center, sprayed pigment gradation, no horizon, no objects, even diffuse luminance",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 490,
+            "width": 367,
+            "height": 288,
+            "color": "#EAF6FB",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 691,
+            "width": 605,
+            "height": 374,
+            "color": "#9FDCE8",
+            "opacity": 0.85
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 893,
+            "width": 842,
+            "height": 432,
+            "color": "#2E5FD0",
+            "opacity": 0.8
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 654,
+        "height": 864
+      },
+      "lighting": "Diffuse frontal studio glow matching the cutout, gentle radial brightening behind the bodice",
+      "palette": [
+        "#E2ECE7",
+        "#0E3A44",
+        "#5FC4DA"
+      ],
+      "title": {
+        "text": "WOMENSWEAR",
+        "x": 294,
+        "y": 1116,
+        "size": 72,
+        "color": "#0E3A44",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.15,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "Dress",
+        "x": 488,
+        "y": 1217,
+        "size": 30,
+        "color": "#0E3A44",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 8
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#0E3A44",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 104,
+        "y": 80,
+        "size": 24,
+        "color": "#0E3A44",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 324,
+        "y": 1083,
+        "width": 432,
+        "color": "#5FC4DA"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "womenswear",
+      "scene_mode": "graphic",
+      "garment_type": "dress",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Night Ruffle Collage",
+    "brief": "Deep violet night field with torn deckle paper shards in ice and cobalt drifting behind the silhouette like detached ruffles. A narrow wrapped Arial Narrow column runs beside the gown at mid-height, vertically overlapping the skirt but horizontally clear of it, giving an editorial sidebar rhythm against the floating cutout.",
+    "material": "Torn cotton-rag collage papers with visible deckle fibers on violet stock",
+    "lighting": "Low ambient night luminance with a cool ice rim glow from upper left, soft and shadowless",
+    "id": "concept-3",
+    "signature": "06f734b248d033a78dbb8140717fe0cbc50b0bbb154aaa4cb94a9cca1a76b6af",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#262052",
+      "#EAF4FF",
+      "#7FD4E8"
+    ],
+    "reference_ids": [
+      "category-f42a296942c5f8bf",
+      "category-f65da8385e29c33e",
+      "category-b2437b8786b4b159"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#262052",
+        "prompt": "Deep violet matte paper night field with layered torn rag-paper shards in pale ice and cobalt drifting diagonally, fibrous deckle edges, cool diffuse ambient light, no horizon, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 648,
+            "y": 691,
+            "width": 648,
+            "height": 893,
+            "color": "#3A3477",
+            "opacity": 0.9
+          },
+          {
+            "kind": "rectangle",
+            "x": 842,
+            "y": 173,
+            "width": 173,
+            "height": 720,
+            "color": "#7FD4E8",
+            "opacity": 0.55
+          }
+        ]
+      },
+      "product": {
+        "x": 648,
+        "y": 720,
+        "width": 611,
+        "height": 806
+      },
+      "lighting": "Low ambient night luminance with a cool ice rim glow from upper left, soft and shadowless",
+      "palette": [
+        "#262052",
+        "#EAF4FF",
+        "#7FD4E8"
+      ],
+      "title": {
+        "text": "WOMENSWEAR",
+        "x": 76,
+        "y": 490,
+        "size": 29,
+        "color": "#EAF4FF",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 2,
+        "max_width": 200,
+        "line_height": 1.25,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "Dress",
+        "x": 76,
+        "y": 893,
+        "size": 26,
+        "color": "#EAF4FF",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 6
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#EAF4FF",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 104,
+        "y": 80,
+        "size": 24,
+        "color": "#EAF4FF",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "womenswear",
+      "scene_mode": "graphic",
+      "garment_type": "dress",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Bodoni Sun Arch",
+    "brief": "Butter-yellow field with one flat cobalt arch rising behind the gown like a printed proscenium, plus a thin ink rule under the hem line. A high-contrast Bodoni headline crowns the arch from above with tight serif tracking, borrowing the reference's dominant single-word masthead scale while keeping the field empty and graphic.",
+    "material": "Flat lithographic ink on warm yellow stock, crisp arch silhouette, paper tooth visible",
+    "lighting": "Bright uniform poster illumination, no cast shadows, saturated flat color",
+    "id": "concept-4",
+    "signature": "53531889bd3db8364b6ba94bb4a7a96db4c151200a237f8369ed1d571bf23a3c",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#F5E5AC",
+      "#1D2A6E",
+      "#3556D6"
+    ],
+    "reference_ids": [
+      "category-f65da8385e29c33e",
+      "category-f42a296942c5f8bf",
+      "category-b2437b8786b4b159"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#F5E5AC",
+        "prompt": "Warm butter-yellow lithographic paper field with a single flat cobalt arch shape printed behind center, crisp vector edges, subtle paper tooth, uniform bright illumination, no horizon, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 302,
+            "y": 605,
+            "width": 475,
+            "height": 662,
+            "color": "#3556D6",
+            "opacity": 1.0
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 605,
+            "width": 475,
+            "height": 432,
+            "color": "#3556D6",
+            "opacity": 1.0
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 835,
+        "width": 611,
+        "height": 806
+      },
+      "lighting": "Bright uniform poster illumination, no cast shadows, saturated flat color",
+      "palette": [
+        "#F5E5AC",
+        "#1D2A6E",
+        "#3556D6"
+      ],
+      "title": {
+        "text": "WOMENSWEAR",
+        "x": 190,
+        "y": 86,
+        "size": 92,
+        "color": "#1D2A6E",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 3,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "Dress",
+        "x": 485,
+        "y": 213,
+        "size": 28,
+        "color": "#1D2A6E",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 9
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1D2A6E",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 104,
+        "y": 80,
+        "size": 24,
+        "color": "#1D2A6E",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 281,
+        "y": 1274,
+        "width": 518,
+        "color": "#3556D6"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "womenswear",
+      "scene_mode": "graphic",
+      "garment_type": "dress",
+      "display_mode": "auto"
+    }
+  }
+]

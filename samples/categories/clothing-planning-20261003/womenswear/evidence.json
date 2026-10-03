@@ -1,0 +1,13 @@
+{
+  "status": "PLANNING_VALIDATED",
+  "directions": 4,
+  "rendered": false,
+  "visual_critic_run": false,
+  "does_not_grant_commercial_pass": true,
+  "layout_relations": [
+    "above",
+    "below",
+    "beside",
+    "above"
+  ]
+}

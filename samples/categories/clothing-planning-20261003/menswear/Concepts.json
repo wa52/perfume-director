@@ -1,0 +1,529 @@
+[
+  {
+    "name": "Cobalt Specimen Plate",
+    "brief": "Swiss specimen-plate logic: a saturated ultramarine paper field carries two concentric ivory rings that frame the floating white tee like a measured diagram. Studied R1's stacked sans discipline but inverted to a calm centered axis; R2 supplies the disciplined negative space, R3 the plain-knit honesty. Bodoni caps sit in a quiet top band, a hairline rule under the hem anchors the plate.",
+    "material": "matte screen-printed paper with faint fibrous grain",
+    "lighting": "flat even diffuse illumination, no directional fall-off, ink printed uniformly",
+    "id": "concept-1",
+    "signature": "83bb5a007bf17fefe246f0116bbf578e8e5db324e4a5fe58b64bd3ace891c2ea",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#1D4E9E",
+      "#F5F2EA",
+      "#E4572E"
+    ],
+    "reference_ids": [
+      "category-dd0b8eb29c16d46f",
+      "category-3e7dfae607d86639",
+      "category-103e2a523a57e7e8"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#1D4E9E",
+        "prompt": "Flat matte ultramarine blue printed paper field with faint fibrous grain, perfectly even diffuse illumination, no horizon, no objects, uniform ink coverage edge to edge",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 842,
+            "width": 864,
+            "height": 864,
+            "color": "#F5F2EA",
+            "opacity": 0.14
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 842,
+            "width": 713,
+            "height": 713,
+            "color": "#F5F2EA",
+            "opacity": 0.1
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 842,
+        "width": 754,
+        "height": 792
+      },
+      "lighting": "flat even diffuse illumination, no directional fall-off, ink printed uniformly",
+      "palette": [
+        "#1D4E9E",
+        "#F5F2EA",
+        "#E4572E"
+      ],
+      "title": {
+        "text": "MENSWEAR",
+        "x": 160,
+        "y": 122,
+        "size": 120,
+        "color": "#F5F2EA",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 6,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "T-shirt",
+        "x": 472,
+        "y": 248,
+        "size": 36,
+        "color": "#F5F2EA",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 5
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#F5F2EA",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 508,
+        "y": 1375,
+        "size": 16,
+        "color": "#F5F2EA",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 389,
+        "y": 1303,
+        "width": 302,
+        "color": "#E4572E"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "menswear",
+      "scene_mode": "graphic",
+      "garment_type": "tshirt",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Clay Flash Editorial",
+    "brief": "Raw flash-editorial energy translated to a flat poster: burnt clay field, a hard amber bar slicing behind the shoulders like a neon sign, slogan-weight Arial caps stacked in a reserved lower band exactly where R1 parks its shout, subtitle dropped to its own line beneath. Product lifted high so the type band owns the bottom third; R2's block division and R3's warm earth tones temper the noise.",
+    "material": "satin poster stock with subtle rolled-print texture",
+    "lighting": "bright frontal flash-style even light, crisp saturated inks, flat and vignette-free",
+    "id": "concept-2",
+    "signature": "c27e52d9f3e3bb4d110738c71a59546384f625aa046e7340946a9b7a559915c5",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "sans",
+    "palette": [
+      "#B5492B",
+      "#FFF6EC",
+      "#F2A33C"
+    ],
+    "reference_ids": [
+      "category-dd0b8eb29c16d46f",
+      "category-3e7dfae607d86639",
+      "category-103e2a523a57e7e8"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#B5492B",
+        "prompt": "Solid burnt clay orange satin poster stock, uniform bright frontal illumination, flat saturated ink with no gradient and no horizon",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 540,
+            "y": 432,
+            "width": 1080,
+            "height": 230,
+            "color": "#F2A33C",
+            "opacity": 0.9
+          },
+          {
+            "kind": "rectangle",
+            "x": 913,
+            "y": 720,
+            "width": 54,
+            "height": 893,
+            "color": "#FFF6EC",
+            "opacity": 0.22
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 754,
+        "height": 792
+      },
+      "lighting": "bright frontal flash-style even light, crisp saturated inks, flat and vignette-free",
+      "palette": [
+        "#B5492B",
+        "#FFF6EC",
+        "#F2A33C"
+      ],
+      "title": {
+        "text": "MENSWEAR",
+        "x": 86,
+        "y": 1116,
+        "size": 132,
+        "color": "#FFF6EC",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.05,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "T-shirt",
+        "x": 86,
+        "y": 1264,
+        "size": 40,
+        "color": "#FFF6EC",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 6
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#FFF6EC",
+        "font": "C:/Windows/Fonts/arial.ttf"
+      },
+      "logo": {
+        "text": "",
+        "x": 86,
+        "y": 1371,
+        "size": 16,
+        "color": "#FFF6EC",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "menswear",
+      "scene_mode": "graphic",
+      "garment_type": "tshirt",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Concrete Margin Column",
+    "brief": "Architectural margin grid: a cool concrete field with one graphite slab offset behind the shrunken garment, while a narrow left column carries a condensed Arial Narrow headline reading beside the tee with true vertical overlap. R1's slogan stacking informs the column rhythm; R2's serif logotype discipline shapes the small caps footer; R3 confirms the slub-knit realism against raw mineral texture.",
+    "material": "board-formed concrete with fine pore texture and soft mineral mottling",
+    "lighting": "soft overcast diffuse light from upper front, gentle even falloff, no specular highlights",
+    "id": "concept-3",
+    "signature": "637ff404529ca831af9015ffe187c66b7719de5b81ece644e74f80f24814ddb3",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#9AA3A8",
+      "#1E2226",
+      "#C4562A"
+    ],
+    "reference_ids": [
+      "category-dd0b8eb29c16d46f",
+      "category-3e7dfae607d86639",
+      "category-103e2a523a57e7e8"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#9AA3A8",
+        "prompt": "Board-formed cool grey concrete surface with fine pore texture and faint mineral mottling, soft overcast diffuse illumination from above, no horizon line, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 691,
+            "y": 720,
+            "width": 670,
+            "height": 950,
+            "color": "#6E777C",
+            "opacity": 0.55
+          }
+        ]
+      },
+      "product": {
+        "x": 691,
+        "y": 720,
+        "width": 576,
+        "height": 605
+      },
+      "lighting": "soft overcast diffuse light from upper front, gentle even falloff, no specular highlights",
+      "palette": [
+        "#9AA3A8",
+        "#1E2226",
+        "#C4562A"
+      ],
+      "title": {
+        "text": "MENSWEAR",
+        "x": 65,
+        "y": 605,
+        "size": 60,
+        "color": "#1E2226",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 1,
+        "max_width": 300,
+        "line_height": 1.15,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "T-shirt",
+        "x": 65,
+        "y": 720,
+        "size": 28,
+        "color": "#1E2226",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 5
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1E2226",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 65,
+        "y": 1361,
+        "size": 16,
+        "color": "#1E2226",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 65,
+        "y": 680,
+        "width": 173,
+        "color": "#C4562A"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "menswear",
+      "scene_mode": "graphic",
+      "garment_type": "tshirt",
+      "display_mode": "auto"
+    }
+  },
+  {
+    "name": "Petrol Halo Suspension",
+    "brief": "Suspended-in-air narrative: deep petrol field lit by a broad soft glow, two concentric halo discs catching the floating tee like a slow orbit. Baskerville romance floats in the upper band with letterspaced air, product dropped low so the serif headline breathes above; R1's bold hierarchy is quoted only in the tight small-caps footer, R2 in the restrained margin control.",
+    "material": "airbrushed pigment on cotton rag with soft granular bloom",
+    "lighting": "broad soft radial glow centered upper-middle, gentle falloff to darker corners, no hard shadows",
+    "id": "concept-4",
+    "signature": "5895ef6ec44cb9fde27fe1dba0359b2ebc8e3e514289eaa498855bec6fbc3954",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#0E3B3E",
+      "#F2EFE6",
+      "#E8B44A"
+    ],
+    "reference_ids": [
+      "category-dd0b8eb29c16d46f",
+      "category-3e7dfae607d86639",
+      "category-103e2a523a57e7e8"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#0E3B3E",
+        "prompt": "Deep petrol teal airbrushed pigment field on cotton rag, broad soft radial glow brightest at upper middle fading gently toward edges, granular matte texture, no horizon",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 864,
+            "width": 929,
+            "height": 929,
+            "color": "#F2EFE6",
+            "opacity": 0.1
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 864,
+            "width": 626,
+            "height": 626,
+            "color": "#E8B44A",
+            "opacity": 0.22
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 907,
+        "width": 795,
+        "height": 835
+      },
+      "lighting": "broad soft radial glow centered upper-middle, gentle falloff to darker corners, no hard shadows",
+      "palette": [
+        "#0E3B3E",
+        "#F2EFE6",
+        "#E8B44A"
+      ],
+      "title": {
+        "text": "MENSWEAR",
+        "x": 164,
+        "y": 108,
+        "size": 110,
+        "color": "#F2EFE6",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 8,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "T-shirt",
+        "x": 446,
+        "y": 248,
+        "size": 34,
+        "color": "#F2EFE6",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 6
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#F2EFE6",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 505,
+        "y": 1375,
+        "size": 16,
+        "color": "#F2EFE6",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "menswear",
+      "scene_mode": "graphic",
+      "garment_type": "tshirt",
+      "display_mode": "auto"
+    }
+  }
+]

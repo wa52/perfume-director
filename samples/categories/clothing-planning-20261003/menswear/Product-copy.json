@@ -1,0 +1,17 @@
+{
+  "title": "MENSWEAR",
+  "logo": "",
+  "subtitle": "T-shirt",
+  "price": "",
+  "evidence": "No legible words on the garment: the inner back-neck label shows only a small blue pictorial glyph with unreadable micro-text, so title and logo are left empty; 'T-shirt' subtitle and menswear category are supplied by the user brief, and no price was provided. No readable model name; the title is an explicit category headline, not an inferred product name.",
+  "product_profile": {
+    "material": "smooth matte knit jersey with fine weave texture and soft fold wrinkles",
+    "color": "plain white / off-white, no printed graphics on the visible back panel",
+    "transparency": "fully opaque fabric; only the opaque printed neck label sits inside the collar",
+    "illumination": "broad soft diffuse light from upper front, gentle falloff toward sides and under sleeves, no harsh speculars",
+    "view": "straight-on back view of an empty ghost-form cutout, floating with curved hem, no wearer, no base or floor contact",
+    "integration_limits": "opaque white cutout cannot transmit a generated background; keep floating presentation with zero ground shadow, preserve back view, collar rib and sleeve hems unrotated, and ensure background contrast against white fabric"
+  },
+  "observed_product_name": "",
+  "copy_mode": "factual_category_headline"
+}
