@@ -1,0 +1,30 @@
+name: Character Evolution Loop tests
+
+on:
+  push:
+    branches:
+      - "feature/character-evolution-loop-v01"
+    paths:
+      - "experiments/character_evolution_loop/**"
+      - ".github/workflows/character-evolution-loop-tests.yml"
+  pull_request:
+    paths:
+      - "experiments/character_evolution_loop/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check Director Console JavaScript syntax
+        working-directory: experiments/character_evolution_loop
+        run: node --check web_console/static/app.js
+      - name: Run Character Evolution tests
+        working-directory: experiments/character_evolution_loop
+        run: python -m unittest discover -s tests -v

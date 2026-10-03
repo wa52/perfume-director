@@ -1,0 +1,37 @@
+{
+  "schema_version": "work-art-direction/1",
+  "name": "From Red Moon — grounded 2D animation baseline",
+  "prompt_rules": [
+    "grounded contemporary 2D animation production design",
+    "clean readable silhouettes",
+    "controlled line weight, not sketchy",
+    "subtle cel shading with restrained value range",
+    "natural facial proportions, avoid generic idol-face homogenization",
+    "realistic everyday clothing construction",
+    "cinematic but restrained framing",
+    "backgrounds support character acting instead of overpowering it"
+  ],
+  "negative_rules": [
+    "glossy mobile-game splash art",
+    "hyper-detailed fashion illustration",
+    "generic Korean webtoon beauty template",
+    "photorealistic skin rendering",
+    "excessive neon cyberpunk treatment by default",
+    "hero poster composition for ordinary daily scenes"
+  ],
+  "locked_dimensions": {
+    "medium": "2D animation",
+    "line_language": "clean controlled linework",
+    "shading": "restrained cel shading",
+    "proportion_system": "natural human proportions",
+    "material_rendering": "graphic rather than photorealistic",
+    "default_camera": "character-readable medium/half-body framing",
+    "background_density": "supportive, not dominant"
+  },
+  "editable_dimensions": [
+    "scene_palette",
+    "lighting_mood",
+    "shot_distance",
+    "environment_detail"
+  ]
+}
