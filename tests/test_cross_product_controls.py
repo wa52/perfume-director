@@ -47,6 +47,33 @@ class CrossProductControlsTests(unittest.TestCase):
         self.assertEqual(poster.contact_footprints(image),[(50,300,80),(185,291,10)])
         self.assertEqual(image.getpixel((100,299)),(0,0,0,0))
 
+    def test_widening_ambient_shadow_does_not_draw_a_dark_rule_past_support(self):
+        spec=copy.deepcopy(self.spec)
+        for name in poster.TEXT_LAYERS:spec[name]['text']=''
+        spec['decoration']['enabled']=False
+        spec['background']['color']='#FFFFFF'
+        spec['product'].update(x=540,y=700,width=200,height=300)
+        spec['shadow'].update(kind='contact',opacity=.5,blur=20,offset_x=0,offset_y=0,width_scale=1.8)
+        product=Image.new('RGBA',(200,300),(255,0,0,255))
+        rendered=poster.render(spec,product,self.font)
+        # The support spans x=440..640. Outside it only a soft ambient gradient
+        # is valid, even when the Critic asks for a wider shadow.
+        self.assertGreater(rendered.getpixel((660,850))[0],200)
+        self.assertLess(rendered.getpixel((540,851))[0],160)
+
+    def test_curved_support_core_tracks_lowest_edge_not_wider_lower_band(self):
+        spec=copy.deepcopy(self.spec)
+        for name in poster.TEXT_LAYERS:spec[name]['text']=''
+        spec['decoration']['enabled']=False
+        spec['background']['color']='#FFFFFF'
+        spec['product'].update(x=540,y=700,width=200,height=300)
+        spec['shadow'].update(kind='contact',opacity=.5,blur=20,offset_x=0,offset_y=0,width_scale=1.8)
+        product=Image.new('RGBA',(200,300))
+        ImageDraw.Draw(product).ellipse((0,0,199,299),fill='red')
+        rendered=poster.render(spec,product,self.font)
+        self.assertGreater(rendered.getpixel((575,850))[0],220)
+        self.assertLess(rendered.getpixel((540,851))[0],160)
+
     def test_right_edge_title_is_translated_before_being_shrunk_to_unreadable_size(self):
         spec=copy.deepcopy(self.spec)
         spec['product'].update(x=540,y=850,width=520,height=720)

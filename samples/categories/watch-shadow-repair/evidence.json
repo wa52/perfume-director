@@ -1,0 +1,10 @@
+{
+  "source_run": "runs/live/58233690acfb/v3",
+  "same_spec": true,
+  "same_background": true,
+  "spec_sha256": "68bb55f75ca1b5c13950e41c40ec108787e32dc8f3911f36beaca2c214ce8b41",
+  "background_sha256": "a138571ddad78be0da435bc5122779811746aad8d575d0cd2b83657595022a91",
+  "model_reviewed": false,
+  "commercial_pass": false,
+  "note": "Isolated deterministic renderer comparison, not a new autonomous Critic pass."
+}

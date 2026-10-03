@@ -183,10 +183,18 @@ def render(spec, product, font, background=None):
             canvas = Image.alpha_composite(canvas, shadow.filter(ImageFilter.GaussianBlur(s['blur'])))
             if s.get('kind') == 'contact':
                 core = Image.new('RGBA', (w, h))
+                solid=product.getchannel('A').point(lambda a:255 if a>=96 else 0)
                 for foot_x,foot_y,foot_width in feet:
-                    center_x=px+foot_x+s['offset_x']
+                    left=max(0,round(foot_x-foot_width/2))
+                    right=min(product.width,round(foot_x+foot_width/2))
+                    edge=solid.crop((left,max(0,foot_y-2),right,foot_y)).getbbox()
+                    core_x=left+(edge[0]+edge[2])/2 if edge else foot_x
+                    core_width=edge[2]-edge[0] if edge else foot_width
+                    center_x=px+core_x+s['offset_x']
                     base = py+foot_y-1+s['offset_y']
-                    core_radius = foot_width*.44*s.get('width_scale',1)
+                    # Ambient spread may extend past the support; the dense contact
+                    # core must stay beneath it rather than becoming a drawn rule.
+                    core_radius = core_width*.44*min(1,s.get('width_scale',1))
                     ImageDraw.Draw(core).ellipse((center_x-core_radius, base-2, center_x+core_radius, base+3),
                         fill=(0,0,0,round(255*min(.85,s['opacity']*1.6))))
                 canvas = Image.alpha_composite(canvas, core.filter(ImageFilter.GaussianBlur(1.5)))

@@ -219,6 +219,17 @@ class FreshConceptTests(unittest.TestCase):
         with patch.object(concepts,'recent',return_value=plans),self.assertRaisesRegex(ValueError,'recent'):
             concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
 
+    def test_explicit_resume_allows_only_the_verified_original_signatures(self):
+        value=self.plans()
+        plans=concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
+        with patch.object(concepts,'recent',return_value=plans):
+            resumed=concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words,
+                resume_signatures=[item['signature'] for item in plans])
+            self.assertEqual(resumed,plans)
+            with self.assertRaisesRegex(ValueError,'recent'):
+                concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words,
+                    resume_signatures=[plans[0]['signature']])
+
     def test_unknown_reference_or_forbidden_background_is_not_accepted(self):
         for mutation in ('reference','background'):
             with self.subTest(mutation=mutation):

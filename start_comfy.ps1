@@ -30,7 +30,22 @@ if ($Restart -and (Test-Path -LiteralPath (Join-Path $runtimeRoot 'comfy.pid')))
                 if ($jobState.status -eq 'RUNNING') { throw 'A director loop is running; wait before restarting' }
             }
         }
-        Stop-Process -Id $taskPid -Force
+        # The Windows venv launcher can leave its standalone Python child
+        # serving after the launcher exits. Validate the actual listener too.
+        $taskListeners = @(Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
+            Select-Object -ExpandProperty OwningProcess -Unique)
+        foreach ($taskListenerPid in $taskListeners) {
+            $taskListener = Get-CimInstance Win32_Process -Filter "ProcessId = $taskListenerPid"
+            if (!$taskListener -or !$taskListener.CommandLine.Contains($runtimeRoot) -or
+                !$taskListener.CommandLine.Contains('main.py') -or
+                $taskListener.CommandLine -notmatch ('--port\s+' + $Port + '(\s|$)')) {
+                throw 'Port listener does not belong to this project; refusing to stop it'
+            }
+        }
+        foreach ($taskListenerPid in $taskListeners) {
+            if ($taskListenerPid -ne $taskPid) { Stop-Process -Id $taskListenerPid -Force }
+        }
+        Stop-Process -Id $taskPid -Force -ErrorAction SilentlyContinue
         Wait-Process -Id $taskPid -Timeout 10 -ErrorAction SilentlyContinue
         $taskStopDeadline = (Get-Date).AddSeconds(10)
         do {

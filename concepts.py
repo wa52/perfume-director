@@ -118,7 +118,7 @@ def resolve_reference_ids(value, references):
     return result
 
 
-def validate_plans(engine, config, value, product, references, approved_copy):
+def validate_plans(engine, config, value, product, references, approved_copy, *, resume_signatures=()):
     items = value.get('directions')
     if not isinstance(items,list) or len(items)!=4:
         raise ValueError('Exactly four new concepts required')
@@ -163,7 +163,7 @@ def validate_plans(engine, config, value, product, references, approved_copy):
         background_recipe=[' '.join(spec['background']['prompt'].split()).casefold(),
                            spec['background'].get('shapes',[]),spec.get('scene_mode','photographic')]
         signature=hashlib.sha256(json.dumps([grid,color_family(rgb),font,background_recipe],sort_keys=True).encode()).hexdigest()
-        if signature in previous:raise ValueError('Concept repeats a recent visual recipe including its background; invent a new design instead of changing its seed or name')
+        if signature in previous and signature not in resume_signatures:raise ValueError('Concept repeats a recent visual recipe including its background; invent a new design instead of changing its seed or name')
         materials.add(item['material'].strip().casefold())
         directions.append({**{k:item[k] for k in ('name','brief','material','lighting')},
             'id':f'concept-{index}','signature':signature,'signature_version':2,'scene_mode':spec.get('scene_mode','photographic'),'layout_relation':relation,'title_family':title_family(font),'palette':spec.get('palette',[]),'reference_ids':ids,'initial_spec':spec})
