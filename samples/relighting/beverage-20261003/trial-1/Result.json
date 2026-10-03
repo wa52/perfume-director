@@ -1,0 +1,19 @@
+{
+  "status": "REJECTED",
+  "metrics": {
+    "protected_max_rgb_error": 0,
+    "protected_pixels": 14045,
+    "editable_pixels": 24657,
+    "editable_mean_rgb_change": 20.72532478944451,
+    "source_silhouette_mask_unchanged": true,
+    "limitations": "Original mask/boundary and protected bands are held fixed; internal material/geometry can still drift and requires visual rejection. No PBR, measured material segmentation, or glass transmission reconstruction."
+  },
+  "seed": 20261003,
+  "model": "Mage-Flow-Edit-Turbo local int8; instruction-based appearance edit, not a measured physical renderer",
+  "commercial_release_allowed": false,
+  "reviewed_variants": [
+    "raw",
+    "protected"
+  ],
+  "illumination_transfer_reviewed": false
+}

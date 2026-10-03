@@ -1,5 +1,7 @@
 # Commercial V2: bottled-beverage pilot
 
+A separate opt-in [material/relighting experiment](MATERIAL_RELIGHTING.md) now includes two actual Mage-Flow runs and comparative vision reviews. It remains outside this renderer: raw edits failed identity, exact-label restoration failed lighting coherence, and conservative source-texture transfer is only an appearance prototype with unresolved shadow issues.
+
 This is an opt-in engineering pilot, not a commercial-quality release.
 
 The existing four-direction workflow remains compatible. V2 first asks the vision model for an evidence-qualified brand analysis and four advertising propositions without coordinates. An independent semantic-review call rejects collapsed or impossible ideas before layout, with at most two creative repairs. A separate Art Director call executes accepted IDs as layouts. V2 removes mandatory palette, serif/sans and above/below/beside quotas; those quotas measured layout variety rather than advertising concepts. Unique mechanism strings are only a structural check. Semantic review is still model judgment, and the final images need direct comparison.

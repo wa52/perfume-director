@@ -1,0 +1,60 @@
+{
+  "raw": {
+    "acceptable": false,
+    "material_improvement": true,
+    "problems": [
+      {
+        "problem": "Label identity destroyed by generation",
+        "evidence": "In image 2 the label script and lower legal line ('REFRESCO / CONT. NET. 355 ml') are garbled smudges versus the crisp lockup in images 1 and 5; cap crimp detail is also softened."
+      },
+      {
+        "problem": "Liquid headspace and玻璃 transmission altered",
+        "evidence": "Image 2 loses the pale foam/headspace band at the neck base seen in images 1 and 5; the neck reads as uniformly dark fill, changing observed transmission."
+      },
+      {
+        "problem": "Incoherent cast shadows for the claimed key light",
+        "evidence": "The wall shadow is a detached blob whose neck segment floats away from the bottle silhouette, and the cloth shadow sprawls front-right while the beam reads from upper-left-rear; shadow density does not match the beam's hardness."
+      }
+    ],
+    "next_action": "Reject as prototype; regenerate with label/cap masked and a single shadow-casting key whose wall and table shadows share one vanishing direction."
+  },
+  "protected": {
+    "acceptable": false,
+    "material_improvement": false,
+    "problems": [
+      {
+        "problem": "Boundary halo / cut-out seam",
+        "evidence": "A bright 1-2 px rim hugs the entire silhouette in image 3 (neck, shoulder, base), reading as a paste-up against the darker graded wall."
+      },
+      {
+        "problem": "Interior lighting contradicts restored exterior",
+        "evidence": "Restored cap and label carry image 1's flat frontal ambient while the editable interior shows a hard left-edge specular streak from the new beam; the foam/headspace band is missing, so liquid level disagrees with the locked label context."
+      },
+      {
+        "problem": "No grounding contact shadow",
+        "evidence": "Image 3 removes image 2's cast shadow entirely; the bottle meets the cloth with only the halo rim, so it floats despite the dramatic background beam."
+      }
+    ],
+    "next_action": "Re-composite: feather/relight the boundary band, restore the headspace foam in the editable interior, and add a contact shadow plus beam-consistent cast shadow."
+  },
+  "transfer": {
+    "acceptable": true,
+    "material_improvement": true,
+    "problems": [
+      {
+        "problem": "Residual wall-shadow ghost inside transferred field",
+        "evidence": "Image 4 carries a faint soft blob on the wall right of the neck (legacy of image 2's floating shadow) that no object in the scene justifies."
+      },
+      {
+        "problem": "Bottle response lags the scene key",
+        "evidence": "Because only source-texture luminance was transferred, the glass highlights remain the flat frontal set of image 1/5 while the backdrop beam runs upper-left; cap and label stay slightly brighter than the new ambient implies."
+      },
+      {
+        "problem": "Weak grounding under new light",
+        "evidence": "Contact shadow at the base is a soft uniform darkening with no directional cast on the cloth toward the beam's opposite side."
+      }
+    ],
+    "next_action": "Accept as appearance-edit prototype; add a directional contact/cast shadow and suppress the ghost wall blob before any commercial use."
+  },
+  "conclusion": "Only the smooth illumination transfer (image 4) preserves bottle, cap, label and liquid identity while producing a broadly consistent relit scene, so it is the sole acceptable prototype; the raw edit fails identity (garbled label, lost headspace) and the pixel-locked restore fails coherence (halo seam, mismatched interior light, no grounding). All three remain prototypes, not commercial packshots: illumination still deviates from the flat frontal packshot light of image 5 and grounding/shadow physics need a manual pass."
+}

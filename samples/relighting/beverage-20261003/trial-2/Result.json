@@ -1,0 +1,33 @@
+{
+  "status": "PROTOTYPE_ONLY",
+  "metrics": {
+    "protected_max_rgb_error": 0,
+    "protected_pixels": 14045,
+    "editable_pixels": 24657,
+    "editable_mean_rgb_change": 25.717145908531723,
+    "source_silhouette_mask_unchanged": true,
+    "limitations": "Original mask/boundary and protected bands are held fixed; internal material/geometry can still drift and requires visual rejection. No PBR, measured material segmentation, or glass transmission reconstruction."
+  },
+  "illumination_transfer": {
+    "mode": "source_texture_smooth_illumination_transfer",
+    "generated_product_pixels_used": false,
+    "exact_identity_rgb_lock": false,
+    "product_brightness_factor_bounds": [
+      0.7,
+      1.4
+    ],
+    "background_factor_bounds": [
+      0.75,
+      1.25
+    ],
+    "limitations": "Brightness changes original label/cap pixels. Source lettering/geometry retained, but smooth sRGB shading does not reconstruct physical reflections or glass transmission. Visual review mandatory."
+  },
+  "seed": 20261004,
+  "model": "Mage-Flow-Edit-Turbo local int8; instruction-based appearance edit, not a measured physical renderer",
+  "commercial_release_allowed": false,
+  "reviewed_variants": [
+    "raw",
+    "protected",
+    "transfer"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "raw": {
+    "material_improvement": true,
+    "acceptable": false,
+    "problems": [
+      {
+        "problem": "Label identity destroyed by the unconstrained edit",
+        "Evidence": "Script logo renders as 'Coca-Colb.' and the subline ('REFRESCO / CONT. NET. 355 ml' in image 1 and packshot 4) is garbled into illegible glyphs; label band geometry also bulges wider than the source silhouette."
+      },
+      {
+        "problem": "Illumination direction inconsistent between background and product",
+        "Evidence": "The transferred key light rakes diagonally from upper-left on the wall and cloth, yet the bottle's new speculars sit as broad frontal patches on the lower body and neck with no matching cast shadow of the bottle into the beam direction; contact shadow under the base stays near-neutral as in image 1."
+      },
+      {
+        "problem": "Fill level and headspace drift",
+        "Evidence": "Liquid line in image 2 sits higher with a flatter meniscus and less foam ring than image 1/packshot 4, changing the observed glass transmission ratio in the neck."
+      }
+    ],
+    "next_action": "Reject raw output; re-run with identity locks on label/cap and enforce a single key-light direction that also drives the bottle's cast shadow before any protection pass."
+  },
+  "protected": {
+    "material_improvement": true,
+    "acceptable": false,
+    "problems": [
+      {
+        "problem": "Halo / aura around restored silhouette boundary",
+        "Evidence": "A luminous curved glow hugs the cap, neck and right shoulder against the grey wall in image 3, absent in both image 1 and image 2; reads as a pasted-boundary matte fringe rather than transmitted light."
+      },
+      {
+        "problem": "Seam and edge-light mismatch at the restored label band",
+        "Evidence": "Above and below the label the glass carries the new bright left-contour highlight, but at the label band the silhouette edge reverts to image 1's soft uniform edge; the transition is visible as an abrupt tonal step on the left contour at the band's top and bottom."
+      },
+      {
+        "problem": "Background illumination transfer inconsistent with the raw edit and with grounding",
+        "Evidence": "Image 3 replaces image 2's coherent diagonal beam with a soft radial bloom behind the bottle plus a dark vignette in the upper-left corner; the cloth contact shadow remains weak and undirected, so the bottle appears to float in front of a glow instead of standing in the scene light."
+      },
+      {
+        "problem": "Cap/label pixels retain original flat lighting inside a re-lit scene",
+        "Evidence": "Restored cap and label show image 1's neutral diffuse shading while adjacent neck glass shows strong directional speculars, breaking material continuity across the restored bands."
+      }
+    ],
+    "next_action": "Re-composite with a feathered, light-relit boundary: relight the restored label/cap bands to the scene key, remove the matte halo, and regenerate the background gradient plus a directional contact shadow consistent with the beam."
+  },
+  "conclusion": "Both pilots demonstrate genuine material/illumination exploration (richer glass speculars, transmitted glow in the base, plausible beam concept), but neither is a visually consistent prototype: the raw edit sacrifices label identity and light logic, and the protected edit trades that for pasted-boundary artifacts — halo around the silhouette, edge-light seams at the restored label band, and a background glow that contradicts both the raw beam and the grounding shadow. For a perfume-category standard demanding preserved cap/label/glass transmission matched to packshot illumination, the protected version is closer but still fails on boundary coherence; iterate the protection mask with relit bands and shadow-consistent background before any campaign use."
+}

@@ -1,0 +1,28 @@
+{
+  "source_sha256": "23ac906d31d4bc52ff05a8c06151b2914c2a1c07cc8a61b3c5316c76659c2bca",
+  "zones": [
+    {
+      "name": "cap lettering",
+      "bbox": [
+        0,
+        0,
+        1,
+        0.09
+      ]
+    },
+    {
+      "name": "brand and label text",
+      "bbox": [
+        0,
+        0.38,
+        1,
+        0.62
+      ]
+    }
+  ],
+  "zone_source": "manual pilot-specific full-width label/cap bands; not inferred material classes",
+  "output_size": [
+    576,
+    768
+  ]
+}

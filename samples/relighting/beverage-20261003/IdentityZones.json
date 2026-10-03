@@ -1,0 +1,20 @@
+[
+  {
+    "name": "cap lettering",
+    "bbox": [
+      0,
+      0,
+      1,
+      0.09
+    ]
+  },
+  {
+    "name": "brand and label text",
+    "bbox": [
+      0,
+      0.38,
+      1,
+      0.62
+    ]
+  }
+]
