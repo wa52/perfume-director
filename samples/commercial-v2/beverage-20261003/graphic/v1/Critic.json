@@ -1,0 +1,175 @@
+{
+  "pass": false,
+  "score": 75.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 66,
+    "typography": 84,
+    "background": 60,
+    "physical_integration": 90,
+    "reference_alignment": 70,
+    "creative_coherence": 62,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "concept_geometry_misregistration",
+      "problem": "The ripple field is not concentric behind the label as the concept requires. Because shape x/y are upper-left corners, every ellipse anchored at (540,576) places its center at (540+w/2, 576+h/2); the rings therefore radiate from a point far down-right (outer ring center approx (1047,1008)) instead of from behind the script label, and the band arcs sweep diagonally across the lower-right quadrant behind the masthead.",
+      "root_cause": "Ellipse primitives were authored with the intended ripple center used as upper-left origin instead of center-minus-half-size.",
+      "affected_layer": "scene",
+      "repair_strategy": "Rewrite background.shapes as a complete concentric set centered on the label point (540,576): x = 540 - width/2, y = 576 - height/2 for every band, keeping the cool paper palette and the red core."
+    },
+    {
+      "type": "stray_red_disc",
+      "problem": "The innermost red ellipse (bbox 540,576 to 756,742) is only half-occluded by the bottle, so a saturated red半 blob protrudes to the right of the label at mid-height. It reads as an accidental sticker, not as the 'quiet saturated center' or an eclipse field; it also visually collides with the label edge and unbalances the centered composition.",
+      "root_cause": "Same origin offset error: the red core was meant to sit fully behind the label silhouette but was shifted right by half its width.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-center the red core at (540,576) with a diameter smaller than the label width so the untouched cutout fully eclipses it, or remove it and let the grey rings carry the echo."
+    },
+    {
+      "type": "typography_over_graphic_noise",
+      "problem": "The masthead 'Coca-Cola' and 'REFRESCO' sit on top of the mis-swept grey ripple bands in the lower-right quadrant (title bbox 540,1152-975,1227 intersects ring bands visible in the poster). The reserved lower band promised by the brief is not reserved: band edges cut through the descender zone and the subtitle line, muddying the claimed clean paper field and weakening hierarchy versus the references' calm type zones.",
+      "root_cause": "Ripple center displacement pushed band arcs into the type zone; no clear band was kept below y approx 1100.",
+      "affected_layer": "typography",
+      "repair_strategy": "After re-centering the rings at label height, constrain the outermost band so its lower edge stays above y approx 1060, leaving the masthead band on flat paper; optionally raise title tracking/size contrast for a stronger masthead."
+    },
+    {
+      "type": "weak_hierarchy_scale",
+      "problem": "Product width ratio is only 0.184 and the ripple bands are very low-contrast (#D9DEE3 on #EEF1F3), so at poster scale the graphic event is barely audible and the bottle reads small and isolated in a large empty field; references (e.g. the ripple-line can poster) commit to a high-contrast field that carries the composition. Within this concept the echo needs stronger value separation or tighter framing to feel intentional rather than faint.",
+      "root_cause": "Band color chosen too close to paper value; ring field offset also removed its framing function around the hero.",
+      "affected_layer": "scene",
+      "repair_strategy": "Deepen alternating band value (e.g. #C9CFD6 against #EEF1F3) and re-center the field so the rings frame the bottle silhouette, giving the hero a graphic halo and restoring hierarchy without touching the cutout."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 32,
+          "y": 144,
+          "width": 1015,
+          "height": 864,
+          "color": "#CBD2D9",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 119,
+          "y": 223,
+          "width": 842,
+          "height": 706,
+          "color": "#EEF1F3",
+          "opacity": 1
+        },
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 299,
+          "width": 670,
+          "height": 554,
+          "color": "#CBD2D9",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 286,
+          "y": 371,
+          "width": 508,
+          "height": 410,
+          "color": "#EEF1F3",
+          "opacity": 1
+        },
+        {
+          "kind": "ellipse",
+          "x": 362,
+          "y": 435,
+          "width": 356,
+          "height": 281,
+          "color": "#CBD2D9",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 462,
+          "y": 506,
+          "width": 156,
+          "height": 140,
+          "color": "#D6231F",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 10
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "No logo layer is authorized (intentional_empty_layers includes logo); the brand mark appears only as the untouched on-label white script, which matches the supplied cutout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bottle bbox 440,202-639,1008 matches the source contour silhouette: crown cap, neck foam head, contour waist, green-transmitting base all present with no distortion or clipping inside canvas."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares flat printed poster stock with no floor; contact detail crop (360,868-719,1118) shows a soft contact shadow seated at base_y 1008 with offset_y 0, consistent with the declared suspended graphic presentation."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges show no halo or fringe against the cool paper; only neck and base translucency behave as in the source; no canvas-edge clipping of the product (bbox fully inside 1080x1440)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Background prompt specifies even diffuse frontal print illumination with no horizon or falloff, matching the source cutout's soft frontal studio light and gentle vertical shoulder highlights; no competing key light or cast direction is introduced."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox 540,1152-975,1227 and subtitle bbox 540,1274-731,1292 lie fully within canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap reports false for both title and subtitle; no intersection on both axes with product bbox 440,202-639,1008."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Title and subtitle use C:/Windows/Fonts/georgia.ttf, an installed approved serif consistent with the declared serif title_family; glyphs render correctly in the poster."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Permitted copy rendered exactly: 'Coca-Cola' masthead and 'REFRESCO' subtitle; label copy on the cutout ('REFRESCO', 'CONT. NET. 355 ml', 'NO RETORNABLE') is untouched source text."
+    }
+  },
+  "reported_score": 74,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

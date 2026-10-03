@@ -30,6 +30,7 @@ def build_spec(engine,config,item,product,approved_copy):
     spec['product_category']=config.get('product_category','perfume')
     spec['scene_mode']=item.get('scene_mode','photographic')
     if config.get('commercial_v2'):
+        spec['commercial_v2']=True
         plan=item.get('integration_plan')
         engine.commercial_module().validate_integration(plan)
         spec['integration_plan']=copy.deepcopy(plan)
@@ -146,6 +147,7 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
             raise ValueError('Each concept needs a reference with actual campaign typography, not only bottle labels')
         spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
         if config.get('commercial_v2'):
+            spec['commercial_v2']=True
             engine.commercial_module().validate_integration(spec.get('integration_plan'))
         spec['product_category']=config.get('product_category','perfume')
         spec=engine.categories_module().spec_policy(spec,config)

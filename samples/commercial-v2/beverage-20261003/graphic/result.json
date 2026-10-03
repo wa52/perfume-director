@@ -1,0 +1,43 @@
+{
+  "status": "NEEDS_REVIEW",
+  "mode": "live",
+  "standalone_vision_api_used": true,
+  "vision_model": "qwen3.8-max",
+  "selected": {
+    "version": 2,
+    "score": 90.6,
+    "pass": false,
+    "poster": "v2/poster.png",
+    "spec": "v2/PosterSpec.json",
+    "critic": "v2/Critic.json",
+    "review_error": null,
+    "sha256": "dd69d0b857f827619484a3262442345f8b66f78e131d81ba9587dc8db000b0d0"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 75.4,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "d3d6e5b03ee782146ac797292ffa377fdfc7056398c53bda9ba00de4fdbdd610"
+    },
+    {
+      "version": 2,
+      "score": 90.6,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "dd69d0b857f827619484a3262442345f8b66f78e131d81ba9587dc8db000b0d0"
+    }
+  ],
+  "review_failures": [],
+  "independent_final_review": {
+    "tier": "draft",
+    "evidence": "The finished poster renders the declared ripple field as five broad flat grey concentric bands reading as a decorative target/bullseye behind the packshot; the specified red core ellipse (#D6231F at 156x140 behind the label) is fully occluded by the bottle, so the concept's claimed event ('the wordmark emitting its own printed echo', red quiet saturated center) is invisible and only grey rings remain. The masthead is generic black Georgia serif 'Coca-Cola' plus tracked 'REFRESCO', disconnected from the brand's script equity and visually colliding with the outer ripple band whose edge passes through the cap-height zone of the type; both text blocks also sit right of the optical centerline while the bottle is centered, splitting the composition. The source cutout is low-resolution with visible jagged halo fringes on the cap, neck and shoulder contours, and the flat graphic field exposes rather than resolves these edges. References (condensation-macro can, staged tabletop can, splash CGI) show resolved photographic/graphic craft and a legible visual event; this poster shows a competent generic template with an idea that exists mainly in its written description."
+  }
+}

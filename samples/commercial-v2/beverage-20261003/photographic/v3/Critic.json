@@ -1,0 +1,122 @@
+{
+  "pass": false,
+  "score": 81.1,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 80,
+    "typography": 84,
+    "background": 72,
+    "physical_integration": 80,
+    "reference_alignment": 72,
+    "creative_coherence": 84,
+    "brand_alignment": 94
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The contact crop [137,1012,511,1262] does contain a real soft shade hugging the green base edge (offset_y 0 is correct; do not move it), so the shadow is not missing. The failure is the plane it lands on: the linen's far edge crosses at ~y=910-960 and the cloth face turns vertical at ~y=1000-1050 with hanging fold striations, so base y=1152 sits on the table skirt, not on a receding top surface. A shade on a vertical drape cannot carry weight, so the bottle still reads as hovering in front of the skirt, unlike reference 4 where can base, contact shade and cloth top surface share one readable plane.",
+      "root_cause": "The regenerated prompt's 'shallow receding band' still renders as a narrow top band above a dominant front drape; the base line was never placed inside the surface band.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background so the oatmeal linen top surface is a deep receding plane whose far edge crosses near y=880-920 and whose surface texture (horizontal weave falloff, no vertical hanging folds) continues past y=1200, putting base y=1152 on visible surface; keep diffuse frontal daylight and shadow offset_y at 0."
+    },
+    {
+      "type": "background",
+      "problem": "The upper ~60% of frame is still a flat warm-grey wall with only a faint gradient and no material or light event, and the lower cloth reads as skirt; the setting remains under-authored versus reference 4's saturated cloth plane and deep tonal field. No softbox, lamp, stand or camera artifacts are present (good), but the environment still looks like a backdrop behind a pasted cutout rather than the seated tabletop continuum the concept declares.",
+      "root_cause": "Prompt emphasis on 'seamless warm grey studio wall' keeps the wall dominant; the linen plane is generated too low and too shallow to structure the frame.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-issue one background prompt that lowers the wall/linen balance: linen surface occupying roughly the lower third to 40% with gentle frontal daylight falloff and a calm graduated grey rear wall, no equipment names, no product words."
+    },
+    {
+      "type": "composition",
+      "problem": "The hero resize landed (bbox [217,288,431,1152], height ratio 0.60, width ratio 0.198) and the gutter to the type column narrowed, but the vacant right span below the subtitle (y>710 down to the horizon at ~y=930) is still dead space: nothing activates the 'offered place', so the waiting-place idea reads as emptiness rather than intentional vacancy. References 3-5 all activate negative space (cast-shadow field, prop echo, splash); this draft leaves it inert.",
+      "root_cause": "Concept relies on vacancy but no tonal or material event (light pool, cloth highlight) is authored inside the vacant span to make it feel offered.",
+      "affected_layer": "scene",
+      "repair_strategy": "Within the same background regeneration, ask for a soft broad daylight pool falling across the near-right linen span so the vacancy glows as an offered place; keep the span object-free per concept."
+    },
+    {
+      "type": "typography",
+      "problem": "Subtitle y=690 now locks the two lines into one block (gap closed from 63px to ~33px optical), but the block still floats in flat grey with no tonal separation event and no alignment tie to the horizon or bottle shoulder; hierarchy is competent but generic next to the references' integrated type placement.",
+      "root_cause": "Type was repositioned but the background value behind it was never authored, so the column lacks a supporting field.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep copy, serif family and left alignment; let the regenerated wall carry a gentle vertical light gradient behind the type column, and optionally nudge subtitle tracking within 1..8 px to tighten the block; no overlap exists (text_product_overlap false for both lines), so do not move x."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty seamless warm grey studio wall with a gentle vertical light gradient, meeting a horizontal tabletop plane draped in neutral oatmeal linen whose receding top surface fills the lower third of the frame with horizontal weave falloff and no hanging vertical folds, its soft far edge crossing just above lower-third height, a broad soft daylight pool warming the near-right span of linen, diffuse frontal daylight with gentle wrap and calm soft shadows, no harsh highlights, no objects, no equipment"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer intentionally empty per permitted copy; brand mark appears only as the untouched on-label white script wordmark identical to the supplied cutout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox [217,288,431,1152] is 214x864 px against spec 216x864; contour silhouette, crown cap, red wrap label, foam head and green base edge match the original cutout with no distortion or repaint."
+    },
+    "grounding_correct": {
+      "ok": false,
+      "evidence": "Contact crop shows a genuine soft shade at the green base (offset_y 0 correct), but the linen top band ends near y=1000-1050 into vertical hanging folds while base y=1152 sits on that skirt, so no visible receding surface supports the bottle."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Silhouette shows no halo or fringe against grey wall or linen; bbox stays fully inside the 1080x1440 canvas with comfortable margins (top 288, base 1152 < 94% limit)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Scene light is soft diffuse frontal with gentle wrap, matching the cutout's vertical shoulder highlights and absence of rim light; contact shade direction agrees with frontal key."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [700,605,1013,657] and subtitle bbox [705,690,869,706] lie wholly within canvas margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap reports title false and subtitle false; no both-axis intersection with product bbox [217,288,431,1152]."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "C:/Windows/Fonts/BASKVILL.TTF is in the approved installed list and renders full glyph coverage for 'Coca-Cola' and 'REFRESCO'."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Title reads 'Coca-Cola', subtitle 'REFRESCO', matching permitted copy and the label category word; no invented flavour, ingredient or nutrition claims."
+    }
+  },
+  "reported_score": 80.4,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:grounding_correct",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

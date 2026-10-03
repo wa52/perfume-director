@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 42,
+  "background": {
+    "color": "#DDD6C9",
+    "prompt": "Neutral oatmeal linen cloth draped smoothly over a continuous horizontal plane at seated height, visible soft edge horizon across the lower third, behind it a calm warm grey seamless backdrop, soft diffuse frontal illumination with gentle wrap and no harsh highlights",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 324,
+    "y": 792,
+    "width": 180,
+    "height": 720
+  },
+  "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+  "palette": [
+    "#DDD6C9",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 648,
+    "y": 605,
+    "size": 74,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 653,
+    "y": 720,
+    "size": 24,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 648,
+    "y": 605,
+    "size": 74,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0.1,
+    "cast_opacity": 0.2,
+    "cast_blur": 22
+  }
+}

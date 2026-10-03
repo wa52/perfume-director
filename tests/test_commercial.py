@@ -85,6 +85,19 @@ class CommercialTests(unittest.TestCase):
             saved=poster.read(Path(folder)/'CommercialGate.json')
             self.assertIn('check:lighting_consistent',saved['failures'])
 
+    def test_final_art_director_can_reject_high_scoring_generic_work(self):
+        final={'tier':'draft','evidence':'generic circles and weak brand typography','problems':[]}
+        with tempfile.TemporaryDirectory() as folder,patch.object(poster,'review_poster',return_value=self.approved()),patch.object(poster,'layout_issues',return_value=[]),patch.object(commercial,'final_art_review',return_value=final):
+            result=poster.review_validated({'commercial_v2':True,'font':'font'}, {},'product','poster',[],Path(folder),None)
+            self.assertFalse(result['pass'])
+            self.assertEqual(result['commercial_gate']['final_tier'],'draft')
+
+    def test_unavailable_final_review_is_not_a_pass(self):
+        with tempfile.TemporaryDirectory() as folder,patch.object(poster,'review_poster',return_value=self.approved()),patch.object(poster,'layout_issues',return_value=[]),patch.object(commercial,'final_art_review',side_effect=TimeoutError):
+            result=poster.review_validated({'commercial_v2':True,'font':'font'}, {},'product','poster',[],Path(folder),None)
+            self.assertFalse(result['pass'])
+            self.assertIn('final_art_director:unavailable',result['commercial_gate']['failures'])
+
     def test_directional_shadow_patches_cannot_change_observed_light(self):
         spec=poster.read(poster.ROOT/'examples/PosterSpec.json')
         spec['integration_plan']={'source_key_light':'left','ground_material':'matte stone','cast_length_ratio':.1,'cast_opacity':.15,'cast_blur':8}

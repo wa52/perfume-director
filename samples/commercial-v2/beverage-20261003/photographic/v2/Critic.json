@@ -1,0 +1,142 @@
+{
+  "pass": false,
+  "score": 78.6,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 76,
+    "typography": 80,
+    "background": 70,
+    "physical_integration": 78,
+    "reference_alignment": 68,
+    "creative_coherence": 82,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop [155,1012,493,1262] confirms a real soft contact shade hugging the green base edge (offset_y 0 is correct; do not move it), so the shadow itself is not the fault. The fault is the plane: the only cloth edge in the poster sits at ~y=875 while the bottle base is at y=1152, and the linen below that edge shows hanging vertical folds, i.e. a table skirt, not a receding tabletop. A shade on a vertical drape cannot carry weight, so the bottle still reads as hovering in front of the skirt, unlike reference 4 where can base, contact shadow and cloth top surface share one readable plane.",
+      "root_cause": "Background prompt still generates a front-facing drape below a high edge instead of a seated-eye-level tabletop band whose surface contains the base line.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background with a shallow receding linen surface band whose soft far edge crosses above y~1100 so the base at y=1152 stands on visible surface; keep oatmeal linen, diffuse frontal light, and shadow offset_y at 0."
+    },
+    {
+      "type": "composition",
+      "problem": "Product bbox [235,432,413,1152] gives width ratio 0.165 and height ratio 0.50, the floor of the fresh-concept range, while the type column now starts at x=700; the ~287px grey gutter between silhouette and title plus the vacant right two-thirds leave no visual event in the 'offered span', so the waiting-place idea reads as unresolved emptiness rather than intentional vacancy. References 3-5 all activate their negative space (cast-shadow field, prop echo, splash); this draft does not.",
+      "root_cause": "Previous resize toward 0.60 height ratio was lost when the earlier patch batch was rejected; only the text shift survived, widening the gutter instead of closing it.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-apply the hero resize to ~0.60 height ratio at center_x 324 with base held at 1152 (center_y = 1152 - height/2), keeping the type column in the right margin so bottle, horizon and type form one left-to-right read."
+    },
+    {
+      "type": "typography",
+      "problem": "Title bbox [700,605,1013,657] and subtitle bbox [705,720,869,736] leave a 63px optical void between the 74px Baskerville title and the 24px subtitle, so the two lines never lock into one block; both float in flat grey with no alignment tie to the horizon or the bottle shoulder. The repaired x-shift improved the margin axis but did not address the vertical gap.",
+      "root_cause": "Subtitle y was never coupled to the title baseline; the surviving repair only moved x coordinates.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set subtitle.y to ~690 to close the block, keep exact copy, serif family and left alignment at the shared x axis."
+    },
+    {
+      "type": "background",
+      "problem": "The upper two-thirds remains a flat warm-grey wall with a faint gradient and no material or light event, and the lower cloth reads as skirt; together the setting still looks like a pasted cutout on a backdrop rather than the seated tabletop scene the concept declares. No studio equipment artifacts are present (good), but the environment is under-authored versus reference 4's saturated cloth plane and deep field.",
+      "root_cause": "The previous background.prompt rewrite was inside the rejected patch batch, so the renderer kept the old drape-generating prompt.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-issue the background prompt describing an empty oatmeal linen tabletop surface band with soft frontal daylight falloff and a calm warm grey rear wall, no equipment, no product words."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty seamless warm grey studio wall behind a horizontal tabletop plane draped in neutral oatmeal linen, the linen top surface visible as a shallow receding band whose soft far edge crosses the frame just above lower-third height and whose cloth face falls away toward the viewer, diffuse frontal daylight with gentle wrap and calm soft shadows, no harsh highlights, no objects, no equipment"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 864
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 216
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 720
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 690
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.4
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer is intentionally empty per permitted copy; brand mark appears only as the untouched on-label white script wordmark matching the supplied cutout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox [235,432,413,1152] is 178x720 px against spec 180x720; contour silhouette, crown cap, red wrap label and green base edge match the original with no distortion."
+    },
+    "grounding_correct": {
+      "ok": false,
+      "evidence": "Contact crop shows a genuine soft shade at the base (offset_y 0 correct), but the only cloth edge lies ~277px above base y=1152 and the cloth below hangs as a vertical skirt, so no visible surface supports the bottle."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Silhouette shows no halo or fringe against grey wall or linen; bbox stays fully inside the 1080x1440 canvas."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Scene light is soft diffuse frontal with gentle wrap, matching the cutout's vertical shoulder highlights and absence of rim light; no conflicting cast direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [700,605,1013,657] and subtitle bbox [705,720,869,736] lie wholly within canvas margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap reports title false and subtitle false; no both-axis intersection with product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "C:/Windows/Fonts/BASKVILL.TTF is in the approved installed list and renders full glyph coverage for 'Coca-Cola' and 'REFRESCO'."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Title reads 'Coca-Cola', subtitle 'REFRESCO', matching permitted copy and the label category word; no invented claims."
+    }
+  },
+  "reported_score": 76.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:grounding_correct",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

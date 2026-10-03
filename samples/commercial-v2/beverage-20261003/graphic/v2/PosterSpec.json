@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 42,
+  "background": {
+    "color": "#EEF1F3",
+    "prompt": "Flat cool white coated poster paper with faint screen-print grain, perfectly even diffuse frontal illumination, no horizon, no gradient, no shadows, matte ink finish only",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 32,
+        "y": 144,
+        "width": 1015,
+        "height": 864,
+        "color": "#CBD2D9",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 119,
+        "y": 223,
+        "width": 842,
+        "height": 706,
+        "color": "#EEF1F3",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 205,
+        "y": 299,
+        "width": 670,
+        "height": 554,
+        "color": "#CBD2D9",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 286,
+        "y": 371,
+        "width": 508,
+        "height": 410,
+        "color": "#EEF1F3",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 362,
+        "y": 435,
+        "width": 356,
+        "height": 281,
+        "color": "#CBD2D9",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 462,
+        "y": 506,
+        "width": 156,
+        "height": 140,
+        "color": "#D6231F",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 605,
+    "width": 201,
+    "height": 806
+  },
+  "lighting": "even diffuse frontal print illumination, no horizon, no falloff, flat graphic finish",
+  "palette": [
+    "#EEF1F3",
+    "#101418",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 540,
+    "y": 1152,
+    "size": 96,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 540,
+    "y": 1274,
+    "size": 26,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 10
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "logo": {
+    "text": "",
+    "x": 540,
+    "y": 1152,
+    "size": 96,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat printed poster stock, no floor",
+    "cast_length_ratio": 0,
+    "cast_opacity": 0,
+    "cast_blur": 2
+  }
+}

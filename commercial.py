@@ -138,3 +138,31 @@ def review_contract():
         'Bounded external cast-shadow patches allowed: integration_plan.cast_length_ratio (0..0.20), integration_plan.cast_opacity (0..0.3), integration_plan.cast_blur (2..60); preserve observed source_key_light and ground material. '
         'PASS requires thresholds '+str(THRESHOLDS)+' and every commercial check true with evidence, no remaining problems/changes. '
         'Missing evidence is a veto even at a high average score. ')
+
+
+def final_art_review(engine,config,spec,product,poster,refs,folder):
+    """Independent relative-to-references judgment; do not show numeric scores."""
+    decision=engine.vision(config,
+        'Act as the final Commercial Art Director, independently of the layout critic. '
+        'First image is the finished poster, second the untouched product, remaining images are campaign references. '
+        'Return {tier:draft/social_ad/campaign_candidate,evidence:string,problems:[{type,problem,root_cause,affected_layer,repair_strategy}]}. '
+        'No numerical scores. Do not approve because the layout is valid or the product is faithfully pasted. '
+        'draft includes competent generic templates, decorative target-like circles behind a packshot, disconnected generic serif brand typography, '
+        'unconvincing source lighting/edges, under-resolved source photography or an idea expressed only in its written description. '
+        'social_ad means genuinely resolved brand-appropriate social advertising; campaign_candidate means comparable art direction, photographic/graphic craft '
+        'and typography to the actual supplied campaign references, with a meaningful visual event. '
+        'Neither tier implies brand-owner approval. For graphic campaigns do not invent floor-contact requirements. '
+        'For photographic campaigns verify the readable contact plane, light agreement and perspective. '
+        'Inspect actual source quality: preservation alone does not make a low-quality packshot professionally photographed. '
+        'Keep factual identity and approved copy. Do not confuse a color/material variation with a campaign idea. '
+        'Judge the images first; reject any claimed intent that is invisible. Spec and proposed concept: '+engine.json.dumps(spec,ensure_ascii=False)+
+        engine.concept_context(config),[poster,product,*refs],folder/'CommercialArtDirector-call.json')
+    if not isinstance(decision,dict) or decision.get('tier') not in ('draft','social_ad','campaign_candidate') or not isinstance(decision.get('evidence'),str) or not decision['evidence'].strip() or not isinstance(decision.get('problems'),list):
+        raise ValueError('Final Commercial Art Director requires a tier, evidence and problems')
+    for problem in decision['problems']:
+        if not isinstance(problem,dict) or any(not isinstance(problem.get(key),str) or not problem[key].strip() for key in ('type','problem','root_cause','affected_layer','repair_strategy')):
+            raise ValueError('Final Art Director problems require structured root causes and repair layers')
+        if problem['affected_layer'] not in ('scene','product','shadow','typography','brand'):
+            raise ValueError('Unsupported final-review repair layer')
+    engine.write(folder/'CommercialArtDirector.json',decision)
+    return decision

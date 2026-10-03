@@ -1,0 +1,79 @@
+{
+  "tier": "draft",
+  "evidence": "The finished poster renders the declared ripple field as five broad flat grey concentric bands reading as a decorative target/bullseye behind the packshot; the specified red core ellipse (#D6231F at 156x140 behind the label) is fully occluded by the bottle, so the concept's claimed event ('the wordmark emitting its own printed echo', red quiet saturated center) is invisible and only grey rings remain. The masthead is generic black Georgia serif 'Coca-Cola' plus tracked 'REFRESCO', disconnected from the brand's script equity and visually colliding with the outer ripple band whose edge passes through the cap-height zone of the type; both text blocks also sit right of the optical centerline while the bottle is centered, splitting the composition. The source cutout is low-resolution with visible jagged halo fringes on the cap, neck and shoulder contours, and the flat graphic field exposes rather than resolves these edges. References (condensation-macro can, staged tabletop can, splash CGI) show resolved photographic/graphic craft and a legible visual event; this poster shows a competent generic template with an idea that exists mainly in its written description.",
+  "problems": [
+    {
+      "type": "concept_invisible",
+      "problem": "The 'Script Ripple Field' event does not read: rings appear as a generic target/bullseye, and the red core ellipse that was supposed to keep the red label as the saturated center is completely hidden behind the bottle, so no ripple-to-script connection is perceivable.",
+      "root_cause": "background.shapes uses five very wide bands (173px radial step) in low-contrast grey #CBD2D9 with the only red primitive sized and placed (156x140 at label height) entirely inside the product silhouette.",
+      "affected_layer": "scene",
+      "repair_strategy": "Rebuild background.shapes with 6-8 fine concentric ellipse strokes (band width ~18-30px, alternating #EEF1F3 and a cool grey) radiating from label height, and either enlarge the red core so a visible red halo ring emerges around the label silhouette or replace the core with a red ellipse ring whose inner radius exceeds the label width, keeping palette and flat print material unchanged."
+    },
+    {
+      "type": "typography_brand_disconnect",
+      "problem": "Brand name is set in generic black Georgia serif, unrelated to the observed white script wordmark equity, and the masthead/subtitle block sits right of the centered bottle, breaking the reserved centered lower band declared in the brief.",
+      "root_cause": "Title/subtitle use georgia.ttf with center alignment not achieved in render (text block optical center near x=760 against bottle axis x=540), and no typographic device ties the masthead to the script or the ripple system.",
+      "affected_layer": "typography",
+      "repair_strategy": "Re-center title and subtitle on x=540 with align center and verified bounds; keep a single serif masthead pass but tie it to the concept by coloring the masthead #D6231F or adding a thin red rule/echo line under 'REFRESCO' consistent with the ripple palette, preserving approved copy exactly."
+    },
+    {
+      "type": "text_collision",
+      "problem": "The outermost grey ripple band extends down to y~1008 and its lower arc passes directly behind the cap-height zone of the 'Coca-Cola' masthead, muddying the reserved clean lower band and the silhouette of the type.",
+      "root_cause": "Outer ellipse height 864 from y=144 was specified without reserving the lower typography band declared in the brief.",
+      "affected_layer": "typography",
+      "repair_strategy": "Reduce outer ellipse height so the ripple field terminates above y~1040, or shift the ripple center up to label height (y~576) with max outer height ~760, keeping the lower 380px as clean cool-white paper for masthead and category line."
+    },
+    {
+      "type": "source_quality_edges",
+      "problem": "The packshot cutout shows under-resolved photography: jagged aliasing and pale halo fringes along the crown cap, neck glass and shoulder contours, visible against the flat light field; preservation alone does not make it professionally photographed.",
+      "root_cause": "Low-resolution source cutout with hard matte edges placed at 201x806 on a uniform light ground that amplifies fringe artifacts.",
+      "affected_layer": "product",
+      "repair_strategy": "Without relighting or label edits, apply a bounded edge treatment: 1px matte-aware feather plus local fringe desaturation on the cap/neck contour, or render the product at a slightly larger scale from the same source so aliasing is less perceptible, keeping container, closure, label and liquid untouched."
+    },
+    {
+      "type": "hierarchy_weakness",
+      "problem": "Visual hierarchy is split: the grey target dominates the upper two thirds while the small black masthead floats off-axis below, so the eye never connects bottle, ripple and brand line as one statement.",
+      "root_cause": "Composition places a centered product over centered rings but offsets the typography block, and the ripple contrast is too weak to carry the event while the type is too small to anchor it.",
+      "affected_layer": "scene",
+      "repair_strategy": "After re-centering type, raise masthead presence within permitted copy (size ~110-120, tracking tightened) and increase ripple band contrast slightly (e.g. #C4CCD4 bands on #EEF1F3) so the field reads as intentional printed line work framing the bottle rather than incidental decoration."
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Red wrap label with white script 'Coca-Cola', 'REFRESCO', 'CONT. NET. 355 ml', vertical 'NO RETORNABLE' and red crown cap all visible and unaltered on the pasted bottle, matching the supplied cutout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Contour silhouette, proportions and green-transmitting base edge match the untouched product; no stretching or clipping (product bounds y 202-1008, x 439-641 inside canvas)."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Explicit graphic scene_mode declares flat printed poster stock with no floor and cast ratio 0; the suspended presentation matches the declared intent, and no invented horizon or shadow appears."
+    },
+    "edges_clean": {
+      "ok": false,
+      "evidence": "Visible jagged aliasing and pale halo fringes on cap, neck and shoulder contours of the cutout against the flat light field."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source's soft diffuse frontal studio illumination is compatible with the declared even frontal print illumination; no conflicting cast shadows or rim light introduced."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "'Coca-Cola' and 'REFRESCO' fully inside canvas with clear margins; no glyph crosses an edge."
+    },
+    "text_collision_free": {
+      "ok": false,
+      "evidence": "Lower arc of the outer grey ripple band runs through the masthead cap-height zone, and the off-center type block crowds the right margin while leaving dead space left."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Rendered masthead and subtitle match the specified Georgia serif metrics and tracking; no fallback substitution artifacts observed."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Masthead reads 'Coca-Cola' and subtitle 'REFRESCO', matching approved copy and label category word exactly."
+    }
+  }
+}

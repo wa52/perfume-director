@@ -430,8 +430,9 @@ def concept_context(config):
     if not config.get('creative_direction'):return policy
     return (policy+' Declared artistic direction to preserve throughout critique and selection: '+json.dumps(config['creative_direction'],ensure_ascii=False)+
         '. Judge craft within THIS concept. Do not replace its palette, material, composition or typography with another genre to raise scores. '
-        'In explicit graphic scene_mode, judge intentional graphic placement, clear hierarchy and silhouette; a flat graphic field does not need a photographic horizon. Do not force a realistic floor into graphic work. In photographic mode require plausible ground and matched lighting. Both modes still require faithful product and a resolved professional composition. '
-        'Preserve its title/product layout_relation and serif/sans title_family; those are enforced on patches. Refining a font within its family is allowed. '
+        'In explicit graphic scene_mode, judge intentional graphic placement, clear hierarchy and silhouette; a flat graphic field does not need a photographic horizon. Do not force a realistic floor into graphic work. In photographic mode require plausible ground and matched lighting. Both modes still require faithful product and a resolved professional composition. '+
+        ('Preserve the advertising proposition. V2 permits correcting layout relationship and serif/sans family when brand alignment or typography needs it; geometry safety still applies. ' if config.get('commercial_v2') else
+         'Preserve its title/product layout_relation and serif/sans title_family; those are enforced on patches. Refining a font within its family is allowed. ')+
         'Intentional centered minimalism need not gain props; asymmetric or small-scale editorial compositions need not become centered large packshots. '
         'For this fresh-concept mode use geometry.fresh_concept_size_policy for the aspect-adjusted minimum and maximum size, not a universal bottle-height minimum. Top >=10%, base <=94%, sides 5-95%. A valid size can still have weak visual hierarchy; explain that artistic concern rather than claiming it violates a different size rule. '
         'Background patches must preserve this concept and describe empty materials/light without the forbidden identity/people/support keywords. '
@@ -473,9 +474,9 @@ def apply_safe_changes(spec, changes, product, font, direction=None):
         module=importlib.import_module('.concepts',__package__) if __package__ else importlib.import_module('concepts')
         before=module.title_relationship(rendered_geometry(spec,product,font))
         after=module.title_relationship(rendered_geometry(candidate,product,font))
-        if before!=after:
+        if before!=after and not spec.get('commercial_v2'):
             raise ValueError('Unsafe concept drift: preserve the planned title/product spatial relationship')
-        if module.title_family(spec['title'].get('font',font))!=module.title_family(candidate['title'].get('font',font)):
+        if not spec.get('commercial_v2') and module.title_family(spec['title'].get('font',font))!=module.title_family(candidate['title'].get('font',font)):
             raise ValueError('Unsafe concept drift: preserve the planned serif/sans title family')
     return candidate
 
@@ -896,6 +897,25 @@ def review_validated(config, spec, product, poster, ref_images, folder, previous
         validated=validate_critique(repaired, strict=True)
     if config.get('commercial_v2'):
         validated=commercial_module().gate(validated,layout_issues(spec,product,config['font'],config.get('direction_id')))
+        if validated['pass']:
+            target=config.get('commercial_target','campaign_candidate')
+            if target not in ('social_ad','campaign_candidate'):raise ValueError('Unsupported commercial target')
+            try:
+                final=commercial_module().final_art_review(sys.modules[__name__],config,spec,product,poster,ref_images,folder)
+                accepted=final['tier']=='campaign_candidate' or (target=='social_ad' and final['tier']=='social_ad')
+                accepted=accepted and not final['problems']
+                validated['commercial_gate']['final_tier']=final['tier']
+                validated['commercial_gate']['target']=target
+                if not accepted:
+                    validated['pass']=False
+                    validated['commercial_gate']['pass']=False
+                    validated['commercial_gate']['failures'].append('final_art_director:below_target_or_unresolved')
+                    validated['problems'].extend(final['problems'] or [{'type':'commercial_art_direction','problem':final['evidence']}])
+            except Exception as error:
+                validated['pass']=False
+                validated['commercial_gate']['pass']=False
+                validated['commercial_gate']['failures'].append('final_art_director:unavailable')
+                write(folder/'CommercialArtDirector-error.json',{'error_type':type(error).__name__})
         write(folder/'CommercialGate.json',validated['commercial_gate'])
     return validated
 
@@ -1030,6 +1050,7 @@ def run(config, product, brief, background=None, demo=False, progress=None):
         log('Director: executing fresh batch concept' if config.get('initial_spec') else 'Director: analyzing product and 3 references')
     spec = copy.deepcopy(config['initial_spec']) if config.get('initial_spec') and not demo else template if demo else vision(config, 'Design a NEW complete PosterSpec for the actual photographed product and this brief. The supplied plan is a curated starting grid for this direction, not a finished design. Keep its distinct design language and strong product scale; replace placeholder copy with approved copy and refine optical typography alignment. Do not collapse different directions into the same layout. You must identify the visible product brand/name, use only truthful approved copy from the brief or product, and do not invent launch, price, effect or promotional claims. Preserve product identity and respect the specified campaign category. Product x/y are center; text x/y upper-left pixels. Keep text within canvas. All text layers, including empty price text, must have size 8..240 and a valid color. Keep all eight layer names, including disabled decoration; disable it with enabled:false, never remove its layer. Reference campaigns may contain people and complex scenes; v1 renderer supports a single cutout product, generated background, one line decoration and text only. Extract design language, never copy reference brand names or introduce people. Background prompt must describe ONLY an empty environment/material/light, without fragrance, perfume, bottle or product keywords, even in negative phrases; those keywords can cause extra bottles. Observe the actual product highlights, material, translucency and camera angle in its input photograph. Match this observed illumination rather than assuming a dark glass bottle or relighting it. Describe illumination, never visible lighting equipment: do not name a softbox, lamp, camera or lighting stand in the background prompt. Use a continuous seamless floor only, never a raised table, tabletop, pedestal, plinth or platform: a fixed packshot cannot reliably match their perspective and front edges. If the tabletop is in the lower quarter, aim the product bottom at about 82-88 percent of canvas height: center_y = target_bottom_y - visible_product_height/2. Do not place a bottle near the top of the frame while its support is at the bottom. Keep text and product separated. The bottle must be the unmistakable visual hero: for a single-bottle campaign aim actual visible bottle height at 50-65 percent of canvas height, not a thumbnail on a dramatic environment. Prefer one coherent material and controlled light, avoid generic gold smoke, busy marble or random sparkles. Establish a deliberate type hierarchy and optical alignment. Serif Latin campaign typography can use C:/Windows/Fonts/times.ttf via the optional font field in text layers. You may set shadow.kind to contact. Brief: '+json.dumps(brief, ensure_ascii=False)+'\nReference analyses: '+json.dumps(references, ensure_ascii=False)+'\nField schema example (placeholder values must be replaced): '+json.dumps(template, ensure_ascii=False), [product, *ref_images], trace_path=run_dir/'Director-call.json')
     spec['product_category']=config.get('product_category','perfume')
+    if config.get('commercial_v2'):spec['commercial_v2']=True
     spec=categories_module().spec_policy(spec,config)
     try:
         validate(spec)

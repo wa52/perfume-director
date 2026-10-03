@@ -1,0 +1,113 @@
+{
+  "pass": false,
+  "score": 85.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 84,
+    "typography": 85,
+    "background": 80,
+    "physical_integration": 89,
+    "reference_alignment": 78,
+    "creative_coherence": 86,
+    "brand_alignment": 95
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The grounding fix landed: in the current poster the linen far edge now crosses at ~y=1035-1060 and the contact crop [137,1012,511,1262] shows the genuine soft shade hugging the green base edge ON the receding woven top surface (offset_y 0 is correct; do not move it), so the previous skirt-floating failure is resolved. What remains is that the upper ~70% of frame is still a near-featureless warm-grey wall: the promised vertical light gradient is barely perceptible and there is no tonal event behind the type column, so the setting reads as a plain backdrop above a cloth strip rather than the authored wall-and-table continuum of the concept. Compared with reference 4's saturated cloth plane against a deep tonal field, this field is under-authored.",
+      "root_cause": "Prompt weights the seamless wall as dominant and only specifies a 'gentle' gradient; the regenerated plane fixed geometry but not field richness.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate once more keeping the same linen plane geometry: ask for a calm graduated grey wall whose value steps softly from a lighter mid-height band behind the type column to a slightly deeper top, preserving diffuse frontal daylight and the existing linen horizon position; no equipment names, no product words."
+    },
+    {
+      "type": "composition",
+      "problem": "The declared 'offered place' is still inert: the right linen span below the subtitle (y~710 down to the horizon ~1040 and across the近-right cloth) carries only a faint warm tint at the far right edge, not a readable daylight pool. The vacancy therefore reads as leftover space rather than an illuminated place set for someone, which is the whole visual mechanism of 'The Waiting Place'. References 3-5 all activate their negative space with a cast-shadow field, prop echo or splash; here nothing answers the bottle across the horizon.",
+      "root_cause": "The daylight-pool clause in the background prompt is too weak ('broad soft pool') and renders as an edge vignette instead of a pool inside the vacant span.",
+      "affected_layer": "scene",
+      "repair_strategy": "In the same regeneration, request a clearly visible but soft elliptical daylight pool centered on the near-right linen span (roughly x 600-1000, y 1100-1350) so the empty place glows; keep the span object-free per concept."
+    },
+    {
+      "type": "typography",
+      "problem": "The two-line serif block is correctly spaced (optical gap ~33px, no overlap: text_product_overlap false for both lines) but it sits on the flattest value in the frame, so the column has no supporting field and no alignment tie to either the horizon or the bottle shoulder; next to the references' integrated type placement it reads competent but generic. Baskerville at 74px also renders slightly light in weight against the large grey mass, weakening hierarchy at poster distance.",
+      "root_cause": "Type was positioned but the value behind it was never authored; size/tracking were tuned without a contrast event.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep copy, serif family, left align and x positions; after the wall regeneration carries a lighter band behind the column, raise title size modestly (74 to ~80) and subtitle tracking 6 to 7 to tighten the block optically; do not insert linebreaks."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty seamless warm grey studio wall whose value graduates softly from a lighter band at mid-height to a slightly deeper tone at the top, meeting a horizontal tabletop plane draped in neutral oatmeal linen whose receding top surface fills the lower third of the frame with horizontal weave falloff and no hanging vertical folds, its soft far edge crossing just above lower-third height, a clearly visible soft elliptical daylight pool warming the near-right span of linen between mid-right and the right edge, diffuse frontal daylight with gentle wrap and calm soft shadows, no harsh highlights, no objects, no equipment"
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 80
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 7
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer intentionally empty per permitted copy; brand mark appears only as the untouched on-label white script wordmark identical to the supplied cutout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox [217,288,431,1152] is 214x864 px against spec 216x864; contour silhouette, crown cap, red wrap label with 'REFRESCO / CONT. NET. 355 ml', foam head and green base edge match the original cutout with no distortion or repaint."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [137,1012,511,1262] shows a real soft shade hugging the green base edge at offset_y 0, and in the full poster the linen far edge crosses ~y=1040 so base y=1152 rests on the visible receding woven top surface, not on a vertical skirt as in the previous version."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "No halo or fringe on the silhouette against wall or linen; bbox fully inside canvas with margins (top 288, base 1152 within the 94% base limit, sides within 5-95%)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Scene light is soft diffuse frontal with gentle wrap, matching the cutout's vertical shoulder highlights and absence of rim light; contact shade direction agrees with the frontal key and no studio equipment artifacts are visible."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [700,605,1013,657] and subtitle bbox [705,690,869,706] lie wholly within canvas margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap reports title false and subtitle false; no both-axis intersection with product bbox [217,288,431,1152]."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "C:/Windows/Fonts/BASKVILL.TTF is in the approved installed list and renders full glyph coverage for 'Coca-Cola' and 'REFRESCO'."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Title reads 'Coca-Cola', subtitle 'REFRESCO', matching permitted copy and the label category word; no invented flavour, ingredient or nutrition claims."
+    }
+  },
+  "reported_score": 83.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

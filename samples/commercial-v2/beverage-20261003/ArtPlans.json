@@ -1,0 +1,573 @@
+[
+  {
+    "name": "Raked Shadow Continuum",
+    "brief": "Photographic studio continuum where the architecture carries the message: one enormous soft contour shadow rakes diagonally up the curved wall behind the small upright cutout, so the flattened curve becomes a giant second self while the real silhouette anchors its origin point. Upper-left masthead block sits in calm empty wall above the shadow's reach.",
+    "material": "seamless pale gypsum studio cyclorama, continuous floor-to-wall curve with matte mineral tooth",
+    "lighting": "soft diffuse frontal studio illumination matching the preserved cutout, gentle vertical highlights, one broad low-opacity alpha cast at the base plus the painted wall shadow",
+    "id": "concept-1",
+    "signature": "0873c240c5474d532016e5f828ef81ec77c50ede238bfa00a6dfd27b4f29f0cb",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#E7E3DB",
+      "#221E1A",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-f1cbf5fa14975844",
+      "category-b4d5a926b8636edc",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#E7E3DB",
+        "prompt": "Seamless pale gypsum cyclorama curving continuously from floor to wall in warm bone white, matte mineral tooth, lit by soft diffuse frontal studio light with even falloff; one enormous soft-edged graphite shadow of an elongated curved contour silhouette rakes diagonally up the wall from lower right toward upper right, blurred edges, no equipment, no horizon break",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 648,
+        "y": 864,
+        "width": 180,
+        "height": 720
+      },
+      "lighting": "soft diffuse frontal studio illumination matching the preserved cutout, gentle vertical highlights, one broad low-opacity alpha cast at the base plus the painted wall shadow",
+      "palette": [
+        "#E7E3DB",
+        "#221E1A",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "Coca-Cola",
+        "x": 76,
+        "y": 108,
+        "size": 104,
+        "color": "#221E1A",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 2,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "REFRESCO",
+        "x": 81,
+        "y": 252,
+        "size": 26,
+        "color": "#221E1A",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 6
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#221E1A",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 76,
+        "y": 108,
+        "size": 104,
+        "color": "#221E1A",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "matte gypsum cyclorama floor",
+        "cast_length_ratio": 0.14,
+        "cast_opacity": 0.22,
+        "cast_blur": 26
+      }
+    },
+    "creative_concept": {
+      "id": "c1",
+      "name": "The Wall Remembers the Curve",
+      "proposition": "The contour silhouette alone identifies the drink before any wordmark is read: shape is the signature.",
+      "visual_mechanism": "The neutral studio ground curves up into a seamless wall, and one long soft cast shadow is thrown diagonally across that wall-and-floor continuum so the flattened contour, cap and neck enlarged by the rake becomes the single dominant object in the frame, larger than the upright bottle itself; the visual event is the silhouette projected as a giant second self on the architecture while the small real bottle anchors its origin point.",
+      "audience": "Design-literate adults, brand collectors and out-of-home viewers who recognise the contour instantly and reward visual wit.",
+      "brand_connection": "Argues entirely from the observed contour silhouette and upright centered stance, keeping label, cap and liquid untouched while the red label stays the only saturated note against the neutral shadow play.",
+      "source_constraints": "The cutout is preserved exactly as lit; the shadow is a generated cast shadow on the wall-and-floor continuum consistent with the existing soft diffuse frontal illumination and gentle vertical highlights; background remains neutral and softly lit; no droplets, splashes, relighting, pose change or people; typography limited to one brand-name pass plus the category word already on the label."
+    }
+  },
+  {
+    "name": "Script Ripple Field",
+    "brief": "Flat graphic poster: fine concentric ripple bands radiate from behind the label height like the script wordmark emitting its own printed echo, built from precisely specified ellipse geometry on cool paper. The untouched cutout stands centered while a reserved lower band carries a centered masthead and category line.",
+    "material": "cool white coated poster stock with faint screen-print grain and flat ink bands",
+    "lighting": "even diffuse frontal print illumination, no horizon, no falloff, flat graphic finish",
+    "id": "concept-2",
+    "signature": "b83af1c40d0de69b0fb8f96e840994f10cd980c90ce31243c2e938583a4a07e1",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#EEF1F3",
+      "#101418",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-b4d5a926b8636edc",
+      "category-f1cbf5fa14975844",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#EEF1F3",
+        "prompt": "Flat cool white coated poster paper with faint screen-print grain, perfectly even diffuse frontal illumination, no horizon, no gradient, no shadows, matte ink finish only",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 1015,
+            "height": 864,
+            "color": "#D9DEE3",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 842,
+            "height": 706,
+            "color": "#EEF1F3",
+            "opacity": 1
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 670,
+            "height": 554,
+            "color": "#D9DEE3",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 508,
+            "height": 410,
+            "color": "#EEF1F3",
+            "opacity": 1
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 356,
+            "height": 281,
+            "color": "#D9DEE3",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 576,
+            "width": 216,
+            "height": 166,
+            "color": "#D6231F",
+            "opacity": 0.85
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 201,
+        "height": 806
+      },
+      "lighting": "even diffuse frontal print illumination, no horizon, no falloff, flat graphic finish",
+      "palette": [
+        "#EEF1F3",
+        "#101418",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "Coca-Cola",
+        "x": 540,
+        "y": 1152,
+        "size": 96,
+        "color": "#101418",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 1,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "center"
+      },
+      "subtitle": {
+        "text": "REFRESCO",
+        "x": 540,
+        "y": 1274,
+        "size": 26,
+        "color": "#101418",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 8
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#101418",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "logo": {
+        "text": "",
+        "x": 540,
+        "y": 1152,
+        "size": 96,
+        "color": "#101418",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 1
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "graphic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "flat printed poster stock, no floor",
+        "cast_length_ratio": 0,
+        "cast_opacity": 0,
+        "cast_blur": 2
+      }
+    },
+    "creative_concept": {
+      "id": "c2",
+      "name": "Script Rings",
+      "proposition": "The brand is recognised as a rhythm: the script wordmark itself is a sound wave everyone already knows by heart.",
+      "visual_mechanism": "In the backdrop plane behind the preserved bottle, fine concentric contour lines echo the curves of the white script wordmark and radiate outward from behind the label like printed line work, so the visual event is the wordmark emitting its own graphic echo on the backdrop while the bottle stands still and untouched in front of it.",
+      "audience": "Young urban and music-adjacent culture audiences who respond to synesthetic, graphic-system advertising.",
+      "brand_connection": "Derives the radiating line work from the observed white script curves on the red label, turning the wordmark into the source of the event without altering it, and keeps the red label and cap as the quiet saturated center of the composition.",
+      "source_constraints": "All line work lives in the generated neutral backdrop behind the cutout, never on the product; no rings touch or surround the base on the floor; backdrop stays softly and diffusely lit to match existing highlights; no relighting, droplets or silhouette clipping; deterministic typography limited to one brand-name pass plus the observed category word."
+    }
+  },
+  {
+    "name": "The Waiting Place",
+    "brief": "Seated eye-level photographic scene: a linen-draped horizontal plane enters as a real visible horizon, the untouched cutout stands at the left with a soft contact shade, and the near right span stays completely vacant as an offered place. A narrow right-margin column of type answers the empty span across the horizon.",
+    "material": "natural oatmeal linen cloth draped over a continuous horizontal plane with a soft front edge",
+    "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+    "id": "concept-3",
+    "signature": "6b388237454524162b408a13684d4b543ade5b66e3fb2dc0ff30098867d0b3aa",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "palette": [
+      "#DDD6C9",
+      "#2A2622",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-b4d5a926b8636edc",
+      "category-66d09d8fb962ae89",
+      "category-f1cbf5fa14975844"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#DDD6C9",
+        "prompt": "Neutral oatmeal linen cloth draped smoothly over a continuous horizontal plane at seated height, visible soft edge horizon across the lower third, behind it a calm warm grey seamless backdrop, soft diffuse frontal illumination with gentle wrap and no harsh highlights",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 324,
+        "y": 792,
+        "width": 180,
+        "height": 720
+      },
+      "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+      "palette": [
+        "#DDD6C9",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "Coca-Cola",
+        "x": 648,
+        "y": 605,
+        "size": 74,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 1,
+        "max_width": 0,
+        "line_height": 1.12,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "REFRESCO",
+        "x": 653,
+        "y": 720,
+        "size": 24,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 6
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 648,
+        "y": 605,
+        "size": 74,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 1
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "linen-draped horizontal plane",
+        "cast_length_ratio": 0.1,
+        "cast_opacity": 0.2,
+        "cast_blur": 22
+      }
+    },
+    "creative_concept": {
+      "id": "c3",
+      "name": "The Other Side of the Table",
+      "proposition": "The drink is a shared pause: an ordinary table already set for two, with one place still empty and waiting.",
+      "visual_mechanism": "The camera drops to seated eye level so a neutral tabletop horizon line enters the frame as a real visible plane; the untouched bottle stands on that tabletop at one side with a soft contact shadow, while the near half of the visible table surface stays completely empty facing the viewer, so the visual event is an actual object relationship between the bottle, the table edge and the vacant span of tabletop offered to whoever arrives.",
+      "audience": "Everyday adult consumers, families and mealtime occasions seeking a familiar companion to food and breaks.",
+      "brand_connection": "Reframes the observed upright, centered, eye-level presentation as hospitality: the untouched bottle is the host already poured, and the red cap and label supply the only warmth on an otherwise reserved neutral table.",
+      "source_constraints": "Only a neutral tabletop plane with a visible edge horizon and a lighting-consistent contact shadow are generated within the empty set, matched to the soft diffuse frontal illumination with no hard backlight or rim; the cutout, label, cap and liquid remain unaltered and unrelit; no people, no props on or beside the product; one brand-name typeset plus the category word."
+    }
+  },
+  {
+    "name": "Drawn Contour, Completed Standing",
+    "brief": "Photographic paper-floored set: a single continuous ink trace drawn across the ground plane sketches the exact contour in foreshortened perspective, vanishing behind the opaque standing cutout and reappearing at its edges, so perception completes the line. A compact tracked masthead with a ruled line sits top-right in empty air.",
+    "material": "smooth pale paper studio floor meeting a seamless soft grey wall, matte ink line on the ground",
+    "lighting": "soft diffuse frontal studio illumination, even and neutral, with a short soft alpha cast at the base",
+    "id": "concept-4",
+    "signature": "b843306b9e0515823f9f7380c5dbda1beb15a19c61be535fad5c6e9b7a5bc99b",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "above",
+    "title_family": "sans",
+    "palette": [
+      "#E9E6E0",
+      "#1B1B1B",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-66d09d8fb962ae89",
+      "category-f1cbf5fa14975844",
+      "category-b4d5a926b8636edc"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#E9E6E0",
+        "prompt": "Smooth pale paper studio floor sweeping up into a seamless soft grey wall, matte mineral paper tooth, one single continuous thin graphite ink line drawn across the floor tracing an elongated curved contour in foreshortened perspective, line passing behind the standing position, soft diffuse frontal illumination, no horizon hardware",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 497,
+        "y": 821,
+        "width": 223,
+        "height": 893
+      },
+      "lighting": "soft diffuse frontal studio illumination, even and neutral, with a short soft alpha cast at the base",
+      "palette": [
+        "#E9E6E0",
+        "#1B1B1B",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "Coca-Cola",
+        "x": 670,
+        "y": 130,
+        "size": 64,
+        "color": "#1B1B1B",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 4,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "REFRESCO",
+        "x": 675,
+        "y": 223,
+        "size": 24,
+        "color": "#1B1B1B",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 7
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1B1B1B",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "logo": {
+        "text": "",
+        "x": 670,
+        "y": 130,
+        "size": 64,
+        "color": "#1B1B1B",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 4
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 670,
+        "y": 209,
+        "width": 281,
+        "color": "#D6231F"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "pale paper studio floor",
+        "cast_length_ratio": 0.12,
+        "cast_opacity": 0.18,
+        "cast_blur": 18
+      }
+    },
+    "creative_concept": {
+      "id": "c4",
+      "name": "The Drawn Contour, Completed by Standing",
+      "proposition": "The contour is a line anyone could draw from memory, yet only the real bottle can finish it: recognition lives in the hand as much as the eye.",
+      "visual_mechanism": "The generated neutral studio floor carries a single continuous printed line, as if drawn by an implied hand across the paper-like ground, tracing the exact contour silhouette plus cap and neck in foreshortened perspective; the preserved bottle stands upright precisely on that trace, so the drawn line vanishes behind the opaque body and label and reappears at the silhouette's edges, and the visual event is the perceptual completion between the flat drawn contour on the ground plane and the standing three-dimensional bottle that interrupts, confirms and finishes it.",
+      "audience": "Illustration- and design-oriented adults, students and social audiences who enjoy figure-ground puzzles and shareable visual wit.",
+      "brand_connection": "Takes the observed contour silhouette, the single most ownable asset on the cutout, and treats it as a line of authorship: the drawing quotes the bottle's own outline while the red label and cap remain the only saturated marks, so the brand is argued from shape rather than from any claim.",
+      "source_constraints": "The trace exists only on the generated neutral floor plane inside the empty set, never on the product; the cutout stays unrelit and unaltered with its opaque body and label providing the interruption and only the observed neck and base edges remaining translucent; floor lighting and the added contact shadow stay soft and diffuse to match the existing frontal illumination; no droplets, splashes, people or hands appear, the implied hand being read solely from the drawn line; typography limited to one brand-name pass plus the observed category word."
+    }
+  }
+]

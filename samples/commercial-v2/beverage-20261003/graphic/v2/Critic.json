@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "score": 90.6,
+  "dimensions": {
+    "product_fidelity": 98,
+    "composition": 89,
+    "typography": 89,
+    "background": 90,
+    "physical_integration": 90,
+    "reference_alignment": 86,
+    "creative_coherence": 92,
+    "brand_alignment": 95
+  },
+  "problems": [],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer is intentionally empty per copy_policy; brand mark appears only as the untouched white script on the red wrap label of the cutout, matching the supplied source exactly."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered product bbox 440,202-639,1008 reproduces the source contour: red crown cap, translucent neck with foam head, contour waist, red wrap label, green-transmitting base; no distortion, no clipping (bbox fully inside 1080x1440)."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares flat printed poster stock with no floor; contact detail crop (360,868-719,1118) shows a soft seated contact shadow at base_y 1008 with offset_y 0, consistent with the declared suspended graphic presentation; base sits at 70% of canvas height, not forced to any horizon."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout silhouette shows no halo or fringe against the cool paper or against the grey ripple bands; neck and base translucency behave as in the source; no canvas-edge crossing in shape_geometry or product_bbox."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Background prompt and lighting specify even diffuse frontal print illumination with no horizon or falloff, matching the source cutout's soft frontal studio light and gentle vertical shoulder highlights; no competing key or cast direction introduced."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox 540,1152-983,1227 and subtitle bbox 540,1274-745,1292 lie fully inside the canvas with comfortable lower-band margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title and subtitle; outermost ripple band bottom edge at y=1008 clears the title cap zone starting y=1152, and the type sits on flat paper as the brief's reserved band requires."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Title and subtitle render in C:/Windows/Fonts/georgia.ttf, an installed approved serif consistent with the enforced serif title_family; glyphs appear correct in the poster."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Permitted copy rendered exactly: 'Coca-Cola' masthead and 'REFRESCO' subtitle; on-label source text ('REFRESCO', 'CONT. NET. 355 ml', 'NO RETORNABLE') remains untouched; no invented flavour, ingredient or nutrition claims."
+    }
+  },
+  "critique_notes": {
+    "visible_changes_from_previous_version": "The previous poster's misregistered ripple field (rings sweeping from the lower-right quadrant) and the stray half-occluded red disc beside the label are both resolved. Current shape_geometry confirms all six ellipses concentric at center (540,576): index0 bbox 32,144-1047,1008 through index4 362,435-718,716, with the red core index5 at 462,506-618,646 now fully eclipsed by the opaque label/body so no red blob protrudes. Band value deepened to #CBD2D9 on #EEF1F3, visibly readable at poster scale and framing the hero as a printed halo, matching the concept's 'wordmark emitting its own echo'.",
+    "concept_compliance": "Ripple center (540,576) sits behind the label height as briefed; outermost band bottom (y=1008) stays above the masthead zone, restoring the reserved lower paper band; centered untouched cutout, serif masthead below, category line beneath - layout_relation 'below' and serif family preserved.",
+    "contact_evidence": "Inspected the supplied contact detail crop before judging: a soft diffuse shadow is seated under the green base edge at base_y 1008 (offset_y 0, opacity 0.35, blur 10), correct for a suspended graphic staging on printed stock; no floating claim is made.",
+    "remaining_minor_observations_not_blocking": "Masthead optical center sits slightly right of canvas center (title bbox center x approx 761) because tracking extends the line from its anchor; the ripple field is a coarse five-band target rather than the brief's 'fine' rings. Both are deliberate-looking graphic choices within this concept and do not breach hierarchy, collision or palette rules, so no patches are proposed."
+  },
+  "reported_score": 90.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": true,
+    "failures": [],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}
