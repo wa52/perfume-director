@@ -1,0 +1,96 @@
+{
+  "versions": [
+    {
+      "id": "ice",
+      "scores": {
+        "product_fidelity": 97,
+        "physical_integration": 91,
+        "typography": 92,
+        "composition": 91,
+        "brand_alignment": 90,
+        "creative_coherence": 92
+      },
+      "problems": [
+        {
+          "problem": "Contact shadow under the bottle base is very faint against the bright veined marble, so the heaviest element reads slightly light-anchored.",
+          "evidence": "Base at y=960 on the marble plane shows only a whisper of occlusion while neighbouring ice cubes carry stronger, wetter contact shadows.",
+          "repair": "Deepen and slightly widen the elliptical contact shadow at the base and add a faint cool cast shadow to match the cubes' grounding."
+        },
+        {
+          "problem": "The bottom-right ice cube sits close to the price line's visual lane, mildly crowding the lower margin.",
+          "evidence": "Cube cluster at approx (640-740, 910-1010) versus price text baseline zone y=1015-1026 on the left; the corner feels busy relative to the quiet brief.",
+          "repair": "Shift the right cube cluster up 40-60 px or reduce it to a single cube to keep the footer lane clean."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "diner",
+      "scores": {
+        "product_fidelity": 96,
+        "physical_integration": 84,
+        "typography": 86,
+        "composition": 84,
+        "brand_alignment": 88,
+        "creative_coherence": 86
+      },
+      "problems": [
+        {
+          "problem": "Bottle reads pasted onto the counter: contact occlusion is too weak for the warm ambient diner light and thePerspective plane.",
+          "evidence": "Base at y=895 meets the laminate with only a thin dark line; no cast shadow follows the counter's receding perspective, unlike the booth and trim which all model light.",
+          "repair": "Add a soft directional cast shadow along the counter plane and strengthen the contact core so the bottle shares the room's light."
+        },
+        {
+          "problem": "Footer price line loses readability where it crosses the bright chrome trim and dark booth blur.",
+          "evidence": "White 15px text at y=1015-1026 sits over the high-contrast chrome edge and burgundy blur at lower left.",
+          "repair": "Move the price line into the uniform dark booth band or add a subtle dark scrim behind it."
+        },
+        {
+          "problem": "Unspecified blurred white cylinder at mid-left acts as a distracting prop the brief did not authorize.",
+          "evidence": "Vertical white blur near (75-120, 520-620) competes with the subtitle zone and implies tableware the scene policy excluded.",
+          "repair": "Paint out the object or blur it into the wall tone so the left lane carries only copy."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "motion",
+      "scores": {
+        "product_fidelity": 97,
+        "physical_integration": 90,
+        "typography": 93,
+        "composition": 92,
+        "brand_alignment": 93,
+        "creative_coherence": 93
+      },
+      "problems": [],
+      "acceptable": true
+    },
+    {
+      "id": "sculpture",
+      "scores": {
+        "product_fidelity": 96,
+        "physical_integration": 86,
+        "typography": 90,
+        "composition": 87,
+        "brand_alignment": 88,
+        "creative_coherence": 89
+      },
+      "problems": [
+        {
+          "problem": "Grounding is under-resolved for a gallery still-life: the contact shadow is faint and the bottle's frontal packshot light never meets the stone's soft gradient.",
+          "evidence": "Base at y=945 on the limestone floor shows a thin occlusion line only; the arched recess and floor gradients imply a broad top-front light that the bottle does not cast or receive.",
+          "repair": "Add a soft elongated cast shadow consistent with the recess light and a faint floor occlusion gradient around the base."
+        },
+        {
+          "problem": "Title and subtitle hug the upper-left corner while the product sits center-left, leaving the right two-thirds of the wall empty and unbalancing the hierarchy.",
+          "evidence": "Title bbox (48,83)-(514,156) and product bbox x 185-365 both occupy the left lane; the right wall carries nothing at any scale.",
+          "repair": "Shift copy block right or scale the title into the right negative space so type and product form a diagonal read."
+        }
+      ],
+      "acceptable": false
+    }
+  ],
+  "preferred": "motion",
+  "reason": "Motion is the only study with zero defects: the flat graphic satin field is an intentional non-physical presentation, so no floor is required, and the bottle's retained source RGB, white-baked neck transmission and crisp label sit cleanly against the vermilion textile with strong contrast, correct hierarchy (headline, subhead, footer) and on-brand red dominance. Ice, diner and sculpture all keep faithful product and legible authorized copy, but each shows a grounding or readability flaw (weak contact/cast shadow against modeled scenes, footer contrast loss, stray prop, unbalanced negative space) that blocks acceptance under the stated thresholds."
+}

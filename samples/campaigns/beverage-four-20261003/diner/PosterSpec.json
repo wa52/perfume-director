@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 810,
+    "height": 1080
+  },
+  "seed": 2026100912,
+  "background": {
+    "color": "#DDD6C9",
+    "prompt": "A photograph of a completely cleared ivory laminate diner countertop with rounded chrome front trim, table occupying the lower third, warm cream wall above and softly blurred burgundy leather booth in the distant background. Quiet wall area at left for lettering to be added later. Diffuse broad frontal daylight, nostalgic soft warm film tones. Bare countertop, absolutely no tableware: no drinking glass, cup, tumbler, plate, bottle, menu, cutlery or food. No people, text, logos or studio equipment.",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 575,
+    "y": 570,
+    "width": 180,
+    "height": 650
+  },
+  "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+  "palette": [
+    "#DDD6C9",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "GOOD TIMES.",
+    "x": 55,
+    "y": 325,
+    "size": 88,
+    "color": "#52251e",
+    "font": "C:/Windows/Fonts/georgiab.ttf",
+    "tracking": 0,
+    "max_width": 340,
+    "line_height": 1.13,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "相聚，总有好时光。",
+    "x": 59,
+    "y": 585,
+    "size": 25,
+    "color": "#52251e",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 290,
+    "line_height": 1.4
+  },
+  "price": {
+    "text": "COCA-COLA  /  ORIGINAL TASTE",
+    "x": 55,
+    "y": 1015,
+    "size": 15,
+    "color": "#fff7ee",
+    "font": "C:/Windows/Fonts/arial.ttf",
+    "tracking": 1,
+    "max_width": 690
+  },
+  "logo": {
+    "text": "",
+    "x": 55,
+    "y": 1010,
+    "size": 18,
+    "color": "#52251e",
+    "font": "C:/Windows/Fonts/georgiab.ttf",
+    "tracking": 0,
+    "max_width": 0
+  },
+  "shadow": {
+    "opacity": 0.4,
+    "blur": 9,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0.025,
+    "cast_opacity": 0.1,
+    "cast_blur": 16
+  }
+}

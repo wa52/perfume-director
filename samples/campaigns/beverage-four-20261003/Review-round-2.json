@@ -1,0 +1,86 @@
+{
+  "versions": [
+    {
+      "id": "ice",
+      "scores": {
+        "product_fidelity": 97,
+        "physical_integration": 91,
+        "typography": 92,
+        "composition": 91,
+        "brand_alignment": 90,
+        "creative_coherence": 91
+      },
+      "problems": [
+        {
+          "problem": "Contact shadow under the bottle base is fainter and tighter than the shadows of the neighbouring ice cubes, so the bottle reads slightly lighter on the marble than theScene props.",
+          "evidence": "Ice cubes at left and bottom-right carry visible soft cast shadows and melt-water pools, while the bottle base at y≈960 shows only a minimal darkening (contact shadow opacity 0.4, blur 9, cast_opacity 0.1).",
+          "repair": "Strengthen and slightly widen the bottle's contact shadow and add a faint occlusion gradient in the marble immediately under the base to match cube shadow density."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "diner",
+      "scores": {
+        "product_fidelity": 96,
+        "physical_integration": 84,
+        "typography": 82,
+        "composition": 84,
+        "brand_alignment": 88,
+        "creative_coherence": 85
+      },
+      "problems": [
+        {
+          "problem": "Subtitle set in near-white cream over a pale cream wall/counter zone fails contrast and reads as a floating strip.",
+          "evidence": "Subtitle bbox [59,585,267,610] in #fff7ee sits over the light ivory wall and countertop; legibility drops sharply at reading size.",
+          "repair": "Recolor the subtitle to the deep maroon of the title (#52251e) or move it onto the blurred burgundy booth band for contrast."
+        },
+        {
+          "problem": "Background contains props the cleared-counter concept excludes, and they clutter the mid-ground next to the product.",
+          "evidence": "A blurred tumbler glass at ~(240,630), a framed menu lying on the counter at ~(240,715) and a condiment bottle at ~(85,560) appear despite the 'bare countertop, no tableware' direction.",
+          "repair": "Regenerate or paint out the玻璃 tumbler, menu frame and condiment bottle so the counter reads cleared and the bottle owns the scene."
+        },
+        {
+          "problem": "Bottle contact with the laminate is weak; the base sits with almost no occlusion shadow while the menu and glass cast clearer shadows.",
+          "evidence": "Base at y≈895 shows only a hairline darkening; perspective of the receding counter edge also makes the standing point feel slightly forward of the surface plane.",
+          "repair": "Add a soft elliptical contact shadow plus a subtle reflected warm bounce at the base consistent with the counter's sheen."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "motion",
+      "scores": {
+        "product_fidelity": 97,
+        "physical_integration": 90,
+        "typography": 93,
+        "composition": 92,
+        "brand_alignment": 93,
+        "creative_coherence": 93
+      },
+      "problems": [],
+      "acceptable": true
+    },
+    {
+      "id": "sculpture",
+      "scores": {
+        "product_fidelity": 96,
+        "physical_integration": 86,
+        "typography": 90,
+        "composition": 88,
+        "brand_alignment": 89,
+        "creative_coherence": 88
+      },
+      "problems": [
+        {
+          "problem": "Ground contact is unconvincing: the bottle's shadow is a symmetric smudge while the arched recess implies a directional key from the left, so the bottle looks placed rather than standing.",
+          "evidence": "Base at y≈945 shows a uniform soft blob (opacity 0.4, blur 9, zero offset) with no cast direction, against stone floor gradients that fall left-to-right.",
+          "repair": "Give the contact shadow a slight rightward cast and darker core under the base heel, matching the recess-implied light direction."
+        }
+      ],
+      "acceptable": false
+    }
+  ],
+  "preferred": "motion",
+  "reason": "Motion is the only study with zero defects: the flat graphic satin field is intentional so no floor contact is required, the retained 180x650 source bottle (white-baked neck transmission intact, label fully legible) sits cleanly against the vermilion textile with no pasted edge, and the white headline/subtitle/footer hierarchy is crisp and on-brand. Ice is a close second but its bottle shadow is lighter than its props'; sculpture lacks directional contact; diner fails on subtitle contrast, stray tableware props and weak base contact. No nonsense lettering, clipping or light conflicts anywhere; scores reflect executed quality, not the mere presence of headlines."
+}

@@ -1,0 +1,81 @@
+{
+  "versions": [
+    {
+      "id": "ice",
+      "scores": {
+        "product_fidelity": 98,
+        "physical_integration": 91,
+        "typography": 93,
+        "composition": 92,
+        "brand_alignment": 90,
+        "creative_coherence": 92
+      },
+      "problems": [
+        {
+          "problem": "Contact shadow under the bottle is fainter and tighter than the shadows and melt-water pools of the neighbouring ice cubes, so the packshot reads slightly set-down rather than settled into the marble plane.",
+          "evidence": "Ice cubes at far left and bottom right cast soft graded shadows with wet halos; the bottle base at y≈960 shows only a thin dark line with minimal spread on the bright marble.",
+          "repair": "Strengthen and slightly widen the contact shadow (raise opacity toward 0.5, blur 12-16) and add a faint cool reflection smear under the base to match the cubes' grounding."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "diner",
+      "scores": {
+        "product_fidelity": 98,
+        "physical_integration": 84,
+        "typography": 90,
+        "composition": 86,
+        "brand_alignment": 88,
+        "creative_coherence": 87
+      },
+      "problems": [
+        {
+          "problem": "Unplanned distracting prop: a small glass tumbler with amber residue sits on the counter beside the bottle, competing with the hero product in a beverage ad.",
+          "evidence": "Clear tumbler at approximately (730,860) on the ivory countertop, right of the bottle base; no such object exists in the approved background spec.",
+          "repair": "Remove the tumbler or replace it with empty counter space; keep the counter clear so the bottle owns the scene."
+        },
+        {
+          "problem": "Grounding is weak: the bottle base sits almost on the chrome front-edge band of the counter with only a hairline shadow, so the contact reads pasted rather than weight-bearing.",
+          "evidence": "Base at y≈945 lands within a few pixels of the metallic edge trim at y≈950-975; no cast shadow gradient extends across the laminate toward the viewer.",
+          "repair": "Move the bottle 40-60 px up-counter (deeper into the laminate plane) and add a soft frontal cast shadow consistent with the diffuse diner light."
+        }
+      ],
+      "acceptable": false
+    },
+    {
+      "id": "motion",
+      "scores": {
+        "product_fidelity": 98,
+        "physical_integration": 92,
+        "typography": 94,
+        "composition": 93,
+        "brand_alignment": 93,
+        "creative_coherence": 94
+      },
+      "problems": [],
+      "acceptable": true
+    },
+    {
+      "id": "sculpture",
+      "scores": {
+        "product_fidelity": 98,
+        "physical_integration": 90,
+        "typography": 91,
+        "composition": 89,
+        "brand_alignment": 90,
+        "creative_coherence": 91
+      },
+      "problems": [
+        {
+          "problem": "The right-hand subtitle floats in empty wall space with no anchor to either the title block or the bottle, leaving a visual hole in the centre-right of the composition.",
+          "evidence": "Subtitle block at (470,466)-(653,491) sits isolated against blank wall, far from the title at top left and from the bottle at centre-left; the eye has no path between them.",
+          "repair": "Align the subtitle under the title block or shift it down beside the bottle shoulder so it forms a diagonal reading line with the product."
+        }
+      ],
+      "acceptable": false
+    }
+  ],
+  "preferred": "motion",
+  "reason": "Motion is the only study with zero defects: the flat graphic satin field is an intentional non-photographic presentation, so no floor contact is required, and the bottle reads as a deliberately floating brand object with clean edges, intact label, cap and white-baked neck transmission exactly as sourced. Typography (停一下。/ 让此刻，有滋有味。/ lockup line) is crisp, correctly lettered and well hierarchical against the deep red field; composition balances the white type block against the centred bottle; brand tone is confident and premium. Ice and sculpture are close but each carries one repairable grounding or anchoring flaw, and diner fails on an unplanned tumbler prop plus edge-of-counter contact, so motion wins on coherence and craft."
+}

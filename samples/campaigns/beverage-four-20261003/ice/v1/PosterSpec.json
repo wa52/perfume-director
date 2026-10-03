@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 810,
+    "height": 1080
+  },
+  "seed": 2026100311,
+  "background": {
+    "color": "#DDD6C9",
+    "prompt": "Premium beverage advertising photograph of an EMPTY pale blue frosted glass tabletop with clear melting ice chunks and tiny water droplets concentrated at the far left and lower right edge, soft cold mist behind the table, luminous silver blue atmosphere, diffuse broad frontal illumination, realistic transparent ice and wet glass, tabletop extending continuously across the lower third; clean empty central-right standing space and quiet bright upper quarter for headline; straight-on camera. No products, containers, lettering, equipment, people or logos.",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 490,
+    "y": 635,
+    "width": 180,
+    "height": 650
+  },
+  "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+  "palette": [
+    "#DDD6C9",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "冰爽，即刻。",
+    "x": 54,
+    "y": 85,
+    "size": 86,
+    "color": "#152a34",
+    "font": "C:/Windows/Fonts/msyhbd.ttc",
+    "tracking": 0,
+    "max_width": 700,
+    "line_height": 1.13,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "打开这一刻",
+    "x": 58,
+    "y": 210,
+    "size": 25,
+    "color": "#152a34",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 290,
+    "line_height": 1.4
+  },
+  "price": {
+    "text": "COCA-COLA  /  ORIGINAL TASTE",
+    "x": 55,
+    "y": 1015,
+    "size": 15,
+    "color": "#152a34",
+    "font": "C:/Windows/Fonts/arial.ttf",
+    "tracking": 1,
+    "max_width": 690
+  },
+  "logo": {
+    "text": "",
+    "x": 55,
+    "y": 1010,
+    "size": 18,
+    "color": "#152a34",
+    "font": "C:/Windows/Fonts/msyhbd.ttc",
+    "tracking": 0,
+    "max_width": 0
+  },
+  "shadow": {
+    "opacity": 0.4,
+    "blur": 9,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0.025,
+    "cast_opacity": 0.1,
+    "cast_blur": 16
+  }
+}

@@ -1,0 +1,435 @@
+[
+  {
+    "id": "ice",
+    "name": "冰爽凝结",
+    "spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 810,
+        "height": 1080
+      },
+      "seed": 2026100550,
+      "background": {
+        "color": "#DDD6C9",
+        "prompt": "Still life photograph of several small clear melting ice cubes on a pale blue icy marble surface, cubes grouped only at far left edge and bottom right corner, tiny water droplets, cold mist over a silver blue seamless wall, diffuse broad frontal illumination. Continuous horizontal marble plane across the lower third, completely empty central-right area. Quiet bright upper half. Straight-on camera. The only objects are small ice cubes. No drinking glasses, cups, vases, containers, products, lettering, people or logos.",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 490,
+        "y": 635,
+        "width": 180,
+        "height": 650
+      },
+      "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+      "palette": [
+        "#DDD6C9",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "冰爽，即刻。",
+        "x": 54,
+        "y": 85,
+        "size": 86,
+        "color": "#152a34",
+        "font": "C:/Windows/Fonts/msyhbd.ttc",
+        "tracking": 0,
+        "max_width": 700,
+        "line_height": 1.13,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "打开这一刻",
+        "x": 58,
+        "y": 210,
+        "size": 25,
+        "color": "#152a34",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 290,
+        "line_height": 1.4
+      },
+      "price": {
+        "text": "COCA-COLA  /  ORIGINAL TASTE",
+        "x": 55,
+        "y": 1015,
+        "size": 15,
+        "color": "#152a34",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 1,
+        "max_width": 690
+      },
+      "logo": {
+        "text": "",
+        "x": 55,
+        "y": 1010,
+        "size": 18,
+        "color": "#152a34",
+        "font": "C:/Windows/Fonts/msyhbd.ttc",
+        "tracking": 0,
+        "max_width": 0
+      },
+      "shadow": {
+        "opacity": 0.4,
+        "blur": 9,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "linen-draped horizontal plane",
+        "cast_length_ratio": 0.025,
+        "cast_opacity": 0.1,
+        "cast_blur": 16
+      }
+    },
+    "ground_top": 0.69
+  },
+  {
+    "id": "diner",
+    "name": "复古餐馆",
+    "spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 810,
+        "height": 1080
+      },
+      "seed": 2026100912,
+      "background": {
+        "color": "#DDD6C9",
+        "prompt": "A photograph of a completely cleared ivory laminate diner countertop with rounded chrome front trim, table occupying the lower third, warm cream wall above and softly blurred burgundy leather booth in the distant background. Quiet wall area at left for lettering to be added later. Diffuse broad frontal daylight, nostalgic soft warm film tones. Bare countertop, absolutely no tableware: no drinking glass, cup, tumbler, plate, bottle, menu, cutlery or food. No people, text, logos or studio equipment.",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 575,
+        "y": 570,
+        "width": 180,
+        "height": 650
+      },
+      "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+      "palette": [
+        "#DDD6C9",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "GOOD TIMES.",
+        "x": 55,
+        "y": 325,
+        "size": 88,
+        "color": "#52251e",
+        "font": "C:/Windows/Fonts/georgiab.ttf",
+        "tracking": 0,
+        "max_width": 340,
+        "line_height": 1.13,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "相聚，总有好时光。",
+        "x": 59,
+        "y": 585,
+        "size": 25,
+        "color": "#52251e",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 290,
+        "line_height": 1.4
+      },
+      "price": {
+        "text": "COCA-COLA  /  ORIGINAL TASTE",
+        "x": 55,
+        "y": 1015,
+        "size": 15,
+        "color": "#fff7ee",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 1,
+        "max_width": 690
+      },
+      "logo": {
+        "text": "",
+        "x": 55,
+        "y": 1010,
+        "size": 18,
+        "color": "#52251e",
+        "font": "C:/Windows/Fonts/georgiab.ttf",
+        "tracking": 0,
+        "max_width": 0
+      },
+      "shadow": {
+        "opacity": 0.4,
+        "blur": 9,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "linen-draped horizontal plane",
+        "cast_length_ratio": 0.025,
+        "cast_opacity": 0.1,
+        "cast_blur": 16
+      }
+    },
+    "ground_top": 0.7,
+    "scene_edit": "scene-cleanup-workflow.json: background-only Mage edit, source product excluded"
+  },
+  {
+    "id": "motion",
+    "name": "红色动感",
+    "spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 810,
+        "height": 1080
+      },
+      "seed": 2026100752,
+      "background": {
+        "color": "#DDD6C9",
+        "prompt": "Extreme close-up photograph of deep vermilion and scarlet satin fabric swirling diagonally from lower left to upper right, full frame red fabric extending beyond every edge, tactile fluid folds, gentle motion blur only at outer edges, saturated coral smooth central-right zone and quiet deep red upper-left zone. Only abstract textile texture is visible. No border, white margins, letters, words, logos, labels, captions, objects or room.",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 495,
+        "y": 650,
+        "width": 180,
+        "height": 650
+      },
+      "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+      "palette": [
+        "#DDD6C9",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "停一下。",
+        "x": 57,
+        "y": 90,
+        "size": 116,
+        "color": "#fff7ee",
+        "font": "C:/Windows/Fonts/msyhbd.ttc",
+        "tracking": 0,
+        "max_width": 690,
+        "line_height": 1.13,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "让此刻，有滋有味。",
+        "x": 63,
+        "y": 248,
+        "size": 27,
+        "color": "#fff7ee",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 290,
+        "line_height": 1.4
+      },
+      "price": {
+        "text": "COCA-COLA  /  ORIGINAL TASTE",
+        "x": 55,
+        "y": 1015,
+        "size": 15,
+        "color": "#fff7ee",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 1,
+        "max_width": 690
+      },
+      "logo": {
+        "text": "",
+        "x": 55,
+        "y": 1010,
+        "size": 18,
+        "color": "#fff7ee",
+        "font": "C:/Windows/Fonts/msyhbd.ttc",
+        "tracking": 0,
+        "max_width": 0
+      },
+      "shadow": {
+        "opacity": 0,
+        "blur": 9,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "graphic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "linen-draped horizontal plane",
+        "cast_length_ratio": 0,
+        "cast_opacity": 0,
+        "cast_blur": 16
+      }
+    },
+    "ground_top": null
+  },
+  {
+    "id": "sculpture",
+    "name": "极简雕塑",
+    "spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 810,
+        "height": 1080
+      },
+      "seed": 2026100614,
+      "background": {
+        "color": "#DDD6C9",
+        "prompt": "An EMPTY sculptural still-life advertising set, ivory limestone floor across lower third and warm off-white seamless wall, a large softly blurred arched travertine architectural recess at far left, meticulous fine stone texture, broad diffuse frontal daylight, soft shadow gradients, gallery-like calm and understated premium material; clear empty standing area at center-left on continuous horizontal floor, quiet right and upper wall for dark typography. No pedestal, products, containers, people, lettering, logos or equipment.",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 275,
+        "y": 620,
+        "width": 180,
+        "height": 650
+      },
+      "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+      "palette": [
+        "#DDD6C9",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "经典，自有形。",
+        "x": 48,
+        "y": 83,
+        "size": 74,
+        "color": "#42352d",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 720,
+        "line_height": 1.13,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "一瓶，恰到好处。",
+        "x": 54,
+        "y": 195,
+        "size": 25,
+        "color": "#42352d",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 290,
+        "line_height": 1.4
+      },
+      "price": {
+        "text": "COCA-COLA  /  ORIGINAL TASTE",
+        "x": 55,
+        "y": 1015,
+        "size": 15,
+        "color": "#42352d",
+        "font": "C:/Windows/Fonts/arial.ttf",
+        "tracking": 1,
+        "max_width": 690
+      },
+      "logo": {
+        "text": "",
+        "x": 55,
+        "y": 1010,
+        "size": 18,
+        "color": "#42352d",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 0,
+        "max_width": 0
+      },
+      "shadow": {
+        "opacity": 0.4,
+        "blur": 9,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "linen-draped horizontal plane",
+        "cast_length_ratio": 0.025,
+        "cast_opacity": 0.1,
+        "cast_blur": 16
+      }
+    },
+    "ground_top": 0.7
+  }
+]

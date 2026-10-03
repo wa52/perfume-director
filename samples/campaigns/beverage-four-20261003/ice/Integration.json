@@ -1,0 +1,34 @@
+{
+  "source_alpha_unchanged": false,
+  "alpha_changed_pixels": 1730,
+  "alpha_mean_absolute_change": 0.46975213675213673,
+  "generated_product_rgb_copied": false,
+  "generated_background_rgb_copied": false,
+  "illumination_gain_range": [
+    1.0,
+    1.0
+  ],
+  "identity_policy": "original lettering texture; brightness can change; no generated label or exact RGB guarantee",
+  "ground_top_y": 745,
+  "product_base_y": 960,
+  "key_light": "front",
+  "shadow_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0.025,
+    "cast_opacity": 0.16,
+    "cast_blur": 18
+  },
+  "edge_cleanup": true,
+  "contour_contact": true,
+  "refine_alpha": true,
+  "manual_spill_zones": [],
+  "manual_wrap_zones": [],
+  "reflection_strength": 0,
+  "maximum_additive_reflection_linear": 0,
+  "output_size": [
+    810,
+    1080
+  ],
+  "limitations": "2D source-compatible appearance and projected shadows; not new physical reflections, refraction, intrinsic decomposition or source-detail restoration."
+}

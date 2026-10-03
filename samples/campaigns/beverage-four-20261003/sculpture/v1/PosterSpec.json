@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 810,
+    "height": 1080
+  },
+  "seed": 2026100614,
+  "background": {
+    "color": "#DDD6C9",
+    "prompt": "An EMPTY sculptural still-life advertising set, ivory limestone floor across lower third and warm off-white seamless wall, a large softly blurred arched travertine architectural recess at far left, meticulous fine stone texture, broad diffuse frontal daylight, soft shadow gradients, gallery-like calm and understated premium material; clear empty standing area at center-left on continuous horizontal floor, quiet right and upper wall for dark typography. No pedestal, products, containers, people, lettering, logos or equipment.",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 275,
+    "y": 620,
+    "width": 180,
+    "height": 650
+  },
+  "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+  "palette": [
+    "#DDD6C9",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "经典，自有形。",
+    "x": 48,
+    "y": 83,
+    "size": 74,
+    "color": "#42352d",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 720,
+    "line_height": 1.13,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "一瓶，恰到好处。",
+    "x": 470,
+    "y": 466,
+    "size": 25,
+    "color": "#42352d",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 290,
+    "line_height": 1.4
+  },
+  "price": {
+    "text": "COCA-COLA  /  ORIGINAL TASTE",
+    "x": 55,
+    "y": 1015,
+    "size": 15,
+    "color": "#42352d",
+    "font": "C:/Windows/Fonts/arial.ttf",
+    "tracking": 1,
+    "max_width": 690
+  },
+  "logo": {
+    "text": "",
+    "x": 55,
+    "y": 1010,
+    "size": 18,
+    "color": "#42352d",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 0
+  },
+  "shadow": {
+    "opacity": 0.4,
+    "blur": 9,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0.025,
+    "cast_opacity": 0.1,
+    "cast_blur": 16
+  }
+}

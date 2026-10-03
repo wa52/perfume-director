@@ -1,0 +1,24 @@
+{
+  "status": "MODEL_ACCEPTED_STUDY",
+  "commercial_release_allowed": false,
+  "guided_direction": true,
+  "product_sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "actual_scene_generations": 7,
+  "source_limitations": "Native cropped 180x650 packshot; baked white glass transmission, limited print resolution.",
+  "manual_refinements": [
+    "ice oversized glass removed by scene regeneration",
+    "motion generated lettering/frame rejected and scene regenerated",
+    "diner subtitle/footer contrast changed",
+    "Critic: ice stronger contact shadow",
+    "Critic: diner scene regenerated and base moved 50px up",
+    "Critic: sculpture subtitle aligned under title",
+    "Diner background-only Mage edit removes foreground cup and menu; distant blurred condiment remains",
+    "Diner subtitle contrast rechecked on edited background"
+  ],
+  "model_accepted": [
+    "motion"
+  ],
+  "preferred": "motion",
+  "release_limit": "Guided creative study; limited packshot resolution; no commercial delivery acceptance.",
+  "actual_scene_edit_calls": 1
+}

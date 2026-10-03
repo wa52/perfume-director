@@ -348,3 +348,7 @@ GLM-5.3-Flash 的完整第二款商品批次已完成：4/4 出图，13 个版�
 ## Commercial V2 饮品试点（2026-10-03）
 
 新增独立品牌观察/广告命题阶段，再由 Art Director 输出版式；语义复核会淘汰仅换摆放方式的四种棚拍。V2 不强制换色、衬线/无衬线配额或三种标题位置。合成新增由原商品 alpha 投射的地面阴影，保留原 RGB 和标签；商业 Gate 按维度门槛、带证据的逐项否决与实际布局检查执行。使用 `commercial_pilot.py plan` 和 `render` 分别验证规划与真实出图，默认连接项目 ComfyUI 8191。当前仍是工程试点，未完成 20 次成品验收；不具备玻璃透射重建或材质分区重新布光。完整接口与边界见 [Commercial V2 说明](COMMERCIAL_V2.md)。
+
+## Complete beverage campaign studies
+
+[Four complete posters, actual scene refinement and Qwen whole-poster reviews](samples/campaigns/beverage-four-20261003/gallery.html). Guided art-direction experiment; one model-accepted study, no commercial release approval. Execution details and remaining issues are recorded in the sample REPORT.md.

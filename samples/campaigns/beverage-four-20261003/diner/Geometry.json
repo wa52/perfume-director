@@ -1,0 +1,64 @@
+{
+  "coordinate_system": "pixels, origin top left",
+  "product_bbox": [
+    485,
+    245,
+    665,
+    895
+  ],
+  "contact_points": [
+    {
+      "center_x": 574.5,
+      "base_y": 895,
+      "width": 159
+    }
+  ],
+  "copy_policy": {
+    "permitted_copy": {
+      "title": "GOOD TIMES.",
+      "subtitle": "相聚，总有好时光。",
+      "price": "COCA-COLA  /  ORIGINAL TASTE",
+      "logo": ""
+    },
+    "intentional_empty_layers": [
+      "logo"
+    ],
+    "instruction": "Do not demand extra copy or price to match reference content; assess the authorized hierarchy and negative space."
+  },
+  "shape_geometry": [],
+  "product_base_y": 895,
+  "product_height_ratio": 0.6019,
+  "product_width_ratio": 0.2222,
+  "fresh_concept_size_policy": {
+    "minimum_height_ratio": 0.35,
+    "maximum_height_ratio": 0.74,
+    "within_range": true,
+    "scope": "dynamic concept mode only",
+    "instruction": "Aspect-adjusted deterministic size bounds, not an aesthetic PASS. When within_range is true, do not claim a minimum-size violation; assess visual hierarchy and explain any artistic resize independently."
+  },
+  "text_bbox": {
+    "title": [
+      55,
+      325,
+      388,
+      489
+    ],
+    "subtitle": [
+      59,
+      585,
+      267,
+      610
+    ],
+    "price": [
+      55,
+      1015,
+      313,
+      1026
+    ]
+  },
+  "text_product_overlap": {
+    "title": false,
+    "subtitle": false,
+    "price": false
+  }
+}

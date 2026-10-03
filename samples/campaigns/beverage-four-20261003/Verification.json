@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "id": "ice",
+      "dimensions": [
+        810,
+        1080
+      ],
+      "actual_text_bounds_inside_canvas": true,
+      "installed_font_glyphs_supported": true,
+      "text_product_overlap": false
+    },
+    {
+      "id": "diner",
+      "dimensions": [
+        810,
+        1080
+      ],
+      "actual_text_bounds_inside_canvas": true,
+      "installed_font_glyphs_supported": true,
+      "text_product_overlap": false
+    },
+    {
+      "id": "motion",
+      "dimensions": [
+        810,
+        1080
+      ],
+      "actual_text_bounds_inside_canvas": true,
+      "installed_font_glyphs_supported": true,
+      "text_product_overlap": false
+    },
+    {
+      "id": "sculpture",
+      "dimensions": [
+        810,
+        1080
+      ],
+      "actual_text_bounds_inside_canvas": true,
+      "installed_font_glyphs_supported": true,
+      "text_product_overlap": false
+    }
+  ],
+  "not_visual_or_commercial_acceptance": true
+}

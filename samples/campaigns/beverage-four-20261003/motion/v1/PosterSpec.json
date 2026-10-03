@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 810,
+    "height": 1080
+  },
+  "seed": 2026100513,
+  "background": {
+    "color": "#DDD6C9",
+    "prompt": "Full-bleed abstract red kinetic advertising artwork, deep vermilion and scarlet satin ribbons flowing diagonally from lower left to upper right behind an EMPTY bright coral center-right zone, tactile fluid folds and gentle motion blur only on the outer edges, highly controlled saturated red palette, bold contemporary graphic energy, quiet darker red upper-left area for white typography. Flat graphic composition without floor or room. No objects, products, containers, letters, logos or watermarks.",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 495,
+    "y": 650,
+    "width": 180,
+    "height": 650
+  },
+  "lighting": "soft diffuse frontal daylight-style studio illumination, gentle wrap, calm shadows, no rim light",
+  "palette": [
+    "#DDD6C9",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "停一下。",
+    "x": 57,
+    "y": 90,
+    "size": 116,
+    "color": "#fff7ee",
+    "font": "C:/Windows/Fonts/msyhbd.ttc",
+    "tracking": 0,
+    "max_width": 690,
+    "line_height": 1.13,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "让此刻，有滋有味。",
+    "x": 63,
+    "y": 248,
+    "size": 27,
+    "color": "#fff7ee",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0,
+    "max_width": 290,
+    "line_height": 1.4
+  },
+  "price": {
+    "text": "COCA-COLA  /  ORIGINAL TASTE",
+    "x": 55,
+    "y": 1015,
+    "size": 15,
+    "color": "#fff7ee",
+    "font": "C:/Windows/Fonts/arial.ttf",
+    "tracking": 1,
+    "max_width": 690
+  },
+  "logo": {
+    "text": "",
+    "x": 55,
+    "y": 1010,
+    "size": 18,
+    "color": "#fff7ee",
+    "font": "C:/Windows/Fonts/msyhbd.ttc",
+    "tracking": 0,
+    "max_width": 0
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 9,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic",
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "linen-draped horizontal plane",
+    "cast_length_ratio": 0,
+    "cast_opacity": 0,
+    "cast_blur": 16
+  }
+}
