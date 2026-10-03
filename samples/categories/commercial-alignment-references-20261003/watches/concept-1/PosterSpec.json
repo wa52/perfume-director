@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 72688182304240,
+  "background": {
+    "color": "#E8EAE6",
+    "prompt": "Flat cool porcelain-white poster stock field with faint paper tooth, uniform matte diffuse illumination, completely empty printed plane, no horizon, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 389,
+        "y": 202,
+        "width": 586,
+        "height": 1064,
+        "color": "#141719",
+        "opacity": 1.0
+      },
+      {
+        "kind": "rectangle",
+        "x": 425,
+        "y": 336,
+        "width": 524,
+        "height": 794,
+        "color": "#1F4E4A",
+        "opacity": 1.0
+      },
+      {
+        "kind": "rectangle",
+        "x": 428,
+        "y": 339,
+        "width": 518,
+        "height": 788,
+        "color": "#E8EAE6",
+        "opacity": 1.0
+      }
+    ]
+  },
+  "product": {
+    "x": 687,
+    "y": 733,
+    "width": 560,
+    "height": 830
+  },
+  "lighting": "Even ink-flat diffuse illumination, no cast gradient, pure printed page with no horizon",
+  "palette": [
+    "#E8EAE6",
+    "#141719",
+    "#1F4E4A"
+  ],
+  "title": {
+    "text": "被印成图版，值得逐行细读。",
+    "x": 65,
+    "y": 144,
+    "size": 48,
+    "color": "#141719",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 340,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "栏线评论柱与完整腕表照片同页印刷，竖线缝合图文，像杂志中被记载的一页，献给信赖纸墨的读者。",
+    "x": 65,
+    "y": 830,
+    "size": 18,
+    "color": "#141719",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 280,
+    "line_height": 1.6,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#141719",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 65,
+    "y": 730,
+    "size": 40,
+    "color": "#141719",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 65,
+    "y": 400,
+    "width": 324,
+    "color": "#1F4E4A"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "unknown",
+    "ground_material": "printed matte poster stock, no physical ground",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

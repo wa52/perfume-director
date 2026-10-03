@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 72688182307267,
+  "background": {
+    "color": "#D7DFE3",
+    "prompt": "Flat pale ice-blue matte printed field with faint paper tooth, uniform diffuse illumination, completely empty graphic plane, no horizon, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "product_silhouette",
+        "x": 229,
+        "y": 322,
+        "width": 623,
+        "height": 927,
+        "color": "#1C2830",
+        "opacity": 0.92
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 785,
+    "width": 544,
+    "height": 806
+  },
+  "lighting": "Uniform matte diffuse illumination over the printed field, no cast gradient, pure emblematic plane",
+  "palette": [
+    "#D7DFE3",
+    "#1C2830",
+    "#7E8E99"
+  ],
+  "title": {
+    "text": "轮廓本身，就是一枚徽记。",
+    "x": 86,
+    "y": 79,
+    "size": 60,
+    "color": "#1C2830",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "深色剪影在银色表壳身后如纹章升起，真表坐进自己的徽形之中，为需要正式身份的场合而备。",
+    "x": 86,
+    "y": 1260,
+    "size": 24,
+    "color": "#1C2830",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2,
+    "max_width": 560,
+    "line_height": 1.3,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1C2830",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 86,
+    "y": 162,
+    "size": 36,
+    "color": "#1C2830",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 10
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 224,
+    "width": 120,
+    "color": "#1C2830"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "unknown",
+    "ground_material": "flat printed field, no physical ground",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

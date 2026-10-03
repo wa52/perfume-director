@@ -1,0 +1,147 @@
+{
+  "pass": false,
+  "score": 91.0,
+  "dimensions": {
+    "product_fidelity": 98,
+    "composition": 89,
+    "typography": 89,
+    "background": 90,
+    "physical_integration": 90,
+    "reference_alignment": 88,
+    "creative_coherence": 93,
+    "brand_alignment": 94
+  },
+  "problems": [
+    {
+      "type": "craft",
+      "problem": "The porcelain plate inset is smaller than the packshot it is meant to carry: product bbox [408,318,966,1148] versus inset rect [428,339,946,1127], so the case flank, both crowns and the strap loop cross the teal keyline and sit on the black ink field. In the contact crop [328,1008,1046,1258] the strap base clearly rests on black ink below the inset's bottom keyline, so the 'photograph printed inside a ruled plate' fiction leaks at four edges.",
+      "root_cause": "The keyline/inset shapes were sized to the previous bare-block composition instead of being derived from the product bbox plus a printed margin.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-derive the plate furniture from the product bbox: enlarge the teal keyline to roughly [396,306,600,862] and the porcelain inset to [400,310,592,854] so the entire watch silhouette, including crowns and strap loop, prints inside the inset with an even keyline margin; keep the outer ink block and the empty-material prompt unchanged."
+    },
+    {
+      "type": "typography",
+      "problem": "Headline second line '值得逐行细读' ends at x≈404 (text_bbox title [65,144,404,263]) while the ink plate seam starts at x=389, so the last glyph of the headline visually collides with the plate edge; the column measure and the plate seam are not reconciled, and the column still carries a long empty paper stretch between the rule at y≈400 and НИКА at y≈730.",
+      "root_cause": "Title max_width/tracking were tuned for rhythm without checking the seam coordinate; column masses remain top- and bottom-anchored.",
+      "affected_layer": "typography",
+      "repair_strategy": "Reduce title max_width to about 320 or tracking to 4 so the wrapped headline stops left of x=389, and nudge logo.y to about 690 with subtitle.y following at about 790 to tighten the mid-column gap; keep x=65 alignment and the rule's seam contact at x=389 untouched."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 389,
+          "y": 202,
+          "width": 586,
+          "height": 1064,
+          "color": "#141719",
+          "opacity": 1.0
+        },
+        {
+          "kind": "rectangle",
+          "x": 396,
+          "y": 306,
+          "width": 600,
+          "height": 862,
+          "color": "#1F4E4A",
+          "opacity": 1.0
+        },
+        {
+          "kind": "rectangle",
+          "x": 400,
+          "y": 310,
+          "width": 592,
+          "height": 854,
+          "color": "#E8EAE6",
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 320
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 690
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 790
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "НИКА renders at (65,730) in wide-tracked capitals on the porcelain margin, matching the supplied identity string and the dial logotype visible in image 2; no distortion or recoloring in image 1."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox [408,318,966,1148] keeps the upright looped-strap packshot aspect of image 2; black guilloché dial, silver Roman numerals, framed date at twelve, recessed small-seconds with РОССИЯ/КВАРЦ, double crowns, quilted strap and tan lining all identical, no rotation, crop or duplicate instance."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares a printed plate with no physical floor; contact_detail_crop [328,1008,1046,1258] shows the strap loop base at base_y 1148 meeting a soft dark contact tone consistent with shadow offset_y 0 and the declared suspension inside the ink block."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry crosses_canvas_edge false for all three rectangles; watch silhouette fully inside canvas; cutout edges crisp against both porcelain inset and ink field."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source soft diffuse studio light is preserved unmodified on the polished case and strap; the flat ink block, teal keyline and porcelain stock add no competing cast gradient or highlight direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [65,144,404,263], logo [65,730,203,761], subtitle [65,830,330,934] all inside canvas; no glyph touches a canvas edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no type intersects the product bbox on both axes; the only near-miss is the headline's optical touch of the plate seam, logged as a craft problem rather than a collision."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All layers use C:/Windows/Fonts/msyh.ttc, an approved installed font covering the CJK copy and the Cyrillic logotype."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА spelled exactly as supplied; dial РОССИЯ and КВАРЦ untouched from source; no invented model number, certification or gemstone claim; price layer intentionally empty per copy_policy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline '被印成图版，值得逐行细读。' and the subtitle name the same-page plate-and-column printing event itself, not interchangeable luxury slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The teal rule runs from the paper margin exactly to the dark plate seam at x=389 while the intact packshot sits inset in a keylined printed plate, performing the 'watch documented as a magazine plate' event of concept c1-editorial-plate."
+    }
+  },
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ],
+  "reported_score": 91.4,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

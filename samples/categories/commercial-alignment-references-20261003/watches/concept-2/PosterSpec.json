@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 72688182305249,
+  "background": {
+    "color": "#26544F",
+    "prompt": "Flat gouache pigment plane at very dark low value matching hex 26544F on smooth carton stock, perfectly uniform matte diffuse illumination, completely empty graphic field, no horizon, no objects, no brush texture, no mottling, no gradient",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 540,
+        "y": 446,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 752,
+        "y": 573,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 840,
+        "y": 790,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 752,
+        "y": 1007,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 540,
+        "y": 1120,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 296,
+        "y": 1007,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 208,
+        "y": 790,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 296,
+        "y": 573,
+        "width": 32,
+        "height": 32,
+        "color": "#F2F5EF",
+        "opacity": 0.95
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 806,
+    "width": 544,
+    "height": 806
+  },
+  "lighting": "Uniform matte diffuse light across the pigment field, no shadow gradient, pure graphic plane",
+  "palette": [
+    "#26544F",
+    "#F2F5EF",
+    "#0C1A18"
+  ],
+  "title": {
+    "text": "表盘的节奏，越过表圈展开。",
+    "x": 86,
+    "y": 79,
+    "size": 46,
+    "color": "#F2F5EF",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 4,
+    "max_width": 0,
+    "line_height": 1.2,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "八枚索引点绕立姿表壳排成外扩轨道，把罗马字标与小秒圈的几何投影到整张海报，给读懂构图的眼睛。",
+    "x": 97,
+    "y": 1296,
+    "size": 22,
+    "color": "#F2F5EF",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2,
+    "max_width": 880,
+    "line_height": 1.45,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F2F5EF",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 86,
+    "y": 172,
+    "size": 30,
+    "color": "#F2F5EF",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "unknown",
+    "ground_material": "flat printed pigment plane, no physical ground",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

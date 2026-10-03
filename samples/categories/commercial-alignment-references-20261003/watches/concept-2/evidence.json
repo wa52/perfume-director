@@ -1,0 +1,66 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 3,
+    "score": 90.3,
+    "pass": false,
+    "poster": "v3/poster.png",
+    "spec": "v3/PosterSpec.json",
+    "critic": "v3/Critic.json",
+    "review_error": null,
+    "sha256": "7f8fab52a3e73cfad3cb81e058a9a94eed0d5e8c19be2cc95938e0f48b498399"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 83.1,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "3107345d448bcba7c6be306e6f78d4a518cd442f7916920bbe02e02276805574"
+    },
+    {
+      "version": 2,
+      "score": 85.1,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "727bfeabaab92c364c5e94b07a2da3be3d3d6b6d155ea20455a3cc1c0a0de5bd"
+    },
+    {
+      "version": 3,
+      "score": 90.3,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "7f8fab52a3e73cfad3cb81e058a9a94eed0d5e8c19be2cc95938e0f48b498399"
+    }
+  ],
+  "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "poster_sha256": "7f8fab52a3e73cfad3cb81e058a9a94eed0d5e8c19be2cc95938e0f48b498399",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}

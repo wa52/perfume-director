@@ -1,0 +1,41 @@
+{
+  "tier": "draft",
+  "evidence": "The poster executes the declared 'Index Orbit' mechanism literally: eight pale 32px dots on a circular orbit around the intact upright packshot on a flat viridian gouache field, with a calm sans masthead band and lower subtitle band. Product fidelity is high (dial, Roman indices, recessed small-seconds, double crowns, quilted strap all legible and unaltered), and the graphic suspension is intentional so no floor is required. However, the visual event is under-resolved: half of the orbit (top and bottom hour-position dots) is swallowed by the product layer, so the visible ring reads as six stray specks or registration marks rather than a projected dial rhythm; the dots are tiny relative to the 544px-wide case and sit ambiguously half-tucked behind the strap loop; the product carries a baked-in light-gray studio ambience and soft contact shadow that sits uneasily on the declared shadowless pigment plane; and the typography is default Microsoft YaHei at modest scale with a two-line subtitle block that reads as an explanatory caption rather than crafted copy. Compared to the supplied references (Alexandre Christie's saturated staged event, Patek Philippe's editorial monumentality, Jacob & Co's dramatic key light), this is a competent generic graphic template with a decorative dot ring, not campaign-grade art direction.",
+  "problems": [
+    {
+      "type": "visual_event_underresolved",
+      "problem": "The orbit's top (540,446) and bottom (540,1120) index dots are fully occluded by the product layer, and the diagonal dots are half-tucked behind the strap loop, so the 'eight detached index marks' proposition reads as six small floating specks; the claimed dial-geometry-projection event is only partially visible.",
+      "root_cause": "Orbit radius chosen inside the product's bounding box while shapes render behind the product layer, so hour positions at 12 and 6 vanish and diagonals collide with the strap silhouette.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-place background.shapes with the complete eight-dot list on a wider orbit clear of the product bounds (e.g. centers near (540,300), (800,470), (900,790), (800,1110), (540,1280) adjusted to keep base <=94% and sides 5-95%, (280,1110), (180,790), (280,470) as upper-left coords for ~40-48px dots), so all eight marks read as one deliberate ring around, never behind, the case."
+    },
+    {
+      "type": "scale_hierarchy_weakness",
+      "problem": "32px dots against a 544x806px packshot are near-invisible at poster scale; the orbit reads as dust or print defects rather than an index system, weakening the hierarchy between hub and projected marks.",
+      "root_cause": "Dot diameter set without relating mark weight to case diameter or viewing distance; no size modulation to express hour-position gravity.",
+      "affected_layer": "scene",
+      "repair_strategy": "Increase dot diameters to roughly 44-56px within the same eight-position orbit list, keeping flat opaque #F2F5EF fills and clean printed edges, so the ring carries visual weight comparable to the dial's own indices."
+    },
+    {
+      "type": "light_ground_conflict",
+      "problem": "The packshot retains its baked-in soft light-gray studio ambience and a faint contact shadow under the strap loop, which contradicts the declared shadowless uniform matte pigment plane and makes the cutout feel pasted onto the viridian field.",
+      "root_cause": "Source photographed on light-gray ground with diffuse studio light and contact shadow, composited onto a flat graphic field without reconciling the declared integration (cast_opacity 0) with the shadow actually visible in the source pixels.",
+      "affected_layer": "product",
+      "repair_strategy": "Do not relight the opaque source; instead declare the presentation honestly: keep scene_mode graphic, set integration_plan.cast_opacity around 0.18-0.25 with cast_blur 8-14 and cast_length_ratio near 0.06 so the observed source contact shadow is acknowledged as part of the suspended object, or regenerate the background as an empty matte pigment plane whose value sits closer to the source's mid-gray luminance to reduce the ambient clash."
+    },
+    {
+      "type": "typography_craft_generic",
+      "problem": "Title, logo and subtitle all render in default Microsoft YaHei at modest sizes with plain left alignment; the subtitle is a two-line prose caption explaining the concept ('for eyes that read composition') instead of composed copy, and the upper band lacks the spaced editorial masthead manner the brief claims.",
+      "root_cause": "Font and tracking choices left at renderer defaults (size 46 title, 30 logo, 22 subtitle) with no hierarchy contrast or band structure beyond raw placement.",
+      "affected_layer": "typography",
+      "repair_strategy": "Within permitted layers and supplied strings, raise title size and tracking to build a true masthead band (e.g. size 58-64, tracking 6-8), drop the logo to a smaller tracked mark under it, and set the subtitle as a single measured line or tighter two-line block with increased line_height and reduced width so the lower band closes the composition instead of reading as a footnote."
+    },
+    {
+      "type": "copy_self_referential",
+      "problem": "The subtitle narrates the design mechanism ('eight index dots orbit the standing case... for eyes that read composition') rather than speaking to the buyer; it describes the poster instead of extending the brand proposition.",
+      "root_cause": "Copy written as a concept explanation for the critic rather than as campaign voice consistent with the formal, emblematic НИКА Россия register.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep identity strings НИКА / Россия / Кварц intact and rewrite the subtitle within approved copy limits to state the proposition in brand voice (e.g. a measured line about the dial's rhythm ordering the space), removing self-referential phrases about reading the composition."
+    }
+  ]
+}

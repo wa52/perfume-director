@@ -1,0 +1,15 @@
+{
+  "id": "perfume-repeat",
+  "product_category": "perfume",
+  "local_path": "assets/products/dior-jadore-retailer.png",
+  "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+  "brief": "为这款香水探索四个明显不同的商业海报方向，保留原图；仅使用实际品牌和名称，不添加价格、促销、新品或未经提供的功效。",
+  "input_sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+  "status": "ERROR",
+  "job_id": "6a369093cd8d490a8c7d93b7b3fb9100",
+  "stage": "FAILED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\9f209abd1aec",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_target": "campaign_candidate",
+  "error": "ValueError"
+}

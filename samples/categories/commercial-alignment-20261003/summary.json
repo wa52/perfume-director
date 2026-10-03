@@ -1,0 +1,22 @@
+[
+  {
+    "product_category": "perfume",
+    "status": "ERROR",
+    "stage": "FAILED",
+    "job_id": "cb96204078e34f08a16eebf428e97f72",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "watches",
+    "status": "ERROR",
+    "stage": "FAILED",
+    "job_id": "e1886a8e1fd1460ea061928629a61723",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  }
+]

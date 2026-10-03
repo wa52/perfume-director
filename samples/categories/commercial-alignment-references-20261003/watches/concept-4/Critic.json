@@ -1,0 +1,113 @@
+{
+  "pass": false,
+  "score": 91.0,
+  "dimensions": {
+    "product_fidelity": 98,
+    "composition": 90,
+    "typography": 91,
+    "background": 86,
+    "physical_integration": 92,
+    "reference_alignment": 87,
+    "creative_coherence": 93,
+    "brand_alignment": 95
+  },
+  "problems": [
+    {
+      "type": "edge_artifact",
+      "problem": "At full-canvas scale the crest contour still breaks the 'crisp vector edge' promise of the declared material: on the right flank the buckle and crown protrusions read as stepped rectangular tabs (notch near x≈760-850, y≈610-700 and a second step at y≈860-990), and the upper strap-loop arc shows a faint wobble, so the heraldic double line is not one clean continuous stroke.",
+      "root_cause": "The product_silhouette primitive is built from the dilated source alpha; small contour irregularities from the buckle, crown and strap creases survive into the enlarged crest outline.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the same bounded product_silhouette primitive (identical x=229, y=322, width=623, height=927, color #1C2830, opacity 0.92) with a smoother, uniformly dilated contour so the crest edge reads as a single crisp heraldic line; keep the empty matte ice field prompt and all other geometry untouched."
+    },
+    {
+      "type": "hierarchy",
+      "problem": "The masthead column now reads title (60px) → НИКА (36px) → 120px rule with only ~28px and ~38px gaps, so the three elements nearly merge into one dense block in the upper-left; against the vast empty ice field to the right the column feels slightly cramped rather than ceremonially spaced, weakening the editorial air the references (R4's masthead breathing room) set as benchmark.",
+      "root_cause": "Logo was enlarged to 36px and the rule moved to y=224 without re-opening the vertical rhythm of the masthead stack.",
+      "affected_layer": "typography",
+      "repair_strategy": "Open the masthead rhythm: push the decorative rule down (decoration.y ≈ 240) and/or nudge the logo to y≈168 so title, brand mark and rule carry deliberate air between them, preserving the left-flushed serif column, the locked strings and the title/product 'above' relationship."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {}
+      ]
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 168
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Upper-left mark renders 'НИКА' in spaced serif caps at bbox [86,162,218,186], exactly the permitted logo string in times.ttf at the new 36px size, sitting inside the left-flushed masthead column above the ink rule."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox [269,382,811,1188] keeps the upright looped-strap packshot; enlarged dial comparison with image 2 confirms silver Roman numerals, framed date aperture at twelve showing '10', НИКА logotype and monogram, РОССИЯ above and КВАРЦ below the recessed small-seconds, doubled crown-like winding elements, quilted black strap with tan lining and original polished-case highlights, all unaltered."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [189,1048,891,1298] (image 6) shows the strap-loop base at y=1188 seated on a soft darker contact pool inside the crest ink; shadow kind=contact, offset_y=0, opacity 0.35, blur 10. Graphic scene_mode declares a printed field, so no photographic floor is required and none is forced."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry index 0 (product_silhouette) bbox [229,322,852,1248] with crosses_canvas_edge=false; crest halo around the product is even (40px left, 41px right, 60px top, 60px bottom); title [86,79,853,134], logo [86,162,218,186] and subtitle [86,1260,630,1313] all lie inside the 1080x1440 canvas with comfortable margins."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Uniform matte diffuse ice-blue field matches the source's soft diffuse studio light on polished metal with no cast-gradient conflict; no softbox, lamp, stand or camera artifacts anywhere in frame."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title, logo and subtitle bboxes are fully inside the canvas; the subtitle wraps to two balanced lines ending at x=630, y=1313 with no orphan fragment and no glyph clipped at any edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap is false for title, subtitle and logo; the subtitle block [86,1260,630,1313] clears the product bbox [269,382,811,1188] on the y axis (product base 1188 < 1260), so no both-axis intersection exists."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc renders the CJK title and subtitle, times.ttf renders the НИКА mark; both are in the approved installed list and no fallback boxes or tofu appear in the render."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Logo НИКА spelled correctly; dial strings НИКА/РОССИЯ/КВАРЦ untouched; no invented model number, certification, gemstone grade or heritage claim; price layer intentionally empty per copy_policy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '轮廓本身，就是一枚徽记。' and the subtitle describe exactly this silhouette-crest proposition (the outline acting as heraldic device with the real watch seated inside its own emblem); the wording could not be swapped onto a generic watch advertisement."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The concentric double contour is unmistakable in image 1: an even deep-ink halo surrounds the whole watch so the silver case and black dial read as struck metal seated inside its own crest, and the masthead rule under НИКА locks the ceremonial column rhythm."
+    }
+  },
+  "reported_score": 89.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

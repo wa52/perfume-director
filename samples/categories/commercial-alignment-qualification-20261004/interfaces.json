@@ -1,0 +1,297 @@
+{
+  "scope": "registered node interfaces and saved presets; not commercial visual certification",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "workflows": [
+    {
+      "path": "workflows/categories/beverage.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/categories/footwear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/categories/skincare.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/categories/watches.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-activewear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-knitwear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-outerwear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-shirt.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-tailoring.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-trousers.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear-tshirt.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/menswear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-activewear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-dress.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-knitwear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-outerwear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-shirt.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-skirt.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-tailoring.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-trousers.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear-tshirt.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": true,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/clothing/womenswear.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/composite.api.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/director-loop.ui.json",
+      "role": "automatic_director",
+      "quality_profile": "commercial-v2-aligned-20261003",
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/harmonization-2d.api.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/harmonization-2d.ui.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/material-relight-mage.api.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/material-relight-mage.ui.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    },
+    {
+      "path": "workflows/z-image-background.api.json",
+      "role": "render_component",
+      "quality_profile": null,
+      "commercial_visual_quality_verified": false,
+      "registered_interfaces_ok": true,
+      "issues": [],
+      "requires_product_upload": false,
+      "full_visual_run_verified": false
+    }
+  ],
+  "all_registered_interfaces_ok": true
+}

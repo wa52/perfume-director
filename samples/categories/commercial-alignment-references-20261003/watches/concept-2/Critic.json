@@ -1,0 +1,118 @@
+{
+  "pass": false,
+  "score": 90.3,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 89,
+    "typography": 89,
+    "background": 90,
+    "physical_integration": 90,
+    "reference_alignment": 86,
+    "creative_coherence": 91,
+    "brand_alignment": 93
+  },
+  "problems": [
+    {
+      "type": "visual_event_underresolved",
+      "problem": "The orbit's top (540,446) and bottom (540,1120) index dots are fully occluded by the product layer, and the diagonal dots are half-tucked behind the strap loop, so the 'eight detached index marks' proposition reads as six small floating specks; the claimed dial-geometry-projection event is only partially visible.",
+      "root_cause": "Orbit radius chosen inside the product's bounding box while shapes render behind the product layer, so hour positions at 12 and 6 vanish and diagonals collide with the strap silhouette.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-place background.shapes with the complete eight-dot list on a wider orbit clear of the product bounds (e.g. centers near (540,300), (800,470), (900,790), (800,1110), (540,1280) adjusted to keep base <=94% and sides 5-95%, (280,1110), (180,790), (280,470) as upper-left coords for ~40-48px dots), so all eight marks read as one deliberate ring around, never behind, the case."
+    },
+    {
+      "type": "scale_hierarchy_weakness",
+      "problem": "32px dots against a 544x806px packshot are near-invisible at poster scale; the orbit reads as dust or print defects rather than an index system, weakening the hierarchy between hub and projected marks.",
+      "root_cause": "Dot diameter set without relating mark weight to case diameter or viewing distance; no size modulation to express hour-position gravity.",
+      "affected_layer": "scene",
+      "repair_strategy": "Increase dot diameters to roughly 44-56px within the same eight-position orbit list, keeping flat opaque #F2F5EF fills and clean printed edges, so the ring carries visual weight comparable to the dial's own indices."
+    },
+    {
+      "type": "light_ground_conflict",
+      "problem": "The packshot retains its baked-in soft light-gray studio ambience and a faint contact shadow under the strap loop, which contradicts the declared shadowless uniform matte pigment plane and makes the cutout feel pasted onto the viridian field.",
+      "root_cause": "Source photographed on light-gray ground with diffuse studio light and contact shadow, composited onto a flat graphic field without reconciling the declared integration (cast_opacity 0) with the shadow actually visible in the source pixels.",
+      "affected_layer": "product",
+      "repair_strategy": "Do not relight the opaque source; instead declare the presentation honestly: keep scene_mode graphic, set integration_plan.cast_opacity around 0.18-0.25 with cast_blur 8-14 and cast_length_ratio near 0.06 so the observed source contact shadow is acknowledged as part of the suspended object, or regenerate the background as an empty matte pigment plane whose value sits closer to the source's mid-gray luminance to reduce the ambient clash."
+    },
+    {
+      "type": "typography_craft_generic",
+      "problem": "Title, logo and subtitle all render in default Microsoft YaHei at modest sizes with plain left alignment; the subtitle is a two-line prose caption explaining the concept ('for eyes that read composition') instead of composed copy, and the upper band lacks the spaced editorial masthead manner the brief claims.",
+      "root_cause": "Font and tracking choices left at renderer defaults (size 46 title, 30 logo, 22 subtitle) with no hierarchy contrast or band structure beyond raw placement.",
+      "affected_layer": "typography",
+      "repair_strategy": "Within permitted layers and supplied strings, raise title size and tracking to build a true masthead band (e.g. size 58-64, tracking 6-8), drop the logo to a smaller tracked mark under it, and set the subtitle as a single measured line or tighter two-line block with increased line_height and reduced width so the lower band closes the composition instead of reading as a footnote."
+    },
+    {
+      "type": "copy_self_referential",
+      "problem": "The subtitle narrates the design mechanism ('eight index dots orbit the standing case... for eyes that read composition') rather than speaking to the buyer; it describes the poster instead of extending the brand proposition.",
+      "root_cause": "Copy written as a concept explanation for the critic rather than as campaign voice consistent with the formal, emblematic НИКА Россия register.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep identity strings НИКА / Россия / Кварц intact and rewrite the subtitle within approved copy limits to state the proposition in brand voice (e.g. a measured line about the dial's rhythm ordering the space), removing self-referential phrases about reading the composition."
+    }
+  ],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Tracked НИКА mark renders at text_bbox [86,172,196,195] in pale #F2F5EF ink, matching the supplied identity string and the dial logotype; no other brand marks added."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Case, doubled crowns, looped quilted strap with tan lining, Roman indices, framed date at twelve and recessed small-seconds match the source cutout pixel-for-pixel; product_bbox [269,403,811,1209] keeps original aspect, upright pose, single instance, no rotation or crop."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [189,1069,891,1319] shows a soft dark contact shadow hugging the strap-loop base at product_base_y 1209 with shadow offset_y 0 and opacity 0.35; graphic scene_mode declares a printed pigment plane, and the visible contact cue confirms the watch is seated, not floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "All eight orbit ellipses report crosses_canvas_edge false; product bbox and title/subtitle/logo bboxes sit fully inside the 1080x1440 canvas with comfortable margins (top band from y=79, subtitle ends y=1351)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source soft diffuse studio light on the opaque polished case and quilted strap is preserved unmodified; the regenerated field declares uniform matte diffuse illumination with no competing cast gradient, so baked-in highlights read naturally against the dark plane."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [86,79,701,124], logo [86,172,196,195], subtitle [97,1296,968,1351] all fully inside canvas; no glyph touches an edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "Computed text_product_overlap false for title, subtitle and logo; subtitle top 1296 clears strap base 1209 by 87 px and clears the lowest orbit dot bottom 1152 by 144 px; masthead stack no longer collides with the orbit apex dot (dot top 446 vs logo bottom 195)."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All four text layers use installed approved C:/Windows/Fonts/msyh.ttc with CJK and Cyrillic coverage; sans family matches the declared masthead manner."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА spelled exactly as supplied; dial-internal РОССИЯ and КВАРЦ remain untouched source pixels; no invented model number, certification, heritage or gemstone claim appears in copy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '表盘的节奏，越过表圈展开。' and subtitle naming eight index points orbiting the standing case describe precisely the visible projected-index orbit mechanism, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Eight pale detached dots on a wide circular orbit hubbed on the standing case form an unmistakable projected dial-index ring readable at a glance; six marks read clearly around the case while the 12 and 6 marks tuck behind strap and loop, and the contact shadow under the strap loop anchors the event."
+    }
+  },
+  "critique_notes": "Visible changes from the previous version confirm all three prior repairs landed: (1) the field now renders as the declared deep low-value viridian #26544F with uniform matte gouache value and no mottling, giving the pale orbit dots and masthead ceremonial contrast; (2) the orbit was vertically compressed (top dot center y=462, bottom dot center y=1136) so the 6-o'clock mark no longer fights the strap-base contact zone - the contact detail crop shows the shadow alone under the loop; (3) the masthead tightened (logo y 172, 48 px below title baseline zone) and the subtitle stepped to 22 px with tracking 2, so upper and lower bands carry composed weight. Remaining softness is minor: the 12 and 6 orbit dots are largely occluded by strap and loop so the ring reads as six visible marks plus two hidden anchors, and the upper band still leaves generous negative space before the orbit apex; both are intentional restraint within the declared concept and do not breach any threshold. No studio equipment, duplicates, invented labels or clipping observed; hierarchy, silhouette and graphic suspension are professionally resolved against the reference set.",
+  "reported_score": 90.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}
