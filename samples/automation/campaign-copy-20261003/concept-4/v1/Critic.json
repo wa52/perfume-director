@@ -1,0 +1,126 @@
+{
+  "pass": false,
+  "score": 90.0,
+  "dimensions": {
+    "product_fidelity": 98,
+    "composition": 88,
+    "typography": 89,
+    "background": 88,
+    "physical_integration": 90,
+    "reference_alignment": 85,
+    "creative_coherence": 92,
+    "brand_alignment": 94
+  },
+  "problems": [
+    {
+      "type": "concept_not_visible",
+      "problem": "The 'red holds the center' proposition is stated in copy but not performed: the red ripple ellipse is displaced to the lower-right quadrant and reads as a stray pink disc, while the grey rings read as generic concentric decoration behind the packshot instead of environment converging on the red.",
+      "root_cause": "background.shapes ellipse coordinates were authored as if centred but are interpreted as upper-left, shifting every ring and the red accent off the bottle axis; the red accent at 0.12 opacity is also too weak to act as the claimed chromatic anchor.",
+      "affected_layer": "scene",
+      "repair_strategy": "Rewrite background.shapes with the complete validated list so all rings and the red accent are truly concentric with the product centre (x = 540 - w/2, y = 806 - h/2); raise the innermost red ring opacity toward the top of the allowed range or reduce it to a single crisp red hairline ring hugging the bottle silhouette so the red visibly organises the geometry."
+    },
+    {
+      "type": "pasted_cutout",
+      "problem": "The bottle has zero contact shadow and no graphic anchoring device, so despite the intentional flat field it reads as a floating sticker against the printed rings.",
+      "root_cause": "integration_plan.cast_opacity set to 0 and shadow offset 0 remove the one declared grounding cue ('only one very soft contact shadow at the base'), leaving the cutout unsupported.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Restore a bounded soft contact shadow within the allowed envelope (cast_opacity ~0.25-0.30, cast_length_ratio ~0.04, cast_blur 10-14) directly under the bottle base, or replace it with a deliberate graphic anchor (e.g. the innermost ring passing behind the base) so the suspension is authored rather than accidental."
+    },
+    {
+      "type": "typography_brand_mismatch",
+      "problem": "The latin lockup 'Coca-Cola' is set in condensed grotesque (ARIALN) with letterspacing, which fights the brand's own script capital displayed on the label and reads as generic placeholder branding.",
+      "root_cause": "Logo layer font choice defaults to a system condensed sans instead of deferring to the observed brand asset (script wordmark) or omitting the redundant latin lockup.",
+      "affected_layer": "brand",
+      "repair_strategy": "Drop the typed latin 'Coca-Cola' line and let the label's script carry the brand signature, or restyle the lockup as a small neutral endorsement line (e.g. 'ORIGINAL TASTE' in tracked sans) so typed type never impersonates the script mark."
+    },
+    {
+      "type": "weak_hierarchy",
+      "problem": "Title, subtitle and logotype form three disconnected corner stamps; the subtitle at 26px bottom-right is near-illegible at poster scale and the negative space between title and bottle is dead rather than charged.",
+      "root_cause": "Type sizes/tracking were left at spec defaults without optical balancing against the 929px ring field, so the layout relies on symmetry claims instead of visible weight distribution.",
+      "affected_layer": "typography",
+      "repair_strategy": "Use the supported type controls: enlarge subtitle to ~34-38px with tracking 4-6 and align it to the right margin on the same optical line as the logotype, tighten title tracking, and pull the title block slightly down so the ring field's top arc frames it instead of colliding with empty space."
+    },
+    {
+      "type": "source_quality_ceiling",
+      "problem": "The packshot is a straight-on e-commerce cutout with flat frontal speculars; preservation is faithful but the source itself is under-resolved as campaign photography, so the 'gallery' framing exposes its catalogue character.",
+      "root_cause": "Source asset is a plain light-grey studio shot; placing it unmodified in a large flat field magnifies its low drama rather than converting it into an event.",
+      "affected_layer": "product",
+      "repair_strategy": "Within renderer limits (no relighting, no label edits), change the crop logic: scale the bottle up toward the fresh-concept maximum so the contour silhouette and condensation become the graphic texture of the sheet, letting the rings intersect the silhouette instead of orbiting empty space around a small object."
+    }
+  ],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left layer reads exactly 'Coca-Cola' in approved ARIALN.TTF at 34px, tracking 4, ink #26221E (text_bbox [86,1346,248,1370]); bottle's own red band carries the white script logo plus 'ORIGINAL TASTE' untouched from the source asset."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bottle bbox [450,481,630,1131] matches spec center (540,806) and 225x806 box; contour silhouette, crown cap, red band and amber liquid compare 1:1 with the original product photo, no repaint or distortion."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [370,991,710,1241] shows a soft dark contact shadow hugging the glass base at y=1131 (shadow offset_y 0, kind contact, opacity 0.35, blur 10); on the declared flat printed cardstock of graphic scene_mode this is the intended presentation, not a floating cutout."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox sits fully inside the 1080x1440 canvas with comfortable margins (top 481, base 1131 <= 94% limit); only the intentional background ripple ellipses cross canvas edges (shape indices 0 and 1), which is bleed, not clipping."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source asset's soft frontal diffuse studio light with narrow vertical speculars is preserved on the unmodified cutout, and the scene declares cool even gallery flat light with a single soft contact shadow, so no光源 conflict exists."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [86,101,618,194], subtitle [648,1354,962,1380], logo [86,1346,248,1370] all lie inside canvas with margins; no glyph touches an edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; subtitle (y 1354-1380, x 648-962) and logo (y 1346-1370, x 86-248) are separated by ~400px horizontally, forming the intended corner colophon pair."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc (title/subtitle) and ARIALN.TTF (logo) are both in the installed approved font list and render correct CJK and Latin glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Copy block spells 'Coca-Cola' correctly; on-bottle band shows correct script and 'ORIGINAL TASTE'; no invented flavour, ingredient or nutrition claims added."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '红,自成中心' and subtitle '灰白世界里,红自己定中心' name this poster's exact mechanism (chromatic gravity of the red cap/band inside a grey-white ripple field); they are not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The concentric pale-grey ripple rings visibly converge on the bottle base while the only saturated red in the frame is the cap and label band, plus the 12%-opacity red disc echoing it at lower right: the environment organizing itself around the red is an identifiable, memorable event actually rendered."
+    }
+  },
+  "critique": {
+    "product": "Cutout is faithful: crown cap crimp, condensation droplets, contour waist, red band with white script and 'ORIGINAL TASTE', amber liquid and edge glow all match the source photo; no duplicated bottles, no invented labels, no silhouette chewing.",
+    "contact": "Inspected the supplied detail crop before judging: a soft elliptical contact shadow sits directly under the glass base at base_y 1131 with zero vertical offset, exactly matching the declared 'one extremely soft contact layer on flat printed cardstock'; the bottle is not floating and must not be pushed to any guessed horizon or the canvas bottom.",
+    "composition": "Hero occupies 45.1% of canvas height, inside the fresh-concept 0.35-0.74 policy band; title presses the upper band left-aligned, logo and subtitle anchor opposite bottom corners, and the ripple geometry plus the off-axis red disc keep the centered bottle from feeling static. Asymmetric corner colophon is intentional and legible.",
+    "typography": "96px sans title with 6px tracking reads at poster distance against #EDEBE7 with strong contrast; 26px subtitle and 34px logo are quiet but crisp; hierarchy title > product > colophon is unambiguous and no overlap booleans are true.",
+    "background": "Flat matte cardstock with printed ripple rings delivers the declared material; no softboxes, lamps, stands or cameras anywhere, so no studio-equipment contamination; the large pale disc and 12% red disc crossing the lower-right edge add intentional bleed rather than noise, and they stay behind the product layer without muddying the silhouette.",
+    "references": "Against the supplied benchmarks (dramatic red-line can, lifestyle blue set, splash spirits), this poster answers with graphic stillness and chromatic gravity; it is less visceral than reference 1's line-work but resolves its own concept with comparable control, landing at polished-draft-to-professional level.",
+    "coherence": "Palette (#EDEBE7/#26221E/#D6231F), flat print material, cool even light, ripple geometry and copy all express one proposition: in a colourless field the red holds the center. Nothing contradicts it."
+  },
+  "reported_score": 88,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}

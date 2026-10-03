@@ -1,0 +1,15 @@
+{
+  "title": "ORIGINAL TASTE",
+  "logo": "Coca-Cola",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label shows white Spencerian script 'Coca-Cola' (brand logo) on a red wrap band, with smaller white caps line 'ORIGINAL TASTE' beneath it, copied as the product-name line; no price, category or concentration text is legible and the user supplied none, so subtitle and price are empty.",
+  "product_profile": {
+    "material": "clear glass contour bottle with red metal crown cap",
+    "color": "deep amber-brown cola liquid, bright red label band and cap, white script lettering",
+    "transparency": "translucent glass and liquid with edge glow; label band and cap fully opaque",
+    "illumination": "soft diffuse studio light from front/above, narrow vertical specular highlights on shoulders and sides, even low-contrast lighting",
+    "view": "straight-on eye-level full-bottle frontal view, symmetric silhouette, bottle standing upright",
+    "integration_limits": "observed condensation droplets on glass must not be repainted or added; opaque red label and cap cannot transmit a new background; keep plain light-grey backdrop and soft contact shadow at base"
+  }
+}

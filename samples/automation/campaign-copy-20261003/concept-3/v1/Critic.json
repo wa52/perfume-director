@@ -1,0 +1,163 @@
+{
+  "pass": false,
+  "score": 78.6,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 78,
+    "typography": 84,
+    "background": 74,
+    "physical_integration": 80,
+    "reference_alignment": 66,
+    "creative_coherence": 72,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "concept_event_not_delivered",
+      "problem": "The declared signature event is a long floor shadow whose outline narrows and curves into the Coca-Cola contour profile ('影子先到,曲线随后'). In the poster the cast shade below the base (visible from y≈1050 to y≈1300) is a faint amorphous vertical smudge with no contour curvature and almost no value contrast against the #B9B4AC-family floor, so the titular 'shadow keeps the appointment' reads as a reflection artifact, not a shaped arriving guest.",
+      "root_cause": "background.prompt describes the contour-tapering shade only verbally; the generated floor rendered a generic soft smear at too low opacity to carry the silhouette curve.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the empty set with a prompt that states the floor shade as a clearly darker, gently S-curved tapering form extending from center base toward the foreground, still diffuse and equipment-free, so the shadow event becomes legible at poster distance."
+    },
+    {
+      "type": "lighting_value_mismatch",
+      "problem": "The unmodified source photograph is an even, low-contrast, front/above lit cutout on a light-grey backdrop. The poster places it inside a near-charcoal upper backdrop; the bright neck glass and white script now sit against a dark wall while the base sits on a much lighter floor pool, so the product looks lit for a different room than the set. The strong horizontal floor/wall tonal break at y≈800 behind the bottle also cuts the silhouette at label height.",
+      "root_cause": "background.prompt asked for 'dusk-grey... dimmer grey backdrop' producing a dark wall, conflicting with the observed soft bright studio illumination of the source asset.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with a mid-grey seamless cyc whose value stays close to the source backdrop, brightest around the product column, gradient only gentle, so the cutout's own lighting remains believable."
+    },
+    {
+      "type": "weak_cast_shadow_support",
+      "problem": "integration_plan cast values (opacity 0.28, blur 30) plus shadow.opacity 0.35 produce a floor shade so faint that the contact cue in the enlarged crop [543,905,883,1155] is a barely-there darkening under the glass base; contact exists (base_y 1045 meets the shade with no gap), but the grounding reads tentative rather than settled, and the 'long shadow' half of the concept carries almost no ink.",
+      "root_cause": "Cast opacity/blur tuned for whisper-soft dusk instead of a legible diffuse elongation.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Raise integration_plan.cast_opacity toward its 0.3 ceiling, tighten cast_blur slightly and raise shadow.opacity so the contact and the elongated shade read as one continuous event; keep offset_y at 0 because contact is correctly aligned."
+    },
+    {
+      "type": "typography_hierarchy_imbalance",
+      "problem": "The vertical serif title (white, x≈86-188, y≈288-724) holds the left column well, but the subtitle at size 28 (y≈886-912) and the latin logo at size 36 (y≈1037-1064) are visually thin against the 110pt title and the 650px-tall bottle; from viewing distance the left column collapses to one stroke of white and two grey whispers, leaving the lower-left quadrant under-anchored versus the references' confident type blocks.",
+      "root_cause": "Subtitle/logo sizes and tracking set for page reading, not poster distance; no size relationship bridges title to logo.",
+      "affected_layer": "typography",
+      "repair_strategy": "Increase subtitle size and logo size modestly and add tracking to the logo so the left column reads as three deliberate steps; keep exact copy, left alignment and the reserved white band."
+    },
+    {
+      "type": "reference_quality_gap",
+      "problem": "References 3-5 each commit to one dominant crafted gesture (sculpted liquid lines, staged color field, splash crown). This poster's single gesture - the contour shadow - is present only as a vague smudge, so against those benchmarks the execution reads competent-but-unfinished: clean cutout, safe asymmetry, unresolved hero event.",
+      "root_cause": "Concept ambition exceeds the rendered scene's contrast budget.",
+      "affected_layer": "scene",
+      "repair_strategy": "Spend the poster's contrast on the shadow form (problem 1) and calm the backdrop (problem 2) so one crafted gesture dominates, matching reference-level resolve without changing genre or palette."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Mid-grey seamless studio cyclorama, value close to a light-grey product backdrop, gentle vertical gradient darkest only at the top corners, floor slightly lighter than the wall with no hard horizon line, one clearly visible diffuse floor shade in a darker grey stretching from the center base toward the foreground, its outline tapering and bending in a soft S-curve like an elongated bottle contour, soft diffuse frontal overhead illumination, empty set, no visible equipment"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "integration_plan.cast_blur",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 42
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 4
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Lower-left latin lockup reads 'Coca-Cola' in the approved GOTHIC.TTF style, and the bottle's red band carries the white script plus 'ORIGINAL TASTE' exactly as in the source asset."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox [623,395,803,1045] keeps the symmetric contour silhouette, red crown cap and full label band identical to the original crop; no warp or clipping at canvas edges."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Enlarged contact crop [543,905,883,1155] shows the glass base meeting a soft dark contact shade at base_y 1045 with no daylight gap; shadow offset_y 0 is correct, though faint (flagged as a strength problem, not absence)."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against the grey cyc are smooth with no halo fringe except a negligible bright rim at the glass foot that reads as base highlight; no duplicate bottles or invented labels anywhere."
+    },
+    "lighting_consistent": {
+      "ok": false,
+      "evidence": "Source asset is evenly front/above lit on light grey; the poster's near-charcoal upper wall and bright floor pool contradict that illumination, making the pasted cutout's brightness read as a different studio."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [86,288,188,724], subtitle [86,886,337,912], logo [86,1037,304,1064] all sit fully inside the 1080x1440 canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; no layer intersects the product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc renders the CJK title/subtitle and GOTHIC.TTF renders the latin logo; both are in the installed approved list and glyph coverage is visibly complete."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly in both the logo layer and the on-bottle band; no stray brand text generated."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'一影赴约' and '影子先到,曲线随后' name this poster's exact shadow-arrival mechanism and contour curve; they are not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable relationship (shadow arriving first with a contour-curved outline) is only a faint straight smudge in the render, so the intended visual event is not actually identifiable at poster distance."
+    }
+  },
+  "reported_score": 74,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:lighting_consistent",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 42,
+  "background": {
+    "color": "#E7E3DC",
+    "prompt": "Pale warm-grey micro-cement horizontal surface continuous into a plain light-grey backdrop; one clearly readable coherent ring of condensation mist and two faint concentric water rings tightly encircling the central contact point, a few crisp scattered droplets clustered within one ring-width of that point, slightly damp darker cast zone at the contact, smooth uninterrupted surface across the lower third, soft diffuse frontal overhead light, calm even gradient",
+    "revision": 1,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 605,
+    "width": 209,
+    "height": 749
+  },
+  "lighting": "柔和漫射前上光包裹玻璃,竖向窄高光保留,接触影软而微湿",
+  "palette": [
+    "#E7E3DC",
+    "#2A2622",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "落座即现场",
+    "x": 86,
+    "y": 1075,
+    "size": 92,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 4,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "一圈水痕,是它刚到的证据",
+    "x": 86,
+    "y": 1225,
+    "size": 30,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 778,
+    "y": 1080,
+    "size": 44,
+    "color": "#2A2622",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "pale micro-cement",
+    "cast_length_ratio": 0.08,
+    "cast_opacity": 0.25,
+    "cast_blur": 14
+  }
+}

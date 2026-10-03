@@ -42,7 +42,7 @@ def main():
             raise ValueError('Pilot lacks accepted semantic review; re-plan instead of rendering layout variants')
         if hashlib.sha256(product.read_bytes()).hexdigest()!=identity['source_sha256']:raise ValueError('Pilot product changed after planning')
         plan=saved['directions'][args.direction-1]
-        config.update(initial_spec=plan['initial_spec'],direction_id=plan['id'],approved_copy=saved['approved_copy'],
+        config.update(initial_spec=plan['initial_spec'],direction_id=plan['id'],approved_copy=plan.get('approved_copy',saved['approved_copy']),
             product_profile=saved['product_profile'],creative_direction=plan,planning_trace=str(folder/'Concepts-call.json'),
             references=[row for row in saved['references'] if row['id'] in plan['reference_ids']])
         config['commercial_creative']=creative

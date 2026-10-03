@@ -1,0 +1,119 @@
+{
+  "pass": false,
+  "score": 76.3,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 74,
+    "typography": 84,
+    "background": 62,
+    "physical_integration": 90,
+    "reference_alignment": 66,
+    "creative_coherence": 62,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "concept_execution_failure",
+      "problem": "The painted wall shape is still not the bottle's own contour enlarged. Evidence: the charcoal form (approx x250-835, y320-920) is a squat jug/tag outline ~585px wide by ~600px tall (aspect ~0.97) while the real bottle is ~180px wide by ~650px tall (aspect ~0.28); its neck is a straight trapezoid and the body sides run straight with no cinched waist or base flare, so no viewer can read it as the same curve. The recognition event 'the contour answers its own name' therefore remains invisible. Root cause: background prompt described the contour in words but generation returned a generic wide vessel slab. Affected layer: scene. Repair: regenerate with a shape description that encodes the proportion (very tall narrow silhouette, width about one third of height, waisted midsection, flared foot) without naming the product.",
+      "root_cause": "generated wall graphic ignores the slender contour proportion and waist curve declared by the concept",
+      "affected_layer": "scene",
+      "repair_strategy": "regenerate background prompt specifying an extremely narrow tall flat painted contour with waist cinch and flared foot, proportion ~1:3.5 width:height"
+    },
+    {
+      "type": "alignment_event_missing",
+      "problem": "The declared counterpoint seam is broken: the painted shape's bottom edge stops at y~920, a pale wall band (~100px) remains between it and the wall-floor junction (~y1020), and the real bottle (base y1161) extends ~240px below the shape instead of visually filling its lower half. Evidence: visible light gap under the charcoal slab and bottle base standing on open floor well below the shape. The concept requires the silhouette to rise from the floor line so the standing cutout occupies its lower section. Root cause: shape placed and cropped mid-wall by the generator. Affected layer: scene. Repair: same regeneration, stating the painted contour meets the floor line and towers above the standing object's height.",
+      "root_cause": "painted contour does not reach the floor line, so object-to-silhouette alignment cannot register",
+      "affected_layer": "scene",
+      "repair_strategy": "include 'shape base coincides with the wall-floor junction line' in the regenerated prompt"
+    },
+    {
+      "type": "background_value_drift",
+      "problem": "The wall renders noticeably lighter and cooler (near-white, approx #DCDCDA in the upper field) than the declared matte mineral grey #C9C6C0, flattening the tonal plan: the charcoal shape and the dark ink now sit on an almost white field, losing the muted mineral mood of the concept and reducing the shape's matte paint presence. Evidence: side-by-side with the spec palette and the previous revision's grey; current wall reads white-grey with a faint cool cast. Root cause: 'pale ... no vignette' wording pushed value up during regeneration. Affected layer: scene. Repair: restate the exact mid-light mineral grey value and matte paint texture in the prompt while keeping even diffuse light.",
+      "root_cause": "regeneration over-lightened the wall value away from the palette grey",
+      "affected_layer": "scene",
+      "repair_strategy": "regenerate with explicit mid-light warm-grey mineral paint value, even diffuse frontal overhead light, no vignette"
+    },
+    {
+      "type": "hierarchy_weakness",
+      "problem": "With the silhouette mis-proportioned and floating, the hero bottle (height ratio 0.4514, within the 0.35-0.74 policy) still reads as a small object in a large empty room: wide dead wall bands left (x0-250) and right (x835-1080) and a tall empty floor apron (y1161-1440) carry no compositional charge, unlike references 3-5 where the subject or its graphic field commands the frame. This is an artistic hierarchy concern, not a size-rule violation. Root cause: the missing alignment event leaves negative space unmotivated. Affected layer: composition. Repair: once the contour renders at correct proportion and floor contact, the paired shapes will activate the negative space; no product resize needed if the event lands.",
+      "root_cause": "visual event absent so declared negative space reads as emptiness",
+      "affected_layer": "composition",
+      "repair_strategy": "fix background contour first; reassess scale only if hierarchy remains thin"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Evenly lit mid-light warm mineral grey matte painted studio wall (value of pale stone grey, not white) meeting a continuous fine-ground cement floor at a low horizon; one oversized flat matte charcoal painted contour shape on the wall, extremely narrow and tall with width about one third of its height, small crown-top neck, sloped shoulders, clearly cinched waist and gently flared foot, its base coinciding exactly with the wall-floor junction line and its top rising into the upper third of the wall; perfectly even diffuse frontal overhead illumination, uniform low contrast, flat matte roller-grained paint edges, no vignette, no hotspots, no equipment"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup 'Coca-Cola' in Baskville serif at bbox 76,1330-232,1353, dark ink on light floor, matching approved logo copy; bottle label script also intact."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox 450,511-630,1161 shows the unchanged contour bottle: red crown cap, neck, sloped shoulders, waisted body and base curve identical to image 2, no distortion after the 1.12 scale patch."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [370,1021,710,1271] shows the glass base seated on cement with a soft dark contact shadow hugging the footprint; shadow offset_y 0 is correct contact, no floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Enlarged base crop and shoulder zones show crisp cutout boundaries against wall and floor with no halo, fringe or duplicate artifacts."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Wall and floor now carry even diffuse frontal-top light with no vignette or hotspots, matching the source asset's soft studio illumination and narrow vertical shoulder highlights; previous revision's dark vignette is gone."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 76,108-699,191, subtitle 76,223-389,253 and logo 76,1330-232,1353 all lie fully inside the 1080x1440 canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no two-axis intersection with product bbox 450,511-630,1161."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc renders the Chinese title/subtitle and BASKVILL.TTF the Latin lockup; both are in the installed approved list with correct glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly in the lockup and on the red label band, with 'ORIGINAL TASTE' legible beneath the script."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 一眼即识的曲线 and subtitle 不必读名,轮廓已作答 state this poster's shape-recognition proposition rather than interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable object-to-enlarged-contour alignment is still not visible: the wall carries a squat wide jug slab whose proportions and missing waist do not match the bottle, and its base floats above the floor line, so no recognition seam exists; only a bottle in front of an unrelated dark tag shape remains."
+    }
+  },
+  "reported_score": 74.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

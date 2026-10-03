@@ -149,6 +149,8 @@ def compose(engine,spec,product,background,font,zones,guide_before=None,guide=No
     values[:,:,:3]=encoded(surface)
     corrected=Image.fromarray(values)
     scene=background.convert('RGB').resize(canvas_size,Image.Resampling.LANCZOS)
+    if spec['background'].get('shapes'):
+        scene=engine.graphic_module().compose(scene,spec['background']['shapes'],product.convert('RGBA')).convert('RGB')
     if wrap_zones:corrected=ambient_wrap(corrected,scene,px,py,wrap_zones)
     # Preserve the clean background: guide-generated wall shadows never enter this scene.
     cast=Image.new('RGBA',canvas_size,(0,0,0,0))

@@ -1,0 +1,136 @@
+{
+  "pass": false,
+  "score": 85.9,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 85,
+    "typography": 88,
+    "background": 80,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "ripple_system_misalignment",
+      "problem": "The generated thin ink rings no longer sit at shoulder height (previous version) but now read as flattened perspective ellipses whose arcs appear only at the left (~x55-200, y830-955) and right (~x880-1050, y830-955) margins, i.e. centered near y~890, while the two deterministic filled discs are centered at (540,1131) and the contact crop [370,920,710,1170] proves the true base plane at y=1060 with its soft contact shadow intact. Three different convergence altitudes (890 / 1060 / 1131) keep the 'grey world settles onto the red' event split, and the thin rings still stop short of the left and right canvas edges instead of cropping off all four sides as the concept's full-bleed gravity gesture requires.",
+      "root_cause": "background.prompt ring geometry was re-declared only verbally ('lower third'); the regenerated scene interpreted the rings as perspective floor ripples at mid-height instead of printed concentric circles co-centered with the deterministic disc stack at the base point.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate background with a prompt that forces flat printed concentric CIRCLES (not perspective ellipses) co-centered with the filled discs at (540,1131), running edge to edge and cropping off all four sides, on flat cardstock under cool even gallery light, no horizon, no objects, no equipment."
+    },
+    {
+      "type": "weak_center_pull",
+      "problem": "The deepened discs (#D8D4CD / #E1DED8 at 0.9) now read as deliberate printed ink (visible improvement over the previous near-invisible wash), but the bottle occupies only width ratio 0.1667 inside a ~930px disc field, so between the red band (~y660-770) and the disc rim the center still relies on a single small chromatic anchor; versus references 3 and 5, where the hero form or ripple system dominates the frame, the gravity event reads quiet rather than commanding.",
+      "root_cause": "Product scale kept at height ratio 0.4514 (legal under fresh_concept_size_policy 0.35-0.74) while the ripple field was enlarged; the size contrast between anchor and field was never re-balanced artistically.",
+      "affected_layer": "scene",
+      "repair_strategy": "Artistic resize within policy: enlarge product to height ratio ~0.55 (height ~792->900, width keeping source aspect ~256) with center_y = target_base_y - actual_height/2 so the base stays at 1060 and the whole bottle plus shadow remains inside canvas; keep the disc stack unchanged so convergence tightens on a stronger red anchor."
+    },
+    {
+      "type": "colophon_baseline_drift",
+      "problem": "The bottom corner lockup is closer than before (subtitle now size 30 at bbox (648,1350)-(1007,1380), logo (86,1346)-(248,1370)) but the subtitle cap line still starts ~4px lower and its ink block ends 10px below the logo block, and its right margin (73px) no longer matches the logo's left margin (86px), so the intended symmetric corner colophon reads slightly slipped rather than locked.",
+      "root_cause": "Subtitle y was set to 1350 against logo y 1346 without compensating for the different font metrics (msyh vs ARIALN) and without mirroring the side margins.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set subtitle.y to 1346 and subtitle.x to 994 (right edge 1080-86=994 margin mirror) keeping size 30 and exact copy, so both corner inks share one optical baseline and equal 86px side margins."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Flat grey-white matte cardstock with fine paper tooth, three concentric thin printed pale-grey ink circles perfectly flat and frontal, co-centered with a point at canvas coordinates 540 by 1131 in the lower third, circles expanding edge to edge and cropping off all four sides, cool even gallery illumination, completely flat printed surface, no horizon, no perspective ellipses, no gradient hotspot, no objects, no equipment"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 256
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 610
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1346
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 994
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left 'Coca-Cola' lockup in ARIALN.TTF at (86,1346)-(248,1370), uncropped, correct letterspacing, matches approved copy."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered contour bottle, crown cap, red band, amber liquid and original condensation match the source cutout; bbox [450,410,630,1060] keeps source aspect with no repaint or added droplets."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [370,920,710,1170] shows the soft dark contact shadow hugging the glass base at y=1060 with shadow offset_y 0; no floating, no displaced shadow, base sits above bottom edge per layout policy."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox fully inside canvas; only intentional background ellipse bleed crosses edges; title, subtitle and logo all inside margins."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Cool even gallery flat light matches the source's diffuse frontal studio illumination and narrow specular highlights; single soft contact shadow per integration_plan, no cast artifacts or equipment."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (86,101)-(618,194), subtitle (648,1350)-(1007,1380), logo (86,1346)-(248,1370) all within canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap false for title, subtitle and logo; no two-axis intersection with product bbox [450,410,630,1060]."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc for CJK title/subtitle and ARIALN.TTF for logo are in the approved installed list and render with full glyph coverage."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly; label script and ORIGINAL TASTE untouched from the source photograph."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 红,自成中心 and subtitle 灰白世界里,红自己定中心 state this poster's chromatic-gravity proposition rather than interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable event (grey world rippling toward the red) is still split across three altitudes: thin perspective rings at y~890, contact plane at 1060, disc centers at 1131, so a single readable gravity point is not yet achieved."
+    }
+  },
+  "reported_score": 83.9,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

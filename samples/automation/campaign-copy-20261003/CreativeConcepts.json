@@ -1,0 +1,46 @@
+{
+  "brand_analysis": {
+    "observed_brand": "Coca-Cola (可口可乐 contour glass bottle line, as presented by the supplied asset and copy block)",
+    "evidence": "Red metal crown cap; bright red label band with white script lettering reading 'Coca-Cola' and 'ORIGINAL TASTE'; clear glass contour bottle filled with deep amber-brown cola; observed condensation droplets on the glass; straight-on eye-level studio shot on a plain light-grey backdrop with soft contact shadow and narrow vertical specular highlights.",
+    "expression_hypothesis": "The asset's own graphic capital is the contour silhouette, the red band plus white script, and the visible chilled condensation; a campaign can therefore speak through shape-recognition, presence-and-arrival events, and restrained studio stillness around an untouched cutout, letting 'ORIGINAL TASTE' carry the verbal message while the scene supplies the visual event.",
+    "unknowns": "No brand history, founding dates, market positioning, prior campaign lines, pricing, portfolio role or regional guidelines were supplied; nothing beyond the observed asset and the copy block 'ORIGINAL TASTE' / 'Coca-Cola' may be treated as established fact."
+  },
+  "concepts": [
+    {
+      "id": "c1",
+      "name": "一眼即识的曲线 (The Curve That Needs No Name)",
+      "proposition": "The contour silhouette alone identifies the product, so the广告 celebrates recognition by shape rather than by logo reading; the Chinese title reads 一眼即识的曲线 with subtitle 不必读名,轮廓已作答, paired with the approved line ORIGINAL TASTE.",
+      "visual_mechanism": "A recognition event: an oversized monochrome contour-bottle silhouette is painted flat onto the backdrop wall as part of the generated empty set, and the untouched real bottle stands in front of it at floor level so that, from the fixed eye-level view, the real amber bottle visually 'fills' the lower portion of its own giant silhouette; the moment of alignment between object and its enlarged shadow-shape is the visual event that proves the curve is legible without any lettering.",
+      "audience": "Design-literate urban consumers and social-media scrollers who process brand shapes faster than words.",
+      "brand_connection": "Uses only observed assets: the symmetric contour silhouette, the red band and white script remain untouched on the cutout while the wall silhouette echoes the same observed curve in a single neutral tone.",
+      "source_constraints": "Cutout preserved whole with original label, shape, droplets and RGB illumination; the wall silhouette is generated scenery, not a repaint of the product; soft diffuse front/above light and soft contact shadow kept; no droplets added to the glass; no history, efficacy, price or new-product claims."
+    },
+    {
+      "id": "c2",
+      "name": "落座即现场 (The Table Becomes the Event)",
+      "proposition": "The bottle's arrival transforms an ordinary surface into a charged scene, so the广告 sells presence and moment rather than product facts; Chinese title 落座即现场 with subtitle 一圈水痕,是它刚到的证据, alongside ORIGINAL TASTE.",
+      "visual_mechanism": "An arrival event: on an otherwise empty pale tabletop the generated set supplies a coherent ring of condensation mist, faint water rings and scattered droplets on the surface around and behind the base, plus a slightly damp cast-shadow zone, as if the chilled bottle was just set down; the bottle itself keeps its observed droplets untouched while the surrounding surface tells the story of contact and temperature through the trace it leaves.",
+      "audience": "Everyday mealtime and home-gathering consumers who associate the bottle with a shared table moment.",
+      "brand_connection": "The red cap and label band act as the single saturated anchor in an otherwise neutral wet-surface scene, matching the observed studio illumination so the cutout never looks relit.",
+      "source_constraints": "Moisture exists only on the generated surface around the product, never repainted or added onto the cutout; label and cap opacity unchanged; plain light-grey backdrop retained; contact shadow soft; no efficacy, price, new-product or history statements."
+    },
+    {
+      "id": "c3",
+      "name": "一影赴约 (One Shadow Keeps the Appointment)",
+      "proposition": "Even the bottle's shadow carries the contour identity, so the广告 frames the product as an expected guest whose shadow arrives across the floor first; Chinese title 一影赴约 with subtitle 影子先到,曲线随后, paired with ORIGINAL TASTE.",
+      "visual_mechanism": "A shadow-travel event: within the generated empty set a single long, low cast shadow stretches from the bottle base across a plain floor toward the viewer, the shadow's outline visibly narrowing and curving in the contour profile so the floor reads as a path already walked; the standing bottle remains upright and frontal while its elongated floor shadow performs the motion the product itself never makes.",
+      "audience": "Evening and night-time occasion drinkers, plus out-of-home viewers who read posters from a distance where the long shadow guides the eye.",
+      "brand_connection": "The shadow reproduces only the observed silhouette geometry; the amber liquid, red band and crown cap stay exactly as captured, so identity travels through shape physics rather than added graphics.",
+      "source_constraints": "Shadow is a permitted floor cast/contact shadow consistent with soft front/above studio light, rendered as a diffuse elongation rather than a hard relight; cutout, droplets, label and illumination untouched; no people generated; no forbidden claims."
+    },
+    {
+      "id": "c4",
+      "name": "红,自成中心 (Red Holds the Center)",
+      "proposition": "In a colourless environment the observed red band and cap alone organise the whole frame, so the广告 proposes chromatic gravity as the message; Chinese title 红,自成中心 with subtitle 灰白世界里,红自己定中心, alongside ORIGINAL TASTE.",
+      "visual_mechanism": "A chromatic-gravity event: the generated empty set is a vast desaturated grey-white studio void in which faint concentric tonal bands in the floor and backdrop gradient converge toward the bottle base like ripples settling around a fixed point, so the scene's own geometry appears organised by the red label and cap; the visual event is the environment orienting itself to the product's colour, not the product being decorated.",
+      "audience": "Fashion- and art-oriented young adults who respond to bold minimal colour statements in retail and gallery-adjacent media.",
+      "brand_connection": "Relies strictly on observed colours: bright red band and cap against white script, set into a neutral grey world that echoes the original light-grey backdrop and even low-contrast lighting.",
+      "source_constraints": "Background gradients and ripple bands are generated scenery only; no relighting, no repaint of label or cap, no added droplets on the glass, cutout pose and RGB illumination preserved; copy limited to approved words plus the authored Chinese lines; no efficacy, price, new-product or history claims."
+    }
+  ]
+}

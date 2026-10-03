@@ -1,0 +1,154 @@
+{
+  "pass": false,
+  "score": 77.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 76,
+    "typography": 86,
+    "background": 66,
+    "physical_integration": 88,
+    "reference_alignment": 70,
+    "creative_coherence": 60,
+    "brand_alignment": 85
+  },
+  "problems": [
+    {
+      "type": "concept_execution_failure",
+      "problem": "The painted wall shape is a generic round-topped arch (approx x180-1030, y240-990) with straight vertical sides, not the enlarged contour-bottle curve the concept requires; the real bottle (bbox 450-630 x, 561-1211 y) is far narrower than the arch, so the promised 'recognition event' - real contour filling the lower half of its own giant silhouette - never happens and the alignment seam is absent.",
+      "root_cause": "background.prompt asked the generator for a contour silhouette but the generated scenery returned an arch niche; no deterministic shape primitive was used to guarantee the contour.",
+      "affected_layer": "scene",
+      "repair_strategy": "Replace the generated contour with the bounded product_silhouette primitive derived from the original alpha, sized so the real bottle fills its lower portion, and empty the prompt of contour language so only wall/floor material and light regenerate."
+    },
+    {
+      "type": "background_value_contrast",
+      "problem": "The generated wall carries a lateral gradient and vignette that darken toward center-right behind the headline zone; the measured ink on that mid-value grey reads muddy rather than crisp luxury ink, and the uneven wall contradicts the declared even, hotspot-free diffuse light.",
+      "root_cause": "Generated wall tonality drifted darker than the palette anchor #C9C6C0 while ink stayed #23201C at low local contrast.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with an explicitly light, even mineral-grey wall value and lift title/subtitle ink toward the palette charcoal only where the wall stays light; keep diffuse frontal-overhead illumination wording without equipment names."
+    },
+    {
+      "type": "hierarchy_scale",
+      "problem": "Product height ratio is 0.4514 (valid per fresh_concept_size_policy) but against the oversized arch the bottle reads small and recessive; the hero event of the campaign sits at under half canvas height while a non-identifying arch dominates the frame.",
+      "root_cause": "Silhouette primitive was never bounded to the product aspect, so scenic mass outweighs the packshot.",
+      "affected_layer": "composition",
+      "repair_strategy": "Enlarge product to ~0.55 height ratio (center y recomputed from target base) and bind the silhouette primitive to the same contour so scale contrast becomes intentional instead of accidental."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {}
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Matte mineral grey painted studio wall in a light even value close to pale warm grey, meeting a continuous fine-ground cement floor at a low horizon, soft diffuse frontal overhead illumination, completely even low contrast across the wall, no gradient vignette, no painted shapes, no visible equipment"
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 306
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 1097
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 662
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#141210"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#141210"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left layer renders the authorized string 'Coca-Cola' exactly, uncropped at bbox 76,1361-232,1384, and the bottle's own red band carries the untouched white script wordmark."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bottle bbox 450,561-630,1211 matches the source contour bottle proportion (width/height ~0.28 vs source ~0.28); crown cap, shoulder curve and waist flutes identical to image 2."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop 370,1071-710,1321 shows the glass base heel darkened into a soft contact shadow seam directly beneath the base at y=1211 with shadow offset_y=0; no floating gap."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against wall and floor show no halo or fringe in the enlarged crop; droplets and glass rim remain crisp."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Narrow vertical speculars on shoulders and sides plus even low-contrast body match the declared soft diffuse front/above light; floor shadow is a single soft contact layer with no competing cast direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox 76,108-699,191, subtitle 76,223-380,253 and logo 76,1361-232,1384 all sit fully inside the 1080x1440 canvas."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap reports false for title, subtitle and logo; no layer intersects the product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Spec fonts msyh.ttc for Chinese copy and BASKVILL.TTF for the Latin logo are both in the installed approved list and render with correct glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' hyphenation and capitalization correct in the corner lockup; label band reads Coca-Cola with ORIGINAL TASTE as observed on source."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 'the curve recognized at a glance' and subtitle 'no need to read the name, the contour answers' state this poster's shape-recognition proposition and could not be swapped onto another campaign."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The intended memorable event - real bottle visually filling the lower half of its own giant painted contour - is absent; the wall shows a generic arch whose straight sides and wide dome never coincide with the bottle silhouette at any point."
+    }
+  },
+  "reported_score": 74,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

@@ -6,7 +6,8 @@ from PIL import Image, ImageFilter
 THRESHOLDS = {'product_fidelity':95, 'physical_integration':88, 'typography':88,
               'composition':88, 'brand_alignment':85, 'creative_coherence':88}
 CHECKS = ('logo_correct','shape_preserved','grounding_correct','edges_clean',
-          'lighting_consistent','text_uncropped','text_collision_free','fonts_present','brand_spelling_correct')
+          'lighting_consistent','text_uncropped','text_collision_free','fonts_present','brand_spelling_correct',
+          'copy_concept_specific','visual_memory_visible')
 
 
 def validate_creative(value):
@@ -130,14 +131,51 @@ def gate(result,geometry_issues=()):
 def review_contract():
     return (' Commercial V2: additionally score dimensions.brand_alignment; evaluate against supplied brand evidence, not invented brand history. '
         'Return commercial_checks with EVERY key '+str(CHECKS)+', each {ok:boolean,evidence:string}; unknown or unverifiable means ok:false. '
+        'copy_concept_specific checks whether words express THIS visual proposition rather than interchangeable slogans. '
+        'visual_memory_visible requires an identifiable memorable relationship/event actually visible in the poster, not merely a beautiful texture or prose intent. '
         'A graphic design can be intentionally suspended: grounding_correct then evaluates declared presentation, not an invented floor. '
         'For every problem include root_cause, affected_layer (scene/product/shadow/typography/brand), and repair_strategy. '
         'Do not assert that a guessed horizon is a contact plane; judge visible physical evidence. '
         'Current renderer preserves original RGB: do not request unsupported true relighting, glass reconstruction or label edits. '
         'For source/background light conflict regenerate the scene to match the source. '
+        'When the visual event needs the exact product contour, use a bounded background.shapes product_silhouette primitive derived from original alpha, not a guessed generated vessel. '
+        'It accepts the same x,y,width,height,color,opacity fields in canvas pixels, fits source aspect ratio inside width/height anchored at x/y; set background.prompt to EMPTY materials/light to remove any previously generated wrong contour. '
         'Bounded external cast-shadow patches allowed: integration_plan.cast_length_ratio (0..0.20), integration_plan.cast_opacity (0..0.3), integration_plan.cast_blur (2..60); preserve observed source_key_light and ground material. '
         'PASS requires thresholds '+str(THRESHOLDS)+' and every commercial check true with evidence, no remaining problems/changes. '
         'Missing evidence is a veto even at a high average score. ')
+
+
+def final_art_repair(engine,config,spec,product,poster,refs,folder,decision):
+    """Translate an independent veto into bounded edits, never an approval."""
+    prompt=(
+        'The independent Commercial Art Director rejected this rendered poster. Convert its actual root causes into supported PosterSpec patches. '
+        'Return {changes:[{path,op,value}]}. No approval or scores. If no supported repair can solve the issue return changes:[]. '
+        'Preserve exact text, logo, price, source product, canvas and seed. Never request label edits or invented relighting. '
+        'Allowed numeric product.x/y/width/height, title/subtitle/price/logo.x/y/size/tracking/max_width/line_height, '
+        'shadow.opacity/blur/offset_x/offset_y/width_scale, decoration.x/y/width, integration_plan.cast_length_ratio/cast_opacity/cast_blur. '
+        'Allowed set strings title/subtitle/price/logo.color/font/align, background.prompt/color, shadow.kind, decoration.color; '
+        'set boolean decoration.enabled; set background.shapes as a complete validated list. '
+        'Shape x/y are UPPER LEFT, product x/y are CENTER. An ellipse centred at cx,cy uses x=cx-width/2,y=cy-height/2. '
+        'Use installed approved fonts only: '+str(engine.FONT_CHOICES)+'. '+review_contract()+
+        'Independent veto: '+engine.json.dumps(decision,ensure_ascii=False)+
+        'Spec: '+engine.json.dumps(spec,ensure_ascii=False)+
+        'Geometry and safe layout bounds: '+engine.json.dumps(engine.review_geometry(config,spec,product))+
+        engine.concept_context(config))
+    error=''
+    for attempt in range(3):
+        response=engine.vision(config,prompt+error,[poster,product,*refs],folder/f'CommercialRepair-{attempt+1}-call.json')
+        engine.write(folder/f'CommercialRepairAttempt-{attempt+1}.json',response)
+        try:
+            if not isinstance(response,dict) or set(response)!={'changes'} or not isinstance(response['changes'],list):
+                raise ValueError('Commercial repair requires only a changes array')
+            engine.validate_change_shapes(response['changes'])
+            engine.apply_changes(spec,response['changes'])
+            engine.write(folder/'CommercialRepair.json',{'changes':response['changes'],'does_not_grant_pass':True})
+            return response['changes']
+        except (ValueError,KeyError,TypeError) as exc:
+            engine.write(folder/f'CommercialRepairRejected-{attempt+1}.json',{'error':str(exc),'source_identity_preserved':True})
+            if attempt==2:raise
+            error=' Previous patch rejected without applying any changes. Fix the entire list using this actual error: '+str(exc)+' Previous proposal: '+engine.json.dumps(response,ensure_ascii=False)
 
 
 def final_art_review(engine,config,spec,product,poster,refs,folder):
@@ -154,7 +192,9 @@ def final_art_review(engine,config,spec,product,poster,refs,folder):
         'Neither tier implies brand-owner approval. For graphic campaigns do not invent floor-contact requirements. '
         'For photographic campaigns verify the readable contact plane, light agreement and perspective. '
         'Inspect actual source quality: preservation alone does not make a low-quality packshot professionally photographed. '
-        'Keep factual identity and approved copy. Do not confuse a color/material variation with a campaign idea. '
+        'Keep factual identity and approved copy. Evaluate whether copy belongs to this visual event and identify the actually visible memory device. '
+        'Generic interchangeable slogans and attractive texture without an expressed advertising event remain draft. '
+        'Do not confuse a color/material variation with a campaign idea. '
         'Judge the images first; reject any claimed intent that is invisible. Spec and proposed concept: '+engine.json.dumps(spec,ensure_ascii=False)+
         engine.concept_context(config),[poster,product,*refs],folder/'CommercialArtDirector-call.json')
     if not isinstance(decision,dict) or decision.get('tier') not in ('draft','social_ad','campaign_candidate') or not isinstance(decision.get('evidence'),str) or not decision['evidence'].strip() or not isinstance(decision.get('problems'),list):

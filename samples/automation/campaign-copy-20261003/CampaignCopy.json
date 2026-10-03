@@ -1,0 +1,65 @@
+{
+  "copy_by_creative_id": {
+    "c1": {
+      "title": "一眼即识的曲线",
+      "subtitle": "不必读名,轮廓已作答",
+      "price": "",
+      "logo": "Coca-Cola"
+    },
+    "c2": {
+      "title": "落座即现场",
+      "subtitle": "一圈水痕,是它刚到的证据",
+      "price": "",
+      "logo": "Coca-Cola"
+    },
+    "c3": {
+      "title": "一影赴约",
+      "subtitle": "影子先到,曲线随后",
+      "price": "",
+      "logo": "Coca-Cola"
+    },
+    "c4": {
+      "title": "红,自成中心",
+      "subtitle": "灰白世界里,红自己定中心",
+      "price": "",
+      "logo": "Coca-Cola"
+    }
+  },
+  "review": {
+    "directions": [
+      {
+        "creative_id": "c1",
+        "concept_fit": true,
+        "brand_fit": true,
+        "claim_safe": true,
+        "memory_clear": true,
+        "evidence": "标题与副标题直述墙面放大轮廓剪影与真实瓶身对齐的识别事件,'不必读名'对应机制中无字可读的剪影;仅使用原图可见的轮廓曲线与红标资产,配合已批准的ORIGINAL TASTE;无功效、价格、新品、历史声明;短语独特且锚定可见的对齐瞬间,非通用口号。"
+      },
+      {
+        "creative_id": "c2",
+        "concept_fit": true,
+        "brand_fit": true,
+        "claim_safe": true,
+        "memory_clear": true,
+        "evidence": "'落座即现场'与'一圈水痕,是它刚到的证据'精确对应台面冷凝水环与湿痕的到达事件;水痕仅存在于生成台面而非重绘瓶身,与原图已有瓶身水珠连贯;红标红盖作为中性场景唯一饱和锚点符合原图光线;无禁止类声明,记忆点绑定可见水痕痕迹。"
+      },
+      {
+        "creative_id": "c3",
+        "concept_fit": true,
+        "brand_fit": true,
+        "claim_safe": true,
+        "memory_clear": true,
+        "evidence": "'一影赴约''影子先到,曲线随后'准确描述地面拉长 contour 投影先于瓶身被读取的视觉顺序,与机制中单一低角度长影一致;影形仅复现原图轮廓几何, Cutout 与光照未改;陈述限于光影几何,无功效/价格/新品/历史;拟人短语与可见长影事件直接挂钩。"
+      },
+      {
+        "creative_id": "c4",
+        "concept_fit": true,
+        "brand_fit": true,
+        "claim_safe": true,
+        "memory_clear": true,
+        "evidence": "'红,自成中心'与'灰白世界里,红自己定中心'对应灰白空景中同心渐变向红标红盖收敛的色彩引力事件;颜色全部来自原图观察(红带、红盖、白字、浅灰背景);未重绘标签、未加水珠;无禁止类声明;短语虽与标题同义强化但仍锚定可见构图事件,非可互换口号。"
+      }
+    ]
+  },
+  "identity_locked": true
+}

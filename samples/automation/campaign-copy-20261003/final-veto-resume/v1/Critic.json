@@ -1,0 +1,203 @@
+{
+  "pass": false,
+  "score": 81.7,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 80,
+    "typography": 84,
+    "background": 82,
+    "physical_integration": 74,
+    "reference_alignment": 72,
+    "creative_coherence": 84,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "missing_contact_shadow",
+      "problem": "In the enlarged base crop (image 6) the glass heel ends at y=1075 against unbroken flat #EDEBE7 cardstock: there is no tonal darkening, no soft ellipse, nothing under the base, because shadow.opacity and integration_plan.cast_opacity are both 0. The declared direction ('仅底座一层极软接触影') promises one ultra-soft contact layer, so the executed poster contradicts its own concept and the bottle reads as a pasted cutout hovering over the print.",
+      "root_cause": "shadow.opacity=0 and cast_opacity=0 executed despite the concept declaring a soft base contact shadow.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Restore one barely-visible soft contact shadow at the base footprint (offset_y 0, small opacity, wide blur) so the heel meets the printed surface without breaking the flat gallery look."
+    },
+    {
+      "type": "concept_geometry_misregistration",
+      "problem": "The chromatic-gravity event is mis-aimed: all three ripple ellipses and the saturated red disc are concentric at (540,806), i.e. the label band height, while the concept states the bands settle toward the bottle BASE like ripples around a fixed point. Visually the pink disc (opacity 0.3 red) sits behind the label as a decorative halo and doubles the red statement, diluting the proposition that the product's own cap and band are the only saturated red; the rings also read as a slightly wobbly printed halo rather than precise concentric ink rings.",
+      "root_cause": "Shape centers anchored to canvas/label center instead of the contact point; red disc opacity too high to act as a faint convergence marker.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-center the concentric ring set on the contact point (540,1075) and drop the red disc to a near-imperceptible tint (or remove it) so gravity visibly converges at the base and the label stays the sole saturated red."
+    },
+    {
+      "type": "weak_visual_hierarchy_scale",
+      "problem": "product_height_ratio is 0.4514 (within the 0.35-0.74 policy, so not a violation), but against references 3-5 whose hero object commands 60-90% of frame energy, this bottle occupies a narrow 16.7% width column inside a large empty ring field; the 'gravity center' event reads as a small object in a big void rather than an organising centre, and the bottom footer band (logo left, subtitle right) floats disconnected from the ring system.",
+      "root_cause": "Conservative scale choice plus footer copy placed outside the ring geometry.",
+      "affected_layer": "scene",
+      "repair_strategy": "Enlarge the product toward ~0.55-0.60 height ratio (keeping base <=94% and sides inside 5-95%) so the silhouette dominates the ripple field, and tighten footer tracking/position so the colophon band feels anchored to the ring edge."
+    },
+    {
+      "type": "typography_craft_gap",
+      "problem": "Title '红,自成中心' at 96px msyh bold left-aligned top-left is legible and uncropped (text_bbox [86,128,603,221], no product overlap), but the comma sits tight against 红 and the block hangs without optical relation to the ring field; subtitle 36px and logo 24px at y≈1348-1384 form a thin unbalanced footer line whose baselines differ (logo bbox bottom 1369 vs subtitle 1384), reading as two stray labels rather than a designed colophon.",
+      "root_cause": "Footer layers positioned independently without a shared baseline or margin grid; title tracking not tuned for the CJK comma.",
+      "affected_layer": "typography",
+      "repair_strategy": "Align logo and subtitle on one baseline (same y), align their outer edges to the title's left margin and the ring's right edge respectively, and add slight title tracking so the comma breathes."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.22
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.05
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 40,
+          "y": 575,
+          "width": 1000,
+          "height": 1000,
+          "color": "#DEDAD4",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 190,
+          "y": 725,
+          "width": 700,
+          "height": 700,
+          "color": "#E6E3DE",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 390,
+          "y": 925,
+          "width": 300,
+          "height": 300,
+          "color": "#D6231F",
+          "opacity": 0.12
+        }
+      ]
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 232
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 660
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1366
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1362
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 5
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left 'Coca-Cola' wordmark text renders in approved arial with correct spelling and tracking; on-bottle script label matches source photograph."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Contour bottle silhouette, crown cap, red band and liquid column in poster match the source cutout proportions (bbox 450,425-630,1075 vs source aspect)."
+    },
+    "grounding_correct": {
+      "ok": false,
+      "evidence": "Contact crop shows heel at y=1075 with zero shadow pixels beneath; declared soft contact shadow not executed (opacity 0)."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "No shape or text bbox crosses canvas edges; bottle fully inside canvas with comfortable margins."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Flat cool gallery illumination matches source's soft diffuse front light; no conflicting cast direction introduced."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "title [86,128,603,221], subtitle [470,1348,930,1384], logo [86,1352,246,1369] all inside 1080x1440."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap all false; footer layers separated horizontally (logo right edge 246 < subtitle left 470)."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc and arial.ttf are in the approved installed list and render CJK and Latin correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' and label 'ORIGINAL TASTE' spelled correctly; no invented claims."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "红,自成中心 / 灰白世界里,红自己定中心 name this exact chromatic-gravity proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Concentric grey rings converging on the single saturated red band/cap is an identifiable memorable event, though currently mis-centered on the label rather than the base."
+    }
+  },
+  "reported_score": 76,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:grounding_correct",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

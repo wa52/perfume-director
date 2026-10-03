@@ -1,0 +1,155 @@
+{
+  "pass": false,
+  "score": 73.3,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 72,
+    "typography": 80,
+    "background": 58,
+    "physical_integration": 90,
+    "reference_alignment": 62,
+    "creative_coherence": 55,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "concept_execution_failure",
+      "problem": "The wall graphic is a plain半circle/dome, not the oversized contour-bottle silhouette the concept requires. Evidence: the painted charcoal shape (approx x170-910, y420-965) is a smooth round arch with no neck, shoulder or waist curve; the real bottle (bbox 450,561-630,1211) stands in front of it but never 'fills' a matching silhouette, so the recognition event 'the curve answers its own name' is not visible. Root cause: background generation replaced the contour silhouette with a generic disc. Affected layer: scene. Repair: regenerate the backdrop describing only a flat matte charcoal painted contour-bottle outline shape on the wall, scaled so the standing cutout occupies its lower half, without naming the product.",
+      "root_cause": "background prompt rendered a generic dome instead of the declared enlarged contour silhouette",
+      "affected_layer": "scene",
+      "repair_strategy": "regenerate background with an explicit flat painted bottle-contour shape description (empty set, no product words)"
+    },
+    {
+      "type": "background_value_conflict",
+      "problem": "The rendered wall is a dark vignette grey (top corners near #6E6E6E) instead of the declared matte mineral grey #C9C6C0 with even low-contrast light. Evidence: strong corner darkening behind the title zone and a gradient down the wall; this forced the renderer to flip title/subtitle ink from #23201C to #F9F4E9 (execution_feedback ink_changes), inverting the concept's dark-ink-on-light-wall typography. Root cause: scene illumination contradicts the declared diffuse even front-top light. Affected layer: scene. Repair: regenerate with an evenly lit pale mineral-grey wall, no vignette, no hotspots, so dark ink reads again.",
+      "root_cause": "generated scene lighting darker and vignetted versus declared even diffuse illumination",
+      "affected_layer": "scene",
+      "repair_strategy": "regenerate background with even pale grey values; then restore dark ink per palette"
+    },
+    {
+      "type": "typography_hierarchy",
+      "problem": "Light cream title/subtitle float on a mid-dark mottled wall with only ~3.5:1 measured contrast and no anchoring element; the left column reads as detached caption rather than integrated masthead, and the bottom-left 'Coca-Cola' lockup sits isolated in empty floor with a large dead gap between subtitle (ends y253) and the wall shape (starts y420). Evidence: title bbox 76,108-699,191 and subtitle 76,223-380,253 hover over texture; logo bbox 76,1361-232,1384 has no visual tie to the column above. Root cause: ink inversion plus unchanged asymmetric grid. Affected layer: typography. Repair: after background value fix, set title/subtitle back to #23201C, tighten subtitle tracking/size relation, and keep the left column rhythm by nudging logo y upward slightly within margin.",
+      "root_cause": "ink flipped to light on mid-value wall and column spacing left unadjusted",
+      "affected_layer": "typography",
+      "repair_strategy": "restore dark ink on lightened wall;微调 logo y and subtitle tracking to close the column"
+    },
+    {
+      "type": "scale_hierarchy_weakness",
+      "problem": "Product occupies 45.1% of canvas height (product_height_ratio 0.4514, within the 0.35-0.74 policy) yet reads small against the huge empty wall and floor bands; the hero moment depends on the silhouette alignment that is missing, so current hierarchy is a small object in a large empty room versus the references' confident subject dominance (refs 3-5). Evidence: bottle width ratio 0.1667 with vast negative space left and right of the dome. Root cause: concept scale relies on the missing painted contour. Affected layer: composition. Repair: once the contour silhouette renders correctly the paired shape restores hierarchy; optionally raise product height toward ~0.55 ratio via width/height patch keeping base at 1211 and center_x 540.",
+      "root_cause": "visual event absent so declared scale loses its justification",
+      "affected_layer": "composition",
+      "repair_strategy": "fix background shape first; then modest product upscale within policy if hierarchy still thin"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Evenly lit pale mineral grey painted studio wall (#C9C6C0) meeting a continuous fine-ground cement floor at a low horizon, one oversized flat matte charcoal painted shape on the wall in the exact contour of a classic glass soda-bottle silhouette with narrow neck, sloped shoulders and cinched waist, scaled tall so a standing object fills its lower half, perfectly even diffuse frontal overhead illumination, no vignette, no hotspots, no visible equipment"
+    },
+    {
+      "path": "title.color",
+      "op": "set",
+      "value": "#23201C"
+    },
+    {
+      "path": "subtitle.color",
+      "op": "set",
+      "value": "#23201C"
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1330
+    },
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.12
+    },
+    {
+      "path": "product.width",
+      "op": "multiply",
+      "value": 1.12
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 836
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup reads 'Coca-Cola' in Baskville-style serif at 76,1361-232,1384, matching approved logo copy; bottle label script also intact."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bottle bbox 450,561-630,1211 matches the source contour bottle: crown cap, neck, shoulder, waist and base curves identical to image 2, no distortion."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [370,1071,710,1321] shows the glass base meeting cement with a soft dark contact shadow hugging the footprint; shadow offset_y 0 is correct, no floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against wall and floor show no halo or fringe in the enlarged base crop; silhouette boundary crisp at shoulders and waist."
+    },
+    "lighting_consistent": {
+      "ok": false,
+      "evidence": "Source asset has even diffuse front-top light with narrow vertical highlights; poster wall carries a heavy vignette and darker top gradient inconsistent with that even illumination, and the floor shows mottled patches not matched to the declared fine-ground cement evenness."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title, subtitle and logo bboxes all lie fully inside the 1080x1440 canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no intersection on both axes with product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc for Chinese copy and BASKVILL.TTF for the Latin lockup are both in the installed approved list and render with correct glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly in lockup and on the red label band with 'ORIGINAL TASTE' legible."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 一眼即识的曲线 and subtitle 不必读名,轮廓已作答 state this poster's shape-recognition proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable object-silhouette alignment event is absent: the wall carries a generic dome/disc, so no identifiable relationship between real bottle and its enlarged contour is visible; only a bottle in front of a circle remains."
+    }
+  },
+  "reported_score": 66,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:lighting_consistent",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

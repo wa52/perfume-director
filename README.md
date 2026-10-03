@@ -1,5 +1,7 @@
 # Product Art Director — 香水与四类商品闭环
 
+自动化更新：动态 Director 现在可为四个创意分别生成并独立审核广告文案，再交给 Art Director 排版；Commercial Gate 增加文案与概念匹配、视觉记忆点实际呈现两项否决规则，最终商业审稿否决也可返回自动修改。新增原商品蒙版剪影供规划与自动修复调用，避免背景模型猜错瓶型。见 [自动创意文案与轮廓执行说明](AUTOMATIC_CAMPAIGN_COPY.md)与 [真实自动闭环回归记录](samples/automation/campaign-copy-20261003/REPORT.md)。208项程序测试通过；真实图像闭环验收单独记录，不等同商业成品通过。
+
 香水原型保留100张广告/商业静物参考；2026-10-03新增护肤美妆、腕表珠宝、鞋履和饮品类别，每类使用独立参考与四方向动态规划。没有 LoRA、向量数据库或 agent 框架。真实闭环以质量为目标，单方向渲染预算可设 1～12 版；视觉模型示例配置为 5 版，预算耗尽仍未达标就保留 NEEDS_REVIEW。
 
 流程：参考分析 → Design KB → Director 输出 PosterSpec → ComfyUI 合成 → Critic 看成品、商品和 3 张参考 → 校验修改 → 下一版。

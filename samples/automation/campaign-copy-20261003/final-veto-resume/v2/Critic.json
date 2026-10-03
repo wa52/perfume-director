@@ -1,0 +1,175 @@
+{
+  "pass": false,
+  "score": 83.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 82,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 82,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "concept_geometry_misregistration",
+      "problem": "In the current poster the innermost 'ripple' is a saturated pink disc (shape index 2, bbox [390,925,690,1225]) whose centre (540,1075) sits ~90px BELOW the verified contact point (539.5,985). The contact crop (image 6) proves the heel now meets a soft grey contact shadow at y=985, but the disc hangs under the base like a misplaced sticker: the ripple system no longer converges on the contact point, and the visible pink tint introduces a second red-family note that dilutes the proposition that the cap and label band are the ONLY saturated red. The previous version's error (disc at label height) was over-corrected past the base instead of onto it.",
+      "root_cause": "Red disc centre anchored 90px below product_base_y and opacity 0.12 still reads as a distinct pink object against #EDEBE7 cardstock.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-centre the concentric set exactly on the contact point (centre 540,985) and cut the red disc to a near-imperceptible convergence tint (opacity ~0.05) or replace it with a grey ring so gravity visibly settles at the base and the label/cap stay the sole red event."
+    },
+    {
+      "type": "weak_visual_hierarchy_scale",
+      "problem": "product_height_ratio is 0.4514 (inside the 0.35-0.74 policy, so not a violation) and width ratio only 0.1667: the bottle commands a narrow central column while the ring field and margins carry most of the canvas energy. Against references 3-5, whose hero object owns 60-90% of frame energy, the 'gravity centre' reads as a small object inside a large void; the footer colophon (logo left, subtitle right at y~1348-1384) floats outside the ring geometry and is not anchored to it.",
+      "root_cause": "Conservative scale choice plus footer copy placed outside the ring system's optical edge.",
+      "affected_layer": "scene",
+      "repair_strategy": "Enlarge the product toward ~0.55-0.58 height ratio keeping base <=94% (base y <=1353) and sides inside 5-95%, e.g. height 800, width 224, centre (540, 585) so base lands at 985 unchanged; tighten footer tracking/position so the colophon band aligns to the outer ring's optical margin."
+    },
+    {
+      "type": "typography_craft_gap",
+      "problem": "Title '红,自成中心' (bbox [86,128,613,221], tracking 5 applied) is legible and uncropped, but the block still hangs top-left with no optical tie to the ring field, and the CJK comma sits tight after 红. Footer baselines remain mismatched: logo bbox [86,1352,246,1369] bottom 1369 vs subtitle bbox [470,1348,930,1384] bottom 1384 - a 15px baseline split that reads as two stray labels rather than one designed colophon line.",
+      "root_cause": "Footer layers set by top-edge y instead of a shared baseline; title tracking not tuned for the CJK comma gap.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set logo.y and subtitle.y so their rendered baselines coincide (same optical bottom), align logo left edge to the title's x=86 margin and subtitle right edge to the ring field's right optical margin, and raise title tracking slightly (6-8px) so the comma breathes."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 40,
+          "y": 485,
+          "width": 1000,
+          "height": 1000,
+          "color": "#DEDAD4",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 190,
+          "y": 635,
+          "width": 700,
+          "height": 700,
+          "color": "#E6E3DE",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 390,
+          "y": 835,
+          "width": 300,
+          "height": 300,
+          "color": "#D6231F",
+          "opacity": 0.05
+        }
+      ]
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 800
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 224
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 585
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1366
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1362
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 7
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left 'Coca-Cola' wordmark in approved arial with tracking 6, correct spelling; on-bottle white script label matches source photograph."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Contour bottle silhouette, crown cap, red band and amber liquid column in poster match source cutout proportions (render bbox 450,335-630,985 keeps source aspect)."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop (image 6) shows the glass heel at y=985 meeting a soft grey tonal darkening (shadow.opacity 0.22, blur 14, offset_y 0 executed per repair log); no floating gap beneath the base."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Only the intentional outer ripple ellipse crosses canvas edges as declared; product bbox and all text bboxes sit fully inside 1080x1440 with comfortable margins."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Flat cool gallery illumination matches source's soft diffuse front light; single ultra-soft contact shadow agrees with declared lighting and source key light."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "title [86,128,613,221], subtitle [470,1348,930,1384], logo [86,1352,246,1369] all inside canvas."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title/subtitle/logo; footer layers separated horizontally (logo right 246 < subtitle left 470)."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc (CJK title/subtitle) and arial.ttf (logo) are in the approved installed list and render correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' and on-label 'ORIGINAL TASTE' spelled correctly; no invented flavour, ingredient or nutrition claims."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "红,自成中心 / 灰白世界里,红自己定中心 name this exact chromatic-gravity proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Concentric grey ripple rings settling toward the single saturated red band/cap is an identifiable memorable event; currently weakened because the innermost red disc converges 90px below the true contact point."
+    }
+  },
+  "reported_score": 80.0,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

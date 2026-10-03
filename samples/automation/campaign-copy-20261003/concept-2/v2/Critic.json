@@ -1,0 +1,131 @@
+{
+  "pass": false,
+  "score": 85.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 84,
+    "typography": 86,
+    "background": 80,
+    "physical_integration": 89,
+    "reference_alignment": 78,
+    "creative_coherence": 85,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "concept_evidence_offset",
+      "problem": "The campaign's core visual memory - the condensation ring as 'evidence of arrival' - is geometrically displaced from the event it narrates. In the contact crop [370,790,710,1040] the concentric ripple set is centred near (535,990-1000), i.e. roughly 60-70px in FRONT of the verified contact point (539.5,930), where the foot does show a correct soft damp seam. Read at poster distance (image 1) the ripples look like a separate puddle the bottle stands behind, so the subtitle's claim 'one ring of water is the proof it just arrived' is not instantly legible as caused by THIS bottle.",
+      "root_cause": "Background prompt asks for rings 'encircling the central contact point' but the generator placed the coherent ring set on the foreground plane instead of under the footprint; only the faint damp seam sits at the base.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the surface with the readable mist ring and its concentric echoes centred ON the footprint ellipse at the base (ring apex touching the foot seam), keeping the existing damp contact zone and the clean lower text band."
+    },
+    {
+      "type": "hero_scale_hierarchy",
+      "problem": "product_height_ratio is 0.4514 (valid inside the 0.35-0.74 policy), yet artistically the hero reads small: the bottle occupies a narrow 16.7% width column while roughly 55% of the canvas above the title is empty pale field. Against the reference campaigns' confident subject dominance (references 3 and 5 let the product own the frame), the eye travel from cap to headline passes through dead air, so the composition feels timid rather than resolved minimalism.",
+      "root_cause": "Size chosen at the low-middle of the allowed band; no compensating visual mass (ring bridge or tonal anchor) in the mid-zone.",
+      "affected_layer": "composition",
+      "repair_strategy": "Enlarge the product within policy to about height 820 (ratio ~0.57), recentering so base stays near y=940 and top near y=120, keeping margins inside the 5-95% side and 10% top limits; the footprint ring then scales with the base and the mid-band tightens."
+    },
+    {
+      "type": "reference_quality_gap",
+      "problem": "References 3-5 show a single decisive gesture (dynamic can angle, colour-blocked lounge, splash crown) executed at high contrast; this poster's gesture - a wet trace on pale cement - is correct in idea but rendered at low tonal amplitude: backdrop, surface and mist ring all sit within a narrow light-grey value range, so the poster reads quiet-generic rather than quiet-luxurious at thumbnail size.",
+      "root_cause": "Uniformly faint moisture values and an even gradient give no focal value accent around the hero.",
+      "affected_layer": "scene",
+      "repair_strategy": "In the regenerated surface, deepen the damp cast zone and ring edges one value step (still soft, still diffuse front-top light) so the trace forms a readable focal pool under the bottle without adding equipment or props."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Pale warm-grey micro-cement horizontal surface continuous into a plain light-grey backdrop; one clearly readable coherent ring of condensation mist with two faint concentric water rings centred exactly on the bottle footprint ellipse so the ring's rear edge touches the damp contact seam, a few crisp scattered droplets clustered within one ring-width of that seam, slightly damp darker cast zone hugging the contact, surface clean and unmarked across the lower third, soft diffuse frontal overhead light, calm even gradient"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 820
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 229
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 530
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Lower-right signature 'Coca-Cola' in Baskerville at bbox (778,1080)-(975,1110), matching approved copy; bottle label script untouched."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Contour silhouette, crown cap, red band and amber liquid in poster match the supplied asset; bbox [450,280,630,930] shows no distortion, no clipping at canvas edges."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [370,790,710,1040] shows the glass foot meeting micro-cement with a soft dark damp seam at base_y=930; shadow offset_y=0, no floating; the ripple set sits in front of, not missing, the contact."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against backdrop keep natural edge glow; no halo, fringe or paste artifacts at shoulders, waist or base."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft diffuse front-top illumination with narrow vertical speculars on glass matches the source asset; scene gradient and soft contact shadow agree, no relighting of the cutout."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (86,1075)-(558,1164), subtitle (86,1225)-(456,1255), logo (778,1080)-(975,1110) all fully inside 1080x1440 with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle, logo; no layer intersects the product bbox on both axes; previous stray ring in the text band is gone in this revision."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc for Chinese copy and BASKVILL.TTF for the Latin signature are both in the approved installed font list and render correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' signature and label 'ORIGINAL TASTE' spelled correctly; no invented claims or flavours."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "落座即现场 / 一圈水痕,是它刚到的证据 name THIS arrival-event proposition (set-down moment, water-ring evidence), not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Condensation ripple set plus droplets on the pale surface around the chilled bottle form an identifiable 'just arrived' trace, confirmed in the contact crop, though currently offset in front of the footprint which weakens instant causality."
+    }
+  },
+  "reported_score": 84,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

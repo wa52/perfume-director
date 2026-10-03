@@ -10,8 +10,8 @@ def validate_shapes(shapes, width, height):
     for shape in shapes:
         if not isinstance(shape,dict) or set(shape)!=required:
             raise ValueError('Graphic shape requires exactly kind,x,y,width,height,color,opacity')
-        if shape['kind'] not in ('ellipse','rectangle'):
-            raise ValueError('Only ellipse and rectangle primitives are supported')
+        if shape['kind'] not in ('ellipse','rectangle','product_silhouette'):
+            raise ValueError('Unsupported graphic primitive')
         for key in ('x','y','width','height','opacity'):
             n=shape[key]
             if isinstance(n,bool) or not isinstance(n,(int,float)) or not math.isfinite(n):
@@ -27,7 +27,7 @@ def validate_shapes(shapes, width, height):
     return shapes
 
 
-def compose(background, shapes):
+def compose(background, shapes, product=None):
     """Paint in list order, once, without altering the caller's background."""
     validate_shapes(shapes,*background.size)
     canvas=background.convert('RGBA').copy()
@@ -37,7 +37,15 @@ def compose(background, shapes):
         box=(round(shape['x']),round(shape['y']),round(shape['x']+shape['width'])-1,
              round(shape['y']+shape['height'])-1)
         draw=ImageDraw.Draw(layer)
-        if shape['kind']=='ellipse':draw.ellipse(box,fill=rgba)
+        if shape['kind']=='product_silhouette':
+            if product is None or product.mode!='RGBA':raise ValueError('Silhouette requires the original RGBA product')
+            mask=product.getchannel('A');bounds=mask.getbbox()
+            if bounds is None:raise ValueError('Empty product silhouette')
+            mask=mask.crop(bounds);ratio=min(shape['width']/mask.width,shape['height']/mask.height)
+            mask=mask.resize((max(1,round(mask.width*ratio)),max(1,round(mask.height*ratio))),Image.Resampling.LANCZOS)
+            mask=mask.point(lambda a:round(a*shape['opacity']))
+            layer.paste((*rgba[:3],255),(round(shape['x']),round(shape['y'])),mask)
+        elif shape['kind']=='ellipse':draw.ellipse(box,fill=rgba)
         else:draw.rectangle(box,fill=rgba)
         canvas=Image.alpha_composite(canvas,layer)
     return canvas

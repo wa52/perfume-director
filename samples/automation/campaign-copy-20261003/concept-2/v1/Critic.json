@@ -1,0 +1,126 @@
+{
+  "pass": false,
+  "score": 83.3,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 80,
+    "typography": 84,
+    "background": 78,
+    "physical_integration": 89,
+    "reference_alignment": 74,
+    "creative_coherence": 82,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "weak_concept_legibility",
+      "problem": "The campaign's核心 visual memory - the condensation mist ring and水环 'evidence' around the base - reads as incidental stains. In the contact crop (370,790,710,1040) the ring arc under the foot is barely above the micro-cement noise, and in the full poster the most visible rings sit in the bottom foreground band, far from the base, so the 'just set down' event is not instantly readable at poster distance.",
+      "root_cause": "Background prompt distributes moisture 'around and behind the base' at uniformly faint values with no tonal accent near the contact point.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the surface with a slightly stronger, coherent mist ring and a few crisp droplets hugging the base footprint, keeping the damp cast zone, while foreground stains stay quieter."
+    },
+    {
+      "type": "surface_artifact_in_text_band",
+      "problem": "A generated water-ring outline sits at roughly (430-490, 1150-1180), directly in the reserved gap between the title block (ends y=1147) and subtitle (starts y=1217), reading as a stray artifact colliding with the typography zone rather than as scene evidence.",
+      "root_cause": "Uncontrolled stochastic ring placement in the reserved lower text band.",
+      "affected_layer": "typography",
+      "repair_strategy": "Regenerate background constrained so surface marks concentrate around the product base and avoid the lower text band."
+    },
+    {
+      "type": "hierarchy_weight_imbalance",
+      "problem": "The 92px title carries a large empty field above it while the bottle occupies only 45% of canvas height centered high; the mid-zone between base (y=930) and title (y=1058) is dead space, so eye travel bottle-to-headline lacks a connector and the layout feels sparser than the reference campaigns' resolved负空间.",
+      "root_cause": "Size policy-valid but artistically timid hero scale plus a wide empty mid-band.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep geometry-safe bounds but let the damp ring bridge base toward the text band, and tighten title/subtitle spacing so the lower band reads as one designed block."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Pale warm-grey micro-cement horizontal surface continuous into a plain light-grey backdrop; one clearly readable coherent ring of condensation mist and two faint concentric water rings tightly encircling the central contact point, a few crisp scattered droplets within one bottle-width of that point, slightly damp darker cast zone at the contact, surface kept clean and unmarked across the lower third, soft diffuse frontal overhead light, calm even gradient"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1075
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1225
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 3
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Lower-right signature reads 'Coca-Cola' in Baskerville at (778,1080)-(975,1110), matching approved copy; bottle label script also intact."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Contour silhouette, crown cap and label band in poster match the supplied asset proportions; bbox 450,280,630,930 shows no distortion or clipping."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop shows the glass foot meeting the micro-cement with a soft dark seam and damp zone at base_y=930; shadow offset_y=0, no floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against backdrop are clean with natural edge glow; no halo, fringe or paste artifacts visible at shoulders or base."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft diffuse front-top light and narrow vertical speculars on the glass match the source asset; scene gradient and contact shadow agree with that illumination."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title, subtitle and logo bboxes lie fully inside the 1080x1440 canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for all layers; no layer intersects the product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc and BASKVILL.TTF are in the approved installed font list and render correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' and label 'ORIGINAL TASTE' spelled correctly in poster and signature line."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "落座即现场 / 一圈水痕,是它刚到的证据 name THIS arrival-event proposition (set-down moment, water-ring evidence), not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Condensation rings and droplets on the surface around the base plus the chilled bottle form the memorable 'just arrived' trace, confirmed in the contact crop, though currently too faint for instant read."
+    }
+  },
+  "reported_score": 76,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

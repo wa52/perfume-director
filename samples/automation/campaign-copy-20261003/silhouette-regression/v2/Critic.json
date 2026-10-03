@@ -1,0 +1,170 @@
+{
+  "pass": false,
+  "score": 74.6,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 74,
+    "typography": 86,
+    "background": 62,
+    "physical_integration": 84,
+    "reference_alignment": 68,
+    "creative_coherence": 52,
+    "brand_alignment": 86
+  },
+  "problems": [
+    {
+      "type": "concept_execution_failure",
+      "problem": "The promised recognition event is still absent. The painted wall shape (approx x163-920, y243-990) is a generic round-domed arch with straight vertical sides, while the real bottle occupies x450-630, y337-987. At the bottle's base line the arch is at full width (~757 px vs bottle 180 px), so the contour never coincides with the bottle at any height and there is no alignment seam; the bottle simply floats inside a niche shape. Image 7 vs image 1 shows only rescaling/repositioning - the arch contour is unchanged.",
+      "root_cause": "background.prompt keeps asking the generator for a contour silhouette and the generator returns an arch; the bounded product_silhouette primitive (derived from the original alpha) was never actually applied - spec background.shapes is still [].",
+      "affected_layer": "scene",
+      "repair_strategy": "Set background.shapes to a COMPLETE list containing one product_silhouette primitive fitted to the source aspect (width 440, height 1574, x 320, y 80, color #23201C, opacity 0.85) so the real bottle visually fills its lower portion, and set background.prompt to empty-material/light wording with no contour language."
+    },
+    {
+      "type": "background_value_and_evenness",
+      "problem": "The wall renders mid-to-dark grey with a lateral gradient (lighter left edge, darker centre-right behind the headline) instead of the declared light even mineral grey near #C9C6C0; the charcoal ink (#141210) title and subtitle sit on that mid value and read muted rather than crisp luxury ink, and the uneven wall contradicts the declared hotspot-free diffuse light.",
+      "root_cause": "Generated wall tonality drifted far below the palette anchor while ink stayed near-black; the previously attempted light-wall prompt was rejected and never re-submitted in valid form.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with an explicitly light, completely even pale warm-grey wall and low-contrast diffuse frontal-overhead illumination (no equipment names), keeping the already-executed #141210 ink which then reads at high contrast."
+    },
+    {
+      "type": "hierarchy_scale",
+      "problem": "Product height ratio 0.4514 is inside the fresh-concept policy (0.35-0.74), so this is not a rule violation, but artistically the hero reads small and recessive: the non-identifying arch mass (~757 px wide) outweighs the 180 px bottle, and against references 3-5 where the packshot dominates the frame the composition feels like a small object in a big empty room.",
+      "root_cause": "Scenic mass was never bound to the product contour, so scale contrast is accidental; the bottle was also left at the previous smaller scale.",
+      "affected_layer": "composition",
+      "repair_strategy": "Enlarge the product to ~0.60 height ratio (height 864, width 241, x 540, center_y = target base 1150 - 864/2 = 718) together with the matched silhouette primitive so the scale jump becomes the intentional recognition event."
+    },
+    {
+      "type": "contact_shadow_read",
+      "problem": "The contact detail crop (370,847-710,1097) proves the bottle is NOT floating: a soft dark seam sits directly under the glass heel at y=987 with offset_y=0. However the seam is thin and tight while the wall skirting line runs only ~15 px below the base, so at poster scale the grounding cue is weak and the base visually competes with the skirting; do not move the shadow down - strengthen its footprint instead.",
+      "root_cause": "shadow.width_scale 1.15 with blur 10 yields a narrow alpha footprint under a 159 px contact width; the generated skirting line lands too close to the base to let the shadow read alone.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Keep offset_y 0; raise width_scale to 1.35, opacity to 0.42 and blur to 14 so the single soft contact layer reads decisively at full-poster scale, and remove the skirting line via the even-wall regeneration."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "product_silhouette",
+          "x": 320,
+          "y": 80,
+          "width": 440,
+          "height": 1574,
+          "color": "#23201C",
+          "opacity": 0.85
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Matte mineral grey painted studio wall in a light even value close to pale warm grey, meeting a continuous fine-ground cement floor at a low horizon, soft diffuse frontal overhead illumination, completely even low contrast across the wall, no gradient, no vignette, no painted shapes, no skirting line, no visible equipment"
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 241
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 864
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 718
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.35
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.42
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup renders exactly 'Coca-Cola' in Baskerville at bbox 76,1361-232,1384, uncropped; the bottle's red band carries the untouched white script wordmark."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox 450,337-630,987 keeps the source contour proportion (width/height ~0.278 vs source ~0.28); crown cap, shoulder curve and waist flutes match image 2."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop 370,847-710,1097 shows the glass heel darkening into a soft contact seam exactly at base y=987 with shadow offset_y=0; no floating gap, base sits above the bottom edge with comfortable margin per policy."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Enlarged crop shows crisp cutout edges against wall and floor with no halo or fringe; observed condensation droplets remain untouched."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Narrow vertical speculars on shoulders and sides plus even low-contrast body match the declared soft diffuse front/above light; only one soft contact layer on the ground, no competing cast direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 76,108-699,191, subtitle 76,223-380,253 and logo 76,1361-232,1384 all lie fully inside the 1080x1440 canvas."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; no layer intersects the product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc for Chinese copy and BASKVILL.TTF for the Latin logo are both in the installed approved list and render with correct glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' hyphenation and case correct in the corner lockup; label band reads Coca-Cola with ORIGINAL TASTE as observed on the source bottle."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 'the curve recognized at a glance' and subtitle 'no need to read the name, the contour answers' state this poster's shape-recognition proposition and are not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable event - the real bottle visually filling the lower half of its own giant painted contour - is absent; the wall shows a straight-sided dome arch whose contour never touches the bottle silhouette, so no recognition seam exists in the frame."
+    }
+  },
+  "reported_score": 71.2,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

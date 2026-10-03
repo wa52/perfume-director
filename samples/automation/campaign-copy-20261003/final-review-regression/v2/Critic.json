@@ -1,0 +1,153 @@
+{
+  "pass": false,
+  "score": 82.6,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 80,
+    "typography": 84,
+    "background": 74,
+    "physical_integration": 90,
+    "reference_alignment": 74,
+    "creative_coherence": 80,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "concept_color_leak",
+      "problem": "The #D6231F ellipse (upper-left 390,981, 300x300, opacity 0.08) renders as a ~300px desaturated pink disc whose top half sits directly behind the bottle base and lower flank (visible in poster and in contact crop [370,920,710,1170] as pink wash under the glass). The brief reserves the only saturated red for the observed cap and label band; this pink halo dilutes the single-red proposition and muddies the contact-shadow read exactly where grounding is judged.",
+      "root_cause": "Red accent ellipse kept at 0.08 opacity and 300px footprint concentric with the base instead of being removed or converted to the grey ink family.",
+      "affected_layer": "scene",
+      "repair_strategy": "Replace the third shape with a grey-family ellipse of identical geometry (e.g. #DEDAD4 at 0.5) or drop it, so the red cap/band remain the sole chromatic event; keep the two grey ripple discs unchanged."
+    },
+    {
+      "type": "background_system_misalignment",
+      "problem": "Two ripple systems still disagree: the generated thin printed rings converge near (590,660) around the bottle shoulder/label zone, while the deterministic filled discs (centers ~(540,1131) and ~(540,1131)) converge at the base. In image 1 the thin rings visibly pass behind the label band and die out at left ~(90,700), so the 'environment settles toward the red' event reads at two different altitudes and the outer ring stops short of the left edge, leaving the gravity gesture tentative versus the references' full-bleed geometry.",
+      "root_cause": "background.prompt ring center was never re-declared to match the re-centered shape stack and the enlarged product base at y=1060.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate background with prompt describing concentric pale-grey printed rings centered on the lower-third convergence point (base zone), rings running edge to edge, no equipment, no product words; keep flat cardstock tooth and cool even gallery light."
+    },
+    {
+      "type": "weak_corner_colophon_hierarchy",
+      "problem": "Subtitle bbox (648,1354)-(962,1380) at size 26 with tracking 2 sits optically lighter and ~12px higher in baseline than the logo line (86,1346)-(248,1370) at size 34; the intended symmetric bottom-corner colophon reads unbalanced, and the subtitle's right edge leaves only ~118px margin while the logo leaves 86px, so the pairing looks accidental rather than locked.",
+      "root_cause": "Subtitle size/tracking never tuned after the y-move; corner lockups were not baseline-aligned as a pair.",
+      "affected_layer": "typography",
+      "repair_strategy": "Raise subtitle size to 30 and set its y to 1350 so its baseline matches the logo line; keep copy exact and right-side placement."
+    },
+    {
+      "type": "hierarchy_scale_tension",
+      "problem": "Product height ratio 0.4514 is inside fresh_concept_size_policy (0.35-0.74), so no size violation; artistically, however, the bottle still reads as a slender object inside a large field because the ripple discs are tonally almost identical to the cardstock (#DEDAD4/#E6E3DE on #EDEBE7), giving the center less pull than the references achieve through contrast or full-bleed form. The red band is the only strong anchor and it occupies ~90px of height.",
+      "root_cause": "Tonal delta between ripple discs and ground is below perceptible threshold at poster scale, so the concentric geometry under-delivers the gravity concept.",
+      "affected_layer": "scene",
+      "repair_strategy": "Deepen the outer disc to #D8D4CD at 0.9 and middle disc to #E1DED8 at 0.9 (same geometry) so the ripple field reads as deliberate printed ink, strengthening convergence on the red without adding props."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 75,
+          "y": 666,
+          "width": 930,
+          "height": 930,
+          "color": "#D8D4CD",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 796,
+          "width": 670,
+          "height": 670,
+          "color": "#E1DED8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Flat grey-white matte cardstock with fine paper tooth, three concentric thin printed pale-grey ink rings centered on a point in the lower third of the sheet where the base of an invisible object would rest, rings expanding edge to edge and cropping off all four sides, cool even gallery illumination, completely flat printed surface, no horizon, no gradient hotspot, no objects, no equipment"
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 30
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1350
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup 'Coca-Cola' in ARIALN.TTF at (86,1346)-(248,1370), uncropped, correct spacing."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered contour bottle, crown cap, red band, amber liquid and condensation match source cutout; bbox [450,410,630,1060] keeps source aspect, no repaint."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [370,920,710,1170] shows soft dark contact shadow hugging the glass base at y=1060 with offset_y 0; no floating, shadow not displaced."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox fully inside canvas; only intentional background ellipse bleed crosses edges; no clipping of bottle or copy."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Cool even gallery flat light matches source diffuse frontal studio illumination; single soft contact shadow per integration_plan, no cast artifacts."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (86,101)-(618,194), subtitle (648,1354)-(962,1380), logo (86,1346)-(248,1370) all inside margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle, logo; no two-axis intersections with product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc for CJK title/subtitle and ARIALN.TTF for logo are in the approved installed list and render correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly; label script and ORIGINAL TASTE untouched from source photograph."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 红,自成中心 and subtitle 灰白世界里,红自己定中心 state this poster's chromatic-gravity proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable event (grey world rippling toward the red) is still split: thin printed rings converge at shoulder height while filled discs converge at the base, and the pink disc competes with the red band, so one readable gravity point is not yet achieved."
+    }
+  },
+  "reported_score": 79,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

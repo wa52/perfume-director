@@ -1,0 +1,129 @@
+{
+  "pass": false,
+  "score": 78.9,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 76,
+    "typography": 84,
+    "background": 66,
+    "physical_integration": 84,
+    "reference_alignment": 72,
+    "creative_coherence": 74,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "concept_alignment_failure",
+      "problem": "The recognition event is now half-built. The bounded product_silhouette primitive finally renders the true contour curve (neck, shoulder, waist flutes match image 2), but at the bottle's base line y=1043 the giant contour is still near full width (~400 px vs the bottle's 180 px), so the real bottle sits inside the silhouette's belly instead of filling its lower segment; no alignment seam exists at any height. The silhouette's base (y=1654) also lands ~470 px below the wall-floor junction (~y=1185), so the 'painted wall mural' runs down across the cement floor to the canvas bottom as a flat dark stripe - physically impossible for wall paint and it destroys the photographic set logic.",
+      "root_cause": "background.shapes primitive was sized/anchored to the canvas (x320,y80,440x1574) instead of being registered to the product's contact point and to the wall plane; the wall silhouette must share the bottle's base line and scale so the bottle occupies its lower portion.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-register the single product_silhouette primitive: keep source aspect (w/h 0.2796), set height 1300, width 364, base at the wall/floor junction y=1185 so y = 1185-1300 = -115 (top bleed is acceptable, crosses_canvas_edge already true), x = 540-364/2 = 358; then the bottle (base 1043, height 650) fills the silhouette's lower half and the seam between glass edge and painted edge becomes the visible event. Keep background.prompt as empty material/light so no generated arch returns."
+    },
+    {
+      "type": "background_value_drift",
+      "problem": "The regenerated wall reads mid-to-dark grey (visibly darker than the palette anchor #C9C6C0, closer to #8f8d89 in the upper field) with a soft lateral gradient, contradicting the declared 'light even value, no gradient, no vignette'; the charcoal ink (#141210) title/subtitle therefore sit on a mid value and lose the crisp luxury ink read, and the dark silhouette loses contrast separation from the wall.",
+      "root_cause": "Generator tonality drifted below the palette anchor again while the prompt's evenness language was not reinforced with an explicit value target.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with the same empty-material wording plus an explicit value instruction: wall at a pale warm grey near hex C9C6C0, fully flat matte, zero gradient or vignette, single diffuse frontal-overhead illumination described without equipment names; keep the executed #141210 ink which then reads at high contrast."
+    },
+    {
+      "type": "hierarchy_and_negative_space",
+      "problem": "Product height ratio 0.4514 is inside the fresh-concept policy (0.35-0.74), so no size rule is broken; artistically, however, once the silhouette is re-registered to the bottle the left column (title block top-left, logo bottom-left) leaves a large dead mid-left field, and against references 3-5 the packshot-plus-graphic mass still reads recessive rather than dominant.",
+      "root_cause": "Composition was balanced for the old arch position; the re-registered silhouette shifts visual weight to centre-right without a counterweight in the left column.",
+      "affected_layer": "composition",
+      "repair_strategy": "After re-registering the silhouette, raise title size from 84 to 92 and subtitle tracking from 3 to 5 to strengthen the left column, and enable a small matte-red (#D6231F) rectangle decoration (x 76, y 300, width 56, height 8 implied by width field) as a concept accent tying the palette's red into the typography column; keep the asymmetric grid intentional."
+    },
+    {
+      "type": "contact_shadow_read",
+      "problem": "The supplied contact detail crop (370,903-710,1153) confirms the bottle is NOT floating: a soft dark seam sits exactly under the glass heel at base y=1043 with offset_y=0, and droplets/heel glass are untouched. Do not move the shadow down. Remaining weakness: because the dark silhouette stripe passes behind and below the base, the contact seam partly merges into the dark stripe at poster scale, weakening the single-layer grounding cue.",
+      "root_cause": "Shadow footprint (width_scale 1.35, opacity 0.42) is adequate on light cement but loses separation where the silhouette stripe crosses the floor behind the heel.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Keep offset_y 0 and kind contact; once the silhouette base is lifted to the wall junction the heel will sit on light cement again - then slightly raise opacity to 0.46 and blur to 16 so the seam reads alone without dark-stripe competition."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "product_silhouette",
+          "x": 358,
+          ":-y": null,
+          "y": -115,
+          ":width": null,
+          ":height": null
+        }
+      ]
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup renders exactly 'Coca-Cola' in Baskerville at bbox 76,1361-232,1384, uncropped; bottle label keeps the untouched white script."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox 450,393-630,1043 keeps source contour proportion (~0.278 w/h vs source ~0.28); crown cap, shoulder and waist flutes match image 2."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop 370,903-710,1153 shows the glass heel darkening into a soft seam exactly at y=1043 with offset_y=0; no floating gap; base above bottom edge per policy."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges crisp against wall and silhouette, no halo; observed condensation droplets untouched."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Narrow vertical speculars on shoulders/sides and even low-contrast body match declared soft diffuse front/above light; single soft contact layer, no competing cast."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 76,108-699,191, subtitle 76,223-380,253, logo 76,1361-232,1384 all inside 1080x1440."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap false for title, subtitle, logo; no both-axis intersection with product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc (Chinese) and BASKVILL.TTF (Latin logo) both in approved installed list, glyphs correct."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' hyphenation/case correct in lockup; label band reads Coca-Cola with ORIGINAL TASTE as observed."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 'the curve recognized at a glance' and subtitle 'no need to read the name, the contour answers' state this poster's shape-recognition proposition."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The true contour silhouette now exists on the wall, but the bottle does not fill its lower portion and the stripe runs onto the floor, so the alignment seam - the memorable event - is still not legible in frame."
+    }
+  },
+  "reported_score": 76.2,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

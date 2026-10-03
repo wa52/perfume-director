@@ -1,0 +1,25 @@
+# Automatic campaign copy and visual memory gate
+
+This upgrade belongs to the existing dynamic Director → PosterSpec → ComfyUI → Critic loop. The fixed four-poster demonstration script is not the automation engine.
+
+With commercial_v2=true and campaign_copy_mode="creative", the program reads the product identity, asks the Creative Director for four independently reviewed advertising propositions, then generates a headline/subhead for each proposition. An independent copy reviewer must explicitly accept concept fit, brand fit, factual claim safety and memory clarity for every direction. Rejection or malformed output triggers automatic rewriting up to three proposals, then a recorded failure rather than a fabricated PASS.
+
+The renderer receives each direction's individually approved words. Model copy cannot alter logo or price. Supplied config.approved_copy overrides creative writing and stays locked; campaign_copy_mode="identity" preserves the original identification-only behavior. User requested wording/prohibitions are supplied to both writer and reviewer. No four compulsory visual genres or preset coordinates were added to the dynamic planner.
+
+Commercial Gate adds copy_concept_specific and visual_memory_visible as hard vetoes requiring explicit visual evidence. The final independent Art Director also judges whether the written proposition is actually expressed in the image. These checks apply in Commercial V2. A final-review veto in a direction loop now triggers an automatic root-cause-to-patch call, using the same immutable identity and bounded patch validation. Valid patches return to the existing next iteration; unsupported repairs or API failure retain the rejected draft. A repair never grants approval. Existing iteration limits still apply. Copy is approved before layout and remains immutable during rendering; this upgrade does not authorize arbitrary mid-loop slogan changes or unsupported product relighting.
+
+Example local configuration fields (keep private credentials outside Git):
+
+```json
+{"commercial_v2":true,"direction_mode":"dynamic","campaign_copy_mode":"creative"}
+```
+
+CLI uses repository source immediately. Existing ComfyUI processes must reload the installed Python nodes to use changed modules; start_comfy.ps1 now includes campaign_copy.py. Only restart an owned idle instance. Loading source or passing tests is not evidence of a successfully completed commercial image loop.
+
+The Art Director and Critic can also request background.shapes entries of kind product_silhouette. The renderer derives this flat-color effect from the original product alpha mask, fits it without changing aspect ratio and uses model-specified position, bounding size, color and opacity. No generated product contour or label is needed. Rendered geometry reports the actual fitted bounds for review. The physical compositor uses the same primitive. This is a deterministic graphic effect, not recovered glass geometry or material relighting.
+
+Fifteen new tests exercise identity preservation, incomplete/duplicate/overlong copy rejection, automatic evidence-driven retry, rejection of string booleans, direction-specific PosterSpec words, the two commercial vetoes, source-alpha contour fidelity, missing-source rejection, aspect/opacity preservation, agreement between actual rendering and Critic geometry, and final-veto repair feedback/identity safeguards. The repository suite passes 208 tests. Real API verification records are separate; do not equate these unit checks with visual quality or stability.
+
+Real API evidence is published in [the automatic regression gallery](samples/automation/campaign-copy-20261003/gallery.html). Four model-planned directions executed without human text/layout/image edits, using at most two rounds each; selected Critic scores were 76.3, 85.4, 82.3 and 90.0, all NEEDS_REVIEW. The 90.0 draft was independently vetoed, demonstrating why average score is insufficient. This batch exposed the missing final-veto repair path and predates that fix. A separate three-round contour regression confirms the Critic itself requested product_silhouette in V3; scores 77.4 → 74.6 → 78.9 remain below commercial acceptance. Correct execution of the contour does not automatically resolve typography or creative relationships. These are bounded capability regressions, not evidence of stable commercial output.
+
+The actual saved final-review veto was replayed through the new repair call. Its first patch tried to change locked logo.text; its second violated graphic-mode shadow constraints. Both were rejected atomically and their validation errors returned to the model. The third proposal passed validation, was applied automatically, rendered and reviewed for two rounds (81.7 → 83.4). Direct visual selection retained V1 and NEEDS_REVIEW. This verifies repair feedback and resumption, not an improvement over the earlier 90.0 numeric judgment. Repair proposals have a three-attempt limit. The separate fresh concept-4 regression (80.0 → 82.6 → 85.9) did not reach final acceptance either.

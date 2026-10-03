@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 71045,
+  "background": {
+    "color": "#EDEBE7",
+    "prompt": "Flat grey-white matte cardstock with fine paper tooth, three concentric printed pale grey ripple rings centered mid-canvas settling toward the center point, cool even gallery illumination, completely flat printed surface, no horizon, no gradient hotspot",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 75,
+        "y": 666,
+        "width": 930,
+        "height": 930,
+        "color": "#DEDAD4",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 205,
+        "y": 796,
+        "width": 670,
+        "height": 670,
+        "color": "#E6E3DE",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 390,
+        "y": 981,
+        "width": 300,
+        "height": 300,
+        "color": "#D6231F",
+        "opacity": 0.08
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 735,
+    "width": 225,
+    "height": 792
+  },
+  "lighting": "冷而均匀的画廊式平光,完全平面印刷质感,仅底座一层极软接触影",
+  "palette": [
+    "#EDEBE7",
+    "#26221E",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "红,自成中心",
+    "x": 86,
+    "y": 101,
+    "size": 96,
+    "color": "#26221E",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "灰白世界里,红自己定中心",
+    "x": 648,
+    "y": 1354,
+    "size": 26,
+    "color": "#26221E",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#26221E",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 86,
+    "y": 1346,
+    "size": 34,
+    "color": "#26221E",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat printed cardstock",
+    "cast_length_ratio": 0.04,
+    "cast_opacity": 0,
+    "cast_blur": 10
+  }
+}

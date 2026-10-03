@@ -1,0 +1,41 @@
+{
+  "tier": "draft",
+  "evidence": "The poster keeps the approved copy, the untouched contour bottle (red cap, red band, white script, condensation intact) and a flat grey-white cardstock field, but the declared 'chromatic gravity' event is not what actually renders: the pale ripple rings read as a decorative target motif sitting behind/around the packshot rather than geometry visibly organised by the red, and the only saturated red shape in the field (the 12%-opacity red ellipse) lands off-axis at the lower right, disconnected from the bottle, so the eye reads two competing centres. The bottle floats with no contact shadow at all (cast_opacity 0), which in a graphic field still leaves the cutout visibly pasted; its own studio speculars and grey-backdrop exposure sit at a different contrast temperature than the flat printed surround. Typography is competent but generic: Microsoft YaHei black sans title top-left, small subtitle bottom-right, Arial Narrow latin logotype bottom-left - a signature block with no crafted hierarchy, and the latin 'Coca-Cola' wordmark in condensed sans contradicts the brand's script capital already visible on the label. Compared with the supplied references (sculpted red wave energy can, colour-blocked lifestyle stillness), this sheet offers texture plus a pasted cutout, not a resolved visual event.",
+  "problems": [
+    {
+      "type": "concept_not_visible",
+      "problem": "The 'red holds the center' proposition is stated in copy but not performed: the red ripple ellipse is displaced to the lower-right quadrant and reads as a stray pink disc, while the grey rings read as generic concentric decoration behind the packshot instead of environment converging on the red.",
+      "root_cause": "background.shapes ellipse coordinates were authored as if centred but are interpreted as upper-left, shifting every ring and the red accent off the bottle axis; the red accent at 0.12 opacity is also too weak to act as the claimed chromatic anchor.",
+      "affected_layer": "scene",
+      "repair_strategy": "Rewrite background.shapes with the complete validated list so all rings and the red accent are truly concentric with the product centre (x = 540 - w/2, y = 806 - h/2); raise the innermost red ring opacity toward the top of the allowed range or reduce it to a single crisp red hairline ring hugging the bottle silhouette so the red visibly organises the geometry."
+    },
+    {
+      "type": "pasted_cutout",
+      "problem": "The bottle has zero contact shadow and no graphic anchoring device, so despite the intentional flat field it reads as a floating sticker against the printed rings.",
+      "root_cause": "integration_plan.cast_opacity set to 0 and shadow offset 0 remove the one declared grounding cue ('only one very soft contact shadow at the base'), leaving the cutout unsupported.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Restore a bounded soft contact shadow within the allowed envelope (cast_opacity ~0.25-0.30, cast_length_ratio ~0.04, cast_blur 10-14) directly under the bottle base, or replace it with a deliberate graphic anchor (e.g. the innermost ring passing behind the base) so the suspension is authored rather than accidental."
+    },
+    {
+      "type": "typography_brand_mismatch",
+      "problem": "The latin lockup 'Coca-Cola' is set in condensed grotesque (ARIALN) with letterspacing, which fights the brand's own script capital displayed on the label and reads as generic placeholder branding.",
+      "root_cause": "Logo layer font choice defaults to a system condensed sans instead of deferring to the observed brand asset (script wordmark) or omitting the redundant latin lockup.",
+      "affected_layer": "brand",
+      "repair_strategy": "Drop the typed latin 'Coca-Cola' line and let the label's script carry the brand signature, or restyle the lockup as a small neutral endorsement line (e.g. 'ORIGINAL TASTE' in tracked sans) so typed type never impersonates the script mark."
+    },
+    {
+      "type": "weak_hierarchy",
+      "problem": "Title, subtitle and logotype form three disconnected corner stamps; the subtitle at 26px bottom-right is near-illegible at poster scale and the negative space between title and bottle is dead rather than charged.",
+      "root_cause": "Type sizes/tracking were left at spec defaults without optical balancing against the 929px ring field, so the layout relies on symmetry claims instead of visible weight distribution.",
+      "affected_layer": "typography",
+      "repair_strategy": "Use the supported type controls: enlarge subtitle to ~34-38px with tracking 4-6 and align it to the right margin on the same optical line as the logotype, tighten title tracking, and pull the title block slightly down so the ring field's top arc frames it instead of colliding with empty space."
+    },
+    {
+      "type": "source_quality_ceiling",
+      "problem": "The packshot is a straight-on e-commerce cutout with flat frontal speculars; preservation is faithful but the source itself is under-resolved as campaign photography, so the 'gallery' framing exposes its catalogue character.",
+      "root_cause": "Source asset is a plain light-grey studio shot; placing it unmodified in a large flat field magnifies its low drama rather than converting it into an event.",
+      "affected_layer": "product",
+      "repair_strategy": "Within renderer limits (no relighting, no label edits), change the crop logic: scale the bottle up toward the fresh-concept maximum so the contour silhouette and condensation become the graphic texture of the sheet, letting the rings intersect the silhouette instead of orbiting empty space around a small object."
+    }
+  ]
+}

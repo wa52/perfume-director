@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 42,
+  "background": {
+    "color": "#B9B4AC",
+    "prompt": "Dusk-grey seamless studio floor sweeping into a dimmer grey backdrop, one soft elongated diffuse shade tapering in the curved contour profile stretching from the center base toward the foreground, soft diffuse frontal overhead illumination, gentle vertical gradient, no visible equipment",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 713,
+    "y": 720,
+    "width": 241,
+    "height": 864
+  },
+  "lighting": "柔和漫射前上光为主,地面长影作漫射拉长而非硬重打光,竖向高光保留",
+  "palette": [
+    "#B9B4AC",
+    "#262220",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "一影赴约",
+    "x": 86,
+    "y": 288,
+    "size": 110,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2,
+    "max_width": 150,
+    "line_height": 1.14,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "影子先到,曲线随后",
+    "x": 86,
+    "y": 886,
+    "size": 28,
+    "color": "#262220",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#262220",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 86,
+    "y": 1037,
+    "size": 36,
+    "color": "#262220",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "overhead",
+    "ground_material": "dusk-grey seamless studio floor",
+    "cast_length_ratio": 0.2,
+    "cast_opacity": 0.28,
+    "cast_blur": 30
+  }
+}

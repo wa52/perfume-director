@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 71045,
+  "background": {
+    "color": "#C9C6C0",
+    "prompt": "Matte mineral grey painted studio wall meeting a continuous fine-ground cement floor at a low horizon, one oversized flat matte charcoal silhouette of the same curved contour as the standing cutout painted on the wall and aligned so the cutout fills its lower half, soft diffuse frontal overhead illumination, even low contrast, no visible equipment",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 886,
+    "width": 249,
+    "height": 893
+  },
+  "lighting": "柔和漫射前上光,窄竖高光保留在肩侧,地面仅一层软接触影,墙面无热点",
+  "palette": [
+    "#C9C6C0",
+    "#23201C",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "一眼即识的曲线",
+    "x": 76,
+    "y": 108,
+    "size": 84,
+    "color": "#23201C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "不必读名,轮廓已作答",
+    "x": 76,
+    "y": 223,
+    "size": 30,
+    "color": "#23201C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#23201C",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 76,
+    "y": 1361,
+    "size": 34,
+    "color": "#23201C",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "fine-ground cement",
+    "cast_length_ratio": 0.06,
+    "cast_opacity": 0.22,
+    "cast_blur": 18
+  }
+}

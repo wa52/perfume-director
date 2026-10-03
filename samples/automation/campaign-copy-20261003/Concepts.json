@@ -1,0 +1,574 @@
+[
+  {
+    "name": "一眼即识的曲线 · 墙面巨影对位",
+    "brief": "识别事件海报:摄影棚灰墙上印着一道与实物等比例放大的哑光深灰曲线剪影,真实玻璃轮廓站在墙前地面,从固定视平线看恰好填进巨影下半段——轮廓自己回答名字。中文主标题居左上,副标题紧随,拉丁标识收在左下安静角,巨影与实物之间的对位缝就是视觉事件。",
+    "material": "哑光矿灰涂料墙面与连续细磨水泥地面,墙面巨影为平涂哑光墨形,边缘微有辊涂颗粒",
+    "lighting": "柔和漫射前上光,窄竖高光保留在肩侧,地面仅一层软接触影,墙面无热点",
+    "id": "concept-1",
+    "signature": "7e9b8e99f412171c1e0af36a135b8c5e5010fdfe29867930089ea9cf19f49674",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "above",
+    "title_family": "sans",
+    "palette": [
+      "#C9C6C0",
+      "#23201C",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-f1cbf5fa14975844",
+      "category-f885fea5a325ffbb",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#C9C6C0",
+        "prompt": "Matte mineral grey painted studio wall meeting a continuous fine-ground cement floor at a low horizon, one oversized flat matte charcoal silhouette of the same curved contour as the standing cutout painted on the wall and aligned so the cutout fills its lower half, soft diffuse frontal overhead illumination, even low contrast, no visible equipment",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 540,
+        "y": 886,
+        "width": 249,
+        "height": 893
+      },
+      "lighting": "柔和漫射前上光,窄竖高光保留在肩侧,地面仅一层软接触影,墙面无热点",
+      "palette": [
+        "#C9C6C0",
+        "#23201C",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "一眼即识的曲线",
+        "x": 76,
+        "y": 108,
+        "size": 84,
+        "color": "#23201C",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 6,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "不必读名,轮廓已作答",
+        "x": 76,
+        "y": 223,
+        "size": 30,
+        "color": "#23201C",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 3
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#23201C",
+        "font": "C:/Windows/Fonts/msyh.ttc"
+      },
+      "logo": {
+        "text": "Coca-Cola",
+        "x": 76,
+        "y": 1361,
+        "size": 34,
+        "color": "#23201C",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "commercial_v2": true,
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "fine-ground cement",
+        "cast_length_ratio": 0.06,
+        "cast_opacity": 0.22,
+        "cast_blur": 18
+      }
+    },
+    "creative_concept": {
+      "id": "c1",
+      "name": "一眼即识的曲线 (The Curve That Needs No Name)",
+      "proposition": "The contour silhouette alone identifies the product, so the广告 celebrates recognition by shape rather than by logo reading; the Chinese title reads 一眼即识的曲线 with subtitle 不必读名,轮廓已作答, paired with the approved line ORIGINAL TASTE.",
+      "visual_mechanism": "A recognition event: an oversized monochrome contour-bottle silhouette is painted flat onto the backdrop wall as part of the generated empty set, and the untouched real bottle stands in front of it at floor level so that, from the fixed eye-level view, the real amber bottle visually 'fills' the lower portion of its own giant silhouette; the moment of alignment between object and its enlarged shadow-shape is the visual event that proves the curve is legible without any lettering.",
+      "audience": "Design-literate urban consumers and social-media scrollers who process brand shapes faster than words.",
+      "brand_connection": "Uses only observed assets: the symmetric contour silhouette, the red band and white script remain untouched on the cutout while the wall silhouette echoes the same observed curve in a single neutral tone.",
+      "source_constraints": "Cutout preserved whole with original label, shape, droplets and RGB illumination; the wall silhouette is generated scenery, not a repaint of the product; soft diffuse front/above light and soft contact shadow kept; no droplets added to the glass; no history, efficacy, price or new-product claims."
+    },
+    "approved_copy": {
+      "title": "一眼即识的曲线",
+      "subtitle": "不必读名,轮廓已作答",
+      "price": "",
+      "logo": "Coca-Cola"
+    }
+  },
+  {
+    "name": "落座即现场 · 水痕证物",
+    "brief": "到场事件:冰凉的轮廓刚被放下, pale 石面 вокруг 留下一圈冷凝雾痕、细水环与散落水珠,湿影微深;实物自身水珠不动,周围表面替它讲述温度与接触。主标题与副标题压在下方预留文字带,拉丁标识退到右下角作签名。",
+    "material": "浅暖灰微水泥连续台面,表面带冷凝雾圈、细水环与零散水珠,湿区反光略深",
+    "lighting": "柔和漫射前上光包裹玻璃,竖向窄高光保留,接触影软而微湿",
+    "id": "concept-2",
+    "signature": "35ea47a5c49b6fdac6cbbebbc583ea8615d1b76fbd96522206a17650aed58eb7",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "below",
+    "title_family": "sans",
+    "palette": [
+      "#E7E3DC",
+      "#2A2622",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-f1cbf5fa14975844",
+      "category-f885fea5a325ffbb",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#E7E3DC",
+        "prompt": "Pale warm-grey micro-cement horizontal surface continuous into a plain light-grey backdrop, a coherent ring of condensation mist, faint circular water rings and scattered droplets on the surface around and behind the base, slightly damp darker cast zone near the base, soft diffuse frontal overhead light, calm even gradient",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 209,
+        "height": 749
+      },
+      "lighting": "柔和漫射前上光包裹玻璃,竖向窄高光保留,接触影软而微湿",
+      "palette": [
+        "#E7E3DC",
+        "#2A2622",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "落座即现场",
+        "x": 86,
+        "y": 1058,
+        "size": 92,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 4,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "一圈水痕,是它刚到的证据",
+        "x": 86,
+        "y": 1217,
+        "size": 30,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 2
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/msyh.ttc"
+      },
+      "logo": {
+        "text": "Coca-Cola",
+        "x": 778,
+        "y": 1080,
+        "size": 44,
+        "color": "#2A2622",
+        "font": "C:/Windows/Fonts/BASKVILL.TTF",
+        "tracking": 2
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "commercial_v2": true,
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "pale micro-cement",
+        "cast_length_ratio": 0.08,
+        "cast_opacity": 0.25,
+        "cast_blur": 14
+      }
+    },
+    "creative_concept": {
+      "id": "c2",
+      "name": "落座即现场 (The Table Becomes the Event)",
+      "proposition": "The bottle's arrival transforms an ordinary surface into a charged scene, so the广告 sells presence and moment rather than product facts; Chinese title 落座即现场 with subtitle 一圈水痕,是它刚到的证据, alongside ORIGINAL TASTE.",
+      "visual_mechanism": "An arrival event: on an otherwise empty pale tabletop the generated set supplies a coherent ring of condensation mist, faint water rings and scattered droplets on the surface around and behind the base, plus a slightly damp cast-shadow zone, as if the chilled bottle was just set down; the bottle itself keeps its observed droplets untouched while the surrounding surface tells the story of contact and temperature through the trace it leaves.",
+      "audience": "Everyday mealtime and home-gathering consumers who associate the bottle with a shared table moment.",
+      "brand_connection": "The red cap and label band act as the single saturated anchor in an otherwise neutral wet-surface scene, matching the observed studio illumination so the cutout never looks relit.",
+      "source_constraints": "Moisture exists only on the generated surface around the product, never repainted or added onto the cutout; label and cap opacity unchanged; plain light-grey backdrop retained; contact shadow soft; no efficacy, price, new-product or history statements."
+    },
+    "approved_copy": {
+      "title": "落座即现场",
+      "subtitle": "一圈水痕,是它刚到的证据",
+      "price": "",
+      "logo": "Coca-Cola"
+    }
+  },
+  {
+    "name": "一影赴约 · 长影先抵",
+    "brief": "影子事件:暮色摄影棚里,一道低长的投影自底座向观者方向铺开,影 outline 收细弯曲成轮廓曲线,像先赴约的客人;实物直立正面不动。标题以宋体竖排列置于左侧留白带,副标题横排在其下,拉丁标识落左下,右路全交给影子的旅程。",
+    "material": "暮灰无缝摄影地屏,微湿反光地面承托长影,背景渐暗如傍晚棚光",
+    "lighting": "柔和漫射前上光为主,地面长影作漫射拉长而非硬重打光,竖向高光保留",
+    "id": "concept-3",
+    "signature": "0c541a334c08b0c80bf4f5e8c3dcc8773a026681e7a4e8992cadc7747115bd7c",
+    "signature_version": 2,
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "palette": [
+      "#B9B4AC",
+      "#262220",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-f1cbf5fa14975844",
+      "category-f885fea5a325ffbb",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#B9B4AC",
+        "prompt": "Dusk-grey seamless studio floor sweeping into a dimmer grey backdrop, one soft elongated diffuse shade tapering in the curved contour profile stretching from the center base toward the foreground, soft diffuse frontal overhead illumination, gentle vertical gradient, no visible equipment",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 713,
+        "y": 720,
+        "width": 241,
+        "height": 864
+      },
+      "lighting": "柔和漫射前上光为主,地面长影作漫射拉长而非硬重打光,竖向高光保留",
+      "palette": [
+        "#B9B4AC",
+        "#262220",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "一影赴约",
+        "x": 86,
+        "y": 288,
+        "size": 110,
+        "color": "#262220",
+        "font": "C:/Windows/Fonts/simsun.ttc",
+        "tracking": 2,
+        "max_width": 150,
+        "line_height": 1.14,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "影子先到,曲线随后",
+        "x": 86,
+        "y": 886,
+        "size": 28,
+        "color": "#262220",
+        "font": "C:/Windows/Fonts/simsun.ttc",
+        "tracking": 2
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#262220",
+        "font": "C:/Windows/Fonts/simsun.ttc"
+      },
+      "logo": {
+        "text": "Coca-Cola",
+        "x": 86,
+        "y": 1037,
+        "size": 36,
+        "color": "#262220",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 3
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "photographic",
+      "commercial_v2": true,
+      "integration_plan": {
+        "source_key_light": "overhead",
+        "ground_material": "dusk-grey seamless studio floor",
+        "cast_length_ratio": 0.2,
+        "cast_opacity": 0.28,
+        "cast_blur": 30
+      }
+    },
+    "creative_concept": {
+      "id": "c3",
+      "name": "一影赴约 (One Shadow Keeps the Appointment)",
+      "proposition": "Even the bottle's shadow carries the contour identity, so the广告 frames the product as an expected guest whose shadow arrives across the floor first; Chinese title 一影赴约 with subtitle 影子先到,曲线随后, paired with ORIGINAL TASTE.",
+      "visual_mechanism": "A shadow-travel event: within the generated empty set a single long, low cast shadow stretches from the bottle base across a plain floor toward the viewer, the shadow's outline visibly narrowing and curving in the contour profile so the floor reads as a path already walked; the standing bottle remains upright and frontal while its elongated floor shadow performs the motion the product itself never makes.",
+      "audience": "Evening and night-time occasion drinkers, plus out-of-home viewers who read posters from a distance where the long shadow guides the eye.",
+      "brand_connection": "The shadow reproduces only the observed silhouette geometry; the amber liquid, red band and crown cap stay exactly as captured, so identity travels through shape physics rather than added graphics.",
+      "source_constraints": "Shadow is a permitted floor cast/contact shadow consistent with soft front/above studio light, rendered as a diffuse elongation rather than a hard relight; cutout, droplets, label and illumination untouched; no people generated; no forbidden claims."
+    },
+    "approved_copy": {
+      "title": "一影赴约",
+      "subtitle": "影子先到,曲线随后",
+      "price": "",
+      "logo": "Coca-Cola"
+    }
+  },
+  {
+    "name": "红,自成中心 · 灰白涟漪",
+    "brief": "色彩引力事件:全_flat_灰白印刷海报里,三圈同心淡灰涟漪自中心向外沉降,唯一饱和红点留给实物自身的红盖与红带;环境几何朝红色收拢。主标题以粗黑体压在上带,副标题与拉丁标识分居左右下角落款,构成对称重力版式。",
+    "material": "平涂灰白卡纸,细纸纹,同心圆为平印淡灰墨环,无地平线无渐变热点",
+    "lighting": "冷而均匀的画廊式平光,完全平面印刷质感,仅底座一层极软接触影",
+    "id": "concept-4",
+    "signature": "5d550f9f481ce6ebf679181d2c02ca837639b58e9d9e692dd41c1a25064b4498",
+    "signature_version": 2,
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "sans",
+    "palette": [
+      "#EDEBE7",
+      "#26221E",
+      "#D6231F"
+    ],
+    "reference_ids": [
+      "category-f1cbf5fa14975844",
+      "category-f885fea5a325ffbb",
+      "category-66d09d8fb962ae89"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#EDEBE7",
+        "prompt": "Flat grey-white matte cardstock with fine paper tooth, three concentric printed pale grey ripple rings centered mid-canvas settling toward the center point, cool even gallery illumination, completely flat printed surface, no horizon, no gradient hotspot",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 806,
+            "width": 929,
+            "height": 929,
+            "color": "#DEDAD4",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 806,
+            "width": 670,
+            "height": 670,
+            "color": "#E6E3DE",
+            "opacity": 0.9
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 806,
+            "width": 432,
+            "height": 432,
+            "color": "#D6231F",
+            "opacity": 0.12
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 806,
+        "width": 225,
+        "height": 806
+      },
+      "lighting": "冷而均匀的画廊式平光,完全平面印刷质感,仅底座一层极软接触影",
+      "palette": [
+        "#EDEBE7",
+        "#26221E",
+        "#D6231F"
+      ],
+      "title": {
+        "text": "红,自成中心",
+        "x": 86,
+        "y": 101,
+        "size": 96,
+        "color": "#26221E",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 6,
+        "max_width": 0,
+        "line_height": 1.1,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "灰白世界里,红自己定中心",
+        "x": 648,
+        "y": 1354,
+        "size": 26,
+        "color": "#26221E",
+        "font": "C:/Windows/Fonts/msyh.ttc",
+        "tracking": 2
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#26221E",
+        "font": "C:/Windows/Fonts/msyh.ttc"
+      },
+      "logo": {
+        "text": "Coca-Cola",
+        "x": 86,
+        "y": 1346,
+        "size": 34,
+        "color": "#26221E",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 4
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": false,
+        "x": 104,
+        "y": 360,
+        "width": 80,
+        "color": "#A6A9AF"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "product_category": "beverage",
+      "scene_mode": "graphic",
+      "commercial_v2": true,
+      "integration_plan": {
+        "source_key_light": "front",
+        "ground_material": "flat printed cardstock",
+        "cast_length_ratio": 0.04,
+        "cast_opacity": 0,
+        "cast_blur": 10
+      }
+    },
+    "creative_concept": {
+      "id": "c4",
+      "name": "红,自成中心 (Red Holds the Center)",
+      "proposition": "In a colourless environment the observed red band and cap alone organise the whole frame, so the广告 proposes chromatic gravity as the message; Chinese title 红,自成中心 with subtitle 灰白世界里,红自己定中心, alongside ORIGINAL TASTE.",
+      "visual_mechanism": "A chromatic-gravity event: the generated empty set is a vast desaturated grey-white studio void in which faint concentric tonal bands in the floor and backdrop gradient converge toward the bottle base like ripples settling around a fixed point, so the scene's own geometry appears organised by the red label and cap; the visual event is the environment orienting itself to the product's colour, not the product being decorated.",
+      "audience": "Fashion- and art-oriented young adults who respond to bold minimal colour statements in retail and gallery-adjacent media.",
+      "brand_connection": "Relies strictly on observed colours: bright red band and cap against white script, set into a neutral grey world that echoes the original light-grey backdrop and even low-contrast lighting.",
+      "source_constraints": "Background gradients and ripple bands are generated scenery only; no relighting, no repaint of label or cap, no added droplets on the glass, cutout pose and RGB illumination preserved; copy limited to approved words plus the authored Chinese lines; no efficacy, price, new-product or history claims."
+    },
+    "approved_copy": {
+      "title": "红,自成中心",
+      "subtitle": "灰白世界里,红自己定中心",
+      "price": "",
+      "logo": "Coca-Cola"
+    }
+  }
+]

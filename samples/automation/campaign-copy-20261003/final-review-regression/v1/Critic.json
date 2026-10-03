@@ -1,0 +1,162 @@
+{
+  "pass": false,
+  "score": 80.0,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 74,
+    "typography": 84,
+    "background": 70,
+    "physical_integration": 90,
+    "reference_alignment": 72,
+    "creative_coherence": 74,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "background_geometry_conflict",
+      "problem": "Two competing ring systems coexist: the printed pale-grey ripple rings generated around the canvas middle (visible arcs from ~(100,240) to ~(1130,1170)) and the deterministic filled ellipses anchored top-left at (540,806), whose centers land at ~(1004,1270), i.e. the bottom-right corner. The pink #D6231F@0.12 disc and the two grey discs therefore read as an off-concept corner blob, not as part of the concentric ripple field.",
+      "root_cause": "background.shapes ellipse x/y were set as if they were centers while the renderer treats them as upper-left, displacing all three discs ~460px down-right of the bottle base.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-center all three ellipses on the product base (540,1131) with a complete replacement list so the printed rings and the tonal discs share one convergence point."
+    },
+    {
+      "type": "concept_color_leak",
+      "problem": "The brief reserves the only saturated red for the observed cap and label band, but the 12% red ellipse renders as a large desaturated pink disc (~430px wide) touching the bottle's right flank at (700-970, 810-1240). It dilutes the single-red proposition and sits behind the base exactly where the contact shadow reads, muddying the grounding cue in the contact crop.",
+      "root_cause": "Red ellipse placed off-center with too large a footprint and too high an opacity for an accent-only role.",
+      "affected_layer": "scene",
+      "repair_strategy": "Shrink the red ellipse to a small halo concentric with the base and drop opacity to ~0.08, or recolor it to the grey ink family."
+    },
+    {
+      "type": "weak_visual_hierarchy",
+      "problem": "Product height ratio is 0.4514 (valid per fresh_concept_size_policy 0.35-0.74, so no size violation), yet against the 1080x1440 canvas the bottle reads as a small isolated object inside a large empty field; the references achieve dominance through scale or full-bleed geometry. The ripple rings stop short of the frame edges on the left, so the 'gravity' event feels tentative rather than commanding.",
+      "root_cause": "Scale chosen at the low-middle of the allowed band while the surrounding geometry does not compensate with edge-to-edge reach.",
+      "affected_layer": "scene",
+      "repair_strategy": "Artistic resize within policy: raise product height to ~0.55 of canvas (height 792, y 735) keeping base at 1131 and center x 540, so the red band anchors the rings visibly."
+    },
+    {
+      "type": "tonal_seam_under_copy",
+      "problem": "The outer grey ellipse edge cuts a visible diagonal tonal seam through the bottom-right quadrant, passing within ~60px above the subtitle bbox (648,1354)-(962,1380). The subtitle therefore sits on a split field, weakening the corner colophon alignment with the logo at bottom-left.",
+      "root_cause": "Off-center ellipse boundaries intersecting the lower copy zone.",
+      "affected_layer": "typography",
+      "repair_strategy": "After re-centering the ellipse stack on the base, the seam moves out of the subtitle zone; additionally nudge subtitle y to 1372 for a cleaner baseline pairing with the logo line."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 75,
+          "y": 666,
+          "width": 930,
+          "height": 930,
+          "color": "#DEDAD4",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 796,
+          "width": 670,
+          "height": 670,
+          "color": "#E6E3DE",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 390,
+          "y": 981,
+          "width": 300,
+          "height": 300,
+          "color": "#D6231F",
+          "opacity": 0.08
+        }
+      ]
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 792
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 735
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1372
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Bottom-left lockup reads 'Coca-Cola' in approved ARIALN.TTF at (86,1346)-(248,1370), uncropped and legible."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered contour silhouette, crown cap, red band and liquid tone match the source cutout; bbox 180x650px preserves source aspect."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [370,991,710,1241] shows a soft dark contact shadow hugging the glass base at y=1131 with offset_y 0; no floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox [450,481,630,1131] is fully inside canvas; only background ellipses cross edges, which is intentional bleed."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Cool even gallery flat light matches the source's diffuse frontal studio illumination; single soft contact shadow only, per integration_plan."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (86,101)-(618,194), subtitle and logo bboxes all lie inside canvas margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no two-axis intersections with the product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc and ARIALN.TTF are both in the installed approved list and render CJK and Latin glyphs correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' spelled correctly; label script and ORIGINAL TASTE untouched from source."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title 红,自成中心 and subtitle 灰白世界里,红自己定中心 state this poster's chromatic-gravity proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable event (environment rippling toward the red) is only half-visible: generated rings converge mid-canvas while the printed discs converge bottom-right, so no single readable gravity point exists yet."
+    }
+  },
+  "reported_score": 76,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:visual_memory_visible",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}
