@@ -1,5 +1,7 @@
 # Experimental material / lighting branch
 
+Follow-up: [source-preserving 2D harmonization](HARMONIZATION_2D.md) recomposes the original RGBA against the clean scene instead of transferring the guide's wall ghosts or restoring flat labels over newly generated glass. Six controlled comparisons and an opt-in IMAGE-output node are included; this remains separate from commercial approval.
+
 This branch tests material appearance editing with real ComfyUI execution. It is opt-in and does not replace the commercial renderer or mark a poster commercial-ready.
 
 ## Run the packaged bottle experiment

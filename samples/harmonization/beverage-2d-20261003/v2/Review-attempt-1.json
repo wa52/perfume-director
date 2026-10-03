@@ -1,0 +1,106 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 90,
+        "edge_quality": 74,
+        "lighting_coherence": 80,
+        "grounding": 84
+      },
+      "problems": [
+        {
+          "problem": "Opaque dark/green fringe under the bottle base reads as a hard stub rather than a soft contact shadow",
+          "evidence": "Image 6 row 1, contact crop: a saturated dark-green blob protrudes below the base curve onto the cloth",
+          "root_cause": "sRGB-space alpha matting left premultiplied edge RGB baked into the半transparent base rows",
+          "repair": "Re-composite base rows in linear light and replace the stub with a low-opacity elliptical contact occlusion"
+        },
+        {
+          "problem": "Label wrap edge shows a yellow-orange remnant sliver at left label border",
+          "evidence": "Image 6 row 1, label crop: ochre pixel column outside the white label keyline",
+          "root_cause": "Original-edge remnant from the source cutout retained in composite",
+          "repair": "Choke alpha 1px at label silhouette or inpaint the sliver with background grey"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 86,
+        "lighting_coherence": 88,
+        "grounding": 80
+      },
+      "problems": [
+        {
+          "problem": "Contact occlusion under base is thinner than baseline, bottle floats slightly",
+          "evidence": "Image 6 row 2, contact crop: cloth directly beneath green base is nearly unshaded compared with row 1",
+          "root_cause": "Linear-light composite dropped the source contact darkening without substituting an occlusion term",
+          "repair": "Add a diffuse, near-vertical soft contact shadow matched to frontal fill light"
+        },
+        {
+          "problem": "Green base band reads over-saturated versus packshot source",
+          "evidence": "Image 6 row 2 vs image 5: base green brighter than the transparent original flattened neutral",
+          "root_cause": "Linear-light unpremultiply amplified saturated semi-transparent base pixels",
+          "repair": "Clamp base chroma to source flattened values before scene blend"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 90,
+        "lighting_coherence": 90,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Minor residual ochre sliver at left label edge persists from source",
+          "evidence": "Image 6 row 3, label crop: faint warm pixel at label keyline, identical to source defect",
+          "root_cause": "Source cutout artifact retained intentionally",
+          "repair": "Optional 1px local clean-up; not blocking"
+        }
+      ],
+      "integration_acceptable": true
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 95,
+        "edge_quality": 88,
+        "lighting_coherence": 86,
+        "grounding": 82
+      },
+      "problems": [
+        {
+          "problem": "Neck glass highlights slightly milky versus source, weakening observed glass transmission",
+          "evidence": "Image 6 row 4, neck crop: empty-glass zone lighter and lower contrast than image 5",
+          "root_cause": "Frontal fill term added over glass instead of only over scene behind alpha",
+          "repair": "Apply scene light only through (1-alpha) so glass transmission stays source-identical"
+        },
+        {
+          "problem": "Contact shadow present but offset slightly camera-left of base center",
+          "evidence": "Image 6 row 4, contact crop: darkest occlusion not centered under base protrusion",
+          "root_cause": "Occlusion ellipse placed from bounding box rather than alpha centroid",
+          "repair": "Recenter occlusion on alpha-weighted base centroid"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B keeps bottle, cap, label and glass transmission closest to the transparent source (image 5), shows the cleanest linear-light edges without baseline's hard green stub, and its enlarged contact crop confirms a real soft occlusion consistent with diffuse frontal light; A floats and C milks the neck glass, while baseline carries fringe and stub defects.",
+  "next_repairs": [
+    {
+      "target": "B label left keyline",
+      "action": "Remove the 1px ochre source remnant with a local alpha choke, keeping label texture otherwise untouched"
+    },
+    {
+      "target": "B base contact",
+      "action": "Optionally widen the soft occlusion 2-3px laterally for heavier packshot feel without introducing directional bias"
+    }
+  ]
+}

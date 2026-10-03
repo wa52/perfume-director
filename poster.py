@@ -327,6 +327,11 @@ def vision(config, prompt, images, trace_path=None):
         with Image.open(path) as source:
             source.thumbnail((edge, edge))
             buffer = io.BytesIO()
+            if 'A' in source.getbands() or 'transparency' in source.info:
+                # Discarding alpha exposes hidden original-background RGB to the
+                # critic. Composite the visible product on a neutral matte first.
+                matte=Image.new('RGBA',source.size,(231,229,225,255))
+                source=Image.alpha_composite(matte,source.convert('RGBA'))
             source.convert('RGB').save(buffer, format='JPEG', quality=90)
         encoded = base64.b64encode(buffer.getvalue()).decode()
         content.append({'type': 'image_url', 'image_url': {'url': 'data:image/jpeg;base64,'+encoded}})
@@ -336,6 +341,7 @@ def vision(config, prompt, images, trace_path=None):
     started = time.monotonic()
     trace = {'requested_model': config['vision_model'], 'endpoint': config['vision_base_url'],
         'options': options, 'image_max_edge':edge, 'timeout_seconds': config.get('vision_timeout_seconds', 180),
+        'image_preprocessing':'transparent inputs flattened on neutral RGB 231,229,225; max-edge resize; JPEG90',
         'image_count': len(images), 'images': [{'name': Path(p).name,
             'sha256': hashlib.sha256(Path(p).read_bytes()).hexdigest()} for p in images]}
     attempts = config.get('vision_attempts', 3)
@@ -416,6 +422,10 @@ def quality_module():
 
 def commercial_module():
     return importlib.import_module('.commercial', __package__) if __package__ else importlib.import_module('commercial')
+
+
+def harmonization_module():
+    return importlib.import_module('.harmonization', __package__) if __package__ else importlib.import_module('harmonization')
 
 
 def check_concept_background(prompt):

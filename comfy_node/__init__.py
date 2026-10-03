@@ -119,6 +119,43 @@ NODE_CLASS_MAPPINGS = {'ClothingDirectorLoop':ClothingDirectorLoop,'ProductDirec
 NODE_DISPLAY_NAME_MAPPINGS = {'ClothingDirectorLoop':'AI Art Director · 男装女装细分闭环','ProductDirectorLoop':'AI Art Director · 多类别四方向闭环', 'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
 
 
+class Product2DHarmonize:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {'required':{'product':('IMAGE',),'product_mask':('MASK',),'background':('IMAGE',),
+            'spec_json':('STRING',{'multiline':True}),'font_path':('STRING',{'default':'C:/Windows/Fonts/msyh.ttc'}),
+            'parameters_json':('STRING',{'multiline':True,'default':'{"ground_top":0.72,"contact_opacity":0.5,"cast_ratio":0.055,"contour_contact":true}'})},
+            'optional':{'guide_before':('IMAGE',),'guide':('IMAGE',)}}
+    RETURN_TYPES=('IMAGE','IMAGE','STRING')
+    RETURN_NAMES=('poster','scene','audit_json')
+    FUNCTION='execute'
+    CATEGORY='Product Art Director'
+    DESCRIPTION='Opt-in 2D source-preserving compositor. Declare the photographic ground plane. Optional actual guide requires reviewed identity_zones in parameters_json. Outputs are unreviewed, never commercial PASS.'
+
+    def execute(self,product,product_mask,background,spec_json,font_path,parameters_json,guide_before=None,guide=None):
+        for image in (product,background,guide_before,guide):
+            if image is not None and (image.ndim!=4 or image.shape[0]!=1 or image.shape[-1]!=3 or not torch.isfinite(image).all().item()):raise ValueError('One finite RGB image required per input')
+        if product_mask.ndim!=3 or product_mask.shape[0]!=1 or not torch.isfinite(product_mask).all().item():raise ValueError('One finite product mask required')
+        def pil(image):return Image.fromarray(np.rint(image[0].cpu().numpy().clip(0,1)*255).astype(np.uint8))
+        rgba=pil(product).convert('RGBA')
+        alpha=Image.fromarray(np.rint((1-product_mask[0].cpu().numpy().clip(0,1))*255).astype(np.uint8))
+        if alpha.size!=rgba.size:raise ValueError('Mask must belong to the same transparent product')
+        rgba.putalpha(alpha)
+        options=json.loads(parameters_json)
+        allowed={'ground_top','contact_opacity','cast_ratio','edge_cleanup','contour_contact','refine_alpha','strength','reflection_strength','spill_zones','wrap_zones','identity_zones'}
+        if not isinstance(options,dict) or set(options)-allowed or 'ground_top' not in options:raise ValueError('Declare ground_top and only supported 2D parameters')
+        zones=options.pop('identity_zones',[])
+        scene,poster,metrics=engine.harmonization_module().compose(engine,json.loads(spec_json),rgba,pil(background),font_path,zones,
+            pil(guide_before) if guide_before is not None else None,pil(guide) if guide is not None else None,**options)
+        metrics.update(status='UNREVIEWED',commercial_release_allowed=False)
+        def tensor(image):return torch.from_numpy(np.asarray(image).astype(np.float32)/255)[None,...]
+        return (tensor(poster),tensor(scene),json.dumps(metrics,ensure_ascii=False))
+
+
+NODE_CLASS_MAPPINGS['Product2DHarmonize']=Product2DHarmonize
+NODE_DISPLAY_NAME_MAPPINGS['Product2DHarmonize']='AI Art Director · 2D 商品融合'
+
+
 def require_finite(value, stage):
     if isinstance(value, torch.Tensor):
         if not torch.isfinite(value).all().item():

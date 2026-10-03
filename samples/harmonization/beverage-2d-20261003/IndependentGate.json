@@ -1,0 +1,9 @@
+{
+  "status": "INTEGRATION_ONLY",
+  "preferred": "X",
+  "integration_approved": [
+    "X",
+    "Y"
+  ],
+  "commercial_release_allowed": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "BEST_TESTED_CANDIDATE",
+  "selected": "v4/B",
+  "independent_identity": "X",
+  "independent_integration_status": "INTEGRATION_ONLY",
+  "overall_release_status": "NEEDS_REVIEW",
+  "commercial_release_allowed": false,
+  "reason": "Independent complete re-review prefers v4/B over v6/B and baseline; earlier per-batch review still reports a minor neck halo. Preserve disagreement and do not infer commercial approval."
+}

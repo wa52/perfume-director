@@ -6,6 +6,8 @@
 
 材质与重新布光新增独立实验分支，见 [运行说明](MATERIAL_RELIGHTING.md) 和 [两轮真实对照及视觉评审](samples/relighting/beverage-20261003/REPORT.md)。已实际执行本地 Mage-Flow 编辑；标签漂移、恢复接缝和阴影问题仍未解决到商业标准，尚未自动替换原闭环。
 
+后续 [2D 商品融合优化](HARMONIZATION_2D.md) 已完成同一瓶可乐的六轮受控对照：线性光合成、源纹理光照、边缘修复、轮廓接触阴影与可选保护反光。独立融合复核选择 v4/B；保留评审分歧，整体仍为 NEEDS_REVIEW。新增可选 ComfyUI IMAGE 输出节点，实际节点张量执行与选中 PNG 的 RGB 误差为零；当前运行实例未重启，前端导入尚未验证。
+
 ## 多类别扩展（2026-10-03）
 
 已建立四个ComfyUI工作流和ProductDirectorLoop类别选择节点，见 [四类入口与运行说明](workflows/categories/README.md)。32张新参考经千问逐张分析：美妆14、腕表珠宝5、鞋履7、饮品6；其中带外部广告排版的数量分别为2、2、1、0，不把静物摄影或包装标签算作完整海报。保留原图来源、独立分析和SHA，参见 `references/categories/summary.json`。新参考存入同一个SQLite数据库的分类关联表；香水旧参考默认仍属香水，跨类别不会静默混用。

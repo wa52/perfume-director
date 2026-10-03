@@ -76,6 +76,7 @@ Copy-Item -LiteralPath (Join-Path $projectRoot 'categories.py') -Destination (Jo
 Copy-Item -LiteralPath (Join-Path $projectRoot 'quality.py') -Destination (Join-Path $nodeRoot 'quality.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'concepts.py') -Destination (Join-Path $nodeRoot 'concepts.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'commercial.py') -Destination (Join-Path $nodeRoot 'commercial.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'harmonization.py') -Destination (Join-Path $nodeRoot 'harmonization.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'typography.py') -Destination (Join-Path $nodeRoot 'typography.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'graphic_shapes.py') -Destination (Join-Path $nodeRoot 'graphic_shapes.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\jobs.py') -Destination (Join-Path $nodeRoot 'jobs.py') -Force

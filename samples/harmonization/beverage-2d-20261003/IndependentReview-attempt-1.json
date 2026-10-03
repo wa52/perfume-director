@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "id": "X",
+      "product_fidelity": 97,
+      "physical_integration": 91,
+      "edge_quality": 92,
+      "blocking_problems": [],
+      "acceptable_integration": true
+    },
+    {
+      "id": "Y",
+      "product_fidelity": 96,
+      "physical_integration": 84,
+      "edge_quality": 86,
+      "blocking_problems": [
+        {}
+      ],
+      "acceptable_integration": false
+    },
+    {
+      "id": "Z",
+      "product_fidelity": 93,
+      "physical_integration": 78,
+      "edge_quality": 80,
+      "blocking_problems": [
+        {}
+      ],
+      "acceptable_integration": false
+    }
+  ],
+  "preferred": "X",
+  "reason": "X matches the packshot bottle silhouette, cap, label lettering layout and foam line, and its base meets the cloth with a continuous contact shadow and clean silhouette edges under the same soft scene light. Y's label and neck are faithful but its contact zone reads weaker/harder against the cloth weave, and Z carries introduced artifacts (yellow-orange smear at the label's left edge not present in the packshot, plus a dark blob and warm fringe under the base) that are integration errors, not source defects.",
+  "optional_refinements": [
+    "X: soften the residual cut-line under the green base so the contact shadow blends into the cloth weave gradient.",
+    "Y: rebuild the occlusion shadow under the base to match the packshot's diffuse falloff.",
+    "Z: remove the left-edge label smear and the sub-base dark blob, then re-derive the contact shadow from the scene light direction."
+  ]
+}

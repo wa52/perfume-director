@@ -1,0 +1,14 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "fproduct_fidelity_placeholder": 0
+      },
+      "problems": []
+    }
+  ],
+  "preferred": "baseline",
+  "reason": "",
+  "next_repairs": []
+}

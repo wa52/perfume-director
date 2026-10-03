@@ -1,0 +1,126 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 84,
+        "lighting_coherence": 90,
+        "grounding": 88
+      },
+      "problems": [
+        {
+          "problem": "Source cutout edge remnants retained on silhouette",
+          "evidence": "Image 5 and baseline label/neck crops show a yellow-orange blob left of the label and ragged alpha jaggies along the left neck edge",
+          "root_cause": "Original matting artefacts baked into the transparent source asset, carried through compositing",
+          "repair": "Clean the alpha matte border (defringe/choke 1-2 px) while preserving genuine glass transmission"
+        },
+        {
+          "problem": "Contact shadow is a small dark nub rather than a shaped soft shadow",
+          "evidence": "Image 6 baseline contact crop: isolated dark bump under the green base, cloth texture uninterrupted beside it",
+          "root_cause": "Hand-painted contact dab in the original compositor instead of a light-consistent occlusion gradient",
+          "repair": "Replace with a broad, low-opacity elliptical occlusion gradient matched to diffuse frontal light"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 86,
+        "lighting_coherence": 91,
+        "grounding": 86
+      },
+      "problems": [
+        {
+          "problem": "Base green reads over-bright versus baseline and source",
+          "evidence": "Image 6 row A contact crop: neon-green base band brighter than baseline and image 5",
+          "root_cause": "Linear-light RGBA compose without display-referred trim saturates the thin transmissive green glass",
+          "repair": "Apply a gentle tone-map/trim on the alpha-weighted green channel after linear compose"
+        },
+        {
+          "problem": "Label sits with a slight rotational skew",
+          "evidence": "Image 6 row A label crop: label top edge tilts relative to canvas horizontals, unlike baseline",
+          "root_cause": "Placement transform includes a residual rotation in the candidate compositor",
+          "repair": "Re-place product with identity rotation, verify label horizontals against canvas"
+        },
+        {
+          "problem": "Contact occlusion weaker than baseline",
+          "evidence": "Image 6 row A contact crop: dark contact nub thinner and lighter than baseline row",
+          "root_cause": "Soft-shadow opacity reduced during linear-light pass",
+          "repair": "Restore occlusion density to at least baseline level"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 88,
+        "lighting_coherence": 92,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Source edge remnants persist (yellow blob left of label, neck jaggies)",
+          "evidence": "Image 6 row B label crop left edge shows the same yellow remnant as image 5",
+          "root_cause": "Matte artefacts inherited from source asset, not introduced by compose",
+          "repair": "Defringe/choke matte border in asset prep, keep as retained source defect otherwise"
+        },
+        {
+          "problem": "Contact shadow still a compact nub, not a graded occlusion",
+          "evidence": "Image 6 row B contact crop: dark bump under base, no lateral falloff on cloth",
+          "root_cause": "Shadow model limited to contact dab",
+          "repair": "Add wide low-opacity ambient occlusion ellipse consistent with diffuse frontal light"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 85,
+        "lighting_coherence": 90,
+        "grounding": 85
+      },
+      "problems": [
+        {
+          "problem": "Over-bright green base plus slight label skew combine",
+          "evidence": "Image 6 row C contact crop green band neon-bright; row C label crop top edge tilts",
+          "root_cause": "Linear-light trim missing plus residual placement rotation",
+          "repair": "Tone-trim transmissive green and reset placement rotation"
+        },
+        {
+          "problem": "Weakest contact occlusion of the set",
+          "evidence": "Image 6 row C contact crop: contact nub faintest, cloth barely darkened under base",
+          "root_cause": "Shadow opacity under-set in linear pass",
+          "repair": "Increase occlusion alpha and radius to match diffuse frontal lighting"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B keeps the bottle, cap, label and glass transmission closest to the packshot source (fidelity 97), shows the cleanest silhouette edges of the four, matches the scene's diffuse frontal light without inventing a hard beam, and has the strongest actual contact occlusion in the authoritative detail row. A and C introduce a neon-green base and label skew; baseline carries the weakest edges. No version clears the >=88/all-clear acceptance bar because the source matte remnants and nub-style contact shadow persist everywhere, so B is preferred as the best-controlled integration rather than an approved final.",
+  "next_repairs": [
+    {
+      "target": "product alpha matte",
+      "action": "Choke/defringe 1-2 px to remove yellow blob and neck jaggies while preserving true glass transmission"
+    },
+    {
+      "target": "contact shadow (all versions)",
+      "action": "Replace contact nub with a graded elliptical occlusion matched to diffuse frontal light; keep density at or above baseline"
+    },
+    {
+      "target": "candidates A and C",
+      "action": "Add display-referred trim after linear-light compose to tame the transmissive green base; zero the residual label rotation"
+    },
+    {
+      "target": "candidate B label",
+      "action": "Verify label horizontals against canvas after re-placement to lock the straightest label of the set"
+    }
+  ]
+}

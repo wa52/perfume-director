@@ -1,0 +1,128 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 82,
+        "lighting_coherence": 90,
+        "grounding": 92
+      },
+      "problems": [
+        {
+          "problem": "Original-background remnants survive on the cutout silhouette: a yellow-ochre sliver at the label's left edge and a warm orange fringe on the base's right side",
+          "evidence": "Image 6 baseline label crop shows the yellow blob left of the white label border; baseline contact crop shows orange fringe right of the green heel; same artifacts visible in image 5 source flatten",
+          "root_cause": "Source alpha matte was cut tight to a different background and carries baked-in edge pixels (inherited, not introduced by compositing)",
+          "repair": "Choke the matte 1-2 px and decontaminate edge RGB along the label-left and heel-right arcs before compositing"
+        },
+        {
+          "problem": "Serrated/jagged edge remnant on the neck's left contour",
+          "evidence": "Image 5 source flatten shows sawtooth alpha steps on the neck left; faintly visible in baseline neck crop",
+          "root_cause": "Low-quality source matting on the narrow glass neck",
+          "repair": "Refine neck matte with a small-radius feather and rebuild the contour from the glass highlight gradient"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 93,
+        "edge_quality": 86,
+        "lighting_coherence": 92,
+        "grounding": 84
+      },
+      "problems": [
+        {
+          "problem": "Green heel reads oversaturated and luminous versus the packshot glass transmission",
+          "evidence": "Image 6 row A contact crop: the green base band is markedly brighter/more chromatic than baseline and image 5 source; linear-light premultiply boosted the thin-glass transmission",
+          "root_cause": "Linear-light RGBA composite applied without matching the source's display-referred glass response",
+          "repair": "Apply a per-channel gain trim (~0.9 on G) limited to the heel transmission zone, or composite the heel in display-referred space"
+        },
+        {
+          "problem": "Contact shadow is weaker and tighter than the diffuse frontal light warrants",
+          "evidence": "Row A contact crop shows only a faint dark line under the heel versus baseline's broader soft occlusion; bottle reads slightly浮 floating",
+          "root_cause": "Shadow layer opacity/radius reduced during recomposition",
+          "repair": "Restore a broad, low-opacity ambient occlusion ellipse under the heel matched to baseline density"
+        },
+        {
+          "problem": "Inherited source edge remnants persist (yellow label-left sliver)",
+          "evidence": "Row A label crop retains the ochre sliver at the label's left border",
+          "root_cause": "Source matte contamination carried through unchanged",
+          "repair": "Matte choke + edge decontamination as for baseline"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 84,
+        "lighting_coherence": 91,
+        "grounding": 91
+      },
+      "problems": [
+        {
+          "problem": "Inherited source edge remnants persist (yellow label-left sliver, orange heel fringe, neck serration)",
+          "evidence": "Row B label and contact crops match baseline remnants exactly; image 5 confirms they exist in the source asset",
+          "root_cause": "Source matte contamination retained honestly by the new compositor",
+          "repair": "Choke/decontaminate matte edges; smooth neck contour"
+        },
+        {
+          "problem": "Marginal loss of micro-contrast on the label print versus baseline",
+          "evidence": "Row B label crop: 'REFRESCO / CONT. NET. 355 ml' stroke edges a touch softer than baseline",
+          "root_cause": "One extra resample of the product layer in the new pipeline",
+          "repair": "Composite the product layer at native resolution without intermediate scaling"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 92,
+        "edge_quality": 86,
+        "lighting_coherence": 92,
+        "grounding": 83
+      },
+      "problems": [
+        {
+          "problem": "Green heel oversaturated like A, breaking packshot glass transmission",
+          "evidence": "Row C contact crop: bright chromatic green band exceeding source (image 5) and baseline",
+          "root_cause": "Linear-light premultiply gain on transmissive glass",
+          "repair": "Gain-trim the heel transmission zone to source-referred values"
+        },
+        {
+          "problem": "Soft contact shadow under-resolved; heel sits on cloth with minimal occlusion",
+          "evidence": "Row C contact crop shows a thin dark seam only, no diffuse falloff into the cloth weave",
+          "root_cause": "Ambient occlusion layer under-weighted in the new composite",
+          "repair": "Re-add broad soft AO matched to the diffuse frontal light model"
+        },
+        {
+          "problem": "Label sits a fraction high/rotated relative to baseline register",
+          "evidence": "Row C label crop: white border tilt and crop offset differ from baseline and B rows",
+          "root_cause": "Sub-pixel transform rounding when re-placing the product layer",
+          "repair": "Snap product transform to baseline matrix exactly"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B is the only candidate that preserves source glass transmission, liquid level, foam line, label texture and the baseline's soft diffuse contact shadow while using the cleaner linear-light pipeline; its lighting agrees with the frontal diffuse scene light without inventing a hard beam. Its only defects are the inherited source matte remnants (also present in baseline) and a negligible label softness. A and C both alter the observed green heel transmission and weaken grounding, violating the perfume packshot match rule; baseline remains edge-contaminated and uses the older compositor. No candidate clears the >=88/all-thresholds bar solely because the inherited edge contamination is unresolved everywhere, but B is closest and strictly better than baseline on edge handling parity and fidelity.",
+  "next_repairs": [
+    {
+      "target": "B product matte",
+      "action": "Choke alpha 1-2 px and decontaminate edge RGB at label-left (ochre sliver) and heel-right (orange fringe); smooth the serrated neck-left contour"
+    },
+    {
+      "target": "B product layer pipeline",
+      "action": "Eliminate the intermediate resample so label micro-type matches baseline sharpness"
+    },
+    {
+      "target": "A and C heel zone",
+      "action": "If revisited, trim linear-light gain on the transmissive green heel to source-referred chroma and restore broad soft AO under the base"
+    }
+  ]
+}

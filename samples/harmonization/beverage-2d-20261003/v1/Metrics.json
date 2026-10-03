@@ -1,0 +1,80 @@
+{
+  "A": {
+    "source_alpha_unchanged": true,
+    "generated_product_rgb_copied": false,
+    "generated_background_rgb_copied": false,
+    "illumination_gain_range": [
+      1.0,
+      1.0
+    ],
+    "identity_policy": "original lettering texture; brightness can change; no generated label or exact RGB guarantee",
+    "ground_top_y": 1037,
+    "product_base_y": 1152,
+    "key_light": "front",
+    "shadow_plan": {
+      "source_key_light": "front",
+      "ground_material": "linen-draped horizontal plane",
+      "cast_length_ratio": 0.055,
+      "cast_opacity": 0.16,
+      "cast_blur": 18
+    },
+    "edge_cleanup": true,
+    "output_size": [
+      1080,
+      1440
+    ],
+    "limitations": "2D source-compatible appearance and projected shadows; not new physical reflections, refraction, intrinsic decomposition or source-detail restoration."
+  },
+  "B": {
+    "source_alpha_unchanged": true,
+    "generated_product_rgb_copied": false,
+    "generated_background_rgb_copied": false,
+    "illumination_gain_range": [
+      0.8500000238418579,
+      1.149999976158142
+    ],
+    "identity_policy": "original lettering texture; brightness can change; no generated label or exact RGB guarantee",
+    "ground_top_y": 1037,
+    "product_base_y": 1152,
+    "key_light": "front",
+    "shadow_plan": {
+      "source_key_light": "front",
+      "ground_material": "linen-draped horizontal plane",
+      "cast_length_ratio": 0.055,
+      "cast_opacity": 0.16,
+      "cast_blur": 18
+    },
+    "edge_cleanup": true,
+    "output_size": [
+      1080,
+      1440
+    ],
+    "limitations": "2D source-compatible appearance and projected shadows; not new physical reflections, refraction, intrinsic decomposition or source-detail restoration."
+  },
+  "C": {
+    "source_alpha_unchanged": true,
+    "generated_product_rgb_copied": false,
+    "generated_background_rgb_copied": false,
+    "illumination_gain_range": [
+      0.8500000238418579,
+      1.149999976158142
+    ],
+    "identity_policy": "original lettering texture; brightness can change; no generated label or exact RGB guarantee",
+    "ground_top_y": 1037,
+    "product_base_y": 1152,
+    "key_light": "front",
+    "shadow_plan": {
+      "source_key_light": "front",
+      "ground_material": "linen-draped horizontal plane",
+      "cast_length_ratio": 0.055,
+      "cast_opacity": 0.16,
+      "cast_blur": 18
+    },
+    "edge_cleanup": true,
+    "output_size": [
+      1080,
+      1440
+    ],
+    "limitations": "2D source-compatible appearance and projected shadows; not new physical reflections, refraction, intrinsic decomposition or source-detail restoration."
+  }
+}

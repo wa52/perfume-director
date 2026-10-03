@@ -1,0 +1,94 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 74,
+        "lighting_coherence": 80,
+        "grounding": 70
+      },
+      "problems": [
+        {
+          "problem": "Dark stub artifact protruding below the bottle base center instead of a resolved contact shadow",
+          "evidence": "Image 1 and baseline row of image 6: small hard dark tab under the green base, no soft elliptical shadow on the cloth",
+          "root_cause": "Original cutout shadow remnant carried into the composite alpha",
+          "repair": "Clip alpha below the base contour and paint a soft diffuse contact shadow matched to frontal light"
+        },
+        {
+          "problem": "Bottle reads slightly pasted: no tonal interaction with the diffuse scene light",
+          "evidence": "Image 1: product edges keep packshot contrast against the low-contrast cloth/wall scene",
+          "root_cause": "Raw overlay without linear-light scene matching",
+          "repair": "Recompose in linear light with scene-compatible ambient wrap"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 88,
+        "lighting_coherence": 90,
+        "grounding": 84
+      },
+      "problems": [
+        {
+          "problem": "Soft shadow sits a few pixels detached below the base, leaving a bright cloth gap",
+          "evidence": "Image 2 and row A of image 6: green base bottom edge separated from the grey shadow ellipse by visible cloth",
+          "root_cause": "Shadow offset placed below the contact line rather than starting at it",
+          "repair": "Raise shadow ellipse so its core touches the base contour and fade outward"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 90,
+        "lighting_coherence": 91,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Contact shadow core is marginally thin at the base corners",
+          "evidence": "Row B of image 6: shadow density tapers slightly early at left and right base curvature",
+          "root_cause": "Ellipse width tuned to base center only",
+          "repair": "Widen shadow core to follow the full base curvature"
+        }
+      ],
+      "integration_acceptable": true
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 87,
+        "lighting_coherence": 89,
+        "grounding": 85
+      },
+      "problems": [
+        {
+          "problem": "Shadow slightly too dark and wide for the diffuse frontal light, plus faint base-gap like A",
+          "evidence": "Image 4 and row C of image 6: heavier grey ellipse offset below the green base",
+          "root_cause": "Shadow opacity overdriven and offset below contact line",
+          "repair": "Reduce shadow opacity, tighten radius, anchor to base contour"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B keeps the source bottle, cap, label and glass transmission intact (no regenerated RGB), cleans the baseline's base stub, and per the authoritative contact crop in image 6 it is the only version whose soft shadow actually meets the base contour under the diffuse frontal light; its scene tone agreement and edge quality exceed baseline, A and C, whose shadows float or overdarken.",
+  "next_repairs": [
+    {
+      "target": "B contact shadow",
+      "action": "Extend shadow core along the full base curvature so density does not taper early at the corners"
+    },
+    {
+      "target": "B edge matte",
+      "action": "Apply a 1px ambient occlusion tint at the base-to-cloth interface to fuse contact zone"
+    }
+  ]
+}

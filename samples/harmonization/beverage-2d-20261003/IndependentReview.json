@@ -1,0 +1,48 @@
+{
+  "candidates": [
+    {
+      "id": "X",
+      "product_fidelity": 97,
+      "physical_integration": 91,
+      "edge_quality": 90,
+      "blocking_problems": [],
+      "acceptable_integration": true
+    },
+    {
+      "id": "Y",
+      "product_fidelity": 97,
+      "physical_integration": 90,
+      "edge_quality": 89,
+      "blocking_problems": [],
+      "acceptable_integration": true
+    },
+    {
+      "id": "Z",
+      "product_fidelity": 93,
+      "physical_integration": 82,
+      "edge_quality": 78,
+      "blocking_problems": [
+        {
+          "problem": "Stray yellow-orange fragment left on the bottle's left silhouette beside the label, not present in the source packshot",
+          "evidence": "Image 3 full view at approx (205,950) and image 5 row Z label column left edge: a saturated yellow blob abuts the label's white border, while image 4 at the same label height shows only clean glass and label edge."
+        },
+        {
+          "problem": "Dark protruding mass under the base center reads as a cutout residue lump rather than a plausible contact shadow",
+          "evidence": "Image 5 row Z contact column shows a discrete dark blob hanging below the green heel at approx (430,1230); rows X and Y contact columns show only a thin even contact line, and image 4's base is smooth with no such lobe."
+        },
+        {
+          "problem": "Warm orange fringe along the base right contour inconsistent with the scene's neutral diffuse lighting",
+          "evidence": "Image 5 row Z contact column right side of the green heel carries an orange-brown rim absent from rows X and Y and from image 4's neutral matte base."
+        }
+      ],
+      "acceptable_integration": false
+    }
+  ],
+  "preferred": "X",
+  "reason": "X and Y both keep the contour bottle, crown cap, red label and green heel transmission identical to image 4 and sit on the cloth with a thin even contact line and neutral soft light; X wins on the enlarged crops because its label column left edge is clean glass-and-label only and its contact column shows the smoothest heel-to-cloth transition, while Y's contact line is marginally heavier and Z carries the yellow label-edge fragment, the sub-base blob and the warm heel fringe.",
+  "optional_refinements": [
+    "For Z, remove the yellow fragment at the label's left edge and rebuild the heel contour from source pixels.",
+    "For Z, replace the sub-base dark blob with a soft elliptical contact shadow matched to the cloth's diffuse falloff seen in X.",
+    "For Y, soften the heel contact line by one pixel band to match X's transition if maximum realism is required."
+  ]
+}

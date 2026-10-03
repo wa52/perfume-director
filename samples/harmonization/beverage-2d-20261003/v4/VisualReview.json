@@ -1,0 +1,106 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 84,
+        "lighting_coherence": 90,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Original-background remnant flakes left on the silhouette",
+          "evidence": "Yellow-orange chip beside the label's left edge and a gray sliver along the neck/label contour in the full frame and the baseline label crop of the detail sheet",
+          "root_cause": "Source cutout matte included fragments of the original photograph background",
+          "repair": "Clip the alpha matte inward 1-2 px along the label and neck contour and repaint only the remnant flakes, preserving genuine glass edge pixels"
+        },
+        {
+          "problem": "Contact shadow is tight and slightly abrupt at the base",
+          "evidence": "Baseline contact crop shows a dark occlusion hugging the green base with a hardish falloff into the cloth weave",
+          "root_cause": "Compositor contact shadow used a small blur radius relative to the diffuse frontal light",
+          "repair": "Re-render the contact occlusion with a wider, lower-opacity elliptical falloff matched to the cloth albedo"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 90,
+        "lighting_coherence": 92,
+        "grounding": 86
+      },
+      "problems": [
+        {
+          "problem": "Contact occlusion under the base is too weak",
+          "evidence": "Authoritative contact crop for A: cloth directly beneath the green base reads nearly as bright as surrounding cloth, only a hairline darkening; bottle floats slightly versus baseline",
+          "root_cause": "Linear-light RGBA pass applied the contact shadow at too low opacity / too wide a spread",
+          "repair": "Increase contact-shadow core opacity and tighten its radius under the base while keeping the soft diffuse character"
+        },
+        {
+          "problem": "Base green glass reads oversaturated versus packshot",
+          "evidence": "A contact crop shows a brighter, more chromatic green band than the baseline and the flattened source (image 5)",
+          "root_cause": "Linear-light un-premultiply boosted saturated edge alpha pixels",
+          "repair": "Clamp saturation on the bottom glass band to the source flattened reference values"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 89,
+        "lighting_coherence": 92,
+        "grounding": 91
+      },
+      "problems": [
+        {
+          "problem": "Minor halo along the neck contour",
+          "evidence": "B neck crop shows a faint light fringe against the gray backdrop at the upper neck",
+          "root_cause": "Alpha edge not defringed against the new neutral backdrop",
+          "repair": "Apply a 1 px edge-color decontamination using backdrop color on the neck contour only"
+        }
+      ],
+      "integration_acceptable": true
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 95,
+        "edge_quality": 88,
+        "lighting_coherence": 91,
+        "grounding": 85
+      },
+      "problems": [
+        {
+          "problem": "Weakest floor contact of all versions",
+          "evidence": "C contact crop: almost no darkening under the green base; cloth weave continues at full brightness beneath the bottle",
+          "root_cause": "Contact shadow omitted or rendered at negligible opacity in the linear-light pass",
+          "repair": "Add a soft elliptical contact occlusion consistent with the diffuse frontal light, verified against the baseline crop density"
+        },
+        {
+          "problem": "Liquid line and foam ring slightly attenuated in the neck",
+          "evidence": "C neck crop shows the foam ring paler and the liquid meniscus less defined than baseline and source flatten",
+          "root_cause": "Tone mapping of the neck region compressed highlight contrast",
+          "repair": "Restore neck region contrast to match the flattened source (image 5) foam ring density"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B keeps full product fidelity (label texture, liquid level, cap and glass transmission identical to the flattened source), removes the baseline's original-background flakes, matches the diffuse frontal packshot light without inventing a hard beam, and its authoritative contact crop still shows a real soft occlusion under the base. A and C lose grounding (contact shadow too weak) and C attenuates the foam ring; baseline retains visible source remnant flakes and a harsher contact edge. B's only defect is a minor neck halo, already within tolerance.",
+  "next_repairs": [
+    {
+      "target": "B neck contour",
+      "action": "Defringe the 1 px light halo against the gray backdrop without touching genuine glass highlights"
+    },
+    {
+      "target": "B contact shadow",
+      "action": "Optionally deepen the contact core by ~5-8% opacity to sit between baseline density and current B, keeping the diffuse soft edge"
+    }
+  ]
+}

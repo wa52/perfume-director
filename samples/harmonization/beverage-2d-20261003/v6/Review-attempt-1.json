@@ -1,0 +1,110 @@
+{
+  "versions": [
+    {
+      "id": "baseline",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 74,
+        "lighting_coherence": 86,
+        "grounding": 90
+      },
+      "problems": [
+        {
+          "problem": "Original-cutout edge remnants retained on the product silhouette",
+          "evidence": "Yellow-orange sliver left of the label and serrated neck-edge artifacts visible in the label/neck crops and in image 5",
+          "root_cause": "Source alpha matte contamination carried through compositing",
+          "repair": "Choke the matte 1-2 px and clean the left label/neck edge without touching glass interior"
+        },
+        {
+          "problem": "Contact shadow is a thin dark nub rather than a diffuse frontal-light contact occlusion",
+          "evidence": "Baseline contact crop shows a small hard暗 protrusion under the base centre with little wrap-around occlusion",
+          "root_cause": "Legacy compositor shadow stamp, not derived from scene light",
+          "repair": "Replace with a soft elliptical contact occlusion graded to the diffuse frontal key"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "A",
+      "scores": {
+        "product_fidelity": 96,
+        "edge_quality": 82,
+        "lighting_coherence": 90,
+        "grounding": 78
+      },
+      "problems": [
+        {
+          "problem": "Weak/absent soft contact shadow under the base",
+          "evidence": "Contact crop row A shows the green base meeting cloth with only a faint dark rim, no spread occlusion; bottle reads slightly floated",
+          "root_cause": "Linear-light compose omitted or under-weighted the contact occlusion pass",
+          "repair": "Add a low-opacity soft contact shadow hugging the base ellipse, consistent with diffuse frontal light"
+        },
+        {
+          "problem": "Green base band reads oversaturated versus packshot",
+          "evidence": "Contact crop row A green heel is brighter/more chromatic than image 5 source",
+          "root_cause": "Linear-light encode boosted saturated glass pixels",
+          "repair": "Apply a slight desaturation/exposure trim on the heel glass only"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "B",
+      "scores": {
+        "product_fidelity": 97,
+        "edge_quality": 84,
+        "lighting_coherence": 91,
+        "grounding": 92
+      },
+      "problems": [
+        {
+          "problem": "Residual left-label edge remnant still faintly visible",
+          "evidence": "Label crop row B retains a muted yellow sliver at the label's left border",
+          "root_cause": "Incomplete matte cleanup inherited from source cutout",
+          "repair": "Local clone/heal of the 2-3 px remnant strip outside the label artwork"
+        }
+      ],
+      "integration_acceptable": false
+    },
+    {
+      "id": "C",
+      "scores": {
+        "product_fidelity": 93,
+        "edge_quality": 82,
+        "lighting_coherence": 88,
+        "grounding": 80
+      },
+      "problems": [
+        {
+          "problem": "Liquid level / neck fill shifted versus source",
+          "evidence": "Neck crop row C shows the foam line lower in the neck than image 5 and baseline, altering observed glass transmission",
+          "root_cause": "Candidate recomposed or resampled the neck region instead of preserving source RGBA",
+          "repair": "Restore original neck/liquid RGBA from the source plate"
+        },
+        {
+          "problem": "Contact shadow under-weighted",
+          "evidence": "Contact crop row C shows bright heel with minimal occlusion spread on cloth",
+          "root_cause": "Occlusion pass too transparent in linear light",
+          "repair": "Increase contact shadow density and radius to match diffuse frontal key"
+        }
+      ],
+      "integration_acceptable": false
+    }
+  ],
+  "preferred": "B",
+  "reason": "B preserves bottle, cap, label and glass transmission exactly as the source packshot, shows a genuine soft contact shadow in the authoritative contact crop, matches the diffuse frontal scene light without inventing a hard beam, and has the cleanest edges of the set; its only fault is a minor inherited label-edge sliver, which is smaller than baseline's remnants and less damaging than A/C grounding or fidelity deviations.",
+  "next_repairs": [
+    {
+      "target": "B label left edge",
+      "action": "Heal the residual yellow-orange sliver outside the label border without softening label texture"
+    },
+    {
+      "target": "B base contact",
+      "action": "Slightly widen the contact occlusion falloff toward the camera-left cloth wrinkle for scene agreement"
+    },
+    {
+      "target": "Pipeline",
+      "action": "Keep B's linear-light RGBA path and frontal-light match; port its contact-shadow density to future candidates"
+    }
+  ]
+}

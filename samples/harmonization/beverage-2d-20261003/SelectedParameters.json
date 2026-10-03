@@ -1,0 +1,40 @@
+{
+  "ground_top": 0.72,
+  "contact_opacity": 0.5,
+  "cast_ratio": 0.055,
+  "contour_contact": true,
+  "refine_alpha": true,
+  "strength": 0.35,
+  "identity_zones": [
+    {
+      "name": "cap lettering",
+      "bbox": [
+        0,
+        0,
+        1,
+        0.09
+      ]
+    },
+    {
+      "name": "brand and label text",
+      "bbox": [
+        0,
+        0.38,
+        1,
+        0.62
+      ]
+    }
+  ],
+  "spill_zones": [
+    {
+      "name": "warm source remnant outside left label keyline",
+      "bbox": [
+        0,
+        0.48,
+        0.08,
+        0.6
+      ],
+      "strength": 0.9
+    }
+  ]
+}

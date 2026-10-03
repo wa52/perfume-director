@@ -1,4 +1,6 @@
 import json
+import base64
+import io
 import os
 import tempfile
 import unittest
@@ -44,6 +46,21 @@ class VisionTests(unittest.TestCase):
         self.assertEqual(trace['response_id'], 'actual-response-id')
         self.assertEqual(trace['returned_model'], 'returned-model')
         self.assertEqual(result, {'pass': True})
+
+    def test_transparent_hidden_rgb_never_reaches_critic(self):
+        with tempfile.TemporaryDirectory() as directory:
+            image=Path(directory)/'transparent.png'
+            source=Image.new('RGBA',(64,64),(255,0,0,0))
+            source.paste((0,0,255,255),(24,24,40,40));source.save(image)
+            config={'api_key_env':'TEST_VISION_KEY','vision_model':'test','vision_base_url':'https://example.invalid/v1'}
+            with patch.dict(os.environ,{'TEST_VISION_KEY':'test'}),patch.object(poster,'http',return_value=json.dumps(self.response({})).encode()) as request:
+                poster.vision(config,'Inspect',[image])
+            payload=json.loads(request.call_args.args[1]);url=payload['messages'][1]['content'][1]['image_url']['url']
+            sent=Image.open(io.BytesIO(base64.b64decode(url.split(',')[1])))
+            pixel=sent.getpixel((4,4))
+            self.assertLess(max(pixel)-min(pixel),12)
+            self.assertGreater(min(pixel),215)
+            self.assertGreater(sent.getpixel((32,32))[2],230)
 
     def test_single_answer_envelope_preserves_raw_evidence(self):
         result, trace, _ = self.call(self.response({'answer': {'pass': True}}))
