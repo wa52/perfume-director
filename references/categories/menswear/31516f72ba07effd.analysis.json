@@ -1,0 +1,47 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_03-1153x1500.jpg",
+  "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-31516f72ba07effd",
+  "local_path": "references/categories/menswear/31516f72ba07effd.jpg",
+  "sha256": "81e5b1dc26e04a397de7ea275a1e9a344341ba9ad9153b5fc90595e226ab0dd0",
+  "width": 1153,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "Hugo Boss",
+    "quality_score": 92,
+    "composition": "Split layout with editorial photography occupying the upper portion and a large solid white negative space below for branding.",
+    "subject_ratio": 0.45,
+    "negative_space": "Extensive solid white block in the lower half; open sky in the upper left.",
+    "lighting": "Harsh natural sunlight creating strong contrast, modified by a translucent red gel/filter overlay on the right side.",
+    "color": [
+      "#87CEEB",
+      "#FFFFFF",
+      "#8B0000",
+      "#E6C288",
+      "#000000"
+    ],
+    "typography": "Minimalist black serif logotype ('BOSS') with sans-serif subtext ('HUGO BOSS') anchored in the bottom right corner.",
+    "information_density": "Very low; strictly brand logo and visual imagery.",
+    "characteristics": [
+      "High fashion editorial",
+      "Color blocking",
+      "Translucent overlay effect",
+      "Desert setting",
+      "Minimalist branding"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image features a female model wearing a sleeveless textured top/dress, which contradicts the required 'menswear' reference category. While it is a high-quality Hugo Boss campaign image with clear branding and distinct composition, the product category does not match the brief's constraint.",
+    "garment_types": [
+      "dress",
+      "activewear"
+    ]
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

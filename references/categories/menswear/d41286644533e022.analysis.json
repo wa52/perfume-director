@@ -1,0 +1,45 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+  "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/6308f19af843b405267d1d5c_Webflow_2022_Aquis_MobileOptimizedAssets-6%20(1).jpg",
+  "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-d41286644533e022",
+  "local_path": "references/categories/menswear/d41286644533e022.jpg",
+  "sha256": "9ddb04f936e9590f28c76047b8dd09c64f1d953c7552891ea9ec45da5f128ead",
+  "width": 1224,
+  "height": 1580,
+  "analysis": {
+    "category_match": true,
+    "brand": "Tommy Hilfiger",
+    "quality_score": 82,
+    "composition": "Tight close-up portrait framing the subject's face and upper torso, with the garment occupying the lower third of the canvas.",
+    "subject_ratio": 0.95,
+    "negative_space": "Minimal negative space, primarily consisting of out-of-focus sky and rock formations in the upper corners.",
+    "lighting": "Hard, directional golden-hour sunlight creating strong contrast, warm highlights on the hair and skin, and deep shadows.",
+    "color": [
+      "ochre",
+      "golden brown",
+      "sky blue",
+      "warm beige"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely visual imagery with no text overlays or graphical elements.",
+    "characteristics": [
+      "editorial photography",
+      "golden hour",
+      "close-up",
+      "natural texture",
+      "warm tones"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 90,
+    "reason": "The image is a high-quality editorial campaign shot for Tommy Hilfiger menswear. While the framing is a tight close-up focusing heavily on the model's face, the mustard t-shirt is clearly visible, displaying fabric texture, crew neck construction, and shoulder seams, satisfying the requirement for a clothing reference over a portrait-only rejection.",
+    "garment_types": [
+      "tshirt"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

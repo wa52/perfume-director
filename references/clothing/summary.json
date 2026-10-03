@@ -1,0 +1,32 @@
+{
+  "menswear": {
+    "references": 4,
+    "brands": 3,
+    "garment_counts": {
+      "shirt": 1,
+      "tshirt": 3,
+      "knitwear": 0,
+      "tailoring": 1,
+      "outerwear": 1,
+      "trousers": 1,
+      "dress": 0,
+      "skirt": 0,
+      "activewear": 0
+    }
+  },
+  "womenswear": {
+    "references": 10,
+    "brands": 3,
+    "garment_counts": {
+      "shirt": 0,
+      "tshirt": 0,
+      "knitwear": 6,
+      "tailoring": 1,
+      "outerwear": 4,
+      "trousers": 1,
+      "dress": 3,
+      "skirt": 2,
+      "activewear": 1
+    }
+  }
+}

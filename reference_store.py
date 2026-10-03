@@ -112,9 +112,14 @@ def recent_reference_usage(root, limit=8):
     return usage
 
 
-def planning_pool(root, limit=8, rng=None, category='perfume'):
+def planning_pool(root, limit=8, rng=None, category='perfume', garment_type=None):
     """Quality-weighted diverse examples; never confuse label text with poster type."""
     pool=list(entries(root, category=category))
+    if garment_type and garment_type!='auto':
+        matching=[row for row in pool if garment_type in row['analysis'].get('garment_types',[])]
+        exact=len({row['brand'] for row in matching})>=3
+        pool=matching if exact else pool
+        pool=[{**row,'retrieval_scope':'garment_match' if exact else 'same_audience_style_fallback'} for row in pool]
     rng=rng or random.SystemRandom()
     rng.shuffle(pool)
     usage=recent_reference_usage(root)

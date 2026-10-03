@@ -8,7 +8,7 @@ const terminal = new Set(["PASS", "NEEDS_REVIEW", "ERROR", "COMPLETED", "PARTIAL
 app.registerExtension({
     name: "PerfumeDirector.Loop",
     async beforeRegisterNodeDef(nodeType, nodeData) {
-        if (!["PerfumeDirectorLoop","ProductDirectorLoop"].includes(nodeData.name)) return;
+        if (!["PerfumeDirectorLoop","ProductDirectorLoop","ClothingDirectorLoop"].includes(nodeData.name)) return;
         const originalCreated = nodeType.prototype.onNodeCreated;
         nodeType.prototype.onNodeCreated = function () {
             originalCreated?.apply(this, arguments);

@@ -1,0 +1,47 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_04-1153x1500.jpg",
+  "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-3e7dfae607d86639",
+  "local_path": "references/categories/menswear/3e7dfae607d86639.jpg",
+  "sha256": "82633a5fd87b988782c38336072e8d61a44311f6ab03b349aecd9019d88eac05",
+  "width": 1153,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Hugo Boss",
+    "quality_score": 92,
+    "composition": "Split-frame editorial layout with the subject occupying the upper two-thirds against a dual-tone sky background, balanced by a substantial lower white negative space anchoring the logo.",
+    "subject_ratio": 0.45,
+    "negative_space": "Expansive solid white field in the lower third; vertical color block division in the upper background.",
+    "lighting": "Hard, directional natural sunlight creating sharp facial shadows and high contrast, juxtaposed with a stylized blue color overlay on the left side.",
+    "color": [
+      "#FFFFFF",
+      "#1E5AA8",
+      "#8BB4E5",
+      "#3A3A3A",
+      "#000000"
+    ],
+    "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+    "information_density": "Minimalist; strictly brand identification with no promotional copy or pricing.",
+    "characteristics": [
+      "High-fashion editorial",
+      "Dual-exposure effect",
+      "Sharp tailoring focus",
+      "Minimalist branding",
+      "Profile silhouette"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality menswear campaign image featuring visible tailoring and shirt details. The composition effectively uses negative space for brand placement. The lighting is professional and stylized. Category match is confirmed as menswear.",
+    "garment_types": [
+      "tailoring",
+      "shirt"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

@@ -1,0 +1,45 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174881813-QVKFGNPYYSFS0A04OCPC/Monsoon-AW16-campaign-Ireland-04.jpg",
+  "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-694fe275dfdc0b80",
+  "local_path": "references/categories/womenswear/694fe275dfdc0b80.webp",
+  "sha256": "1254b04f429dfcf9fd3065e94afa2a42665a2ded936b20d517a7de57e8abf8d0",
+  "width": 1500,
+  "height": 1032,
+  "analysis": {
+    "category_match": true,
+    "brand": "Monsoon",
+    "quality_score": 88,
+    "composition": "Asymmetrical editorial layout with the model and dogs positioned on the right third, balanced by large brand typography in the left negative space; soft gradient vignette frames the scene.",
+    "subject_ratio": 0.65,
+    "negative_space": "Atmospheric misty landscape on the left provides ample room for logotype placement.",
+    "lighting": "Soft, diffused overcast natural light typical of coastal environments; low contrast with a cool, desaturated tone.",
+    "color": [
+      "slate grey",
+      "muted sage green",
+      "off-white",
+      "charcoal"
+    ],
+    "typography": "Large, white, geometric sans-serif logotype 'MONSOON' centered vertically on the left; smaller URL and social icons at the bottom left.",
+    "information_density": "Low; focuses on brand identity and mood rather than product details or promotional text.",
+    "characteristics": [
+      "atmospheric",
+      "editorial",
+      "coastal setting",
+      "ethereal",
+      "lifestyle imagery"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-quality fashion campaign image featuring a clear garment (embellished gown) in a lifestyle context. The brand is explicitly identified via large typography and caption. Composition effectively uses negative space for branding. Meets womenswear category requirements.",
+    "garment_types": [
+      "dress"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

@@ -91,6 +91,14 @@ class ComfyJobsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'recovery is still running'):
             self.manager.start(self.product,'again','http://127.0.0.1:8191')
 
+    def test_clothing_subtype_and_source_mode_reach_worker_and_state(self):
+        self.engine.gate.set()
+        job=self.manager.start(self.product,'brief','http://127.0.0.1:8191',category='womenswear',garment_type='dress',display_mode='hanging')
+        state=self.finished(job)
+        for key,value in {'product_category':'womenswear','garment_type':'dress','display_mode':'hanging'}.items():
+            self.assertEqual(self.engine.config[key],value)
+            self.assertEqual(state[key],value)
+
     def test_error_does_not_publish_pass_or_provider_message(self):
         self.engine.fail = True
         self.engine.gate.set()

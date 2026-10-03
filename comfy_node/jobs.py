@@ -83,7 +83,7 @@ class DirectorJobs:
             state['updated_at']=time.time()
             self.save_state(self.state_path(job_id), state)
 
-    def start(self, product, brief, comfy_url, category='perfume'):
+    def start(self, product, brief, comfy_url, category='perfume', garment_type='auto', display_mode='auto'):
         config = self.engine.read(self.root/'config.local.json')
         if not os.environ.get(config['api_key_env']) or config['vision_model'] == 'YOUR_VISION_MODEL':
             raise ValueError('Configure the vision model and '+config['api_key_env']+' before starting ComfyUI')
@@ -91,8 +91,9 @@ class DirectorJobs:
         config['comfy_url'] = comfy_url
         from importlib import import_module
         category_module=import_module('.categories', __package__) if __package__ else import_module('categories')
-        category_module.profile({'product_category':category})
+        category_module.profile({'product_category':category,'garment_type':garment_type,'display_mode':display_mode})
         config['product_category']=category
+        config.update(garment_type=garment_type,display_mode=display_mode)
         if config.get('background_workflow'):
             config['background_workflow'] = str(self.root/config['background_workflow'])
         if product.mode != 'RGBA' or product.getchannel('A').getextrema()[0] == 255:
@@ -110,7 +111,7 @@ class DirectorJobs:
             product.save(path/'product.png')
             self.save_state(path/'state.json', {'id': job_id, 'status': 'RUNNING', 'stage': 'QUEUED',
                 'vision_model': config['vision_model'], 'vision_endpoint': config['vision_base_url'],
-                'started_at':time.time(),'product_category':category})
+                'started_at':time.time(),'product_category':category,'garment_type':garment_type,'display_mode':display_mode})
             self.active = job_id
             try:
                 threading.Thread(target=self.work, args=(job_id, config, path/'product.png', brief), daemon=True).start()

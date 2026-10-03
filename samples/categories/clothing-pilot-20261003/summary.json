@@ -1,0 +1,18 @@
+[
+  {
+    "product_category": "menswear",
+    "status": "QUEUED",
+    "stage": "Waiting for existing category tests and clothing node deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "womenswear",
+    "status": "QUEUED",
+    "stage": "Waiting for existing category tests and clothing node deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  }
+]

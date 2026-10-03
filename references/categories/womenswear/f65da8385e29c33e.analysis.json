@@ -1,0 +1,47 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-15-1200x1500.jpg",
+  "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-f65da8385e29c33e",
+  "local_path": "references/categories/womenswear/f65da8385e29c33e.jpg",
+  "sha256": "dcc5339f59cc751e47cf2130e2e60a1f5e7b8c9b3a46fecb0ec6d015eac745c7",
+  "width": 1200,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Claudie",
+    "quality_score": 92,
+    "composition": "Centered full-body editorial portrait with bold horizontal typographic overlay intersecting the subject's midsection.",
+    "subject_ratio": 0.65,
+    "negative_space": "Expansive, uniform light grey studio backdrop providing high contrast for the central figure and white typography.",
+    "lighting": "Soft, diffused, flat frontal studio lighting minimizing shadows to emphasize graphic shapes and garment textures.",
+    "color": [
+      "navy blue",
+      "white",
+      "light grey",
+      "black",
+      "yellow"
+    ],
+    "typography": "Large, bold, uppercase sans-serif logotype ('CLAUDIE') in white, layered centrally over the subject.",
+    "information_density": "Low; focused entirely on the brand name and the visual styling of the single look.",
+    "characteristics": [
+      "editorial fashion",
+      "minimalist",
+      "graphic overlay",
+      "studio portrait",
+      "contemporary styling"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial fashion campaign image featuring a clear womenswear look (knit cardigan and skirt) with prominent, correctly identified brand typography overlay. The composition is clean, well-lit, and strictly adheres to professional advertising standards.",
+    "garment_types": [
+      "knitwear",
+      "skirt"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

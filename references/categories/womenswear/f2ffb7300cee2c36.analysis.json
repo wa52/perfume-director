@@ -1,0 +1,49 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174881993-1NGPYNK51Q1OT38JFFWE/Monsoon-AW16-campaign-Ireland-03.jpg",
+  "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-f2ffb7300cee2c36",
+  "local_path": "references/categories/womenswear/f2ffb7300cee2c36.webp",
+  "sha256": "14de27470ae1ff13f043f45fc00b107cc204209697b7b12c2dc903bf567af9f8",
+  "width": 1500,
+  "height": 994,
+  "analysis": {
+    "category_match": true,
+    "brand": "Monsoon",
+    "quality_score": 92,
+    "composition": "Rule of thirds with the model positioned on the right vertical axis, balanced by the brand logotype in the negative space on the left; diagonal tree branches lead the eye toward the subject.",
+    "subject_ratio": 0.35,
+    "negative_space": "Atmospheric mist and blurred forest background on the left provide clean area for typography.",
+    "lighting": "Soft, diffused natural overcast light typical of a forest setting, creating low contrast and even illumination on the garments.",
+    "color": [
+      "forest green",
+      "moss green",
+      "burgundy",
+      "charcoal grey",
+      "misty white",
+      "earth brown"
+    ],
+    "typography": "Clean, white sans-serif logotype 'MONSOON' centered vertically on the left; smaller URL and social icons at the bottom left.",
+    "information_density": "Low; focuses on brand identity and visual mood with minimal text overlay.",
+    "characteristics": [
+      "atmospheric",
+      "editorial",
+      "outdoor lifestyle",
+      "textured knitwear",
+      "moody"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-quality fashion campaign image featuring visible womenswear (knitwear coat, scarf, beanie) in an atmospheric setting. The brand is clearly identified via logo and caption. Composition effectively uses negative space for campaign typography.",
+    "garment_types": [
+      "knitwear",
+      "outerwear",
+      "dress"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

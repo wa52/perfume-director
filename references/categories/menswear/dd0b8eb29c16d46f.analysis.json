@@ -1,0 +1,50 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://kioskproductions.co.uk/ss-folio",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1620116303802-P0R4UX1FLEVM9VF2JQSW/Diesel-kiosk-productions05-2.jpg",
+  "caption": "Diesel campaign from the credited creative/production studio portfolio; Diesel fashion campaign ",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-dd0b8eb29c16d46f",
+  "local_path": "references/categories/menswear/dd0b8eb29c16d46f.webp",
+  "sha256": "e0d21db858e5aa305fddedf073e0ba03311c38661faed8071829aeba7678465f",
+  "width": 1416,
+  "height": 1000,
+  "analysis": {
+    "category_match": true,
+    "brand": "Diesel",
+    "quality_score": 92,
+    "composition": "Dynamic editorial layout featuring two models seated at a diner table, utilizing a diagonal visual flow from the top-right logo to the bottom-left campaign copy, anchored by foreground props.",
+    "subject_ratio": 0.65,
+    "negative_space": "Minimal; the frame is densely packed with environmental details, neon signage, and subjects, typical of high-energy fashion editorials.",
+    "lighting": "Harsh, direct on-camera flash creating high contrast, specular highlights on leather and vinyl surfaces, and distinct hard shadows, evoking a raw, paparazzi-style aesthetic.",
+    "color": [
+      "black",
+      "neon blue",
+      "denim blue",
+      "white",
+      "red"
+    ],
+    "typography": "Bold, white sans-serif campaign slogan ('ENJOY BEFORE RETURNING') stacked in the lower left; standard brand logotype in the upper right.",
+    "information_density": "Moderate; balances complex visual storytelling with clear, legible brand and campaign messaging.",
+    "characteristics": [
+      "flash photography",
+      "diner setting",
+      "neon lights",
+      "leather texture",
+      "acid wash denim",
+      "grunge aesthetic",
+      "lifestyle context"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 15,
+    "reason": "High-quality commercial fashion campaign image that accurately matches the menswear category (featuring a male model in distinct outerwear and trousers). The brand is clearly identified, and the image includes specific external campaign typography. It is a complex lifestyle scene with multiple subjects and environmental lighting, making it unsuitable for simple product rendering or isolated garment extraction tasks.",
+    "garment_types": [
+      "outerwear",
+      "tshirt",
+      "trousers"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

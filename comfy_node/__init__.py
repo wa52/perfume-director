@@ -61,22 +61,36 @@ class ProductDirectorLoop(PerfumeDirectorLoop):
     @classmethod
     def INPUT_TYPES(cls):
         fields=super().INPUT_TYPES()
-        fields['required']['category']=(['skincare','watches','footwear','beverage','perfume'],)
+        fields['required']['category']=(['skincare','watches','footwear','beverage','perfume','menswear','womenswear'],)
         fields['required']['brief']=('STRING', {'multiline':True,'default':'为这款商品探索四个明显不同的商业海报方向。保留商品原图、真实品牌和名称，不添加价格或未经提供的功效声明。'})
         return fields
 
     CATEGORY='Product Art Director'
     DESCRIPTION='Choose a product category and run four fresh Director/Renderer/Critic concepts, with visible drafts and guarded review.'
 
-    def execute(self, product, product_mask, brief, category):
+    def execute(self, product, product_mask, brief, category, garment_type='auto', display_mode='auto'):
         if product.shape[0]!=1 or product_mask.shape[0]!=1:raise ValueError('One product per task')
         rgb=Image.fromarray((product[0].cpu().numpy().clip(0,1)*255).astype(np.uint8)).convert('RGBA')
         alpha=Image.fromarray(((1-product_mask[0].cpu().numpy()).clip(0,1)*255).astype(np.uint8))
         if alpha.size!=rgb.size:raise ValueError('Connect IMAGE and MASK of the same transparent PNG')
         rgb.putalpha(alpha)
         from server import PromptServer
-        job_id=director_jobs().start(rgb,brief,'http://127.0.0.1:'+str(PromptServer.instance.port),category=category)
+        job_id=director_jobs().start(rgb,brief,'http://127.0.0.1:'+str(PromptServer.instance.port),category=category,garment_type=garment_type,display_mode=display_mode)
         return {'ui':{'perfume_job':[job_id]},'result':(job_id,)}
+
+
+class ClothingDirectorLoop(ProductDirectorLoop):
+    @classmethod
+    def INPUT_TYPES(cls):
+        from .categories import GARMENT_TYPES,DISPLAY_MODES
+        fields=super().INPUT_TYPES()
+        fields['required']['category']=(['menswear','womenswear'],)
+        fields['required']['garment_type']=(list(GARMENT_TYPES),)
+        fields['required']['display_mode']=(list(DISPLAY_MODES),)
+        fields['required']['brief']=('STRING',{'multiline':True,'default':'为这款服装探索四个明显不同的品牌海报方向。保留原图版型、面料纹理、颜色和全部细节，保持原展示方式；只使用可确认的品牌与名称，不虚构材质成分、价格或功能，不生成模特或改变穿着。'})
+        return fields
+
+    DESCRIPTION='Menswear/womenswear and garment subtypes; preserve source presentation, fabric and silhouette, with four fresh reviewed directions.'
 
 
 class PerfumePosterSpecRender:
@@ -101,8 +115,8 @@ class PerfumePosterSpecRender:
         return (torch.from_numpy(np.array(result).astype(np.float32)/255)[None, ...],)
 
 
-NODE_CLASS_MAPPINGS = {'ProductDirectorLoop':ProductDirectorLoop, 'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
-NODE_DISPLAY_NAME_MAPPINGS = {'ProductDirectorLoop':'AI Art Director · 多类别四方向闭环', 'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
+NODE_CLASS_MAPPINGS = {'ClothingDirectorLoop':ClothingDirectorLoop,'ProductDirectorLoop':ProductDirectorLoop, 'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
+NODE_DISPLAY_NAME_MAPPINGS = {'ClothingDirectorLoop':'AI Art Director · 男装女装细分闭环','ProductDirectorLoop':'AI Art Director · 多类别四方向闭环', 'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
 
 
 def require_finite(value, stage):

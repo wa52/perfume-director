@@ -1,0 +1,889 @@
+[
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_01-1153x1500.jpg",
+    "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-5633078097e6c583",
+    "local_path": "references/categories/menswear/5633078097e6c583.jpg",
+    "sha256": "9fe518b3c2d6e3284833bfd06638c31afd3710a3a3004e139520a4734bb8d1ed",
+    "width": 1153,
+    "height": 1500,
+    "analysis": {
+      "category_match": false,
+      "brand": "Hugo Boss",
+      "quality_score": 85,
+      "composition": "Split layout with editorial photography occupying the top 60% and a solid white negative space block at the bottom containing the logo.",
+      "subject_ratio": 0.6,
+      "negative_space": "Extensive solid white block in the lower 40% of the canvas.",
+      "lighting": "Harsh, direct sunlight creating high contrast and deep shadows, accented by a distinct red color gel or light leak effect across the subject's face and arm.",
+      "color": [
+        "black",
+        "beige",
+        "white",
+        "red"
+      ],
+      "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+      "information_density": "Low; minimal text restricted to brand identification.",
+      "characteristics": [
+        "high fashion editorial",
+        "hard light",
+        "color accent",
+        "minimalist layout",
+        "womenswear subject"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "The image features a female model wearing womenswear (knit dress and vest), which contradicts the required 'menswear' reference category. While it is a valid Hugo Boss campaign image with high production quality, the subject matter does not match the specified merchandising category.",
+      "garment_types": [
+        "knitwear",
+        "outerwear",
+        "dress"
+      ]
+    },
+    "accepted": false,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_04-1153x1500.jpg",
+    "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-3e7dfae607d86639",
+    "local_path": "references/categories/menswear/3e7dfae607d86639.jpg",
+    "sha256": "82633a5fd87b988782c38336072e8d61a44311f6ab03b349aecd9019d88eac05",
+    "width": 1153,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Hugo Boss",
+      "quality_score": 92,
+      "composition": "Split-frame editorial layout with the subject occupying the upper two-thirds against a dual-tone sky background, balanced by a substantial lower white negative space anchoring the logo.",
+      "subject_ratio": 0.45,
+      "negative_space": "Expansive solid white field in the lower third; vertical color block division in the upper background.",
+      "lighting": "Hard, directional natural sunlight creating sharp facial shadows and high contrast, juxtaposed with a stylized blue color overlay on the left side.",
+      "color": [
+        "#FFFFFF",
+        "#1E5AA8",
+        "#8BB4E5",
+        "#3A3A3A",
+        "#000000"
+      ],
+      "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+      "information_density": "Minimalist; strictly brand identification with no promotional copy or pricing.",
+      "characteristics": [
+        "High-fashion editorial",
+        "Dual-exposure effect",
+        "Sharp tailoring focus",
+        "Minimalist branding",
+        "Profile silhouette"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "High-quality menswear campaign image featuring visible tailoring and shirt details. The composition effectively uses negative space for brand placement. The lighting is professional and stylized. Category match is confirmed as menswear.",
+      "garment_types": [
+        "tailoring",
+        "shirt"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_03-1153x1500.jpg",
+    "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-31516f72ba07effd",
+    "local_path": "references/categories/menswear/31516f72ba07effd.jpg",
+    "sha256": "81e5b1dc26e04a397de7ea275a1e9a344341ba9ad9153b5fc90595e226ab0dd0",
+    "width": 1153,
+    "height": 1500,
+    "analysis": {
+      "category_match": false,
+      "brand": "Hugo Boss",
+      "quality_score": 92,
+      "composition": "Split layout with editorial photography occupying the upper portion and a large solid white negative space below for branding.",
+      "subject_ratio": 0.45,
+      "negative_space": "Extensive solid white block in the lower half; open sky in the upper left.",
+      "lighting": "Harsh natural sunlight creating strong contrast, modified by a translucent red gel/filter overlay on the right side.",
+      "color": [
+        "#87CEEB",
+        "#FFFFFF",
+        "#8B0000",
+        "#E6C288",
+        "#000000"
+      ],
+      "typography": "Minimalist black serif logotype ('BOSS') with sans-serif subtext ('HUGO BOSS') anchored in the bottom right corner.",
+      "information_density": "Very low; strictly brand logo and visual imagery.",
+      "characteristics": [
+        "High fashion editorial",
+        "Color blocking",
+        "Translucent overlay effect",
+        "Desert setting",
+        "Minimalist branding"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "The image features a female model wearing a sleeveless textured top/dress, which contradicts the required 'menswear' reference category. While it is a high-quality Hugo Boss campaign image with clear branding and distinct composition, the product category does not match the brief's constraint.",
+      "garment_types": [
+        "dress",
+        "activewear"
+      ]
+    },
+    "accepted": false,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_02-1153x1500.jpg",
+    "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-6dbee98a90d48a70",
+    "local_path": "references/categories/menswear/6dbee98a90d48a70.jpg",
+    "sha256": "7c9292d970307afc53e83ad6c05332d79e077cc7b71d502bb3bbc7d2d140ad21",
+    "width": 1153,
+    "height": 1500,
+    "analysis": {
+      "category_match": false,
+      "brand": "Hugo Boss",
+      "quality_score": 92,
+      "composition": "Asymmetrical editorial layout with a strong vertical graphic overlay dividing the subject, anchored by a large negative space footer for branding.",
+      "subject_ratio": 0.35,
+      "negative_space": "Extensive solid white lower half; open sky and tarmac in the upper left.",
+      "lighting": "Bright, harsh natural sunlight creating distinct cast shadows, contrasted with a flat graphic color block.",
+      "color": [
+        "white",
+        "sky blue",
+        "cobalt blue",
+        "red",
+        "beige",
+        "black"
+      ],
+      "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+      "information_density": "Low; minimalist approach focusing entirely on the visual and brand mark.",
+      "characteristics": [
+        "editorial fashion",
+        "graphic overlay",
+        "minimalist",
+        "high contrast",
+        "luxury aesthetic"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "The image features a female model, which contradicts the specified 'menswear' reference category, resulting in a category mismatch. However, it is a high-quality, legitimate Hugo Boss campaign image with clear branding and professional composition.",
+      "garment_types": [
+        "tailoring",
+        "trousers",
+        "shirt"
+      ]
+    },
+    "accepted": false,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+    "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/62cca08af9b745f10c84c3de_Webflow_2022_Aquis_HeroImageAsset.jpg",
+    "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-1cff5b4e0ca002a6",
+    "local_path": "references/categories/menswear/1cff5b4e0ca002a6.jpg",
+    "sha256": "f214311b9ec2d9f5ba28ab00cc756f168e183fa29d0bf3be2338ea4a21224278",
+    "width": 2500,
+    "height": 1500,
+    "analysis": {
+      "category_match": false,
+      "brand": "AQUIS",
+      "quality_score": 85,
+      "composition": "Asymmetrical layout with the subject positioned on the right and large brand typography occupying the negative space on the left.",
+      "subject_ratio": 0.6,
+      "negative_space": "Expansive clear blue sky background on the left utilized for logo placement.",
+      "lighting": "Bright, hard natural sunlight creating distinct shadows and highlighting fabric texture.",
+      "color": [
+        "sky blue",
+        "pastel pink",
+        "white",
+        "dark brown"
+      ],
+      "typography": "Large, thin, white sans-serif logotype 'AQUIS' with a stylized 'Q' tail.",
+      "information_density": "Low; focuses entirely on brand identity and visual mood without additional copy.",
+      "characteristics": [
+        "towel texture",
+        "outdoor setting",
+        "minimalist branding",
+        "lifestyle imagery"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 90,
+      "reason": "The image features a towel (home goods/beauty accessory) and the brand 'AQUIS', which contradicts the required 'menswear' category and the source caption's claim of 'Tommy Hilfiger'. The visible product is a bath/hair towel, not a menswear garment."
+    },
+    "accepted": false,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+    "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/62f2bb1de38c6d085b15c197_Webflow_2022_Aquis_MobileOptimizedAssets-1.jpg",
+    "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-018553065583885b",
+    "local_path": "references/categories/menswear/018553065583885b.jpg",
+    "sha256": "a8409f21f23c80808b210cf6e4a3e4706c8dc3cde1bab7287d779e0882cc5e7f",
+    "width": 2500,
+    "height": 1810,
+    "analysis": {
+      "category_match": false,
+      "brand": "AQUIS",
+      "quality_score": 85,
+      "composition": "Asymmetrical editorial layout with the subject positioned on the right and brand typography anchoring the left negative space.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive clear blue sky background on the left providing high contrast for white typography.",
+      "lighting": "Bright, direct natural sunlight creating distinct shadows and highlighting the texture of the fabric and hair.",
+      "color": [
+        "sky blue",
+        "pastel pink",
+        "white",
+        "dark brown"
+      ],
+      "typography": "Large, thin, white sans-serif logotype 'AQUIS' with a stylized 'Q' tail, overlaid on the background.",
+      "information_density": "Low; focuses entirely on brand identity and visual mood without additional copy or pricing.",
+      "characteristics": [
+        "towel wrap",
+        "hair care context",
+        "outdoor setting",
+        "minimalist branding",
+        "texture focus"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 90,
+      "reason": "The image features a towel wrap by the brand AQUIS, which falls under beauty/hair accessories rather than the required 'menswear' category. Additionally, the source caption identifies 'Tommy Hilfiger', creating a conflict with the visible 'AQUIS' branding, and the subject appears female, further deviating from the menswear brief."
+    },
+    "accepted": false,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+    "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/6308f19af843b405267d1d5c_Webflow_2022_Aquis_MobileOptimizedAssets-6%20(1).jpg",
+    "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-d41286644533e022",
+    "local_path": "references/categories/menswear/d41286644533e022.jpg",
+    "sha256": "9ddb04f936e9590f28c76047b8dd09c64f1d953c7552891ea9ec45da5f128ead",
+    "width": 1224,
+    "height": 1580,
+    "analysis": {
+      "category_match": true,
+      "brand": "Tommy Hilfiger",
+      "quality_score": 82,
+      "composition": "Tight close-up portrait framing the subject's face and upper torso, with the garment occupying the lower third of the canvas.",
+      "subject_ratio": 0.95,
+      "negative_space": "Minimal negative space, primarily consisting of out-of-focus sky and rock formations in the upper corners.",
+      "lighting": "Hard, directional golden-hour sunlight creating strong contrast, warm highlights on the hair and skin, and deep shadows.",
+      "color": [
+        "ochre",
+        "golden brown",
+        "sky blue",
+        "warm beige"
+      ],
+      "typography": "None",
+      "information_density": "Low; purely visual imagery with no text overlays or graphical elements.",
+      "characteristics": [
+        "editorial photography",
+        "golden hour",
+        "close-up",
+        "natural texture",
+        "warm tones"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 90,
+      "reason": "The image is a high-quality editorial campaign shot for Tommy Hilfiger menswear. While the framing is a tight close-up focusing heavily on the model's face, the mustard t-shirt is clearly visible, displaying fabric texture, crew neck construction, and shoulder seams, satisfying the requirement for a clothing reference over a portrait-only rejection.",
+      "garment_types": [
+        "tshirt"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+    "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/62cca08a8cf05d7647d2d4b1_Webflow_2022_Aquis_HorizontalAssets-1.jpg",
+    "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-103e2a523a57e7e8",
+    "local_path": "references/categories/menswear/103e2a523a57e7e8.jpg",
+    "sha256": "8656aeff443e10c3f261e82226081b9787ead81d4bbf29fb12c1d6dd24cf8cd0",
+    "width": 2496,
+    "height": 1580,
+    "analysis": {
+      "category_match": true,
+      "brand": "Tommy Hilfiger",
+      "quality_score": 82,
+      "composition": "Tight editorial portrait framing with the subject offset to the right, balancing the negative space of the sky and blurred rock formation on the left.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space provided by the clear blue sky in the upper right and out-of-focus background elements.",
+      "lighting": "Strong, warm directional golden hour sunlight creating high contrast, deep shadows, and vibrant highlights on the hair and skin.",
+      "color": [
+        "ochre",
+        "sky blue",
+        "warm beige",
+        "brown"
+      ],
+      "typography": "None",
+      "information_density": "Low; purely visual imagery with no text overlays or graphical elements.",
+      "characteristics": [
+        "golden hour lighting",
+        "editorial portrait",
+        "windblown hair",
+        "slub cotton texture",
+        "rolled sleeves",
+        "outdoor setting"
+      ],
+      "has_campaign_typography": false,
+      "renderer_compatibility": 95,
+      "reason": "High-quality commercial fashion photography featuring a visible menswear garment (t-shirt) with distinct fabric texture and construction details (rolled sleeves, crew neck). The image fits the menswear campaign category as a lifestyle/editorial shot, despite the tight crop focusing on the model's face, the garment is clearly present and styled.",
+      "garment_types": [
+        "tshirt"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "menswear",
+    "source_url": "https://kioskproductions.co.uk/ss-folio",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1620116303802-P0R4UX1FLEVM9VF2JQSW/Diesel-kiosk-productions05-2.jpg",
+    "caption": "Diesel campaign from the credited creative/production studio portfolio; Diesel fashion campaign ",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-dd0b8eb29c16d46f",
+    "local_path": "references/categories/menswear/dd0b8eb29c16d46f.webp",
+    "sha256": "e0d21db858e5aa305fddedf073e0ba03311c38661faed8071829aeba7678465f",
+    "width": 1416,
+    "height": 1000,
+    "analysis": {
+      "category_match": true,
+      "brand": "Diesel",
+      "quality_score": 92,
+      "composition": "Dynamic editorial layout featuring two models seated at a diner table, utilizing a diagonal visual flow from the top-right logo to the bottom-left campaign copy, anchored by foreground props.",
+      "subject_ratio": 0.65,
+      "negative_space": "Minimal; the frame is densely packed with environmental details, neon signage, and subjects, typical of high-energy fashion editorials.",
+      "lighting": "Harsh, direct on-camera flash creating high contrast, specular highlights on leather and vinyl surfaces, and distinct hard shadows, evoking a raw, paparazzi-style aesthetic.",
+      "color": [
+        "black",
+        "neon blue",
+        "denim blue",
+        "white",
+        "red"
+      ],
+      "typography": "Bold, white sans-serif campaign slogan ('ENJOY BEFORE RETURNING') stacked in the lower left; standard brand logotype in the upper right.",
+      "information_density": "Moderate; balances complex visual storytelling with clear, legible brand and campaign messaging.",
+      "characteristics": [
+        "flash photography",
+        "diner setting",
+        "neon lights",
+        "leather texture",
+        "acid wash denim",
+        "grunge aesthetic",
+        "lifestyle context"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 15,
+      "reason": "High-quality commercial fashion campaign image that accurately matches the menswear category (featuring a male model in distinct outerwear and trousers). The brand is clearly identified, and the image includes specific external campaign typography. It is a complex lifestyle scene with multiple subjects and environmental lighting, making it unsuitable for simple product rendering or isolated garment extraction tasks.",
+      "garment_types": [
+        "outerwear",
+        "tshirt",
+        "trousers"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-18-1200x1500.jpg",
+    "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-319a2720e5ca6656",
+    "local_path": "references/categories/womenswear/319a2720e5ca6656.jpg",
+    "sha256": "4ade20132d9c285d0593acb52ec3d2d84e1273e1f6f4ec0b3bd971ad89f64492",
+    "width": 1200,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Claudie",
+      "quality_score": 88,
+      "composition": "Centered symmetrical full-body shot with the model seated on a bed, creating a strong triangular base; bold typographic overlay intersects the subject horizontally across the mid-section.",
+      "subject_ratio": 0.65,
+      "negative_space": "Moderate negative space in the upper background (white wall) and lower foreground (carpet), balanced by the central subject and prop density.",
+      "lighting": "Soft, diffused naturalistic lighting with low contrast, creating a flat, editorial aesthetic typical of contemporary fashion campaigns.",
+      "color": [
+        "white",
+        "grey",
+        "red",
+        "light blue",
+        "black",
+        "beige"
+      ],
+      "typography": "Large, bold, white sans-serif uppercase logotype ('CLAUDIE') centered horizontally, overlaying the subject's torso and lap.",
+      "information_density": "Low; focuses entirely on the brand name and visual imagery without additional promotional copy or pricing.",
+      "characteristics": [
+        "editorial",
+        "minimalist",
+        "contemporary",
+        "soft focus",
+        "lifestyle setting"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "The image is a high-quality fashion campaign advertisement featuring a model wearing visible womenswear (knit top and skirt) in a lifestyle setting. The brand 'Claudie' is explicitly identified via large campaign typography and the source caption. The composition effectively balances the subject with the graphic overlay, meeting the criteria for a finished commercial design.",
+      "garment_types": [
+        "knitwear",
+        "skirt"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-10-1200x1500.jpg",
+    "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-2233dc8cd854903f",
+    "local_path": "references/categories/womenswear/2233dc8cd854903f.jpg",
+    "sha256": "1422f5aa3afcb8a646d11c73f7cb70145b892dad8691babee821ce92f2533970",
+    "width": 1200,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Claudie",
+      "quality_score": 92,
+      "composition": "Centered full-body editorial layout with balanced negative space and top-aligned brand logotype.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive, clean studio backdrop providing high contrast for the subject and typography.",
+      "lighting": "Soft, diffuse high-key studio lighting with minimal shadowing.",
+      "color": [
+        "#E8ECEF",
+        "#D32027",
+        "#1A1C20",
+        "#FFFFFF",
+        "#D2B48C"
+      ],
+      "typography": "Bold, wide-tracked sans-serif logotype in white, positioned centrally at the top.",
+      "information_density": "Low; focused entirely on brand identity and visual styling.",
+      "characteristics": [
+        "Minimalist",
+        "Editorial",
+        "High-key",
+        "Contemporary",
+        "Clean"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-quality commercial fashion campaign featuring a clear garment reference (knitwear) and visible brand identity, meeting all womenswear category requirements.",
+      "garment_types": [
+        "knitwear"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-17-1200x1500.jpg",
+    "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-6cbbf8e9f48ad664",
+    "local_path": "references/categories/womenswear/6cbbf8e9f48ad664.jpg",
+    "sha256": "9e8f5164e1e785f5ced6d942a6ea54f407ef36676130c75b2dd5a47d4f765782",
+    "width": 1200,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Claudie",
+      "quality_score": 88,
+      "composition": "Full-body editorial shot with the model standing on a bed, utilizing significant upper negative space for bold brand typography.",
+      "subject_ratio": 0.35,
+      "negative_space": "Extensive plain wall area in the upper half balancing the horizontal bed element below.",
+      "lighting": "Soft, diffused, flat naturalistic lighting creating a raw, unretouched aesthetic with minimal shadows.",
+      "color": [
+        "white",
+        "light blue",
+        "heather grey",
+        "pale yellow",
+        "dusty rose"
+      ],
+      "typography": "Large, bold, white sans-serif logotype centered at the top.",
+      "information_density": "Low; focuses entirely on the brand name and the visual mood without promotional text.",
+      "characteristics": [
+        "minimalist",
+        "editorial",
+        "raw aesthetic",
+        "soft pastel palette",
+        "candid pose"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "The image is a high-quality fashion campaign poster featuring a model wearing visible knitwear and activewear, aligning with the womenswear category. The brand 'Claudie' is clearly displayed as campaign typography. The composition effectively uses negative space and soft lighting to create a distinct editorial mood.",
+      "garment_types": [
+        "knitwear",
+        "activewear"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+    "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-15-1200x1500.jpg",
+    "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-f65da8385e29c33e",
+    "local_path": "references/categories/womenswear/f65da8385e29c33e.jpg",
+    "sha256": "dcc5339f59cc751e47cf2130e2e60a1f5e7b8c9b3a46fecb0ec6d015eac745c7",
+    "width": 1200,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Claudie",
+      "quality_score": 92,
+      "composition": "Centered full-body editorial portrait with bold horizontal typographic overlay intersecting the subject's midsection.",
+      "subject_ratio": 0.65,
+      "negative_space": "Expansive, uniform light grey studio backdrop providing high contrast for the central figure and white typography.",
+      "lighting": "Soft, diffused, flat frontal studio lighting minimizing shadows to emphasize graphic shapes and garment textures.",
+      "color": [
+        "navy blue",
+        "white",
+        "light grey",
+        "black",
+        "yellow"
+      ],
+      "typography": "Large, bold, uppercase sans-serif logotype ('CLAUDIE') in white, layered centrally over the subject.",
+      "information_density": "Low; focused entirely on the brand name and the visual styling of the single look.",
+      "characteristics": [
+        "editorial fashion",
+        "minimalist",
+        "graphic overlay",
+        "studio portrait",
+        "contemporary styling"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-quality commercial fashion campaign image featuring a clear womenswear look (knit cardigan and skirt) with prominent, correctly identified brand typography overlay. The composition is clean, well-lit, and strictly adheres to professional advertising standards.",
+      "garment_types": [
+        "knitwear",
+        "skirt"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174879285-Q029MAS89YADMMPYU2Z6/Monsoon-AW16-campaign-Ireland-01.jpg",
+    "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-7b00f26198879726",
+    "local_path": "references/categories/womenswear/7b00f26198879726.webp",
+    "sha256": "4e0ad12948b4b5f4ed26576ec23ae84d30559a9825192020d83e0b0372ceb8ae",
+    "width": 1094,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Monsoon",
+      "quality_score": 88,
+      "composition": "Centered vertical portrait with the model framed against a textured rock face; large brand logotype overlaid across the mid-section creates a strong horizontal anchor.",
+      "subject_ratio": 0.65,
+      "negative_space": "Minimal negative space due to the full-frame textured background; visual breathing room is created through the contrast between the subject and the busy stone texture.",
+      "lighting": "Soft, diffused natural daylight typical of overcast outdoor conditions, providing even illumination on the face and garments without harsh shadows.",
+      "color": [
+        "camel",
+        "beige",
+        "grey",
+        "white",
+        "brown"
+      ],
+      "typography": "Bold, white, uppercase sans-serif logotype centered horizontally; smaller URL and social media icons anchored at the bottom center.",
+      "information_density": "Low; focuses strictly on brand identity and visual mood with minimal textual information (brand name and website).",
+      "characteristics": [
+        "editorial fashion photography",
+        "outdoor location shoot",
+        "textured background",
+        "neutral earth tones",
+        "overlay typography"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "The image is a high-quality commercial fashion campaign featuring a model wearing visible womenswear garments (lace dress and coat with fur collar) that align with the reference category. The brand 'Monsoon' is explicitly identified in the caption and clearly legible in the image. The composition uses standard advertising techniques with overlay typography and a distinct atmospheric setting.",
+      "garment_types": [
+        "dress",
+        "outerwear"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174878542-DG2JJI2BCI27QET5XERK/Monsoon-AW16-campaign-Ireland-02.jpg",
+    "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-f42a296942c5f8bf",
+    "local_path": "references/categories/womenswear/f42a296942c5f8bf.webp",
+    "sha256": "35bf0ad3b7d36b25ec2a33b13d6da43f6b338c0bc0dacb7a4279dea5b15472a7",
+    "width": 1100,
+    "height": 1500,
+    "analysis": {
+      "category_match": true,
+      "brand": "Monsoon",
+      "quality_score": 88,
+      "composition": "Centered vertical portrait with the subject framed by receding stone steps and foliage; large brand logotype overlaid across the mid-torso creates a strong horizontal anchor.",
+      "subject_ratio": 0.65,
+      "negative_space": "Limited due to the full-bleed environmental background, but visual breathing room is maintained through the shallow depth of field blurring the surrounding greenery and stonework.",
+      "lighting": "Soft, diffused natural overcast light providing even illumination across the face and garment, minimizing harsh shadows and highlighting the fabric's matte texture.",
+      "color": [
+        "Charcoal Grey",
+        "Forest Green",
+        "Stone Grey",
+        "White",
+        "Blonde"
+      ],
+      "typography": "Bold, white, geometric sans-serif logotype centered horizontally; smaller secondary sans-serif URL and social media icons anchored at the bottom center.",
+      "information_density": "Low; strictly limited to essential brand identity and digital contact points, prioritizing the visual impact of the fashion photography.",
+      "characteristics": [
+        "Editorial fashion photography",
+        "Outdoor environmental portrait",
+        "Double-breasted wool coat",
+        "Moody atmospheric tone",
+        "Shallow depth of field"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "The image is a high-quality, finished commercial fashion advertisement for Monsoon womenswear. It clearly displays the primary product (a charcoal double-breasted coat) worn by a model in an atmospheric outdoor setting. The campaign typography is prominent and professionally integrated, and the lighting effectively showcases the garment's texture and cut.",
+      "garment_types": [
+        "outerwear"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174881993-1NGPYNK51Q1OT38JFFWE/Monsoon-AW16-campaign-Ireland-03.jpg",
+    "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-f2ffb7300cee2c36",
+    "local_path": "references/categories/womenswear/f2ffb7300cee2c36.webp",
+    "sha256": "14de27470ae1ff13f043f45fc00b107cc204209697b7b12c2dc903bf567af9f8",
+    "width": 1500,
+    "height": 994,
+    "analysis": {
+      "category_match": true,
+      "brand": "Monsoon",
+      "quality_score": 92,
+      "composition": "Rule of thirds with the model positioned on the right vertical axis, balanced by the brand logotype in the negative space on the left; diagonal tree branches lead the eye toward the subject.",
+      "subject_ratio": 0.35,
+      "negative_space": "Atmospheric mist and blurred forest background on the left provide clean area for typography.",
+      "lighting": "Soft, diffused natural overcast light typical of a forest setting, creating low contrast and even illumination on the garments.",
+      "color": [
+        "forest green",
+        "moss green",
+        "burgundy",
+        "charcoal grey",
+        "misty white",
+        "earth brown"
+      ],
+      "typography": "Clean, white sans-serif logotype 'MONSOON' centered vertically on the left; smaller URL and social icons at the bottom left.",
+      "information_density": "Low; focuses on brand identity and visual mood with minimal text overlay.",
+      "characteristics": [
+        "atmospheric",
+        "editorial",
+        "outdoor lifestyle",
+        "textured knitwear",
+        "moody"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-quality fashion campaign image featuring visible womenswear (knitwear coat, scarf, beanie) in an atmospheric setting. The brand is clearly identified via logo and caption. Composition effectively uses negative space for campaign typography.",
+      "garment_types": [
+        "knitwear",
+        "outerwear",
+        "dress"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174881813-QVKFGNPYYSFS0A04OCPC/Monsoon-AW16-campaign-Ireland-04.jpg",
+    "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-694fe275dfdc0b80",
+    "local_path": "references/categories/womenswear/694fe275dfdc0b80.webp",
+    "sha256": "1254b04f429dfcf9fd3065e94afa2a42665a2ded936b20d517a7de57e8abf8d0",
+    "width": 1500,
+    "height": 1032,
+    "analysis": {
+      "category_match": true,
+      "brand": "Monsoon",
+      "quality_score": 88,
+      "composition": "Asymmetrical editorial layout with the model and dogs positioned on the right third, balanced by large brand typography in the left negative space; soft gradient vignette frames the scene.",
+      "subject_ratio": 0.65,
+      "negative_space": "Atmospheric misty landscape on the left provides ample room for logotype placement.",
+      "lighting": "Soft, diffused overcast natural light typical of coastal environments; low contrast with a cool, desaturated tone.",
+      "color": [
+        "slate grey",
+        "muted sage green",
+        "off-white",
+        "charcoal"
+      ],
+      "typography": "Large, white, geometric sans-serif logotype 'MONSOON' centered vertically on the left; smaller URL and social icons at the bottom left.",
+      "information_density": "Low; focuses on brand identity and mood rather than product details or promotional text.",
+      "characteristics": [
+        "atmospheric",
+        "editorial",
+        "coastal setting",
+        "ethereal",
+        "lifestyle imagery"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-quality fashion campaign image featuring a clear garment (embellished gown) in a lifestyle context. The brand is explicitly identified via large typography and caption. Composition effectively uses negative space for branding. Meets womenswear category requirements.",
+      "garment_types": [
+        "dress"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.stefanbeckman.com/campaign",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59e92cfbfe54ef4fb665eba8/1774973065107-2OT9PF2P38CXS7L0ZW3X/image-asset.jpeg",
+    "caption": "Max Mara campaign from the credited creative/production studio portfolio; Max Mara SS 26",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-d9c5da34b802051f",
+    "local_path": "references/categories/womenswear/d9c5da34b802051f.webp",
+    "sha256": "dd76ae102f4ef8c786e1efe3514304a620eae1424c8f8f56a3f57f7c698db90e",
+    "width": 1080,
+    "height": 1346,
+    "analysis": {
+      "category_match": true,
+      "brand": "Max Mara",
+      "quality_score": 92,
+      "composition": "Central full-body figure framed by a painterly, theatrical garden backdrop with a vintage chair prop anchoring the lower left; strong vertical hierarchy balanced by the large logotype at the base.",
+      "subject_ratio": 0.65,
+      "negative_space": "Dense and atmospheric; the background is filled with intricate foliage and sky textures, leaving minimal empty space, though the misty floor area provides slight breathing room for the typography.",
+      "lighting": "Soft, diffused studio lighting on the model that mimics natural overcast light, seamlessly blended with the ambient, moody illumination of the painted backdrop to create a cohesive surreal environment.",
+      "color": [
+        "beige",
+        "camel",
+        "forest green",
+        "teal",
+        "black",
+        "white",
+        "burnt orange"
+      ],
+      "typography": "Large, high-contrast white serif logotype ('MaxMara') centered at the bottom, overlaying the subject's legs and the misty ground; classic and authoritative brand styling.",
+      "information_density": "Low; strictly brand-focused with only the primary logo visible, relying entirely on visual storytelling and brand recognition without promotional copy or pricing.",
+      "characteristics": [
+        "luxury fashion",
+        "editorial campaign",
+        "surrealist backdrop",
+        "tailored suiting",
+        "painterly aesthetic",
+        "full-body shot"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-end commercial campaign image featuring a clear womenswear tailoring ensemble (jacket and trousers) by Max Mara. The composition effectively integrates a live model with an artistic, painted background, meeting the criteria for a finished campaign design with visible branding and appropriate garment classification.",
+      "garment_types": [
+        "tailoring",
+        "trousers"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  },
+  {
+    "product_category": "womenswear",
+    "source_url": "https://www.stefanbeckman.com/campaign",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59e92cfbfe54ef4fb665eba8/1763138777624-21YK10W4C21H2HWO02YZ/SnapInsta.to_540494302_18504643381066309_7414759893815707008_n+Large.jpeg",
+    "caption": "Max Mara campaign from the credited creative/production studio portfolio; Max Mara FW 2025",
+    "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+    "id": "category-b2437b8786b4b159",
+    "local_path": "references/categories/womenswear/b2437b8786b4b159.webp",
+    "sha256": "2ff0232306b8c1c06df91bfb80416af632b820194c5561bc5f379d0f128c2aa9",
+    "width": 1080,
+    "height": 1350,
+    "analysis": {
+      "category_match": true,
+      "brand": "Max Mara",
+      "quality_score": 92,
+      "composition": "Centralized full-body figure anchored against a dramatic landscape horizon, utilizing a low-angle perspective to emphasize stature and garment drape.",
+      "subject_ratio": 0.65,
+      "negative_space": "Atmospheric sky and foreground terrain provide framing negative space, though the subject dominates the vertical axis.",
+      "lighting": "Cinematic, moody illumination with soft directional light on the subject contrasting against a dark, overcast background; highlights fabric textures effectively.",
+      "color": [
+        "burgundy",
+        "maroon",
+        "slate grey",
+        "olive green",
+        "ochre",
+        "white"
+      ],
+      "typography": "Large, white serif logotype centered at the bottom, high contrast against the dark foreground.",
+      "information_density": "Low; focused purely on brand identity and visual mood without extraneous copy.",
+      "characteristics": [
+        "monochromatic styling",
+        "textural contrast",
+        "atmospheric mood",
+        "luxury aesthetic",
+        "wind-blown elements"
+      ],
+      "has_campaign_typography": true,
+      "renderer_compatibility": 95,
+      "reason": "High-end fashion campaign image featuring a clear monochromatic womenswear look (coat and knit set) with visible construction details like ribbing and pockets. The brand is explicitly identified via logo and caption. Lighting and composition are professional and evocative.",
+      "garment_types": [
+        "outerwear",
+        "knitwear"
+      ]
+    },
+    "accepted": true,
+    "analysis_origin": "vision_api_single_image",
+    "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+  }
+]

@@ -9,7 +9,7 @@ import urllib.request
 from PIL import Image
 import poster
 import reference_store
-from categories import PROFILES
+from categories import PROFILES, CLOTHING_CATEGORIES, GARMENT_TYPES
 
 ROOT=Path(__file__).resolve().parent
 
@@ -38,12 +38,13 @@ def export(folder,records):
                 'input_sha256':record['input_sha256'],'poster_sha256':hashlib.sha256(source.read_bytes()).hexdigest()}
             poster.write(target/'evidence.json',evidence)
             items.append('<article><img src="'+category+'/'+item['id']+'/poster.jpg"><p>'+html.escape(item['name'])+'</p><small>'+html.escape(item['status'])+'</small></article>')
-        cards.append('<section><h2>'+PROFILES[category]['label']+'</h2><p>'+html.escape(record.get('stage') or record['status'])+'</p><div class="grid">'+''.join(items)+'</div></section>')
+        label=PROFILES[category]['label']+(' · '+GARMENT_TYPES[record.get('garment_type','auto')] if category in CLOTHING_CATEGORIES else '')
+        cards.append('<section><h2>'+label+'</h2><p>'+html.escape(record.get('stage') or record['status'])+'</p><div class="grid">'+''.join(items)+'</div></section>')
     summary=[{'product_category':r['product_category'],'status':r['status'],'stage':r.get('stage'),'job_id':r.get('job_id'),
         'selected_directions':len([d for d in r.get('directions',[]) if 'selected' in d]),
         'model_pass_directions':sum(d['status']=='PASS' for d in r.get('directions',[]))} for r in records]
     poster.write(folder/'summary.json',summary)
-    (folder/'gallery.html').write_text('<!doctype html><meta charset="utf-8"><title>四类商品海报实测</title><style>body{background:#171918;color:#f2eee3;font:16px/1.7 system-ui;margin:36px}h2{margin-top:40px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}img{width:100%;height:400px;object-fit:contain;background:#242625}small{color:#ddbd86}@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}</style><h1>四类商品 · 四个设计方向</h1><p>真实 ComfyUI 多类别节点 → 千问 Director → 渲染 → 看图 Critic → 修改。NEEDS_REVIEW 表示仍有设计问题；模型 PASS 仍须人工验收。</p>'+''.join(cards),encoding='utf-8')
+    (folder/'gallery.html').write_text('<!doctype html><meta charset="utf-8"><title>商品海报闭环实测</title><style>body{background:#171918;color:#f2eee3;font:16px/1.7 system-ui;margin:36px}h2{margin-top:40px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}img{width:100%;height:400px;object-fit:contain;background:#242625}small{color:#ddbd86}@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}</style><h1>商品海报 · 四个设计方向</h1><p>真实 ComfyUI 多类别节点 → 千问 Director → 渲染 → 看图 Critic → 修改。NEEDS_REVIEW 表示仍有设计问题；模型 PASS 仍须人工验收。</p>'+''.join(cards),encoding='utf-8')
 
 
 def main():
@@ -51,7 +52,7 @@ def main():
     parser.add_argument('--comfy-url',default='http://127.0.0.1:8191')
     parser.add_argument('--tag',default='categories-20261003')
     parser.add_argument('--wait-for-kb',action='store_true')
-    parser.add_argument('--categories',nargs='+',choices=['watches','footwear','beverage','skincare'])
+    parser.add_argument('--categories',nargs='+',choices=['watches','footwear','beverage','skincare','menswear','womenswear'])
     args=parser.parse_args()
     if not args.tag.replace('-','').isalnum():raise ValueError('Invalid tag')
     folder=ROOT/'samples/categories'/args.tag;folder.mkdir(parents=True,exist_ok=True)
@@ -61,6 +62,8 @@ def main():
             if time.monotonic()>deadline:raise TimeoutError('Category KB preparation did not finish')
             time.sleep(10)
     products=poster.read(ROOT/'assets/products/categories/products.json');records=[]
+    if args.categories and any(category in CLOTHING_CATEGORIES for category in args.categories):
+        products+=poster.read(ROOT/'assets/products/clothing/products.json')
     if args.categories:
         for item in products:
             saved=folder/item['product_category']/'state.json'
@@ -76,13 +79,16 @@ def main():
                 live=request(args.comfy_url,'/perfume-director/jobs/'+state['job_id'])
                 state.update({k:live[k] for k in ('status','stage','directions') if k in live})
             export(folder,records);continue
-        pool=reference_store.planning_pool(ROOT,category=category)
+        pool=reference_store.planning_pool(ROOT,category=category,garment_type=product.get('garment_type'))
         if len({r['brand'] for r in pool})<3:
             state.update(status='ERROR',stage='Insufficient category references; no perfume fallback')
             poster.write(saved,state);export(folder,records);continue
         if not state.get('job_id'):
             graph={'1':{'class_type':'LoadImage','inputs':{'image':category+'.png'}},
                 '2':{'class_type':'ProductDirectorLoop','inputs':{'product':['1',0],'product_mask':['1',1],'category':category,'brief':product['brief']}}}
+            if category in CLOTHING_CATEGORIES:
+                graph['2']['class_type']='ClothingDirectorLoop'
+                graph['2']['inputs'].update(garment_type=product['garment_type'],display_mode=product['display_mode'])
             receipt=request(args.comfy_url,'/prompt',{'prompt':graph,'client_id':'category-matrix-'+args.tag})
             poster.write(target/'submission.json',{'prompt':graph,'receipt':receipt})
             deadline=time.monotonic()+180

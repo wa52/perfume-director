@@ -1,0 +1,47 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-17-1200x1500.jpg",
+  "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-6cbbf8e9f48ad664",
+  "local_path": "references/categories/womenswear/6cbbf8e9f48ad664.jpg",
+  "sha256": "9e8f5164e1e785f5ced6d942a6ea54f407ef36676130c75b2dd5a47d4f765782",
+  "width": 1200,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Claudie",
+    "quality_score": 88,
+    "composition": "Full-body editorial shot with the model standing on a bed, utilizing significant upper negative space for bold brand typography.",
+    "subject_ratio": 0.35,
+    "negative_space": "Extensive plain wall area in the upper half balancing the horizontal bed element below.",
+    "lighting": "Soft, diffused, flat naturalistic lighting creating a raw, unretouched aesthetic with minimal shadows.",
+    "color": [
+      "white",
+      "light blue",
+      "heather grey",
+      "pale yellow",
+      "dusty rose"
+    ],
+    "typography": "Large, bold, white sans-serif logotype centered at the top.",
+    "information_density": "Low; focuses entirely on the brand name and the visual mood without promotional text.",
+    "characteristics": [
+      "minimalist",
+      "editorial",
+      "raw aesthetic",
+      "soft pastel palette",
+      "candid pose"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality fashion campaign poster featuring a model wearing visible knitwear and activewear, aligning with the womenswear category. The brand 'Claudie' is clearly displayed as campaign typography. The composition effectively uses negative space and soft lighting to create a distinct editorial mood.",
+    "garment_types": [
+      "knitwear",
+      "activewear"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

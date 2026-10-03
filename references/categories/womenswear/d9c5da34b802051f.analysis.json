@@ -1,0 +1,50 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.stefanbeckman.com/campaign",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/59e92cfbfe54ef4fb665eba8/1774973065107-2OT9PF2P38CXS7L0ZW3X/image-asset.jpeg",
+  "caption": "Max Mara campaign from the credited creative/production studio portfolio; Max Mara SS 26",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-d9c5da34b802051f",
+  "local_path": "references/categories/womenswear/d9c5da34b802051f.webp",
+  "sha256": "dd76ae102f4ef8c786e1efe3514304a620eae1424c8f8f56a3f57f7c698db90e",
+  "width": 1080,
+  "height": 1346,
+  "analysis": {
+    "category_match": true,
+    "brand": "Max Mara",
+    "quality_score": 92,
+    "composition": "Central full-body figure framed by a painterly, theatrical garden backdrop with a vintage chair prop anchoring the lower left; strong vertical hierarchy balanced by the large logotype at the base.",
+    "subject_ratio": 0.65,
+    "negative_space": "Dense and atmospheric; the background is filled with intricate foliage and sky textures, leaving minimal empty space, though the misty floor area provides slight breathing room for the typography.",
+    "lighting": "Soft, diffused studio lighting on the model that mimics natural overcast light, seamlessly blended with the ambient, moody illumination of the painted backdrop to create a cohesive surreal environment.",
+    "color": [
+      "beige",
+      "camel",
+      "forest green",
+      "teal",
+      "black",
+      "white",
+      "burnt orange"
+    ],
+    "typography": "Large, high-contrast white serif logotype ('MaxMara') centered at the bottom, overlaying the subject's legs and the misty ground; classic and authoritative brand styling.",
+    "information_density": "Low; strictly brand-focused with only the primary logo visible, relying entirely on visual storytelling and brand recognition without promotional copy or pricing.",
+    "characteristics": [
+      "luxury fashion",
+      "editorial campaign",
+      "surrealist backdrop",
+      "tailored suiting",
+      "painterly aesthetic",
+      "full-body shot"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-end commercial campaign image featuring a clear womenswear tailoring ensemble (jacket and trousers) by Max Mara. The composition effectively integrates a live model with an artistic, painted background, meeting the criteria for a finished campaign design with visible branding and appropriate garment classification.",
+    "garment_types": [
+      "tailoring",
+      "trousers"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

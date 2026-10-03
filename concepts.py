@@ -8,12 +8,13 @@ import random
 from pathlib import Path
 
 
-def recent(root, category=None):
+def recent(root, category=None, garment_type=None):
     files = sorted((root/'runs/batches').glob('*/request.json'), key=lambda p:p.stat().st_mtime, reverse=True)
     result = []
     for path in files[:8]:
         data = json.loads(path.read_text(encoding='utf-8-sig'))
         if category is not None and data.get('product_category','perfume') != category:continue
+        if garment_type is not None and data.get('garment_type','auto')!=garment_type:continue
         for item in data.get('directions', []):
             record={k:item[k] for k in ('name','brief','material','lighting','palette','signature','signature_version','layout_relation') if k in item}
             if item.get('initial_spec'):
@@ -82,7 +83,7 @@ def build_spec(engine,config,item,product,approved_copy):
         lx,ly,length=numbers(line,3)
         if not 0<=lx<=1 or not 0<=ly<=1 or not 0<=length<=1 or lx+length>1:raise ValueError('Decorative line outside canvas')
         spec['decoration'].update(enabled=True,x=round(lx*w),y=round(ly*h),width=round(length*w),color=palette[2] if len(palette)>2 else palette[1])
-    return spec
+    return engine.categories_module().spec_policy(spec,config)
 
 
 def title_relationship(geometry):
@@ -123,7 +124,7 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
     if not isinstance(items,list) or len(items)!=4:
         raise ValueError('Exactly four new concepts required')
     lookup = {r['id']:r for r in references}
-    previous={d['signature'] for d in recent(engine.ROOT,config.get('product_category','perfume')) if 'signature' in d}
+    previous={d['signature'] for d in recent(engine.ROOT,config.get('product_category','perfume'),config.get('garment_type') if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else None) if 'signature' in d}
     directions, grids, colors, fonts, materials, relations = [], set(), set(), set(), set(), set()
     for index,item in enumerate(items,1):
         for field in ('name','brief','material','lighting'):
@@ -138,6 +139,7 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
             raise ValueError('Each concept needs a reference with actual campaign typography, not only bottle labels')
         spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
         spec['product_category']=config.get('product_category','perfume')
+        spec=engine.categories_module().spec_policy(spec,config)
         for layer,text in approved_copy.items():spec[layer]['text']=text
         for layer in engine.TEXT_LAYERS:
             if spec[layer].get('font',config['font']) not in engine.FONT_CHOICES:
@@ -184,6 +186,7 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
         try:
             spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
             spec['product_category']=config.get('product_category','perfume')
+            spec=engine.categories_module().spec_policy(spec,config)
             for layer,text in approved_copy.items():spec[layer]['text']=text
             rgb=engine.ImageColor.getrgb(spec['background']['color'])
             colors.add(color_family(rgb))
@@ -204,7 +207,7 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
 
 def plan_four(engine,config,product,brief,folder,approved_copy):
     store=engine.reference_store_module()
-    pool=store.planning_pool(engine.ROOT,limit=8,category=config.get('product_category','perfume')) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
+    pool=store.planning_pool(engine.ROOT,limit=8,category=config.get('product_category','perfume'),**({'garment_type':config.get('garment_type','auto')} if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else {})) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
     if not hasattr(store,'planning_pool'):random.SystemRandom().shuffle(pool)
     refs=[];brands=set()
     for row in pool:
@@ -213,7 +216,7 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         if len(refs)==8:break
     if len(refs)<3:raise ValueError('At least three reference brands required')
     engine.write(folder/'Planning-references.json',refs)
-    history=recent(engine.ROOT,config.get('product_category','perfume'))
+    history=recent(engine.ROOT,config.get('product_category','perfume'),config.get('garment_type') if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else None)
     with engine.Image.open(product) as image:bounds=image.getchannel('A').getbbox()
     aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1])
     type_metrics={}

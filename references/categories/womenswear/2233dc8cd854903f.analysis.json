@@ -1,0 +1,46 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-10-1200x1500.jpg",
+  "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-2233dc8cd854903f",
+  "local_path": "references/categories/womenswear/2233dc8cd854903f.jpg",
+  "sha256": "1422f5aa3afcb8a646d11c73f7cb70145b892dad8691babee821ce92f2533970",
+  "width": 1200,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Claudie",
+    "quality_score": 92,
+    "composition": "Centered full-body editorial layout with balanced negative space and top-aligned brand logotype.",
+    "subject_ratio": 0.65,
+    "negative_space": "Expansive, clean studio backdrop providing high contrast for the subject and typography.",
+    "lighting": "Soft, diffuse high-key studio lighting with minimal shadowing.",
+    "color": [
+      "#E8ECEF",
+      "#D32027",
+      "#1A1C20",
+      "#FFFFFF",
+      "#D2B48C"
+    ],
+    "typography": "Bold, wide-tracked sans-serif logotype in white, positioned centrally at the top.",
+    "information_density": "Low; focused entirely on brand identity and visual styling.",
+    "characteristics": [
+      "Minimalist",
+      "Editorial",
+      "High-key",
+      "Contemporary",
+      "Clean"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial fashion campaign featuring a clear garment reference (knitwear) and visible brand identity, meeting all womenswear category requirements.",
+    "garment_types": [
+      "knitwear"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

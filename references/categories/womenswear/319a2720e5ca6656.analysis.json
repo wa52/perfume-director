@@ -1,0 +1,48 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.juliengallico.com/projects/claudie-campaign-ss-25/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2025/03/claudie-ss25-45-logo-18-1200x1500.jpg",
+  "caption": "Claudie campaign from the credited creative/production studio portfolio; Claudie Campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-319a2720e5ca6656",
+  "local_path": "references/categories/womenswear/319a2720e5ca6656.jpg",
+  "sha256": "4ade20132d9c285d0593acb52ec3d2d84e1273e1f6f4ec0b3bd971ad89f64492",
+  "width": 1200,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Claudie",
+    "quality_score": 88,
+    "composition": "Centered symmetrical full-body shot with the model seated on a bed, creating a strong triangular base; bold typographic overlay intersects the subject horizontally across the mid-section.",
+    "subject_ratio": 0.65,
+    "negative_space": "Moderate negative space in the upper background (white wall) and lower foreground (carpet), balanced by the central subject and prop density.",
+    "lighting": "Soft, diffused naturalistic lighting with low contrast, creating a flat, editorial aesthetic typical of contemporary fashion campaigns.",
+    "color": [
+      "white",
+      "grey",
+      "red",
+      "light blue",
+      "black",
+      "beige"
+    ],
+    "typography": "Large, bold, white sans-serif uppercase logotype ('CLAUDIE') centered horizontally, overlaying the subject's torso and lap.",
+    "information_density": "Low; focuses entirely on the brand name and visual imagery without additional promotional copy or pricing.",
+    "characteristics": [
+      "editorial",
+      "minimalist",
+      "contemporary",
+      "soft focus",
+      "lifestyle setting"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality fashion campaign advertisement featuring a model wearing visible womenswear (knit top and skirt) in a lifestyle setting. The brand 'Claudie' is explicitly identified via large campaign typography and the source caption. The composition effectively balances the subject with the graphic overlay, meeting the criteria for a finished commercial design.",
+    "garment_types": [
+      "knitwear",
+      "skirt"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

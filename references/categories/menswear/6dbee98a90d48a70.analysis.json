@@ -1,0 +1,49 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_02-1153x1500.jpg",
+  "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-6dbee98a90d48a70",
+  "local_path": "references/categories/menswear/6dbee98a90d48a70.jpg",
+  "sha256": "7c9292d970307afc53e83ad6c05332d79e077cc7b71d502bb3bbc7d2d140ad21",
+  "width": 1153,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "Hugo Boss",
+    "quality_score": 92,
+    "composition": "Asymmetrical editorial layout with a strong vertical graphic overlay dividing the subject, anchored by a large negative space footer for branding.",
+    "subject_ratio": 0.35,
+    "negative_space": "Extensive solid white lower half; open sky and tarmac in the upper left.",
+    "lighting": "Bright, harsh natural sunlight creating distinct cast shadows, contrasted with a flat graphic color block.",
+    "color": [
+      "white",
+      "sky blue",
+      "cobalt blue",
+      "red",
+      "beige",
+      "black"
+    ],
+    "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+    "information_density": "Low; minimalist approach focusing entirely on the visual and brand mark.",
+    "characteristics": [
+      "editorial fashion",
+      "graphic overlay",
+      "minimalist",
+      "high contrast",
+      "luxury aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image features a female model, which contradicts the specified 'menswear' reference category, resulting in a category mismatch. However, it is a high-quality, legitimate Hugo Boss campaign image with clear branding and professional composition.",
+    "garment_types": [
+      "tailoring",
+      "trousers",
+      "shirt"
+    ]
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

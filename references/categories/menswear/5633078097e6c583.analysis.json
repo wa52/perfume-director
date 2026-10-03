@@ -1,0 +1,47 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.juliengallico.com/projects/hugo-boss-campaign-ss-2017/",
+  "image_url": "https://www.juliengallico.com/wp-content/uploads/2019/12/hugo_boss_campaign_ss_17_01-1153x1500.jpg",
+  "caption": "Hugo Boss campaign from the credited creative/production studio portfolio; Hugo Boss campaign - Julien Gallico Studio",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-5633078097e6c583",
+  "local_path": "references/categories/menswear/5633078097e6c583.jpg",
+  "sha256": "9fe518b3c2d6e3284833bfd06638c31afd3710a3a3004e139520a4734bb8d1ed",
+  "width": 1153,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "Hugo Boss",
+    "quality_score": 85,
+    "composition": "Split layout with editorial photography occupying the top 60% and a solid white negative space block at the bottom containing the logo.",
+    "subject_ratio": 0.6,
+    "negative_space": "Extensive solid white block in the lower 40% of the canvas.",
+    "lighting": "Harsh, direct sunlight creating high contrast and deep shadows, accented by a distinct red color gel or light leak effect across the subject's face and arm.",
+    "color": [
+      "black",
+      "beige",
+      "white",
+      "red"
+    ],
+    "typography": "Classic serif logotype 'BOSS' with sans-serif 'HUGO BOSS' subtext, positioned in the bottom right corner.",
+    "information_density": "Low; minimal text restricted to brand identification.",
+    "characteristics": [
+      "high fashion editorial",
+      "hard light",
+      "color accent",
+      "minimalist layout",
+      "womenswear subject"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image features a female model wearing womenswear (knit dress and vest), which contradicts the required 'menswear' reference category. While it is a valid Hugo Boss campaign image with high production quality, the subject matter does not match the specified merchandising category.",
+    "garment_types": [
+      "knitwear",
+      "outerwear",
+      "dress"
+    ]
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

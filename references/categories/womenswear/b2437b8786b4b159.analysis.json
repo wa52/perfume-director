@@ -1,0 +1,48 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://www.stefanbeckman.com/campaign",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/59e92cfbfe54ef4fb665eba8/1763138777624-21YK10W4C21H2HWO02YZ/SnapInsta.to_540494302_18504643381066309_7414759893815707008_n+Large.jpeg",
+  "caption": "Max Mara campaign from the credited creative/production studio portfolio; Max Mara FW 2025",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-b2437b8786b4b159",
+  "local_path": "references/categories/womenswear/b2437b8786b4b159.webp",
+  "sha256": "2ff0232306b8c1c06df91bfb80416af632b820194c5561bc5f379d0f128c2aa9",
+  "width": 1080,
+  "height": 1350,
+  "analysis": {
+    "category_match": true,
+    "brand": "Max Mara",
+    "quality_score": 92,
+    "composition": "Centralized full-body figure anchored against a dramatic landscape horizon, utilizing a low-angle perspective to emphasize stature and garment drape.",
+    "subject_ratio": 0.65,
+    "negative_space": "Atmospheric sky and foreground terrain provide framing negative space, though the subject dominates the vertical axis.",
+    "lighting": "Cinematic, moody illumination with soft directional light on the subject contrasting against a dark, overcast background; highlights fabric textures effectively.",
+    "color": [
+      "burgundy",
+      "maroon",
+      "slate grey",
+      "olive green",
+      "ochre",
+      "white"
+    ],
+    "typography": "Large, white serif logotype centered at the bottom, high contrast against the dark foreground.",
+    "information_density": "Low; focused purely on brand identity and visual mood without extraneous copy.",
+    "characteristics": [
+      "monochromatic styling",
+      "textural contrast",
+      "atmospheric mood",
+      "luxury aesthetic",
+      "wind-blown elements"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-end fashion campaign image featuring a clear monochromatic womenswear look (coat and knit set) with visible construction details like ribbing and pockets. The brand is explicitly identified via logo and caption. Lighting and composition are professional and evocative.",
+    "garment_types": [
+      "outerwear",
+      "knitwear"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

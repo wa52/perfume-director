@@ -1,0 +1,41 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+  "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/62cca08af9b745f10c84c3de_Webflow_2022_Aquis_HeroImageAsset.jpg",
+  "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-1cff5b4e0ca002a6",
+  "local_path": "references/categories/menswear/1cff5b4e0ca002a6.jpg",
+  "sha256": "f214311b9ec2d9f5ba28ab00cc756f168e183fa29d0bf3be2338ea4a21224278",
+  "width": 2500,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "AQUIS",
+    "quality_score": 85,
+    "composition": "Asymmetrical layout with the subject positioned on the right and large brand typography occupying the negative space on the left.",
+    "subject_ratio": 0.6,
+    "negative_space": "Expansive clear blue sky background on the left utilized for logo placement.",
+    "lighting": "Bright, hard natural sunlight creating distinct shadows and highlighting fabric texture.",
+    "color": [
+      "sky blue",
+      "pastel pink",
+      "white",
+      "dark brown"
+    ],
+    "typography": "Large, thin, white sans-serif logotype 'AQUIS' with a stylized 'Q' tail.",
+    "information_density": "Low; focuses entirely on brand identity and visual mood without additional copy.",
+    "characteristics": [
+      "towel texture",
+      "outdoor setting",
+      "minimalist branding",
+      "lifestyle imagery"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 90,
+    "reason": "The image features a towel (home goods/beauty accessory) and the brand 'AQUIS', which contradicts the required 'menswear' category and the source caption's claim of 'Tommy Hilfiger'. The visible product is a bath/hair towel, not a menswear garment."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

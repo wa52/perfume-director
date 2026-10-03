@@ -1,0 +1,42 @@
+{
+  "product_category": "menswear",
+  "source_url": "https://www.kimberlybrower.com/project/tommy-hilfiger",
+  "image_url": "https://cdn.prod.website-files.com/629bcba09252a85b744efd38/62f2bb1de38c6d085b15c197_Webflow_2022_Aquis_MobileOptimizedAssets-1.jpg",
+  "caption": "Tommy Hilfiger campaign from the credited creative/production studio portfolio; ",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-018553065583885b",
+  "local_path": "references/categories/menswear/018553065583885b.jpg",
+  "sha256": "a8409f21f23c80808b210cf6e4a3e4706c8dc3cde1bab7287d779e0882cc5e7f",
+  "width": 2500,
+  "height": 1810,
+  "analysis": {
+    "category_match": false,
+    "brand": "AQUIS",
+    "quality_score": 85,
+    "composition": "Asymmetrical editorial layout with the subject positioned on the right and brand typography anchoring the left negative space.",
+    "subject_ratio": 0.65,
+    "negative_space": "Expansive clear blue sky background on the left providing high contrast for white typography.",
+    "lighting": "Bright, direct natural sunlight creating distinct shadows and highlighting the texture of the fabric and hair.",
+    "color": [
+      "sky blue",
+      "pastel pink",
+      "white",
+      "dark brown"
+    ],
+    "typography": "Large, thin, white sans-serif logotype 'AQUIS' with a stylized 'Q' tail, overlaid on the background.",
+    "information_density": "Low; focuses entirely on brand identity and visual mood without additional copy or pricing.",
+    "characteristics": [
+      "towel wrap",
+      "hair care context",
+      "outdoor setting",
+      "minimalist branding",
+      "texture focus"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 90,
+    "reason": "The image features a towel wrap by the brand AQUIS, which falls under beauty/hair accessories rather than the required 'menswear' category. Additionally, the source caption identifies 'Tommy Hilfiger', creating a conflict with the visible 'AQUIS' branding, and the subject appears female, further deviating from the menswear brief."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

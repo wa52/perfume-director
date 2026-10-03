@@ -1,0 +1,47 @@
+{
+  "product_category": "womenswear",
+  "source_url": "https://kioskproductions.co.uk/fashion-shoot-production/monsoon-ireland",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5b03faa5f8370a67e6f1b7d5/1527174879285-Q029MAS89YADMMPYU2Z6/Monsoon-AW16-campaign-Ireland-01.jpg",
+  "caption": "Monsoon campaign from the credited creative/production studio portfolio; Monsoon fashion shoot in Ireland",
+  "audience_basis": "curated wardrobe reference, not a personal gender attribute",
+  "id": "category-7b00f26198879726",
+  "local_path": "references/categories/womenswear/7b00f26198879726.webp",
+  "sha256": "4e0ad12948b4b5f4ed26576ec23ae84d30559a9825192020d83e0b0372ceb8ae",
+  "width": 1094,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Monsoon",
+    "quality_score": 88,
+    "composition": "Centered vertical portrait with the model framed against a textured rock face; large brand logotype overlaid across the mid-section creates a strong horizontal anchor.",
+    "subject_ratio": 0.65,
+    "negative_space": "Minimal negative space due to the full-frame textured background; visual breathing room is created through the contrast between the subject and the busy stone texture.",
+    "lighting": "Soft, diffused natural daylight typical of overcast outdoor conditions, providing even illumination on the face and garments without harsh shadows.",
+    "color": [
+      "camel",
+      "beige",
+      "grey",
+      "white",
+      "brown"
+    ],
+    "typography": "Bold, white, uppercase sans-serif logotype centered horizontally; smaller URL and social media icons anchored at the bottom center.",
+    "information_density": "Low; focuses strictly on brand identity and visual mood with minimal textual information (brand name and website).",
+    "characteristics": [
+      "editorial fashion photography",
+      "outdoor location shoot",
+      "textured background",
+      "neutral earth tones",
+      "overlay typography"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality commercial fashion campaign featuring a model wearing visible womenswear garments (lace dress and coat with fur collar) that align with the reference category. The brand 'Monsoon' is explicitly identified in the caption and clearly legible in the image. The composition uses standard advertising techniques with overlay typography and a distinct atmospheric setting.",
+    "garment_types": [
+      "dress",
+      "outerwear"
+    ]
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}
