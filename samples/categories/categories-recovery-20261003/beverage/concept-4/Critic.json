@@ -1,0 +1,83 @@
+{
+  "pass": false,
+  "score": 84.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 82,
+    "typography": 78,
+    "background": 84,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The left column is still two disconnected islands, not the declared 'tight, industrial, left-justified' column: measured text bboxes put the title at y640-686 and the subtitle at y748-768, a 62px void between them, while the inner cluster steps are only ~32px (subtitle to logo y800-820) and ~36px (logo to the red rule at y856). Against the references' confident single type columns this uneven rhythm reads as two stray fragments parked in the dark silence rather than one locked column."
+    },
+    {
+      "type": "composition",
+      "problem": "The bottle's dark neck zone y662-749 and heel zone y979-1066 fall in the felt gaps between the ribbons (red ends y662, white starts y749; white ends y979, grey starts y1066), so the near-black glass loses its edge against the #2A2D31 felt in exactly those bands - visible in the poster as the neck and heel dissolving into the field. The stack also leaves a large dead felt band y0-432 above the red ribbon, so the ribbons never frame the cap, weakening the 'slide behind the silhouette' idea."
+    },
+    {
+      "type": "background",
+      "problem": "The regenerated field now honors the graphite value and is evenly matte (verified across the empty left half and in the contact crop), but at #2A2D31-vs-#4A4E54 the grey ribbon separates from the felt by only a slight step, so the bottom third of the stack reads as a faint smudge rather than a printed ink ribbon; the red and white ribbons carry the concept alone."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 664
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 740
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 792
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 844
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 670,
+          "y": 300,
+          "width": 540,
+          "height": 400,
+          "color": "#D6231F",
+          "opacity": 0.9
+        },
+        {
+          "kind": "rectangle",
+          "x": 734,
+          "y": 749,
+          "width": 605,
+          "height": 230,
+          "color": "#F2F3F4",
+          "opacity": 0.85
+        },
+        {
+          "kind": "rectangle",
+          "x": 700,
+          "y": 1020,
+          "width": 531,
+          "height": 276,
+          "color": "#5A5F66",
+          "opacity": 0.9
+        }
+      ]
+    }
+  ],
+  "reported_score": 81.6
+}

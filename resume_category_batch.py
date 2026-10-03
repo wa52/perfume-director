@@ -101,7 +101,7 @@ def main():
         manager.update(args.job_id,values)
         record.update(values)
         poster.write(target/'state.json',record);export(report,[record,*other_records])
-        print(args.category,values.get('stage'),values.get('direction_index'),values.get('version'),flush=True)
+        poster.log(args.category,values.get('stage'),values.get('direction_index'),values.get('version'))
     try:
         result_folder=resume_four(copy.deepcopy(config),image,product['brief'],batch,previous,progress)
         result=poster.read(result_folder/'result.json')

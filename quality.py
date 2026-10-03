@@ -12,19 +12,29 @@ def font_supports_text(path, text):
                for mask in [font.getmask(char)])
 
 
+def layout_policy(spec,geometry,direction=None):
+    """One set of acceptance limits for both compiler and visual reviewer."""
+    import importlib
+    categories=importlib.import_module('.categories',__package__) if __package__ else importlib.import_module('categories')
+    box=geometry['product_bbox'];dynamic=bool(direction and direction.startswith('concept-'))
+    aspect=(box[2]-box[0])/max(1,box[3]-box[1])
+    return {'mode':'dynamic' if dynamic else 'curated',
+        'minimum_height_ratio':categories.minimum_height(spec.get('product_category','perfume'),aspect) if dynamic else .48,
+        'maximum_height_ratio':.74 if dynamic else .68,
+        'minimum_top_ratio':.10 if dynamic else .16,'maximum_base_ratio':.94 if dynamic else .91,
+        'minimum_left_ratio':.05,'maximum_right_ratio':.95,
+        'instruction':'These are deterministic safety limits, not an aesthetic approval. Use category/aspect-adjusted scale; do not invent a bottle-height rule for wide subjects.'}
+
+
 def layout_issues(spec, geometry, direction=None):
     w, h = spec['canvas']['width'], spec['canvas']['height']
     box = geometry['product_bbox']
     issues = []
     dynamic=bool(direction and direction.startswith('concept-'))
-    if box[3] > h*(.94 if dynamic else .91) or box[1] < h*(.10 if dynamic else .16) or box[0] < w*.05 or box[2] > w*.95:
+    policy=layout_policy(spec,geometry,direction)
+    if box[3] > h*policy['maximum_base_ratio'] or box[1] < h*policy['minimum_top_ratio'] or box[0] < w*policy['minimum_left_ratio'] or box[2] > w*policy['maximum_right_ratio']:
         issues.append('product_outside_safe_area')
-    import importlib
-    categories=importlib.import_module('.categories',__package__) if __package__ else importlib.import_module('categories')
-    category=spec.get('product_category','perfume')
-    aspect=(box[2]-box[0])/max(1,box[3]-box[1])
-    minimum=categories.minimum_height(category,aspect) if dynamic else .48
-    if not minimum <= (box[3]-box[1])/h <= (.74 if dynamic else .68):
+    if not policy['minimum_height_ratio'] <= (box[3]-box[1])/h <= policy['maximum_height_ratio']:
         issues.append('product_scale_outside_hero_range')
     if spec['shadow'].get('kind') == 'contact' and (not -2 <= spec['shadow']['offset_y'] <= 0 or abs(spec['shadow']['offset_x']) > 32):
         issues.append('contact_shadow_detached')

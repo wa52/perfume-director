@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 12502111394296,
+  "background": {
+    "color": "#2A2D31",
+    "prompt": "Perfectly smooth pressed graphite felt board in deep charcoal value near hex 2A2D31, absolutely even matte dark value across the whole field, cool diffuse museum illumination, flat frontal light, no horizon, no gradient hotspots, no grain, no speckle, no noise",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 670,
+        "y": 432,
+        "width": 540,
+        "height": 230,
+        "color": "#D6231F",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 734,
+        "y": 749,
+        "width": 605,
+        "height": 230,
+        "color": "#F2F3F4",
+        "opacity": 0.85
+      },
+      {
+        "kind": "rectangle",
+        "x": 700,
+        "y": 1066,
+        "width": 531,
+        "height": 230,
+        "color": "#4A4E54",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 713,
+    "y": 749,
+    "width": 216,
+    "height": 864
+  },
+  "lighting": "cool even museum illumination, minimal falloff, crisp soft contact shade",
+  "palette": [
+    "#2A2D31",
+    "#F2F3F4",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 76,
+    "y": 640,
+    "size": 61,
+    "color": "#F2F3F4",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 250,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 76,
+    "y": 748,
+    "size": 28,
+    "color": "#F2F3F4",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 5,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F2F3F4",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 76,
+    "y": 800,
+    "size": 28,
+    "color": "#F2F3F4",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 856,
+    "width": 216,
+    "color": "#D6231F"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic"
+}

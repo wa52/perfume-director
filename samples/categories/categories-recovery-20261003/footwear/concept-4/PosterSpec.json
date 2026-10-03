@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 175802879849367,
+  "background": {
+    "color": "#3A1F4E",
+    "prompt": "Deep plum velvet cyclorama curving seamlessly into a matte violet floor, one soft overhead cone of diffuse light falling vertically onto the floor and pooling a wide soft-edged ellipse of pale violet glow centered under the middle of the frame at 80 percent of frame height, gentle fabric pile texture, subtle vertical falloff from near-black top to luminous floor, empty stage, no objects",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 150,
+        "y": 1000,
+        "width": 800,
+        "height": 250,
+        "color": "#8E4FB8",
+        "opacity": 0.5
+      },
+      {
+        "kind": "ellipse",
+        "x": 240,
+        "y": 1050,
+        "width": 620,
+        "height": 150,
+        "color": "#C88BE0",
+        "opacity": 0.35
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 1020,
+    "width": 950,
+    "height": 504
+  },
+  "lighting": "single soft overhead spotlight cone creating a bright elliptical pool, surrounding falloff into violet dark",
+  "palette": [
+    "#3A1F4E",
+    "#F5EEF7",
+    "#FF5E8A"
+  ],
+  "title": {
+    "text": "FOOTWEAR",
+    "x": 262,
+    "y": 158,
+    "size": 84,
+    "color": "#F5EEF7",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 10,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 434,
+    "y": 377,
+    "size": 20,
+    "color": "#F5EEF7",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F5EEF7",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 262,
+    "y": 295,
+    "size": 40,
+    "color": "#F5EEF7",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 8,
+    "align": "left"
+  },
+  "shadow": {
+    "opacity": 0.62,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 262,
+    "y": 350,
+    "width": 478,
+    "color": "#FF5E8A"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "photographic"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "product_category": "perfume",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "watches",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "footwear",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "beverage",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "skincare",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "menswear",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "womenswear",
+    "status": "QUEUED",
+    "stage": "Waiting for clothing pilot and updated stability deployment",
+    "job_id": null,
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  }
+]

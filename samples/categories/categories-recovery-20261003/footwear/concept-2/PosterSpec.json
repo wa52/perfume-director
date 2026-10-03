@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 175802879847349,
+  "background": {
+    "color": "#D9764A",
+    "prompt": "Warm apricot clay plaster wall with trowel texture meeting a smooth pale concrete ground plane at a horizontal joint placed at 55 percent of frame height, hard midday sun raking from upper left, crisp warm cast light on the ground, dry matte surfaces, empty scene",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 140,
+        "y": 330,
+        "width": 820,
+        "height": 460,
+        "color": "#F0B489",
+        "opacity": 0.16
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 646,
+    "width": 814,
+    "height": 432
+  },
+  "lighting": "hard directional midday sunlight from upper left, crisp warm shadows, bright dry atmosphere",
+  "palette": [
+    "#D9764A",
+    "#2B1B12",
+    "#F4E3D2"
+  ],
+  "title": {
+    "text": "FOOTWEAR",
+    "x": 292,
+    "y": 1052,
+    "size": 96,
+    "color": "#2B1B12",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 294,
+    "y": 1241,
+    "size": 20,
+    "color": "#2B1B12",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2B1B12",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 292,
+    "y": 1180,
+    "size": 36,
+    "color": "#2B1B12",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 7
+  },
+  "shadow": {
+    "opacity": 0.55,
+    "blur": 6,
+    "offset_x": -10,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.1
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 292,
+    "y": 1010,
+    "width": 560,
+    "color": "#2B1B12"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "photographic"
+}

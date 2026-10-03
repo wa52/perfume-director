@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 175802879848358,
+  "background": {
+    "color": "#DDE3E6",
+    "prompt": "Cool fog-grey ribbed frosted acrylic panel with clearly readable fine vertical fluting over pale paper, soft diffuse even cool north light, gentle translucency in the ribs, quiet matte surface, subtle vertical grain gradient, no horizon, no objects",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 300,
+        "y": 1010,
+        "width": 780,
+        "height": 310,
+        "color": "#2FA8A0",
+        "opacity": 0.14
+      },
+      {
+        "kind": "rectangle",
+        "x": 760,
+        "y": 430,
+        "width": 3,
+        "height": 890,
+        "color": "#1E2A32",
+        "opacity": 0.6
+      }
+    ]
+  },
+  "product": {
+    "x": 380,
+    "y": 720,
+    "width": 652,
+    "height": 346
+  },
+  "lighting": "soft diffuse cool north light, low contrast, gentle translucency in the ribs",
+  "palette": [
+    "#DDE3E6",
+    "#1E2A32",
+    "#2FA8A0"
+  ],
+  "title": {
+    "text": "FOOTWEAR",
+    "x": 734,
+    "y": 576,
+    "size": 44,
+    "color": "#1E2A32",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2,
+    "max_width": 290,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 734,
+    "y": 842,
+    "size": 18,
+    "color": "#1E2A32",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1E2A32",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 734,
+    "y": 700,
+    "size": 40,
+    "color": "#1E2A32",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.6
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 734,
+    "y": 430,
+    "width": 270,
+    "color": "#2FA8A0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "graphic",
+  "layout_fit": {
+    "requested_product": {
+      "x": 367,
+      "y": 720,
+      "height": 346
+    },
+    "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+  }
+}

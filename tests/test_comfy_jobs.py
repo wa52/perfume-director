@@ -109,6 +109,16 @@ class ComfyJobsTests(unittest.TestCase):
         with self.assertRaises(FileNotFoundError):
             self.manager.preview(job)
 
+    def test_closed_error_console_preserves_original_failure_and_releases_job(self):
+        self.engine.fail=True
+        self.engine.gate.set()
+        with patch('builtins.print',side_effect=OSError('output closed')):
+            job=self.manager.start(self.product,'brief','http://localhost:8191')
+            state=self.finished(job)
+        self.assertEqual(state['status'],'ERROR')
+        self.assertEqual(state['error'],'ValueError')
+        self.assertIsNone(self.manager.active)
+
     def test_rejects_nontransparent_products_and_path_escape(self):
         with self.assertRaises(ValueError):
             self.manager.start(Image.new('RGBA', (8, 8), 'white'), 'brief', 'http://localhost:8190')

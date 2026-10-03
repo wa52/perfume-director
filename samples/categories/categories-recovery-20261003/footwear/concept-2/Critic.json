@@ -1,0 +1,103 @@
+{
+  "pass": false,
+  "score": 62.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 62,
+    "typography": 74,
+    "background": 52,
+    "physical_integration": 40,
+    "reference_alignment": 58,
+    "creative_coherence": 60
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "The sneaker still floats. In the contact detail (crop 54,722-1026,972) a soft shadow smudge does sit exactly at the sole line (offset_y 0, visible under the forefoot lugs at crop y~130-145), but it lands on apricot WALL plaster: the rendered wall/concrete joint lies at ~y945 while the sole base is y862, so heel and forefoot lugs hang ~80px above the ground plane against a vertical wall. The declared 'joint at the sole line' was again not delivered by the background render."
+    },
+    {
+      "type": "background",
+      "problem": "Lighting mismatch: the unmodified product photo carries soft diffuse studio light with gentle highlights and no cast shadow of its own, while the scene shows hard raking sun with a crisp diagonal shadow edge on wall and ground. The thin neutral smudge under the forefoot does not match that sun direction or hardness, so product and environment disagree on light quality."
+    },
+    {
+      "type": "background",
+      "problem": "The #F0B489 ellipse (bbox 140,330-960,790) renders as a visible pale disc whose lower arc bleeds across the wall/ground joint onto the concrete beside the headline (clearly visible in the current poster between sole and rule). It reads as an unexplained overlay blob crossing two different materials, not as sunlight, and fractures the clay-court story."
+    },
+    {
+      "type": "composition",
+      "problem": "The hero occupies only 30% of canvas height (bbox 134,430-946,862) and hovers in the upper-middle band, leaving a dead apricot strip between sole and joint and an over-empty lower third; against references where the shoe commands the frame, this reads as a small pasted cutout rather than a hero. Safety bounds allow 35-74%, so the shoe can grow without breaking margins."
+    },
+    {
+      "type": "typography",
+      "problem": "The placard band is under-resolved: the thin rule at y1010 spans 560px (292-852) while the 96px title spans 292-782 and the 36px 'Nike' mark is a small left-aligned stub, so rule, title and logo do not share a confident measure; the band also floats in empty concrete with no anchoring relationship to the shoe above."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Warm apricot clay plaster wall with fine trowel texture meeting a smooth pale concrete ground plane at a horizontal joint placed at 60 percent of frame height, soft bright diffuse daylight from upper left, gentle even illumination, no harsh cast shadows, dry matte surfaces, empty scene"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": []
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 900
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 478
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 623
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.2
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 985
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 490
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1030
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1160
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 40
+    }
+  ],
+  "reported_score": 62.5
+}

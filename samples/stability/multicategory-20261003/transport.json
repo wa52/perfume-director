@@ -1,0 +1,275 @@
+{
+  "cases": [
+    {
+      "category": "perfume",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "a6498623-43ac-445c-8ca4-2065adb18061"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+      "output_sha256": "26992688807b5b7db6381121163471c423ca68828412af4d970642c1a69dcfb6",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 43.97,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "watches",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "b5f1b0d8-d902-4191-8140-05f0f18bad2c"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+      "output_sha256": "8052dc62aa0999e0e4175d7c53c2038822da65170a00160cec497128cb911688",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 2.16,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "footwear",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "75c8473b-e509-46d2-9681-b47dbabc4b5e"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+      "output_sha256": "3e9792442c203efbb5960b03cc082262f2b09cc3423f2ebdb6c8c5d4a1aa186c",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.15,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "beverage",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "c2386530-54ab-41c2-a527-18849bd4b011"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "23ac906d31d4bc52ff05a8c06151b2914c2a1c07cc8a61b3c5316c76659c2bca",
+      "output_sha256": "5701df1c0482173e996aa4f8db356d7692bf4998a7def3ff70d1f1466778b3ee",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.12,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "skincare",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "d44185e2-ebae-402f-a166-6d6727903ab5"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+      "output_sha256": "069d75a9521c86b9f899f800ca261bebabf3a693989019d2d8febcc41f4ccabf",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 2.25,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "menswear",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "6abc34ad-2beb-4735-aa61-a4aa8f79da2d"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+      "output_sha256": "a6fec9802ecada58294012f54037dd23b6cb662b466816a78952324ce618875d",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.09,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "womenswear",
+      "cycle": 1,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "d1cc5bc5-15d0-470d-a2ed-aa44bd058f76"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+      "output_sha256": "4a6adef8a72ca7691dd3b475ef294ae573a37c87fdd698e03b19adab230fe765",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.13,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "perfume",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "1e7f22b6-1bda-47ec-9ec8-baedfaee27ec"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+      "output_sha256": "7088e562a3a9e52847584cc09c94d84b4d1eaff5f3f93a5eefffc068a6738cfd",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.14,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "watches",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "dd0f4f5e-7e80-4980-bcc4-7b254c5a635a"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+      "output_sha256": "04be5b8a1af1c727ee934315377f323d6cb79d1bcfaa1f4a485adf0a8d962521",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.12,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "footwear",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "322ccd53-4b13-45d0-b297-49dfe21dddc4"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+      "output_sha256": "da4316a22ed5baca65cfaa24a27fbbfd6efff62b9c2ea086b312d7d4ec1405f5",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.16,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "beverage",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "fef91943-cf3c-4a85-8268-535ade7a7c23"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "23ac906d31d4bc52ff05a8c06151b2914c2a1c07cc8a61b3c5316c76659c2bca",
+      "output_sha256": "7005552392e57ab52ae47a0e1458872984a3f07402855201116ac6e5cc51e8ce",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.18,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "skincare",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "9d573b81-1130-46c5-b5b8-564abb46c127"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+      "output_sha256": "705780d06913b7080cf4907de06d3c97855633d18de43909018e599d99fe83a9",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 2.41,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "menswear",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "4ff34dc8-3012-467e-a9f6-f3f333d0d749"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+      "output_sha256": "072d04fefcc49360d444f38e36939143672418489315fa76da1b892ed0d8de13",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.13,
+      "generative_render": false,
+      "aesthetic_pass": false
+    },
+    {
+      "category": "womenswear",
+      "cycle": 2,
+      "status": "TRANSPORT_VERIFIED",
+      "prompt_ids": [
+        "84ea2542-e64c-4c1e-b8fe-ff13851ce18c"
+      ],
+      "injected_faults": [
+        "download",
+        "history",
+        "closed_console"
+      ],
+      "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+      "output_sha256": "14df222c12bab3e00a9ef661e9ce9c6fd0f7b40189e2fe3ffc9e5c2d01eabda6",
+      "rgb_roundtrip_max_error": 0,
+      "duration_seconds": 1.16,
+      "generative_render": false,
+      "aesthetic_pass": false
+    }
+  ],
+  "requested_cases": 14,
+  "passed": 14,
+  "failed": 0,
+  "does_not_validate_director_critic_or_commercial_quality": true,
+  "source_sha256": "455d95896dd9ec85467e32ed6a3af2095396c5917dc075b3a3921183d55d7aa4"
+}

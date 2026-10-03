@@ -1,0 +1,123 @@
+{
+  "pass": false,
+  "score": 65.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 64,
+    "typography": 70,
+    "background": 60,
+    "physical_integration": 44,
+    "reference_alignment": 61,
+    "creative_coherence": 68
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "In the contact crop [360,839,719,1089] the only occlusion is a small dark smudge (~60px wide) under the center of the green heel, while the declared contact width is 172px; the left and right thirds of the heel meet bare plaster with no gradient, and the smudge sits slightly right of center although the key rakes from upper left, so despite the shadow existing the bottle still reads as hovering in front of the wall instead of standing on the limestone ground."
+    },
+    {
+      "type": "background",
+      "problem": "Two competing light ideas now coexist: the regenerated plaster carries a bright top-center arch wash, and the #E8895B ellipse still shows a readable oval tonal edge around (250,300)-(830,900) whose lower arc dies in mid-wall above the caption band; the cutout bottle keeps its soft frontal studio light with no cast direction, so wall light, graphic disc and product read as three stacked layers rather than one lit scene as in references 3-5."
+    },
+    {
+      "type": "composition",
+      "problem": "The cream decoration rule at y=1032 floats in empty plaster: it sits 53px below the product base (979) and 91px above the title cap line (1123), anchoring neither, and it lies on the wall while the whole masthead stack sits below the horizon seam at y=1150, so the promised calm caption band is split across the wall/floor junction by a stray hairline."
+    },
+    {
+      "type": "typography",
+      "problem": "Caption-band hierarchy is still flat: subtitle REFRESCO (bbox 442-643, ~22px tall) and the logo line (bbox 463-578, ~17px tall) are near-identical in weight and width with an 84px void between them, and the dark ink #261E16 on the mid-value limestone band gives the 22px logo only marginal contrast, so descriptor and signature compete instead of stepping."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.0
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.72
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 190,
+          "y": 110,
+          "width": 700,
+          "height": 880,
+          "color": "#E8895B",
+          "opacity": 0.16
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1150,
+          "width": 1080,
+          "height": 290,
+          "color": "#8A3A1C",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled terracotta plaster wall meeting a smooth pale limestone horizontal ground at a low horizon, one single soft wash of warm daylight glowing from the upper left and falling evenly down the wall with fully feathered edges and no oval or arch outline, gentle vignette toward corners, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1006
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 390
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 18
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1372
+    }
+  ],
+  "reported_score": 66.5
+}

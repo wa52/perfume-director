@@ -1,0 +1,78 @@
+{
+  "pass": false,
+  "score": 82.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 80,
+    "background": 78,
+    "physical_integration": 90,
+    "reference_alignment": 76,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The target now sits fully on the sheet (outer disc bbox 215,766-865,1416, no edge crossing), but it is parked in the lower half: only ~334px of disc above the bottle肩 line versus a 336px empty pale-blue void between the red rule (y~372) and the cap top (y=432), so the printed-disc conceit reads bottom-weighted and the masthead floats disconnected from the geometry that is supposed to carry the poster."
+    },
+    {
+      "type": "composition",
+      "problem": "The signature line (bbox 474,1352-605,1370) now rests on the clean pale outer ring band with good ink contrast (verified in the contact crop), but the band between the red ring seam (y=1335) and the outer ring edge (y=1416) gives it only ~17px clearance above and ~46px below, so the line still reads squeezed against the ring seam instead of calmly signed below the target; meanwhile the 24px sliver of stock under the outer ring (1416-1440) makes the foot margin look accidental next to the 168px head margin."
+    },
+    {
+      "type": "typography",
+      "problem": "Masthead rhythm remains off-module: subtitle block (306-330) to rule (366-372) gap ~36px versus rule to cap top (432) gap ~60px, and the 132px Bodoni masthead against a 34px subtitle leaves the middle of the sheet (372-432) with dead air that neither the type nor the disc occupies; hierarchy would tighten if the masthead module and the disc shared one spacing unit."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 215,
+          "y": 736,
+          "width": 650,
+          "height": 650,
+          "color": "#FFFFFF",
+          "opacity": 0.55
+        },
+        {
+          "kind": "ellipse",
+          "x": 296,
+          "y": 817,
+          "width": 488,
+          "height": 488,
+          "color": "#D6231F",
+          "opacity": 0.92
+        },
+        {
+          "kind": "ellipse",
+          "x": 390,
+          "y": 911,
+          "width": 300,
+          "height": 300,
+          "color": "#F4F7F9",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 1362
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 356
+    }
+  ],
+  "reported_score": 81.6
+}

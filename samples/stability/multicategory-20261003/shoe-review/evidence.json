@@ -1,0 +1,9 @@
+{
+  "original_poster_sha256": "4e047c85a063664bc2e8c072cb2b313bbc8b7507c0778b880dceb6f02f756e95",
+  "original_score": 77.7,
+  "rechecked_score": 74.9,
+  "pass": false,
+  "new_render": false,
+  "purpose": "Recheck unchanged wide shoe after removing conflicting height guidance",
+  "source_sha256": "d8ccae7e673c49ed3b0051f9e9fc0f705c71325707521a10f03b491fae9af164"
+}

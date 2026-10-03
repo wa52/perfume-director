@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 12502111391269,
+  "background": {
+    "color": "#DDE5EA",
+    "prompt": "Seamless matte coated paper backdrop in pale ice blue with fine tooth grain, lit by even diffuse frontal light, completely flat graphic finish, no horizon and no falloff",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 215,
+        "y": 766,
+        "width": 650,
+        "height": 650,
+        "color": "#FFFFFF",
+        "opacity": 0.55
+      },
+      {
+        "kind": "ellipse",
+        "x": 296,
+        "y": 847,
+        "width": 488,
+        "height": 488,
+        "color": "#D6231F",
+        "opacity": 0.92
+      },
+      {
+        "kind": "ellipse",
+        "x": 390,
+        "y": 941,
+        "width": 300,
+        "height": 300,
+        "color": "#F4F7F9",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 216,
+    "height": 864
+  },
+  "lighting": "even diffuse frontal illumination, flat graphic finish, single soft contact shade at base",
+  "palette": [
+    "#DDE5EA",
+    "#0E1420",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 253,
+    "y": 168,
+    "size": 132,
+    "color": "#0E1420",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 3,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 443,
+    "y": 306,
+    "size": 34,
+    "color": "#0E1420",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#0E1420",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 474,
+    "y": 1352,
+    "size": 28,
+    "color": "#0E1420",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 372,
+    "width": 130,
+    "color": "#D6231F"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic"
+}

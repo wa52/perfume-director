@@ -11,10 +11,6 @@
   "rights_status": "research_only; original rights retained; commercial reuse unverified",
   "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
   "input_sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
-  "status": "COMPLETED",
-  "job_id": "e5d60cbe4cb246cbbb233e7a6532b790",
-  "stage": "FINISHED",
-  "direction_index": 4,
-  "direction_name": "Plum Velvet Spotlight / Gallery Nocturne",
-  "version": 5
+  "status": "QUEUED",
+  "stage": "Waiting for clothing pilot and updated stability deployment"
 }

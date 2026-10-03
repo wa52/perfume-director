@@ -82,7 +82,7 @@ class LoopTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             poster.validate_critique(critique, strict=True)
 
-    def exercise_loop(self, critiques, max_rounds=3):
+    def exercise_loop(self, critiques, max_rounds=3, category='perfume', garment_type='auto'):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             poster.write(root/'examples/PosterSpec.json', self.spec)
@@ -91,6 +91,7 @@ class LoopTests(unittest.TestCase):
             Image.new('RGBA', (10, 10), (255, 255, 255, 128)).save(product)
             config = poster.read(poster.ROOT/'config.example.json')
             config['max_rounds'] = max_rounds
+            config.update(product_category=category,garment_type=garment_type)
 
             def fake_render(config, spec, product, destination, background):
                 Image.new('RGB', (spec['canvas']['width'],spec['canvas']['height'])).save(destination)
@@ -119,6 +120,22 @@ class LoopTests(unittest.TestCase):
         result, count = self.exercise_loop([{'pass': True, 'score': 85, 'problems': [], 'changes': []}])
         self.assertEqual(count, 1)
         self.assertEqual(result['status'], 'PASS')
+
+    def test_closed_console_does_not_abort_completed_render_and_critique(self):
+        with patch('builtins.print',side_effect=OSError(22,'closed supervisor output')):
+            result,count=self.exercise_loop([{'pass':True,'score':85,'problems':[],'changes':[]}])
+        self.assertEqual(count,1)
+        self.assertEqual(result['status'],'PASS')
+
+    def test_closed_output_across_all_categories_and_clothing_subtypes(self):
+        profiles=poster.categories_module()
+        cases=[(category,'auto') for category in profiles.PROFILES]
+        cases += [(category,kind) for category in profiles.CLOTHING_CATEGORIES for kind in profiles.GARMENT_TYPES if kind!='auto']
+        for category,kind in cases:
+            with self.subTest(category=category,garment_type=kind),patch('builtins.print',side_effect=BrokenPipeError('closed output')):
+                result,count=self.exercise_loop([{'pass':True,'score':85,'problems':[],'changes':[]}],category=category,garment_type=kind)
+                self.assertEqual(count,1)
+                self.assertEqual(result['status'],'PASS')
 
     def test_invalid_critic_patch_preserves_reviewable_poster(self):
         result, count = self.exercise_loop([{'pass': False, 'score': 75,

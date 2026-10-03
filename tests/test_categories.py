@@ -12,6 +12,22 @@ import reference_store
 
 
 class CategoryTests(unittest.TestCase):
+    def test_shoe_critic_is_not_given_a_conflicting_bottle_height_minimum(self):
+        config={'product_category':'footwear','creative_direction':{'scene_mode':'graphic'}}
+        self.assertNotIn('actual height 35-74%',poster.concept_context(config))
+        spec=poster.read(poster.ROOT/'samples/categories/categories-recovery-20261003/footwear/concept-3/PosterSpec.json')
+        geometry=poster.rendered_geometry(spec,poster.ROOT/'assets/products/categories/footwear.png',poster.FONT_CHOICES[0])
+        self.assertGreater(geometry['product_width_ratio'],.55)
+        self.assertLess(geometry['fresh_concept_size_policy']['minimum_height_ratio'],.35)
+        self.assertTrue(geometry['fresh_concept_size_policy']['within_range'])
+
+    def test_unsafe_side_column_patch_reports_measured_candidate_not_only_rejection(self):
+        spec=poster.read(poster.ROOT/'samples/categories/categories-recovery-20261003/footwear/concept-3/PosterSpec.json')
+        with self.assertRaises(ValueError) as raised:
+            poster.apply_safe_changes(spec,[{'path':'title.size','op':'set','value':100}],poster.ROOT/'assets/products/categories/footwear.png',poster.FONT_CHOICES[0],'concept-3')
+        self.assertIn('Proposed geometry:',str(raised.exception))
+        self.assertIn('text_bbox',str(raised.exception))
+
     def test_wide_shoe_fits_without_bottle_height_rule(self):
         with tempfile.TemporaryDirectory() as folder:
             path=Path(folder)/'shoe.png'

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 12502111392278,
+  "background": {
+    "color": "#101A33",
+    "prompt": "Deep navy painted cyclorama curving seamlessly into a continuous horizontal ground, satin sheen, lit by soft diffuse frontal light with a calm vertical gradient and no visible equipment",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 356,
+        "y": 720,
+        "width": 367,
+        "height": 1037,
+        "color": "#1B2A4E",
+        "opacity": 0.85
+      }
+    ]
+  },
+  "product": {
+    "x": 356,
+    "y": 720,
+    "width": 223,
+    "height": 893
+  },
+  "lighting": "soft diffuse frontal key with gentle specular streaks on shoulder and sides, broad soft contact shade",
+  "palette": [
+    "#101A33",
+    "#F4F6F8",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 713,
+    "y": 432,
+    "size": 66,
+    "color": "#F4F6F8",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 1,
+    "max_width": 280,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 713,
+    "y": 806,
+    "size": 30,
+    "color": "#F4F6F8",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F4F6F8",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 713,
+    "y": 893,
+    "size": 30,
+    "color": "#F4F6F8",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic"
+}

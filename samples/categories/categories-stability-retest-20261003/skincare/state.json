@@ -1,0 +1,16 @@
+{
+  "id": "skincare-pilot",
+  "product_category": "skincare",
+  "local_path": "assets/products/categories/skincare.png",
+  "source_url": "https://pngimg.com/images/objects/lipstick",
+  "image_url": "https://pngimg.com/uploads/lipstick/lipstick_PNG76278.png",
+  "sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+  "width": 1990,
+  "height": 2538,
+  "caption": "Lipstick large resolution 1990x2538 PNG picture",
+  "rights_status": "research_only; original rights retained; commercial reuse unverified",
+  "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+  "input_sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+  "status": "QUEUED",
+  "stage": "Waiting for clothing pilot and updated stability deployment"
+}

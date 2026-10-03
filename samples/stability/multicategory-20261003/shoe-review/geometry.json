@@ -1,0 +1,90 @@
+{
+  "coordinate_system": "pixels, origin top left",
+  "product_bbox": [
+    55,
+    547,
+    705,
+    893
+  ],
+  "contact_points": [
+    {
+      "center_x": 480.5,
+      "base_y": 893,
+      "width": 177
+    }
+  ],
+  "copy_policy": {
+    "permitted_copy": {
+      "title": "FOOTWEAR",
+      "subtitle": "",
+      "price": "",
+      "logo": "Nike"
+    },
+    "intentional_empty_layers": [
+      "subtitle",
+      "price"
+    ],
+    "instruction": "Do not demand extra copy or price to match reference content; assess the authorized hierarchy and negative space."
+  },
+  "shape_geometry": [
+    {
+      "index": 0,
+      "bbox": [
+        300,
+        1010,
+        1080,
+        1320
+      ],
+      "crosses_canvas_edge": false
+    },
+    {
+      "index": 1,
+      "bbox": [
+        760,
+        430,
+        763,
+        1320
+      ],
+      "crosses_canvas_edge": false
+    }
+  ],
+  "product_base_y": 893,
+  "product_height_ratio": 0.2403,
+  "product_width_ratio": 0.6019,
+  "fresh_concept_size_policy": {
+    "minimum_height_ratio": 0.219577,
+    "maximum_height_ratio": 0.74,
+    "within_range": true,
+    "scope": "dynamic concept mode only",
+    "instruction": "Aspect-adjusted deterministic size bounds, not an aesthetic PASS. When within_range is true, do not claim a minimum-size violation; assess visual hierarchy and explain any artistic resize independently."
+  },
+  "text_bbox": {
+    "title": [
+      734,
+      576,
+      1006,
+      606
+    ],
+    "logo": [
+      734,
+      700,
+      829,
+      727
+    ]
+  },
+  "text_product_overlap": {
+    "title": false,
+    "logo": false
+  },
+  "active_layout_policy": {
+    "mode": "dynamic",
+    "minimum_height_ratio": 0.2195769230769231,
+    "maximum_height_ratio": 0.74,
+    "minimum_top_ratio": 0.1,
+    "maximum_base_ratio": 0.94,
+    "minimum_left_ratio": 0.05,
+    "maximum_right_ratio": 0.95,
+    "instruction": "These are deterministic safety limits, not an aesthetic approval. Use category/aspect-adjusted scale; do not invent a bottle-height rule for wide subjects."
+  },
+  "deterministic_layout_issues": []
+}

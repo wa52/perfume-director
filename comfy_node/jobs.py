@@ -132,7 +132,10 @@ class DirectorJobs:
             # Do not expose arbitrary provider messages, request data or credentials.
             self.update(job_id, {'status': 'ERROR', 'stage': 'FAILED', 'error': type(error).__name__,
                 'message': 'Loop stopped; inspect the saved run and server log. No PASS was recorded.'})
-            print('Perfume Director loop stopped:', type(error).__name__, flush=True)
+            try:
+                print('Perfume Director loop stopped:', type(error).__name__, flush=True)
+            except (OSError,ValueError):
+                pass  # The error state is already saved; logging must not mask it.
         finally:
             with self.lock:
                 self.active = None

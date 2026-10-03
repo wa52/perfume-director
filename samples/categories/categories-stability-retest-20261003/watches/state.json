@@ -1,0 +1,16 @@
+{
+  "id": "watches-pilot",
+  "product_category": "watches",
+  "local_path": "assets/products/categories/watches.png",
+  "source_url": "https://pngimg.com/images/objects/watches",
+  "image_url": "https://pngimg.com/uploads/watches/watches_PNG101457.png",
+  "sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "width": 1000,
+  "height": 1000,
+  "caption": "Watches transparent PNG picture 101457",
+  "rights_status": "research_only; original rights retained; commercial reuse unverified",
+  "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+  "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "status": "QUEUED",
+  "stage": "Waiting for clothing pilot and updated stability deployment"
+}

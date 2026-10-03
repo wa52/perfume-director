@@ -1,0 +1,49 @@
+{
+  "pass": false,
+  "score": 64.0,
+  "dimensions": {
+    "product_fidelity": 90,
+    "composition": 62,
+    "typography": 66,
+    "background": 48,
+    "physical_integration": 52,
+    "reference_alignment": 62,
+    "creative_coherence": 68
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'tall off-key panel' renders as a hard-edged flat rectangle (#1B2A4E, x356 y720) whose left edge slices vertically through the contact zone: in the contact detail crop the ground under the bottle's green heel is split into a lighter floor tone left of x=356 and a darker panel tone right of it, so the bottle appears to stand on a painted seam instead of one continuous cyclorama ground. The panel also reads as a pasted vector block against the photographic satin backdrop, unlike the seamless tonal fields of references 3-5."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact shadow is present but inadequate: the detail crop shows only a narrow dark smudge (~45px wide) tucked under the heel center while the measured contact footprint is 190px wide, so the outer two-thirds of the base have no grounding shade and the bottle reads as lightly floating; the hard panel edge crossing beneath the base further destroys the contact cue."
+    },
+    {
+      "type": "composition",
+      "problem": "The editorial column is top-heavy and disconnected: title sits at y432-478 while subtitle starts at y806, leaving a ~330px dead gap in the right margin, and subtitle/logo (y806-914) land in the busy floor horizon band where the cyclorama curve and the panel edge intersect the copy, weakening legibility and column rhythm versus the confident negative space of reference 3."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the column is muddled: the logo lockup 'Coca-Cola' (Baskerville 30px) repeats the title word in a different family directly below the sans subtitle, reading as a stray duplicate rather than an intentional lockup; subtitle tracking 6 at 30px is optically heavier than the logo line, inverting the intended order."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Lighting concept is only half delivered: the product photograph carries soft frontal key with shoulder speculars, but the backdrop shows a broad bright wash at top-center while the floor falls darker toward the viewer, and the flat panel receives no light response at all, so material, light and graphic layer do not agree on one illumination story."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 356,
+          ": 0, ": null
+        }
+      ]
+    }
+  ],
+  "reported_score": 66
+}

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 12502111393287,
+  "background": {
+    "color": "#C4562A",
+    "prompt": "Hand-troweled terracotta plaster wall meeting a smooth pale limestone horizontal ground at a low horizon, warm directional daylight raking from upper left, one broad diffuse halo of lighter plaster glowing softly behind the upper center with fully feathered edges blending into the wall texture, gentle vignette toward corners, no objects",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 219,
+        "y": 138,
+        "width": 642,
+        "height": 800,
+        "color": "#E8895B",
+        "opacity": 0.3
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 1150,
+        "width": 1080,
+        "height": 290,
+        "color": "#8A3A1C",
+        "opacity": 0.22
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 576,
+    "width": 201,
+    "height": 806
+  },
+  "lighting": "warm directional daylight from upper left, soft wrapping shadows, bright sun disc glow behind the glass",
+  "palette": [
+    "#C4562A",
+    "#FBF3EC",
+    "#7A2E12"
+  ],
+  "title": {
+    "text": "Coca-Cola",
+    "x": 287,
+    "y": 1123,
+    "size": 110,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "REFRESCO",
+    "x": 442,
+    "y": 1246,
+    "size": 30,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#FBF3EC",
+    "font": "C:/Windows/Fonts/georgia.ttf"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 463,
+    "y": 1352,
+    "size": 22,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/georgia.ttf",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.6,
+    "blur": 18,
+    "offset_x": 10,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.6
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 360,
+    "y": 1032,
+    "width": 360,
+    "color": "#FBF3EC"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic"
+}

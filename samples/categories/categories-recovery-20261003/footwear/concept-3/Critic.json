@@ -1,0 +1,118 @@
+{
+  "pass": false,
+  "score": 77.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 66,
+    "typography": 80,
+    "background": 74,
+    "physical_integration": 80,
+    "reference_alignment": 70,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "Product bbox [55,547,705,893] is 346 px = 0.2403 of canvas height, below this concept's 35% minimum, so y 0-547 (top 38%) and y 893-1440 (bottom 38%) stay empty fog-grey; the hairline column and teal block carry all graphic weight bottom-right while the hero reads as a small pasted cutout left-middle. References 3-5 let the shoe own 55-70% of frame height. The previous resize attempt was validator-rejected, so this is unchanged."
+    },
+    {
+      "type": "typography",
+      "problem": "The accepted logo.y=700 and title.size=44 patches visibly tightened the column (logo now [734,700,829,727], title [734,576,1006,606], gap cut from ~153 px to ~94 px), but the column still floats beside a 24%-scale silhouette: title cap-height ~30 px versus a 346 px shoe gives no scale lock, and the 94 px title-to-logo band remains dead air inside the hairline frame. text_product_overlap is false, so this is rhythm/scale, not collision."
+    },
+    {
+      "type": "background",
+      "problem": "The declared 'ribbed frosted acrylic with clearly readable fine vertical fluting' renders as an almost imperceptible grain, so the field reads as a flat grey wall; the only material events are the bottom-right teal block [300,1010,1080,1320] and the hairline, leaving the shoe zone (left-middle) with nothing behind the silhouette."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [0,753,785,1003] confirms a real soft contact shadow at offset_y 0 under heel and forefoot lugs (no floating), but between the lugs the alpha under the midsole arch is fainter than under the lug tips, so at this small scale the shoe reads partially seated rather than fully planted."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 760
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 404
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 400
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 760
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 52
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 668
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 470
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.58
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Cool fog-grey ribbed frosted acrylic panel with clearly readable fine vertical fluting over pale paper, soft diffuse even cool north light, gentle translucency in the ribs, quiet matte surface, subtle vertical grain gradient, no horizon, no objects"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 300,
+          "y": 1010,
+          "width": 780,
+          "height": 310,
+          "color": "#2FA8A0",
+          "opacity": 0.14
+        },
+        {
+          "kind": "rectangle",
+          "x": 760,
+          "y": 470,
+          "width": 3,
+          "height": 850,
+          "color": "#1E2A32",
+          "opacity": 0.6
+        }
+      ]
+    }
+  ],
+  "reported_score": 78.6
+}

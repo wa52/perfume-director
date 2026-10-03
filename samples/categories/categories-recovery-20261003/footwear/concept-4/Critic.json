@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "score": 72.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 66,
+    "typography": 74,
+    "background": 70,
+    "physical_integration": 62,
+    "reference_alignment": 68,
+    "creative_coherence": 72
+  },
+  "problems": [
+    {
+      "type": "physical_integration",
+      "problem": "In the contact crop (image 6) the heel and forefoot lugs terminate on lit violet floor with no dark occlusion at the tips: the bright pool ellipse runs BEHIND the sole (its pale arc is visible between heel and forefoot arch) while the specified contact shadow (opacity 0.62, blur 14) is not readable against the luminous pool, so the sneaker still reads as a cutout placed over the glow rather than pressing into it. The pool's brightest zone sits behind the arch instead of under the heel and forefoot contact points."
+    },
+    {
+      "type": "composition",
+      "problem": "The spotlight cone visible in the upper curtain fades out around y~600, leaving a ~170px dead band of flat dark plum between the cone's end and the shoe collar (y768); the declared 'one overhead cone pooling at the sole line' is therefore visually broken into two disconnected events (cone above, pool below) with an unlit gap, unlike the references where light or material interest runs continuously through the frame."
+    },
+    {
+      "type": "typography",
+      "problem": "The pink decoration rule (x262-740, y~350) is narrower than the title bbox [262,158,782,220] it underlines, so the rule stops ~42px short of the title's right edge and reads as a mis-measured underline; the logo 'Nike' at size 40 with 8px tracking also carries nearly the same visual weight per letter as the 84px title at this distance, flattening the hierarchy between brand line and headline."
+    },
+    {
+      "type": "reference_alignment",
+      "product_note": "References (images 3-5) integrate the hero with the set: the shoe occupies 55-70% of frame width with texture or light wrapping around the silhouette. Here the shoe spans 66-1013px but sits in a mostly empty dark stage with a flat curtain mid-band, and the glow pool reads as a separate graphic disc edge behind the arch, so the design-quality gap to the references remains."
+    }
+  ],
+  "changes": [
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.72
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.35
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 150,
+          "y": 1060,
+          "width": 800,
+          "height": 230,
+          "color": "#8E4FB8",
+          "opacity": 0.45
+        },
+        {
+          "kind": "ellipse",
+          "x": 260,
+          "y": 1120,
+          "width": 600,
+          "height": 150,
+          "color": "#C88BE0",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep plum velvet cyclorama with soft vertical pile folds curving seamlessly into a matte violet floor, one continuous soft overhead cone of diffuse light descending from the top edge all the way to the floor without breaking, narrowing gently as it falls and pooling a wide soft-edged ellipse of pale violet glow centered under the middle of the frame at 88 percent of frame height, gentle fabric pile texture, subtle vertical falloff from near-black top to luminous floor, empty stage, no objects"
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 520
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 32
+    }
+  ],
+  "reported_score": 71
+}

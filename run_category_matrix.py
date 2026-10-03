@@ -15,9 +15,34 @@ ROOT=Path(__file__).resolve().parent
 
 
 def request(base,route,payload=None):
+    if payload is None:
+        return json.loads(poster.comfy_get(base+route,time.monotonic()+30))
     data=json.dumps(payload).encode() if payload is not None else None
     req=urllib.request.Request(base+route,data=data,headers={'Content-Type':'application/json'})
     with urllib.request.urlopen(req,timeout=30) as response:return json.load(response)
+
+
+def submit_once(base,product,target):
+    """Recover the same Comfy receipt after a monitor restart; never resubmit it."""
+    submission=target/'submission.json'
+    if submission.exists():
+        saved=poster.read(submission)
+        if saved.get('input_sha256')!=product['sha256']:raise ValueError('Saved submission input cannot be verified')
+        if saved.get('comfy_url')!=base:raise ValueError('Saved submission belongs to a different server')
+        return saved['receipt']
+    image=(ROOT/product['local_path']).resolve()
+    if not image.is_relative_to(ROOT/'assets/products') or hashlib.sha256(image.read_bytes()).hexdigest()!=product['sha256']:
+        raise ValueError('Unsafe or changed product input')
+    category=product['product_category']
+    uploaded=poster.upload({'comfy_url':base},image)
+    graph={'1':{'class_type':'LoadImage','inputs':{'image':uploaded}},
+           '2':{'class_type':'ProductDirectorLoop','inputs':{'product':['1',0],'product_mask':['1',1],'category':category,'brief':product['brief']}}}
+    if category in CLOTHING_CATEGORIES:
+        graph['2']['class_type']='ClothingDirectorLoop'
+        graph['2']['inputs'].update(garment_type=product['garment_type'],display_mode=product['display_mode'])
+    receipt=request(base,'/prompt',{'prompt':graph,'client_id':'category-matrix-'+target.parent.name})
+    poster.write(submission,{'prompt':graph,'receipt':receipt,'input_sha256':product['sha256'],'comfy_url':base})
+    return receipt
 
 
 def export(folder,records):
@@ -52,7 +77,8 @@ def main():
     parser.add_argument('--comfy-url',default='http://127.0.0.1:8191')
     parser.add_argument('--tag',default='categories-20261003')
     parser.add_argument('--wait-for-kb',action='store_true')
-    parser.add_argument('--categories',nargs='+',choices=['watches','footwear','beverage','skincare','menswear','womenswear'])
+    parser.add_argument('--categories',nargs='+',choices=list(PROFILES))
+    parser.add_argument('--manifest',help='Project-local JSON list, one representative product per category')
     args=parser.parse_args()
     if not args.tag.replace('-','').isalnum():raise ValueError('Invalid tag')
     folder=ROOT/'samples/categories'/args.tag;folder.mkdir(parents=True,exist_ok=True)
@@ -62,7 +88,13 @@ def main():
             if time.monotonic()>deadline:raise TimeoutError('Category KB preparation did not finish')
             time.sleep(10)
     products=poster.read(ROOT/'assets/products/categories/products.json');records=[]
-    if args.categories and any(category in CLOTHING_CATEGORIES for category in args.categories):
+    if args.manifest:
+        manifest=(ROOT/args.manifest).resolve()
+        if not manifest.is_relative_to(ROOT/'assets/products'):raise ValueError('Manifest must be inside project assets/products')
+        products=poster.read(manifest)
+        if not isinstance(products,list) or not products or len({p['product_category'] for p in products})!=len(products):raise ValueError('One representative per category required')
+        for product in products:poster.categories_module().profile(product)
+    elif args.categories and any(category in CLOTHING_CATEGORIES for category in args.categories):
         products+=poster.read(ROOT/'assets/products/clothing/products.json')
     if args.categories:
         for item in products:
@@ -73,6 +105,8 @@ def main():
         category=product['product_category'];target=folder/category;target.mkdir(exist_ok=True)
         saved=target/'state.json'
         state=poster.read(saved) if saved.exists() else {**product,'input_sha256':product['sha256'],'status':'QUEUED'}
+        if state.get('input_sha256')!=product['sha256']:
+            raise ValueError('Saved case uses a different product; use a new test tag')
         records.append(state)
         if state['status'] in ('COMPLETED','PARTIAL','ERROR'):
             if state.get('job_id'):
@@ -84,13 +118,7 @@ def main():
             state.update(status='ERROR',stage='Insufficient category references; no perfume fallback')
             poster.write(saved,state);export(folder,records);continue
         if not state.get('job_id'):
-            graph={'1':{'class_type':'LoadImage','inputs':{'image':category+'.png'}},
-                '2':{'class_type':'ProductDirectorLoop','inputs':{'product':['1',0],'product_mask':['1',1],'category':category,'brief':product['brief']}}}
-            if category in CLOTHING_CATEGORIES:
-                graph['2']['class_type']='ClothingDirectorLoop'
-                graph['2']['inputs'].update(garment_type=product['garment_type'],display_mode=product['display_mode'])
-            receipt=request(args.comfy_url,'/prompt',{'prompt':graph,'client_id':'category-matrix-'+args.tag})
-            poster.write(target/'submission.json',{'prompt':graph,'receipt':receipt})
+            receipt=submit_once(args.comfy_url,product,target)
             deadline=time.monotonic()+180
             while True:
                 history=request(args.comfy_url,'/history/'+receipt['prompt_id']).get(receipt['prompt_id'],{})
@@ -109,7 +137,7 @@ def main():
             time.sleep(10)
         # Preserve best selection metadata, and allow an interrupted runner to resume the same job.
         poster.write(saved,{k:v for k,v in state.items() if k!='directions'})
-        print(category,state['status'],flush=True)
+        poster.log(category,state['status'])
     export(folder,records)
 
 
