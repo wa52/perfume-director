@@ -39,10 +39,10 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "womenswear.png",
+        "",
         "image"
       ],
-      "title": "上传对应服装透明 PNG（示例图片需替换）"
+      "title": "请上传对应衬衫商品原图"
     },
     {
       "id": 2,
@@ -81,12 +81,12 @@
         "Node name for S&R": "ClothingDirectorLoop"
       },
       "widgets_values": [
-        "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+        "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。 四个方向先提出不同广告命题，再分别编写简短文案与规划画面，不要仅换颜色或版式。",
         "womenswear",
         "shirt",
         "auto"
       ],
-      "title": "女装 · 衬衫 · 四方向闭环"
+      "title": "四个独立广告创意 · 自动审稿闭环"
     }
   ],
   "links": [
@@ -116,7 +116,8 @@
         0,
         0
       ]
-    }
+    },
+    "director_quality_profile": "commercial-v2-aligned-20261003"
   },
   "version": 0.4
 }

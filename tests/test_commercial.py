@@ -9,6 +9,44 @@ import poster
 
 
 class CommercialTests(unittest.TestCase):
+    def test_rejected_diversity_can_retain_only_quality_held_drafts(self):
+        value={'brand_analysis':{'observed_brand':'Actual','evidence':'source','expression_hypothesis':'hypothesis','unknowns':'history unknown'},
+            'concepts':[{key:(f'id{i}' if key=='id' else f'{key} event {i}') for key in ('id','name','proposition','visual_mechanism','audience','brand_connection','source_constraints')} for i in range(4)]}
+        reject={'distinct':False,'evidence':'same event','collapse_groups':[['id0','id1']],'required_revision':'different events'}
+        config={'retain_rejected_creative_drafts':True}
+        with tempfile.TemporaryDirectory() as f,patch.object(poster,'vision',side_effect=[value,reject,value,reject,value,reject]):
+            self.assertEqual(commercial.creative_stage(poster,config,'product','brief',Path(f),{}),value)
+            self.assertEqual(config['creative_diversity_veto'],reject)
+            self.assertTrue(poster.read(Path(f)/'CreativeDraftHold.json')['commercial_pass_forbidden'])
+            self.assertFalse(poster.read(Path(f)/'CreativeGate.json')['pass'])
+
+    def test_invalid_creative_contract_never_becomes_a_draft_hold(self):
+        config={'retain_rejected_creative_drafts':True}
+        with tempfile.TemporaryDirectory() as f,patch.object(poster,'vision',return_value={'concepts':[]}):
+            with self.assertRaises(ValueError):commercial.creative_stage(poster,config,'product','brief',Path(f),{})
+            self.assertFalse((Path(f)/'CreativeConcepts.json').exists())
+
+    def test_creative_veto_blocks_high_scoring_image_and_final_approval(self):
+        config={'commercial_v2':True,'font':'font','creative_diversity_veto':{'evidence':'same event','distinct':False}}
+        with tempfile.TemporaryDirectory() as f,patch.object(poster,'review_poster',return_value=self.approved()),patch.object(poster,'layout_issues',return_value=[]),patch.object(commercial,'final_art_review') as final:
+            result=poster.review_validated(config,{},'product','poster',[],Path(f),None)
+            self.assertFalse(result['pass']);final.assert_not_called()
+            self.assertIn('creative_diversity:unresolved',poster.read(Path(f)/'CommercialGate.json')['failures'])
+
+    def test_creative_writer_and_reviewer_receive_references_without_mutating_settings(self):
+        value={'brand_analysis':{'observed_brand':'Actual','evidence':'source','expression_hypothesis':'hypothesis','unknowns':'history unknown'},
+            'concepts':[{key:(f'id{i}' if key=='id' else f'{key} event {i}') for key in ('id','name','proposition','visual_mechanism','audience','brand_connection','source_constraints')} for i in range(4)]}
+        review={'distinct':True,'evidence':'four feasible events','collapse_groups':[],'required_revision':''}
+        config={'vision_options':{'temperature':.2},'creative_references':[{'image':f'references/test{i}.png'} for i in range(3)],'product_category':'menswear','garment_type':'tshirt'}
+        original=copy.deepcopy(config)
+        with tempfile.TemporaryDirectory() as f,patch.object(poster,'vision',side_effect=[value,review]) as model:
+            commercial.creative_stage(poster,config,'product','brief',Path(f),{})
+            self.assertEqual(config,original)
+            for call in model.call_args_list:self.assertEqual(len(call.args[2]),4)
+            self.assertEqual(model.call_args_list[0].args[0]['vision_options']['temperature'],.8)
+            self.assertEqual(model.call_args_list[1].args[0]['vision_options']['temperature'],.2)
+            self.assertIn('No ground shadow at the hem',model.call_args_list[0].args[1])
+
     def approved(self):
         return {'pass':True,'score':99,'problems':[],'changes':[],
             'dimensions':{name:99 for name in poster.CRITIC_DIMENSIONS}|{'brand_alignment':99},

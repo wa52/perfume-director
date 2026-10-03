@@ -1,4 +1,18 @@
 """Explicit category policy shared by planning, critique and ComfyUI submission."""
+QUALITY_PROFILE='commercial-v2-aligned-20261003'
+
+
+def aligned_config(config):
+    """All complete ComfyUI director workflows share one acceptance policy."""
+    import copy
+    result=copy.deepcopy(config)
+    profile(result)
+    result.update(quality_profile=QUALITY_PROFILE,commercial_v2=True,direction_mode='dynamic',
+        campaign_copy_mode='creative',commercial_target='campaign_candidate',retain_rejected_creative_drafts=True)
+    # User-approved wording is retained and takes precedence over creative copy.
+    return result
+
+
 PROFILES = {
     'perfume': {'label': '香水', 'subject': 'perfume', 'checks': 'Preserve bottle, cap, label and observed glass transmission; match packshot illumination.'},
     'skincare': {'label': '护肤美妆', 'subject': 'skincare and cosmetics', 'checks': 'Preserve packaging, pump/nozzle and label. Never invent clinical efficacy, ingredient percentages or before/after claims. Convey material and texture without adding cream or liquid to the original product.'},

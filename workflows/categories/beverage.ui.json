@@ -39,7 +39,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "beverage.png",
+        "beverage-official-clean.png",
         "image"
       ]
     },
@@ -80,10 +80,10 @@
         "Node name for S&R": "ProductDirectorLoop"
       },
       "widgets_values": [
-        "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+        "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。 四个方向先提出不同广告命题，再分别编写简短文案与规划画面，不要仅换颜色或版式。",
         "beverage"
       ],
-      "title": "饮品 · 四方向自动闭环"
+      "title": "四个独立广告创意 · 自动审稿闭环"
     }
   ],
   "links": [
@@ -113,7 +113,8 @@
         0,
         0
       ]
-    }
+    },
+    "director_quality_profile": "commercial-v2-aligned-20261003"
   },
   "version": 0.4
 }

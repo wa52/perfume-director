@@ -1,0 +1,26 @@
+{
+  "url": "https://www.coca-cola.com/content/dam/onexp/at/de/brands/coca-cola/de_au_coca-cola_prod_original%20taste_750x750_v1.jpg",
+  "sha256": "7a67a31a68849cb4a4a99ecd5ef2b8daa1eab07d914a5a08f69ac56b603a845c",
+  "page": "https://www.coca-cola.com/at/de/brands/coca-cola",
+  "original_size": [
+    750,
+    750
+  ],
+  "cropped_size": [
+    180,
+    650
+  ],
+  "crop": [
+    285,
+    50,
+    465,
+    700
+  ],
+  "processing": "Only border-connected near-white background (all RGB channels >240) removed; RGB retained, no AI product repaint.",
+  "limitations": [
+    "750px official source: suitable for this comparison, not high resolution print",
+    "White photographed transmission remains inside glass; no recovered physical refraction"
+  ],
+  "product_sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "commercial_release_allowed": false
+}

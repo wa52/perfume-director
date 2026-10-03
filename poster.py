@@ -913,6 +913,12 @@ def review_validated(config, spec, product, poster, ref_images, folder, previous
         validated=validate_critique(repaired, strict=True)
     if config.get('commercial_v2'):
         validated=commercial_module().gate(validated,layout_issues(spec,product,config['font'],config.get('direction_id')))
+        if config.get('creative_diversity_veto'):
+            validated['pass']=False
+            validated['commercial_gate']['pass']=False
+            validated['commercial_gate']['failures'].append('creative_diversity:unresolved')
+            validated['commercial_gate']['creative_diversity_evidence']=config['creative_diversity_veto']
+            validated['problems'].append({'type':'creative_diversity','problem':'Four-proposition diversity review was rejected; this image is retained only as a draft'})
         if validated['pass']:
             target=config.get('commercial_target','campaign_candidate')
             if target not in ('social_ad','campaign_candidate'):raise ValueError('Unsupported commercial target')
@@ -998,6 +1004,9 @@ def run_four(config, product, brief, progress=None):
         plans,refs=module.plan_four(sys.modules[__name__],config,product,brief,batch,approved_copy)
     else:plans=DIRECTIONS
     write(batch/'request.json', {'brief': brief, 'product_category':config.get('product_category','perfume'), 'garment_type':config.get('garment_type','auto'),'display_mode':config.get('display_mode','auto'), 'direction_mode':mode, 'directions': plans, 'max_rounds_per_direction': config.get('max_rounds',3),
+        'quality_profile':config.get('quality_profile'),
+        'quality_policy':{key:config.get(key) for key in ('commercial_v2','campaign_copy_mode','commercial_target')},
+        'creative_diversity_veto':config.get('creative_diversity_veto'),
         'execution_config': {key:config.get(key) for key in ('vision_model','vision_options','vision_timeout_seconds','vision_attempts','vision_image_max_edge','background_attempts')},
         'product_profile':config.get('product_profile',{}), 'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
     for index, direction in enumerate(plans, 1):

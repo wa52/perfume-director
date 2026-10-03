@@ -90,6 +90,9 @@ class LoopTests(unittest.TestCase):
             product = root/'product.png'
             Image.new('RGBA', (10, 10), (255, 255, 255, 128)).save(product)
             config = poster.read(poster.ROOT/'config.example.json')
+            # This fixture isolates the basic iteration loop; commercial gates
+            # and independent final review have separate contract tests.
+            config['commercial_v2'] = False
             config['max_rounds'] = max_rounds
             config.update(product_category=category,garment_type=garment_type)
 

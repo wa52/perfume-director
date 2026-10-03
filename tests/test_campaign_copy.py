@@ -23,6 +23,23 @@ class CampaignCopyTests(unittest.TestCase):
         bad=copy.deepcopy(self.proposal);bad['directions'][0]['price']='0'
         with self.assertRaises(ValueError):campaign_copy.validate(bad,self.concepts,self.identity)
 
+    def test_optional_subtitle_does_not_force_generic_body_copy(self):
+        proposal=copy.deepcopy(self.proposal)
+        for row in proposal['directions']:row['subtitle']=''
+        words=campaign_copy.validate(proposal,self.concepts,self.identity)
+        self.assertTrue(all(row['subtitle']=='' for row in words.values()))
+        self.assertTrue(all(row['logo']=='Real Brand' and row['price']=='99' for row in words.values()))
+
+    def test_overlong_copy_retries_with_measured_limit_and_records_rejection(self):
+        long=copy.deepcopy(self.proposal);long['directions'][0]['subtitle']='x'*110
+        with tempfile.TemporaryDirectory() as folder,patch.object(poster,'vision',side_effect=[long,self.proposal,self.review]) as model:
+            words=campaign_copy.stage(poster,{},'product','中文用户需求',Path(folder),self.concepts,self.identity)
+            self.assertEqual(words['c0']['logo'],'Real Brand')
+            feedback=model.call_args_list[1].args[1]
+            self.assertIn('maximum 96 characters; received length 110',feedback)
+            self.assertTrue((Path(folder)/'CampaignCopyRejected-1.json').exists())
+            self.assertTrue((Path(folder)/'CampaignCopy.json').exists())
+
     def test_missing_repeated_and_unbounded_copy_rejected(self):
         for change in ('id','title','length','newline'):
             bad=copy.deepcopy(self.proposal)

@@ -83,6 +83,9 @@ class ComfyJobsTests(unittest.TestCase):
             self.manager.preview(job,'unknown')
         self.assertEqual(self.engine.config['comfy_url'], 'http://127.0.0.1:8190')
         self.assertEqual(self.engine.config['background_workflow'], str(self.root/'workflows/background.json'))
+        self.assertTrue(self.engine.config['commercial_v2'])
+        self.assertEqual(self.engine.config['campaign_copy_mode'],'creative')
+        self.assertEqual(self.manager.status(job)['quality_profile'],'commercial-v2-aligned-20261003')
 
     def test_independent_recovery_blocks_duplicate_submission(self):
         saved=self.manager.state_path('b'*32)

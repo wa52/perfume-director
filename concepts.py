@@ -227,16 +227,6 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
 
 
 def plan_four(engine,config,product,brief,folder,approved_copy):
-    if config.get('commercial_v2'):
-        config['commercial_creative']=engine.commercial_module().creative_stage(engine,config,product,brief,folder,approved_copy)
-        copy_mode='identity' if config.get('approved_copy') else config.get('campaign_copy_mode','identity')
-        if copy_mode=='creative':
-            module=importlib.import_module('.campaign_copy',__package__) if __package__ else importlib.import_module('campaign_copy')
-            config['campaign_copy_by_id']=module.stage(engine,config,product,brief,folder,config['commercial_creative']['concepts'],approved_copy)
-        elif copy_mode!='identity':
-            raise ValueError('Unknown campaign_copy_mode')
-        else:
-            config.pop('campaign_copy_by_id',None)
     store=engine.reference_store_module()
     pool=store.planning_pool(engine.ROOT,limit=8,category=config.get('product_category','perfume'),**({'garment_type':config.get('garment_type','auto')} if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else {})) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
     if not hasattr(store,'planning_pool'):random.SystemRandom().shuffle(pool)
@@ -247,6 +237,17 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         if len(refs)==8:break
     if len(refs)<3:raise ValueError('At least three reference brands required')
     engine.write(folder/'Planning-references.json',refs)
+    config['creative_references']=copy.deepcopy(refs[:3])
+    if config.get('commercial_v2'):
+        config['commercial_creative']=engine.commercial_module().creative_stage(engine,config,product,brief,folder,approved_copy)
+        copy_mode='identity' if config.get('approved_copy') else config.get('campaign_copy_mode','identity')
+        if copy_mode=='creative':
+            module=importlib.import_module('.campaign_copy',__package__) if __package__ else importlib.import_module('campaign_copy')
+            config['campaign_copy_by_id']=module.stage(engine,config,product,brief,folder,config['commercial_creative']['concepts'],approved_copy)
+        elif copy_mode!='identity':
+            raise ValueError('Unknown campaign_copy_mode')
+        else:
+            config.pop('campaign_copy_by_id',None)
     history=recent(engine.ROOT,config.get('product_category','perfume'),config.get('garment_type') if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else None)
     with engine.Image.open(product) as image:bounds=image.getchannel('A').getbbox()
     aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1])
@@ -266,6 +267,7 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         'It also supports up to8 precisely controlled ellipse, rectangle or product_silhouette shapes behind the product. product_silhouette is the ORIGINAL alpha contour, aspect-preserving fit inside declared width/height, anchored at x/y, painted in chosen color/opacity; no label or generated RGB is copied. Use it for exact contour/memory-device concepts instead of asking the background model to invent the same product shape. Background prompt then describes empty material and light only, never the deterministic contour. Shapes are optional and must serve the advertising event. '
         'For each concept choose at least one reference marked has_campaign_typography=true when available; study its external headline hierarchy, spacing and type rhythm. Use the other references for material and composition. Product label lettering alone is not campaign typography. '
         'Do not demand features absent from the renderer. You may use graphic, tactile, architectural or experimental empty backdrops. '
+        'An empty backdrop can contain non-product contextual objects, natural forms or a meaningful environmental event; it means no duplicate main product, people or generated text, not a compulsory bare wall. '
         'Background prompt describes ONLY background materials/shapes/illumination. Never use words perfume, fragrance, bottle, product, '
         'logo, label, people, person, woman, man, model, table, tabletop, pedestal, plinth, platform, even in negative phrases. '
         'No raised support, visible light equipment or extra text. Match the ACTUAL product photograph and its observation profile, never assume dark glass or frontal light. '

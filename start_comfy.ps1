@@ -68,6 +68,16 @@ New-Item -ItemType Directory -Path $nodeRoot -Force | Out-Null
 foreach ($folder in @('user','input','output','temp')) {
     New-Item -ItemType Directory -Path (Join-Path $runtimeRoot $folder) -Force | Out-Null
 }
+if (Test-Path -LiteralPath (Join-Path $projectRoot 'assets/products/alignment-products.json')) {
+    foreach ($taskFixture in (Get-Content -LiteralPath (Join-Path $projectRoot 'assets/products/alignment-products.json') -Raw -Encoding UTF8 | ConvertFrom-Json)) {
+        $taskFixturePath = Join-Path $projectRoot $taskFixture.local_path
+        $taskFixtureInput = Join-Path (Join-Path $runtimeRoot 'input') (Split-Path $taskFixturePath -Leaf)
+        if (!(Test-Path -LiteralPath $taskFixtureInput)) {
+            if ((Get-FileHash -LiteralPath $taskFixturePath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskFixture.sha256) { throw 'Example fixture hash mismatch' }
+            Copy-Item -LiteralPath $taskFixturePath -Destination $taskFixtureInput
+        }
+    }
+}
 Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\__init__.py') -Destination (Join-Path $nodeRoot '__init__.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'poster.py') -Destination (Join-Path $nodeRoot 'poster.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'reference_store.py') -Destination (Join-Path $nodeRoot 'reference_store.py') -Force
@@ -95,4 +105,15 @@ $arguments = @('"' + (Join-Path $ComfyRoot 'main.py') + '"',
 $process = Start-Process -FilePath $pythonPath -ArgumentList $arguments -WorkingDirectory $projectRoot -WindowStyle Hidden -PassThru `
     -RedirectStandardOutput (Join-Path $runtimeRoot 'comfy.stdout.log') -RedirectStandardError (Join-Path $runtimeRoot 'comfy.stderr.log')
 $process.Id | Set-Content -LiteralPath (Join-Path $runtimeRoot 'comfy.pid')
-Write-Output "ComfyUI started: PID $($process.Id), http://127.0.0.1:$Port (logs in runtime)"
+$taskReadyDeadline = (Get-Date).AddMinutes(3)
+do {
+    try {
+        $taskReadyNodes = Invoke-RestMethod -Uri "http://127.0.0.1:$Port/object_info" -TimeoutSec 3
+        if ($taskReadyNodes.PerfumeDirectorLoop -and $taskReadyNodes.ProductDirectorLoop -and $taskReadyNodes.ClothingDirectorLoop) {
+            Write-Output "ComfyUI ready: PID $($process.Id), http://127.0.0.1:$Port (logs in runtime)"
+            return
+        }
+    } catch { }
+    Start-Sleep -Seconds 1
+} while ((Get-Date) -lt $taskReadyDeadline)
+throw 'ComfyUI startup did not register all three director nodes within three minutes; inspect runtime logs'

@@ -94,6 +94,7 @@ class DirectorJobs:
         category_module.profile({'product_category':category,'garment_type':garment_type,'display_mode':display_mode})
         config['product_category']=category
         config.update(garment_type=garment_type,display_mode=display_mode)
+        config=category_module.aligned_config(config)
         if config.get('background_workflow'):
             config['background_workflow'] = str(self.root/config['background_workflow'])
         if product.mode != 'RGBA' or product.getchannel('A').getextrema()[0] == 255:
@@ -111,7 +112,8 @@ class DirectorJobs:
             product.save(path/'product.png')
             self.save_state(path/'state.json', {'id': job_id, 'status': 'RUNNING', 'stage': 'QUEUED',
                 'vision_model': config['vision_model'], 'vision_endpoint': config['vision_base_url'],
-                'started_at':time.time(),'product_category':category,'garment_type':garment_type,'display_mode':display_mode})
+                'started_at':time.time(),'product_category':category,'garment_type':garment_type,'display_mode':display_mode,
+                'quality_profile':config['quality_profile'],'commercial_target':config['commercial_target']})
             self.active = job_id
             try:
                 threading.Thread(target=self.work, args=(job_id, config, path/'product.png', brief), daemon=True).start()

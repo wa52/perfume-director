@@ -12,7 +12,8 @@ def validate(value,concepts,identity):
         id=row['creative_id']
         if not isinstance(id,str) or id not in ids or id in found:raise ValueError('Copy IDs must match concepts exactly once')
         for field,limit in [('title',64),('subtitle',96),('rationale',1000)]:
-            if not isinstance(row[field],str) or not row[field].strip() or len(row[field])>limit or any(c in row[field] for c in '\n\r\x00'):raise ValueError('Invalid copy '+field)
+            if not isinstance(row[field],str) or (field!='subtitle' and not row[field].strip()) or len(row[field])>limit or any(c in row[field] for c in '\n\r\x00'):
+                raise ValueError('Invalid copy '+field+': single-line string required (subtitle may be empty); maximum '+str(limit)+' characters; received length '+str(len(row[field]) if isinstance(row[field],str) else 'not a string'))
         title=' '.join(row['title'].casefold().split())
         if title in titles:raise ValueError('Headlines repeat across creative propositions')
         titles.add(title);words=copy.deepcopy(identity);words.update(title=row['title'],subtitle=row['subtitle'])
@@ -24,6 +25,12 @@ def validate(value,concepts,identity):
 def stage(engine,config,product,brief,folder,concepts,identity):
     prompt=('Act as campaign copywriter. Write a specific short headline and subhead for EACH of these four approved advertising propositions. '
         'Return {directions:[{creative_id,title,subtitle,rationale}]}. IDs must exactly match, headlines distinct, single-line strings. '
+        'Hard character limits: title 1..64, subtitle 0..96, rationale 1..1000. Count the entire string including spaces and punctuation. '
+        'Follow any explicit language request in the brief; otherwise write in the language of the user brief, not the analysis language. '
+        'Write consumer-facing advertising, not a caption describing how a poster was composed or printed. '
+        'Do not narrate typography, plates, layout rules, graphic primitives, cutouts or rendering in title/subtitle; keep design construction ONLY in rationale. '
+        'Translate the visual event into a truthful audience emotion or reason to care about THIS product. '
+        'For Chinese prefer a 4..12-character headline and a subhead at most24 characters. Subtitle may be empty when it adds no meaningful advertising message. '
         'A slogan must express its actual visual event and audience situation, not generic GOOD TIMES or a product category. '
         'Do not repeat the same brand/product name as every headline. User exact requested wording and prohibitions override creative freedom. '
         'Never invent price, promotion, launch, provenance, health, ingredient, performance or historical claims. '
@@ -38,6 +45,8 @@ def stage(engine,config,product,brief,folder,concepts,identity):
             assessment=engine.vision(config,'Independently review the four campaign copies against their visual propositions and the user brief. '
                 'Return {directions:[{creative_id,concept_fit:boolean,brand_fit:boolean,claim_safe:boolean,memory_clear:boolean,evidence:string}]}. '
                 'Every ID exactly once; reject generic interchangeable slogans, unsupported factual claims, user wording/prohibition violations, '
+                'and wording that fails the user-requested language (or the language of the brief when unspecified), '
+                'or copy that describes poster construction instead of addressing the consumer. An empty subtitle is intentional and not a defect. '
                 'and a memorable phrase unrelated to the visible creative event. Brief: '+brief+' Identity: '+engine.json.dumps(identity,ensure_ascii=False)+
                 ' Concepts: '+engine.json.dumps(concepts,ensure_ascii=False)+' Proposed copy: '+engine.json.dumps(value,ensure_ascii=False),
                 [product],folder/f'CampaignCopyReview-{attempt+1}-call.json')
@@ -50,6 +59,7 @@ def stage(engine,config,product,brief,folder,concepts,identity):
             engine.write(folder/'CampaignCopy.json',{'copy_by_creative_id':words,'review':assessment,'identity_locked':True})
             return words
         except ValueError as exc:
+            engine.write(folder/f'CampaignCopyRejected-{attempt+1}.json',{'reason':str(exc),'identity_preserved':True})
             if attempt==2:raise
             error=' Repair the entire set using these actual validation/review failures: '+str(exc)+' Previous proposal: '+engine.json.dumps(value,ensure_ascii=False)
     raise ValueError('Campaign copy did not pass')

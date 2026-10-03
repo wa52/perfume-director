@@ -1,0 +1,90 @@
+[
+  {
+    "id": "perfume-repeat",
+    "product_category": "perfume",
+    "local_path": "assets/products/dior-jadore-retailer.png",
+    "sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+    "brief": "为这款香水探索四个明显不同的商业海报方向，保留原图；仅使用实际品牌和名称，不添加价格、促销、新品或未经提供的功效。"
+  },
+  {
+    "id": "watches-pilot",
+    "product_category": "watches",
+    "local_path": "assets/products/categories/watches.png",
+    "source_url": "https://pngimg.com/images/objects/watches",
+    "image_url": "https://pngimg.com/uploads/watches/watches_PNG101457.png",
+    "sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+    "width": 1000,
+    "height": 1000,
+    "caption": "Watches transparent PNG picture 101457",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "footwear-pilot",
+    "product_category": "footwear",
+    "local_path": "assets/products/categories/footwear.png",
+    "source_url": "https://pngimg.com/images/sport/running_shoes",
+    "image_url": "https://pngimg.com/uploads/running_shoes/running_shoes_PNG5824.png",
+    "sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+    "width": 1276,
+    "height": 877,
+    "caption": "Nike Running Shoes realistic PNG image",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "beverage-official-clean",
+    "product_category": "beverage",
+    "local_path": "assets/products/categories/beverage-official-clean.png",
+    "source_url": "https://www.coca-cola.com/at/de/brands/coca-cola",
+    "sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+    "width": 180,
+    "height": 650,
+    "rights_status": "research fixture; source resolution limits commercial delivery",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+    "provenance": "assets/products/categories/beverage-official-clean.provenance.json"
+  },
+  {
+    "id": "skincare-pilot",
+    "product_category": "skincare",
+    "local_path": "assets/products/categories/skincare.png",
+    "source_url": "https://pngimg.com/images/objects/lipstick",
+    "image_url": "https://pngimg.com/uploads/lipstick/lipstick_PNG76278.png",
+    "sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+    "width": 1990,
+    "height": 2538,
+    "caption": "Lipstick large resolution 1990x2538 PNG picture",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "menswear-pilot",
+    "product_category": "menswear",
+    "garment_type": "tshirt",
+    "display_mode": "auto",
+    "local_path": "assets/products/clothing/menswear.png",
+    "source_url": "https://pngimg.com/image/5447",
+    "image_url": "https://pngimg.com/uploads/tshirt/tshirt_PNG5447.png",
+    "sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+    "width": 964,
+    "height": 1024,
+    "brief": "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+    "audience_basis": "test merchandising category; not inferred from a person",
+    "rights_status": "CC BY-NC 4.0; PNGimg attribution; non-commercial test fixture only"
+  },
+  {
+    "id": "womenswear-pilot",
+    "product_category": "womenswear",
+    "garment_type": "dress",
+    "display_mode": "auto",
+    "local_path": "assets/products/clothing/womenswear.png",
+    "source_url": "https://pngimg.com/image/56146",
+    "image_url": "https://pngimg.com/uploads/dress/dress_PNG141.png",
+    "sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+    "width": 1024,
+    "height": 1365,
+    "brief": "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+    "audience_basis": "test merchandising category; not inferred from a person",
+    "rights_status": "CC BY-NC 4.0; PNGimg attribution; non-commercial test fixture only"
+  }
+]

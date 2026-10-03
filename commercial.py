@@ -30,6 +30,11 @@ def validate_creative(value):
 
 
 def creative_stage(engine,config,product,brief,folder,approved_copy):
+    config.pop('creative_diversity_veto',None)
+    refs=config.get('creative_references',[])[:3]
+    images=[product,*[engine.ROOT/r['image'] for r in refs]]
+    writer=copy.deepcopy(config)
+    writer.setdefault('vision_options',{})['temperature']=.8
     prompt=('Act as Brand Analyst then Creative Director, before any layout. Return '
         '{brand_analysis:{observed_brand,evidence,expression_hypothesis,unknowns},concepts:[four objects '
         '{id,name,proposition,visual_mechanism,audience,brand_connection,source_constraints}]}. '
@@ -40,24 +45,42 @@ def creative_stage(engine,config,product,brief,folder,approved_copy):
         'where to place the cutout, title, or negative space. At least three genuinely different visual events, '
         'not product isolation repeated with different scales. No coordinates, fonts, sizes, grids or PosterSpecs. '
         'Separate visible facts from a proposed campaign expression; brand history is unknown without supplied evidence. '
-        'Do not invent slogans or factual claims. Work with approved words only. The execution currently preserves the '
+        'Do not author slogans or factual claims in this concept stage; a separately reviewed copy stage may provide short concept-specific headlines later, unless user copy is explicitly locked. The execution currently preserves the '
         'entire original cutout, labels, shape and RGB illumination; it cannot reconstruct glass transmission, relight material zones, '
         'add droplets on the product, change pose or generate people. Concepts must be feasible with that limitation, '
-        'a generated empty set, floor cast/contact shadows and deterministic typography. '
+        'a generated environment without extra main products, floor cast/contact shadows and deterministic typography. '
+        'Empty set means no duplicate main product, people, logos or generated text; the environment may contain non-product contextual objects, natural forms, weather or abstract events. '
+        'It does not require a bare uniform wall. Scene narratives must match the source illumination and camera angle. '
+        'There is exactly ONE complete photographed product instance: '
+        'no duplicated photographs, diptychs, macro crop plates, multi-angle studies, product rotation or cropped-out product parts. '
+        'The renderer can add up to eight flat-color ellipses, rectangles or exact original-alpha product_silhouette primitives behind the product; '
+        'a silhouette is not a second photograph and contains no source RGB or label. It has only four text layers (headline, subhead, logo, price) '
+        'and one optional straight decoration line, not arbitrary text repetitions or complex vector lettering. '
         'Brief: '+engine.json.dumps(brief,ensure_ascii=False)+' Copy: '+engine.json.dumps(approved_copy,ensure_ascii=False)+
-        ' Observed source: '+engine.json.dumps(config.get('product_profile',{}),ensure_ascii=False))
-    value=engine.vision(config,prompt,[product],folder/'Creative-call.json')
+        ' Observe the supplied reference campaigns for actual advertising events, not their product names, people, slogans or camera angles. '
+        'Translate the event into the supported single-source renderer; references may contain unsupported elements that must not be copied. '
+        'Source-compatible empty scene narratives are allowed; do not reduce every proposal to circles/rectangles behind a floating packshot. '
+        'Reference analyses: '+engine.json.dumps(refs,ensure_ascii=False)+
+        ' Observed source: '+engine.json.dumps(config.get('product_profile',{}),ensure_ascii=False)+engine.categories_module().context(config))
+    value=engine.vision(writer,prompt,images,folder/'Creative-call.json')
     for attempt in range(3):
+        valid=False;review=None
         try:
             validate_creative(value)
+            valid=True
             review=semantic_review(engine,config,product,value,folder/f'CreativeReview-{attempt+1}.json')
             engine.write(folder/'CreativeGate.json',{'pass':review['distinct'],'review':review,
                 'concept_sha256':engine.hashlib.sha256(engine.json.dumps(value,sort_keys=True).encode()).hexdigest()})
             if not review['distinct']:raise ValueError('Advertising propositions collapse: '+engine.json.dumps(review))
             break
         except ValueError as error:
-            if attempt==2:raise
-            value=engine.vision(config,prompt+' Repair creative diversity and contract: '+str(error)+' Previous: '+engine.json.dumps(value),[product],folder/f'Creative-repair-{attempt+1}-call.json')
+            if attempt==2:
+                if valid and review is not None and review['distinct'] is False and config.get('retain_rejected_creative_drafts'):
+                    config['creative_diversity_veto']=copy.deepcopy(review)
+                    engine.write(folder/'CreativeDraftHold.json',{'status':'NEEDS_REVIEW','commercial_pass_forbidden':True,'review':review})
+                    break
+                raise
+            value=engine.vision(writer,prompt+' Repair creative diversity and contract: '+str(error)+' Previous: '+engine.json.dumps(value),images,folder/f'Creative-repair-{attempt+1}-call.json')
     engine.write(folder/'CreativeConcepts.json',value)
     return value
 
@@ -70,9 +93,14 @@ def semantic_review(engine,config,product,value,trace):
         'different title columns, palettes or renamed materials do not constitute different concepts. '
         'Contour signature, everyday companion, cap monument, restrained portrait all collapse into one isolated packshot idea '
         'if their actual visual event is the same. Judge the described visual mechanisms, not eloquent names. '
-        'Reject impossible product modifications as well. Do not propose new slogans, factual brand history or unsupported relighting. '
+        'Reject impossible execution as well: exactly ONE complete source photograph can be rendered, with no duplicate photographed product, '
+        'macro crop plates, diptych or multi-angle views. Only four text layers, one straight decoration line and up to eight flat-color '
+        'ellipses/rectangles/original-alpha silhouettes behind the product are available. The photo remains fully visible and unrotated. '
+        'Do not propose new slogans, factual brand history or unsupported relighting. '
         'Campaigns may use source-compatible photographic context, abstract visual metaphor, purposeful brand graphics or an editorial narrative; '
-        'these are possibilities, not four compulsory templates. Concepts: '+engine.json.dumps(value,ensure_ascii=False),[product],trace)
+        'Use the reference campaigns as a quality benchmark for meaningful visible events, not a quota of the same three primitive types. '
+        'these are possibilities, not four compulsory templates. Concepts: '+engine.json.dumps(value,ensure_ascii=False)+engine.categories_module().context(config),
+        [product,*[engine.ROOT/r['image'] for r in config.get('creative_references',[])[:3]]],trace)
     if not isinstance(review,dict) or type(review.get('distinct')) is not bool or not isinstance(review.get('evidence'),str) or not review['evidence'].strip() or not isinstance(review.get('collapse_groups'),list):
         raise ValueError('Creative semantic review requires explicit decision and evidence')
     if review['collapse_groups']:review['distinct']=False

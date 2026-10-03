@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import html
 import json
+import shutil
 from pathlib import Path
 import time
 import urllib.request
@@ -57,15 +58,19 @@ def export(folder,records):
             target=folder/category/item['id'];target.mkdir(parents=True,exist_ok=True)
             with Image.open(source) as image:image.convert('RGB').save(target/'poster.jpg',quality=95)
             selected=item['selected'];version=run/('v'+str(selected['version']))
-            for name in ('PosterSpec.json','Critic.json'):
+            shutil.copyfile(source,target/'poster.png')
+            for name in ('PosterSpec.json','Critic.json','CommercialGate.json','CommercialArtDirector.json','CommercialRepair.json'):
                 if (version/name).is_file():poster.write(target/name,poster.read(version/name))
             evidence={'status':item['status'],'selected':selected,'versions':item.get('versions',[]),
-                'input_sha256':record['input_sha256'],'poster_sha256':hashlib.sha256(source.read_bytes()).hexdigest()}
+                'input_sha256':record['input_sha256'],'poster_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+                'quality_profile':record.get('quality_profile'),
+                'commercial_gate':poster.read(version/'CommercialGate.json') if (version/'CommercialGate.json').exists() else None}
             poster.write(target/'evidence.json',evidence)
             items.append('<article><img src="'+category+'/'+item['id']+'/poster.jpg"><p>'+html.escape(item['name'])+'</p><small>'+html.escape(item['status'])+'</small></article>')
         label=PROFILES[category]['label']+(' · '+GARMENT_TYPES[record.get('garment_type','auto')] if category in CLOTHING_CATEGORIES else '')
         cards.append('<section><h2>'+label+'</h2><p>'+html.escape(record.get('stage') or record['status'])+'</p><div class="grid">'+''.join(items)+'</div></section>')
     summary=[{'product_category':r['product_category'],'status':r['status'],'stage':r.get('stage'),'job_id':r.get('job_id'),
+        'quality_profile':r.get('quality_profile'),'commercial_target':r.get('commercial_target'),
         'selected_directions':len([d for d in r.get('directions',[]) if 'selected' in d]),
         'model_pass_directions':sum(d['status']=='PASS' for d in r.get('directions',[]))} for r in records]
     poster.write(folder/'summary.json',summary)
@@ -130,7 +135,7 @@ def main():
         while True:
             live=request(args.comfy_url,'/perfume-director/jobs/'+state['job_id'])
             # Store operational paths locally; the public summary contains no endpoint or provider trace.
-            state.update({k:live[k] for k in ('status','stage','direction_index','direction_name','version','directions','error') if k in live})
+            state.update({k:live[k] for k in ('status','stage','direction_index','direction_name','version','directions','error','run_dir','quality_profile','commercial_target') if k in live})
             poster.write(saved,{k:v for k,v in state.items() if k!='directions'})
             export(folder,records)
             if live['status']!='RUNNING':break
