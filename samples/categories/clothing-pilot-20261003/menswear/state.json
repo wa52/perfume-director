@@ -13,6 +13,10 @@
   "audience_basis": "test merchandising category; not inferred from a person",
   "rights_status": "CC BY-NC 4.0; PNGimg attribution; non-commercial test fixture only",
   "input_sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
-  "status": "QUEUED",
-  "stage": "Waiting for existing category tests and clothing node deployment"
+  "status": "COMPLETED",
+  "stage": "FINISHED",
+  "job_id": "bd71f542fd7a46e99e17b1779d4fe4a5",
+  "direction_index": 4,
+  "direction_name": "Petrol Halo / Times Masthead",
+  "version": 5
 }

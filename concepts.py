@@ -29,6 +29,10 @@ def build_spec(engine,config,item,product,approved_copy):
     spec=engine.read(engine.ROOT/'examples/PosterSpec.json')
     spec['product_category']=config.get('product_category','perfume')
     spec['scene_mode']=item.get('scene_mode','photographic')
+    if config.get('commercial_v2'):
+        plan=item.get('integration_plan')
+        engine.commercial_module().validate_integration(plan)
+        spec['integration_plan']=copy.deepcopy(plan)
     w,h=spec['canvas']['width'],spec['canvas']['height']
     def numbers(values,length):
         if not isinstance(values,list) or len(values)!=length or any(isinstance(v,bool) or not isinstance(v,(float,int)) or not math.isfinite(v) for v in values):
@@ -124,6 +128,9 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
     if not isinstance(items,list) or len(items)!=4:
         raise ValueError('Exactly four new concepts required')
     lookup = {r['id']:r for r in references}
+    creative_lookup={item['id']:item for item in config.get('commercial_creative',{}).get('concepts',[])}
+    if config.get('commercial_v2') and {item.get('creative_id') for item in items}!=set(creative_lookup):
+        raise ValueError('Art plans must execute all four approved creative IDs exactly once')
     previous={d['signature'] for d in recent(engine.ROOT,config.get('product_category','perfume'),config.get('garment_type') if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else None) if 'signature' in d}
     directions, grids, colors, fonts, materials, relations = [], set(), set(), set(), set(), set()
     for index,item in enumerate(items,1):
@@ -138,6 +145,8 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
         if any(r.get('analysis',{}).get('has_campaign_typography') is True for r in references) and not any(lookup[i].get('analysis',{}).get('has_campaign_typography') is True for i in ids):
             raise ValueError('Each concept needs a reference with actual campaign typography, not only bottle labels')
         spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
+        if config.get('commercial_v2'):
+            engine.commercial_module().validate_integration(spec.get('integration_plan'))
         spec['product_category']=config.get('product_category','perfume')
         spec=engine.categories_module().spec_policy(spec,config)
         for layer,text in approved_copy.items():spec[layer]['text']=text
@@ -169,9 +178,11 @@ def validate_plans(engine, config, value, product, references, approved_copy, *,
         materials.add(item['material'].strip().casefold())
         directions.append({**{k:item[k] for k in ('name','brief','material','lighting')},
             'id':f'concept-{index}','signature':signature,'signature_version':2,'scene_mode':spec.get('scene_mode','photographic'),'layout_relation':relation,'title_family':title_family(font),'palette':spec.get('palette',[]),'reference_ids':ids,'initial_spec':spec})
-    if len({d['name'].strip().casefold() for d in directions})!=4 or len(grids)<3 or len(colors)<3 or len(fonts)<2 or len(materials)<3:
+        if config.get('commercial_v2'):
+            directions[-1]['creative_concept']=creative_lookup[item['creative_id']]
+    if len({d['name'].strip().casefold() for d in directions})!=4 or len(grids)<3 or (not config.get('commercial_v2') and (len(colors)<3 or len(fonts)<2 or len(materials)<3)):
         raise ValueError('Concepts repeat: require four names, >=3 geometry grids, >=3 hue/tonal background color families, both serif and sans title families and >=3 materials; color swaps alone are insufficient')
-    if relations!={'above','below','beside'}:
+    if not config.get('commercial_v2') and relations!={'above','below','beside'}:
         raise ValueError('Layout topology repeats: four concepts must include title ABOVE, BELOW and BESIDE the visible product. Moving upper titles by a few pixels is not a new layout. Reposition/resize the product and text together so every design remains safe; choose your own coordinates, no preset grids.')
     return directions
 
@@ -198,7 +209,7 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
             title_relationship(engine.rendered_geometry(spec,product,config['font']))
         except (ValueError,KeyError,TypeError) as error:
             errors.append(f'Concept {index}: {error}')
-    if inspected==4:
+    if inspected==4 and not config.get('commercial_v2'):
         if len(colors)<3:errors.append('Background colors repeat: require at least3 distinguishable hue/tonal color families')
         if len(fonts)<2:errors.append('Title families repeat: require both serif and sans')
         if len(materials)<3:errors.append('Materials repeat: require at least3 different materials')
@@ -206,6 +217,8 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
 
 
 def plan_four(engine,config,product,brief,folder,approved_copy):
+    if config.get('commercial_v2'):
+        config['commercial_creative']=engine.commercial_module().creative_stage(engine,config,product,brief,folder,approved_copy)
     store=engine.reference_store_module()
     pool=store.planning_pool(engine.ROOT,limit=8,category=config.get('product_category','perfume'),**({'garment_type':config.get('garment_type','auto')} if config.get('product_category') in engine.categories_module().CLOTHING_CATEGORIES else {})) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
     if not hasattr(store,'planning_pool'):random.SystemRandom().shuffle(pool)
@@ -267,6 +280,18 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         ' Recent plans to avoid: '+json.dumps(history,ensure_ascii=False)+
         ' Reference IDs are request-local aliases R1 through R'+str(len(refs))+'. Use only these exact aliases, never copy IDs from previous plans. '
         ' Reference analyses: '+json.dumps([{**r,'id':f'R{i}'} for i,r in enumerate(refs,1)],ensure_ascii=False))
+    if config.get('commercial_v2'):
+        prompt=prompt.replace('Choose at least 3 distinct geometry grids, 3 clearly different background color families, both serif (Times/Georgia/Bodoni/Baskerville) and sans (Arial/Arial Narrow/Century Gothic/MSYH) title families, 3 materials. ',
+            'Choose at least 3 distinct geometry grids. Preserve brand-coherent color and font choices; there is no forced serif/sans or color-family quota. ')
+        prompt=prompt.replace('The four layouts MUST include all THREE spatial relationships: title ABOVE product, title BELOW product, and title BESIDE product with vertical overlap but horizontal separation. ',
+            'Choose title/product relationships serving the approved creative propositions, without a mandatory above/below/beside quota. ')
+        prompt+=(' Execute these already approved creative propositions as Art Director, never replace them with layout ideas: '+json.dumps(config['commercial_creative'],ensure_ascii=False)+
+            ' Every direction additionally needs creative_id matching one approved ID exactly once and integration_plan '
+            '{source_key_light:left/right/front/overhead/unknown,ground_material:string,cast_length_ratio:0..0.20,cast_opacity:0..0.3,cast_blur:2..60}. '
+            'Observed source illumination determines scene lighting; never invent a 5200K measurement or depth map from this RGB photograph. '
+            'Unknown source_key_light requires cast_opacity=0. Render supports alpha-projected floor cast shadow plus measured contact AO, not physical relighting or reflection reconstruction. '
+            'Use source-compatible continuous floor in photographic mode and describe the same ground material and illumination in background_prompt. '
+            'In graphic mode set cast_opacity=0. Do not add random lines/circles as decoration. Preserve approved copy; brand name need not be repeated in multiple layers.')
     planning=copy.deepcopy(config)
     planning['vision_options']={**config.get('vision_options',{}),'temperature':.8}
     if planning['vision_options'].get('enable_thinking'):

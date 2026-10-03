@@ -1,0 +1,46 @@
+{
+  "brand_analysis": {
+    "observed_brand": "Coca-Cola, presented as a contour glass bottle of cola soft drink whose red paper-style wrap label carries the white script wordmark, the category word 'REFRESCO' and the net-content line 'CONT. NET. 355 ml', closed with a red metal crown cap.",
+    "evidence": "Visible on the supplied cutout: white script 'Coca-Cola' on a red wrap label; label lines 'REFRESCO' and 'CONT. NET. 355 ml'; vertical label edge text 'NO RETORNABLE'; red crown cap; contour glass silhouette filled with dark brown liquid, a translucent foam head above the liquid line at the neck, and a green-transmitting glass base edge; soft diffuse frontal studio illumination with gentle vertical highlights on shoulder and sides and no hard backlight or rim light; straight-on eye-level upright centered view; opaque body and label that cannot transmit a new background while only neck and base edges stay translucent; no contact shadow present in the cutout.",
+    "expression_hypothesis": "Because the equity visible here resides in the contour silhouette, the red field and the white script rather than in any claim, a campaign can keep the cutout entirely untouched and stage four different readings of it by moving the visual event onto four different planes and mechanisms: a raked cast shadow on a wall-and-floor continuum, a real tabletop horizon with a vacant span, a printed contour trace on the ground plane that the standing bottle completes and interrupts, and a two-plane depth staging in which the silhouette eclipses a red field so only the translucent neck and base edges glow against it.",
+    "unknowns": "No brand history, campaign lineage, positioning documents, approved slogan library or prior artwork were supplied, so nothing beyond the visible label text and the observed bottle physics can be treated as known brand fact; no slogans, flavours, ingredients, nutrition or promotional claims are invented anywhere in this response."
+  },
+  "concepts": [
+    {
+      "id": "c1",
+      "name": "The Wall Remembers the Curve",
+      "proposition": "The contour silhouette alone identifies the drink before any wordmark is read: shape is the signature.",
+      "visual_mechanism": "The neutral studio ground curves up into a seamless wall, and one long soft cast shadow is thrown diagonally across that wall-and-floor continuum so the flattened contour, cap and neck enlarged by the rake becomes the single dominant object in the frame, larger than the upright bottle itself; the visual event is the silhouette projected as a giant second self on the architecture while the small real bottle anchors its origin point.",
+      "audience": "Design-literate adults, brand collectors and out-of-home viewers who recognise the contour instantly and reward visual wit.",
+      "brand_connection": "Argues entirely from the observed contour silhouette and upright centered stance, keeping label, cap and liquid untouched while the red label stays the only saturated note against the neutral shadow play.",
+      "source_constraints": "The cutout is preserved exactly as lit; the shadow is a generated cast shadow on the wall-and-floor continuum consistent with the existing soft diffuse frontal illumination and gentle vertical highlights; background remains neutral and softly lit; no droplets, splashes, relighting, pose change or people; typography limited to one brand-name pass plus the category word already on the label."
+    },
+    {
+      "id": "c2",
+      "name": "Script Rings",
+      "proposition": "The brand is recognised as a rhythm: the script wordmark itself is a sound wave everyone already knows by heart.",
+      "visual_mechanism": "In the backdrop plane behind the preserved bottle, fine concentric contour lines echo the curves of the white script wordmark and radiate outward from behind the label like printed line work, so the visual event is the wordmark emitting its own graphic echo on the backdrop while the bottle stands still and untouched in front of it.",
+      "audience": "Young urban and music-adjacent culture audiences who respond to synesthetic, graphic-system advertising.",
+      "brand_connection": "Derives the radiating line work from the observed white script curves on the red label, turning the wordmark into the source of the event without altering it, and keeps the red label and cap as the quiet saturated center of the composition.",
+      "source_constraints": "All line work lives in the generated neutral backdrop behind the cutout, never on the product; no rings touch or surround the base on the floor; backdrop stays softly and diffusely lit to match existing highlights; no relighting, droplets or silhouette clipping; deterministic typography limited to one brand-name pass plus the observed category word."
+    },
+    {
+      "id": "c3",
+      "name": "The Other Side of the Table",
+      "proposition": "The drink is a shared pause: an ordinary table already set for two, with one place still empty and waiting.",
+      "visual_mechanism": "The camera drops to seated eye level so a neutral tabletop horizon line enters the frame as a real visible plane; the untouched bottle stands on that tabletop at one side with a soft contact shadow, while the near half of the visible table surface stays completely empty facing the viewer, so the visual event is an actual object relationship between the bottle, the table edge and the vacant span of tabletop offered to whoever arrives.",
+      "audience": "Everyday adult consumers, families and mealtime occasions seeking a familiar companion to food and breaks.",
+      "brand_connection": "Reframes the observed upright, centered, eye-level presentation as hospitality: the untouched bottle is the host already poured, and the red cap and label supply the only warmth on an otherwise reserved neutral table.",
+      "source_constraints": "Only a neutral tabletop plane with a visible edge horizon and a lighting-consistent contact shadow are generated within the empty set, matched to the soft diffuse frontal illumination with no hard backlight or rim; the cutout, label, cap and liquid remain unaltered and unrelit; no people, no props on or beside the product; one brand-name typeset plus the category word."
+    },
+    {
+      "id": "c4",
+      "name": "The Drawn Contour, Completed by Standing",
+      "proposition": "The contour is a line anyone could draw from memory, yet only the real bottle can finish it: recognition lives in the hand as much as the eye.",
+      "visual_mechanism": "The generated neutral studio floor carries a single continuous printed line, as if drawn by an implied hand across the paper-like ground, tracing the exact contour silhouette plus cap and neck in foreshortened perspective; the preserved bottle stands upright precisely on that trace, so the drawn line vanishes behind the opaque body and label and reappears at the silhouette's edges, and the visual event is the perceptual completion between the flat drawn contour on the ground plane and the standing three-dimensional bottle that interrupts, confirms and finishes it.",
+      "audience": "Illustration- and design-oriented adults, students and social audiences who enjoy figure-ground puzzles and shareable visual wit.",
+      "brand_connection": "Takes the observed contour silhouette, the single most ownable asset on the cutout, and treats it as a line of authorship: the drawing quotes the bottle's own outline while the red label and cap remain the only saturated marks, so the brand is argued from shape rather than from any claim.",
+      "source_constraints": "The trace exists only on the generated neutral floor plane inside the empty set, never on the product; the cutout stays unrelit and unaltered with its opaque body and label providing the interruption and only the observed neck and base edges remaining translucent; floor lighting and the added contact shadow stay soft and diffuse to match the existing frontal illumination; no droplets, splashes, people or hands appear, the implied hand being read solely from the drawn line; typography limited to one brand-name pass plus the observed category word."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 177077490043453,
+  "background": {
+    "color": "#2E2440",
+    "prompt": "Deep aubergine pressed wool felt panel, dense matte fibre texture, broad soft illumination falling from the upper left corner, gentle velvet darkening toward lower right corner and edges, visible fibre nap catching the light gradient, completely empty flat field with no objects",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 128,
+        "y": 168,
+        "width": 800,
+        "height": 800,
+        "color": "#3B2F52",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 330,
+        "y": 268,
+        "width": 520,
+        "height": 512,
+        "color": "#4A3C66",
+        "opacity": 0.85
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 576,
+    "width": 506,
+    "height": 749
+  },
+  "lighting": "Soft frontal wash from upper left, velvet-like falloff toward corners, no horizon",
+  "palette": [
+    "#2E2440",
+    "#EFE9F2",
+    "#B7A6C9"
+  ],
+  "title": {
+    "text": "РОССИЯ",
+    "x": 108,
+    "y": 1094,
+    "size": 110,
+    "color": "#EFE9F2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 10,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "КВАРЦ",
+    "x": 108,
+    "y": 1216,
+    "size": 30,
+    "color": "#EFE9F2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 14
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EFE9F2",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 108,
+    "y": 1015,
+    "size": 30,
+    "color": "#EFE9F2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 10
+  },
+  "shadow": {
+    "opacity": 0.45,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.15
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 108,
+    "y": 1058,
+    "width": 210,
+    "color": "#B7A6C9"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic"
+}

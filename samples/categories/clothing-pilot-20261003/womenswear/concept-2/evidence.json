@@ -1,0 +1,67 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 5,
+    "score": 85.1,
+    "pass": false,
+    "poster": "v5/poster.png",
+    "spec": "v5/PosterSpec.json",
+    "critic": "v5/Critic.json",
+    "review_error": null,
+    "sha256": "05175bce31281ed79e02fd1bcf4b0f2acce1688eb5939a18464d0fc455ab851f"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 77.1,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "cea3230d4baac1482637e1887d1f1bde028905904a434ddfa3d1cbfc92870f56"
+    },
+    {
+      "version": 2,
+      "score": 74.9,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "aae0a5aed65e7430532dd541b4bbbc9241f8ce161531ac95752d32520e02c4ce"
+    },
+    {
+      "version": 3,
+      "score": 77.4,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "ca1db57f22c7b0a68554b00ae5138dfc9527a01405e554765d67240691a0e697"
+    },
+    {
+      "version": 4,
+      "score": 78.7,
+      "pass": false,
+      "poster": "v4/poster.png",
+      "spec": "v4/PosterSpec.json",
+      "critic": "v4/Critic.json",
+      "review_error": null,
+      "sha256": "828801ff3d381829a0a69e5f37ab4a7b07ab010e61a7db16e522960b4d252da4"
+    },
+    {
+      "version": 5,
+      "score": 85.1,
+      "pass": false,
+      "poster": "v5/poster.png",
+      "spec": "v5/PosterSpec.json",
+      "critic": "v5/Critic.json",
+      "review_error": null,
+      "sha256": "05175bce31281ed79e02fd1bcf4b0f2acce1688eb5939a18464d0fc455ab851f"
+    }
+  ],
+  "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+  "poster_sha256": "05175bce31281ed79e02fd1bcf4b0f2acce1688eb5939a18464d0fc455ab851f"
+}

@@ -1,18 +1,18 @@
 [
   {
     "product_category": "menswear",
-    "status": "QUEUED",
-    "stage": "Waiting for existing category tests and clothing node deployment",
-    "job_id": null,
-    "selected_directions": 0,
-    "model_pass_directions": 0
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "bd71f542fd7a46e99e17b1779d4fe4a5",
+    "selected_directions": 4,
+    "model_pass_directions": 1
   },
   {
     "product_category": "womenswear",
-    "status": "QUEUED",
-    "stage": "Waiting for existing category tests and clothing node deployment",
-    "job_id": null,
-    "selected_directions": 0,
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "73d70b0912d640209974d756a814dd92",
+    "selected_directions": 4,
     "model_pass_directions": 0
   }
 ]

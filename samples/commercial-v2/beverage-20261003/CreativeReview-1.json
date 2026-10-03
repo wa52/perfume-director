@@ -1,0 +1,13 @@
+{
+  "distinct": false,
+  "evidence": "Judging mechanisms, not names: c1's event is a floor-born mark extending from the base contact point (an elongated cast shadow reading as a second silhouette); c2's event is also a floor-born mark radiating from the same base contact point (concentric ripple rings); c3's event reduces to a bottle standing on a neutral floor with a soft light pool and a short contact shadow, i.e. standard isolated packshot staging with no visible object, seat or table actually present, so its 'implied empty seat' is interpretation rather than a visual event. All three therefore share one actual visual event: untouched bottle centered on an empty neutral studio floor differentiated only by floor treatment. c4 is materially different: its event occurs on the backdrop plane, a flat red band at label height interrupted and resumed by the opaque silhouette, an occlusion proof rather than a floor mark. No impossible product modifications are proposed; label, cap, liquid and contour are preserved in all four, and no flavour, ingredient or nutrition claims are invented.",
+  "collapse_groups": [
+    [
+      "c1",
+      "c2",
+      "c3"
+    ]
+  ],
+  "required_revision": "Keep c4 as the sole graphic-occlusion idea. Rewrite c1, c2 and c3 so each produces a different visual event on a different plane or with a different agent: c1 may retain the shadow-as-second-silhouette only if the shadow is the single dominant compositional object (e.g. cast across a wall-and-floor continuum at an angle that makes the flattened contour the primary read, not a floor accent); c2 must move off the floor entirely, e.g. render the ripple/sound metaphor as concentric line work in the backdrop plane or as a die-cut graphic system interacting with the script wordmark, not rings around the base; c3 must introduce an actual visible narrative agent or object relationship compatible with the source (e.g. a second empty place setting implied by a real cropped chair edge or tabletop horizon line entering frame, or an editorial crop where the bottle occupies a seated eye-level relationship to a visible table edge), because a light pool plus contact shadow alone is default packshot staging. Do not add droplets, splashes, relighting of the cutout, people holding the product, or any claim about ingredients; typography remains limited to the brand name and the category word already observed on the label.",
+  "notes": "Four propositions were tested against the rule that renamed materials, palettes and floor treatments do not create concepts; only c4 survives as an independent idea in its current form."
+}

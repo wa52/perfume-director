@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 84159901665821,
+  "background": {
+    "color": "#0E3B3C",
+    "prompt": "Deep petrol lacquered panel with subtle sheen vignette and a faint restrained frontal soft wash, completely empty and clean, no horizon, no props",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 260,
+        "y": 340,
+        "width": 560,
+        "height": 560,
+        "color": "#EDE7DA",
+        "opacity": 0.85
+      },
+      {
+        "kind": "ellipse",
+        "x": 284,
+        "y": 364,
+        "width": 512,
+        "height": 512,
+        "color": "#0E3B3C",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 330,
+        "y": 980,
+        "width": 420,
+        "height": 420,
+        "color": "#12474A",
+        "opacity": 0.55
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 878,
+    "width": 824,
+    "height": 864
+  },
+  "lighting": "restrained frontal softbox wash, low contrast, faint central glow",
+  "palette": [
+    "#0E3B3C",
+    "#EDE7DA",
+    "#C9A227"
+  ],
+  "title": {
+    "text": "MENSWEAR",
+    "x": 315,
+    "y": 101,
+    "size": 84,
+    "color": "#EDE7DA",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.12,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "T-shirt",
+    "x": 480,
+    "y": 372,
+    "size": 30,
+    "color": "#EDE7DA",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EDE7DA",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "",
+    "x": 488,
+    "y": 252,
+    "size": 16,
+    "color": "#EDE7DA",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 5
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 390,
+    "y": 300,
+    "width": 300,
+    "color": "#C9A227"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "menswear",
+  "scene_mode": "graphic",
+  "garment_type": "tshirt",
+  "display_mode": "auto"
+}

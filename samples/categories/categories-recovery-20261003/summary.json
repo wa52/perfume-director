@@ -1,18 +1,34 @@
 [
   {
     "product_category": "watches",
-    "status": "ERROR",
-    "stage": "FAILED",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
     "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
-    "selected_directions": 2,
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "beverage",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "d97eadc896214590a8eb850548bbedc5",
+    "selected_directions": 4,
     "model_pass_directions": 0
   },
   {
     "product_category": "footwear",
-    "status": "RUNNING",
-    "stage": "CRITIC",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
     "job_id": "e5d60cbe4cb246cbbb233e7a6532b790",
-    "selected_directions": 1,
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "skincare",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "a675f95d65fe4567918f62c2f7eadb26",
+    "selected_directions": 4,
     "model_pass_directions": 0
   }
 ]

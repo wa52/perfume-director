@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 84159901662794,
+  "background": {
+    "color": "#1D3FA8",
+    "prompt": "Flat matte ultramarine painted paper field, uniform diffuse illumination, no horizon, no equipment, subtle screen-print grain, crisp vector panel edges",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 183,
+        "y": 145,
+        "width": 714,
+        "height": 1145,
+        "color": "#F2F0EA",
+        "opacity": 0.92
+      },
+      {
+        "kind": "rectangle",
+        "x": 143,
+        "y": 1204,
+        "width": 794,
+        "height": 14,
+        "color": "#FF5A2D",
+        "opacity": 1
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 851,
+    "height": 893
+  },
+  "lighting": "even diffuse studio wash, no directional fall-off, graphic flatness",
+  "palette": [
+    "#1D3FA8",
+    "#F2F0EA",
+    "#FF5A2D"
+  ],
+  "title": {
+    "text": "MENSWEAR",
+    "x": 268,
+    "y": 96,
+    "size": 120,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "T-shirt",
+    "x": 488,
+    "y": 246,
+    "size": 44,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 12
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F2F0EA",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 475,
+    "y": 295,
+    "size": 18,
+    "color": "#F2F0EA",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 183,
+    "y": 330,
+    "width": 714,
+    "color": "#FF5A2D"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "menswear",
+  "scene_mode": "graphic",
+  "garment_type": "tshirt",
+  "display_mode": "auto"
+}

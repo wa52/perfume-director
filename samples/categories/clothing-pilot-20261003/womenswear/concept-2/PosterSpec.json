@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 63909246089371,
+  "background": {
+    "color": "#AEBCC4",
+    "prompt": "Seamless cool slate-grey painted cyclorama, one broad luminous band of dense sea fog glowing across the lower third with fully diffused feathered edges dissolving upward into overcast haze and downward into a smooth continuous value gradient that deepens gently into a deep slate-navy tone only across the lowest tenth of the frame, no horizon line, no objects, no texture, no hard edges, no bands, no stripes, even cool diffused daylight from above",
+    "revision": 3,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 576,
+    "width": 633,
+    "height": 835
+  },
+  "lighting": "overcast diffused daylight, cool desaturated tone, luminous fog band at the base",
+  "palette": [
+    "#AEBCC4",
+    "#F5F8F9",
+    "#1E3F66"
+  ],
+  "title": {
+    "text": "WOMENSWEAR",
+    "x": 115,
+    "y": 1235,
+    "size": 110,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 4,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Dress",
+    "x": 118,
+    "y": 1120,
+    "size": 30,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 6,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F5F8F9",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "",
+    "x": 497,
+    "y": 1361,
+    "size": 20,
+    "color": "#F5F8F9",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

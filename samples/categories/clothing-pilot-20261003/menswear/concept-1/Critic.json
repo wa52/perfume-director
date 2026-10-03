@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "score": 89.0,
+  "dimensions": {
+    "product_fidelity": 95,
+    "composition": 87,
+    "typography": 87,
+    "background": 88,
+    "physical_integration": 92,
+    "reference_alignment": 85,
+    "creative_coherence": 89
+  },
+  "problems": [],
+  "changes": [],
+  "validation_notes": [
+    "Contact detail crop [36,1171,1045,1421] inspected: hem terminates cleanly over the ivory slab with the vermilion rule passing behind it; no ground shadow exists and none is required (graphic mode, shadow.opacity 0 per integration limits).",
+    "Product bbox [116,418,965,1311] stays inside canvas; sleeves overhang the slab intentionally, silhouette unclipped; label patch, collar rib, sleeve hems and knit creasing match the source cutout exactly.",
+    "text_product_overlap false for title and subtitle; header band reads calm and centered per declared layout_relation 'above'.",
+    "No studio equipment, no invented labels, no duplicate garments; background is an intentional flat printed-paper field consistent with the Ultramarine Slab concept."
+  ],
+  "reported_score": 88
+}

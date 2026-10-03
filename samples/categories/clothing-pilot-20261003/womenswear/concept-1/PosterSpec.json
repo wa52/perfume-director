@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 63909246088362,
+  "background": {
+    "color": "#E9B48C",
+    "prompt": "Flat matte hand-troweled lime plaster wall in warm apricot, coarse mineral grain and lime-paste ridges catching light across the entire surface, overlapping broad semicircular trowel arcs repeated from top edge to bottom edge, subtle tonal plaster patches, gentle vertical light gradient brighter at top, perfectly even diffuse illumination, no objects, no horizon, no shadows",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 664,
+        "y": 430,
+        "width": 292,
+        "height": 592,
+        "color": "#2E55D4",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 540,
+        "y": 1022,
+        "width": 864,
+        "height": 605,
+        "color": "#8FD8E6",
+        "opacity": 0.85
+      },
+      {
+        "kind": "ellipse",
+        "x": 396,
+        "y": 470,
+        "width": 300,
+        "height": 210,
+        "color": "#F4E3D2",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 878,
+    "width": 677,
+    "height": 893
+  },
+  "lighting": "even diffuse poster illumination, soft vertical gradient, no cast shadows",
+  "palette": [
+    "#E9B48C",
+    "#123A63",
+    "#2E55D4"
+  ],
+  "title": {
+    "text": "WOMENSWEAR",
+    "x": 76,
+    "y": 79,
+    "size": 84,
+    "color": "#123A63",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Dress",
+    "x": 81,
+    "y": 194,
+    "size": 30,
+    "color": "#123A63",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 8
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#123A63",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 76,
+    "y": 1375,
+    "size": 20,
+    "color": "#123A63",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 258,
+    "width": 560,
+    "color": "#2E55D4"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

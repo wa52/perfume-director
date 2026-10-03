@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 84159901664812,
+  "background": {
+    "color": "#33383E",
+    "prompt": "Smooth graphite chalkboard panel with faint chalk dust, one matte chalk-white painted ellipse plate left of center sized to halo the garment silhouette, even soft overhead gallery wash brightest at upper left, cool neutral value gradient darkening toward the right rail and bottom edge, no horizon, no objects, no equipment",
+    "revision": 1,
+    "shapes": []
+  },
+  "product": {
+    "x": 389,
+    "y": 720,
+    "width": 659,
+    "height": 691
+  },
+  "lighting": "soft overhead gallery wash, gentle vertical gradient, cool neutral",
+  "palette": [
+    "#33383E",
+    "#F4F4F2",
+    "#D8DBE0"
+  ],
+  "title": {
+    "text": "MENSWEAR",
+    "x": 745,
+    "y": 490,
+    "size": 50,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "T-shirt",
+    "x": 745,
+    "y": 763,
+    "size": 26,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F4F4F2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 745,
+    "y": 684,
+    "size": 16,
+    "color": "#F4F4F2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 745,
+    "y": 454,
+    "width": 240,
+    "color": "#F4F4F2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "menswear",
+  "scene_mode": "graphic",
+  "garment_type": "tshirt",
+  "display_mode": "auto"
+}

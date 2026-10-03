@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 133536491488306,
+  "background": {
+    "color": "#8E7C93",
+    "prompt": "Mauve limewash plaster wall with soft brush mottle meeting a continuous honed concrete ground plane at the lower third, low warm diffuse illumination from the front left, quiet dusk gradient, empty architectural space",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 76,
+        "y": 727,
+        "width": 281,
+        "height": 6,
+        "color": "#C9A227",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 713,
+    "y": 720,
+    "width": 567,
+    "height": 720
+  },
+  "lighting": "Low warm diffuse key from front-left, long soft contact shade to the right, gentle dusk falloff up the plaster wall",
+  "palette": [
+    "#8E7C93",
+    "#F3EDE6",
+    "#C9A227"
+  ],
+  "title": {
+    "text": "BEAUTY",
+    "x": 76,
+    "y": 619,
+    "size": 72,
+    "color": "#F3EDE6",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 76,
+    "y": 1354,
+    "size": 18,
+    "color": "#F3EDE6",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F3EDE6",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 76,
+    "y": 1303,
+    "size": 20,
+    "color": "#F3EDE6",
+    "font": "C:/Windows/Fonts/BASKVILL.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "photographic"
+}

@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "score": 79.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 76,
+    "background": 72,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 80
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The masthead lockup is internally off-axis: the rendered title bbox [310,144,892,254] centers at x=601 while the hairline rule (decoration x=310, width=460, spanning x=310-770 at y=292) centers at x=540. The rule's right tip stops ~120px short of the 'Y' terminal above it, leaving the crown reading as two misregistered pieces instead of the concept's centered crown plus separating rule."
+    },
+    {
+      "type": "composition",
+      "problem": "The hero is not swallowed by the halo as the brief demands: product bbox [230,490,851,1282] versus disc ellipse x100,y330,w880,h1060 (right rim x=980 at mid-height, top arc y=330-490). The bullet tip and its left highlight (y=490-640) sit within ~60-90px of the disc's upper-right arc and the tube's right edge (x=780-851) rides the right rim band, so the arc grazes the silhouette diagonally instead of the red glowing fully inside the ink field."
+    },
+    {
+      "type": "background",
+      "problem": "The ochre plane still carries a soft vignette (corners and left edge measurably darker than the field center around the title band), contradicting the declared 'perfectly uniform flat matte pigment with even shadowless illumination' and dulling the flat-ink pop material the concept specifies."
+    },
+    {
+      "type": "typography",
+      "problem": "At size 150 the masthead spans 582px (54% of canvas width) against an 880px disc; the references' mastheads command 70-85% of width, so the single permitted line still reads one step timid, and its off-center placement (center x=601 vs canvas 540) weakens the crown hierarchy further."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 60,
+          "y": 300,
+          "width": 960,
+          "height": 1120,
+          "color": "#141110",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 249
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 170
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 290
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 500
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Saturated ochre painted poster plane, single uniform flat matte pigment layer, perfectly even shadowless illumination edge to edge, one immense solid ink-black disc centered low, opaque matte overprinted ink, absolutely no vignette, no gradient, no horizon, no reflections, no texture variation"
+    }
+  ],
+  "reported_score": 78.0
+}

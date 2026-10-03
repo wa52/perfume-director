@@ -12,8 +12,8 @@
   "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
   "job_id": "5421b8f0be444a2d89b4fdfbf9611edd",
   "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
-  "status": "ERROR",
-  "stage": "FAILED",
+  "status": "COMPLETED",
+  "stage": "FINISHED",
   "directions": [
     {
       "name": "Malachite Banding Manifesto",
@@ -223,7 +223,13 @@
         }
       ],
       "review_failures": [],
-      "engine_snapshot": null
+      "engine_snapshot": null,
+      "engine_source_sha256": {
+        "poster.py": "7ca0d7226c72f2c557eab8c8d5abd65479b28220f20f8b13dd0eb488c614a91f",
+        "categories.py": "856a04e65734643eb93135038741eac76958af69d6ced4ef94bb1746ba9d5cfd",
+        "concepts.py": "d12c3ba0999f5c62e157db0b5525dce2ef6a741d2af9cd1beaa605292a62f7d6",
+        "quality.py": "118355bda2de6376d20437a9c3ad9e26e23913457d6ec30c5d5c463acce873cb"
+      }
     },
     {
       "name": "Porcelain Ice Hall",
@@ -415,7 +421,13 @@
         }
       ],
       "review_failures": [],
-      "engine_snapshot": null
+      "engine_snapshot": null,
+      "engine_source_sha256": {
+        "poster.py": "7ca0d7226c72f2c557eab8c8d5abd65479b28220f20f8b13dd0eb488c614a91f",
+        "categories.py": "856a04e65734643eb93135038741eac76958af69d6ced4ef94bb1746ba9d5cfd",
+        "concepts.py": "d12c3ba0999f5c62e157db0b5525dce2ef6a741d2af9cd1beaa605292a62f7d6",
+        "quality.py": "118355bda2de6376d20437a9c3ad9e26e23913457d6ec30c5d5c463acce873cb"
+      }
     },
     {
       "name": "Violet Felt Nocturne",
@@ -548,15 +560,290 @@
         "product_category": "watches",
         "scene_mode": "graphic"
       },
-      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d60ff661ba94",
-      "status": "ERROR",
-      "error": "OSError"
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\ee50d243b9ee",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 2,
+        "score": 80.6,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "db97bc37eadb312f41ccae5b94516e669a2b18a9aff9ecf5c7305d5835adae79"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "21456b87eec9741d4ef1009dba528155578ff010df132bbe512eb63ac2a9b255"
+        },
+        {
+          "version": 2,
+          "score": 80.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "db97bc37eadb312f41ccae5b94516e669a2b18a9aff9ecf5c7305d5835adae79"
+        },
+        {
+          "version": 3,
+          "score": 82.4,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "27a0ec67c2e9516bcc5cba1c0eb712e63eb59653936c736b8b0660e1a5da47be"
+        },
+        {
+          "version": 4,
+          "score": 82.6,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "36924b9324c250341b6aa1ea6971f2218a1030c09baf9b4fef6cbbc22f2605ef"
+        },
+        {
+          "version": 5,
+          "score": 83.1,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "eb77185cf6a9bdca58a6033633cbce3d687a5f065ff8939bcb9bc804f36c01c4"
+        }
+      ],
+      "review_failures": [],
+      "engine_snapshot": null
+    },
+    {
+      "name": "Graphite Mill Metronome",
+      "brief": "Industrial brushed-steel sheet with vertical mill grain: three precise graphite bars march behind the case like metronome beats, one slim bar crossing the dial height; a geometric sans masthead spans the top edge above the hero, in the restrained metal-on-dark manner of R4's studio plates.",
+      "material": "Brushed stainless steel sheet with fine vertical mill grain and matte graphite ink bars",
+      "lighting": "Cool even studio wash raking along the brush grain, faint specular drift from upper left, no horizon",
+      "id": "concept-4",
+      "signature": "58a9d8da989aadae0e7358d86c52726516ed4c5954360876a97e60cfdbe77ae8",
+      "signature_version": 2,
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "sans",
+      "palette": [
+        "#33383E",
+        "#EDEFF2",
+        "#8A939C"
+      ],
+      "reference_ids": [
+        "category-98e55045b7c5df98",
+        "category-eea6b38fcf844a70",
+        "category-fc3303d1382aa0eb"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#33383E",
+          "prompt": "Brushed stainless steel sheet with fine vertical mill grain, cool even studio wash raking along the grain, faint soft specular drift from upper left, empty industrial surface",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "rectangle",
+              "x": 216,
+              "y": 432,
+              "width": 59,
+              "height": 806,
+              "color": "#22262B",
+              "opacity": 0.85
+            },
+            {
+              "kind": "rectangle",
+              "x": 805,
+              "y": 432,
+              "width": 59,
+              "height": 806,
+              "color": "#22262B",
+              "opacity": 0.85
+            },
+            {
+              "kind": "rectangle",
+              "x": 324,
+              "y": 749,
+              "width": 432,
+              "height": 29,
+              "color": "#8A939C",
+              "opacity": 0.55
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 842,
+          "width": 603,
+          "height": 893
+        },
+        "lighting": "Cool even studio wash raking along the brush grain, faint specular drift from upper left, no horizon",
+        "palette": [
+          "#33383E",
+          "#EDEFF2",
+          "#8A939C"
+        ],
+        "title": {
+          "text": "РОССИЯ",
+          "x": 312,
+          "y": 130,
+          "size": 80,
+          "color": "#EDEFF2",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 8,
+          "max_width": 0,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "КВАРЦ",
+          "x": 440,
+          "y": 252,
+          "size": 26,
+          "color": "#EDEFF2",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 12
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#EDEFF2",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "НИКА",
+          "x": 453,
+          "y": 55,
+          "size": 28,
+          "color": "#EDEFF2",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 10
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 324,
+          "width": 130,
+          "color": "#8A939C"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "product_category": "watches",
+        "scene_mode": "graphic"
+      },
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\58ae4569b5e4",
+      "status": "NEEDS_REVIEW",
+      "mode": "live",
+      "standalone_vision_api_used": true,
+      "vision_model": "qwen3.8-max",
+      "selected": {
+        "version": 4,
+        "score": 86.4,
+        "pass": false,
+        "poster": "v4/poster.png",
+        "spec": "v4/PosterSpec.json",
+        "critic": "v4/Critic.json",
+        "review_error": null,
+        "sha256": "3758ead44e2880b63d824c58b5ef0cdbd124f881c57e327ea19554b6fb078c85"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "c0dedf2f5ee8416d1509c56d0b2eb7e1af4f3c561e6bd80ed2a968f90ff3dddd"
+        },
+        {
+          "version": 2,
+          "score": 83.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "33681c2a01f5cb11ae9a9014b1d176c5d9d0e0e980231329c03555b92da2cff7"
+        },
+        {
+          "version": 3,
+          "score": 85.6,
+          "pass": false,
+          "poster": "v3/poster.png",
+          "spec": "v3/PosterSpec.json",
+          "critic": "v3/Critic.json",
+          "review_error": null,
+          "sha256": "16845e019ce146180fdd71cf9c4dd1cfd69fc513feb84d2dd12fbc7ad182fdd2"
+        },
+        {
+          "version": 4,
+          "score": 86.4,
+          "pass": false,
+          "poster": "v4/poster.png",
+          "spec": "v4/PosterSpec.json",
+          "critic": "v4/Critic.json",
+          "review_error": null,
+          "sha256": "3758ead44e2880b63d824c58b5ef0cdbd124f881c57e327ea19554b6fb078c85"
+        },
+        {
+          "version": 5,
+          "score": 86.4,
+          "pass": false,
+          "poster": "v5/poster.png",
+          "spec": "v5/PosterSpec.json",
+          "critic": "v5/Critic.json",
+          "review_error": null,
+          "sha256": "8b157806dd305349dc06dcde8d7b7b871e85a9681f6b5bebf243580b374e7e18"
+        }
+      ],
+      "review_failures": [],
+      "engine_snapshot": null
     }
   ],
-  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\d60ff661ba94",
-  "direction_index": 3,
+  "direction_index": 4,
+  "direction_name": "Graphite Mill Metronome",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\a10d10e43e40",
   "direction_count": 4,
-  "direction_name": "Violet Felt Nocturne",
-  "version": 1,
-  "error": "OSError"
+  "version": 5
 }

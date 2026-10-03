@@ -1,0 +1,73 @@
+{
+  "pass": false,
+  "score": 83.6,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 84,
+    "background": 76,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The rendered field behind the garment is a flat matte charcoal-grey with no measurable lacquer behaviour: sampling corners, mid-edges and centre behind the sleeves shows one uniform value, no frontal bloom and no corner vignette, although the current prompt explicitly asks for 'a clearly visible soft frontal wash blooming behind the upper centre and a gentle sheen vignette'. The declared material ('deep petrol lacquered panel') therefore still reads as a flat wall with a pasted cutout; the only light event in the poster is the geometric ring, not the panel itself."
+    },
+    {
+      "type": "composition",
+      "problem": "The third ellipse (330,980,420x420 #12474A) now renders, but the contact-detail crop (49,1170-1031,1420) shows it emerging from under the hem as a solid dark-teal半 disc whose curved edge reads as a bowl or plinth the shirt is dipped into, not as field modulation; combined with the small teal sliver at the torso's right edge (~x700-760, y1100-1290) the lower shape fights the halo geometry instead of echoing it, and the band y1310-1440 below the hem stays a dead flat tail."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against the benchmarks' confident field treatment (BOSS's clean colour-block band with disciplined negative space, Diesel's layered depth) this poster's mid-field is still a single unmodulated grey value around a partially swallowed ring: the ivory halo disappears behind the opaque body from ~y760 and reappears only as two small arcs beside the sleeves, so the 'ceremonial ring' concept reads as a clipped crescent at viewing distance rather than a resolved geometric halo."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Deep petrol lacquered panel, museum plinth paint, smooth polished surface with a broad soft frontal glow blooming from upper centre, gentle sheen gradient falling off toward all four corners into darker petrol, faint horizontal lacquer reflection band low in the field, completely empty, no horizon, no props, no objects"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 260,
+          "y": 340,
+          "width": 560,
+          "height": 560,
+          "color": "#EDE7DA",
+          "opacity": 0.85
+        },
+        {
+          "kind": "ellipse",
+          "x": 284,
+          "y": 364,
+          "width": 512,
+          "height": 512,
+          "color": "#0E3B3C",
+          "opacity": 1
+        },
+        {
+          "kind": "ellipse",
+          "x": 300,
+          "y": 1040,
+          "width": 480,
+          "height": 480,
+          "color": "#12474A",
+          "opacity": 0.35
+        }
+      ]
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 380
+    }
+  ],
+  "reported_score": 82.4
+}

@@ -1,0 +1,40 @@
+{
+  "pass": false,
+  "score": 85.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 84,
+    "background": 86,
+    "physical_integration": 90,
+    "reference_alignment": 80,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The lower band is now calm but the type block is not locked: subtitle cap zone y1120-1140 to title cap y1235 leaves a ~95px void between the 20px kicker and the 110px logotype, while hem y993 to subtitle y1120 is ~127px and title bottom y1310 to canvas edge is ~130px. Three near-equal voids make 'Dress' read as a stray line floating mid-field rather than a kicker seated on the logotype; references 3-5 keep kicker/logotype or logotype/url in one tight lockup inside the negative band."
+    },
+    {
+      "type": "typography",
+      "problem": "Axis, sizes and ink are now correct (shared left axis x115/x118, cream #F9F4E9 on the smoothly darkening slate-navy lower field, no overlap, text_product_overlap false), but the ~95px kicker-to-logotype gap plus tracking 6 on a 30px line leaves the small 'Dress' optically adrift: at poster scale its locked width (~92px) is under half the logotype's first two letters, so the hierarchy reads as two unrelated lines instead of one serif block; tightening line spacing or raising subtitle size/tracking balance would resolve it without leaving the serif family."
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1165
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 34
+    }
+  ],
+  "critique": "Visible change verified: the previous hard vector dome rim and the ruler-straight navy rectangle seam are gone. In the current contact crop (144,853,935,1103) the royal-blue hem now dissolves over one continuous slate value gradient with no saucer edge, and in the full poster the luminous fog band feathers behind the skirt at y~600-750 while the lower third deepens smoothly into slate-navy, exactly the 'mist swallowing the base' the Sea-Fog Horizon brief declares; background score rises 68->86 on this visible evidence, and creative_coherence rises 71->84 because palette, material and execution are finally a single gradient idea rather than primitives pasted under fog. Product fidelity is untouched and stable at 92: sweetheart beaded neckline, ruched bodice, sheer organza ruffle tiers over the saturated royal-blue underskirt and the full hem drape all match the supplied cutout, with no rotation, no wearer and shadow.opacity 0 as integration limits require. Physical integration stays 90: the semi-sheer ruffles sit believably in the cool diffused light, the hem neither contacts a floor nor casts a shadow, and the fog band reads behind the semi-sheer tiers without transmitting through the opaque bodice or dark hem. Composition improves 76->80: the type block now sits wholly inside the dark quiet band, but the three near-equal voids (hem->kicker ~127px, kicker->logotype ~95px, logotype->edge ~130px) leave the block unlocked, which is the remaining artistic concern rather than a size-rule violation (top 13%, base 91%, sides within 5-95%, height ratio 0.58 inside the fresh-concept 0.35-0.74 policy). Typography improves 80->84: both lines now rest on a consistently controlled dark ground, fixing the previous edge-definition loss, but the kicker/logotype spacing still reads as two separate lines. Reference alignment 74->80: like Monsoon (ref 5) the poster now resolves atmosphere as one continuous gradient with a quiet lower type band, though refs 3-5 still show tighter logotype lockups than the current spaced pair. The two proposed edits keep identity and geometry separate from background regeneration, stay inside the serif family and preserve the declared below-hem, left-axis layout relation.",
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ],
+  "reported_score": 84.6
+}

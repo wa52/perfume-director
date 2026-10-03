@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 133536491487297,
+  "background": {
+    "color": "#D99A2B",
+    "prompt": "Saturated ochre painted poster plane, perfectly uniform flat matte pigment with even shadowless illumination across the whole surface, one immense solid ink-black disc centered low, opaque matte ink layers, no vignette, no gradient, no horizon, no reflections",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 100,
+        "y": 330,
+        "width": 880,
+        "height": 1060,
+        "color": "#141110",
+        "opacity": 1
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 886,
+    "width": 623,
+    "height": 792
+  },
+  "lighting": "Uniform graphic light, no cast shadows in the backdrop; the cutout retains its own studio highlights against the flat disc",
+  "palette": [
+    "#D99A2B",
+    "#141110",
+    "#F6F2EA"
+  ],
+  "title": {
+    "text": "BEAUTY",
+    "x": 310,
+    "y": 144,
+    "size": 150,
+    "color": "#141110",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 14,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 475,
+    "y": 1375,
+    "size": 18,
+    "color": "#141110",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#141110",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 475,
+    "y": 1332,
+    "size": 20,
+    "color": "#141110",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.7,
+    "blur": 20,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 310,
+    "y": 292,
+    "width": 460,
+    "color": "#141110"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "graphic"
+}

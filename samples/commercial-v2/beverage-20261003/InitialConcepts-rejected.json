@@ -1,0 +1,46 @@
+{
+  "brand_analysis": {
+    "observed_brand": "Coca-Cola (refresco / cola soft drink, Mexican-market non-returnable glass bottle)",
+    "evidence": "Red label carries white Spencerian script 'Coca-Cola' with 'REFRESCO' and 'CONT. NET. 355 ml'; red crimped metal crown cap; contour glass bottle silhouette; dark brown liquid with pale green glass transmission at neck, shoulder and base edge; soft diffuse frontal studio light on a plain white cutout background.",
+    "expression_hypothesis": "The brand equity lives in three owned assets already present in the cutout: the contour silhouette, the red-and-white script label, and the crown cap. A compliant campaign therefore lets the untouched bottle act as the hero on a bright neutral seamless studio set, and builds differentiation from composition, scale, floor shadow behavior and deterministic typography using only the approved words 'Coca-Cola' and 'Refresco'.",
+    "unknowns": "No brand history, campaign lineage, market positioning documents or slogan rights were supplied; nothing beyond the visible label, bottle and lighting can be claimed as brand fact. No price, promotional, new-product, nutrition or ingredient information is authorized."
+  },
+  "concepts": [
+    {
+      "id": "c1",
+      "name": "The Contour Is the Signature",
+      "proposition": "The bottle's curved silhouette is recognizable without any wording, so the advertisement presents the shape itself as the brand's signature and lets typography stay deliberately sparse.",
+      "visual_mechanism": "Full-size untouched cutout centered on a seamless bright neutral studio cyclorama; a single soft floor cast shadow extends directly beneath and slightly behind the base to give weight; generous negative space above the cap; deterministic typography stacked low and centered: brand name set once, category word beneath in small caps.",
+      "audience": "General cola drinkers and design-aware adults who recognize iconic packaging at a glance.",
+      "brand_connection": "Uses the observed contour bottle and script label as the sole protagonists, matching the brand's historical reliance on its bottle shape without asserting any unverified history.",
+      "source_constraints": "Preserves entire cutout, label, shape and existing soft frontal illumination; only empty neutral set, one floor shadow and type are added; no droplets, no relighting, no people."
+    },
+    {
+      "id": "c2",
+      "name": "Eye-Level Encounter",
+      "proposition": "Position the drink as an everyday companion met at arm's length: an honest, un-styled product portrait rather than a dramatized hero shot.",
+      "visual_mechanism": "Cutout placed off-center to the left third at its native eye-level elevation on the same plain bright studio backdrop; a short contact shadow hugs the base with a faint cast shadow falling to the right, consistent with the observed diffuse frontal light; the right two-thirds remain empty neutral space carrying deterministic left-aligned type: brand name once at mid-height, category word under it.",
+      "audience": "Routine household purchasers who value straightforward, unembellished product presentation.",
+      "brand_connection": "The asymmetry frames the red label and cap as the only saturated elements in a calm field, echoing the brand's red-on-white identity using only observed colors.",
+      "source_constraints": "No pose change or cropping of the silhouette; backdrop stays bright neutral studio; shadow direction inferred from existing soft light; no new highlights or droplets on glass."
+    },
+    {
+      "id": "c3",
+      "name": "Capped and Sealed",
+      "proposition": "Celebrate the unopened moment: the crimped crown cap as the promise of the first pour, without claiming freshness, temperature or ingredients.",
+      "visual_mechanism": "Cutout scaled large so the silhouette occupies most of the canvas height while remaining fully inside bounds, viewed as an upright monument on a neutral studio floor; a tight elliptical contact shadow anchors the base and a low horizon line separates floor from backdrop; deterministic typography set small at the very bottom edge, centered: brand name once with category word spaced beneath, leaving the cap zone entirely clear.",
+      "audience": "Young adults and sharing occasions where opening a bottle is a ritual start to a gathering.",
+      "brand_connection": "Directs attention to the observed red crimped cap and neck transmission, the physical seal already present on the product, without inventing claims.",
+      "source_constraints": "Scaling only, no relighting or material edits; glass transmission at neck and base reads exactly as photographed; empty set and floor shadows only; no condensation added."
+    },
+    {
+      "id": "c4",
+      "name": "One Word, One Bottle",
+      "proposition": "Reduce the message to category clarity: a single bottle and the single word naming what it is, treating restraint itself as the statement.",
+      "visual_mechanism": "Cutout held at modest scale in the upper two-thirds on the bright neutral backdrop, with a long soft cast shadow stretching toward the viewer to create depth on the empty studio floor; deterministic typography placed in the lower third as one centered line pair: brand name set once, category word directly below at equal width, forming a quiet typographic plinth under the shadow.",
+      "audience": "Minimal-minded urban consumers and out-of-home viewers who read a poster in two seconds.",
+      "brand_connection": "Pairs the owned red label color with a purely typographic plinth, so the only visual energy remains the observed product and its shadow.",
+      "source_constraints": "Shadow is a generated floor element consistent with diffuse frontal light; product cutout untouched, opaque body and label preserved; no splash, no props, no people, no price or claim copy."
+    }
+  ]
+}

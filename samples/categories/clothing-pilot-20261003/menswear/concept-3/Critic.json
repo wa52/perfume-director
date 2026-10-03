@@ -1,0 +1,21 @@
+{
+  "pass": false,
+  "score": 16.0,
+  "dimensions": {
+    "product_fidelity": 18,
+    "composition": 15,
+    "typography": 16,
+    "background": 17,
+    "physical_integration": 16,
+    "reference_alignment": 14,
+    "creative_coherence": 16
+  },
+  "problems": [
+    {
+      "type": "quality_gate",
+      "problem": "Requires average >=85 and every dimension >=80; below threshold: product_fidelity, composition, typography, background, physical_integration, reference_alignment, creative_coherence"
+    }
+  ],
+  "changes": [],
+  "reported_score": 82
+}

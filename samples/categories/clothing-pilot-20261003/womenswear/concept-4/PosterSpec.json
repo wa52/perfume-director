@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 63909246091389,
+  "background": {
+    "color": "#E6DCE6",
+    "prompt": "Seamless pearlescent studio paper in cool pale mauve lilac, immaculate smooth matte surface, soft luminous radial sheen blooming from the upper center above mid-height and fading gently to slightly deeper cool mauve at the corners, shadowless even frontal wash of light, no objects, no horizon, no texture grain",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 140,
+        "y": 372,
+        "width": 800,
+        "height": 800,
+        "color": "#F5EEF4",
+        "opacity": 0.95
+      },
+      {
+        "kind": "rectangle",
+        "x": 84,
+        "y": 749,
+        "width": 912,
+        "height": 9,
+        "color": "#3D6BE0",
+        "opacity": 0.8
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 677,
+    "height": 893
+  },
+  "lighting": "soft frontal studio wash, gentle radial glow centered behind the garment",
+  "palette": [
+    "#E6DCE6",
+    "#22346B",
+    "#3D6BE0"
+  ],
+  "title": {
+    "text": "WOMENSWEAR",
+    "x": 281,
+    "y": 108,
+    "size": 64,
+    "color": "#22346B",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "Dress",
+    "x": 493,
+    "y": 200,
+    "size": 36,
+    "color": "#22346B",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 7
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#22346B",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 540,
+    "y": 1375,
+    "size": 18,
+    "color": "#22346B",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

@@ -1,0 +1,75 @@
+{
+  "pass": false,
+  "score": 84.4,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 82,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The bone 'kiln mouth' arc is still subordinate to the garment instead of framing it: shape bbox [218,430,862,1076] versus garment bbox [156,202,923,1008] means the sleeves overhang the disc by ~62px left and ~61px right, so the circle reads as a plate tucked behind the torso rather than a confident arc rising behind the silhouette; only the lower crescent (hem 1008 to disc bottom 1076, confirmed in the contact crop) carries the concept. Evidence: in the poster the cream field disappears exactly where the sleeve caps widen, breaking the arc's continuity at the garment's widest point."
+    },
+    {
+      "type": "background",
+      "problem": "The promised warm low raking light from upper left is only half delivered: mineral grain and trowel tooth are now visible across the field (improvement over the previous flat swatch), but the directional graze collapses into a mottled dark patch in the lower-right quadrant and a faint blotch upper-center, so the relief reads as speckle noise rather than a coherent rake; the matte jersey's soft front-above studio shading therefore sits on a ground whose light story does not match it. Evidence: compare the even, shadowless fold shading on the white jersey against the chaotic dark mottling right of the disc - no single light direction reconciles both."
+    },
+    {
+      "type": "typography",
+      "problem": "The footer band is better balanced than last version (rule 1150, title 1196-1258, subtitle 1298-1318, ~122px bottom margin) but still reads timid against the references' disciplined footline: the 260px hairline rule at y=1150 floats ~142px below the hem with no optical tie to the type block, and the 30px subtitle is nearly invisible at campaign scale next to the 92px Bodoni title. Evidence: measured gaps - hem-to-rule 142px versus rule-to-title 46px - make the rule look stranded rather than capping the title, unlike the tight footer stacks in the Hugo Boss reference."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 148,
+          "y": 300,
+          "width": 784,
+          "height": 786,
+          "color": "#F6EFE4",
+          "opacity": 0.95
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Hand-troweled lime plaster wall in deep burnt rust red-orange, broad smooth trowel sweeps with soft mineral tooth, one consistent warm low raking light from upper left drawing long soft relief highlights that fade evenly toward a gently darkened lower right, uniform directional grain, no blotches, no mottling, no horizon, no props, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1128
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 320
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 380
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1302
+    }
+  ],
+  "reported_score": 82.0
+}

@@ -13,6 +13,10 @@
   "audience_basis": "test merchandising category; not inferred from a person",
   "rights_status": "CC BY-NC 4.0; PNGimg attribution; non-commercial test fixture only",
   "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
-  "status": "QUEUED",
-  "stage": "Waiting for existing category tests and clothing node deployment"
+  "status": "COMPLETED",
+  "stage": "FINISHED",
+  "job_id": "73d70b0912d640209974d756a814dd92",
+  "direction_index": 4,
+  "direction_name": "Halo Plate",
+  "version": 5
 }

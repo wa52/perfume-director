@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 63909246090380,
+  "background": {
+    "color": "#0E3B43",
+    "prompt": "Flat matte saturated deep petrol teal paper field at exact hex 0E3B43, dense blue-green ink coverage, completely even shadowless illumination, no gradient, no grey cast, no objects, no texture grain",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 853,
+        "y": 202,
+        "width": 59,
+        "height": 1037,
+        "color": "#7FD8E8",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 640,
+        "y": 960,
+        "width": 560,
+        "height": 560,
+        "color": "#0A2E35",
+        "opacity": 0.85
+      }
+    ]
+  },
+  "product": {
+    "x": 734,
+    "y": 720,
+    "width": 547,
+    "height": 720
+  },
+  "lighting": "flat even graphic illumination, crisp ink edges, zero shadow",
+  "palette": [
+    "#0E3B43",
+    "#EAF7F9",
+    "#7FD8E8"
+  ],
+  "title": {
+    "text": "WOMENSWEAR",
+    "x": 59,
+    "y": 620,
+    "size": 44,
+    "color": "#EAF7F9",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 300,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Dress",
+    "x": 59,
+    "y": 745,
+    "size": 30,
+    "color": "#EAF7F9",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EAF7F9",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 59,
+    "y": 1375,
+    "size": 18,
+    "color": "#EAF7F9",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 59,
+    "y": 700,
+    "width": 260,
+    "color": "#7FD8E8"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

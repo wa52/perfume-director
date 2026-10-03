@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 177077490044462,
+  "background": {
+    "color": "#33383E",
+    "prompt": "Dark graphite brushed stainless steel sheet with fine vertical mill grain, cool even studio wash raking along the grain, faint soft specular drift from upper left, a broad soft luminous zone held behind the center of the sheet at mid height, value collapsing into deep charcoal behind the lower center and at all edges, empty industrial surface, no horizon",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 150,
+        "y": 432,
+        "width": 59,
+        "height": 806,
+        "color": "#22262B",
+        "opacity": 0.85
+      },
+      {
+        "kind": "rectangle",
+        "x": 871,
+        "y": 432,
+        "width": 59,
+        "height": 806,
+        "color": "#22262B",
+        "opacity": 0.85
+      },
+      {
+        "kind": "rectangle",
+        "x": 120,
+        "y": 749,
+        "width": 840,
+        "height": 26,
+        "color": "#8A939C",
+        "opacity": 0.5
+      },
+      {
+        "kind": "ellipse",
+        "x": 344,
+        "y": 1204,
+        "width": 500,
+        "height": 150,
+        "color": "#14171B",
+        "opacity": 0.3
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 842,
+    "width": 603,
+    "height": 893
+  },
+  "lighting": "Cool even studio wash raking along the brush grain, faint specular drift from upper left, no horizon",
+  "palette": [
+    "#33383E",
+    "#EDEFF2",
+    "#8A939C"
+  ],
+  "title": {
+    "text": "РОССИЯ",
+    "x": 90,
+    "y": 130,
+    "size": 116,
+    "color": "#EDEFF2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 14,
+    "max_width": 900,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "КВАРЦ",
+    "x": 340,
+    "y": 252,
+    "size": 26,
+    "color": "#EDEFF2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 12,
+    "max_width": 400,
+    "align": "center"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EDEFF2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 440,
+    "y": 55,
+    "size": 28,
+    "color": "#EDEFF2",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 10,
+    "max_width": 200,
+    "align": "center"
+  },
+  "shadow": {
+    "opacity": 0.6,
+    "blur": 8,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.4
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 330,
+    "y": 324,
+    "width": 420,
+    "color": "#EDEFF2"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic"
+}

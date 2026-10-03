@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 133536491485279,
+  "background": {
+    "color": "#1E3FA0",
+    "prompt": "Flat matte ultramarine silkscreen ink field, perfectly even graphic illumination with a barely perceptible vertical deepening toward the edges, no horizon, no texture, no props",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 540,
+        "y": 828,
+        "width": 821,
+        "height": 950,
+        "color": "#F4F1E8",
+        "opacity": 1
+      },
+      {
+        "kind": "rectangle",
+        "x": 224,
+        "y": 1250,
+        "width": 856,
+        "height": 37,
+        "color": "#E4572E",
+        "opacity": 1
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 634,
+    "height": 806
+  },
+  "lighting": "Even frontal poster illumination with a whisper of vertical falloff so the disc reads flat and the cutout keeps its own front-left studio streaks",
+  "palette": [
+    "#1E3FA0",
+    "#F4F1E8",
+    "#E4572E"
+  ],
+  "title": {
+    "text": "BEAUTY",
+    "x": 224,
+    "y": 200,
+    "size": 158,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 16,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 475,
+    "y": 1354,
+    "size": 18,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 475,
+    "y": 1303,
+    "size": 20,
+    "color": "#F4F1E8",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.68,
+    "blur": 16,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "graphic"
+}

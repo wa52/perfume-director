@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "score": 86.7,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 84,
+    "typography": 84,
+    "background": 87,
+    "physical_integration": 92,
+    "reference_alignment": 80,
+    "creative_coherence": 86
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The halo plate no longer frames the hero: disc bottom y=1172 versus product base y=1311 leaves the entire royal-blue ruffle hem band (~139px, plus the ~140px mauve margin below it) hanging outside the pearl ground, so the gown visually exits the plate at its heaviest, most saturated mass. Visible evidence in image 1: the aqua ruffles read on pearl from neckline (y=418, now inside disc top y=372 - the previous fix landed correctly) down to y~1172, then the cobalt hem sits on raw mauve with no graphic anchor, inverting the intended halo-behind-the-garment read at the silhouette's widest point. Extending the plate vertically (taller ellipse, same center_x) or lowering its center would carry the ground through the hem and close the silhouette."
+    },
+    {
+      "type": "typography",
+      "problem": "The lockup is still two disconnected islands rather than one designed unit: subtitle bottom y=226 to disc top y=372 leaves a 146px dead band of unmodulated mauve, and the subtitle 'Dress' at size 36 measures only ~113px wide (bbox 493-606) against the 519px title, so the second tier reads as a stray tag. Visible evidence: in image 1 the eye drops from the type block through empty field before finding the plate; references (Claudie's wordmark locked across the subject mass, MaxMara's type anchored into the figure) tie type to subject. Raising the subtitle into the 40-44 range and tightening the gap (subtitle y ~210-215 plus disc top raised toward y~330) would knit the lockup to the plate without breaking the 'above' layout relation."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "Against the benchmarks the composition still reads as stacked zones (type band / empty band / plate band / hem band) instead of one continuous field: Claudie and MaxMara both let the subject and type share the same spatial event, while here the cobalt rule at y749-758 is the only element crossing zones and it terminates in open mauve at x84 and x996 without relating to the type block above. Visible evidence: the rule's overhang reads decisive mid-frame but nothing echoes it in the top band, so the poster's four horizontal strata never interact; a single tying device (rule weight echoed as a thin keyline under the subtitle, or plate lifted to meet the type band) would close the gap to reference-level integration."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 140,
+          "y": 330,
+          "width": 800,
+          "height": 900,
+          "color": "#F5EEF4",
+          "opacity": 0.95
+        },
+        {
+          "kind": "rectangle",
+          "x": 84,
+          "y": 749,
+          "width": 912,
+          "height": 9,
+          "color": "#3D6BE0",
+          "opacity": 0.8
+        }
+      ]
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 42
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 208
+    }
+  ],
+  "verified_notes": {
+    "contact_shadow": "Detail crop [122,1171,957,1421] inspected: the royal-blue ruffle hem terminates cleanly into the mauve field with a soft edge and no cast shadow, no floating artifact and no duplicate hem; shadow.opacity 0 is correct for this graphic no-floor concept per integration_limits, so no shadow patch is proposed.",
+    "previous_fix_confirmed": "The prior version's bodice-on-raw-mauve split is resolved: disc top moved from y~452 to y=372 (shape_geometry index 0 bbox [140,372,940,1172]) and image 1 shows the sweetheart neckline and ruched bodice now sitting inside the pearl plate; subtitle grew from size 28 to 36 (bbox 493-606 vs previous ~493-587), a visible hierarchy gain.",
+    "geometry_checks": "text_product_overlap title=false and subtitle=false; product bbox [202,418,877,1311] fully inside canvas (base ratio 0.91 <= 0.94, top ratio 0.29 >= 0.10, sides within 0.05-0.95); product_height_ratio 0.6201 inside fresh_concept_size_policy 0.35-0.74; no studio equipment, no invented labels, no generated duplicates; palette and Century Gothic sans titling preserve the declared Halo Plate concept."
+  },
+  "reported_score": 84.6
+}

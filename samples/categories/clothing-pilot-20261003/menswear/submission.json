@@ -1,0 +1,34 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "c901f162b24844e7b82927343e399024.png"
+      }
+    },
+    "2": {
+      "class_type": "ClothingDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "menswear",
+        "brief": "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+        "garment_type": "tshirt",
+        "display_mode": "auto"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "d207972a-0445-4478-a6f5-6d456cbc1ba8",
+    "number": 0,
+    "node_errors": {}
+  },
+  "input_sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+  "comfy_url": "http://127.0.0.1:8191"
+}

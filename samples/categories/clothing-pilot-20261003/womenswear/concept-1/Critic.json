@@ -1,0 +1,82 @@
+{
+  "pass": false,
+  "score": 84.7,
+  "dimensions": {
+    "product_fidelity": 91,
+    "composition": 80,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 93,
+    "reference_alignment": 80,
+    "creative_coherence": 85
+  },
+  "problems": [
+    {
+      "type": "product_fidelity",
+      "problem": "A thin hairline thread artifact still arcs above the left sweetheart neckline at roughly (595-680, 500-560), silhouetted against the ice disc and plaster; the supplied clean cutout (image 2) shows no such strand, so it reads as a cutout remnant clinging to the hero's neckline edge."
+    },
+    {
+      "type": "composition",
+      "problem": "The cobalt rectangle's lower register (y1022-1130, x877-956) now survives only as a narrow sliver between the skirt's right edge and the aqua ellipse's arc; in the contact crop (image 6) the ellipse's hard chord slices that sliver and the plaster abruptly right of the hem, reading as a mis-set layer edge rather than the declared 'abstract architecture'."
+    },
+    {
+      "type": "typography",
+      "problem": "The widened title (x76-747) and the 560px rule at y258 still lock entirely to the top-left while the garment axis sits at x540 and the ice disc at x396-696; the rule terminates at x636 pointing into empty plaster, leaving the upper-right quadrant vacant and the type-to-subject relationship looser than any reference lockup."
+    },
+    {
+      "type": "background",
+      "problem": "The revised plaster prompt now yields faint arcs (left edge ~x0-300, y700-1000 and a ghost arc behind the rectangle top), but the mineral grain and trowel ridges remain near-invisible across the upper type zone (y0-400), so the material study reads as flat apricot paint behind the headline where the concept promises lime-paste relief."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 664,
+          "y": 430,
+          "width": 292,
+          "height": 500,
+          "color": "#2E55D4",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 930,
+          "width": 864,
+          "height": 697,
+          "color": "#8FD8E6",
+          "opacity": 0.85
+        },
+        {
+          "kind": "ellipse",
+          "x": 396,
+          "y": 470,
+          "width": 300,
+          "height": 210,
+          "color": "#F4E3D2",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Flat matte hand-troweled lime plaster wall in warm apricot, pronounced coarse mineral grain and raised lime-paste ridges visible across the entire surface including the upper third, overlapping broad semicircular trowel arcs repeated from top edge to bottom edge with soft relief shadows in the arc valleys, subtle tonal plaster patches, gentle vertical light gradient brighter at top, perfectly even diffuse illumination, no objects, no horizon, no cast shadows"
+    }
+  ],
+  "reported_score": 84.4
+}

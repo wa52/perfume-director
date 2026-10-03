@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "score": 74.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 70,
+    "background": 66,
+    "physical_integration": 80,
+    "reference_alignment": 68,
+    "creative_coherence": 72
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The honed concrete ground plane reads as visibly tiled slabs: a horizontal seam runs across the floor at ~y=1155 and a diagonal joint at lower left (~x=60,y=1120), contradicting the declared 'continuous honed concrete ground plane' and adding grid noise under the hero. The wall also shows a smooth airbrushed vignette rather than the promised soft brush mottle of limewash."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [350,940,1075,1190] confirms a soft contact shade under the upright tube base (base_y=1080) consistent with offset_y=0, but the lying cap's contact (center_x=591, base_y=1053) shows only a faint edge darkening with almost no lateral shade, so the cap reads slightly lighter-grounded than the tube; the declared 'long soft contact shade to the right' from the front-left key is not delivered by either contact."
+    },
+    {
+      "type": "typography",
+      "problem": "The 72px Baskerville 'BEAUTY' plus a 6px gold rule occupy only the upper-left quadrant (title bbox 76,619-401,668), leaving the entire lower-left two-thirds of the canvas as dead negative space; against the references' confident type masses the hierarchy feels under-scaled and the column unresolved, even though text_product_overlap is false and no overlap claim is made."
+    },
+    {
+      "type": "composition",
+      "problem": "The warm dusk glow pools at the left wall edge behind the headline while the product sits in comparatively flat, cooler light at right, so the eye is pulled to empty space; the product's own front-left specular streaks are not echoed by any directional gradient or shade on the floor at the product's position."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References 3-5 each integrate type with the product mass (overlapping or edge-anchored type, strong tonal field); here the headline floats isolated in a large empty wall area and the product occupies only 50% of canvas height at right, giving a pasted-cutout-on-wall impression rather than the resolved editorial field of the benchmarks."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless monolithic limewash plaster wall with soft hand-brushed mottle meeting one continuous honed concrete ground plane with no tiles, seams or joints, low warm diffuse illumination grazing from the front left across floor and wall, quiet dusk gradient deepening toward the upper right, empty architectural space"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.offset_x",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.25
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 96
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 10
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 76,
+          "y": 700,
+          "width": 300,
+          "height": 6,
+          "color": "#C9A227",
+          "opacity": 0.9
+        }
+      ]
+    }
+  ],
+  "reported_score": 74
+}

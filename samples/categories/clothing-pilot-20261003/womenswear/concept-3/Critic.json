@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "score": 83.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 78,
+    "background": 84,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The declared 'narrow sans title wrapped over two lines' is still not achieved: current title bbox is [59,620,352,652], a single 32px-tall line 293px wide, because size 44 with tracking 2 measures under the 300px max_width so no wrap occurs. Against a 545px-wide, 720px-tall gown the type mass is under-scaled (title cap height ~32px vs 720px subject), and the whole column (title y620-652, rule y700, subtitle y745-766) stops at y766, leaving the lower-left two-thirds of the sheet as empty ink-less field. References (Claudie, Monsoon) set type at a scale that holds the sheet; here the column reads as a small label floating beside a dominant cutout."
+    },
+    {
+      "type": "composition",
+      "problem": "The aqua bar's lower segment is degraded by the ellipse overprint: between the hem (y~1080) and the bar's end (y1239) the #7FD8E8 rectangle sits under the 0.85-opacity #0A2E35 ellipse and renders as a dull grey-teal stub (visible in the contact crop at crop x~470-530, y~130-250, i.e. poster x~853-912, y~1070-1190). The bar therefore reads as two disconnected pieces - bright aqua above the hem, muddy stub below - instead of one continuous column, and the stub terminates in dead air at y1239 without aligning to the ellipse edge or the canvas margin."
+    },
+    {
+      "type": "composition",
+      "problem": "Diagonal weight still sits in one corner: the ellipse bbox [640,960,1200,1520] crosses the right and bottom edges and fills the lower-right quadrant, while the lower-left quadrant (x0-450, y770-1440) carries no ink at all. The hem meets the ellipse arc at a shallow tangent (contact crop shows the royal-blue ruffle edge kissing the arc around crop x~300-450, y~120-160) so the layering reads as near-collision rather than a framed overlap; shifting the ellipse so its arc passes clearly behind the hem's center mass would convert the tangent into deliberate framing."
+    }
+  ],
+  "changes": [
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 52
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 250
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 560
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 700
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 760
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 853,
+          "y": 202,
+          "width": 59,
+          "height": 878,
+          "color": "#7FD8E8",
+          "opacity": 0.9
+        },
+        {
+          "kind": "ellipse",
+          "x": 560,
+          "y": 900,
+          "width": 560,
+          "height": 560,
+          "color": "#0A2E35",
+          "opacity": 0.85
+        }
+      ]
+    }
+  ],
+  "reported_score": 81.4
+}

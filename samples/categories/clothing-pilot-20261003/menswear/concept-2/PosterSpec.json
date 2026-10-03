@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 84159901663803,
+  "background": {
+    "color": "#B4471F",
+    "prompt": "Hand-troweled lime plaster wall in deep burnt rust red-orange, pronounced trowel ridges and mineral grain catching warm low raking light from upper left, visible relief texture across the whole surface, soft gradient darkening toward lower right, no horizon, no props, no objects",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 218,
+        "y": 430,
+        "width": 644,
+        "height": 646,
+        "color": "#F6EFE4",
+        "opacity": 0.95
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 605,
+    "width": 769,
+    "height": 806
+  },
+  "lighting": "warm low raking light from upper left, soft gradient across plaster",
+  "palette": [
+    "#B4471F",
+    "#F6EFE4",
+    "#2A1B12"
+  ],
+  "title": {
+    "text": "MENSWEAR",
+    "x": 258,
+    "y": 1196,
+    "size": 92,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "T-shirt",
+    "x": 487,
+    "y": 1298,
+    "size": 30,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 5
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F6EFE4",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 488,
+    "y": 1303,
+    "size": 16,
+    "color": "#F6EFE4",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 5
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 410,
+    "y": 1150,
+    "width": 260,
+    "color": "#2A1B12"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "menswear",
+  "scene_mode": "graphic",
+  "garment_type": "tshirt",
+  "display_mode": "auto"
+}
