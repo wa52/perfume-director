@@ -1,0 +1,42 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://tripistudios.com/work/driftwell-x-pepsico",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/fc61eed0-eef7-47ca-97bd-39c9935b700a/528_01b_DW_LIFESTYLE_SHOT_01_0168.jpg",
+  "caption": "",
+  "id": "category-f885fea5a325ffbb",
+  "local_path": "references/categories/beverage/f885fea5a325ffbb.webp",
+  "sha256": "34b8c5b3501ccfffb2416442724733983242ded9f990b8975d31af7364cd69be",
+  "width": 2500,
+  "height": 1667,
+  "analysis": {
+    "category_match": true,
+    "brand": "Driftwell",
+    "quality_score": 92,
+    "composition": "Asymmetrical lifestyle composition with the model reclining diagonally across the frame, balanced by the product placement on a side table in the lower-left foreground and a monstera leaf in the upper-right corner.",
+    "subject_ratio": 0.15,
+    "negative_space": "Extensive deep blue negative space dominating the upper and left portions of the frame, creating a calm, uncluttered atmosphere.",
+    "lighting": "Soft, directional studio lighting that highlights the model's face and the product can while casting gentle shadows to define the velvet texture of the chair.",
+    "color": [
+      "Deep Blue",
+      "Navy",
+      "Yellow",
+      "Green",
+      "Silver"
+    ],
+    "typography": "Minimalist sans-serif logotype visible on the product can; no external campaign overlay text.",
+    "information_density": "Low; focuses on mood and brand aesthetic rather than detailed product information.",
+    "characteristics": [
+      "Relaxation",
+      "Wellness",
+      "Monochromatic Blue Palette",
+      "Lifestyle Photography",
+      "Premium Aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial lifestyle image featuring a clearly identifiable beverage product (Driftwell) integrated into a relaxation scene. The color palette is cohesive, and the lighting is professional. While the product is small relative to the model, it is distinct and legible, fitting the beverage category criteria."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

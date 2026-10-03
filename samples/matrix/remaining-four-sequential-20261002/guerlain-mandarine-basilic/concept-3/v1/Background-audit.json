@@ -1,0 +1,23 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte screen-printed card in pale glacier aqua blue, fine concentric ripple rings in deep marine teal expanding from the exact centre of the frame, one hard-edge blank horizontal plaque band without rings across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond printed rings, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the lower left area, lower central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 45020087239083,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "rectangle",
+      "x": 540,
+      "y": 605,
+      "width": 540,
+      "height": 605,
+      "color": "#0d3a44",
+      "opacity": 0.14
+    }
+  ]
+}

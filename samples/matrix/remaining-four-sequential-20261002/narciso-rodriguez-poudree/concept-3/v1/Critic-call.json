@@ -1,0 +1,142 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "2acd7e05788db1e0b5327e22057b847b87b6a615e9eb06f0c32c43e15247fb1a"
+    },
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "433820c29b08ad74e010360eebf9019f80c7de43d1be395441f376fe9d2d5e06"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-09950ba0-a3af-9c82-8f33-4e1a62fcbd3b",
+      "usage": {
+        "prompt_tokens": 9196,
+        "total_tokens": 11029,
+        "completion_tokens": 1833,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6456,
+          "text_tokens": 2740
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 808
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-09950ba0-a3af-9c82-8f33-4e1a62fcbd3b",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9196,
+    "total_tokens": 11029,
+    "completion_tokens": 1833,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6456,
+      "text_tokens": 2740
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 808
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 74,
+      "background": 72,
+      "physical_integration": 84,
+      "reference_alignment": 70,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "typography",
+        "problem": "The right type column collapses into three isolated islands: logo band ends at y=521, title starts at y=605 (84px void), title ends at y=759 and subtitle sits at y=986 (227px void), so the column reads as disconnected fragments rather than the declared continuous editorial column; references R1/R8 keep their right-column blocks in one呼吸 rhythm with deliberate, smaller intervals."
+      },
+      {
+        "type": "typography",
+        "problem": "Subtitle 'Eau de Parfum' (26px, y=986) and the bone rule (y=1066) float in the empty lower-right velvet far below the title block and beside bare cloth, losing the column's bottom anchor; against R1's tight lockup the hierarchy tail dissolves into background noise."
+      },
+      {
+        "type": "background",
+        "problem": "The velvet wall shows strong diagonal hang folds and a bright crease ridge in the upper-left quadrant directly behind the cap and shoulder (visible around x=100-450, y=0-400), competing with the product silhouette; the concept calls for a quiet low-nap matte wall, and the busy nap mottle behind the type column also slightly vibrates against the 26px tracked serif subtitle."
+      },
+      {
+        "type": "composition",
+        "problem": "Contact detail (crop 13,1041,699,1291) confirms the bottle base rests on the velvet ground with a soft measured contact shadow at offset_y=0, so grounding is correct; however the ground plane below the base (y=1181-1440) is a large empty nap field with no tonal event, leaving the bottom sixth of the frame dead weight compared with the references' resolved lower zones."
+      }
+    ],
+    "changes": [
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 620
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 830
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 892
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 4
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Medium dusty blue velvet cloth hanging as a soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, very fine low nap grain, wall kept smooth and quiet with only one gentle broad sheen drift low on the ground cloth, soft diffuse twilight illumination, no objects, no folds, no creases"
+      }
+    ]
+  },
+  "duration_seconds": 47.5
+}

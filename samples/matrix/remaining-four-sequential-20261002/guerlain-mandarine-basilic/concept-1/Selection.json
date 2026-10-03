@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) fulfills the 'Mandarine Segment Dial' concept far more completely: the hard-edge ivory disc is centered behind the bottle's mid-section like a citrus slice, ringed by a lighter amber peel band, and the bottle silhouette interrupts and completes the circle exactly as briefed. The product sits in the lower-middle field in front of the disc geometry, and the quiet plaque zone above (small tracked brand line, two-line Didone title, thin deep-amber registration rule) ends cleanly above the stopper, forming the ABOVE monument grid. Version 1 (image 5) pushes the ivory disc off into the bottom-right corner as a cropped quarter-circle blob; it never encircles the bottle mid-section, breaks the centered dial秩序, and leaves the right edge unbalanced. Typography hierarchy and product fidelity are equal in both, but only version 2 resolves the disc geometry, silhouette interlock and centered focus the concept demands.",
+  "remaining_problems": [
+    "The amber peel ring in version 2 reads concentric rather than the briefed slightly offset low-opacity disc behind the ivory field",
+    "The bottle base floats over the disc's lower edge with no graphic anchor or intentional overlap cue, leaving a faint sense of pasting at the base",
+    "Top brand line renders in a serif voice rather than the briefed wide-tracked sans minimal plaque lettering",
+    "Ivory disc bottom edge sits very close to the bottle base, compressing the lower margin of the dial within the frame"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

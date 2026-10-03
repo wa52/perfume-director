@@ -1,0 +1,41 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte screen-printed card in warm taupe grey, three perfectly axis-aligned hard-edge bone-white rectangle slabs with square corners and no rotation, no rounded corners, no paper stack edges, no cast shadows, stepped obliquely from upper left toward lower right, separated by one thin blank taupe seam running parallel to a diagonal shoulder line, perfectly even shadowless frontal illumination, flat graphic ink, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle right area uncluttered; reserve quiet negative space in the lower left area, middle left area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 243829931970657,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "rectangle",
+      "x": 250,
+      "y": 250,
+      "width": 620,
+      "height": 250,
+      "color": "#f4f1ea",
+      "opacity": 0.92
+    },
+    {
+      "kind": "rectangle",
+      "x": 470,
+      "y": 520,
+      "width": 560,
+      "height": 250,
+      "color": "#f4f1ea",
+      "opacity": 0.6
+    },
+    {
+      "kind": "rectangle",
+      "x": 690,
+      "y": 790,
+      "width": 340,
+      "height": 250,
+      "color": "#f4f1ea",
+      "opacity": 0.35
+    }
+  ]
+}

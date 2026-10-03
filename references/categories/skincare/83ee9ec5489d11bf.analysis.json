@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/62ec0fb9833a3763009c62e1/8fe2b298-91e2-412e-8811-d563058b53ae/Adrianna-Favero_NYC-Still_Life_Photographer-20240730_NeutroggenaxBrydie_Sky_104%2BHofR-1.jpg",
+  "caption": "Neutrogena still life ad photographed by Adrianna Favero, NYC-based beauty photographer and director. Crisp, clean product imagery showcasing skincare essentials—perfect for beauty campaigns, e-commerce, and editorial features like Byrdie Magazine.\n\n",
+  "id": "category-83ee9ec5489d11bf",
+  "local_path": "references/categories/skincare/83ee9ec5489d11bf.webp",
+  "sha256": "8a930df7ddd3174dbc46a43d62c34a7b71e7687f687b84b113ec1eb0ebf2e5f5",
+  "width": 500,
+  "height": 750,
+  "analysis": {
+    "category_match": true,
+    "brand": "Neutrogena",
+    "quality_score": 92,
+    "composition": "Triangular pyramid arrangement of three product bottles on a textured white ledge against a sky background, utilizing a low-angle perspective.",
+    "subject_ratio": 0.45,
+    "negative_space": "Expansive blue sky with soft clouds occupying the upper two-thirds, providing ample copy space.",
+    "lighting": "Bright, hard directional sunlight simulating midday outdoor conditions, casting distinct, sharp shadows to the right.",
+    "color": [
+      "Sky Blue",
+      "White",
+      "Periwinkle",
+      "Orange",
+      "Black"
+    ],
+    "typography": "Standard product packaging labels (sans-serif); no external campaign overlay text present.",
+    "information_density": "Low; focus is purely on product hero shot and atmospheric mood.",
+    "characteristics": [
+      "Summer aesthetic",
+      "SPF/Sun protection theme",
+      "Clean beauty",
+      "Hard light photography",
+      "Minimalist prop styling"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial still life perfectly matching the skincare category. The composition effectively uses the 'sky' backdrop to reinforce the SPF/sunscreen benefit of the product without needing explicit text. Lighting is crisp and professional."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

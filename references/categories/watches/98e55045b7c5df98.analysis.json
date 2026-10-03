@@ -1,0 +1,44 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/2",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/patek-philippe-watch-photography-advertising.jpg",
+  "caption": "Watch, Luxury Still Life, Product, and Commercial Photographer, New York City - Advertising Photography\u0000",
+  "id": "category-98e55045b7c5df98",
+  "local_path": "references/categories/watches/98e55045b7c5df98.jpg",
+  "sha256": "99d8e7197845a15f43d07d1e780f3246c980564cfe805bcceacc3712cf322025",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Patek Philippe",
+    "quality_score": 92,
+    "composition": "Vertical editorial layout with a centered hero product shot against a high-contrast black background, anchored by bold headline typography and structured body copy columns at the base.",
+    "subject_ratio": 0.45,
+    "negative_space": "Generous white outer margins framing the central black content block; tight but balanced spacing around the dome clock within the dark void.",
+    "lighting": "Controlled studio still-life lighting emphasizing specular highlights on the glass dome, polished metal framework, and vibrant cloisonné enamel textures without harsh glare.",
+    "color": [
+      "#000000",
+      "#FFFFFF",
+      "#FF4500",
+      "#1E3A8A",
+      "#FFD700",
+      "#C0C0C0"
+    ],
+    "typography": "High-impact sans-serif display headline ('THE HANDS BEHIND TIME') paired with clean, legible serif/sans body text in a classic two-column magazine grid; minimal vertical sidebar labels.",
+    "information_density": "Moderate to high; balances a striking visual centerpiece with substantial editorial storytelling and contact details typical of luxury print advertising.",
+    "characteristics": [
+      "luxury horology",
+      "editorial advertisement",
+      "cloisonné enamel craftsmanship",
+      "astronomical motif",
+      "high-contrast still life",
+      "print magazine layout"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a finished, high-end print advertisement for a Patek Philippe astronomical dome clock, which falls squarely within the watches and jewellery category. The dial, hands, and intricate enamel work are clearly visible and sharply rendered. External campaign copy ('THE HANDS BEHIND TIME') is prominently featured, distinguishing it from a simple packshot. Lighting and composition meet strict commercial standards for luxury horology."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

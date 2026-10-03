@@ -1,0 +1,39 @@
+{
+  "status": "NEEDS_REVIEW",
+  "mode": "live",
+  "standalone_vision_api_used": true,
+  "vision_model": "qwen3.8-max",
+  "selected": {
+    "version": 2,
+    "score": 79.1,
+    "pass": false,
+    "poster": "v2/poster.png",
+    "spec": "v2/PosterSpec.json",
+    "critic": "v2/Critic.json",
+    "review_error": null,
+    "sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 76.9,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "132df6def301d3689b10e011662be51b1a379c5d88aba59927439f129b567281"
+    },
+    {
+      "version": 2,
+      "score": 79.1,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb"
+    }
+  ],
+  "review_failures": []
+}

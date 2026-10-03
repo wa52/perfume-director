@@ -1,0 +1,49 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 179673392032155,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-1.png"
+    },
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 179673392132158,
+      "issues": [],
+      "image": "background-attempt-2.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "ellipse",
+      "x": 108,
+      "y": 560,
+      "width": 864,
+      "height": 300,
+      "color": "#e9c63c",
+      "opacity": 0.92
+    },
+    {
+      "kind": "ellipse",
+      "x": 43,
+      "y": 522,
+      "width": 994,
+      "height": 376,
+      "color": "#e9c63c",
+      "opacity": 0.22
+    },
+    {
+      "kind": "rectangle",
+      "x": 300,
+      "y": 872,
+      "width": 480,
+      "height": 6,
+      "color": "#f2ecd8",
+      "opacity": 0.9
+    }
+  ]
+}

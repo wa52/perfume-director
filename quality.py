@@ -19,7 +19,12 @@ def layout_issues(spec, geometry, direction=None):
     dynamic=bool(direction and direction.startswith('concept-'))
     if box[3] > h*(.94 if dynamic else .91) or box[1] < h*(.10 if dynamic else .16) or box[0] < w*.05 or box[2] > w*.95:
         issues.append('product_outside_safe_area')
-    if not (.35 if dynamic else .48) <= (box[3]-box[1])/h <= (.74 if dynamic else .68):
+    import importlib
+    categories=importlib.import_module('.categories',__package__) if __package__ else importlib.import_module('categories')
+    category=spec.get('product_category','perfume')
+    aspect=(box[2]-box[0])/max(1,box[3]-box[1])
+    minimum=categories.minimum_height(category,aspect) if dynamic else .48
+    if not minimum <= (box[3]-box[1])/h <= (.74 if dynamic else .68):
         issues.append('product_scale_outside_hero_range')
     if spec['shadow'].get('kind') == 'contact' and (not -2 <= spec['shadow']['offset_y'] <= 0 or abs(spec['shadow']['offset_x']) > 32):
         issues.append('contact_shadow_detached')

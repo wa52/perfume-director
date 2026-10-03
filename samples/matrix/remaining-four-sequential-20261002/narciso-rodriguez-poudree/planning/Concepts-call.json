@@ -1,0 +1,386 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-5912a76f-9f8e-9933-a530-86a14da19075",
+      "usage": {
+        "prompt_tokens": 32023,
+        "total_tokens": 38281,
+        "completion_tokens": 6258,
+        "prompt_tokens_details": {
+          "cached_tokens": 31744,
+          "image_tokens": 9144,
+          "text_tokens": 22879
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2161
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5912a76f-9f8e-9933-a530-86a14da19075",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 32023,
+    "total_tokens": 38281,
+    "completion_tokens": 6258,
+    "prompt_tokens_details": {
+      "cached_tokens": 31744,
+      "image_tokens": 9144,
+      "text_tokens": 22879
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2161
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Pressed-Powder Compact Disc",
+        "brief": "把不透明奶油芯读作一盒压粉：深viridian哑光水粉卡纸上，一枚硬边象牙圆盘如粉饼般托住剪影中段，其后错出一圈更低不透明度的浅绿粉晕如扑粉扬起的雾；商品沉于下幅，圆盘从其肩后掠过却不触碰标签。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Baskerville 题名以近满幅宽的单行衬线大字居中统领，副行垫底，一条象牙细线横悬其下如粉盒合缝刻线。哑光水粉吞光，让奶油漆芯与透明玻璃边 owning 全部柔高光。无地面无 horizon，纯圆盘几何叙事。参考 R1 的铭牌层级（品牌轻、题名重、副行垫底）、R4 的中心圆环聚焦与 R6 的柔光粉彩秩序。",
+        "material": "flat matte gouache-painted card with hard-edge printed ivory disc and offset powder halo",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#1e4a3d",
+          "#f4eee2",
+          "#a8c3b4"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.148,
+            0.155,
+            110
+          ],
+          "logo": [
+            0.414,
+            0.075,
+            30
+          ],
+          "subtitle": [
+            0.352,
+            0.245,
+            30
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in deep viridian green, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.56,
+            "width": 0.66,
+            "height": 0.5,
+            "color": "#f4eee2",
+            "opacity": 0.95
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.52,
+            "width": 0.82,
+            "height": 0.62,
+            "color": "#a8c3b4",
+            "opacity": 0.18
+          }
+        ],
+        "line": [
+          0.44,
+          0.292,
+          0.12
+        ]
+      },
+      {
+        "name": "Gypsum Court Morning Band",
+        "brief": "把奶油漆芯的柔光放进一座晨间石膏庭：冷调浅石膏灰泥墙在真实基准线处接连续 honed 同料石膏地面，高键晨光自左上洒下一团宽而静的光晕，墙地交界保持哑光矿物颗粒；商品提至上幅立于石膏地，测量接触阴影轻陷进磨面。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Times 题名以近满带宽的单行衬线大字居中统领，副行垫底，一条石蓝细线横于带底如日照刻度。石膏的冷哑光与象牙芯的暖柔互为温度悖论。参考 R2 的纸面分区铭牌秩序、R3 的高键硬净负空间与 R7 的柔光渐变背景秩序。",
+        "material": "pale cool gypsum plaster wall sweeping into continuous honed gypsum ground",
+        "lighting": "soft high-key morning light with one broad calm glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R7"
+        ],
+        "palette": [
+          "#dfe4e3",
+          "#23282a",
+          "#7d94a3"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.191,
+            0.76,
+            96
+          ],
+          "logo": [
+            0.415,
+            0.705,
+            28
+          ],
+          "subtitle": [
+            0.363,
+            0.845,
+            28
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Pale cool gypsum plaster wall in soft chalk grey meeting a continuous honed matching gypsum ground at a horizontal horizon sixty-eight hundredths down the frame, one broad calm morning glow blooming from upper left, matte mineral grain, soft high-key diffuse illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.44,
+          0.893,
+          0.12
+        ]
+      },
+      {
+        "name": "Clay Slip Studio Column",
+        "brief": "把粉name的扑粉感读作一间陶土工坊的午后：暖陶土色石灰水洗泥墙在真实基准线处接连续 honed 浅陶地面，一道 crisp 斜影边自右上擦过墙面上部如窗框切光；商品缩小立于光区左缘，测量接触阴影陷进磨陶面。右半幅泥墙保持安静暖哑，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如蚀刻签条，副行与一条骨白细线横垫柱底如窑温刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；陶土的暖哑光与奶油漆芯的柔亮互为同族不同温。参考 R1 的右栏负空间排印层级、R5 的暖粉柔光氛围与 R6 的高键粉彩秩序。",
+        "material": "terracotta limewashed clay plaster wall with continuous honed pale clay ground",
+        "lighting": "warm directional late-afternoon light casting one crisp oblique shadow edge across the upper wall from right, bright warm ambient elsewhere, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R6"
+        ],
+        "palette": [
+          "#b4644a",
+          "#2a1512",
+          "#f2e6d8"
+        ],
+        "product": [
+          0.32,
+          0.55,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.62,
+            0.44,
+            84
+          ],
+          "logo": [
+            0.62,
+            0.365,
+            26
+          ],
+          "subtitle": [
+            0.62,
+            0.72,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 340,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Warm terracotta limewashed clay plaster wall meeting a continuous honed pale clay ground at a horizontal horizon seventy-six hundredths down the frame, one crisp oblique shadow edge raking the upper wall from the right, matte mineral grain, warm diffuse afternoon ambient, no objects",
+        "shapes": [],
+        "line": [
+          0.62,
+          0.775,
+          0.16
+        ]
+      },
+      {
+        "name": "Ink-Void Powder Eclipse",
+        "brief": "把奶油芯悬进子夜粉雾：平涂深靛墨卡纸上贴一枚金属箔细环，环心精确对齐芯体中心，环外压出一枚更大的低不透明度靛蓝圆盘如粉雾月晕；商品被提至上幅如浮出夜面，剪影自身补全环的中断。下幅留出完整宽铭牌带：宽距 Arial Narrow 品牌字居带顶，Century Gothic 几何大写题名以近满带宽居中统领，副行垫底，一条箔银细线横于铭带之顶如天球仪刻度。哑光水粉吞光，让象牙芯与透明玻璃边 owning 全部亮度。无地面无 horizon，纯箔环几何与夜面平涂对抗奶油漆的柔体积。参考 R2 的分区铭牌秩序、R4 的暗场中心光环聚焦与 R8 的深色负空间纪念碑感。",
+        "material": "flat matte gouache card with applied metal-leaf ring and one low-opacity indigo halo disc",
+        "lighting": "shadowless even frontal illumination, flat graphic light with faint metallic glint on the foil ring",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R2",
+          "R4",
+          "R8"
+        ],
+        "palette": [
+          "#191d2e",
+          "#eceaf2",
+          "#a9b2cc"
+        ],
+        "product": [
+          0.5,
+          0.4,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.13,
+            0.775,
+            80
+          ],
+          "logo": [
+            0.403,
+            0.712,
+            26
+          ],
+          "subtitle": [
+            0.359,
+            0.872,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 9
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in deep ink indigo charcoal, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.4,
+            "width": 0.74,
+            "height": 0.56,
+            "color": "#a9b2cc",
+            "opacity": 0.16
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.4,
+            "width": 0.5,
+            "height": 0.38,
+            "color": "#eceaf2",
+            "opacity": 0.9
+          }
+        ],
+        "line": [
+          0.44,
+          0.842,
+          0.12
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 268.925
+}

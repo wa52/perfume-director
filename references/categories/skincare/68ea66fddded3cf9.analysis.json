@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/pca-skin",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/f4ba2d33-757a-44ff-bf42-c72f347d117f/tripistudios-beauty-editorial-retouching-pcaskin-serum-application.jpg",
+  "caption": "",
+  "id": "category-68ea66fddded3cf9",
+  "local_path": "references/categories/skincare/68ea66fddded3cf9.webp",
+  "sha256": "ae117c418a8d97007c4613cf83dc2e83e034540ce128b82929f52e686e8addf4",
+  "width": 2500,
+  "height": 1875,
+  "analysis": {
+    "category_match": false,
+    "brand": "Unknown",
+    "quality_score": 85,
+    "composition": "Close-up portrait with the subject's face centered and hand applying product to the cheek, creating a diagonal visual flow.",
+    "subject_ratio": 0.85,
+    "negative_space": "Minimal, primarily consisting of the textured dark blue background surrounding the subject's head and shoulders.",
+    "lighting": "High-contrast studio lighting with dappled, water-like caustic patterns cast across the subject's face and the background, emphasizing skin texture and product gloss.",
+    "color": [
+      "Deep Blue",
+      "Warm Skin Tones",
+      "White",
+      "Clear/Translucent"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely visual focus on the model and product texture without text or complex elements.",
+    "characteristics": [
+      "Dewy skin texture",
+      "Gel product application",
+      "Caustic light effects",
+      "Natural makeup look",
+      "Slicked-back hair"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "Rejected because it is a people-only scene that fails to display the actual product packaging, pump, or label as required by the category-specific acceptance criteria for skincare."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

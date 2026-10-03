@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/62ec0fb9833a3763009c62e1/858e6ca7-6915-473b-888b-a44924fa1dd2/Adrianna-Favero_NYC-Still_Life_Photographer-External_OlayBody-BHG_RHP-Gatefold_Final_2.jpg",
+  "caption": "Olay Retinol for Better Homes and Gardens",
+  "id": "category-d7254fd2fbceb51c",
+  "local_path": "references/categories/skincare/d7254fd2fbceb51c.webp",
+  "sha256": "87e8a33b83453fe9421cf5b2ac36fcf31c4c61cc57c5a0ba7042eb5da94a5a6b",
+  "width": 630,
+  "height": 783,
+  "analysis": {
+    "category_match": true,
+    "brand": "Olay",
+    "quality_score": 92,
+    "composition": "Balanced dual-product hero shot with symmetrical prop framing (mirror left, flower right) on a reflective marble surface.",
+    "subject_ratio": 0.45,
+    "negative_space": "Adequate top and bottom margins; background is textured but uncluttered to maintain focus on the products.",
+    "lighting": "Soft, high-key studio lighting with gentle specular highlights on the pump mechanisms and bottle shoulders; natural-looking shadows.",
+    "color": [
+      "White",
+      "Lavender",
+      "Metallic Gold",
+      "Deep Purple",
+      "Marble Grey"
+    ],
+    "typography": "Clean sans-serif brand logotype on packaging; minimal external campaign copy at the bottom left and a small 'ADVERTISEMENT' tag at the top.",
+    "information_density": "Low to medium; focuses on product visuals with essential branding and a call-to-action/QR code.",
+    "characteristics": [
+      "Editorial style",
+      "Luxury aesthetic",
+      "Reflective surfaces",
+      "Botanical accent",
+      "High-end bathroom setting"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial advertisement for Olay Retinol body care. The composition is professional, preserving packaging details and pumps as required. Lighting and textures (marble, metallic accents) convey a premium skincare feel. External campaign text and QR code are present and legible."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

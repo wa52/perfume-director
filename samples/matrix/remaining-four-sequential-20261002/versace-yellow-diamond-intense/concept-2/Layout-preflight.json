@@ -1,0 +1,200 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392033164,
+    "background": {
+      "color": "#dfe4e2",
+      "prompt": "Lime-washed pale cool grey plaster wall meeting a continuous honed pale limestone ground at a horizontal horizon six tenths down the frame, one warm golden caustic light pool lying across the wall-ground junction left of centre, one crisp oblique shadow edge raking the upper wall from left, matte mineral grain, bright cool morning ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 329,
+      "y": 893,
+      "width": 550,
+      "height": 504
+    },
+    "lighting": "hard morning sunlight casting one crisp oblique shadow edge and a warm caustic light pool across wall and ground, bright cool ambient elsewhere, no visible light equipment",
+    "palette": [
+      "#dfe4e2",
+      "#1d2a2e",
+      "#d9b32c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 670,
+      "y": 634,
+      "size": 92,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 360,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 670,
+      "y": 979,
+      "size": 22,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 670,
+      "y": 540,
+      "size": 34,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 670,
+      "y": 958,
+      "width": 238,
+      "color": "#d9b32c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic",
+    "layout_fit": {
+      "requested_product": {
+        "x": 313,
+        "y": 893,
+        "height": 504
+      },
+      "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+    }
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392033164,
+    "background": {
+      "color": "#dfe4e2",
+      "prompt": "Lime-washed pale cool grey plaster wall meeting a continuous honed pale limestone ground at a horizontal horizon six tenths down the frame, one warm golden caustic light pool lying across the wall-ground junction left of centre, one crisp oblique shadow edge raking the upper wall from left, matte mineral grain, bright cool morning ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 329,
+      "y": 893,
+      "width": 550,
+      "height": 504
+    },
+    "lighting": "hard morning sunlight casting one crisp oblique shadow edge and a warm caustic light pool across wall and ground, bright cool ambient elsewhere, no visible light equipment",
+    "palette": [
+      "#dfe4e2",
+      "#1d2a2e",
+      "#d9b32c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 670,
+      "y": 634,
+      "size": 92,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 360,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 670,
+      "y": 979,
+      "size": 22,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 670,
+      "y": 540,
+      "size": 34,
+      "color": "#1d2a2e",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 670,
+      "y": 958,
+      "width": 238,
+      "color": "#d9b32c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic",
+    "layout_fit": {
+      "requested_product": {
+        "x": 313,
+        "y": 893,
+        "height": 504
+      },
+      "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+    }
+  },
+  "source": "deterministic_director_guard"
+}

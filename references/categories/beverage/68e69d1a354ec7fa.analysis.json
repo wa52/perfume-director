@@ -1,0 +1,42 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://tripistudios.com/work/driftwell-x-pepsico",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/af5ae8c7-e51a-4ecf-a047-d3c0f3a276af/603_01b_Shot_01_SLB_BL_Duo_0206-0223_F1_Main.jpg",
+  "caption": "",
+  "id": "category-68e69d1a354ec7fa",
+  "local_path": "references/categories/beverage/68e69d1a354ec7fa.webp",
+  "sha256": "8cbdc8affc580dca716583c4df2639c1d713951d46f0af363700953e007478e6",
+  "width": 2500,
+  "height": 3124,
+  "analysis": {
+    "category_match": true,
+    "brand": "Driftwell",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal arrangement with two cans resting on a textured red geometric ledge against a deep blue gradient background.",
+    "subject_ratio": 0.45,
+    "negative_space": "Ample clean space in the upper background and lower foreground, balancing the central product placement.",
+    "lighting": "Professional studio lighting with soft highlights on the aluminum cans and a dramatic colored glow separating the subject from the background.",
+    "color": [
+      "Deep Blue",
+      "Vibrant Red",
+      "Bright Yellow",
+      "White",
+      "Silver"
+    ],
+    "typography": "Clean, modern sans-serif logotype and flavor descriptors printed directly on the packaging.",
+    "information_density": "Low; focused purely on brand identity and flavor differentiation through color coding.",
+    "characteristics": [
+      "Minimalist packaging design",
+      "Geometric abstraction",
+      "High contrast color palette",
+      "Premium product photography",
+      "Textured surface interaction"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product shot featuring Driftwell enhanced water beverages. The composition is striking, using bold primary colors and geometric shapes to create a modern aesthetic. Lighting is expertly controlled to highlight the metallic texture of the cans without obscuring the label details. No external campaign copy is present, only package labeling."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

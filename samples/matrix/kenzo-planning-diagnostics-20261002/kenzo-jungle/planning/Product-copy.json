@@ -1,0 +1,15 @@
+{
+  "title": "Jungle",
+  "logo": "Kenzo",
+  "subtitle": "",
+  "price": "",
+  "evidence": "瓶身右下仅见手写体 Kenzo 签名刻纹，无清晰可读的产品名或浓度行；'Kenzo' 与 'Jungle' 均来自用户简报；无价格信息，故 price 为空。",
+  "product_profile": {
+    "material": "透明玻璃瓶身配抛光金色金属大象与叶片雕塑瓶盖",
+    "color": "淡香槟色/象牙白玻璃，暖金色金属件",
+    "transparency": "瓶身高度通透，可见内部喷管；金属盖完全不透明",
+    "illumination": "高调柔光，正面大面积漫射光，金属曲面呈宽柔高光，几乎无硬阴影",
+    "view": "正面前视，相机约水平略高，瓶体直立居中",
+    "integration_limits": "玻璃区域承载近白高光与白底亮度，属亮而不透新生背景的切图，背景须保持高亮浅色，不可用暗底穿透"
+  }
+}

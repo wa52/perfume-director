@@ -1,0 +1,13 @@
+{
+  "selected_version": 2,
+  "evidence": "Both candidates keep the ABOVE monument grid intact (small letterspaced brand line, near-full-width Didone title, subtitle and thin powder rule all ending above the cap) and a faithful, recognizable Narciso bottle with its opaque cream core and clear glass walls. Version 2 wins inside the stipple-field concept: its bone-white powder grain settles from the top band and thins downward with a smoother gradient, and crucially it places the low-opacity olive rectangular plaque squarely behind the lower half of the silhouette, its shoulders reading behind the glass exactly as the brief demands, so the bottle sits in the dot field rather than pasted on a misregistered backdrop. Version 1's lower field instead breaks into accidental quadrant seams (a horizontal split plus an off-centre vertical join) that fight the flat silkscreen read, and its stipple fades into patchy noise mid-card. Version 2's typography is cleaner: the title line is crisply kerned at near-full width and the subtitle/rule group is tighter; version 1's品牌 line floats slightly高 and its rule sits孤立的. Neither shows studio equipment, floating packshot or horizon, and both honour the shadowless frontal graphic light, but version 2's controlled material and centered plaque order make it the stronger finished poster.",
+  "remaining_problems": [
+    "Version 2's top brand line is set in a dark olive ink that nearly sinks into the moss field; the brief's quiet nameplate still needs the bone-white (#f2ecdc) whisper weight for legibility.",
+    "The hard-edge blank plaque band in the lower third is only implied by a tonal green shift; the brief calls for a true bone-white horizontal留白 band cutting the dot fall, absent in both versions.",
+    "Stipple dots visibly stop behind the title block rather than continuing thinly past the plaque shoulders, weakening the settling-powder narrative in the mid field.",
+    "A faint horizontal seam edge crosses the full width near the bottle base in version 2, reading as a print misregistration rather than an intentional hard edge.",
+    "Bottle base sits close to the lower safety bound and the粉白 zero-line rule is very short relative to the title width, slightly unbalancing the monument grid."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Aqua Allegoria Mandarine Basilic",
+  "logo": "Guerlain",
+  "subtitle": "",
+  "price": "",
+  "evidence": "Label lines read 'AQUA ALLEGORIA', 'MANDARINE BASILIC' and script 'Guerlain'; brand and name in the brief match the visible label; no concentration, price or promo text is legible on the packshot.",
+  "product_profile": {
+    "material": "Clear glass flacon with polished gold sphere stopper and gold honeycomb lattice dome",
+    "color": "Pale golden-yellow liquid, bright yellow-gold metal, off-white label with gold type",
+    "transparency": "Translucent glass body and clear thick base; label panel fully opaque",
+    "illumination": "Soft diffuse studio light, broad specular highlight on gold sphere, minimal shadow",
+    "view": "Straight-on frontal packshot at mid-bottle elevation, cylindrical body on flat clear glass base",
+    "integration_limits": "Opaque white label and mirror-like gold cap cannot transmit a new background; translucent glass edges will tint toward any backdrop, so keep background bright and neutral behind the cutout"
+  }
+}

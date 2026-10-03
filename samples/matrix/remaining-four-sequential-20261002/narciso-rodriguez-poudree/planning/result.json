@@ -1,0 +1,627 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "Poudre Settling Stipple Field",
+      "brief": "把扑粉的下坠读作一张点刻画：平涂深橄榄 Moss 卡纸上，细密骨白粉点自顶带向下逐级稀薄如粉雾沉降，在下三分之一处被一道硬边留白横带截断，如同粉尘落定；一枚低不透明度橄榄矩形板沉于点场之后托住剪影下半，点阵从其肩后继续垂落却不触碰标签。商品沉于下幅立于点场心与留白带之前，奶油漆芯的柔体积对抗点密度的平面下坠。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，副行垫底，一条粉白细线横垫其下如沉降零点——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯点密度叙事。参考 R1 的铭牌层级（品牌轻、题名重、副行垫底）、R4 的中心聚焦秩序与 R6 的柔光粉彩温度。",
+      "material": "flat matte silkscreen-printed card with fine stipple powder-dot density gradient and one hard-edge blank plaque band",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "f15546e5083dfa03dc34790eb18a40b01e7a7c04e8ee1f1bbe3df913ce6a4573",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#43492f",
+        "#f2ecdc",
+        "#d8b4a6"
+      ],
+      "reference_ids": [
+        "ref-6ced6279f2e6",
+        "ref-453438bbcb76",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#43492f",
+          "prompt": "Seamless flat matte silkscreen-printed card in deep olive moss green, fine bone-white stipple powder dots dense at the top edge thinning gradually downward, one hard-edge blank horizontal band without dots across the lower third, perfectly even shadowless frontal illumination, no texture gradients beyond printed dots, no objects",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "rectangle",
+              "x": 540,
+              "y": 893,
+              "width": 648,
+              "height": 720,
+              "color": "#2e3320",
+              "opacity": 0.35
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 568,
+          "height": 806
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#43492f",
+          "#f2ecdc",
+          "#d8b4a6"
+        ],
+        "title": {
+          "text": "Narciso Poudrée",
+          "x": 216,
+          "y": 166,
+          "size": 92,
+          "color": "#f2ecdc",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 1,
+          "max_width": 0,
+          "line_height": 1.05,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "Eau de Parfum",
+          "x": 417,
+          "y": 300,
+          "size": 26,
+          "color": "#f2ecdc",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f2ecdc",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "NARCISO",
+          "x": 451,
+          "y": 89,
+          "size": 26,
+          "color": "#f2ecdc",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 475,
+          "y": 377,
+          "width": 130,
+          "color": "#d8b4a6"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\87dbf8b38cbe",
+      "selected": {
+        "version": 2,
+        "score": 76.9,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "e66146f38289fc1947e7a90bf4794bd16748bb53990e495cd48bb1949a6b4eb7"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 74.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "3e41246f7e8db1ebc79fdd230930cb9c6a25c9b218bb9a6080f72616e985db09"
+        },
+        {
+          "version": 2,
+          "score": 76.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "e66146f38289fc1947e7a90bf4794bd16748bb53990e495cd48bb1949a6b4eb7"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Chalk Powder Sift Morning",
+      "brief": "把奶油漆芯的柔光放进一间晨间粉筛工坊：冷调浅白垩灰泥墙在真实基准线处接连续 honed 同料白垩地面，高键晨光自左上洒下一团宽而静的粉白光晕，墙地交界保持哑光矿物颗粒；商品缩小立于白垩地偏右，测量接触阴影轻陷进磨面。左半幅墙保持安静冷白，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱两行大字排印如筛粉签条，副行与一条石蓝细线横垫柱底如筛网刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；白垩的冷哑光与象牙芯的暖柔互为温度悖论。参考 R2 的分区铭牌秩序、R3 的高键硬净负空间与 R7 的柔光渐变背景秩序。",
+      "material": "pale cool chalk plaster wall sweeping into continuous honed chalk ground",
+      "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+      "id": "concept-2",
+      "signature": "ee7d8b69ec76ee5c53c760342ba42ebad6de2b0f2d1a0d2dad2992ad4ca563f6",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#e9ded6",
+        "#3a332b",
+        "#6a8494"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-b4d87aee2707",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e9ded6",
+          "prompt": "Pale cool chalk plaster wall in soft powder white-beige meeting a continuous honed matching chalk ground at a horizontal horizon seventy-two hundredths down the frame, one broad calm powder-white glow blooming from upper left, matte mineral grain, soft high-key diffuse illumination, no objects",
+          "revision": 0,
+          "shapes": []
+        },
+        "product": {
+          "x": 734,
+          "y": 792,
+          "width": 508,
+          "height": 720
+        },
+        "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+        "palette": [
+          "#e9ded6",
+          "#3a332b",
+          "#6a8494"
+        ],
+        "title": {
+          "text": "Narciso Poudrée",
+          "x": 86,
+          "y": 576,
+          "size": 80,
+          "color": "#3a332b",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 300,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "Eau de Parfum",
+          "x": 86,
+          "y": 958,
+          "size": 26,
+          "color": "#3a332b",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#3a332b",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "NARCISO",
+          "x": 86,
+          "y": 475,
+          "size": 26,
+          "color": "#3a332b",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 86,
+          "y": 1037,
+          "width": 151,
+          "color": "#6a8494"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\5c2b3327ae61",
+      "selected": {
+        "version": 2,
+        "score": 85.9,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "3001ea092ba6efdeb22851681c3142afbb3e1a58c737b28fe66ab373721ee4b3"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 86.6,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "25468e24b2a3acc9059eb6c74806ad59cbebd171e8e70de66a2018aa00107263"
+        },
+        {
+          "version": 2,
+          "score": 85.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "3001ea092ba6efdeb22851681c3142afbb3e1a58c737b28fe66ab373721ee4b3"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Musk Velvet Twilight Column",
+      "brief": "把粉雾的夜幕读作一面天鹅绒幕：中调灰蓝绒面自墙垂落并在真实基准线处折成连续同料绒地，绒毫在暮光里保持低亮哑光；商品立于绒地偏左，测量接触阴影陷进绒毫。右半幅绒面保持安静深灰蓝，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Times 题名以窄柱两行衬线大字排印如织边签条，副行与一条骨白细线横垫柱底如暮色刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；绒面的吸光哑光与透明玻璃边的细折光互为虚实。参考 R1 的右栏负空间排印层级、R5 的柔光氛围与 R8 的深色纪念碑负空间。",
+      "material": "deep dusty blue velvet cloth wall sweeping into continuous matching velvet ground",
+      "lighting": "soft diffuse twilight ambient with one gentle broad sheen drift low on the cloth, frontal fill matching the baked softbox key, no hard shadows",
+      "id": "concept-3",
+      "signature": "9fb227e7d0894daad1e62c5f5deacb1a320006d88844c398a3e9b523cc20e1dd",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#56718a",
+        "#f0ece2",
+        "#d9c1a0"
+      ],
+      "reference_ids": [
+        "ref-6ced6279f2e6",
+        "ref-182ff709ad69",
+        "ref-7a523ada9a2c"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#56718a",
+          "prompt": "Medium dusty blue velvet cloth hanging as a soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, fine low nap grain with one gentle broad sheen drift low on the cloth, soft diffuse twilight illumination, no objects",
+          "revision": 0,
+          "shapes": []
+        },
+        "product": {
+          "x": 356,
+          "y": 806,
+          "width": 528,
+          "height": 749
+        },
+        "lighting": "soft diffuse twilight ambient with one gentle broad sheen drift low on the cloth, frontal fill matching the baked softbox key, no hard shadows",
+        "palette": [
+          "#56718a",
+          "#f0ece2",
+          "#d9c1a0"
+        ],
+        "title": {
+          "text": "Narciso Poudrée",
+          "x": 648,
+          "y": 605,
+          "size": 84,
+          "color": "#f0ece2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 1,
+          "max_width": 330,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "Eau de Parfum",
+          "x": 648,
+          "y": 986,
+          "size": 26,
+          "color": "#f0ece2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 6
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f0ece2",
+          "font": "C:/Windows/Fonts/times.ttf"
+        },
+        "logo": {
+          "text": "NARCISO",
+          "x": 648,
+          "y": 504,
+          "size": 26,
+          "color": "#f0ece2",
+          "font": "C:/Windows/Fonts/times.ttf",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 648,
+          "y": 1066,
+          "width": 151,
+          "color": "#d9c1a0"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\fd0506ac5086",
+      "selected": {
+        "version": 2,
+        "score": 82.7,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "b22f002d3b0e9e521220b8dbbe64969038d9f60d6bf90722a60a767c4fae75a8"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.3,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "2acd7e05788db1e0b5327e22057b847b87b6a615e9eb06f0c32c43e15247fb1a"
+        },
+        {
+          "version": 2,
+          "score": 82.7,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "b22f002d3b0e9e521220b8dbbe64969038d9f60d6bf90722a60a767c4fae75a8"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Powder-Press Ledger Slabs",
+      "brief": "把压粉工序读作三级压模：平涂暖灰褐卡纸上，三枚硬边骨白矩形压板自左上向右下逐级错叠如粉饼压模剖面，板缘一道斜向留白缝精确平行瓶肩斜线；商品提至中上幅立于压板之前，矩形从其肩后掠过却不触碰标签。下幅留出完整宽铭牌带，题名整组起排于瓶底之下，构成 BELOW 关系：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以两行宽排收左缘起排，副行垫底，一条褐灰细线横垫区底如压模刻度。无地面无 horizon，纯板阶几何对抗奶油漆芯的柔体积。参考 R2 的纸面分区秩序、R4 的几何背景层次与 R6 的高键粉彩秩序。",
+      "material": "flat matte screen-printed card with hard-edge stacked bone rectangle press slabs and one oblique blank seam",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-4",
+      "signature": "98cc58dda2452a349e35d2c55cd1247dfac193d6007022f91bef7e7c851cf7fa",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#7d766c",
+        "#f4f1ea",
+        "#5a5f45"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-453438bbcb76",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#7d766c",
+          "prompt": "Seamless flat matte screen-printed card in warm taupe grey, three hard-edge flat bone-white rectangle slabs stacked obliquely from upper left toward lower right with one thin blank taupe seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "rectangle",
+              "x": 324,
+              "y": 288,
+              "width": 540,
+              "height": 288,
+              "color": "#f4f1ea",
+              "opacity": 0.9
+            },
+            {
+              "kind": "rectangle",
+              "x": 486,
+              "y": 605,
+              "width": 594,
+              "height": 288,
+              "color": "#f4f1ea",
+              "opacity": 0.6
+            },
+            {
+              "kind": "rectangle",
+              "x": 648,
+              "y": 922,
+              "width": 540,
+              "height": 288,
+              "color": "#f4f1ea",
+              "opacity": 0.35
+            }
+          ]
+        },
+        "product": {
+          "x": 670,
+          "y": 576,
+          "width": 508,
+          "height": 720
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#7d766c",
+          "#f4f1ea",
+          "#5a5f45"
+        ],
+        "title": {
+          "text": "Narciso Poudrée",
+          "x": 86,
+          "y": 1008,
+          "size": 64,
+          "color": "#f4f1ea",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 4,
+          "max_width": 330,
+          "line_height": 1.14,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "Eau de Parfum",
+          "x": 86,
+          "y": 1217,
+          "size": 24,
+          "color": "#f4f1ea",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f4f1ea",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "NARCISO",
+          "x": 86,
+          "y": 929,
+          "size": 24,
+          "color": "#f4f1ea",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 8
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 86,
+          "y": 1296,
+          "width": 151,
+          "color": "#5a5f45"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\da04bb390b3e",
+      "selected": {
+        "version": 1,
+        "score": 75.7,
+        "pass": false,
+        "poster": "v1/poster.png",
+        "spec": "v1/PosterSpec.json",
+        "critic": "v1/Critic.json",
+        "review_error": null,
+        "sha256": "1e34411f7914c047f63e9a1ddb4ae91a2762960409349b80e05e2876b2ddd64b"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 75.7,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "1e34411f7914c047f63e9a1ddb4ae91a2762960409349b80e05e2876b2ddd64b"
+        },
+        {
+          "version": 2,
+          "score": 75.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "14aee559be91daf48df9762d925828ab5858c071568eede9f0b8f245d9b16bf5"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

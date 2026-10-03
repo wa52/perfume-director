@@ -1,8 +1,8 @@
 {
   "tag": "remaining-four-sequential-20261002",
-  "products_finished": 1,
+  "products_finished": 4,
   "products_requested": 4,
-  "directions_with_selection": 0,
+  "directions_with_selection": 12,
   "reference_count": 100,
   "preview_encoding": "JPEG94 derivative; original and preview SHA recorded separately",
   "products": [
@@ -35,7 +35,7 @@
     },
     {
       "product_id": "versace-yellow-diamond-intense",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "started_at": 1790947344.8742464,
       "input_sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7",
       "reference_count": 100,
@@ -50,26 +50,498 @@
       "source_hash_basis": "process_start",
       "engine_snapshot": "engine-source/38555767327b",
       "rounds_per_direction": 2,
-      "stage": "CONCEPTS",
+      "stage": "FINISHED",
       "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\a36978b52580",
       "direction_count": 4,
+      "version": 2,
+      "direction_index": 4,
+      "direction_name": "Basalt Court Noon Shadow",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Lapidary Marquise Blueprint",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 64.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "2fa4bfc25bcaf63305e35b807a8849461ee6cd2e20c3bd8bc5542f0190bab5b9",
+              "preview": "versace-yellow-diamond-intense/concept-1/v1.jpg",
+              "original_sha256": "2fa4bfc25bcaf63305e35b807a8849461ee6cd2e20c3bd8bc5542f0190bab5b9",
+              "preview_sha256": "8552a86e43c7aac0de1e92d617f7cd5d2bcf5c6f2efb9dfeecbd8a416b8b4a8f"
+            },
+            {
+              "version": 2,
+              "score": 77.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "6fcd3a610ca47391c8f58db37188e01dcdd14fe734cdd563c0349109509db4e5",
+              "preview": "versace-yellow-diamond-intense/concept-1/v2.jpg",
+              "original_sha256": "6fcd3a610ca47391c8f58db37188e01dcdd14fe734cdd563c0349109509db4e5",
+              "preview_sha256": "4c55337e23bcf1deb06f46936047ab552798a45bcb752cc02a0e224dc2f05fc6"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Citrus Atrium Caustic Column",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 74.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "57f13374b5045396c652b5044d35dc8bfc9584f9bf38d5c3f56eef3c6fefa9c5",
+              "preview": "versace-yellow-diamond-intense/concept-2/v1.jpg",
+              "original_sha256": "57f13374b5045396c652b5044d35dc8bfc9584f9bf38d5c3f56eef3c6fefa9c5",
+              "preview_sha256": "e5963af9256d2419d7bc5fd7fd81f23574b0e27e981bedaa16ff1956044162db"
+            },
+            {
+              "version": 2,
+              "score": 73.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "07b096ea4123b17c6547696658c4baed7fab5278693c52784382b49133426936",
+              "preview": "versace-yellow-diamond-intense/concept-2/v2.jpg",
+              "original_sha256": "07b096ea4123b17c6547696658c4baed7fab5278693c52784382b49133426936",
+              "preview_sha256": "389821424c47091ad5d550fbd38ae6404f3342fc96d650c7af2ed6dbbd560e8c"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Citron Facet Grid Ledger",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 77.1,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "33962a0ff88d35f97683887868a59e8705aefe84f670505acaf3964a76dc7748",
+              "preview": "versace-yellow-diamond-intense/concept-3/v1.jpg",
+              "original_sha256": "33962a0ff88d35f97683887868a59e8705aefe84f670505acaf3964a76dc7748",
+              "preview_sha256": "5d73e04ae48a104717af1accf06cb2842a49361d0fb7658742cf97fe6bdbca9a"
+            },
+            {
+              "version": 2,
+              "score": 78.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "77f71e4acee0c725a8cc7948cd0e15aba7f8fdb042a215143a9f5d49a013fdef",
+              "preview": "versace-yellow-diamond-intense/concept-3/v2.jpg",
+              "original_sha256": "77f71e4acee0c725a8cc7948cd0e15aba7f8fdb042a215143a9f5d49a013fdef",
+              "preview_sha256": "376f8ad6de06ce09058e7e1d0bf3026705c97ec4b38891926c2a7db605adf45c"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Basalt Court Noon Shadow",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "683d4c6cb636bb183219ebeaab2eb86f687146fb3ea8aa912866d09800681ae3",
+              "preview": "versace-yellow-diamond-intense/concept-4/v1.jpg",
+              "original_sha256": "683d4c6cb636bb183219ebeaab2eb86f687146fb3ea8aa912866d09800681ae3",
+              "preview_sha256": "52d3e8999adbbf7f957143b910b013b759b4eff9978356d2e037c8e13cb8352e"
+            },
+            {
+              "version": 2,
+              "score": 77.7,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "643e87d1be0af0e927c2b5088c52852c74954ac2c2da5ad158553d367c34d31c",
+              "preview": "versace-yellow-diamond-intense/concept-4/v2.jpg",
+              "original_sha256": "643e87d1be0af0e927c2b5088c52852c74954ac2c2da5ad158553d367c34d31c",
+              "preview_sha256": "27519b1f5e34c4c254092aeaf762fac71e2750e8b752284dd11277951db72f8b"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "batch_dir": "runs/batches/a36978b52580",
+      "duration_seconds": 1527.5,
       "brand": "Versace",
-      "name": "Yellow Diamond Intense",
-      "directions": []
+      "name": "Yellow Diamond Intense"
     },
     {
-      "status": "PENDING",
       "product_id": "narciso-rodriguez-poudree",
+      "status": "COMPLETED",
+      "started_at": 1790948872.4102657,
+      "input_sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "3d18b4790d82a639f10516dd5966d1692bed82b0f6b443469b95ab9ce17891bf",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/38555767327b",
+      "rounds_per_direction": 2,
+      "stage": "FINISHED",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\ddc3147b0072",
+      "direction_count": 4,
+      "version": 2,
+      "direction_index": 4,
+      "direction_name": "Powder-Press Ledger Slabs",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Poudre Settling Stipple Field",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 74.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "3e41246f7e8db1ebc79fdd230930cb9c6a25c9b218bb9a6080f72616e985db09",
+              "preview": "narciso-rodriguez-poudree/concept-1/v1.jpg",
+              "original_sha256": "3e41246f7e8db1ebc79fdd230930cb9c6a25c9b218bb9a6080f72616e985db09",
+              "preview_sha256": "7290dabf64ae13a30dc34c026da6736761322da9efcaa9a7b72685445365d4df"
+            },
+            {
+              "version": 2,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "e66146f38289fc1947e7a90bf4794bd16748bb53990e495cd48bb1949a6b4eb7",
+              "preview": "narciso-rodriguez-poudree/concept-1/v2.jpg",
+              "original_sha256": "e66146f38289fc1947e7a90bf4794bd16748bb53990e495cd48bb1949a6b4eb7",
+              "preview_sha256": "e841cfbf73af791f7358870aa5462b1c0a40af1f770904675c8e7e4c8f4302d5"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Chalk Powder Sift Morning",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 86.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "25468e24b2a3acc9059eb6c74806ad59cbebd171e8e70de66a2018aa00107263",
+              "preview": "narciso-rodriguez-poudree/concept-2/v1.jpg",
+              "original_sha256": "25468e24b2a3acc9059eb6c74806ad59cbebd171e8e70de66a2018aa00107263",
+              "preview_sha256": "5de7bf17714c953ec66ab4e5202a28ec57afaa976bffaa4c56b993889b19480d"
+            },
+            {
+              "version": 2,
+              "score": 85.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "3001ea092ba6efdeb22851681c3142afbb3e1a58c737b28fe66ab373721ee4b3",
+              "preview": "narciso-rodriguez-poudree/concept-2/v2.jpg",
+              "original_sha256": "3001ea092ba6efdeb22851681c3142afbb3e1a58c737b28fe66ab373721ee4b3",
+              "preview_sha256": "976dd35fa48cb1c19a973b79a427e48908e30b6d52608050673b6436779ca77f"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Musk Velvet Twilight Column",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.3,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "2acd7e05788db1e0b5327e22057b847b87b6a615e9eb06f0c32c43e15247fb1a",
+              "preview": "narciso-rodriguez-poudree/concept-3/v1.jpg",
+              "original_sha256": "2acd7e05788db1e0b5327e22057b847b87b6a615e9eb06f0c32c43e15247fb1a",
+              "preview_sha256": "323842246614d21c06f259acc9d9878db2c2c8ccfc423f087490759f0a64e49f"
+            },
+            {
+              "version": 2,
+              "score": 82.7,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "b22f002d3b0e9e521220b8dbbe64969038d9f60d6bf90722a60a767c4fae75a8",
+              "preview": "narciso-rodriguez-poudree/concept-3/v2.jpg",
+              "original_sha256": "b22f002d3b0e9e521220b8dbbe64969038d9f60d6bf90722a60a767c4fae75a8",
+              "preview_sha256": "29fee3cbe92745fa066dc09749da3cc49294762a152bbf8b87b13776a9f68a22"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Powder-Press Ledger Slabs",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 1,
+          "versions": [
+            {
+              "version": 1,
+              "score": 75.7,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "1e34411f7914c047f63e9a1ddb4ae91a2762960409349b80e05e2876b2ddd64b",
+              "preview": "narciso-rodriguez-poudree/concept-4/v1.jpg",
+              "original_sha256": "1e34411f7914c047f63e9a1ddb4ae91a2762960409349b80e05e2876b2ddd64b",
+              "preview_sha256": "c21b78bae12748589c9eff9790d7e3928a8089f2c0296beaf308b4102a2781ea"
+            },
+            {
+              "version": 2,
+              "score": 75.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "14aee559be91daf48df9762d925828ab5858c071568eede9f0b8f245d9b16bf5",
+              "preview": "narciso-rodriguez-poudree/concept-4/v2.jpg",
+              "original_sha256": "14aee559be91daf48df9762d925828ab5858c071568eede9f0b8f245d9b16bf5",
+              "preview_sha256": "88e759901f18cffab9fb2d1c29600e7d084d3afc0ae7253862cd800a20ac30c3"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "batch_dir": "runs/batches/ddc3147b0072",
+      "duration_seconds": 1857.1,
       "brand": "Narciso Rodriguez",
-      "name": "Narciso Poudrée",
-      "directions": []
+      "name": "Narciso Poudrée"
     },
     {
-      "status": "PENDING",
       "product_id": "guerlain-mandarine-basilic",
+      "status": "COMPLETED",
+      "started_at": 1790950729.5397162,
+      "input_sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "3d18b4790d82a639f10516dd5966d1692bed82b0f6b443469b95ab9ce17891bf",
+        "concepts.py": "2c48628f868ba50ffb988020bc62dc66efac42eb0fe131dd93879d91f716ef2d",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "723d721a8f160e6201c5d2a2ae7fbd3bf332f4ac2b08d5ea19afdd115553eb70",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/38555767327b",
+      "rounds_per_direction": 2,
+      "stage": "FINISHED",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28f20e4eb5ae",
+      "direction_count": 4,
+      "version": 2,
+      "direction_index": 4,
+      "direction_name": "Honeycomb Noon Terrazzo Hall",
+      "directions": [
+        {
+          "id": "concept-1",
+          "name": "Mandarine Segment Dial",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 78.0,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "4984728b831417b9598d80bbdf86d7dc53e83ce5896236314fd0118a502f5c63",
+              "preview": "guerlain-mandarine-basilic/concept-1/v1.jpg",
+              "original_sha256": "4984728b831417b9598d80bbdf86d7dc53e83ce5896236314fd0118a502f5c63",
+              "preview_sha256": "776ee99eaa4d03ea248bd6738092115530905f7c11be17fe7a348d99e426411c"
+            },
+            {
+              "version": 2,
+              "score": 82.6,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "c2d182d4408bed984c8e988d5a9fed5966cac51412de355ffac956434f5d00ec",
+              "preview": "guerlain-mandarine-basilic/concept-1/v2.jpg",
+              "original_sha256": "c2d182d4408bed984c8e988d5a9fed5966cac51412de355ffac956434f5d00ec",
+              "preview_sha256": "b239e85a51dbb3f2f2f080b194e0ef6bbbc7f125e91dd74a5dc207d4f70b336b"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-2",
+          "name": "Zellige Noon Water Court",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "ad8e111be0ef7bff7b631292c79e384db85263570c8a89a758ffb74d698d606b",
+              "preview": "guerlain-mandarine-basilic/concept-2/v1.jpg",
+              "original_sha256": "ad8e111be0ef7bff7b631292c79e384db85263570c8a89a758ffb74d698d606b",
+              "preview_sha256": "bed1b48fd85eecd377adb40417baac108142954e9124f1c620582fc12d2077c5"
+            },
+            {
+              "version": 2,
+              "score": 80.9,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "ae1af20c12ac7fe4e5ef03c3cbc5bb0818c102be0d896fa53f92f0020c0f93ad",
+              "preview": "guerlain-mandarine-basilic/concept-2/v2.jpg",
+              "original_sha256": "ae1af20c12ac7fe4e5ef03c3cbc5bb0818c102be0d896fa53f92f0020c0f93ad",
+              "preview_sha256": "360fa5bbcb39f5973cf50223bca5b86f24c7150cfc3193d6eaf98987ca780aaf"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-3",
+          "name": "Aqua Ripple Sonar Plate",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.6,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "656579e019997b96e2ced11280608ba31f7553affa26d615625eb1c3fcc81c9c",
+              "preview": "guerlain-mandarine-basilic/concept-3/v1.jpg",
+              "original_sha256": "656579e019997b96e2ced11280608ba31f7553affa26d615625eb1c3fcc81c9c",
+              "preview_sha256": "a77b250acc6eafbc66ccd3892eac2ffcb04de876044096740f0d7d21ef37b91f"
+            },
+            {
+              "version": 2,
+              "score": 80.3,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "731a313f9fb930f3c63cfc34c688669d498e90aad194c2bc7bfd040b94bb475c",
+              "preview": "guerlain-mandarine-basilic/concept-3/v2.jpg",
+              "original_sha256": "731a313f9fb930f3c63cfc34c688669d498e90aad194c2bc7bfd040b94bb475c",
+              "preview_sha256": "23565f0f9721e6b498cdaa5dcd677d3f6f0d62f8bbe12e8620dcb6fc71e8186d"
+            }
+          ],
+          "error": null
+        },
+        {
+          "id": "concept-4",
+          "name": "Honeycomb Noon Terrazzo Hall",
+          "status": "NEEDS_REVIEW",
+          "selected_version": 2,
+          "versions": [
+            {
+              "version": 1,
+              "score": 76.9,
+              "pass": false,
+              "poster": "v1/poster.png",
+              "spec": "v1/PosterSpec.json",
+              "critic": "v1/Critic.json",
+              "review_error": null,
+              "sha256": "132df6def301d3689b10e011662be51b1a379c5d88aba59927439f129b567281",
+              "preview": "guerlain-mandarine-basilic/concept-4/v1.jpg",
+              "original_sha256": "132df6def301d3689b10e011662be51b1a379c5d88aba59927439f129b567281",
+              "preview_sha256": "742ba38f59808c0b50a9284fe1b5b8ad11e3a9579b47f0d8957a0c485f76148a"
+            },
+            {
+              "version": 2,
+              "score": 79.1,
+              "pass": false,
+              "poster": "v2/poster.png",
+              "spec": "v2/PosterSpec.json",
+              "critic": "v2/Critic.json",
+              "review_error": null,
+              "sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb",
+              "preview": "guerlain-mandarine-basilic/concept-4/v2.jpg",
+              "original_sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb",
+              "preview_sha256": "e99d36cd8b97ab26757d55f0986d14eb4f069c78da4eb2bd6b67deda148e7e0d"
+            }
+          ],
+          "error": null
+        }
+      ],
+      "batch_dir": "runs/batches/28f20e4eb5ae",
+      "duration_seconds": 1582.2,
       "brand": "Guerlain",
-      "name": "Aqua Allegoria Mandarine Basilic",
-      "directions": []
+      "name": "Aqua Allegoria Mandarine Basilic"
     }
   ]
 }

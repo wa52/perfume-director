@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) resolves the 'Honeycomb Noon Terrazzo Hall' concept more completely than version 1. Its wall-to-floor junction sits high behind the bottle with a broad, calm warm-white noon band sweeping across the wall at shoulder height, matching the brief's single soft light band, and the honed terrazzo ground carries visible fine honey-gold and grey-green chip aggregate with a soft contact shadow settling the bottle onto the stone. The right-hand type column is cleaner: wide-tracked 'Guerlain' brand line at the column top, four-line narrow sans title stacked like an engraved plaque, and the honey-gold hairline rule now sits clearly detached below the title block as a sundial tick, giving a honest two-column editorial grid that overlaps the cap/shoulder vertically while staying horizontally separated. Version 1 by comparison places the gold rule cramped against the baseline of 'Basilic' (reading as a stray underline collision), keeps the wall/floor horizon low and vague so the noon band is almost absent, and its ground reads flatter with weaker mineral speckle, leaving the bottle less convincingly seated. Both keep the product faithful (opaque label, mirror gold sphere and honeycomb dome intact) and free of studio gear or floating-packshot defects, but version 2's lighting, material grain and typographic hierarchy are the stronger finished campaign.",
+  "remaining_problems": [
+    " Contact shadow under the bottle in version 2 is still very faint and slightly diffuse; the brief's 'measured contact shadow lightly sunk into the honed surface' could bite a touch more.",
+    " Terrazzo chip aggregate on the upper wall remains subdued; the fine honey-gold/grey-green dot matrix reads mostly on the floor, so the wall can look like plain plaster at glance.",
+    " The noon light band's edge behind the type column is a soft horizontal seam that can read as a wall panel line rather than pure light; slightly ambiguous.",
+    " Title column's gold rule is well placed but the brand line 'Guerlain' floats with a large gap above the title, leaving the column top slightly unanchored."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

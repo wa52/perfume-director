@@ -1,0 +1,108 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\a36978b52580\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Basalt Court Noon Shadow",
+    "brief": "把盖顶的镜面碎光放进一座正午石庭：深玄武岩灰石板墙以细密干缝排成横向石层，连续 honed 同料石板地面在真实基准线接墙；正午顶光在墙根压出一道锐利水平影带，石面保持冷哑光。商品缩小立于石地偏右，测量接触阴影陷进干缝；左半幅石墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽三行排印如仪器铭牌，一条柠檬短横线垫于柱底如日晷刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏网格诚实成立；玄武岩的冷哑光与金黄折面玻璃的暖透互为温度悖论。参考 R1 的左图右文负空间层级、R4 的硬方向光阴影秩序与 R8 的深色建筑感负空间。",
+    "material": "dark basalt stone slab wall with fine dry joints and continuous honed basalt ground",
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+    "palette": [
+      "#3a3d42",
+      "#f0eee6",
+      "#e9c63c"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392035182,
+    "background": {
+      "color": "#3a3d42",
+      "prompt": "Dark basalt grey stone slab wall with fine horizontal dry joints meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte stone grain, cool diffuse ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 724,
+      "y": 864,
+      "width": 597,
+      "height": 547
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+    "palette": [
+      "#3a3d42",
+      "#f0eee6",
+      "#e9c63c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 86,
+      "y": 648,
+      "size": 64,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3,
+      "max_width": 300,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 979,
+      "size": 20,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 86,
+      "y": 554,
+      "size": 34,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 929,
+      "width": 194,
+      "color": "#e9c63c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

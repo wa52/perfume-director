@@ -1,14 +1,14 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 
-const stages = { QUEUED: "准备中", CONCEPTS: "艺术总监正在探索四个新概念", DIRECTOR: "Director 正在准备独立方案", RENDER: "ComfyUI 正在渲染", CRITIC: "Critic 正在审阅", DIRECTION_FINISHED: "一个方向已完成", FINISHED: "完成", FAILED: "已停止" };
+const stages = { QUEUED: "准备中", PRODUCT_OBSERVATION: "正在识别商品", CONCEPTS: "艺术总监正在探索四个新概念", DIRECTOR: "Director 正在准备独立方案", RENDER: "ComfyUI 正在渲染", CRITIC: "Critic 正在审阅", DIRECTION_FINISHED: "一个方向已完成", FINISHED: "完成", FAILED: "已停止" };
 const statusLabels = {RUNNING:"生成中", COMPLETED:"四方向已完成，待选稿", PARTIAL:"部分方向未完成", PASS:"模型通过", NEEDS_REVIEW:"待人工确认", ERROR:"失败"};
 const terminal = new Set(["PASS", "NEEDS_REVIEW", "ERROR", "COMPLETED", "PARTIAL"]);
 
 app.registerExtension({
     name: "PerfumeDirector.Loop",
     async beforeRegisterNodeDef(nodeType, nodeData) {
-        if (nodeData.name !== "PerfumeDirectorLoop") return;
+        if (!["PerfumeDirectorLoop","ProductDirectorLoop"].includes(nodeData.name)) return;
         const originalCreated = nodeType.prototype.onNodeCreated;
         nodeType.prototype.onNodeCreated = function () {
             originalCreated?.apply(this, arguments);
@@ -21,6 +21,8 @@ app.registerExtension({
             status.textContent = "上传透明 PNG，连接 IMAGE 与 MASK，填写 brief 后点击运行。";
             status.style.cssText = "white-space:pre-wrap;line-height:1.6";
             const image = document.createElement("img");
+            const draftLabel = document.createElement("div");
+            draftLabel.style.cssText = "display:none;line-height:1.6;margin-top:12px;color:#e6c590";
             image.style.cssText = "display:none;width:100%;max-height:220px;object-fit:contain;margin-top:10px";
             const link = document.createElement("a");
             link.textContent = "打开最终海报";
@@ -28,7 +30,7 @@ app.registerExtension({
             link.style.cssText = "display:none;color:#b7d4f0;margin-top:8px";
             const gallery = document.createElement("div");
             gallery.style.cssText = "display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px";
-            panel.append(notice, status, gallery, image, link);
+            panel.append(notice, status, gallery, draftLabel, image, link);
             this.addDOMWidget("director_progress", "director_progress", panel, { serialize: false,
                 getMinHeight: () => 640, getMaxHeight: () => 640 });
             this.setSize([520, 900]);
@@ -46,9 +48,21 @@ app.registerExtension({
                     const state = await response.json();
                     const lines = [`${stages[state.stage] || state.stage}${state.version ? ` · V${state.version}` : ""}`, `模式/模型：${state.mode === "codex_guided_style_redesign" ? "Codex 指导重做" : state.vision_model}`, `状态：${statusLabels[state.status] || state.status}`];
                     if (state.direction_index) lines.push(`方向 ${state.direction_index}/${state.direction_count}：${state.direction_name}`);
+                    if (state.status === "RUNNING" && state.stage === "CONCEPTS") {
+                        lines.push(state.planning_phase === "repair"
+                            ? "正在修复规划中的碰撞或风格重复，尚未开始生图。"
+                            : "正在生成、校验四套设计方案，尚未开始生图，所以暂时没有图片。");
+                        lines.push("规划通常需要几分钟；修复方案会更久。无需重复点击运行。");
+                    }
+                    if (state.status === "RUNNING" && state.stage === "RENDER") lines.push("正在生成画面，完成后会显示草稿。");
+                    if (state.started_at && state.status === "RUNNING") {
+                        const seconds = Math.max(0, Math.floor(Date.now() / 1000 - state.started_at));
+                        lines.push(`任务已用时：${Math.floor(seconds / 60)}分${seconds % 60}秒`);
+                    }
                     if (state.selected) lines.push(`选中 V${state.selected.version} · 模型评分 ${state.selected.score}/100`);
                     if (state.run_dir) lines.push(`记录：${state.run_dir}`);
                     if (state.error) lines.push(`错误：${state.error}。查看服务器日志与已保存记录。`);
+                    if (state.message) lines.push(state.message);
                     status.textContent = lines.join("\n");
                     const galleryKey = JSON.stringify(state.directions || []);
                     if (this._galleryKey !== galleryKey) {
@@ -77,12 +91,30 @@ app.registerExtension({
                             gallery.append(card);
                         }
                     }
-                    if (state.selected) {
+                    if (state.draft && state.status === "RUNNING") {
+                        const exported = /^d[1-4]-v[1-9][0-9]*\.png$/.test(state.draft.output_filename || "");
+                        const url = api.apiURL(exported
+                            ? `/view?type=output&subfolder=${encodeURIComponent("perfume-director-live/" + id)}&filename=${encodeURIComponent(state.draft.output_filename)}&revision=${encodeURIComponent(state.draft.revision)}`
+                            : `/perfume-director/jobs/${encodeURIComponent(id)}/preview?draft=1&revision=${encodeURIComponent(state.draft.revision)}`);
+                        if (image.getAttribute("src") !== url) image.src = url;
+                        draftLabel.textContent = `${state.direction_name || "当前方向"} · V${state.draft.version} 草稿，尚未完成评审`;
+                        draftLabel.style.display = "block";
+                        image.style.display = "block";
+                        link.href = url;
+                        link.textContent = "打开当前草稿（尚未完成评审）";
+                        link.style.display = "block";
+                    } else if (state.selected) {
+                        draftLabel.style.display = "none";
                         const url = api.apiURL(`/perfume-director/jobs/${encodeURIComponent(id)}/preview`);
                         image.src = url;
                         image.style.display = "block";
                         link.href = url;
+                        link.textContent = "打开选中海报";
                         link.style.display = "block";
+                    } else {
+                        draftLabel.style.display = "none";
+                        image.style.display = "none";
+                        link.style.display = "none";
                     }
                     if (!terminal.has(state.status)) this._directorTimer = setTimeout(() => this._watchDirector(id), 2000);
                 } catch (error) {

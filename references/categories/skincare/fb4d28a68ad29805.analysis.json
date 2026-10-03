@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/pca-skin",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/704945e1-24f1-497b-aea2-ed65daffca5a/tripistudios-beauty-product-retouching-pcaskin-underwater-serum.jpg",
+  "caption": "",
+  "id": "category-fb4d28a68ad29805",
+  "local_path": "references/categories/skincare/fb4d28a68ad29805.webp",
+  "sha256": "81a3cc0f27b5319eb7ab32a3530cc30d4248c53b195cbc1b2e198e04871712a8",
+  "width": 2500,
+  "height": 3334,
+  "analysis": {
+    "category_match": true,
+    "brand": "PCA skin",
+    "quality_score": 92,
+    "composition": "Central vertical alignment with the product suspended in a dynamic underwater environment, utilizing rising bubbles to lead the eye upward toward the light source.",
+    "subject_ratio": 0.25,
+    "negative_space": "Expansive deep blue gradients surrounding the central subject, providing high contrast and focus.",
+    "lighting": "Dramatic underwater caustics and volumetric god rays filtering from the surface, creating specular highlights on the metallic packaging and water bubbles.",
+    "color": [
+      "Deep Ocean Blue",
+      "Metallic Silver",
+      "Cyan",
+      "White",
+      "Black"
+    ],
+    "typography": "Clean, minimalist sans-serif product labeling printed directly on the bottle; no external overlay text.",
+    "information_density": "Low; focuses entirely on the visual metaphor of hydration and the single product hero shot.",
+    "characteristics": [
+      "Hydration concept",
+      "Underwater photography style",
+      "High-speed bubble capture",
+      "Premium metallic texture",
+      "Monochromatic blue palette"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-end commercial product photography that perfectly matches the skincare category by visually communicating hydration through an underwater setting. The brand 'PCA skin' is clearly legible, and the packaging integrity (pump and label) is preserved without adding extraneous cream or liquid."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

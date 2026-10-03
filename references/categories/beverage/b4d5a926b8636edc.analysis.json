@@ -1,0 +1,42 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://tripistudios.com/work/driftwell-x-pepsico",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/5a82058a-6487-45d7-a3fc-8640ef45a9bc/528_04a_DW_PRODUCT_SHOT_06_1406-1430_F1_MAIN-original+floor.jpg",
+  "caption": "",
+  "id": "category-b4d5a926b8636edc",
+  "local_path": "references/categories/beverage/b4d5a926b8636edc.webp",
+  "sha256": "59db69a1dac1a7b4166fd0e83bf3f93a1a775c0e1b07df54719757c136235b6c",
+  "width": 2500,
+  "height": 3125,
+  "analysis": {
+    "category_match": true,
+    "brand": "Driftwell",
+    "quality_score": 92,
+    "composition": "Centered product hero shot with a supporting glass and floral prop in the background, resting on a textured blue surface against a dark blue backdrop.",
+    "subject_ratio": 0.35,
+    "negative_space": "Ample clean negative space in the upper half and right side, suitable for overlay text.",
+    "lighting": "Professional studio lighting with soft highlights on the can's curvature and glass rim, creating a moody yet vibrant atmosphere.",
+    "color": [
+      "Deep Blue",
+      "Bright Yellow",
+      "Cyan",
+      "White",
+      "Black"
+    ],
+    "typography": "Clean sans-serif branding on the can ('driftwell', 'blackberry lavender', 'enhanced water beverage'). No external campaign typography present.",
+    "information_density": "Low; focused purely on product aesthetics and brand identity.",
+    "characteristics": [
+      "Studio Product Photography",
+      "High Contrast",
+      "Complementary Colors",
+      "Minimalist",
+      "Premium Aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product photography featuring a clearly identifiable beverage brand (Driftwell). The composition is balanced with excellent lighting and color harmony. It fits the beverage category perfectly. No external campaign copy is present, only package labeling."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

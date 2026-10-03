@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "guerlain-mandarine-basilic-retailer.png",
+      "sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-5839d4d8-1602-9bfd-823e-0e44e4deb47f",
+      "usage": {
+        "prompt_tokens": 1575,
+        "total_tokens": 2610,
+        "completion_tokens": 1035,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 364
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 767,
+          "text_tokens": 267
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-5839d4d8-1602-9bfd-823e-0e44e4deb47f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1575,
+    "total_tokens": 2610,
+    "completion_tokens": 1035,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 364
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 767,
+      "text_tokens": 267
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Aqua Allegoria Mandarine Basilic",
+    "logo": "Guerlain",
+    "subtitle": "",
+    "price": "",
+    "evidence": "Label lines read 'AQUA ALLEGORIA', 'MANDARINE BASILIC' and script 'Guerlain'; brand and name in the brief match the visible label; no concentration, price or promo text is legible on the packshot.",
+    "product_profile": {
+      "material": "Clear glass flacon with polished gold sphere stopper and gold honeycomb lattice dome",
+      "color": "Pale golden-yellow liquid, bright yellow-gold metal, off-white label with gold type",
+      "transparency": "Translucent glass body and clear thick base; label panel fully opaque",
+      "illumination": "Soft diffuse studio light, broad specular highlight on gold sphere, minimal shadow",
+      "view": "Straight-on frontal packshot at mid-bottle elevation, cylindrical body on flat clear glass base",
+      "integration_limits": "Opaque white label and mirror-like gold cap cannot transmit a new background; translucent glass edges will tint toward any backdrop, so keep background bright and neutral behind the cutout"
+    }
+  },
+  "duration_seconds": 29.021
+}

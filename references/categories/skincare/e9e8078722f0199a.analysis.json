@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/pca-skin",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/068050fc-501c-49ef-b395-989ec6c38576/tripistudios-beauty-product-retouching-pcaskin-water-splash.jpg",
+  "caption": "",
+  "id": "category-e9e8078722f0199a",
+  "local_path": "references/categories/skincare/e9e8078722f0199a.webp",
+  "sha256": "47dc0f78f988ff15b450489ebd8227feeec0bbe70e830e2e02e110c27304727a",
+  "width": 2500,
+  "height": 3334,
+  "analysis": {
+    "category_match": true,
+    "brand": "PCA skin",
+    "quality_score": 92,
+    "composition": "Centered vertical product placement surrounded by dynamic, concentric water ripples and suspended bubbles.",
+    "subject_ratio": 0.25,
+    "negative_space": "Filled with textured water elements; minimal empty space due to the immersive aquatic environment.",
+    "lighting": "High-contrast studio lighting with sharp specular highlights on the metallic bottle and refractive caustics in the water.",
+    "color": [
+      "Deep Blue",
+      "Metallic Silver",
+      "Black",
+      "White"
+    ],
+    "typography": "Clean sans-serif product labeling printed directly on the bottle surface.",
+    "information_density": "Low; focuses entirely on the product name, brand logo, and volume within a visual texture context.",
+    "characteristics": [
+      "Hydration concept",
+      "Metallic texture",
+      "Liquid immersion",
+      "Clinical aesthetic",
+      "High-speed photography style"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-end commercial skincare photography that effectively uses water immersion to communicate hydration benefits while maintaining clear visibility of the PCA Skin packaging and pump mechanism."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

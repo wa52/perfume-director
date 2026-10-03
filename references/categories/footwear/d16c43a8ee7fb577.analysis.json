@@ -1,0 +1,40 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://www.photo-frank.com/portfolio/sneakerweek",
+  "image_url": "https://framerusercontent.com/images/fLe7mmUBZhLJdQ0xaIBjKRqqzFo.jpg?width=1638&height=2048",
+  "caption": "",
+  "id": "category-d16c43a8ee7fb577",
+  "local_path": "references/categories/footwear/d16c43a8ee7fb577.jpg",
+  "sha256": "b4b6f1b4f3ea20676ffe8efd9251de1349b4fc007b1557fd9c3cc508c863c82b",
+  "width": 1638,
+  "height": 2048,
+  "analysis": {
+    "category_match": true,
+    "brand": "Adidas",
+    "quality_score": 62,
+    "composition": "High-angle full-body shot with strong diagonal leading lines from the court markings; the subject is centered but the footwear is positioned in the lower right foreground.",
+    "subject_ratio": 0.65,
+    "negative_space": "Moderate negative space provided by the blue court surface, primarily in the upper left and lower left corners.",
+    "lighting": "Even, diffused overhead lighting typical of indoor sports facilities or studio setups, creating soft shadows and clear visibility of textures.",
+    "color": [
+      "Royal Blue",
+      "White",
+      "Black",
+      "Pink"
+    ],
+    "typography": "Brand logo visible on apparel and socks; no external campaign copy or headline typography present.",
+    "information_density": "Low to medium; focuses on the athlete and gear without cluttered graphical elements.",
+    "characteristics": [
+      "Athletic lifestyle",
+      "High-angle perspective",
+      "Vibrant color contrast",
+      "Product integration"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image features a clear Adidas brand identity and includes the reference category product (footwear) with visible laces, sole, and silhouette. However, it functions more as an athletic lifestyle portrait than a dedicated footwear product shot, as the shoes are not the primary focal point and lack specific campaign typography."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

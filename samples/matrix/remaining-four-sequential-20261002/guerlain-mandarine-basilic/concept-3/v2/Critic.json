@@ -1,0 +1,65 @@
+{
+  "pass": false,
+  "score": 80.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 78,
+    "background": 74,
+    "physical_integration": 88,
+    "reference_alignment": 76,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The concept's 'hard-edge slab sunk behind the ring centre to hold the lower silhouette' is executed as a 0.12-opacity #0d3a44 rectangle (spec x250-830, y605-1045; visible in poster 1 as the grey-teal wash whose top edge cuts the flacon at the shoulder and whose side edges sit at approx x250/x830). At 12% ink it reads as a translucent misprint panel floating over the rings, not a solid plate: the ripple rings stay fully visible through it and its four hard edges create a second, competing frame around the hero. R1/R2's plaque contrast comes from solid dark plates; this wash undermines both the slab idea and the ring field."
+    },
+    {
+      "type": "composition",
+      "problem": "The lower plaque card (approx y1118-1382) is internally unbalanced: the two title lines and the full-width rule hug the left edge (title bbox x108-727), leaving the card's right third (approx x730-1020) empty for both text lines, while the 'Guerlain' logotype (bbox x463-618) is centered on the canvas and therefore sits off-axis relative to the left-set title block beneath it. The two type elements share one card but two different grids, so the plaque lacks the resolved internal order of R2's plate typography."
+    },
+    {
+      "type": "typography",
+      "problem": "The 'Guerlain' logotype at 28px with tracking 6 measures only about 155px wide against an 864px plaque (logo bbox 463-618 vs decoration 108-972): it reads as a floating speck rather than the plaque's brand header, and its optical weight is far below the 66px title it is supposed to crown. Hierarchy inside the plaque (brand / title / rule) is therefore under-differentiated at the brand line."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 250,
+          "y": 605,
+          "width": 580,
+          "height": 440,
+          "color": "#0d3a44",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 441
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 700
+    }
+  ],
+  "reported_score": 79.4
+}

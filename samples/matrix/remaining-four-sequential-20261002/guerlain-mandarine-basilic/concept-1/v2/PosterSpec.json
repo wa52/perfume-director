@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 45020087237065,
+  "background": {
+    "color": "#e4691c",
+    "prompt": "Seamless flat matte silkscreen-printed card in saturated mandarin orange, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 108,
+        "y": 490,
+        "width": 864,
+        "height": 864,
+        "color": "#f9a03f",
+        "opacity": 0.45
+      },
+      {
+        "kind": "ellipse",
+        "x": 184,
+        "y": 566,
+        "width": 713,
+        "height": 713,
+        "color": "#f6ead2",
+        "opacity": 0.95
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 387,
+    "height": 893
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#e4691c",
+    "#f8ecd4",
+    "#a63f0c"
+  ],
+  "title": {
+    "text": "Aqua Allegoria Mandarine Basilic",
+    "x": 218,
+    "y": 151,
+    "size": 84,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 2,
+    "max_width": 700,
+    "line_height": 1.08,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 475,
+    "y": 408,
+    "size": 22,
+    "color": "#f8ecd4",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f8ecd4",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "Guerlain",
+    "x": 463,
+    "y": 86,
+    "size": 30,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.3,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 0.92
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 454,
+    "y": 396,
+    "width": 173,
+    "color": "#a63f0c"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

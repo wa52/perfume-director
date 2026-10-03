@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) executes the Aqua Ripple Sonar Plate concept more coherently: the concentric ripple rings read as a clean screen-printed field with the bottle lifted into the upper ring centre, and the hard-edge rectangular plate is centred behind the lower half of the silhouette so it supports the flacon symmetrically instead of sliding off-frame. Its plaque band is a single uninterrupted matte panel: the wide-tracked 'Guerlain' brand line caps the band, the two-line Century-Geometric title block starts左-aligned below the bottle base (correct BELOW relation), and the deep-teal sonar rule runs the full band width as a closing刻度. Version 1 (image 5) suffers a mistranslated plate: a translucent teal slab anchored to the right edge cuts a vertical seam through the rings and继续 through the plaque band, tinting half the band and slicing between the title lines, while its sonar rule collapses to a stub under the first word. Both keep the product faithfully lit (opaque label and mirror-gold cap intact, translucent glass tinting plausibly toward the bright blue field), flat shadowless frontal ink light, and no studio artifacts or floating-packshot supports; version 2 simply resolves the graphic geometry and hierarchy the brief demands.",
+  "remaining_problems": [
+    "The support plate renders as a translucent pale-teal overlay rather than the briefed hard-edge deep teal (#0d3a44) slab, weakening the promised dark plaque contrast layer",
+    "Plate edges stop in open water on both sides, so the slab reads slightly like a pasted veil instead of a printed plate sunk behind the ring centre",
+    "A faint soft shadow under the glass base contradicts the declared perfectly shadowless frontal illumination",
+    "Brand line 'Guerlain' sits tight against the plaque band's top edge, risking optical collision with the band border"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

@@ -1,0 +1,80 @@
+{
+  "pass": false,
+  "score": 83.7,
+  "dimensions": {
+    "product_fidelity": 94,
+    "composition": 84,
+    "typography": 80,
+    "background": 82,
+    "physical_integration": 88,
+    "reference_alignment": 76,
+    "creative_coherence": 82
+  },
+  "problems": [
+    {
+      "type": "reference_alignment",
+      "problem": "The price layer renders empty (Spec price.text=\"\"), so the lower band right of the cobalt bar (x>281, y>1249) and the whole right margin below the red disc are dead cream. References R1/R3 complete the placard with a secondary information layer (body columns, 'Price upon request' line); this poster still stops at three short masthead lines, leaving the information hierarchy unfinished and the bottom-right quadrant unused."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The declared material is 'flat opaque ink layers, no cast shadow gradient', yet the contact_detail_crop still shows a soft photographic gradient smudge (blur 4) bleeding over the top edge of the printed ground rule at y1232-1249. The smudge reads as a photographic artifact sitting on top of silkscreen ink; in this concept the grounding should be carried by crisp flat ink (tighter, darker footprint) so the material story stays consistent."
+    },
+    {
+      "type": "typography",
+      "problem": "The masthead stack is internally resolved (logo y79, title 112px y166-247, subtitle y300-332, red rule y386) but the 55px cream gap between the rule (ends y~389) and the cobalt bar top (y432) still leaves the type block visually untethered from the geometry it is supposed to anchor; versus R1's placard confidence the block needs one tying element or tighter vertical rhythm into the field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "price.text",
+      "op": "set",
+      "value": "Цена по запросу"
+    },
+    {
+      "path": "price.x",
+      "op": "set",
+      "value": 786
+    },
+    {
+      "path": "price.y",
+      "op": "set",
+      "value": 1290
+    },
+    {
+      "path": "price.size",
+      "op": "set",
+      "value": 22
+    },
+    {
+      "path": "price.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "price.align",
+      "op": "set",
+      "value": "right"
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 1
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.62
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.0
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 404
+    }
+  ],
+  "reported_score": 81.6
+}

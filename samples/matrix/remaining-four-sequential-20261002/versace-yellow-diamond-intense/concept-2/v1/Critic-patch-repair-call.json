@@ -1,0 +1,134 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "57f13374b5045396c652b5044d35dc8bfc9584f9bf38d5c3f56eef3c6fefa9c5"
+    },
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-28e8e274-ecfc-9bae-9f80-51f638b1cec9",
+      "usage": {
+        "prompt_tokens": 8011,
+        "total_tokens": 9487,
+        "completion_tokens": 1476,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5123,
+          "text_tokens": 2888
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 451
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-28e8e274-ecfc-9bae-9f80-51f638b1cec9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 8011,
+    "total_tokens": 9487,
+    "completion_tokens": 1476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5123,
+      "text_tokens": 2888
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 451
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "product.x",
+        "op": "set",
+        "value": 352
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 851
+      },
+      {
+        "path": "product.width",
+        "op": "set",
+        "value": 588
+      },
+      {
+        "path": "product.height",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Lime-washed pale cool grey plaster wall meeting a continuous seamless honed pale limestone ground with no tiles and no seams at a horizontal horizon six tenths down the frame, one warm golden caustic light pool with refracted filament patterns lying across the wall-ground junction left of centre, one crisp oblique shadow edge raking the upper wall from left, fine matte mineral grain, bright cool morning ambient, empty scene"
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.42
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 12
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 566
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 648
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 962
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 300
+      }
+    ]
+  },
+  "duration_seconds": 31.906
+}

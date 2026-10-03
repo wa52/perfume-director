@@ -1,0 +1,184 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 243829931968638,
+    "background": {
+      "color": "#e9ded6",
+      "prompt": "Pale cool chalk plaster wall in soft powder white-beige meeting a continuous honed matching chalk ground at a horizontal horizon seventy-two hundredths down the frame, one broad calm powder-white glow blooming from upper left, matte mineral grain, soft high-key diffuse illumination, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 734,
+      "y": 792,
+      "width": 508,
+      "height": 720
+    },
+    "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#e9ded6",
+      "#3a332b",
+      "#6a8494"
+    ],
+    "title": {
+      "text": "Narciso Poudrée",
+      "x": 86,
+      "y": 576,
+      "size": 80,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "Eau de Parfum",
+      "x": 86,
+      "y": 958,
+      "size": 26,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "NARCISO",
+      "x": 86,
+      "y": 475,
+      "size": 26,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 1037,
+      "width": 151,
+      "color": "#6a8494"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 243829931968638,
+    "background": {
+      "color": "#e9ded6",
+      "prompt": "Pale cool chalk plaster wall in soft powder white-beige meeting a continuous honed matching chalk ground at a horizontal horizon seventy-two hundredths down the frame, one broad calm powder-white glow blooming from upper left, matte mineral grain, soft high-key diffuse illumination, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 734,
+      "y": 792,
+      "width": 508,
+      "height": 720
+    },
+    "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+    "palette": [
+      "#e9ded6",
+      "#3a332b",
+      "#6a8494"
+    ],
+    "title": {
+      "text": "Narciso Poudrée",
+      "x": 86,
+      "y": 576,
+      "size": 80,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 300,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "Eau de Parfum",
+      "x": 86,
+      "y": 958,
+      "size": 26,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "NARCISO",
+      "x": 86,
+      "y": 475,
+      "size": 26,
+      "color": "#3a332b",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 1037,
+      "width": 151,
+      "color": "#6a8494"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

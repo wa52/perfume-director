@@ -116,6 +116,34 @@ class ComfyJobsTests(unittest.TestCase):
         self.assertEqual(restarted.status('c'*32)['error'], 'UnreadableSavedState')
         self.assertIsNone(restarted.active)
 
+    def test_running_critic_exposes_draft_without_claiming_a_final_selection(self):
+        job='d'*32;run=self.root/'runs/live/draft'
+        (run/'v1').mkdir(parents=True)
+        Image.new('RGB',(4,4),'white').save(run/'v1/poster.png')
+        self.engine.write(self.manager.state_path(job),{'status':'RUNNING','stage':'CRITIC','run_dir':str(run),'version':1})
+        state=self.manager.status(job)
+        self.assertEqual(state['draft']['version'],1)
+        self.assertNotIn('selected',state)
+        self.assertEqual(self.manager.preview(job,draft=True),run/'v1/poster.png')
+        with self.assertRaises(FileNotFoundError):self.manager.preview(job)
+        self.manager.update(job,{'stage':'RENDER','version':2})
+        (run/'v2').mkdir();(run/'v2/poster.png').write_bytes(b'incomplete')
+        self.assertEqual(self.manager.preview(job,draft=True),run/'v1/poster.png')
+
+    def test_planning_has_clear_repair_state_and_no_fabricated_preview(self):
+        job='e'*32;batch=self.root/'runs/batches/plan';batch.mkdir(parents=True)
+        self.engine.write(self.manager.state_path(job),{'status':'RUNNING','stage':'CONCEPTS','run_dir':str(batch)})
+        self.assertEqual(self.manager.status(job)['planning_phase'],'initial')
+        self.engine.write(batch/'Concepts-call.json',{'status':'OK'})
+        self.assertEqual(self.manager.status(job)['planning_phase'],'repair')
+        self.assertNotIn('draft',self.manager.status(job))
+        with self.assertRaises(FileNotFoundError):self.manager.preview(job,draft=True)
+
+    def test_draft_preview_rejects_run_outside_project(self):
+        job='f'*32
+        self.engine.write(self.manager.state_path(job),{'status':'RUNNING','stage':'CRITIC','version':1,'run_dir':str(self.root.parent)})
+        with self.assertRaises(ValueError):self.manager.preview(job,draft=True)
+
 
 if __name__ == '__main__':
     unittest.main()

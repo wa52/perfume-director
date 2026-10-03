@@ -1,0 +1,184 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392035182,
+    "background": {
+      "color": "#3a3d42",
+      "prompt": "Dark basalt grey stone slab wall with fine horizontal dry joints meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte stone grain, cool diffuse ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 724,
+      "y": 864,
+      "width": 597,
+      "height": 547
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+    "palette": [
+      "#3a3d42",
+      "#f0eee6",
+      "#e9c63c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 86,
+      "y": 648,
+      "size": 64,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3,
+      "max_width": 300,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 979,
+      "size": 20,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 86,
+      "y": 554,
+      "size": 34,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 929,
+      "width": 194,
+      "color": "#e9c63c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392035182,
+    "background": {
+      "color": "#3a3d42",
+      "prompt": "Dark basalt grey stone slab wall with fine horizontal dry joints meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte stone grain, cool diffuse ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 724,
+      "y": 864,
+      "width": 597,
+      "height": 547
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+    "palette": [
+      "#3a3d42",
+      "#f0eee6",
+      "#e9c63c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 86,
+      "y": 648,
+      "size": 64,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3,
+      "max_width": 300,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 86,
+      "y": 979,
+      "size": 20,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 86,
+      "y": 554,
+      "size": 34,
+      "color": "#f0eee6",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 929,
+      "width": 194,
+      "color": "#e9c63c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

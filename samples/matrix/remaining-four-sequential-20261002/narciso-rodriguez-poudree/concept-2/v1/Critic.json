@@ -1,0 +1,53 @@
+{
+  "pass": false,
+  "score": 86.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 85,
+    "typography": 84,
+    "background": 86,
+    "physical_integration": 88,
+    "reference_alignment": 83,
+    "creative_coherence": 88
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "Left column vertical rhythm is uneven: title block ends at y=724 while the subtitle sits at y=958, leaving a 234px void mid-column; the column reads as two disconnected fragments rather than one continuous editorial plank as in the reference plate秩序 (R2)."
+    },
+    {
+      "type": "composition",
+      "problem": "The stone-blue rule (decoration, y=1037, width 151) lands almost exactly on the wall-ground horizon (~y=1037), so the typographic baseline device visually collides with the architectural line behind it, weakening both the rule and the horizon."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop [401,1012,1067,1262] confirms the bottle base IS seated on the honed chalk ground with a real soft contact darkening under the glass plinth (shadow offset_y=0 is correct), but at opacity 0.35 with blur 10 the footprint is barely denser than the surrounding ground grain; the 'measured contact shadow lightly sunk into the honed surface' from the brief reads as almost absent at poster scale."
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 880
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 946
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "validation_notes": [
+    "Contradictory approval downgraded: outstanding problems/changes or score below threshold"
+  ],
+  "reported_score": 86
+}

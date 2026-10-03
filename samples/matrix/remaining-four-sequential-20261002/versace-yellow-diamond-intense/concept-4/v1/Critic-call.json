@@ -1,0 +1,187 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "683d4c6cb636bb183219ebeaab2eb86f687146fb3ea8aa912866d09800681ae3"
+    },
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "71603d445c94ccd065330e9b3cb1805ebcae4798a593cff477a9dda5704727f9"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-285eb7af-51de-9788-b722-80390fe9d1e0",
+      "usage": {
+        "prompt_tokens": 9167,
+        "total_tokens": 11409,
+        "completion_tokens": 2242,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6426,
+          "text_tokens": 2741
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1217
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-285eb7af-51de-9788-b722-80390fe9d1e0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 9167,
+    "total_tokens": 11409,
+    "completion_tokens": 2242,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6426,
+      "text_tokens": 2741
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1217
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 76,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 78,
+      "typography": 80,
+      "background": 66,
+      "physical_integration": 74,
+      "reference_alignment": 70,
+      "creative_coherence": 72
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The declared noon key light never reads in the render: the basalt wall is a flat, evenly lit matte field with no top-light gradient, and the promised sharp horizontal shadow band along the wall base is missing. Instead a soft dark smudge hugs the left canvas edge (x 0-90, y ~560-1000) with no casting object, reading as a rendering artifact rather than intentional shade. The environment therefore looks like a flat texture behind a pasted cutout, far below the directional shadow秩序 of参考 R4."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "The contact detail crop (346,997)-(1080,1247) confirms the bottle base meets the honed basalt at y=1137 with a real, correctly offset contact shadow (offset_y 0), so there is no floating. However the product's own illumination is soft frontal studio light with strong internal glow and a bright base band, while the scene claims bright noon top light; the bottle casts no directional shadow consistent with that key, so the integration reads as composited rather than photographed in situ."
+      },
+      {
+        "type": "composition",
+        "problem": "At product_height_ratio 0.3799 the bottle sits at the low end of the concept's 35-74% safety band; combined with the empty upper-right quadrant (x ~430-1020, y ~100-560 is bare wall) the right column feels under-weighted against the dense three-line title block, unlike参考 R1/R8 where negative space is balanced by a stronger subject mass or tonal event."
+      },
+      {
+        "type": "typography",
+        "problem": "Hierarchy inside the left column is competent but loose: the logo cap-line (y 554-578) to title top (y 648) gap is 70px while title bottom (842) to the lemon rule (929) is 87px, and the rule then floats 300px above nothing; the column lacks a closing element (subtitle/price are empty strings rendered as voids), so the文字柱 trails off instead of resolving like an instrument plaque."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Dark basalt grey stone slab wall with fine horizontal dry joints, lit by a strong overhead noon key so the wall face falls from a brighter top edge into cooler dimmer depth, meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame; one crisp narrow horizontal shadow band pressed along the wall base and a soft broad diagonal shade falling from upper left across the left third of the wall, matte stone grain, cool diffuse fill, no objects"
+      },
+      {
+        "path": "product.height",
+        "op": "multiply",
+        "value": 1.18
+      },
+      {
+        "path": "product.width",
+        "op": "multiply",
+        "value": 1.18
+      },
+      {
+        "path": "product.y",
+        "op": "set",
+        "value": 810
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.45
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.15
+      },
+      {
+        "path": "logo.y",
+        "op": "set",
+        "value": 574
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 660
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 900
+      },
+      {
+        "path": "subtitle.text",
+        "op": "set",
+        "value": "EAU DE PARFUM INTENSE"
+      },
+      {
+        "path": "subtitle.x",
+        "op": "set",
+        "value": 86
+      },
+      {
+        "path": "subtitle.y",
+        "op": "set",
+        "value": 952
+      },
+      {
+        "path": "subtitle.size",
+        "op": "set",
+        "value": 20
+      },
+      {
+        "path": "subtitle.tracking",
+        "op": "set",
+        "value": 5
+      }
+    ]
+  },
+  "duration_seconds": 47.228
+}

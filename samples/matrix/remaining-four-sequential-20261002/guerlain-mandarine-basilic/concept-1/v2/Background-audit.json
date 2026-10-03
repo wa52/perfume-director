@@ -1,0 +1,32 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in saturated mandarin orange, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 45020087237065,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "ellipse",
+      "x": 108,
+      "y": 490,
+      "width": 864,
+      "height": 864,
+      "color": "#f9a03f",
+      "opacity": 0.45
+    },
+    {
+      "kind": "ellipse",
+      "x": 184,
+      "y": 566,
+      "width": 713,
+      "height": 713,
+      "color": "#f6ead2",
+      "opacity": 0.95
+    }
+  ]
+}

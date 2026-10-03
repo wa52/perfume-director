@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 delivers the cleaner finished set within the Zellige Noon Water Court concept: the glazed basil-green wall meets the continuous tiled ground on a single credible baseline, the flacon stands right-of-centre with a soft contact shadow seated into the grout, and the left editorial column (wide-tracked Guerlain line, four-line Baskerville-style serif title, honey-gold rule) holds a stable vertical overlap with the cap/shoulder zone and clean horizontal separation. Version 1 is undermined by a hard diagonal shadow raking across the left wall and floor, which contradicts the declared noon top-light horizontal band at the wall base, dirties the quiet冷绿 text column and reads as an off-frame artifact rather than campaign lighting; its bottle contact is also flatter. Version 2's tile glaze, grout rhythm and gold-stop highlights are more controlled and its typography spacing is more even.",
+  "remaining_problems": [
+    "Version 2 shows a faint ghosted bottle-shaped outline etched into the upper-centre tile field, a generation artifact on the wall",
+    "The scalloped fish-scale tile row near the wall base departs from the declared uniform vertical zellige column pattern",
+    "The promised sharp horizontal noon shadow band at the wall base is only weakly implied; the wall-floor junction reads slightly bright and flat",
+    "Contact shadow under the flacon is soft and shallow rather than clearly sunk into a grout joint"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

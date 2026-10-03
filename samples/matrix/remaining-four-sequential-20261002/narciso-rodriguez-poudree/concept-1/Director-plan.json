@@ -1,0 +1,118 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\ddc3147b0072\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Poudre Settling Stipple Field",
+    "brief": "把扑粉的下坠读作一张点刻画：平涂深橄榄 Moss 卡纸上，细密骨白粉点自顶带向下逐级稀薄如粉雾沉降，在下三分之一处被一道硬边留白横带截断，如同粉尘落定；一枚低不透明度橄榄矩形板沉于点场之后托住剪影下半，点阵从其肩后继续垂落却不触碰标签。商品沉于下幅立于点场心与留白带之前，奶油漆芯的柔体积对抗点密度的平面下坠。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，副行垫底，一条粉白细线横垫其下如沉降零点——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯点密度叙事。参考 R1 的铭牌层级（品牌轻、题名重、副行垫底）、R4 的中心聚焦秩序与 R6 的柔光粉彩温度。",
+    "material": "flat matte silkscreen-printed card with fine stipple powder-dot density gradient and one hard-edge blank plaque band",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#43492f",
+      "#f2ecdc",
+      "#d8b4a6"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 243829931967629,
+    "background": {
+      "color": "#43492f",
+      "prompt": "Seamless flat matte silkscreen-printed card in deep olive moss green, fine bone-white stipple powder dots dense at the top edge thinning gradually downward, one hard-edge blank horizontal band without dots across the lower third, perfectly even shadowless frontal illumination, no texture gradients beyond printed dots, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 540,
+          "y": 893,
+          "width": 648,
+          "height": 720,
+          "color": "#2e3320",
+          "opacity": 0.35
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 568,
+      "height": 806
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#43492f",
+      "#f2ecdc",
+      "#d8b4a6"
+    ],
+    "title": {
+      "text": "Narciso Poudrée",
+      "x": 216,
+      "y": 166,
+      "size": 92,
+      "color": "#f2ecdc",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "Eau de Parfum",
+      "x": 417,
+      "y": 300,
+      "size": 26,
+      "color": "#f2ecdc",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f2ecdc",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "NARCISO",
+      "x": 451,
+      "y": 89,
+      "size": 26,
+      "color": "#f2ecdc",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 475,
+      "y": 377,
+      "width": 130,
+      "color": "#d8b4a6"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

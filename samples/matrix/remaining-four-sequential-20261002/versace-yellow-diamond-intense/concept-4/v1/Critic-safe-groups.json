@@ -1,0 +1,84 @@
+{
+  "accepted": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Dark basalt grey stone slab wall with fine horizontal dry joints, lit by a strong overhead noon key so the wall face falls from a brighter top edge into cooler dimmer depth, meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame; one crisp narrow horizontal shadow band pressed along the wall base and a soft broad diagonal shade falling from upper left across the left third of the wall, matte stone grain, cool diffuse fill, no objects"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 900
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "product",
+      "changes": [
+        {
+          "path": "product.height",
+          "op": "multiply",
+          "value": 1.18
+        },
+        {
+          "path": "product.width",
+          "op": "multiply",
+          "value": 1.18
+        },
+        {
+          "path": "product.y",
+          "op": "set",
+          "value": 810
+        }
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "logo.y",
+          "op": "set",
+          "value": 574
+        },
+        {
+          "path": "title.y",
+          "op": "set",
+          "value": 660
+        },
+        {
+          "path": "subtitle.text",
+          "op": "set",
+          "value": "EAU DE PARFUM INTENSE"
+        },
+        {
+          "path": "subtitle.y",
+          "op": "set",
+          "value": 952
+        },
+        {
+          "path": "subtitle.tracking",
+          "op": "set",
+          "value": 5
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

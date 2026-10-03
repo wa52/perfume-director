@@ -1,0 +1,117 @@
+{
+  "brief": "为 Versace Yellow Diamond Intense 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把盖顶的镜面碎光放进一座正午石庭：深玄武岩灰石板墙以细密干缝排成横向石层，连续 honed 同料石板地面在真实基准线接墙；正午顶光在墙根压出一道锐利水平影带，石面保持冷哑光。商品缩小立于石地偏右，测量接触阴影陷进干缝；左半幅石墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽三行排印如仪器铭牌，一条柠檬短横线垫于柱底如日晷刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏网格诚实成立；玄武岩的冷哑光与金黄折面玻璃的暖透互为温度悖论。参考 R1 的左图右文负空间层级、R4 的硬方向光阴影秩序与 R8 的深色建筑感负空间。",
+  "product": "assets\\products\\versace-yellow-diamond-intense-retailer.png",
+  "references": [
+    {
+      "id": "ref-d2db4b80bde2",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-d2db4b80bde2.jpg",
+      "selection_reason": "Professionally resolved perfume advertisement featuring dynamic floral elements, clear campaign typography, and high-end product rendering suitable for design reference.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the product and floral explosion on the left counterweighted by negative space and typography on the right.",
+        "subject_ratio": 0.35,
+        "negative_space": "Significant dark gradient space on the right utilized for text placement.",
+        "lighting": "Dramatic studio lighting with high contrast, highlighting the faceted glass and metallic cap against a dark background.",
+        "color": [
+          "rose pink",
+          "deep burgundy",
+          "black",
+          "metallic copper",
+          "white"
+        ],
+        "typography": "Clean white sans-serif logo and serif tagline positioned in the right negative space; URL at the bottom.",
+        "information_density": "Moderate; focuses on brand identity and a single tagline without clutter.",
+        "characteristics": [
+          "exploding rose petals",
+          "faceted glass bottle",
+          "metallic accents",
+          "dark moody atmosphere",
+          "reflection"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-04eb11dcf323",
+      "brand": "Scentbird",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/editorial/ref-04eb11dcf323.webp",
+      "selection_reason": "Professionally resolved perfume still-life with vibrant color blocking, hard directional lighting, and botanical styling. High utility for composition and palette reference.",
+      "analysis": {
+        "composition": "Dynamic flat-lay scatter of cylindrical atomizers interspersed with fresh floral elements on a textured beige surface.",
+        "subject_ratio": 0.75,
+        "negative_space": "Minimal, mostly filled by products and botanicals; small patches of textured background visible.",
+        "lighting": "Hard, direct sunlight creating sharp, distinct drop shadows that add depth and graphic contrast.",
+        "color": [
+          "beige",
+          "hot pink",
+          "mustard yellow",
+          "burgundy",
+          "orange",
+          "gold"
+        ],
+        "typography": "None outside of container labeling.",
+        "information_density": "Medium-high due to multiple product variations and scattered props.",
+        "characteristics": [
+          "vibrant palette",
+          "hard shadows",
+          "botanical props",
+          "flat lay",
+          "multi-product display"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

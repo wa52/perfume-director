@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 45020087240092,
+  "background": {
+    "color": "#e8e2d4",
+    "prompt": "Seamless warm bone-white terrazzo interior, one continuous honed stone plane curving gently upward into a distant wall with no visible horizon line, dense even speckle of fine honey-gold and grey-green mineral chips clearly visible in the matte grain, one broad calm warm-white band of soft noon side light lying across the upper field, empty space only, no objects",
+    "revision": 1,
+    "shapes": []
+  },
+  "product": {
+    "x": 324,
+    "y": 835,
+    "width": 325,
+    "height": 749
+  },
+  "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+  "palette": [
+    "#e8e2d4",
+    "#1d3a34",
+    "#c98a2e"
+  ],
+  "title": {
+    "text": "Aqua Allegoria Mandarine Basilic",
+    "x": 605,
+    "y": 490,
+    "size": 88,
+    "color": "#1d3a34",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 2,
+    "max_width": 400,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "",
+    "x": 605,
+    "y": 864,
+    "size": 22,
+    "color": "#1d3a34",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 3
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1d3a34",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "Guerlain",
+    "x": 605,
+    "y": 403,
+    "size": 30,
+    "color": "#1d3a34",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.3,
+    "blur": 16,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.1
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 605,
+    "y": 886,
+    "width": 349,
+    "color": "#c98a2e"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

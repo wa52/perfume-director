@@ -1,0 +1,75 @@
+{
+  "pass": false,
+  "score": 77.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 80,
+    "reference_alignment": 72,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The rejected 1.18x product scale-up was never applied (geometry still product_bbox 426,590-1021,1137, ratio 0.3799), so the bottle remains at the low end of the 35-74% band while the entire upper band y 0-550 across both columns is empty basalt: above the VERSACE cap-line on the left and above the cap apex (y 590) on the right. References R1/R8 balance negative space with a dominant subject mass or a tonal event; here the smallSubject plus dead top band leaves the two-column grid under-anchored."
+    },
+    {
+      "type": "typography",
+      "problem": "The left text column still trails off: subtitle and price are empty strings, so after the lemon rule at y 900-902 there is roughly 540px of bare wall down to the canvas bottom, and the rule-to-floor gap (~95px) is visually unresolved. The previous attempt to close the column with 'EAU DE PARFUM INTENSE' was rejected only because it was bundled with unsafe logo.y/title.y moves; the column therefore still lacks its closing plaque line."
+    },
+    {
+      "type": "background",
+      "problem": "The noon key now reads (brighter top edge, cooler depth, crisp dark band pressed along the wall base at y ~995-1010, diagonal shade over the left third), but the shade's soft edge cuts diagonally through the text column behind 'Yellow' and 'Diamond' (x ~0-200, y ~600-850), locally dropping the wall value under the ink and fighting the instrument-plaque legibility the concept demands; the light order and the type column are not yet coordinated."
+    }
+  ],
+  "changes": [
+    {
+      "path": "product.height",
+      "op": "multiply",
+      "value": 1.15
+    },
+    {
+      "path": "product.width",
+      "op": "multiply",
+      "value": 1.15
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 824
+    },
+    {
+      "path": "subtitle.text",
+      "op": "set",
+      "value": "EAU DE PARFUM INTENSE"
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 86
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 946
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 20
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Dark basalt grey stone slab wall with fine horizontal dry joints, lit by a strong overhead noon key so the wall face falls from a brighter top edge into cooler dimmer depth, meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame; one crisp narrow horizontal shadow band pressed along the wall base, the wall face evenly lit across the left half with only a faint cool vertical gradient near the far left edge, matte stone grain, cool diffuse fill, no objects"
+    }
+  ],
+  "reported_score": 78.0
+}

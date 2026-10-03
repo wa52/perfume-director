@@ -1,0 +1,42 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://www.photo-frank.com/portfolio/sneakerweek",
+  "image_url": "https://framerusercontent.com/images/gHhShtvemvCaK8SEjeaJmbJyDQ.jpg?width=1638&height=2048",
+  "caption": "",
+  "id": "category-868432d2f0c6278e",
+  "local_path": "references/categories/footwear/868432d2f0c6278e.jpg",
+  "sha256": "c4546588862de15b199e8dff14c76868c74c6df291d11311dd8f93f10ac9484f",
+  "width": 1638,
+  "height": 2048,
+  "analysis": {
+    "category_match": true,
+    "brand": "Nike",
+    "quality_score": 82,
+    "composition": "Dynamic lifestyle close-up with the sneaker centered on a bicycle pedal, framed by the diagonal yellow bike frame and blurred background.",
+    "subject_ratio": 0.45,
+    "negative_space": "Minimal; the frame is densely packed with the shoe, bike components, and leg, leaving little empty room for overlay text.",
+    "lighting": "Soft, diffused natural daylight providing even illumination across the mesh and suede textures without harsh shadows.",
+    "color": [
+      "teal",
+      "light grey",
+      "white",
+      "mustard yellow",
+      "navy blue"
+    ],
+    "typography": "None present (only intrinsic product branding on the tongue and heel).",
+    "information_density": "Low; purely visual product focus with no informational text or graphics.",
+    "characteristics": [
+      "lifestyle photography",
+      "shallow depth of field",
+      "textured materials (mesh/suede)",
+      "urban cycling context",
+      "complementary color palette"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image clearly features a Nike Air Max sneaker, matching the footwear category. The brand is identifiable via the visible Swoosh and logos. It preserves the required sole silhouette, stitching, laces, toe, and heel details in a horizontal orientation. However, it lacks external campaign typography, functioning as a high-quality lifestyle product shot rather than a finished text-based advertisement."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

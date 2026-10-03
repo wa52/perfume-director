@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243829931967629,
+  "background": {
+    "color": "#43492f",
+    "prompt": "Seamless flat matte silkscreen-printed card in deep olive moss green, fine bone-white stipple powder dots dense along the top edge and thinning gradually downward through the upper half, one crisp hard-edge blank horizontal band with no dots from the lower third to the bottom edge, perfectly even shadowless frontal illumination, flat graphic ink light, no texture gradients beyond the printed dots, no objects, no seams, no vertical divisions",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 180,
+        "y": 980,
+        "width": 720,
+        "height": 460,
+        "color": "#2e3320",
+        "opacity": 0.35
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 568,
+    "height": 806
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#43492f",
+    "#f2ecdc",
+    "#d8b4a6"
+  ],
+  "title": {
+    "text": "Narciso Poudrée",
+    "x": 216,
+    "y": 166,
+    "size": 92,
+    "color": "#f2ecdc",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "Eau de Parfum",
+    "x": 417,
+    "y": 292,
+    "size": 26,
+    "color": "#f2ecdc",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f2ecdc",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "NARCISO",
+    "x": 451,
+    "y": 89,
+    "size": 26,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 475,
+    "y": 352,
+    "width": 130,
+    "color": "#d8b4a6"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

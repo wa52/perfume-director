@@ -1,0 +1,92 @@
+{
+  "pass": false,
+  "score": 78.6,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 76,
+    "typography": 74,
+    "background": 68,
+    "physical_integration": 88,
+    "reference_alignment": 74,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regeneration produced TWO hard-edge olive bands instead of the single plaque band the concept declares: one mid-field band at y≈690–845 slices the bottle behind its label, and a second plaque zone begins at y≈995. In the contact-detail crop (68,825–1011,1075) the mid-band's lower hard edge runs directly beneath the base footprint at crop y≈20, so the correctly seated contact shadow (offset_y=0, soft dark contour hugging the base, no float) reads as sitting on a printed stripe. The brief's 'one hard-edge band at two thirds' and its uninterrupted facet-density fall are both broken; references R2/R4 keep color fields to a single clean zone."
+    },
+    {
+      "type": "typography",
+      "problem": "Title bbox 138–1009 at size 78 leaves only ~71px right margin versus the 138px left origin, so the 'centered' line still reads optically shifted and crowds the right safe edge; the brief asks the serif line to govern the plaque band with air. Logo (center ≈534) and decoration rule (center ≈564) are also off-axis from each other by ~30px, weakening the logo→rule→title stack that R2-style plaque秩序 relies on."
+    },
+    {
+      "type": "composition",
+      "problem": "The ink rule at y=1108 sits only ~25px above the title cap line (title top 1138) but ~50px below the logo baseline zone, so the 'engraver zero point' hairline visually collides with the title instead of capping the band; the plaque zone (from y≈995) also starts barely 30px below the bottle base (965), leaving no breathing gap between silhouette and铭牌 band."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre and gradually thinning downward, exactly one perfectly even hard-edge horizontal band of slightly deeper olive citron whose top edge begins at 72 percent of the height and runs full width to the bottom edge with clean straight edges, no other bands, no stripes above it, perfectly even shadowless frontal illumination, no vertical seams, no quadrant splits, no objects"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": []
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 70
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1160
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "logo.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 430
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1102
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 220
+    }
+  ],
+  "evidence_notes": {
+    "contact_shadow": "Verified in detail crop (68,825–1011,1075): soft dark footprint follows the base contour at offset_y=0; base_y=965 (67% of canvas) inside the 10–94% bounds; no floating, no gap. Shadow left untouched.",
+    "product": "Single bottle, label 'VERSACE YELLOW DIAMOND INTENSE' intact, facet cuts and gem cap match the original cutout; height ratio 0.50 within this concept's 35–74% band; no extra bottles or generated labels.",
+    "overlap": "text_product_overlap false for title and logo; no overlap claimed.",
+    "artifacts": "No softboxes, lamps, stands or cameras; graphic scene_mode so no photographic floor is required.",
+    "previous_fixes_confirmed": "The prior version's vertical split at x=540 and quadrant seams are gone; field is now full-bleed and edge-clean horizontally, which is why background rises from 66 to 68 only (new double-band fault replaces the old one)."
+  },
+  "reported_score": 78.2
+}

@@ -1,0 +1,40 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 179673392032155,
+      "issues": [
+        "unexpected_white_frame"
+      ],
+      "image": "background-attempt-1.png"
+    },
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the upper central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 179673392132158,
+      "issues": [],
+      "image": "background-attempt-2.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "ellipse",
+      "x": 540,
+      "y": 768,
+      "width": 864,
+      "height": 245,
+      "color": "#e9c63c",
+      "opacity": 0.92
+    },
+    {
+      "kind": "ellipse",
+      "x": 540,
+      "y": 737,
+      "width": 994,
+      "height": 360,
+      "color": "#e9c63c",
+      "opacity": 0.22
+    }
+  ]
+}

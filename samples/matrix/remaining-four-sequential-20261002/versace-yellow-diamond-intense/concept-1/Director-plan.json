@@ -1,0 +1,127 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\a36978b52580\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Lapidary Marquise Blueprint",
+    "brief": "把宽马眼形宝石盖读作一张琢石图纸：深钴蓝丝印卡纸上，一枚硬边柠檬色马眼椭圆精确套住盖部轮廓，其后错出一枚更大的低不透明度同形椭圆如放大一级的琢面刻度，椭圆之下再压一条象牙细横缝如剖切线。商品沉于下幅，剪影自身补全椭圆的中断；顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条柠檬细线横垫其下如制图套准线。哑光丝印吞光，让金黄折面玻璃 owning 全部高光。无地面无 horizon，纯琢石几何叙事。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）与 R5 的居中几何光环聚焦、R7 的同品牌金属光泽秩序。",
+    "material": "flat matte silkscreen-printed card with hard-edge printed marquise oval fields",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#16307a",
+      "#f2ecd8",
+      "#e9c63c"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392032155,
+    "background": {
+      "color": "#16307a",
+      "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 768,
+          "width": 864,
+          "height": 245,
+          "color": "#e9c63c",
+          "opacity": 0.92
+        },
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 737,
+          "width": 994,
+          "height": 360,
+          "color": "#e9c63c",
+          "opacity": 0.22
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 907,
+      "width": 785,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#16307a",
+      "#f2ecd8",
+      "#e9c63c"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 78,
+      "y": 209,
+      "size": 86,
+      "color": "#f2ecd8",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.05,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 497,
+      "y": 338,
+      "size": 24,
+      "color": "#f2ecd8",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f2ecd8",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 428,
+      "y": 89,
+      "size": 40,
+      "color": "#f2ecd8",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 378,
+      "y": 321,
+      "width": 324,
+      "color": "#e9c63c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

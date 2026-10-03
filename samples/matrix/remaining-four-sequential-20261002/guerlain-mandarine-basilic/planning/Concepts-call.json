@@ -1,0 +1,382 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "guerlain-mandarine-basilic-retailer.png",
+      "sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 3,
+      "status": "OK",
+      "response_id": "chatcmpl-def3fecb-47f2-9a82-ba90-a275c7dc4cca",
+      "usage": {
+        "prompt_tokens": 32367,
+        "total_tokens": 38731,
+        "completion_tokens": 6364,
+        "prompt_tokens_details": {
+          "cached_tokens": 31744,
+          "image_tokens": 9144,
+          "text_tokens": 23223
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2267
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-def3fecb-47f2-9a82-ba90-a275c7dc4cca",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 32367,
+    "total_tokens": 38731,
+    "completion_tokens": 6364,
+    "prompt_tokens_details": {
+      "cached_tokens": 31744,
+      "image_tokens": 9144,
+      "text_tokens": 23223
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2267
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Mandarine Segment Dial",
+        "brief": "把金色蜂窝穹顶读作一枚柑橘横切面：平涂 mandarin 橙丝印卡纸上，一枚硬边象牙大圆盘精确套住瓶身中段如切片果肉，其后错出一枚更大的低不透明度琥珀圆盘如外皮刻度环；商品沉于中下幅立于圆盘之前，剪影自身补全圆的中断。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以两行 Didone 大字居中统领，一条深琥珀细线横垫其下如制版套准线——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯圆盘几何对抗透明玻璃的柔渐液体。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）、R4 的饱和色块勇气与 R6 的中心聚焦秩序。",
+        "material": "flat matte silkscreen-printed card with hard-edge printed citrus disc fields",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#e4691c",
+          "#f8ecd4",
+          "#a63f0c"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.202,
+            0.105,
+            84
+          ],
+          "logo": [
+            0.429,
+            0.06,
+            30
+          ],
+          "subtitle": [
+            0.44,
+            0.283,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 700,
+              "line_height": 1.08,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in saturated mandarin orange, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.585,
+            "width": 0.8,
+            "height": 0.6,
+            "color": "#f9a03f",
+            "opacity": 0.45
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.6,
+            "width": 0.66,
+            "height": 0.495,
+            "color": "#f6ead2",
+            "opacity": 0.95
+          }
+        ],
+        "line": [
+          0.42,
+          0.262,
+          0.16
+        ]
+      },
+      {
+        "name": "Zellige Noon Water Court",
+        "brief": "把 basil 的冷绿放进一座正午釉砖庭：饱和 basil 绿釉面砖墙以细密灰缝排成竖向砖柱，釉光在砖面留下低亮弧光；连续同料釉砖地面在真实基准线接墙，正午顶光在墙根压出一道锐利水平影带。商品缩小立于釉地偏右，测量接触阴影陷进灰缝；左半幅釉墙保持安静冷绿，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Baskerville 题名以窄柱三行衬线大字排印如蚀刻签条，一条蜜金细线横垫柱底如日照刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；釉面的湿亮与透明玻璃边的细折光同源却不同温。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬净负空间与 R8 的釉光粉彩秩序。",
+        "material": "glazed basil-green zellige tile wall with fine grout joints and continuous matching glazed tile ground",
+        "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R8"
+        ],
+        "palette": [
+          "#2e7d5b",
+          "#f4efe2",
+          "#d9a441"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.07,
+            0.36,
+            64
+          ],
+          "logo": [
+            0.07,
+            0.3,
+            30
+          ],
+          "subtitle": [
+            0.07,
+            0.62,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 1,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 5
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte grout grain, bright cool ambient, no objects",
+        "shapes": [],
+        "line": [
+          0.07,
+          0.605,
+          0.14
+        ]
+      },
+      {
+        "name": "Aqua Ripple Sonar Plate",
+        "brief": "把 Aqua 的水声读作一圈声呐回波：平涂冰川水蓝卡纸上，细密同心水蓝刻线环自画面中心向外扩散，一枚硬边深青矩形板沉于环心之后托住剪影下半，环线下三分之一被一道硬边留白横带截断如同回波沉入铭牌；商品提至上幅立于环心，刻线从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以两行宽排收左缘起排，一条深青细线横垫区底如声呐刻度——题名整组起排于瓶底之下，构成 BELOW 关系。无地面无 horizon，纯环密度扩散叙事对抗金黄液体的暖透。参考 R2 的纸面分区铭牌秩序、R5 的圆心聚焦光环与 R1 的深色铭牌对比层级。",
+        "material": "flat matte screen-printed card with fine concentric ripple rings and one hard-edge blank plaque band",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R2",
+          "R5",
+          "R1"
+        ],
+        "palette": [
+          "#cfe3e6",
+          "#0d3a44",
+          "#1f8fa6"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.1,
+            0.79,
+            66
+          ],
+          "logo": [
+            0.429,
+            0.735,
+            28
+          ],
+          "subtitle": [
+            0.1,
+            0.945,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 3,
+              "max_width": 880,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte screen-printed card in pale glacier aqua blue, fine concentric ripple rings in deep marine teal expanding from the exact centre of the frame, one hard-edge blank horizontal plaque band without rings across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond printed rings, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.42,
+            "width": 0.5,
+            "height": 0.42,
+            "color": "#0d3a44",
+            "opacity": 0.14
+          }
+        ],
+        "line": [
+          0.1,
+          0.93,
+          0.2
+        ]
+      },
+      {
+        "name": "Honeycomb Noon Terrazzo Hall",
+        "brief": "把金蜂窝穹顶的六角光读作一座正午水磨石厅：暖骨白水磨石墙以细密蜜金与灰绿碎石排成细点阵，连续 honed 同料水磨石地面在真实基准线接墙；正午侧光在墙面掠出一道宽而静的暖白光带，石面保持哑光矿物颗粒。商品立于石地偏左，测量接触阴影轻陷进磨面；右半幅石墙保持安静暖白，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如凿刻签条，一条蜜金细线横垫柱底如日晷刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；水磨石的冷哑矿物与金黄蜂窝金属的暖亮互为粗细。参考 R1 的右栏负空间排印层级、R4 的硬光矿物颗粒与 R8 的高键粉彩温度。",
+        "material": "warm bone terrazzo wall with fine honey-gold and grey-green chip aggregate sweeping into continuous honed matching terrazzo ground",
+        "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R8"
+        ],
+        "palette": [
+          "#e8e2d4",
+          "#1d3a34",
+          "#c98a2e"
+        ],
+        "product": [
+          0.3,
+          0.58,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.56,
+            0.34,
+            88
+          ],
+          "logo": [
+            0.56,
+            0.28,
+            30
+          ],
+          "subtitle": [
+            0.56,
+            0.6,
+            22
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 400,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 3
+            }
+          }
+        },
+        "background_prompt": "Warm bone-white terrazzo wall with fine honey-gold and grey-green stone chip aggregate in a dense even speckle, meeting a continuous honed matching terrazzo ground at a horizontal horizon six tenths down the frame, one broad calm warm-white light band lying across the upper wall from soft noon side light, matte mineral grain, no objects",
+        "shapes": [],
+        "line": [
+          0.56,
+          0.585,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 516.786
+}

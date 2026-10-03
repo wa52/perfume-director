@@ -1,0 +1,41 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/10",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/jacob-and-co-watch.jpg",
+  "caption": "Watch photographer and still life photographer in New York",
+  "id": "category-fc3303d1382aa0eb",
+  "local_path": "references/categories/watches/fc3303d1382aa0eb.jpg",
+  "sha256": "ffc824bc70aef7a1a46db953a95f258a8ebe3abb18c2eaf7f235cec14df00aec",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Jacob & Co",
+    "quality_score": 92,
+    "composition": "Centered hero product shot with a slight three-quarter angle to showcase dial depth and case profile.",
+    "subject_ratio": 0.65,
+    "negative_space": "Extensive dark vignette surrounding the subject, focusing attention entirely on the timepiece.",
+    "lighting": "Professional studio lighting with sharp specular highlights on the polished bezel and lugs, emphasizing the metallic texture and guilloché dial pattern.",
+    "color": [
+      "silver",
+      "black",
+      "dark blue",
+      "grey"
+    ],
+    "typography": "Brand logo and name printed on the dial; no external campaign typography.",
+    "information_density": "Low; purely visual product focus.",
+    "characteristics": [
+      "guilloché dial",
+      "fluted bezel",
+      "alligator leather strap",
+      "polished steel case",
+      "luxury aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-end commercial product photography of a Jacob & Co watch. The image clearly displays the dial, hands, fluted bezel, and strap texture with excellent lighting control. It fits the watches category perfectly."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

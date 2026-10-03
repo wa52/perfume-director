@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 78.3,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 72,
+    "physical_integration": 84,
+    "reference_alignment": 70,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "typography",
+      "problem": "The right type column collapses into three isolated islands: logo band ends at y=521, title starts at y=605 (84px void), title ends at y=759 and subtitle sits at y=986 (227px void), so the column reads as disconnected fragments rather than the declared continuous editorial column; references R1/R8 keep their right-column blocks in one呼吸 rhythm with deliberate, smaller intervals."
+    },
+    {
+      "type": "typography",
+      "problem": "Subtitle 'Eau de Parfum' (26px, y=986) and the bone rule (y=1066) float in the empty lower-right velvet far below the title block and beside bare cloth, losing the column's bottom anchor; against R1's tight lockup the hierarchy tail dissolves into background noise."
+    },
+    {
+      "type": "background",
+      "problem": "The velvet wall shows strong diagonal hang folds and a bright crease ridge in the upper-left quadrant directly behind the cap and shoulder (visible around x=100-450, y=0-400), competing with the product silhouette; the concept calls for a quiet low-nap matte wall, and the busy nap mottle behind the type column also slightly vibrates against the 26px tracked serif subtitle."
+    },
+    {
+      "type": "composition",
+      "problem": "Contact detail (crop 13,1041,699,1291) confirms the bottle base rests on the velvet ground with a soft measured contact shadow at offset_y=0, so grounding is correct; however the ground plane below the base (y=1181-1440) is a large empty nap field with no tonal event, leaving the bottom sixth of the frame dead weight compared with the references' resolved lower zones."
+    }
+  ],
+  "changes": [
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 830
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 892
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Medium dusty blue velvet cloth hanging as a soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, very fine low nap grain, wall kept smooth and quiet with only one gentle broad sheen drift low on the ground cloth, soft diffuse twilight illumination, no objects, no folds, no creases"
+    }
+  ],
+  "reported_score": 76
+}

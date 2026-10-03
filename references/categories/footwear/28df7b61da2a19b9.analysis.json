@@ -1,0 +1,43 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://www.photo-frank.com/portfolio/sneakerweek",
+  "image_url": "https://framerusercontent.com/images/yX2j47Ym123V5qqEnr6aPHVARg.jpg?width=1638&height=2048",
+  "caption": "",
+  "id": "category-28df7b61da2a19b9",
+  "local_path": "references/categories/footwear/28df7b61da2a19b9.jpg",
+  "sha256": "0845b3848ff3fa03ff4083fd61b6f3da84a9ffc341246c8b4f9fc58c0efa6454",
+  "width": 1638,
+  "height": 2048,
+  "analysis": {
+    "category_match": true,
+    "brand": "Adidas",
+    "quality_score": 82,
+    "composition": "Diagonal dynamic framing with the primary sneaker in sharp focus in the foreground, utilizing a shallow depth of field to blur the background stairs and secondary foot.",
+    "subject_ratio": 0.45,
+    "negative_space": "Minimal; the frame is filled with the subject's legs, the footwear, and the textured concrete/metal background elements.",
+    "lighting": "Warm, directional natural sunlight (golden hour) creating high contrast, distinct highlights on the shoe mesh, and deep shadows on the steps.",
+    "color": [
+      "White",
+      "Beige",
+      "Black",
+      "Warm Grey",
+      "Soft Orange"
+    ],
+    "typography": "Embossed 'CLOUDFOAM' text visible on the lateral midsole; no external campaign typography present.",
+    "information_density": "Low; purely visual lifestyle product photography without informational overlays.",
+    "characteristics": [
+      "Lifestyle photography",
+      "Shallow depth of field",
+      "Golden hour lighting",
+      "Three-stripe branding",
+      "Mesh texture detail",
+      "Chunky sole silhouette"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image clearly features Adidas footwear identified by the iconic three stripes and Cloudfoam technology. It preserves the required sole silhouette, stitching, laces, and toe/heel details. The composition is a high-quality commercial lifestyle shot, though it lacks external campaign copy."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

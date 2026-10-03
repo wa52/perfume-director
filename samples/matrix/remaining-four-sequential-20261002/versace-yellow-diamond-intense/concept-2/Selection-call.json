@@ -1,0 +1,90 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "57f13374b5045396c652b5044d35dc8bfc9584f9bf38d5c3f56eef3c6fefa9c5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "07b096ea4123b17c6547696658c4baed7fab5278693c52784382b49133426936"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-6919dfea-8b63-9daf-aa98-d42849123f0f",
+      "usage": {
+        "prompt_tokens": 7400,
+        "total_tokens": 8830,
+        "completion_tokens": 1430,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6325,
+          "text_tokens": 1075
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 405
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-6919dfea-8b63-9daf-aa98-d42849123f0f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7400,
+    "total_tokens": 8830,
+    "completion_tokens": 1430,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6325,
+      "text_tokens": 1075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 405
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 keeps the two-column editorial grid honest: the wide-tracked VERSACE brand line, three-line sans title and graphite-gold rule all sit on the quiet cool-grey plaster wall above the true baseline, so the type column reads as an etched label against mineral matte. Version 1's column sits lower and its gold rule collides with the wall/floor junction, muddying the column base. In version 2 the bottle stands smaller at the left with its base sunk into the honed limestone plane and a tighter measured contact shadow, giving more convincing physical contact than version 1's slightly hovering packshot. Both preserve the recognizable faceted yellow glass and legible label, but version 2's lower horizon leaves more calm grey wall for the右栏排印 and balances the冷灰 wall against the golden refraction better. Neither shows studio equipment or floating-support artifacts; version 2 is simply the cleaner finished set.",
+    "remaining_problems": [
+      "The declared warm caustic light pool and crisp oblique shadow edge at the wall-ground junction are essentially absent in both versions; light reads as diffuse ambient gradient instead of hard morning sunlight through an unseen skylight.",
+      "Contact shadow under the bottle in version 2 is still soft and shallow rather than a measured shadow sinking into the honed stone, so the硬光 conviction is incomplete.",
+      "Title typography is a regular sans rather than the specified narrow-column Arial Narrow condensation; line spacing is generous but the etched-label narrowness is only approximated.",
+      "Limestone ground shows visible tile seams/veining patches that read slightly like ceramic tiling rather than continuous honed limestone, weakening the atrium material story.",
+      "Wall lacks lime-washed plaster texture; it is a smooth gradient, so the mineral冷哑光 material is under-described."
+    ]
+  },
+  "duration_seconds": 50.144
+}

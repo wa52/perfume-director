@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/62ec0fb9833a3763009c62e1/6bdc0e79-d1d2-41a6-b796-7f09b5ab8eca/Adrianna-Favero_NYC-Still_Life_Photographer-20250417_Adrianna-Favero-Still-Life-photographer-VideoSkincare_3447.jpg",
+  "caption": "Luxury body lotion hero image by Adrianna Favero, NYC-based beauty photographer. Clean, radiant lighting highlights premium packaging—ideal for campaigns, e-comm, and editorial beauty stories.",
+  "id": "category-5e0152ec9c81d167",
+  "local_path": "references/categories/skincare/5e0152ec9c81d167.webp",
+  "sha256": "fcdd579d508c0277a75307453ed695d22dcffe751ca8f10f9f7f64f6188f2951",
+  "width": 837,
+  "height": 1080,
+  "analysis": {
+    "category_match": true,
+    "brand": "Nécessaire",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal placement with a shallow depth of field, drawing focus to the upper typography while softening the base.",
+    "subject_ratio": 0.65,
+    "negative_space": "Generous and clean, utilizing a soft gradient background to emphasize the product's minimalist aesthetic.",
+    "lighting": "Soft, diffused studio lighting with a warm peach-to-white gradient; creates a luxurious, radiant glow and subtle dimensional shadows.",
+    "color": [
+      "Off-white",
+      "Soft Peach",
+      "Charcoal Black",
+      "Warm Beige"
+    ],
+    "typography": "Elegant high-contrast serif typeface for the brand and product name, characteristic of premium editorial beauty design.",
+    "information_density": "Low; focused entirely on brand identity and product name for a high-end, uncluttered look.",
+    "characteristics": [
+      "Minimalist",
+      "Luxury",
+      "Editorial",
+      "Soft-focus",
+      "Premium packaging"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial hero shot that perfectly aligns with the skincare category. The image preserves all packaging details and label integrity while employing sophisticated lighting and composition suitable for high-end e-commerce or editorial campaigns."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

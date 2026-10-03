@@ -1,0 +1,121 @@
+{
+  "pass": false,
+  "score": 64.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 42,
+    "typography": 80,
+    "background": 45,
+    "physical_integration": 78,
+    "reference_alignment": 62,
+    "creative_coherence": 55
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared marquise oval fields are mis-placed: background.shapes use upper-left coordinates, so the lemon ellipse (x540,y768,w864,h245) renders as a band from x540 to the clipped right canvas edge at y768-1013, visible in the poster as a stray mustard blob plus a半transparent grey halo bleeding off the right edge behind the bottle's label panel. It does not enclose the gem cap (cap sits ~y547-870, centered x540) as the brief demands, and the asymmetric right-only bleed reads as a render accident, not intentional geometry."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The 'ivory thin horizontal slit as剖切线' under the oval is missing; only the lemon registration rule under the title (decoration at y321) exists. The lapidary blueprint narrative (oval套住盖部 + offset scale oval + section slit) is therefore only half executed, and the half that rendered is off-register, so the concept currently reads as a centered packshot with a stray yellow smear."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical dead zone: title block ends ~y267, rule at ~y321, product top at y547 - roughly 220px of empty cobalt between铭牌区 and the cap, while the bottom margin under the base (y1267-1440) is comparatively tight; the eye jumps from type to bottle with no connective geometry because the ovals sit at the wrong height."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop (68,1127-1011,1377) shows the faceted base meeting the blue field with a soft dark contact shadow already present at offset_y 0 - contact is correct and must not be moved. However, in this flat silkscreen concept the shadow's blur 10 reads slightly photographic against hard-edge printed fields; keep offset_y 0 and tighten blur rather than relocate."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy is competent (light wide-tracked VERSACE plate, heavy single-line Bodoni title, lemon rule) but the title's left edge x78 vs logo center 540 mixes alignment logics; the brief calls for the Didone title to command center ('居中统领'), and text_bbox title [78,209,978,267] shows it running nearly edge-to-edge with only ~78px side margins, tighter than the logo's optical margin, so the plate zone feels squeezed rather than quiet."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 108,
+          "y": 560,
+          "width": 864,
+          "height": 300,
+          "color": "#e9c63c",
+          "opacity": 0.92
+        },
+        {
+          "kind": "ellipse",
+          "x": 43,
+          "y": 522,
+          "width": 994,
+          "height": 376,
+          "color": "#e9c63c",
+          "opacity": 0.22
+        },
+        {
+          "kind": "rectangle",
+          "x": 300,
+          "y": 872,
+          "width": 480,
+          "height": 6,
+          "color": "#f2ecd8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 880
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 60
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 960
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 80
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 390
+    }
+  ],
+  "reported_score": 62
+}

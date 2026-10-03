@@ -1,0 +1,43 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/4",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/laurent-ferrier-watches-product-photography-2.jpg",
+  "caption": "Luxury Watch, Still Life, and Advertising Photographer, New York City - Commercial Photography",
+  "id": "category-926f8f4559b7f01c",
+  "local_path": "references/categories/watches/926f8f4559b7f01c.jpg",
+  "sha256": "d1cfa99541a3cd4bb8b74ea571ff3bd2f1b80e3d6c4ae803dba49357fdf694e7",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Laurent Ferrier",
+    "quality_score": 98,
+    "composition": "Dynamic diagonal macro composition focusing on the exhibition caseback, with the crown and lugs framing the intricate movement details.",
+    "subject_ratio": 0.85,
+    "negative_space": "Minimal, clean graduated grey background providing high contrast for the polished steel case.",
+    "lighting": "Professional studio macro lighting with precise specular highlights on the polished bezel and lugs, and soft, even illumination revealing the depth of the movement.",
+    "color": [
+      "Silver",
+      "Gold",
+      "Brown",
+      "Ruby Red",
+      "Grey"
+    ],
+    "typography": "Engraved movement text including brand name, reference number, and technical specifications in gold and black.",
+    "information_density": "High within the subject due to the detailed mechanical components and engraved text; low in the surrounding negative space.",
+    "characteristics": [
+      "Exhibition caseback",
+      "Geneva stripes",
+      "Ruby jewels",
+      "Polished steel case",
+      "Suede leather strap",
+      "Macro photography"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 100,
+    "reason": "Exceptional high-end commercial product photography of a luxury timepiece. The image perfectly matches the 'watches' category, displaying the Laurent Ferrier brand clearly on the movement. The lighting, focus, and detail rendering are of top-tier advertising quality."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

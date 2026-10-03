@@ -1,0 +1,483 @@
+[
+  {
+    "name": "Lapidary Marquise Blueprint",
+    "brief": "把宽马眼形宝石盖读作一张琢石图纸：深钴蓝丝印卡纸上，一枚硬边柠檬色马眼椭圆精确套住盖部轮廓，其后错出一枚更大的低不透明度同形椭圆如放大一级的琢面刻度，椭圆之下再压一条象牙细横缝如剖切线。商品沉于下幅，剪影自身补全椭圆的中断；顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以近满幅宽的单行 Didone 大字居中统领，一条柠檬细线横垫其下如制图套准线。哑光丝印吞光，让金黄折面玻璃 owning 全部高光。无地面无 horizon，纯琢石几何叙事。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）与 R5 的居中几何光环聚焦、R7 的同品牌金属光泽秩序。",
+    "material": "flat matte silkscreen-printed card with hard-edge printed marquise oval fields",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-1",
+    "signature": "ef86f6b63ebd45f44bae3cf699666fbfd92df12d1722d6b55d26ebdb3e9e8581",
+    "scene_mode": "graphic",
+    "layout_relation": "above",
+    "title_family": "serif",
+    "palette": [
+      "#16307a",
+      "#f2ecd8",
+      "#e9c63c"
+    ],
+    "reference_ids": [
+      "ref-d2db4b80bde2",
+      "ref-453438bbcb76",
+      "ref-f305dbbdf3bc"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#16307a",
+        "prompt": "Seamless flat matte silkscreen-printed card in deep cobalt blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 768,
+            "width": 864,
+            "height": 245,
+            "color": "#e9c63c",
+            "opacity": 0.92
+          },
+          {
+            "kind": "ellipse",
+            "x": 540,
+            "y": 737,
+            "width": 994,
+            "height": 360,
+            "color": "#e9c63c",
+            "opacity": 0.22
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 907,
+        "width": 785,
+        "height": 720
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#16307a",
+        "#f2ecd8",
+        "#e9c63c"
+      ],
+      "title": {
+        "text": "Yellow Diamond Intense",
+        "x": 78,
+        "y": 209,
+        "size": 86,
+        "color": "#f2ecd8",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 1,
+        "max_width": 0,
+        "line_height": 1.05,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 497,
+        "y": 338,
+        "size": 24,
+        "color": "#f2ecd8",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#f2ecd8",
+        "font": "C:/Windows/Fonts/BOD_R.TTF"
+      },
+      "logo": {
+        "text": "VERSACE",
+        "x": 428,
+        "y": 89,
+        "size": 40,
+        "color": "#f2ecd8",
+        "font": "C:/Windows/Fonts/BOD_R.TTF",
+        "tracking": 6
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 378,
+        "y": 321,
+        "width": 324,
+        "color": "#e9c63c"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  },
+  {
+    "name": "Citrus Atrium Caustic Column",
+    "brief": "把标签的柠檬白高光读作一整间晨光中庭：冷调浅灰石灰水洗灰泥墙在真实基准线处接连续 honed 浅石灰岩地面，硬晨光穿过 unseen 玻璃天窗，在墙地交界投下一池暖黄 caustic 光斑与一道 crisp 斜影边；商品缩小立于光池左缘，测量接触阴影陷进磨石面。右半幅墙保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如蚀刻签条，一条石墨细线横垫柱底如日照刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；矿物的冷哑光与金黄折光互为冷暖。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬光 caustic 光池与 R6 的柔光宝石感。",
+    "material": "lime-washed pale grey plaster wall with continuous honed pale limestone ground",
+    "lighting": "hard morning sunlight casting one crisp oblique shadow edge and a warm caustic light pool across wall and ground, bright cool ambient elsewhere, no visible light equipment",
+    "id": "concept-2",
+    "signature": "b40dc5ff237c06eb0c671efcaf29625c8a1b3116d4a085baf035cab61e3073c3",
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#dfe4e2",
+      "#1d2a2e",
+      "#d9b32c"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-b4d87aee2707",
+      "ref-b6e669a924a3"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#dfe4e2",
+        "prompt": "Lime-washed pale cool grey plaster wall meeting a continuous honed pale limestone ground at a horizontal horizon six tenths down the frame, one warm golden caustic light pool lying across the wall-ground junction left of centre, one crisp oblique shadow edge raking the upper wall from left, matte mineral grain, bright cool morning ambient, no objects",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 329,
+        "y": 893,
+        "width": 550,
+        "height": 504
+      },
+      "lighting": "hard morning sunlight casting one crisp oblique shadow edge and a warm caustic light pool across wall and ground, bright cool ambient elsewhere, no visible light equipment",
+      "palette": [
+        "#dfe4e2",
+        "#1d2a2e",
+        "#d9b32c"
+      ],
+      "title": {
+        "text": "Yellow Diamond Intense",
+        "x": 670,
+        "y": 634,
+        "size": 92,
+        "color": "#1d2a2e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 2,
+        "max_width": 360,
+        "line_height": 1.12,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 670,
+        "y": 979,
+        "size": 22,
+        "color": "#1d2a2e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#1d2a2e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF"
+      },
+      "logo": {
+        "text": "VERSACE",
+        "x": 670,
+        "y": 540,
+        "size": 34,
+        "color": "#1d2a2e",
+        "font": "C:/Windows/Fonts/ARIALN.TTF",
+        "tracking": 6
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 670,
+        "y": 958,
+        "width": 238,
+        "color": "#d9b32c"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic",
+      "layout_fit": {
+        "requested_product": {
+          "x": 313,
+          "y": 893,
+          "height": 504
+        },
+        "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+      }
+    }
+  },
+  {
+    "name": "Citron Facet Grid Ledger",
+    "brief": "把瓶身的梯形折面读作一整张 gem-cut 网格：饱和柠檬黄平涂卡纸上，细密象牙刻线自中心放射成琢面格网，格网在下三分之一处被一道硬边留白横带截断，如同折面沉入铭牌；一枚硬边深墨矩形板沉于格网之后托住剪影下半。商品提至上幅立于格网心，刻线从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Georgia 题名以近满带宽的单行衬线大字居中统领，一条墨色细线横于带顶如刻刀零点。哑光丝印吞光，让透明黄玻璃的 internal glow owning 全部亮度。无地面无 horizon，纯线密度下坠叙事。参考 R2 的纸面分区铭牌秩序与 R4 的硬阴影色块对比、R6 的宝石切面光。",
+    "material": "flat matte silkscreen-printed card with fine engraved facet grid lines and one hard-edge blank plaque band",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "id": "concept-3",
+    "signature": "e9bffe9edd0b305c68684be41c599046b8d448e0a98b62a279f19162bf9aa9f8",
+    "scene_mode": "graphic",
+    "layout_relation": "below",
+    "title_family": "serif",
+    "palette": [
+      "#e5c227",
+      "#221a06",
+      "#f4eeda"
+    ],
+    "reference_ids": [
+      "ref-f74fe25870eb",
+      "ref-04eb11dcf323",
+      "ref-b6e669a924a3"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#e5c227",
+        "prompt": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre, one hard-edge blank horizontal plaque band without lines across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond engraved lines, no objects",
+        "revision": 0,
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 540,
+            "y": 720,
+            "width": 670,
+            "height": 490,
+            "color": "#221a06",
+            "opacity": 0.16
+          }
+        ]
+      },
+      "product": {
+        "x": 540,
+        "y": 605,
+        "width": 785,
+        "height": 720
+      },
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "palette": [
+        "#e5c227",
+        "#221a06",
+        "#f4eeda"
+      ],
+      "title": {
+        "text": "Yellow Diamond Intense",
+        "x": 138,
+        "y": 1138,
+        "size": 78,
+        "color": "#221a06",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 1,
+        "max_width": 0,
+        "line_height": 1.06,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 475,
+        "y": 1256,
+        "size": 22,
+        "color": "#221a06",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#221a06",
+        "font": "C:/Windows/Fonts/georgia.ttf"
+      },
+      "logo": {
+        "text": "VERSACE",
+        "x": 434,
+        "y": 1058,
+        "size": 36,
+        "color": "#221a06",
+        "font": "C:/Windows/Fonts/georgia.ttf",
+        "tracking": 6
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 454,
+        "y": 1116,
+        "width": 173,
+        "color": "#f4eeda"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "graphic"
+    }
+  },
+  {
+    "name": "Basalt Court Noon Shadow",
+    "brief": "把盖顶的镜面碎光放进一座正午石庭：深玄武岩灰石板墙以细密干缝排成横向石层，连续 honed 同料石板地面在真实基准线接墙；正午顶光在墙根压出一道锐利水平影带，石面保持冷哑光。商品缩小立于石地偏右，测量接触阴影陷进干缝；左半幅石墙保持安静，承载一根 Century Gothic 文字柱：品牌字居柱顶、几何大写题名以柱宽三行排印如仪器铭牌，一条柠檬短横线垫于柱底如日晷刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏网格诚实成立；玄武岩的冷哑光与金黄折面玻璃的暖透互为温度悖论。参考 R1 的左图右文负空间层级、R4 的硬方向光阴影秩序与 R8 的深色建筑感负空间。",
+    "material": "dark basalt stone slab wall with fine dry joints and continuous honed basalt ground",
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+    "id": "concept-4",
+    "signature": "bdddaaaeb6849330ec070843d994db5bcf324b8ced151eec723123c5783c7521",
+    "scene_mode": "photographic",
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "palette": [
+      "#3a3d42",
+      "#f0eee6",
+      "#e9c63c"
+    ],
+    "reference_ids": [
+      "ref-d2db4b80bde2",
+      "ref-04eb11dcf323",
+      "ref-7a523ada9a2c"
+    ],
+    "initial_spec": {
+      "version": 1,
+      "style": "luxury",
+      "canvas": {
+        "width": 1080,
+        "height": 1440
+      },
+      "seed": 42,
+      "background": {
+        "color": "#3a3d42",
+        "prompt": "Dark basalt grey stone slab wall with fine horizontal dry joints meeting a continuous honed matching basalt ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte stone grain, cool diffuse ambient, no objects",
+        "revision": 0,
+        "shapes": []
+      },
+      "product": {
+        "x": 724,
+        "y": 864,
+        "width": 597,
+        "height": 547
+      },
+      "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the wall face, no hard shadows on the standing subject",
+      "palette": [
+        "#3a3d42",
+        "#f0eee6",
+        "#e9c63c"
+      ],
+      "title": {
+        "text": "Yellow Diamond Intense",
+        "x": 86,
+        "y": 648,
+        "size": 64,
+        "color": "#f0eee6",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 3,
+        "max_width": 300,
+        "line_height": 1.14,
+        "align": "left"
+      },
+      "subtitle": {
+        "text": "",
+        "x": 86,
+        "y": 979,
+        "size": 20,
+        "color": "#f0eee6",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 4
+      },
+      "price": {
+        "text": "",
+        "x": 104,
+        "y": 1280,
+        "size": 24,
+        "color": "#f0eee6",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF"
+      },
+      "logo": {
+        "text": "VERSACE",
+        "x": 86,
+        "y": 554,
+        "size": 34,
+        "color": "#f0eee6",
+        "font": "C:/Windows/Fonts/GOTHIC.TTF",
+        "tracking": 6
+      },
+      "shadow": {
+        "opacity": 0.35,
+        "blur": 10,
+        "offset_x": 0,
+        "offset_y": 0,
+        "kind": "contact"
+      },
+      "decoration": {
+        "enabled": true,
+        "x": 86,
+        "y": 929,
+        "width": 194,
+        "color": "#e9c63c"
+      },
+      "layers": [
+        "background",
+        "shadow",
+        "product",
+        "decoration",
+        "logo",
+        "title",
+        "subtitle",
+        "price"
+      ],
+      "scene_mode": "photographic"
+    }
+  }
+]

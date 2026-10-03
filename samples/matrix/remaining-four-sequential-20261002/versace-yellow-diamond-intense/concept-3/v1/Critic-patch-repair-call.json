@@ -1,0 +1,139 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 5,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "33962a0ff88d35f97683887868a59e8705aefe84f670505acaf3964a76dc7748"
+    },
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-f7fcdb7a-45a4-9ea3-beb4-2665e4ab08c9",
+      "usage": {
+        "prompt_tokens": 7920,
+        "total_tokens": 9433,
+        "completion_tokens": 1513,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 5043,
+          "text_tokens": 2877
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 488
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f7fcdb7a-45a4-9ea3-beb4-2665e4ab08c9",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7920,
+    "total_tokens": 9433,
+    "completion_tokens": 1513,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5043,
+      "text_tokens": 2877
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 488
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "changes": [
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.tracking",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 62
+      },
+      {
+        "path": "title.max_width",
+        "op": "set",
+        "value": 920
+      },
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": [
+          {
+            "kind": "rectangle",
+            "x": 0,
+            "y": 1000,
+            "width": 1080,
+            "height": 440,
+            "color": "#221a06",
+            "opacity": 0.1
+          }
+        ]
+      },
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre and gradually thinning downward, one perfectly even hard-edge horizontal band of slightly deeper olive citron beginning at exactly two thirds height spanning the full width with clean straight edges, perfectly even shadowless frontal illumination, no vertical seams, no quadrant splits, no objects"
+      },
+      {
+        "path": "decoration.color",
+        "op": "set",
+        "value": "#221a06"
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1108
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 220
+      }
+    ]
+  },
+  "duration_seconds": 52.345
+}

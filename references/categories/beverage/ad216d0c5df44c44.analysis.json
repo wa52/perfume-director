@@ -1,0 +1,42 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://www.christopher-photography.com/",
+  "image_url": "https://irp.cdn-website.com/ac2035cd/dms3rep/multi/opt/dial-a-pizza-1920w.jpg",
+  "caption": "Conceptual commercial photography - Krzysztof Czernecki - Christopher Photography London  ",
+  "id": "category-ad216d0c5df44c44",
+  "local_path": "references/categories/beverage/ad216d0c5df44c44.jpg",
+  "sha256": "3e3133f92869ff59914cdae6ecd18c93f98370641b80fe12120722cab63a176f",
+  "width": 1900,
+  "height": 1900,
+  "analysis": {
+    "category_match": false,
+    "brand": "Unknown",
+    "quality_score": 85,
+    "composition": "Centered surreal still life with a single focal point on a seamless background.",
+    "subject_ratio": 0.45,
+    "negative_space": "Extensive, uniform mint green space surrounding the central subject.",
+    "lighting": "Soft, diffused studio lighting creating gentle highlights on the plastic phone and distinct shadows beneath the object.",
+    "color": [
+      "mint green",
+      "red",
+      "green",
+      "beige",
+      "white"
+    ],
+    "typography": "None",
+    "information_density": "Low",
+    "characteristics": [
+      "surrealism",
+      "conceptual art",
+      "monochromatic background",
+      "food photography",
+      "vintage object"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image depicts a pizza on a telephone, which falls under food or conceptual art, not the required beverage category. There are no containers, liquids, or closures visible."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

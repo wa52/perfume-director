@@ -1,0 +1,126 @@
+{
+  "pass": false,
+  "score": 79.9,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 80,
+    "typography": 76,
+    "background": 78,
+    "physical_integration": 84,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The cobalt ground bar (background.shapes[2], y=1264) floats 25px below the strap's contact shadow (base_y=1239, confirmed present and correctly seated at offset_y=0 in the contact_detail_crop), so the poster carries two disconnected 'grounds': a soft shadow on the paper and a detached printed rule. In a silkscreen concept the rule should BE the ground: move it up to touch the shadow footprint (y=1232) and widen it (x=294, width=492) so it reads as the printed plinth under the 218px contact width instead of a stray line."
+    },
+    {
+      "type": "typography",
+      "problem": "The left masthead block (logo y79, title y166-236, subtitle y288-320, rule y377) stops a full 55px above the cobalt bar top (y432) and hugs the top-left corner, leaving a dead cream band between type and geometry; versus reference R1's confident placard stack the block feels under-scaled and untethered. Title size 96 against a 749px hero and 324px decoration rule reads timid; hierarchy logo/title/subtitle is correct but the block needs more presence and a tie into the field."
+    },
+    {
+      "type": "background",
+      "problem": "The red disc (x713,y576,324x346) is clipped by the right canvas edge and sits behind the strap loop with only a thin sliver of overlap, so it reads as a cropped accident rather than a deliberate diagonal anchor; the diagonal cobalt-bar -> hero -> disc announced by the concept is weak because the disc's center of mass falls almost exactly at the hero's vertical middle-right instead of pulling the eye along the diagonal."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "Declared lighting is 'even ink-flat, no cast shadow gradient', yet the render shows a soft blurred photographic contact shadow under the strap (visible in contact_detail_crop as a gradient smudge). In a flat opaque-ink silkscreen concept this photographic smudge is the one element that breaks the material story; it should become a crisp flat printed ellipse footprint (or the bar alone should carry grounding)."
+    },
+    {
+      "type": "reference_alignment",
+      "problem": "References R1/R3 pair a dominant display headline and a structured secondary information layer with the hero; this poster has only three short lines top-left and an empty price slot at (104,1280), so the lower third right of the cobalt bar is unused cream. The piece stops at a competent generic constructivist pastiche rather than a resolved exhibition placard with a completed information hierarchy."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 65,
+          "y": 432,
+          "width": 216,
+          "height": 806,
+          "color": "#16294F",
+          "opacity": 0.92
+        },
+        {
+          "kind": "ellipse",
+          "x": 743,
+          "y": 520,
+          "width": 300,
+          "height": 320,
+          "color": "#D8402E",
+          "opacity": 0.9
+        },
+        {
+          "kind": "rectangle",
+          "x": 294,
+          "y": 1232,
+          "width": 492,
+          "height": 17,
+          "color": "#101C33",
+          "opacity": 0.85
+        }
+      ]
+    },
+    {
+      "path": "shadow.kind",
+      "op": "set",
+      "value": "contact"
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.5
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "shadow.offset_y",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 112
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 386
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 216
+    }
+  ],
+  "reported_score": 78
+}

@@ -1,0 +1,184 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087238074,
+    "background": {
+      "color": "#2e7d5b",
+      "prompt": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte grout grain, bright cool ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 312,
+      "height": 720
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+    "palette": [
+      "#2e7d5b",
+      "#f4efe2",
+      "#d9a441"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 76,
+      "y": 518,
+      "size": 64,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 1,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 893,
+      "size": 22,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 76,
+      "y": 432,
+      "size": 30,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 5
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 871,
+      "width": 151,
+      "color": "#d9a441"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087238074,
+    "background": {
+      "color": "#2e7d5b",
+      "prompt": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte grout grain, bright cool ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 312,
+      "height": 720
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+    "palette": [
+      "#2e7d5b",
+      "#f4efe2",
+      "#d9a441"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 76,
+      "y": 518,
+      "size": 64,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 1,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 893,
+      "size": 22,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 76,
+      "y": 432,
+      "size": 30,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 5
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 871,
+      "width": 151,
+      "color": "#d9a441"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  },
+  "source": "deterministic_director_guard"
+}

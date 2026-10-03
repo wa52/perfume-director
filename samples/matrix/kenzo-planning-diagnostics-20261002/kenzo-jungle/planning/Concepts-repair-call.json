@@ -1,0 +1,441 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "kenzo-jungle-retailer.png",
+      "sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "ref-41a992f3eb88.jpg",
+      "sha256": "ee0e7efaca07d728f121fe4f021e01cba4b974365bc0684422a7eeb3065e6d68"
+    },
+    {
+      "name": "ref-ebe7e5019cb1.webp",
+      "sha256": "8d0e07eeeb895f9091d0e7f83cc99a592809765583dbd25e8bb085439c5a220b"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-1a40d10cb201.webp",
+      "sha256": "b87992b323fd382d375e496de31e3a9bae2d6c1ac5c1981b31dd3751487fab53"
+    },
+    {
+      "name": "ref-4f5bbfa4aed8.webp",
+      "sha256": "4396882b8910c007956569f882241a69fd45b75accd5c96b87235976cd591a56"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "ref-36b8ea121719.webp",
+      "sha256": "be3f682b1f3a10b6cfada35d19819bb109c84e0938fe319ca61504fa2d04e09d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-3b798518-93ec-9487-a20a-ac7616fe5f2c",
+      "usage": {
+        "prompt_tokens": 36238,
+        "total_tokens": 42805,
+        "completion_tokens": 6567,
+        "prompt_tokens_details": {
+          "cached_tokens": 35840,
+          "image_tokens": 8739,
+          "text_tokens": 27499
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2470
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-3b798518-93ec-9487-a20a-ac7616fe5f2c",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 36238,
+    "total_tokens": 42805,
+    "completion_tokens": 6567,
+    "prompt_tokens_details": {
+      "cached_tokens": 35840,
+      "image_tokens": 8739,
+      "text_tokens": 27499
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2470
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Monsoon Stalk Meridian",
+        "brief": "把金色叶冠读作雨季林隙里的竖直茎干：平涂冰蓝丝印卡纸上，五枚硬边竖矩形象雨茎自不同高度垂落，雾蓝与蜜金交替、不透明度逐级变化，茎干精确从瓶肩之后穿过却不触碰标签；商品居中沉于下幅，剪影自身补全茎干的中断。顶带留出完全安静的铭牌区：宽距 Bodoni 品牌字最小置顶，Bodoni 题名以单行 Didone 大字居中统领，一条蜜金细线横垫其下如制版套准线——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯竖茎节奏对抗透明玻璃的柔渐液体。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）、R5 的硬边几何秩序与 R6 的高键玻璃光控制。",
+        "material": "flat matte silkscreen-printed card with hard-edge printed vertical stalk bars in graded opacity",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R6"
+        ],
+        "palette": [
+          "#dce9f2",
+          "#123a5e",
+          "#d9a441"
+        ],
+        "product": [
+          0.5,
+          0.6,
+          0.62
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.305,
+            0.13,
+            150
+          ],
+          "logo": [
+            0.447,
+            0.055,
+            34
+          ],
+          "subtitle": [
+            0.44,
+            0.262,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in pale ice blue, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.2,
+            "y": 0.6,
+            "width": 0.07,
+            "height": 0.72,
+            "color": "#7fa8c4",
+            "opacity": 0.5
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.34,
+            "y": 0.55,
+            "width": 0.05,
+            "height": 0.82,
+            "color": "#d9a441",
+            "opacity": 0.42
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.08,
+            "height": 0.9,
+            "color": "#7fa8c4",
+            "opacity": 0.32
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.66,
+            "y": 0.56,
+            "width": 0.05,
+            "height": 0.8,
+            "color": "#d9a441",
+            "opacity": 0.38
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.8,
+            "y": 0.62,
+            "width": 0.07,
+            "height": 0.7,
+            "color": "#7fa8c4",
+            "opacity": 0.5
+          }
+        ],
+        "line": [
+          0.33,
+          0.245,
+          0.34
+        ]
+      },
+      {
+        "name": "Monsoon Court Morning Pool",
+        "brief": "把象与叶的金色雕塑放进一座雨后晨庭：浅celadon绿石灰水洗灰泥墙在真实基准线处接连续 honed 浅石灰岩地面，高键晨光自左上一团宽而静的粉白光晕洒落，墙地交界保持哑光矿物颗粒；商品缩小立于石地偏右，测量接触阴影轻陷进磨面。左半幅墙保持安静冷绿，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱单行大字排印如蚀刻签条，一条蜜金细线横垫柱底如水位刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；矿物的冷哑光与抛光金象的暖金属光互为温度悖论。参考 R2 的侧栏 campaign 排印层级、R3 的高键静物光秩序与 R4 的晨光暖晕。",
+        "material": "lime-washed pale celadon plaster wall sweeping into continuous honed pale limestone ground",
+        "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "palette": [
+          "#cfe2d2",
+          "#173a2e",
+          "#c98a2e"
+        ],
+        "product": [
+          0.68,
+          0.62,
+          0.48
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.07,
+            0.45,
+            120
+          ],
+          "logo": [
+            0.07,
+            0.4,
+            30
+          ],
+          "subtitle": [
+            0.07,
+            0.585,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 300,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Lime-washed pale celadon green plaster wall meeting a continuous honed pale limestone ground at a horizontal horizon eighty-six hundredths down the frame, one broad calm powder-white glow blooming from upper left, matte mineral grain, soft high-key diffuse morning illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.07,
+          0.56,
+          0.2
+        ]
+      },
+      {
+        "name": "Gilded Canopy Sun Disc",
+        "brief": "把抛光金象背读作林冠上空的一轮正午日盘：平涂暖 straw 黄水粉卡纸上贴一枚硬边象牙大圆盘精确套住金色雕塑与瓶肩，其后错出一枚更大的低不透明度蜜金圆盘如光晕外环；商品提至上幅立于圆盘之前，盘缘从其肩后掠过却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Georgia 题名以近满带宽的单行衬线大字收左缘起排，一条墨褐细线横于带顶如日晷零点——题名整组起排于瓶底之下，构成 BELOW 关系。无地面无 horizon，纯双盘日晕几何对抗透明玻璃的近白高光。参考 R7 的居中单主体纪念碑秩序与金属焦点控制、R1 的铭牌层级与 R4 的饱和暖色勇气。",
+        "material": "flat matte gouache-painted card with applied ivory disc and offset translucent halo ring",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R7",
+          "R1",
+          "R4"
+        ],
+        "palette": [
+          "#efd9a0",
+          "#4a3413",
+          "#b4762a"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.09,
+            0.79,
+            120
+          ],
+          "logo": [
+            0.09,
+            0.735,
+            30
+          ],
+          "subtitle": [
+            0.09,
+            0.885,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/georgia.ttf",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte gouache-painted card in warm pale straw yellow, perfectly even shadowless frontal illumination, matte pigment grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.36,
+            "width": 0.62,
+            "height": 0.465,
+            "color": "#f6ecd6",
+            "opacity": 0.95
+          },
+          {
+            "kind": "ellipse",
+            "x": 0.5,
+            "y": 0.34,
+            "width": 0.78,
+            "height": 0.585,
+            "color": "#d9a441",
+            "opacity": 0.3
+          }
+        ],
+        "line": [
+          0.09,
+          0.772,
+          0.82
+        ]
+      },
+      {
+        "name": "Elephant Path Procession Bands",
+        "brief": "把象步读作一行横渡纸面的足迹带：平涂浅藕紫丝印卡纸上，三枚硬边横矩形带自左向右逐级错叠如象群走过的路径剖面，带缘一条斜向留白缝精确平行象鼻上扬斜线；商品立于中幅偏左，横带从其肩后掠过却不触碰标签。右半幅留出安静右栏排印：宽距 Arial 品牌字居柱顶，Baskerville 题名以窄柱单行衬线大字排印如驿路签条，一条藕金细线横垫柱底如里程刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；纸面的哑光丝印吞光，让抛光金象与叶片雕塑 owning 全部高光。无地面无 horizon，纯横带进程叙事。参考 R7 的金属单焦点秩序、R2 的侧栏 campaign 排印节奏与 R6 的硬边层次控制。",
+        "material": "flat matte silkscreen-printed card with hard-edge stacked horizontal procession bands and one oblique blank seam",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R7",
+          "R2",
+          "R6"
+        ],
+        "palette": [
+          "#e6dcea",
+          "#3a2b45",
+          "#c08a3e"
+        ],
+        "product": [
+          0.36,
+          0.55,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "title": [
+            0.66,
+            0.5,
+            110
+          ],
+          "logo": [
+            0.68,
+            0.445,
+            28
+          ],
+          "subtitle": [
+            0.68,
+            0.615,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BASKVILL.TTF",
+              "tracking": 2,
+              "max_width": 300,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in pale mauve lilac, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.36,
+            "y": 0.3,
+            "width": 0.66,
+            "height": 0.1,
+            "color": "#3a2b45",
+            "opacity": 0.16
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.42,
+            "y": 0.52,
+            "width": 0.74,
+            "height": 0.12,
+            "color": "#c08a3e",
+            "opacity": 0.3
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.36,
+            "y": 0.76,
+            "width": 0.66,
+            "height": 0.1,
+            "color": "#3a2b45",
+            "opacity": 0.12
+          }
+        ],
+        "line": [
+          0.66,
+          0.6,
+          0.22
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 278.947
+}

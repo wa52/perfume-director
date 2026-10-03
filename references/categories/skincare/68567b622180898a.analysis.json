@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/fenty-skin-watch-ya-tone",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/b1f3d8c4-1021-4558-bc3a-f22b2e33fe35/Fenty-Skin-Watch-Ya-Tone-Macro-Retouch-Brown+BG.jpg",
+  "caption": "",
+  "id": "category-68567b622180898a",
+  "local_path": "references/categories/skincare/68567b622180898a.webp",
+  "sha256": "c0f2cf0ff2b17a0e0108247e948db828e8b12e85a2dd8bcf28fe8c004a39ec75",
+  "width": 2500,
+  "height": 3333,
+  "analysis": {
+    "category_match": true,
+    "brand": "Unknown",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal macro composition focusing on the product dispensing mechanism and texture.",
+    "subject_ratio": 0.65,
+    "negative_space": "Warm, solid brown gradient background providing high contrast for the frosted packaging.",
+    "lighting": "Soft, diffused studio lighting emphasizing the translucency of the bottle and the viscosity of the liquid.",
+    "color": [
+      "terracotta",
+      "beige",
+      "white",
+      "brown"
+    ],
+    "typography": "Minimalist white sans-serif vertical text on the bottle surface.",
+    "information_density": "Low; focused entirely on product texture and material quality.",
+    "characteristics": [
+      "macro photography",
+      "texture focus",
+      "monochromatic palette",
+      "frosted glass effect",
+      "liquid dynamics"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-end commercial product shot that perfectly captures skincare texture and packaging material within a cohesive color story."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

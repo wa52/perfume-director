@@ -1,0 +1,91 @@
+{
+  "pass": false,
+  "score": 75.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 76,
+    "background": 60,
+    "physical_integration": 86,
+    "reference_alignment": 68,
+    "creative_coherence": 70
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated field still violates the declared hard-edge slab material: the prompt-generated layer rendered three ROUNDED-corner bone cards (top-left square ~x75-270/y80-305, top-right bar ~x325-935/y80-310, mid-left square ~x75-290/y385-610) plus a faint diagonal score line crossing the left field at ~y560-780. Square corners and 'no texture gradients, no objects' were requested; rounded corners and the stray line read as photographed paper props, not screen-printed ink."
+    },
+    {
+      "type": "background",
+      "problem": "Deterministic shape 1 (x250,y250,620x250) renders as a pale wash directly behind the cap and neck only, so instead of a slab passing behind the shoulder it looks like a misregistered overlay rectangle clipped by the cap silhouette; meanwhile shapes 2 and 3 (opacity 0.6/0.35) collapse into near-invisible grey patches at the right edge (x~920-1030/y~520-770 and x~690-1030/y~790-1040), leaving the right half of the canvas empty against the dense left type column."
+    },
+    {
+      "type": "background",
+      "problem": "In the contact crop (canvas x≈647-690, y≈936-1040) the vertical edge of the low-opacity lower slab starts exactly at the glass plinth line and runs down beside the base: the bottle contact itself is correct (plinth meets the field with a soft 0.28-opacity contact shadow, offset_y 0, no floating), but that raw tone edge slices the nameplate zone the brief reserves as a clean band below the base, competing with the type block."
+    },
+    {
+      "type": "typography",
+      "problem": "Nameplate band rhythm is still uneven: logo block bottom y=932 to title top y=1020 is an 88px gap while title bottom y=1142 to subtitle top y=1230 is another 88px, but the subtitle (24px, tracking 6) then sits 83px above the decoration rule at y=1300, so the rule floats detached from the text stack; the two-line title at max_width 420 keeps a short ragged second line ('Poudrée') with no optical tie to the rule, weakening the BELOW hierarchy the concept declares."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The product photograph carries soft diffuse studio modelling (gentle cap/shoulder highlights, refractive glass walls) while the surrounding field is absolutely flat ink with rounded 'paper' cards; the soft contact shadow under the plinth meeting flat rounded cards makes the conceit read as pasted cutout rather than one unified powder-press print, unlike the resolved paper-order unity of reference 1."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in warm taupe grey, perfectly even shadowless frontal illumination, flat graphic ink, no texture, no gradients, no lines, no objects, no paper edges, only an empty uniform matte taupe surface"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 150,
+          "y": 170,
+          "width": 700,
+          "height": 240,
+          "color": "#f4f1ea",
+          "opacity": 0.92
+        },
+        {
+          "kind": "rectangle",
+          "x": 430,
+          "y": 440,
+          "width": 560,
+          "height": 250,
+          "color": "#f4f1ea",
+          "opacity": 0.55
+        },
+        {
+          "kind": "rectangle",
+          "x": 640,
+          "y": 720,
+          "width": 360,
+          "height": 180,
+          "color": "#f4f1ea",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1214
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1288
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 200
+    }
+  ],
+  "reported_score": 74.4
+}

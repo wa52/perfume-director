@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "guerlain-mandarine-basilic-retailer.png",
+      "sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ad8e111be0ef7bff7b631292c79e384db85263570c8a89a758ffb74d698d606b"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "ae1af20c12ac7fe4e5ef03c3cbc5bb0818c102be0d896fa53f92f0020c0f93ad"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-166eadc5-de02-959e-b8de-575a19ddf6c2",
+      "usage": {
+        "prompt_tokens": 7407,
+        "total_tokens": 8760,
+        "completion_tokens": 1353,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6325,
+          "text_tokens": 1082
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 328
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-166eadc5-de02-959e-b8de-575a19ddf6c2",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7407,
+    "total_tokens": 8760,
+    "completion_tokens": 1353,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6325,
+      "text_tokens": 1082
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 328
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 delivers the cleaner finished set within the Zellige Noon Water Court concept: the glazed basil-green wall meets the continuous tiled ground on a single credible baseline, the flacon stands right-of-centre with a soft contact shadow seated into the grout, and the left editorial column (wide-tracked Guerlain line, four-line Baskerville-style serif title, honey-gold rule) holds a stable vertical overlap with the cap/shoulder zone and clean horizontal separation. Version 1 is undermined by a hard diagonal shadow raking across the left wall and floor, which contradicts the declared noon top-light horizontal band at the wall base, dirties the quiet冷绿 text column and reads as an off-frame artifact rather than campaign lighting; its bottle contact is also flatter. Version 2's tile glaze, grout rhythm and gold-stop highlights are more controlled and its typography spacing is more even.",
+    "remaining_problems": [
+      "Version 2 shows a faint ghosted bottle-shaped outline etched into the upper-centre tile field, a generation artifact on the wall",
+      "The scalloped fish-scale tile row near the wall base departs from the declared uniform vertical zellige column pattern",
+      "The promised sharp horizontal noon shadow band at the wall base is only weakly implied; the wall-floor junction reads slightly bright and flat",
+      "Contact shadow under the flacon is soft and shallow rather than clearly sunk into a grout joint"
+    ]
+  },
+  "duration_seconds": 36.582
+}

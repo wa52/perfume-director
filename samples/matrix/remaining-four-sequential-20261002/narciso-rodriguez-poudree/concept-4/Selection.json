@@ -1,0 +1,12 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 reads as the cleaner finished card: the bone slab sits as one confident press plate behind the cap and shoulder without touching the NARCISO label, the灰褐 field runs full-bleed with no die-cut border, and the lower ledger band is resolved exactly per the brief - wide-tracked brand line at band top, two-line geometric sans title and sub-line stacked left from the left margin, thin褐灰 rule closing the zone, all strictly BELOW the bottle base. The product silhouette, cream lacquer core and clear glass edges stay faithful under flat shadowless frontal light, and the oblique slab edge supplies the concept's diagonal seam. Version 2 fragments the same idea: rounded-corner white slabs scatter as disconnected bubbles instead of a staggered press stack, a stray hairline diagonal cuts the field, translucent patches collide with the bottle's right edge, and the rounded poster corners expose white outside the card, breaking the flat screen-printed material.",
+  "remaining_problems": [
+    "The single large slab is tilted and rounded like a stacked paper pile rather than three hard-edge staggered press slabs descending left-top to right-bottom",
+    "The oblique blank seam is not precisely parallel to the bottle shoulder line",
+    "Title sets in title case rather than the briefed geometric uppercase two-line lockup",
+    "Translucent right-side patches float without clear press-stack logic and one clips the bottle's right glass edge"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

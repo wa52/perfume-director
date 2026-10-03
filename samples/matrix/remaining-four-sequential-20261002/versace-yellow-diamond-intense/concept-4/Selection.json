@@ -1,0 +1,12 @@
+{
+  "selected_version": 1,
+  "evidence": "Version 1 (image 5) holds the Basalt Court concept together more honestly: the basalt wall reads as quiet horizontal courses with fine dry joints, the honed ground meets it at a believable baseline, and the left half stays calm enough to carry the Century Gothic text column (brand line, three-line title, lemon rule) in a clean beside-layout with clear hierarchy. The bottle sits right-of-center at a credible scale with a soft contact shadow settling into the floor, and the cool matte stone versus warm faceted yellow glass temperature contrast reads clearly. Version 2 (image 6) breaks the concept: a stray diagonal shadow wedge slashes the left wall and floor instead of the single sharp horizontal noon band at the wall base, and粗 vertical slab joints run through the wall and floor grid, even crossing behind the product silhouette,碎ing the horizontal-course masonry and the quiet negative space the text column needs. Both keep the product faithful and legible, but version 1 is the more controlled, finished set.",
+  "remaining_problems": [
+    "Title set in title case rather than the briefed geometric all-caps three-line nameplate lockup",
+    "The specified sharp horizontal noon shadow band at the wall base is only implied; wall-base transition lacks the crisp light logic of the brief",
+    "Contact shadow under the bottle is soft and generic rather than visibly seated into the dry joints of the stone floor",
+    "Wall joints in version 1 are faint enough that the horizontal stone-course rhythm reads as texture more than masonry"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

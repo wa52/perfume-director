@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/fenty-skin-watch-ya-tone",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/5a7d2d21-819e-471f-898d-c48260761ad5/Fenty-Skin-Products-Christine-Blackburn-Product-Retouch",
+  "caption": "",
+  "id": "category-a8a7a8e816ff511b",
+  "local_path": "references/categories/skincare/a8a7a8e816ff511b.webp",
+  "sha256": "fb3c7a75287dec40c539cb89c97339673c3f3ade809693fa0f83377f43aa6f38",
+  "width": 2500,
+  "height": 3333,
+  "analysis": {
+    "category_match": true,
+    "brand": "Fenty Skin",
+    "quality_score": 92,
+    "composition": "Asymmetrical product grouping with three vertical elements and one horizontal foreground element creating depth and visual interest within a corner set.",
+    "subject_ratio": 0.65,
+    "negative_space": "Warm terracotta background with distinct geometric shadows providing breathing room around the products.",
+    "lighting": "Hard directional studio lighting creating sharp, dramatic shadows and highlighting the translucency of the toner bottle.",
+    "color": [
+      "Terracotta",
+      "Lavender Grey",
+      "Amber",
+      "Peach",
+      "White"
+    ],
+    "typography": "Minimalist white sans-serif vertical branding on packaging; no external overlay text.",
+    "information_density": "Low; focus is purely on product aesthetics and brand identity.",
+    "characteristics": [
+      "Minimalist",
+      "Geometric shadows",
+      "Monochromatic accents",
+      "High-end commercial photography",
+      "Texture contrast"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product photography featuring Fenty Skin skincare items. The composition uses strong geometric lighting and a cohesive color palette to highlight packaging textures and materials without extraneous elements."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

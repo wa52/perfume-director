@@ -1,0 +1,41 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://www.christopher-photography.com/",
+  "image_url": "https://irp.cdn-website.com/ac2035cd/dms3rep/multi/opt/Heinz-1920w.jpg",
+  "caption": "Commercial photography London - Krzysztof Czernecki Christopher Photography ",
+  "id": "category-54768029691ca5c8",
+  "local_path": "references/categories/beverage/54768029691ca5c8.jpg",
+  "sha256": "816dc91f406202d6acf29b0ad72519fc51ef4925811e2d0897848041ac5de7a9",
+  "width": 1900,
+  "height": 1900,
+  "analysis": {
+    "category_match": false,
+    "brand": "Heinz",
+    "quality_score": 92,
+    "composition": "Centralized flat-lay with the product bottle seamlessly integrated into a textured background of crushed tomatoes and framed by fresh vine tomatoes.",
+    "subject_ratio": 0.35,
+    "negative_space": "Minimal; the frame is densely packed with product and ingredients to create an immersive texture.",
+    "lighting": "High-key commercial studio lighting with sharp specular highlights on the wet tomato skins and sauce to emphasize freshness and viscosity.",
+    "color": [
+      "Vibrant Red",
+      "Leaf Green",
+      "Pure White",
+      "Black"
+    ],
+    "typography": "Iconic brand logotype and product identification on the central label; no external campaign overlay text.",
+    "information_density": "Medium; focused entirely on the visual metaphor of the product being 'grown not made' through ingredient integration.",
+    "characteristics": [
+      "Surreal product integration",
+      "Monochromatic red palette",
+      "High texture detail",
+      "Freshness cues",
+      "Flat-lay perspective"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "While the image is a high-quality commercial advertisement for Heinz, the product is a condiment (ketchup), which does not match the reference category of 'beverage'. The execution is excellent, featuring a creative visual where the bottle appears formed from the sauce itself, but it fails the specific category constraint."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

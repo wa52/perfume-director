@@ -1,0 +1,41 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/5",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/david-webb-jewelry-advertising-campaign-still-life-1-done.jpg",
+  "caption": "Jewelry, Watches, Luxury Products, and Still Life Photographer, New York City, NYC",
+  "id": "category-b0c32e6af9f6c800",
+  "local_path": "references/categories/watches/b0c32e6af9f6c800.jpg",
+  "sha256": "8c73d2939c5f706060a75d3c174c804d829e5f2b82166f13118081d5daa2dea8",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Unknown",
+    "quality_score": 92,
+    "composition": "Centered macro product shot with a singular focal point against a void background.",
+    "subject_ratio": 0.35,
+    "negative_space": "Extensive, uniform black surrounding the subject to maximize contrast and luxury appeal.",
+    "lighting": "High-contrast studio lighting with sharp specular highlights on polished metal and soft gradient shading on textured surfaces.",
+    "color": [
+      "#FFD700",
+      "#000000",
+      "#B8860B",
+      "#FFF8DC"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely visual focus on material and form without textual distraction.",
+    "characteristics": [
+      "Hammered gold texture",
+      "Sculptural screw motif",
+      "High-gloss polish accents",
+      "Minimalist luxury aesthetic",
+      "Macro detail"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "The image features a high-end sculptural gold jewelry piece (likely a ring) that fits the 'watches and jewellery' campaign category. The technical execution is professional, with excellent control over metallic reflections and surface textures. While no watch dial is present, the object qualifies as luxury jewellery. No brand markings are visible."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

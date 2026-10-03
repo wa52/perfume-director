@@ -1,0 +1,40 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/fenty-skin-watch-ya-tone",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/6e474a86-c8df-46f2-987b-db9052271145/Fenty-Skin-Watch-Ya-Tone-Campaign-Moody-Light-Product-Retouch",
+  "caption": "",
+  "id": "category-b853346353ae104e",
+  "local_path": "references/categories/skincare/b853346353ae104e.webp",
+  "sha256": "bd435fe16b79a3d54ddd7803dce8991bae7e38e7bb7affa1a73a7d3cddc9a5f9",
+  "width": 2172,
+  "height": 2172,
+  "analysis": {
+    "category_match": true,
+    "brand": "Fenty Skin",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal close-up framing the product bottle against a soft-focus background.",
+    "subject_ratio": 0.85,
+    "negative_space": "Minimal, primarily in the blurred background corners.",
+    "lighting": "Soft, diffused studio lighting creating a gentle gradient and highlighting the frosted texture.",
+    "color": [
+      "terracotta",
+      "peach",
+      "warm brown",
+      "white"
+    ],
+    "typography": "Clean, white sans-serif brand logotype printed vertically on the bottle.",
+    "information_density": "Low, focused entirely on brand identity and material texture.",
+    "characteristics": [
+      "frosted glass texture",
+      "monochromatic warm palette",
+      "macro product shot",
+      "minimalist aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial product photography featuring a clearly identifiable Fenty Skin bottle. The image effectively conveys the material texture and brand identity within the skincare category, utilizing professional lighting and composition without extraneous elements."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

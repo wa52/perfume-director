@@ -1,0 +1,127 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28f20e4eb5ae\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Mandarine Segment Dial",
+    "brief": "把金色蜂窝穹顶读作一枚柑橘横切面：平涂 mandarin 橙丝印卡纸上，一枚硬边象牙大圆盘精确套住瓶身中段如切片果肉，其后错出一枚更大的低不透明度琥珀圆盘如外皮刻度环；商品沉于中下幅立于圆盘之前，剪影自身补全圆的中断。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以两行 Didone 大字居中统领，一条深琥珀细线横垫其下如制版套准线——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯圆盘几何对抗透明玻璃的柔渐液体。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）、R4 的饱和色块勇气与 R6 的中心聚焦秩序。",
+    "material": "flat matte silkscreen-printed card with hard-edge printed citrus disc fields",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e4691c",
+      "#f8ecd4",
+      "#a63f0c"
+    ],
+    "layout_relation": "above",
+    "title_family": "serif",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087237065,
+    "background": {
+      "color": "#e4691c",
+      "prompt": "Seamless flat matte silkscreen-printed card in saturated mandarin orange, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 842,
+          "width": 864,
+          "height": 864,
+          "color": "#f9a03f",
+          "opacity": 0.45
+        },
+        {
+          "kind": "ellipse",
+          "x": 540,
+          "y": 864,
+          "width": 713,
+          "height": 713,
+          "color": "#f6ead2",
+          "opacity": 0.95
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 893,
+      "width": 387,
+      "height": 893
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e4691c",
+      "#f8ecd4",
+      "#a63f0c"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 218,
+      "y": 151,
+      "size": 84,
+      "color": "#f8ecd4",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 2,
+      "max_width": 700,
+      "line_height": 1.08,
+      "align": "center"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 475,
+      "y": 408,
+      "size": 22,
+      "color": "#f8ecd4",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f8ecd4",
+      "font": "C:/Windows/Fonts/BOD_R.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 463,
+      "y": 86,
+      "size": 30,
+      "color": "#f8ecd4",
+      "font": "C:/Windows/Fonts/BOD_R.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 377,
+      "width": 173,
+      "color": "#a63f0c"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

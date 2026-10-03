@@ -1,0 +1,41 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://gilesangel.com/footwear-photography/",
+  "image_url": "https://gilesangel.com/wp-content/uploads/2025/12/ADIDAS_GAZELLE_V7_GILES_ANGEL_5x4-550x498.jpg",
+  "caption": "",
+  "id": "category-92877cf3c72a5270",
+  "local_path": "references/categories/footwear/92877cf3c72a5270.jpg",
+  "sha256": "98e108393765a429460426e005fd18e3820d196158228b2f97bd508ae5adc6d2",
+  "width": 550,
+  "height": 498,
+  "analysis": {
+    "category_match": true,
+    "brand": "Adidas",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal placement on a geometric pedestal with surreal melting effects anchoring the heel and toe.",
+    "subject_ratio": 0.65,
+    "negative_space": "Clean, uncluttered pink gradient background in the upper half balancing the heavy blue geometric base.",
+    "lighting": "Soft, even studio lighting with subtle highlights on the glossy slime and soft shadows defining the suede texture.",
+    "color": [
+      "pink",
+      "blue",
+      "gum brown",
+      "gold"
+    ],
+    "typography": "Gold foil 'GAZELLE' product label on the lateral side; no external campaign copy present.",
+    "information_density": "Low; highly focused on the single product and its surreal interaction with the environment.",
+    "characteristics": [
+      "surrealism",
+      "pop art aesthetic",
+      "high contrast",
+      "textural juxtaposition",
+      "3D render style"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product shot featuring an Adidas Gazelle sneaker. The image perfectly preserves the required footwear silhouette, stitching, laces, and sole details while employing a creative, surreal melting concept. Lighting and color grading are professional and visually striking."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

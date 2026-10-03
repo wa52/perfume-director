@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/supergoop",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/02aa183c-a8c7-464a-ae1d-0b33c7d82f15/613_11c_SHOT_11_30058-opt2.jpg",
+  "caption": "",
+  "id": "category-86d358078e6e6a5b",
+  "local_path": "references/categories/skincare/86d358078e6e6a5b.webp",
+  "sha256": "c69640565491563bb3303adea69f4e143853318b10855e48d6dcf19b6f277700",
+  "width": 2500,
+  "height": 3125,
+  "analysis": {
+    "category_match": true,
+    "brand": "Supergoop!",
+    "quality_score": 95,
+    "composition": "Centralized diagonal product placement surrounded by a textured field of repeating spherical props.",
+    "subject_ratio": 0.35,
+    "negative_space": "Minimal; the frame is densely filled with background elements, creating a patterned backdrop rather than empty space.",
+    "lighting": "Soft, diffused studio lighting with gentle highlights on the frosted spheres and even illumination on the product packaging.",
+    "color": [
+      "Mint Green",
+      "White",
+      "Yellow",
+      "Silver",
+      "Blue"
+    ],
+    "typography": "Brand logo in blue script, product name in bold silver sans-serif, technical details in small black sans-serif.",
+    "information_density": "Low; focus is purely on the product and aesthetic texture without external marketing copy.",
+    "characteristics": [
+      "Monochromatic background palette",
+      "Textural contrast",
+      "High-key lighting",
+      "Commercial product photography",
+      "Patterned background"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product shot featuring a sunscreen tube (skincare category) clearly branded as Supergoop!. The composition uses a creative, textural background of mint spheres to evoke freshness without obscuring the product. Lighting is professional, and packaging details are preserved perfectly."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

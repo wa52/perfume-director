@@ -1,0 +1,42 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://www.photo-frank.com/portfolio/sneakerweek",
+  "image_url": "https://framerusercontent.com/images/mCqg2Xvj1mVnGlAVbzWfNZDW17I.jpg?width=1638&height=2048",
+  "caption": "",
+  "id": "category-e65364306100cb2c",
+  "local_path": "references/categories/footwear/e65364306100cb2c.jpg",
+  "sha256": "8714d7527e4d46d0b535fa673831bf2155a0ea554c1e5bd0ed0b590c628b6bd8",
+  "width": 1638,
+  "height": 2048,
+  "analysis": {
+    "category_match": false,
+    "brand": "Adidas",
+    "quality_score": 72,
+    "composition": "High-angle overhead shot of two models seated on a textured pink court with diagonal white lines; subjects are centered but the footwear is secondary to the human interaction.",
+    "subject_ratio": 0.55,
+    "negative_space": "Moderate negative space provided by the expansive pink court surface in the foreground and corners.",
+    "lighting": "Hard, direct flash lighting creating sharp, distinct drop shadows beneath the subjects, typical of modern editorial sportswear photography.",
+    "color": [
+      "hot pink",
+      "white",
+      "navy blue",
+      "black",
+      "dusty rose"
+    ],
+    "typography": "None visible",
+    "information_density": "Low; purely visual lifestyle imagery without text overlays or complex graphical elements.",
+    "characteristics": [
+      "lifestyle photography",
+      "overhead perspective",
+      "hard flash lighting",
+      "vibrant monochromatic background",
+      "casual posing"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "Rejected as a primary footwear campaign asset because it is a people-centric lifestyle scene. The shoes are worn by seated models at a small scale and oblique angles, failing to preserve the required horizontal silhouette, sole profile, and product details necessary for a dedicated footwear category match."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

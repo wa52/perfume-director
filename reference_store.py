@@ -25,6 +25,7 @@ def connect(root):
         selection_reason TEXT NOT NULL, analysis_json TEXT NOT NULL,
         analysis_origin TEXT NOT NULL, rights_status TEXT NOT NULL, acquired_at TEXT NOT NULL
     )''')
+    conn.execute('CREATE TABLE IF NOT EXISTS reference_categories (reference_id TEXT PRIMARY KEY REFERENCES reference_images(id), category TEXT NOT NULL)')
     return conn
 
 
@@ -65,23 +66,27 @@ def import_curated(root):
     export(root)
 
 
-def entries(root):
+def entries(root, category=None):
     with closing(connect(root)) as conn:
         rows = conn.execute('SELECT id,brand,style,reference_kind,source_url,local_path,selection_reason,analysis_json,analysis_origin FROM reference_images ORDER BY id').fetchall()
-    return [{'id': row['id'], 'brand': row['brand'], 'style': row['style'], 'reference_kind': row['reference_kind'],
+    with closing(connect(root)) as conn:
+        memberships=dict(conn.execute('SELECT reference_id,category FROM reference_categories').fetchall())
+    if category is not None:
+        rows=[r for r in rows if memberships.get(r['id'],'perfume')==category]
+    return [{'product_category':memberships.get(row['id'],'perfume'),'id': row['id'], 'brand': row['brand'], 'style': row['style'], 'reference_kind': row['reference_kind'],
              'source_url': row['source_url'], 'image': row['local_path'], 'selection_reason': row['selection_reason'],
              'analysis': json.loads(row['analysis_json']), 'analysis_origin': row['analysis_origin']} for row in rows]
 
 
-def select(root, limit=3, direction=None):
+def select(root, limit=3, direction=None, category='perfume'):
     colors = {'black-gold':('black','gold','silver'), 'cream-minimal':('beige','warm_white','peach'),
               'burgundy-editorial':('burgundy','red','purple'), 'botanical':('green','mint_green','warm_white','pink')}
     def relevance(row):
         observed = row['analysis'].get('color', [])
         matches = sum(color in observed for color in colors.get(direction,()))
         penalty = 20 if direction == 'cream-minimal' and 'black' in observed and 'beige' not in observed else 0
-        return row['analysis']['perfume_suitability']+matches*25-penalty
-    ranked = sorted(entries(root), key=relevance, reverse=True)
+        return row['analysis'].get('category_suitability',row['analysis'].get('perfume_suitability',70))+matches*25-penalty
+    ranked = sorted(entries(root, category=category), key=relevance, reverse=True)
     selected, brands = [], set()
     # Avoid choosing three variants from the same brand/campaign.
     for row in ranked:
@@ -107,9 +112,9 @@ def recent_reference_usage(root, limit=8):
     return usage
 
 
-def planning_pool(root, limit=8, rng=None):
+def planning_pool(root, limit=8, rng=None, category='perfume'):
     """Quality-weighted diverse examples; never confuse label text with poster type."""
-    pool=list(entries(root))
+    pool=list(entries(root, category=category))
     rng=rng or random.SystemRandom()
     rng.shuffle(pool)
     usage=recent_reference_usage(root)
@@ -129,7 +134,7 @@ def planning_pool(root, limit=8, rng=None):
             a=row['analysis'];domain=urlsplit(row['source_url']).netloc
             compatibility=a.get('renderer_compatibility',35 if a.get('subject_ratio',.2)<.08 else 75)
             type_bonus=12 if a.get('has_campaign_typography') and not any(r['analysis'].get('has_campaign_typography') for r in selected) else 0
-            return (a.get('perfume_suitability',70)*.5+compatibility*.25+len(tags(row)-features)*7+type_bonus
+            return (a.get('category_suitability',a.get('perfume_suitability',70))*.5+compatibility*.25+len(tags(row)-features)*7+type_bonus
                     -sources.get(domain,0)*12-min(18,usage.get(row['id'],0)*3))
         scored=[(row,score(row)) for row in eligible]
         best=max(value for _,value in scored)
@@ -151,7 +156,7 @@ def update_analysis(root, local_path, analysis):
 
 def export(root):
     root = Path(root)
-    rows = entries(root)
+    rows = entries(root,category='perfume')
     (root/'kb/luxury.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding='utf-8')
     source_lines = ['# 香水参考来源', '', f'共 {len(rows)} 张。图像原文件及来源、审美标注保存在 kb/design_kb.sqlite3；入选图按风格存放。',
         '每项 analysis_origin 记录实际标注来源；新增记录为千问视觉 API 分析，原20张保留原标注。subject_ratio 为粗略估计，评分为选图偏好，不是成品质量分。商业静物与含排版广告分别标注，不将无文字摄影称为完整海报。',

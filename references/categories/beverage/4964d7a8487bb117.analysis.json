@@ -1,0 +1,41 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://www.christopher-photography.com/",
+  "image_url": "https://irp.cdn-website.com/ac2035cd/dms3rep/multi/opt/Matcha-1920w.jpg",
+  "caption": "Time for matcha - conceptual commercial photography Krzysztof Czernecki Christopher Photography ",
+  "id": "category-4964d7a8487bb117",
+  "local_path": "references/categories/beverage/4964d7a8487bb117.jpg",
+  "sha256": "1d0c92c853f717f1cda20364d42af8a5c491b53edbb66554824db79644fa3786",
+  "width": 1900,
+  "height": 1900,
+  "analysis": {
+    "category_match": true,
+    "brand": "Unknown",
+    "quality_score": 88,
+    "composition": "Centered single-subject conceptual still life with a clean studio backdrop and soft grounding shadow.",
+    "subject_ratio": 0.52,
+    "negative_space": "Generous and evenly distributed around the subject, suitable for overlay copy.",
+    "lighting": "Soft, diffuse high-key studio lighting with subtle rim highlights on the white casing and gentle falloff.",
+    "color": [
+      "#FFFFFF",
+      "#E5E5E5",
+      "#8CC63F",
+      "#6B9E23"
+    ],
+    "typography": "None visible in the image.",
+    "information_density": "Very low; purely visual concept without text or data clutter.",
+    "characteristics": [
+      "Conceptual product photography",
+      "Surreal object substitution",
+      "Minimalist aesthetic",
+      "High-key lighting",
+      "Matcha texture detail"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality conceptual commercial photograph featuring matcha (beverage) integrated into an alarm clock, aligning with the beverage category and the caption's theme. It lacks specific branding or campaign typography but serves as a strong visual asset."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

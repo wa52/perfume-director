@@ -1,0 +1,43 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://tripistudios.com/work/driftwell-x-pepsico",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/89c90c7c-c674-4550-83aa-7d4430da4ac9/603_06b_shot_06_BL_Solo_0492-0504_F1_Main.jpg",
+  "caption": "",
+  "id": "category-b93be7242f98255c",
+  "local_path": "references/categories/beverage/b93be7242f98255c.webp",
+  "sha256": "194edc8a7e4dac74ae400436d8656423d42aee268ee4bcaa5c9f67fc8b13ac4d",
+  "width": 2500,
+  "height": 1406,
+  "analysis": {
+    "category_match": true,
+    "brand": "Driftwell",
+    "quality_score": 92,
+    "composition": "Diagonal split-lighting composition with product and glassware balanced on a horizontal plane against a gradient background.",
+    "subject_ratio": 0.35,
+    "negative_space": "Generous negative space in the upper gradient and lower shadow areas, framing the central subjects.",
+    "lighting": "Hard, directional studio lighting creating distinct, refractive shadows through the ribbed glass; high contrast between the illuminated pink strip and deep blue shadows.",
+    "color": [
+      "Deep Blue",
+      "Magenta",
+      "Soft Pink",
+      "Cyan",
+      "Yellow",
+      "Silver"
+    ],
+    "typography": "Clean, lowercase sans-serif logotype on the can; no external overlay typography.",
+    "information_density": "Low; focuses purely on product aesthetics and mood without informational clutter.",
+    "characteristics": [
+      "Vaporwave aesthetic",
+      "Hard shadows",
+      "Refraction",
+      "Gradient background",
+      "Minimalist product photography"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial product shot featuring a beverage can and glass. The lighting is sophisticated, utilizing hard light to create interesting refraction patterns through the glass. The color palette is trendy and cohesive. The brand is clearly visible. It meets all category constraints for beverages."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

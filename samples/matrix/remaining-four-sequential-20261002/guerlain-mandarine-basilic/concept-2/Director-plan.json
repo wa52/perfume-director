@@ -1,0 +1,108 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28f20e4eb5ae\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Zellige Noon Water Court",
+    "brief": "把 basil 的冷绿放进一座正午釉砖庭：饱和 basil 绿釉面砖墙以细密灰缝排成竖向砖柱，釉光在砖面留下低亮弧光；连续同料釉砖地面在真实基准线接墙，正午顶光在墙根压出一道锐利水平影带。商品缩小立于釉地偏右，测量接触阴影陷进灰缝；左半幅釉墙保持安静冷绿，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Baskerville 题名以窄柱三行衬线大字排印如蚀刻签条，一条蜜金细线横垫柱底如日照刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；釉面的湿亮与透明玻璃边的细折光同源却不同温。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬净负空间与 R8 的釉光粉彩秩序。",
+    "material": "glazed basil-green zellige tile wall with fine grout joints and continuous matching glazed tile ground",
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+    "palette": [
+      "#2e7d5b",
+      "#f4efe2",
+      "#d9a441"
+    ],
+    "layout_relation": "beside",
+    "title_family": "serif",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087238074,
+    "background": {
+      "color": "#2e7d5b",
+      "prompt": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte grout grain, bright cool ambient, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 734,
+      "y": 864,
+      "width": 312,
+      "height": 720
+    },
+    "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+    "palette": [
+      "#2e7d5b",
+      "#f4efe2",
+      "#d9a441"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 76,
+      "y": 518,
+      "size": 64,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 1,
+      "max_width": 330,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 76,
+      "y": 893,
+      "size": 22,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 76,
+      "y": 432,
+      "size": 30,
+      "color": "#f4efe2",
+      "font": "C:/Windows/Fonts/BASKVILL.TTF",
+      "tracking": 5
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 76,
+      "y": 871,
+      "width": 151,
+      "color": "#d9a441"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

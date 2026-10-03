@@ -1,0 +1,73 @@
+{
+  "pass": false,
+  "score": 78.0,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 68,
+    "typography": 84,
+    "background": 70,
+    "physical_integration": 86,
+    "reference_alignment": 74,
+    "creative_coherence": 72
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The declared 'citrus segment dial' is broken: both background ellipses use x=540 as their UPPER-LEFT corner, so the ivory disc centers at ~(897,1221) and the amber ring at ~(972,1274), shoving the dial into the bottom-right corner. In the poster the ivory arc only clips the bottle's right flank near the base instead of the hard-edge ivory disc 'precisely套住瓶身中段如切片果肉'; the silhouette never interrupts a centered circle, so the core geometry reads as an accidental corner blob and leaves the lower-left field dead orange weight."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail crop [268,1199,813,1440] confirms a shadow IS present at base_y 1339 (offset_y 0, correct), but it renders as a thin dark dash floating slightly宽于 the glass footprint and crossing the ivory/orange disc boundary, so the bottle's grounding line sits on a printed seam; the contact reads as a sticker edge rather than ink-printed grounding, weakening the otherwise correct contact."
+    },
+    {
+      "type": "background",
+      "problem": "The amber 'rind ring' ellipse (opacity 0.45, #f9a03f) only emerges as two stray crescents - one above the ivory disc at right (~x700-1080, y850-950) and one under the bottle base (~x560-700, y1330-1440) - instead of a concentric刻度环; these orphan arcs compete with the bottle base and the title rule, adding noise rather than dial order."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the名牌区 is competent (light logo, heavy two-line Didone, register rule) but the rule at y~377 floats with a ~70px gap above the cap top (y=446) while the title block bottom sits at y=299, leaving the rule detached from both; the quiet band reads slightly disjointed rather than a locked ABOVE monument grid."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 108,
+          "y": 490,
+          "width": 864,
+          "height": 864,
+          "color": "#f9a03f",
+          "opacity": 0.45
+        },
+        {
+          "kind": "ellipse",
+          "x": 184,
+          "y": 566,
+          "width": 713,
+          "height": 713,
+          "color": "#f6ead2",
+          "opacity": 0.95
+        }
+      ]
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 0.92
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 396
+    }
+  ],
+  "reported_score": 76
+}

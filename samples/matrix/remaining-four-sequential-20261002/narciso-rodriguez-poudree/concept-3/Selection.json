@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) resolves the declared concept more honestly: the dusty-blue velvet wall folds into a continuous matching velvet ground at one clean,真实 horizontal baseline behind the bottle, so the product reads as standing in the set rather than pasted on a drape. Its right-hand type column is coherent and complete within the wall field: wide-tracked sans brand line at column top, two-line serif title in a narrow measure, then the 'Eau de Parfum' subline and the bone-white hairline rule closing the column above the baseline, vertically overlapping the cap/shoulder zone while staying clearly separated horizontally (true BESIDE relation). Version 1 (image 5) breaks the column: the subline and the thin rule drop below the wall/ground fold onto the crumpled floor velvet, scattering the hierarchy, and its ground is busier with bright crushed-nap highlights that compete with the product and contradict the low-matte twilight brief. Product fidelity is equal in both (opaque cream core, clear glass edges, black logotype intact), but version 2's calmer nap, softer sheen drift and settled contact at the base give the more convincing physical placement and the cleaner finished campaign set.",
+  "remaining_problems": [
+    "Contact shadow under the glass plinth is faint; the bottle would seat more convincingly with a slightly deeper shadow sunk into the velvet nap at the base line",
+    "The bone-white rule under the subline is short and light, reading as a stray tick rather than a deliberate column-base measure",
+    "Velvet ground in front of the bottle is slightly smoother than the wall nap, leaving a mild material mismatch across the baseline",
+    "Right column sits a touch high relative to the cap/shoulder overlap ideal; brand line could drop a few pixels to lock the vertical alignment with the shoulder"
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

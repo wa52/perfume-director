@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/supergoop",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/211833bc-7b96-4faf-8cd5-9fefcba9e3cb/613_03d_SHOT_03_29739.jpg",
+  "caption": "",
+  "id": "category-178ba3c3208f3ae1",
+  "local_path": "references/categories/skincare/178ba3c3208f3ae1.webp",
+  "sha256": "18277a3d8408ae44cc9647915a59f47ba4be6a1d7352d944e30485f41d1316d0",
+  "width": 2500,
+  "height": 3126,
+  "analysis": {
+    "category_match": true,
+    "brand": "Supergoop!",
+    "quality_score": 95,
+    "composition": "Diagonal flat lay arrangement of three product tubes interspersed with texture swatches on a clean background.",
+    "subject_ratio": 0.65,
+    "negative_space": " ample white space surrounding the diagonal cluster, balancing the composition.",
+    "lighting": "Bright, high-key studio lighting with soft, directional shadows indicating a top-left light source.",
+    "color": [
+      "white",
+      "yellow",
+      "blue",
+      "silver",
+      "iridescent"
+    ],
+    "typography": "Clean sans-serif and serif fonts on packaging; legible product names and SPF ratings.",
+    "information_density": "Moderate; focuses on product variety and texture demonstration without clutter.",
+    "characteristics": [
+      "flat lay",
+      "texture swatches",
+      "high-key",
+      "commercial product photography",
+      "minimalist"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product shot featuring Supergoop! sunscreens with clear branding, distinct texture swatches, and professional lighting suitable for skincare campaigns."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

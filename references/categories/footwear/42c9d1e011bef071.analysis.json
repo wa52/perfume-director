@@ -1,0 +1,42 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://www.photo-frank.com/portfolio/sneakerweek",
+  "image_url": "https://framerusercontent.com/images/NT1f5yp3CPBkddwdtpZ7BUW3GO0.jpg?width=5224&height=6530",
+  "caption": "",
+  "id": "category-42c9d1e011bef071",
+  "local_path": "references/categories/footwear/42c9d1e011bef071.jpg",
+  "sha256": "bd81141e74b0350748197e64e82d9f201f603c24c7242c1c05c0e647e98a0bcf",
+  "width": 5224,
+  "height": 6530,
+  "analysis": {
+    "category_match": false,
+    "brand": "New Balance",
+    "quality_score": 42,
+    "composition": "Centered full-body environmental portrait framed by symmetrical subway doors; the actual footwear is relegated to the extreme bottom edge and heavily cropped.",
+    "subject_ratio": 0.65,
+    "negative_space": "Minimal and cluttered; background consists of busy transit infrastructure with competing red, yellow, and blue elements.",
+    "lighting": "Flat, ambient overhead fluorescent transit lighting lacking directional contrast or commercial product highlighting.",
+    "color": [
+      "navy blue",
+      "transit red",
+      "denim grey",
+      "concrete grey",
+      "white"
+    ],
+    "typography": "Apparel graphic logo only; no external campaign copy present.",
+    "information_density": "Moderate; visual focus is split between the subject's face, the prominent chest logo, and the background environment.",
+    "characteristics": [
+      "environmental lifestyle photography",
+      "apparel-focused framing",
+      "cropped product placement",
+      "candid street style",
+      "uncontrolled background"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 15,
+    "reason": "Rejected as a footwear campaign asset because the composition violates category-specific acceptance criteria: the shoes are severely cropped at the bottom frame, obscuring the sole silhouette, heel contact, and forefoot details. The image functions as an apparel or general lifestyle shot rather than a finished footwear commercial design."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

@@ -1,0 +1,95 @@
+{
+  "pass": false,
+  "score": 77.1,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 72,
+    "background": 66,
+    "physical_integration": 86,
+    "reference_alignment": 72,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'hard-edge blank plaque band across the lower quarter' is not what rendered: background.shapes rectangle (x=540,y=720,w=670,h=490 at 0.16) plus a再生 tonal seam produce a vertical split at x=540 and horizontal seams at y≈905 and y≈1130 that cut the field into four mismatched quadrants. In the contact-detail crop (68,825–1011,1075) the vertical olive/citron edge passes directly under the bottle base center, so the 'plaque' reads as a misregistered print panel, not an intentional band; references R2/R4 keep their color blocks edge-clean and full-bleed."
+    },
+    {
+      "type": "typography",
+      "problem": "Title 'Yellow Diamond Intense' (bbox 138–1009) is set align:left at x=138 yet visually spans几乎 the full canvas width, so its optical center (~573) fights the centered logo (center ~534) and centered decoration rule; the left-anchored baseline with near-full-width measure reads as accidental overflow rather than the brief's 'centered single-line serif governing the band'. Tracking 1 at size 78 also leaves the line touching both safe margins (29px right margin vs 138px left intent)."
+    },
+    {
+      "type": "composition",
+      "problem": "The ink rule/decoration (y=1116, width 173, ivory #f4eeda) sits between logo and title but is nearly invisible against citron where the olive quadrant does not cover it, breaking the brief's 'ink hairline as刻刀 zero point at band top'; hierarchy logo→rule→title therefore loses its middle step on the left half."
+    },
+    {
+      "type": "background",
+      "problem": "Engraved facet lines radiate from upper centre as specified, but below y≈905 they continue across the plaque zone at reduced contrast on the olive quadrant only, so line density 'falling' (the brief's narrative) is interrupted asymmetrically instead of uniformly sinking behind the plaque band."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1000,
+          "width": 1080,
+          "height": 440,
+          "color": "#221a06",
+          "opacity": 0.1
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre and gradually thinning downward, one perfectly even hard-edge horizontal band of slightly deeper olive citron beginning at exactly two thirds height spanning the full width with clean straight edges, perfectly even shadowless frontal illumination, no vertical seams, no quadrant splits, no objects"
+    },
+    {
+      "path": "title.align",
+      "op": "set",
+      "value": "center"
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 0
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 74
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#221a06"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1108
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 220
+    }
+  ],
+  "evidence_notes": {
+    "contact_shadow": "Present and correct: detail crop shows a soft dark footprint hugging the base contour at offset_y=0; no float, no gap, base_y=965 (67% of height) inside bounds.",
+    "product": "Single bottle, label intact ('VERSACE YELLOW DIAMOND INTENSE'), facets and cap match original cutout; height ratio 0.50 within this concept's 35–74% safety band.",
+    "overlap": "text_product_overlap false for title and logo; no overlap claimed.",
+    "artifacts": "No softboxes, lamps, stands or cameras visible; no extra bottles or generated labels."
+  },
+  "reported_score": 76
+}

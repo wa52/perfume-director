@@ -1,5 +1,6 @@
 """Plan fresh visual concepts; safety checks never substitute a curated design."""
 import copy
+import colorsys
 import hashlib
 import json
 import math
@@ -7,13 +8,14 @@ import random
 from pathlib import Path
 
 
-def recent(root):
+def recent(root, category=None):
     files = sorted((root/'runs/batches').glob('*/request.json'), key=lambda p:p.stat().st_mtime, reverse=True)
     result = []
     for path in files[:8]:
         data = json.loads(path.read_text(encoding='utf-8-sig'))
+        if category is not None and data.get('product_category','perfume') != category:continue
         for item in data.get('directions', []):
-            record={k:item[k] for k in ('name','brief','material','lighting','palette','signature','layout_relation') if k in item}
+            record={k:item[k] for k in ('name','brief','material','lighting','palette','signature','signature_version','layout_relation') if k in item}
             if item.get('initial_spec'):
                 spec=item['initial_spec']
                 record['layout']={k:spec[k] for k in ('canvas','product','title','background')}
@@ -24,6 +26,7 @@ def recent(root):
 def build_spec(engine,config,item,product,approved_copy):
     """Convert model-chosen normalized geometry; no lookup of curated grids."""
     spec=engine.read(engine.ROOT/'examples/PosterSpec.json')
+    spec['product_category']=config.get('product_category','perfume')
     spec['scene_mode']=item.get('scene_mode','photographic')
     w,h=spec['canvas']['width'],spec['canvas']['height']
     def numbers(values,length):
@@ -37,7 +40,8 @@ def build_spec(engine,config,item,product,approved_copy):
     aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1])
     requested={'x':round(x*w),'y':round(y*h),'height':round(ratio*h)}
     height=min(requested['height'],int((w*.9-4)/aspect),int(h*.74))
-    if height<h*.35:raise ValueError('Requested product too small for safe hero layout')
+    minimum=engine.categories_module().minimum_height(config.get('product_category','perfume'),aspect)
+    if height<h*minimum:raise ValueError('Requested product too small for safe hero layout')
     width=round(height*aspect)+2
     cx=round(max(w*.05+width/2,min(w*.95-width/2,requested['x'])))
     cy=round(max(h*.10+height/2,min(h*.94-height/2,requested['y'])))
@@ -95,6 +99,15 @@ def title_family(font):
     return 'serif' if font.replace('\\','/').rsplit('/',1)[-1].lower() in ('times.ttf','georgia.ttf','bod_r.ttf','baskvill.ttf') else 'sans'
 
 
+def color_family(rgb):
+    """Distinguish hue and tone; RGB cubes collapse all light pastels to white."""
+    hue,saturation,value=colorsys.rgb_to_hsv(*(c/255 for c in rgb[:3]))
+    tone=min(2,int(value*3))
+    if saturation<.10 or value<.15:
+        return ('neutral',tone)
+    return ('hue',int(hue*12)%12,tone)
+
+
 def resolve_reference_ids(value, references):
     """Resolve exact request-local aliases; never guess a mistyped persistent ID."""
     result=copy.deepcopy(value)
@@ -110,7 +123,7 @@ def validate_plans(engine, config, value, product, references, approved_copy):
     if not isinstance(items,list) or len(items)!=4:
         raise ValueError('Exactly four new concepts required')
     lookup = {r['id']:r for r in references}
-    previous={d['signature'] for d in recent(engine.ROOT) if 'signature' in d}
+    previous={d['signature'] for d in recent(engine.ROOT,config.get('product_category','perfume')) if 'signature' in d}
     directions, grids, colors, fonts, materials, relations = [], set(), set(), set(), set(), set()
     for index,item in enumerate(items,1):
         for field in ('name','brief','material','lighting'):
@@ -124,6 +137,7 @@ def validate_plans(engine, config, value, product, references, approved_copy):
         if any(r.get('analysis',{}).get('has_campaign_typography') is True for r in references) and not any(lookup[i].get('analysis',{}).get('has_campaign_typography') is True for i in ids):
             raise ValueError('Each concept needs a reference with actual campaign typography, not only bottle labels')
         spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
+        spec['product_category']=config.get('product_category','perfume')
         for layer,text in approved_copy.items():spec[layer]['text']=text
         for layer in engine.TEXT_LAYERS:
             if spec[layer].get('font',config['font']) not in engine.FONT_CHOICES:
@@ -144,15 +158,17 @@ def validate_plans(engine, config, value, product, references, approved_copy):
               round(geometry['product_height_ratio'],1),round(spec['title']['x']/w,1),round(spec['title']['y']/h,1))
         grids.add(grid)
         rgb=engine.ImageColor.getrgb(spec['background']['color'])
-        colors.add(tuple(c//64 for c in rgb[:3]))
+        colors.add(color_family(rgb))
         font=spec['title'].get('font',config['font']);fonts.add(title_family(font))
-        signature=hashlib.sha256(json.dumps([grid,tuple(c//64 for c in rgb[:3]),font]).encode()).hexdigest()
-        if signature in previous:raise ValueError('Concept repeats a recent geometry/color/font signature; invent a new design instead of changing its seed or name')
+        background_recipe=[' '.join(spec['background']['prompt'].split()).casefold(),
+                           spec['background'].get('shapes',[]),spec.get('scene_mode','photographic')]
+        signature=hashlib.sha256(json.dumps([grid,color_family(rgb),font,background_recipe],sort_keys=True).encode()).hexdigest()
+        if signature in previous:raise ValueError('Concept repeats a recent visual recipe including its background; invent a new design instead of changing its seed or name')
         materials.add(item['material'].strip().casefold())
         directions.append({**{k:item[k] for k in ('name','brief','material','lighting')},
-            'id':f'concept-{index}','signature':signature,'scene_mode':spec.get('scene_mode','photographic'),'layout_relation':relation,'title_family':title_family(font),'palette':spec.get('palette',[]),'reference_ids':ids,'initial_spec':spec})
+            'id':f'concept-{index}','signature':signature,'signature_version':2,'scene_mode':spec.get('scene_mode','photographic'),'layout_relation':relation,'title_family':title_family(font),'palette':spec.get('palette',[]),'reference_ids':ids,'initial_spec':spec})
     if len({d['name'].strip().casefold() for d in directions})!=4 or len(grids)<3 or len(colors)<3 or len(fonts)<2 or len(materials)<3:
-        raise ValueError('Concepts repeat: require four names, >=3 geometry grids, >=3 coarse background colors, both serif and sans title families and >=3 materials; color swaps alone are insufficient')
+        raise ValueError('Concepts repeat: require four names, >=3 geometry grids, >=3 hue/tonal background color families, both serif and sans title families and >=3 materials; color swaps alone are insufficient')
     if relations!={'above','below','beside'}:
         raise ValueError('Layout topology repeats: four concepts must include title ABOVE, BELOW and BESIDE the visible product. Moving upper titles by a few pixels is not a new layout. Reposition/resize the product and text together so every design remains safe; choose your own coordinates, no preset grids.')
     return directions
@@ -167,9 +183,10 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
     for index,item in enumerate(items,1):
         try:
             spec=copy.deepcopy(item['spec']) if 'spec' in item else build_spec(engine,config,item,product,approved_copy)
+            spec['product_category']=config.get('product_category','perfume')
             for layer,text in approved_copy.items():spec[layer]['text']=text
             rgb=engine.ImageColor.getrgb(spec['background']['color'])
-            colors.add(tuple(c//64 for c in rgb[:3]))
+            colors.add(color_family(rgb))
             fonts.add(title_family(spec['title'].get('font',config['font'])))
             materials.add(item['material'].strip().casefold())
             inspected+=1
@@ -179,7 +196,7 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
         except (ValueError,KeyError,TypeError) as error:
             errors.append(f'Concept {index}: {error}')
     if inspected==4:
-        if len(colors)<3:errors.append('Background colors repeat: require at least3 clearly different coarse color families, not four near-white pastels')
+        if len(colors)<3:errors.append('Background colors repeat: require at least3 distinguishable hue/tonal color families')
         if len(fonts)<2:errors.append('Title families repeat: require both serif and sans')
         if len(materials)<3:errors.append('Materials repeat: require at least3 different materials')
     return errors
@@ -187,7 +204,7 @@ def planning_diagnostics(engine,config,value,product,approved_copy):
 
 def plan_four(engine,config,product,brief,folder,approved_copy):
     store=engine.reference_store_module()
-    pool=store.planning_pool(engine.ROOT,limit=8) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
+    pool=store.planning_pool(engine.ROOT,limit=8,category=config.get('product_category','perfume')) if hasattr(store,'planning_pool') else store.entries(engine.ROOT)
     if not hasattr(store,'planning_pool'):random.SystemRandom().shuffle(pool)
     refs=[];brands=set()
     for row in pool:
@@ -196,7 +213,7 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         if len(refs)==8:break
     if len(refs)<3:raise ValueError('At least three reference brands required')
     engine.write(folder/'Planning-references.json',refs)
-    history=recent(engine.ROOT)
+    history=recent(engine.ROOT,config.get('product_category','perfume'))
     with engine.Image.open(product) as image:bounds=image.getchannel('A').getbbox()
     aspect=(bounds[2]-bounds[0])/(bounds[3]-bounds[1])
     type_metrics={}
@@ -206,13 +223,14 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
             if text:
                 box=engine.ImageFont.truetype(font,64).getbbox(text)
                 type_metrics[font][layer]={'width_at_64px':box[2]-box[0],'height_at_64px':box[3]-box[1]}
-    prompt=('Develop FOUR genuinely different fresh commercial perfume campaign concepts for this product. '
+    minimum=engine.categories_module().minimum_height(config.get('product_category','perfume'),aspect)
+    prompt=('Develop FOUR genuinely different fresh commercial product campaign concepts for this product. '
         'Do not reuse the fixed black/gold, cream, burgundy, botanical quartet, nor reproduce the recent plans. '
         'Explore different spatial hierarchy, typography, material, light and visual narrative; random color swaps are insufficient. '
-        'Keep the original single upright packshot; no rotation, cropping, generated duplicate, relighting or replaced label. '
+        'Keep the original single packshot with its actual orientation; no rotation, cropping, generated duplicate, relighting or replaced label. '
         'Renderer supports generated backdrop, original cutout, measured contact shadow, editable line decoration and tracked/wrapped typography. '
         'It also supports up to8 precisely controlled ellipse or rectangle shapes behind the product. Use these for a deliberate geometric campaign; do not ask the image model to guess a circle or bar placement when you can specify its geometry. Background prompt then describes material and light only. Shapes are optional; never force circles into every concept. '
-        'For each concept choose at least one reference marked has_campaign_typography=true when available; study its external headline hierarchy, spacing and type rhythm. Use the other references for material and composition. Bottle label lettering alone is not campaign typography. '
+        'For each concept choose at least one reference marked has_campaign_typography=true when available; study its external headline hierarchy, spacing and type rhythm. Use the other references for material and composition. Product label lettering alone is not campaign typography. '
         'Do not demand features absent from the renderer. You may use graphic, tactile, architectural or experimental empty backdrops. '
         'Background prompt describes ONLY background materials/shapes/illumination. Never use words perfume, fragrance, bottle, product, '
         'logo, label, people, person, woman, man, model, table, tabletop, pedestal, plinth, platform, even in negative phrases. '
@@ -221,7 +239,7 @@ def plan_four(engine,config,product,brief,folder,approved_copy):
         'Avoid four variations of a bottle on a wall texture. In photographic scenes, show a believable horizontal continuous ground at the actual base position; all text areas need calm negative space. '
         'Declare scene_mode=graphic for a flat graphic campaign: it needs intentional shapes and silhouette integration but no photographic floor/horizon. '
         'Declare photographic for a real environment with matched illumination and convincing ground. Do not confuse a flat poster with a badly integrated photograph. '
-        'Product x/y=center; text x/y=upper-left. Actual visible height can be 35-74% of canvas; keep its top >=10%, base <=94%, '
+        'Product x/y=center; text x/y=upper-left. Actual visible height can be '+str(round(minimum*100,1))+'-74% of canvas; keep its top >=10%, base <=94%, '
         'sides within 5-95%. Text within x4-96%, y3.5-97%, no text/text or text/product overlap, separation >=2.5%. '
         'Choose at least 3 distinct geometry grids, 3 clearly different background color families, both serif (Times/Georgia/Bodoni/Baskerville) and sans (Arial/Arial Narrow/Century Gothic/MSYH) title families, 3 materials. '
         'The four layouts MUST include all THREE spatial relationships: title ABOVE product, title BELOW product, and title BESIDE product with vertical overlap but horizontal separation. '

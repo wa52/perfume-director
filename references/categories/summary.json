@@ -1,0 +1,22 @@
+{
+  "skincare": {
+    "references": 14,
+    "brands": 6,
+    "campaign_typography": 2
+  },
+  "watches": {
+    "references": 5,
+    "brands": 4,
+    "campaign_typography": 2
+  },
+  "footwear": {
+    "references": 7,
+    "brands": 5,
+    "campaign_typography": 1
+  },
+  "beverage": {
+    "references": 6,
+    "brands": 3,
+    "campaign_typography": 0
+  }
+}

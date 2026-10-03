@@ -1,0 +1,23 @@
+{
+  "source": "comfyui_generated",
+  "attempts": [
+    {
+      "prompt": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre, one hard-edge blank horizontal plaque band without lines across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond engraved lines, no objects, Flat graphic campaign field with intentional two-dimensional shapes, no photographic room corner or floor horizon. Keep the middle central area uncluttered; reserve quiet negative space in the lower central area.  Pure visual artwork, free of lettering, numerals, diagrams, captions, watermarks and annotations. , full bleed design background filling every edge, uninterrupted material extending beyond all image edges, continuous surface",
+      "seed": 179673392034173,
+      "issues": [],
+      "image": "background-attempt-1.png"
+    }
+  ],
+  "ink_changes": [],
+  "deterministic_shapes": [
+    {
+      "kind": "rectangle",
+      "x": 540,
+      "y": 720,
+      "width": 670,
+      "height": 490,
+      "color": "#221a06",
+      "opacity": 0.16
+    }
+  ]
+}

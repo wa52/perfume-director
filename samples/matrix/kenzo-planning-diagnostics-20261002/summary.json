@@ -1,0 +1,37 @@
+{
+  "tag": "kenzo-planning-diagnostics-20261002",
+  "products_finished": 1,
+  "products_requested": 1,
+  "directions_with_selection": 0,
+  "reference_count": 100,
+  "preview_encoding": "JPEG94 derivative; original and preview SHA recorded separately",
+  "products": [
+    {
+      "product_id": "kenzo-jungle",
+      "status": "ERROR",
+      "started_at": 1790952374.5010214,
+      "input_sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15",
+      "reference_count": 100,
+      "source_sha256": {
+        "poster.py": "3d18b4790d82a639f10516dd5966d1692bed82b0f6b443469b95ab9ce17891bf",
+        "concepts.py": "2226f5caa90f366c5c8e92072b157a543a4fb665664fbec1bd1a58650409fcd2",
+        "quality.py": "115f114055e28d9143e308a8d1aaee96a4e3a89306c6efa98b34c46e657d903f",
+        "typography.py": "7dddc3c3ed993d8c032bf5c9758a822843b9ce8443d9b3306753b3d689377ea4",
+        "reference_store.py": "536ea95e4c9af3cf6622bf475c9c79cee46c9dbe459c81cc2acc5d7087887e55",
+        "graphic_shapes.py": "c549b39f23e9e305460f2f29b8dd4663a43f87a8a2f0753330e22a1a9109fac2"
+      },
+      "source_hash_basis": "process_start",
+      "engine_snapshot": "engine-source/6858d6ad69ed",
+      "rounds_per_direction": 2,
+      "stage": "CONCEPTS",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\d3c395ac092f",
+      "direction_count": 4,
+      "error_type": "ValueError",
+      "error": "Concept 4 (Rose Salt Flat Noon): Prepared layout still unsafe: title_too_close_to_product, logo_too_close_to_product. Actual geometry: {\"coordinate_system\": \"pixels, origin top left\", \"product_bbox\": [75, 504, 659, 1224], \"contact_points\": [{\"center_x\": 367.5, \"base_y\": 1223, \"width\": 581}], \"product_base_y\": 1224, \"product_height_ratio\": 0.5, \"text_bbox\": {\"title\": [670, 648, 949, 727], \"logo\": [670, 576, 773, 596]}, \"text_product_overlap\": {\"title\": false, \"logo\": false}}. For a side layout reduce visible height of a wide cutout toward35% to free a real text column; resizing type alone cannot fix text origins inside the product.",
+      "duration_seconds": 888.8,
+      "brand": "Kenzo",
+      "name": "Jungle",
+      "directions": []
+    }
+  ]
+}

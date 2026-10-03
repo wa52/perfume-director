@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243829931969647,
+  "background": {
+    "color": "#56718a",
+    "prompt": "Medium dusty blue velvet cloth hanging as a soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, fine low nap grain with one gentle broad sheen drift low on the cloth, soft diffuse twilight illumination, no objects",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 356,
+    "y": 806,
+    "width": 528,
+    "height": 749
+  },
+  "lighting": "soft diffuse twilight ambient with one gentle broad sheen drift low on the cloth, frontal fill matching the baked softbox key, no hard shadows",
+  "palette": [
+    "#56718a",
+    "#f0ece2",
+    "#d9c1a0"
+  ],
+  "title": {
+    "text": "Narciso Poudrée",
+    "x": 648,
+    "y": 605,
+    "size": 84,
+    "color": "#f0ece2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 1,
+    "max_width": 330,
+    "line_height": 1.12,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Eau de Parfum",
+    "x": 648,
+    "y": 986,
+    "size": 26,
+    "color": "#f0ece2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 6
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f0ece2",
+    "font": "C:/Windows/Fonts/times.ttf"
+  },
+  "logo": {
+    "text": "NARCISO",
+    "x": 648,
+    "y": 504,
+    "size": 26,
+    "color": "#f0ece2",
+    "font": "C:/Windows/Fonts/times.ttf",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 648,
+    "y": 1066,
+    "width": 151,
+    "color": "#d9c1a0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "photographic"
+}

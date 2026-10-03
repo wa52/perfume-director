@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-d2db4b80bde2.jpg",
+      "sha256": "fe0cf3505eb0617db711d16103bb40949875b5114a70d8f9f70a8d3ea53eb82c"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "2fa4bfc25bcaf63305e35b807a8849461ee6cd2e20c3bd8bc5542f0190bab5b9"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "6fcd3a610ca47391c8f58db37188e01dcdd14fe734cdd563c0349109509db4e5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-40cf4750-c879-93cc-bf99-4f6f6911c79f",
+      "usage": {
+        "prompt_tokens": 7374,
+        "total_tokens": 8767,
+        "completion_tokens": 1393,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6329,
+          "text_tokens": 1045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 368
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-40cf4750-c879-93cc-bf99-4f6f6911c79f",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7374,
+    "total_tokens": 8767,
+    "completion_tokens": 1393,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6329,
+      "text_tokens": 1045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 368
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 2,
+    "evidence": "Version 2 (image 6) executes the Lapidary Marquise Blueprint as declared: a hard-edge lemon marquise oval sits precisely behind the gem-cut cap, with a second, larger low-opacity同形 oval offset behind it like an enlarged facet scale, and the bottle silhouette interrupts and completes the oval from the lower field. The nameplate zone is quiet and correctly hierarchical: minimal letterspaced VERSACE brand line at top, near-full-width single-line Didone title centered, lemon registration rule beneath it. The cobalt field stays flat matte silkscreen with no horizon, no ground and no studio artifacts, letting the faceted yellow glass own every highlight. Version 1 (image 5) fails the core概念: its lemon field is a misregistered blob sliding off the right edge behind the shoulder rather than a marquise oval套住 the cap, reading as a stray patch artifact, and it lacks the concentric second oval entirely, so the lapidary geometry narrative collapses.",
+    "remaining_problems": [
+      "The ivory剖切线 horizontal slit specified under the marquise oval is not legible in version 2; the section-line detail of the blueprint concept is missing or swallowed by the bottle silhouette.",
+      "The outer low-opacity oval reads slightly slate-grey rather than a tinted lemon ink, weakening the同色 facet-scale reading.",
+      "Brand line sets in a serifed capitals style rather than the specified wide-tracked Arial sans, softening the brand-light/title-heavy contrast.",
+      "Large empty cobalt band between the title rule and the oval leaves the middle register slightly under-occupied compared to the brief's tight套准 composition."
+    ]
+  },
+  "duration_seconds": 48.956
+}

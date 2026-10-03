@@ -1,0 +1,43 @@
+{
+  "product_category": "watches",
+  "source_url": "https://alkemistri.com/portfolio/alexandre-christie/",
+  "image_url": "https://alkemistri.com/wp-content/uploads/2022/10/Cover-potrait.png",
+  "caption": "High-Fashion Watch Print Ads",
+  "id": "category-dd135a777efc75a7",
+  "local_path": "references/categories/watches/dd135a777efc75a7.png",
+  "sha256": "8b208f25246129927df59a137cc8c44af7b193b4c76d6921ac517d1e63c6c9fc",
+  "width": 461,
+  "height": 613,
+  "analysis": {
+    "category_match": true,
+    "brand": "Alexandre Christie",
+    "quality_score": 82,
+    "composition": "Asymmetrical split layout featuring a high-fashion model portrait on the left balancing a dual-product hero shot on the right, anchored by brand typography.",
+    "subject_ratio": 0.35,
+    "negative_space": "Moderate negative space in the upper right and center-right gradient background, utilized for campaign headlines and product placement.",
+    "lighting": "High-key studio beauty lighting on the model with soft, diffused product lighting creating subtle drop shadows beneath the watches.",
+    "color": [
+      "neon pink",
+      "cyan",
+      "bright orange",
+      "lime green",
+      "rose gold",
+      "white"
+    ],
+    "typography": "Elegant serif logotype at the bottom right, spaced sans-serif campaign headline in the upper right, and dense informational fine print at the bottom left.",
+    "information_density": "Medium; balances strong visual imagery with a clear campaign title, brand logo, website, and physical store locations.",
+    "characteristics": [
+      "high-fashion aesthetic",
+      "vibrant neon color palette",
+      "avant-garde styling",
+      "product-focused luxury advertising",
+      "editorial beauty photography"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a finished commercial print advertisement for Alexandre Christie watches. The products are clearly visible with legible dials, hands, and straps. It features external campaign copy ('CHROMACCESSO Passion Color Edition') distinct from the package/product labels, meeting all criteria for a high-quality watch campaign."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

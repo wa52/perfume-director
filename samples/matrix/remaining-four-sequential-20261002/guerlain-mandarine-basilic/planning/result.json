@@ -1,0 +1,618 @@
+{
+  "status": "COMPLETED",
+  "directions": [
+    {
+      "name": "Mandarine Segment Dial",
+      "brief": "把金色蜂窝穹顶读作一枚柑橘横切面：平涂 mandarin 橙丝印卡纸上，一枚硬边象牙大圆盘精确套住瓶身中段如切片果肉，其后错出一枚更大的低不透明度琥珀圆盘如外皮刻度环；商品沉于中下幅立于圆盘之前，剪影自身补全圆的中断。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以两行 Didone 大字居中统领，一条深琥珀细线横垫其下如制版套准线——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯圆盘几何对抗透明玻璃的柔渐液体。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）、R4 的饱和色块勇气与 R6 的中心聚焦秩序。",
+      "material": "flat matte silkscreen-printed card with hard-edge printed citrus disc fields",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-1",
+      "signature": "b34f498a1c27ad3d511dea404d023a4ffda0268c7a991e217e1d1b691c782266",
+      "scene_mode": "graphic",
+      "layout_relation": "above",
+      "title_family": "serif",
+      "palette": [
+        "#e4691c",
+        "#f8ecd4",
+        "#a63f0c"
+      ],
+      "reference_ids": [
+        "ref-6ced6279f2e6",
+        "ref-04eb11dcf323",
+        "ref-f305dbbdf3bc"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e4691c",
+          "prompt": "Seamless flat matte silkscreen-printed card in saturated mandarin orange, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "ellipse",
+              "x": 540,
+              "y": 842,
+              "width": 864,
+              "height": 864,
+              "color": "#f9a03f",
+              "opacity": 0.45
+            },
+            {
+              "kind": "ellipse",
+              "x": 540,
+              "y": 864,
+              "width": 713,
+              "height": 713,
+              "color": "#f6ead2",
+              "opacity": 0.95
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 893,
+          "width": 387,
+          "height": 893
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#e4691c",
+          "#f8ecd4",
+          "#a63f0c"
+        ],
+        "title": {
+          "text": "Aqua Allegoria Mandarine Basilic",
+          "x": 218,
+          "y": 151,
+          "size": 84,
+          "color": "#f8ecd4",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 2,
+          "max_width": 700,
+          "line_height": 1.08,
+          "align": "center"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 475,
+          "y": 408,
+          "size": 22,
+          "color": "#f8ecd4",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f8ecd4",
+          "font": "C:/Windows/Fonts/BOD_R.TTF"
+        },
+        "logo": {
+          "text": "Guerlain",
+          "x": 463,
+          "y": 86,
+          "size": 30,
+          "color": "#f8ecd4",
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 454,
+          "y": 377,
+          "width": 173,
+          "color": "#a63f0c"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\e94e8cff8759",
+      "selected": {
+        "version": 2,
+        "score": 82.6,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "c2d182d4408bed984c8e988d5a9fed5966cac51412de355ffac956434f5d00ec"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 78.0,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "4984728b831417b9598d80bbdf86d7dc53e83ce5896236314fd0118a502f5c63"
+        },
+        {
+          "version": 2,
+          "score": 82.6,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "c2d182d4408bed984c8e988d5a9fed5966cac51412de355ffac956434f5d00ec"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Zellige Noon Water Court",
+      "brief": "把 basil 的冷绿放进一座正午釉砖庭：饱和 basil 绿釉面砖墙以细密灰缝排成竖向砖柱，釉光在砖面留下低亮弧光；连续同料釉砖地面在真实基准线接墙，正午顶光在墙根压出一道锐利水平影带。商品缩小立于釉地偏右，测量接触阴影陷进灰缝；左半幅釉墙保持安静冷绿，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Baskerville 题名以窄柱三行衬线大字排印如蚀刻签条，一条蜜金细线横垫柱底如日照刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；釉面的湿亮与透明玻璃边的细折光同源却不同温。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬净负空间与 R8 的釉光粉彩秩序。",
+      "material": "glazed basil-green zellige tile wall with fine grout joints and continuous matching glazed tile ground",
+      "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+      "id": "concept-2",
+      "signature": "2bddae0c9bb72f11e47af0d0f9087d3211226e9dd73f0d6a405ef3fcf13ac113",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "serif",
+      "palette": [
+        "#2e7d5b",
+        "#f4efe2",
+        "#d9a441"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-b4d87aee2707",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#2e7d5b",
+          "prompt": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one sharp horizontal shadow band lying along the wall base from noon top light, matte grout grain, bright cool ambient, no objects",
+          "revision": 0,
+          "shapes": []
+        },
+        "product": {
+          "x": 734,
+          "y": 864,
+          "width": 312,
+          "height": 720
+        },
+        "lighting": "bright noon top light casting one sharp horizontal shadow band at the wall base, cool diffuse ambient on the tile face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+        "palette": [
+          "#2e7d5b",
+          "#f4efe2",
+          "#d9a441"
+        ],
+        "title": {
+          "text": "Aqua Allegoria Mandarine Basilic",
+          "x": 76,
+          "y": 518,
+          "size": 64,
+          "color": "#f4efe2",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 1,
+          "max_width": 330,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 76,
+          "y": 893,
+          "size": 22,
+          "color": "#f4efe2",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#f4efe2",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF"
+        },
+        "logo": {
+          "text": "Guerlain",
+          "x": 76,
+          "y": 432,
+          "size": 30,
+          "color": "#f4efe2",
+          "font": "C:/Windows/Fonts/BASKVILL.TTF",
+          "tracking": 5
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 76,
+          "y": 871,
+          "width": 151,
+          "color": "#d9a441"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\6c77b2820360",
+      "selected": {
+        "version": 2,
+        "score": 80.9,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "ae1af20c12ac7fe4e5ef03c3cbc5bb0818c102be0d896fa53f92f0020c0f93ad"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "ad8e111be0ef7bff7b631292c79e384db85263570c8a89a758ffb74d698d606b"
+        },
+        {
+          "version": 2,
+          "score": 80.9,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "ae1af20c12ac7fe4e5ef03c3cbc5bb0818c102be0d896fa53f92f0020c0f93ad"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Aqua Ripple Sonar Plate",
+      "brief": "把 Aqua 的水声读作一圈声呐回波：平涂冰川水蓝卡纸上，细密同心水蓝刻线环自画面中心向外扩散，一枚硬边深青矩形板沉于环心之后托住剪影下半，环线下三分之一被一道硬边留白横带截断如同回波沉入铭牌；商品提至上幅立于环心，刻线从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以两行宽排收左缘起排，一条深青细线横垫区底如声呐刻度——题名整组起排于瓶底之下，构成 BELOW 关系。无地面无 horizon，纯环密度扩散叙事对抗金黄液体的暖透。参考 R2 的纸面分区铭牌秩序、R5 的圆心聚焦光环与 R1 的深色铭牌对比层级。",
+      "material": "flat matte screen-printed card with fine concentric ripple rings and one hard-edge blank plaque band",
+      "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+      "id": "concept-3",
+      "signature": "1bb61549bace2941406a8714c23295f3af6d7765383b39569c88d79e50266e02",
+      "scene_mode": "graphic",
+      "layout_relation": "below",
+      "title_family": "sans",
+      "palette": [
+        "#cfe3e6",
+        "#0d3a44",
+        "#1f8fa6"
+      ],
+      "reference_ids": [
+        "ref-f74fe25870eb",
+        "ref-453438bbcb76",
+        "ref-6ced6279f2e6"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#cfe3e6",
+          "prompt": "Seamless flat matte screen-printed card in pale glacier aqua blue, fine concentric ripple rings in deep marine teal expanding from the exact centre of the frame, one hard-edge blank horizontal plaque band without rings across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond printed rings, no objects",
+          "revision": 0,
+          "shapes": [
+            {
+              "kind": "rectangle",
+              "x": 540,
+              "y": 605,
+              "width": 540,
+              "height": 605,
+              "color": "#0d3a44",
+              "opacity": 0.14
+            }
+          ]
+        },
+        "product": {
+          "x": 540,
+          "y": 605,
+          "width": 349,
+          "height": 806
+        },
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "palette": [
+          "#cfe3e6",
+          "#0d3a44",
+          "#1f8fa6"
+        ],
+        "title": {
+          "text": "Aqua Allegoria Mandarine Basilic",
+          "x": 108,
+          "y": 1138,
+          "size": 66,
+          "color": "#0d3a44",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 3,
+          "max_width": 880,
+          "line_height": 1.12,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 108,
+          "y": 1361,
+          "size": 22,
+          "color": "#0d3a44",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#0d3a44",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF"
+        },
+        "logo": {
+          "text": "Guerlain",
+          "x": 463,
+          "y": 1058,
+          "size": 28,
+          "color": "#0d3a44",
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 108,
+          "y": 1339,
+          "width": 216,
+          "color": "#1f8fa6"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "graphic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\295e81fa9bfd",
+      "selected": {
+        "version": 2,
+        "score": 80.3,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "731a313f9fb930f3c63cfc34c688669d498e90aad194c2bc7bfd040b94bb475c"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.6,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "656579e019997b96e2ced11280608ba31f7553affa26d615625eb1c3fcc81c9c"
+        },
+        {
+          "version": 2,
+          "score": 80.3,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "731a313f9fb930f3c63cfc34c688669d498e90aad194c2bc7bfd040b94bb475c"
+        }
+      ],
+      "review_failures": []
+    },
+    {
+      "name": "Honeycomb Noon Terrazzo Hall",
+      "brief": "把金蜂窝穹顶的六角光读作一座正午水磨石厅：暖骨白水磨石墙以细密蜜金与灰绿碎石排成细点阵，连续 honed 同料水磨石地面在真实基准线接墙；正午侧光在墙面掠出一道宽而静的暖白光带，石面保持哑光矿物颗粒。商品立于石地偏左，测量接触阴影轻陷进磨面；右半幅石墙保持安静暖白，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如凿刻签条，一条蜜金细线横垫柱底如日晷刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；水磨石的冷哑矿物与金黄蜂窝金属的暖亮互为粗细。参考 R1 的右栏负空间排印层级、R4 的硬光矿物颗粒与 R8 的高键粉彩温度。",
+      "material": "warm bone terrazzo wall with fine honey-gold and grey-green chip aggregate sweeping into continuous honed matching terrazzo ground",
+      "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+      "id": "concept-4",
+      "signature": "c5b5d151e59afb5eb737b82ef1b398b43dd3974da677207bf4953f3d660772a9",
+      "scene_mode": "photographic",
+      "layout_relation": "beside",
+      "title_family": "sans",
+      "palette": [
+        "#e8e2d4",
+        "#1d3a34",
+        "#c98a2e"
+      ],
+      "reference_ids": [
+        "ref-6ced6279f2e6",
+        "ref-04eb11dcf323",
+        "ref-b6e669a924a3"
+      ],
+      "initial_spec": {
+        "version": 1,
+        "style": "luxury",
+        "canvas": {
+          "width": 1080,
+          "height": 1440
+        },
+        "seed": 42,
+        "background": {
+          "color": "#e8e2d4",
+          "prompt": "Warm bone-white terrazzo wall with fine honey-gold and grey-green stone chip aggregate in a dense even speckle, meeting a continuous honed matching terrazzo ground at a horizontal horizon six tenths down the frame, one broad calm warm-white light band lying across the upper wall from soft noon side light, matte mineral grain, no objects",
+          "revision": 0,
+          "shapes": []
+        },
+        "product": {
+          "x": 324,
+          "y": 835,
+          "width": 325,
+          "height": 749
+        },
+        "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+        "palette": [
+          "#e8e2d4",
+          "#1d3a34",
+          "#c98a2e"
+        ],
+        "title": {
+          "text": "Aqua Allegoria Mandarine Basilic",
+          "x": 605,
+          "y": 490,
+          "size": 88,
+          "color": "#1d3a34",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 2,
+          "max_width": 400,
+          "line_height": 1.1,
+          "align": "left"
+        },
+        "subtitle": {
+          "text": "",
+          "x": 605,
+          "y": 864,
+          "size": 22,
+          "color": "#1d3a34",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 3
+        },
+        "price": {
+          "text": "",
+          "x": 104,
+          "y": 1280,
+          "size": 24,
+          "color": "#1d3a34",
+          "font": "C:/Windows/Fonts/ARIALN.TTF"
+        },
+        "logo": {
+          "text": "Guerlain",
+          "x": 605,
+          "y": 403,
+          "size": 30,
+          "color": "#1d3a34",
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "tracking": 6
+        },
+        "shadow": {
+          "opacity": 0.35,
+          "blur": 10,
+          "offset_x": 0,
+          "offset_y": 0,
+          "kind": "contact"
+        },
+        "decoration": {
+          "enabled": true,
+          "x": 605,
+          "y": 842,
+          "width": 151,
+          "color": "#c98a2e"
+        },
+        "layers": [
+          "background",
+          "shadow",
+          "product",
+          "decoration",
+          "logo",
+          "title",
+          "subtitle",
+          "price"
+        ],
+        "scene_mode": "photographic"
+      },
+      "status": "NEEDS_REVIEW",
+      "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\live\\a071f15d489c",
+      "selected": {
+        "version": 2,
+        "score": 79.1,
+        "pass": false,
+        "poster": "v2/poster.png",
+        "spec": "v2/PosterSpec.json",
+        "critic": "v2/Critic.json",
+        "review_error": null,
+        "sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "score": 76.9,
+          "pass": false,
+          "poster": "v1/poster.png",
+          "spec": "v1/PosterSpec.json",
+          "critic": "v1/Critic.json",
+          "review_error": null,
+          "sha256": "132df6def301d3689b10e011662be51b1a379c5d88aba59927439f129b567281"
+        },
+        {
+          "version": 2,
+          "score": 79.1,
+          "pass": false,
+          "poster": "v2/poster.png",
+          "spec": "v2/PosterSpec.json",
+          "critic": "v2/Critic.json",
+          "review_error": null,
+          "sha256": "ba8ca8d2a291b30b6e9245a64dbecb59ed6b15180d09c6ac87970ac6b873ecdb"
+        }
+      ],
+      "review_failures": []
+    }
+  ]
+}

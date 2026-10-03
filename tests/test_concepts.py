@@ -190,6 +190,26 @@ class FreshConceptTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'unsafe'):
                 poster.prepare_layout({**self.config,'direction_id':'concept-1'},spec,self.product)
 
+    def test_new_background_is_not_rejected_only_for_sharing_a_geometry_and_palette(self):
+        value=self.plans()
+        existing=concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
+        for item in value['directions']:
+            item['spec']['background']['prompt']='Empty rippled fabric environment, continuous ground, diffuse side illumination'
+        with patch.object(concepts,'recent',return_value=existing):
+            result=concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
+        self.assertEqual(len(result),4)
+        self.assertTrue(all(row['signature_version']==2 for row in result))
+
+    def test_light_pastels_are_distinct_hues_and_off_whites_still_repeat(self):
+        value=self.plans()
+        for item,color in zip(value['directions'],['#c3d8e6','#f2d38b','#cfe3d2','#f6cdd6']):
+            item['spec']['background']['color']=color
+        self.assertEqual(len(concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)),4)
+        for item,color in zip(value['directions'],['#eeeeef','#f2f2f0','#e8e8e5','#f0ece4']):
+            item['spec']['background']['color']=color
+        with self.assertRaisesRegex(ValueError,'color families'):
+            concepts.validate_plans(poster,self.config,value,self.product,self.refs,self.words)
+
     def test_recent_signature_cannot_be_reused_with_new_names_or_seeds(self):
         with patch.object(concepts,'recent',return_value=[]):
             plans=concepts.validate_plans(poster,self.config,self.plans(),self.product,self.refs,self.words)

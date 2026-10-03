@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/supergoop",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/7acf8899-9378-4ef9-9090-325cb684c316/613_01d_SHOT_01_29661.jpg",
+  "caption": "",
+  "id": "category-1ef146c757dac462",
+  "local_path": "references/categories/skincare/1ef146c757dac462.webp",
+  "sha256": "cd3020988a3cdc14aceedec3ce856bdf9baa0cb10a24528a8c39a7f8026feade",
+  "width": 2500,
+  "height": 3125,
+  "analysis": {
+    "category_match": true,
+    "brand": "Supergoop!",
+    "quality_score": 95,
+    "composition": "Dynamic flat lay with diagonal product placement balanced by contrasting texture swatches",
+    "subject_ratio": 0.65,
+    "negative_space": "Minimal, effectively utilized by the vibrant yellow background to frame the subjects",
+    "lighting": "Hard, direct studio lighting creating sharp, defined drop shadows for a high-contrast pop-art aesthetic",
+    "color": [
+      "#FFD700",
+      "#FFFFFF",
+      "#00008B",
+      "#E0E0E0"
+    ],
+    "typography": "Clean sans-serif and stylized brand fonts on packaging; holographic and silver foil effects on product names",
+    "information_density": "Moderate, focused entirely on product identification and SPF ratings without extraneous copy",
+    "characteristics": [
+      "High-contrast",
+      "Vibrant",
+      "Texture-focused",
+      "Commercial product photography",
+      "Hard shadows"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "The image is a high-quality commercial product shot that perfectly matches the skincare category. The brand 'Supergoop!' is clearly visible. The composition effectively uses texture swatches to demonstrate product consistency (gel vs. cream) without violating the constraint of adding liquid to the original product containers. Lighting is professional and intentional."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

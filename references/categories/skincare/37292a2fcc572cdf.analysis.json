@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/pca-skin",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/7ab198ba-daa5-4874-9003-dae0dc2902a3/tripistudios-beauty-conceptual-retouching-pcaskin-molecule-structure.jpg",
+  "caption": "",
+  "id": "category-37292a2fcc572cdf",
+  "local_path": "references/categories/skincare/37292a2fcc572cdf.webp",
+  "sha256": "b2e532fb870b1b964c850a98f9818244233afe83b30fc820d65b49df5feb5a15",
+  "width": 2500,
+  "height": 1875,
+  "analysis": {
+    "category_match": false,
+    "brand": "Unknown",
+    "quality_score": 85,
+    "composition": "Centralized molecular structure floating in a fluid medium with diagonal visual flow.",
+    "subject_ratio": 0.65,
+    "negative_space": "Adequate blue water texture surrounding the central subject, suitable for text overlay.",
+    "lighting": "High-contrast studio lighting with sharp specular highlights on the glass-like spheres and caustic reflections in the water.",
+    "color": [
+      "Deep Blue",
+      "Cyan",
+      "White",
+      "Transparent"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely conceptual imagery without textual information.",
+    "characteristics": [
+      "Conceptual",
+      "Scientific",
+      "Hydration",
+      "Abstract",
+      "3D Render Style"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image depicts an abstract molecular structure in water, which is a common conceptual background for skincare (hydration/science), but it fails the strict requirement to preserve packaging, pump/nozzle, and label as there is no actual product visible."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

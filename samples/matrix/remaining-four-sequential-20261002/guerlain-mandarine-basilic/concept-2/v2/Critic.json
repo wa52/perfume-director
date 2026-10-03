@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "score": 80.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 80,
+    "typography": 82,
+    "background": 72,
+    "physical_integration": 86,
+    "reference_alignment": 76,
+    "creative_coherence": 78
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'one crisp narrow horizontal shadow band pressed along the wall base' still does not exist: at the wall-to-ground junction (y≈1000-1030) the render shows a bright pale-white band and scalloped trim arcs instead of any dark pressed band, so the noon-court architecture that justifies the whole lighting story never appears. The prompt must state the band as a dark value, not leave it to chance."
+    },
+    {
+      "type": "background",
+      "problem": "The glazed ground reads matte, not wet: across the floor field (y≈1030-1440) there is no sheen gradient, no grout-line sparkle and no faint golden tint or vertical reflection under the bottle, although the concept promises 'faint wet sheen on the ground tiles'. Against reference 4's caustic glow and reference 5's soft floor reflection, the floor is the flattest surface in the poster and weakens the photographic mode."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop (500,1084,996,1334) confirms a real dark contact line under the glass foot at offset_y 0 (correct, keep), but the footprint is a thin hard wire-like line with blur 8 while the declared light is bright diffuse noon top light; a slightly softer, wider footprint (blur ~12, width_scale ~1.15) would match the ambient and stop the base reading as a cut edge pressed onto tile."
+    },
+    {
+      "type": "typography",
+      "problem": "The four title lines sit directly on the busy grout mesh with no tonal cushion: at x=76-360, y=518-776 the pale cream serif competes with bright grout crosses behind 'Allegoria' and 'Mandarine', so at poster scale the etched-label idea reads slightly vibrating rather than carved; the honey-gold rule at y=826 helps, but the column needs one quiet value behind the ink."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one crisp narrow DARK green-black horizontal shadow band pressed tight along the wall base from direct noon top light, floor tiles carrying a faint wet glossy sheen gradient with a soft vertical golden reflection bleeding forward from the standing point, otherwise evenly lit saturated glaze with no diagonal casts, no stray shapes, matte grout grain, bright cool ambient, no objects"
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 12
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.15
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "type": "rectangle",
+          "x": 56,
+          ":y": 400,
+          ":width": 330,
+          ":height": 452,
+          ":color": "#2e7d5b",
+          ":opacity": 0.38
+        }
+      ]
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 36
+    }
+  ],
+  "reported_score": 80.6
+}

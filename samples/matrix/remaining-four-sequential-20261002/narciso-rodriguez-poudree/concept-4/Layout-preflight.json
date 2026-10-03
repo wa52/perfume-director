@@ -1,0 +1,240 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 243829931970656,
+    "background": {
+      "color": "#7d766c",
+      "prompt": "Seamless flat matte screen-printed card in warm taupe grey, three hard-edge flat bone-white rectangle slabs stacked obliquely from upper left toward lower right with one thin blank taupe seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 324,
+          "y": 288,
+          "width": 540,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.9
+        },
+        {
+          "kind": "rectangle",
+          "x": 486,
+          "y": 605,
+          "width": 594,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.6
+        },
+        {
+          "kind": "rectangle",
+          "x": 648,
+          "y": 922,
+          "width": 540,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.35
+        }
+      ]
+    },
+    "product": {
+      "x": 670,
+      "y": 576,
+      "width": 508,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#7d766c",
+      "#f4f1ea",
+      "#5a5f45"
+    ],
+    "title": {
+      "text": "Narciso Poudrée",
+      "x": 86,
+      "y": 1008,
+      "size": 64,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 330,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "Eau de Parfum",
+      "x": 86,
+      "y": 1217,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "NARCISO",
+      "x": 86,
+      "y": 929,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 1296,
+      "width": 151,
+      "color": "#5a5f45"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 243829931970656,
+    "background": {
+      "color": "#7d766c",
+      "prompt": "Seamless flat matte screen-printed card in warm taupe grey, three hard-edge flat bone-white rectangle slabs stacked obliquely from upper left toward lower right with one thin blank taupe seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 324,
+          "y": 288,
+          "width": 540,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.9
+        },
+        {
+          "kind": "rectangle",
+          "x": 486,
+          "y": 605,
+          "width": 594,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.6
+        },
+        {
+          "kind": "rectangle",
+          "x": 648,
+          "y": 922,
+          "width": 540,
+          "height": 288,
+          "color": "#f4f1ea",
+          "opacity": 0.35
+        }
+      ]
+    },
+    "product": {
+      "x": 670,
+      "y": 576,
+      "width": 508,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#7d766c",
+      "#f4f1ea",
+      "#5a5f45"
+    ],
+    "title": {
+      "text": "Narciso Poudrée",
+      "x": 86,
+      "y": 1008,
+      "size": 64,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 4,
+      "max_width": 330,
+      "line_height": 1.14,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "Eau de Parfum",
+      "x": 86,
+      "y": 1217,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "NARCISO",
+      "x": 86,
+      "y": 929,
+      "size": 24,
+      "color": "#f4f1ea",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 8
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 86,
+      "y": 1296,
+      "width": 151,
+      "color": "#5a5f45"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

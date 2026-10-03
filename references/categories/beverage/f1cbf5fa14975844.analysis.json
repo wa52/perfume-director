@@ -1,0 +1,41 @@
+{
+  "product_category": "beverage",
+  "source_url": "https://www.christopher-photography.com/",
+  "image_url": "https://irp.cdn-website.com/ac2035cd/dms3rep/multi/opt/COCACOLA-web-1920w.jpg",
+  "caption": "Coca-Cola Energy can in branded setting with studio lighting",
+  "id": "category-f1cbf5fa14975844",
+  "local_path": "references/categories/beverage/f1cbf5fa14975844.jpg",
+  "sha256": "38170c8c2cff5a6448e8c39038c9c0ed5f91f1d129251ded159dbbe6296daeaf",
+  "width": 1920,
+  "height": 1920,
+  "analysis": {
+    "category_match": true,
+    "brand": "Coca-Cola",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal placement of the product can against a dark background with abstract red energy waves, creating a strong sense of motion and focus.",
+    "subject_ratio": 0.65,
+    "negative_space": "Effective use of deep black negative space at the corners to frame the central subject and enhance contrast.",
+    "lighting": "High-contrast studio lighting with sharp specular highlights on the condensation droplets and metallic rim, emphasizing texture and coldness.",
+    "color": [
+      "#000000",
+      "#E61A27",
+      "#FFFFFF",
+      "#8B0000"
+    ],
+    "typography": "Bold, sans-serif 'ENERGY' text integrated into the can design; classic Spencerian script for the Coca-Cola logo.",
+    "information_density": "Low; focused entirely on the product visual and brand identity without extraneous information.",
+    "characteristics": [
+      "Condensation",
+      "Metallic Texture",
+      "Abstract Background",
+      "High Contrast",
+      "Product Hero Shot"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality commercial product shot of a Coca-Cola Energy can. It fits the beverage category perfectly. The lighting is professional, highlighting the condensation and metallic texture. The composition is dynamic. There is no external campaign copy overlay, only the product's own label design. The brand is clearly visible."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

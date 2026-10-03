@@ -1,0 +1,43 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/fenty-skin-watch-ya-tone",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/2ee86255-ff5e-4fc3-8741-a079956d8053/Fenty-Skin-Watch-Ya-Tone-single-marble-blocks-retouch.jpg",
+  "caption": "",
+  "id": "category-d46d0321d54f4e05",
+  "local_path": "references/categories/skincare/d46d0321d54f4e05.webp",
+  "sha256": "29a264e958c943816d3d9220beed4aee63bc1f81b3ccf421cec95784cd9b3d09",
+  "width": 2500,
+  "height": 1875,
+  "analysis": {
+    "category_match": true,
+    "brand": "Fenty Skin",
+    "quality_score": 92,
+    "composition": "Central vertical product placement framed by geometric travertine stone blocks, utilizing diagonal foreground lines to lead the eye.",
+    "subject_ratio": 0.35,
+    "negative_space": "Well-balanced negative space on the upper left and right, allowing the textured stone props to frame the subject without clutter.",
+    "lighting": "Hard, directional sunlight creating distinct, sharp shadows that emphasize the translucency of the packaging and the porous texture of the stone.",
+    "color": [
+      "soft peach",
+      "lavender grey",
+      "warm beige",
+      "terracotta brown",
+      "frosted white"
+    ],
+    "typography": "Vertical, minimalist sans-serif brand logotype printed directly on the frosted packaging.",
+    "information_density": "Low; clean and focused entirely on the product form and material textures.",
+    "characteristics": [
+      "frosted translucent plastic",
+      "porous travertine stone",
+      "hard shadows",
+      "earthy neutral palette",
+      "minimalist aesthetic",
+      "twist-up mechanism"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-end commercial product photography that perfectly matches the skincare category. The image features excellent material rendering (frosted plastic vs. porous stone), professional hard lighting, and a clear, readable brand identity without any extraneous elements or mockups."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

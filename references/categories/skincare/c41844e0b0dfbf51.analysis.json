@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/62ec0fb9833a3763009c62e1/11076234-3062-4ef4-8f31-b1635390d30a/Adrianna-Favero_NYC-Still_Life_Photographer-20250417_Adrianna-Favero-Still-Life-photographer-VideoSkincare_3455.jpg",
+  "caption": "Luxury body lotion texture swipe by Adrianna Favero, NYC-based beauty photographer. Clean, radiant lighting highlights skincare textures —ideal for campaigns, e-comm, and editorial beauty stories.",
+  "id": "category-c41844e0b0dfbf51",
+  "local_path": "references/categories/skincare/c41844e0b0dfbf51.webp",
+  "sha256": "b43d6064afd5871b24c2601f43c5511a6c982a1de4c96ccdf4a9b5fa742e3e53",
+  "width": 864,
+  "height": 1080,
+  "analysis": {
+    "category_match": true,
+    "brand": "Unknown",
+    "quality_score": 82,
+    "composition": "Abstract macro texture with diagonal flowing ridges creating a sense of movement and softness.",
+    "subject_ratio": 1.0,
+    "negative_space": "Minimal; the entire frame is filled with the product texture, though smooth areas provide visual rest.",
+    "lighting": "Soft, diffused studio lighting that accentuates the creamy peaks and valleys without harsh shadows.",
+    "color": [
+      "pale pink",
+      "beige",
+      "cream",
+      "soft taupe"
+    ],
+    "typography": "None",
+    "information_density": "Low",
+    "characteristics": [
+      "macro photography",
+      "creamy texture",
+      "minimalist",
+      "monochromatic",
+      "smooth",
+      "abstract"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality macro shot of skincare texture that fits the category perfectly. While it lacks packaging or campaign typography, it serves as an excellent editorial or background asset for beauty campaigns. The lighting and color palette are professional and evocative of luxury body care."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

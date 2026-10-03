@@ -1,0 +1,43 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/6",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/david-webb-jewelry-advertising-campaign-still-life-2-done.jpg",
+  "caption": "Jewelry, Still Life, Product, and Commercial Photographer, NYC â NYC Product Photography\u0000",
+  "id": "category-5a04e7969d87bec7",
+  "local_path": "references/categories/watches/5a04e7969d87bec7.jpg",
+  "sha256": "48bec45fe2f67c2847cd63068919a0343c6f6f9b9dc2d722a74f3fdbfa988537",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Unknown",
+    "quality_score": 92,
+    "composition": "Centered circular framing with the serpent head acting as a focal anchor at the top right, utilizing a classic high-contrast product photography layout.",
+    "subject_ratio": 0.55,
+    "negative_space": "Expansive and uniform black void surrounding the subject, with a subtle central gradient glow to separate the piece from the background.",
+    "lighting": "Professional studio macro lighting with sharp specular highlights on the gold and gemstones, emphasizing the texture of the green enamel and metalwork.",
+    "color": [
+      "Emerald Green",
+      "Polished Gold",
+      "Ruby Red",
+      "Diamond White",
+      "Deep Black"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely visual focus on the craftsmanship and materials of the jewelry piece.",
+    "characteristics": [
+      "Serpent motif",
+      "Green guilloché enamel",
+      "Pavé diamond accents",
+      "Cabochon ruby eyes",
+      "Textured gold scales",
+      "High-jewelry aesthetic"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "The image is a high-end commercial photograph of a luxury serpent bracelet, fitting the 'jewellery' portion of the campaign category. While the reference mentions watches, the acceptance criteria explicitly include gemstones and metal finish inspection for jewelry. The technical execution is flawless, showcasing intricate details like enamel texture and gemstone settings against a clean, professional background."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

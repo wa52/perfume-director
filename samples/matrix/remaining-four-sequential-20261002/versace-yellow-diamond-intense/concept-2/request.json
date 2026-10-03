@@ -1,0 +1,116 @@
+{
+  "brief": "为 Versace Yellow Diamond Intense 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把标签的柠檬白高光读作一整间晨光中庭：冷调浅灰石灰水洗灰泥墙在真实基准线处接连续 honed 浅石灰岩地面，硬晨光穿过 unseen 玻璃天窗，在墙地交界投下一池暖黄 caustic 光斑与一道 crisp 斜影边；商品缩小立于光池左缘，测量接触阴影陷进磨石面。右半幅墙保持安静冷灰，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如蚀刻签条，一条石墨细线横垫柱底如日照刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；矿物的冷哑光与金黄折光互为冷暖。参考 R2 的签条式手写节奏转译成窄柱排印、R3 的硬光 caustic 光池与 R6 的柔光宝石感。",
+  "product": "assets\\products\\versace-yellow-diamond-intense-retailer.png",
+  "references": [
+    {
+      "id": "ref-f74fe25870eb",
+      "brand": "Jo Malone",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://www.davidlineton.com/fragrances",
+      "image": "references/luxury/ref-f74fe25870eb.webp",
+      "selection_reason": "Professionally resolved flat-lay still life featuring perfume and candle with elegant stationery props and integrated handwritten campaign copy.",
+      "analysis": {
+        "composition": "Geometric flat-lay arrangement utilizing overlapping rectangular envelopes and cards to frame the products diagonally.",
+        "subject_ratio": 0.35,
+        "negative_space": "Structured by layered cream and black paper elements, creating distinct zones.",
+        "lighting": "Soft, diffused top-down studio lighting with gentle, natural drop shadows.",
+        "color": [
+          "cream",
+          "black",
+          "silver",
+          "clear"
+        ],
+        "typography": "Handwritten script campaign copy ('Will you be my valentine?') placed directly on a prop envelope.",
+        "information_density": "low",
+        "characteristics": [
+          "flat-lay",
+          "valentine theme",
+          "ribbon detail",
+          "duo product display",
+          "handwritten note"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b4d87aee2707",
+      "brand": "Hermès",
+      "style": "minimal",
+      "reference_kind": "still_life",
+      "source_url": "https://www.katyniker.com/paul-zak-portfolio",
+      "image": "references/minimal/ref-b4d87aee2707.webp",
+      "selection_reason": "Highly resolved minimalist still-life featuring strong caustic light play and organic prop styling; excellent reference for aquatic fragrance campaigns despite lacking external campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical top-down flat lay balancing the geometric bottle on the left with sweeping organic branch lines on the right, anchored by a strong diagonal shadow.",
+        "subject_ratio": 0.25,
+        "negative_space": "Expansive, clean off-white background dominating the frame to emphasize light effects and negative space.",
+        "lighting": "Hard, direct sunlight creating sharp cast shadows and vibrant, colorful caustic refractions through the blue glass.",
+        "color": [
+          "off-white",
+          "aquamarine",
+          "deep teal",
+          "burgundy"
+        ],
+        "typography": "None visible outside the container; text is strictly limited to the product label.",
+        "information_density": "Very low; focuses entirely on material, light, and form.",
+        "characteristics": [
+          "caustic refractions",
+          "hard shadows",
+          "organic props",
+          "flat lay",
+          "aquatic palette"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-b6e669a924a3",
+      "brand": "Kayali",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://apasaric.com/work/kayali-vacay-in-a-bottle/",
+      "image": "references/luxury/ref-b6e669a924a3.webp",
+      "selection_reason": "Professionally resolved perfume still-life with clear brand identity, high-quality lighting, and cohesive pastel color palette suitable for design reference.",
+      "analysis": {
+        "composition": "Clustered arrangement of four faceted glass bottles, three upright and one horizontal, creating depth and visual interest against a seamless background.",
+        "subject_ratio": 0.75,
+        "negative_space": "Moderate negative space at the top and bottom, allowing the product cluster to dominate the frame while maintaining breathing room.",
+        "lighting": "Soft, diffused studio lighting with gentle highlights on the glass facets and gold collars, creating a luminous and premium feel.",
+        "color": [
+          "pastel yellow",
+          "mint green",
+          "pale blue",
+          "soft orange",
+          "cream beige",
+          "gold"
+        ],
+        "typography": "Minimalist sans-serif lettering printed directly on the glass containers; no external campaign typography present.",
+        "information_density": "Low to medium; focus is purely on the product aesthetics and color variation without distracting text overlays.",
+        "characteristics": [
+          "faceted glass",
+          "jewel-like caps",
+          "pastel liquids",
+          "gold accents",
+          "clean aesthetic"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

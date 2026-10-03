@@ -1,0 +1,42 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/62ec0fb9833a3763009c62e1/59c00f5b-47d6-4c48-a492-7c8ab6785a1a/Adrianna-Favero_NYC-Still_Life_Photographer-External_OlayBody-BHG_RHP-Gatefold_Final_3.jpg",
+  "caption": "Olay Retinol for Better Homes and Gardens",
+  "id": "category-c6939474267b8cfb",
+  "local_path": "references/categories/skincare/c6939474267b8cfb.webp",
+  "sha256": "eb2f24d1462ff011479258e4652057cdfccb27b4e201ce087a08c9a17af385b3",
+  "width": 630,
+  "height": 783,
+  "analysis": {
+    "category_match": true,
+    "brand": "Olay",
+    "quality_score": 92,
+    "composition": "Centered dual-product hero shot on a diagonal marble foreground against a smooth gradient background, anchored by top headline and bottom copy block.",
+    "subject_ratio": 0.55,
+    "negative_space": "Ample clean space in the upper purple gradient for the headline; balanced margins around the products.",
+    "lighting": "Soft, diffused studio lighting with gentle specular highlights on the pump mechanisms and bottle curves, emphasizing cylindrical volume.",
+    "color": [
+      "Deep Purple",
+      "Lavender",
+      "White",
+      "Gold",
+      "Black"
+    ],
+    "typography": "Elegant serif headline ('SAY GOODBYE') paired with clean sans-serif subheads and body copy; high contrast white text on dark background.",
+    "information_density": "Moderate; clearly communicates brand, product line (Retinol), specific items (Body Lotion/Wash), and key benefit without clutter.",
+    "characteristics": [
+      "Gradient Background",
+      "Product Hero Shot",
+      "Serif Headline",
+      "Marble Texture Foreground",
+      "Pump Dispensers"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial advertisement featuring Olay skincare products. The composition is professional, with clear campaign typography ('SAY GOODBYE TO DULL, DRY SKIN') distinct from packaging labels. Lighting effectively renders the plastic and metallic textures of the pumps and bottles. Category match is accurate for body skincare."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

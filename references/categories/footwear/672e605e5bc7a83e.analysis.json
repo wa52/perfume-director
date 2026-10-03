@@ -1,0 +1,40 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://mspstudio.co.uk/footwear-photography/",
+  "image_url": "https://mspstudio.co.uk/wp-content/uploads/2025/09/Footwear-Photographer-Sneaker-photography.jpg",
+  "caption": "Footwear & sneaker photographer Matthew Seed is a world class expert shoe, sneaker & footwear photographer based in the Uk.",
+  "id": "category-672e605e5bc7a83e",
+  "local_path": "references/categories/footwear/672e605e5bc7a83e.jpg",
+  "sha256": "412179ad9095d82b43a534fdfeeb783bae1878277e2c659aef948b7a7b328b94",
+  "width": 896,
+  "height": 600,
+  "analysis": {
+    "category_match": true,
+    "brand": "Converse",
+    "quality_score": 92,
+    "composition": "Horizontal product silhouette anchored left with balanced typographic lockup on the right, utilizing a textured monochromatic background to unify the frame.",
+    "subject_ratio": 0.45,
+    "negative_space": "Textured negative space on the right effectively houses the campaign typography without competing with the product silhouette.",
+    "lighting": "Soft, diffused studio lighting enhanced by specular highlights on the water droplets, emphasizing the monochromatic rubber texture and three-dimensional form.",
+    "color": [
+      "Purple",
+      "White",
+      "Dark Violet"
+    ],
+    "typography": "Bold, extended sans-serif logotype paired with a clean, legible secondary copy block; high contrast against the dark background.",
+    "information_density": "Low to medium; focused strictly on brand identity, product line name, and a brief descriptive sub-copy.",
+    "characteristics": [
+      "Monochromatic color scheme",
+      "Hydro-texture overlay",
+      "High-contrast campaign typography",
+      "Preserved sole silhouette",
+      "Visible stitching and lace details"
+    ],
+    "has_campaign_typography": true,
+    "renderer_compatibility": 95,
+    "reason": "The image is a high-quality commercial footwear advertisement that perfectly preserves the required sneaker silhouette, including the toe cap, laces, and sole profile. The brand is explicitly identified, and the composition features professional campaign typography alongside a cohesive, stylized visual treatment."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

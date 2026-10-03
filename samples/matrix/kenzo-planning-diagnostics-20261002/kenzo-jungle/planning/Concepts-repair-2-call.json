@@ -1,0 +1,386 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "kenzo-jungle-retailer.png",
+      "sha256": "b927941671b423873721820f4b08d7e6afc6623411478aeb28895a4dd0b6fa15"
+    },
+    {
+      "name": "jo-malone-peony.jpg",
+      "sha256": "8ffa1ad2a737eb8bfd1987ca929048e522000a303ef7c7610ec7170bab86de5a"
+    },
+    {
+      "name": "ref-41a992f3eb88.jpg",
+      "sha256": "ee0e7efaca07d728f121fe4f021e01cba4b974365bc0684422a7eeb3065e6d68"
+    },
+    {
+      "name": "ref-ebe7e5019cb1.webp",
+      "sha256": "8d0e07eeeb895f9091d0e7f83cc99a592809765583dbd25e8bb085439c5a220b"
+    },
+    {
+      "name": "ref-6661b9238858.webp",
+      "sha256": "2824c03230f891558a976f2e3eb6cfdc74c95b3d8ee5520623edf82de506a562"
+    },
+    {
+      "name": "ref-1a40d10cb201.webp",
+      "sha256": "b87992b323fd382d375e496de31e3a9bae2d6c1ac5c1981b31dd3751487fab53"
+    },
+    {
+      "name": "ref-4f5bbfa4aed8.webp",
+      "sha256": "4396882b8910c007956569f882241a69fd45b75accd5c96b87235976cd591a56"
+    },
+    {
+      "name": "tom-ford-black-orchid-satin.jpg",
+      "sha256": "555996dbae5e9459b550fe7e233558f69b818c6cddfe83b57a4d0b18aff2863a"
+    },
+    {
+      "name": "ref-36b8ea121719.webp",
+      "sha256": "be3f682b1f3a10b6cfada35d19819bb109c84e0938fe319ca61504fa2d04e09d"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-590ba1ec-630c-9f7f-99e3-b1239fd7c0ac",
+      "usage": {
+        "prompt_tokens": 36249,
+        "total_tokens": 42630,
+        "completion_tokens": 6381,
+        "prompt_tokens_details": {
+          "cached_tokens": 35840,
+          "image_tokens": 8739,
+          "text_tokens": 27510
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2284
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-590ba1ec-630c-9f7f-99e3-b1239fd7c0ac",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 36249,
+    "total_tokens": 42630,
+    "completion_tokens": 6381,
+    "prompt_tokens_details": {
+      "cached_tokens": 35840,
+      "image_tokens": 8739,
+      "text_tokens": 27510
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2284
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Halftone Monsoon Ledger",
+        "brief": "把雨季林冠的光读作一张丝网半调点阵：平涂亮万寿菊橙卡纸上，细密骨白半调圆点自顶带向下逐级稀薄如雨幕沉降，在中下幅被一枚硬边象牙竖矩形板截断托住剪影；商品居中沉于下幅，点阵从其肩后继续垂落却不触碰标签。顶带留出完全安静的铭牌区：宽距 Arial 品牌字最小置顶，Bodoni 题名以单行 Didone 大字居中统领，一条墨褐细线横垫其下如制版套准线——题名整组结束于瓶顶之上，构成 ABOVE 纪念碑网格。无地面无 horizon，纯点密度下坠叙事对抗透明玻璃的近白高光与抛光金象的暖金属光。参考 R1 的铭牌层级（品牌轻、题名重、细线垫底）、R4 的饱和暖色勇气与 R6 的高键玻璃光控制。",
+        "material": "flat matte risograph-printed card with graded halftone dot rain and one hard-edge ivory panel",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#ef9f2e",
+          "#3a2410",
+          "#f6ecd6"
+        ],
+        "product": [
+          0.5,
+          0.62,
+          0.6
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.27,
+            0.115,
+            150
+          ],
+          "logo": [
+            0.432,
+            0.052,
+            32
+          ],
+          "subtitle": [
+            0.42,
+            0.245,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 2,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte risograph-printed card in saturated bright marigold orange, fine bone-white halftone dot field dense at the top edge thinning gradually downward, matte ink grain, perfectly even shadowless frontal illumination, no texture gradients beyond printed dots, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.66,
+            "width": 0.5,
+            "height": 0.56,
+            "color": "#f6ecd6",
+            "opacity": 0.5
+          }
+        ],
+        "line": [
+          0.33,
+          0.235,
+          0.34
+        ]
+      },
+      {
+        "name": "Frosted Block Dawn Arcade",
+        "brief": "把通透瓶身放进一整面晨光玻璃砖拱壁：磨砂玻璃砖墙以细密白缝排成方格砖阵，背光在砖后晕出宽而静的冷白晨光，连续同料磨砂玻璃砖地面在真实基准线接墙；商品缩小立于砖地偏右，测量接触阴影轻陷进白缝。左半幅砖墙保持安静冷白，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱单行大字排印如蚀刻签条，一条雾蓝细线横垫柱底如霜刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；玻璃砖的漫射冷光与透明瓶身的近白高光同源，却与抛光金象的暖金属光互为温度悖论。参考 R2 的侧栏 campaign 排印层级、R3 的高键静物光秩序与 R6 的玻璃折光控制。",
+        "material": "frosted glass block wall with fine pale joints sweeping into continuous matching frosted glass block ground",
+        "lighting": "soft high-key dawn backlight diffused through the frosted blocks with one broad calm cool-white glow behind upper centre, diffuse frontal matching the baked softbox key, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R6"
+        ],
+        "palette": [
+          "#dfe7ec",
+          "#1c2f3a",
+          "#7fa8c4"
+        ],
+        "product": [
+          0.68,
+          0.6,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.07,
+            0.44,
+            120
+          ],
+          "logo": [
+            0.07,
+            0.385,
+            30
+          ],
+          "subtitle": [
+            0.07,
+            0.575,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 300,
+              "line_height": 1.1,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Frosted glass block wall in pale cool white with fine pale grout joints in a square grid and soft diffused inner glow, meeting a continuous matching frosted glass block ground at a horizontal horizon eighty-six hundredths down the frame, one broad calm cool-white backlight glow blooming behind upper centre, matte frost grain, soft high-key diffuse dawn illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.07,
+          0.555,
+          0.2
+        ]
+      },
+      {
+        "name": "Teal Basin Tide Plate",
+        "brief": "把象鼻上扬的弧线读作一圈潮位刻度：平涂中饱和青碧丝印卡纸上，三枚硬边象牙横矩形带自左向右错叠如潮水退去的三级水位线，带缘一道斜向留白缝精确平行象鼻上扬斜线；商品提至上幅立于水带之前，横带从其肩后掠过却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Georgia 题名以近满带宽的单行衬线大字收左缘起排，一条墨青细线横于带顶如潮位零点——题名整组起排于瓶底之下，构成 BELOW 关系。无地面无 horizon，纯横带水位几何对抗透明玻璃的柔渐液体与金象雕塑的暖亮。参考 R7 的居中单主体纪念碑秩序、R1 的铭牌层级与 R5 的硬边几何层次。",
+        "material": "flat matte silkscreen-printed card with hard-edge stacked ivory tide bands and one oblique blank seam",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R7",
+          "R1",
+          "R5"
+        ],
+        "palette": [
+          "#8ccac2",
+          "#123a3a",
+          "#f4ead2"
+        ],
+        "product": [
+          0.5,
+          0.4,
+          0.55
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/georgia.ttf",
+          "title": [
+            0.09,
+            0.76,
+            120
+          ],
+          "logo": [
+            0.09,
+            0.705,
+            30
+          ],
+          "subtitle": [
+            0.09,
+            0.86,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/georgia.ttf",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.06,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in medium saturated teal aqua, perfectly even shadowless frontal illumination, matte ink grain, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.42,
+            "y": 0.3,
+            "width": 0.72,
+            "height": 0.09,
+            "color": "#f4ead2",
+            "opacity": 0.85
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.47,
+            "width": 0.84,
+            "height": 0.11,
+            "color": "#f4ead2",
+            "opacity": 0.55
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.42,
+            "y": 0.63,
+            "width": 0.72,
+            "height": 0.09,
+            "color": "#f4ead2",
+            "opacity": 0.3
+          }
+        ],
+        "line": [
+          0.09,
+          0.742,
+          0.82
+        ]
+      },
+      {
+        "name": "Rose Salt Flat Noon",
+        "brief": "把金象的足迹读作一片正午盐滩：暖粉盐晶灰泥墙在真实基准线处接连续 honed 同料粉盐地面，正午顶光在墙根压出一道极浅的水平影带，盐晶保持暖哑光颗粒；商品缩小立于盐地偏左，测量接触阴影轻陷进晶面。右半幅墙保持安静暖粉，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Century Gothic 几何大写题名以窄柱两行排印如仪器铭牌，一条藕金细线横垫柱底如日晷刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；盐晶的暖哑光与抛光金象、叶片雕塑的宽柔金属高光互为粗细。参考 R1 的左图右文负空间层级、R3 的地面光秩序与 R4 的高键暖光温度。",
+        "material": "warm rose salt-crystal plaster wall sweeping into continuous honed matching rose salt ground",
+        "lighting": "bright noon top light casting one shallow horizontal shadow band at the wall base, warm diffuse ambient on the crystal face, frontal fill matching the baked softbox key, no hard shadows on the standing subject",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R3",
+          "R4"
+        ],
+        "palette": [
+          "#f3d3c6",
+          "#4a221e",
+          "#c08a3e"
+        ],
+        "product": [
+          0.34,
+          0.6,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.62,
+            0.45,
+            84
+          ],
+          "logo": [
+            0.62,
+            0.4,
+            28
+          ],
+          "subtitle": [
+            0.62,
+            0.6,
+            18
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 3,
+              "max_width": 340,
+              "line_height": 1.14,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 6
+            },
+            "subtitle": {
+              "tracking": 4
+            }
+          }
+        },
+        "background_prompt": "Warm rose-pink salt crystal plaster wall with fine matte crystal grain meeting a continuous honed matching rose salt ground at a horizontal horizon eighty-six hundredths down the frame, one shallow horizontal shadow band lying along the wall base from noon top light, bright warm diffuse ambient, no objects",
+        "shapes": [],
+        "line": [
+          0.62,
+          0.585,
+          0.22
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 254.668
+}

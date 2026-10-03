@@ -57,6 +57,28 @@ class PerfumeDirectorLoop:
         return {'ui': {'perfume_job': [job_id]}, 'result': (job_id,)}
 
 
+class ProductDirectorLoop(PerfumeDirectorLoop):
+    @classmethod
+    def INPUT_TYPES(cls):
+        fields=super().INPUT_TYPES()
+        fields['required']['category']=(['skincare','watches','footwear','beverage','perfume'],)
+        fields['required']['brief']=('STRING', {'multiline':True,'default':'为这款商品探索四个明显不同的商业海报方向。保留商品原图、真实品牌和名称，不添加价格或未经提供的功效声明。'})
+        return fields
+
+    CATEGORY='Product Art Director'
+    DESCRIPTION='Choose a product category and run four fresh Director/Renderer/Critic concepts, with visible drafts and guarded review.'
+
+    def execute(self, product, product_mask, brief, category):
+        if product.shape[0]!=1 or product_mask.shape[0]!=1:raise ValueError('One product per task')
+        rgb=Image.fromarray((product[0].cpu().numpy().clip(0,1)*255).astype(np.uint8)).convert('RGBA')
+        alpha=Image.fromarray(((1-product_mask[0].cpu().numpy()).clip(0,1)*255).astype(np.uint8))
+        if alpha.size!=rgb.size:raise ValueError('Connect IMAGE and MASK of the same transparent PNG')
+        rgb.putalpha(alpha)
+        from server import PromptServer
+        job_id=director_jobs().start(rgb,brief,'http://127.0.0.1:'+str(PromptServer.instance.port),category=category)
+        return {'ui':{'perfume_job':[job_id]},'result':(job_id,)}
+
+
 class PerfumePosterSpecRender:
     @classmethod
     def INPUT_TYPES(cls):
@@ -79,8 +101,8 @@ class PerfumePosterSpecRender:
         return (torch.from_numpy(np.array(result).astype(np.float32)/255)[None, ...],)
 
 
-NODE_CLASS_MAPPINGS = {'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
-NODE_DISPLAY_NAME_MAPPINGS = {'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
+NODE_CLASS_MAPPINGS = {'ProductDirectorLoop':ProductDirectorLoop, 'PerfumePosterSpecRender': PerfumePosterSpecRender, 'PerfumeDirectorLoop': PerfumeDirectorLoop}
+NODE_DISPLAY_NAME_MAPPINGS = {'ProductDirectorLoop':'AI Art Director · 多类别四方向闭环', 'PerfumePosterSpecRender': 'Perfume PosterSpec Render', 'PerfumeDirectorLoop': 'AI Art Director Loop · 四风格香水闭环'}
 
 
 def require_finite(value, stage):
@@ -153,6 +175,6 @@ async def director_status(request):
 @PromptServer.instance.routes.get('/perfume-director/jobs/{job_id}/preview')
 async def director_preview(request):
     try:
-        return web.FileResponse(director_jobs().preview(request.match_info['job_id'], request.query.get('direction')))
+        return web.FileResponse(director_jobs().preview(request.match_info['job_id'], request.query.get('direction'),draft=request.query.get('draft')=='1'))
     except (ValueError, FileNotFoundError):
         raise web.HTTPNotFound()

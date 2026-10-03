@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 173620027859297,
+  "background": {
+    "color": "#F1F2F4",
+    "prompt": "Flat matte off-white poster paper surface, completely even ink coverage, subtle paper grain, no horizon, no objects, uniform diffuse illumination",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 65,
+        "y": 432,
+        "width": 216,
+        "height": 806,
+        "color": "#16294F",
+        "opacity": 0.92
+      },
+      {
+        "kind": "ellipse",
+        "x": 713,
+        "y": 576,
+        "width": 324,
+        "height": 346,
+        "color": "#D8402E",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 324,
+        "y": 1264,
+        "width": 432,
+        "height": 17,
+        "color": "#101C33",
+        "opacity": 0.85
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 864,
+    "width": 506,
+    "height": 749
+  },
+  "lighting": "Even ink-flat illumination, no cast shadow gradient, pure graphic field",
+  "palette": [
+    "#F1F2F4",
+    "#101C33",
+    "#D8402E"
+  ],
+  "title": {
+    "text": "Россия",
+    "x": 97,
+    "y": 166,
+    "size": 96,
+    "color": "#101C33",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Кварц",
+    "x": 97,
+    "y": 288,
+    "size": 34,
+    "color": "#101C33",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 10
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#101C33",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 97,
+    "y": 79,
+    "size": 30,
+    "color": "#101C33",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 97,
+    "y": 377,
+    "width": 324,
+    "color": "#D8402E"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic"
+}

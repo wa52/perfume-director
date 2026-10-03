@@ -1,0 +1,386 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.8,
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "max_completion_tokens": 12288
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 9,
+  "images": [
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-b4d87aee2707.webp",
+      "sha256": "ca3067351d1e9273d5321385da0eb2d32d4be04846d8f0f1d143999f74c785ad"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-182ff709ad69.webp",
+      "sha256": "0844bf5f7304ac77f19da06632179cfadbe32fbbd139029098313756616f79c2"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "ref-7a523ada9a2c.webp",
+      "sha256": "aa141291927b427d37b5ea86271757656783edac6a64cff2702537f74e437070"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "ERROR",
+      "error_type": "RemoteDisconnected"
+    },
+    {
+      "attempt": 2,
+      "status": "OK",
+      "response_id": "chatcmpl-f8c423a7-6b24-9b98-915d-6041be18b858",
+      "usage": {
+        "prompt_tokens": 34530,
+        "total_tokens": 40865,
+        "completion_tokens": 6335,
+        "prompt_tokens_details": {
+          "cached_tokens": 33792,
+          "image_tokens": 9144,
+          "text_tokens": 25386
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096,
+          "text_tokens": 2238
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f8c423a7-6b24-9b98-915d-6041be18b858",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 34530,
+    "total_tokens": 40865,
+    "completion_tokens": 6335,
+    "prompt_tokens_details": {
+      "cached_tokens": 33792,
+      "image_tokens": 9144,
+      "text_tokens": 25386
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4096,
+      "text_tokens": 2238
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "directions": [
+      {
+        "name": "Poudre Settling Stipple Field",
+        "brief": "把扑粉的下坠读作一张点刻画：平涂深橄榄 Moss 卡纸上，细密骨白粉点自顶带向下逐级稀薄如粉雾沉降，在下三分之一处被一道硬边留白横带截断，如同粉尘落定成铭牌；一枚低不透明度橄榄矩形板沉于点场之后托住剪影下半，点阵从其肩后继续垂落却不触碰标签。商品提至上幅立于点场心，奶油漆芯的柔体积对抗点密度的平面下坠。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Bodoni 题名以近满带宽的单行 Didone 大字居中统领，副行垫底，一条粉白细线横于带顶如沉降零点。无地面无 horizon，纯点密度叙事。参考 R1 的铭牌层级（品牌轻、题名重、副行垫底）、R4 的中心聚焦秩序与 R6 的柔光粉彩温度。",
+        "material": "flat matte silkscreen-printed card with fine stipple powder-dot density gradient and one hard-edge blank plaque band",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#43492f",
+          "#f2ecdc",
+          "#d8b4a6"
+        ],
+        "product": [
+          0.5,
+          0.42,
+          0.56
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/BOD_R.TTF",
+          "title": [
+            0.13,
+            0.795,
+            92
+          ],
+          "logo": [
+            0.408,
+            0.735,
+            26
+          ],
+          "subtitle": [
+            0.362,
+            0.868,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/BOD_R.TTF",
+              "tracking": 1,
+              "max_width": 0,
+              "line_height": 1.05,
+              "align": "center"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte silkscreen-printed card in deep olive moss green, fine bone-white stipple powder dots dense at the top edge thinning gradually downward, one hard-edge blank horizontal band without dots across the lower third, perfectly even shadowless frontal illumination, no texture gradients beyond printed dots, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.5,
+            "y": 0.42,
+            "width": 0.6,
+            "height": 0.5,
+            "color": "#2e3320",
+            "opacity": 0.35
+          }
+        ],
+        "line": [
+          0.44,
+          0.762,
+          0.12
+        ]
+      },
+      {
+        "name": "Chalk Powder Sift Morning",
+        "brief": "把奶油漆芯的柔光放进一间晨间粉筛工坊：冷调浅白垩灰泥墙在真实基准线处接连续 honed 同料白垩地面，高键晨光自左上洒下一团宽而静的粉白光晕，墙地交界保持哑光矿物颗粒；商品缩小立于白垩地偏右，测量接触阴影轻陷进磨面。左半幅墙保持安静冷白，承载一根真正的左栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如筛粉签条，副行与一条石蓝细线横垫柱底如筛网刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；白垩的冷哑光与象牙芯的暖柔互为温度悖论。参考 R2 的分区铭牌秩序、R3 的高键硬净负空间与 R7 的柔光渐变背景秩序。",
+        "material": "pale cool chalk plaster wall sweeping into continuous honed chalk ground",
+        "lighting": "soft high-key morning light with one broad calm powder-white glow from upper left, diffuse frontal matching the baked softbox key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R2",
+          "R3",
+          "R7"
+        ],
+        "palette": [
+          "#e9ded6",
+          "#3a332b",
+          "#6a8494"
+        ],
+        "product": [
+          0.68,
+          0.55,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/ARIALN.TTF",
+          "title": [
+            0.08,
+            0.4,
+            80
+          ],
+          "logo": [
+            0.08,
+            0.33,
+            26
+          ],
+          "subtitle": [
+            0.08,
+            0.665,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/ARIALN.TTF",
+              "tracking": 2,
+              "max_width": 300,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Pale cool chalk plaster wall in soft powder white-beige meeting a continuous honed matching chalk ground at a horizontal horizon seventy-two hundredths down the frame, one broad calm powder-white glow blooming from upper left, matte mineral grain, soft high-key diffuse illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.08,
+          0.72,
+          0.14
+        ]
+      },
+      {
+        "name": "Musk Velvet Twilight Column",
+        "brief": "把粉雾的夜幕读作一面天鹅绒幕：中调灰蓝绒面自墙垂落并在真实基准线处折成连续同料绒地，绒毫在暮光里保持低亮哑光；商品立于绒地偏左，测量接触阴影陷进绒毫。右半幅绒面保持安静深灰蓝，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Times 题名以窄柱三行衬线大字排印如织边签条，副行与一条骨白细线横垫柱底如暮色刻度。垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；绒面的吸光哑光与透明玻璃边的细折光互为虚实。参考 R1 的右栏负空间排印层级、R5 的柔光氛围与 R8 的深色纪念碑负空间。",
+        "material": "deep dusty blue velvet cloth wall sweeping into continuous matching velvet ground",
+        "lighting": "soft diffuse twilight ambient with one gentle broad sheen drift low on the cloth, frontal fill matching the baked softbox key, no hard shadows",
+        "scene_mode": "photographic",
+        "reference_ids": [
+          "R1",
+          "R5",
+          "R8"
+        ],
+        "palette": [
+          "#56718a",
+          "#f0ece2",
+          "#d9c1a0"
+        ],
+        "product": [
+          0.33,
+          0.56,
+          0.52
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/times.ttf",
+          "title": [
+            0.6,
+            0.42,
+            84
+          ],
+          "logo": [
+            0.6,
+            0.35,
+            26
+          ],
+          "subtitle": [
+            0.6,
+            0.685,
+            26
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/times.ttf",
+              "tracking": 1,
+              "max_width": 330,
+              "line_height": 1.12,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Medium dusty blue velvet cloth hanging as a soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, fine low nap grain with one gentle broad sheen drift low on the cloth, soft diffuse twilight illumination, no objects",
+        "shapes": [],
+        "line": [
+          0.6,
+          0.74,
+          0.14
+        ]
+      },
+      {
+        "name": "Powder-Press Ledger Slabs",
+        "brief": "把压粉工序读作三级压模：平涂暖灰褐卡纸上，三枚硬边骨白矩形压板自左上向右下逐级错叠如粉饼压模剖面，板缘一道斜向留白缝精确平行瓶肩斜线；商品提至中上幅立于压板之前，矩形从其肩后掠过却不触碰标签。左下幅留出安静斜角铭牌区：宽距 Arial 品牌字居区顶，Century Gothic 几何大写题名以两行宽排收左缘起排，与瓶体下缘垂直错开、水平宽距分离，副行垫底，一条褐灰细线横垫区底如压模刻度。无地面无 horizon，纯板阶几何对抗奶油漆芯的柔体积。参考 R2 的纸面分区秩序、R4 的几何背景层次与 R6 的高键粉彩秩序。",
+        "material": "flat matte screen-printed card with hard-edge stacked bone rectangle press slabs and one oblique blank seam",
+        "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+        "scene_mode": "graphic",
+        "reference_ids": [
+          "R2",
+          "R4",
+          "R6"
+        ],
+        "palette": [
+          "#7d766c",
+          "#f4f1ea",
+          "#5a5f45"
+        ],
+        "product": [
+          0.62,
+          0.4,
+          0.5
+        ],
+        "type": {
+          "font": "C:/Windows/Fonts/GOTHIC.TTF",
+          "title": [
+            0.08,
+            0.7,
+            64
+          ],
+          "logo": [
+            0.08,
+            0.645,
+            24
+          ],
+          "subtitle": [
+            0.08,
+            0.845,
+            24
+          ],
+          "styles": {
+            "title": {
+              "font": "C:/Windows/Fonts/GOTHIC.TTF",
+              "tracking": 4,
+              "max_width": 330,
+              "line_height": 1.14,
+              "align": "left"
+            },
+            "logo": {
+              "tracking": 8
+            },
+            "subtitle": {
+              "tracking": 6
+            }
+          }
+        },
+        "background_prompt": "Seamless flat matte screen-printed card in warm taupe grey, three hard-edge flat bone-white rectangle slabs stacked obliquely from upper left toward lower right with one thin blank taupe seam between slab edges, perfectly even shadowless illumination, no texture gradients, no objects",
+        "shapes": [
+          {
+            "kind": "rectangle",
+            "x": 0.3,
+            "y": 0.2,
+            "width": 0.5,
+            "height": 0.2,
+            "color": "#f4f1ea",
+            "opacity": 0.9
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.45,
+            "y": 0.42,
+            "width": 0.55,
+            "height": 0.2,
+            "color": "#f4f1ea",
+            "opacity": 0.6
+          },
+          {
+            "kind": "rectangle",
+            "x": 0.6,
+            "y": 0.64,
+            "width": 0.5,
+            "height": 0.2,
+            "color": "#f4f1ea",
+            "opacity": 0.35
+          }
+        ],
+        "line": [
+          0.08,
+          0.9,
+          0.14
+        ]
+      }
+    ]
+  },
+  "duration_seconds": 275.246
+}

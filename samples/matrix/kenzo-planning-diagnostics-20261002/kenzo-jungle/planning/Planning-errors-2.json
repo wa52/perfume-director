@@ -1,0 +1,6 @@
+{
+  "errors": [
+    "Concepts repeat: require four names, >=3 geometry grids, >=3 hue/tonal background color families, both serif and sans title families and >=3 materials; color swaps alone are insufficient",
+    "Background colors repeat: require at least3 distinguishable hue/tonal color families"
+  ]
+}

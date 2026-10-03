@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "score": 76.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 74,
+    "background": 66,
+    "physical_integration": 80,
+    "reference_alignment": 72,
+    "creative_coherence": 76
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared 'fine honey-gold and grey-green stone chip aggregate in a dense even speckle' never rendered: image 1 shows a near-uniform cream field with only faint paper-like grain, and the 'honed terrazzo ground' reads as a soft tonal gradient band at y≈1010 rather than a continuous stone plane. Compared with R4's tactile mineral surface and R5's clean seamless sweep, the setting is a flat wall texture with a pasted cutout, not an intentional terrazzo hall; the concept's material identity is lost."
+    },
+    {
+      "type": "typography",
+      "problem": "The honey-gold decoration rule (x 605-756, y 842) sits inside the title bbox bottom edge (title bbox [605,490,954,844]) and visibly strikes through the baseline of 'Basilic' in image 1, reading as a misregistered underline artifact instead of the intended sundial tick under the column; it also underlines only 43% of the column width, weakening the column's closing measure."
+    },
+    {
+      "type": "composition",
+      "problem": "The right column floats: logo top at y=403 and title block end at y=844 leave the zone y≈860-1440 of the right half completely empty, so the type column never anchors to the bottle's base line (y=1209); against R1's resolved right-column hierarchy the lower-right void makes the editorial grid feel top-loaded and unfinished."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact detail (crop [82,1069,565,1319]) confirms a real contact shadow at offset_y 0 hugging the glass foot - the bottle is not floating - but the footprint is a thin hard dark slit slightly narrower than the 302px base width and carries no soft ambient pool on the honed stone, so the heavy glass base reads pressed onto the surface rather than settled into it, unlike the grounded contact in R5."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless warm bone-white terrazzo interior, one continuous honed stone plane curving gently upward into a distant wall with no visible horizon line, dense even speckle of fine honey-gold and grey-green mineral chips clearly visible in the matte grain, one broad calm warm-white band of soft noon side light lying across the upper field, empty space only, no objects"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 886
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 349
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.1
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 16
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.3
+    }
+  ],
+  "reported_score": 76
+}

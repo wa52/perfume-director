@@ -57,6 +57,7 @@ Copy-Item -LiteralPath (Join-Path $projectRoot 'comfy_node\__init__.py') -Destin
 Copy-Item -LiteralPath (Join-Path $projectRoot 'poster.py') -Destination (Join-Path $nodeRoot 'poster.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'reference_store.py') -Destination (Join-Path $nodeRoot 'reference_store.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'check_background.py') -Destination (Join-Path $nodeRoot 'check_background.py') -Force
+Copy-Item -LiteralPath (Join-Path $projectRoot 'categories.py') -Destination (Join-Path $nodeRoot 'categories.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'quality.py') -Destination (Join-Path $nodeRoot 'quality.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'concepts.py') -Destination (Join-Path $nodeRoot 'concepts.py') -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'typography.py') -Destination (Join-Path $nodeRoot 'typography.py') -Force

@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 (image 6) executes the Lapidary Marquise Blueprint as declared: a hard-edge lemon marquise oval sits precisely behind the gem-cut cap, with a second, larger low-opacity同形 oval offset behind it like an enlarged facet scale, and the bottle silhouette interrupts and completes the oval from the lower field. The nameplate zone is quiet and correctly hierarchical: minimal letterspaced VERSACE brand line at top, near-full-width single-line Didone title centered, lemon registration rule beneath it. The cobalt field stays flat matte silkscreen with no horizon, no ground and no studio artifacts, letting the faceted yellow glass own every highlight. Version 1 (image 5) fails the core概念: its lemon field is a misregistered blob sliding off the right edge behind the shoulder rather than a marquise oval套住 the cap, reading as a stray patch artifact, and it lacks the concentric second oval entirely, so the lapidary geometry narrative collapses.",
+  "remaining_problems": [
+    "The ivory剖切线 horizontal slit specified under the marquise oval is not legible in version 2; the section-line detail of the blueprint concept is missing or swallowed by the bottle silhouette.",
+    "The outer low-opacity oval reads slightly slate-grey rather than a tinted lemon ink, weakening the同色 facet-scale reading.",
+    "Brand line sets in a serifed capitals style rather than the specified wide-tracked Arial sans, softening the brand-light/title-heavy contrast.",
+    "Large empty cobalt band between the title rule and the oval leaves the middle register slightly under-occupied compared to the brief's tight套准 composition."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

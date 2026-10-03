@@ -1,0 +1,42 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/3",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/laurent-ferrier-watches-product-photography.jpg",
+  "caption": "Luxury Watch, Still Life, and Advertising Photographer, New York City - Commercial Photography",
+  "id": "category-eea6b38fcf844a70",
+  "local_path": "references/categories/watches/eea6b38fcf844a70.jpg",
+  "sha256": "7341c299ea74722f0196b37fc9e111a10e90eaa4014131f39faa2f0ac1b43a23",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": true,
+    "brand": "Laurent Ferrier",
+    "quality_score": 96,
+    "composition": "Centered hero product shot with a slight dynamic tilt, resting on a reflective surface against a clean gradient background.",
+    "subject_ratio": 0.65,
+    "negative_space": "Ample, clean gradient space surrounding the subject, ideal for overlaying campaign copy.",
+    "lighting": "Professional studio lighting with soft, controlled highlights emphasizing the polished metal case and dial texture, accompanied by a grounded reflection.",
+    "color": [
+      "silver",
+      "beige",
+      "dark brown",
+      "grey"
+    ],
+    "typography": "Crisp dial typography indicating the brand and origin; no external campaign text present.",
+    "information_density": "Low, focused entirely on the product details.",
+    "characteristics": [
+      "luxury timepiece",
+      "polished steel case",
+      "alligator leather strap",
+      "small seconds subdial",
+      "minimalist dial",
+      "product photography"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "Exceptional high-end commercial watch photography that perfectly matches the reference category. The Laurent Ferrier brand is clearly legible on the dial. Lighting, composition, and material rendering (metal, leather, dial texture) are of top-tier professional quality."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

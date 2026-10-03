@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "score": 76.9,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 78,
+    "typography": 80,
+    "background": 66,
+    "physical_integration": 82,
+    "reference_alignment": 72,
+    "creative_coherence": 68
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The rendered wall carries a large unexplained diagonal shadow wedge sweeping from the upper-left edge down to the wall base around x=300-460, plus a matching dark smear on the floor at left. The declared light is noon top light, which cannot throw a long diagonal cast from an off-frame object; it reads as a stray artifact and cuts directly through the quiet left typography column the concept requires."
+    },
+    {
+      "type": "background",
+      "problem": "The 'one sharp horizontal shadow band at the wall base' is not legible: the wall-to-ground junction around y=1030-1060 shows only a mild tonal step, so the architectural idea of the noon court (sharp base band vs. shadowless standing subject) never actually appears in the render."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "The contact detail crop confirms a real soft contact shadow under the glass foot (offset_y 0 is correct and must stay), but at opacity 0.35 with blur 10 the footprint is thinner than the bright grout grid around it; the glazed floor also shows no faint reflection or tint pickup from the golden bottle, so the stand reads slightly decal-like against the glossy tiles."
+    },
+    {
+      "type": "composition",
+      "problem": "Product height ratio is exactly 0.50, at the bottom of the intended 0.50-0.65 hero band; against the busy 10cm-scale tile grid the flacon reads one notch small, and the empty right margin (x>890) plus the dead band under the base leave the right column under-weighted versus the heavy four-line title block."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the left column is loose: the honey-gold rule sits at y=871, roughly 95px below the last title baseline, floating in open tile instead of cushioning the column base; the wide-tracked Guerlain logotype at 30px nearly dissolves into the grout mesh at poster scale."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Glazed basil green zellige tile wall with fine pale grout joints in a vertical stack bond and low glossy sheen arcs on each tile face, meeting a continuous matching glazed tile ground at a horizontal horizon six tenths down the frame, one crisp narrow horizontal shadow band pressed along the wall base from direct noon top light, otherwise evenly lit saturated glaze with no diagonal casts, no stray shapes, matte grout grain, bright cool ambient, faint wet sheen on the ground tiles, no objects"
+    },
+    {
+      "path": "product.height",
+      "op": "set",
+      "value": 780
+    },
+    {
+      "path": "product.width",
+      "op": "set",
+      "value": 338
+    },
+    {
+      "path": "product.x",
+      "op": "set",
+      "value": 748
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 834
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.45
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 8
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.05
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 826
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 170
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 34
+    }
+  ],
+  "reported_score": 76
+}

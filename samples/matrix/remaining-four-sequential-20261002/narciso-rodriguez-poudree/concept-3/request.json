@@ -1,0 +1,115 @@
+{
+  "brief": "为 Narciso Rodriguez Narciso Poudrée 制作高品质商业香水海报。保留上传商品原貌与可见标签；为这款商品形成四个真正不同的创意方向。只使用品牌与产品名称，不添加价格、容量、促销、新品或功效宣传。\n本次必须采用以下独立艺术方向，优先于通用风格要求；保留用户商品、文案和禁止事项：把粉雾的夜幕读作一面天鹅绒幕：中调灰蓝绒面自墙垂落并在真实基准线处折成连续同料绒地，绒毫在暮光里保持低亮哑光；商品立于绒地偏左，测量接触阴影陷进绒毫。右半幅绒面保持安静深灰蓝，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Times 题名以窄柱两行衬线大字排印如织边签条，副行与一条骨白细线横垫柱底如暮色刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立，构成 BESIDE 关系；绒面的吸光哑光与透明玻璃边的细折光互为虚实。参考 R1 的右栏负空间排印层级、R5 的柔光氛围与 R8 的深色纪念碑负空间。",
+  "product": "assets\\products\\narciso-rodriguez-poudree-retailer.png",
+  "references": [
+    {
+      "id": "ref-6ced6279f2e6",
+      "brand": "007",
+      "style": "luxury",
+      "reference_kind": "campaign_poster",
+      "source_url": "https://jknowles.com/photography/advertising/007-fragrance/",
+      "image": "references/luxury/ref-6ced6279f2e6.jpg",
+      "selection_reason": "Highly resolved commercial perfume advertisement featuring dramatic floral explosion, strong contrast, and clear campaign typography.",
+      "analysis": {
+        "composition": "Asymmetrical balance with the faceted bottle anchored lower-left against an exploding rose, counterweighted by right-aligned typography in the negative space.",
+        "subject_ratio": 0.65,
+        "negative_space": "Dark, textured void on the right utilized effectively for legible white text placement.",
+        "lighting": "Dramatic studio lighting with high contrast; sharp specular highlights on the geometric glass facets and soft, directional light defining the rose petals.",
+        "color": [
+          "crimson red",
+          "obsidian black",
+          "charcoal grey",
+          "stark white"
+        ],
+        "typography": "Clean, sans-serif and serif mix in white; prominent '007' logo lockup with supporting tagline and URL, distinctly separate from the product container.",
+        "information_density": "Moderate; focuses on brand identity, product name, and evocative tagline without clutter.",
+        "characteristics": [
+          "dynamic motion",
+          "high contrast",
+          "faceted texture",
+          "floral motif",
+          "cinematic mood"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": true,
+        "renderer_compatibility": 90
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-182ff709ad69",
+      "brand": "Good Kind Pure",
+      "style": "editorial",
+      "reference_kind": "still_life",
+      "source_url": "https://www.adriannafavero.com/still-life-photographer-nyc",
+      "image": "references/editorial/ref-182ff709ad69.webp",
+      "selection_reason": "Professionally resolved perfume still-life with lush floral styling and clear product focus; high utility for fragrance campaign design reference.",
+      "analysis": {
+        "composition": "Diagonal placement of a rectangular glass bottle nestled within dense, layered peony blooms filling the frame.",
+        "subject_ratio": 0.45,
+        "negative_space": "Minimal; negative space is entirely occupied by soft-focus floral textures surrounding the central subject.",
+        "lighting": "Soft, diffused studio lighting creating gentle highlights on the metallic cap and glass, enhancing the translucency of the pink liquid.",
+        "color": [
+          "coral pink",
+          "peach",
+          "magenta",
+          "silver",
+          "cream"
+        ],
+        "typography": "Sans-serif logotype and scent name printed directly on the bottle label; no external campaign typography present.",
+        "information_density": "Low; visual focus is strictly on the product and its olfactory ingredients (peonies).",
+        "characteristics": [
+          "floral immersion",
+          "gradient liquid",
+          "macro texture",
+          "warm palette",
+          "soft focus background"
+        ],
+        "perfume_suitability": 92,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 95
+      },
+      "analysis_origin": "vision_api"
+    },
+    {
+      "id": "ref-7a523ada9a2c",
+      "brand": "Cartier",
+      "style": "luxury",
+      "reference_kind": "still_life",
+      "source_url": "https://luxstudio.london/cartier-perfume",
+      "image": "references/luxury/ref-7a523ada9a2c.webp",
+      "selection_reason": "Highly resolved conceptual still-life featuring a Cartier fragrance integrated with vintage Edison bulbs. Strong visual metaphor and premium execution make it an excellent design reference.",
+      "analysis": {
+        "composition": "Symmetrical arrangement with the perfume bottle centered among hanging lightbulbs at varying heights, mirrored on a reflective surface below.",
+        "subject_ratio": 0.65,
+        "negative_space": "Deep teal gradient background provides clean negative space around the illuminated subjects.",
+        "lighting": "Dramatic practical lighting from the glowing filaments combined with a soft central backlight creating a halo effect behind the bottle.",
+        "color": [
+          "deep teal",
+          "amber",
+          "warm orange",
+          "black"
+        ],
+        "typography": "None. The text on the bottle is container labeling, not campaign typography.",
+        "information_density": "Low, focused entirely on the visual concept and product.",
+        "characteristics": [
+          "conceptual",
+          "glowing filaments",
+          "reflection",
+          "industrial luxury",
+          "symmetrical"
+        ],
+        "perfume_suitability": 95,
+        "has_people": false,
+        "has_campaign_typography": false,
+        "renderer_compatibility": 98
+      },
+      "analysis_origin": "vision_api"
+    }
+  ],
+  "mode": "live",
+  "vision_model": "qwen3.8-max",
+  "vision_endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

@@ -1,0 +1,83 @@
+{
+  "pass": false,
+  "score": 77.6,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 74,
+    "typography": 82,
+    "background": 70,
+    "physical_integration": 84,
+    "reference_alignment": 72,
+    "creative_coherence": 68
+  },
+  "problems": [
+    {
+      "type": "creative_coherence",
+      "problem": "The brief's third lapidary element, the ivory section slit, is invisible: the rectangle shape at x300,y872,w480,h6 sits behind the product layer and the bottle shoulder (opaque from ~y860) covers it completely, so only two of the three blueprint elements (marquise oval + offset scale oval) read. The narrative is still only two-thirds executed."
+    },
+    {
+      "type": "background",
+      "problem": "The 0.22-opacity lemon scale oval mixes with the cobalt into a desaturated grey-blue halo ring around the cap (visible in image 1 as a muddy grey ellipse edge at roughly x43-108 and x972-1037, y522-898). Against the pure lemon inner oval and ivory ink it reads as a muddy print misregistration rather than the intended enlarged facet scale; the halo needs to stay in the lemon ink family at lower opacity."
+    },
+    {
+      "type": "composition",
+      "problem": "Vertical rhythm is still top-loose: title block ends y263, decoration rule y300-306, then ~214px of empty cobalt before the cap top at y520, while the base at y1240 leaves a 200px bottom margin. The nameplate zone floats disconnected from the gem geometry because nothing occupies the y306-520 band."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 108,
+          "y": 560,
+          "width": 864,
+          "height": 300,
+          "color": "#e9c63c",
+          "opacity": 0.92
+        },
+        {
+          "kind": "ellipse",
+          "x": 43,
+          "y": 522,
+          "width": 994,
+          "height": 376,
+          "color": "#e9c63c",
+          "opacity": 0.12
+        },
+        {
+          "kind": "rectangle",
+          "x": 300,
+          "y": 452,
+          "width": 480,
+          "height": 6,
+          "color": "#f2ecd8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": false
+    },
+    {
+      "path": "product.y",
+      "op": "set",
+      "value": 850
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 240
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 110
+    }
+  ],
+  "reported_score": 77.6
+}

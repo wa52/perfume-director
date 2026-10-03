@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243829931970656,
+  "background": {
+    "color": "#7d766c",
+    "prompt": "Seamless flat matte screen-printed card in warm taupe grey, three perfectly axis-aligned hard-edge bone-white rectangle slabs with square corners and no rotation, no rounded corners, no paper stack edges, no cast shadows, stepped obliquely from upper left toward lower right, separated by one thin blank taupe seam running parallel to a diagonal shoulder line, perfectly even shadowless frontal illumination, flat graphic ink, no texture gradients, no objects",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 250,
+        "y": 250,
+        "width": 620,
+        "height": 250,
+        "color": "#f4f1ea",
+        "opacity": 0.92
+      },
+      {
+        "kind": "rectangle",
+        "x": 470,
+        "y": 520,
+        "width": 560,
+        "height": 250,
+        "color": "#f4f1ea",
+        "opacity": 0.6
+      },
+      {
+        "kind": "rectangle",
+        "x": 690,
+        "y": 790,
+        "width": 340,
+        "height": 250,
+        "color": "#f4f1ea",
+        "opacity": 0.35
+      }
+    ]
+  },
+  "product": {
+    "x": 670,
+    "y": 576,
+    "width": 508,
+    "height": 720
+  },
+  "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+  "palette": [
+    "#7d766c",
+    "#f4f1ea",
+    "#5a5f45"
+  ],
+  "title": {
+    "text": "Narciso Poudrée",
+    "x": 86,
+    "y": 1020,
+    "size": 64,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 2,
+    "max_width": 420,
+    "line_height": 1.14,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "Eau de Parfum",
+    "x": 86,
+    "y": 1230,
+    "size": 24,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 6
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#f4f1ea",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF"
+  },
+  "logo": {
+    "text": "NARCISO",
+    "x": 86,
+    "y": 915,
+    "size": 24,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/GOTHIC.TTF",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.28,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 1300,
+    "width": 151,
+    "color": "#5a5f45"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "scene_mode": "graphic"
+}

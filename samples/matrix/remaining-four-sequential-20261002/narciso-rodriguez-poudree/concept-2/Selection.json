@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 keeps the entire left typographic column on the chalk wall plane: the widely tracked NARCISO brand line, the two-line narrow sans title, the 'Eau de Parfum' subline and the stone-blue rule all sit above the wall-to-floor junction, so the editorial BESIDE grid reads as one coherent plaque against the cool plaster. In version 1 the subline and blue rule drop across the horizon onto the floor plane, breaking the column's illusion of printed signage on the wall. Both versions hold the concept's pale chalk material, high-key upper-left powder glow, matte mineral horizon and faithful ivory-core bottle with soft contact shadow, but version 2's tighter column base gives cleaner hierarchy and a more resolved finished set; product scale, ground contact and diffuse frontal lighting match the baked softbox key in both, with version 2 slightly better balanced between quiet left half and right-shifted packshot.",
+  "remaining_problems": [
+    "Contact shadow under the bottle is very faint; the brief's slightly sunken measurement shadow into the honed chalk could be more defined.",
+    "The upper-left powder-white glow is subtle and nearly uniform; the broad calm halo could be graduated more visibly per the lighting direction.",
+    "Wall-floor junction is a soft tonal shift rather than a crisp matte mineral baseline, slightly weakening the grounded horizon.",
+    "Title column vertical overlap with the cap/shoulder zone is modest; the brand line sits a little high relative to the cap top, leaving the column feeling slightly detached from the product silhouette."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

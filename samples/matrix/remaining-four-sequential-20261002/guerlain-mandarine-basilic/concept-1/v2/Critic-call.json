@@ -1,0 +1,180 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "c2d182d4408bed984c8e988d5a9fed5966cac51412de355ffac956434f5d00ec"
+    },
+    {
+      "name": "guerlain-mandarine-basilic-retailer.png",
+      "sha256": "122b7022a2bf84c851e1632ff04c7a8c53272226bb901bdacb2c662dc68f86e7"
+    },
+    {
+      "name": "ref-6ced6279f2e6.jpg",
+      "sha256": "0b4ad90405c882ff046387a133b12116cadf61f0ed0f7bb69dd96fabbb3dabc9"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-f305dbbdf3bc.jpg",
+      "sha256": "7f170f6270e88967e15d822a84125856eb8c4cfc41eb218b2a9aaff1570cbdf5"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "c932e418634a3c9b54b6c99f59eee1ac94a78651cac8540e656968d5797062b8"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "4984728b831417b9598d80bbdf86d7dc53e83ce5896236314fd0118a502f5c63"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-57c0bf7d-8cab-9ad5-a37d-903b61d30c45",
+      "usage": {
+        "prompt_tokens": 10363,
+        "total_tokens": 12433,
+        "completion_tokens": 2070,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6721,
+          "text_tokens": 3642
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1045
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-57c0bf7d-8cab-9ad5-a37d-903b61d30c45",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10363,
+    "total_tokens": 12433,
+    "completion_tokens": 2070,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6721,
+      "text_tokens": 3642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1045
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 81.0,
+    "dimensions": {
+      "product_fidelity": 93,
+      "composition": 80,
+      "typography": 82,
+      "background": 79,
+      "physical_integration": 84,
+      "reference_alignment": 78,
+      "creative_coherence": 82
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The 'rind ring' is not readable as a concentric peel band: amber #f9a03f at opacity 0.45 over #e4691c shifts value by only a few percent, so in the poster the outer ring appears solely as two thin crescents poking out at the upper-left and upper-right of the ivory disc (approx x150-330/y500-760 and x750-930/y500-760). The declared 'outer peel scale ring offset behind the ivory slice' therefore reads as stray arcs rather than dial order, flattening the citrus-cross-section concept to a single disc."
+      },
+      {
+        "type": "physical_integration",
+        "problem": "Contact detail crop [268,1199,813,1440] confirms the shadow exists at base_y 1339 with offset_y 0 (correct contact, do not move down), but at opacity 0.3 / blur 10 / width_scale 0.92 it renders as a thin dark dash narrower than the 358px glass footprint, with two hard tick ends visible left and right of the base; on the flat silkscreen field the bottle reads slightly stickered rather than ink-grounded."
+      },
+      {
+        "type": "typography",
+        "problem": "The register rule (decoration at y=396, height ~2px) sits in a dead zone: title block bottom is y=299 and cap top is y=446, leaving ~97px above and ~48px below the rule, so it floats untethered instead of 'padding under the title group' as in R1's locked nameplate; the quiet top band loses its monument-grid lock."
+      },
+      {
+        "type": "typography",
+        "problem": "The declared nameplate specifies a wide-tracked light sans brand line ('wide-spaced Arial brand minimal at top'), but the logo 'Guerlain' is set in BOD_R.TTF serif; against the heavy two-line Bodoni title the brand line reads as a second serif voice, softening the brand-light/title-heavy contrast that R1's hierarchy relies on."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": [
+          {
+            "kind": "ellipse",
+            "x": 62,
+            "y": 444,
+            "width": 956,
+            "height": 956,
+            "color": "#f9a03f",
+            "opacity": 0.85
+          },
+          {
+            "kind": "ellipse",
+            "x": 184,
+            "y": 566,
+            "width": 713,
+            "height": 713,
+            "color": "#f6ead2",
+            "opacity": 0.95
+          }
+        ]
+      },
+      {
+        "path": "shadow.opacity",
+        "op": "set",
+        "value": 0.42
+      },
+      {
+        "path": "shadow.blur",
+        "op": "set",
+        "value": 14
+      },
+      {
+        "path": "shadow.width_scale",
+        "op": "set",
+        "value": 1.0
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 336
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 240
+      },
+      {
+        "path": "logo.font",
+        "op": "set",
+        "value": "C:/Windows/Fonts/arial.ttf"
+      },
+      {
+        "path": "logo.size",
+        "op": "set",
+        "value": 26
+      },
+      {
+        "path": "logo.tracking",
+        "op": "set",
+        "value": 8
+      }
+    ]
+  },
+  "duration_seconds": 137.787
+}

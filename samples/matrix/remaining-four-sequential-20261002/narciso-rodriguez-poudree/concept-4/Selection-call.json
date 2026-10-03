@@ -1,0 +1,89 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 6,
+  "images": [
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-453438bbcb76.webp",
+      "sha256": "0d0eda6aeb7535eedb0798f18f8d5f09f9beac1599bf3a5da43a96e9ec1ffa6e"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "1e34411f7914c047f63e9a1ddb4ae91a2762960409349b80e05e2876b2ddd64b"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "14aee559be91daf48df9762d925828ab5858c071568eede9f0b8f245d9b16bf5"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-c0c34a9c-d71c-9119-84b2-c93ec278f191",
+      "usage": {
+        "prompt_tokens": 7266,
+        "total_tokens": 8613,
+        "completion_tokens": 1347,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 6245,
+          "text_tokens": 1021
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 322
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-c0c34a9c-d71c-9119-84b2-c93ec278f191",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 7266,
+    "total_tokens": 8613,
+    "completion_tokens": 1347,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 6245,
+      "text_tokens": 1021
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 322
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "selected_version": 1,
+    "evidence": "Version 1 reads as the cleaner finished card: the bone slab sits as one confident press plate behind the cap and shoulder without touching the NARCISO label, the灰褐 field runs full-bleed with no die-cut border, and the lower ledger band is resolved exactly per the brief - wide-tracked brand line at band top, two-line geometric sans title and sub-line stacked left from the left margin, thin褐灰 rule closing the zone, all strictly BELOW the bottle base. The product silhouette, cream lacquer core and clear glass edges stay faithful under flat shadowless frontal light, and the oblique slab edge supplies the concept's diagonal seam. Version 2 fragments the same idea: rounded-corner white slabs scatter as disconnected bubbles instead of a staggered press stack, a stray hairline diagonal cuts the field, translucent patches collide with the bottle's right edge, and the rounded poster corners expose white outside the card, breaking the flat screen-printed material.",
+    "remaining_problems": [
+      "The single large slab is tilted and rounded like a stacked paper pile rather than three hard-edge staggered press slabs descending left-top to right-bottom",
+      "The oblique blank seam is not precisely parallel to the bottle shoulder line",
+      "Title sets in title case rather than the briefed geometric uppercase two-line lockup",
+      "Translucent right-side patches float without clear press-stack logic and one clips the bottle's right glass edge"
+    ]
+  },
+  "duration_seconds": 36.655
+}

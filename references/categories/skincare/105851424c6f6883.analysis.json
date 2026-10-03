@@ -1,0 +1,41 @@
+{
+  "product_category": "skincare",
+  "source_url": "https://tripistudios.com/work/supergoop",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/5ccc8a4c29f2cc7d9fb1c224/1633451715187-X2DQVFOA4R8OW7WXAV4W/613_08c_SHOT_08_29948.jpg",
+  "caption": "",
+  "id": "category-105851424c6f6883",
+  "local_path": "references/categories/skincare/105851424c6f6883.webp",
+  "sha256": "2e17fba60fd4fc45cfc6771fa8327b9789fe5067110b10dbae9e6cea272b27f4",
+  "width": 2500,
+  "height": 1879,
+  "analysis": {
+    "category_match": true,
+    "brand": "Supergoop!",
+    "quality_score": 92,
+    "composition": "Tiered podium arrangement with products distributed across varying heights to create depth and visual hierarchy.",
+    "subject_ratio": 0.65,
+    "negative_space": "Generous clean blue background surrounding the central product cluster, providing breathing room.",
+    "lighting": "Bright, hard studio lighting creating distinct, sharp shadows to the left, emphasizing the three-dimensionality of the tubes and podiums.",
+    "color": [
+      "Sky Blue",
+      "White",
+      "Bright Yellow",
+      "Navy Blue"
+    ],
+    "typography": "Clean sans-serif product labeling on packaging; no external overlay text.",
+    "information_density": "Medium; focuses on product variety and branding without clutter.",
+    "characteristics": [
+      "Commercial Product Photography",
+      "Minimalist",
+      "High-key",
+      "Geometric Props",
+      "Brand Consistency"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product shot featuring a clear lineup of Supergoop! skincare/sunscreen products. The composition uses geometric risers effectively against a solid color background. Lighting is professional and crisp. Packaging details are preserved and legible."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

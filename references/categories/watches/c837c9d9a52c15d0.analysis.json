@@ -1,0 +1,42 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/7",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/david-webb-jewelry-advertising-campaign-still-life-4-done.jpg",
+  "caption": "Advertising Photography, Jewelry Photography, Commercial Photography, NYC",
+  "id": "category-c837c9d9a52c15d0",
+  "local_path": "references/categories/watches/c837c9d9a52c15d0.jpg",
+  "sha256": "e4b22867858ee242988762a316b2306fb754a8fb17ea30c889a41271cef771a9",
+  "width": 2400,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "Unknown",
+    "quality_score": 92,
+    "composition": "Dynamic spiral flat-lay arrangement on a dark gradient background, creating a sense of movement and luxury.",
+    "subject_ratio": 0.65,
+    "negative_space": "Ample dark negative space surrounding the spiral, focusing attention entirely on the jewelry's texture and form.",
+    "lighting": "High-contrast studio lighting with sharp specular highlights on the gold leaves and diamonds, emphasizing metallic texture and gemstone brilliance.",
+    "color": [
+      "Gold",
+      "Silver/White",
+      "Black",
+      "Dark Grey"
+    ],
+    "typography": "None",
+    "information_density": "Low; purely visual product focus with no text or data overlays.",
+    "characteristics": [
+      "Luxury jewelry",
+      "Gold leaf motif",
+      "Diamond accents",
+      "Spiral composition",
+      "High-end product photography",
+      "Textured metal finish"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "The image depicts a high-end jewelry set (necklace and bracelet) featuring a gold leaf motif with diamond accents. While the campaign category includes jewellery, the specific reference category is 'watches', and there are no timepieces present in the image, resulting in a category mismatch for the specific watch constraint. The photography quality is exceptional, with professional lighting and composition suitable for luxury advertising."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

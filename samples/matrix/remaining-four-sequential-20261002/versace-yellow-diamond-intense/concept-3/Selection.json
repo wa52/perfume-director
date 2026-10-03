@@ -1,0 +1,12 @@
+{
+  "selected_version": 2,
+  "evidence": "Version 2 reads as the cleaner finished ledger: the radiating ivory facet lines stayEven and uninterrupted behind the bottle's shoulders, the lower plaque register is one continuous full-width band so the wide-tracked sans brand line, the engraver's rule and the near-full-width Georgia serif title sit in a stable, centered hierarchy, and the bottle's internal glow remains the only brightness against the matte silkscreen field. Version 1 breaks the plaque band with a misregistered vertical tone seam (bright citron left, olive right) that cuts through the brand line, the rule and the title zone, splitting the nameplate into two accidental half-planes and destroying the flat graphic order the concept demands. Both keep the product faithful, the below-layout relation and the serif title family, but version 2's uninterrupted band and cleaner line density make it the stronger campaign sheet.",
+  "remaining_problems": [
+    "The declared hard-edge deep ink rectangle behind the grid supporting the lower silhouette is absent in both versions; the concept's dark plaque plate never appears.",
+    "Version 2's olive band crosses behind the bottle at label height rather than interrupting the grid cleanly at the lower third, slightly competing with the silhouette instead of sinking beneath it.",
+    "Palette drift: the olive-green band tone reads muted against the specified saturated citron #e5c227 and ivory #f4eeda ink lines, softening the intended硬 edge contrast.",
+    "Radiating grid lines fade to near-invisible in the lower plaque register, weakening the 'line density falling' narrative below the title."
+  ],
+  "method": "direct_visual_comparison",
+  "does_not_grant_pass": true
+}

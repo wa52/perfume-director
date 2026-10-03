@@ -1,0 +1,204 @@
+{
+  "issues": [],
+  "raw_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392034173,
+    "background": {
+      "color": "#e5c227",
+      "prompt": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre, one hard-edge blank horizontal plaque band without lines across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond engraved lines, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 540,
+          "y": 720,
+          "width": 670,
+          "height": 490,
+          "color": "#221a06",
+          "opacity": 0.16
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 785,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e5c227",
+      "#221a06",
+      "#f4eeda"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 138,
+      "y": 1138,
+      "size": 78,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 475,
+      "y": 1256,
+      "size": 22,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 434,
+      "y": 1058,
+      "size": 36,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1116,
+      "width": 173,
+      "color": "#f4eeda"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "effective_spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 179673392034173,
+    "background": {
+      "color": "#e5c227",
+      "prompt": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre, one hard-edge blank horizontal plaque band without lines across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond engraved lines, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 540,
+          "y": 720,
+          "width": 670,
+          "height": 490,
+          "color": "#221a06",
+          "opacity": 0.16
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 785,
+      "height": 720
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#e5c227",
+      "#221a06",
+      "#f4eeda"
+    ],
+    "title": {
+      "text": "Yellow Diamond Intense",
+      "x": 138,
+      "y": 1138,
+      "size": 78,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 1,
+      "max_width": 0,
+      "line_height": 1.06,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 475,
+      "y": 1256,
+      "size": 22,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 4
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf"
+    },
+    "logo": {
+      "text": "VERSACE",
+      "x": 434,
+      "y": 1058,
+      "size": 36,
+      "color": "#221a06",
+      "font": "C:/Windows/Fonts/georgia.ttf",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 454,
+      "y": 1116,
+      "width": 173,
+      "color": "#f4eeda"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  },
+  "source": "deterministic_director_guard"
+}

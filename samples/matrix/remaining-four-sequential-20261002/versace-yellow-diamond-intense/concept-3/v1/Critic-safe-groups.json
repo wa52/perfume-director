@@ -1,0 +1,68 @@
+{
+  "accepted": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1000,
+          "width": 1080,
+          "height": 440,
+          "color": "#221a06",
+          "opacity": 0.1
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre and gradually thinning downward, one perfectly even hard-edge horizontal band of slightly deeper olive citron beginning at exactly two thirds height spanning the full width with clean straight edges, perfectly even shadowless frontal illumination, no vertical seams, no quadrant splits, no objects"
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#221a06"
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1108
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 220
+    }
+  ],
+  "rejected_groups": [
+    {
+      "group": "typography",
+      "changes": [
+        {
+          "path": "title.align",
+          "op": "set",
+          "value": "center"
+        },
+        {
+          "path": "title.x",
+          "op": "set",
+          "value": 540
+        },
+        {
+          "path": "title.tracking",
+          "op": "set",
+          "value": 0
+        },
+        {
+          "path": "title.size",
+          "op": "set",
+          "value": 74
+        }
+      ],
+      "error_type": "ValueError"
+    }
+  ],
+  "source": "deterministic_safe_group_recovery"
+}

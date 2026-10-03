@@ -1,0 +1,174 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 7,
+  "images": [
+    {
+      "name": "poster.png",
+      "sha256": "77f71e4acee0c725a8cc7948cd0e15aba7f8fdb042a215143a9f5d49a013fdef"
+    },
+    {
+      "name": "versace-yellow-diamond-intense-retailer.png",
+      "sha256": "a68e6a1ff6640fb4827a6e274ce65eab6c75dd9998757fe9c5ce273716ea46f7"
+    },
+    {
+      "name": "ref-f74fe25870eb.webp",
+      "sha256": "b1c42a9b3cd5549b33b5dfe28b0dca3d0d8529c1646f070504f9de8a99d158e8"
+    },
+    {
+      "name": "ref-04eb11dcf323.webp",
+      "sha256": "f676d8ce9d64af017749003bf72b2f3a5abd0715ae38c846511b9f61dd1eb897"
+    },
+    {
+      "name": "ref-b6e669a924a3.webp",
+      "sha256": "f245c128c916d9a84b326751b578f26f2f9210a4668fd5c0589aa630bf29749a"
+    },
+    {
+      "name": "Contact-detail.png",
+      "sha256": "5875a5b33d91b22b4cfeb5851738886b45c825d0204dded98f89cd1043e2cb6b"
+    },
+    {
+      "name": "poster.png",
+      "sha256": "33962a0ff88d35f97683887868a59e8705aefe84f670505acaf3964a76dc7748"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-60d6dd1d-e40b-96a2-a6d3-05cc2cfcd2b4",
+      "usage": {
+        "prompt_tokens": 10806,
+        "total_tokens": 13095,
+        "completion_tokens": 2289,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "image_tokens": 6487,
+          "text_tokens": 4319
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 1264
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-60d6dd1d-e40b-96a2-a6d3-05cc2cfcd2b4",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 10806,
+    "total_tokens": 13095,
+    "completion_tokens": 2289,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "image_tokens": 6487,
+      "text_tokens": 4319
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 1264
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "pass": false,
+    "score": 78.2,
+    "dimensions": {
+      "product_fidelity": 92,
+      "composition": 76,
+      "typography": 74,
+      "background": 68,
+      "physical_integration": 88,
+      "reference_alignment": 74,
+      "creative_coherence": 78
+    },
+    "problems": [
+      {
+        "type": "background",
+        "problem": "The regeneration produced TWO hard-edge olive bands instead of the single plaque band the concept declares: one mid-field band at y≈690–845 slices the bottle behind its label, and a second plaque zone begins at y≈995. In the contact-detail crop (68,825–1011,1075) the mid-band's lower hard edge runs directly beneath the base footprint at crop y≈20, so the correctly seated contact shadow (offset_y=0, soft dark contour hugging the base, no float) reads as sitting on a printed stripe. The brief's 'one hard-edge band at two thirds' and its uninterrupted facet-density fall are both broken; references R2/R4 keep color fields to a single clean zone."
+      },
+      {
+        "type": "typography",
+        "problem": "Title bbox 138–1009 at size 78 leaves only ~71px right margin versus the 138px left origin, so the 'centered' line still reads optically shifted and crowds the right safe edge; the brief asks the serif line to govern the plaque band with air. Logo (center ≈534) and decoration rule (center ≈564) are also off-axis from each other by ~30px, weakening the logo→rule→title stack that R2-style plaque秩序 relies on."
+      },
+      {
+        "type": "composition",
+        "problem": "The ink rule at y=1108 sits only ~25px above the title cap line (title top 1138) but ~50px below the logo baseline zone, so the 'engraver zero point' hairline visually collides with the title instead of capping the band; the plaque zone (from y≈995) also starts barely 30px below the bottle base (965), leaving no breathing gap between silhouette and铭牌 band."
+      }
+    ],
+    "changes": [
+      {
+        "path": "background.prompt",
+        "op": "set",
+        "value": "Seamless flat matte silkscreen-printed card in saturated citron yellow, fine engraved ivory facet grid lines radiating from upper centre and gradually thinning downward, exactly one perfectly even hard-edge horizontal band of slightly deeper olive citron whose top edge begins at 72 percent of the height and runs full width to the bottom edge with clean straight edges, no other bands, no stripes above it, perfectly even shadowless frontal illumination, no vertical seams, no quadrant splits, no objects"
+      },
+      {
+        "path": "background.shapes",
+        "op": "set",
+        "value": []
+      },
+      {
+        "path": "title.size",
+        "op": "set",
+        "value": 70
+      },
+      {
+        "path": "title.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "title.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "title.y",
+        "op": "set",
+        "value": 1160
+      },
+      {
+        "path": "logo.x",
+        "op": "set",
+        "value": 540
+      },
+      {
+        "path": "logo.align",
+        "op": "set",
+        "value": "center"
+      },
+      {
+        "path": "decoration.x",
+        "op": "set",
+        "value": 430
+      },
+      {
+        "path": "decoration.y",
+        "op": "set",
+        "value": 1102
+      },
+      {
+        "path": "decoration.width",
+        "op": "set",
+        "value": 220
+      }
+    ],
+    "evidence_notes": {
+      "contact_shadow": "Verified in detail crop (68,825–1011,1075): soft dark footprint follows the base contour at offset_y=0; base_y=965 (67% of canvas) inside the 10–94% bounds; no floating, no gap. Shadow left untouched.",
+      "product": "Single bottle, label 'VERSACE YELLOW DIAMOND INTENSE' intact, facet cuts and gem cap match the original cutout; height ratio 0.50 within this concept's 35–74% band; no extra bottles or generated labels.",
+      "overlap": "text_product_overlap false for title and logo; no overlap claimed.",
+      "artifacts": "No softboxes, lamps, stands or cameras; graphic scene_mode so no photographic floor is required.",
+      "previous_fixes_confirmed": "The prior version's vertical split at x=540 and quadrant seams are gone; field is now full-bleed and edge-clean horizontally, which is why background rises from 66 to 68 only (new double-band fault replaces the old one)."
+    }
+  },
+  "duration_seconds": 48.073
+}

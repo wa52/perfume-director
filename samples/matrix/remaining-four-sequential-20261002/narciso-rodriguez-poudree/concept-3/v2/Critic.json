@@ -1,0 +1,45 @@
+{
+  "pass": false,
+  "score": 82.7,
+  "dimensions": {
+    "product_fidelity": 93,
+    "composition": 82,
+    "typography": 80,
+    "background": 76,
+    "physical_integration": 86,
+    "reference_alignment": 78,
+    "creative_coherence": 84
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated velvet is quieter than the previous fold-ridden wall (the upper-left crease ridge behind the cap is gone), but the ground cloth now carries coarse blotchy nap mottle: dark irregular patches under and left of the bottle (approx x=40-320, y=1230-1440) and a bright diagonal sweep at the right edge (approx x=820-1080, y=1150-1440). These read as stains rather than the declared 'very fine low nap grain', and the busy foreground nap vibrates against the clean glass plinth, weakening the measured contact read confirmed in the detail crop (13,1041,699,1291)."
+    },
+    {
+      "type": "composition",
+      "problem": "Grounding is correct (detail crop shows the plinth seated in the nap with a soft contact shadow at offset_y=0), but the zone below the base (y=1181-1440, roughly the bottom sixth) is an empty mottled nap field with no tonal event; against R1/R8's resolved lower zones this dead weight leaves the frame bottom-heavy and unresolved, and the promised single broad sheen drift is not legible as an intentional gradient."
+    },
+    {
+      "type": "typography",
+      "problem": "The right column now reads as one continuous lockup (logo 540-557, title 620-774, subtitle 830-848, rule 892: intervals 63/56/44px), a real improvement over the previous islands; however the 26px tracked serif subtitle and the 151px bone rule sit directly on the busiest nap mottle of the wall/ground transition (x=648-851, y=830-900), so the hierarchy tail loses crispness; R1 keeps its small type over a calmer field."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Medium dusty blue velvet cloth hanging as a smooth soft wall and sweeping into a continuous matching velvet ground at a horizontal horizon seventy-four hundredths down the frame, extremely fine even low nap with no blotches no stains no patches, wall perfectly quiet, ground carrying one single gentle broad luminous sheen drift spreading softly beneath the horizon and fading toward the bottom edge, soft diffuse twilight illumination, no objects, no folds, no creases"
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 28
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 170
+    }
+  ],
+  "reported_score": 81.6
+}

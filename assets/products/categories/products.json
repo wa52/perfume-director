@@ -1,0 +1,54 @@
+[
+  {
+    "id": "watches-pilot",
+    "product_category": "watches",
+    "local_path": "assets/products/categories/watches.png",
+    "source_url": "https://pngimg.com/images/objects/watches",
+    "image_url": "https://pngimg.com/uploads/watches/watches_PNG101457.png",
+    "sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+    "width": 1000,
+    "height": 1000,
+    "caption": "Watches transparent PNG picture 101457",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "footwear-pilot",
+    "product_category": "footwear",
+    "local_path": "assets/products/categories/footwear.png",
+    "source_url": "https://pngimg.com/images/sport/running_shoes",
+    "image_url": "https://pngimg.com/uploads/running_shoes/running_shoes_PNG5824.png",
+    "sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+    "width": 1276,
+    "height": 877,
+    "caption": "Nike Running Shoes realistic PNG image",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "beverage-pilot",
+    "product_category": "beverage",
+    "local_path": "assets/products/categories/beverage.png",
+    "source_url": "https://pngimg.com/images/food/cocacola",
+    "image_url": "https://pngimg.com/uploads/cocacola/coca_cola_PNG8917.png",
+    "sha256": "23ac906d31d4bc52ff05a8c06151b2914c2a1c07cc8a61b3c5316c76659c2bca",
+    "width": 996,
+    "height": 2004,
+    "caption": "Coca Cola Bottle large resolution 996x2004 PNG picture",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  },
+  {
+    "id": "skincare-pilot",
+    "product_category": "skincare",
+    "local_path": "assets/products/categories/skincare.png",
+    "source_url": "https://pngimg.com/images/objects/lipstick",
+    "image_url": "https://pngimg.com/uploads/lipstick/lipstick_PNG76278.png",
+    "sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+    "width": 1990,
+    "height": 2538,
+    "caption": "Lipstick large resolution 1990x2538 PNG picture",
+    "rights_status": "research_only; original rights retained; commercial reuse unverified",
+    "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+  }
+]

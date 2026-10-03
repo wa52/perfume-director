@@ -1,0 +1,74 @@
+{
+  "requested_model": "qwen3.8-max",
+  "endpoint": "https://YOUR_WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "options": {
+    "temperature": 0.2,
+    "enable_thinking": true,
+    "thinking_budget": 1024,
+    "max_completion_tokens": 8192
+  },
+  "image_max_edge": 1280,
+  "timeout_seconds": 240,
+  "image_count": 1,
+  "images": [
+    {
+      "name": "narciso-rodriguez-poudree-retailer.png",
+      "sha256": "24b6732a336b95b71b8bc701d0c0b1f635544a20926a1bb22a9ca3822d81051c"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "OK",
+      "response_id": "chatcmpl-f2e48011-cbe9-98ea-9887-7b87150215a0",
+      "usage": {
+        "prompt_tokens": 1574,
+        "total_tokens": 2847,
+        "completion_tokens": 1273,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 1211,
+          "text_tokens": 363
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1024,
+          "text_tokens": 248
+        }
+      }
+    }
+  ],
+  "response_id": "chatcmpl-f2e48011-cbe9-98ea-9887-7b87150215a0",
+  "returned_model": "qwen3.8-max",
+  "usage": {
+    "prompt_tokens": 1574,
+    "total_tokens": 2847,
+    "completion_tokens": 1273,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1211,
+      "text_tokens": 363
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "text_tokens": 248
+    }
+  },
+  "finish_reason": "stop",
+  "status": "OK",
+  "output": {
+    "title": "Narciso Poudrée",
+    "logo": "NARCISO",
+    "subtitle": "Eau de Parfum",
+    "price": "",
+    "evidence": "Label visibly shows only the word NARCISO in black capitals; Poudrée, the brand Narciso Rodriguez and the concentration Eau de Parfum come from the user brief, not from legible label text; no price or volume is visible.",
+    "product_profile": {
+      "material": "Clear glass outer block with opaque cream lacquered inner core and matching cream cap",
+      "color": "Warm ivory / pale beige core and cap, colorless glass edges, black logotype",
+      "transparency": "Transparent only at glass walls and base; central body region is fully opaque cream",
+      "illumination": "Soft diffuse frontal studio light, gentle top highlights on cap and shoulder, no hard shadows",
+      "view": "Straight-on frontal elevation, slight eye-level view, flat base with thin glass plinth line",
+      "integration_limits": "Opaque cream core cannot transmit a generated background; background must sit behind clear glass edges only and keep high-key soft lighting"
+    }
+  },
+  "duration_seconds": 33.631
+}

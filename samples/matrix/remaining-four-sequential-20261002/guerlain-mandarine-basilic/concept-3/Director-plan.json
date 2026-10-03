@@ -1,0 +1,118 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28f20e4eb5ae\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Aqua Ripple Sonar Plate",
+    "brief": "把 Aqua 的水声读作一圈声呐回波：平涂冰川水蓝卡纸上，细密同心水蓝刻线环自画面中心向外扩散，一枚硬边深青矩形板沉于环心之后托住剪影下半，环线下三分之一被一道硬边留白横带截断如同回波沉入铭牌；商品提至上幅立于环心，刻线从其肩后继续垂落却不触碰标签。下幅留出完整宽铭牌带：宽距 Arial 品牌字居带顶，Century Gothic 几何大写题名以两行宽排收左缘起排，一条深青细线横垫区底如声呐刻度——题名整组起排于瓶底之下，构成 BELOW 关系。无地面无 horizon，纯环密度扩散叙事对抗金黄液体的暖透。参考 R2 的纸面分区铭牌秩序、R5 的圆心聚焦光环与 R1 的深色铭牌对比层级。",
+    "material": "flat matte screen-printed card with fine concentric ripple rings and one hard-edge blank plaque band",
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#cfe3e6",
+      "#0d3a44",
+      "#1f8fa6"
+    ],
+    "layout_relation": "below",
+    "title_family": "sans",
+    "scene_mode": "graphic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087239083,
+    "background": {
+      "color": "#cfe3e6",
+      "prompt": "Seamless flat matte screen-printed card in pale glacier aqua blue, fine concentric ripple rings in deep marine teal expanding from the exact centre of the frame, one hard-edge blank horizontal plaque band without rings across the lower quarter, perfectly even shadowless frontal illumination, no texture gradients beyond printed rings, no objects",
+      "revision": 0,
+      "shapes": [
+        {
+          "kind": "rectangle",
+          "x": 540,
+          "y": 605,
+          "width": 540,
+          "height": 605,
+          "color": "#0d3a44",
+          "opacity": 0.14
+        }
+      ]
+    },
+    "product": {
+      "x": 540,
+      "y": 605,
+      "width": 349,
+      "height": 806
+    },
+    "lighting": "perfectly even shadowless frontal illumination, flat graphic ink light with no falloff",
+    "palette": [
+      "#cfe3e6",
+      "#0d3a44",
+      "#1f8fa6"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 108,
+      "y": 1138,
+      "size": 66,
+      "color": "#0d3a44",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3,
+      "max_width": 880,
+      "line_height": 1.12,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 108,
+      "y": 1361,
+      "size": 22,
+      "color": "#0d3a44",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#0d3a44",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 463,
+      "y": 1058,
+      "size": 28,
+      "color": "#0d3a44",
+      "font": "C:/Windows/Fonts/GOTHIC.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 108,
+      "y": 1339,
+      "width": 216,
+      "color": "#1f8fa6"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "graphic"
+  }
+}

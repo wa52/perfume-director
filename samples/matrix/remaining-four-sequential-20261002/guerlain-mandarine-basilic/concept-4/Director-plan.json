@@ -1,0 +1,108 @@
+{
+  "source": "batch_vision_director",
+  "planning_trace": "D:\\comfyui projects\\perfume-director\\runs\\batches\\28f20e4eb5ae\\Concepts-call.json",
+  "creative_direction": {
+    "name": "Honeycomb Noon Terrazzo Hall",
+    "brief": "把金蜂窝穹顶的六角光读作一座正午水磨石厅：暖骨白水磨石墙以细密蜜金与灰绿碎石排成细点阵，连续 honed 同料水磨石地面在真实基准线接墙；正午侧光在墙面掠出一道宽而静的暖白光带，石面保持哑光矿物颗粒。商品立于石地偏左，测量接触阴影轻陷进磨面；右半幅石墙保持安静暖白，承载一根真正的右栏排印：宽距 Arial 品牌字居柱顶，Arial Narrow 题名以窄柱三行大字排印如凿刻签条，一条蜜金细线横垫柱底如日晷刻度。文字柱垂直方向与盖肩重叠、水平方向宽距分离，双栏编辑网格诚实成立；水磨石的冷哑矿物与金黄蜂窝金属的暖亮互为粗细。参考 R1 的右栏负空间排印层级、R4 的硬光矿物颗粒与 R8 的高键粉彩温度。",
+    "material": "warm bone terrazzo wall with fine honey-gold and grey-green chip aggregate sweeping into continuous honed matching terrazzo ground",
+    "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+    "palette": [
+      "#e8e2d4",
+      "#1d3a34",
+      "#c98a2e"
+    ],
+    "layout_relation": "beside",
+    "title_family": "sans",
+    "scene_mode": "photographic"
+  },
+  "spec": {
+    "version": 1,
+    "style": "luxury",
+    "canvas": {
+      "width": 1080,
+      "height": 1440
+    },
+    "seed": 45020087240092,
+    "background": {
+      "color": "#e8e2d4",
+      "prompt": "Warm bone-white terrazzo wall with fine honey-gold and grey-green stone chip aggregate in a dense even speckle, meeting a continuous honed matching terrazzo ground at a horizontal horizon six tenths down the frame, one broad calm warm-white light band lying across the upper wall from soft noon side light, matte mineral grain, no objects",
+      "revision": 0,
+      "shapes": []
+    },
+    "product": {
+      "x": 324,
+      "y": 835,
+      "width": 325,
+      "height": 749
+    },
+    "lighting": "soft noon side light laying one broad calm warm-white band across the wall, diffuse frontal matching the baked softbox key, matte mineral grain, no hard shadows",
+    "palette": [
+      "#e8e2d4",
+      "#1d3a34",
+      "#c98a2e"
+    ],
+    "title": {
+      "text": "Aqua Allegoria Mandarine Basilic",
+      "x": 605,
+      "y": 490,
+      "size": 88,
+      "color": "#1d3a34",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 2,
+      "max_width": 400,
+      "line_height": 1.1,
+      "align": "left"
+    },
+    "subtitle": {
+      "text": "",
+      "x": 605,
+      "y": 864,
+      "size": 22,
+      "color": "#1d3a34",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 3
+    },
+    "price": {
+      "text": "",
+      "x": 104,
+      "y": 1280,
+      "size": 24,
+      "color": "#1d3a34",
+      "font": "C:/Windows/Fonts/ARIALN.TTF"
+    },
+    "logo": {
+      "text": "Guerlain",
+      "x": 605,
+      "y": 403,
+      "size": 30,
+      "color": "#1d3a34",
+      "font": "C:/Windows/Fonts/ARIALN.TTF",
+      "tracking": 6
+    },
+    "shadow": {
+      "opacity": 0.35,
+      "blur": 10,
+      "offset_x": 0,
+      "offset_y": 0,
+      "kind": "contact"
+    },
+    "decoration": {
+      "enabled": true,
+      "x": 605,
+      "y": 842,
+      "width": 151,
+      "color": "#c98a2e"
+    },
+    "layers": [
+      "background",
+      "shadow",
+      "product",
+      "decoration",
+      "logo",
+      "title",
+      "subtitle",
+      "price"
+    ],
+    "scene_mode": "photographic"
+  }
+}

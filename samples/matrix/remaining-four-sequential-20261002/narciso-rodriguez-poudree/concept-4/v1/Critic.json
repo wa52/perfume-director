@@ -1,0 +1,116 @@
+{
+  "pass": false,
+  "score": 75.7,
+  "dimensions": {
+    "product_fidelity": 92,
+    "composition": 74,
+    "typography": 78,
+    "background": 62,
+    "physical_integration": 86,
+    "reference_alignment": 68,
+    "creative_coherence": 70
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The declared material is 'hard-edge bone rectangle press slabs', but the regenerated backdrop rendered the top-left slab as a rotated, rounded-corner stack of cards with visible page-edge layers and a soft drop shadow (upper-left quadrant). Those rounded corners, rotation and cast shadow contradict the flat screen-printed slab concept and read as a photographed paper prop, not printed ink."
+    },
+    {
+      "type": "background",
+      "problem": "The brief's 'one thin blank taupe seam parallel to the bottle shoulder' is missing; instead a raw vertical tone edge of the lower slab runs straight down behind and below the bottle base (visible in the contact crop at canvas x≈647), slicing the nameplate zone and competing with the type block instead of supporting it."
+    },
+    {
+      "type": "composition",
+      "problem": "Slab 1 sits almost entirely behind the cap and upper shoulder, so the promised 'slabs掠过 shoulder without touching the label' layering reads as one white card accidentally cropped by the bottle; the middle and lower slabs are low-opacity washes that fade into the taupe field, leaving the right half of the canvas visually empty against a dense left type column."
+    },
+    {
+      "type": "typography",
+      "problem": "Hierarchy inside the nameplate band is compressed: logo baseline (y≈946) sits only ~62px above the title cap line (y≈1008) while the title block bottom (1130) leaves ~87px to the subtitle (1217), so logo/title crowd and title/subtitle drift; the 64px two-line title wrapped at max_width 330 also leaves a ragged short second line ('Poudrée') with no optical tie to the rule below."
+    },
+    {
+      "type": "creative_coherence",
+      "problem": "The product photograph carries soft diffuse studio modelling (gentle cap and shoulder highlights) while the backdrop claims 'perfectly even shadowless frontal illumination'; the mismatch is most visible where the soft contact shadow under the glass plinth meets the absolutely flat slabs, so the powder-press conceit reads as pasted cutout rather than unified print."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Seamless flat matte screen-printed card in warm taupe grey, three perfectly axis-aligned hard-edge bone-white rectangle slabs with square corners and no rotation, no rounded corners, no paper stack edges, no cast shadows, stepped obliquely from upper left toward lower right, separated by one thin blank taupe seam running parallel to a diagonal shoulder line, perfectly even shadowless frontal illumination, flat graphic ink, no texture gradients, no objects"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 250,
+          "y": 250,
+          "width": 620,
+          "height": 250,
+          "color": "#f4f1ea",
+          "opacity": 0.92
+        },
+        {
+          "kind": "rectangle",
+          "x": 470,
+          "y": 520,
+          "width": 560,
+          "height": 250,
+          "color": "#f4f1ea",
+          "opacity": 0.6
+        },
+        {
+          "kind": "rectangle",
+          "x": 690,
+          "y": 790,
+          "width": 340,
+          "height": 250,
+          "color": "#f4f1ea",
+          "opacity": 0.35
+        }
+      ]
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 2
+    },
+    {
+      "path": "title.max_width",
+      "op": "set",
+      "value": 420
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 1020
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 915
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 1230
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 1300
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.28
+    },
+    {
+      "path": "shadow.blur",
+      "op": "set",
+      "value": 14
+    }
+  ],
+  "reported_score": 74
+}

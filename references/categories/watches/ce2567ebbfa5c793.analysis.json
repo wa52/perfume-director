@@ -1,0 +1,43 @@
+{
+  "product_category": "watches",
+  "source_url": "https://www.goulko.com/watches-and-jewelry-photographer/1",
+  "image_url": "https://goulko.live.photofolio.com/pf-media/still-life-jewelry-david-webb-nail-advertising-campaign.jpg",
+  "caption": "Zachary Goulko - Jewelry Photographer, Still Life Photographer",
+  "id": "category-ce2567ebbfa5c793",
+  "local_path": "references/categories/watches/ce2567ebbfa5c793.jpg",
+  "sha256": "c1fe138716f536bf47e6730e8b4bb48e7f2e5da5bf0efbc2bb52e740aef5e15f",
+  "width": 1233,
+  "height": 1500,
+  "analysis": {
+    "category_match": false,
+    "brand": "Unknown",
+    "quality_score": 82,
+    "composition": "Top-down flat-lay featuring clasped hands centered on a textured wooden workbench, framed by scattered artisan tools.",
+    "subject_ratio": 0.45,
+    "negative_space": "Minimal; the frame is densely filled with hands, jewelry, and workshop tools, leaving little empty background.",
+    "lighting": "Warm, directional studio lighting that accentuates the metallic sheen of the gold jewelry and the grain of the wood.",
+    "color": [
+      "Gold",
+      "Warm Brown",
+      "Beige",
+      "Black",
+      "Silver"
+    ],
+    "typography": "None",
+    "information_density": "Medium-high; multiple jewelry pieces and tools create a busy, narrative-driven scene.",
+    "characteristics": [
+      "Artisanal aesthetic",
+      "Gold jewelry",
+      "Workshop setting",
+      "Flat-lay",
+      "Warm tones",
+      "Textured wood"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "The image clearly depicts jewelry (rings and bracelets) rather than watches, failing the specific 'watches' reference category requirement. While it fits the broader 'watches and jewellery' campaign theme and features high-quality commercial photography with excellent lighting and texture, the absence of any timepieces makes it a category mismatch for a watch-specific brief. No brand is visible, and there is no campaign typography."
+  },
+  "accepted": false,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

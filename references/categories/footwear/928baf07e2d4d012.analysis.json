@@ -1,0 +1,41 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://gilesangel.com/footwear-photography/",
+  "image_url": "https://gilesangel.com/wp-content/uploads/2025/11/skechers_Giles_Angel_photography-550x498.jpg",
+  "caption": "",
+  "id": "category-928baf07e2d4d012",
+  "local_path": "references/categories/footwear/928baf07e2d4d012.jpg",
+  "sha256": "713ef0782b9cf16cdb66bc913d852bf23648ac728c68967cdf9e514f4c3be513",
+  "width": 550,
+  "height": 498,
+  "analysis": {
+    "category_match": true,
+    "brand": "Skechers",
+    "quality_score": 88,
+    "composition": "Centered horizontal product profile on a stylized illuminated pedestal against a dark gradient background.",
+    "subject_ratio": 0.65,
+    "negative_space": "Ample clean space above and around the shoe, utilizing a smooth color gradient to maintain focus on the product.",
+    "lighting": "Dramatic studio lighting with a vibrant pink spotlight effect underneath and soft key light highlighting the mesh upper and sole details.",
+    "color": [
+      "Navy Blue",
+      "Neon Pink",
+      "Coral Red",
+      "Deep Purple"
+    ],
+    "typography": "Embossed 'MAX CUSHION' on the midsole and standard brand logo; no external campaign copy present.",
+    "information_density": "Low; purely visual product showcase without informational clutter.",
+    "characteristics": [
+      "Perforated cushioned sole",
+      "Breathable mesh upper",
+      "Vibrant color blocking",
+      "Athletic silhouette",
+      "Studio product photography"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 95,
+    "reason": "High-quality commercial product shot of a Skechers running shoe that perfectly preserves the required sole silhouette, stitching, and structural details. The lighting is professional and dramatic, though it lacks external campaign typography to be a complete ad layout."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}

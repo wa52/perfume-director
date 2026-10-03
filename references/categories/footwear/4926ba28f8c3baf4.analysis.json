@@ -1,0 +1,42 @@
+{
+  "product_category": "footwear",
+  "source_url": "https://gilesangel.com/footwear-photography/",
+  "image_url": "https://gilesangel.com/wp-content/uploads/2025/04/PUMA_NITRO_02_V3-550x498.jpg",
+  "caption": "",
+  "id": "category-4926ba28f8c3baf4",
+  "local_path": "references/categories/footwear/4926ba28f8c3baf4.jpg",
+  "sha256": "f9f43515b4600b11f246cb7d0d1f0f4d72078dcd1b35a0da012a3bf7befd1c5f",
+  "width": 550,
+  "height": 498,
+  "analysis": {
+    "category_match": true,
+    "brand": "Puma",
+    "quality_score": 92,
+    "composition": "Dynamic diagonal stacking of two shoes against a curved graphic background, creating depth and movement.",
+    "subject_ratio": 0.65,
+    "negative_space": "Minimal, filled with branded graphic wave patterns in the background.",
+    "lighting": "Professional studio product lighting with soft highlights on the mesh upper and defined shadows grounding the sole.",
+    "color": [
+      "Navy Blue",
+      "Periwinkle",
+      "White",
+      "Silver",
+      "Black"
+    ],
+    "typography": "Product labeling visible on the midsole ('NITRO') and side panel; brand logo prominent.",
+    "information_density": "Low to Medium; focused entirely on the product visual and brand identity without clutter.",
+    "characteristics": [
+      "Athletic Footwear",
+      "Running Shoe",
+      "Mesh Upper",
+      "Foam Midsole",
+      "Studio Product Shot"
+    ],
+    "has_campaign_typography": false,
+    "renderer_compatibility": 98,
+    "reason": "High-quality commercial product photography featuring Puma running shoes. The composition effectively showcases the silhouette, sole technology (Nitro), and materials. Lighting is polished, and the background graphics complement the product without obscuring it. Fits the footwear category perfectly."
+  },
+  "accepted": true,
+  "analysis_origin": "vision_api_single_image",
+  "rights_status": "original rights retained; commercial reuse unverified; research reference only"
+}
