@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "pass": false,
+  "failures": [
+    "unresolved_review",
+    "critic_not_approved",
+    "creative_diversity:unresolved"
+  ],
+  "thresholds": {
+    "product_fidelity": 95,
+    "physical_integration": 88,
+    "typography": 88,
+    "composition": 88,
+    "brand_alignment": 85,
+    "creative_coherence": 88
+  },
+  "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+  "creative_diversity_evidence": {
+    "distinct": false,
+    "evidence": "All four propositions keep the identical visual constant: the single untouched lipstick cutout standing isolated on the source's neutral gray ground with only a floor contact shadow, while flat primitives are parked strictly behind it. Within that constant, c1 (one enlarged original-alpha silhouette offset behind), c3 (eight flat discs in a rising arc behind) and c4 (four窄 stepped champagne rectangles behind) produce the same actual visual event - a flat monochrome graphic shape or shape-stack hovering behind an isolated packshot - differing only in primitive type, count and arrangement, i.e. renamed materials and palette swaps, not different advertising ideas. c2 does stage a genuinely different event (a horizontal field division plus the single straight line intersected by the upright case and lying cap, reading the collar as hinge), so it survives. Execution audit: each concept uses one photographed product instance, no rotation, no diptych, no macro crop; primitive counts (1 silhouette; 1 rectangle + 1 line; 8 ellipses; 4 rectangles) sit inside the eight-primitive ceiling with the line budget spent only once; no efficacy, ingredient, price or newness claims; packaging, collar and bullet unaltered. Feasibility is therefore not the failure point - conceptual redundancy is.",
+    "collapse_groups": [
+      [
+        "c1-contour-echo",
+        "c3-pigment-constellation",
+        "c4-collateral-gauge"
+      ]
+    ],
+    "required_revision": "Keep c2 as the sole flat-geometry-behind-packshot direction. Rebuild two of the three collapsed concepts so the visible event changes category rather than primitive count: e.g. convert one into a source-compatible generated environment occupying the whole backdrop (gradient hero field or architectural plane corner with cast shadow logic consistent with the source's soft diffuse light, product still unrotated and fully visible), and convert another into a dense full-frame field event (flat ellipse discs filling the canvas around and behind the product as an environment, not a sparse arc), while retiring the offset-silhouette ghost or the stepped gauge entirely. Do not add slogans, brand history, relighting, second photographs, macro crops or diptychs; retain the locked title 'BEAUTY' as the only verbal layer count permits."
+  }
+}

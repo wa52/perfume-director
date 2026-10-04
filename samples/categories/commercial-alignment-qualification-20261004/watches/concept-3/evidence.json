@@ -1,0 +1,99 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 5,
+    "score": 85.7,
+    "pass": false,
+    "poster": "v5/poster.png",
+    "spec": "v5/PosterSpec.json",
+    "critic": "v5/Critic.json",
+    "review_error": null,
+    "sha256": "e263f43b8e2dc1dae89475df25ecb6f54f5c63b577ad2c8b53762377fc496542"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 83.3,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "88bc75356b1944d34348743c7fb00f48b11d5f85b8244f4a47f55382ab677786"
+    },
+    {
+      "version": 2,
+      "score": 84.0,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "3587c9fb05e9eccc07f700758ceb5402537d4b9f3e919b4cf3cfbc8e1c13b17c"
+    },
+    {
+      "version": 3,
+      "score": 84.7,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "ad0a668afd73188fd3347689c4dcce3cce25837e848772b5e9968dc54a726a9d"
+    },
+    {
+      "version": 4,
+      "score": 81.4,
+      "pass": false,
+      "poster": "v4/poster.png",
+      "spec": "v4/PosterSpec.json",
+      "critic": "v4/Critic.json",
+      "review_error": null,
+      "sha256": "9d318877e82755e459ebfa9183f95e0c8189bd91d9e2657477e403bdad1793e6"
+    },
+    {
+      "version": 5,
+      "score": 85.7,
+      "pass": false,
+      "poster": "v5/poster.png",
+      "spec": "v5/PosterSpec.json",
+      "critic": "v5/Critic.json",
+      "review_error": null,
+      "sha256": "e263f43b8e2dc1dae89475df25ecb6f54f5c63b577ad2c8b53762377fc496542"
+    }
+  ],
+  "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "poster_sha256": "e263f43b8e2dc1dae89475df25ecb6f54f5c63b577ad2c8b53762377fc496542",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+      "collapse_groups": [
+        [
+          "nika-rossiya-night-monument",
+          "nika-rossiya-winter-horizon"
+        ]
+      ],
+      "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+    }
+  }
+}

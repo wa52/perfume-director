@@ -1,0 +1,13 @@
+{
+  "pass": false,
+  "score": null,
+  "problems": [
+    {
+      "type": "review_unavailable",
+      "problem": "No validated Critic response; image retained for manual review"
+    }
+  ],
+  "changes": [],
+  "review_error": "URLError",
+  "source": "program_failure_record"
+}

@@ -1,0 +1,172 @@
+{
+  "pass": false,
+  "score": 84.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 80,
+    "typography": 84,
+    "background": 80,
+    "physical_integration": 89,
+    "reference_alignment": 76,
+    "creative_coherence": 86,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The base lockup is still skewed right of the ceremonial axis. Current subtitle bbox [464,1284,919,1310] centers at x=691.5 while title (center 587.5), logo (541) and the emblem rule (decoration x=367,w=346 -> center 540) sit on the 540 axis. In the contact-detail crop [166,1089,914,1339] the caption line visibly begins right of the rule's midpoint and runs to the right margin, so rule-then-caption reads as two competing diagonals instead of a stacked base lockup.",
+      "root_cause": "subtitle.x was set to 312 as if it were an upper-left origin, but with align:center the renderer centers the line on x itself, so x=312 pushed the line ~152px right of the axis.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set subtitle.x to the axis coordinate 540 (keep align center, max_width 760) so the wrapped line recenters under the rule; verified text width ~455px keeps both edges inside canvas."
+    },
+    {
+      "type": "background",
+      "problem": "The original-alpha silhouette double still emerges on the RIGHT of the watch (silhouette bbox right edge 880 vs product right edge 834; left edge 340 vs 246), while the declared Emblem Field direction specifies the double offset to the LEFT. As executed the dark #14163F form reads as an accidental drop shadow on the side opposite the upper-front-left key and it awkwardly clips the ellipse's right curve between y~350 and y~940.",
+      "root_cause": "The previous background.shapes correction was rejected by schema validation (empty placeholder objects), so the right-shifted silhouette primitive from the earlier draft persisted unchanged.",
+      "affected_layer": "scene",
+      "repair_strategy": "Resubmit background.shapes as a COMPLETE validated list of three objects with full fields, shifting only the product_silhouette left (x=152, y=353, w=540, h=835) so the counter-form appears on the shadow side; rectangle and ellipse keep their current coordinates."
+    },
+    {
+      "type": "typography",
+      "problem": "The ceremonial type axis is internally inconsistent: the title line '腕上的郑重徽记' bbox [304,79,871,154] centers at 587.5, i.e. 47px right of the logo/rule axis at 540-541, so the top of the poster tilts against the base lockup; the size-76 headline is now adequately scaled but its optical centering undercuts the heraldic symmetry the concept declares.",
+      "root_cause": "Title x was left at 304 from an earlier left-origin assumption while align is center, so the rendered line centers on 304 rather than on the emblem axis.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set title.x to 540 with align center and max_width 0 so the single headline line centers exactly on the logo/rule axis; no copy, size or tracking change needed."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review remains unresolved from the prior round (Night Monument and Winter Horizon collapse into one 'horizon band + pooled ellipse' mechanism); this sheet is retained only as a draft until that portfolio revision is executed.",
+      "root_cause": "Portfolio-level concept collapse, not a defect of this sheet's craft.",
+      "affected_layer": "brand",
+      "repair_strategy": "Rewrite one collapsed concept as a pure negative-space void (zero horizon rectangle, zero ground disc) or as a dial-grammar abstraction using only permitted flat ellipses/rectangles behind the cutout; keep Emblem Field's silhouette double and rule untouched."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 540
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 324,
+          "y": 288,
+          "width": 432,
+          "height": 1008,
+          "color": "#23265C",
+          "opacity": 1.0
+        },
+        {
+          "kind": "ellipse",
+          "x": 205,
+          "y": 346,
+          "width": 670,
+          "height": 893,
+          "color": "#3A3E8C",
+          "opacity": 0.9
+        },
+        {
+          "kind": "product_silhouette",
+          "x": 152,
+          "y": 353,
+          "width": 540,
+          "height": 835,
+          "color": "#14163F",
+          "opacity": 0.85
+        }
+      ]
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer renders exactly 'НИКА' at [489,194,593,217], matching the dial brand string and the locked copy set; no extra marks."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox [246,355,834,1229] reproduces the source packshot's case, dual crowns on the right flank, looped croc strap with tan lining, Roman indices, framed date under XII and РОССИЯ/КВАРЦ subdial without distortion or cropping; all bounds inside canvas."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares suspension on a printed pigment plane; contact-detail crop [166,1089,914,1339] shows the strap loop terminating over the ellipse field with the soft contact shadow (opacity 0.35, offset_y 0) present as a tight darkening under the strap edge, consistent with the declared no-floor presentation."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "No shape_geometry entry crosses a canvas edge; cutout edges against the ultramarine field are crisp with no halo or fringe in the enlarged crop."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source soft diffuse upper-front-left key is preserved on the polished case; the flat ink-flat field declares uniform diffuse illumination, so no cast-gradient conflict is introduced behind the opaque silhouette."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [304,79,871,154], logo [489,194,593,217] and subtitle [464,1284,919,1310] all lie fully within the 1080x1440 canvas."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; subtitle top 1284 sits below product base 1229 and below the rule at y=1236, so no layer intersects the product on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All text layers use C:/Windows/Fonts/msyh.ttc, an installed approved font with CJK and Cyrillic coverage for the locked strings."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА, РОССИЯ and the headline/subline strings match the dial's legible brand grammar exactly; no invented model numbers, certifications or gemstone grades; price intentionally empty."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'腕上的郑重徽记' (a solemn emblem on the wrist) names THIS heraldic-mounting proposition and the subline ties the named object to gifting; neither is an interchangeable luxury slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The watch is visibly mounted inside a constructed coat-of-arms field (tall rectangle + circular field + offset alpha silhouette double + emblem rule), an identifiable heraldic event rather than a plain packshot on color."
+    }
+  },
+  "reported_score": 83,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+      "collapse_groups": [
+        [
+          "nika-rossiya-night-monument",
+          "nika-rossiya-winter-horizon"
+        ]
+      ],
+      "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+    }
+  }
+}

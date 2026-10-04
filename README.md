@@ -356,3 +356,14 @@ GLM-5.3-Flash 的完整第二款商品批次已完成：4/4 出图，13 个版�
 ## Complete beverage campaign studies
 
 [Four complete posters, actual scene refinement and Qwen whole-poster reviews](samples/campaigns/beverage-four-20261003/gallery.html). Guided art-direction experiment; one model-accepted study, no commercial release approval. Execution details and remaining issues are recorded in the sample REPORT.md.
+
+## 服装细分类别实测（2026-10-04）
+
+准备了男装7类、女装9类，共16个独立真实输入。通过同一个 ClothingDirectorLoop 串行运行，每类请求四个方向；实际创意/文案审核可能在出图前淘汰任务。测试是一次单商品覆盖，不代表每类已稳定或商业通过。见[动态覆盖报告](samples/categories/clothing-subtypes-20261004/REPORT.md)、[实际成图画廊](samples/categories/clothing-subtypes-20261004/gallery.html)与[测试商品及来源](assets/products/clothing/subtypes/manifest.json)。男西装使用保留原人物的摄影，其余主要为单件商品；男女分类是测试简报指定的销售受众，不代表厂家尺码或版型认证。半裙原图碎边、运动上衣低分辨率等输入限制均单独保留。
+
+```powershell
+python run_category_matrix.py --comfy-url http://127.0.0.1:8191 --tag clothing-subtypes-20261004 --manifest assets/products/clothing/subtypes/manifest.json --categories menswear womenswear
+python report_clothing_subtypes.py --watch
+```
+
+相同tag恢复已有任务，不重复提交。每个衣型使用独立case_id、receipt、输入SHA与输出目录。已有终止失败不会自动冒充复测；再次试验须使用新tag。上一轮七类别全批已结束：[实际报告](samples/categories/commercial-alignment-qualification-20261004/REPORT.md)，24张选中稿均未通过商业门槛，男T恤在文案阶段失败。

@@ -1,0 +1,32 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "f61ae887b8c0415b814ce8d3d10f7235.png"
+      }
+    },
+    "2": {
+      "class_type": "ProductDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "skincare",
+        "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "0a24b567-ffcc-4a71-a224-2fd43b58f5b1",
+    "number": 77,
+    "node_errors": {}
+  },
+  "input_sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+  "comfy_url": "http://127.0.0.1:8191"
+}

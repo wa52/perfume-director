@@ -15,6 +15,14 @@ from categories import PROFILES, CLOTHING_CATEGORIES, GARMENT_TYPES
 ROOT=Path(__file__).resolve().parent
 
 
+def case_key(product):
+    """Keep subtype fixtures isolated while preserving historic category paths."""
+    key=product.get('case_id',product['product_category'])
+    if not isinstance(key,str) or not key or not key.replace('-','').replace('_','').isalnum():
+        raise ValueError('Invalid case_id')
+    return key
+
+
 def request(base,route,payload=None):
     if payload is None:
         return json.loads(poster.comfy_get(base+route,time.monotonic()+30))
@@ -49,13 +57,13 @@ def submit_once(base,product,target):
 def export(folder,records):
     cards=[]
     for record in records:
-        category=record['product_category'];items=[]
+        category=record['product_category'];key=case_key(record);items=[]
         for item in record.get('directions',[]):
             run=Path(item.get('run_dir','')).resolve()
             if 'selected' not in item or not run.is_relative_to(ROOT/'runs'):continue
             source=(run/item['selected']['poster']).resolve()
             if not source.is_relative_to(run):raise ValueError('Unsafe selected path')
-            target=folder/category/item['id'];target.mkdir(parents=True,exist_ok=True)
+            target=folder/key/item['id'];target.mkdir(parents=True,exist_ok=True)
             with Image.open(source) as image:image.convert('RGB').save(target/'poster.jpg',quality=95)
             selected=item['selected'];version=run/('v'+str(selected['version']))
             shutil.copyfile(source,target/'poster.png')
@@ -66,10 +74,10 @@ def export(folder,records):
                 'quality_profile':record.get('quality_profile'),
                 'commercial_gate':poster.read(version/'CommercialGate.json') if (version/'CommercialGate.json').exists() else None}
             poster.write(target/'evidence.json',evidence)
-            items.append('<article><img src="'+category+'/'+item['id']+'/poster.jpg"><p>'+html.escape(item['name'])+'</p><small>'+html.escape(item['status'])+'</small></article>')
+            items.append('<article><img src="'+key+'/'+item['id']+'/poster.jpg"><p>'+html.escape(item['name'])+'</p><small>'+html.escape(item['status'])+'</small></article>')
         label=PROFILES[category]['label']+(' · '+GARMENT_TYPES[record.get('garment_type','auto')] if category in CLOTHING_CATEGORIES else '')
         cards.append('<section><h2>'+label+'</h2><p>'+html.escape(record.get('stage') or record['status'])+'</p><div class="grid">'+''.join(items)+'</div></section>')
-    summary=[{'product_category':r['product_category'],'status':r['status'],'stage':r.get('stage'),'job_id':r.get('job_id'),
+    summary=[{'case_id':case_key(r),'product_category':r['product_category'],'garment_type':r.get('garment_type'),'status':r['status'],'stage':r.get('stage'),'job_id':r.get('job_id'),
         'quality_profile':r.get('quality_profile'),'commercial_target':r.get('commercial_target'),
         'selected_directions':len([d for d in r.get('directions',[]) if 'selected' in d]),
         'model_pass_directions':sum(d['status']=='PASS' for d in r.get('directions',[]))} for r in records]
@@ -83,7 +91,7 @@ def main():
     parser.add_argument('--tag',default='categories-20261003')
     parser.add_argument('--wait-for-kb',action='store_true')
     parser.add_argument('--categories',nargs='+',choices=list(PROFILES))
-    parser.add_argument('--manifest',help='Project-local JSON list, one representative product per category')
+    parser.add_argument('--manifest',help='Project-local JSON list; repeated categories require distinct case_id values')
     args=parser.parse_args()
     if not args.tag.replace('-','').isalnum():raise ValueError('Invalid tag')
     folder=ROOT/'samples/categories'/args.tag;folder.mkdir(parents=True,exist_ok=True)
@@ -97,17 +105,17 @@ def main():
         manifest=(ROOT/args.manifest).resolve()
         if not manifest.is_relative_to(ROOT/'assets/products'):raise ValueError('Manifest must be inside project assets/products')
         products=poster.read(manifest)
-        if not isinstance(products,list) or not products or len({p['product_category'] for p in products})!=len(products):raise ValueError('One representative per category required')
+        if not isinstance(products,list) or not products or len({case_key(p) for p in products})!=len(products):raise ValueError('Unique case_id required for each product')
         for product in products:poster.categories_module().profile(product)
     elif args.categories and any(category in CLOTHING_CATEGORIES for category in args.categories):
         products+=poster.read(ROOT/'assets/products/clothing/products.json')
     if args.categories:
         for item in products:
-            saved=folder/item['product_category']/'state.json'
+            saved=folder/case_key(item)/'state.json'
             if item['product_category'] not in args.categories and saved.exists():records.append(poster.read(saved))
         products=[item for item in products if item['product_category'] in args.categories]
     for product in products:
-        category=product['product_category'];target=folder/category;target.mkdir(exist_ok=True)
+        category=product['product_category'];target=folder/case_key(product);target.mkdir(exist_ok=True)
         saved=target/'state.json'
         state=poster.read(saved) if saved.exists() else {**product,'input_sha256':product['sha256'],'status':'QUEUED'}
         if state.get('input_sha256')!=product['sha256']:

@@ -1,0 +1,125 @@
+{
+  "pass": false,
+  "score": 89.3,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 88,
+    "typography": 89,
+    "background": 87,
+    "physical_integration": 90,
+    "reference_alignment": 84,
+    "creative_coherence": 91,
+    "brand_alignment": 89
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The regenerated plane now delivers the diagonal axis and darker corners, but the upper-left light origin blooms into a desaturated gray-mauve haze directly behind the masthead (title bbox [65,86,693,173] sits inside the brightest zone of the sweep). Ivory #F4EDE2 type over that lifted value loses the lacquer深度 the concept declares ('ivory ink against lacquer'); at poster scale the top-left reads as fogged灰色 rather than polished cherry, and the corner-to-core value structure still trails references 3-5, whose planes keep saturated color even in their lit zones (ref 3's violet gradient, ref 4's暖 plane corners).",
+      "root_cause": "Prompt specifies the light axis and near-black corners but never constrains hue saturation inside the lit sweep, so the generator desaturates the highlight toward gray where the masthead lives.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate background with the same single diagonal axis but require the lit sweep to stay a saturated warm cherry glow (no gray or mauve fog), keep near-black falloff at all four corners, smooth polished lacquer, no horizon, texture, props or equipment; type column then regains full ivory-on-lacquer contrast without moving any text."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Campaign-level four-proposition review remains unresolved: c1/c3/c4 were judged one collapsed event class (flat primitives parked behind an isolated packshot on the source ground). This poster's gauge now reads cleanly (top step exposed run ~120px clear of the bullet at x760-880), but no evidence of sibling rebuild or reclassification is present in this submission, so the draft-retention flag persists.",
+      "root_cause": "Campaign pool management, not this poster's craft: c4 shares the 'flat shape stack behind cutout' constant with c1 and c3.",
+      "affected_layer": "scene",
+      "repair_strategy": "At campaign level keep c2 and rebuild two collapsed siblings into different event categories (full-field generated environment with source-consistent cast logic; dense full-frame disc field), or file written differentiation reclassifying c4's stepped calibration gauge as distinct; this poster needs no concept change."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft",
+      "root_cause": "Campaign pool redundancy flag carried from the review record.",
+      "affected_layer": "scene",
+      "repair_strategy": "Resolve via campaign-level rebuild/reclassification described above; retain this execution as the c4 master once siblings differ in event category."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty deep-cherry lacquer ink plane, perfectly smooth polished surface, one dominant soft light axis raking from the upper-left corner diagonally toward the lower-right as a saturated warm cherry glow that never desaturates to gray or mauve, no secondary bloom, near-black value falloff pressing in at all four corners, no horizon, no texture, no props, no equipment"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer intentionally empty per copy_policy intentional_empty_layers; no mark appears on poster or artifact, matching the unbranded material-house evidence."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox [104,418,804,1311] matches source image 2 exactly: cherry case and cap, champagne collar with specular streaks, brick bullet, lying cap with dark open cavity; no rotation, crop or duplicate instance."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [24,1171,884,1421] shows soft dark seating shadows hugging both bases (cap base y~1278, case base y~1311); shadow offset_y=0 is correct contact for the declared near-shadowless graphic seating; no floating."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Gauge right edges max x=960 <1080; product margins left 104, right 276, base 1311 within 94% limit (1353); no shape or text bbox crosses a canvas edge; occlusion of bar left runs by the bullet is silhouette overlap, not clipping."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Even frontal poster illumination with soft diagonal wash matches source soft diffuse light and baked speculars; contact shadows sit directly under bases with no conflicting cast direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [65,86,693,173] and subtitle bbox [65,210,600,236] fully inside canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap false for title and subtitle; neither intersects product bbox on both axes; gauge bars sit right of the type column at x>=620."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc is on the approved installed list and renders all Chinese glyphs cleanly at 92px title and 28px subtitle."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "No brand name claimed anywhere; only permitted copy appears, consistent with evidence that the artifact carries no legible mark."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '以毫厘,度万物' and subtitle naming the polished collar as the calibration origin state exactly this poster's Collateral Gauge proposition; not interchangeable slogan copy."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The stepped champagne gauge emerging from behind the case at collar height is plainly visible; all four steps now read as a decreasing staircase (exposed runs ~120/150/168/200px) anchored by the real polished band, delivering the climb-and-drop calibration event."
+    }
+  },
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual constant: the single untouched lipstick cutout standing isolated on the source's neutral gray ground with only a floor contact shadow, while flat primitives are parked strictly behind it. Within that constant, c1 (one enlarged original-alpha silhouette offset behind), c3 (eight flat discs in a rising arc behind) and c4 (four窄 stepped champagne rectangles behind) produce the same actual visual event - a flat monochrome graphic shape or shape-stack hovering behind an isolated packshot - differing only in primitive type, count and arrangement, i.e. renamed materials and palette swaps, not different advertising ideas. c2 does stage a genuinely different event (a horizontal field division plus the single straight line intersected by the upright case and lying cap, reading the collar as hinge), so it survives. Execution audit: each concept uses one photographed product instance, no rotation, no diptych, no macro crop; primitive counts (1 silhouette; 1 rectangle + 1 line; 8 ellipses; 4 rectangles) sit inside the eight-primitive ceiling with the line budget spent only once; no efficacy, ingredient, price or newness claims; packaging, collar and bullet unaltered. Feasibility is therefore not the failure point - conceptual redundancy is.",
+      "collapse_groups": [
+        [
+          "c1-contour-echo",
+          "c3-pigment-constellation",
+          "c4-collateral-gauge"
+        ]
+      ],
+      "required_revision": "Keep c2 as the sole flat-geometry-behind-packshot direction. Rebuild two of the three collapsed concepts so the visible event changes category rather than primitive count: e.g. convert one into a source-compatible generated environment occupying the whole backdrop (gradient hero field or architectural plane corner with cast shadow logic consistent with the source's soft diffuse light, product still unrotated and fully visible), and convert another into a dense full-frame field event (flat ellipse discs filling the canvas around and behind the product as an environment, not a sparse arc), while retiring the offset-silhouette ghost or the stepped gauge entirely. Do not add slogans, brand history, relighting, second photographs, macro crops or diptychs; retain the locked title 'BEAUTY' as the only verbal layer count permits."
+    }
+  },
+  "reported_score": 87.9
+}

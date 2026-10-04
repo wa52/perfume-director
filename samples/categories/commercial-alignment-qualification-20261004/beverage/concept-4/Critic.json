@@ -1,0 +1,167 @@
+{
+  "pass": false,
+  "score": 81.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 82,
+    "typography": 85,
+    "background": 74,
+    "physical_integration": 78,
+    "reference_alignment": 74,
+    "creative_coherence": 81,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "edge_halo",
+      "problem": "In the contact crop (image 6) a thin pale-grey fringe still traces the cutout contour: it wraps the base heel at y=1131 and runs up the right flank, and the same light outline reads around the shoulders and lower body in the full poster (image 1). Against the #232E36-family slate this residue of the source studio backdrop exposes the paste-in. The previous silhouette-mask fix was rejected (empty {} object in background.shapes), so nothing changed at the contour.",
+      "root_cause": "Cutout alpha edge retains light-grey studio backdrop pixels; no defringe step exists and the scene value at the contour is mid-tone slate, so the fringe stays visible.",
+      "affected_layer": "product",
+      "repair_strategy": "Mask scenically with a valid bounded primitive: set background.shapes to a COMPLETE list containing exactly one product_silhouette object {kind:'product_silhouette', x:342, y:481, width:180, height:650, color:'#1A2228', opacity:0.55} so the halo falls on a dark contour-matched field behind the cutout instead of mid-tone slate."
+    },
+    {
+      "type": "horizon_interference",
+      "problem": "The hard sky-to-slate seam at y≈745 still slices the hero exactly at the top edge of the red label band (label spans roughly y=735-840), so the strongest brand color block sits on the highest-contrast line in the frame; the eye hits the seam before the script. The pale mist band y≈260-740 also remains a large empty field while the headline column ends at y≈304.",
+      "root_cause": "The background regeneration that would lower the mirror-film ground was rejected last round (group failed with the invalid shapes list), so the generated horizon stayed at label height; hero base is fixed at 1131 by geometry.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with background.prompt alone (no shapes in the same group): keep the rain-washed slate concept but form the continuous mirror-film ground low in frame (around three-quarters height) so the seam falls below the label band, uniform cool overcast ambient, no sun, no glow disc, no objects, no equipment, no text."
+    },
+    {
+      "type": "missing_floor_reflection",
+      "problem": "The declared material is rain-slick slate with a shallow mirror film, yet in the contact crop (image 6) and under the hero in image 1 there is only the soft contact shade at y=1131 and zero mirrored bottle return; the surrounding floor shows a diffuse sheen gradient only. A mirror film that reflects ambient sky but not the object standing in it leaves the base reading as placed-on rather than standing-in.",
+      "root_cause": "Contact shade plus the accepted cast patch (cast_length_ratio 0.18, opacity 0.28, blur 34) still render too short and too faint to read as a wet return at this floor value; the generated film is satin, not mirror.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Keep shadow.offset_y 0 (contact is correct) and push the supported wet-return bounds to their ceiling: integration_plan.cast_length_ratio 0.20 and cast_opacity 0.30 with cast_blur 34, together with the darker contour field from the silhouette patch so the return reads against a darker ground."
+    },
+    {
+      "type": "column_rhythm_gap",
+      "problem": "The right-hand stack now closes better (subtitle at 28px wraps to two lines, y=230-304, giving the column real mass), but between the subtitle baseline at y≈304 and the script logo at y=1296 there is still ~990px of unmodulated space, so the declared corner-locked grid reads as two fragments (top block + lone signature) rather than one column answering the offset hero; references 3-5 keep a continuous tonal or object anchor between type blocks.",
+      "root_cause": "No intermediate anchor exists in the mid-frame; the mist band is empty and the hero sits left, leaving the right mid-column vacant.",
+      "affected_layer": "typography",
+      "repair_strategy": "Do not invent copy. Restore rhythm graphically: enable decoration as a slim vertical rule in palette ink (#EDF2F4) on the right column axis (decoration.enabled true, x near 1006, y near 360, width 4-6 equivalent via given width field) OR rely on the lowered horizon plus darker contour field to modulate the mid-frame; keep exact copy, right align and current sizes."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {}
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty rain-washed night street: dark slate paving with a shallow mirror-water film forming a continuous ground starting low in frame near three quarters height, thin falling rain curtain in the far distance, uniform cool overcast ambient light, no sun, no glow disc, no point light, no horizon seam at mid height, no objects, no equipment, no text"
+    },
+    {
+      "path": "integration_plan.cast_length_ratio",
+      "op": "set",
+      "value": 0.2
+    },
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.3
+    },
+    {
+      "path": "integration_plan.cast_blur",
+      "op": "set",
+      "value": 34
+    },
+    {
+      "path": "decoration.enabled",
+      "op": "set",
+      "value": true
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 1006
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 360
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 80
+    },
+    {
+      "path": "decoration.color",
+      "op": "set",
+      "value": "#EDF2F4"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Lower-right 'Coca-Cola' at bbox 842,1296,1031,1325 in Bodoni-style script matches the authorized logo text; the bottle label carries the matching white Spencerian script and 'ORIGINAL TASTE' line."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster bottle contour, crown cap, red band, amber liquid and observed condensation match image 2 exactly; product_bbox 342,481,522,1131 fully inside the 1080x1440 canvas, no clipping."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop (image 6) shows the soft dark contact shade hugging the base heel at y=1131 with shadow.offset_y 0; base sits above the bottom edge per policy, no floating claim warranted."
+    },
+    "edges_clean": {
+      "ok": false,
+      "evidence": "Thin pale fringe along the right flank and wrapping the base heel in the contact crop against dark slate; the same halo traces the shoulders in the full poster."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Scene is uniform cool overcast ambient with no sun disc or warm streak, matching the cutout's neutral frontal studio light and vertical specular streaks on neck and shoulders."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 454,101,976,157; subtitle 473,230,1020,304; logo 842,1296,1031,1325 - all inside canvas bounds."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no pairwise text bbox intersections on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc, msyh.ttc and BOD_R.TTF all appear in the approved installed font list."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Coca-Cola' and label 'ORIGINAL TASTE' spelled per brand evidence; no invented flavour, ingredient or efficacy claims in copy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '雨刚停,凉意先到了' and the subtitle about the beads already standing on the glass express exactly this after-rain proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Wet slate and distant rain curtain framing a dry, beaded bottle is an identifiable event: the shower surrounds while the observed condensation testifies to coolness."
+    }
+  },
+  "reported_score": 80.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:edges_clean",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

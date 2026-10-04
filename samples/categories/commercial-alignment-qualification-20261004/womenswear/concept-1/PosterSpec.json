@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 88472832193184,
+  "background": {
+    "color": "#EEF1F3",
+    "prompt": "Flat matte near-white cool-grey drafting paper stock at value #EEF1F3, faint fibre grain, perfectly uniform shadowless frontal illumination, no objects, no horizon, no gradient, no vignette, paper clearly lighter than any printed band",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 430,
+        "width": 1080,
+        "height": 1010,
+        "color": "#DCE6EC",
+        "opacity": 0.95
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 660,
+        "width": 1080,
+        "height": 780,
+        "color": "#BFD4E0",
+        "opacity": 0.95
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 830,
+        "width": 1080,
+        "height": 610,
+        "color": "#9FBFD4",
+        "opacity": 0.95
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 1010,
+        "width": 1080,
+        "height": 430,
+        "color": "#122B57",
+        "opacity": 0.92
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 1267,
+        "width": 1080,
+        "height": 173,
+        "color": "#3E7CB8",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 792,
+    "width": 720,
+    "height": 950
+  },
+  "lighting": "perfectly even shadowless poster illumination, crisp band edges, no gradient, matching the source's diffuse frontal brightness",
+  "palette": [
+    "#EEF1F3",
+    "#122B57",
+    "#3E7CB8"
+  ],
+  "title": {
+    "text": "好比例,经得起丈量",
+    "x": 76,
+    "y": 79,
+    "size": 100,
+    "color": "#122B57",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "领口、腰线、裙摆,每条线都落在该在的位置。",
+    "x": 76,
+    "y": 213,
+    "size": 30,
+    "color": "#122B57",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#122B57",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "",
+    "x": 76,
+    "y": 79,
+    "size": 86,
+    "color": "#122B57",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 424,
+    "width": 1004,
+    "color": "#3E7CB8"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "none, flat graphic paper field",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 8
+  },
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

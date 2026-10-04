@@ -1,0 +1,99 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 5,
+    "score": 88.4,
+    "pass": false,
+    "poster": "v5/poster.png",
+    "spec": "v5/PosterSpec.json",
+    "critic": "v5/Critic.json",
+    "review_error": null,
+    "sha256": "a9a2b6fcebf928a7e5ee3cb87955424a4538fed4bb75023a9692540284461859"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 79.1,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "6c2c51c28a07d3c2dfa80a313465f6aacb4e96c94334a3abe4508fb38418d8a4"
+    },
+    {
+      "version": 2,
+      "score": 80.0,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "5970232199d98cdea17d5cecf5ceee4875eb16d03a3a7f1dc5106d4e27cf0774"
+    },
+    {
+      "version": 3,
+      "score": 80.9,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "81964ed32ef6c5673b391d5dbb663e6d02962b6c986286f55b8e98f42dcec488"
+    },
+    {
+      "version": 4,
+      "score": 87.0,
+      "pass": false,
+      "poster": "v4/poster.png",
+      "spec": "v4/PosterSpec.json",
+      "critic": "v4/Critic.json",
+      "review_error": null,
+      "sha256": "519e8af7435608f37ccd9abcf40294564451705a08c9953a50219aade0510b55"
+    },
+    {
+      "version": 5,
+      "score": 88.4,
+      "pass": false,
+      "poster": "v5/poster.png",
+      "spec": "v5/PosterSpec.json",
+      "critic": "v5/Critic.json",
+      "review_error": null,
+      "sha256": "a9a2b6fcebf928a7e5ee3cb87955424a4538fed4bb75023a9692540284461859"
+    }
+  ],
+  "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+  "poster_sha256": "a9a2b6fcebf928a7e5ee3cb87955424a4538fed4bb75023a9692540284461859",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual stage: one unrotated floating cutout on a neutral field, shadow.opacity 0, no context, no wearer; only the flat primitives behind it change. Judging mechanisms, not names: c2 (one oversized ellipse) and c3 (two rectangles meeting at the bodice-to-skirt seam) produce the same visible event - opaque bodice/hem blocks a flat field while the sheer ruffle tiers transmit and tint toward it - differing only in primitive count and shape, i.e. a palette/geometry rename of one figure-ground transparency idea. c1 (five landmark-locked horizontal bands) and c3 (one landmark-locked horizon) are the same device again: hard graphic edges registered onto garment seams behind the cutout, c3 merely using fewer edges. c4's offset original-alpha silhouette is the only genuinely different event (misregistered graphic double versus photographed material). Net: one transparency/edge-registration packshot idea stated three times plus one silhouette-echo idea.",
+      "collapse_groups": [
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      ],
+      "required_revision": "Keep c4 as one voice. Rebuild the collapsed group into materially different events within the stated toolkit: (a) retain c1 only as the multi-edge calibration instrument with legible band intervals; (b) replace c2's ellipse with a non-field event, e.g. an editorial narrative or source-compatible photographic context that does not rely on sheer-zone transmission over a flat mass; (c) replace c3's split-plane with a purposeful brand-graphic event that does not register edges onto seams (e.g. the single straight decoration line used structurally across the canvas, independent of garment landmarks). No new slogans, no second photographed product, no macro plates, no diptych, no rotation, no relighting, shadow.opacity stays 0, and no wearer may be generated."
+    }
+  }
+}

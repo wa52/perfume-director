@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 124622061342550,
+  "background": {
+    "color": "#DFE3E8",
+    "prompt": "Flat cool light-grey archival rag paper field with faint fibre tooth, uniform matte diffuse illumination, completely empty document plane, no horizon, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 86,
+        "y": 86,
+        "width": 908,
+        "height": 136,
+        "color": "#5A6672",
+        "opacity": 0.11
+      },
+      {
+        "kind": "rectangle",
+        "x": 86,
+        "y": 208,
+        "width": 908,
+        "height": 3,
+        "color": "#5A6672",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 86,
+        "y": 219,
+        "width": 150,
+        "height": 3,
+        "color": "#5A6672",
+        "opacity": 0.55
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 745,
+    "width": 544,
+    "height": 806
+  },
+  "lighting": "Even archival diffuse illumination, no cast gradient, flat document plane with no horizon",
+  "palette": [
+    "#DFE3E8",
+    "#101418",
+    "#5A6672"
+  ],
+  "title": {
+    "text": "三行名字即档案",
+    "x": 86,
+    "y": 86,
+    "size": 70,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 7,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "НИКА·РОССИЯ·КВАРЦ，照表盘原样抄录。",
+    "x": 86,
+    "y": 1276,
+    "size": 30,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 3,
+    "max_width": 760,
+    "line_height": 1.35,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 864,
+    "y": 98,
+    "size": 30,
+    "color": "#101418",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 208,
+    "width": 908,
+    "color": "#5A6672"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "left",
+    "ground_material": "flat archival paper plane, no floor",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

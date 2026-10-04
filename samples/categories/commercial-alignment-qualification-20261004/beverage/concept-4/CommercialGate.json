@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "pass": false,
+  "failures": [
+    "dimension:physical_integration",
+    "dimension:typography",
+    "dimension:composition",
+    "dimension:creative_coherence",
+    "check:edges_clean",
+    "unresolved_review",
+    "critic_not_approved"
+  ],
+  "thresholds": {
+    "product_fidelity": 95,
+    "physical_integration": 88,
+    "typography": 88,
+    "composition": 88,
+    "brand_alignment": 85,
+    "creative_coherence": 88
+  },
+  "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+}

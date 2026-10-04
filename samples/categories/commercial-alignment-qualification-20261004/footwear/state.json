@@ -1,0 +1,23 @@
+{
+  "id": "footwear-pilot",
+  "product_category": "footwear",
+  "local_path": "assets/products/categories/footwear.png",
+  "source_url": "https://pngimg.com/images/sport/running_shoes",
+  "image_url": "https://pngimg.com/uploads/running_shoes/running_shoes_PNG5824.png",
+  "sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+  "width": 1276,
+  "height": 877,
+  "caption": "Nike Running Shoes realistic PNG image",
+  "rights_status": "research_only; original rights retained; commercial reuse unverified",
+  "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+  "input_sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+  "status": "COMPLETED",
+  "job_id": "b3ffeaea93f84fbbb15bbbd32d00a443",
+  "stage": "FINISHED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\b633a3151b99",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_target": "campaign_candidate",
+  "direction_index": 4,
+  "direction_name": "Distant Fairway",
+  "version": 3
+}

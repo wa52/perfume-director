@@ -1,0 +1,32 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "af6efc057b914e16be230b2055545bf5.png"
+      }
+    },
+    "2": {
+      "class_type": "ProductDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "beverage",
+        "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "e64a9f6a-e81d-43b6-9345-23a33460eccc",
+    "number": 60,
+    "node_errors": {}
+  },
+  "input_sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "comfy_url": "http://127.0.0.1:8191"
+}

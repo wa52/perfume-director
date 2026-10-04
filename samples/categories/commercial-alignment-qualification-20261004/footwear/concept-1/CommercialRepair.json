@@ -1,0 +1,50 @@
+{
+  "changes": [
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.28
+    },
+    {
+      "path": "integration_plan.cast_length_ratio",
+      "op": "set",
+      "value": 0.08
+    },
+    {
+      "path": "integration_plan.cast_blur",
+      "op": "set",
+      "value": 36
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": []
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Continuous horizontal ground plane of matte dark teal-grey film densely covered edge to edge with macro-visible rounded condensation droplets three to eight pixels wide, every droplet from the horizon line to the bottom edge carrying one crisp white specular dot, identical bead scale and specular dot density in the mid-field between the horizon and the lower third as in the foreground, no smooth bare band, no uniform noise-only region and no luminance seam anywhere, meeting a flat pale silver-grey mist field of perfectly even luminance with no rectangular overlay edge at a perfectly horizontal horizon, uniform diffuse overcast illumination from above-front only, low contrast, cool neutral tone throughout, empty scene, no objects"
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 96
+    }
+  ],
+  "does_not_grant_pass": true
+}

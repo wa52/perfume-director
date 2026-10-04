@@ -1,0 +1,167 @@
+{
+  "pass": false,
+  "score": 79.7,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 74,
+    "typography": 78,
+    "background": 72,
+    "physical_integration": 88,
+    "reference_alignment": 70,
+    "creative_coherence": 80,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "concept_execution_failure",
+      "problem": "The stride-echo mechanism is only half legible. Geometry and image 1 confirm both echoes now trail the heel (navy x=4, lime x=36, bases 979 on the rule at y=980), but the navy echo at opacity 0.34 over the #2E3134 sheet renders as a barely-visible dark band at the far left heel and as a faint tongue bump at ~(230,640); only the lime echo reads clearly. A two-frame stride needs two readable frames; today the poster shows one echo plus a smudge, so 'frames of a stride' still under-delivers.",
+      "root_cause": "Navy #1B2F4E at 0.34 opacity on a near-black field has insufficient value separation to function as an independent motion frame.",
+      "affected_layer": "scene",
+      "repair_strategy": "Raise the navy echo opacity to 0.55 (keep lime at 0.5) in one complete background.shapes set so both backward steps read as distinct ink densities on the charcoal sheet."
+    },
+    {
+      "type": "composition_weakness",
+      "problem": "Vertical distribution is still unbalanced: the band y=140..560 carries nothing but empty charcoal, and the band y=990..1440 (31% of canvas height) is completely inert below the rule. The type column floats at mid-right with ~80px of dead space above the title and no element tying the column to the rule terminal at x=1004. References (Converse lockup hugging the hero, Puma's filled diagonal) keep negative space activated; here the emptiness is passive, not composed.",
+      "root_cause": "Title/subtitle were size-tuned but never vertically integrated with the product cluster; the rule was raised to the base line but the type column was left at its old mid-height.",
+      "affected_layer": "typography",
+      "repair_strategy": "Lower the type column toward the product band (title.y 620, subtitle.y 724) so headline, shoe cluster and rule form one diagonal read, and lift the whole cluster slightly is NOT needed; instead let the column sit in the product's vertical zone to close the top and bottom dead bands."
+    },
+    {
+      "type": "hierarchy_weakness",
+      "problem": "Title bbox [756,560,1030,603] is 274px wide at 44px against a 650px-wide hero cluster; the headline reads as a caption, not a lockup. The 22px subtitle at 280px wrap is legible but whisper-quiet. Against the reference lockup scale (Converse wordmark spanning ~40% of width) the type block is undersized for a 1080px sheet.",
+      "root_cause": "Previous size increases were partially rolled back by the rejected patch cycle; current sizes remain at safety-tuned values.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set title.size 52 (6 CJK glyphs ≈ 312px wide from x=756, right edge ≈1068, inside canvas) and subtitle.size 24 with max_width 300 to keep two clean wrapped lines."
+    },
+    {
+      "type": "background_value_flatness",
+      "problem": "The regenerated sheet is correctly dark now (#2E3134) but renders as a uniform flat void with only faint grain; the declared 'printed poster sheet' material gives no tonal event behind the hero, so the cutout still feels pasted rather than printed-into the sheet. References each supply one strong field event (water droplets, arc gradients, spotlight pool).",
+      "root_cause": "Background prompt removed all depth cues without replacing them with a graphic material event compatible with flat print.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with a prompt describing a matte charcoal sheet with a very subtle large-format ink roller texture and one soft broad tonal band behind the product zone, still no horizon, no objects, uniform graphic illumination."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "product_silhouette",
+          "x": 4,
+          "y": 633,
+          "width": 650,
+          "height": 346,
+          "color": "#1B2F4E",
+          "opacity": 0.55
+        },
+        {
+          "kind": "product_silhouette",
+          "x": 36,
+          "y": 633,
+          "width": 650,
+          "height": 346,
+          "color": "#8FE388",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 52
+    },
+    {
+      "path": "title.y",
+      "op": "set",
+      "value": 620
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 24
+    },
+    {
+      "path": "subtitle.y",
+      "op": "set",
+      "value": 724
+    },
+    {
+      "path": "subtitle.max_width",
+      "op": "set",
+      "value": 300
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Flat matte charcoal printed poster sheet near ink black, fine uniform poster grain plus one very subtle broad horizontal ink-roller tonal band across the middle third, uniform graphic illumination, no horizon, no depth cues, no objects"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Cream 'Nike' wordmark at [76,101,157,132], undistorted, matches locked copy string."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Cutout keeps spike-lug outsole, stitching, white laces, toe and heel identical to source photo; bbox [64,633,714,979] interior, crosses_canvas_edge false for both silhouettes."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [0,839,794,1089] shows soft dark contact shadow hugging heel and forefoot lugs at offset_y 0 on the declared flat printed sheet; graphic suspension intentional, echo lugs meet the rule at y=980 without dangling gap."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry crosses_canvas_edge false; rule x=76..1004 and all text bboxes inside canvas with margins."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Uniform flat printed illumination matches source diffuse studio light; no conflicting cast direction; contact shadow only, as declared."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [756,560,1030,603], subtitle [756,664,1030,716], logo [76,101,157,132] all fully inside 1080x1440."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle, logo; no both-axis intersection with product bbox."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc on all text layers, in approved list, CJK glyphs render correctly."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Nike' spelled correctly; no model name, price, performance or athlete claims added."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'每一步都算数' plus the commuter subline speak directly to the trace-line motion-as-memory proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Lime echo trailing the heel plus lug scallops stepping down onto the lime rule at the base line now read as a backward stride frame that the intact photo completes at its front edge; navy frame still faint, noted as a problem but the trajectory event is visible."
+    }
+  },
+  "reported_score": 77.8,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

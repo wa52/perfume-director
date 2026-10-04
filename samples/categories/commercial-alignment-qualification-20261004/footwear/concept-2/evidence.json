@@ -1,0 +1,66 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 3,
+    "score": 89.4,
+    "pass": false,
+    "poster": "v3/poster.png",
+    "spec": "v3/PosterSpec.json",
+    "critic": "v3/Critic.json",
+    "review_error": null,
+    "sha256": "73cc7d281d1c30b0c4f795243bb08c07a47464b04b7ebd23150421fe7eff5465"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 85.1,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "91c37228333164a158349e072b2f18109f35cfaad7160502eecae37cc12577cb"
+    },
+    {
+      "version": 2,
+      "score": 86.7,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "53404e83c17ff77ed2324174b4b390c36e786d2ffaa66a7cb289d206e1d09ec4"
+    },
+    {
+      "version": 3,
+      "score": 89.4,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "73cc7d281d1c30b0c4f795243bb08c07a47464b04b7ebd23150421fe7eff5465"
+    }
+  ],
+  "input_sha256": "4e33afc03f8b6cc8f19a41ea3ba55c52674b53870972551db8c4f62ab575bd50",
+  "poster_sha256": "73cc7d281d1c30b0c4f795243bb08c07a47464b04b7ebd23150421fe7eff5465",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "social_ad",
+    "target": "campaign_candidate"
+  }
+}

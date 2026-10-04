@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 124622061341541,
+  "background": {
+    "color": "#EAF2F6",
+    "prompt": "Empty smooth matte carton stock under uniform diffuse print light, no objects, no horizon, no stripes, no gradients, no texture; pure flat unprinted surface only",
+    "revision": 4,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 864,
+        "color": "#EAF2F6",
+        "opacity": 1.0
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 864,
+        "width": 1080,
+        "height": 576,
+        "color": "#1D4258",
+        "opacity": 1.0
+      },
+      {
+        "kind": "ellipse",
+        "x": 270,
+        "y": 940,
+        "width": 540,
+        "height": 270,
+        "color": "#F4F9FB",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 454,
+        "y": 785,
+        "width": 173,
+        "height": 158,
+        "color": "#9CC0D6",
+        "opacity": 0.5
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 749,
+    "width": 544,
+    "height": 806
+  },
+  "lighting": "Uniform matte diffuse light across all pigment planes, no shadow gradient, pure printed field",
+  "palette": [
+    "#EAF2F6",
+    "#14344A",
+    "#7FA8C4"
+  ],
+  "title": {
+    "text": "名字立在雪原上",
+    "x": 341,
+    "y": 86,
+    "size": 72,
+    "color": "#14344A",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "center"
+  },
+  "subtitle": {
+    "text": "РОССИЯ，表盘上与地平线上同名。",
+    "x": 151,
+    "y": 1330,
+    "size": 30,
+    "color": "#EAF2F6",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 720,
+    "line_height": 1.35,
+    "align": "center"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#14344A",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "НИКА",
+    "x": 491,
+    "y": 252,
+    "size": 28,
+    "color": "#14344A",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "watches",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "left",
+    "ground_material": "flat printed snow plane, no photographic floor",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

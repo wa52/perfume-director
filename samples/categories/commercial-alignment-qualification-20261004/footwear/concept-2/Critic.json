@@ -1,0 +1,96 @@
+{
+  "pass": false,
+  "score": 89.4,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 89,
+    "typography": 89,
+    "background": 88,
+    "physical_integration": 89,
+    "reference_alignment": 84,
+    "creative_coherence": 90,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "craft",
+      "problem": "The soft contact shadow reads only under the midfoot/forefoot; the heel lug cluster floats over the navy band with no seating tone, so the object's rear appears slightly unanchored within the otherwise seated composition.",
+      "root_cause": "Contact shadow primitive scaled/offset to the forefoot mass only (width_scale 1.8 centered under midsole) rather than spanning heel-to-toe as the concept's 'heel and forefoot contact shadows' require.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Widen or duplicate the bounded contact shadow patch so a soft tone also sits under the heel lugs at the navy band edge, keeping opacity low and blur soft to preserve the flat-print reading; do not relight the source cutout."
+    },
+    {
+      "type": "typography",
+      "problem": "The lime divider rule above the headline is nearly invisible against the teal field, so the intended placard spacing device reads as a stray hairline rather than a deliberate gallery rule.",
+      "root_cause": "Decoration color #8FE388 at full opacity over the 58%-opacity teal field yields insufficient contrast for a 1-2px rule.",
+      "affected_layer": "typography",
+      "repair_strategy": "Recolor the decoration rule to the navy ink or increase its weight/opacity so the placard divider registers at poster viewing distance; keep position and copy unchanged."
+    }
+  ],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Upper-right lockup renders exactly 'Nike' in navy #1B2F4E on cream, isolated in clear air per the declared direction; geometry bbox [864,101,981,146] at size 54, visibly larger and more confident than the previous version's corner mark, answering the emblem scale without crowding the product top (y=331)."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster silhouette matches the source photo at product_bbox [80,331,1001,821]: spike-lug outsole, navy midsole stripe, white midsole/laces/collar, perforated dot micro-pattern, lime swoosh and lime tongue patch all intact; bounds sit inside the canvas so nothing is clipped."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [0,681,1080,931] shows a soft blurred shadow seated directly under the forefoot spike lugs on the lime disc at offset_y=0 (correct contact, not to be moved); graphic scene_mode declares printed-field suspension, and the visible cue seats the object without inventing a photographic floor."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against the lime disc, navy band and cream paper are crisp with no halo or matte fringe; disc, band and lower field print as clean vector geometry with straight edges."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source soft diffuse above-front studio light is preserved unrelit on the cutout; the poster declares flat ink illumination and adds only a neutral contact shadow, so no direction conflict exists."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "title [97,1030,870,1133], subtitle [97,1180,634,1212], logo [864,101,981,146] all fully inside 1080x1440 with comfortable margins; no glyph touches a canvas edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap is false for title, subtitle and logo; the type block starts at y=1030 below product base y=821 and the wordmark sits above product top y=331."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc is used on all text layers and appears in the approved installed list; Chinese glyphs in headline and subline render correctly with no tofu boxes."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Wordmark string is exactly 'Nike' per the locked copy block; no invented sub-brand, model name or endorsement line added."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline 把颜色穿成态度 and subline naming 青绿配柠绿 describe THIS teal-lime colorway proposition and match the visible palette fields, not an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The photographic shoe interrupts and completes the flat lime disc, the navy midsole-height band and the now deeper teal lower field: a visible printed-geometry-meets-object event unique to this poster, legible at thumbnail size."
+    }
+  },
+  "reported_score": 90,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "social_ad",
+    "target": "campaign_candidate"
+  }
+}

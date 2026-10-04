@@ -1,0 +1,154 @@
+{
+  "pass": false,
+  "score": 89.7,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 89,
+    "typography": 89,
+    "background": 89,
+    "physical_integration": 91,
+    "reference_alignment": 82,
+    "creative_coherence": 91,
+    "brand_alignment": 95
+  },
+  "problems": [
+    {
+      "type": "portfolio_creative_diversity",
+      "problem": "No defect is visible in image 1 itself: the header plate (rectangle 86,86-994,222 at 0.11 opacity, visible as the cool grey band carrying the headline and the НИКА seal), the double rule at y208/y219, the centered untouched packshot and the closing spec line at y1276 all render as declared, and the contact crop (image 6) confirms the soft ambient shadow pooled under the strap loop at base_y 1148. The poster is nonetheless retained as a draft because the portfolio-level mechanism collapse (Night Monument and Winter Horizon building the identical horizon-band + pooled-ellipse stage, differing only in palette) is still unresolved from the prior review; this is a portfolio hold, not an image defect.",
+      "root_cause": "One collapsed sibling concept was never rewritten into a structurally different visual event, so the four-proposition set remains unapproved and every member poster is held at draft status.",
+      "affected_layer": "brand",
+      "repair_strategy": "Rewrite either Night Monument or Winter Horizon as a pure negative-space void (zero horizon rectangle, zero ground disc, product on renderer shadow only) or as a dial-grammar abstraction using permitted flat ellipses as an oversized Roman-index ring behind the cutout; resubmit the concept set for diversity review. Certificate Page's typographic ruling and new header plate stay untouched."
+    },
+    {
+      "type": "reference_gap",
+      "problem": "The added header plate gives the top 15% of the page a second tonal register (visible in image 1 as the slightly darker band behind title and seal), but the exhibit field between rule bottom y222 and footer top y1276 - roughly 62% of the canvas - is still a single unmodulated #DFE3E8 plane with the packshot floating in its middle. References 3-5 each commit one decisive full-bleed mass (saturated color field, black monument plate, macro reverence crop); measured against those benchmarks the middle of this certificate still reads as competent-but-restrained draft rather than fully resolved campaign page.",
+      "root_cause": "The primitive budget was spent on the header plate and linear rules only; the exhibit zone itself never received a bounded tonal structure, so the document metaphor stops at the margins.",
+      "affected_layer": "background",
+      "repair_strategy": "Extend the certificate logic into the exhibit zone with one bounded flat rectangle in #5A6672 at opacity 0.06-0.08 acting as a specimen mount panel behind the product (e.g. x 200, y 300, width 680, height 900, fully inside canvas and behind the opaque cutout so it occludes nothing), keeping the archival plane reading while giving the page a second committed mass like the references."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 86,
+          "y": 86,
+          "width": 908,
+          "height": 136,
+          "color": "#5A6672",
+          "opacity": 0.11
+        },
+        {
+          "kind": "rectangle",
+          "x": 86,
+          "y": 208,
+          "width": 908,
+          "height": 3,
+          "color": "#5A6672",
+          "opacity": 0.9
+        },
+        {
+          "kind": "rectangle",
+          "x": 86,
+          "y": 219,
+          "width": 150,
+          "height": 3,
+          "color": "#5A6672",
+          "opacity": 0.55
+        },
+        {
+          "kind": "rectangle",
+          "x": 200,
+          "y": 300,
+          "width": 680,
+          "height": 900,
+          "color": "#5A6672",
+          "opacity": 0.07
+        }
+      ]
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Upper-right seal reads НИКА exactly as locked, bbox 864,98-974,121, 30px with 8px tracking, now sitting inside the header plate band as the issuing seal; undistorted and uncropped."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster silhouette matches the original packshot point for point: round polished case, dual crowns on the right flank, looped croc-embossed strap with tan lining and underside print, applied Roman indices, framed double-digit date under XII, small-seconds subdial printed РОССИЯ and КВАРЦ; product_bbox 269,342-811,1148 with no rescale or warp artifacts."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [189,1008,891,1258] (image 6) shows a soft ambient shadow pooled under the strap loop at base_y 1148; shadow offset_y 0 is correct contact for the declared suspended graphic exhibit on a flat archival plane - the shadow is present, not absent, and no invented floor horizon is imposed."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against #DFE3E8 and the new header plate show no halo or fringe; margins left 269, right 269, top 342, bottom 292 are comfortable; no shape or text bbox crosses a canvas edge."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft upper-front-left diffuse highlights on bezel, lugs and crowns match the even archival diffuse field with no cast gradient; no softbox, lamp, stand or camera visible anywhere in the frame."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 86,86-616,154; subtitle 86,1276-740,1308; logo 864,98-974,121 - all fully inside 1080x1440, and the 654px footer run clears the right margin by 340px."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; no layer intersects the product bbox on both axes, and the rule block at y208-222 sits 120px above the case top at y342."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All four layers use C:/Windows/Fonts/msyh.ttc, an approved installed font covering the Chinese headline and the Cyrillic registration strings exactly as rendered."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА, РОССИЯ and КВАРЦ appear exactly as on the dial and in the locked copy set; no invented model number, certification or gemstone grade; price layer intentionally empty per copy policy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline 'three-line name is the archive' plus the verbatim dial transcription enact the certificate proposition; the strings behave as registration entries (title block, issuing seal, specification line) rather than interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Plate-backed double-ruled title block upper left, НИКА seal upper right in the same cap band, ruling pair at y208/y219 and the closing specification line at y1276 visibly frame the untouched packshot as a registered exhibit; the document event is present in the poster itself, not only in prose."
+    }
+  },
+  "reported_score": 89.5,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+      "collapse_groups": [
+        [
+          "nika-rossiya-night-monument",
+          "nika-rossiya-winter-horizon"
+        ]
+      ],
+      "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+    }
+  }
+}

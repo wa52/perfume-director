@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 161093578329875,
+  "background": {
+    "color": "#DCD9D4",
+    "prompt": "Flat two-plane graphic field: muted brick ink plane across the upper region meeting a neutral light-gray plane below at a clean horizontal division, even diffuse illumination, no horizon curve, no texture, no props",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 540,
+        "y": 346,
+        "width": 1080,
+        "height": 691,
+        "color": "#9C5B44",
+        "opacity": 1
+      }
+    ]
+  },
+  "product": {
+    "x": 670,
+    "y": 806,
+    "width": 679,
+    "height": 864
+  },
+  "lighting": "Even frontal poster illumination, whisper of edge falloff; cutout retains its own soft diffuse studio speculars",
+  "palette": [
+    "#DCD9D4",
+    "#2A211D",
+    "#9C5B44"
+  ],
+  "title": {
+    "text": "立处,即是分界",
+    "x": 59,
+    "y": 403,
+    "size": 68,
+    "color": "#2A211D",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 4,
+    "max_width": 250,
+    "line_height": 1.3,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "砖色与灰境之间,金色管颈是唯一的支点。",
+    "x": 59,
+    "y": 792,
+    "size": 26,
+    "color": "#2A211D",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 240,
+    "line_height": 1.55,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2A211D",
+    "font": "C:/Windows/Fonts/ARIALN.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 59,
+    "y": 403,
+    "size": 16,
+    "color": "#2A211D",
+    "font": "C:/Windows/Fonts/ARIALN.TTF",
+    "tracking": 0
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 674,
+    "width": 929,
+    "color": "#9C5B44"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat two-plane silkscreen ink",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  }
+}

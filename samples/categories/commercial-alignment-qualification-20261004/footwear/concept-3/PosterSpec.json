@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200332895659926,
+  "background": {
+    "color": "#2E3134",
+    "prompt": "Flat matte near-black charcoal printed poster sheet, value close to ink black, fine uniform poster grain, uniform graphic illumination, no horizon, no depth cues, no objects",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "product_silhouette",
+        "x": 4,
+        "y": 633,
+        "width": 650,
+        "height": 346,
+        "color": "#1B2F4E",
+        "opacity": 0.34
+      },
+      {
+        "kind": "product_silhouette",
+        "x": 36,
+        "y": 633,
+        "width": 650,
+        "height": 346,
+        "color": "#8FE388",
+        "opacity": 0.5
+      }
+    ]
+  },
+  "product": {
+    "x": 389,
+    "y": 806,
+    "width": 652,
+    "height": 346
+  },
+  "lighting": "uniform flat printed illumination, ink density only, no falloff, no cast shadows",
+  "palette": [
+    "#E9E7E0",
+    "#1B2F4E",
+    "#8FE388"
+  ],
+  "title": {
+    "text": "每一步都算数",
+    "x": 756,
+    "y": 560,
+    "size": 44,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "从家门到站台，城市通勤的路它都记得。",
+    "x": 756,
+    "y": 664,
+    "size": 22,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 280,
+    "line_height": 1.35,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1B2F4E",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 76,
+    "y": 101,
+    "size": 38,
+    "color": "#F9F4E9",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 980,
+    "width": 928,
+    "color": "#8FE388"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat printed paper, no physical ground",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

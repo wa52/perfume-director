@@ -1,0 +1,72 @@
+[
+  {
+    "product_category": "perfume",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "24256f65dd474b66bce961ff1f049c29",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "watches",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "1094f3b0d5af4bdeab77b6b353811371",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "footwear",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "b3ffeaea93f84fbbb15bbbd32d00a443",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "beverage",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "dc0a0641ba434f40880d9ab47265ecc1",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "skincare",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "98fc99e3085e47d2bd094275fd4b649f",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "menswear",
+    "status": "ERROR",
+    "stage": "FAILED",
+    "job_id": "d6950c4471e0487f8ec83e9ea631f4aa",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  },
+  {
+    "product_category": "womenswear",
+    "status": "COMPLETED",
+    "stage": "FINISHED",
+    "job_id": "1eaf41355e1e45f2b7ca71bb3bd8ed72",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 4,
+    "model_pass_directions": 0
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "pass": false,
+  "score": 88.0,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 86,
+    "typography": 89,
+    "background": 86,
+    "physical_integration": 87,
+    "reference_alignment": 82,
+    "creative_coherence": 90,
+    "brand_alignment": 94
+  },
+  "problems": [
+    {
+      "type": "halo_registration_offset",
+      "problem": "The exact-alpha silhouette primitive is still not concentric with the cutout. shape_geometry gives the silhouette bbox 438,544-629,1234 versus product bbox 450,563-630,1213: vertical oversize is balanced (19px above the cap, 21px below the foot), but horizontally the halo sits 12px proud on the left flank and only 1px on the right, and the cap tab prints almost entirely upper-LEFT of the red crown cap. At poster scale (image 1) the dark ring therefore reads slightly misregistered - a thick left edge and a left-tilted cap block against a hairline right edge - instead of the declared even contour halo.",
+      "root_cause": "The primitive's fitted alpha (191x690 inside the 204x690 box) is anchored at the box's left edge instead of centered on the product center_x 540, so the ~6% oversize lands asymmetrically.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-center the product_silhouette in the complete shapes list: keep width 204 / height 690 and move x to 444 (fitted alpha then spans ~444.5-635.5, concentric with 450-630) and y to 543 so the oversize rings cap and foot evenly; keep the sun ellipse unchanged."
+    },
+    {
+      "type": "foreground_pool_too_timid",
+      "problem": "The revision-3 pool did render this time - image 1 shows a warm glow on the dust flanking the base (roughly x 250-830, y 930-1180) - but it is a dim lateral smear whose brightest value sits beside the bottle rather than a luminous pool centered on the contact point, and below y~1240 (verified in the contact crop 370,1073-710,1323) the earth returns to a flat mid-brown with only faint speckle. The bottom sixth of the canvas still carries no graded value event, so the monument scale of the bottle reads slightly deflated next to references 3-5, whose foreground planes are lit and graded toward the viewer.",
+      "root_cause": "Prompt pool language produced a horizontal band of light at horizon height instead of a radial pool anchored at the foreground contact point; the near-field falloff to deeper umber was not executed.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with the pool explicitly anchored in the foreground: brightest warm value in an oval of dust immediately around and in front of the center contact point, falling off radially so the bottom edge and side margins sit one stop deeper; same horizon height, same matte mineral dust, no objects, no equipment, no text."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 346,
+          "y": 389,
+          "width": 389,
+          "height": 389,
+          "color": "#F6C489",
+          "opacity": 0.95
+        },
+        {
+          "kind": "product_silhouette",
+          "x": 444,
+          "y": 543,
+          "width": 204,
+          "height": 690,
+          "color": "#2A1410",
+          "opacity": 0.92
+        }
+      ]
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty dusk sky in warm apricot fading to deep umber at the top, one soft low sun glow centered at mid height, flat dry earthen plain of matte fine mineral dust in warm mid brown meeting the sky at one low continuous horizon, a luminous warm oval light pool on the dust centered exactly on the foreground contact point and extending toward the viewer, brightest at the base and falling off radially so the bottom edge and both side margins sit one stop deeper in umber, smooth value without planks, boards, grain lines or knots, calm even frontal fill, no objects, no equipment, no text"
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Top-right wordmark 'Coca-Cola' in BOD_R script-serif at (842,132)-(1014,159), matching permitted copy exactly and balancing the left masthead band."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox 450,563-630,1213 keeps the contour waist, red crown cap, opaque red band with white Spencerian script and 'ORIGINAL TASTE', amber-caramel transmitted core and the original condensation beads identical to the image-2 cutout; no relighting, label edit or added droplets."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [370,1073,710,1323] shows the glass base seated on the dust at base_y 1213 with a soft symmetric shade hugging the footprint (offset_y 0, width_scale 1.0 executed); no floating, base within the 94% limit (1353)."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry crosses_canvas_edge false for both ellipse and silhouette; product bbox fully inside canvas with comfortable margins (450/630 vs 54/1026 limits)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Glass retains the source's frontal studio specular streaks and internal glow; the scene adds only the eclipsed sun glow behind and a frontal dust pool, consistent with source_key_light 'front'."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (76,108-694,175), subtitle (76,206-566,230), logo (842,132-1014,159) all fully inside the 1080x1440 canvas."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap false for title, subtitle and logo; title band bottom y=175 clears product top y=563 by 388px of declared sky-band air."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc (Song serif masthead), msyh.ttc (subtitle) and BOD_R.TTF (script wordmark) are all in the approved installed list and render correct CJK and Latin glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Label script 'Coca-Cola' plus 'ORIGINAL TASTE' intact on the cutout; logo layer spells 'Coca-Cola' correctly."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title '夕阳里,一眼认出它' and subtitle '不需要任何提醒,那个熟悉的身影自己会说话。' name THIS eclipse-recognition proposition, not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The apricot sun disc is visibly eclipsed by the dark contour silhouette stacked behind the upright bottle on the horizon; the silhouette-landmark event reads at poster scale, though the halo ring still needs the concentric fix above."
+    }
+  },
+  "reported_score": 84.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:composition",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

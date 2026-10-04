@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 161093578331893,
+  "background": {
+    "color": "#5E1219",
+    "prompt": "Empty deep-cherry lacquer ink plane, perfectly smooth polished surface, one dominant soft light axis raking from the upper-left corner diagonally toward the lower-right, no secondary bloom, near-black value falloff pressing in at all four corners, no horizon, no texture, no props, no equipment",
+    "revision": 4,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 620,
+        "y": 770,
+        "width": 340,
+        "height": 72,
+        "color": "#D9BC7A",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 640,
+        "y": 684,
+        "width": 268,
+        "height": 72,
+        "color": "#D9BC7A",
+        "opacity": 0.75
+      },
+      {
+        "kind": "rectangle",
+        "x": 650,
+        "y": 598,
+        "width": 240,
+        "height": 72,
+        "color": "#D9BC7A",
+        "opacity": 0.6
+      },
+      {
+        "kind": "rectangle",
+        "x": 700,
+        "y": 511,
+        "width": 180,
+        "height": 72,
+        "color": "#D9BC7A",
+        "opacity": 0.45
+      }
+    ]
+  },
+  "product": {
+    "x": 454,
+    "y": 864,
+    "width": 702,
+    "height": 893
+  },
+  "lighting": "Even frontal poster illumination with slight edge falloff; cutout keeps its baked speculars and near-shadowless seating",
+  "palette": [
+    "#5E1219",
+    "#F4EDE2",
+    "#D9BC7A"
+  ],
+  "title": {
+    "text": "以毫厘,度万物",
+    "x": 65,
+    "y": 86,
+    "size": 92,
+    "color": "#F4EDE2",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "抛光管颈几毫米,是整幅画面的刻度原点。",
+    "x": 65,
+    "y": 210,
+    "size": 28,
+    "color": "#F4EDE2",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#F4EDE2",
+    "font": "C:/Windows/Fonts/BOD_R.TTF"
+  },
+  "logo": {
+    "text": "",
+    "x": 65,
+    "y": 86,
+    "size": 16,
+    "color": "#F4EDE2",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 0
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat deep-cherry lacquer ink field",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "pass": false,
+  "score": 87.0,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 86,
+    "typography": 89,
+    "background": 76,
+    "physical_integration": 92,
+    "reference_alignment": 82,
+    "creative_coherence": 88,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "background_value_conflict",
+      "problem": "The upper paper field still renders as a warm mid-grey (sampled ~#C9C6C1 around the title block), not the declared near-white cool drafting stock #EEF1F3. Evidence: the zone above the first band edge (y<430) is visibly darker and warmer than the palest printed band #DCE6EC below it, inverting the calibration ladder so the first 'measured' interval reads lighter than the sheet it is printed on; the prompt's stated value did not survive regeneration (revision 2).",
+      "root_cause": "Regeneration drift: the paper-stock prompt is still interpreted as a greige stock with a warm cast instead of the palette value #EEF1F3.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with background.prompt restated to force the exact value: matte cool-white paper at hex #EEF1F3, cooler and lighter than band #DCE6EC, uniform shadowless frontal light, no objects, no horizon, no gradient, no vignette; keep all five band rectangles and their landmark y positions (430/660/830/1010/1267) unchanged."
+    },
+    {
+      "type": "landmark_alignment_gap",
+      "problem": "The first calibration edge (y=430, decoration rule plus band start) sits ~113px below the verified neckline top (product bbox top y=317), so the uppermost landmark the copy names ('neckline') is the one interval the sheet fails to register; the eye sees the bodice floating in unruled paper above the first tick while waist seam (~660), tier breaks (~830) and royal-blue tier start (~1010) lock correctly and the hem now terminates exactly on the 1267 edge (confirmed in the contact-detail crop, image 6).",
+      "root_cause": "Band stack authored from a fixed top margin for title clearance instead of from the garment's neckline landmark.",
+      "affected_layer": "scene",
+      "repair_strategy": "Patch background.shapes as one complete list shifting the first rectangle to y=317 (height 1113) and the decoration rule to y=313 so the neckline tick closes the gap; keep edges 660/830/1010/1267. Title block (bottom y=243) still clears the 317 edge by ~74px, preserving the declared above-relation and text_product_overlap false."
+    },
+    {
+      "type": "reference_alignment_gap",
+      "problem": "Against the references' single confident typographic gesture (Max Mara's base-anchored logotype, Claudie's canvas-spanning tracked wordmark), the title block spans x76-946 at 100px but leaves the upper-right corner and the whole right margin of the paper zone empty, and the warm-grey field further distances the sheet from the references' clean tonal control; the sheet reads polished-draft rather than authored.",
+      "root_cause": "Type scale set for safety margins; field value not yet matching the declared palette, so the upper zone lacks the references' tonal confidence.",
+      "affected_layer": "typography",
+      "repair_strategy": "After the pale-field regeneration, raise title size to ~112 with tracking 8 so the block spans x76 to ~1010 of the 1080 canvas, matching the references' full-width authority gesture; copy unchanged, single line, no overlap with product (bbox top 317 stays below title bottom)."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review remains unresolved; this sheet is retained only as the c1 calibration-instrument draft pending the group rebuild demanded by the diversity review.",
+      "root_cause": "Portfolio-level review state, not a defect of this image alone.",
+      "affected_layer": "scene",
+      "repair_strategy": "Keep c1 as the multi-edge calibration voice with the neckline tick fix; let the other propositions be rebuilt separately per the diversity instruction (non-field event for c2, structural single-line event for c3, retain c4 silhouette echo)."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Matte cool-white drafting paper at exact hex value #EEF1F3, faint fibre grain, cooler and lighter than printed band #DCE6EC, perfectly uniform shadowless frontal illumination, no objects, no horizon, no gradient, no vignette"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 317,
+          "width": 1080,
+          "height": 1123,
+          "color": "#DCE6EC",
+          "opacity": 0.95
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 660,
+          "width": 1080,
+          "height": 780,
+          "color": "#BFD4E0",
+          "opacity": 0.95
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 830,
+          "width": 1080,
+          "height": 610,
+          "color": "#9FBFD4",
+          "opacity": 0.95
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1010,
+          "width": 1080,
+          "height": 430,
+          "color": "#122B57",
+          "opacity": 0.92
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1267,
+          "width": 1080,
+          "height": 173,
+          "color": "#3E7CB8",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "decoration.y",
+      "op": "set",
+      "value": 313
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 112
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 8
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer intentionally empty per copy_policy intentional_empty_layers; no stray mark anywhere on the sheet."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster gown matches source cutout exactly: sweetheart beaded neckline, ruched bodice, waist seam, cascading sheer ruffle tiers and royal-blue hem identical to image 2; bbox [181,317,899,1267] fully inside canvas, no clipping."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares suspended presentation with shadow.opacity 0; contact-detail crop (image 6) shows the royal-blue hem terminating cleanly against the flat 1267 band edge with no invented floor, contact shadow or cast."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges crisp against all five bands; translucent ruffle zones correctly transmit band values (navy through sheer tiers below y=1010), no halo or fringe; no duplicated garment."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source's diffuse frontal low-contrast studio light preserved on the unmodified cutout; flat shadowless poster illumination with crisp band edges matches it, no directional conflict."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [76,79,946,177] and subtitle bbox [76,213,703,243] fully inside canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap false for title and subtitle; no both-axis intersection with product bbox [181,317,899,1267]."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc (Microsoft YaHei) used for all copy and present in the approved installed font list with full CJK coverage."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "No house brand claimed; copy is the category-neutral Chinese proposition only, consistent with brand evidence of intentionally empty logo and price."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'好比例,经得起丈量' plus '领口、腰线、裙摆,每条线都落在该在的位置。' names this sheet's measured-landmark proposition; not an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Five full-width band edges visibly register across the garment - waist seam on the 660 edge, first tier break on 830, royal-blue tier start on the 1010 navy edge, hem terminating exactly on the 1267 edge (image 6) - so the eye checks the gown against ruled intervals like a measuring instrument."
+    }
+  },
+  "reported_score": 84.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual stage: one unrotated floating cutout on a neutral field, shadow.opacity 0, no context, no wearer; only the flat primitives behind it change. Judging mechanisms, not names: c2 (one oversized ellipse) and c3 (two rectangles meeting at the bodice-to-skirt seam) produce the same visible event - opaque bodice/hem blocks a flat field while the sheer ruffle tiers transmit and tint toward it - differing only in primitive count and shape, i.e. a palette/geometry rename of one figure-ground transparency idea. c1 (five landmark-locked horizontal bands) and c3 (one landmark-locked horizon) are the same device again: hard graphic edges registered onto garment seams behind the cutout, c3 merely using fewer edges. c4's offset original-alpha silhouette is the only genuinely different event (misregistered graphic double versus photographed material). Net: one transparency/edge-registration packshot idea stated three times plus one silhouette-echo idea.",
+      "collapse_groups": [
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      ],
+      "required_revision": "Keep c4 as one voice. Rebuild the collapsed group into materially different events within the stated toolkit: (a) retain c1 only as the multi-edge calibration instrument with legible band intervals; (b) replace c2's ellipse with a non-field event, e.g. an editorial narrative or source-compatible photographic context that does not rely on sheer-zone transmission over a flat mass; (c) replace c3's split-plane with a purposeful brand-graphic event that does not register edges onto seams (e.g. the single straight decoration line used structurally across the canvas, independent of garment landmarks). No new slogans, no second photographed product, no macro plates, no diptych, no rotation, no relighting, shadow.opacity stays 0, and no wearer may be generated."
+    }
+  }
+}

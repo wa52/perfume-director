@@ -1,0 +1,119 @@
+{
+  "pass": false,
+  "score": 89.9,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 88,
+    "typography": 90,
+    "background": 90,
+    "physical_integration": 93,
+    "reference_alignment": 82,
+    "creative_coherence": 90,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "portfolio_diversity",
+      "problem": "The four-proposition diversity review is still open and still collapses c1/c2/c3 into one transparency/edge-registration idea; this sheet is retained as the c3 single-seam voice inside that unresolved group, so campaign approval stays blocked at portfolio level. On-sheet evidence matches the review: one unrotated floating cutout over two flat rectangles whose only hard edge (seam y=630) is registered onto the beaded waistband, the same device family attributed to c1 and c2.",
+      "root_cause": "Portfolio-level proposition overlap between concept sheets; not an execution defect of this sheet, and the declared Material Split Plane direction forbids swapping its planes or seam logic to diversify.",
+      "affected_layer": "scene",
+      "repair_strategy": "Leave this poster untouched. Resolve the group outside it per the review: keep c1 as the multi-edge calibration instrument, rebuild c2 around a non-field event, retain this sheet as the single landmark-locked seam voice distinct from c4's misregistered silhouette. Schedule as a separate campaign action."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "This sheet remains a draft held under the rejected four-proposition review; no sheet-level change can clear that gate.",
+      "root_cause": "Group-level creative review unresolved; carried forward, not re-observed as a visual defect on this image.",
+      "affected_layer": "scene",
+      "repair_strategy": "Close the group revision externally (see portfolio_diversity); then re-submit this sheet unchanged for final approval."
+    },
+    {
+      "type": "composition_balance",
+      "problem": "The extended #6FA8CC rule (decoration.width 760, visible from x=76 to x=836 at y=192 in the current render versus the shorter ~520px rule in the previous version) now answers the seam across most of the upper plane and, with the 96px title reaching x=928, the upper ink plane reads structured; however the pale lower plane still carries ~187px of wholly unstructured field below the hem (base y=1253 on a 1440 canvas) with no echo element, so the bottom band stays quieter than the references' full-canvas staging (Max Mara's edge-to-edge wordmark, Claudie's centered overlay).",
+      "root_cause": "The concept supplies only planes, one rule and two type lines as anchors; the rule was extended upward but no lower-plane anchor exists, and the no-floor mandate forbids adding ground contact.",
+      "affected_layer": "scene",
+      "repair_strategy": "Accept the lower band as intentional suspended air (category mandate forbids floor or shadow), or within concept add a second short #6FA8CC rule low in the pale plane as a horizon echo; do not add objects, gradients or a floor."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer is intentionally empty per copy_policy intentional_empty_layers; no mark, monogram or tag appears anywhere on the poster or in the contact crop."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster silhouette matches the source photograph: strapless sweetheart neckline, ruched beaded bodice, beaded waistband, cascading sheer organza tiers and saturated royal-blue hem; product bbox [170,274,910,1253] sits fully inside the 1080x1440 canvas, unrotated and uncropped."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares suspended presentation with shadow.opacity 0; the contact detail crop [90,1113,990,1363] shows the royal-blue hem edge clean over the flat pale plane with no missing or misplaced contact shadow and no invented floor, exactly as mandated."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges are crisp against both ink planes; sheer tiers transmit the pale plane as designed with no halo, fringe, matte residue or double-edge artifacts at bodice, tiers or hem in poster or enlarged crop."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Garment retains the source's soft diffuse near-frontal studio wash; both rectangles are shadowless matte ink with no gradient, so no directional light or cast shadow conflicts with the unmodified product photograph."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [76,86,928,177] and subtitle bbox [76,209,461,235] lie fully inside the canvas with comfortable left (76px), right (152px) and top (86px) margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap reports title:false and subtitle:false; the decoration rule at y=192 sits inside the clear gap between title bottom 177 and subtitle top 209 and stops at x=836, clear of the product bbox left edge 170 only above the product top 274, so no both-axis intersection exists."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "C:/Windows/Fonts/simsun.ttc is in the approved installed list and renders the Chinese copy correctly at the observed serif weights for title and subtitle."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "No house brand is claimed; only the permitted copy lines appear, matching the supplied category-led brand evidence with intentionally empty logo and price fields."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'一条界线,两种裙身 / 上身紧致写实,下摆轻盈透色。' names this poster's exact proposition (one seam, two material states, opaque bodice versus sheer tinting skirt) and cannot be swapped onto another garment or layout."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The single crisp horizon at y=630 lands on the beaded waistband: above it the opaque bodice reads as solid cut shape inside the deep ink plane, below it the sheer ruffle tiers transmit and tint the pale plane like coloured glass, so the corroborating material-split event is legible in one glance."
+    }
+  },
+  "reported_score": 84.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual stage: one unrotated floating cutout on a neutral field, shadow.opacity 0, no context, no wearer; only the flat primitives behind it change. Judging mechanisms, not names: c2 (one oversized ellipse) and c3 (two rectangles meeting at the bodice-to-skirt seam) produce the same visible event - opaque bodice/hem blocks a flat field while the sheer ruffle tiers transmit and tint toward it - differing only in primitive count and shape, i.e. a palette/geometry rename of one figure-ground transparency idea. c1 (five landmark-locked horizontal bands) and c3 (one landmark-locked horizon) are the same device again: hard graphic edges registered onto garment seams behind the cutout, c3 merely using fewer edges. c4's offset original-alpha silhouette is the only genuinely different event (misregistered graphic double versus photographed material). Net: one transparency/edge-registration packshot idea stated three times plus one silhouette-echo idea.",
+      "collapse_groups": [
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      ],
+      "required_revision": "Keep c4 as one voice. Rebuild the collapsed group into materially different events within the stated toolkit: (a) retain c1 only as the multi-edge calibration instrument with legible band intervals; (b) replace c2's ellipse with a non-field event, e.g. an editorial narrative or source-compatible photographic context that does not rely on sheer-zone transmission over a flat mass; (c) replace c3's split-plane with a purposeful brand-graphic event that does not register edges onto seams (e.g. the single straight decoration line used structurally across the canvas, independent of garment landmarks). No new slogans, no second photographed product, no macro plates, no diptych, no rotation, no relighting, shadow.opacity stays 0, and no wearer may be generated."
+    }
+  }
+}

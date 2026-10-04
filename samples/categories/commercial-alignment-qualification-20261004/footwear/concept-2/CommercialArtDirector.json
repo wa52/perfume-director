@@ -1,0 +1,20 @@
+{
+  "tier": "social_ad",
+  "evidence": "The poster executes the declared Colorfield Emblem concept with visible craft: the intact lateral cutout (sole lugs, stitching, laces, toe, heel all preserved from source) interrupts three flat printed fields whose hues are sampled from the product itself - lime disc behind the upper, navy band running exactly at midsole height, teal field warming the lower sheet - so the photographic object visibly completes the printed geometry. The navy band passing behind the shoe while the sole dips below it is a real, readable visual event, not prose intent. Typography is a resolved sans (Microsoft YaHei) placard block: heavy navy headline on the teal field, lighter subline, thin lime rule as divider, lone wordmark in upper-right air; hierarchy and negative space are intentional. The soft diffuse source light is untouched and a single soft contact shadow seats the object on the printed plane, consistent with the declared graphic suspension. Copy ('把颜色穿成态度' / '青绿配柠绿，一眼就被记住的那双鞋。') names this exact color-collision proposition. It stops short of campaign_candidate because the reference set (Converse rubber texture event, Adidas melt event, Puma staged pair) each carries a stronger physical/graphic transformation and richer type treatment, while this sheet's event remains a single flat overprint gesture with a system-font placard.",
+  "problems": [
+    {
+      "type": "craft",
+      "problem": "The soft contact shadow reads only under the midfoot/forefoot; the heel lug cluster floats over the navy band with no seating tone, so the object's rear appears slightly unanchored within the otherwise seated composition.",
+      "root_cause": "Contact shadow primitive scaled/offset to the forefoot mass only (width_scale 1.8 centered under midsole) rather than spanning heel-to-toe as the concept's 'heel and forefoot contact shadows' require.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Widen or duplicate the bounded contact shadow patch so a soft tone also sits under the heel lugs at the navy band edge, keeping opacity low and blur soft to preserve the flat-print reading; do not relight the source cutout."
+    },
+    {
+      "type": "typography",
+      "problem": "The lime divider rule above the headline is nearly invisible against the teal field, so the intended placard spacing device reads as a stray hairline rather than a deliberate gallery rule.",
+      "root_cause": "Decoration color #8FE388 at full opacity over the 58%-opacity teal field yields insufficient contrast for a 1-2px rule.",
+      "affected_layer": "typography",
+      "repair_strategy": "Recolor the decoration rule to the navy ink or increase its weight/opacity so the placard divider registers at poster viewing distance; keep position and copy unchanged."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 222712544752417,
+  "background": {
+    "color": "#F6EBD7",
+    "prompt": "Flat matte warm ivory paper with faint tooth and fine silkscreen grain, evenly lit by diffuse frontal light, no horizon, no directional shadows, empty except for flat printed ink fields",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 40,
+        "y": 330,
+        "width": 1000,
+        "height": 1000,
+        "color": "#F1DCB0",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 190,
+        "y": 480,
+        "width": 700,
+        "height": 700,
+        "color": "#E9C583",
+        "opacity": 0.95
+      },
+      {
+        "kind": "ellipse",
+        "x": 314,
+        "y": 604,
+        "width": 452,
+        "height": 452,
+        "color": "#D9A441",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 790,
+        "width": 1080,
+        "height": 79,
+        "color": "#FBF4E6",
+        "opacity": 0.75
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 806,
+    "width": 309,
+    "height": 893
+  },
+  "lighting": "Even diffuse frontal poster illumination matching the packshot, no directional shadow, only the measured contact shade at the narrow base",
+  "palette": [
+    "#F6EBD7",
+    "#4A3418",
+    "#D9A441"
+  ],
+  "title": {
+    "text": "光，自她而出",
+    "x": 310,
+    "y": 144,
+    "size": 76,
+    "color": "#4A3418",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "她一出现，四周便暖了",
+    "x": 300,
+    "y": 1299,
+    "size": 40,
+    "color": "#4A3418",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#4A3418",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 490,
+    "y": 65,
+    "size": 30,
+    "color": "#4A3418",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "perfume",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "matte ivory poster stock",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  }
+}

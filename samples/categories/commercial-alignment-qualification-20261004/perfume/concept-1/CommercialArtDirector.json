@@ -1,0 +1,87 @@
+{
+  "tier": "draft",
+  "evidence": "The packshot is faithfully preserved (teardrop flacon, ribbed gold collar, spherical stopper, goldJ'adore/EAU DE PARFUM/Dior lettering, opaque white base refraction all intact) and the copy column is clean and uncropped, but the staged 'event' reads as three perfectly concentric decorative rings centered on the bottle axis - a target/bullseye motif - not as arrested radial emission: the rings are symmetric top and bottom, so nothing visually expands 'outward from shoulder height', and the flat pale band cuts the rings and the neck into static stripes like a registration mark. The Chinese headline and subtitle are set in a default system sans (msyh) with no Didone/serif house voice beyond the tiny 30px 'Dior' mark, far below the typographic authority of the legacy J'adore print reference; the composition is a centered packshot on ornamental circles rather than a resolved campaign plane. Against the references (frozen floral explosion, monumental serif field, dense floral immersion) this poster offers texture and symmetry without a believable visual event.",
+  "problems": [
+    {
+      "type": "concept_execution",
+      "problem": "The 'Halo of Light' emission reads as a decorative bullseye: three perfectly concentric circles centered on the bottle's mid-axis give a static target, not light released outward; the promised 'widest at shoulder height, diminishing toward edges' cadence is invisible because the rings are radially symmetric above and below the center.",
+      "root_cause": "background.shapes ellipses share one center (540,830) with equal vertical/horizontal steps, so the graphic has no directional emission or focal bias toward the glass shoulder.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-step the primitives so the emission originates at the shoulder: shift the inner two ellipses' centers up toward y~700-760 and make the steps asymmetric (tighter near the glass, wider outward), or replace the innermost circle with a product_silhouette primitive in gold so the radiance visibly begins at the bottle contour; keep palette and flat silkscreen material."
+    },
+    {
+      "type": "graphic Craft",
+      "problem": "The pale horizontal band slices the rings and crosses behind the neck at circle-center height, producing segmented stripe artifacts that read as a printing/register error rather than 'one pale light band'; it also flattens the only depth cue the rings provide.",
+      "root_cause": "Rectangle band placed at y=790 (circle center) at 0.75 opacity over all three rings, intersecting every concentric edge at once.",
+      "affected_layer": "scene",
+      "repair_strategy": "Move the band lower (base plane, y~1180-1230) so it acts as a quiet printed horizon the bottle stands upon, or reduce it to a single narrow band behind only the outer ring; keep it behind the product and within the ivory palette."
+    },
+    {
+      "type": "typography_brand_voice",
+      "problem": "Headline and subtitle render in a generic system sans (msyh) with default weights; the only house voice is a 30px 'Dior' mark, so the type lacks the Didone/serif luxury register visible in the supplied legacy J'adore print and on the flacon's own gold serif lettering.",
+      "root_cause": "font fields point to C:/Windows/Fonts/msyh.ttc for title/subtitle while the Didone (BOD_R.TTF) is used only at logo size 30.",
+      "affected_layer": "typography",
+      "repair_strategy": "Set the Chinese headline in a refined serif/Song face (or increase msyh weight contrast and tracking deliberately) at larger optical size, and raise the Dior mark to a legible house-lockup scale (~44-52px) with wider tracking; keep supplied strings unchanged."
+    },
+    {
+      "type": "hierarchy",
+      "problem": "Vertical hierarchy is top-heavy-then-empty: a large gap between subtitle baseline and the ring top leaves the headline floating, while the subtitle sits close to the base with little breathing room, so the column reads stacked rather than crowned.",
+      "root_cause": "title y=144 and subtitle y=1299 fixed without tracking/line-height tuning against the ring field that starts at y=330.",
+      "affected_layer": "typography",
+      "repair_strategy": "Tighten the crown: move title to y~170-190 with tracking 8-10, drop subtitle to y~1320 with tracking 3, and let the outer ring rise slightly (y~300) so headline, halo and base note form one continuous axis."
+    },
+    {
+      "type": "copy_event_mismatch",
+      "problem": "Copy ('light emanates from her / the room warms when she appears') promises emission and warmth spreading from the figure, but the visible device is a symmetric target; the words describe an event the geometry does not perform.",
+      "root_cause": "Visual mechanism built as concentric decoration instead of directional radiance anchored at the glass.",
+      "affected_layer": "brand",
+      "repair_strategy": "After re-stepping the rings/silhouette origin at the shoulder, verify the brightest gold field touches the glass edge so 'light from her' is literally visible; keep copy strings as supplied."
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "'Dior' set in Didone at top center, correctly spelled and placed above the headline."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Bottle contour, collar ribbing, sphere stopper and base refraction match the untouched packshot with no distortion."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares suspension; a soft measured contact shade sits under the narrow base and no invented floor is claimed."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against the ivory field are clean; no haloing or fringe visible at collar or base."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Even diffuse frontal illumination matches the packshot; flat printed fields introduce no conflicting directional light."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Logo, headline and subtitle all sit fully inside the canvas with margin."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "No glyph intersects the bottle or rings; band passes behind product without touching type."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All rendered faces appear as specified (msyh sans for CN copy, Didone for mark); presence verified visually."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Dior' and on-glass 'J'adore / EAU DE PARFUM / Dior' legible and correctly spelled."
+    },
+    "copy_concept_specific": {
+      "ok": false,
+      "evidence": "Lines are warm but interchangeable praise; nothing ties them to the radial-emission geometry, which itself reads as a target, so the words do not express THIS visible proposition."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The memorable device actually visible is concentric decorative circles (bullseye) behind a packshot, not an arrested emission event; no relationship between glass and field is staged beyond symmetry."
+    }
+  }
+}

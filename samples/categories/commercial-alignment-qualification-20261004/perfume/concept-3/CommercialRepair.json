@@ -1,0 +1,50 @@
+{
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "x": 349,
+          "y": 700,
+          "width": 380,
+          "height": 740,
+          "color": "#DCC08A",
+          "opacity": 0.22,
+          "kind": "product_silhouette"
+        }
+      ]
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 92
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 92
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 36
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    }
+  ],
+  "does_not_grant_pass": true
+}

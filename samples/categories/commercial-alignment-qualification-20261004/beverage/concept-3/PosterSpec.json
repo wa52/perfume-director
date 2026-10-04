@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243141103284488,
+  "background": {
+    "color": "#A9B49E",
+    "prompt": "Empty domestic dining corner: sage green plaster wall above a linen-covered surface laid with two empty matte ceramic plates, folded cotton napkins and simple wooden chairs pulled slightly out, soft window daylight from the left, continuous cloth plane rising to a mid-height horizon, no food, no text",
+    "revision": 0,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 756,
+    "width": 212,
+    "height": 760
+  },
+  "lighting": "soft window daylight from the left wrapping the glass, gentle vertical specular streaks preserved, diffuse cloth shadow",
+  "palette": [
+    "#A9B49E",
+    "#2E2419",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "位子留好了,就等你入座",
+    "x": 86,
+    "y": 1152,
+    "size": 62,
+    "color": "#2E2419",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "一桌家常饭摆齐,只欠围坐的人和你手里的这一瓶。",
+    "x": 86,
+    "y": 1238,
+    "size": 22,
+    "color": "#2E2419",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 660,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2E2419",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 740,
+    "y": 101,
+    "size": 40,
+    "color": "#2E2419",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.4,
+    "blur": 10,
+    "offset_x": 6,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 86,
+    "y": 1116,
+    "width": 389,
+    "color": "#D6231F"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "left",
+    "ground_material": "linen cloth over wooden dining surface",
+    "cast_length_ratio": 0.1,
+    "cast_opacity": 0.18,
+    "cast_blur": 30
+  }
+}

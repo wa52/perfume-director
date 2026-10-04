@@ -1,0 +1,129 @@
+{
+  "pass": false,
+  "score": 89.1,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 86,
+    "typography": 90,
+    "background": 86,
+    "physical_integration": 92,
+    "reference_alignment": 84,
+    "creative_coherence": 90,
+    "brand_alignment": 90
+  },
+  "problems": [
+    {
+      "type": "composition",
+      "problem": "The re-centered vermilion mass executed this time (shape_geometry ellipse bbox [560,520,1640,1580], visible in image 1 entering the right edge from y≈520), but its leftmost reach (x≈560 at y≈1050) still lands only at hem level. Along the beaded sweetheart bodice and the first two ruffle tiers (y 360-700) the gown sits on plain navy because at those heights the ellipse edge lies at x≈815-900, right of the bodice (product bbox left 322, bodice right ≈740). The figure-ground 'bite' therefore engages the mid/lower cascade and hem (image 6 confirms sheer tiers transmitting vermilion and the royal hem cutting it) while the upper third of the silhouette never interrupts the mass, so the perceptual flip is still only two-thirds activated and the top-right quadrant reads as dead navy against a busy lower-right.",
+      "root_cause": "Ellipse center (1100,1050) sits below and right of the garment's visual center (product bbox center ≈648,792); with radii 540x530 the primitive cannot reach the bodice column without crossing further edges.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-issue the COMPLETE single-primitive list shifted up-left toward the garment center while keeping one ellipse and the palette: set background.shapes to [{\"kind\":\"ellipse\",\"x\":470,\"y\":400,\"width\":1180,\"height\":1180,\"color\":\"#E4572E\",\"opacity\":0.94}] so the mass backs bodice and hem alike and the occlusion event reads along the whole silhouette."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Portfolio-level four-proposition diversity review remains unresolved from the previous round: c1/c2/c3 were judged one collapsed transparency/edge-registration idea with only c4 (offset silhouette echo) distinct. This poster is retained as the c2 draft pending that portfolio revision; its own pixels are not the defect.",
+      "root_cause": "Portfolio review state, not a defect of this poster's pixels.",
+      "affected_layer": "brand",
+      "repair_strategy": "Carry the diversity revision forward at portfolio level per the stated required_revision (keep c4; retain c1 only as legible multi-edge calibration; rebuild c2/c3 into materially different events). Do not alter this poster's Figure Ground Mass concept to solve it."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "ellipse",
+          "x": 470,
+          "y": 400,
+          "width": 1180,
+          "height": 1180,
+          "color": "#E4572E",
+          "opacity": 0.94
+        }
+      ]
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo and price layers intentionally empty per copy_policy intentional_empty_layers ['price','logo']; image 1 shows no stray mark, invented wordmark or watermark trace."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered product bbox [322,360,975,1224] (653x864) matches the source cutout aspect in image 2: strapless sweetheart neckline, ruched beaded bodice, embellished waistband, cascading sheer ruffle tiers and saturated royal hem all intact, no rotation or re-posing."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "scene_mode graphic with declared floating presentation and shadow.opacity 0; contact_detail_crop [242,1084,1055,1334] (image 6) shows the royal hem terminating cleanly against navy and vermilion with no missing-shadow artifact; the navy/vermilion boundary under the hem is the ellipse edge, not an implied floor horizon."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox stays inside canvas (322..975, 360..1224); only the intentional background ellipse crosses edges (crosses_canvas_edge true), which is primitive behavior; cutout edges show no halo against navy or vermilion in image 1 or image 6."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source illumination is soft diffuse near-frontal with no cast shadow; the flat matte ink field with one radial luminance preserves that shadowless reading, so no light-direction conflict exists between cutout and background."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [45,432,295,574] and subtitle bbox [45,806,154,901] sit fully inside the canvas with a 45px left margin; no glyph touches an edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry text_product_overlap reports title false and subtitle false; type column right edges 295 (title) and 154 (subtitle) clear product bbox left 322 at their y-ranges, so no intersection on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Both text layers use C:/Windows/Fonts/msyh.ttc, present in the installed approved list and covering the simplified Chinese glyphs rendered."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "No house brand claimed; copy is exactly the permitted Chinese headline and subtitle with no invented or misspelled brand names."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'好裙子,压得住场' plus '浓色当前,裙身反而更分明。' narrate THIS figure-ground proposition (dense color making the dress read more distinctly), not an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The oversized vermilion ellipse biting behind the cutout while sheer ruffle tiers transmit it (visible at the hem over the orange mass in image 6) is an identifiable perceptual event: opaque bodice and hem interrupt the mass, sheer tiers dissolve into it."
+    }
+  },
+  "reported_score": 87.0,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual stage: one unrotated floating cutout on a neutral field, shadow.opacity 0, no context, no wearer; only the flat primitives behind it change. Judging mechanisms, not names: c2 (one oversized ellipse) and c3 (two rectangles meeting at the bodice-to-skirt seam) produce the same visible event - opaque bodice/hem blocks a flat field while the sheer ruffle tiers transmit and tint toward it - differing only in primitive count and shape, i.e. a palette/geometry rename of one figure-ground transparency idea. c1 (five landmark-locked horizontal bands) and c3 (one landmark-locked horizon) are the same device again: hard graphic edges registered onto garment seams behind the cutout, c3 merely using fewer edges. c4's offset original-alpha silhouette is the only genuinely different event (misregistered graphic double versus photographed material). Net: one transparency/edge-registration packshot idea stated three times plus one silhouette-echo idea.",
+      "collapse_groups": [
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      ],
+      "required_revision": "Keep c4 as one voice. Rebuild the collapsed group into materially different events within the stated toolkit: (a) retain c1 only as the multi-edge calibration instrument with legible band intervals; (b) replace c2's ellipse with a non-field event, e.g. an editorial narrative or source-compatible photographic context that does not rely on sheer-zone transmission over a flat mass; (c) replace c3's split-plane with a purposeful brand-graphic event that does not register edges onto seams (e.g. the single straight decoration line used structurally across the canvas, independent of garment landmarks). No new slogans, no second photographed product, no macro plates, no diptych, no rotation, no relighting, shadow.opacity stays 0, and no wearer may be generated."
+    }
+  }
+}

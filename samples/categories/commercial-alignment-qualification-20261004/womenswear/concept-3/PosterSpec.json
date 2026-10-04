@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 88472832195202,
+  "background": {
+    "color": "#0F2447",
+    "prompt": "Two flat matte ink planes on smooth coated poster board meeting at one crisp printed horizontal seam, deep ink blue above and pale ice blue below, uniform shadowless frontal illumination, no objects, no texture, no gradient, no vertical division",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 630,
+        "color": "#0F2447",
+        "opacity": 1.0
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 630,
+        "width": 1080,
+        "height": 810,
+        "color": "#EAF2F6",
+        "opacity": 1.0
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 763,
+    "width": 742,
+    "height": 979
+  },
+  "lighting": "even shadowless frontal illumination identical in character to the source's diffuse studio wash, no gradient within each plane",
+  "palette": [
+    "#0F2447",
+    "#EAF2F6",
+    "#6FA8CC"
+  ],
+  "title": {
+    "text": "一条界线,两种裙身",
+    "x": 76,
+    "y": 86,
+    "size": 96,
+    "color": "#EAF2F6",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "上身紧致写实,下摆轻盈透色。",
+    "x": 76,
+    "y": 209,
+    "size": 28,
+    "color": "#EAF2F6",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EAF2F6",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "",
+    "x": 76,
+    "y": 86,
+    "size": 72,
+    "color": "#EAF2F6",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 76,
+    "y": 192,
+    "width": 760,
+    "color": "#6FA8CC"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "none, flat printed plane field",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 4
+  },
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

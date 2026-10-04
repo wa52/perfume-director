@@ -1,0 +1,162 @@
+{
+  "updated_at": "2026-10-04T01:33:29.639708+00:00",
+  "execution_finished": false,
+  "commercial_quality_certified": false,
+  "scope": "One real product per explicit subtype; auto presets are aliases. Not repeated-run stability or fit certification.",
+  "planned_cases": 16,
+  "planned_directions": 64,
+  "cases": [
+    {
+      "status": "RUNNING",
+      "stage": "CONCEPTS",
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-tshirt",
+      "input_sha256": "840820da1bd4b051b2e6b2d14323cd8f042d2faf9747d6a053df7a76c858e58f",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-shirt",
+      "input_sha256": "b7f591fd543dc811c7b18ea1e3c06a2b8ec758223c6dbea22f718234ad8e6a3c",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-knitwear",
+      "input_sha256": "8c22b0a56926d366ae3c5a066cf1fe1751c21b8343d7bb14ce075040f9a2b03b",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-tailoring",
+      "input_sha256": "72d3b4ee2009b243cc1cb735642a592c5c05722eed9dd399d6e005d99803537e",
+      "input_limitations": [
+        "original supplied wearer photograph retained; jacket complete, source lower legs cropped; tests original_model only"
+      ]
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-outerwear",
+      "input_sha256": "9bad3ebe612492768970bb1822d67069975534295e43c0a4c9dee724ad608155",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-trousers",
+      "input_sha256": "eecd5daf00612c9d751f38db9789d94ac6bfab519ad2f89e03e2a067b3f2c090",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "menswear-activewear",
+      "input_sha256": "2a32e27c3cf523841bb00b631d748d4533a87c1ac937a6828aef6cb0fa438f88",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-tshirt",
+      "input_sha256": "45b48a2a4ebc569d26702dc000fd26635a353ce011dc550e267ceadfc710d61a",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-shirt",
+      "input_sha256": "02e146cc5b5270321fab7530a7fcbb927265a640e2d4dc218e0dac802ef2eff9",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-knitwear",
+      "input_sha256": "eb8d35479361c9ce695683c101ce884706344c5f70208a276142f341a26ddf01",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-tailoring",
+      "input_sha256": "7aefee29996a9de512b69185c6f75c1fe46d96fc5e9d32c0f07474fd63aa1420",
+      "input_limitations": [
+        "deterministic matte requires visual edge inspection; no material reconstruction"
+      ]
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-outerwear",
+      "input_sha256": "5371aec208a2b51bf1dfe4ed97e82ffe45333fbfea496ff52af17bf7725753be",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-trousers",
+      "input_sha256": "53c17e33c0b0a3d4b0dcd346f9508eb7d682436854e32278857facb09cc1f738",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-dress",
+      "input_sha256": "f65e20446ff7172d998846b2e2aad9e9106aa87b9fc3fc63d61426c05b44d664",
+      "input_limitations": []
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-skirt",
+      "input_sha256": "e96ddb4d61b24f50490fdcbef5b9bb08ddf6002f13ab5a35a7a8196835ee9f8a",
+      "input_limitations": [
+        "visible white matte fragments in source; preserved for input-quality regression, not clean production art"
+      ]
+    },
+    {
+      "status": "QUEUED",
+      "stage": null,
+      "selected_directions": 0,
+      "model_pass_directions": 0,
+      "case_id": "womenswear-activewear",
+      "input_sha256": "83a11d77c22837bf1d20c209470480647abf9f775180e6b640a135177ecca0ce",
+      "input_limitations": [
+        "source shorter edge below 500 px; enlarged details are not commercial quality evidence"
+      ]
+    }
+  ]
+}

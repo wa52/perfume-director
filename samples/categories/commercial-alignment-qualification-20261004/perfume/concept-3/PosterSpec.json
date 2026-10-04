@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 222712544754435,
+  "background": {
+    "color": "#F2EFE8",
+    "prompt": "Vast empty cool ivory paper field with very faint fibre grain, evenly lit by diffuse frontal light, no horizon, no objects, no shadows, pure negative space reserved for monumental letterforms",
+    "revision": 0,
+    "shapes": [
+      {
+        "x": 409,
+        "y": 570,
+        "width": 280,
+        "height": 755,
+        "color": "#DCC08A",
+        "opacity": 0.22,
+        "kind": "product_silhouette"
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 955,
+    "width": 257,
+    "height": 740
+  },
+  "lighting": "Even diffuse frontal poster illumination matching the packshot, no directional shadow, only the measured contact shade at the base",
+  "palette": [
+    "#F2EFE8",
+    "#23201A",
+    "#DCC08A"
+  ],
+  "title": {
+    "text": "名字先于一切",
+    "x": 90,
+    "y": 101,
+    "size": 148,
+    "color": "#23201A",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.1,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "无需多言，一瓶即是全部证明",
+    "x": 99,
+    "y": 470,
+    "size": 32,
+    "color": "#23201A",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 4
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#23201A",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 97,
+    "y": 340,
+    "size": 52,
+    "color": "#23201A",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "perfume",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "cool ivory poster paper",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  },
+  "layout_fit": {
+    "requested_product": {
+      "x": 540,
+      "y": 1138,
+      "height": 547
+    },
+    "reason": "fit_actual_cutout_aspect_within_canvas_safe_area"
+  }
+}

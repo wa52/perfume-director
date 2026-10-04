@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200332895660935,
+  "background": {
+    "color": "#C9D6C4",
+    "prompt": "Very distant low mown grass fairway with an extremely pale haze-blurred tree line confined below 40 percent of frame height, turf band soft and desaturated occupying only 48-52 percent of frame height, bright uniform overcast sky above with no texture, foreground a clean continuous neutral light-grey matte studio floor plane from 52 percent downward, soft diffuse overcast daylight from above-front, low contrast, empty scene, no objects",
+    "revision": 2,
+    "shapes": []
+  },
+  "product": {
+    "x": 540,
+    "y": 840,
+    "width": 960,
+    "height": 510
+  },
+  "lighting": "soft diffuse overcast daylight from above-front matching the source, low contrast, gentle even exposure",
+  "palette": [
+    "#C9D6C4",
+    "#1E3A2F",
+    "#2FA8A0"
+  ],
+  "title": {
+    "text": "果岭在天边",
+    "x": 335,
+    "y": 130,
+    "size": 78,
+    "color": "#1E3A2F",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "周末的清晨，心情与果岭一起望向远方。",
+    "x": 265,
+    "y": 318,
+    "size": 30,
+    "color": "#1E3A2F",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.25,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1E3A2F",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 499,
+    "y": 238,
+    "size": 34,
+    "color": "#1E3A2F",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.62,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.35
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 454,
+    "y": 328,
+    "width": 220,
+    "color": "#2FA8A0"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "neutral matte light-grey studio floor plane",
+    "cast_length_ratio": 0.05,
+    "cast_opacity": 0.16,
+    "cast_blur": 30
+  }
+}

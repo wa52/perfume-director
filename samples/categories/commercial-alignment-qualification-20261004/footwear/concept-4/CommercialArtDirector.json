@@ -1,0 +1,80 @@
+{
+  "tier": "draft",
+  "evidence": "The depth-juxtaposition setting is built (hazy tree line and mown turf band behind a neutral grey plane, horizon passing behind the collar), the cutout is faithful and the Chinese serif headline/subline/wordmark stack is clean and uncropped. However the physical integration fails on visible evidence: the heel and midfoot spike lugs sit 60-90px above the only shadow patch, which floats under the forefoot, so the shoe reads as levitating rather than resting on the declared studio plane; the turf/gray-floor seam is a hard straight edge crossing behind the shoe with no depth-of-field or value transition; and the specified teal decoration element (#2FA8A0 at 454,328) is invisible in the render. The visual event is therefore a described backdrop plus a pasted packshot, not a resolved photographic placement comparable to the supplied references.",
+  "problems": [
+    {
+      "type": "grounding",
+      "problem": "Heel and midfoot outsole lugs hover visibly above the neutral plane; the single soft shadow patch sits only under the forefoot and reads as a floating blob, so no readable contact plane exists at the heel despite the photographic scene mode and the brief's heel-plus-forefoot contact requirement.",
+      "root_cause": "One centered contact shadow ellipse (offset 0, width_scale 1.35) cannot follow the angled sole line of the lateral cutout, whose heel contact projects higher in frame than the forefoot contact.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Replace the single centered contact shadow with two bounded contact patches aligned to the observed lug lines: one under the heel lugs and one under the forefoot lugs, using integration_plan cast fields within limits (cast_length_ratio ~0.05-0.08, cast_opacity ~0.16-0.25, cast_blur ~20-30) so both declared contact points touch the neutral plane; keep the source's soft above-front diffuse light and the matte grey floor material."
+    },
+    {
+      "type": "scene_integration",
+      "problem": "The turf-band-to-grey-floor boundary is a razor-straight hard seam with full local contrast on both sides, reading as two stacked backdrops rather than a receding fairway meeting a foreground plane behind the shoe.",
+      "root_cause": "Background prompt specified discrete bands ('turf band occupying 48-52 percent', floor 'from 52 percent downward') without any atmospheric or focus transition at the seam.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background with empty-material language only: keep the pale haze-blurred tree line and desaturated turf low in frame but add a soft haze/defocus gradient where the distant turf meets the neutral matte foreground plane, preserving overcast diffuse light, the reserved sky band for typography and the horizon passing behind the upper collar."
+    },
+    {
+      "type": "missing_spec_element",
+      "problem": "The enabled decoration primitive (teal #2FA8A0, 220px wide at 454,328) is not visible anywhere in the finished poster, so the specified accent device contributes nothing to the composition.",
+      "root_cause": "Decoration rendered behind opaque layers or with ineffective geometry/contrast against the pale sky band.",
+      "affected_layer": "typography",
+      "repair_strategy": "Either remove the decoration from the layer stack for a clean minimal sky band, or re-place it as a deliberate thin teal rule or arc framing the headline/subline block (e.g. a short horizontal rule between subline and shoe) with sufficient contrast against #C9D6C4-derived sky, keeping hierarchy headline > wordmark > subline."
+    },
+    {
+      "type": "typography_craft",
+      "problem": "The Nike wordmark is set in SimSun serif at 34px, appearing as a small generic typeset word rather than a confident brand lockup; tracking and weight give it less presence than the subline, weakening brand alignment for a locked wordmark.",
+      "root_cause": "Font choice (simsun.ttc) and small size for the logo layer instead of a heavier sans expression of the wordmark.",
+      "affected_layer": "brand",
+      "repair_strategy": "Reset the logo layer to a clean medium/bold sans (msyh.ttc) with increased tracking and slightly larger size, centered under the headline or anchored above the subline, keeping the string exactly 'Nike' and the #1E3A2F color; no new copy or claims."
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Visible lockup reads exactly 'Nike' in dark green beneath the headline, matching the locked wordmark string."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Sole silhouette with spike lugs, navy midsole stripe, white laces, collar, toe and heel match the untouched source cutout with no distortion or cropping."
+    },
+    "grounding_correct": {
+      "ok": false,
+      "evidence": "Heel and midfoot lugs float above the plane; only a forefoot shadow patch exists, so the declared two-point contact is not visibly true."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges are crisp against sky, turf and grey plane with no halo, fringe or matte remnants."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft diffuse above-front light on the matte upper agrees with the overcast scene; low contrast throughout, no conflicting specular or cast direction."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Headline, wordmark and subline sit fully inside the sky band with generous margins; nothing crosses a canvas edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "Headline, Nike wordmark and subline occupy separate vertical bands; no overlap with each other or with the shoe silhouette."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Serif Chinese headline and sans-style subline render with complete glyphs and no fallback boxes."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Nike' spelled correctly; no unauthorized performance, price or newness claims appear."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'果岭在天边' and '周末的清晨，心情与果岭一起望向远方。' name the distant-fairway proposition and the weekend-morning gaze, tied to the visible turf horizon."
+    },
+    "visual_memory_visible": {
+      "ok": false,
+      "evidence": "The intended scale-and-distance event is undermined by the levitating shoe; what actually reads is a pasted packshot over a banded backdrop, not a memorable physical or graphic event."
+    }
+  }
+}

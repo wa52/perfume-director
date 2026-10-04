@@ -12,7 +12,7 @@ UI defaults are aligned with the dynamic path. The perfume entry no longer reque
 
 ## Verification
 
-217 repository tests pass. Contract tests cover all category/subtype configurations and classify every workflow against its actual node graph. Job tests verify that the enforced profile reaches the worker and the saved job state. These checks validate policy routing, not commercial visual quality.
+219 repository tests pass. Contract tests cover all category/subtype configurations and classify every workflow against its actual node graph. Job tests verify that the enforced profile reaches the worker and the saved job state. These checks validate policy routing, not commercial visual quality.
 
 The initial perfume/watch qualification exposed a common copy retry failure: the writer was never told the numerical title/subtitle limits, and repeated subtitles over 96 characters. Limits and actual measured rejection lengths are now included in both generation and retry feedback, with rejection records retained. Language follows the user's brief unless explicitly requested otherwise. Creative generation/review now receive the same category/source constraints and actual renderer capabilities, excluding duplicate photographs, macro crop plates or arbitrary repeated typography that the renderer cannot execute.
 
@@ -30,4 +30,4 @@ The runner exports actual selected PNGs, previews, PosterSpec, Critic, Commercia
 
 When independent concept review rejects diversity after three attempts, a schema-valid proposal may be rendered as a held draft for diagnosis. The rejection remains a collective veto: every resulting image is NEEDS_REVIEW regardless of score. Malformed proposals and unavailable reviews cannot use this path. Consumer-facing copy is now required; explanations of layout belong only in the rationale, and subtitles may be empty.
 
-The earlier reference-aware watch batch completed four selections with zero commercial passes. It is preserved separately from the current seven-category qualification, which remains in progress. All 29 saved workflows have passed real node-registration checks on the reloaded service. Source policy alignment is complete; visual qualification and subtype coverage are separate, unfinished acceptance criteria.
+The earlier reference-aware watch batch completed four selections with zero commercial passes. It is preserved separately from the current seven-category qualification, which has now finished: six categories completed four selections each, menswear failed before rendering, and none of the 24 selections passed the commercial gate. All 29 saved workflows have passed real node-registration checks on the reloaded service. Source policy alignment is complete; commercial approval and subtype coverage remain separate acceptance criteria. The new 16-case clothing test is recorded independently.

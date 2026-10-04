@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243141103285497,
+  "background": {
+    "color": "#232E36",
+    "prompt": "Empty rain-washed night street: dark slate paving with a shallow mirror-water film forming a continuous ground at low height, thin falling rain curtain in the far distance, uniform cool overcast ambient light, no sun, no glow disc, no point light, no objects, no equipment, no text",
+    "revision": 1,
+    "shapes": []
+  },
+  "product": {
+    "x": 432,
+    "y": 806,
+    "width": 265,
+    "height": 950
+  },
+  "lighting": "cool overcast ambient after rain with one soft frontal fill on the glass, broad soft wet contact shade, no hard sun",
+  "palette": [
+    "#232E36",
+    "#EDF2F4",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "雨刚停,凉意先到了",
+    "x": 454,
+    "y": 101,
+    "size": 60,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 3,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "right"
+  },
+  "subtitle": {
+    "text": "玻璃上原有的水珠,就是这一刻最诚实的清凉证据。",
+    "x": 460,
+    "y": 230,
+    "size": 28,
+    "color": "#261E16",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2,
+    "max_width": 560,
+    "line_height": 1.6,
+    "align": "right"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#EDF2F4",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 842,
+    "y": 1296,
+    "size": 44,
+    "color": "#EDF2F4",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.3,
+    "blur": 30,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.6
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "rain-slick slate paving",
+    "cast_length_ratio": 0.18,
+    "cast_opacity": 0.28,
+    "cast_blur": 34
+  }
+}

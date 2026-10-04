@@ -1,0 +1,32 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "355b862b02c94807a29b193ea84b17ec.png"
+      }
+    },
+    "2": {
+      "class_type": "ProductDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "perfume",
+        "brief": "为这款香水探索四个明显不同的商业海报方向，保留原图；仅使用实际品牌和名称，不添加价格、促销、新品或未经提供的功效。"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "0719a600-7a0d-4479-833a-66d18e6f3296",
+    "number": 0,
+    "node_errors": {}
+  },
+  "input_sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+  "comfy_url": "http://127.0.0.1:8191"
+}

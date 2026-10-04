@@ -1,0 +1,156 @@
+{
+  "pass": false,
+  "score": 89.9,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 89,
+    "typography": 89,
+    "background": 89,
+    "physical_integration": 90,
+    "reference_alignment": 85,
+    "creative_coherence": 90,
+    "brand_alignment": 93
+  },
+  "problems": [
+    {
+      "type": "weak_contact_shadow",
+      "problem": "Heel lugs meet the dew ground with almost no darkening, so the heel reads slightly floated while the forefoot shadow is convincing; seating is uneven across the sole line.",
+      "root_cause": "Contact shadow patch weighted toward mid/forefoot; declared heel contact shadow under-delivered at opacity 0.68 with blur 3 over a dark ground.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Extend the bounded contact-shadow patch under the heel lug cluster (raise integration_plan cast_opacity toward 0.25-0.30 locally or add a second bounded heel patch) keeping cast_length_ratio within 0.06-0.10 and blur 30-40; do not relight the source cutout."
+    },
+    {
+      "type": "under_resolved_midfield",
+      "problem": "Between the horizon and roughly the lower third, the ground reads as uniform matte noise; the promised macro-visible beads with one crisp specular dot per droplet only appear in the foreground band.",
+      "root_cause": "Background generation resolved droplet scale and specular dots in the near field only, leaving the mid-field as flat noise contrary to the revision-4 prompt.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background with the same empty dew-material prompt but enforce bead scale and specular dots continuously from horizon to bottom edge; keep horizon height, palette and overcast light unchanged."
+    },
+    {
+      "type": "visible_band_seam",
+      "problem": "A faint rectangular tonal edge crosses the mist field behind the subline, reading as an unintended overlay block rather than even mist luminance.",
+      "root_cause": "The 0.55-opacity rectangle shape at y=380 h=340 prints as a hard-edged value step against the generated mist gradient.",
+      "affected_layer": "scene",
+      "repair_strategy": "Remove or reduce that rectangle (opacity toward 0.15-0.25 with feathered intent, or delete the shape) and let the generated mist carry the band; verify no straight horizontal edge remains behind the typography."
+    },
+    {
+      "type": "generic_typography",
+      "problem": "Headline, subline and wordmark are default-weight Microsoft YaHei with plain tracking; hierarchy is clean but the type carries no crafted voice, keeping the piece below reference-grade campaign typography.",
+      "root_cause": "Font choice and weights left at system defaults; only size and position were art-directed.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep copy and left alignment; introduce a heavier display weight or tighter optical sizing for the headline, increase tracking contrast between headline and subline, and align the wordmark baseline grid to the headline block so the mist band reads as one designed type system."
+    }
+  ],
+  "changes": [
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.28
+    },
+    {
+      "path": "integration_plan.cast_length_ratio",
+      "op": "set",
+      "value": 0.08
+    },
+    {
+      "path": "integration_plan.cast_blur",
+      "op": "set",
+      "value": 36
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": []
+    },
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Continuous horizontal ground plane of matte dark teal-grey film densely covered edge to edge with macro-visible rounded condensation droplets three to eight pixels wide, every droplet from the horizon line to the bottom edge carrying one crisp white specular dot, identical bead scale and specular dot density in the mid-field between the horizon and the lower third as in the foreground, no smooth bare band, no uniform noise-only region and no luminance seam anywhere, meeting a flat pale silver-grey mist field of perfectly even luminance with no rectangular overlay edge at a perfectly horizontal horizon, uniform diffuse overcast illumination from above-front only, low contrast, cool neutral tone throughout, empty scene, no objects"
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 6
+    },
+    {
+      "path": "logo.y",
+      "op": "set",
+      "value": 96
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Locked wordmark 'Nike' renders intact at bbox [86,86,167,117] in dark teal #123332 above the headline, matching the supplied brand evidence string exactly."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster shoe within bbox [134,677,946,1109] preserves the source lateral silhouette in proportion: spike-lug outsole, white laces, white collar, navy midsole stripe, perforated dot micro-pattern and lime swoosh all match image 2 pixel-for-pixel in character."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [54,969,1026,1219] shows heel and forefoot lug tips touching the dew film with a soft occlusion core under both contacts at shadow offset_y 0; no floating gap, and product_base_y 1109 sits inside the 0.94 base limit with 331px bottom margin."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against ground and mist show no halo, fringe or clipping; left/right margins are 134px each and the silhouette is fully inside the 1080x1440 canvas (shape_geometry crosses_canvas_edge false)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Mist band is a flat pale silver-grey field of even luminance and the dew beads carry only tiny neutral speculars, matching the source photograph's soft diffuse above-front studio light and the declared overcast dawn lighting; no directional warm or硬 source appears."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [86,200,993,282], subtitle [86,330,576,361] and logo [86,86,167,117] all lie fully inside the canvas with no edge intersection."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; no copy layer intersects the product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All copy layers use installed approved font C:/Windows/Fonts/msyh.ttc with full Chinese glyph coverage visible in the render."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Wordmark spells 'Nike' exactly as locked; no invented model name, price, athlete or performance claim appears, and the empty price layer is intentional per copy policy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline '清晨是湿的，鞋是干的' states this poster's wet-world/dry-object proposition and subline '不必证明什么，安静在场就是答案。' reinforces quiet presence; neither is an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The perfectly dry matte cutout seated by heel/forefoot contact shadows on a dew-beaded ground whose beads now read as discrete specular dots from mid-field to bottom edge, under a pale mist band carrying the type register, is an identifiable memorable wet-world-versus-dry-object event at poster scale."
+    }
+  },
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "social_ad",
+    "target": "campaign_candidate"
+  },
+  "reported_score": 90.2
+}

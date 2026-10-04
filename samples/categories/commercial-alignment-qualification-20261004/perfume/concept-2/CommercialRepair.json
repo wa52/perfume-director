@@ -1,0 +1,59 @@
+{
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1123,
+          "color": "#F4EDE1",
+          "opacity": 1
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 1123,
+          "width": 1080,
+          "height": 317,
+          "color": "#D9A441",
+          "opacity": 0.85
+        }
+      ]
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 76
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 92
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 5
+    },
+    {
+      "path": "integration_plan.cast_length_ratio",
+      "op": "set",
+      "value": 0.05
+    },
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.25
+    },
+    {
+      "path": "integration_plan.cast_blur",
+      "op": "set",
+      "value": 12
+    }
+  ],
+  "does_not_grant_pass": true
+}

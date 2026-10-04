@@ -1,0 +1,106 @@
+{
+  "pass": false,
+  "score": 91.1,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 90,
+    "typography": 89,
+    "background": 89,
+    "physical_integration": 92,
+    "reference_alignment": 88,
+    "creative_coherence": 93,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "material_resolution",
+      "problem": "The declared 'fine paper grain, fibre flecks and matte mineral tooth readable at full print resolution' is still not perceptible in image 1: the field reads as an optically flat digital beige at 100% view, and the contact-detail crop (image 6, region 506,1156-963,1406) confirms only the faintest uniform noise around the base and rule. Revision 3 of the prompt changed wording again without producing a visible tooth change versus images 7 and 1, so the 'mineral-coated poster board' material story collapses into a vector fill next to the photographed glass.",
+      "root_cause": "Background prompt keeps describing grain qualitatively ('fine', 'gentle') so the generator averages it away; no perceptible micro-contrast amplitude is demanded at 1080x1440.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with an amplitude-forcing instruction: clearly visible mineral tooth and short paper-fibre flecks as low-contrast speckle readable at 100 percent view across the whole coat, uneven champagne mottle patches 40-120px wide, still empty, horizonless, shadowless, object-free, preserving the quiet left field for the printed cadence."
+    },
+    {
+      "type": "cadence_terminal_link",
+      "problem": "The foil rule now runs 201-696 (decoration width 495 applied), and in image 6 its right terminus sits at global x≈696, i.e. inside the contact-shadow footprint (shadow spans ≈637-832 at base_y 1295) but 38px short of the contact center 734.5. Visually the rest-level line therefore slides under the left heel of the bottle's shadow and stops before the drop it is meant to settle, so the 'heaviest drop stands on the rest line' closure reads approximate rather than exact at the one point where column and flacon must meet.",
+      "root_cause": "Decoration width was set to land in the column-to-bottle gap (690-700) instead of under the measured contact center; the terminal alignment was tuned to negative space, not to contact_points[0].center_x.",
+      "affected_layer": "scene",
+      "repair_strategy": "Extend decoration width from 495 to 534 at x=201 so the rule's right terminus lands at 735, directly under the contact center, still 70px below base_y 1296 so it never touches the product bbox; the settled oval, the rule and the flacon's contact shadow then share one rest level."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty warm ivory-champagne mineral-coated poster board with clearly visible mineral tooth and short paper-fibre flecks as low-contrast speckle readable at 100 percent view across the entire coat, uneven champagne mottle patches 40 to 120 pixels wide, soft even frontal illumination, flat surface with no horizon, no shadows, no objects, quiet negative space on the left for a vertical rhythm of printed forms"
+    },
+    {
+      "path": "decoration.width",
+      "op": "set",
+      "value": 534
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Masthead 'Dior' in BOD_R.TTF at 58px, bbox 97,60-216,99, top-left with tracking 4; Bodoni hairline/serif contrast anchors the type column as in the house-mark role without copying any reference layout."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox 586,432-883,1296 (299x864, height ratio 0.60 within fresh-concept 0.35-0.74) reproduces image 2 exactly: teardrop body, ribbed gold collar, clear spherical stopper, gold 'J'adore / EAU DE PARFUM / Dior' lettering, opaque white base refraction; exactly one instance, no generated duplicate."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact-detail crop (image 6, region 506,1156-963,1406) shows a soft grey contact shadow hugging the opaque white base at base_y 1295 with contact width 195; shadow kind=contact, offset_y=0, correct zero offset for the declared graphic board; no invented photographic floor or horizon."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry reports crosses_canvas_edge false for all five ellipses; settled oval bottom 1372, rule right 696, title right 851, product right 883, all inside 1080x1440 with comfortable margins; base 1296 <= 0.94*1440."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft frontal packshot light preserved unchanged from image 2: vertical shoulder highlights, milky cap highlight, bright white base refraction; the even ivory field adds no competing cast, matching integration_plan cast_length_ratio 0 and cast_opacity 0."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Logo 97,60-216,99, title 90,115-851,201, subtitle 90,210-654,254 all fully inside canvas; price layer intentionally empty per copy_policy intentional_empty_layers."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; first drop mark top y=380 clears subtitle bottom 254 by 126px; column x-range 201-460 never intersects the type block or product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc renders the Chinese headline and subtitle glyphs; BOD_R.TTF renders the Latin masthead; both appear in the approved installed font list."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "On-glass 'J'adore', 'EAU DE PARFUM', 'Dior' legible and correctly spelled in image 1, identical to image 2; masthead 'Dior' correctly spelled."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'时间一滴一滴落下 / 最沉的那滴，停在你面前' names this poster's exact staged event - measured falling drops and the heaviest drop arrested before the reader - mirrored by the descending oval column and the flacon as terminal solidified drop; not an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The cadence is visibly staged in image 1: small high mark at y≈380, widening teardrop ovals at 560/770/990, one broad settled form at 1252-1372 closed by a straight foil rule at y=1366, with the untouched packshot standing right as the last drop; sequence, interval and gravity are readable at a glance."
+    }
+  },
+  "reported_score": 91.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

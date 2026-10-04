@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "menswear-tshirt",
+    "product_category": "menswear",
+    "garment_type": "tshirt",
+    "status": "RUNNING",
+    "stage": "CONCEPTS",
+    "job_id": "52ac4704e7294b12adc31263e9833494",
+    "quality_profile": "commercial-v2-aligned-20261003",
+    "commercial_target": "campaign_candidate",
+    "selected_directions": 0,
+    "model_pass_directions": 0
+  }
+]

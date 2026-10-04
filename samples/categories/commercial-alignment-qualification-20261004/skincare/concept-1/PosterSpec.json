@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 161093578328866,
+  "background": {
+    "color": "#E9E7E3",
+    "prompt": "Perfectly even flat matte light-gray poster stock, value near #E9E7E3, single uniform diffuse ambient illumination, absolutely no gradient, no vignette, no horizon, no texture, no props, empty and calm",
+    "revision": 2,
+    "shapes": [
+      {
+        "kind": "product_silhouette",
+        "x": 180,
+        "y": 140,
+        "width": 872,
+        "height": 1109,
+        "color": "#8E1B24",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 562,
+    "y": 864,
+    "width": 702,
+    "height": 893
+  },
+  "lighting": "Even frontal poster illumination matching the source's soft diffuse studio light; cutout keeps its baked broad vertical specular and collar streaks untouched",
+  "palette": [
+    "#E9E7E3",
+    "#221A18",
+    "#8E1B24"
+  ],
+  "title": {
+    "text": "轮廓先于你抵达",
+    "x": 65,
+    "y": 150,
+    "size": 84,
+    "color": "#221A18",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 6,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "身影离开,形状留下:被记住的总是轮廓。",
+    "x": 65,
+    "y": 246,
+    "size": 33,
+    "color": "#221A18",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 3,
+    "max_width": 440,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#221A18",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "",
+    "x": 65,
+    "y": 72,
+    "size": 16,
+    "color": "#221A18",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 0
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat matte poster ink field",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  }
+}

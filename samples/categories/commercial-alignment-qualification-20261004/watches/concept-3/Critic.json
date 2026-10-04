@@ -1,0 +1,173 @@
+{
+  "pass": false,
+  "score": 85.7,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 84,
+    "typography": 88,
+    "background": 80,
+    "physical_integration": 90,
+    "reference_alignment": 78,
+    "creative_coherence": 84,
+    "brand_alignment": 94
+  },
+  "problems": [
+    {
+      "type": "creative_diversity",
+      "problem": "Portfolio gate still open: the four-proposition review found Winter Horizon and Night Monument built on the identical stage mechanism (one horizon-band rectangle behind the opaque silhouette + one pooled ellipse under the standing watch + renderer contact shadow), differing only in palette. Visible evidence in this poster: marine rectangle seam at y864 plus snow disc ellipse under the strap base, the same two-move stage as the monument draft. Until one collapsed concept is structurally rewritten this render stays a draft regardless of craft scores.",
+      "root_cause": "Required structural rewrite of one collapsed concept was never executed; this poster itself is craft-complete.",
+      "affected_layer": "scene",
+      "repair_strategy": "Keep this poster untouched; rewrite Night Monument as a pure negative-space void (zero horizon rectangle, zero ground disc, product suspended on renderer shadow only) or as a dial-grammar abstraction using permitted flat ellipses as an oversized Roman-index ring behind the cutout, then re-submit this poster."
+    },
+    {
+      "type": "creative_element_invisible",
+      "problem": "The declared 'faint cold glow on the horizon' (ellipse bbox [454,785,627,943]) is fully occluded by the opaque product bbox [269,346,811,1152]; in the poster the horizon line at y864 shows only flat sky meeting flat marine on both flanks with no glow anywhere. One of the four mechanism primitives contributes nothing visible, so the staged winter event reads as three planes instead of four.",
+      "root_cause": "Glow ellipse was sized and centred inside the product silhouette instead of straddling it on the horizon seam.",
+      "affected_layer": "scene",
+      "repair_strategy": "Widen and re-seat the glow ellipse on the seam so it peeks on both flanks of the cutout, e.g. x300 y800 width480 height150 at low opacity, keeping it strictly behind the silhouette and within the eight-primitive budget."
+    },
+    {
+      "type": "hierarchy_scale_gap",
+      "problem": "Against references 3-4 the masthead carries less visual authority than the concept's 'centered sans masthead' claim: title bbox [341,86,880,157] is only ~71px tall on a 1440px canvas while the hero occupies 56% of height, and the НИКА lockup at 28px nearly vanishes in the large empty sky field between y157 and y346. Composition is competent but reads quieter than a professional campaign masthead zone.",
+      "root_cause": "Type sizes were set for safety margins rather than for masthead dominance in the calm sky zone.",
+      "affected_layer": "typography",
+      "repair_strategy": "Raise title size to ~84 and logo to ~32, keeping centered alignment, current x positions and the clear gap above the product top y346; no copy changes."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 864,
+          "color": "#EAF2F6",
+          "opacity": 1.0
+        },
+        {
+          "kind": "rectangle",
+          "x": 0,
+          "y": 864,
+          "width": 1080,
+          "height": 576,
+          "color": "#1D4258",
+          "opacity": 1.0
+        },
+        {
+          "kind": "ellipse",
+          "x": 270,
+          "y": 940,
+          "width": 540,
+          "height": 270,
+          "color": "#F4F9FB",
+          "opacity": 0.95
+        },
+        {
+          "kind": "ellipse",
+          "x": 300,
+          "y": 800,
+          "width": 480,
+          "height": 150,
+          "color": "#9CC0D6",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "path": "title.size",
+      "op": "set",
+      "value": 84
+    },
+    {
+      "path": "logo.size",
+      "op": "set",
+      "value": 32
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "НИКА lockup renders uncropped at [491,252,589,273] in the sky zone, exact dial brand string, clear of title and product."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Product bbox [269,346,811,1152] keeps round polished case, dual right-flank crowns, black croc strap loop, tan lining, Roman indices, framed date under XII and small-seconds printed РОССИЯ/КВАРЦ with no warp or duplicate instance."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [189,1012,891,1262] shows strap base on the white snow disc with soft contact shadow at offset_y 0; graphic scene_mode declares a printed snow plane, no photographic floor required."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "No shape or product bbox crosses a canvas edge; silhouette edges crisp against frost and marine planes with no halo."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source soft diffuse upper-front-left studio light on metal untouched; declared uniform matte diffuse printed field casts no competing directional light."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [341,86,880,157], logo [491,252,589,273], subtitle [270,1330,752,1360] all fully inside canvas with comfortable margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap false for title, subtitle, logo; subtitle sits below base_y 1152 and below disc bottom y1210 with no both-axis intersection."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All copy renders in approved installed C:/Windows/Fonts/msyh.ttc with full Chinese and Cyrillic coverage."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА and РОССИЯ repeat dial/strap lettering exactly; no invented model numbers, certifications or gemstone grades; empty price preserved as authorized."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'名字立在雪原上' plus 'РОССИЯ，表盘上与地平线上同名。' name this watch standing on a stylized snow horizon; not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Softly lit steel watch visibly rises from a flat near-white snow disc at the sky/marine seam; one memorable staged event consistent across poster and contact crop."
+    }
+  },
+  "reported_score": 83.6,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+      "collapse_groups": [
+        [
+          "nika-rossiya-night-monument",
+          "nika-rossiya-winter-horizon"
+        ]
+      ],
+      "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+    }
+  }
+}

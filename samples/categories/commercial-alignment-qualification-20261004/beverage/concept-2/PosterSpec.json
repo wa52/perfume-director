@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243141103283479,
+  "background": {
+    "color": "#E7EBE4",
+    "prompt": "Flat pale cool grey-green paper poster field with fine tooth, one continuous scarlet ribbon band running horizontally at mid height from left edge to right edge, even diffuse frontal light, no horizon, no falloff, completely flat graphic surface, no objects, no text",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 687,
+        "width": 1080,
+        "height": 72,
+        "color": "#D6231F",
+        "opacity": 0.95
+      }
+    ]
+  },
+  "product": {
+    "x": 734,
+    "y": 749,
+    "width": 241,
+    "height": 864
+  },
+  "lighting": "even diffuse frontal illumination, completely flat printed surface, no photographic floor, crisp printed base shade only",
+  "palette": [
+    "#E7EBE4",
+    "#1E1B18",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "一抹红,穿过整座城市",
+    "x": 65,
+    "y": 432,
+    "size": 56,
+    "color": "#1E1B18",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2,
+    "max_width": 330,
+    "line_height": 1.3,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "从瓶盖到标签,同一种红始终陪在同一条路上。",
+    "x": 65,
+    "y": 806,
+    "size": 22,
+    "color": "#1E1B18",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 330,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1E1B18",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 65,
+    "y": 1274,
+    "size": 44,
+    "color": "#1E1B18",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat printed paper field",
+    "cast_length_ratio": 0.04,
+    "cast_opacity": 0.0,
+    "cast_blur": 10
+  }
+}

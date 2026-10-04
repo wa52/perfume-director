@@ -1,0 +1,22 @@
+{
+  "id": "beverage-official-clean",
+  "product_category": "beverage",
+  "local_path": "assets/products/categories/beverage-official-clean.png",
+  "source_url": "https://www.coca-cola.com/at/de/brands/coca-cola",
+  "sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "width": 180,
+  "height": 650,
+  "rights_status": "research fixture; source resolution limits commercial delivery",
+  "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。",
+  "provenance": "assets/products/categories/beverage-official-clean.provenance.json",
+  "input_sha256": "0176e6a89ee5b8b598cc3bfd7336b8b82a3ae292c33a4eac2245344cbad9897f",
+  "status": "COMPLETED",
+  "job_id": "dc0a0641ba434f40880d9ab47265ecc1",
+  "stage": "FINISHED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\dd22b317650b",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_target": "campaign_candidate",
+  "direction_index": 4,
+  "direction_name": "Coolness Arrives Before The Rain Stops",
+  "version": 5
+}

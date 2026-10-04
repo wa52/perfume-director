@@ -1,0 +1,86 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 2,
+    "score": 90.0,
+    "pass": false,
+    "poster": "v2/poster.png",
+    "spec": "v2/PosterSpec.json",
+    "critic": "v2/Critic.json",
+    "review_error": null,
+    "sha256": "edea59150eee6f7bb98178e7bce52b8ed0497c06d1ddc6ef77450eee1666d034"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 78.0,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "15f2f78ef00014f8aa5279812e4a9434f365da268094d3f4df6d3aa0ad4fafb2"
+    },
+    {
+      "version": 2,
+      "score": 90.0,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "edea59150eee6f7bb98178e7bce52b8ed0497c06d1ddc6ef77450eee1666d034"
+    },
+    {
+      "version": 3,
+      "score": 88.6,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "2a021b661158115f065a5391a9da4e8d5094a00ed158cfc98749a58db7a59a6a"
+    },
+    {
+      "version": 4,
+      "score": 88.7,
+      "pass": false,
+      "poster": "v4/poster.png",
+      "spec": "v4/PosterSpec.json",
+      "critic": "v4/Critic.json",
+      "review_error": null,
+      "sha256": "32a9fd13173d5e4cb50ab37ed82922993f09ff2d9b7e655b5851ef02d0975584"
+    },
+    {
+      "version": 5,
+      "score": 89.0,
+      "pass": false,
+      "poster": "v5/poster.png",
+      "spec": "v5/PosterSpec.json",
+      "critic": "v5/Critic.json",
+      "review_error": null,
+      "sha256": "5bc29966e83c114249e7d7b0f9849e94cf71612da53f68b19e57d38d88ae195c"
+    }
+  ],
+  "input_sha256": "5b3183cc8e56c93e5de7fce5e5c7265247bf40fb5101cd504e0960a357e54ea8",
+  "poster_sha256": "edea59150eee6f7bb98178e7bce52b8ed0497c06d1ddc6ef77450eee1666d034",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}

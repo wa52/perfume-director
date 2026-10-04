@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 222712544755444,
+  "background": {
+    "color": "#EFE9DE",
+    "prompt": "Empty warm ivory-champagne mineral-coated poster board with clearly visible fine paper grain, fibre flecks and matte mineral tooth readable at full print resolution, gentle tonal mottle in the coat, soft even frontal illumination, flat surface with no horizon, no shadows, no objects, quiet negative space on the left for a vertical rhythm of printed forms",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 311,
+        "y": 380,
+        "width": 38,
+        "height": 37,
+        "color": "#C99B45",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 292,
+        "y": 560,
+        "width": 76,
+        "height": 122,
+        "color": "#E4C584",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 271,
+        "y": 770,
+        "width": 119,
+        "height": 187,
+        "color": "#D9AE55",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 244,
+        "y": 990,
+        "width": 173,
+        "height": 220,
+        "color": "#C99B45",
+        "opacity": 0.9
+      },
+      {
+        "kind": "ellipse",
+        "x": 201,
+        "y": 1252,
+        "width": 259,
+        "height": 120,
+        "color": "#B98A33",
+        "opacity": 0.85
+      }
+    ]
+  },
+  "product": {
+    "x": 734,
+    "y": 864,
+    "width": 299,
+    "height": 864
+  },
+  "lighting": "Cool even ambient poster illumination matching the soft frontal packshot light, no horizon, no cast shadows",
+  "palette": [
+    "#EFE9DE",
+    "#3B2E1C",
+    "#C99B45"
+  ],
+  "title": {
+    "text": "时间一滴一滴落下",
+    "x": 90,
+    "y": 115,
+    "size": 88,
+    "color": "#3B2E1C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 9,
+    "max_width": 0,
+    "line_height": 1.25,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "最沉的那滴，停在你面前",
+    "x": 90,
+    "y": 210,
+    "size": 44,
+    "color": "#3B2E1C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#3B2E1C",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Dior",
+    "x": 97,
+    "y": 60,
+    "size": 58,
+    "color": "#3B2E1C",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 4
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 201,
+    "y": 1366,
+    "width": 495,
+    "color": "#C99B45"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "perfume",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "pale mineral-coated poster board",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 6
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "778d011cbf8d41b1a8aee46bb48c8fe7.png"
+      }
+    },
+    "2": {
+      "class_type": "ClothingDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "menswear",
+        "brief": "为这件男装商品探索四个有不同消费者情境和视觉事件的广告命题，再自动排版、出图、看图审稿与修改。保留原图衣型、图案、面料细节和展示方式，不生成穿衣人物。不编造品牌、价格、促销、成分、功效或季节。标题面向消费者，不解释设计构图。",
+        "garment_type": "tshirt",
+        "display_mode": "auto"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "9814c809-d151-41dd-a596-4a593ecacdcc",
+    "number": 116,
+    "node_errors": {}
+  },
+  "input_sha256": "840820da1bd4b051b2e6b2d14323cd8f042d2faf9747d6a053df7a76c858e58f",
+  "comfy_url": "http://127.0.0.1:8191"
+}

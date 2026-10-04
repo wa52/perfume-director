@@ -1,0 +1,32 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "84346f2a936d45da902b8348738340f9.png"
+      }
+    },
+    "2": {
+      "class_type": "ProductDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "watches",
+        "brief": "为这款商品探索四个明显不同的商业品牌海报方向，保留商品原图，只使用清楚可读的实际品牌与名称。无价格、功效、促销或新品声明。"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "99bf7688-2895-4087-8fc8-a628a51dfda2",
+    "number": 21,
+    "node_errors": {}
+  },
+  "input_sha256": "51d37227e7cc0c6411d5152e019bdf1a65454c49493daf31892f1789e5005963",
+  "comfy_url": "http://127.0.0.1:8191"
+}

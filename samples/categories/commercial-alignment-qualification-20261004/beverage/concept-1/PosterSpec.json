@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 243141103282470,
+  "background": {
+    "color": "#E9A06B",
+    "prompt": "Empty dusk sky in warm apricot fading to deep umber at the top, one soft low sun glow centered at mid height, flat dry earthen plain of matte fine mineral dust in warm mid brown meeting the sky at one low continuous horizon, a luminous warm frontal light pool on the dust brightest directly around and in front of the center foreground contact point and falling off radially to deeper umber at the bottom edge and side margins, smooth value without planks, boards, grain lines or knots, calm even frontal fill, no objects, no equipment, no text",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 346,
+        "y": 389,
+        "width": 389,
+        "height": 389,
+        "color": "#F6C489",
+        "opacity": 0.95
+      },
+      {
+        "kind": "product_silhouette",
+        "x": 438,
+        "y": 544,
+        "width": 204,
+        "height": 690,
+        "color": "#2A1410",
+        "opacity": 0.92
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 888,
+    "width": 278.88000000000005,
+    "height": 1000.1600000000001
+  },
+  "lighting": "low sun directly behind the subject eclipsed by the contour, soft frontal fill preserved on the glass, short diffuse contact shade at the base",
+  "palette": [
+    "#E9A06B",
+    "#2A1410",
+    "#D6231F"
+  ],
+  "title": {
+    "text": "夕阳里,一眼认出它",
+    "x": 76,
+    "y": 108,
+    "size": 72,
+    "color": "#2A1410",
+    "font": "C:/Windows/Fonts/simsun.ttc",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "不需要任何提醒,那个熟悉的身影自己会说话。",
+    "x": 76,
+    "y": 206,
+    "size": 24,
+    "color": "#2A1410",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.3,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#2A1410",
+    "font": "C:/Windows/Fonts/simsun.ttc"
+  },
+  "logo": {
+    "text": "Coca-Cola",
+    "x": 842,
+    "y": 132,
+    "size": 40,
+    "color": "#2A1410",
+    "font": "C:/Windows/Fonts/BOD_R.TTF",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.62,
+    "blur": 14,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.0
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "beverage",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat dry earthen plain",
+    "cast_length_ratio": 0.06,
+    "cast_opacity": 0.22,
+    "cast_blur": 18
+  }
+}

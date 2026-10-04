@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200332895658917,
+  "background": {
+    "color": "#EFECE3",
+    "prompt": "Flat warm off-white screen-printed poster paper with fine ink grain, uniform graphic illumination, no horizon, no depth cues, no objects",
+    "revision": 0,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 205,
+        "y": 245,
+        "width": 670,
+        "height": 662,
+        "color": "#8FE388",
+        "opacity": 0.95
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 666,
+        "width": 1080,
+        "height": 108,
+        "color": "#1B2F4E",
+        "opacity": 0.9
+      },
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 878,
+        "width": 1080,
+        "height": 562,
+        "color": "#2FA8A0",
+        "opacity": 0.58
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 576,
+    "width": 923,
+    "height": 490
+  },
+  "lighting": "perfectly even flat poster illumination, ink density only, no falloff, no cast shadow",
+  "palette": [
+    "#EFECE3",
+    "#1B2F4E",
+    "#8FE388"
+  ],
+  "title": {
+    "text": "把颜色穿成态度",
+    "x": 97,
+    "y": 1030,
+    "size": 104,
+    "color": "#1B2F4E",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "青绿配柠绿，一眼就被记住的那双鞋。",
+    "x": 97,
+    "y": 1180,
+    "size": 32,
+    "color": "#1B2F4E",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 0,
+    "line_height": 1.4,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#1B2F4E",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 864,
+    "y": 101,
+    "size": 54,
+    "color": "#1B2F4E",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2
+  },
+  "shadow": {
+    "opacity": 0.5,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact",
+    "width_scale": 1.8
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 97,
+    "y": 968,
+    "width": 886,
+    "color": "#8FE388"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "flat printed paper, no physical ground",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  }
+}

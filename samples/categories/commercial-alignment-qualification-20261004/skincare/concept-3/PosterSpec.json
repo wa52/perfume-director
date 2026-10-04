@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 161093578330884,
+  "background": {
+    "color": "#E4E2DE",
+    "prompt": "One continuous seamless matte light-gray paper sweep filling the whole frame, single constant value from edge to edge, ground plane blending invisibly upward with no visible seam, no line, no horizon, no wall-floor curve, lit by perfectly even shadowless diffuse ambient light from all directions, no vignette, no hotspot, no corner darkening, no gradient of any kind, only microscopic paper grain, completely empty and clean",
+    "revision": 3,
+    "shapes": [
+      {
+        "kind": "ellipse",
+        "x": 348,
+        "y": 640,
+        "width": 259,
+        "height": 346,
+        "color": "#8A4A32",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 470,
+        "y": 512,
+        "width": 205,
+        "height": 274,
+        "color": "#A34A2E",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 612,
+        "y": 448,
+        "width": 162,
+        "height": 216,
+        "color": "#B4655F",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 714,
+        "y": 344,
+        "width": 130,
+        "height": 173,
+        "color": "#8E1B24",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 796,
+        "y": 262,
+        "width": 97,
+        "height": 130,
+        "color": "#6E3A28",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 866,
+        "y": 196,
+        "width": 76,
+        "height": 101,
+        "color": "#A34A2E",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 924,
+        "y": 142,
+        "width": 54,
+        "height": 72,
+        "color": "#B4655F",
+        "opacity": 1
+      },
+      {
+        "kind": "ellipse",
+        "x": 972,
+        "y": 98,
+        "width": 38,
+        "height": 50,
+        "color": "#8E1B24",
+        "opacity": 1
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 679,
+    "height": 864
+  },
+  "lighting": "Soft diffuse front-left key matching the cutout's broad vertical highlight, gentle floor falloff, short soft contact shade drifting right",
+  "palette": [
+    "#E4E2DE",
+    "#26201C",
+    "#A34A2E"
+  ],
+  "title": {
+    "text": "色粒离肩而起",
+    "x": 65,
+    "y": 72,
+    "size": 84,
+    "color": "#26201C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 12,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "哑光色点自肩线升空,光泽管身原地镇场。",
+    "x": 65,
+    "y": 184,
+    "size": 28,
+    "color": "#26201C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1,
+    "max_width": 520,
+    "line_height": 1.5,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#26201C",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "",
+    "x": 65,
+    "y": 72,
+    "size": 16,
+    "color": "#26201C",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 0
+  },
+  "shadow": {
+    "opacity": 0.35,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "skincare",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "seamless matte light-gray paper sweep",
+    "cast_length_ratio": 0.08,
+    "cast_opacity": 0.16,
+    "cast_blur": 18
+  }
+}

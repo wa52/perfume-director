@@ -1,0 +1,73 @@
+{
+  "tier": "social_ad",
+  "evidence": "The poster stages the declared event legibly: one crisp champagne-gold ground plane meets the pale ivory air field exactly at the bottle's base (horizon ~y1123, base seated on it), with a short soft contact shade under the narrow base; the untouched packshot keeps its ribbed gold collar, peach juice, milky cap and white base refraction, and its soft frontal light agrees with the even ivory field. The left stack (Didone 'Dior' mark, two-line Chinese declaration, gold rule, subtitle) is calm, uncropped and collision-free, echoing the legacy J'adore print's lettering-left / bottle-right structure. Copy ('光与大地在此相遇', '一滴香，安住于暖金与晨白之间') names exactly this horizon proposition, so the memory device - the bottle personifying the warm/cool boundary - is visible, not just written. Craft sits at resolved social level: the flat vector horizon and faint pre-horizon band read slightly diagrammatic against the photographic reference set, and the small serif lockup lacks the monumental scale of the legacy print.",
+  "problems": [
+    {
+      "type": "weak_horizon_craft",
+      "problem": "The 'single crisp horizontal boundary' reads as three stacked flat bands: a faint translucent gold strip (~y1099-1147) sits above the 50% gold field, softening the decisive edge and making the ground look like layered vector rectangles rather than one honed mineral plane meeting air.",
+      "root_cause": "Extra low-opacity rectangle (y1099, h48, opacity 0.16) plus the 0.5-opacity gold field produce a stepped, diagrammatic horizon instead of one crisp material boundary.",
+      "affected_layer": "scene",
+      "repair_strategy": "Reduce background.shapes to two rectangles only - ivory air field (0,0,1080,1123) and a single warmer, higher-opacity gold ground (0,1123,1080,317, e.g. #D9A441 at opacity 0.85) - so one crisp edge passes behind the base; keep the empty two-plane material prompt unchanged."
+    },
+    {
+      "type": "under-scaled_typographic_event",
+      "problem": "The typographic declaration is small and timid (44px mark, 64px title) in a large empty sky; versus the legacy reference's monumental house lettering, the lockup reads as a caption block rather than the 'monumental declaration confronting a small object' half of the concept.",
+      "root_cause": "Type sizes and tracking were set conservatively for safety instead of using the available upper-left sky as an active field.",
+      "affected_layer": "typography",
+      "repair_strategy": "Raise logo to ~72-80px and title to ~88-96px with tracking 4-6, keep left alignment at x~80-86 and current vertical order (logo, title, rule, subtitle); verify no collision with the bottle silhouette (bottle left edge x~713) and no canvas clipping."
+    },
+    {
+      "type": "contact_shade_placement",
+      "problem": "The contact shade reads as a soft gray halo hugging the base sides on the ivory side of the horizon; on a ground plane whose boundary is at base level, the shade should pool slightly onto the gold field to anchor the bottle physically.",
+      "root_cause": "Symmetric zero-offset contact shadow rendered behind the base rather than a bounded cast patch on the declared ground.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Keep the soft contact shadow but add a bounded external cast patch on the gold plane: integration_plan cast_length_ratio ~0.05, cast_opacity ~0.25, cast_blur ~12, centered under the base so the shade sits on the gold field; preserve observed frontal key light."
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Didone 'Dior' house mark renders top-left in brand brown with letterspacing, matching the supplied font intent and reference lockup position."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Bottle contour, ribbed collar taper, spherical stopper and teardrop body match the untouched packshot proportionally; no distortion or rotation visible."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Base sits exactly on the declared horizon line with a visible soft contact shade; the two-field plane is the declared presentation and the bottle occupies it upright."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout edges against the ivory field are smooth with no halo, fringe or leftover gray backdrop; glass boundary reads continuous."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft frontal diffused light with vertical shoulder highlights and milky cap highlights is unchanged from the packshot and agrees with the shadowless even ivory air field."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Logo, title, rule and subtitle all sit fully inside the canvas with generous margins; nothing crosses an edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "Type stack occupies the upper-left sky; nearest bottle edge is far right of the subtitle and rule endpoints, no overlap with product or horizon."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Didone serif for 'Dior' and SimSun-style serif for Chinese lines render as specified with no fallback glyph boxes or missing-character marks."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Dior' spelled correctly in the lockup; on-glass 'j'adore EAU DE PARFUM Dior' preserved untouched from source."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'光与大地在此相遇' and '一滴香，安住于暖金与晨白之间' describe precisely the visible gold-ground/ivory-air horizon the bottle stands on; not interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The decisive warm-cool horizon passing exactly behind the bottle base is the memorable event: the juice reads as the distilled line between earth-warmth and air-light, visibly staged rather than prose-only."
+    }
+  }
+}

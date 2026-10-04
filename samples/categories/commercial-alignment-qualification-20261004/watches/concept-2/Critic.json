@@ -1,0 +1,169 @@
+{
+  "pass": false,
+  "score": 82.3,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 81,
+    "typography": 84,
+    "background": 70,
+    "physical_integration": 85,
+    "reference_alignment": 76,
+    "creative_coherence": 84,
+    "brand_alignment": 93
+  },
+  "problems": [
+    {
+      "type": "background_interference",
+      "problem": "The floor still renders as large-format stone slabs, not the declared single honed plane. In the contact crop [189,983,891,1233] a bright grout seam exits vertically straight down from beneath the strap-loop base (crop x≈350 → poster x≈539) and a second horizontal joint crosses the crop at crop y≈215 (poster y≈1198); in the full poster further diagonal joints rake across the lower-left floor. The brightest cue under the hero is therefore a grout line cutting its contact zone, contradicting 'one seamless continuous honed basalt plane'.",
+      "root_cause": "The executed background.prompt (repaired batch) says 'single unbroken surface' but never explicitly forbids joints/seams/grout, so the generator again laid a slab grid whose seams intersect the product base zone.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with a prompt that explicitly names the forbidden artifacts (no joints, no seams, no grout, no tile or slab lines, no veining grid) while keeping the same low junction, near-black plaster void and left-biased wash; do not touch product geometry or copy."
+    },
+    {
+      "type": "lighting_mismatch",
+      "problem": "The preserved packshot key on bezel, lugs and crowns is upper-front-left, but the environment reads frontal-symmetric: the void gradient is brightest around the upper-center/left-center with no measurable falloff gradient toward the right, and the floor shows no left-pooled mineral sheen. The 'museum spotlight from the left' logic of Night Monument is stated by the product but not by the room.",
+      "root_cause": "Wash direction in the prompt is described but not enforced against the generator's default centered vignette; the deterministic glow ellipse (#232A33 at 0.9) sits centered behind the case and reinforces the symmetric read.",
+      "affected_layer": "scene",
+      "repair_strategy": "Rewrite the background prompt to demand a visibly raking cool wash entering from upper front-left with progressive falloff to the right edge and a left-pooled sheen on the stone; shift the glow ellipse slightly left of the case axis so halo and wash agree with the baked key."
+    },
+    {
+      "type": "weak_contact_shadow",
+      "problem": "The contact crop confirms contact IS present: the strap-loop base terminates on the stone at y=1123 with a soft dark zone under it (shadow is not absent, offset_y 0 is correct). But at opacity 0.5 / blur 14 over near-black basalt the pooled darkness is barely separable from the floor value, while the adjacent grout seam is brighter than the shadow; the monument reads as resting by silhouette coincidence rather than by weight.",
+      "root_cause": "Shadow alpha and footprint still too modest for a ground that already sits near black; width_scale was never raised in the executed batch (only opacity/blur were).",
+      "affected_layer": "shadow",
+      "repair_strategy": "Keep offset_y at 0 (correct contact) and raise the footprint: shadow.width_scale toward 1.3 and opacity toward 0.6 so a pooled dark ellipse wider than the strap loop reads under the base instead of the grout line."
+    },
+    {
+      "type": "composition_hierarchy",
+      "problem": "Typography tiers improved (title bbox height 63px vs logo 18px vs subtitle 22px now read as three weights), but the left type column stops at y≈232 while the product mass starts at y≈317 and the entire right half of the frame above the floor junction is unread void: the promised halo ellipse (#232A33, opacity 0.9, bbox [339,516,741,1039]) is only ~24 value-steps above #0B0D10 and is invisible in the render, so the negative space never becomes the deliberate halo of reference image 5 and the left column floats without a counterweight.",
+      "root_cause": "Glow ellipse value too close to the void color and the symmetric vignette cancels any pooled read; negative space is empty rather than composed.",
+      "affected_layer": "scene",
+      "repair_strategy": "Lighten the single glow ellipse one step (e.g. #2A323C) and bias it slightly left/up behind the case so the void reads as a lit halo balancing the masthead column; keep the primitive list complete and within budget."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Portfolio-level review stands from the previous round: Night Monument and Winter Horizon share the identical stage mechanism (horizon band + pooled ellipse under a standing product + renderer contact shadow), differing only in palette; this poster is retained as a draft pending that structural revision in a sibling concept, not as a failure of its own craft.",
+      "root_cause": "Concept portfolio contains two mechanically identical stagings; rubric excludes palette-only differentiation.",
+      "affected_layer": "scene",
+      "repair_strategy": "In the sibling concept, convert one of the pair to a zero-horizon pure negative-space void or a dial-grammar abstraction using only permitted flat primitives; keep this poster's monument stage intact."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty night hall of deep near-black matte plaster meeting one seamless continuous honed dark basalt stone plane, absolutely no joints, no seams, no grout, no tile lines, no slab edges, no veining grid, single unbroken surface, single low horizontal junction low in frame; cool diffuse wash raking strongly from upper front-left with progressive falloff to the right edge, gentle vignette, faint broad mineral sheen pooled on the stone toward the left under the light, empty architectural space"
+    },
+    {
+      "path": "shadow.width_scale",
+      "op": "set",
+      "value": 1.3
+    },
+    {
+      "path": "shadow.opacity",
+      "op": "set",
+      "value": 0.6
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {},
+        {
+          "kind": "ellipse",
+          "x": 319,
+          "y": 496,
+          "width": 422,
+          "height": 543,
+          "color": "#2A323C",
+          "opacity": 0.9
+        }
+      ]
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Lockup renders exactly 'НИКА' at bbox [86,214,207,232] in #EDEFF2 with 6px tracking, matching the dial brand string and the locked copy set; now separated from the masthead by ~72px of air so it reads as a brand mark, not a third headline line."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster bbox [269,317,811,1123] (542x806) matches the source cutout proportions; case, both crowns on the right flank, strap loop, tan lining with РОССИЯ print, Roman indices, framed double-digit date under XII and the РОССИЯ/КВАРЦ small-seconds subdial are all present, unaltered and uncropped at enlarged scale; no duplicated parts."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact crop [189,983,891,1233] shows the strap-loop base terminating on the stone at y=1123 with a soft dark contact zone beneath it; contact_points base_y 1123 equals product_base_y and shadow offset_y is 0, so contact geometry is correct even though the shadow value is too faint against the basalt."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Silhouette edges against the near-black void are crisp with no halo or fringing; polished case reflections remain source-grey as constrained, and no canvas edge is crossed by the product bbox."
+    },
+    "lighting_consistent": {
+      "ok": false,
+      "evidence": "Preserved key on bezel/lugs is upper-front-left, but the environment wash and vignette read frontal-symmetric and the floor shows no left-pooled sheen or rightward falloff; direction conflict between scene light and baked packshot key persists unchanged from the previous version."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [81,79,599,142], logo [86,214,207,232], subtitle [86,1217,393,1239] all fully inside the 1080x1440 canvas with comfortable margins; price intentionally empty per copy policy."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; subtitle sits below product base 1123 with no intersection on both axes; computed booleans confirm no overlap."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All text layers use C:/Windows/Fonts/simsun.ttc, an installed approved font covering the CJK masthead and Cyrillic lockup glyphs as rendered."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "НИКА spelled exactly as on the dial; no invented model numbers, certifications or gemstone grades; dial strings РОССИЯ and КВАРЦ untouched; empty price preserved per copy policy."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'夜色只留一枚表' and '黑漆盘面，是暗处唯一的光。' name this poster's exact proposition (night void, black lacquer dial as the only light), not interchangeable luxury slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The standing watch isolated in a near-black void on one low lit stone band, dial as the brightest organized element, is an identifiable 'night monument' event visible in the frame, echoing reference image 5's dark-void single-hero staging."
+    }
+  },
+  "reported_score": 81.4,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:physical_integration",
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:lighting_consistent",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+      "collapse_groups": [
+        [
+          "nika-rossiya-night-monument",
+          "nika-rossiya-winter-horizon"
+        ]
+      ],
+      "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+    }
+  }
+}

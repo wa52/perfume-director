@@ -1,0 +1,115 @@
+{
+  "pass": false,
+  "score": 90.3,
+  "dimensions": {
+    "product_fidelity": 98,
+    "composition": 89,
+    "typography": 89,
+    "background": 90,
+    "physical_integration": 89,
+    "reference_alignment": 86,
+    "creative_coherence": 91,
+    "brand_alignment": 95
+  },
+  "problems": [
+    {
+      "type": "grounding",
+      "problem": "Heel and midfoot outsole lugs hover visibly above the neutral plane; the single soft shadow patch sits only under the forefoot and reads as a floating blob, so no readable contact plane exists at the heel despite the photographic scene mode and the brief's heel-plus-forefoot contact requirement.",
+      "root_cause": "One centered contact shadow ellipse (offset 0, width_scale 1.35) cannot follow the angled sole line of the lateral cutout, whose heel contact projects higher in frame than the forefoot contact.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Replace the single centered contact shadow with two bounded contact patches aligned to the observed lug lines: one under the heel lugs and one under the forefoot lugs, using integration_plan cast fields within limits (cast_length_ratio ~0.05-0.08, cast_opacity ~0.16-0.25, cast_blur ~20-30) so both declared contact points touch the neutral plane; keep the source's soft above-front diffuse light and the matte grey floor material."
+    },
+    {
+      "type": "scene_integration",
+      "problem": "The turf-band-to-grey-floor boundary is a razor-straight hard seam with full local contrast on both sides, reading as two stacked backdrops rather than a receding fairway meeting a foreground plane behind the shoe.",
+      "root_cause": "Background prompt specified discrete bands ('turf band occupying 48-52 percent', floor 'from 52 percent downward') without any atmospheric or focus transition at the seam.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background with empty-material language only: keep the pale haze-blurred tree line and desaturated turf low in frame but add a soft haze/defocus gradient where the distant turf meets the neutral matte foreground plane, preserving overcast diffuse light, the reserved sky band for typography and the horizon passing behind the upper collar."
+    },
+    {
+      "type": "missing_spec_element",
+      "problem": "The enabled decoration primitive (teal #2FA8A0, 220px wide at 454,328) is not visible anywhere in the finished poster, so the specified accent device contributes nothing to the composition.",
+      "root_cause": "Decoration rendered behind opaque layers or with ineffective geometry/contrast against the pale sky band.",
+      "affected_layer": "typography",
+      "repair_strategy": "Either remove the decoration from the layer stack for a clean minimal sky band, or re-place it as a deliberate thin teal rule or arc framing the headline/subline block (e.g. a short horizontal rule between subline and shoe) with sufficient contrast against #C9D6C4-derived sky, keeping hierarchy headline > wordmark > subline."
+    },
+    {
+      "type": "typography_craft",
+      "problem": "The Nike wordmark is set in SimSun serif at 34px, appearing as a small generic typeset word rather than a confident brand lockup; tracking and weight give it less presence than the subline, weakening brand alignment for a locked wordmark.",
+      "root_cause": "Font choice (simsun.ttc) and small size for the logo layer instead of a heavier sans expression of the wordmark.",
+      "affected_layer": "brand",
+      "repair_strategy": "Reset the logo layer to a clean medium/bold sans (msyh.ttc) with increased tracking and slightly larger size, centered under the headline or anchored above the subline, keeping the string exactly 'Nike' and the #1E3A2F color; no new copy or claims."
+    }
+  ],
+  "changes": [],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Locked wordmark 'Nike' renders intact in #1E3A2F at text_bbox [499,238,568,262], centered under the headline as the declared lockup order title-logo-subtitle."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Poster silhouette matches source cutout: spike-lug outsole, navy midsole stripe, white laces and collar, perforated dot pattern, lime swoosh and lime tongue patch all identical; bbox [61,585,1019,1095] keeps source aspect (958x510)."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop [0,955,1080,1205] shows a defined soft darkening under the forefoot lugs and a softer heel anchor at base_y=1095; applied shadow.opacity 0.62 / blur 10 / width_scale 1.35 / offset_y 0 now reads as contact, not hover."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "No halo or fringe on the matte cutout against turf band or grey plane; bbox fully inside 1080x1440 with comfortable margins (left 61, right 1019, base 1095 <= 94% limit)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Soft diffuse above-front light on the shoe matches the overcast scene light; no competing hard cast direction between source photo and generated environment."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title [335,130,743,202], logo [499,238,568,262], subtitle [265,318,802,349] all fully inside canvas with clear sky margins."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title, subtitle and logo; no both-axis intersection with product bbox [61,585,1019,1095]."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc (serif Chinese title, logo) and msyh.ttc (subtitle) are in the approved installed list and render correct glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Nike' spelled exactly as locked; no invented model name, athlete, price or performance claim."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'果岭在天边' plus the weekend-morning subline names THIS distant-fairway proposition; not an interchangeable slogan."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The scale/distance event now reads: vast hazy fairway and tree line compressed to a low band behind a wide pristine studio specimen, with the lime swoosh answered by the green band and a single centered serif lockup in the sky."
+    }
+  },
+  "critique_notes": {
+    "contact_detail": "In crop [0,955,1080,1205] the forefoot spike lugs and heel lug meet the grey plane at base_y=1095 with a visible soft alpha pool beneath them; the previous version's faint dip has become a defined anchor, so no floating claim is made.",
+    "previous_version_comparison": "Versus the last image, the tree line dropped from the subtitle zone to y~460-660 and the turf band to y~660-805, so all copy now sits on uniform bright sky; the lockup tightened (logo 34 at y=238, subtitle 30 at y=318, 220px teal rule) into one designed mass; the contact shadow gained readable density. The rejected product-resize group was not applied and is not repeated.",
+    "concept_adherence": "Depth juxtaposition preserved: horizon band passes behind the collar/upper zone while the sole rests on the neutral matte plane; centered serif Chinese headline, wordmark beneath, subline below; palette #C9D6C4/#1E3A2F/#2FA8A0 intact; no studio equipment artifacts, no generated duplicates, no invented labels."
+  },
+  "reported_score": 90.4,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}

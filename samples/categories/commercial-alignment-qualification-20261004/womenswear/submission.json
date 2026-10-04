@@ -1,0 +1,34 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "e040304da79d4392b8010b21474a660e.png"
+      }
+    },
+    "2": {
+      "class_type": "ClothingDirectorLoop",
+      "inputs": {
+        "product": [
+          "1",
+          0
+        ],
+        "product_mask": [
+          "1",
+          1
+        ],
+        "category": "womenswear",
+        "brief": "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+        "garment_type": "dress",
+        "display_mode": "auto"
+      }
+    }
+  },
+  "receipt": {
+    "prompt_id": "5e1eb0ab-d374-4d2a-8b06-952897814f32",
+    "number": 98,
+    "node_errors": {}
+  },
+  "input_sha256": "83bc49e892031e8800cf8129d58dcfab72dff8d95ca759b6ec62ada6be927aee",
+  "comfy_url": "http://127.0.0.1:8191"
+}

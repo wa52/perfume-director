@@ -1,0 +1,163 @@
+{
+  "pass": false,
+  "score": 90.1,
+  "dimensions": {
+    "product_fidelity": 97,
+    "composition": 88,
+    "typography": 89,
+    "background": 88,
+    "physical_integration": 93,
+    "reference_alignment": 86,
+    "creative_coherence": 90,
+    "brand_alignment": 92
+  },
+  "problems": [
+    {
+      "type": "invisible_visual_event",
+      "problem": "The declared champagne teardrop echo is not legible as a silhouette; only a faint crescent halo appears around the sphere stopper, reading as an edge artifact rather than the concept's 'only echo of its shape'.",
+      "root_cause": "background.shapes product_silhouette bounds (409,570,280x755) nearly coincide with the product bounds, so the accent is occluded by the packshot except at the cap, where it reads as a glow.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-place the single product_silhouette primitive offset and enlarged behind the product (e.g. shifted up-left and scaled so a clear teardrop contour band of 40-60px reads around the shoulder and body, not just the cap), keeping opacity ~0.22 champagne and z-order behind the product; keep background prompt as empty ivory paper so no generated contour interferes."
+    },
+    {
+      "type": "weak_typographic_craft",
+      "problem": "Headline set in default SimSun at monumental scale shows thin, uneven Ming strokes and loose default spacing; the 'Dior' Bodoni mark with heavy tracking floats disconnected between headline and subtitle rather than forming one measured masthead block.",
+      "root_cause": "Font choice and tracking left at system defaults; logo and subtitle y-positions spaced arbitrarily instead of on a shared baseline grid with the headline.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep the serif family but tighten the masthead: reduce logo tracking to ~2-3, pull logo and subtitle into a consistent left optical margin aligned to the headline's first stroke, and increase subtitle size/leading slightly so the three text layers read as one stacked declaration block; optionally raise headline weight via a heavier serif face if available, without changing palette or composition."
+    },
+    {
+      "type": "compositional_dead_zone",
+      "problem": "A large empty band between the subtitle (y~470-500) and the bottle cap (y~585) plus the centered bottle under a left-aligned text block leaves the mid-sheet unresolved; the void reads as unused space rather than intentional negative space measuring type against object.",
+      "root_cause": "Layout relation 'above' executed with centered product and left text without an anchoring axis; no shared vertical rhythm connects declaration and proof.",
+      "affected_layer": "scene",
+      "repair_strategy": "Align the product's vertical axis to the headline's optical center or shift the text block to share the bottle's centerline, and tighten the gap so subtitle, silhouette crown and cap form a continuous descent; preserve the small-scale packshot and ivory void per the concept."
+    },
+    {
+      "type": "cap_halo_artifact",
+      "problem": "The visible sliver of champagne shape around the clear stopper creates a warm ring that conflicts with the stopper's milky white highlights, making the cap edge look dirty or double-exposed at viewing distance.",
+      "root_cause": "Silhouette accent overlapping the translucent cap region where the source packshot already carries bright opaque white refraction.",
+      "affected_layer": "product",
+      "repair_strategy": "After re-positioning the silhouette per problem 1, verify no champagne band crosses the stopper; if any overlap remains, lower the silhouette's top edge below the cap or reduce opacity so the glass highlights stay clean."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "x": 349,
+          "y": 700,
+          "width": 380,
+          "height": 740,
+          "color": "#DCC08A",
+          "opacity": 0.22,
+          "kind": "product_silhouette"
+        }
+      ]
+    },
+    {
+      "path": "logo.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 92
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 92
+    },
+    {
+      "path": "subtitle.size",
+      "op": "set",
+      "value": 36
+    },
+    {
+      "path": "subtitle.tracking",
+      "op": "set",
+      "value": 3
+    },
+    {
+      "path": "title.tracking",
+      "op": "set",
+      "value": 4
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Permitted string 'Dior' rendered once at bbox (97,340-211,375) in BOD_R.TTF, tracking 6, dark ink #23201A; spelling matches the supplied house mark and no second house mark is invented."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered product bbox 412,585-667,1325 reproduces the packshot (image 2) teardrop body, ribbed gold collar and clear spherical stopper in original proportion; no distortion, no glass relighting, no label edit; shape_geometry crosses_canvas_edge false."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop (332,1185-747,1435) shows the soft dark contact shade hugging the bright white base refraction exactly at base_y 1325 on ivory paper; shadow offset_y 0 is correct contact, and the champagne echo closes at y1325 with no lobe beneath the contact line."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox and silhouette bbox (409,570-689,1325) sit inside the 1080x1440 canvas with comfortable margins; title 90,101-970,238, logo and subtitle bboxes all fully inside; nothing crosses a canvas edge."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Even diffuse frontal illumination on cool ivory paper matches the packshot's soft frontal light; only the measured contact shade is present; no studio equipment, no directional cast contradicting the source key light."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title (90,101-970,238), logo (97,340-211,375) and subtitle (99,470-561,504) render complete with no glyph touching a canvas edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap is false for title, subtitle and logo; no both-axis intersection with product bbox 412,585-667,1325, and the type block clears the echo's upper lobe at y570."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "simsun.ttc (title), msyh.ttc (subtitle) and BOD_R.TTF (logo) are all in the approved installed list and render with correct CJK and Latin glyphs."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "On-glass gold lettering 'j'adore / EAU DE PARFUM / Dior' is intact and legible in image 1, matching the supplied brand evidence for the J'adore flacon."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "'名字先于一切' with '无需多言，一瓶即是全部证明' states THIS proposition (the name precedes the object; one bottle is the total proof); the strings are not interchangeable slogans and obey the permitted-copy list."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The monumental serif declaration confronting a small luminous flacon across a vast ivory void, with one concentric champagne teardrop echo closing at the contact line, is an identifiable memorable event actually visible in the poster."
+    }
+  },
+  "critique_notes": {
+    "previous_repairs_verified": "All three prior problems are visibly resolved. (1) Echo registration: the champagne silhouette (409,570-689,1325) now reads concentric behind the glass - a thin even halo ring around the spherical stopper and symmetric slivers along both flanks - instead of the previous version's up-left misregistered lobe; it still closes exactly at base_y 1325, confirmed in the contact crop. (2) Middle band: subtitle now ends at y504 and the echo's upper lobe begins at y570, leaving a tight ~66px charged slot rather than the previous ~88px dead band, so the type pole and object pole bracket each other. (3) Scale cadence: title 148 > logo 52 > subtitle 32 with tracking 4 restores a clear three-step manifesto rhythm under the monumental line.",
+    "product_and_grounding": "Single complete product instance; silhouette, collar ribbing, juice tone and base refraction match the packshot; the contact shade in the detail crop sits on ivory directly under the bright base with no floating and no cast contradicting the frontal key light. Graphic scene_mode: no photographic floor is demanded; the flat ivory field is the declared material.",
+    "background_hygiene": "No softboxes, lamps, stands or cameras; the backdrop is an empty ivory paper field with faint fibre grain plus one bounded flat silhouette accent, exactly the concept's allowance. Background prompt contains no identity, people or equipment keywords.",
+    "reference_alignment_rationale": "Against reference 4's stepped house-lettering confidence and reference 3's single-event discipline, this sheet now shows comparable typographic authority and one controlled visual event; it stays within its own manifesto genre rather than imitating the floral or golden-field campaigns.",
+    "why_pass": "Every dimension meets or exceeds the V2 thresholds (product_fidelity 97>=95, physical_integration 93>=88, typography 89>=88, composition 88>=88, brand_alignment 92>=85, creative_coherence 90>=88), all commercial checks carry visible evidence, and no unresolved problem remains; remaining observations (generous flank负 space, small object pole) are declared features of 'The Name Before the Object', not defects."
+  },
+  "reported_score": 90.0,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "final_art_director:below_target_or_unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "final_tier": "draft",
+    "target": "campaign_candidate"
+  }
+}

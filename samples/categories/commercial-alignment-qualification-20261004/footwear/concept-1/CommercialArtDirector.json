@@ -1,0 +1,80 @@
+{
+  "tier": "social_ad",
+  "evidence": "The dew-field event is actually visible: a dark teal-grey ground film carrying beaded condensation with specular glints in the foreground meets a pale mist band at a horizontal horizon behind the sole line, while the matte cutout stays visibly dry — the wet-world/dry-object contrast reads without copy. The untouched packshot preserves swoosh, tongue patch, perforation pattern, laces, navy midsole stripe and spike lugs; edges are clean against both mist and ground. Left-aligned sans headline, subline and small wordmark sit in the empty mist band with clear hierarchy and no collisions. Contact shadow seats forefoot and midfoot; heel seating is weaker but the lugs visually touch the plane. Typography is competent Microsoft YaHei rather than crafted campaign type, mid-field droplet resolution falls short of the declared edge-to-edge bead spec, and a faint rectangular tonal seam sits behind the subline — resolved social advertising, not reference-grade campaign craft.",
+  "problems": [
+    {
+      "type": "weak_contact_shadow",
+      "problem": "Heel lugs meet the dew ground with almost no darkening, so the heel reads slightly floated while the forefoot shadow is convincing; seating is uneven across the sole line.",
+      "root_cause": "Contact shadow patch weighted toward mid/forefoot; declared heel contact shadow under-delivered at opacity 0.68 with blur 3 over a dark ground.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Extend the bounded contact-shadow patch under the heel lug cluster (raise integration_plan cast_opacity toward 0.25-0.30 locally or add a second bounded heel patch) keeping cast_length_ratio within 0.06-0.10 and blur 30-40; do not relight the source cutout."
+    },
+    {
+      "type": "under_resolved_midfield",
+      "problem": "Between the horizon and roughly the lower third, the ground reads as uniform matte noise; the promised macro-visible beads with one crisp specular dot per droplet only appear in the foreground band.",
+      "root_cause": "Background generation resolved droplet scale and specular dots in the near field only, leaving the mid-field as flat noise contrary to the revision-4 prompt.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate the background with the same empty dew-material prompt but enforce bead scale and specular dots continuously from horizon to bottom edge; keep horizon height, palette and overcast light unchanged."
+    },
+    {
+      "type": "visible_band_seam",
+      "problem": "A faint rectangular tonal edge crosses the mist field behind the subline, reading as an unintended overlay block rather than even mist luminance.",
+      "root_cause": "The 0.55-opacity rectangle shape at y=380 h=340 prints as a hard-edged value step against the generated mist gradient.",
+      "affected_layer": "scene",
+      "repair_strategy": "Remove or reduce that rectangle (opacity toward 0.15-0.25 with feathered intent, or delete the shape) and let the generated mist carry the band; verify no straight horizontal edge remains behind the typography."
+    },
+    {
+      "type": "generic_typography",
+      "problem": "Headline, subline and wordmark are default-weight Microsoft YaHei with plain tracking; hierarchy is clean but the type carries no crafted voice, keeping the piece below reference-grade campaign typography.",
+      "root_cause": "Font choice and weights left at system defaults; only size and position were art-directed.",
+      "affected_layer": "typography",
+      "repair_strategy": "Keep copy and left alignment; introduce a heavier display weight or tighter optical sizing for the headline, increase tracking contrast between headline and subline, and align the wordmark baseline grid to the headline block so the mist band reads as one designed type system."
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Wordmark renders exactly as the locked string 'Nike' in dark teal at top-left, matching supplied brand evidence."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Sole silhouette, spike lugs, stitching zones, white laces, collar, toe and heel match the untouched source cutout with no deformation or cropping."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Forefoot and midfoot show a soft contact shadow on the dew plane and heel lugs visually touch the ground; photographic mode contact plane is readable at the sole line."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Cutout boundary against mist and ground shows no halo, fringe or leftover gray backdrop; matte edges hold at lug tips and lace loops."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Source's soft diffuse above-front studio light agrees with the overcast dawn scene; droplet glints are tiny speculars only, with no harsh cast shadow contradicting the cutout."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Logo, headline and subline sit fully inside the canvas with generous margins; no glyph touches an edge."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "Type blocks occupy the empty mist band; no overlap with product, shadow or each other."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "All layers render in the specified msyh sans face with consistent glyph forms; no fallback substitution visible."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "'Nike' spelled correctly; no unauthorized model, athlete or performance claims added."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline '清晨是湿的，鞋是干的' names exactly the visible wet-ground/dry-shoe contrast; subline extends the quiet-presence proposition and is not interchangeable slogan copy."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "The memorable event is the dry matte shoe resting on a glittering dew field whose horizon meets the sole line — a visible physical relationship, not prose intent."
+    }
+  }
+}

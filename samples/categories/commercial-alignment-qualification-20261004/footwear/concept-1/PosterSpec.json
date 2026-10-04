@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 200332895657908,
+  "background": {
+    "color": "#CFD8D4",
+    "prompt": "Continuous horizontal ground plane of matte dark teal-grey film densely covered edge to edge with macro-visible rounded condensation droplets three to eight pixels wide, every droplet from the horizon line to the bottom edge carrying one crisp white specular dot, no smooth bare band and no uniform noise-only region anywhere in the mid-field, meeting a flat pale silver-grey mist field of perfectly even luminance at a perfectly horizontal horizon, uniform diffuse overcast illumination from above-front only, low contrast, cool neutral tone throughout, empty scene, no objects",
+    "revision": 4,
+    "shapes": [
+      {
+        "kind": "rectangle",
+        "x": 0,
+        "y": 380,
+        "width": 1080,
+        "height": 340,
+        "color": "#CFD8D4",
+        "opacity": 0.55
+      }
+    ]
+  },
+  "product": {
+    "x": 540,
+    "y": 893,
+    "width": 814,
+    "height": 432
+  },
+  "lighting": "soft diffuse overcast dawn light from above-front, low contrast, tiny specular glints on droplets only, no harsh shadows",
+  "palette": [
+    "#CFD8D4",
+    "#123332",
+    "#7ED957"
+  ],
+  "title": {
+    "text": "清晨是湿的，鞋是干的",
+    "x": 86,
+    "y": 200,
+    "size": 84,
+    "color": "#123332",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.05,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "不必证明什么，安静在场就是答案。",
+    "x": 86,
+    "y": 330,
+    "size": 30,
+    "color": "#123332",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2,
+    "max_width": 0,
+    "line_height": 1.3,
+    "align": "left"
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#123332",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "Nike",
+    "x": 86,
+    "y": 86,
+    "size": 38,
+    "color": "#123332",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 1
+  },
+  "shadow": {
+    "opacity": 0.68,
+    "blur": 3,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": false,
+    "x": 104,
+    "y": 360,
+    "width": 80,
+    "color": "#A6A9AF"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "footwear",
+  "scene_mode": "photographic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "dew-beaded matte teal-grey ground film",
+    "cast_length_ratio": 0.06,
+    "cast_opacity": 0.18,
+    "cast_blur": 34
+  }
+}

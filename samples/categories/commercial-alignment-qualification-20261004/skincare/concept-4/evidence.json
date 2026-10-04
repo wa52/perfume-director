@@ -1,0 +1,98 @@
+{
+  "status": "NEEDS_REVIEW",
+  "selected": {
+    "version": 5,
+    "score": 89.3,
+    "pass": false,
+    "poster": "v5/poster.png",
+    "spec": "v5/PosterSpec.json",
+    "critic": "v5/Critic.json",
+    "review_error": null,
+    "sha256": "5521677d9ab26b9d8d74bf770b36bbf135e45d9ff60c6043b1fd909959697762"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "score": 83.0,
+      "pass": false,
+      "poster": "v1/poster.png",
+      "spec": "v1/PosterSpec.json",
+      "critic": "v1/Critic.json",
+      "review_error": null,
+      "sha256": "d46b621b8b593ab829fa784cb0ead8743ab4779c50167ee42987718f6f4e47a3"
+    },
+    {
+      "version": 2,
+      "score": 85.9,
+      "pass": false,
+      "poster": "v2/poster.png",
+      "spec": "v2/PosterSpec.json",
+      "critic": "v2/Critic.json",
+      "review_error": null,
+      "sha256": "77873c3c2315a143301d8bac27a065d347e2dc4e3f1aad0604c4fcc189ace2d1"
+    },
+    {
+      "version": 3,
+      "score": 87.7,
+      "pass": false,
+      "poster": "v3/poster.png",
+      "spec": "v3/PosterSpec.json",
+      "critic": "v3/Critic.json",
+      "review_error": null,
+      "sha256": "3040ac6c2927c82db73d36d763c738c9f8fe4fbb49277e682350baec5972bde7"
+    },
+    {
+      "version": 4,
+      "score": 88.6,
+      "pass": false,
+      "poster": "v4/poster.png",
+      "spec": "v4/PosterSpec.json",
+      "critic": "v4/Critic.json",
+      "review_error": null,
+      "sha256": "ae60179fc9337d25dca7c2647d6117552f1e4cb538c99d1710e06e7fba59c438"
+    },
+    {
+      "version": 5,
+      "score": 89.3,
+      "pass": false,
+      "poster": "v5/poster.png",
+      "spec": "v5/PosterSpec.json",
+      "critic": "v5/Critic.json",
+      "review_error": null,
+      "sha256": "5521677d9ab26b9d8d74bf770b36bbf135e45d9ff60c6043b1fd909959697762"
+    }
+  ],
+  "input_sha256": "0e26bb5e443eb3a38c7858edf8a56c796e8be57c76b6e77c24096c7194a9d91c",
+  "poster_sha256": "5521677d9ab26b9d8d74bf770b36bbf135e45d9ff60c6043b1fd909959697762",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual constant: the single untouched lipstick cutout standing isolated on the source's neutral gray ground with only a floor contact shadow, while flat primitives are parked strictly behind it. Within that constant, c1 (one enlarged original-alpha silhouette offset behind), c3 (eight flat discs in a rising arc behind) and c4 (four窄 stepped champagne rectangles behind) produce the same actual visual event - a flat monochrome graphic shape or shape-stack hovering behind an isolated packshot - differing only in primitive type, count and arrangement, i.e. renamed materials and palette swaps, not different advertising ideas. c2 does stage a genuinely different event (a horizontal field division plus the single straight line intersected by the upright case and lying cap, reading the collar as hinge), so it survives. Execution audit: each concept uses one photographed product instance, no rotation, no diptych, no macro crop; primitive counts (1 silhouette; 1 rectangle + 1 line; 8 ellipses; 4 rectangles) sit inside the eight-primitive ceiling with the line budget spent only once; no efficacy, ingredient, price or newness claims; packaging, collar and bullet unaltered. Feasibility is therefore not the failure point - conceptual redundancy is.",
+      "collapse_groups": [
+        [
+          "c1-contour-echo",
+          "c3-pigment-constellation",
+          "c4-collateral-gauge"
+        ]
+      ],
+      "required_revision": "Keep c2 as the sole flat-geometry-behind-packshot direction. Rebuild two of the three collapsed concepts so the visible event changes category rather than primitive count: e.g. convert one into a source-compatible generated environment occupying the whole backdrop (gradient hero field or architectural plane corner with cast shadow logic consistent with the source's soft diffuse light, product still unrotated and fully visible), and convert another into a dense full-frame field event (flat ellipse discs filling the canvas around and behind the product as an environment, not a sparse arc), while retiring the offset-silhouette ghost or the stepped gauge entirely. Do not add slogans, brand history, relighting, second photographs, macro crops or diptychs; retain the locked title 'BEAUTY' as the only verbal layer count permits."
+    }
+  }
+}

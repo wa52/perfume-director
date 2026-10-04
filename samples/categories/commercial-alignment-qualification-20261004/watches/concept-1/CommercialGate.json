@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "pass": false,
+  "failures": [
+    "dimension:typography",
+    "dimension:composition",
+    "dimension:creative_coherence",
+    "unresolved_review",
+    "critic_not_approved",
+    "creative_diversity:unresolved"
+  ],
+  "thresholds": {
+    "product_fidelity": 95,
+    "physical_integration": 88,
+    "typography": 88,
+    "composition": 88,
+    "brand_alignment": 85,
+    "creative_coherence": 88
+  },
+  "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+  "creative_diversity_evidence": {
+    "distinct": false,
+    "evidence": "Judging mechanisms, not names: Emblem Field mounts the cutout on a stacked flat rectangle+ellipse field with a lateral original-alpha silhouette double and a rule; Night Monument and Winter Horizon both build the identical stage — one horizon-band rectangle behind the opaque silhouette, one ellipse disc/glow pooled under the standing watch, one renderer-cast contact shadow — differing only in near-black vs pale-blue palette, which the rubric explicitly excludes as differentiation; Certificate Page abandons graphic staging entirely and makes the four locked text layers plus one ruling line around an untouched packshot the event. Execution audit: each concept uses one unrotated, uncropped source photograph, no duplicated product, no macro plates, no diptych; primitive budgets hold (Emblem Field: rect+ellipse+silhouette+line = 4; Night Monument: horizon band+glow ellipse = 2; Winter Horizon: sky field+horizon band+snow disc+glow = 4; Certificate Page: 0 primitives + 1 line); no relighting is claimed (dark/pale environments sit behind the opaque silhouette and the cutout keeps its source key); no new slogans, model numbers, certifications or gemstone grades are invented, and the empty price is preserved. Dial grammar (Roman indices, double-digit date under XII, small-seconds subdial printed РОССИЯ/КВАРЦ, two crowns) is only referenced descriptively, never altered.",
+    "collapse_groups": [
+      [
+        "nika-rossiya-night-monument",
+        "nika-rossiya-winter-horizon"
+      ]
+    ],
+    "required_revision": "Rewrite either Night Monument or Winter Horizon so its visible event is structurally different from 'horizon band + pooled ellipse under a standing product': e.g. convert one into a pure negative-space void with zero horizon rectangle and zero ground disc (darkness as flat canvas, product floating on a renderer shadow only), or into a dial-grammar abstraction using only permitted flat ellipses/rectangles as an oversized off-product Roman-index ring or small-seconds circle diagram placed behind the cutout. Keep Emblem Field's silhouette double and Certificate Page's typographic ruling as they are materially separate; do not add copy, prices or relighting."
+  }
+}

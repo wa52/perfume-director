@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "luxury",
+  "canvas": {
+    "width": 1080,
+    "height": 1440
+  },
+  "seed": 88472832196211,
+  "background": {
+    "color": "#EFE9DC",
+    "prompt": "Empty matte poster paper in pale warm bone off-white, value near #EFE9DC, very low chroma, faint screen-print grain, uniform shadowless frontal illumination, no objects, no horizon, no gradient, no yellow cast",
+    "revision": 1,
+    "shapes": [
+      {
+        "kind": "product_silhouette",
+        "x": 186,
+        "y": 316,
+        "width": 675,
+        "height": 893,
+        "color": "#24409E",
+        "opacity": 0.9
+      }
+    ]
+  },
+  "product": {
+    "x": 594,
+    "y": 821,
+    "width": 677,
+    "height": 893
+  },
+  "lighting": "flat even shadowless poster illumination, crisp plate edges, source's diffuse frontal brightness preserved on the photograph",
+  "palette": [
+    "#EFE9DC",
+    "#101E33",
+    "#24409E"
+  ],
+  "title": {
+    "text": "轮廓即签名",
+    "x": 313,
+    "y": 118,
+    "size": 80,
+    "color": "#101E33",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 8,
+    "max_width": 0,
+    "line_height": 1.15,
+    "align": "left"
+  },
+  "subtitle": {
+    "text": "版型足够清楚,才敢留下印记。",
+    "x": 259,
+    "y": 258,
+    "size": 34,
+    "color": "#101E33",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 2
+  },
+  "price": {
+    "text": "",
+    "x": 104,
+    "y": 1280,
+    "size": 24,
+    "color": "#101E33",
+    "font": "C:/Windows/Fonts/msyh.ttc"
+  },
+  "logo": {
+    "text": "",
+    "x": 313,
+    "y": 86,
+    "size": 80,
+    "color": "#101E33",
+    "font": "C:/Windows/Fonts/msyh.ttc",
+    "tracking": 6
+  },
+  "shadow": {
+    "opacity": 0,
+    "blur": 10,
+    "offset_x": 0,
+    "offset_y": 0,
+    "kind": "contact"
+  },
+  "decoration": {
+    "enabled": true,
+    "x": 313,
+    "y": 226,
+    "width": 418,
+    "color": "#24409E"
+  },
+  "layers": [
+    "background",
+    "shadow",
+    "product",
+    "decoration",
+    "logo",
+    "title",
+    "subtitle",
+    "price"
+  ],
+  "product_category": "womenswear",
+  "scene_mode": "graphic",
+  "commercial_v2": true,
+  "integration_plan": {
+    "source_key_light": "front",
+    "ground_material": "none, flat print paper field",
+    "cast_length_ratio": 0.0,
+    "cast_opacity": 0.0,
+    "cast_blur": 2
+  },
+  "garment_type": "dress",
+  "display_mode": "auto"
+}

@@ -1,0 +1,146 @@
+{
+  "pass": false,
+  "score": 84.9,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 84,
+    "typography": 84,
+    "background": 78,
+    "physical_integration": 88,
+    "reference_alignment": 78,
+    "creative_coherence": 86,
+    "brand_alignment": 88
+  },
+  "problems": [
+    {
+      "type": "background",
+      "problem": "The glazed window with white frame, mullions and sill at frame left (x≈0-150, y≈0-830) is a bright architectural opening thatOut-computes the hero: its near-white panes are the highest-luminance zone in the poster while the bottle's red band sits mid-frame, so the eye exits left. The declared direction asks for 'soft window daylight from the left' as illumination, not a visible opening, and the previous repair prompt for this was rejected only because it was bundled with an invalid shapes list, so the scene was never regenerated.",
+      "root_cause": "background.prompt still describes daylight in a way the generator renders as a literal window structure; the safe-group recovery applied product/shadow/logo patches but rejected the background group.",
+      "affected_layer": "scene",
+      "repair_strategy": "Regenerate with a prompt that names only materials and light direction (sage plaster, linen cloth, empty matte ceramic plates, folded cotton napkins, wooden chair backs, diffuse daylight falling from the left, no openings or frames), submitted without any background.shapes entry in the same group."
+    },
+    {
+      "type": "typography",
+      "problem": "The copy band is not reserved: the title glyphs '位子留好了' sit directly on photographed linen whose foreground plate rim (left, y≈1060-1160) and napkin fold pass within a few pixels of the first characters, and the thin red rule at y=1116 crosses the plate edge and a napkin corner (visible in both poster and contact crop). Legibility currently depends on local cloth value instead of an intentional zone, which reads amateur against references 3-5 where copy sits on controlled fields.",
+      "root_cause": "No tonal separation layer behind the copy band; the previous shapes attempt failed schema validation ([{}] is not a valid primitive) so nothing was ever placed.",
+      "affected_layer": "typography",
+      "repair_strategy": "Add one validated translucent rectangle primitive in background.shapes spanning the copy band (linen-light tone, opacity ≈0.55) so title, rule and subtitle read as one reserved zone; keep all copy coordinates and strings unchanged."
+    },
+    {
+      "type": "composition",
+      "problem": "The 'Coca-Cola' lockup (bbox 740,101-912,128) floats in empty plaster with no grid tie: its right edge (912) aligns neither with the title block's optical right limit (≈730) nor with the bottle axis (540), and its dark-brown ink (#2E2419) abandons the palette's signature red (#D6231F) that the rule and label already carry. Against references 3-5 the signature feels placed rather than composed.",
+      "root_cause": "Logo positioned by margin only; ink chosen from neutral palette entry instead of the brand red reserved for the decoration rule.",
+      "affected_layer": "brand",
+      "repair_strategy": "Shift logo x so its right edge closes on the title block's right limit (x≈558 for width≈172) and set logo color to #D6231F so the script signature, label band and rule form one red system."
+    },
+    {
+      "type": "physical_integration",
+      "problem": "Contact is confirmed present in the detail crop (370,941,710,1191): a soft diffuse shade hugs the glass base at y=1081 with offset_y=0, and the applied cast (offset_x=6, cast_length_ratio 0.1) gives a faint rightward bias consistent with left key light. However the cast remains barely perceptible on the bright linen at poster scale, so the grounding reads as a generic soft ellipse rather than light from the declared left source; this is a refinement gap, not a floating defect.",
+      "root_cause": "cast_opacity 0.18 with blur 30 dissipates too much on a high-value cloth.",
+      "affected_layer": "shadow",
+      "repair_strategy": "Raise integration_plan.cast_opacity toward 0.26 and cast_length_ratio toward 0.14 while keeping offset_y=0 and the observed soft frontal light on the glass untouched."
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.prompt",
+      "op": "set",
+      "value": "Empty domestic dining corner: sage green plaster wall, linen-covered table surface laid with two empty matte ceramic plates, folded cotton napkins and simple wooden chair backs at the edges, soft diffuse daylight falling from the left, continuous cloth plane rising to a mid-height horizon, no window frame, no openings, no food, no text"
+    },
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {}
+      ]
+    },
+    {
+      "path": "logo.x",
+      "op": "set",
+      "value": 558
+    },
+    {
+      "path": "logo.color",
+      "op": "set",
+      "value": "#D6231F"
+    },
+    {
+      "path": "integration_plan.cast_opacity",
+      "op": "set",
+      "value": 0.26
+    },
+    {
+      "path": "integration_plan.cast_length_ratio",
+      "op": "set",
+      "value": 0.14
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Top-right lockup renders 'Coca-Cola' in BOD_R.TTF matching the supplied brand evidence; bottle label script untouched."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Rendered bbox 450,431-630,1081 keeps contour silhouette, crown cap, red band, condensation identical to source cutout; no distortion."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Contact detail crop (370,941,710,1191) shows diffuse shade hugging the base at y=1081; shadow offset_y=0 confirms zero-gap contact on the linen."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "Product bbox fully inside canvas with comfortable margins; no halo or clipping against cloth or wall."
+    },
+    "lighting_consistent": {
+      "ok": false,
+      "evidence": "Visible window at left implies a hard lateral key, yet the glass retains frontal studio streaks and the cast on cloth is nearly symmetric; scene light and product light only partially reconciled."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title 86,1152-730,1213, subtitle 86,1238-582,1260, logo 740,101-912,128 all inside 1080x1440."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "geometry.text_product_overlap false for title, subtitle, logo; no copy intersects product bbox on both axes."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "Only installed approved faces used: msyh.ttc for CJK copy, BOD_R.TTF for logo."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "Logo string and label script 'Coca-Cola / ORIGINAL TASTE' match supplied evidence exactly."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Headline '位子留好了,就等你入座' and subtitle name the reserved seat and the laid table, expressing this set-table proposition."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Empty plates, napkins and chairs around one upright bottle make the absent gathering visible; the bottle hosts the meal."
+    }
+  },
+  "reported_score": 83.4,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:typography",
+      "dimension:composition",
+      "dimension:creative_coherence",
+      "check:lighting_consistent",
+      "unresolved_review",
+      "critic_not_approved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification"
+  }
+}

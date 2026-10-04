@@ -3,12 +3,38 @@ from pathlib import Path
 import tempfile
 import sys
 import unittest
+from PIL import Image
 from unittest.mock import patch
 import poster
 import run_category_matrix as matrix
 
 
 class MatrixSubmissionTests(unittest.TestCase):
+    def test_subtype_cases_are_isolated_and_cannot_escape_output_directory(self):
+        a={'product_category':'menswear','case_id':'menswear-shirt'}
+        b={'product_category':'menswear','case_id':'menswear-knitwear'}
+        self.assertNotEqual(matrix.case_key(a),matrix.case_key(b))
+        self.assertEqual(matrix.case_key({'product_category':'menswear'}),'menswear')
+        for value in ('../outside','a/b','',None):
+            with self.assertRaises(ValueError):matrix.case_key({**a,'case_id':value})
+
+    def test_same_category_exports_do_not_overwrite_other_subtypes(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);output=root/'samples/check';output.mkdir(parents=True)
+            records=[]
+            for kind,color in [('shirt','red'),('outerwear','blue')]:
+                key='menswear-'+kind;run=root/'runs'/key
+                (run/'v1').mkdir(parents=True)
+                Image.new('RGB',(20,30),color).save(run/'v1/poster.png')
+                records.append({'case_id':key,'product_category':'menswear','garment_type':kind,'input_sha256':key,
+                    'status':'COMPLETED','directions':[{'id':'concept-1','name':key,'status':'NEEDS_REVIEW','run_dir':str(run),
+                        'selected':{'version':1,'poster':'v1/poster.png'}}]})
+            with patch.object(matrix,'ROOT',root):matrix.export(output,records)
+            first=output/'menswear-shirt/concept-1/poster.png'
+            second=output/'menswear-outerwear/concept-1/poster.png'
+            self.assertNotEqual(first.read_bytes(),second.read_bytes())
+            self.assertEqual({r['case_id'] for r in poster.read(output/'summary.json')},{'menswear-shirt','menswear-outerwear'})
+
     def test_completed_case_cannot_be_relabelled_as_a_new_product(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder)

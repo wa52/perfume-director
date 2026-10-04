@@ -1,0 +1,158 @@
+{
+  "pass": false,
+  "score": 88.4,
+  "dimensions": {
+    "product_fidelity": 96,
+    "composition": 86,
+    "typography": 88,
+    "background": 89,
+    "physical_integration": 92,
+    "reference_alignment": 80,
+    "creative_coherence": 88,
+    "brand_alignment": 87
+  },
+  "problems": [
+    {
+      "type": "silhouette_plate_misregister_uneven",
+      "problem": "The strengthened offset (-70x/-58y; plate bbox [186,316,861,1209] vs product bbox [256,374,931,1267]) now reads as a continuous royal band down the entire left flank plus a clear lobe above the sweetheart neckline, but the right flank still delivers only two isolated chips (a sliver near x~755-775, y~780-820 and a hem chip near x~890-930, y~1050-1160). The 'uniform offset distance' that makes cut readable as shape language is therefore still one-sided: the slipped-plate dialogue is loud on the left and intermittent on the right.",
+      "root_cause": "A pure up-left translate cannot expose plate along a right contour that flares faster than the shift vector; the right margin needs the offset vector rotated toward a steeper diagonal or a slightly wider plate so the right flare edge clears the photographed flare.",
+      "affected_layer": "scene",
+      "repair_strategy": "Re-set background.shapes as one complete product_silhouette list with a steeper, more even diagonal (x 176, y 306, width 690, height 903, color #24409E, opacity 0.9) so a continuous plate margin reads on neckline, left AND right flanks; primitive stays inside canvas (crosses_canvas_edge must remain false)."
+    },
+    {
+      "type": "type_band_axis_mismatch",
+      "problem": "The executed title band is centered on the canvas (title bbox [313,118,735,197], rule y~226 spanning x~313-731, subtitle [259,258,712,292], centers ~522-526) while the garment+plate mass centers at x~594-612 (contact center_x 612). The calm band and the image event therefore sit on two different vertical axes, leaving a visible left-weighted drift in the top third against the poster-scale mass below; references (Max Mara logotype band, Claudie overlay) keep type and image on one shared axis.",
+      "root_cause": "Title/subtitle x positions were never re-centered to the combined product+plate optical center after the band move and size raise.",
+      "affected_layer": "typography",
+      "repair_strategy": "Shift title.x to ~352, subtitle.x to ~298 and decoration.x to ~352 (same widths) so band center ~561-565 aligns with the mass axis; keep copy strings, sizes, font, tracking and align exactly; text_product_overlap stays false."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Campaign-level four-proposition diversity review remains unresolved: c1/c2/c3 were judged one collapsed transparency/edge-registration idea and only c4 (this poster) is a distinct event; this image is retained solely as the c4 draft voice.",
+      "root_cause": "Required group revision (multi-edge calibration instrument, non-field narrative event, structural decoration-line event) not yet executed; not fixable inside this single poster.",
+      "affected_layer": "scene",
+      "repair_strategy": "Keep c4 as one voice and rebuild the collapsed group per the required revision in subsequent drafts."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft.",
+      "root_cause": "Group-level creative review, not a defect of this poster alone.",
+      "affected_layer": "scene",
+      "repair_strategy": "Resolve the campaign-level revision; no change to this poster's concept."
+    },
+    {
+      "type": "creative_diversity",
+      "problem": "Four-proposition diversity review was rejected; this image is retained only as a draft"
+    }
+  ],
+  "changes": [
+    {
+      "path": "background.shapes",
+      "op": "set",
+      "value": [
+        {
+          "kind": "product_silhouette",
+          "x": 176,
+          "y": 306,
+          "width": 690,
+          "height": 903,
+          "color": "#24409E",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "path": "title.x",
+      "op": "set",
+      "value": 352
+    },
+    {
+      "path": "subtitle.x",
+      "op": "set",
+      "value": 298
+    },
+    {
+      "path": "decoration.x",
+      "op": "set",
+      "value": 352
+    }
+  ],
+  "commercial_checks": {
+    "logo_correct": {
+      "ok": true,
+      "evidence": "Logo layer intentionally empty per copy policy; no house mark or invented wordmark appears anywhere in the poster."
+    },
+    "shape_preserved": {
+      "ok": true,
+      "evidence": "Strapless sweetheart neckline, ruched lined bodice, beaded waistband, cascading sheer organza ruffle tiers and saturated royal hem match the source photograph pixel-for-pixel; product bbox [256,374,931,1267] unrotated, unrelit, unposed."
+    },
+    "grounding_correct": {
+      "ok": true,
+      "evidence": "Graphic scene_mode declares suspended presentation with shadow.opacity 0; contact detail crop [176,1127,1011,1377] shows the royal hem edge clean against the bone field with no missing contact shadow and no invented floor."
+    },
+    "edges_clean": {
+      "ok": true,
+      "evidence": "shape_geometry reports crosses_canvas_edge false for plate bbox [186,316,861,1209]; product, plate and both text bboxes sit inside 1080x1440 with comfortable margins (top 118 >=10%, base 1267 <=94% of 1440)."
+    },
+    "lighting_consistent": {
+      "ok": true,
+      "evidence": "Flat shadowless poster illumination preserves the source's diffuse frontal high-key brightness; no conflicting cast light, hotspot or highlight direction on the photograph."
+    },
+    "text_uncropped": {
+      "ok": true,
+      "evidence": "Title bbox [313,118,735,197] and subtitle bbox [259,258,712,292] fully inside canvas with ample margins on all sides."
+    },
+    "text_collision_free": {
+      "ok": true,
+      "evidence": "text_product_overlap false for title and subtitle; no both-axis intersection with product bbox, and the decoration rule at y~226 clears the neckline at y=374."
+    },
+    "fonts_present": {
+      "ok": true,
+      "evidence": "msyh.ttc used for both CJK lines and is in the installed approved list; rendered glyphs show no tofu, fallback or substitution."
+    },
+    "brand_spelling_correct": {
+      "ok": true,
+      "evidence": "No house brand claimed; authorized copy strings rendered verbatim; reference house names (Max Mara, Monsoon, Claudie) absent from the poster."
+    },
+    "copy_concept_specific": {
+      "ok": true,
+      "evidence": "Title and subtitle state THIS silhouette-as-mark proposition (outline as signature; cut clear enough to leave an imprint), narrating the visible misregistered plate rather than interchangeable slogans."
+    },
+    "visual_memory_visible": {
+      "ok": true,
+      "evidence": "Photographed translucent ruffles visibly overlap a flat royal exact-alpha silhouette twin offset diagonally up-left; the slipped-print-plate event reads at the neckline lobe, the continuous left flank band and the right hem chip."
+    }
+  },
+  "reported_score": 85.0,
+  "commercial_gate": {
+    "version": 2,
+    "pass": false,
+    "failures": [
+      "dimension:composition",
+      "unresolved_review",
+      "critic_not_approved",
+      "creative_diversity:unresolved"
+    ],
+    "thresholds": {
+      "product_fidelity": 95,
+      "physical_integration": 88,
+      "typography": 88,
+      "composition": 88,
+      "brand_alignment": 85,
+      "creative_coherence": 88
+    },
+    "basis": "visual-model evidence plus deterministic geometry; not independent human commercial certification",
+    "creative_diversity_evidence": {
+      "distinct": false,
+      "evidence": "All four propositions keep the identical visual stage: one unrotated floating cutout on a neutral field, shadow.opacity 0, no context, no wearer; only the flat primitives behind it change. Judging mechanisms, not names: c2 (one oversized ellipse) and c3 (two rectangles meeting at the bodice-to-skirt seam) produce the same visible event - opaque bodice/hem blocks a flat field while the sheer ruffle tiers transmit and tint toward it - differing only in primitive count and shape, i.e. a palette/geometry rename of one figure-ground transparency idea. c1 (five landmark-locked horizontal bands) and c3 (one landmark-locked horizon) are the same device again: hard graphic edges registered onto garment seams behind the cutout, c3 merely using fewer edges. c4's offset original-alpha silhouette is the only genuinely different event (misregistered graphic double versus photographed material). Net: one transparency/edge-registration packshot idea stated three times plus one silhouette-echo idea.",
+      "collapse_groups": [
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      ],
+      "required_revision": "Keep c4 as one voice. Rebuild the collapsed group into materially different events within the stated toolkit: (a) retain c1 only as the multi-edge calibration instrument with legible band intervals; (b) replace c2's ellipse with a non-field event, e.g. an editorial narrative or source-compatible photographic context that does not rely on sheer-zone transmission over a flat mass; (c) replace c3's split-plane with a purposeful brand-graphic event that does not register edges onto seams (e.g. the single straight decoration line used structurally across the canvas, independent of garment landmarks). No new slogans, no second photographed product, no macro plates, no diptych, no rotation, no relighting, shadow.opacity stays 0, and no wearer may be generated."
+    }
+  }
+}

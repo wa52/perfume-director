@@ -1,0 +1,23 @@
+{
+  "id": "menswear-pilot",
+  "product_category": "menswear",
+  "garment_type": "tshirt",
+  "display_mode": "auto",
+  "local_path": "assets/products/clothing/menswear.png",
+  "source_url": "https://pngimg.com/image/5447",
+  "image_url": "https://pngimg.com/uploads/tshirt/tshirt_PNG5447.png",
+  "sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+  "width": 964,
+  "height": 1024,
+  "brief": "为这件服装探索四个明显不同的商业海报方向。保留完整版型、面料纹理和图案；保留原图展示方式。只使用可确认的品牌和名称，不编造面料成分、功效、价格或季节信息。",
+  "audience_basis": "test merchandising category; not inferred from a person",
+  "rights_status": "CC BY-NC 4.0; PNGimg attribution; non-commercial test fixture only",
+  "input_sha256": "c73fdabb21d1e1179c22e49f9af7b48ad75399c0b3fb6cd1d52a3159ddce8f6c",
+  "status": "ERROR",
+  "job_id": "d6950c4471e0487f8ec83e9ea631f4aa",
+  "stage": "FAILED",
+  "run_dir": "D:\\comfyui projects\\perfume-director\\runs\\batches\\bf2491ea63d9",
+  "quality_profile": "commercial-v2-aligned-20261003",
+  "commercial_target": "campaign_candidate",
+  "error": "ValueError"
+}
