@@ -1,0 +1,24 @@
+{
+  "work": {
+    "title": "从红月开始",
+    "author": "黑山老鬼",
+    "status": "completed",
+    "copyright_note": "Commercial copyrighted work. Full text is intentionally not vendored in this public repository."
+  },
+  "official_sources": [
+    {
+      "name": "起点中文网",
+      "url": "https://book.qidian.com/booklist/detail/653720/",
+      "note": "Official Qidian listing; provides free-trial access from the platform."
+    },
+    {
+      "name": "WebNovel",
+      "url": "https://www.webnovel.com/book/%E4%BB%8E%E7%BA%A2%E6%9C%88%E5%BC%80%E5%A7%8B_18614628601386104",
+      "note": "Official platform book page."
+    }
+  ],
+  "local_ingest": {
+    "expected_input": "corpus/private/from-red-moon.txt",
+    "generated_index": "corpus/index/chapters.jsonl"
+  }
+}

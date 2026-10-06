@@ -1,0 +1,53 @@
+{
+  "comfyui": {
+    "base_url": "http://127.0.0.1:8190",
+    "workflow_path": "workflows/character_portrait.api.json",
+    "output_node": "9",
+    "prompt_node": "6",
+    "prompt_input": "text",
+    "seed_node": "3",
+    "seed_input": "seed",
+    "seed_start": 2026100201,
+    "timeout_seconds": 300,
+    "poll_seconds": 1,
+    "output_dir": "runs/character_evolution",
+    "reference_image_node": null,
+    "reference_image_input": "image"
+  },
+  "critic": {
+    "base_url": "https://YOUR_OPENAI_COMPATIBLE_ENDPOINT/v1",
+    "model": "YOUR_VISION_MODEL",
+    "api_key_env": "CHARACTER_VISION_API_KEY",
+    "timeout_seconds": 180
+  },
+  "batch": {
+    "candidates": 8,
+    "shortlist": 3
+  },
+  "acceptance": {
+    "minimum_overall": 78,
+    "minimum_canon": 85,
+    "minimum_identity": 72
+  },
+  "scene_comfyui": {
+    "base_url": "http://127.0.0.1:8190",
+    "workflow_path": "workflows/character_scene.api.json",
+    "output_node": "9",
+    "prompt_node": "6",
+    "prompt_input": "text",
+    "seed_node": "3",
+    "seed_input": "seed",
+    "seed_start": 2026100201,
+    "timeout_seconds": 300,
+    "poll_seconds": 1,
+    "output_dir": "runs/character_evolution/scenes",
+    "reference_image_node": "10",
+    "reference_image_input": "image"
+  },
+  "scene_acceptance": {
+    "minimum_identity": 82,
+    "minimum_canon": 80,
+    "minimum_overall": 80
+  },
+  "art_direction_path": "config/work_style.example.json"
+}

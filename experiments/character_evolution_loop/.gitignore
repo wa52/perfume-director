@@ -1,0 +1,13 @@
+# Local copyrighted/private novel corpus. Keep these files out of the public repository.
+corpus/private/
+corpus/index/
+
+# Local runtime/config outputs
+config/*.local.json
+workflows/character_portrait.api.json
+workflows/character_scene.api.json
+runs/
+
+# Local Python artifacts
+__pycache__/
+*.pyc
